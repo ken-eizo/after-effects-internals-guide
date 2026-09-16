@@ -1,0 +1,29 @@
+:root {
+  --md-text-font: "Inter", "Segoe UI", system-ui, sans-serif;
+  --md-code-font: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.md-grid {
+  max-width: 92rem;
+}
+
+.md-typeset {
+  font-size: 0.79rem;
+  line-height: 1.62;
+}
+
+.md-typeset h1 {
+  font-weight: 650;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 620;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  font-size: 0.72rem;
+}
