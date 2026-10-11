@@ -3581,6 +3581,8 @@
       
         
       
+        
+      
     
     
     
@@ -3967,6 +3969,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concrete evaluated Bezier paths and synthetic identities (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#strongest-proof-and-next-falsification-gates" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4023,6 +4036,41 @@
     
   
     Native Vector Evaluator Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-operator-abi-and-origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Operator ABI and Origin
   
 
     
@@ -12303,6 +12351,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concrete evaluated Bezier paths and synthetic identities (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#strongest-proof-and-next-falsification-gates" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12402,6 +12461,8 @@
 <p>The final Shape layer renderer uses <code>BEE_VectorLayer::Rasterize2DGraph(...)</code> returning <code>IntrusivePtr&lt;RG_RenderNode&gt;</code>. <code>BEE_VectorArt::Path</code> has constructors from <code>CAGMPath</code> and <code>CAIMBezierPath</code>. These are useful native vector intermediate types, but there is <strong>no demonstrated public effect-output channel that returns a BEE_VectorArt object</strong>. Creating such an object, even with correct internals, is different from making the host evaluate/cache/serialize/render it as an independent layer/effect.</p>
 <h2 id="newly-reconstructed-second-registry-and-plugin-abi-barrier-2026-10-11">Newly reconstructed second registry and plugin ABI barrier (2026-10-11)<a class="headerlink" href="#newly-reconstructed-second-registry-and-plugin-abi-barrier-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>The actual native Shape renderer uses a distinct <strong>BEE MatchName evaluator registry</strong>, separate from <code>TDB_StreamFactory</code>. This second registry owns polymorphic <code>BEE_VectorStream::*Operator</code> objects for exactly 20 names, including Trim, Offset, Repeater, Merge, Path, Fill and Stroke. Both AE2025 and AE2026 show the same mappings and concrete MSVC RTTI classes. Normal evaluated vector art and <code>StreamBasedFilter::DoFilter</code> call the <strong>same</strong> registered operator virtual method at vtable +0x18, with different mode arguments. In addition, the TDB factory eagerly invokes a registered type creator during registration, rather than postponing all execution until the user adds a Contents child. Neither registry offers a confirmed external plug-in ABI or a replacement for the <code>BEE_VectorLayer</code> owner. See <a href="../native-vector-evaluator-registry/">Native Vector Evaluator Registry</a>.</p>
+<h2 id="concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11">Concrete evaluated Bezier paths and synthetic identities (2026-10-11)<a class="headerlink" href="#concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>Static AE2025/26 native C++ RTTI and disassembly traced all 20 evaluated vector operators and their mode dispatch. Nine Group/Shape/Graphic operators use mode 0; eleven Filter operators use mode 1. Shape/Rect/Ellipse build <code>CAIMBezierPath</code> and <code>BEE_VectorArt::Path</code> and attach source <code>TDB_StreamIDPath</code> using <code>OriginInfo</code>. Repeater concretely calls <code>AppendSyntheticIndex</code> during evaluated copy generation. This proves host-internal authored-to-rendered origin metadata. It does <strong>not</strong> prove an external effect can become the <code>BEE_VectorLayer</code> owner, add native selectable Timeline geometry, or use native VectorArt as an output contract. See <a href="../native-vector-operator-abi-and-origin/">Native Vector Operator ABI and Origin</a>.</p>
 <h2 id="strongest-proof-and-next-falsification-gates">Strongest proof and next falsification gates<a class="headerlink" href="#strongest-proof-and-next-falsification-gates" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -12488,7 +12549,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 11:50:26 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 12:31:46 UTC">October 11, 2026</span>
   </span>
 
     

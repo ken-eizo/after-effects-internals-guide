@@ -3581,6 +3581,8 @@
       
         
       
+        
+      
     
     
     
@@ -3851,6 +3853,41 @@
     
   
     Native Vector Evaluator Registry
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-shape-system/native-vector-operator-abi-and-origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Operator ABI and Origin
   
 
     
@@ -13099,10 +13136,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vector-shape-system-native-vector-operator-abi-and-origin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.8 Native Vector Operator ABI and Origin
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vector-shape-system-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.8 Vector and Shape System
+        16.9 Vector and Shape System
       
     </span>
   </a>
@@ -19498,6 +19546,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 </table>
 <p><code>BEE_GetSelectedShapePathsVec</code> and <code>OriginInfo::GetCompletePath</code> each had zero <strong>direct</strong> references, which does not establish non-use. They may be called through indirect callbacks, virtual dispatch, or another module. The code-section scanner used Capstone SKIPDATA, scanned ~4.49M and ~4.63M instructions and produced <code>datasets/ae-vector-selection-origin-xrefs-2025-2026.json</code>. Its inferred “nearest preceding export” is <strong>not</strong> a verified function boundary; treat as location hint only.</p>
 <p><strong>Strongest current inference:</strong> synthetic origin append operations and origin stream-path lookup are part of executed-looking code paths inside the native vector runtime, not simply type declarations. A native selection subsystem also consumes TDB stream paths. <strong>Still not established</strong> is the precise dataflow from rendered <code>OriginInfo</code> through hit testing into a selected editable path, nor any externally registerable native edit target.</p>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-promoted-proof-synthetic-repeater-provenance-in-native-evaluator-code-2026-10-11">Promoted proof: synthetic Repeater provenance in native evaluator code (2026-10-11)<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-promoted-proof-synthetic-repeater-provenance-in-native-evaluator-code-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>An expanded E2-L experiment traced <strong><code>RepeaterOperator</code>'s concrete geometry generation</strong> (not merely symbol xrefs) in installed AE2025 and 2026 BEE.dll. Its actual processing method calls <code>BEE_VectorArt::OriginInfo::AppendSyntheticIndex</code> at least twice in both versions while constructing <code>Group</code> / <code>SymbolGroup</code> and attaching <code>OriginInfo</code>. Concrete Path/Rectangle/Ellipse native evaluator functions also convert authored <code>OM_Shape</code> or parametric streams into <code>CAIMBezierPath</code>, create <code>BEE_VectorArt::Path</code>, and attach <code>OriginInfo(TDB_StreamIDPath)</code>. This upgrades the previous Repeater-to-synthetic-index <strong>hypothesis to static callsite-confirmed use</strong>. It <strong>does not</strong> yet prove native Pen tool hit-testing uses the origin metadata or accepts effect-provided vector art. See <a href="#vector-shape-system-native-vector-operator-abi-and-origin">Native Vector Operator ABI and Origin</a>, Finding F-VECTOR-016 and EXP-SHAPE-016.</p>
 <h2 id="vector-shape-system-native-edit-and-provenance-bridge-strong-compatibility-clues-and-limits">Strong compatibility clues and limits<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-strong-compatibility-clues-and-limits" title="Permanent link">&para;</a></h2>
 <ul>
 <li><code>BEE_VectorArt::OriginInfo(TDB_StreamIDPath const&amp;)</code> exists in 2025 and 2026.</li>
@@ -19689,6 +19739,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <p>The final Shape layer renderer uses <code>BEE_VectorLayer::Rasterize2DGraph(...)</code> returning <code>IntrusivePtr&lt;RG_RenderNode&gt;</code>. <code>BEE_VectorArt::Path</code> has constructors from <code>CAGMPath</code> and <code>CAIMBezierPath</code>. These are useful native vector intermediate types, but there is <strong>no demonstrated public effect-output channel that returns a BEE_VectorArt object</strong>. Creating such an object, even with correct internals, is different from making the host evaluate/cache/serialize/render it as an independent layer/effect.</p>
 <h2 id="vector-shape-system-native-vector-output-ownership-newly-reconstructed-second-registry-and-plugin-abi-barrier-2026-10-11">Newly reconstructed second registry and plugin ABI barrier (2026-10-11)<a class="headerlink" href="#vector-shape-system-native-vector-output-ownership-newly-reconstructed-second-registry-and-plugin-abi-barrier-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>The actual native Shape renderer uses a distinct <strong>BEE MatchName evaluator registry</strong>, separate from <code>TDB_StreamFactory</code>. This second registry owns polymorphic <code>BEE_VectorStream::*Operator</code> objects for exactly 20 names, including Trim, Offset, Repeater, Merge, Path, Fill and Stroke. Both AE2025 and AE2026 show the same mappings and concrete MSVC RTTI classes. Normal evaluated vector art and <code>StreamBasedFilter::DoFilter</code> call the <strong>same</strong> registered operator virtual method at vtable +0x18, with different mode arguments. In addition, the TDB factory eagerly invokes a registered type creator during registration, rather than postponing all execution until the user adds a Contents child. Neither registry offers a confirmed external plug-in ABI or a replacement for the <code>BEE_VectorLayer</code> owner. See <a href="#vector-shape-system-native-vector-evaluator-registry">Native Vector Evaluator Registry</a>.</p>
+<h2 id="vector-shape-system-native-vector-output-ownership-concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11">Concrete evaluated Bezier paths and synthetic identities (2026-10-11)<a class="headerlink" href="#vector-shape-system-native-vector-output-ownership-concrete-evaluated-bezier-paths-and-synthetic-identities-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>Static AE2025/26 native C++ RTTI and disassembly traced all 20 evaluated vector operators and their mode dispatch. Nine Group/Shape/Graphic operators use mode 0; eleven Filter operators use mode 1. Shape/Rect/Ellipse build <code>CAIMBezierPath</code> and <code>BEE_VectorArt::Path</code> and attach source <code>TDB_StreamIDPath</code> using <code>OriginInfo</code>. Repeater concretely calls <code>AppendSyntheticIndex</code> during evaluated copy generation. This proves host-internal authored-to-rendered origin metadata. It does <strong>not</strong> prove an external effect can become the <code>BEE_VectorLayer</code> owner, add native selectable Timeline geometry, or use native VectorArt as an output contract. See <a href="#vector-shape-system-native-vector-operator-abi-and-origin">Native Vector Operator ABI and Origin</a>.</p>
 <h2 id="vector-shape-system-native-vector-output-ownership-strongest-proof-and-next-falsification-gates">Strongest proof and next falsification gates<a class="headerlink" href="#vector-shape-system-native-vector-output-ownership-strongest-proof-and-next-falsification-gates" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -19877,6 +19929,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 </table>
 <p>The correspondence is established for every entry from <em>literal text used in the static MatchName constructor</em> to the exact registrar callsite and <em>the MSVC RTTI of the C++ class constructed in that block</em>. Thus it is substantially stronger than guessing types from names. The same 20 names and classes were independently found in the two installed versions.</p>
 <p>For path filter operators, intermediate RTTI includes <code>PathFilterOperatorT&lt;TrimParams&gt;</code>, <code>PathFilterOperatorT&lt;OffsetPathParams&gt;</code>, <code>PathFilterOperatorT&lt;RoughenParams&gt;</code>, etc. Most concrete operators have vtable RTTI metadata for subobject offsets 0 and 24 bytes: external subclasses must satisfy more than a single function pointer. No third-party operator has been constructed or called.</p>
+<h2 id="vector-shape-system-native-vector-evaluator-registry-updated-2026-10-11-evidence-executable-operator-vtables-and-geometry-provenance">Updated 2026-10-11 evidence: executable operator vtables and geometry provenance<a class="headerlink" href="#vector-shape-system-native-vector-evaluator-registry-updated-2026-10-11-evidence-executable-operator-vtables-and-geometry-provenance" title="Permanent link">&para;</a></h2>
+<p>All <strong>20</strong> concrete operators were independently analyzed in AE2025/2026: they carry primary and secondary vtables (RTTI subobject offset +24), a reference-counting hierarchy, and a mode-dispatch method at primary vtable +0x18. Each version has nine mode-0 Group/Shape/Graphic operators and eleven mode-1 Filter operators. Concrete Path/Rect/Ellipse operators build Bezier paths and stamp <code>OriginInfo(TDB_StreamIDPath)</code>; Repeater's own algorithm directly calls <code>AppendSyntheticIndex</code>. These are executable-code evidence and refine the older name-only or prototype-only model. See <a href="#vector-shape-system-native-vector-operator-abi-and-origin">Native Vector Operator ABI and Origin</a> and Findings F-VECTOR-015/016. No third-party operator registration was performed.</p>
 <h2 id="vector-shape-system-native-vector-evaluator-registry-what-the-experiments-actually-establish">What the experiments actually establish<a class="headerlink" href="#vector-shape-system-native-vector-evaluator-registry-what-the-experiments-actually-establish" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -19935,7 +19989,102 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <li><code>experiments/vector-shape/EXP-SHAPE-013-eager-factory-canonical.md</code></li>
 <li><code>experiments/vector-shape/EXP-SHAPE-014-vector-evaluator-registration.md</code></li>
 <li>All static datasets and source-only <code>ShapeLayerAE/tools</code> copies are linked from the Findings. No Adobe DLL, SDK proprietary binary or private header has been redistributed.</li>
-</ul></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.8"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="vector-shape-system-native-vector-operator-abi-and-origin" heading-number="16.8"><h1 id="vector-shape-system-native-vector-operator-abi-and-origin-native-vector-operator-abi-editable-origins-and-the-effect-owned-geometry-frontier">Native Vector Operator ABI, Editable Origins and the Effect-Owned Geometry Frontier<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-native-vector-operator-abi-editable-origins-and-the-effect-owned-geometry-frontier" title="Permanent link">&para;</a></h1>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-why-this-is-a-new-frontier">Why this is a new frontier<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-why-this-is-a-new-frontier" title="Permanent link">&para;</a></h2>
+<p>CompNodeAE must be a <strong>native-editable vector producer while remaining an effect plug-in</strong>, without relying on a Shape Layer output. This cannot be established by raster effect output, PF_Path masks, script-created shape layers or a Custom UI overlay. The goal is not merely to use a Bezier library, but to register geometry, lifetime, timeline hierarchy, native Pen editing and host rendering <strong>as one AE-native feature</strong>.</p>
+<p>The AE2025/AE2026 analyses distinguish four independent layers of contract:</p>
+<ol>
+<li><strong>Creation/serialization</strong> — host TDB stream type factory; canonical instantiation and saved stream identity.</li>
+<li><strong>Native evaluation</strong> — host BEE name-keyed evaluator registry, with 20 built-in reference-counted C++ objects.</li>
+<li><strong>Editable provenance</strong> — authored <code>TDB_StreamIDPath</code> and derived <code>BEE_VectorArt::OriginInfo</code>, including synthetic Repeater identifiers.</li>
+<li><strong>Presentation and ownership</strong> — <code>BEE_VectorLayer</code> host layer, ordinary Timeline native properties, selection/Tool subsystem and BEE/AGM/RG draw pipeline.</li>
+</ol>
+<p>Registering into layer #2 alone cannot make a foreign effect a native shape layer; TDB data and ownership may also be required, and any actual foreign registration remains untested.</p>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-abi-the-vtable-split-observed-in-both-versions">ABI: the vtable split observed in <strong>both</strong> versions<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-abi-the-vtable-split-observed-in-both-versions" title="Permanent link">&para;</a></h2>
+<p>Native evaluator <code>Operator</code> objects are polymorphic. Their vtable has two distinct physical subobject views, starting at object offsets 0 and 24 bytes. A static class-hierarchy RTTI audit recovers the native <code>RefCountedObject</code>, <code>RefCountedInterface</code> (virtual-base descriptor), <code>RefCountedImplementation</code>, <code>BEE_VectorStream::Operator</code>, derived <code>FilterOperator</code>, and seven <code>PathFilterOperatorT&lt;Params&gt;</code> subclasses.</p>
+<p>The primary vtable's <code>+0x18</code> method is called by <strong>both</strong> normal and filter evaluation. Its second integer argument is literally <code>0</code> when normal <code>PopulateVectorArt</code> dispatch occurs, <code>1</code> for <code>StreamBasedFilter::DoFilter</code>. The mode gate was recovered from actual branches at all 20 operator entry points, in both installed builds:</p>
+<table>
+<thead>
+<tr>
+<th>Operation family</th>
+<th style="text-align: right;">Count</th>
+<th>Method at primary vtable +0x18</th>
+<th>Concrete work function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group + Shape + Graphic</td>
+<td style="text-align: right;">9</td>
+<td><code>test edx, edx</code>: accept mode 0, reject nonzero</td>
+<td>dispatch to own vtable <code>+0x20</code> when requested</td>
+</tr>
+<tr>
+<td>Vector Filters</td>
+<td style="text-align: right;">11</td>
+<td><code>cmp edx, 1</code>: special filter path for mode 1</td>
+<td>dispatch via further vtable <code>+0x28</code> or common filter fallback</td>
+</tr>
+</tbody>
+</table>
+<p>This is reconstructed from <strong>machine code</strong>, not an official C++ ABI contract. Method input object types, exception model, temporal cache, matching version checks and ownership remain incompletely known. Do not attempt to define a third-party <code>Operator</code> class from this table alone.</p>
+<p>For example, AE2026 concrete RVA landmarks:</p>
+<ul>
+<li><code>RectOperator</code> primary slot3 <code>0x713ff0</code>: <code>test edx, edx</code> then <code>call [vftable+0x20]</code>.</li>
+<li><code>FillOperator</code> slot3 <code>0x713bf0</code>: same mode0 gating and concrete call.</li>
+<li><code>TrimOperator</code> slot3 <code>0x713980</code>: <code>cmp edx,1</code>, conditional <code>call [vftable+0x28]</code>.</li>
+<li><code>RepeaterOperator</code> slot3 <code>0x714080</code>: same mode1 branch.</li>
+<li><code>RepeaterOperator</code> primary slot5 <code>0x7156d0</code>: native filter implementation.</li>
+</ul>
+<p>The addresses are valid <strong>only for the exact local BEE.dll hash</strong> recorded with the dataset; never hardcode as a portable interface.</p>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-native-editable-provenance-what-actually-generates-it">Native editable provenance: what actually generates it<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-native-editable-provenance-what-actually-generates-it" title="Permanent link">&para;</a></h2>
+<p>We have now traced <strong>actual</strong> native operator functions in BEE.dll, not merely symbol names:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"> Authored Timeline TDB stream group
+</span><span id="__span-0-2">  ├─ Shape path: OM_Shape -&gt; GetPathDataFromOM -&gt; CAIMBezierPath
+</span><span id="__span-0-3">  ├─ Rectangle: GetRectPathData -&gt; CAIMBezierPath
+</span><span id="__span-0-4">  └─ Ellipse: GetEllipsePathData -&gt; CAIMBezierPath
+</span><span id="__span-0-5">                           |
+</span><span id="__span-0-6">                           v
+</span><span id="__span-0-7">                  BEE_VectorArt::Path
+</span><span id="__span-0-8">                           |
+</span><span id="__span-0-9">        OriginInfo(TDB_StreamIDPath) attached
+</span><span id="__span-0-10">                           |
+</span><span id="__span-0-11">                           v
+</span><span id="__span-0-12">            BEE_VectorArt::Group/children
+</span><span id="__span-0-13">                           |
+</span><span id="__span-0-14">                 AGM / render graph -&gt; pixels
+</span></code></pre></div>
+<p>The 2025 and 2026 <code>ShapeOperator</code>, <code>RectOperator</code> and <code>EllipseOperator</code> concrete vtable methods <strong>each</strong> call an appropriate Bezier conversion function, <code>BEE_VectorArt::Path</code> constructor, <code>OriginInfo(TDB_StreamIDPath)</code>, and <code>SetOriginInfo</code>. Fill operator similarly attaches origin metadata; native Filter wrapper holds a <code>BEE_VectorLayer</code> and source path.</p>
+<p>There is also a <strong>direct proof for synthetic Repeater identity</strong>. The 2026 <code>RepeaterOperator</code> native implementation <code>0x7156d0</code> calls <code>AppendSyntheticIndex()</code> at <code>0x7157f2</code> and <code>0x71581b</code>. In AE2025, corresponding calls at <code>0x6f13ea</code> and <code>0x6f1449</code> were found within <code>RepeaterOperator</code> <code>0x6f12c0</code>. Native group and <code>SymbolGroup</code> objects are created and origin information is attached inside the same call path.</p>
+<p>This <strong>promotes</strong> the earlier hypothesis from F-VECTOR-005/F-VECTOR-006: <code>AppendSyntheticIndex</code> is indeed used in the concrete Repeater evaluation method. What is <strong>not proven</strong> is that synthetic paths can be edited independently with the Pen tool or that origin stamping alone is a general-purpose vector output plug-in interface.</p>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-implications-for-a-true-effect-native-shape-feature">Implications for a true effect-native Shape feature<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-implications-for-a-true-effect-native-shape-feature" title="Permanent link">&para;</a></h2>
+<p><strong>Native stream factory + vector evaluator registry are necessary candidates, not sufficient.</strong> An effect's <code>BEE_Effect</code>/Effect Parade is not the same owner type as <code>BEE_VectorLayer</code>. A fully independent CompNodeAE vector must still answer:</p>
+<ul>
+<li>Who creates/owns a <code>TDB_IndexedStreamGroup</code> or equivalent persistent Contents root underneath an effect?</li>
+<li>What does the host Timeline accept as a source of native path and group child identity, versus ordinary PF_ParamDef controls?</li>
+<li>Who registers the editable Bezier selection/hit-test target, converts <code>OriginInfo</code> to a <code>BEE_StreamSpec</code> and sends native Tool commands?</li>
+<li>How can an effect advertise a <code>BEE_VectorArt::Group</code> as its <em>render source</em>, rather than returning a bitmap <code>PF_World</code> in an effect selector?</li>
+<li>What releases the registrar's owned <code>Operator</code>, TDB canonical stream, code pointers and virtual base when project closes or a plug-in unloads?</li>
+</ul>
+<p>No current public Effect SDK callback answers all of these, and no private third-party method has yet been safely exercised to provide them.</p>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-verification-and-next-experiments">Verification and next experiments<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-verification-and-next-experiments" title="Permanent link">&para;</a></h2>
+<p>Two host-independent experiments were added:</p>
+<p><strong>EXP-SHAPE-015:</strong> enumerate all 20 native vtables, RTTI inheritance and mode dispatch in AE2025/2026; validate mode0=9 and mode1=11 in each version, without loading any private code.</p>
+<p><strong>EXP-SHAPE-016:</strong> trace concrete Path/Rectangle/Ellipse/Fill/Trim/Repeater operator callsites into Bezier paths, <code>BEE_VectorArt</code> and <code>OriginInfo</code>, including direct Repeater synthetic-index calls, in both binaries.</p>
+<p>Future isolated-host experiments should first validate <strong>read-only lifetime and identity invariants</strong> after native selection and Undo. Only after completing the two separate registries' ABI and destructor semantics could reversible isolated registration be attempted. Normal working AE and installed ShapeLayerAE v3 remain unchanged.</p>
+<h2 id="vector-shape-system-native-vector-operator-abi-and-origin-findings-evidence-and-sources">Findings, evidence and sources<a class="headerlink" href="#vector-shape-system-native-vector-operator-abi-and-origin-findings-evidence-and-sources" title="Permanent link">&para;</a></h2>
+<p>An independent source-only consistency checker (<code>verify_native_vector_operator_evidence.py</code>) <strong>passed</strong> on the preserved 2025/2026 evidence: 20/20 names and concrete RTTI types agree, all 20 classes have both vtables, the 9/11 mode split holds, Path/Rect/Ellipse contain geometry-plus-origin call chains, and Repeater directly invokes <code>AppendSyntheticIndex</code> twice or more. Its JSON receipt is <code>datasets/ae-vector-operator-independent-crosscheck-2025-2026.json</code>. This is an E2-L artifact consistency check, not an AE host success claim.</p>
+<ul>
+<li><code>research/findings/F-VECTOR-015-native-operator-vtables-inheritance-and-mode-abi.md</code></li>
+<li><code>research/findings/F-VECTOR-016-native-vectorart-origin-provenance-created-in-operators.md</code></li>
+<li><code>datasets/ae-vector-evaluator-vtable-slot-map-2025-2026.json</code></li>
+<li><code>datasets/ae-vector-evaluator-mode-abi-2025-2026.json</code></li>
+<li><code>datasets/ae-native-vector-operator-rtti-inheritance-2025-2026.json</code></li>
+<li><code>datasets/ae-vector-operator-vectorart-provenance-calls-2025-2026.json</code></li>
+<li><code>experiments/vector-shape/EXP-SHAPE-015-operator-mode-abi.md</code></li>
+<li><code>experiments/vector-shape/EXP-SHAPE-016-art-origin-stamping.md</code></li>
+</ul>
+<p>The official Adobe feature history places Shape Layers in <strong>CS3 (2007)</strong>; native editable vector mask facilities predate that. The emergence of editable SVG imports in 2025/2026 concerns conversion <strong>into standard Shape Layers</strong>, not an Effect SDK vector-return type. References: https://github.com/AdobeDocs/after-effects-feature-history and https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .</p></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.9"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
 <p>Shape layers combine a persistent vector object model, hierarchical transforms/modifiers and a renderer-facing tessellation/rasterization path.</p>
 <h2 id="vector-shape-system-overview-questions">Questions<a class="headerlink" href="#vector-shape-system-overview-questions" title="Permanent link">&para;</a></h2>
 <ul>
@@ -19957,13 +20106,15 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <p>The same Beta-feature corpus contains GroupAlphaForAIConvertToShapes, exposing a conversion-specific semantic issue: Illustrator group opacity needs preservation when converted into native shape fills. This is evidence that AI→Shape conversion is not merely path copying; group-level compositing semantics must be lowered into AE's shape/property model.</p>
 <h2 id="vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11">Verified native host experiment and identity frontier (2026-10-11)<a class="headerlink" href="#vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archived raw capture shows 180 public stream nodes with zero reported per-node API errors, including <code>ADBE Root Vectors Group</code> as an indexed Contents group and Rectangle/Fill as named child groups. This E2-X result proves real host traversal <strong>only</strong>, not plug-in-owned Contents creation. See repository report <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>.</p>
-<p>A follow-up read-only probe is available as a <strong>compiled but not host-tested</strong> experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating <code>CanAddStream</code> matrix. See <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a> for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.</p>
+<p>A follow-up read-only probe was <strong>executed in AE2026</strong>: it measured session-specific stream IDs, dynamic flags and leaf types, and successfully ran a non-mutating <code>CanAddStream</code> matrix. The AE2026 v3 host evidence is archived separately from static native DLL research. See <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a> for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.</p>
 <h2 id="vector-shape-system-overview-native-stream-factory-registration-breakthrough-2026-10-11">Native stream factory registration breakthrough (2026-10-11)<a class="headerlink" href="#vector-shape-system-overview-native-stream-factory-registration-breakthrough-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>Offline BEE/TDB PE/IAT analysis found the host-internal <code>TDB.dll</code> and confirmed <strong>BEE_Layer::RegisterStreams -&gt; Get_AE_StreamFactory -&gt; TDB_ScRegisterStreams::Register -&gt; TDB_StreamFactory::RegisterFactoryFunc</strong>, with canonical stream creation and guarded unregister. The native <code>VectorsStreamGroup::CanStore</code> references built-in <code>ADBE Vector Shape -</code>, <code>ADBE Vector Graphic -</code>, and <code>ADBE Vector Filter -</code> prefixes. See <a href="#vector-shape-system-native-stream-factory-and-schema">Native Stream Factory and Shape Schema</a> for evidence, safety boundaries and <em>unverified</em> third-party factory integration.</p>
 <h2 id="vector-shape-system-overview-2026-10-11-external-read-only-private-factory-accessor-typed-registration-and-native-vectorart-evaluation">2026-10-11 — External read-only private factory accessor, typed registration and native VectorArt evaluation<a class="headerlink" href="#vector-shape-system-overview-2026-10-11-external-read-only-private-factory-accessor-typed-registration-and-native-vectorart-evaluation" title="Permanent link">&para;</a></h2>
 <p>An explicitly invoked AE2026 ShapeLayerAE v3 AEGP returned a non-null pointer from the pinned private <code>TDB.dll!Get_AE_StreamFactory()</code> accessor. The same user-run AEGP demonstrated unknown Shape/Graphic/Filter-prefixed match names are admitted by native Contents <code>CanAddStream</code>, without instantiating them. Cross-version bounded binary disassembly confirmed that the native Shape creators feed <code>TDB_ScRegisterStreams::Register</code>, and <code>BEE_VectorLayer::GetVectorArt</code> directly calls <code>PopulateVectorArt</code> and <code>GetBounds</code>. <strong>No independent plugin-owned editable native Contents or geometry output is yet demonstrated.</strong> Details: <a href="#vector-shape-system-native-stream-factory-and-schema">Native Stream Factory</a>, <a href="#vector-shape-system-native-vector-output-ownership">Independent Native Vector Output</a> and original raw experiment <code>EXP-SHAPE-009-010-v3-host-confirmation.md</code>.</p>
 <h2 id="vector-shape-system-overview-2026-10-11-second-internal-vector-evaluator-registry-and-20-concrete-native-operator-types">2026-10-11 — Second internal vector evaluator registry and 20 concrete native operator types<a class="headerlink" href="#vector-shape-system-overview-2026-10-11-second-internal-vector-evaluator-registry-and-20-concrete-native-operator-types" title="Permanent link">&para;</a></h2>
 <p>A cross-version static audit recovered a <strong>separate BEE MatchName-keyed evaluator registry</strong> beyond <code>TDB_StreamFactory</code>. The native initializer installs exactly 20 built-in Shape/Graphic/Filter/Group evaluation objects. Each MatchName was recovered from its static constructor literal, paired with its actual registration callsite and concrete MSVC RTTI operator class; the full set matches between AE2025 and AE2026. <code>PopulateVectorArt</code> and <code>StreamBasedFilter::DoFilter</code> both query the registry and invoke the same evaluator virtual slot (different mode arguments). TDB factory registration also eagerly invokes a creator and canonicalization. None of this demonstrates externally creatable effect-owned vector output. See <a href="#vector-shape-system-native-vector-evaluator-registry">Native Vector Evaluator Registry</a>, Findings F-VECTOR-013/014.</p>
+<h2 id="vector-shape-system-overview-2026-10-11-native-evaluator-vtable-and-concrete-pathrepeater-provenance">2026-10-11 — Native evaluator vtable and concrete Path/Repeater provenance<a class="headerlink" href="#vector-shape-system-overview-2026-10-11-native-evaluator-vtable-and-concrete-pathrepeater-provenance" title="Permanent link">&para;</a></h2>
+<p>The two installed versions now agree on all 20 concrete operator vtables, reference-counted MSVC RTTI inheritance and the native evaluation mode split: <strong>9 Shape/Graphic/Group operators dispatch for mode 0; 11 vector Filters dispatch for mode 1</strong> via the primary vtable at +0x18. Path, Rectangle and Ellipse concrete generators directly build <code>CAIMBezierPath</code> / <code>BEE_VectorArt::Path</code> and stamp the native <code>TDB_StreamIDPath</code> origin. The Repeater algorithm <strong>directly invokes <code>OriginInfo::AppendSyntheticIndex</code></strong> in 2025/2026, promoting the older hypothetical association to supported static evidence. The Pen-tool selection contract and effect-owned native output remain unproven. See <a href="#vector-shape-system-native-vector-operator-abi-and-origin">Native Vector Operator ABI and Origin</a> and Findings F-VECTOR-015/016.</p>
 <h2 id="vector-shape-system-overview-runtime-model-status">Runtime model status<a class="headerlink" href="#vector-shape-system-overview-runtime-model-status" title="Permanent link">&para;</a></h2>
 <p>The runtime-side reconstruction is now tracked in <code>runtime-architecture.md</code>. AE 2025 exposes a concrete <code>BEE_VectorStream -&gt; BEE_VectorArt -&gt; AGM-facing translation -&gt; RG_RenderNode</code> chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.</p>
 <p>Reproducible local inventory: <code>datasets/ae-2025-vector-shape-symbols.csv</code>; core finding: <code>F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code>.</p>
@@ -27730,9 +27881,14 @@ dumpbin failures: <strong>0</strong>.</p>
                 .print-site-enumerate-headings #vector-shape-system-native-vector-evaluator-registry h2:before { content: '16.7.' counter(counter-vector-shape-system-native-vector-evaluator-registry-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-native-vector-evaluator-registry h2 {  counter-increment: counter-vector-shape-system-native-vector-evaluator-registry-2 }
             
-.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.8 ' }
+.print-site-enumerate-headings #vector-shape-system-native-vector-operator-abi-and-origin > h1:before { content: '16.8 ' }
 
-                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.8.' counter(counter-vector-shape-system-overview-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-vector-operator-abi-and-origin h2:before { content: '16.8.' counter(counter-vector-shape-system-native-vector-operator-abi-and-origin-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-vector-operator-abi-and-origin h2 {  counter-increment: counter-vector-shape-system-native-vector-operator-abi-and-origin-2 }
+            
+.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.9 ' }
+
+                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.9.' counter(counter-vector-shape-system-overview-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-overview h2 {  counter-increment: counter-vector-shape-system-overview-2 }
             
 .print-site-enumerate-headings #section-17 > h1:before { content: '17 ' }
