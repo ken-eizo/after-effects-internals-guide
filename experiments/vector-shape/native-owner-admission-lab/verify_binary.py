@@ -25,6 +25,7 @@ for forbidden in ("AEGP_AddStream(","AEGP_DeleteStream(","RegisterFactoryFunc(",
  assert forbidden not in src,forbidden
 assert "kMaxNodes=240,kMaxDepth=4" in src
 assert 'private_registry_invoked' in src and 'stream_created' in src
+assert 'parent_link' in src and 'walk(s,out,child,depth+1,node' in src
 data={"result":"compiled_release_static_pass_host_NOT_tested","sha256":hashlib.sha256(b.read_bytes()).hexdigest(),
 "size":b.stat().st_size,"entrypoint":"EntryPointFunc","machine":"AMD64","import_dlls":imports,
 "candidates":6,"bounded_max_nodes":240,"bounded_max_depth":4,"creates_host_stream":False}

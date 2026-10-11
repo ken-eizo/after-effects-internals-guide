@@ -1,0 +1,1370 @@
+{
+  "classification": "static native BEE stream resolver and effect path identity",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "methods": [
+        {
+          "symbol": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z",
+          "export_entry": "0x36c9d0",
+          "resolved_entry": "0x36b570",
+          "thunks": [
+            {
+              "rva": "0x36c9d0",
+              "jmp_site": "0x36c9db",
+              "target": "0x18036b570",
+              "prefix": [
+                "mov r8, rdx",
+                "lea rdx, [rcx + 0x10]",
+                "mov rcx, qword ptr [rcx + 8]",
+                "jmp 0x18036b570"
+              ]
+            }
+          ],
+          "has_pdata": true,
+          "code_end": "0x36b5be",
+          "initial_instructions": [
+            [
+              "0x36b570",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x36b572",
+              "sub",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36b576",
+              "mov",
+              "rbx, r8"
+            ],
+            [
+              "0x36b579",
+              "mov",
+              "dword ptr [rsp + 0x58], 0"
+            ],
+            [
+              "0x36b581",
+              "mov",
+              "qword ptr [r8], 0"
+            ],
+            [
+              "0x36b588",
+              "mov",
+              "r8d, 1"
+            ],
+            [
+              "0x36b58e",
+              "call",
+              "qword ptr [rip + 0xb52874]"
+            ],
+            [
+              "0x36b594",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36b597",
+              "mov",
+              "rax, qword ptr [rax]"
+            ],
+            [
+              "0x36b59a",
+              "call",
+              "qword ptr [rax + 0x80]"
+            ],
+            [
+              "0x36b5a0",
+              "mov",
+              "qword ptr [rbx], rax"
+            ],
+            [
+              "0x36b5a3",
+              "xor",
+              "eax, eax"
+            ],
+            [
+              "0x36b5a5",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36b5a9",
+              "pop",
+              "rbx"
+            ],
+            [
+              "0x36b5aa",
+              "ret",
+              ""
+            ],
+            [
+              "0x36b5ab",
+              "mov",
+              "eax, dword ptr [rsp + 0x58]"
+            ],
+            [
+              "0x36b5af",
+              "mov",
+              "ecx, dword ptr [rsp + 0x50]"
+            ],
+            [
+              "0x36b5b3",
+              "test",
+              "ecx, ecx"
+            ],
+            [
+              "0x36b5b5",
+              "cmovne",
+              "eax, ecx"
+            ],
+            [
+              "0x36b5b8",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36b5bc",
+              "pop",
+              "rbx"
+            ],
+            [
+              "0x36b5bd",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x36b58e",
+              "destination_rva": "0xebde08",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_StreamTypeHasStream@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAE@Z",
+          "export_entry": "0x36e2d0",
+          "resolved_entry": "0x36e2d0",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x36e359",
+          "initial_instructions": [
+            [
+              "0x36e2d0",
+              "mov",
+              "qword ptr [rsp + 8], rbx"
+            ],
+            [
+              "0x36e2d5",
+              "mov",
+              "qword ptr [rsp + 0x10], rsi"
+            ],
+            [
+              "0x36e2da",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x36e2db",
+              "sub",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36e2df",
+              "mov",
+              "rbx, r8"
+            ],
+            [
+              "0x36e2e2",
+              "mov",
+              "rdi, rdx"
+            ],
+            [
+              "0x36e2e5",
+              "mov",
+              "rsi, rcx"
+            ],
+            [
+              "0x36e2e8",
+              "mov",
+              "dword ptr [rsp + 0x58], 0"
+            ],
+            [
+              "0x36e2f0",
+              "mov",
+              "byte ptr [r8], 1"
+            ],
+            [
+              "0x36e2f4",
+              "mov",
+              "rcx, rdx"
+            ],
+            [
+              "0x36e2f7",
+              "call",
+              "0x18036cac0"
+            ],
+            [
+              "0x36e2fc",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x36e2fe",
+              "je",
+              "0x18036e32a"
+            ],
+            [
+              "0x36e300",
+              "mov",
+              "r8d, 1"
+            ],
+            [
+              "0x36e306",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x36e309",
+              "mov",
+              "rcx, rsi"
+            ],
+            [
+              "0x36e30c",
+              "call",
+              "qword ptr [rip + 0xb4fa3e]"
+            ],
+            [
+              "0x36e312",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36e315",
+              "call",
+              "qword ptr [rip + 0xb50565]"
+            ],
+            [
+              "0x36e31b",
+              "test",
+              "byte ptr [rax + 4], 4"
+            ],
+            [
+              "0x36e31f",
+              "jne",
+              "0x18036e327"
+            ],
+            [
+              "0x36e321",
+              "test",
+              "byte ptr [rax + 0x30], 8"
+            ],
+            [
+              "0x36e325",
+              "je",
+              "0x18036e32a"
+            ],
+            [
+              "0x36e327",
+              "mov",
+              "byte ptr [rbx], 0"
+            ],
+            [
+              "0x36e32a",
+              "xor",
+              "eax, eax"
+            ],
+            [
+              "0x36e32c",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x36e331",
+              "mov",
+              "rsi, qword ptr [rsp + 0x48]"
+            ],
+            [
+              "0x36e336",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36e33a",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x36e33b",
+              "ret",
+              ""
+            ],
+            [
+              "0x36e33c",
+              "mov",
+              "eax, dword ptr [rsp + 0x58]"
+            ],
+            [
+              "0x36e340",
+              "mov",
+              "ecx, dword ptr [rsp + 0x50]"
+            ],
+            [
+              "0x36e344",
+              "test",
+              "ecx, ecx"
+            ],
+            [
+              "0x36e346",
+              "cmovne",
+              "eax, ecx"
+            ],
+            [
+              "0x36e349",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x36e34e",
+              "mov",
+              "rsi, qword ptr [rsp + 0x48]"
+            ],
+            [
+              "0x36e353",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x36e357",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x36e358",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x36e2f7",
+              "destination_rva": "0x36cac0",
+              "symbol": "?BEE_IsEffectStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "site": "0x36e30c",
+              "destination_rva": "0xebdd50",
+              "symbol": ""
+            },
+            {
+              "site": "0x36e315",
+              "destination_rva": "0xebe880",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_GetEffectIndexFromPath@@YAIAEBVTDB_StreamIDPath@@@Z",
+          "export_entry": "0x36b380",
+          "resolved_entry": "0x36b380",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x36b39d",
+          "initial_instructions": [
+            [
+              "0x36b380",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x36b384",
+              "mov",
+              "edx, 1"
+            ],
+            [
+              "0x36b389",
+              "call",
+              "qword ptr [rip + 0xb52b79]"
+            ],
+            [
+              "0x36b38f",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36b392",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x36b396",
+              "jmp",
+              "qword ptr [rip + 0xb5293b]"
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x36b389",
+              "destination_rva": "0xebdf08",
+              "symbol": ""
+            },
+            {
+              "site": "0x36b396",
+              "destination_rva": "0xebdcd8",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsEffectStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "export_entry": "0x36cac0",
+          "resolved_entry": "0x36cac0",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x36cb37",
+          "initial_instructions": [
+            [
+              "0x36cac0",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x36cac2",
+              "sub",
+              "rsp, 0x20"
+            ],
+            [
+              "0x36cac6",
+              "mov",
+              "rbx, rcx"
+            ],
+            [
+              "0x36cac9",
+              "call",
+              "qword ptr [rip + 0xb51459]"
+            ],
+            [
+              "0x36cacf",
+              "cmp",
+              "eax, 3"
+            ],
+            [
+              "0x36cad2",
+              "jb",
+              "0x18036cb2f"
+            ],
+            [
+              "0x36cad4",
+              "xor",
+              "edx, edx"
+            ],
+            [
+              "0x36cad6",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x36cad9",
+              "call",
+              "qword ptr [rip + 0xb51429]"
+            ],
+            [
+              "0x36cadf",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36cae2",
+              "call",
+              "qword ptr [rip + 0xb51450]"
+            ],
+            [
+              "0x36cae8",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36caeb",
+              "lea",
+              "rdx, [rip + 0x12805a6]"
+            ],
+            [
+              "0x36caf2",
+              "call",
+              "qword ptr [rip + 0xb51478]"
+            ],
+            [
+              "0x36caf8",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x36cafa",
+              "je",
+              "0x18036cb2f"
+            ],
+            [
+              "0x36cafc",
+              "mov",
+              "edx, 2"
+            ],
+            [
+              "0x36cb01",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x36cb04",
+              "call",
+              "qword ptr [rip + 0xb513fe]"
+            ],
+            [
+              "0x36cb0a",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36cb0d",
+              "call",
+              "qword ptr [rip + 0xb51425]"
+            ],
+            [
+              "0x36cb13",
+              "mov",
+              "rdx, qword ptr [rip + 0xb4e84e]"
+            ],
+            [
+              "0x36cb1a",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x36cb1d",
+              "call",
+              "qword ptr [rip + 0xb51445]"
+            ],
+            [
+              "0x36cb23",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x36cb25",
+              "je",
+              "0x18036cb2f"
+            ],
+            [
+              "0x36cb27",
+              "mov",
+              "al, 1"
+            ],
+            [
+              "0x36cb29",
+              "add",
+              "rsp, 0x20"
+            ],
+            [
+              "0x36cb2d",
+              "pop",
+              "rbx"
+            ],
+            [
+              "0x36cb2e",
+              "ret",
+              ""
+            ],
+            [
+              "0x36cb2f",
+              "xor",
+              "al, al"
+            ],
+            [
+              "0x36cb31",
+              "add",
+              "rsp, 0x20"
+            ],
+            [
+              "0x36cb35",
+              "pop",
+              "rbx"
+            ],
+            [
+              "0x36cb36",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x36cac9",
+              "destination_rva": "0xebdf28",
+              "symbol": ""
+            },
+            {
+              "site": "0x36cad9",
+              "destination_rva": "0xebdf08",
+              "symbol": ""
+            },
+            {
+              "site": "0x36cae2",
+              "destination_rva": "0xebdf38",
+              "symbol": ""
+            },
+            {
+              "site": "0x36caf2",
+              "destination_rva": "0xebdf70",
+              "symbol": ""
+            },
+            {
+              "site": "0x36cb04",
+              "destination_rva": "0xebdf08",
+              "symbol": ""
+            },
+            {
+              "site": "0x36cb0d",
+              "destination_rva": "0xebdf38",
+              "symbol": ""
+            },
+            {
+              "site": "0x36cb1d",
+              "destination_rva": "0xebdf68",
+              "symbol": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "methods": [
+        {
+          "symbol": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z",
+          "export_entry": "0x3773c0",
+          "resolved_entry": "0x375ef0",
+          "thunks": [
+            {
+              "rva": "0x3773c0",
+              "jmp_site": "0x3773cb",
+              "target": "0x180375ef0",
+              "prefix": [
+                "mov r8, rdx",
+                "lea rdx, [rcx + 0x10]",
+                "mov rcx, qword ptr [rcx + 8]",
+                "jmp 0x180375ef0"
+              ]
+            }
+          ],
+          "has_pdata": true,
+          "code_end": "0x375f56",
+          "initial_instructions": [
+            [
+              "0x375ef0",
+              "mov",
+              "qword ptr [rsp + 8], rbx"
+            ],
+            [
+              "0x375ef5",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x375ef6",
+              "sub",
+              "rsp, 0x30"
+            ],
+            [
+              "0x375efa",
+              "mov",
+              "rdi, r8"
+            ],
+            [
+              "0x375efd",
+              "xor",
+              "ebx, ebx"
+            ],
+            [
+              "0x375eff",
+              "mov",
+              "dword ptr [rsp + 0x50], ebx"
+            ],
+            [
+              "0x375f03",
+              "mov",
+              "qword ptr [r8], rbx"
+            ],
+            [
+              "0x375f06",
+              "mov",
+              "r8d, 1"
+            ],
+            [
+              "0x375f0c",
+              "call",
+              "qword ptr [rip + 0xba102e]"
+            ],
+            [
+              "0x375f12",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x375f15",
+              "test",
+              "rax, rax"
+            ],
+            [
+              "0x375f18",
+              "je",
+              "0x180375f28"
+            ],
+            [
+              "0x375f1a",
+              "mov",
+              "rax, qword ptr [rax]"
+            ],
+            [
+              "0x375f1d",
+              "call",
+              "qword ptr [rax + 0x80]"
+            ],
+            [
+              "0x375f23",
+              "mov",
+              "qword ptr [rdi], rax"
+            ],
+            [
+              "0x375f26",
+              "jmp",
+              "0x180375f31"
+            ],
+            [
+              "0x375f28",
+              "mov",
+              "ebx, 3"
+            ],
+            [
+              "0x375f2d",
+              "mov",
+              "dword ptr [rsp + 0x50], ebx"
+            ],
+            [
+              "0x375f31",
+              "mov",
+              "eax, ebx"
+            ],
+            [
+              "0x375f33",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x375f38",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x375f3c",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x375f3d",
+              "ret",
+              ""
+            ],
+            [
+              "0x375f3e",
+              "mov",
+              "eax, dword ptr [rsp + 0x50]"
+            ],
+            [
+              "0x375f42",
+              "mov",
+              "ecx, dword ptr [rsp + 0x58]"
+            ],
+            [
+              "0x375f46",
+              "test",
+              "ecx, ecx"
+            ],
+            [
+              "0x375f48",
+              "cmovne",
+              "eax, ecx"
+            ],
+            [
+              "0x375f4b",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x375f50",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x375f54",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x375f55",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x375f0c",
+              "destination_rva": "0xf16f40",
+              "symbol": ""
+            },
+            {
+              "site": "0x375f26",
+              "destination_rva": "0x375f31",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_StreamTypeHasStream@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAE@Z",
+          "export_entry": "0x378cf0",
+          "resolved_entry": "0x378cf0",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x378d79",
+          "initial_instructions": [
+            [
+              "0x378cf0",
+              "mov",
+              "qword ptr [rsp + 8], rbx"
+            ],
+            [
+              "0x378cf5",
+              "mov",
+              "qword ptr [rsp + 0x10], rsi"
+            ],
+            [
+              "0x378cfa",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x378cfb",
+              "sub",
+              "rsp, 0x30"
+            ],
+            [
+              "0x378cff",
+              "mov",
+              "rbx, r8"
+            ],
+            [
+              "0x378d02",
+              "mov",
+              "rdi, rdx"
+            ],
+            [
+              "0x378d05",
+              "mov",
+              "rsi, rcx"
+            ],
+            [
+              "0x378d08",
+              "mov",
+              "dword ptr [rsp + 0x58], 0"
+            ],
+            [
+              "0x378d10",
+              "mov",
+              "byte ptr [r8], 1"
+            ],
+            [
+              "0x378d14",
+              "mov",
+              "rcx, rdx"
+            ],
+            [
+              "0x378d17",
+              "call",
+              "0x1803774f0"
+            ],
+            [
+              "0x378d1c",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x378d1e",
+              "je",
+              "0x180378d4a"
+            ],
+            [
+              "0x378d20",
+              "mov",
+              "r8d, 1"
+            ],
+            [
+              "0x378d26",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x378d29",
+              "mov",
+              "rcx, rsi"
+            ],
+            [
+              "0x378d2c",
+              "call",
+              "qword ptr [rip + 0xb9e15e]"
+            ],
+            [
+              "0x378d32",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x378d35",
+              "call",
+              "qword ptr [rip + 0xb9ee25]"
+            ],
+            [
+              "0x378d3b",
+              "test",
+              "byte ptr [rax + 4], 4"
+            ],
+            [
+              "0x378d3f",
+              "jne",
+              "0x180378d47"
+            ],
+            [
+              "0x378d41",
+              "test",
+              "byte ptr [rax + 0x30], 8"
+            ],
+            [
+              "0x378d45",
+              "je",
+              "0x180378d4a"
+            ],
+            [
+              "0x378d47",
+              "mov",
+              "byte ptr [rbx], 0"
+            ],
+            [
+              "0x378d4a",
+              "xor",
+              "eax, eax"
+            ],
+            [
+              "0x378d4c",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x378d51",
+              "mov",
+              "rsi, qword ptr [rsp + 0x48]"
+            ],
+            [
+              "0x378d56",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x378d5a",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x378d5b",
+              "ret",
+              ""
+            ],
+            [
+              "0x378d5c",
+              "mov",
+              "eax, dword ptr [rsp + 0x58]"
+            ],
+            [
+              "0x378d60",
+              "mov",
+              "ecx, dword ptr [rsp + 0x50]"
+            ],
+            [
+              "0x378d64",
+              "test",
+              "ecx, ecx"
+            ],
+            [
+              "0x378d66",
+              "cmovne",
+              "eax, ecx"
+            ],
+            [
+              "0x378d69",
+              "mov",
+              "rbx, qword ptr [rsp + 0x40]"
+            ],
+            [
+              "0x378d6e",
+              "mov",
+              "rsi, qword ptr [rsp + 0x48]"
+            ],
+            [
+              "0x378d73",
+              "add",
+              "rsp, 0x30"
+            ],
+            [
+              "0x378d77",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x378d78",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x378d17",
+              "destination_rva": "0x3774f0",
+              "symbol": "?BEE_IsEffectStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "site": "0x378d2c",
+              "destination_rva": "0xf16e90",
+              "symbol": ""
+            },
+            {
+              "site": "0x378d35",
+              "destination_rva": "0xf17b60",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_GetEffectIndexFromPath@@YAIAEBVTDB_StreamIDPath@@@Z",
+          "export_entry": "0x375c60",
+          "resolved_entry": "0x375c60",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x375c7d",
+          "initial_instructions": [
+            [
+              "0x375c60",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x375c64",
+              "mov",
+              "edx, 1"
+            ],
+            [
+              "0x375c69",
+              "call",
+              "qword ptr [rip + 0xba13c9]"
+            ],
+            [
+              "0x375c6f",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x375c72",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x375c76",
+              "jmp",
+              "qword ptr [rip + 0xba1983]"
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x375c69",
+              "destination_rva": "0xf17038",
+              "symbol": ""
+            },
+            {
+              "site": "0x375c76",
+              "destination_rva": "0xf17600",
+              "symbol": ""
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsEffectStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "export_entry": "0x3774f0",
+          "resolved_entry": "0x3774f0",
+          "thunks": [],
+          "has_pdata": true,
+          "code_end": "0x37757f",
+          "initial_instructions": [
+            [
+              "0x3774f0",
+              "mov",
+              "qword ptr [rsp + 8], rbx"
+            ],
+            [
+              "0x3774f5",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x3774f6",
+              "sub",
+              "rsp, 0x20"
+            ],
+            [
+              "0x3774fa",
+              "mov",
+              "rbx, rcx"
+            ],
+            [
+              "0x3774fd",
+              "call",
+              "0x180375e40"
+            ],
+            [
+              "0x377502",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x377505",
+              "mov",
+              "edi, eax"
+            ],
+            [
+              "0x377507",
+              "call",
+              "qword ptr [rip + 0xb9fb4b]"
+            ],
+            [
+              "0x37750d",
+              "test",
+              "edi, edi"
+            ],
+            [
+              "0x37750f",
+              "je",
+              "0x180377572"
+            ],
+            [
+              "0x377511",
+              "cmp",
+              "edi, eax"
+            ],
+            [
+              "0x377513",
+              "jae",
+              "0x180377572"
+            ],
+            [
+              "0x377515",
+              "xor",
+              "edx, edx"
+            ],
+            [
+              "0x377517",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x37751a",
+              "call",
+              "qword ptr [rip + 0xb9fb18]"
+            ],
+            [
+              "0x377520",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x377523",
+              "call",
+              "qword ptr [rip + 0xb9fb3f]"
+            ],
+            [
+              "0x377529",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x37752c",
+              "lea",
+              "rdx, [rip + 0x13263bd]"
+            ],
+            [
+              "0x377533",
+              "call",
+              "qword ptr [rip + 0xb9fb67]"
+            ],
+            [
+              "0x377539",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x37753b",
+              "je",
+              "0x180377572"
+            ],
+            [
+              "0x37753d",
+              "mov",
+              "edx, edi"
+            ],
+            [
+              "0x37753f",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x377542",
+              "call",
+              "qword ptr [rip + 0xb9faf0]"
+            ],
+            [
+              "0x377548",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x37754b",
+              "call",
+              "qword ptr [rip + 0xb9fb17]"
+            ],
+            [
+              "0x377551",
+              "mov",
+              "rdx, qword ptr [rip + 0xb9d158]"
+            ],
+            [
+              "0x377558",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x37755b",
+              "call",
+              "qword ptr [rip + 0xb9fb37]"
+            ],
+            [
+              "0x377561",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x377563",
+              "je",
+              "0x180377572"
+            ],
+            [
+              "0x377565",
+              "mov",
+              "al, 1"
+            ],
+            [
+              "0x377567",
+              "mov",
+              "rbx, qword ptr [rsp + 0x30]"
+            ],
+            [
+              "0x37756c",
+              "add",
+              "rsp, 0x20"
+            ],
+            [
+              "0x377570",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x377571",
+              "ret",
+              ""
+            ],
+            [
+              "0x377572",
+              "mov",
+              "rbx, qword ptr [rsp + 0x30]"
+            ],
+            [
+              "0x377577",
+              "xor",
+              "al, al"
+            ],
+            [
+              "0x377579",
+              "add",
+              "rsp, 0x20"
+            ],
+            [
+              "0x37757d",
+              "pop",
+              "rdi"
+            ],
+            [
+              "0x37757e",
+              "ret",
+              ""
+            ]
+          ],
+          "branches": [
+            {
+              "site": "0x3774fd",
+              "destination_rva": "0x375e40",
+              "symbol": "?BEE_GetNumEffectSectionsInPath@@YAIAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "site": "0x377507",
+              "destination_rva": "0xf17058",
+              "symbol": ""
+            },
+            {
+              "site": "0x37751a",
+              "destination_rva": "0xf17038",
+              "symbol": ""
+            },
+            {
+              "site": "0x377523",
+              "destination_rva": "0xf17068",
+              "symbol": ""
+            },
+            {
+              "site": "0x377533",
+              "destination_rva": "0xf170a0",
+              "symbol": ""
+            },
+            {
+              "site": "0x377542",
+              "destination_rva": "0xf17038",
+              "symbol": ""
+            },
+            {
+              "site": "0x37754b",
+              "destination_rva": "0xf17068",
+              "symbol": ""
+            },
+            {
+              "site": "0x37755b",
+              "destination_rva": "0xf17098",
+              "symbol": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

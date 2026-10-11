@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-SHAPE-043",
+  "date": "2026-10-12",
+  "title": "FLT effect Canonical UI layout initialization and child schema subclass differences",
+  "status": "pass-static-two-native-binaries",
+  "evidence": "E2-L exact installed AE2025/2026 TDB and FLT machine-code",
+  "results": {
+    "flt_fcseqspec_fill_canonical_layout_noop": true,
+    "tdb_streamgroup_setup_virtual_fill_offset": "0x1c8",
+    "builtin_params_fill_uses_registered_canonical_streams": true,
+    "compound_effect_uses_canonical_streams": true,
+    "nested_canstore_inherited_from_tdb_streamgroup": true,
+    "third_party_can_extend_canonical_layout_proven": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-042-effect-canonical-layout-initialization.md",
+    "experiments/vector-shape/EXP-SHAPE-043-effect-canonical-layout-initialization.md",
+    "datasets/ae-flt-fcseqspec-nested-admission-verified-2025-2026.json"
+  ]
+}

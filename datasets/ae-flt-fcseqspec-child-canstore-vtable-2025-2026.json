@@ -1,0 +1,31 @@
+{
+  "evidence": "exact FLT_FCSeqSpec TDB subobject vtable slot and FF25 IAT thunk resolved to TDB_StreamGroup::CanStore in both builds; no native call",
+  "versions": {
+    "2025": {
+      "tdb_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "flt_sha256": "5ee0aed35dd093397a95bcec10387370d05e691790a817c5927109f3c88e6e9e",
+      "tdb_named_vtable": "0x70548",
+      "tdb_canstore_slot": 56,
+      "tdb_canstore_method_rva": "0x35e10",
+      "flt_fcseqspec_tdb_named_vtable": "0xc7e00",
+      "flt_slot_pointer_file_value": "0x18009fe83",
+      "flt_slot_as_image_relative": "0x9fe83",
+      "flt_import_thunk_opcode": "ff25dff00100",
+      "flt_iat_rva": "0xbef68",
+      "resolved_import": "TDB.dll!?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+    },
+    "2026": {
+      "tdb_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "flt_sha256": "65eb2a26803a76e868d20abc72e96ea45e2949573213d21d78d0f7a36494b940",
+      "tdb_named_vtable": "0x849d8",
+      "tdb_canstore_slot": 56,
+      "tdb_canstore_method_rva": "0x36880",
+      "flt_fcseqspec_tdb_named_vtable": "0xf8370",
+      "flt_slot_pointer_file_value": "0x1800a242f",
+      "flt_slot_as_image_relative": "0xa242f",
+      "flt_import_thunk_opcode": "ff253bbb0400",
+      "flt_iat_rva": "0xedf70",
+      "resolved_import": "TDB.dll!?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+    }
+  }
+}

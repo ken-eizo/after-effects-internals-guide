@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-042",
+  "date": "2026-10-12",
+  "status": "pass-static-two-native-binaries",
+  "evidence": "E2-L pinned AE2025/2026 BEE.dll direct native StreamSpec register-adjustor thunk",
+  "results": {
+    "layer_pointer_offset_bytes": 8,
+    "stream_id_path_inline_offset_bytes": 16,
+    "effect_path_identity_special_case": true,
+    "foreign_independent_owner_proven": false,
+    "native_pen_connected": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-041-streamspec-real-owner-and-effect-gates.md",
+    "experiments/vector-shape/EXP-SHAPE-042-streamspec-owner-path-dispatch.md",
+    "datasets/ae-native-streamspec-owner-identity-verified-2025-2026.json"
+  ]
+}

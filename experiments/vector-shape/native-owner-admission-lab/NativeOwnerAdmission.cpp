@@ -20,7 +20,7 @@ constexpr const char* candidates[]={
  "ADBE Slider Control","CNL Native Independent Group"
 };
 void walk(AEGP_SuiteHandler& s,FILE* out,AEGP_StreamRefH stream,
-          int depth,const char* parent) {
+          int depth,int parentNode,const char* parent) {
  if(depth>kMaxDepth||visited>=kMaxNodes)return;
  const int node=++visited;
  A_char match[AEGP_MAX_STREAM_MATCH_NAME_SIZE]{};
@@ -29,6 +29,7 @@ void walk(AEGP_SuiteHandler& s,FILE* out,AEGP_StreamRefH stream,
  const A_Err ge=s.DynamicStreamSuite2()->AEGP_GetStreamGroupingType(stream,&kind);
  fprintf(out,"stream\t%d\t%d\t%s\t%s\t%d\t%d\n",
    node,depth,parent,ne?"(error)":match,(int)kind,(int)ge);
+ fprintf(out,"parent_link\t%d\t%d\n",node,parentNode);
  if(ge||kind==AEGP_StreamGroupingType_LEAF)return;
  A_long n=0;
  const A_Err ce=s.DynamicStreamSuite2()->AEGP_GetNumStreamsInGroup(stream,&n);
@@ -45,7 +46,7 @@ void walk(AEGP_SuiteHandler& s,FILE* out,AEGP_StreamRefH stream,
   if(e||!child){
    fprintf(out,"child_error\t%d\t%ld\t%d\n",node,(long)i,int(e));
   }else if(depth<kMaxDepth){
-   walk(s,out,child,depth+1,ne?"?":match);
+   walk(s,out,child,depth+1,node,ne?"?":match);
   }
   if(child)s.StreamSuite2()->AEGP_DisposeStream(child);
  }
@@ -69,11 +70,12 @@ A_Err run(){
  if(!out)return A_Err_NONE;
  fprintf(out,"# EXP-SHAPE-039 READ ONLY; never registers or adds streams\n");
  fprintf(out,"layer_object_type\t%d\n",int(ty));
+ fprintf(out,"host_stream_tree_is_readonly\t1\n");
  AEGP_StreamRefH root=nullptr;
  const A_Err e=s.DynamicStreamSuite2()->AEGP_GetNewStreamRefForLayer(plugin,layer,&root);
  fprintf(out,"root_stream_error\t%d\n",int(e));
  visited=0;
- if(!e&&root)walk(s,out,root,0,"(layer)");
+ if(!e&&root)walk(s,out,root,0,0,"(layer)");
  if(root)s.StreamSuite2()->AEGP_DisposeStream(root);
  fprintf(out,"visited_nodes\t%d\nprivate_registry_invoked\t0\nstream_created\t0\n",visited);
  fclose(out);
