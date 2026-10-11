@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-SHAPE-046",
+  "date": "2026-10-12",
+  "status": "pass-cross-version-static",
+  "evidence": "E2-L native BEE/TDB PE RTTI inheritance+instructions AE2025/2026",
+  "results": {
+    "derived_parser": "LayerStyleStreamGroupParser",
+    "created_type": "IndLayerStyleStreamGroup",
+    "native_allocation_sizes": {
+      "2025": "0x2a0",
+      "2026": "0x270"
+    },
+    "native_tdb_scoped_register_calls_per_version": 11,
+    "native_add_to_uilayout_calls_per_version": 2,
+    "xml_parser_acquisition_calls": 1,
+    "explicit_scoped_unregister_all_calls": 1,
+    "third_party_cnl_group_created": false,
+    "private_api_executed": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-045-native-layer-style-parser-real-tdb-group-owner.md",
+    "research/findings/F-VECTOR-046-native-dynamic-layerstyle-registry-xml-lifetime.md",
+    "experiments/vector-shape/EXP-SHAPE-046-derived-parser-native-creation-and-scoped-registration.md",
+    "datasets/ae-native-dynamic-group-lifecycle-crosscheck-2025-2026.json"
+  ]
+}

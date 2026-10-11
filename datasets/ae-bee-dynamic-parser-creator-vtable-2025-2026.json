@@ -1,0 +1,49 @@
+{
+  "evidence": "static exported MSVC parser vtables, no private calls",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "vtable": "??_7DynamicStreamEffectsParser@BEE@ae@@6B@",
+      "factory_slot_index": 22,
+      "base_creator_rva": "0xe3960",
+      "related_parser_vtables": [
+        {
+          "vtable": "??_7DynamicStreamEffectsParser@BEE@ae@@6B@",
+          "rva": "0xeee640",
+          "factory_slot": 22,
+          "handler_rva": "0xe3960",
+          "handler_symbol": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z",
+          "same_base_null_creator": true
+        },
+        {
+          "vtable": "??_7EffectsParser@BEE@ae@@6B@",
+          "rva": "0xeee560",
+          "note": "non-comparable base/sibling vtable, slot omitted"
+        }
+      ],
+      "warning": "vtable survey limited to exported EffectsParser vtables, not every hidden derived type"
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "vtable": "??_7DynamicStreamEffectsParser@BEE@ae@@6B@",
+      "factory_slot_index": 22,
+      "base_creator_rva": "0xe9d20",
+      "related_parser_vtables": [
+        {
+          "vtable": "??_7DynamicStreamEffectsParser@BEE@ae@@6B@",
+          "rva": "0xf4bdf0",
+          "factory_slot": 22,
+          "handler_rva": "0xe9d20",
+          "handler_symbol": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z",
+          "same_base_null_creator": true
+        },
+        {
+          "vtable": "??_7EffectsParser@BEE@ae@@6B@",
+          "rva": "0xf4bd10",
+          "note": "non-comparable base/sibling vtable, slot omitted"
+        }
+      ],
+      "warning": "vtable survey limited to exported EffectsParser vtables, not every hidden derived type"
+    }
+  }
+}

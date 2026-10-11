@@ -1,0 +1,26 @@
+{
+  "classification": "AE2026 user host-tested PUBLIC READ-ONLY API; bounded scan; no private calls",
+  "data_minimization": "host/project/effect names not included; only standard Adobe type names in assertions",
+  "layer_object_type": 4,
+  "root_stream_error": 0,
+  "visited_nodes": 186,
+  "tested_groups": 33,
+  "admission_queries": 198,
+  "max_observed_depth": 4,
+  "positive_admissions": 5,
+  "cnl_matchname_positive_admissions": 0,
+  "cnl_matchname_negative_admissions": 33,
+  "positive_controls": {
+    "root_vectors_fill": true,
+    "root_vectors_trim": true,
+    "effect_parade_slider": true
+  },
+  "private_registry_invoked": false,
+  "host_stream_created": false,
+  "limitations": [
+    "per-parent AddStream admission only; no instance creation attempted",
+    "unregistered MatchName may fail even where a registered instance could differ",
+    "stream traversal bounded: max depth 4, max nodes 240",
+    "selected Shape Layer only; does not establish arbitrary AV effect behavior"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-SHAPE-045",
+  "date": "2026-10-12",
+  "status": "passed-AE2026-host-manual-readonly",
+  "evidence": "E2-X public AEGP suites only",
+  "results": {
+    "inspected_nodes": 186,
+    "parent_groups": 33,
+    "admission_queries": 198,
+    "standard_positive_admissions": 5,
+    "cnl_candidate_negative_groups": 33,
+    "private_registry_invoked": false,
+    "new_stream_created": false,
+    "privacy": "full TSV not committed; aggregate only"
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-044-ae2026-readonly-per-parent-native-contents-admission.md",
+    "experiments/vector-shape/EXP-SHAPE-045-ae2026-real-readonly-owner-admission.md",
+    "datasets/ae2026-owner-admission-host-aggregate-20261012.json"
+  ]
+}

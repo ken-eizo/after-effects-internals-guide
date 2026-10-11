@@ -1,0 +1,51 @@
+{
+  "classification": "E2-L heuristic verified MSVC RTTI references; no host invocation; partial inheritance handling",
+  "years": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "base_TypeDescriptor_rva": "0x1549bc8",
+      "candidate_base_descriptors": 1,
+      "validated_rtti_vtables": [
+        {
+          "type": ".?AVDynamicStreamEffectsParser@BEE@ae@@",
+          "vtable_rva": "0xeee640",
+          "complete_object_locator": "0x10c8228",
+          "rtti_offset": 0,
+          "virtual_slot22_target_rva": "0xe3960",
+          "base_array_candidate_rva": "0x10c8268"
+        },
+        {
+          "type": ".?AVLayerStyleStreamGroupParser@@",
+          "vtable_rva": "0xf4cbb8",
+          "complete_object_locator": "0x10dd7c8",
+          "rtti_offset": 0,
+          "virtual_slot22_target_rva": "0x2f6300",
+          "base_array_candidate_rva": "0x10dd808"
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "base_TypeDescriptor_rva": "0x15d6638",
+      "candidate_base_descriptors": 1,
+      "validated_rtti_vtables": [
+        {
+          "type": ".?AVDynamicStreamEffectsParser@BEE@ae@@",
+          "vtable_rva": "0xf4bdf0",
+          "complete_object_locator": "0x112ca38",
+          "rtti_offset": 0,
+          "virtual_slot22_target_rva": "0xe9d20",
+          "base_array_candidate_rva": "0x112ca78"
+        },
+        {
+          "type": ".?AVLayerStyleStreamGroupParser@@",
+          "vtable_rva": "0xfa9f98",
+          "complete_object_locator": "0x1142cb8",
+          "rtti_offset": 0,
+          "virtual_slot22_target_rva": "0x2fef50",
+          "base_array_candidate_rva": "0x1142cf8"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "evidence": "E2-L pinned x64 BEE native code/RTTI exports, no host execution",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "vtable_rva": "0xeee640",
+      "slots": {
+        "allow": {
+          "rva": "0xe3770",
+          "symbol": "?AllowMultipleEffects@DynamicStreamEffectsParser@BEE@ae@@MEBA_NXZ"
+        },
+        "hidden": {
+          "rva": "0xe6810",
+          "symbol": ""
+        },
+        "create": {
+          "rva": "0xe3960",
+          "symbol": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z"
+        }
+      },
+      "EndEffect": "0x2f6800",
+      "gate_call": "0x2f6c01",
+      "creator_call": "0x2f6c21",
+      "canonical_instance_register_call": "0x2f6c2d",
+      "register_import": "TDB.dll!?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z",
+      "base_creator_returns_null": true,
+      "in_host_custom_group_created": false
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "vtable_rva": "0xf4bdf0",
+      "slots": {
+        "allow": {
+          "rva": "0xe9ae0",
+          "symbol": "?AllowMultipleEffects@DynamicStreamEffectsParser@BEE@ae@@MEBA_NXZ"
+        },
+        "hidden": {
+          "rva": "0xec900",
+          "symbol": ""
+        },
+        "create": {
+          "rva": "0xe9d20",
+          "symbol": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z"
+        }
+      },
+      "EndEffect": "0x2ff440",
+      "gate_call": "0x2ff81b",
+      "creator_call": "0x2ff83b",
+      "canonical_instance_register_call": "0x2ff847",
+      "register_import": "TDB.dll!?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z",
+      "base_creator_returns_null": true,
+      "in_host_custom_group_created": false
+    }
+  }
+}

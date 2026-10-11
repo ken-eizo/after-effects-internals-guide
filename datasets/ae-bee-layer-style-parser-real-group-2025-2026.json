@@ -1,0 +1,33 @@
+{
+  "evidence": "E2-L two-version exact code+vtable; not third-party extensibility",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "override_rva": "0x2f6300",
+      "object_allocation_size": "0x2a0",
+      "concrete_type": "??_7IndLayerStyleStreamGroup@BEE_LayerStyleStream@@6B@",
+      "concrete_vtable_rva": "0xee88e0",
+      "native_NamedStreamGroup_ctor": true,
+      "string_member_offsets": [
+        "0x260",
+        "0x280"
+      ],
+      "returns_concrete_group": true,
+      "checked_TDB_serialization_undo_pen_renderer": false
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "override_rva": "0x2fef50",
+      "object_allocation_size": "0x270",
+      "concrete_type": "??_7IndLayerStyleStreamGroup@BEE_LayerStyleStream@@6B@",
+      "concrete_vtable_rva": "0xf41eb8",
+      "native_NamedStreamGroup_ctor": true,
+      "string_member_offsets": [
+        "0x230",
+        "0x250"
+      ],
+      "returns_concrete_group": true,
+      "checked_TDB_serialization_undo_pen_renderer": false
+    }
+  }
+}

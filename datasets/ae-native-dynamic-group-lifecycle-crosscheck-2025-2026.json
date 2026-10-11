@@ -1,0 +1,43 @@
+{
+  "classification": "E2-L cross-version BEE/TDB native compiled code, E2-X bounded public owner scan",
+  "host_2026_public_readonly": {
+    "visited_nodes": 186,
+    "parent_groups": 33,
+    "CNL_rejected": 33
+  },
+  "versions": {
+    "2025": {
+      "two_native_rtti_descendants": true,
+      "genuine_derived_group_creator": "0x2f6300",
+      "created_native_type": "IndLayerStyleStreamGroup",
+      "object_size": "0x2a0",
+      "native_scoped_register_calls": 11,
+      "native_add_child_layout_calls": 2,
+      "native_xml_parser_acquisition_calls": 1,
+      "explicit_scoped_unregister_all_calls": 1,
+      "additional_direct_factory_unregister_calls": 1,
+      "scoped_unregister_all_imports_factory_unregister": true,
+      "third_party_independent_contents_created": false,
+      "native_pen_or_vector_renderer_integrated": false
+    },
+    "2026": {
+      "two_native_rtti_descendants": true,
+      "genuine_derived_group_creator": "0x2fef50",
+      "created_native_type": "IndLayerStyleStreamGroup",
+      "object_size": "0x270",
+      "native_scoped_register_calls": 11,
+      "native_add_child_layout_calls": 2,
+      "native_xml_parser_acquisition_calls": 1,
+      "explicit_scoped_unregister_all_calls": 1,
+      "additional_direct_factory_unregister_calls": 0,
+      "scoped_unregister_all_imports_factory_unregister": true,
+      "third_party_independent_contents_created": false,
+      "native_pen_or_vector_renderer_integrated": false
+    }
+  },
+  "limitations": [
+    "host 2026 scan on existing Shape Layer, not CNL plugin",
+    "no private type registration or parser execution",
+    "CNL renderer and editor gates remain open"
+  ]
+}

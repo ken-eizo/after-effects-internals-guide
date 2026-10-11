@@ -1,0 +1,57 @@
+{
+  "evidence": "E2-L candidate LEA RIP xrefs, no runtime code",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "derived_parser_vtable_rva": "0xf4cbb8",
+      "executable_rip_relative_LEA_refs": [
+        {
+          "code_rva": "0x2f363b",
+          "opcodes": "488d057695c500",
+          "rtti_derived_vtable_rva": "0xf4cbb8",
+          "caller_pdata": [
+            "0x2f35d0",
+            "0x2f365a"
+          ],
+          "caller_exact_export": ""
+        },
+        {
+          "code_rva": "0x2fbefb",
+          "opcodes": "488d05b60cc500",
+          "rtti_derived_vtable_rva": "0xf4cbb8",
+          "caller_pdata": [
+            "0x2fbb60",
+            "0x2fc0c0"
+          ],
+          "caller_exact_export": ""
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "derived_parser_vtable_rva": "0xfa9f98",
+      "executable_rip_relative_LEA_refs": [
+        {
+          "code_rva": "0x2fc3da",
+          "opcodes": "488d05b7dbca00",
+          "rtti_derived_vtable_rva": "0xfa9f98",
+          "caller_pdata": [
+            "0x2fc370",
+            "0x2fc401"
+          ],
+          "caller_exact_export": ""
+        },
+        {
+          "code_rva": "0x3049d8",
+          "opcodes": "488d05b955ca00",
+          "rtti_derived_vtable_rva": "0xfa9f98",
+          "caller_pdata": [
+            "0x304640",
+            "0x304bad"
+          ],
+          "caller_exact_export": ""
+        }
+      ]
+    }
+  }
+}
