@@ -4148,6 +4148,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-the-indexed-contents-and-maskvector-editor-boundary-is-shared-importer-bootstrap-is-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — The indexed Contents and mask/vector editor boundary is shared; importer bootstrap is not
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-10-12-tested-procedural-pica-vector-output-and-user-facing-product-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Tested procedural PICA vector output and user-facing product prototype
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12419,6 +12441,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-the-indexed-contents-and-maskvector-editor-boundary-is-shared-importer-bootstrap-is-not" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — The indexed Contents and mask/vector editor boundary is shared; importer bootstrap is not
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2026-10-12-tested-procedural-pica-vector-output-and-user-facing-product-prototype" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Tested procedural PICA vector output and user-facing product prototype
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12488,6 +12532,12 @@
 <p>Reproducible local inventory: <code>datasets/ae-2025-vector-shape-symbols.csv</code>; core finding: <code>F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code>.</p>
 <h2 id="native-shape-extension-research-2026-10-11">Native shape extension research (2026-10-11)<a class="headerlink" href="#native-shape-extension-research-2026-10-11" title="Permanent link">&para;</a></h2>
 <p><a href="../native-extensibility-boundaries/">Native Shape Extensibility: Authoring, Evaluation, Tools and Rendering</a> and <a href="../historical-native-extension-forensics/">Historical Native Shape Forensics</a> investigate a stricter goal than editing existing paths: independently registering a mutable native Contents hierarchy, participating in native Pen/Selection tools, and supplying geometry to AE's production vector renderer without creating a Shape Layer. This is presently a <strong>research objective</strong>, not an achieved host capability. See <code>research/hypotheses/H-SHAPE-001-native-stream-registration.md</code>, <code>H-SHAPE-002-native-vector-output.md</code>, and <code>experiments/observatory/manifests/EXP-SHAPE-001.json</code> / <code>EXP-SHAPE-003.json</code>.</p>
+<h2 id="2026-10-12-the-indexed-contents-and-maskvector-editor-boundary-is-shared-importer-bootstrap-is-not">2026-10-12 — The indexed Contents and mask/vector editor boundary is shared; importer bootstrap is not<a class="headerlink" href="#2026-10-12-the-indexed-contents-and-maskvector-editor-boundary-is-shared-importer-bootstrap-is-not" title="Permanent link">&para;</a></h2>
+<p>Exact executable-instruction audits across AE2025/2026 show BEE_CmdAddToIndexedStreamGroup is <strong>a generic BEE_Layer stream-child/Undo command</strong>, with 13 real callers in mask, layer-set, material and other native subsystems; the specialized Vector property command is distinct. The Shape stream-path identity predicates compare end-of-path MatchNames for <strong>both Masks and Vector Shapes</strong>. Native mask vertex and feather selection routines actually call these shared predicates. This is a host-internal path/selection abstraction broader than a concrete VectorLayer class. See <a href="../research-to-product-frontier/">Research-to-Product Vector Frontier</a> and Finding F-VECTOR-021.</p>
+<p>However, the AE2026 SVG Paste command callback now proves it calls TDB_StreamGroup::FindStream on <strong>ROOT_VECTORS_GROUP</strong> and exits the conversion branch if that stream is absent; a generic BEE_Layer<em> argument does not make the importer a way to install a missing native Contents root on an arbitrary effect. See F-VECTOR-022 and EXP-SHAPE-020. All native BEE/TDB work is </em><em>static binary research</em>*, not user-installed runtime private calls.</p>
+<h2 id="2026-10-12-tested-procedural-pica-vector-output-and-user-facing-product-prototype">2026-10-12 — Tested procedural PICA vector output and user-facing product prototype<a class="headerlink" href="#2026-10-12-tested-procedural-pica-vector-output-and-user-facing-product-prototype" title="Permanent link">&para;</a></h2>
+<p>The user installed and re-tested the corrected native VectorBridge Consumer AEX in AE2026; the screenshot showed PICA suite: connected and four native cubic segments, with installed hash identical to the corrected binary. Independently, a new compiled C++ consumer VectorBridgeToSVG dynamically loads the actual AEGP, receives the four cubic segments at rational time, applies path-level affine instancing and writes an <strong>SVG with 28 distinct path objects / 112 cubic Beziers</strong>. A two-timepoint validation passed and confirmed zero raster image nodes. It is a practical code-to-vector artifact, though native Shape import fidelity is not yet tested. See <a href="../research-to-product-frontier/">Research-to-Product Vector Frontier</a>, Findings F-VECTOR-020/023, and EXP-SHAPE-021.</p>
+<p>The high-risk flagship goal is unchanged: ordinary CompNodeAE Effect SDK plug-in owns native Timeline Contents, native Pen/Selection, and a BEE_VectorArt renderer input <strong>without creating a separate Shape Layer</strong>. The PICA geometry bus and generated SVG are real intermediate product capabilities, <strong>not</strong> proof of this native parity.</p>
 
 
 
@@ -12508,7 +12558,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 12:31:46 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 16:01:49 UTC">October 11, 2026</span>
   </span>
 
     
