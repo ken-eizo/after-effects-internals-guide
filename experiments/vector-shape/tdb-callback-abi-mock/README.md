@@ -10,3 +10,12 @@ Build:
     ctest --test-dir D:\Developer\ShapeLayerAE\build\tdb_callback_abi_mock -C Release --output-on-failure
 
 Important: real native TDB factory registration may retain callbacks even after project close and cannot be simulated by this mock. Do NOT deploy in AE. See F-VECTOR-030/031 and EXP-SHAPE-027/029.
+
+
+## Exact-native type-signature audit (2026-10-12)
+
+A concrete review found that the original fifth native Creator callback argument was unsigned rather than the correct bool. The offline mock was corrected to (const MatchName&, factory pointer, bool, unsigned int, bool).
+
+NativeABISignatureProbe.cpp now compiles a true MSVC COFF C++ decorated symbol containing the full native TDB class names and std::function Creator template parameter types. verify_symbol_abi.py compares the exact mangled parameter suffix against real RegisterFactoryFunc exports from BOTH the installed AE2025 and AE2026 TDB.dll versions. Both match.
+
+This verifies decorated TEMPLATE TYPES only. It cannot prove lifetime, allocator, C++ object invariants, late host registration or eventual AE native Contents / Pen / VectorArt output.

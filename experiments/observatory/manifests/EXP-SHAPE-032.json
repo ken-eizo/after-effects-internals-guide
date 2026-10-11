@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-SHAPE-032",
+  "title": "Shared AEGP empty-project read-only gate and two rebuilt host AEX binaries",
+  "status": "pass-compiled-no-new-live-AE-test",
+  "date": "2026-10-12",
+  "evidence": "E2-B Windows MSVC x64 PiPL AEX compiled, no host execution of new binaries",
+  "results": {
+    "safety_project_guard_shared_source": true,
+    "sdk_only_guard": true,
+    "zero_project_nonroot_items_required": true,
+    "non_dirty_project_required": true,
+    "empty_render_queue_required": true,
+    "unknown_state_fails_closed": true,
+    "new_safe_AEX_v2_built": true,
+    "new_unsafe_AEX_v2_built": true,
+    "exact_version_pin_and_explicit_two_factor_ack_retained": true,
+    "private_registration_invoked": false,
+    "safe_v1_previous_AE2026_live_preflight_pass": true,
+    "safe_v2_host_test_pass": false,
+    "private_creator_host_test_pass": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-034-exact-native-tdb-callback-and-project-isolation-guard.md",
+    "experiments/vector-shape/EXP-SHAPE-032-shared-public-project-safety-gate.md",
+    "experiments/vector-shape/host_abi_shared/NativeProjectSafety.h",
+    "datasets/ae-native-vector-host-probe-v2-build-receipt-20261012.json",
+    "datasets/ae-private-tdb-disposable-v2-build-receipt-20261012.json"
+  ]
+}

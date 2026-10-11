@@ -1,0 +1,64 @@
+{
+  "id": "EXP-SHAPE-028-LIVE-001",
+  "observation_date": "2026-10-12T04:12:19+09:00",
+  "evidence": "E2-X user-run AE host preflight, actual report independently inspected from %TEMP%",
+  "runtime": "After Effects 2026",
+  "loaded_tdb_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+  "source_report": "%TEMP%/CNL_NativeVector_HostPreflight.tsv",
+  "verified_facts": {
+    "tdb_module_loaded": true,
+    "loaded_binary_pinned": true,
+    "private_factory_getter_export": true,
+    "private_creator_ParamPathStream_export": true,
+    "private_factory_registrar_export": true,
+    "private_factory_unregister_export": true,
+    "private_canonical_instance_export": true,
+    "getter_exact_opcode_pattern": true,
+    "factory_pointer_nonnull": true,
+    "CNL_document_created": true,
+    "native_double_precision_cubic_generation_status": 0,
+    "generated_path_id": 3,
+    "native_cubic_segments": 4,
+    "first_cubic_P0": [
+      275,
+      100
+    ],
+    "first_cubic_P1": [
+      275,
+      124.8528137423857
+    ],
+    "first_cubic_P2": [
+      241.4213562373095,
+      145
+    ],
+    "first_cubic_P3": [
+      200,
+      145
+    ],
+    "CNL_document_archive_bytes": 373,
+    "private_registration_invoked": false,
+    "new_host_native_stream_created": false,
+    "native_Pen_tool_linked": false,
+    "BEE_VectorArt_renderer_linked": false
+  },
+  "classification_notes": [
+    "Read-only private Getter invoked in real AE host; not mutating factory",
+    "Native param-path creator and registrar were queried for export presence, not invoked",
+    "Independent CNL-generated cubic vector exists in process but is NOT a host-owned AE path/Contents"
+  ],
+  "decision": {
+    "safe_AEX_preflight": "PASS",
+    "private_disposable_AEX": "HOLD; NOT RECOMMENDED for live test yet",
+    "why": [
+      "No-active-layer does not prove empty/unimportant project",
+      "return value of unregister does not prove no lingering canonical/callback references",
+      "full native C++ parameter class constructor and project shutdown lifecycle not validated"
+    ],
+    "next": [
+      "Strengthen disposable project state guard",
+      "Add pre/post duplicate and canonical queries without inducing extra mutation",
+      "Review callback ABI, memory ownership, init and release under exact binary version",
+      "Only test in isolated disposable AE after explicit user opt-in"
+    ]
+  }
+}

@@ -12,6 +12,7 @@
 #include "entry.h"
 #include "AE_GeneralPlug.h"
 #include "AEGP_SuiteHandler.h"
+#include "../host_abi_shared/NativeProjectSafety.h"
 #include <Windows.h>
 #include <wincrypt.h>
 #include <cstdint>
@@ -27,17 +28,27 @@ namespace {
 SPBasicSuite* g_basic=nullptr;
 AEGP_PluginID g_id=0;
 AEGP_Command g_command=0;
+static volatile LONG g_creator_calls=0;
 static_assert(sizeof(void*)==8,"Only Windows x64 MSVC permitted");
 
-struct alignas(16) NativeMatchNameOpaque {unsigned char guid[16];};
-static_assert(sizeof(NativeMatchNameOpaque)==16,"TDB MatchName native GUID payload");
-using CreatorSignature=void*(const NativeMatchNameOpaque&,void*,bool,unsigned,unsigned);
+// Forward-declared Adobe native classes. We never instantiate StreamBase or
+// StreamFactory; their exact class names matter for std::function's MSVC ABI.
+class TDB_StreamBase;
+class TDB_StreamFactory;
+// The studied MatchName ctor writes a 16-byte native GUID at offset 0.
+// ONLY permitted for exact, pinned binary versions; no extra fields observed.
+class TDB_MatchName final {
+public:
+ alignas(16) unsigned char guid[16];
+};
+static_assert(sizeof(TDB_MatchName)==16,"Unverified TDB MatchName layout");
+using CreatorSignature=TDB_StreamBase*(const TDB_MatchName&,TDB_StreamFactory*,bool,unsigned,bool);
 using CreatorObject=std::function<CreatorSignature>;
-using Getter=void* (__cdecl*)();
-using NativeNameConstructor=void* (__cdecl*)(NativeMatchNameOpaque*,const char*,bool);
-using NativeParamPathCreator=void* (__cdecl*)(const NativeMatchNameOpaque&,void*,bool,unsigned,unsigned);
-using NativeRegister=bool (__cdecl*)(void*,const NativeMatchNameOpaque&,CreatorObject,bool);
-using NativeUnregister=bool (__cdecl*)(void*,const NativeMatchNameOpaque&);
+using Getter=TDB_StreamFactory* (__cdecl*)();
+using NativeNameConstructor=TDB_MatchName* (__cdecl*)(TDB_MatchName*,const char*,bool);
+using NativeParamPathCreator=TDB_StreamBase* (__cdecl*)(const TDB_MatchName&,TDB_StreamFactory*,bool,unsigned,bool);
+using NativeRegister=bool (__cdecl*)(TDB_StreamFactory*,const TDB_MatchName&,CreatorObject,bool);
+using NativeUnregister=bool (__cdecl*)(TDB_StreamFactory*,const TDB_MatchName&);
 
 std::string hashModule(HMODULE module){
  if(!module)return {};
@@ -85,6 +96,18 @@ void report(const char* message) {
  AEGP_SuiteHandler s(g_basic);
  s.UtilitySuite3()->AEGP_ReportInfo(g_id,message);
 }
+// Fail closed unless the public host API sees a genuinely empty,
+// non-dirty project. No selected layer alone is insufficient: an AE project
+// can contain many unselected compositions, footage and folders.
+bool verifyDisposableProject(AEGP_SuiteHandler& s,FILE* log){
+ const auto status=CNL_CheckDisposableProject(s);
+ writeLog(log,status.reason,status.empty?1:0);
+ writeLog(log,"project_count",static_cast<int>(status.projects));
+ writeLog(log,"non_root_project_items",static_cast<int>(status.non_root_items));
+ writeLog(log,"render_queue_items",static_cast<int>(status.render_queue_items));
+ writeLog(log,"project_dirty",status.dirty?1:0);
+ return status.empty;
+}
 bool ackAndConsume(const std::string& tempDir,FILE* log){
  char value[256]{};
  const DWORD len=GetEnvironmentVariableA("CNL_TDB_DISPOSABLE_HOST_TEST",value,(DWORD)sizeof(value));
@@ -122,7 +145,14 @@ A_Err Run(){
   "# Even an automatic unregister may not restore all AE internal state.\n"
   "kind\tlabel\tvalue\n");
  writeLog(log,"manual_command_started",1);
- // Fail closed: no active selected layer, and explicit 2-factor acknowledgement.
+ // A selected-layer test cannot establish project emptiness.
+ // Require a completely empty, non-dirty project and empty render queue.
+ if(!verifyDisposableProject(s,log)){
+  fclose(log);
+  report("CNL Private TDB: REFUSED. Only a new, EMPTY disposable project is permitted.");
+  return A_Err_NONE;
+ }
+ // Additional selected-layer check. Explicit acknowledgements follow below.
  AEGP_LayerH current=nullptr;
  A_Err layerResult=s.LayerSuite5()->AEGP_GetActiveLayer(&current);
  if(layerResult==A_Err_NONE&&current){
@@ -168,22 +198,27 @@ A_Err Run(){
  }
  // No standard Shape Layer or Mask is created here. This registration is
  // strictly a new MatchName to native class Creator factory-acceptance test.
- void* factory=reinterpret_cast<Getter>(get)();
+ TDB_StreamFactory* factory=reinterpret_cast<Getter>(get)();
  if(!factory){
   writeLog(log,"factory_pointer_null",1);
   fclose(log);report("CNL Private TDB: REFUSED. Factory pointer null.");return A_Err_NONE;
  }
- NativeMatchNameOpaque name{};
+ TDB_MatchName name{};
  char candidate[140]{};
  std::snprintf(candidate,sizeof(candidate),
-  "CNL Experimental Native ParamPath Registration %lu",
-  (unsigned long)GetCurrentProcessId());
+  "CNL Experimental Native ParamPath Registration %lu_%llu",
+  (unsigned long)GetCurrentProcessId(),
+  (unsigned long long)GetTickCount64());
  writeLog(log,"before_private_MatchName_constructor",1);
  reinterpret_cast<NativeNameConstructor>(ctor)(&name,candidate,false);
  writeLog(log,"private_MatchName_constructor_returned",1);
  const auto creator=reinterpret_cast<NativeParamPathCreator>(create);
- CreatorObject callable=[creator](const NativeMatchNameOpaque& m,void* f,
-                                      bool a,unsigned b,unsigned c)->void*{
+ // Local telemetry only: the factory's eager invocation is separately
+ // observed from its return value; neither proves safe native ownership.
+ InterlockedExchange(&g_creator_calls,0);
+ CreatorObject callable=[creator](const TDB_MatchName& m,TDB_StreamFactory* f,
+                                      bool a,unsigned b,bool c)->TDB_StreamBase*{
+  InterlockedIncrement(&g_creator_calls);
   // Correct native creation and allocator remain owned by Adobe.
   return creator(m,f,a,b,c);
  };
@@ -192,6 +227,7 @@ A_Err Run(){
  const bool installed=reinterpret_cast<NativeRegister>(reg)(
   factory,name,callable,false);
  writeLog(log,"register_result",installed?1:0);
+ writeLog(log,"creator_invocations",static_cast<int>(g_creator_calls));
  bool removed=false;
  if(installed){
   writeLog(log,"before_private_unregister_factory_func",1);

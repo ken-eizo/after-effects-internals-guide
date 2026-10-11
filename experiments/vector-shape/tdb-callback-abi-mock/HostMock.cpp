@@ -30,7 +30,7 @@ MOCK_API bool MockRegister(const MatchNameLike& name,NativeCreatorLike creator,b
  std::lock_guard<std::mutex> g(lock);
  if(!creator||entries.count(key(name)))return false;
  // This mimics observed synchronous canonical stream creation.
- auto stream=std::unique_ptr<StreamLike>(creator(name,nullptr,true,77,88));
+ auto stream=std::unique_ptr<StreamLike>(creator(name,nullptr,true,77,false));
  if(!stream)return false;
  if(stream->IsLeaf()&&!stream->GetAsLeaf())return false;
  if(layout)stream->SetupCanonicalLayout(),++layouts;

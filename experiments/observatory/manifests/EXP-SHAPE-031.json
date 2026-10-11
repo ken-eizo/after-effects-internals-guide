@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EXP-SHAPE-031",
+  "title": "C++ type-correct TDB registration callback and exact native decorated-signature comparison",
+  "status": "pass-compiled-symbol-matched-no-host-mutation",
+  "date": "2026-10-12",
+  "evidence": "E2-L native 2025/2026 DLL exports + E2-B independent compiled MSVC COFF symbol",
+  "results": {
+    "old_callback_wrong_fifth_argument_unsigned": true,
+    "correct_fifth_argument_bool": true,
+    "native_class_return_argument_types_used": true,
+    "AE2025_export_mangled_suffix_match": true,
+    "AE2026_export_mangled_suffix_match": true,
+    "offline_inter_module_std_function_mock_pass": true,
+    "Adobe_private_type_registration_invoked": false,
+    "native_TDB_type_created": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-034-exact-native-tdb-callback-and-project-isolation-guard.md",
+    "experiments/vector-shape/EXP-SHAPE-031-correct-native-tdb-creator-msvc-type.md",
+    "experiments/vector-shape/tdb-callback-abi-mock/NativeABISignatureProbe.cpp",
+    "experiments/vector-shape/tdb-callback-abi-mock/verify_symbol_abi.py",
+    "datasets/ae-tdb-exact-msvc-callback-abi-receipt-20261012.json"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "experiment": "EXP-SHAPE-031",
+  "evidence": "E2-B binary symbol comparison with exact Adobe TDB 2026 PE export; not runtime registry acceptance",
+  "source_object": "D:\\Developer\\ShapeLayerAE\\build\\tdb_callback_abi_mock\\CNLABISignatureProbe.dir\\Release\\NativeABISignatureProbe.obj",
+  "object_sha256": "d2b86306456d6414d377fb1087452fcaf825b18260130b19c7404351817d2c64",
+  "cpp_compiled_mangled_signature": "?CNL_ABI_SignatureComparator@@YA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+  "native_adobe_register_factory_mangled_signature_by_version": {
+    "2025": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+    "2026": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+  },
+  "function_parameter_mangled_suffix_exact_match": true,
+  "observed_argument_types": [
+    "const TDB_MatchName&",
+    "TDB_StreamFactory*",
+    "bool",
+    "unsigned int",
+    "bool"
+  ],
+  "prior_last_parameter_unsigned_int_bug_fixed": true,
+  "unsafe_AEX_rebuilt_with_exact_typed_std_function": true,
+  "private_registration_called": false,
+  "disposable_gate_in_source": true,
+  "notes": [
+    "C++ function-object mangling matches native export exactly but does not establish host class layout/allocator/lifetime compatibility",
+    "AEX private API calls must still not be attempted in a production host"
+  ]
+}

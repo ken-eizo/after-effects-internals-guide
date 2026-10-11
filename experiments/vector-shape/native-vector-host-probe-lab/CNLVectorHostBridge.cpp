@@ -7,6 +7,7 @@
 #include "entry.h"
 #include "AE_GeneralPlug.h"
 #include "AEGP_SuiteHandler.h"
+#include "../host_abi_shared/NativeProjectSafety.h"
 #include "CNLNativeVectorCore.h"
 #include <Windows.h>
 #include <wincrypt.h>
@@ -115,6 +116,15 @@ A_Err RunPreflight(){
  std::fprintf(output,"private_canonical_instance_export\t%d\n",obs.canonical);
  std::fprintf(output,"getter_exact_opcode_pattern\t%d\n",obs.getter_pattern);
  std::fprintf(output,"getter_factory_pointer_nonnull\t%d\n",obs.factory_nonnull);
+ // Public AEGP suites only: reflect the SAME empty-project gate as the
+ // dangerous probe, without ever executing private registration.
+ const auto projectGate=CNL_CheckDisposableProject(suites);
+ std::fprintf(output,"disposable_project_gate_pass\t%d\n",projectGate.empty?1:0);
+ std::fprintf(output,"disposable_project_gate_reason\t%s\n",projectGate.reason);
+ std::fprintf(output,"disposable_project_count\t%ld\n",(long)projectGate.projects);
+ std::fprintf(output,"disposable_non_root_items\t%ld\n",(long)projectGate.non_root_items);
+ std::fprintf(output,"disposable_render_queue_items\t%ld\n",(long)projectGate.render_queue_items);
+ std::fprintf(output,"disposable_project_is_dirty\t%d\n",projectGate.dirty?1:0);
  std::fprintf(output,"private_registry_registration_invoked\t0\n");
  std::fprintf(output,"new_native_host_stream_created\t0\n");
  std::fprintf(output,"AE_native_Pen_tool_linked\t0\n");
@@ -157,9 +167,11 @@ A_Err RunPreflight(){
  char msg[510]{};
  std::snprintf(msg,sizeof(msg),
   "CNL Native Vector Host Preflight: Bezier=%s, pinned TDB=%d, "
-  "private getter=%d, Adobe native type NOT registered. "
+  "factory getter=%d, empty-project gate=%s. "
+  "Adobe native type NOT registered. "
   "Report: TEMP\\CNL_NativeVector_HostPreflight.tsv",
-  status==CNL_OK?"YES":"FAIL",obs.pinned,obs.factory_nonnull);
+  status==CNL_OK?"YES":"FAIL",obs.pinned,obs.factory_nonnull,
+  projectGate.empty?"PASS":"BLOCKED");
  suites.UtilitySuite3()->AEGP_ReportInfo(g_plugin,msg);
  return A_Err_NONE;
 }

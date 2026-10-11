@@ -111,3 +111,10 @@ Two source-only AEIG labs now build AEGP binaries at the user's local ShapeLayer
 This separation protects ordinary iteration: only the first AEX should be used for initial AE validation. A nominally successful private TDB registration would prove factory acceptance but still require a new independent AE Contents owner, selection/Pen handler, BEE evaluator and native RG output. The huge product vision is wholly new code-defined, AE editable/animatable host-native vector types and operators; that vision is **not yet implemented**.
 
 For the source and objective evidence see F-VECTOR-030..033, EXP-SHAPE-027..030. Do not replace this difficult native-host contract with regular Masks, Shape Layers, Drawbot overlays or a PF_World CPU/GPU raster effect.
+
+
+## Compile-time exact-TDB ABI evidence and isolated test protection (2026-10-12)
+
+The standard Shape/Mask-free independent CNL vector core is now linked into a real compiled AEGP. An exact ABI code review caught an experimental native Creator std::function mismatch (fifth unsigned int was actually bool). A native-class-typed MSVC COFF symbol now matches the Adobe private Registrar callback template signature byte-for-byte for AE2025 and AE2026. This materially improves the registration experiment's rigor but says nothing yet about safely adding AE native Contents.
+
+The read-only AEX v2 reports a shared public-SDK empty-project predicate; the gated private AEX uses the same predicate before any private calls. Neither revised binary has undergone an in-host AE UI test, and the dangerous AEX has never registered any host type. Full real-world safety cannot be guaranteed with private APIs. The product target remains independently owned, persistent native vector Contents with native Pen and BEE VectorArt output, all NOT yet achieved. See F-VECTOR-034, EXP-SHAPE-031/032.

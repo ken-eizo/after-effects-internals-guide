@@ -1,19 +1,29 @@
 {
   "experiment_id": "EXP-SHAPE-028",
-  "title": "Compile read-only AEGP containing independently owned CNL vector core",
-  "status": "pass-compiled-not-host-tested",
-  "evidence": "E2-B MSVC 2022 x64 Release AEX with PiPL, PE verified",
+  "title": "Compiled independent CNL vector core in AEGP; safe v1 in-host AE2026 preflight passed; rebuilt v2 gate still untested",
+  "date": "2026-10-12",
+  "status": "pass-live-v1-readonly; v2 compiled-awaits-user-test",
+  "evidence": "E2-B compiled AEX and E2-X user-executed v1 read-only native factory/getter + CNL cubic",
   "observations": {
-    "AEX_compiled": true,
-    "CNL_true_cubics_inside_AEGP": true,
-    "AE_native_type_registered": false,
-    "AE_installed_or_GUI_tested": false,
-    "private_mutating_API_called": false
+    "safe_v1_actual_host_in_AE2026": true,
+    "native_core_generates_real_double_bezier_in_host": true,
+    "actual_cubic_segments": 4,
+    "CNL_document_archive_bytes": 373,
+    "loaded_native_TDB_2026_pinned": true,
+    "private_factory_getter_nonnull": true,
+    "private_register_export_present": true,
+    "private_unregister_export_present": true,
+    "private_registration_invoked": false,
+    "new_native_TDB_StreamBase_created": false,
+    "native_editor_or_VectorArt_proven": false,
+    "safe_v2_empty_project_guard_compiled": true,
+    "safe_v2_empty_project_guard_user_tested": false
   },
   "artifacts": [
     "research/findings/F-VECTOR-032-independent-CNL-vector-core-in-real-aegp-build.md",
     "experiments/vector-shape/native-vector-host-probe-lab",
-    "datasets/ae-native-vector-host-probe-build-receipt-20261012.json"
-  ],
-  "date": "2026-10-12"
+    "experiments/observatory/runs/EXP-SHAPE-028/host-preflight-20261012.json",
+    "datasets/ae-native-vector-host-probe-build-receipt-20261012.json",
+    "datasets/ae-native-vector-host-probe-v2-build-receipt-20261012.json"
+  ]
 }

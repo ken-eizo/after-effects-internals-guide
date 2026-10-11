@@ -24,3 +24,14 @@ This is a compiled Adobe AEGP containing the independent CNLNativeVectorCore obj
     cmake --build "D:\Developer\ShapeLayerAE\build\native_vector_host_probe" --config Release
 
 This is a bridge between native CNL geometry and the AE plug-in host process, not proof of true AE-native editing. Type/owner/editor/evaluator/renderer contracts remain unsolved. Use a disposable project for tests.
+
+
+## v2 (2026-10-12): safe preflight for EMPTY disposable project, no private registration
+
+This recompiled safe AEX adds a read-only public-API project isolation check, shared in host_abi_shared/NativeProjectSafety.h. Its TSV now includes disposable_project_gate_pass, disposable_project_gate_reason, project count, number of non-root project items, Render Queue item count and dirty state. The dialog shows empty-project gate PASS/BLOCKED. A blocked result is EXPECTED if your current project contains footage, a composition, an active non-root item or unsaved changes.
+
+To test v2, the USER must replace the previously installed safe AEX with the newly compiled file while After Effects is closed, restart, open a NEW EMPTY project, and run Animation > CNL Native Vector: Host Preflight (Read Only). Send the updated TSV. This does not mutate Adobe TDB/BEE registries.
+
+The previous v1 was successfully tested by the user on AE2026 (2026-10-12 04:12 JST; archive=373 bytes, cubic=4, native getter nonnull); this v2 project gate has NOT YET been tested inside AE.
+
+This project-status predicate alone is NOT a guarantee that native private API mutation is safe.

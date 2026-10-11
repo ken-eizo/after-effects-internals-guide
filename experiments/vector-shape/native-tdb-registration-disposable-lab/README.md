@@ -34,3 +34,16 @@ After an explicitly authorized disposable user test: inspect stage log and clean
 ## Evidence and scope
 
 AEIG F-VECTOR-025..031, EXP-SHAPE-027..030; static ABI + MSVC cross-module callback mock. Does not provide host-native layer output/editor/renderer. Failure is an informative result, not a reason to force the operation.
+
+
+## v2 IMPORTANT (2026-10-12): previous experimental AEX is invalid; DO NOT RUN IT
+
+Audit discovered that the original experimental Creator callback mistakenly used (bool,unsigned,unsigned) where the native Adobe MSVC std::function signature actually requires (bool,unsigned int,bool). Old source also erased the native class pointers to void*. This is a material C++ ABI mismatch: do not attempt an old build of this experiment.
+
+The corrected project compiles against exact native C++ class names, with the full std::function parameter-type suffix shown to match both installed AE2025 and AE2026 RegisterFactoryFunc exports through a separate MSVC COFF symbol verification. This reduces ABI uncertainty, but DOES NOT establish safe private C++ object layout, allocator, host registry unload or project shutdown.
+
+The previous no-active-layer gate was insufficient. This build now uses the SAME read-only, public SDK NativeProjectSafety.h as the safe host-probe AEX: exactly one non-dirty, empty project, no non-root active item or project content, empty render queue, fail-closed. Run ONLY the safe AEX v2 first and inspect disposable_project_gate_pass; DO NOT run this mutation AEX in daily AE.
+
+New MatchName includes process id/tick for collision resistance. Creator invocation count is logged via a plugin-static LONG (no stack-captured callback references). After registering (never yet attempted), automatic unregister is best-effort and does not certify rollback.
+
+Even with all gates this remains HIGH RISK and cannot be certified safe; only consider a separate explicitly authorized, isolated disposable AE environment. No private registrar function has been called in an AE host by this research.

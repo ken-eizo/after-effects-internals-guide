@@ -19,7 +19,7 @@ struct StreamLike {
  virtual StreamLike* GetAsLeaf()=0;
  virtual void SetupCanonicalLayout()=0;
 };
-using NativeCreatorLike=std::function<StreamLike*(const MatchNameLike&,void*,bool,unsigned,unsigned)>;
+using NativeCreatorLike=std::function<StreamLike*(const MatchNameLike&,void*,bool,unsigned,bool)>;
 // Deliberately pass std::function by VALUE across an EXE/DLL boundary
 // and keep it beyond the lifetime of the originating parameter.
 extern "C" {

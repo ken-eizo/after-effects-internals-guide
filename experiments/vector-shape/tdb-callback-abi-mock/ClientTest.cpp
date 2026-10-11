@@ -18,7 +18,7 @@ public:
  void SetupCanonicalLayout()override{++layouts;}
 };
 static StreamLike* AdobeNativeCreatorLike(
- const MatchNameLike&,void*,bool,unsigned,unsigned) {
+ const MatchNameLike&,void*,bool,unsigned,bool) {
  return new NativeComplete();
 }
 int main() {
@@ -40,7 +40,7 @@ int main() {
  {
   // Proves standard MSVC std::function captures retain the calling module
   // and must NOT remain in a native host registry after a plugin unload.
-  auto creator=[token=lifetime](const MatchNameLike&,void*,bool,unsigned,unsigned)->StreamLike*{
+  auto creator=[token=lifetime](const MatchNameLike&,void*,bool,unsigned,bool)->StreamLike*{
    return new NativeComplete();
   };
   registered=MockRegister(k1,creator,false);

@@ -115,3 +115,12 @@ A different, explicitly HIGH RISK disposable native type registration AEX has al
 Offline x64 DLL/EXE lifetime simulation with MSVC std::function pass-by-value passed, but this is not actual Adobe ABI. See EXP-SHAPE-029.
 
 **Next success gate:** the user tests the safe AEX preflight and supplies its report. Only after that and explicit user acceptance of disposable-host risk should the separate mutating AEX ever be considered. An actual external new TDB type registration is still UNPROVEN. Further owner/editor/evaluator/render contracts remain after that.
+
+
+## 2026-10-12 — Critical native callback ABI correction and project-state gate
+
+A later code audit discovered that the earlier HIGH-RISK native type registrar AEX had the wrong fifth Creator callback parameter: unsigned int instead of bool. This is NOT a harmless cosmetic difference. F-VECTOR-034 and EXP-SHAPE-031 show the corrected MSVC function object uses native C++ TDB classes and bool/unsigned int/bool, and an independently compiled C++ COFF decorated signature matches Adobe's actual RegisterFactoryFunc exported parameter-type suffix in AE2025 and AE2026. No private registration was called.
+
+The previous gate of 'no active selected AE layer' was also inadequate. The rebuilt dangerous AEX and the read-only safe AEX v2 now share a public-SDK-only project guard which blocks non-empty or dirty projects, non-root active items, nonempty Render Queue and unavailable host state. This is risk reduction, NOT a guarantee of safe Adobe private ABI mutation. Both new AEX binaries compile and pass source/PE checks, but new gate v2 is NOT yet tested inside AE. The user's earlier safe v1 probe DID pass inside AE2026 (EXP-SHAPE-028-LIVE-001).
+
+Old dangerous AEX builds must NOT be run. There is still no AE-native registered plugin type, independent Contents, native Pen editor, BEE VectorArt or AE RG renderer.

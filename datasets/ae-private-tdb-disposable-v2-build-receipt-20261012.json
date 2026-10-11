@@ -1,0 +1,38 @@
+{
+  "experiment": "EXP-SHAPE-030",
+  "date": "2026-10-12",
+  "status": "compiled-static-gates-unexecuted-high-risk",
+  "file": "D:\\Developer\\ShapeLayerAE\\build\\native_tdb_registration_disposable\\Release\\CNLPrivateTDBDisposable.aex",
+  "sha256": "0183f7043709ea5bad34b36b53ab61fe987f988c92642d126274c4543d9723db",
+  "bytes": 33792,
+  "machine": "x64",
+  "symbols": [
+    "EntryPointFunc"
+  ],
+  "hard_imports": [
+    "advapi32.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "kernel32.dll",
+    "msvcp140.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll"
+  ],
+  "contains_mutating_private_Adobe_calls": true,
+  "private_registry_called": false,
+  "AE_installed_by_researcher": false,
+  "AE_host_tested": false,
+  "manual_menu": "Animation > CNL Private TDB: Disposable Type Registration (DANGER)",
+  "one_shot_manual_ack_required": true,
+  "pin_exact_loaded_DLL_sha256": true,
+  "new_empty_public_project_gate": true,
+  "render_queue_must_be_empty": true,
+  "exact_MSVC_creator_signature": "TDB_StreamBase*(TDB_MatchName const&,TDB_StreamFactory*,bool,unsigned,bool)",
+  "callback_invocation_count_logged": true,
+  "native_creation_callback": "TDB_ParamPathStream::Create (Adobe, non-Shape parameter native stream)",
+  "test_intent": "new MatchName registry acceptance and immediate attempt to unregister",
+  "no_standalone_validity_claim": true,
+  "uncertainty": "Can crash/corrupt AE. No complete host-native editor/owner/render integration. Do not use before separate safe preflight and explicit user risk acceptance."
+}

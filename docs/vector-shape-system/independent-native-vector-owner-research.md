@@ -116,3 +116,14 @@ Offline cross-module MSVC std::function Creator ABI/lifetime and reverse explici
 A separate guarded, HIGH RISK CNLPrivateTDBDisposable.aex was compiled for a manually authorized disposable AE host only (F-VECTOR-033, EXP-SHAPE-030). Its private mutation code is **NOT tested in AE**, and its automatic unregister remains best-effort, not assured rollback. Never recommend this AEX for regular project use, automatic startup or before the safe AEX is host-tested. Installation and AE GUI checks belong to the user.
 
 Current research gates unchanged in the host: independent new TDB type (NOT PROVEN), non-Shape native indexed Contents owner (NOT PROVEN), AE-native Pen editing (NOT PROVEN), BEE evaluator insertion (NOT PROVEN), native VectorArt/RG from custom owner (NOT PROVEN). The compile success is a genuine engineering milestone, not a host-native feature claim.
+
+
+## Latest safety-and-ABI milestone (2026-10-12): rebuilt native type experiments
+
+F-VECTOR-034 pinpoints and fixes the HIGH-RISK registration test's mismatched native callback fifth argument (bool rather than unsigned int). A new MSVC2022 C++ object compiles the exact native TDB_StreamBase*(TDB_MatchName const&, TDB_StreamFactory*, bool, unsigned int, bool) std::function signature, whose decorated function parameter suffix exactly matches Adobe's RegisterFactoryFunc exports in both installed AE2025 and AE2026 binaries. This establishes symbol-level ABI agreement, not permitted external plugin registration or full C++ object lifetime compatibility.
+
+A new public SDK project-state isolation gate is SHARED by both CNL AEGP builds: requires one non-dirty empty project, no non-root active/project items, no Render Queue items and all host queries available. The dangerous manual-only AEX checks this before consuming user acknowledgments and before touching private registration. Creator invocation count uses static storage rather than capturing a local stack reference into potentially host-retained callback.
+
+CNLNativeVectorHostProbe safe v1 already ran in AE2026 and produced genuine CNL cubic vectors (4), factory getter non-null and exact host version fingerprint, while showing native registration count 0. The NEW safe v2 adds public-project gate data to the TSV and dialog; it has only been COMPILED, not yet tried in AE. Future user test should replace the old safe probe and verify v2's new report. The dangerous AEX is still NEVER run and CANNOT be certified safe.
+
+Native independent owner, Adobe Timeline/Pen controls, BEE evaluator insertion and VectorArt rendering are unsolved and must not be represented by the standalone CNL core or a successful type-registry function call.

@@ -27,6 +27,11 @@ guards=[
 "VirtualQuery",
 "GetProcAddress",
 "active_layer_not_allowed",
+"CNL_CheckDisposableProject",
+"project_dirty",
+"non_root_project_items",
+"render_queue_items",
+"creator_invocations",
 "before_private_register_factory_func",
 "before_private_unregister_factory_func",
 "unregister_result",
@@ -34,6 +39,16 @@ guards=[
 for g in guards:
  assert g in source,(g,"missing in source")
 assert b"CNL Private TDB: Disposable Type Registration (DANGER)" in binary
+assert "using CreatorSignature=TDB_StreamBase*(const TDB_MatchName&,TDB_StreamFactory*,bool,unsigned,bool);" in source
+assert "class TDB_MatchName final" in source
+assert "NativeProjectSafety.h" in source
+assert "creator_invocations" in source
+gate=(root/"labs/host_abi_shared/NativeProjectSafety.h").read_text(encoding="utf8")
+for required in ("AEGP_ProjectIsDirty","AEGP_GetFirstProjItem","AEGP_GetNextProjItem",
+                 "AEGP_GetNumRQItems","AEGP_GetActiveItem","project_count_not_one",
+                 "non_root_project_item_found","project_dirty","render_queue_not_empty"):
+ assert required in gate,("missing public host safety gate",required)
+assert source.index("if(!verifyDisposableProject(s,log))") < source.index("if(!ackAndConsume(tempDir,log))") < source.index("reinterpret_cast<NativeRegister>(reg)")
 assert source.count("reinterpret_cast<NativeRegister>(reg)") == 1
 assert source.count("reinterpret_cast<NativeUnregister>(unreg)") == 1
 # Both call expressions are guarded inside Run() and no explicit/private API calls
@@ -61,6 +76,10 @@ receipt={
 "manual_menu":"Animation > CNL Private TDB: Disposable Type Registration (DANGER)",
 "one_shot_manual_ack_required":True,
 "pin_exact_loaded_DLL_sha256":True,
+"new_empty_public_project_gate":True,
+"render_queue_must_be_empty":True,
+"exact_MSVC_creator_signature":"TDB_StreamBase*(TDB_MatchName const&,TDB_StreamFactory*,bool,unsigned,bool)",
+"callback_invocation_count_logged":True,
 "native_creation_callback":"TDB_ParamPathStream::Create (Adobe, non-Shape parameter native stream)",
 "test_intent":"new MatchName registry acceptance and immediate attempt to unregister",
 "no_standalone_validity_claim":True,
