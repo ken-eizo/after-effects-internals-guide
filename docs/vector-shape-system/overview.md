@@ -97,3 +97,10 @@ See [Independent Native Vector Objects: Type, Owner, Editor and Renderer](indepe
 The first native type registration requirement is more constrained than callback installation: RegisterFactoryFunc clones an erased MSVC std::function then eagerly creates a real native TDB_StreamBase instance and invokes virtual IsLeaf/GetAsLeaf/SetupCanonicalLayout and separated-dimensions checks. These virtual methods were identified directly in AE2025 and AE2026 exported TDB vftables. Registering with an invalid/dummy subclass is unsafe even before placing a stream in the Timeline.
 
 TDB_ScRegisterStreams::UnregisterAll walks registrations in reverse, while its destructor does NOT automatically unregister. This is critical for any future plugin unload / host state lifecycle test. See F-VECTOR-026 and EXP-SHAPE-024; the independent-Contents product milestone remains unachieved until host creation, editor and renderer integration work end-to-end.
+
+
+## 2026-10-12 — First compiled plugin-owned vector geometry core; host-native interface is still open
+
+The independent native path/Contents project now has a real source implementation separate from AE standard Masks/Shapes: CNLNativeVectorCore.dll with typed tree, true cubic Bezier handles, procedural geometry, deterministic archive, cloning and 20-function C ABI; actual compiled DLL and CTest/ctypes cross-language tests passed (F-VECTOR-029, EXP-SHAPE-026). This is NOT an AE AEX and does NOT yet satisfy native TDB/Timeline/Pen/VectorArt renderer integration.
+
+Static AE2025/2026 work (F-VECTOR-027/028) separately established native Group Read/Write stream IDs and canonical layout, CloneStream/SetParent behavior and BEE's native operator registry's polymorphic lifetime. That clarifies next host integration requirements; no private registrar was invoked, no AE UI action was performed. Retain these as separately falsifiable gates, not as successful host-native third-party output.

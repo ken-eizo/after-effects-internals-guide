@@ -92,3 +92,14 @@ Finding F-VECTOR-026 and EXP-SHAPE-024 extend the native typed-stream registry A
 Crucial destructor caveat: TDB_ScRegisterStreams::~ only frees its own vector; explicit UnregisterAll performs reverse-order registration removal; UnregisterFactoryFunc deletes canonical/creator entries and destroys a native stream instance. An external plugin cannot count on implicit RAII cleanup of its native factory callback after unload.
 
 No external Stream Creator, native Timeline owner, tool binding or BEE VectorArt evaluator was registered. This lowers research uncertainty about the first private ABI gate but does not move the user-visible S1-S3 success milestone. Next inspect cloning/serialization, registry startup/init order, project object survival and independent native owner adoption. Scripts/results in AEIG F-VECTOR-026, EXP-SHAPE-024 and 2025/2026 concise verifier data.
+
+
+## 2026-10-12 — Native persistence ABI and a real independent CNL vector core
+
+F-VECTOR-027 reconstructs native TDB Stream cloning, group/leaf serialization, unique stream identities, canonical stream lookup and host parent notification from both installed AE2025/AE2026 binaries. F-VECTOR-028 confirms additional BEE MatchName evaluator registry lifetime/lookup requirements. These native ABI observations do NOT establish third-party registration.
+
+A genuine C++ component is now compiled: CNLNativeVectorCore.dll (F-VECTOR-029, EXP-SHAPE-026). It owns its own double-precision Bezier path tree, 64-bit stable object IDs, indexed nested Group/Path hierarchy, real path-control handles, procedural 4-cubic ellipse generation, deep clone and deterministic checksummed archive. CMake native tests, 2048 nested levels, Python ctypes loading the DLL and 20 PE exports all passed. This is a plugin-owned geometry-value source and future host adapter target, NOT AE-native TDB, not a Shape/Mask and not an AEX.
+
+The missing, NON-NEGOTIABLE native host gates remain: (1) safe independent TDB type registration, (2) host-owned Timeline root for plugin Contents, (3) AE Pen/Selection binding with stream IDs, (4) BEE native evaluator registration and managed unload, (5) genuine host BEE_VectorArt/RG/AGM rendering instead of PF_World. A CNL archive must never be misreported as AEP/SLU-native persistence.
+
+Next experiment should be a version-pinned, staged TDB type-registration host adapter design relying on native MSVC class/layout evidence. One candidate for offline assessment is a registration thunk using an existing correctly constructed TDB class under a new MatchName, to test factory admission without guessing a complete subclass; however even that is an UNPROVEN, potentially crashing private API that must not be executed in a working AE session. Investigate constructor/class invariants and reversible unregister/refcounts before any live test.

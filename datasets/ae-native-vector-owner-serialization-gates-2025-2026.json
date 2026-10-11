@@ -1,0 +1,60 @@
+{
+  "classification": "E2-L independent callgraph consistency; not public SDK or live plugin behavior",
+  "result": "AE native object ownership and serialization have multiple type-specific callback dependencies",
+  "versions": {
+    "2025": {
+      "stream_clone_base_dispatch": {
+        "slot": "0x8",
+        "verified": true
+      },
+      "clone_leaf_class_ctor": true,
+      "clone_path_stream_derived_class_ctor": true,
+      "group_read_handles_native_matchname_and_unique_id": true,
+      "group_write_checks_canonical_and_writes_matchname_id_and_end_marker": true,
+      "leaf_read_native_id_and_values": true,
+      "leaf_write_native_id_key_data_expressions": true,
+      "canonical_UI_layout_created_by_stream_group": true,
+      "parent_set_notifies_owning_group": true,
+      "BEE_separate_matchname_operator_registrar_and_lookup": true,
+      "BEE_registry_global_accessor": true,
+      "BEE_registrar_addref_release_style_virtual_calls": {
+        "disps": [
+          "0x0",
+          "0x8",
+          "0x8"
+        ],
+        "assumption": "likely refcounting; exact vtable method names not recovered"
+      },
+      "existing_AE_native_serialization_supported": true,
+      "new_plugin_stream_registered": false,
+      "independent_contents_and_native_raster": false
+    },
+    "2026": {
+      "stream_clone_base_dispatch": {
+        "slot": "0x8",
+        "verified": true
+      },
+      "clone_leaf_class_ctor": true,
+      "clone_path_stream_derived_class_ctor": true,
+      "group_read_handles_native_matchname_and_unique_id": true,
+      "group_write_checks_canonical_and_writes_matchname_id_and_end_marker": true,
+      "leaf_read_native_id_and_values": true,
+      "leaf_write_native_id_key_data_expressions": true,
+      "canonical_UI_layout_created_by_stream_group": true,
+      "parent_set_notifies_owning_group": true,
+      "BEE_separate_matchname_operator_registrar_and_lookup": true,
+      "BEE_registry_global_accessor": true,
+      "BEE_registrar_addref_release_style_virtual_calls": {
+        "disps": [
+          "0x0",
+          "0x8",
+          "0x8"
+        ],
+        "assumption": "likely refcounting; exact vtable method names not recovered"
+      },
+      "existing_AE_native_serialization_supported": true,
+      "new_plugin_stream_registered": false,
+      "independent_contents_and_native_raster": false
+    }
+  }
+}

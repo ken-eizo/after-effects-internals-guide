@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-SHAPE-025",
+  "title": "Native TDB Clone/Read/Write/SetParent and separate BEE evaluator-registry contract",
+  "status": "pass-static",
+  "date": "2026-10-12",
+  "evidence": "E2-L pinned AE2025 and AE2026 native PE disassembly",
+  "results": {
+    "TDB_StreamBase_Clone_virtual": true,
+    "TDB_ParamPathStream_CloneStream": true,
+    "group_Read_Write_MatchName_and_UniqueID": true,
+    "leaf_Read_Write_keyframes_expressions": true,
+    "parent_notify_and_rescale": true,
+    "BEE_separate_evaluator_registry_lifetime_calls": true,
+    "new_third_party_native_type_registered": false,
+    "independent_native_Contents": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-027-native-stream-clone-serialization-parent-identity.md",
+    "research/findings/F-VECTOR-028-bee-native-vector-evaluator-registration-ownership.md",
+    "experiments/vector-shape/EXP-SHAPE-025-native-stream-io-and-bee-registry.md",
+    "datasets/ae-tdb-native-clone-serialization-parent-callgraph-2025-2026.json",
+    "datasets/ae-bee-evaluator-register-shutdown-callback-abi-2025-2026.json",
+    "datasets/ae-native-vector-owner-serialization-gates-2025-2026.json"
+  ]
+}

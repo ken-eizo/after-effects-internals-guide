@@ -1,0 +1,5084 @@
+{
+  "classification": "E2-L, read-only local native x64 DLL callgraph and bounds; no verified external ABI",
+  "versions": {
+    "2025": {
+      "tdb_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "methods": {
+        "clone_base": {
+          "export": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z",
+          "rva": "0x42b0",
+          "bounded_bytes": 28,
+          "resolved_calls": [],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x42c4",
+              "register": "rax",
+              "byte_offset": "0x8"
+            }
+          ],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 1,
+          "comparisons_first35": []
+        },
+        "clone_leaf": {
+          "export": "?CloneStream@TDB_Stream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+          "rva": "0x36020",
+          "bounded_bytes": 76,
+          "resolved_calls": [
+            {
+              "site": "0x36035",
+              "opcode": "call",
+              "target_rva": "0x6f828",
+              "resolved": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3604e",
+              "opcode": "call",
+              "target_rva": "0x32730",
+              "resolved": "??0TDB_Stream@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": [
+            {
+              "site": "0x36040",
+              "opcode": "test",
+              "op": "rax, rax"
+            }
+          ]
+        },
+        "clone_parampath": {
+          "export": "?CloneStream@TDB_ParamPathStream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+          "rva": "0x10360",
+          "bounded_bytes": 106,
+          "resolved_calls": [
+            {
+              "site": "0x1037a",
+              "opcode": "call",
+              "target_rva": "0x6f828",
+              "resolved": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x10396",
+              "opcode": "call",
+              "target_rva": "0xe600",
+              "resolved": "??0?$TDB_DynamicEnglishDisplayNameNonLeaf@V?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@@@QEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": [
+            {
+              "site": "0x10388",
+              "opcode": "test",
+              "op": "rax, rax"
+            }
+          ]
+        },
+        "read_base": {
+          "export": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x3d1f0",
+          "bounded_bytes": 643,
+          "resolved_calls": [
+            {
+              "site": "0x3d23c",
+              "opcode": "call",
+              "target_rva": "0x6f528",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d24d",
+              "opcode": "call",
+              "target_rva": "0x6f790",
+              "resolved": "U.dll!U_LongSwap",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d2a2",
+              "opcode": "call",
+              "target_rva": "0x6f678",
+              "resolved": "U.dll!?U_ZStringToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d2c8",
+              "opcode": "call",
+              "target_rva": "0x6f498",
+              "resolved": "SLU.dll!?SLU_ReadString@@YA_NPEAVSLU_File@@PEBUSLU_ChunkInfo@@HPEAV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV34@_K_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d2e8",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d303",
+              "opcode": "call",
+              "target_rva": "0x6f648",
+              "resolved": "U.dll!?U_AsciiToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d37f",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d3cb",
+              "opcode": "call",
+              "target_rva": "0x38030",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d3de",
+              "opcode": "call",
+              "target_rva": "0x3ebc0",
+              "resolved": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d3fa",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x3d39a",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            },
+            {
+              "site": "0x3d3b7",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x3d40d",
+              "register": "rax",
+              "byte_offset": "0x58"
+            },
+            {
+              "site": "0x3d41a",
+              "register": "rax",
+              "byte_offset": "0x80"
+            },
+            {
+              "site": "0x3d426",
+              "register": "r8",
+              "byte_offset": "0x2a0"
+            },
+            {
+              "site": "0x3d43f",
+              "register": "rax",
+              "byte_offset": "0xc0"
+            }
+          ],
+          "unresolved_direct_call_count": 6,
+          "all_call_count": 23,
+          "comparisons_first35": [
+            {
+              "site": "0x3d21f",
+              "opcode": "cmp",
+              "op": "dword ptr [rdx + 8], 0x38"
+            },
+            {
+              "site": "0x3d242",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3d256",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x38"
+            },
+            {
+              "site": "0x3d274",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x39"
+            },
+            {
+              "site": "0x3d2d6",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3d2ef",
+              "opcode": "test",
+              "op": "r14b, r14b"
+            },
+            {
+              "site": "0x3d30d",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x18], 7"
+            },
+            {
+              "site": "0x3d31b",
+              "opcode": "cmp",
+              "op": "qword ptr [rbp - 1], 7"
+            },
+            {
+              "site": "0x3d329",
+              "opcode": "cmp",
+              "op": "rcx, rdx"
+            },
+            {
+              "site": "0x3d333",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x3d345",
+              "opcode": "cmp",
+              "op": "dx, word ptr [rax]"
+            },
+            {
+              "site": "0x3d363",
+              "opcode": "test",
+              "op": "edi, edi"
+            },
+            {
+              "site": "0x3d36d",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3d386",
+              "opcode": "test",
+              "op": "dil, dil"
+            },
+            {
+              "site": "0x3d38f",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3d3a0",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3d3ac",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3d3ba",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3d3be",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3d3c3",
+              "opcode": "test",
+              "op": "r14b, r14b"
+            },
+            {
+              "site": "0x3d3d0",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x10], 0"
+            },
+            {
+              "site": "0x3d3e8",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3d401",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x51"
+            },
+            {
+              "site": "0x3d410",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3d42d",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_base": {
+          "export": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x43c90",
+          "bounded_bytes": 538,
+          "resolved_calls": [
+            {
+              "site": "0x43cc1",
+              "opcode": "call",
+              "target_rva": "0x6f790",
+              "resolved": "U.dll!U_LongSwap",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43cde",
+              "opcode": "call",
+              "target_rva": "0x6f518",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43cef",
+              "opcode": "call",
+              "target_rva": "0x38030",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43d35",
+              "opcode": "call",
+              "target_rva": "0x26da0",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43d42",
+              "opcode": "call",
+              "target_rva": "0x38030",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43dba",
+              "opcode": "call",
+              "target_rva": "0x6f648",
+              "resolved": "U.dll!?U_AsciiToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43de5",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43e35",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43e4f",
+              "opcode": "call",
+              "target_rva": "0x6f4a0",
+              "resolved": "SLU.dll!?SLU_WriteString@@YAXPEAVSLU_File@@HAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43e6e",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x43d23",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x43da0",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            }
+          ],
+          "unresolved_direct_call_count": 4,
+          "all_call_count": 16,
+          "comparisons_first35": [
+            {
+              "site": "0x43ce4",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x43d08",
+              "opcode": "test",
+              "op": "al, 1"
+            },
+            {
+              "site": "0x43d14",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x43d26",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x43d3a",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x43d4e",
+              "opcode": "cmp",
+              "op": "qword ptr [rcx + 0x18], 7"
+            },
+            {
+              "site": "0x43d5d",
+              "opcode": "cmp",
+              "op": "qword ptr [rsp + 0x40], 7"
+            },
+            {
+              "site": "0x43d6e",
+              "opcode": "cmp",
+              "op": "rdx, rax"
+            },
+            {
+              "site": "0x43d77",
+              "opcode": "test",
+              "op": "rdx, rdx"
+            },
+            {
+              "site": "0x43d83",
+              "opcode": "cmp",
+              "op": "word ptr [r8 + rcx], ax"
+            },
+            {
+              "site": "0x43da6",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x43dc8",
+              "opcode": "cmp",
+              "op": "rax, rbx"
+            },
+            {
+              "site": "0x43dd2",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x43e1f",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x43e5b",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            }
+          ]
+        },
+        "read_group": {
+          "export": "?Read@TDB_StreamGroup@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x3d4c0",
+          "bounded_bytes": 243,
+          "resolved_calls": [
+            {
+              "site": "0x3d4e8",
+              "opcode": "call",
+              "target_rva": "0x2c6b0",
+              "resolved": "??0TDB_MatchName@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d508",
+              "opcode": "call",
+              "target_rva": "0x6f4b0",
+              "resolved": "SLU.dll!??0SLU_ScDescendList@@QEAA@PEAVSLU_File@@HPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d51b",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d52a",
+              "opcode": "call",
+              "target_rva": "0x3d1f0",
+              "resolved": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d538",
+              "opcode": "call",
+              "target_rva": "0x3d930",
+              "resolved": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d545",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d556",
+              "opcode": "call",
+              "target_rva": "0x2eb90",
+              "resolved": "?Read@TDB_MatchName@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d560",
+              "opcode": "call",
+              "target_rva": "0x2e420",
+              "resolved": "?IsEndOfGroupMarker@TDB_MatchName@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d578",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3d595",
+              "opcode": "call",
+              "target_rva": "0x6f4a8",
+              "resolved": "SLU.dll!??1SLU_ScDescendList@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 2,
+          "all_call_count": 13,
+          "comparisons_first35": [
+            {
+              "site": "0x3d50f",
+              "opcode": "cmp",
+              "op": "byte ptr [rsp + 0x30], 0"
+            },
+            {
+              "site": "0x3d565",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_group": {
+          "export": "?Write@TDB_StreamGroup@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x43ef0",
+          "bounded_bytes": 1076,
+          "resolved_calls": [
+            {
+              "site": "0x43f52",
+              "opcode": "call",
+              "target_rva": "0x6f538",
+              "resolved": "SLU.dll!SLU_BeginChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43f66",
+              "opcode": "call",
+              "target_rva": "0x43c90",
+              "resolved": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43f71",
+              "opcode": "call",
+              "target_rva": "0x444d0",
+              "resolved": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x43fd2",
+              "opcode": "call",
+              "target_rva": "0x1fdd0",
+              "resolved": "?TDB_AreTDBStreamScriptingIDsEnabled@TDB_Project@@SA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4403a",
+              "opcode": "call",
+              "target_rva": "0x39dd0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44061",
+              "opcode": "call",
+              "target_rva": "0x39dd0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44084",
+              "opcode": "call",
+              "target_rva": "0x26da0",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x440f8",
+              "opcode": "call",
+              "target_rva": "0x26da0",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44115",
+              "opcode": "call",
+              "target_rva": "0x38030",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44120",
+              "opcode": "call",
+              "target_rva": "0x38030",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4417a",
+              "opcode": "call",
+              "target_rva": "0x39dd0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44194",
+              "opcode": "call",
+              "target_rva": "0x6f448",
+              "resolved": "MediaFoundation.dll!?PF_ParamDefStr_GetName@PF_ParamDefStr@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@PEBUPF_ParamDef@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4419e",
+              "opcode": "call",
+              "target_rva": "0x39dd0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x441b8",
+              "opcode": "call",
+              "target_rva": "0x6f448",
+              "resolved": "MediaFoundation.dll!?PF_ParamDefStr_GetName@PF_ParamDefStr@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@PEBUPF_ParamDef@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4422a",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4425a",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4427b",
+              "opcode": "call",
+              "target_rva": "0x2ee90",
+              "resolved": "?Write@TDB_MatchName@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x442a4",
+              "opcode": "call",
+              "target_rva": "0x2f0b0",
+              "resolved": "?WriteEndOfGroupMarker@TDB_MatchName@@SAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x442b0",
+              "opcode": "call",
+              "target_rva": "0x6f530",
+              "resolved": "SLU.dll!SLU_EndChunkWrite",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x43f7c",
+              "register": "rax",
+              "byte_offset": "0x168"
+            },
+            {
+              "site": "0x43f9f",
+              "register": "rax",
+              "byte_offset": "0x190"
+            },
+            {
+              "site": "0x43fe5",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x43ff6",
+              "register": "rax",
+              "byte_offset": "0x48"
+            },
+            {
+              "site": "0x44007",
+              "register": "rax",
+              "byte_offset": "0x30"
+            },
+            {
+              "site": "0x4404f",
+              "register": "rax",
+              "byte_offset": "0x78"
+            },
+            {
+              "site": "0x4408f",
+              "register": "rdx",
+              "byte_offset": "0x78"
+            },
+            {
+              "site": "0x4409b",
+              "register": "rdx",
+              "byte_offset": "0x208"
+            },
+            {
+              "site": "0x440ab",
+              "register": "rdx",
+              "byte_offset": "0x208"
+            },
+            {
+              "site": "0x440c7",
+              "register": "rax",
+              "byte_offset": "0x210"
+            },
+            {
+              "site": "0x440d7",
+              "register": "rax",
+              "byte_offset": "0x210"
+            },
+            {
+              "site": "0x44272",
+              "register": "rax",
+              "byte_offset": "0x28"
+            },
+            {
+              "site": "0x44289",
+              "register": "rax",
+              "byte_offset": "0x128"
+            }
+          ],
+          "unresolved_direct_call_count": 9,
+          "all_call_count": 42,
+          "comparisons_first35": [
+            {
+              "site": "0x43f58",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x43f88",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x43fae",
+              "opcode": "test",
+              "op": "cl, 1"
+            },
+            {
+              "site": "0x43fca",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x43fd7",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x43fe8",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x43ff9",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x4400a",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x4402e",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x4403f",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 0xc], 0xb"
+            },
+            {
+              "site": "0x44055",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x4406c",
+              "opcode": "test",
+              "op": "ecx, 0xfffffff6"
+            },
+            {
+              "site": "0x44074",
+              "opcode": "cmp",
+              "op": "edx, 9"
+            },
+            {
+              "site": "0x44106",
+              "opcode": "test",
+              "op": "ecx, 0xfffffffb"
+            },
+            {
+              "site": "0x4412c",
+              "opcode": "cmp",
+              "op": "qword ptr [rbx + 0x18], 7"
+            },
+            {
+              "site": "0x4413a",
+              "opcode": "cmp",
+              "op": "qword ptr [rdx + 0x18], 7"
+            },
+            {
+              "site": "0x44144",
+              "opcode": "cmp",
+              "op": "rcx, rax"
+            },
+            {
+              "site": "0x4414d",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x44163",
+              "opcode": "cmp",
+              "op": "word ptr [rbx + rdx], ax"
+            },
+            {
+              "site": "0x441ca",
+              "opcode": "cmp",
+              "op": "r10, 0xf"
+            },
+            {
+              "site": "0x441de",
+              "opcode": "cmp",
+              "op": "r11, 0xf"
+            },
+            {
+              "site": "0x441ea",
+              "opcode": "cmp",
+              "op": "rcx, qword ptr [rbp - 0x19]"
+            },
+            {
+              "site": "0x441f4",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x44205",
+              "opcode": "cmp",
+              "op": "dl, byte ptr [rax]"
+            },
+            {
+              "site": "0x44218",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x4421d",
+              "opcode": "cmp",
+              "op": "r11, 0xf"
+            },
+            {
+              "site": "0x4424d",
+              "opcode": "cmp",
+              "op": "r10, 0xf"
+            },
+            {
+              "site": "0x44261",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x44292",
+              "opcode": "cmp",
+              "op": "r12d, dword ptr [rbp - 0x69]"
+            },
+            {
+              "site": "0x442b6",
+              "opcode": "test",
+              "op": "eax, eax"
+            }
+          ]
+        },
+        "read_leaf": {
+          "export": "?Read@TDB_Stream@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x12470",
+          "bounded_bytes": 2950,
+          "resolved_calls": [
+            {
+              "site": "0x124b8",
+              "opcode": "call",
+              "target_rva": "0x6f4e8",
+              "resolved": "SLU.dll!??0SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124c2",
+              "opcode": "call",
+              "target_rva": "0x3b0d0",
+              "resolved": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124f4",
+              "opcode": "call",
+              "target_rva": "0x6f4d0",
+              "resolved": "SLU.dll!?Descend@SLU_ScDescend@@QEAAXPEAVSLU_File@@HHPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124fe",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1250a",
+              "opcode": "call",
+              "target_rva": "0x3b0d0",
+              "resolved": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12521",
+              "opcode": "call",
+              "target_rva": "0x3d1f0",
+              "resolved": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1253d",
+              "opcode": "call",
+              "target_rva": "0x6f4e0",
+              "resolved": "SLU.dll!??0SLU_ScDescend@@QEAA@PEAVSLU_File@@HHPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1254e",
+              "opcode": "call",
+              "target_rva": "0x6f540",
+              "resolved": "SLU.dll!SLU_ConvertChunkIDToXMLFormat",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12560",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1259b",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x125b2",
+              "opcode": "call",
+              "target_rva": "0x6f4c8",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x125cb",
+              "opcode": "call",
+              "target_rva": "0x6f520",
+              "resolved": "SLU.dll!SLU_ReadChunkData",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x125dd",
+              "opcode": "call",
+              "target_rva": "0x6f4d8",
+              "resolved": "SLU.dll!??1SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12615",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x126f6",
+              "opcode": "call",
+              "target_rva": "0x41b70",
+              "resolved": "?TDB_SetValueDescription@@YAHPEAVTDB_Stream@@PEBVTDB_ValueDesc@@PEAV2@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12739",
+              "opcode": "call",
+              "target_rva": "0x374c0",
+              "resolved": "?FreeCache@TDB_Stream@@IEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12741",
+              "opcode": "call",
+              "target_rva": "0x35ad0",
+              "resolved": "?AllocateCache@TDB_Stream@@IEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12759",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1276c",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1279a",
+              "opcode": "call",
+              "target_rva": "0x3b9c0",
+              "resolved": "?HasKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x127c3",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1283a",
+              "opcode": "call",
+              "target_rva": "0x37ec0",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12845",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12855",
+              "opcode": "call",
+              "target_rva": "0x3b7b0",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12864",
+              "opcode": "call",
+              "target_rva": "0x4a010",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12881",
+              "opcode": "call",
+              "target_rva": "0x6f528",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x128cb",
+              "opcode": "call",
+              "target_rva": "0x6f1f0",
+              "resolved": "LIST.dll!LIST_Read",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x128e9",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12927",
+              "opcode": "call",
+              "target_rva": "0x6f1e0",
+              "resolved": "LIST.dll!LIST_SetFuncs",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12944",
+              "opcode": "call",
+              "target_rva": "0x6f250",
+              "resolved": "LIST.dll!LIST_Dispose",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1297f",
+              "opcode": "call",
+              "target_rva": "0x6f528",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x129a8",
+              "opcode": "call",
+              "target_rva": "0x6f188",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x129c2",
+              "opcode": "call",
+              "target_rva": "0x3b340",
+              "resolved": "?GetTimeScale@TDB_Stream@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a0c",
+              "opcode": "call",
+              "target_rva": "0x6f550",
+              "resolved": "SLU.dll!SLU_Version_CC2017_PreUnicode",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a2b",
+              "opcode": "call",
+              "target_rva": "0x6f510",
+              "resolved": "SLU.dll!SLU_ReadHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a46",
+              "opcode": "call",
+              "target_rva": "0x6f4f8",
+              "resolved": "SLU.dll!?SLU_ConvertHandleToStringAndDisposeIfEncoded@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEAPEAPEADPEBUSLU_TextEncoding@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a6e",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ab9",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ac9",
+              "opcode": "call",
+              "target_rva": "0x6f490",
+              "resolved": "SLU.dll!?SLU_ReadUTF16@@YAXPEAVSLU_File@@PEAV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12add",
+              "opcode": "call",
+              "target_rva": "0x415d0",
+              "resolved": "?TDB_SetStreamExpression@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEAVTDB_Stream@@AEBV12@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12af8",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12b0b",
+              "opcode": "call",
+              "target_rva": "0x413f0",
+              "resolved": "?TDB_SetStreamExprFlags@@YAHPEAVTDB_Stream@@II@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12b2e",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12b38",
+              "opcode": "call",
+              "target_rva": "0x39dc0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12c25",
+              "opcode": "call",
+              "target_rva": "0x6f778",
+              "resolved": "U.dll!U_Int32ToPointer",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12c6a",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12c88",
+              "opcode": "call",
+              "target_rva": "0x6f188",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12c99",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12cba",
+              "opcode": "call",
+              "target_rva": "0x6f188",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ccb",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12cd7",
+              "opcode": "call",
+              "target_rva": "0x3b9f0",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ce3",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12cf7",
+              "opcode": "call",
+              "target_rva": "0x39840",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d04",
+              "opcode": "call",
+              "target_rva": "0x39840",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d1d",
+              "opcode": "call",
+              "target_rva": "0x4af30",
+              "resolved": "?SetInvalid@TDB_Stream@@QEBAHHF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d2d",
+              "opcode": "call",
+              "target_rva": "0x3b9f0",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d39",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d4d",
+              "opcode": "call",
+              "target_rva": "0x39840",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d5a",
+              "opcode": "call",
+              "target_rva": "0x39840",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d72",
+              "opcode": "call",
+              "target_rva": "0x4ae00",
+              "resolved": "?SetArcInvalid@TDB_Stream@@QEBAHHF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d88",
+              "opcode": "call",
+              "target_rva": "0x13300",
+              "resolved": "?SetConstantIfNotAnimatable@TDB_Stream@@QEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d96",
+              "opcode": "call",
+              "target_rva": "0x3d930",
+              "resolved": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12db6",
+              "opcode": "call",
+              "target_rva": "0x6f4d8",
+              "resolved": "SLU.dll!??1SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e8e",
+              "opcode": "call",
+              "target_rva": "0x39b80",
+              "resolved": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e96",
+              "opcode": "call",
+              "target_rva": "0x2dec0",
+              "resolved": "?GetName@TDB_MatchName@@QEBAPEBEXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ece",
+              "opcode": "call",
+              "target_rva": "0x6f760",
+              "resolved": "U.dll!?U_ReportError@@YAXIGAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x12812",
+              "register": "rax",
+              "byte_offset": "0x2e0"
+            },
+            {
+              "site": "0x129de",
+              "register": "rax",
+              "byte_offset": "0x190"
+            },
+            {
+              "site": "0x12bd6",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            },
+            {
+              "site": "0x12be6",
+              "register": "rax",
+              "byte_offset": "0x1f0"
+            },
+            {
+              "site": "0x12bfa",
+              "register": "rax",
+              "byte_offset": "0x218"
+            },
+            {
+              "site": "0x12c0a",
+              "register": "rax",
+              "byte_offset": "0x220"
+            }
+          ],
+          "unresolved_direct_call_count": 49,
+          "all_call_count": 121,
+          "comparisons_first35": [
+            {
+              "site": "0x124c7",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x124d2",
+              "opcode": "test",
+              "op": "r13, r13"
+            },
+            {
+              "site": "0x12554",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1256a",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 4], ecx"
+            },
+            {
+              "site": "0x125a1",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 8], 0x7c"
+            },
+            {
+              "site": "0x125d1",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x125ec",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12627",
+              "opcode": "test",
+              "op": "ebx, ebx"
+            },
+            {
+              "site": "0x1262b",
+              "opcode": "cmp",
+              "op": "al, cl"
+            },
+            {
+              "site": "0x1265d",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1266f",
+              "opcode": "cmp",
+              "op": "eax, ecx"
+            },
+            {
+              "site": "0x126da",
+              "opcode": "test",
+              "op": "dx, dx"
+            },
+            {
+              "site": "0x126e4",
+              "opcode": "cmp",
+              "op": "dword ptr [rsp + 0x50], 0"
+            },
+            {
+              "site": "0x126fb",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1270e",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x12732",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1279f",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x127c8",
+              "opcode": "test",
+              "op": "al, 2"
+            },
+            {
+              "site": "0x12804",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x12818",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x12820",
+              "opcode": "test",
+              "op": "byte ptr [r12 + 6], 1"
+            },
+            {
+              "site": "0x12887",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1289a",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x128a7",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp + 0x44], 0"
+            },
+            {
+              "site": "0x128b1",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x128d1",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1292d",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1293a",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x1294a",
+              "opcode": "cmp",
+              "op": "dword ptr [r15 + 8], 0x5d"
+            },
+            {
+              "site": "0x12953",
+              "opcode": "cmp",
+              "op": "dword ptr [r15 + 0xc], 0x22"
+            },
+            {
+              "site": "0x12985",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x129ae",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x129b6",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x129e4",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp + 0x78], 0"
+            },
+            {
+              "site": "0x12a15",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_leaf": {
+          "export": "?Write@TDB_Stream@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x13e40",
+          "bounded_bytes": 1768,
+          "resolved_calls": [
+            {
+              "site": "0x13ea1",
+              "opcode": "call",
+              "target_rva": "0x37b90",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13ed1",
+              "opcode": "call",
+              "target_rva": "0x40ab0",
+              "resolved": "?TDB_GetStreamExprFlags@@YAIPEBVTDB_Stream@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13f6c",
+              "opcode": "call",
+              "target_rva": "0x39750",
+              "resolved": "?GetKeyData@TDB_Stream@@QEBAAEAVTDB_StreamKeyData@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13f7b",
+              "opcode": "call",
+              "target_rva": "0x3b8e0",
+              "resolved": "?HasExpression@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13f98",
+              "opcode": "call",
+              "target_rva": "0x3b9c0",
+              "resolved": "?HasKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13fb9",
+              "opcode": "call",
+              "target_rva": "0x6f548",
+              "resolved": "SLU.dll!?GetShouldWriteModificationTimes@SLU_File@@QEAA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13fef",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14057",
+              "opcode": "call",
+              "target_rva": "0x37ec0",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14062",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14072",
+              "opcode": "call",
+              "target_rva": "0x3b7b0",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14081",
+              "opcode": "call",
+              "target_rva": "0x4a010",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x140a5",
+              "opcode": "call",
+              "target_rva": "0x6f538",
+              "resolved": "SLU.dll!SLU_BeginChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x140b9",
+              "opcode": "call",
+              "target_rva": "0x43c90",
+              "resolved": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x140d1",
+              "opcode": "call",
+              "target_rva": "0x6f518",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x140e2",
+              "opcode": "call",
+              "target_rva": "0x3b9f0",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14124",
+              "opcode": "call",
+              "target_rva": "0x37ec0",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1412f",
+              "opcode": "call",
+              "target_rva": "0x3b320",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14141",
+              "opcode": "call",
+              "target_rva": "0x3b7b0",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14164",
+              "opcode": "call",
+              "target_rva": "0x4a010",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14177",
+              "opcode": "call",
+              "target_rva": "0x6f518",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x141d7",
+              "opcode": "call",
+              "target_rva": "0x6f1e8",
+              "resolved": "LIST.dll!LIST_Write",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x141f4",
+              "opcode": "call",
+              "target_rva": "0x6f250",
+              "resolved": "LIST.dll!LIST_Dispose",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1420b",
+              "opcode": "call",
+              "target_rva": "0x38ff0",
+              "resolved": "?GetExpression@TDB_Stream@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14214",
+              "opcode": "call",
+              "target_rva": "0x6f550",
+              "resolved": "SLU.dll!SLU_Version_CC2017_PreUnicode",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14224",
+              "opcode": "call",
+              "target_rva": "0x6f500",
+              "resolved": "SLU.dll!?SLU_NewHandleFromString@@YAPEAPEADAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1423d",
+              "opcode": "call",
+              "target_rva": "0x6f508",
+              "resolved": "SLU.dll!SLU_WriteHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14253",
+              "opcode": "call",
+              "target_rva": "0x6f798",
+              "resolved": "U.dll!U_FreeHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14273",
+              "opcode": "call",
+              "target_rva": "0x6f518",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14298",
+              "opcode": "call",
+              "target_rva": "0x6f4f0",
+              "resolved": "SLU.dll!?SLU_WriteUTF16@@YAXPEAVSLU_File@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_N2PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x142b5",
+              "opcode": "call",
+              "target_rva": "0x6fb40",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x142bf",
+              "opcode": "call",
+              "target_rva": "0x39dd0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14359",
+              "opcode": "call",
+              "target_rva": "0x395a0",
+              "resolved": "?GetFlattenedReserved0@TDB_ParamLayerStream@@QEBAPEAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14361",
+              "opcode": "call",
+              "target_rva": "0x6f770",
+              "resolved": "U.dll!U_PointerToInt32",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1439e",
+              "opcode": "call",
+              "target_rva": "0x444d0",
+              "resolved": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x143ab",
+              "opcode": "call",
+              "target_rva": "0x6f530",
+              "resolved": "SLU.dll!SLU_EndChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14508",
+              "opcode": "call",
+              "target_rva": "0x6f768",
+              "resolved": "U.dll!Up_ReportErrString",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x140fa",
+              "register": "rax",
+              "byte_offset": "0x2e0"
+            },
+            {
+              "site": "0x142fa",
+              "register": "rax",
+              "byte_offset": "0x208"
+            },
+            {
+              "site": "0x14317",
+              "register": "rax",
+              "byte_offset": "0x210"
+            }
+          ],
+          "unresolved_direct_call_count": 35,
+          "all_call_count": 74,
+          "comparisons_first35": [
+            {
+              "site": "0x13e83",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x13f59",
+              "opcode": "test",
+              "op": "cx, cx"
+            },
+            {
+              "site": "0x13f71",
+              "opcode": "cmp",
+              "op": "qword ptr [rax], r13"
+            },
+            {
+              "site": "0x13f9d",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x13fa9",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x13fbf",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x13ff4",
+              "opcode": "test",
+              "op": "al, 2"
+            },
+            {
+              "site": "0x1404c",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x140ab",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x140d7",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x140ec",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14100",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14113",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x14146",
+              "opcode": "test",
+              "op": "bl, 1"
+            },
+            {
+              "site": "0x1417d",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x14190",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1419d",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp - 0x5c], r13b"
+            },
+            {
+              "site": "0x141ba",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x141dd",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x141ea",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x141fa",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp - 0x28], 0"
+            },
+            {
+              "site": "0x1421a",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14243",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1424b",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x14279",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x142a3",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x142ca",
+              "opcode": "test",
+              "op": "edx, edx"
+            },
+            {
+              "site": "0x142dd",
+              "opcode": "cmp",
+              "op": "edx, 2"
+            },
+            {
+              "site": "0x1434d",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x1437f",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x143b1",
+              "opcode": "test",
+              "op": "eax, eax"
+            }
+          ]
+        },
+        "parent_base": {
+          "export": "?SetParent@TDB_StreamBase@@IEAAXPEAVTDB_StreamGroup@@@Z",
+          "rva": "0x3f0e0",
+          "bounded_bytes": 163,
+          "resolved_calls": [
+            {
+              "site": "0x3f0ff",
+              "opcode": "call",
+              "target_rva": "0x3caa0",
+              "resolved": "?NotifyParentsStreamStored@TDB_StreamGroup@@AEAAXPEAVTDB_StreamBase@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3f134",
+              "opcode": "call",
+              "target_rva": "0x410a0",
+              "resolved": "?TDB_RescaleStream@@YAHPEAVTDB_Stream@@I@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x3f10a",
+              "register": "rax",
+              "byte_offset": "0x1f0"
+            },
+            {
+              "site": "0x3f11a",
+              "register": "rax",
+              "byte_offset": "0x58"
+            },
+            {
+              "site": "0x3f127",
+              "register": "rdx",
+              "byte_offset": "0x80"
+            },
+            {
+              "site": "0x3f13f",
+              "register": "rdx",
+              "byte_offset": "0x40"
+            },
+            {
+              "site": "0x3f14c",
+              "register": "rax",
+              "byte_offset": "0x90"
+            }
+          ],
+          "unresolved_direct_call_count": 3,
+          "all_call_count": 10,
+          "comparisons_first35": [
+            {
+              "site": "0x3f0f4",
+              "opcode": "test",
+              "op": "rdx, rdx"
+            },
+            {
+              "site": "0x3f123",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3f139",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3f142",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "find_editable": {
+          "export": "?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+          "rva": "0x371d0",
+          "bounded_bytes": 228,
+          "resolved_calls": [
+            {
+              "site": "0x371f5",
+              "opcode": "call",
+              "target_rva": "0x2de80",
+              "resolved": "?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x37215",
+              "opcode": "call",
+              "target_rva": "0x2ddc0",
+              "resolved": "?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x37294",
+              "opcode": "call",
+              "target_rva": "0x6f6e8",
+              "resolved": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x37226",
+              "register": "rax",
+              "byte_offset": "0x170"
+            },
+            {
+              "site": "0x37244",
+              "register": "rdx",
+              "byte_offset": "0x40"
+            },
+            {
+              "site": "0x37251",
+              "register": "rax",
+              "byte_offset": "0x40"
+            }
+          ],
+          "unresolved_direct_call_count": 2,
+          "all_call_count": 8,
+          "comparisons_first35": [
+            {
+              "site": "0x371ff",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3722f",
+              "opcode": "cmp",
+              "op": "edi, r12d"
+            },
+            {
+              "site": "0x37234",
+              "opcode": "cmp",
+              "op": "ebp, 1"
+            },
+            {
+              "site": "0x37239",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x37247",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x37254",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3725d",
+              "opcode": "cmp",
+              "op": "edi, r14d"
+            }
+          ]
+        },
+        "canonical_layout": {
+          "export": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+          "rva": "0x3fac0",
+          "bounded_bytes": 278,
+          "resolved_calls": [
+            {
+              "site": "0x3fb69",
+              "opcode": "call",
+              "target_rva": "0x28150",
+              "resolved": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3fb89",
+              "opcode": "call",
+              "target_rva": "0x3f340",
+              "resolved": "?SetUILayout@TDB_StreamGroup@@QEAAXV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x3fb59",
+              "register": "rax",
+              "byte_offset": "0x1c8"
+            },
+            {
+              "site": "0x3fbbd",
+              "register": "rax",
+              "byte_offset": "0x8"
+            }
+          ],
+          "unresolved_direct_call_count": 4,
+          "all_call_count": 9,
+          "comparisons_first35": [
+            {
+              "site": "0x3faec",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x3fb18",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x3fb6e",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x3fb8f",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x3fba0",
+              "opcode": "cmp",
+              "op": "eax, 1"
+            },
+            {
+              "site": "0x3fbb2",
+              "opcode": "cmp",
+              "op": "edi, 1"
+            }
+          ]
+        },
+        "indexed_append": {
+          "export": "?AppendStream@TDB_IndexedStreamGroup@@QEAAIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z",
+          "rva": "0x35b60",
+          "bounded_bytes": 68,
+          "resolved_calls": [],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x35b78",
+              "register": "rax",
+              "byte_offset": "0x168"
+            },
+            {
+              "site": "0x35b8b",
+              "register": "r9",
+              "byte_offset": "0x210"
+            }
+          ],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": []
+        }
+      }
+    },
+    "2026": {
+      "tdb_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "methods": {
+        "clone_base": {
+          "export": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z",
+          "rva": "0x45f0",
+          "bounded_bytes": 28,
+          "resolved_calls": [],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x4604",
+              "register": "rax",
+              "byte_offset": "0x8"
+            }
+          ],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 1,
+          "comparisons_first35": []
+        },
+        "clone_leaf": {
+          "export": "?CloneStream@TDB_Stream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+          "rva": "0x36a80",
+          "bounded_bytes": 76,
+          "resolved_calls": [
+            {
+              "site": "0x36a95",
+              "opcode": "call",
+              "target_rva": "0x837e0",
+              "resolved": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x36aae",
+              "opcode": "call",
+              "target_rva": "0x33300",
+              "resolved": "??0TDB_Stream@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": [
+            {
+              "site": "0x36aa0",
+              "opcode": "test",
+              "op": "rax, rax"
+            }
+          ]
+        },
+        "clone_parampath": {
+          "export": "?CloneStream@TDB_ParamPathStream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+          "rva": "0x10400",
+          "bounded_bytes": 106,
+          "resolved_calls": [
+            {
+              "site": "0x1041a",
+              "opcode": "call",
+              "target_rva": "0x837e0",
+              "resolved": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x10436",
+              "opcode": "call",
+              "target_rva": "0xe6b0",
+              "resolved": "??0?$TDB_DynamicEnglishDisplayNameNonLeaf@V?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@@@QEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": [
+            {
+              "site": "0x10428",
+              "opcode": "test",
+              "op": "rax, rax"
+            }
+          ]
+        },
+        "read_base": {
+          "export": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x3dd90",
+          "bounded_bytes": 614,
+          "resolved_calls": [
+            {
+              "site": "0x3ddde",
+              "opcode": "call",
+              "target_rva": "0x834e8",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3ddef",
+              "opcode": "call",
+              "target_rva": "0x83748",
+              "resolved": "U.dll!U_LongSwap",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3de42",
+              "opcode": "call",
+              "target_rva": "0x83718",
+              "resolved": "U.dll!?U_ZStringToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3de68",
+              "opcode": "call",
+              "target_rva": "0x83458",
+              "resolved": "SLU.dll!?SLU_ReadString@@YA_NPEAVSLU_File@@PEBUSLU_ChunkInfo@@HPEAV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV34@_K_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3de87",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3dea2",
+              "opcode": "call",
+              "target_rva": "0x83608",
+              "resolved": "U.dll!?U_AsciiToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3df02",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3df4e",
+              "opcode": "call",
+              "target_rva": "0x38cb0",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3df61",
+              "opcode": "call",
+              "target_rva": "0x3f650",
+              "resolved": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3df7d",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x3de0c",
+              "register": "r9",
+              "byte_offset": "0xc0"
+            },
+            {
+              "site": "0x3df1d",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            },
+            {
+              "site": "0x3df3a",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x3df90",
+              "register": "rax",
+              "byte_offset": "0x58"
+            },
+            {
+              "site": "0x3df9d",
+              "register": "rax",
+              "byte_offset": "0x80"
+            },
+            {
+              "site": "0x3dfa9",
+              "register": "r8",
+              "byte_offset": "0x2a0"
+            },
+            {
+              "site": "0x3dfc2",
+              "register": "rax",
+              "byte_offset": "0xc0"
+            }
+          ],
+          "unresolved_direct_call_count": 6,
+          "all_call_count": 23,
+          "comparisons_first35": [
+            {
+              "site": "0x3ddc1",
+              "opcode": "cmp",
+              "op": "dword ptr [rdx + 8], 0x38"
+            },
+            {
+              "site": "0x3dde4",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3ddf8",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x38"
+            },
+            {
+              "site": "0x3de13",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x39"
+            },
+            {
+              "site": "0x3de75",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3de8e",
+              "opcode": "test",
+              "op": "dil, dil"
+            },
+            {
+              "site": "0x3deac",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x18], 7"
+            },
+            {
+              "site": "0x3debe",
+              "opcode": "cmp",
+              "op": "qword ptr [rbp + 7], 7"
+            },
+            {
+              "site": "0x3dec8",
+              "opcode": "cmp",
+              "op": "r8, rdx"
+            },
+            {
+              "site": "0x3ded4",
+              "opcode": "test",
+              "op": "r8, r8"
+            },
+            {
+              "site": "0x3dee6",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3def0",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3df09",
+              "opcode": "test",
+              "op": "dil, dil"
+            },
+            {
+              "site": "0x3df12",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3df23",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3df2f",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3df3d",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3df41",
+              "opcode": "test",
+              "op": "rdi, rdi"
+            },
+            {
+              "site": "0x3df46",
+              "opcode": "test",
+              "op": "r14b, r14b"
+            },
+            {
+              "site": "0x3df53",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x10], 0"
+            },
+            {
+              "site": "0x3df6b",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x3df84",
+              "opcode": "cmp",
+              "op": "dword ptr [rsi + 8], 0x51"
+            },
+            {
+              "site": "0x3df93",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3dfb0",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_base": {
+          "export": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x44800",
+          "bounded_bytes": 520,
+          "resolved_calls": [
+            {
+              "site": "0x44831",
+              "opcode": "call",
+              "target_rva": "0x83748",
+              "resolved": "U.dll!U_LongSwap",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4484e",
+              "opcode": "call",
+              "target_rva": "0x834e0",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x4485f",
+              "opcode": "call",
+              "target_rva": "0x38cb0",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x448a1",
+              "opcode": "call",
+              "target_rva": "0x27f80",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x448ae",
+              "opcode": "call",
+              "target_rva": "0x38cb0",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44918",
+              "opcode": "call",
+              "target_rva": "0x83608",
+              "resolved": "U.dll!?U_AsciiToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44943",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44993",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x449ad",
+              "opcode": "call",
+              "target_rva": "0x83460",
+              "resolved": "SLU.dll!?SLU_WriteString@@YAXPEAVSLU_File@@HAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x449cc",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x4488f",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x448fe",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            }
+          ],
+          "unresolved_direct_call_count": 7,
+          "all_call_count": 19,
+          "comparisons_first35": [
+            {
+              "site": "0x44854",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44872",
+              "opcode": "test",
+              "op": "byte ptr [rdi + 0x18], 4"
+            },
+            {
+              "site": "0x44880",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x44892",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x448a6",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x448b7",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x18], 7"
+            },
+            {
+              "site": "0x448cb",
+              "opcode": "cmp",
+              "op": "qword ptr [rsp + 0x40], 7"
+            },
+            {
+              "site": "0x448d7",
+              "opcode": "cmp",
+              "op": "r8, rdx"
+            },
+            {
+              "site": "0x448e0",
+              "opcode": "test",
+              "op": "r8, r8"
+            },
+            {
+              "site": "0x448f1",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44904",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44926",
+              "opcode": "cmp",
+              "op": "rax, rbx"
+            },
+            {
+              "site": "0x44930",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x4497d",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x449b9",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            }
+          ]
+        },
+        "read_group": {
+          "export": "?Read@TDB_StreamGroup@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x3e040",
+          "bounded_bytes": 243,
+          "resolved_calls": [
+            {
+              "site": "0x3e068",
+              "opcode": "call",
+              "target_rva": "0x2d290",
+              "resolved": "??0TDB_MatchName@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e088",
+              "opcode": "call",
+              "target_rva": "0x83470",
+              "resolved": "SLU.dll!??0SLU_ScDescendList@@QEAA@PEAVSLU_File@@HPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e09b",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0aa",
+              "opcode": "call",
+              "target_rva": "0x3dd90",
+              "resolved": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0b8",
+              "opcode": "call",
+              "target_rva": "0x3e460",
+              "resolved": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0c5",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0d6",
+              "opcode": "call",
+              "target_rva": "0x2fb00",
+              "resolved": "?Read@TDB_MatchName@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0e0",
+              "opcode": "call",
+              "target_rva": "0x2f380",
+              "resolved": "?IsEndOfGroupMarker@TDB_MatchName@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e0f8",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3e115",
+              "opcode": "call",
+              "target_rva": "0x83468",
+              "resolved": "SLU.dll!??1SLU_ScDescendList@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [],
+          "unresolved_direct_call_count": 2,
+          "all_call_count": 13,
+          "comparisons_first35": [
+            {
+              "site": "0x3e08f",
+              "opcode": "cmp",
+              "op": "byte ptr [rsp + 0x30], 0"
+            },
+            {
+              "site": "0x3e0e5",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_group": {
+          "export": "?Write@TDB_StreamGroup@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x44a50",
+          "bounded_bytes": 1115,
+          "resolved_calls": [
+            {
+              "site": "0x44ab7",
+              "opcode": "call",
+              "target_rva": "0x834f8",
+              "resolved": "SLU.dll!SLU_BeginChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44acb",
+              "opcode": "call",
+              "target_rva": "0x44800",
+              "resolved": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44ad6",
+              "opcode": "call",
+              "target_rva": "0x45040",
+              "resolved": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44b3a",
+              "opcode": "call",
+              "target_rva": "0x20650",
+              "resolved": "?TDB_AreTDBStreamScriptingIDsEnabled@TDB_Project@@SA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44ba6",
+              "opcode": "call",
+              "target_rva": "0x3a9b0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44bcd",
+              "opcode": "call",
+              "target_rva": "0x3a9b0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44bf8",
+              "opcode": "call",
+              "target_rva": "0x27f80",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44c78",
+              "opcode": "call",
+              "target_rva": "0x27f80",
+              "resolved": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44c95",
+              "opcode": "call",
+              "target_rva": "0x38cb0",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44ca0",
+              "opcode": "call",
+              "target_rva": "0x38cb0",
+              "resolved": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44ce5",
+              "opcode": "call",
+              "target_rva": "0x3a9b0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44d00",
+              "opcode": "call",
+              "target_rva": "0x833e8",
+              "resolved": "MediaFoundation.dll!?PF_ParamDefStr_GetName@PF_ParamDefStr@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@PEBUPF_ParamDef@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44d0a",
+              "opcode": "call",
+              "target_rva": "0x3a9b0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44d25",
+              "opcode": "call",
+              "target_rva": "0x833e8",
+              "resolved": "MediaFoundation.dll!?PF_ParamDefStr_GetName@PF_ParamDefStr@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@PEBUPF_ParamDef@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44dab",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44dd7",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44dfc",
+              "opcode": "call",
+              "target_rva": "0x2fdb0",
+              "resolved": "?Write@TDB_MatchName@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44e1f",
+              "opcode": "call",
+              "target_rva": "0x30050",
+              "resolved": "?WriteEndOfGroupMarker@TDB_MatchName@@SAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x44e2c",
+              "opcode": "call",
+              "target_rva": "0x834f0",
+              "resolved": "SLU.dll!SLU_EndChunkWrite",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x44ae1",
+              "register": "rax",
+              "byte_offset": "0x168"
+            },
+            {
+              "site": "0x44b0f",
+              "register": "rax",
+              "byte_offset": "0x190"
+            },
+            {
+              "site": "0x44b2b",
+              "register": "r8",
+              "byte_offset": "0x120"
+            },
+            {
+              "site": "0x44b4d",
+              "register": "rax",
+              "byte_offset": "0x50"
+            },
+            {
+              "site": "0x44b5e",
+              "register": "rax",
+              "byte_offset": "0x48"
+            },
+            {
+              "site": "0x44b6f",
+              "register": "rax",
+              "byte_offset": "0x30"
+            },
+            {
+              "site": "0x44bbb",
+              "register": "rax",
+              "byte_offset": "0x78"
+            },
+            {
+              "site": "0x44c03",
+              "register": "rdx",
+              "byte_offset": "0x78"
+            },
+            {
+              "site": "0x44df3",
+              "register": "rax",
+              "byte_offset": "0x28"
+            },
+            {
+              "site": "0x44e0a",
+              "register": "rax",
+              "byte_offset": "0x128"
+            }
+          ],
+          "unresolved_direct_call_count": 10,
+          "all_call_count": 43,
+          "comparisons_first35": [
+            {
+              "site": "0x44abd",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44aed",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44b18",
+              "opcode": "test",
+              "op": "byte ptr [rax + 0x18], 4"
+            },
+            {
+              "site": "0x44b32",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44b3f",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44b50",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44b61",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44b72",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x44b9a",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x44bab",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 0xc], 0xb"
+            },
+            {
+              "site": "0x44bc1",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x44bd8",
+              "opcode": "test",
+              "op": "ecx, 0xfffffff6"
+            },
+            {
+              "site": "0x44be4",
+              "opcode": "cmp",
+              "op": "edx, 9"
+            },
+            {
+              "site": "0x44c86",
+              "opcode": "test",
+              "op": "ecx, 0xfffffffb"
+            },
+            {
+              "site": "0x44ca9",
+              "opcode": "cmp",
+              "op": "qword ptr [rbx + 0x18], 7"
+            },
+            {
+              "site": "0x44cb7",
+              "opcode": "cmp",
+              "op": "qword ptr [rax + 0x18], 7"
+            },
+            {
+              "site": "0x44cc1",
+              "opcode": "cmp",
+              "op": "r8, rcx"
+            },
+            {
+              "site": "0x44cca",
+              "opcode": "test",
+              "op": "r8, r8"
+            },
+            {
+              "site": "0x44cda",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44d3a",
+              "opcode": "cmp",
+              "op": "r10, 0xf"
+            },
+            {
+              "site": "0x44d5c",
+              "opcode": "cmp",
+              "op": "r11, 0xf"
+            },
+            {
+              "site": "0x44d64",
+              "opcode": "cmp",
+              "op": "rax, qword ptr [rsp + 0x60]"
+            },
+            {
+              "site": "0x44d72",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x44d84",
+              "opcode": "cmp",
+              "op": "r8b, byte ptr [rcx]"
+            },
+            {
+              "site": "0x44d99",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x44d9e",
+              "opcode": "cmp",
+              "op": "r11, 0xf"
+            },
+            {
+              "site": "0x44dca",
+              "opcode": "cmp",
+              "op": "r10, 0xf"
+            },
+            {
+              "site": "0x44dde",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x44e13",
+              "opcode": "cmp",
+              "op": "r12d, r13d"
+            },
+            {
+              "site": "0x44e32",
+              "opcode": "test",
+              "op": "eax, eax"
+            }
+          ]
+        },
+        "read_leaf": {
+          "export": "?Read@TDB_Stream@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+          "rva": "0x123d0",
+          "bounded_bytes": 4280,
+          "resolved_calls": [
+            {
+              "site": "0x12418",
+              "opcode": "call",
+              "target_rva": "0x834a8",
+              "resolved": "SLU.dll!??0SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12432",
+              "opcode": "call",
+              "target_rva": "0x3bc70",
+              "resolved": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12461",
+              "opcode": "call",
+              "target_rva": "0x83490",
+              "resolved": "SLU.dll!?Descend@SLU_ScDescend@@QEAAXPEAVSLU_File@@HHPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1246b",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12477",
+              "opcode": "call",
+              "target_rva": "0x3bc70",
+              "resolved": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12489",
+              "opcode": "call",
+              "target_rva": "0x3dd90",
+              "resolved": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124a5",
+              "opcode": "call",
+              "target_rva": "0x834a0",
+              "resolved": "SLU.dll!??0SLU_ScDescend@@QEAA@PEAVSLU_File@@HHPEBUSLU_ChunkInfo@@PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124b5",
+              "opcode": "call",
+              "target_rva": "0x83500",
+              "resolved": "SLU.dll!SLU_ConvertChunkIDToXMLFormat",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124c7",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x124fe",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12515",
+              "opcode": "call",
+              "target_rva": "0x83488",
+              "resolved": "SLU.dll!?GetChunkInfo@SLU_ScDescend@@QEBAPEBUSLU_ChunkInfo@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1252e",
+              "opcode": "call",
+              "target_rva": "0x83448",
+              "resolved": "SLU.dll!SLU_ReadChunkData",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12540",
+              "opcode": "call",
+              "target_rva": "0x83498",
+              "resolved": "SLU.dll!??1SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12575",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1264e",
+              "opcode": "call",
+              "target_rva": "0x42680",
+              "resolved": "?TDB_SetValueDescription@@YAHPEAVTDB_Stream@@PEBVTDB_ValueDesc@@PEAV2@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12691",
+              "opcode": "call",
+              "target_rva": "0x380a0",
+              "resolved": "?FreeCache@TDB_Stream@@IEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12699",
+              "opcode": "call",
+              "target_rva": "0x36550",
+              "resolved": "?AllocateCache@TDB_Stream@@IEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x126b1",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x126c7",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x126f3",
+              "opcode": "call",
+              "target_rva": "0x3c510",
+              "resolved": "?HasKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12726",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1279b",
+              "opcode": "call",
+              "target_rva": "0x38b30",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x127a6",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x127b6",
+              "opcode": "call",
+              "target_rva": "0x3c300",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x127c5",
+              "opcode": "call",
+              "target_rva": "0x4a860",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x127dd",
+              "opcode": "call",
+              "target_rva": "0x834e8",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1282a",
+              "opcode": "call",
+              "target_rva": "0x83198",
+              "resolved": "LIST.dll!LIST_Read",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12847",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12883",
+              "opcode": "call",
+              "target_rva": "0x831a8",
+              "resolved": "LIST.dll!LIST_SetFuncs",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1289e",
+              "opcode": "call",
+              "target_rva": "0x83138",
+              "resolved": "LIST.dll!LIST_Dispose",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x128d8",
+              "opcode": "call",
+              "target_rva": "0x834e8",
+              "resolved": "SLU.dll!SLU_ReadAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12901",
+              "opcode": "call",
+              "target_rva": "0x831b8",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12922",
+              "opcode": "call",
+              "target_rva": "0x3beb0",
+              "resolved": "?GetTimeScale@TDB_Stream@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1296e",
+              "opcode": "call",
+              "target_rva": "0x83450",
+              "resolved": "SLU.dll!SLU_Version_CC2017_PreUnicode",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1298c",
+              "opcode": "call",
+              "target_rva": "0x834d8",
+              "resolved": "SLU.dll!SLU_ReadHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x129a6",
+              "opcode": "call",
+              "target_rva": "0x834c0",
+              "resolved": "SLU.dll!?SLU_ConvertHandleToStringAndDisposeIfEncoded@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEAPEAPEADPEBUSLU_TextEncoding@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x129ce",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a0f",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a1f",
+              "opcode": "call",
+              "target_rva": "0x834b8",
+              "resolved": "SLU.dll!?SLU_ReadUTF16@@YAXPEAVSLU_File@@PEAV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a33",
+              "opcode": "call",
+              "target_rva": "0x42070",
+              "resolved": "?TDB_SetStreamExpression@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEAVTDB_Stream@@AEBV12@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a4e",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a64",
+              "opcode": "call",
+              "target_rva": "0x41e50",
+              "resolved": "?TDB_SetStreamExprFlags@@YAHPEAVTDB_Stream@@II@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a87",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12a91",
+              "opcode": "call",
+              "target_rva": "0x3a9a0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12b85",
+              "opcode": "call",
+              "target_rva": "0x83730",
+              "resolved": "U.dll!U_Int32ToPointer",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12bc1",
+              "opcode": "call",
+              "target_rva": "0x85c0",
+              "resolved": "?TDB_BetaFeature_IsLayerParametersAllowIndividualEffectsEnabled@@YA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d38",
+              "opcode": "call",
+              "target_rva": "0x83b10",
+              "resolved": "dvacore.dll!?Allocate@MemoryRecycler@allocator@dvacore@@YAPEAX_KAEA_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12d6e",
+              "opcode": "call",
+              "target_rva": "0x38d40",
+              "resolved": "?GetDisplayPath@TDB_StreamBase@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBV23@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12da3",
+              "opcode": "call",
+              "target_rva": "0x83b18",
+              "resolved": "dvacore.dll!?UTF8to16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@V?$basic_string_view@EU?$char_traits@E@std@@@4@PEAW4UnicodeErrorCode@12@PEA_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12dba",
+              "opcode": "call",
+              "target_rva": "0x83718",
+              "resolved": "U.dll!?U_ZStringToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e35",
+              "opcode": "call",
+              "target_rva": "0x83a90",
+              "resolved": "dvacore.dll!?ReplaceInString@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV34@0000000000@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e3e",
+              "opcode": "call",
+              "target_rva": "0x83508",
+              "resolved": "SLU.dll!SLU_ReportUnsupportedNewerFeaturesInProject",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e60",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12e94",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12ec6",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12eed",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12f16",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12f4a",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12f7c",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12fae",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x12fe0",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13012",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13044",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13076",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x130a8",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x130da",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x130f8",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13116",
+              "opcode": "call",
+              "target_rva": "0x831b8",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13127",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13148",
+              "opcode": "call",
+              "target_rva": "0x831b8",
+              "resolved": "LIST.dll!LIST_ForEach",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13159",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13165",
+              "opcode": "call",
+              "target_rva": "0x3c540",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13171",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13185",
+              "opcode": "call",
+              "target_rva": "0x3a420",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13192",
+              "opcode": "call",
+              "target_rva": "0x3a420",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x131ab",
+              "opcode": "call",
+              "target_rva": "0x4b7a0",
+              "resolved": "?SetInvalid@TDB_Stream@@QEBAHHF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x131bb",
+              "opcode": "call",
+              "target_rva": "0x3c540",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x131c7",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x131db",
+              "opcode": "call",
+              "target_rva": "0x3a420",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x131e8",
+              "opcode": "call",
+              "target_rva": "0x3a420",
+              "resolved": "?GetKeys@TDB_Stream@@QEBAPEAPEAULIST_Head@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13201",
+              "opcode": "call",
+              "target_rva": "0x4b670",
+              "resolved": "?SetArcInvalid@TDB_Stream@@QEBAHHF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13218",
+              "opcode": "call",
+              "target_rva": "0x13720",
+              "resolved": "?SetConstantIfNotAnimatable@TDB_Stream@@QEAAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13226",
+              "opcode": "call",
+              "target_rva": "0x3e460",
+              "resolved": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13246",
+              "opcode": "call",
+              "target_rva": "0x83498",
+              "resolved": "SLU.dll!??1SLU_ScDescend@@QEAA@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1331c",
+              "opcode": "call",
+              "target_rva": "0x3a760",
+              "resolved": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x13324",
+              "opcode": "call",
+              "target_rva": "0x2ed00",
+              "resolved": "?GetName@TDB_MatchName@@QEBAPEBEXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1335c",
+              "opcode": "call",
+              "target_rva": "0x83710",
+              "resolved": "U.dll!?U_ReportError@@YAXIGAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x1277f",
+              "register": "rax",
+              "byte_offset": "0x2e0"
+            },
+            {
+              "site": "0x1293e",
+              "register": "rax",
+              "byte_offset": "0x190"
+            },
+            {
+              "site": "0x12b33",
+              "register": "rax",
+              "byte_offset": "0x1e8"
+            },
+            {
+              "site": "0x12b43",
+              "register": "rax",
+              "byte_offset": "0x1f0"
+            },
+            {
+              "site": "0x12b57",
+              "register": "rax",
+              "byte_offset": "0x218"
+            },
+            {
+              "site": "0x12b67",
+              "register": "rax",
+              "byte_offset": "0x220"
+            }
+          ],
+          "unresolved_direct_call_count": 55,
+          "all_call_count": 148,
+          "comparisons_first35": [
+            {
+              "site": "0x12437",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x1243f",
+              "opcode": "test",
+              "op": "r12, r12"
+            },
+            {
+              "site": "0x124bb",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x124d0",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 4], ecx"
+            },
+            {
+              "site": "0x12504",
+              "opcode": "cmp",
+              "op": "dword ptr [rax + 8], 0x7c"
+            },
+            {
+              "site": "0x12534",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1254f",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1257a",
+              "opcode": "test",
+              "op": "r15d, r15d"
+            },
+            {
+              "site": "0x12589",
+              "opcode": "test",
+              "op": "al, 1"
+            },
+            {
+              "site": "0x125bb",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x125cd",
+              "opcode": "cmp",
+              "op": "eax, ecx"
+            },
+            {
+              "site": "0x12636",
+              "opcode": "test",
+              "op": "dx, dx"
+            },
+            {
+              "site": "0x1263f",
+              "opcode": "test",
+              "op": "r15d, r15d"
+            },
+            {
+              "site": "0x12653",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12666",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x1268a",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x126f8",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x1272b",
+              "opcode": "test",
+              "op": "al, 2"
+            },
+            {
+              "site": "0x12771",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x12785",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x1278d",
+              "opcode": "test",
+              "op": "byte ptr [r15 + 6], 1"
+            },
+            {
+              "site": "0x127e3",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x127f6",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12805",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp + 0x84], 0"
+            },
+            {
+              "site": "0x12812",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x12830",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12889",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12895",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x128a4",
+              "opcode": "cmp",
+              "op": "dword ptr [r14 + 8], 0x5d"
+            },
+            {
+              "site": "0x128ad",
+              "opcode": "cmp",
+              "op": "dword ptr [r14 + 0xc], 0x22"
+            },
+            {
+              "site": "0x128de",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x12907",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1290f",
+              "opcode": "test",
+              "op": "bl, bl"
+            },
+            {
+              "site": "0x1294c",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp + 0xb8], 0"
+            },
+            {
+              "site": "0x12977",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "write_leaf": {
+          "export": "?Write@TDB_Stream@@UEBAXPEAVSLU_File@@@Z",
+          "rva": "0x14260",
+          "bounded_bytes": 1763,
+          "resolved_calls": [
+            {
+              "site": "0x142cd",
+              "opcode": "call",
+              "target_rva": "0x38770",
+              "resolved": "?GetCache@TDB_Stream@@QEBAAEAUTDB_KeyScalar@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x142f4",
+              "opcode": "call",
+              "target_rva": "0x41500",
+              "resolved": "?TDB_GetStreamExprFlags@@YAIPEBVTDB_Stream@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1438f",
+              "opcode": "call",
+              "target_rva": "0x3a330",
+              "resolved": "?GetKeyData@TDB_Stream@@QEBAAEAVTDB_StreamKeyData@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1439e",
+              "opcode": "call",
+              "target_rva": "0x3c430",
+              "resolved": "?HasExpression@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x143bb",
+              "opcode": "call",
+              "target_rva": "0x3c510",
+              "resolved": "?HasKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x143dc",
+              "opcode": "call",
+              "target_rva": "0x83518",
+              "resolved": "SLU.dll!?GetShouldWriteModificationTimes@SLU_File@@QEAA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14412",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1447a",
+              "opcode": "call",
+              "target_rva": "0x38b30",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14485",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14495",
+              "opcode": "call",
+              "target_rva": "0x3c300",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x144a4",
+              "opcode": "call",
+              "target_rva": "0x4a860",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x144c8",
+              "opcode": "call",
+              "target_rva": "0x834f8",
+              "resolved": "SLU.dll!SLU_BeginChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x144dc",
+              "opcode": "call",
+              "target_rva": "0x44800",
+              "resolved": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x144f4",
+              "opcode": "call",
+              "target_rva": "0x834e0",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14505",
+              "opcode": "call",
+              "target_rva": "0x3c540",
+              "resolved": "?HasNoKeys@TDB_Stream@@QEBA_NXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1454f",
+              "opcode": "call",
+              "target_rva": "0x38b30",
+              "resolved": "?GetDimension@TDB_Stream@@QEBAFXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1455a",
+              "opcode": "call",
+              "target_rva": "0x3be90",
+              "resolved": "?GetTDBFlags@TDB_Stream@@QEBAGXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1456c",
+              "opcode": "call",
+              "target_rva": "0x3c300",
+              "resolved": "?GetValueDesc@TDB_Stream@@QEBAAEBVTDB_ValueDesc@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1457f",
+              "opcode": "call",
+              "target_rva": "0x4a860",
+              "resolved": "?TDB_GetKeyScalarDataSize@@YAHPEBVTDB_ValueDesc@@EF@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14592",
+              "opcode": "call",
+              "target_rva": "0x834e0",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x145f2",
+              "opcode": "call",
+              "target_rva": "0x831a0",
+              "resolved": "LIST.dll!LIST_Write",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1460f",
+              "opcode": "call",
+              "target_rva": "0x83138",
+              "resolved": "LIST.dll!LIST_Dispose",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14626",
+              "opcode": "call",
+              "target_rva": "0x39c10",
+              "resolved": "?GetExpression@TDB_Stream@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1462f",
+              "opcode": "call",
+              "target_rva": "0x83450",
+              "resolved": "SLU.dll!SLU_Version_CC2017_PreUnicode",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1463f",
+              "opcode": "call",
+              "target_rva": "0x834c8",
+              "resolved": "SLU.dll!?SLU_NewHandleFromString@@YAPEAPEADAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14658",
+              "opcode": "call",
+              "target_rva": "0x834d0",
+              "resolved": "SLU.dll!SLU_WriteHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1466e",
+              "opcode": "call",
+              "target_rva": "0x83750",
+              "resolved": "U.dll!U_FreeHandle",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1468e",
+              "opcode": "call",
+              "target_rva": "0x834e0",
+              "resolved": "SLU.dll!SLU_WriteAtom",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x146b3",
+              "opcode": "call",
+              "target_rva": "0x834b0",
+              "resolved": "SLU.dll!?SLU_WriteUTF16@@YAXPEAVSLU_File@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_N2PEA_N@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x146d0",
+              "opcode": "call",
+              "target_rva": "0x83b08",
+              "resolved": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x146da",
+              "opcode": "call",
+              "target_rva": "0x3a9b0",
+              "resolved": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14774",
+              "opcode": "call",
+              "target_rva": "0x3a190",
+              "resolved": "?GetFlattenedReserved0@TDB_ParamLayerStream@@QEBAPEAXXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x1477c",
+              "opcode": "call",
+              "target_rva": "0x83728",
+              "resolved": "U.dll!U_PointerToInt32",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x147b9",
+              "opcode": "call",
+              "target_rva": "0x45040",
+              "resolved": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x147c6",
+              "opcode": "call",
+              "target_rva": "0x834f0",
+              "resolved": "SLU.dll!SLU_EndChunkWrite",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x14923",
+              "opcode": "call",
+              "target_rva": "0x83720",
+              "resolved": "U.dll!Up_ReportErrString",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x1451d",
+              "register": "rax",
+              "byte_offset": "0x2e0"
+            },
+            {
+              "site": "0x14715",
+              "register": "rax",
+              "byte_offset": "0x208"
+            },
+            {
+              "site": "0x14732",
+              "register": "rax",
+              "byte_offset": "0x210"
+            }
+          ],
+          "unresolved_direct_call_count": 35,
+          "all_call_count": 74,
+          "comparisons_first35": [
+            {
+              "site": "0x142a3",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1437c",
+              "opcode": "test",
+              "op": "cx, cx"
+            },
+            {
+              "site": "0x14394",
+              "opcode": "cmp",
+              "op": "qword ptr [rax], r13"
+            },
+            {
+              "site": "0x143c0",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x143cc",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x143e2",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14417",
+              "opcode": "test",
+              "op": "al, 2"
+            },
+            {
+              "site": "0x1446f",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x144ce",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x144fa",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1450f",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14523",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x14536",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x1453e",
+              "opcode": "test",
+              "op": "byte ptr [r12 + 6], 1"
+            },
+            {
+              "site": "0x14598",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x145ab",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x145b8",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp - 0x5c], r13b"
+            },
+            {
+              "site": "0x145d5",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x145f8",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x14605",
+              "opcode": "test",
+              "op": "rcx, rcx"
+            },
+            {
+              "site": "0x14615",
+              "opcode": "cmp",
+              "op": "byte ptr [rbp - 0x28], 0"
+            },
+            {
+              "site": "0x14635",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x1465e",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x14666",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x14694",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x146be",
+              "opcode": "cmp",
+              "op": "rdx, 7"
+            },
+            {
+              "site": "0x146e5",
+              "opcode": "test",
+              "op": "edx, edx"
+            },
+            {
+              "site": "0x146f8",
+              "opcode": "cmp",
+              "op": "edx, 2"
+            },
+            {
+              "site": "0x14768",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x1479a",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x147cc",
+              "opcode": "test",
+              "op": "eax, eax"
+            }
+          ]
+        },
+        "parent_base": {
+          "export": "?SetParent@TDB_StreamBase@@IEAAXPEAVTDB_StreamGroup@@@Z",
+          "rva": "0x3fb20",
+          "bounded_bytes": 163,
+          "resolved_calls": [
+            {
+              "site": "0x3fb3f",
+              "opcode": "call",
+              "target_rva": "0x3d630",
+              "resolved": "?NotifyParentsStreamStored@TDB_StreamGroup@@AEAAXPEAVTDB_StreamBase@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x3fb74",
+              "opcode": "call",
+              "target_rva": "0x41ae0",
+              "resolved": "?TDB_RescaleStream@@YAHPEAVTDB_Stream@@I@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x3fb4a",
+              "register": "rax",
+              "byte_offset": "0x1f0"
+            },
+            {
+              "site": "0x3fb5a",
+              "register": "rax",
+              "byte_offset": "0x58"
+            },
+            {
+              "site": "0x3fb67",
+              "register": "rdx",
+              "byte_offset": "0x80"
+            },
+            {
+              "site": "0x3fb7f",
+              "register": "rdx",
+              "byte_offset": "0x40"
+            },
+            {
+              "site": "0x3fb8c",
+              "register": "rax",
+              "byte_offset": "0x90"
+            }
+          ],
+          "unresolved_direct_call_count": 3,
+          "all_call_count": 10,
+          "comparisons_first35": [
+            {
+              "site": "0x3fb34",
+              "opcode": "test",
+              "op": "rdx, rdx"
+            },
+            {
+              "site": "0x3fb63",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x3fb79",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x3fb82",
+              "opcode": "test",
+              "op": "al, al"
+            }
+          ]
+        },
+        "find_editable": {
+          "export": "?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+          "rva": "0x37de0",
+          "bounded_bytes": 222,
+          "resolved_calls": [
+            {
+              "site": "0x37e02",
+              "opcode": "call",
+              "target_rva": "0x2ecc0",
+              "resolved": "?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x37e19",
+              "opcode": "call",
+              "target_rva": "0x2ec10",
+              "resolved": "?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x37e9e",
+              "opcode": "call",
+              "target_rva": "0x836a8",
+              "resolved": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x37e2a",
+              "register": "r9",
+              "byte_offset": "0x170"
+            },
+            {
+              "site": "0x37e49",
+              "register": "rax",
+              "byte_offset": "0x40"
+            },
+            {
+              "site": "0x37e56",
+              "register": "rax",
+              "byte_offset": "0x40"
+            }
+          ],
+          "unresolved_direct_call_count": 3,
+          "all_call_count": 9,
+          "comparisons_first35": [
+            {
+              "site": "0x37e0c",
+              "opcode": "test",
+              "op": "eax, eax"
+            },
+            {
+              "site": "0x37e34",
+              "opcode": "cmp",
+              "op": "edi, r12d"
+            },
+            {
+              "site": "0x37e39",
+              "opcode": "cmp",
+              "op": "ebp, 1"
+            },
+            {
+              "site": "0x37e3e",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x37e4c",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x37e59",
+              "opcode": "test",
+              "op": "al, al"
+            },
+            {
+              "site": "0x37e62",
+              "opcode": "cmp",
+              "op": "edi, r14d"
+            }
+          ]
+        },
+        "canonical_layout": {
+          "export": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+          "rva": "0x40520",
+          "bounded_bytes": 255,
+          "resolved_calls": [
+            {
+              "site": "0x405be",
+              "opcode": "call",
+              "target_rva": "0x29250",
+              "resolved": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            },
+            {
+              "site": "0x405de",
+              "opcode": "call",
+              "target_rva": "0x3fd80",
+              "resolved": "?SetUILayout@TDB_StreamGroup@@QEAAXV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@@Z",
+              "indirect": false,
+              "op": ""
+            }
+          ],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x405ae",
+              "register": "rax",
+              "byte_offset": "0x1c8"
+            },
+            {
+              "site": "0x40612",
+              "register": "rax",
+              "byte_offset": "0x8"
+            }
+          ],
+          "unresolved_direct_call_count": 4,
+          "all_call_count": 9,
+          "comparisons_first35": [
+            {
+              "site": "0x40541",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x4056d",
+              "opcode": "test",
+              "op": "rax, rax"
+            },
+            {
+              "site": "0x405c3",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x405e4",
+              "opcode": "test",
+              "op": "rbx, rbx"
+            },
+            {
+              "site": "0x405f5",
+              "opcode": "cmp",
+              "op": "eax, 1"
+            },
+            {
+              "site": "0x40607",
+              "opcode": "cmp",
+              "op": "edi, 1"
+            }
+          ]
+        },
+        "indexed_append": {
+          "export": "?AppendStream@TDB_IndexedStreamGroup@@QEAAIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z",
+          "rva": "0x365e0",
+          "bounded_bytes": 68,
+          "resolved_calls": [],
+          "indirect_virtual_calls": [
+            {
+              "site": "0x365f8",
+              "register": "rax",
+              "byte_offset": "0x168"
+            },
+            {
+              "site": "0x3660b",
+              "register": "r9",
+              "byte_offset": "0x218"
+            }
+          ],
+          "unresolved_direct_call_count": 0,
+          "all_call_count": 2,
+          "comparisons_first35": []
+        }
+      }
+    }
+  }
+}

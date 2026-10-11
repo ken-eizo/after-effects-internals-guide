@@ -1,0 +1,31 @@
+{
+  "experiment_id": "EXP-SHAPE-026",
+  "title": "Build CNL-owned native Contents and true vector cubic document core",
+  "status": "pass-compiled-host-independent",
+  "date": "2026-10-12",
+  "evidence": "E2-B compiled native x64 Release DLL, CTest, Python ctypes, exact PE exports",
+  "results": {
+    "native_C_API_exports": 20,
+    "stable_64bit_object_ids": true,
+    "indexed_hierarchical_groups": true,
+    "Bezier_control_points_and_cubics": true,
+    "procedural_ellipse": true,
+    "deep_clone": true,
+    "checksum_archive": true,
+    "deterministic_roundtrip": true,
+    "nested_depth_2048_test": true,
+    "Windows_x64_DLL_built": true,
+    "CTest_passed": true,
+    "Python_ctypes_passed": true,
+    "host_native_TDB_type_registered": false,
+    "host_native_vector_renderer": false,
+    "AE_host_test": false,
+    "installed_plugin": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-029-independent-native-vector-core-compiled.md",
+    "experiments/vector-shape/EXP-SHAPE-026-native-vector-core-implementation.md",
+    "experiments/vector-shape/native-vector-core-lab",
+    "datasets/ae-native-vector-core-release-receipt-20261012.json"
+  ]
+}

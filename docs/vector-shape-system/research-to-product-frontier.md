@@ -95,3 +95,10 @@ The newest native vtable audit establishes a concrete owner-specific render requ
 **Large future product consequence if solved:** plugins could define wholly new AE-native editable vector types — not a fake Shape Layer, not Mask, not raster — with unique path filters, procedural geometry as persistent native Contents, AE's actual Pen and Selection handles, and production RG/AGM rendering. It would allow visual coding languages to return an authorable vector object rather than only a composited pixel image.
 
 Evidence: [Independent Native Vector Objects](independent-native-vector-owner-research.md), F-VECTOR-025, H-SHAPE-007, EXP-SHAPE-023. Remaining highest-risk gate is a truly registered independent native Stream Creator/owner with a safe, complete, version-pinned ABI and no host process patching.
+
+
+## Native vector ownership product engineering (2026-10-12)
+
+A first practical future plugin backend exists as a compiled CNLNativeVectorCore DLL with independent typed Contents and cubic geometry, stable 64-bit identities, deterministic CNL archive, clone and C ABI. It avoids Mask/Shape storage and does not materialize PF_World output. Passing native compiled tests and Python ctypes proves the module works externally, not that Adobe recognizes it.
+
+The large potential product breakthrough remains third-party host-owned, AE-native vector objects: new editable path source, native indexed Contents, AE Pen selection, CNL-defined geometry/operators and native BEE_VectorArt/RG output. The current library is a source-side dependency, not the breakthrough. Remaining integrations require a private TDB registrar, Timeline owner, BEE evaluator registry and renderer dispatch with exact version-pinned lifetime. Details F-VECTOR-027/028/029 and EXP-SHAPE-025/026.

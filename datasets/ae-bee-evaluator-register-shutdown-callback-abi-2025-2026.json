@@ -1,0 +1,1099 @@
+{
+  "classification": "E2-L private native BEE registry static PE disassembly; function names are analytical labels, not public ABI",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "code": {
+        "reg": {
+          "function_start": "0x6eeb20",
+          "function_end": "0x6eed80",
+          "bytes": 608,
+          "first65_comparisons": [
+            {
+              "site": "0x6eeb5b",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x6eeb6e",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6eeb7e",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x6eeb88",
+              "op": "cmp byte ptr [rdi + 0x19], 0"
+            },
+            {
+              "site": "0x6eeb9b",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6eeba6",
+              "op": "cmp rdi, qword ptr [rbp + 8]"
+            },
+            {
+              "site": "0x6eebac",
+              "op": "cmp qword ptr [rdi + 0x30], 0"
+            },
+            {
+              "site": "0x6eebd1",
+              "op": "test rdx, rdx"
+            },
+            {
+              "site": "0x6eebfb",
+              "op": "cmp byte ptr [rsi + 0x19], r15b"
+            },
+            {
+              "site": "0x6eec16",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6eec2c",
+              "op": "cmp byte ptr [rbx + 0x19], r15b"
+            },
+            {
+              "site": "0x6eec43",
+              "op": "cmp byte ptr [rdi + 0x19], r15b"
+            },
+            {
+              "site": "0x6eec58",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6eec66",
+              "op": "cmp qword ptr [rbp + 8], rax"
+            },
+            {
+              "site": "0x6eece5",
+              "op": "test rdx, rdx"
+            },
+            {
+              "site": "0x6eed08",
+              "op": "test rdx, rdx"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x6eeb68",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cf3f2]"
+            },
+            {
+              "site": "0x6eeb76",
+              "target_rva": "0x6eeb7e",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1806eeb7e"
+            },
+            {
+              "site": "0x6eeb95",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cf3c5]"
+            },
+            {
+              "site": "0x6eebc3",
+              "target_rva": "0xebd990",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cedc7]"
+            },
+            {
+              "site": "0x6eebea",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax]"
+            },
+            {
+              "site": "0x6eec10",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cf34a]"
+            },
+            {
+              "site": "0x6eec1e",
+              "target_rva": "0x6eec26",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1806eec26"
+            },
+            {
+              "site": "0x6eec52",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cf308]"
+            },
+            {
+              "site": "0x6eec83",
+              "target_rva": "0xce9048",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ce9048"
+            },
+            {
+              "site": "0x6eec99",
+              "target_rva": "0xebdbf8",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@$$QEAV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7cef59]"
+            },
+            {
+              "site": "0x6eecd5",
+              "target_rva": "0x6fe5e0",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x1806fe5e0"
+            },
+            {
+              "site": "0x6eecfe",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax + 8]"
+            },
+            {
+              "site": "0x6eed21",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax + 8]"
+            },
+            {
+              "site": "0x6eed2d",
+              "target_rva": "0xce9610",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ce9610"
+            },
+            {
+              "site": "0x6eed49",
+              "target_rva": "0x60600",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180060600"
+            },
+            {
+              "site": "0x6eed60",
+              "target_rva": "0xebf890",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7d0b2a]"
+            },
+            {
+              "site": "0x6eed7a",
+              "target_rva": "0xceacc8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ceacc8"
+            }
+          ],
+          "virtual_calls": [
+            {
+              "site": "0x6eebea",
+              "base_reg": "rax",
+              "disp": "0x0"
+            },
+            {
+              "site": "0x6eecfe",
+              "base_reg": "rax",
+              "disp": "0x8"
+            },
+            {
+              "site": "0x6eed21",
+              "base_reg": "rax",
+              "disp": "0x8"
+            }
+          ],
+          "references_to_global_data": [
+            {
+              "site": "0x6eeb33",
+              "rva": "0x1519740",
+              "mnemonic": "mov",
+              "op": "rax, qword ptr [rip + 0xe2ac06]"
+            },
+            {
+              "site": "0x6eed4f",
+              "rva": "0x1000d40",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x911fea]"
+            },
+            {
+              "site": "0x6eed6e",
+              "rva": "0x137f608",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xc90893]"
+            }
+          ]
+        },
+        "ctor": {
+          "function_start": "0x6eef40",
+          "function_end": "0x6eeffa",
+          "bytes": 186,
+          "first65_comparisons": [
+            {
+              "site": "0x6eef4a",
+              "op": "cmp qword ptr [rip + 0xf00496], 0"
+            },
+            {
+              "site": "0x6eef67",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x6eef59",
+              "target_rva": "0xebf7f0",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7d0891]"
+            },
+            {
+              "site": "0x6eef93",
+              "target_rva": "0xce9048",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ce9048"
+            },
+            {
+              "site": "0x6eefac",
+              "target_rva": "0x6eefb0",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1806eefb0"
+            },
+            {
+              "site": "0x6eefda",
+              "target_rva": "0xebf890",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7d08b0]"
+            },
+            {
+              "site": "0x6eeff4",
+              "target_rva": "0xceacc8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ceacc8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x6eef6c",
+              "rva": "0x1000d10",
+              "mnemonic": "lea",
+              "op": "rax, [rip + 0x911d9d]"
+            },
+            {
+              "site": "0x6eefc9",
+              "rva": "0x1000d68",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x911d98]"
+            },
+            {
+              "site": "0x6eefe8",
+              "rva": "0x137f608",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xc90619]"
+            }
+          ]
+        },
+        "lookup": {
+          "function_start": "0x6f9020",
+          "function_end": "0x6f90ed",
+          "bytes": 205,
+          "first65_comparisons": [
+            {
+              "site": "0x6f904c",
+              "op": "cmp byte ptr [rbx + 0x19], sil"
+            },
+            {
+              "site": "0x6f905f",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6f906f",
+              "op": "cmp byte ptr [rbx + 0x19], sil"
+            },
+            {
+              "site": "0x6f9075",
+              "op": "cmp byte ptr [rdi + 0x19], sil"
+            },
+            {
+              "site": "0x6f9088",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x6f908c",
+              "op": "cmp rdi, qword ptr [r15 + 8]"
+            },
+            {
+              "site": "0x6f9096",
+              "op": "test r14b, r14b"
+            },
+            {
+              "site": "0x6f909b",
+              "op": "test rsi, rsi"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x6f9059",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7c4f01]"
+            },
+            {
+              "site": "0x6f9067",
+              "target_rva": "0x6f906f",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1806f906f"
+            },
+            {
+              "site": "0x6f9082",
+              "target_rva": "0xebdf60",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7c4ed8]"
+            },
+            {
+              "site": "0x6f90cd",
+              "target_rva": "0xebf890",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7c67bd]"
+            },
+            {
+              "site": "0x6f90e7",
+              "target_rva": "0xceacc8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ceacc8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x6f90bc",
+              "rva": "0x1000d18",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x907c55]"
+            },
+            {
+              "site": "0x6f90d3",
+              "rva": "0x137f608",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xc8652e]"
+            }
+          ]
+        },
+        "accessor": {
+          "function_start": "0x6f87e0",
+          "function_end": "0x6f8826",
+          "bytes": 70,
+          "first65_comparisons": [
+            {
+              "site": "0x6f87eb",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x6f8806",
+              "target_rva": "0xebf890",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7c7084]"
+            },
+            {
+              "site": "0x6f8820",
+              "target_rva": "0xceacc8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ceacc8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x6f87e4",
+              "rva": "0x15ef3e8",
+              "mnemonic": "mov",
+              "op": "rax, qword ptr [rip + 0xef6bfd]"
+            },
+            {
+              "site": "0x6f87f5",
+              "rva": "0x1000dc8",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x9085cc]"
+            },
+            {
+              "site": "0x6f880c",
+              "rva": "0x137f608",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xc86df5]"
+            }
+          ]
+        },
+        "post_init": {
+          "function_start": "0x6eef40",
+          "function_end": "0x6eeffa",
+          "bytes": 186,
+          "first65_comparisons": [
+            {
+              "site": "0x6eef4a",
+              "op": "cmp qword ptr [rip + 0xf00496], 0"
+            },
+            {
+              "site": "0x6eef67",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x6eef59",
+              "target_rva": "0xebf7f0",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7d0891]"
+            },
+            {
+              "site": "0x6eef93",
+              "target_rva": "0xce9048",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ce9048"
+            },
+            {
+              "site": "0x6eefac",
+              "target_rva": "0x6eefb0",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1806eefb0"
+            },
+            {
+              "site": "0x6eefda",
+              "target_rva": "0xebf890",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7d08b0]"
+            },
+            {
+              "site": "0x6eeff4",
+              "target_rva": "0xceacc8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180ceacc8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x6eef6c",
+              "rva": "0x1000d10",
+              "mnemonic": "lea",
+              "op": "rax, [rip + 0x911d9d]"
+            },
+            {
+              "site": "0x6eefc9",
+              "rva": "0x1000d68",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x911d98]"
+            },
+            {
+              "site": "0x6eefe8",
+              "rva": "0x137f608",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xc90619]"
+            }
+          ]
+        },
+        "destruct_hint": {
+          "function_start": "0x6fdcc0",
+          "function_end": "0x6fdcdd",
+          "bytes": 29,
+          "first65_comparisons": [
+            {
+              "site": "0x6fdcd4",
+              "op": "test rbx, rbx"
+            }
+          ],
+          "calls": [],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x6fdccb",
+              "rva": "0x15ef3e8",
+              "mnemonic": "mov",
+              "op": "rbx, qword ptr [rip + 0xef1716]"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "code": {
+        "reg": {
+          "function_start": "0x713120",
+          "function_end": "0x71338a",
+          "bytes": 618,
+          "first65_comparisons": [
+            {
+              "site": "0x713155",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x71316d",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x71317d",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x71318b",
+              "op": "cmp byte ptr [rdi + 0x19], 0"
+            },
+            {
+              "site": "0x71319e",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x7131aa",
+              "op": "cmp rdi, qword ptr [r15]"
+            },
+            {
+              "site": "0x7131af",
+              "op": "cmp qword ptr [rdi + 0x30], 0"
+            },
+            {
+              "site": "0x7131d1",
+              "op": "test rdx, rdx"
+            },
+            {
+              "site": "0x7131f4",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x713212",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x71322b",
+              "op": "cmp byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x713239",
+              "op": "cmp byte ptr [rdi + 0x19], 0"
+            },
+            {
+              "site": "0x71324e",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x713260",
+              "op": "cmp qword ptr [r15 + 8], rax"
+            },
+            {
+              "site": "0x7132f0",
+              "op": "test rdx, rdx"
+            },
+            {
+              "site": "0x713319",
+              "op": "test rdx, rdx"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x713167",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x803f23]"
+            },
+            {
+              "site": "0x713175",
+              "target_rva": "0x71317d",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x18071317d"
+            },
+            {
+              "site": "0x713186",
+              "target_rva": "0x71318b",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x18071318b"
+            },
+            {
+              "site": "0x713198",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x803ef2]"
+            },
+            {
+              "site": "0x7131a5",
+              "target_rva": "0x7131aa",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1807131aa"
+            },
+            {
+              "site": "0x7131c2",
+              "target_rva": "0xf170b0",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x803ee8]"
+            },
+            {
+              "site": "0x7131ea",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax]"
+            },
+            {
+              "site": "0x71320c",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x803e7e]"
+            },
+            {
+              "site": "0x71321d",
+              "target_rva": "0x71322b",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x18071322b"
+            },
+            {
+              "site": "0x713231",
+              "target_rva": "0x713239",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x180713239"
+            },
+            {
+              "site": "0x713248",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x803e42]"
+            },
+            {
+              "site": "0x713280",
+              "target_rva": "0xd3a668",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3a668"
+            },
+            {
+              "site": "0x713296",
+              "target_rva": "0xf176f0",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@$$QEAV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x804454]"
+            },
+            {
+              "site": "0x7132dc",
+              "target_rva": "0x7220c0",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x1807220c0"
+            },
+            {
+              "site": "0x713309",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax + 8]"
+            },
+            {
+              "site": "0x713332",
+              "target_rva": "",
+              "target": "",
+              "indirect": true,
+              "op": "call qword ptr [rax + 8]"
+            },
+            {
+              "site": "0x71333e",
+              "target_rva": "0xd3ac30",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3ac30"
+            },
+            {
+              "site": "0x713353",
+              "target_rva": "0x5f930",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x18005f930"
+            },
+            {
+              "site": "0x71336a",
+              "target_rva": "0xf18a00",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x805690]"
+            },
+            {
+              "site": "0x713384",
+              "target_rva": "0xd3bdf8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3bdf8"
+            }
+          ],
+          "virtual_calls": [
+            {
+              "site": "0x7131ea",
+              "base_reg": "rax",
+              "disp": "0x0"
+            },
+            {
+              "site": "0x713309",
+              "base_reg": "rax",
+              "disp": "0x8"
+            },
+            {
+              "site": "0x713332",
+              "base_reg": "rax",
+              "disp": "0x8"
+            }
+          ],
+          "references_to_global_data": [
+            {
+              "site": "0x713130",
+              "rva": "0x15a6900",
+              "mnemonic": "mov",
+              "op": "rax, qword ptr [rip + 0xe937c9]"
+            },
+            {
+              "site": "0x713359",
+              "rva": "0x1061b40",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x94e7e0]"
+            },
+            {
+              "site": "0x713378",
+              "rva": "0x13fb3b8",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xce8039]"
+            }
+          ]
+        },
+        "ctor": {
+          "function_start": "0x713550",
+          "function_end": "0x713603",
+          "bytes": 179,
+          "first65_comparisons": [
+            {
+              "site": "0x71355a",
+              "op": "cmp qword ptr [rip + 0xf8c856], 0"
+            },
+            {
+              "site": "0x713577",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x713569",
+              "target_rva": "0xf18960",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x8053f1]"
+            },
+            {
+              "site": "0x71359b",
+              "target_rva": "0xd3a668",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3a668"
+            },
+            {
+              "site": "0x7135b5",
+              "target_rva": "0x7135b9",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1807135b9"
+            },
+            {
+              "site": "0x7135e3",
+              "target_rva": "0xf18a00",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x805417]"
+            },
+            {
+              "site": "0x7135fd",
+              "target_rva": "0xd3bdf8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3bdf8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x71357c",
+              "rva": "0x1061b10",
+              "mnemonic": "lea",
+              "op": "rax, [rip + 0x94e58d]"
+            },
+            {
+              "site": "0x7135d2",
+              "rva": "0x1061b68",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x94e58f]"
+            },
+            {
+              "site": "0x7135f1",
+              "rva": "0x13fb3b8",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xce7dc0]"
+            }
+          ]
+        },
+        "lookup": {
+          "function_start": "0x71cc00",
+          "function_end": "0x71ccc9",
+          "bytes": 201,
+          "first65_comparisons": [
+            {
+              "site": "0x71cc21",
+              "op": "cmp byte ptr [rdi + 0x19], sil"
+            },
+            {
+              "site": "0x71cc43",
+              "op": "test cl, cl"
+            },
+            {
+              "site": "0x71cc57",
+              "op": "cmp byte ptr [rdi + 0x19], sil"
+            },
+            {
+              "site": "0x71cc5d",
+              "op": "cmp byte ptr [rbx + 0x19], sil"
+            },
+            {
+              "site": "0x71cc70",
+              "op": "test al, al"
+            },
+            {
+              "site": "0x71cc74",
+              "op": "cmp rbx, qword ptr [r14 + 8]"
+            },
+            {
+              "site": "0x71cc7e",
+              "op": "test r15b, r15b"
+            },
+            {
+              "site": "0x71cc83",
+              "op": "test rsi, rsi"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x71cc37",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7fa453]"
+            },
+            {
+              "site": "0x71cc6a",
+              "target_rva": "0xf17090",
+              "target": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7fa420]"
+            },
+            {
+              "site": "0x71cca9",
+              "target_rva": "0xf18a00",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7fbd51]"
+            },
+            {
+              "site": "0x71ccc3",
+              "target_rva": "0xd3bdf8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3bdf8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x71cc98",
+              "rva": "0x1061b18",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x944e79]"
+            },
+            {
+              "site": "0x71ccaf",
+              "rva": "0x13fb3b8",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xcde702]"
+            }
+          ]
+        },
+        "accessor": {
+          "function_start": "0x71c2f0",
+          "function_end": "0x71c336",
+          "bytes": 70,
+          "first65_comparisons": [
+            {
+              "site": "0x71c2fb",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x71c316",
+              "target_rva": "0xf18a00",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x7fc6e4]"
+            },
+            {
+              "site": "0x71c330",
+              "target_rva": "0xd3bdf8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3bdf8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x71c2f4",
+              "rva": "0x169fdb8",
+              "mnemonic": "mov",
+              "op": "rax, qword ptr [rip + 0xf83abd]"
+            },
+            {
+              "site": "0x71c305",
+              "rva": "0x1061bc8",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x9458bc]"
+            },
+            {
+              "site": "0x71c31c",
+              "rva": "0x13fb3b8",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xcdf095]"
+            }
+          ]
+        },
+        "post_init": {
+          "function_start": "0x713550",
+          "function_end": "0x713603",
+          "bytes": 179,
+          "first65_comparisons": [
+            {
+              "site": "0x71355a",
+              "op": "cmp qword ptr [rip + 0xf8c856], 0"
+            },
+            {
+              "site": "0x713577",
+              "op": "test rax, rax"
+            }
+          ],
+          "calls": [
+            {
+              "site": "0x713569",
+              "target_rva": "0xf18960",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x8053f1]"
+            },
+            {
+              "site": "0x71359b",
+              "target_rva": "0xd3a668",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3a668"
+            },
+            {
+              "site": "0x7135b5",
+              "target_rva": "0x7135b9",
+              "target": "",
+              "indirect": false,
+              "op": "jmp 0x1807135b9"
+            },
+            {
+              "site": "0x7135e3",
+              "target_rva": "0xf18a00",
+              "target": "U.dll!U_ReportFailedVerification",
+              "indirect": false,
+              "op": "call qword ptr [rip + 0x805417]"
+            },
+            {
+              "site": "0x7135fd",
+              "target_rva": "0xd3bdf8",
+              "target": "",
+              "indirect": false,
+              "op": "call 0x180d3bdf8"
+            }
+          ],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x71357c",
+              "rva": "0x1061b10",
+              "mnemonic": "lea",
+              "op": "rax, [rip + 0x94e58d]"
+            },
+            {
+              "site": "0x7135d2",
+              "rva": "0x1061b68",
+              "mnemonic": "lea",
+              "op": "r9, [rip + 0x94e58f]"
+            },
+            {
+              "site": "0x7135f1",
+              "rva": "0x13fb3b8",
+              "mnemonic": "lea",
+              "op": "rdx, [rip + 0xce7dc0]"
+            }
+          ]
+        },
+        "destruct_hint": {
+          "function_start": "0x7217c0",
+          "function_end": "0x7217dd",
+          "bytes": 29,
+          "first65_comparisons": [
+            {
+              "site": "0x7217d4",
+              "op": "test rbx, rbx"
+            }
+          ],
+          "calls": [],
+          "virtual_calls": [],
+          "references_to_global_data": [
+            {
+              "site": "0x7217cb",
+              "rva": "0x169fdb8",
+              "mnemonic": "mov",
+              "op": "rbx, qword ptr [rip + 0xf7e5e6]"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
