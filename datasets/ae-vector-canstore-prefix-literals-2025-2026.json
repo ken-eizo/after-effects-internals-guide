@@ -1,0 +1,47 @@
+{
+  "evidence": "E2-L local binary literal references, no native predicate invocation",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "predicate_rva": "0x700250",
+      "strings": [
+        {
+          "instruction_rva": "0x700292",
+          "literal_rva": "0x1001ad0",
+          "literal": "ADBE Vector Shape -"
+        },
+        {
+          "instruction_rva": "0x7002b2",
+          "literal_rva": "0x1001ae8",
+          "literal": "ADBE Vector Graphic -"
+        },
+        {
+          "instruction_rva": "0x7002e4",
+          "literal_rva": "0x1001b00",
+          "literal": "ADBE Vector Filter -"
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "predicate_rva": "0x723c80",
+      "strings": [
+        {
+          "instruction_rva": "0x723cb6",
+          "literal_rva": "0x10628c8",
+          "literal": "ADBE Vector Shape -"
+        },
+        {
+          "instruction_rva": "0x723cd6",
+          "literal_rva": "0x10628e0",
+          "literal": "ADBE Vector Graphic -"
+        },
+        {
+          "instruction_rva": "0x723d0b",
+          "literal_rva": "0x10628f8",
+          "literal": "ADBE Vector Filter -"
+        }
+      ]
+    }
+  }
+}

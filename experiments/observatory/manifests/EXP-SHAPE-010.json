@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-SHAPE-010",
+  "title": "Opt-in private AE TDB stream factory getter read-only probe",
+  "status": "compiled-not-host-tested",
+  "question": "Can an independently built AEGP resolve and execute only Get_AE_StreamFactory() from a pinned TDB.dll without dereferencing or mutating its returned pointer?",
+  "evidence": [
+    "E2-L",
+    "H"
+  ],
+  "environment": {
+    "sdk": "25.6",
+    "target": "AE2025/AE2026 exact known opcode fingerprint",
+    "host_executed": false
+  },
+  "procedure": [
+    "Only run on an isolated disposable AE project/session after explicit opt-in; close/restart AE to deploy AEX",
+    "Invoke Animation > ShapeLayerAE: Probe Private TDB Getter (Read Only)",
+    "Check code gates TDB.dll loaded, decorated export exists, 48 8B 05 disp32 C3 opcode fingerprint",
+    "If fingerprint matches, call no-argument getter; record only non-null Boolean, never dereference pointer",
+    "Record raw TSV, host version and module hash, crashes and rollback if any"
+  ],
+  "captures": [
+    "%TEMP%/ShapeLayerAE_private_factory_probe.tsv"
+  ],
+  "conclusion": "C++ compiled. NO in-host private API invocation has been performed.",
+  "limitations": [
+    "Executing even a simple private getter is unsupported and version-sensitive",
+    "Getter pointer availability does not establish permissible registration or native vector output"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "A pinned private TDB getter can return a non-null global factory pointer from an explicit AEGP command",
+      "falsified_by": "Module/export/fingerprint unavailable or getter result null in controlled host"
+    }
+  ],
+  "build_receipt": {
+    "binary": "D:/Developer/ShapeLayerAE/build/Release/ShapeLayerAE.aex",
+    "sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
+    "installed_version": "older v2; current user AE process not touched",
+    "host_result": "pending"
+  }
+}

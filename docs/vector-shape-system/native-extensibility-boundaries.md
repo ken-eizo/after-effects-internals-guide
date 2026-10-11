@@ -13,6 +13,8 @@ Determine whether a third-party plug-in can independently **instantiate and regi
 
 This is a system reconstruction, not a promise that undocumented APIs are stable or extensible. Avoid calling private exports or modifying host process memory during the initial phase.
 
+For the newly confirmed *internal* typed creator-registration chain and existing Shape Contents prefix-based child admission, see [Native Stream Factory and Shape Schema](native-stream-factory-and-schema.md). A private factory callback registry now has reproducible static evidence in both AE2025 and AE2026; **third-party creation/ownership/tool/render integration remain unverified**.
+
 ## Five distinct contracts (do not conflate)
 
 | Boundary | What the visible feature requires | Current evidence | Still unproven |

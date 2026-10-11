@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-SHAPE-008",
+  "title": "Native TDB factory creator registration static disassembly",
+  "status": "observed-static-only",
+  "question": "Are host-owned stream creators registered via an actual match-name keyed TDB factory and called by BEE layer registration, and is native vector CanStore based on name prefixes?",
+  "evidence": [
+    "E2-L",
+    "E2-X"
+  ],
+  "environment": {
+    "binary_versions": "AE2025/AE2026 BEE.dll and TDB.dll pinned SHA256",
+    "runtime_executed": false
+  },
+  "procedure": [
+    "Run ShapeLayerAE/tools/audit_tdb_factory.py on the two TDB.dll binaries",
+    "Run ShapeLayerAE/tools/trace_bee_tdb_iat.py and trace_tdb_factory_semantics.py",
+    "Decode BEE VectorStreamGroup CanStore via trace_vector_canstore.py and decode_canstore_constants.py",
+    "Interpret named exported functions and direct callsites only; do not invoke private APIs"
+  ],
+  "captures": [
+    "datasets/ae-tdb-native-stream-factory-2025-2026.json",
+    "datasets/ae-tdb-register-callsite-disasm-2025-2026.json",
+    "datasets/ae-bee-registerstreams-iat-targets-2025-2026.json",
+    "datasets/ae-tdb-vector-canstore-disasm-2025-2026.json"
+  ],
+  "conclusion": "Confirmed host-internal matchname/creator factory registration chain and static native Shape predicate strings across both binary versions. External plug-in registration and edit/render parity remain untested.",
+  "limitations": [
+    "Offline x64 scans do not reveal complete types, callback lifetime or ownership",
+    "RIP string recognition does not prove CanAdd semantics for unknown names"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "BEE Layer register routine calls TDB Factory registration wrapper",
+      "falsified_by": "Reproducible exact-binary disassembly fails to resolve these IAT calls"
+    },
+    {
+      "id": "H2",
+      "prediction": "An unknown prefix-matching native Shape child may pass structural CanStore",
+      "falsified_by": "Read-only host CanAdd returns false for all controlled unknown prefixes"
+    }
+  ]
+}

@@ -35,6 +35,10 @@ The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archive
 
 A follow-up read-only probe is available as a **compiled but not host-tested** experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating `CanAddStream` matrix. See [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md) for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.
 
+## Native stream factory registration breakthrough (2026-10-11)
+
+Offline BEE/TDB PE/IAT analysis found the host-internal `TDB.dll` and confirmed **BEE_Layer::RegisterStreams -> Get_AE_StreamFactory -> TDB_ScRegisterStreams::Register -> TDB_StreamFactory::RegisterFactoryFunc**, with canonical stream creation and guarded unregister. The native `VectorsStreamGroup::CanStore` references built-in `ADBE Vector Shape -`, `ADBE Vector Graphic -`, and `ADBE Vector Filter -` prefixes. See [Native Stream Factory and Shape Schema](native-stream-factory-and-schema.md) for evidence, safety boundaries and *unverified* third-party factory integration.
+
 ## Runtime model status
 The runtime-side reconstruction is now tracked in `runtime-architecture.md`. AE 2025 exposes a concrete `BEE_VectorStream -> BEE_VectorArt -> AGM-facing translation -> RG_RenderNode` chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.
 

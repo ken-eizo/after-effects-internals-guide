@@ -1,0 +1,3410 @@
+{
+  "grade": "E2-L static binary export artifact",
+  "not": "Supported SDK/API, callable private extension, or confirmed runtime behavior",
+  "versions": {
+    "2025": {
+      "module": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\TDB.dll",
+      "sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "bytes": 719368,
+      "total_exports": 1282,
+      "classes": {
+        "TDB_StreamFactory": {
+          "export_matches": 25,
+          "sample": [
+            {
+              "ordinal": 398,
+              "rva": "00026710",
+              "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "ordinal": 402,
+              "rva": "00026A60",
+              "name": "?DebugRegisterStream@TDB_StreamFactory@@SAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 403,
+              "rva": "00026A70",
+              "name": "?DebugUnregisterStream@TDB_StreamFactory@@AEAAXAEBVTDB_MatchName@@AEBVScopedLock@RecursiveMutex@threads@dvacore@@@Z"
+            },
+            {
+              "ordinal": 466,
+              "rva": "00026A80",
+              "name": "?GatherObsoleteReplacementStreams@TDB_StreamFactory@@QEAA_NPEAVTDB_StreamBase@@AEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 497,
+              "rva": "00026CC0",
+              "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 500,
+              "rva": "00026DA0",
+              "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 514,
+              "rva": "00026E60",
+              "name": "?GetDataFileMatchNames@TDB_StreamFactory@@QEBA?AV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@XZ"
+            },
+            {
+              "ordinal": 883,
+              "rva": "00026F00",
+              "name": "?IsDataFileTextStream@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 949,
+              "rva": "00026F90",
+              "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z"
+            },
+            {
+              "ordinal": 991,
+              "rva": "00027130",
+              "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+            },
+            {
+              "ordinal": 992,
+              "rva": "00027320",
+              "name": "?RegisterDataFileContainer@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 993,
+              "rva": "00027390",
+              "name": "?RegisterDataFileTextStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 994,
+              "rva": "00027400",
+              "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "ordinal": 996,
+              "rva": "00027660",
+              "name": "?RegisterObsoleteStreamParent@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 997,
+              "rva": "000277F0",
+              "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "ordinal": 1096,
+              "rva": "00028150",
+              "name": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z"
+            },
+            {
+              "ordinal": 1097,
+              "rva": "00028410",
+              "name": "?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1244,
+              "rva": "00028430",
+              "name": "?UnRegisterDataFileContainers@TDB_StreamFactory@@QEAAXXZ"
+            },
+            {
+              "ordinal": 1245,
+              "rva": "00028740",
+              "name": "?UnRegisterDataFileTextStreams@TDB_StreamFactory@@QEAAXXZ"
+            },
+            {
+              "ordinal": 1248,
+              "rva": "00028810",
+              "name": "?UnregisterCanonicalInstance@TDB_StreamFactory@@QEAAXPEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1249,
+              "rva": "00028840",
+              "name": "?UnregisterCanonicalInstanceRecursive@TDB_StreamFactory@@AEAAXPEBVTDB_StreamGroup@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+            },
+            {
+              "ordinal": 1250,
+              "rva": "00028A60",
+              "name": "?UnregisterCanonicalMatchName@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+            },
+            {
+              "ordinal": 1251,
+              "rva": "00028BC0",
+              "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1252,
+              "rva": "00028BD0",
+              "name": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+            },
+            {
+              "ordinal": 1253,
+              "rva": "00028EE0",
+              "name": "?UnregisterSeperationMapEntry@TDB_StreamFactory@@AEAAXAEBU?$pair@$$CBVTDB_MatchName@@V?$vector@PEAVTDB_StreamBase@@V?$allocator@PEAVTDB_StreamBase@@@std@@@std@@@std@@@Z"
+            }
+          ]
+        },
+        "TDB_ScRegisterStreams": {
+          "export_matches": 4,
+          "sample": [
+            {
+              "ordinal": 396,
+              "rva": "000266E0",
+              "name": "?CreateStream@TDB_ScRegisterStreams@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 919,
+              "rva": "00026F70",
+              "name": "?IsRegistered@TDB_ScRegisterStreams@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 989,
+              "rva": "00027060",
+              "name": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "ordinal": 1247,
+              "rva": "000287A0",
+              "name": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+            }
+          ]
+        },
+        "TDB_IndexedStreamGroup": {
+          "export_matches": 29,
+          "sample": [
+            {
+              "ordinal": 354,
+              "rva": "00035B60",
+              "name": "?AppendStream@TDB_IndexedStreamGroup@@QEAAIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 420,
+              "rva": "00036420",
+              "name": "?DuplicateStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 479,
+              "rva": "0000B340",
+              "name": "?GetAsIndexedGroup@TDB_IndexedStreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 480,
+              "rva": "0000B350",
+              "name": "?GetAsIndexedGroup@TDB_IndexedStreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 556,
+              "rva": "00038210",
+              "name": "?GetEditableLeafStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_Stream@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 559,
+              "rva": "000382A0",
+              "name": "?GetEditableStream@TDB_IndexedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 560,
+              "rva": "00038340",
+              "name": "?GetEditableStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 564,
+              "rva": "00038810",
+              "name": "?GetEditableStreamNullOK@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 565,
+              "rva": "00038820",
+              "name": "?GetEditableStreamNullOK@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 639,
+              "rva": "000399A0",
+              "name": "?GetLeafStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_Stream@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 670,
+              "rva": "0002B5C0",
+              "name": "?GetNumStreams@TDB_IndexedStreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 720,
+              "rva": "00039F80",
+              "name": "?GetRenderGuid@TDB_IndexedStreamGroup@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+            },
+            {
+              "ordinal": 760,
+              "rva": "0003ADA0",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 761,
+              "rva": "0003ADB0",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@MEBAPEBVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 762,
+              "rva": "0003AE50",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 763,
+              "rva": "0003AE60",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 870,
+              "rva": "0003BB30",
+              "name": "?InsertStream@TDB_IndexedStreamGroup@@UEAAXIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 900,
+              "rva": "0002B630",
+              "name": "?IsIndexedGroup@TDB_IndexedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 909,
+              "rva": "0003C2C0",
+              "name": "?IsModified@TDB_IndexedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 986,
+              "rva": "0003D6E0",
+              "name": "?ReadAndStore@TDB_IndexedStreamGroup@@UEAAXAEBVTDB_MatchName@@PEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 998,
+              "rva": "0003DC10",
+              "name": "?RemoveChild@TDB_IndexedStreamGroup@@UEAA_NPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1003,
+              "rva": "0003E0C0",
+              "name": "?RemoveStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 1005,
+              "rva": "0003E300",
+              "name": "?ReorderStreams@TDB_IndexedStreamGroup@@UEAAXII@Z"
+            },
+            {
+              "ordinal": 1006,
+              "rva": "0003E3C0",
+              "name": "?ReorderStreamsEnd@TDB_IndexedStreamGroup@@UEAAXPEAVTDB_StreamBase@@II@Z"
+            },
+            {
+              "ordinal": 1007,
+              "rva": "0003E470",
+              "name": "?ReorderStreamsStart@TDB_IndexedStreamGroup@@UEAAXPEAVTDB_StreamBase@@II@Z"
+            },
+            {
+              "ordinal": 1011,
+              "rva": "0003E600",
+              "name": "?ResetCachedCapsulePathsFromIndex@TDB_IndexedStreamGroup@@AEAAXI@Z"
+            },
+            {
+              "ordinal": 1106,
+              "rva": "0003FC40",
+              "name": "?SlowGetIDOfChild@TDB_IndexedStreamGroup@@UEBA?AVTDB_StreamID@@PEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1129,
+              "rva": "00040150",
+              "name": "?SwapStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 1254,
+              "rva": "00042FB0",
+              "name": "?UpdateReverseIndexVector@TDB_IndexedStreamGroup@@AEAAXI@Z"
+            }
+          ]
+        },
+        "TDB_NamedStreamGroup": {
+          "export_matches": 35,
+          "sample": [
+            {
+              "ordinal": 383,
+              "rva": "00036090",
+              "name": "?CopyAcceptableStreams@TDB_NamedStreamGroup@@QEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 405,
+              "rva": "00036240",
+              "name": "?DestroyContents@TDB_NamedStreamGroup@@IEAAXXZ"
+            },
+            {
+              "ordinal": 422,
+              "rva": "00036520",
+              "name": "?EnsureUILayoutComplete@TDB_NamedStreamGroup@@IEBAXXZ"
+            },
+            {
+              "ordinal": 446,
+              "rva": "00036E10",
+              "name": "?FillInStreamsFromCanonicalLayout@TDB_NamedStreamGroup@@AEAAXXZ"
+            },
+            {
+              "ordinal": 487,
+              "rva": "0002B5A0",
+              "name": "?GetAsNamedGroup@TDB_NamedStreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 488,
+              "rva": "0002B5B0",
+              "name": "?GetAsNamedGroup@TDB_NamedStreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 557,
+              "rva": "00038240",
+              "name": "?GetEditableLeafStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 558,
+              "rva": "00038270",
+              "name": "?GetEditableLeafStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 561,
+              "rva": "000383D0",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 562,
+              "rva": "00038460",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 563,
+              "rva": "00038760",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 566,
+              "rva": "000388B0",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 567,
+              "rva": "000388C0",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 568,
+              "rva": "000388D0",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 569,
+              "rva": "00038910",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 640,
+              "rva": "000399E0",
+              "name": "?GetLeafStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 671,
+              "rva": "0002B5E0",
+              "name": "?GetNumStreams@TDB_NamedStreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 721,
+              "rva": "0003A110",
+              "name": "?GetRenderGuid@TDB_NamedStreamGroup@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+            },
+            {
+              "ordinal": 764,
+              "rva": "0003AF10",
+              "name": "?GetStream@TDB_NamedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 765,
+              "rva": "0003AF20",
+              "name": "?GetStream@TDB_NamedStreamGroup@@MEBAPEBVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 766,
+              "rva": "0003AFB0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 767,
+              "rva": "0003AFC0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 768,
+              "rva": "0003AFD0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 769,
+              "rva": "0003B020",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 913,
+              "rva": "0003C3C0",
+              "name": "?IsModifiedByName@TDB_NamedStreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 914,
+              "rva": "0002B640",
+              "name": "?IsNamedGroup@TDB_NamedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 943,
+              "rva": "0003C640",
+              "name": "?LookupStream@TDB_NamedStreamGroup@@AEAA?AV?$_List_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@$$CBVTDB_MatchName@@PEAVTDB_StreamBase@@@std@@@std@@@std@@@std@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 944,
+              "rva": "0003C730",
+              "name": "?LookupStream@TDB_NamedStreamGroup@@AEBA?AV?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@U?$pair@$$CBVTDB_MatchName@@PEAVTDB_StreamBase@@@std@@@std@@@std@@@std@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 987,
+              "rva": "0003D7A0",
+              "name": "?ReadAndStore@TDB_NamedStreamGroup@@UEAAXAEBVTDB_MatchName@@PEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 999,
+              "rva": "0003DEA0",
+              "name": "?RemoveChild@TDB_NamedStreamGroup@@UEAA_NPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1008,
+              "rva": "0003E520",
+              "name": "?ResetAllStreamsToCanonical@TDB_NamedStreamGroup@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1107,
+              "rva": "0003FD80",
+              "name": "?SlowGetIDOfChild@TDB_NamedStreamGroup@@UEBA?AVTDB_StreamID@@PEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1128,
+              "rva": "00040020",
+              "name": "?SwapCanonicalForStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1130,
+              "rva": "000403E0",
+              "name": "?SwapStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@PEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 1261,
+              "rva": "0002B6B0",
+              "name": "?UserCanHideAndShowChildren@TDB_NamedStreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamGroup": {
+          "export_matches": 36,
+          "sample": [
+            {
+              "ordinal": 344,
+              "rva": "000359D0",
+              "name": "?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 348,
+              "rva": "0002B510",
+              "name": "?AffectsRendering@TDB_StreamGroup@@UEBA_NAEBVTDB_RenderOptionsBase@@@Z"
+            },
+            {
+              "ordinal": 359,
+              "rva": "00035C10",
+              "name": "?AreLeafDimensionsSeparated@TDB_StreamGroup@@QEBA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 365,
+              "rva": "00035E10",
+              "name": "?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 389,
+              "rva": "0002B520",
+              "name": "?CouldGoMissing@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 424,
+              "rva": "0002B530",
+              "name": "?EvaluateExpression@TDB_StreamGroup@@UEBAHPEBVTDB_Stream@@PEBUT_Time@@PEANPEAPEAXPEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "ordinal": 447,
+              "rva": "00037130",
+              "name": "?FindEditableLeafStreamNullOK@TDB_StreamGroup@@QEAAPEAVTDB_Stream@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 448,
+              "rva": "00037180",
+              "name": "?FindEditableLeafStreamNullOK@TDB_StreamGroup@@QEBAPEBVTDB_Stream@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 449,
+              "rva": "000371D0",
+              "name": "?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 452,
+              "rva": "000372C0",
+              "name": "?FindStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 453,
+              "rva": "000372D0",
+              "name": "?FindStream@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 454,
+              "rva": "0002B540",
+              "name": "?FindStreamByNameNullOK@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEAIAEA_N@Z"
+            },
+            {
+              "ordinal": 477,
+              "rva": "0002B580",
+              "name": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 478,
+              "rva": "0002B590",
+              "name": "?GetAsGroup@TDB_StreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 498,
+              "rva": "00037C30",
+              "name": "?GetCanonicalLayout@TDB_StreamGroup@@QEBA?AV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 591,
+              "rva": "00039190",
+              "name": "?GetExpressionDependencyIds@TDB_StreamGroup@@UEBAXAEAV?$set@HU?$less@H@std@@V?$allocator@H@2@@std@@@Z"
+            },
+            {
+              "ordinal": 617,
+              "rva": "000395F0",
+              "name": "?GetIndexInUILayout@TDB_StreamGroup@@QEBAIAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 638,
+              "rva": "00039860",
+              "name": "?GetLeafSeparationPath@TDB_StreamGroup@@QEBA?AVTDB_StreamIDPath@@AEBV2@H@Z"
+            },
+            {
+              "ordinal": 711,
+              "rva": "0002B5F0",
+              "name": "?GetPreferredTimeScale@TDB_StreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 780,
+              "rva": "0003B350",
+              "name": "?GetUILayout@TDB_StreamGroup@@QEBA?AV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 781,
+              "rva": "0003B390",
+              "name": "?GetUILayoutRef@TDB_StreamGroup@@QEBAAEBV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@XZ"
+            },
+            {
+              "ordinal": 874,
+              "rva": "0003BFA0",
+              "name": "?IsAnimated@TDB_StreamGroup@@UEBA_N_N@Z"
+            },
+            {
+              "ordinal": 895,
+              "rva": "0000BBA0",
+              "name": "?IsGroup@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 906,
+              "rva": "0003C170",
+              "name": "?IsLoading@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 912,
+              "rva": "0003C340",
+              "name": "?IsModified@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 948,
+              "rva": "0003C910",
+              "name": "?MakeIndependent@TDB_StreamGroup@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 963,
+              "rva": "0003CAA0",
+              "name": "?NotifyParentsStreamStored@TDB_StreamGroup@@AEAAXPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 964,
+              "rva": "0002B650",
+              "name": "?NotifyStreamStored@TDB_StreamGroup@@UEAAXPEAV1@PEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 983,
+              "rva": "0003D4C0",
+              "name": "?Read@TDB_StreamGroup@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1010,
+              "rva": "0002B660",
+              "name": "?ResetCachedCapsulePaths@TDB_StreamGroup@@UEAAXXZ"
+            },
+            {
+              "ordinal": 1050,
+              "rva": "0002B690",
+              "name": "?SetFindStreamByNameNullOKFunction@TDB_StreamGroup@@SAXAEBV?$function@$$A6APEBVTDB_StreamBase@@PEBVTDB_StreamGroup@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEAIAEA_N@Z@std@@@Z"
+            },
+            {
+              "ordinal": 1085,
+              "rva": "0003F340",
+              "name": "?SetUILayout@TDB_StreamGroup@@QEAAXV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 1095,
+              "rva": "0003FAC0",
+              "name": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ"
+            },
+            {
+              "ordinal": 1243,
+              "rva": "00042F90",
+              "name": "?UILayoutSize@TDB_StreamGroup@@QEBA_KXZ"
+            },
+            {
+              "ordinal": 1258,
+              "rva": "0002B6A0",
+              "name": "?UpgradeChildStream@TDB_StreamGroup@@UEAAXPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1270,
+              "rva": "00043EF0",
+              "name": "?Write@TDB_StreamGroup@@UEBAXPEAVSLU_File@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamBase": {
+          "export_matches": 114,
+          "sample": [
+            {
+              "ordinal": 349,
+              "rva": "00035AC0",
+              "name": "?AffectsRenderingWhenHidden@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 355,
+              "rva": "00035BB0",
+              "name": "?AreAllParentsActive@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 356,
+              "rva": "00035BE0",
+              "name": "?AreDimensionsConstrained@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 358,
+              "rva": "00035C00",
+              "name": "?AreDimensionsSeparated@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 360,
+              "rva": "00035C50",
+              "name": "?Birth@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "ordinal": 362,
+              "rva": "00035D70",
+              "name": "?CanDisplayPostExpressionValue@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 372,
+              "rva": "000042B0",
+              "name": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+            },
+            {
+              "ordinal": 397,
+              "rva": "00036170",
+              "name": "?CreateStream@TDB_StreamBase@@QEAAPEAV1@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "ordinal": 400,
+              "rva": "00036190",
+              "name": "?Death@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "ordinal": 401,
+              "rva": "00036200",
+              "name": "?DebugLog@TDB_StreamBase@@QEAAXPEBD@Z"
+            },
+            {
+              "ordinal": 404,
+              "rva": "00036210",
+              "name": "?DeepCopyParamDef@TDB_StreamBase@@AEAAXAEBUPF_ParamDef@@@Z"
+            },
+            {
+              "ordinal": 407,
+              "rva": "00036400",
+              "name": "?DisplayNameIncludesParent@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 421,
+              "rva": "000364B0",
+              "name": "?EnsureParamDefSetup@TDB_StreamBase@@AEBAXXZ"
+            },
+            {
+              "ordinal": 440,
+              "rva": "00036770",
+              "name": "?FillInDisplayName@TDB_StreamBase@@MEBAXXZ"
+            },
+            {
+              "ordinal": 444,
+              "rva": "00036790",
+              "name": "?FillInParamDef@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "ordinal": 465,
+              "rva": "000374F0",
+              "name": "?GatherObsoleteReplacementStreams@TDB_StreamBase@@QEAA_NAEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 475,
+              "rva": "000376C0",
+              "name": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 476,
+              "rva": "000376D0",
+              "name": "?GetAsGroup@TDB_StreamBase@@UEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 481,
+              "rva": "000376E0",
+              "name": "?GetAsIndexedGroup@TDB_StreamBase@@UEAAPEAVTDB_IndexedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 482,
+              "rva": "000376F0",
+              "name": "?GetAsIndexedGroup@TDB_StreamBase@@UEBAPEBVTDB_IndexedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 485,
+              "rva": "00037720",
+              "name": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ"
+            },
+            {
+              "ordinal": 486,
+              "rva": "00037730",
+              "name": "?GetAsLeaf@TDB_StreamBase@@UEBAPEBVTDB_Stream@@XZ"
+            },
+            {
+              "ordinal": 489,
+              "rva": "00037740",
+              "name": "?GetAsNamedGroup@TDB_StreamBase@@UEAAPEAVTDB_NamedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 490,
+              "rva": "00037750",
+              "name": "?GetAsNamedGroup@TDB_StreamBase@@UEBAPEBVTDB_NamedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 499,
+              "rva": "00037CC0",
+              "name": "?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 502,
+              "rva": "00037CD0",
+              "name": "?GetCapsuleStreamID@TDB_StreamBase@@UEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 543,
+              "rva": "00038000",
+              "name": "?GetDisplayName8@TDB_StreamBase@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 553,
+              "rva": "00038030",
+              "name": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 554,
+              "rva": "000380B0",
+              "name": "?GetDisplayPath@TDB_StreamBase@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 579,
+              "rva": "00038E40",
+              "name": "?GetEnglishDisplayName@TDB_StreamBase@@UEBA?BV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 590,
+              "rva": "00004340",
+              "name": "?GetExpressionDependencyIds@TDB_StreamBase@@UEBAXAEAV?$set@HU?$less@H@std@@V?$allocator@H@2@@std@@@Z"
+            },
+            {
+              "ordinal": 596,
+              "rva": "00039570",
+              "name": "?GetFactory@TDB_StreamBase@@QEBAPEAVTDB_StreamFactory@@XZ"
+            },
+            {
+              "ordinal": 613,
+              "rva": "000395E0",
+              "name": "?GetHideDimensionLock@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 642,
+              "rva": "00039A10",
+              "name": "?GetListenerState@TDB_StreamBase@@QEBA?AW4NotifyListenersState@1@XZ"
+            },
+            {
+              "ordinal": 643,
+              "rva": "00039A20",
+              "name": "?GetMatchName16Str@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 644,
+              "rva": "00039B80",
+              "name": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "ordinal": 646,
+              "rva": "00039B90",
+              "name": "?GetMatchNameOverrideForSave@TDB_StreamBase@@UEBA?AVTDB_MatchName@@PEBVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 677,
+              "rva": "00039DC0",
+              "name": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ"
+            },
+            {
+              "ordinal": 678,
+              "rva": "00039DD0",
+              "name": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ"
+            },
+            {
+              "ordinal": 698,
+              "rva": "00039EC0",
+              "name": "?GetParent@TDB_StreamBase@@QEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 699,
+              "rva": "00039ED0",
+              "name": "?GetParent@TDB_StreamBase@@QEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 714,
+              "rva": "00039F30",
+              "name": "?GetProject@TDB_StreamBase@@QEAAPEAVTDB_Project@@XZ"
+            },
+            {
+              "ordinal": 715,
+              "rva": "00039F40",
+              "name": "?GetProject@TDB_StreamBase@@UEBAPEBVTDB_Project@@XZ"
+            },
+            {
+              "ordinal": 717,
+              "rva": "00039F70",
+              "name": "?GetRefCon@TDB_StreamBase@@QEBAPEAVTDB_ClientRefCon@@XZ"
+            },
+            {
+              "ordinal": 725,
+              "rva": "0003A850",
+              "name": "?GetRoot@TDB_StreamBase@@QEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 726,
+              "rva": "0003A880",
+              "name": "?GetRoot@TDB_StreamBase@@QEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 727,
+              "rva": "0003A8B0",
+              "name": "?GetSMDataPath@TDB_StreamBase@@QEBA?AVany@std@@XZ"
+            },
+            {
+              "ordinal": 732,
+              "rva": "0003AA50",
+              "name": "?GetScaleBasedConstrainment@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 771,
+              "rva": "0003B0D0",
+              "name": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ"
+            },
+            {
+              "ordinal": 772,
+              "rva": "0003B0E0",
+              "name": "?GetStreamCapsuleData@TDB_StreamBase@@QEBAAEBUTDB_StreamCapsuleData@@XZ"
+            },
+            {
+              "ordinal": 791,
+              "rva": "0003B5D0",
+              "name": "?GetUniqueIdManager@TDB_StreamBase@@QEAA?AV?$shared_ptr@VTDB_UniqueIdHelper@@@std@@XZ"
+            },
+            {
+              "ordinal": 792,
+              "rva": "0003B670",
+              "name": "?GetUniqueStreamID@TDB_StreamBase@@QEBAHXZ"
+            },
+            {
+              "ordinal": 862,
+              "rva": "0003BA00",
+              "name": "?IncludeInGuidComputation@TDB_StreamBase@@QEBA_NAEBVTDB_RenderOptionsBase@@@Z"
+            },
+            {
+              "ordinal": 864,
+              "rva": "0003BA90",
+              "name": "?InitStreamBaseUniqueID@TDB_StreamBase@@QEAAXXZ"
+            },
+            {
+              "ordinal": 871,
+              "rva": "0003BE60",
+              "name": "?IsActive@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 872,
+              "rva": "0003BE70",
+              "name": "?IsAddedDStream@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 875,
+              "rva": "0003C020",
+              "name": "?IsBoolean3Way@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 876,
+              "rva": "0003C030",
+              "name": "?IsCanonical@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 877,
+              "rva": "0003C040",
+              "name": "?IsChildOf@TDB_StreamBase@@QEBA_NPEBVTDB_StreamGroup@@PEAI@Z"
+            },
+            {
+              "ordinal": 884,
+              "rva": "0003C080",
+              "name": "?IsDisabled@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 885,
+              "rva": "0003C090",
+              "name": "?IsElided@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 893,
+              "rva": "0003C0A0",
+              "name": "?IsFloatBased@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 894,
+              "rva": "0003C0B0",
+              "name": "?IsGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 896,
+              "rva": "0003C0C0",
+              "name": "?IsHidden@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 897,
+              "rva": "0003C0D0",
+              "name": "?IsHiddenByAncestor@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 899,
+              "rva": "0003C120",
+              "name": "?IsIndependent@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 901,
+              "rva": "0003C130",
+              "name": "?IsIndexedGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 903,
+              "rva": "0003C150",
+              "name": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 905,
+              "rva": "0003C160",
+              "name": "?IsLoading@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 907,
+              "rva": "0003C1A0",
+              "name": "?IsMarkedGraph@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 908,
+              "rva": "0003C1B0",
+              "name": "?IsMatchNameSameAsDisplayName@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 911,
+              "rva": "0003C330",
+              "name": "?IsModified@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 915,
+              "rva": "0003C3F0",
+              "name": "?IsNamedGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 916,
+              "rva": "0003C400",
+              "name": "?IsNotAnimated@TDB_StreamBase@@QEBA_N_N@Z"
+            },
+            {
+              "ordinal": 928,
+              "rva": "0003C4D0",
+              "name": "?IsShowingActiveSwitch@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 929,
+              "rva": "0003C4E0",
+              "name": "?IsShownWhenEmpty@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 947,
+              "rva": "0003C8F0",
+              "name": "?MakeIndependent@TDB_StreamBase@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 979,
+              "rva": "0003D1A0",
+              "name": "?ProbeListenerState@TDB_StreamBase@@UEAA?AW4NotifyListenersState@1@XZ"
+            },
+            {
+              "ordinal": 982,
+              "rva": "0003D1F0",
+              "name": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 988,
+              "rva": "0003D930",
+              "name": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 995,
+              "rva": "0003DC00",
+              "name": "?RegisterObsoleteStreamParent@TDB_StreamBase@@IEAAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 1009,
+              "rva": "0003E570",
+              "name": "?ResetCachedCapsulePaths@TDB_StreamBase@@UEAAXXZ"
+            },
+            {
+              "ordinal": 1021,
+              "rva": "0003E7A0",
+              "name": "?SetActive@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1022,
+              "rva": "0003E7C0",
+              "name": "?SetAddedDStream@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1023,
+              "rva": "0003E7E0",
+              "name": "?SetAffectsRenderingWhenHidden@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1025,
+              "rva": "0003E800",
+              "name": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "ordinal": 1032,
+              "rva": "0003EAC0",
+              "name": "?SetDimensionsConstrained@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1034,
+              "rva": "0003EB00",
+              "name": "?SetDimensionsSeparated@TDB_StreamBase@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 1036,
+              "rva": "0003EB10",
+              "name": "?SetDisabled@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1038,
+              "rva": "0003EB50",
+              "name": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1039,
+              "rva": "0003EBC0",
+              "name": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1041,
+              "rva": "0003EC80",
+              "name": "?SetElided@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1044,
+              "rva": "0003ECA0",
+              "name": "?SetEnglishDisplayName@TDB_StreamBase@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1056,
+              "rva": "0003EFF0",
+              "name": "?SetHidden@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1064,
+              "rva": "0003F050",
+              "name": "?SetMarkedGraph@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1065,
+              "rva": "0003F070",
+              "name": "?SetMatchName@TDB_StreamBase@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1072,
+              "rva": "0003F0B0",
+              "name": "?SetParamDef@TDB_StreamBase@@QEAAXAEBUPF_ParamDef@@@Z"
+            },
+            {
+              "ordinal": 1073,
+              "rva": "0003F0E0",
+              "name": "?SetParent@TDB_StreamBase@@IEAAXPEAVTDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 1075,
+              "rva": "0003F190",
+              "name": "?SetRefCon@TDB_StreamBase@@QEBAXPEAVTDB_ClientRefCon@@@Z"
+            },
+            {
+              "ordinal": 1076,
+              "rva": "0003F1A0",
+              "name": "?SetSMDataPath@TDB_StreamBase@@QEAAXVany@std@@@Z"
+            },
+            {
+              "ordinal": 1078,
+              "rva": "0003F210",
+              "name": "?SetShownWhenEmpty@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1082,
+              "rva": "0003F260",
+              "name": "?SetStreamBaseFlags@TDB_StreamBase@@UEAAXII@Z"
+            },
+            {
+              "ordinal": 1088,
+              "rva": "0003F530",
+              "name": "?SetUniqueStreamID@TDB_StreamBase@@QEAAXAEAH@Z"
+            },
+            {
+              "ordinal": 1094,
+              "rva": "0003FAB0",
+              "name": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "ordinal": 1103,
+              "rva": "0003FC00",
+              "name": "?ShouldWriteForVersion@TDB_StreamBase@@UEBA_NPEBVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1104,
+              "rva": "0003FC10",
+              "name": "?ShowActiveSwitch@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1105,
+              "rva": "0003FC30",
+              "name": "?SkipReveal@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 1108,
+              "rva": "0003FDA0",
+              "name": "?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 1109,
+              "rva": "0003FDB0",
+              "name": "?SlowGetPathFromRootToMe@TDB_StreamBase@@QEBAXPEAPEBVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 1127,
+              "rva": "0003FE40",
+              "name": "?SwapBase@TDB_StreamBase@@IEAAXAEAV1@@Z"
+            },
+            {
+              "ordinal": 1269,
+              "rva": "00043C90",
+              "name": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1275,
+              "rva": "000444D0",
+              "name": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1280,
+              "rva": "00046070",
+              "name": "?pSetDisplayName@TDB_StreamBase@@IEBAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1281,
+              "rva": "000460F0",
+              "name": "?pSetParamDef@TDB_StreamBase@@IEAAXAEBUPF_ParamDef@@@Z"
+            }
+          ]
+        },
+        "TDB_UniqueIdHelper": {
+          "export_matches": 15,
+          "sample": [
+            {
+              "ordinal": 342,
+              "rva": "00047270",
+              "name": "?AddIDToSet@TDB_UniqueIdHelper@@UEAA_NH@Z"
+            },
+            {
+              "ordinal": 352,
+              "rva": "000473B0",
+              "name": "?AlwaysConvertIds@TDB_UniqueIdHelper@@MEAA_NXZ"
+            },
+            {
+              "ordinal": 369,
+              "rva": "000473D0",
+              "name": "?Clear@TDB_UniqueIdHelper@@UEAAXXZ"
+            },
+            {
+              "ordinal": 371,
+              "rva": "00047490",
+              "name": "?ClearConversionMap@TDB_UniqueIdHelper@@QEAAXXZ"
+            },
+            {
+              "ordinal": 419,
+              "rva": "00047530",
+              "name": "?DoesIDAlreadyExist@TDB_UniqueIdHelper@@QEBA_NH@Z"
+            },
+            {
+              "ordinal": 468,
+              "rva": "000475E0",
+              "name": "?GenerateUniqueID@TDB_UniqueIdHelper@@QEAAHXZ"
+            },
+            {
+              "ordinal": 472,
+              "rva": "0000B2D0",
+              "name": "?GetActiveIDPool@TDB_UniqueIdHelper@@QEBA?AV?$vector@HV?$allocator@H@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 509,
+              "rva": "00047620",
+              "name": "?GetConvertedId@TDB_UniqueIdHelper@@IEBA_NAEBVImmutableString@utility@dvacore@@HAEAH@Z"
+            },
+            {
+              "ordinal": 510,
+              "rva": "000477C0",
+              "name": "?GetConvertedId@TDB_UniqueIdHelper@@QEAAHHAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 512,
+              "rva": "000478F0",
+              "name": "?GetCurrentAnywhereAssetId@TDB_UniqueIdHelper@@QEBA?AVImmutableString@utility@dvacore@@XZ"
+            },
+            {
+              "ordinal": 706,
+              "rva": "00047970",
+              "name": "?GetPreConvertedId@TDB_UniqueIdHelper@@QEAAHHAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 888,
+              "rva": "00047B90",
+              "name": "?IsEmpty@TDB_UniqueIdHelper@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 1001,
+              "rva": "00047BF0",
+              "name": "?RemoveIDFromSet@TDB_UniqueIdHelper@@UEAA_NH@Z"
+            },
+            {
+              "ordinal": 1030,
+              "rva": "00047C80",
+              "name": "?SetCurrentAnywhereAssetId@TDB_UniqueIdHelper@@QEAAXAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 1057,
+              "rva": "00047CF0",
+              "name": "?SetIdConversion@TDB_UniqueIdHelper@@QEAAXHHAEBVImmutableString@utility@dvacore@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamIDPath": {
+          "export_matches": 29,
+          "sample": [
+            {
+              "ordinal": 341,
+              "rva": "0002DA70",
+              "name": "?AddHead@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 345,
+              "rva": "0002DB50",
+              "name": "?AddTail@TDB_StreamIDPath@@QEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 346,
+              "rva": "0002DB90",
+              "name": "?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 368,
+              "rva": "0002DC00",
+              "name": "?Clear@TDB_StreamIDPath@@QEAAXXZ"
+            },
+            {
+              "ordinal": 388,
+              "rva": "0002DC90",
+              "name": "?CopyPath@TDB_StreamIDPath@@IEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 450,
+              "rva": "0002DCD0",
+              "name": "?FindFirstInstanceOfMatchName@TDB_StreamIDPath@@QEBA_NAEBVTDB_MatchName@@PEAI@Z"
+            },
+            {
+              "ordinal": 491,
+              "rva": "00037760",
+              "name": "?GetAs_JSON@TDB_StreamIDPath@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 504,
+              "rva": "0002DDC0",
+              "name": "?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z"
+            },
+            {
+              "ordinal": 608,
+              "rva": "0002DE60",
+              "name": "?GetHead@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 641,
+              "rva": "0002DE80",
+              "name": "?GetLength@TDB_StreamIDPath@@QEBAIXZ"
+            },
+            {
+              "ordinal": 700,
+              "rva": "0002DEF0",
+              "name": "?GetParentPath@TDB_StreamIDPath@@QEBA?AV1@XZ"
+            },
+            {
+              "ordinal": 701,
+              "rva": "0002DF50",
+              "name": "?GetPath@TDB_StreamIDPath@@IEAAAEAV?$vector@VTDB_StreamID@@V?$allocator@VTDB_StreamID@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 702,
+              "rva": "0002DF60",
+              "name": "?GetPathConst@TDB_StreamIDPath@@IEBAAEBV?$vector@VTDB_StreamID@@V?$allocator@VTDB_StreamID@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 774,
+              "rva": "0002DF70",
+              "name": "?GetStrmType@TDB_StreamIDPath@@QEBAHXZ"
+            },
+            {
+              "ordinal": 777,
+              "rva": "0002DF80",
+              "name": "?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 861,
+              "rva": "0002E350",
+              "name": "?HasTargetParent@TDB_StreamIDPath@@QEBA_NAEBVTDB_MatchName@@I@Z"
+            },
+            {
+              "ordinal": 887,
+              "rva": "0002E3F0",
+              "name": "?IsEmpty@TDB_StreamIDPath@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 890,
+              "rva": "0002E4A0",
+              "name": "?IsEqualByMatchName@TDB_StreamIDPath@@QEAA_NAEBV1@@Z"
+            },
+            {
+              "ordinal": 891,
+              "rva": "0002E600",
+              "name": "?IsEqualToTail@TDB_StreamIDPath@@QEBA_NAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 917,
+              "rva": "0002E690",
+              "name": "?IsPrefixOf@TDB_StreamIDPath@@QEBA_NAEBV1@@Z"
+            },
+            {
+              "ordinal": 920,
+              "rva": "0003C420",
+              "name": "?IsSentinel@TDB_StreamIDPath@@QEAA_NXZ"
+            },
+            {
+              "ordinal": 951,
+              "rva": "0002E890",
+              "name": "?MakeUID@TDB_StreamIDPath@@QEBA?AVGuid@utility@dvacore@@XZ"
+            },
+            {
+              "ordinal": 985,
+              "rva": "0003D5C0",
+              "name": "?Read@TDB_StreamIDPath@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1000,
+              "rva": "0002ECA0",
+              "name": "?RemoveHead@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 1004,
+              "rva": "0002ED40",
+              "name": "?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 1053,
+              "rva": "0003EEF0",
+              "name": "?SetFrom_JSON@TDB_StreamIDPath@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1110,
+              "rva": "0002EE80",
+              "name": "?StoresStrmType@TDB_StreamIDPath@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 1272,
+              "rva": "00044330",
+              "name": "?Write@TDB_StreamIDPath@@QEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1274,
+              "rva": "000443D0",
+              "name": "?WriteSentinel@TDB_StreamIDPath@@SAXPEAVSLU_File@@@Z"
+            }
+          ]
+        }
+      },
+      "factory_own_export_count": 25,
+      "factory_owned_methods": [
+        {
+          "ordinal": 398,
+          "rva": "00026710",
+          "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+        },
+        {
+          "ordinal": 402,
+          "rva": "00026A60",
+          "name": "?DebugRegisterStream@TDB_StreamFactory@@SAXAEBVTDB_MatchName@@0@Z"
+        },
+        {
+          "ordinal": 403,
+          "rva": "00026A70",
+          "name": "?DebugUnregisterStream@TDB_StreamFactory@@AEAAXAEBVTDB_MatchName@@AEBVScopedLock@RecursiveMutex@threads@dvacore@@@Z"
+        },
+        {
+          "ordinal": 466,
+          "rva": "00026A80",
+          "name": "?GatherObsoleteReplacementStreams@TDB_StreamFactory@@QEAA_NPEAVTDB_StreamBase@@AEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+        },
+        {
+          "ordinal": 497,
+          "rva": "00026CC0",
+          "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 500,
+          "rva": "00026DA0",
+          "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 514,
+          "rva": "00026E60",
+          "name": "?GetDataFileMatchNames@TDB_StreamFactory@@QEBA?AV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@XZ"
+        },
+        {
+          "ordinal": 883,
+          "rva": "00026F00",
+          "name": "?IsDataFileTextStream@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 949,
+          "rva": "00026F90",
+          "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z"
+        },
+        {
+          "ordinal": 991,
+          "rva": "00027130",
+          "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+        },
+        {
+          "ordinal": 992,
+          "rva": "00027320",
+          "name": "?RegisterDataFileContainer@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 993,
+          "rva": "00027390",
+          "name": "?RegisterDataFileTextStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 994,
+          "rva": "00027400",
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+        },
+        {
+          "ordinal": 996,
+          "rva": "00027660",
+          "name": "?RegisterObsoleteStreamParent@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@0@Z"
+        },
+        {
+          "ordinal": 997,
+          "rva": "000277F0",
+          "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+        },
+        {
+          "ordinal": 1096,
+          "rva": "00028150",
+          "name": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z"
+        },
+        {
+          "ordinal": 1097,
+          "rva": "00028410",
+          "name": "?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 1244,
+          "rva": "00028430",
+          "name": "?UnRegisterDataFileContainers@TDB_StreamFactory@@QEAAXXZ"
+        },
+        {
+          "ordinal": 1245,
+          "rva": "00028740",
+          "name": "?UnRegisterDataFileTextStreams@TDB_StreamFactory@@QEAAXXZ"
+        },
+        {
+          "ordinal": 1248,
+          "rva": "00028810",
+          "name": "?UnregisterCanonicalInstance@TDB_StreamFactory@@QEAAXPEBVTDB_StreamBase@@@Z"
+        },
+        {
+          "ordinal": 1249,
+          "rva": "00028840",
+          "name": "?UnregisterCanonicalInstanceRecursive@TDB_StreamFactory@@AEAAXPEBVTDB_StreamGroup@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+        },
+        {
+          "ordinal": 1250,
+          "rva": "00028A60",
+          "name": "?UnregisterCanonicalMatchName@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+        },
+        {
+          "ordinal": 1251,
+          "rva": "00028BC0",
+          "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 1252,
+          "rva": "00028BD0",
+          "name": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+        },
+        {
+          "ordinal": 1253,
+          "rva": "00028EE0",
+          "name": "?UnregisterSeperationMapEntry@TDB_StreamFactory@@AEAAXAEBU?$pair@$$CBVTDB_MatchName@@V?$vector@PEAVTDB_StreamBase@@V?$allocator@PEAVTDB_StreamBase@@@std@@@std@@@std@@@Z"
+        }
+      ],
+      "factory_verb_groups": {
+        "Register": 9,
+        "Unregister": 7,
+        "Create": 1,
+        "CanStore": 0,
+        "GetCanonical": 2,
+        "AddStreamToUILayout": 0,
+        "Store": 0,
+        "Remove": 0,
+        "Insert": 0,
+        "Move": 0,
+        "Reorder": 0,
+        "UILayout": 0,
+        "MatchName": 18,
+        "GetFactory": 0
+      },
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "n": 31
+        },
+        {
+          "dll": "BEZ.dll",
+          "n": 16
+        },
+        {
+          "dll": "dvacore.dll",
+          "n": 45
+        },
+        {
+          "dll": "U.dll",
+          "n": 89
+        },
+        {
+          "dll": "boost_thread.dll",
+          "n": 2
+        },
+        {
+          "dll": "dvaappsupport.dll",
+          "n": 3
+        },
+        {
+          "dll": "SLU.dll",
+          "n": 26
+        },
+        {
+          "dll": "LIST.dll",
+          "n": 26
+        },
+        {
+          "dll": "MediaFoundation.dll",
+          "n": 11
+        },
+        {
+          "dll": "MSVCP140.dll",
+          "n": 57
+        },
+        {
+          "dll": "VCRUNTIME140.dll",
+          "n": 17
+        },
+        {
+          "dll": "VCRUNTIME140_1.dll",
+          "n": 1
+        },
+        {
+          "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+          "n": 15
+        },
+        {
+          "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+          "n": 1
+        },
+        {
+          "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+          "n": 5
+        },
+        {
+          "dll": "api-ms-win-crt-string-l1-1-0.dll",
+          "n": 1
+        },
+        {
+          "dll": "api-ms-win-crt-math-l1-1-0.dll",
+          "n": 1
+        }
+      ]
+    },
+    "2026": {
+      "module": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\TDB.dll",
+      "sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "bytes": 825352,
+      "total_exports": 1291,
+      "classes": {
+        "TDB_StreamFactory": {
+          "export_matches": 25,
+          "sample": [
+            {
+              "ordinal": 398,
+              "rva": "00027920",
+              "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "ordinal": 402,
+              "rva": "00027C60",
+              "name": "?DebugRegisterStream@TDB_StreamFactory@@SAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 403,
+              "rva": "00027C70",
+              "name": "?DebugUnregisterStream@TDB_StreamFactory@@AEAAXAEBVTDB_MatchName@@AEBVScopedLock@RecursiveMutex@threads@dvacore@@@Z"
+            },
+            {
+              "ordinal": 466,
+              "rva": "00027C80",
+              "name": "?GatherObsoleteReplacementStreams@TDB_StreamFactory@@QEAA_NPEAVTDB_StreamBase@@AEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 497,
+              "rva": "00027EB0",
+              "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 500,
+              "rva": "00027F80",
+              "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 514,
+              "rva": "00028040",
+              "name": "?GetDataFileMatchNames@TDB_StreamFactory@@QEBA?AV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@XZ"
+            },
+            {
+              "ordinal": 884,
+              "rva": "000280E0",
+              "name": "?IsDataFileTextStream@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 950,
+              "rva": "00028170",
+              "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z"
+            },
+            {
+              "ordinal": 995,
+              "rva": "00028300",
+              "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+            },
+            {
+              "ordinal": 996,
+              "rva": "000284F0",
+              "name": "?RegisterDataFileContainer@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 997,
+              "rva": "00028560",
+              "name": "?RegisterDataFileTextStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 998,
+              "rva": "000285D0",
+              "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "ordinal": 1000,
+              "rva": "00028830",
+              "name": "?RegisterObsoleteStreamParent@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 1001,
+              "rva": "000289C0",
+              "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "ordinal": 1100,
+              "rva": "00029250",
+              "name": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z"
+            },
+            {
+              "ordinal": 1101,
+              "rva": "000294C0",
+              "name": "?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1253,
+              "rva": "000294E0",
+              "name": "?UnRegisterDataFileContainers@TDB_StreamFactory@@QEAAXXZ"
+            },
+            {
+              "ordinal": 1254,
+              "rva": "000297F0",
+              "name": "?UnRegisterDataFileTextStreams@TDB_StreamFactory@@QEAAXXZ"
+            },
+            {
+              "ordinal": 1257,
+              "rva": "000298A0",
+              "name": "?UnregisterCanonicalInstance@TDB_StreamFactory@@QEAAXPEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1258,
+              "rva": "000298D0",
+              "name": "?UnregisterCanonicalInstanceRecursive@TDB_StreamFactory@@AEAAXPEBVTDB_StreamGroup@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+            },
+            {
+              "ordinal": 1259,
+              "rva": "00029AD0",
+              "name": "?UnregisterCanonicalMatchName@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+            },
+            {
+              "ordinal": 1260,
+              "rva": "00029C10",
+              "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1261,
+              "rva": "00029C20",
+              "name": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+            },
+            {
+              "ordinal": 1262,
+              "rva": "00029F20",
+              "name": "?UnregisterSeperationMapEntry@TDB_StreamFactory@@AEAAXAEBU?$pair@$$CBVTDB_MatchName@@V?$vector@PEAVTDB_StreamBase@@V?$allocator@PEAVTDB_StreamBase@@@std@@@std@@@std@@@Z"
+            }
+          ]
+        },
+        "TDB_ScRegisterStreams": {
+          "export_matches": 4,
+          "sample": [
+            {
+              "ordinal": 396,
+              "rva": "000278F0",
+              "name": "?CreateStream@TDB_ScRegisterStreams@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 920,
+              "rva": "00028150",
+              "name": "?IsRegistered@TDB_ScRegisterStreams@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 993,
+              "rva": "00028220",
+              "name": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "ordinal": 1256,
+              "rva": "00029850",
+              "name": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+            }
+          ]
+        },
+        "TDB_IndexedStreamGroup": {
+          "export_matches": 30,
+          "sample": [
+            {
+              "ordinal": 354,
+              "rva": "000365E0",
+              "name": "?AppendStream@TDB_IndexedStreamGroup@@QEAAIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 420,
+              "rva": "00036FD0",
+              "name": "?DuplicateStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 479,
+              "rva": "0000B7B0",
+              "name": "?GetAsIndexedGroup@TDB_IndexedStreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 480,
+              "rva": "0000B7C0",
+              "name": "?GetAsIndexedGroup@TDB_IndexedStreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 556,
+              "rva": "00038E60",
+              "name": "?GetEditableLeafStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_Stream@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 559,
+              "rva": "00038EF0",
+              "name": "?GetEditableStream@TDB_IndexedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 560,
+              "rva": "00038F90",
+              "name": "?GetEditableStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 564,
+              "rva": "00039490",
+              "name": "?GetEditableStreamNullOK@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 565,
+              "rva": "000394A0",
+              "name": "?GetEditableStreamNullOK@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 639,
+              "rva": "0003A580",
+              "name": "?GetLeafStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_Stream@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 670,
+              "rva": "0002C300",
+              "name": "?GetNumStreams@TDB_IndexedStreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 720,
+              "rva": "0003AB50",
+              "name": "?GetRenderGuid@TDB_IndexedStreamGroup@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+            },
+            {
+              "ordinal": 760,
+              "rva": "0003B960",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 761,
+              "rva": "0003B970",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@MEBAPEBVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 762,
+              "rva": "0003BA10",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 763,
+              "rva": "0003BA20",
+              "name": "?GetStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 870,
+              "rva": "0003C680",
+              "name": "?InsertStream@TDB_IndexedStreamGroup@@UEAAXIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 871,
+              "rva": "0003C6A0",
+              "name": "?InsertStream@TDB_IndexedStreamGroup@@UEAAXIPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@AEAUInsertStreamOptions@1@@Z"
+            },
+            {
+              "ordinal": 901,
+              "rva": "0002C370",
+              "name": "?IsIndexedGroup@TDB_IndexedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 910,
+              "rva": "0003CDE0",
+              "name": "?IsModified@TDB_IndexedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 990,
+              "rva": "0003E260",
+              "name": "?ReadAndStore@TDB_IndexedStreamGroup@@UEAAXAEBVTDB_MatchName@@PEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1002,
+              "rva": "0003E740",
+              "name": "?RemoveChild@TDB_IndexedStreamGroup@@UEAA_NPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1007,
+              "rva": "0003EB90",
+              "name": "?RemoveStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 1009,
+              "rva": "0003EDA0",
+              "name": "?ReorderStreams@TDB_IndexedStreamGroup@@UEAAXII@Z"
+            },
+            {
+              "ordinal": 1010,
+              "rva": "0003EE60",
+              "name": "?ReorderStreamsEnd@TDB_IndexedStreamGroup@@UEAAXPEAVTDB_StreamBase@@II@Z"
+            },
+            {
+              "ordinal": 1011,
+              "rva": "0003EF10",
+              "name": "?ReorderStreamsStart@TDB_IndexedStreamGroup@@UEAAXPEAVTDB_StreamBase@@II@Z"
+            },
+            {
+              "ordinal": 1015,
+              "rva": "0003F0A0",
+              "name": "?ResetCachedCapsulePathsFromIndex@TDB_IndexedStreamGroup@@AEAAXI@Z"
+            },
+            {
+              "ordinal": 1110,
+              "rva": "00040680",
+              "name": "?SlowGetIDOfChild@TDB_IndexedStreamGroup@@UEBA?AVTDB_StreamID@@PEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1133,
+              "rva": "00040B10",
+              "name": "?SwapStream@TDB_IndexedStreamGroup@@UEAAPEAVTDB_StreamBase@@IPEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 1263,
+              "rva": "00043AB0",
+              "name": "?UpdateReverseIndexVector@TDB_IndexedStreamGroup@@AEAAXI@Z"
+            }
+          ]
+        },
+        "TDB_NamedStreamGroup": {
+          "export_matches": 35,
+          "sample": [
+            {
+              "ordinal": 383,
+              "rva": "00036AF0",
+              "name": "?CopyAcceptableStreams@TDB_NamedStreamGroup@@QEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 405,
+              "rva": "00036CD0",
+              "name": "?DestroyContents@TDB_NamedStreamGroup@@IEAAXXZ"
+            },
+            {
+              "ordinal": 422,
+              "rva": "000370C0",
+              "name": "?EnsureUILayoutComplete@TDB_NamedStreamGroup@@IEBAXXZ"
+            },
+            {
+              "ordinal": 446,
+              "rva": "00037980",
+              "name": "?FillInStreamsFromCanonicalLayout@TDB_NamedStreamGroup@@AEAAXXZ"
+            },
+            {
+              "ordinal": 487,
+              "rva": "0002C2E0",
+              "name": "?GetAsNamedGroup@TDB_NamedStreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 488,
+              "rva": "0002C2F0",
+              "name": "?GetAsNamedGroup@TDB_NamedStreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 557,
+              "rva": "00038E90",
+              "name": "?GetEditableLeafStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 558,
+              "rva": "00038EC0",
+              "name": "?GetEditableLeafStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 561,
+              "rva": "00039020",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 562,
+              "rva": "000390A0",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 563,
+              "rva": "000393F0",
+              "name": "?GetEditableStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 566,
+              "rva": "00039530",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 567,
+              "rva": "00039540",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 568,
+              "rva": "00039550",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 569,
+              "rva": "00039590",
+              "name": "?GetEditableStreamNullOK@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 640,
+              "rva": "0003A5C0",
+              "name": "?GetLeafStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_Stream@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 671,
+              "rva": "0002C320",
+              "name": "?GetNumStreams@TDB_NamedStreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 721,
+              "rva": "0003ACD0",
+              "name": "?GetRenderGuid@TDB_NamedStreamGroup@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+            },
+            {
+              "ordinal": 764,
+              "rva": "0003BAD0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@MEAAPEAVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 765,
+              "rva": "0003BAE0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@MEBAPEBVTDB_StreamBase@@AEBVTDB_StreamID@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 766,
+              "rva": "0003BB60",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 767,
+              "rva": "0003BB70",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 768,
+              "rva": "0003BB80",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 769,
+              "rva": "0003BBD0",
+              "name": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 914,
+              "rva": "0003CED0",
+              "name": "?IsModifiedByName@TDB_NamedStreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 915,
+              "rva": "0002C380",
+              "name": "?IsNamedGroup@TDB_NamedStreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 944,
+              "rva": "0003D150",
+              "name": "?LookupStream@TDB_NamedStreamGroup@@AEAA?AV?$_Tree_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBVTDB_MatchName@@PEAVTDB_StreamBase@@@std@@@std@@@std@@@std@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 945,
+              "rva": "0003D210",
+              "name": "?LookupStream@TDB_NamedStreamGroup@@AEBA?AV?$_Tree_const_iterator@V?$_Tree_val@U?$_Tree_simple_types@U?$pair@$$CBVTDB_MatchName@@PEAVTDB_StreamBase@@@std@@@std@@@std@@@std@@AEBVTDB_MatchName@@W4IfMissing@TDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 991,
+              "rva": "0003E300",
+              "name": "?ReadAndStore@TDB_NamedStreamGroup@@UEAAXAEBVTDB_MatchName@@PEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1003,
+              "rva": "0003E9B0",
+              "name": "?RemoveChild@TDB_NamedStreamGroup@@UEAA_NPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1012,
+              "rva": "0003EFC0",
+              "name": "?ResetAllStreamsToCanonical@TDB_NamedStreamGroup@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1111,
+              "rva": "000407C0",
+              "name": "?SlowGetIDOfChild@TDB_NamedStreamGroup@@UEBA?AVTDB_StreamID@@PEBVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1132,
+              "rva": "00040A00",
+              "name": "?SwapCanonicalForStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1134,
+              "rva": "00040D90",
+              "name": "?SwapStream@TDB_NamedStreamGroup@@UEAAPEAVTDB_StreamBase@@PEAV?$U_ScAutoPtr@VTDB_StreamBase@@@@@Z"
+            },
+            {
+              "ordinal": 1270,
+              "rva": "0002C460",
+              "name": "?UserCanHideAndShowChildren@TDB_NamedStreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamGroup": {
+          "export_matches": 36,
+          "sample": [
+            {
+              "ordinal": 344,
+              "rva": "00036450",
+              "name": "?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z"
+            },
+            {
+              "ordinal": 348,
+              "rva": "0002C250",
+              "name": "?AffectsRendering@TDB_StreamGroup@@UEBA_NAEBVTDB_RenderOptionsBase@@@Z"
+            },
+            {
+              "ordinal": 359,
+              "rva": "00036690",
+              "name": "?AreLeafDimensionsSeparated@TDB_StreamGroup@@QEBA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 365,
+              "rva": "00036880",
+              "name": "?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 389,
+              "rva": "0002C260",
+              "name": "?CouldGoMissing@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 424,
+              "rva": "0002C270",
+              "name": "?EvaluateExpression@TDB_StreamGroup@@UEBAHPEBVTDB_Stream@@PEBUT_Time@@PEANPEAPEAXPEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "ordinal": 447,
+              "rva": "00037D60",
+              "name": "?FindEditableLeafStreamNullOK@TDB_StreamGroup@@QEAAPEAVTDB_Stream@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 448,
+              "rva": "00037DA0",
+              "name": "?FindEditableLeafStreamNullOK@TDB_StreamGroup@@QEBAPEBVTDB_Stream@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 449,
+              "rva": "00037DE0",
+              "name": "?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 452,
+              "rva": "00037EC0",
+              "name": "?FindStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 453,
+              "rva": "00037ED0",
+              "name": "?FindStream@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+            },
+            {
+              "ordinal": 454,
+              "rva": "0002C280",
+              "name": "?FindStreamByNameNullOK@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEAIAEA_N@Z"
+            },
+            {
+              "ordinal": 477,
+              "rva": "0002C2C0",
+              "name": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ"
+            },
+            {
+              "ordinal": 478,
+              "rva": "0002C2D0",
+              "name": "?GetAsGroup@TDB_StreamGroup@@UEBAPEBV1@XZ"
+            },
+            {
+              "ordinal": 498,
+              "rva": "00038820",
+              "name": "?GetCanonicalLayout@TDB_StreamGroup@@QEBA?AV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 591,
+              "rva": "00039DB0",
+              "name": "?GetExpressionDependencyIds@TDB_StreamGroup@@UEBAXAEAV?$set@HU?$less@H@std@@V?$allocator@H@2@@std@@@Z"
+            },
+            {
+              "ordinal": 617,
+              "rva": "0003A1E0",
+              "name": "?GetIndexInUILayout@TDB_StreamGroup@@QEBAIAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 638,
+              "rva": "0003A440",
+              "name": "?GetLeafSeparationPath@TDB_StreamGroup@@QEBA?AVTDB_StreamIDPath@@AEBV2@H@Z"
+            },
+            {
+              "ordinal": 711,
+              "rva": "0002C330",
+              "name": "?GetPreferredTimeScale@TDB_StreamGroup@@UEBAIXZ"
+            },
+            {
+              "ordinal": 780,
+              "rva": "0003BEC0",
+              "name": "?GetUILayout@TDB_StreamGroup@@QEBA?AV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 781,
+              "rva": "0003BF00",
+              "name": "?GetUILayoutRef@TDB_StreamGroup@@QEBAAEBV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@XZ"
+            },
+            {
+              "ordinal": 875,
+              "rva": "0003CAF0",
+              "name": "?IsAnimated@TDB_StreamGroup@@UEBA_N_N@Z"
+            },
+            {
+              "ordinal": 896,
+              "rva": "0000BFC0",
+              "name": "?IsGroup@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 907,
+              "rva": "0003CCC0",
+              "name": "?IsLoading@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 913,
+              "rva": "0003CE50",
+              "name": "?IsModified@TDB_StreamGroup@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 949,
+              "rva": "0003D420",
+              "name": "?MakeIndependent@TDB_StreamGroup@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 965,
+              "rva": "0003D630",
+              "name": "?NotifyParentsStreamStored@TDB_StreamGroup@@AEAAXPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 966,
+              "rva": "0002C390",
+              "name": "?NotifyStreamStored@TDB_StreamGroup@@UEAAXPEAV1@PEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 987,
+              "rva": "0003E040",
+              "name": "?Read@TDB_StreamGroup@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1014,
+              "rva": "0002C3A0",
+              "name": "?ResetCachedCapsulePaths@TDB_StreamGroup@@UEAAXXZ"
+            },
+            {
+              "ordinal": 1054,
+              "rva": "0002C440",
+              "name": "?SetFindStreamByNameNullOKFunction@TDB_StreamGroup@@SAXAEBV?$function@$$A6APEBVTDB_StreamBase@@PEBVTDB_StreamGroup@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEAIAEA_N@Z@std@@@Z"
+            },
+            {
+              "ordinal": 1089,
+              "rva": "0003FD80",
+              "name": "?SetUILayout@TDB_StreamGroup@@QEAAXV?$shared_ptr@V?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 1099,
+              "rva": "00040520",
+              "name": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ"
+            },
+            {
+              "ordinal": 1252,
+              "rva": "00043A90",
+              "name": "?UILayoutSize@TDB_StreamGroup@@QEBA_KXZ"
+            },
+            {
+              "ordinal": 1267,
+              "rva": "0002C450",
+              "name": "?UpgradeChildStream@TDB_StreamGroup@@UEAAXPEAVTDB_StreamBase@@@Z"
+            },
+            {
+              "ordinal": 1279,
+              "rva": "00044A50",
+              "name": "?Write@TDB_StreamGroup@@UEBAXPEAVSLU_File@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamBase": {
+          "export_matches": 115,
+          "sample": [
+            {
+              "ordinal": 349,
+              "rva": "00036540",
+              "name": "?AffectsRenderingWhenHidden@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 355,
+              "rva": "00036630",
+              "name": "?AreAllParentsActive@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 356,
+              "rva": "00036660",
+              "name": "?AreDimensionsConstrained@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 358,
+              "rva": "00036680",
+              "name": "?AreDimensionsSeparated@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 360,
+              "rva": "000366D0",
+              "name": "?Birth@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "ordinal": 362,
+              "rva": "000367E0",
+              "name": "?CanDisplayPostExpressionValue@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 372,
+              "rva": "000045F0",
+              "name": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+            },
+            {
+              "ordinal": 397,
+              "rva": "00036C00",
+              "name": "?CreateStream@TDB_StreamBase@@QEAAPEAV1@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "ordinal": 400,
+              "rva": "00036C20",
+              "name": "?Death@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "ordinal": 401,
+              "rva": "00036C90",
+              "name": "?DebugLog@TDB_StreamBase@@QEAAXPEBD@Z"
+            },
+            {
+              "ordinal": 404,
+              "rva": "00036CA0",
+              "name": "?DeepCopyParamDef@TDB_StreamBase@@AEAAXAEBUPF_ParamDef@@@Z"
+            },
+            {
+              "ordinal": 407,
+              "rva": "00036FB0",
+              "name": "?DisplayNameIncludesParent@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 421,
+              "rva": "00037050",
+              "name": "?EnsureParamDefSetup@TDB_StreamBase@@AEBAXXZ"
+            },
+            {
+              "ordinal": 440,
+              "rva": "000372F0",
+              "name": "?FillInDisplayName@TDB_StreamBase@@MEBAXXZ"
+            },
+            {
+              "ordinal": 444,
+              "rva": "00037310",
+              "name": "?FillInParamDef@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "ordinal": 465,
+              "rva": "000380D0",
+              "name": "?GatherObsoleteReplacementStreams@TDB_StreamBase@@QEAA_NAEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 475,
+              "rva": "000381D0",
+              "name": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 476,
+              "rva": "000381E0",
+              "name": "?GetAsGroup@TDB_StreamBase@@UEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 481,
+              "rva": "000381F0",
+              "name": "?GetAsIndexedGroup@TDB_StreamBase@@UEAAPEAVTDB_IndexedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 482,
+              "rva": "00038200",
+              "name": "?GetAsIndexedGroup@TDB_StreamBase@@UEBAPEBVTDB_IndexedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 485,
+              "rva": "00038230",
+              "name": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ"
+            },
+            {
+              "ordinal": 486,
+              "rva": "00038240",
+              "name": "?GetAsLeaf@TDB_StreamBase@@UEBAPEBVTDB_Stream@@XZ"
+            },
+            {
+              "ordinal": 489,
+              "rva": "00038250",
+              "name": "?GetAsNamedGroup@TDB_StreamBase@@UEAAPEAVTDB_NamedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 490,
+              "rva": "00038260",
+              "name": "?GetAsNamedGroup@TDB_StreamBase@@UEBAPEBVTDB_NamedStreamGroup@@XZ"
+            },
+            {
+              "ordinal": 499,
+              "rva": "000388B0",
+              "name": "?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 502,
+              "rva": "000388C0",
+              "name": "?GetCapsuleStreamID@TDB_StreamBase@@UEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 543,
+              "rva": "00038C80",
+              "name": "?GetDisplayName8@TDB_StreamBase@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 553,
+              "rva": "00038CB0",
+              "name": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 554,
+              "rva": "00038D40",
+              "name": "?GetDisplayPath@TDB_StreamBase@@QEBA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBV23@@Z"
+            },
+            {
+              "ordinal": 579,
+              "rva": "00039A70",
+              "name": "?GetEnglishDisplayName@TDB_StreamBase@@UEBA?BV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 590,
+              "rva": "00004680",
+              "name": "?GetExpressionDependencyIds@TDB_StreamBase@@UEBAXAEAV?$set@HU?$less@H@std@@V?$allocator@H@2@@std@@@Z"
+            },
+            {
+              "ordinal": 596,
+              "rva": "0003A160",
+              "name": "?GetFactory@TDB_StreamBase@@QEBAPEAVTDB_StreamFactory@@XZ"
+            },
+            {
+              "ordinal": 613,
+              "rva": "0003A1D0",
+              "name": "?GetHideDimensionLock@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 642,
+              "rva": "0003A5F0",
+              "name": "?GetListenerState@TDB_StreamBase@@QEBA?AW4NotifyListenersState@1@XZ"
+            },
+            {
+              "ordinal": 643,
+              "rva": "0003A600",
+              "name": "?GetMatchName16Str@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 644,
+              "rva": "0003A760",
+              "name": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "ordinal": 646,
+              "rva": "0003A770",
+              "name": "?GetMatchNameOverrideForSave@TDB_StreamBase@@UEBA?AVTDB_MatchName@@PEBVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 677,
+              "rva": "0003A9A0",
+              "name": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ"
+            },
+            {
+              "ordinal": 678,
+              "rva": "0003A9B0",
+              "name": "?GetParamDef@TDB_StreamBase@@QEBAPEBUPF_ParamDef@@XZ"
+            },
+            {
+              "ordinal": 698,
+              "rva": "0003AAA0",
+              "name": "?GetParent@TDB_StreamBase@@QEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 699,
+              "rva": "0003AAB0",
+              "name": "?GetParent@TDB_StreamBase@@QEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 714,
+              "rva": "0003AB00",
+              "name": "?GetProject@TDB_StreamBase@@QEAAPEAVTDB_Project@@XZ"
+            },
+            {
+              "ordinal": 715,
+              "rva": "0003AB10",
+              "name": "?GetProject@TDB_StreamBase@@UEBAPEBVTDB_Project@@XZ"
+            },
+            {
+              "ordinal": 717,
+              "rva": "0003AB40",
+              "name": "?GetRefCon@TDB_StreamBase@@QEBAPEAVTDB_ClientRefCon@@XZ"
+            },
+            {
+              "ordinal": 725,
+              "rva": "0003B440",
+              "name": "?GetRoot@TDB_StreamBase@@QEAAPEAVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 726,
+              "rva": "0003B470",
+              "name": "?GetRoot@TDB_StreamBase@@QEBAPEBVTDB_StreamGroup@@XZ"
+            },
+            {
+              "ordinal": 727,
+              "rva": "0003B4A0",
+              "name": "?GetSMDataPath@TDB_StreamBase@@QEBA?AVany@std@@XZ"
+            },
+            {
+              "ordinal": 732,
+              "rva": "0003B610",
+              "name": "?GetScaleBasedConstrainment@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 771,
+              "rva": "0003BC70",
+              "name": "?GetStreamBaseFlags@TDB_StreamBase@@QEBAIXZ"
+            },
+            {
+              "ordinal": 772,
+              "rva": "0003BC80",
+              "name": "?GetStreamCapsuleData@TDB_StreamBase@@QEBAAEBUTDB_StreamCapsuleData@@XZ"
+            },
+            {
+              "ordinal": 791,
+              "rva": "0003C140",
+              "name": "?GetUniqueIdManager@TDB_StreamBase@@QEAA?AV?$shared_ptr@VTDB_UniqueIdHelper@@@std@@XZ"
+            },
+            {
+              "ordinal": 792,
+              "rva": "0003C1E0",
+              "name": "?GetUniqueStreamID@TDB_StreamBase@@QEBAHXZ"
+            },
+            {
+              "ordinal": 862,
+              "rva": "0003C550",
+              "name": "?IncludeInGuidComputation@TDB_StreamBase@@QEBA_NAEBVTDB_RenderOptionsBase@@@Z"
+            },
+            {
+              "ordinal": 864,
+              "rva": "0003C5E0",
+              "name": "?InitStreamBaseUniqueID@TDB_StreamBase@@QEAAXXZ"
+            },
+            {
+              "ordinal": 872,
+              "rva": "0003C9C0",
+              "name": "?IsActive@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 873,
+              "rva": "0003C9D0",
+              "name": "?IsAddedDStream@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 876,
+              "rva": "0003CB60",
+              "name": "?IsBoolean3Way@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 877,
+              "rva": "0003CB70",
+              "name": "?IsCanonical@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 878,
+              "rva": "0003CB80",
+              "name": "?IsChildOf@TDB_StreamBase@@QEBA_NPEBVTDB_StreamGroup@@PEAI@Z"
+            },
+            {
+              "ordinal": 885,
+              "rva": "0003CBC0",
+              "name": "?IsDisabled@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 886,
+              "rva": "0003CBD0",
+              "name": "?IsElided@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 894,
+              "rva": "0003CBE0",
+              "name": "?IsFloatBased@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 895,
+              "rva": "0003CBF0",
+              "name": "?IsGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 897,
+              "rva": "0003CC00",
+              "name": "?IsHidden@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 898,
+              "rva": "0003CC10",
+              "name": "?IsHiddenByAncestor@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 900,
+              "rva": "0003CC70",
+              "name": "?IsIndependent@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 902,
+              "rva": "0003CC80",
+              "name": "?IsIndexedGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 904,
+              "rva": "0003CCA0",
+              "name": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 906,
+              "rva": "0003CCB0",
+              "name": "?IsLoading@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 908,
+              "rva": "0003CCF0",
+              "name": "?IsMarkedGraph@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 909,
+              "rva": "0003CD00",
+              "name": "?IsMatchNameSameAsDisplayName@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 912,
+              "rva": "0003CE40",
+              "name": "?IsModified@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 916,
+              "rva": "0003CF00",
+              "name": "?IsNamedGroup@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 917,
+              "rva": "0003CF10",
+              "name": "?IsNotAnimated@TDB_StreamBase@@QEBA_N_N@Z"
+            },
+            {
+              "ordinal": 929,
+              "rva": "0003CFE0",
+              "name": "?IsShowingActiveSwitch@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 930,
+              "rva": "0003CFF0",
+              "name": "?IsShownWhenEmpty@TDB_StreamBase@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 948,
+              "rva": "0003D400",
+              "name": "?MakeIndependent@TDB_StreamBase@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 964,
+              "rva": "0003D590",
+              "name": "?NotifyNameChanged@TDB_StreamBase@@QEAAXXZ"
+            },
+            {
+              "ordinal": 983,
+              "rva": "0003DD40",
+              "name": "?ProbeListenerState@TDB_StreamBase@@UEAA?AW4NotifyListenersState@1@XZ"
+            },
+            {
+              "ordinal": 986,
+              "rva": "0003DD90",
+              "name": "?Read@TDB_StreamBase@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 992,
+              "rva": "0003E460",
+              "name": "?ReadUniqueStreamID@TDB_StreamBase@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 999,
+              "rva": "0003E730",
+              "name": "?RegisterObsoleteStreamParent@TDB_StreamBase@@IEAAXAEBVTDB_MatchName@@0@Z"
+            },
+            {
+              "ordinal": 1013,
+              "rva": "0003F010",
+              "name": "?ResetCachedCapsulePaths@TDB_StreamBase@@UEAAXXZ"
+            },
+            {
+              "ordinal": 1025,
+              "rva": "0003F240",
+              "name": "?SetActive@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1026,
+              "rva": "0003F260",
+              "name": "?SetAddedDStream@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1027,
+              "rva": "0003F280",
+              "name": "?SetAffectsRenderingWhenHidden@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1029,
+              "rva": "0003F2A0",
+              "name": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "ordinal": 1036,
+              "rva": "0003F550",
+              "name": "?SetDimensionsConstrained@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1038,
+              "rva": "0003F590",
+              "name": "?SetDimensionsSeparated@TDB_StreamBase@@UEAAX_N@Z"
+            },
+            {
+              "ordinal": 1040,
+              "rva": "0003F5A0",
+              "name": "?SetDisabled@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1042,
+              "rva": "0003F5E0",
+              "name": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1043,
+              "rva": "0003F650",
+              "name": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1045,
+              "rva": "0003F710",
+              "name": "?SetElided@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1048,
+              "rva": "0003F730",
+              "name": "?SetEnglishDisplayName@TDB_StreamBase@@UEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1060,
+              "rva": "0003FA30",
+              "name": "?SetHidden@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1068,
+              "rva": "0003FA90",
+              "name": "?SetMarkedGraph@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1069,
+              "rva": "0003FAB0",
+              "name": "?SetMatchName@TDB_StreamBase@@QEAAXAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "ordinal": 1076,
+              "rva": "0003FAF0",
+              "name": "?SetParamDef@TDB_StreamBase@@QEAAXAEBUPF_ParamDef@@@Z"
+            },
+            {
+              "ordinal": 1077,
+              "rva": "0003FB20",
+              "name": "?SetParent@TDB_StreamBase@@IEAAXPEAVTDB_StreamGroup@@@Z"
+            },
+            {
+              "ordinal": 1079,
+              "rva": "0003FBD0",
+              "name": "?SetRefCon@TDB_StreamBase@@QEBAXPEAVTDB_ClientRefCon@@@Z"
+            },
+            {
+              "ordinal": 1080,
+              "rva": "0003FBE0",
+              "name": "?SetSMDataPath@TDB_StreamBase@@QEAAXVany@std@@@Z"
+            },
+            {
+              "ordinal": 1082,
+              "rva": "0003FC50",
+              "name": "?SetShownWhenEmpty@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1086,
+              "rva": "0003FCA0",
+              "name": "?SetStreamBaseFlags@TDB_StreamBase@@UEAAXII@Z"
+            },
+            {
+              "ordinal": 1092,
+              "rva": "0003FF70",
+              "name": "?SetUniqueStreamID@TDB_StreamBase@@QEAAXAEAH@Z"
+            },
+            {
+              "ordinal": 1098,
+              "rva": "00040510",
+              "name": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "ordinal": 1107,
+              "rva": "00040640",
+              "name": "?ShouldWriteForVersion@TDB_StreamBase@@UEBA_NPEBVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1108,
+              "rva": "00040650",
+              "name": "?ShowActiveSwitch@TDB_StreamBase@@QEAAX_N@Z"
+            },
+            {
+              "ordinal": 1109,
+              "rva": "00040670",
+              "name": "?SkipReveal@TDB_StreamBase@@UEBA_NXZ"
+            },
+            {
+              "ordinal": 1112,
+              "rva": "000407E0",
+              "name": "?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 1113,
+              "rva": "000407F0",
+              "name": "?SlowGetPathFromRootToMe@TDB_StreamBase@@QEBAXPEAPEBVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 1131,
+              "rva": "00040880",
+              "name": "?SwapBase@TDB_StreamBase@@IEAAXAEAV1@@Z"
+            },
+            {
+              "ordinal": 1278,
+              "rva": "00044800",
+              "name": "?Write@TDB_StreamBase@@UEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1284,
+              "rva": "00045040",
+              "name": "?WriteUniqueStreamID@TDB_StreamBase@@QEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1289,
+              "rva": "000468C0",
+              "name": "?pSetDisplayName@TDB_StreamBase@@IEBAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1290,
+              "rva": "00046940",
+              "name": "?pSetParamDef@TDB_StreamBase@@IEAAXAEBUPF_ParamDef@@@Z"
+            }
+          ]
+        },
+        "TDB_UniqueIdHelper": {
+          "export_matches": 15,
+          "sample": [
+            {
+              "ordinal": 342,
+              "rva": "00047BC0",
+              "name": "?AddIDToSet@TDB_UniqueIdHelper@@UEAA_NH@Z"
+            },
+            {
+              "ordinal": 352,
+              "rva": "00047CE0",
+              "name": "?AlwaysConvertIds@TDB_UniqueIdHelper@@MEAA_NXZ"
+            },
+            {
+              "ordinal": 369,
+              "rva": "00047D00",
+              "name": "?Clear@TDB_UniqueIdHelper@@UEAAXXZ"
+            },
+            {
+              "ordinal": 371,
+              "rva": "00047DC0",
+              "name": "?ClearConversionMap@TDB_UniqueIdHelper@@QEAAXXZ"
+            },
+            {
+              "ordinal": 419,
+              "rva": "00047E60",
+              "name": "?DoesIDAlreadyExist@TDB_UniqueIdHelper@@QEBA_NH@Z"
+            },
+            {
+              "ordinal": 468,
+              "rva": "00047F10",
+              "name": "?GenerateUniqueID@TDB_UniqueIdHelper@@QEAAHXZ"
+            },
+            {
+              "ordinal": 472,
+              "rva": "0000B730",
+              "name": "?GetActiveIDPool@TDB_UniqueIdHelper@@QEBA?AV?$vector@HV?$allocator@H@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 509,
+              "rva": "00047F50",
+              "name": "?GetConvertedId@TDB_UniqueIdHelper@@IEBA_NAEBVImmutableString@utility@dvacore@@HAEAH@Z"
+            },
+            {
+              "ordinal": 510,
+              "rva": "00048080",
+              "name": "?GetConvertedId@TDB_UniqueIdHelper@@QEAAHHAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 512,
+              "rva": "000481B0",
+              "name": "?GetCurrentAnywhereAssetId@TDB_UniqueIdHelper@@QEBA?AVImmutableString@utility@dvacore@@XZ"
+            },
+            {
+              "ordinal": 706,
+              "rva": "00048230",
+              "name": "?GetPreConvertedId@TDB_UniqueIdHelper@@QEAAHHAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 889,
+              "rva": "00048450",
+              "name": "?IsEmpty@TDB_UniqueIdHelper@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 1005,
+              "rva": "000484B0",
+              "name": "?RemoveIDFromSet@TDB_UniqueIdHelper@@UEAA_NH@Z"
+            },
+            {
+              "ordinal": 1034,
+              "rva": "000485B0",
+              "name": "?SetCurrentAnywhereAssetId@TDB_UniqueIdHelper@@QEAAXAEBVImmutableString@utility@dvacore@@@Z"
+            },
+            {
+              "ordinal": 1061,
+              "rva": "00048620",
+              "name": "?SetIdConversion@TDB_UniqueIdHelper@@QEAAXHHAEBVImmutableString@utility@dvacore@@@Z"
+            }
+          ]
+        },
+        "TDB_StreamIDPath": {
+          "export_matches": 29,
+          "sample": [
+            {
+              "ordinal": 341,
+              "rva": "0002E890",
+              "name": "?AddHead@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 345,
+              "rva": "0002E980",
+              "name": "?AddTail@TDB_StreamIDPath@@QEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 346,
+              "rva": "0002E9C0",
+              "name": "?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 368,
+              "rva": "0002EA30",
+              "name": "?Clear@TDB_StreamIDPath@@QEAAXXZ"
+            },
+            {
+              "ordinal": 388,
+              "rva": "0002EAD0",
+              "name": "?CopyPath@TDB_StreamIDPath@@IEAAXAEBV1@@Z"
+            },
+            {
+              "ordinal": 450,
+              "rva": "0002EB10",
+              "name": "?FindFirstInstanceOfMatchName@TDB_StreamIDPath@@QEBA_NAEBVTDB_MatchName@@PEAI@Z"
+            },
+            {
+              "ordinal": 491,
+              "rva": "00038270",
+              "name": "?GetAs_JSON@TDB_StreamIDPath@@QEBA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "ordinal": 504,
+              "rva": "0002EC10",
+              "name": "?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z"
+            },
+            {
+              "ordinal": 608,
+              "rva": "0002ECA0",
+              "name": "?GetHead@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 641,
+              "rva": "0002ECC0",
+              "name": "?GetLength@TDB_StreamIDPath@@QEBAIXZ"
+            },
+            {
+              "ordinal": 700,
+              "rva": "0002ED30",
+              "name": "?GetParentPath@TDB_StreamIDPath@@QEBA?AV1@XZ"
+            },
+            {
+              "ordinal": 701,
+              "rva": "0002ED90",
+              "name": "?GetPath@TDB_StreamIDPath@@IEAAAEAV?$vector@VTDB_StreamID@@V?$allocator@VTDB_StreamID@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 702,
+              "rva": "0002EDA0",
+              "name": "?GetPathConst@TDB_StreamIDPath@@IEBAAEBV?$vector@VTDB_StreamID@@V?$allocator@VTDB_StreamID@@@std@@@std@@XZ"
+            },
+            {
+              "ordinal": 774,
+              "rva": "0002EDB0",
+              "name": "?GetStrmType@TDB_StreamIDPath@@QEBAHXZ"
+            },
+            {
+              "ordinal": 777,
+              "rva": "0002EDC0",
+              "name": "?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 861,
+              "rva": "0002F2B0",
+              "name": "?HasTargetParent@TDB_StreamIDPath@@QEBA_NAEBVTDB_MatchName@@I@Z"
+            },
+            {
+              "ordinal": 888,
+              "rva": "0002F350",
+              "name": "?IsEmpty@TDB_StreamIDPath@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 891,
+              "rva": "0002F400",
+              "name": "?IsEqualByMatchName@TDB_StreamIDPath@@QEAA_NAEBV1@@Z"
+            },
+            {
+              "ordinal": 892,
+              "rva": "0002F560",
+              "name": "?IsEqualToTail@TDB_StreamIDPath@@QEBA_NAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "ordinal": 918,
+              "rva": "0002F5F0",
+              "name": "?IsPrefixOf@TDB_StreamIDPath@@QEBA_NAEBV1@@Z"
+            },
+            {
+              "ordinal": 921,
+              "rva": "0003CF30",
+              "name": "?IsSentinel@TDB_StreamIDPath@@QEAA_NXZ"
+            },
+            {
+              "ordinal": 952,
+              "rva": "0002F7D0",
+              "name": "?MakeUID@TDB_StreamIDPath@@QEBA?AVGuid@utility@dvacore@@XZ"
+            },
+            {
+              "ordinal": 989,
+              "rva": "0003E140",
+              "name": "?Read@TDB_StreamIDPath@@QEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z"
+            },
+            {
+              "ordinal": 1004,
+              "rva": "0002FC10",
+              "name": "?RemoveHead@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 1008,
+              "rva": "0002FC80",
+              "name": "?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ"
+            },
+            {
+              "ordinal": 1057,
+              "rva": "0003F960",
+              "name": "?SetFrom_JSON@TDB_StreamIDPath@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "ordinal": 1114,
+              "rva": "0002FDA0",
+              "name": "?StoresStrmType@TDB_StreamIDPath@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 1281,
+              "rva": "00044EB0",
+              "name": "?Write@TDB_StreamIDPath@@QEBAXPEAVSLU_File@@@Z"
+            },
+            {
+              "ordinal": 1283,
+              "rva": "00044F40",
+              "name": "?WriteSentinel@TDB_StreamIDPath@@SAXPEAVSLU_File@@@Z"
+            }
+          ]
+        }
+      },
+      "factory_own_export_count": 25,
+      "factory_owned_methods": [
+        {
+          "ordinal": 398,
+          "rva": "00027920",
+          "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+        },
+        {
+          "ordinal": 402,
+          "rva": "00027C60",
+          "name": "?DebugRegisterStream@TDB_StreamFactory@@SAXAEBVTDB_MatchName@@0@Z"
+        },
+        {
+          "ordinal": 403,
+          "rva": "00027C70",
+          "name": "?DebugUnregisterStream@TDB_StreamFactory@@AEAAXAEBVTDB_MatchName@@AEBVScopedLock@RecursiveMutex@threads@dvacore@@@Z"
+        },
+        {
+          "ordinal": 466,
+          "rva": "00027C80",
+          "name": "?GatherObsoleteReplacementStreams@TDB_StreamFactory@@QEAA_NPEAVTDB_StreamBase@@AEAV?$vector@PEAVTDB_Stream@@V?$allocator@PEAVTDB_Stream@@@std@@@std@@@Z"
+        },
+        {
+          "ordinal": 497,
+          "rva": "00027EB0",
+          "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 500,
+          "rva": "00027F80",
+          "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 514,
+          "rva": "00028040",
+          "name": "?GetDataFileMatchNames@TDB_StreamFactory@@QEBA?AV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@XZ"
+        },
+        {
+          "ordinal": 884,
+          "rva": "000280E0",
+          "name": "?IsDataFileTextStream@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 950,
+          "rva": "00028170",
+          "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z"
+        },
+        {
+          "ordinal": 995,
+          "rva": "00028300",
+          "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+        },
+        {
+          "ordinal": 996,
+          "rva": "000284F0",
+          "name": "?RegisterDataFileContainer@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 997,
+          "rva": "00028560",
+          "name": "?RegisterDataFileTextStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 998,
+          "rva": "000285D0",
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+        },
+        {
+          "ordinal": 1000,
+          "rva": "00028830",
+          "name": "?RegisterObsoleteStreamParent@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@0@Z"
+        },
+        {
+          "ordinal": 1001,
+          "rva": "000289C0",
+          "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+        },
+        {
+          "ordinal": 1100,
+          "rva": "00029250",
+          "name": "?SetupCanonicalLayoutForSeperatedDimensions@TDB_StreamFactory@@QEAAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z"
+        },
+        {
+          "ordinal": 1101,
+          "rva": "000294C0",
+          "name": "?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 1253,
+          "rva": "000294E0",
+          "name": "?UnRegisterDataFileContainers@TDB_StreamFactory@@QEAAXXZ"
+        },
+        {
+          "ordinal": 1254,
+          "rva": "000297F0",
+          "name": "?UnRegisterDataFileTextStreams@TDB_StreamFactory@@QEAAXXZ"
+        },
+        {
+          "ordinal": 1257,
+          "rva": "000298A0",
+          "name": "?UnregisterCanonicalInstance@TDB_StreamFactory@@QEAAXPEBVTDB_StreamBase@@@Z"
+        },
+        {
+          "ordinal": 1258,
+          "rva": "000298D0",
+          "name": "?UnregisterCanonicalInstanceRecursive@TDB_StreamFactory@@AEAAXPEBVTDB_StreamGroup@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+        },
+        {
+          "ordinal": 1259,
+          "rva": "00029AD0",
+          "name": "?UnregisterCanonicalMatchName@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@AEBV?$set@VTDB_MatchName@@U?$less@VTDB_MatchName@@@std@@V?$allocator@VTDB_MatchName@@@3@@std@@@Z"
+        },
+        {
+          "ordinal": 1260,
+          "rva": "00029C10",
+          "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "ordinal": 1261,
+          "rva": "00029C20",
+          "name": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+        },
+        {
+          "ordinal": 1262,
+          "rva": "00029F20",
+          "name": "?UnregisterSeperationMapEntry@TDB_StreamFactory@@AEAAXAEBU?$pair@$$CBVTDB_MatchName@@V?$vector@PEAVTDB_StreamBase@@V?$allocator@PEAVTDB_StreamBase@@@std@@@std@@@std@@@Z"
+        }
+      ],
+      "factory_verb_groups": {
+        "Register": 9,
+        "Unregister": 7,
+        "Create": 1,
+        "CanStore": 0,
+        "GetCanonical": 2,
+        "AddStreamToUILayout": 0,
+        "Store": 0,
+        "Remove": 0,
+        "Insert": 0,
+        "Move": 0,
+        "Reorder": 0,
+        "UILayout": 0,
+        "MatchName": 18,
+        "GetFactory": 0
+      },
+      "imports": [
+        {
+          "dll": "KERNEL32.dll",
+          "n": 21
+        },
+        {
+          "dll": "BEZ.dll",
+          "n": 16
+        },
+        {
+          "dll": "dvacore.dll",
+          "n": 47
+        },
+        {
+          "dll": "U.dll",
+          "n": 88
+        },
+        {
+          "dll": "boost_thread.dll",
+          "n": 2
+        },
+        {
+          "dll": "dvaappsupport.dll",
+          "n": 3
+        },
+        {
+          "dll": "SLU.dll",
+          "n": 27
+        },
+        {
+          "dll": "LIST.dll",
+          "n": 26
+        },
+        {
+          "dll": "MediaFoundation.dll",
+          "n": 13
+        },
+        {
+          "dll": "MSVCP140.dll",
+          "n": 56
+        },
+        {
+          "dll": "VCRUNTIME140.dll",
+          "n": 17
+        },
+        {
+          "dll": "VCRUNTIME140_1.dll",
+          "n": 1
+        },
+        {
+          "dll": "api-ms-win-crt-heap-l1-1-0.dll",
+          "n": 5
+        },
+        {
+          "dll": "api-ms-win-crt-stdio-l1-1-0.dll",
+          "n": 1
+        },
+        {
+          "dll": "api-ms-win-crt-runtime-l1-1-0.dll",
+          "n": 13
+        },
+        {
+          "dll": "api-ms-win-crt-string-l1-1-0.dll",
+          "n": 3
+        },
+        {
+          "dll": "api-ms-win-crt-math-l1-1-0.dll",
+          "n": 1
+        }
+      ]
+    }
+  }
+}

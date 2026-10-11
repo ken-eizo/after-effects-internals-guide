@@ -1,0 +1,3063 @@
+{
+  "evidence": "E2-L; no private invocation",
+  "versions": {
+    "2025": {
+      "BEE.dll": [
+        {
+          "rva": "0x700250",
+          "name": "?CanStore@VectorsStreamGroup@BEE_VectorStream@@UEBA_NAEBVTDB_MatchName@@@Z",
+          "operations": [
+            {
+              "offset": "0x700250",
+              "instruction": "mov qword ptr [rsp + 0x10], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700255",
+              "instruction": "push rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700256",
+              "instruction": "sub rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x70025a",
+              "instruction": "mov rdi, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x70025d",
+              "instruction": "xor sil, sil",
+              "callee": ""
+            },
+            {
+              "offset": "0x700260",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700263",
+              "instruction": "lea rdx, [rip + 0xeef1b6]",
+              "callee": ""
+            },
+            {
+              "offset": "0x70026a",
+              "instruction": "call qword ptr [rip + 0x7bdd00]",
+              "callee": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x700270",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x700272",
+              "instruction": "je 0x180700281",
+              "callee": ""
+            },
+            {
+              "offset": "0x700274",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x700276",
+              "instruction": "mov rsi, qword ptr [rsp + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x70027b",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x70027f",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700280",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700281",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700284",
+              "instruction": "mov qword ptr [rsp + 0x30], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x700289",
+              "instruction": "call qword ptr [rip + 0x7bdce9]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x70028f",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x700292",
+              "instruction": "lea rdx, [rip + 0x901837]",
+              "callee": ""
+            },
+            {
+              "offset": "0x700299",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x70029c",
+              "instruction": "call 0x180ceacfe",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002a1",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002a4",
+              "instruction": "je 0x1807002c6",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002a6",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002a9",
+              "instruction": "call qword ptr [rip + 0x7bdcc9]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x7002af",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002b2",
+              "instruction": "lea rdx, [rip + 0x90182f]",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002b9",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002bc",
+              "instruction": "call 0x180ceacfe",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002c1",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002c4",
+              "instruction": "jne 0x1807002d8",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002c6",
+              "instruction": "mov rbx, qword ptr [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002cb",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002cd",
+              "instruction": "mov rsi, qword ptr [rsp + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002d2",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002d6",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002d7",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002d8",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002db",
+              "instruction": "call qword ptr [rip + 0x7bdc97]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x7002e1",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002e4",
+              "instruction": "lea rdx, [rip + 0x901815]",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002eb",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002ee",
+              "instruction": "call 0x180ceacfe",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002f3",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002f6",
+              "instruction": "movzx ecx, sil",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002fa",
+              "instruction": "mov rbx, qword ptr [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x7002ff",
+              "instruction": "mov edx, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x700304",
+              "instruction": "mov rsi, qword ptr [rsp + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x700309",
+              "instruction": "cmove ecx, edx",
+              "callee": ""
+            },
+            {
+              "offset": "0x70030c",
+              "instruction": "movzx eax, cl",
+              "callee": ""
+            },
+            {
+              "offset": "0x70030f",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x700313",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x700314",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700315",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700316",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700317",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700318",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x700319",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031a",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031b",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031c",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031d",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031e",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x70031f",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        }
+      ],
+      "TDB.dll": [
+        {
+          "rva": "0x35e10",
+          "name": "?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z",
+          "operations": [
+            {
+              "offset": "0x35e10",
+              "instruction": "mov qword ptr [rsp + 8], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e15",
+              "instruction": "mov qword ptr [rsp + 0x10], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e1a",
+              "instruction": "mov qword ptr [rsp + 0x18], rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e1f",
+              "instruction": "push r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e21",
+              "instruction": "sub rsp, 0x40",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e25",
+              "instruction": "mov rax, qword ptr [rcx + 0x218]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e2c",
+              "instruction": "test rax, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e2f",
+              "instruction": "je 0x180035e35",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e31",
+              "instruction": "lock inc dword ptr [rax + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e35",
+              "instruction": "mov r14, qword ptr [rcx + 0x210]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e3c",
+              "instruction": "mov qword ptr [rsp + 0x20], r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e41",
+              "instruction": "mov rdi, qword ptr [rcx + 0x218]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e48",
+              "instruction": "mov qword ptr [rsp + 0x28], rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e4d",
+              "instruction": "lea rcx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e52",
+              "instruction": "call 0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x35e57",
+              "instruction": "mov rsi, qword ptr [r14 + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e5b",
+              "instruction": "mov rbx, qword ptr [r14]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e5e",
+              "instruction": "cmp rbx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e61",
+              "instruction": "je 0x180035e81",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e63",
+              "instruction": "mov rcx, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e66",
+              "instruction": "add rcx, 8",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e6a",
+              "instruction": "lea rdx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e6f",
+              "instruction": "call 0x18002d4d0",
+              "callee": "??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x35e74",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e76",
+              "instruction": "jne 0x180035e81",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e78",
+              "instruction": "add rbx, 8",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e7c",
+              "instruction": "cmp rbx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e7f",
+              "instruction": "jne 0x180035e63",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e81",
+              "instruction": "cmp rbx, qword ptr [r14 + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e85",
+              "instruction": "setne bl",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e88",
+              "instruction": "test rdi, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e8b",
+              "instruction": "je 0x180035eb9",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e8d",
+              "instruction": "mov esi, 0xffffffff",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e92",
+              "instruction": "mov eax, esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e94",
+              "instruction": "lock xadd dword ptr [rdi + 8], eax",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e99",
+              "instruction": "cmp eax, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e9c",
+              "instruction": "jne 0x180035eb9",
+              "callee": ""
+            },
+            {
+              "offset": "0x35e9e",
+              "instruction": "mov rdx, qword ptr [rdi]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ea1",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ea4",
+              "instruction": "call qword ptr [rdx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ea6",
+              "instruction": "lock xadd dword ptr [rdi + 0xc], esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eab",
+              "instruction": "cmp esi, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eae",
+              "instruction": "jne 0x180035eb9",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eb0",
+              "instruction": "mov rdx, qword ptr [rdi]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eb3",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eb6",
+              "instruction": "call qword ptr [rdx + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eb9",
+              "instruction": "movzx eax, bl",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ebc",
+              "instruction": "mov rbx, qword ptr [rsp + 0x50]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ec1",
+              "instruction": "mov rsi, qword ptr [rsp + 0x58]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ec6",
+              "instruction": "mov rdi, qword ptr [rsp + 0x60]",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ecb",
+              "instruction": "add rsp, 0x40",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ecf",
+              "instruction": "pop r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed1",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed2",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed3",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed4",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed5",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed6",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed7",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed8",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ed9",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35eda",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35edb",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35edc",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35edd",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35ede",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x35edf",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x27400",
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "operations": [
+            {
+              "offset": "0x27400",
+              "instruction": "push rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27402",
+              "instruction": "push rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x27403",
+              "instruction": "push rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x27404",
+              "instruction": "push r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x27406",
+              "instruction": "push r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x27408",
+              "instruction": "push r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2740a",
+              "instruction": "push r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x2740c",
+              "instruction": "sub rsp, 0xe0",
+              "callee": ""
+            },
+            {
+              "offset": "0x27413",
+              "instruction": "mov rax, qword ptr [rip + 0x7d926]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2741a",
+              "instruction": "xor rax, rsp",
+              "callee": ""
+            },
+            {
+              "offset": "0x2741d",
+              "instruction": "mov qword ptr [rsp + 0xd8], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x27425",
+              "instruction": "movzx r13d, r9b",
+              "callee": ""
+            },
+            {
+              "offset": "0x27429",
+              "instruction": "mov rsi, r8",
+              "callee": ""
+            },
+            {
+              "offset": "0x2742c",
+              "instruction": "mov r15, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2742f",
+              "instruction": "mov r14, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27432",
+              "instruction": "mov qword ptr [rsp + 0x40], r8",
+              "callee": ""
+            },
+            {
+              "offset": "0x27437",
+              "instruction": "lea r12, [rcx + 0x68]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2743b",
+              "instruction": "mov qword ptr [rsp + 0x48], r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x27440",
+              "instruction": "mov qword ptr [rsp + 0x50], r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x27445",
+              "instruction": "mov byte ptr [rsp + 0x58], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x2744a",
+              "instruction": "lea r8, [rip + 0x4bc0f]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27451",
+              "instruction": "xor edx, edx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27453",
+              "instruction": "mov rcx, r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x27456",
+              "instruction": "call qword ptr [rip + 0x486ac]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "offset": "0x2745c",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2745d",
+              "instruction": "mov rdi, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27461",
+              "instruction": "mov rbx, qword ptr [rdi + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27465",
+              "instruction": "mov rax, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x27468",
+              "instruction": "cmp byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2746c",
+              "instruction": "jne 0x180027496",
+              "callee": ""
+            },
+            {
+              "offset": "0x2746e",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27470",
+              "instruction": "lea rcx, [rbx + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27474",
+              "instruction": "mov rdx, r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x27477",
+              "instruction": "call 0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x2747c",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x2747e",
+              "instruction": "je 0x180027486",
+              "callee": ""
+            },
+            {
+              "offset": "0x27480",
+              "instruction": "mov rbx, qword ptr [rbx + 0x10]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27484",
+              "instruction": "jmp 0x18002748c",
+              "callee": ""
+            },
+            {
+              "offset": "0x27486",
+              "instruction": "mov rdi, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27489",
+              "instruction": "mov rbx, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2748c",
+              "instruction": "cmp byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x27490",
+              "instruction": "je 0x180027470",
+              "callee": ""
+            },
+            {
+              "offset": "0x27492",
+              "instruction": "mov rax, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27496",
+              "instruction": "cmp byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2749a",
+              "instruction": "jne 0x1800274b0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2749c",
+              "instruction": "lea rdx, [rdi + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274a0",
+              "instruction": "mov rcx, r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x274a3",
+              "instruction": "call 0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x274a8",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x274aa",
+              "instruction": "je 0x1800274b3",
+              "callee": ""
+            },
+            {
+              "offset": "0x274ac",
+              "instruction": "mov rax, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274b0",
+              "instruction": "mov rdi, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x274b3",
+              "instruction": "cmp rdi, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274b7",
+              "instruction": "je 0x1800274e7",
+              "callee": ""
+            },
+            {
+              "offset": "0x274b9",
+              "instruction": "mov rcx, r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x274bc",
+              "instruction": "call qword ptr [rip + 0x4863e]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "offset": "0x274c2",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x274c3",
+              "instruction": "mov rcx, qword ptr [rsi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274c7",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x274ca",
+              "instruction": "je 0x1800274e0",
+              "callee": ""
+            },
+            {
+              "offset": "0x274cc",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274cf",
+              "instruction": "cmp rcx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x274d2",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x274d5",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274d8",
+              "instruction": "mov qword ptr [rsi + 0x38], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x274e0",
+              "instruction": "xor al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x274e2",
+              "instruction": "jmp 0x18002762f",
+              "callee": ""
+            },
+            {
+              "offset": "0x274e7",
+              "instruction": "mov rdx, r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x274ea",
+              "instruction": "lea rcx, [rsp + 0x88]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274f2",
+              "instruction": "call 0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x274f7",
+              "instruction": "lea rax, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x274ff",
+              "instruction": "mov qword ptr [rsp + 0x30], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x27504",
+              "instruction": "mov qword ptr [rsp + 0xd0], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x27510",
+              "instruction": "mov rcx, qword ptr [rsi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27514",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27517",
+              "instruction": "je 0x18002752e",
+              "callee": ""
+            },
+            {
+              "offset": "0x27519",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2751c",
+              "instruction": "lea rdx, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27524",
+              "instruction": "call qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27526",
+              "instruction": "mov qword ptr [rsp + 0xd0], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x2752e",
+              "instruction": "lea r8, [rsp + 0x88]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27536",
+              "instruction": "lea rdx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2753b",
+              "instruction": "lea rcx, [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2753f",
+              "instruction": "call 0x180024b50",
+              "callee": ""
+            },
+            {
+              "offset": "0x27544",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27545",
+              "instruction": "mov rcx, qword ptr [rsp + 0xd0]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2754d",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27550",
+              "instruction": "je 0x180027566",
+              "callee": ""
+            },
+            {
+              "offset": "0x27552",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27555",
+              "instruction": "lea rdx, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2755d",
+              "instruction": "cmp rcx, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27560",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x27563",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27566",
+              "instruction": "mov byte ptr [rsp + 0x28], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x2756b",
+              "instruction": "mov byte ptr [rsp + 0x20], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x27570",
+              "instruction": "mov r9d, 0x258",
+              "callee": ""
+            },
+            {
+              "offset": "0x27576",
+              "instruction": "mov r8b, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x27579",
+              "instruction": "mov rdx, r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x2757c",
+              "instruction": "mov rcx, r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2757f",
+              "instruction": "call 0x180026710",
+              "callee": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "offset": "0x27584",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x27587",
+              "instruction": "mov qword ptr [rsp + 0x30], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x2758c",
+              "instruction": "mov rdx, r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x2758f",
+              "instruction": "lea rcx, [rsp + 0x70]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27594",
+              "instruction": "call 0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x27599",
+              "instruction": "mov qword ptr [rsp + 0x80], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x275a1",
+              "instruction": "lea r8, [rsp + 0x70]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275a6",
+              "instruction": "lea rdx, [rsp + 0x60]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275ab",
+              "instruction": "lea rcx, [r14 + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275af",
+              "instruction": "call 0x1800257f0",
+              "callee": ""
+            },
+            {
+              "offset": "0x275b4",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275b7",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x275ba",
+              "instruction": "call qword ptr [rax + 0x58]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275bd",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x275bf",
+              "instruction": "je 0x1800275f4",
+              "callee": ""
+            },
+            {
+              "offset": "0x275c1",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275c4",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x275c7",
+              "instruction": "call qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275cd",
+              "instruction": "mov rdx, qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275d0",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x275d3",
+              "instruction": "call qword ptr [rdx + 0x298]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275d9",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x275db",
+              "instruction": "je 0x1800275f4",
+              "callee": ""
+            },
+            {
+              "offset": "0x275dd",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275e0",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x275e3",
+              "instruction": "call qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275e9",
+              "instruction": "mov rdx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x275ec",
+              "instruction": "mov rcx, r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x275ef",
+              "instruction": "call 0x1800277f0",
+              "callee": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "offset": "0x275f4",
+              "instruction": "test r13b, r13b",
+              "callee": ""
+            },
+            {
+              "offset": "0x275f7",
+              "instruction": "jne 0x180027606",
+              "callee": ""
+            },
+            {
+              "offset": "0x275f9",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x275fc",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x275ff",
+              "instruction": "call qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27605",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27606",
+              "instruction": "mov rcx, r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x27609",
+              "instruction": "call qword ptr [rip + 0x484f1]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "offset": "0x2760f",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27610",
+              "instruction": "mov rcx, qword ptr [rsi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27614",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27617",
+              "instruction": "je 0x18002762d",
+              "callee": ""
+            },
+            {
+              "offset": "0x27619",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2761c",
+              "instruction": "cmp rcx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x2761f",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x27622",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27625",
+              "instruction": "mov qword ptr [rsi + 0x38], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2762d",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x2762f",
+              "instruction": "mov rcx, qword ptr [rsp + 0xd8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x27637",
+              "instruction": "xor rcx, rsp",
+              "callee": ""
+            },
+            {
+              "offset": "0x2763a",
+              "instruction": "call 0x180068530",
+              "callee": ""
+            },
+            {
+              "offset": "0x2763f",
+              "instruction": "add rsp, 0xe0",
+              "callee": ""
+            },
+            {
+              "offset": "0x27646",
+              "instruction": "pop r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x27648",
+              "instruction": "pop r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2764a",
+              "instruction": "pop r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x2764c",
+              "instruction": "pop r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x2764e",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x2764f",
+              "instruction": "pop rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x27650",
+              "instruction": "pop rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x27651",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27652",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27653",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27654",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27655",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27656",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27657",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27658",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x27659",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765a",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765b",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765c",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765d",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765e",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2765f",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "BEE.dll": [
+        {
+          "rva": "0x723c80",
+          "name": "?CanStore@VectorsStreamGroup@BEE_VectorStream@@UEBA_NAEBVTDB_MatchName@@@Z",
+          "operations": [
+            {
+              "offset": "0x723c80",
+              "instruction": "push rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c82",
+              "instruction": "sub rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c86",
+              "instruction": "mov rdi, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c89",
+              "instruction": "lea rdx, [rip + 0xf7c160]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c90",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c93",
+              "instruction": "call qword ptr [rip + 0x7f3407]",
+              "callee": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x723c99",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c9b",
+              "instruction": "je 0x180723ca5",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c9d",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x723c9f",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ca3",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ca4",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ca5",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ca8",
+              "instruction": "mov qword ptr [rsp + 0x30], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cad",
+              "instruction": "call qword ptr [rip + 0x7f33f5]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x723cb3",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cb6",
+              "instruction": "lea rdx, [rip + 0x93ec0b]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cbd",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cc0",
+              "instruction": "call 0x180d3be2e",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cc5",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cc8",
+              "instruction": "je 0x180723cea",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cca",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ccd",
+              "instruction": "call qword ptr [rip + 0x7f33d5]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x723cd3",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cd6",
+              "instruction": "lea rdx, [rip + 0x93ec03]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cdd",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ce0",
+              "instruction": "call 0x180d3be2e",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ce5",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723ce8",
+              "instruction": "jne 0x180723cf7",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cea",
+              "instruction": "mov rbx, qword ptr [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cef",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cf1",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cf5",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cf6",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cf7",
+              "instruction": "mov qword ptr [rsp + 0x38], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cfc",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723cff",
+              "instruction": "xor sil, sil",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d02",
+              "instruction": "call qword ptr [rip + 0x7f33a0]",
+              "callee": "TDB.dll!?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "offset": "0x723d08",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d0b",
+              "instruction": "lea rdx, [rip + 0x93ebe6]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d12",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d15",
+              "instruction": "call 0x180d3be2e",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d1a",
+              "instruction": "cmp rax, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d1d",
+              "instruction": "movzx ecx, sil",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d21",
+              "instruction": "mov rsi, qword ptr [rsp + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d26",
+              "instruction": "mov edx, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d2b",
+              "instruction": "mov rbx, qword ptr [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d30",
+              "instruction": "cmove ecx, edx",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d33",
+              "instruction": "movzx eax, cl",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d36",
+              "instruction": "add rsp, 0x20",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3a",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3b",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3c",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3d",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3e",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x723d3f",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        }
+      ],
+      "TDB.dll": [
+        {
+          "rva": "0x36880",
+          "name": "?CanStore@TDB_StreamGroup@@UEBA_NAEBVTDB_MatchName@@@Z",
+          "operations": [
+            {
+              "offset": "0x36880",
+              "instruction": "push rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x36882",
+              "instruction": "push rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36883",
+              "instruction": "push rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36884",
+              "instruction": "push r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x36886",
+              "instruction": "sub rsp, 0x48",
+              "callee": ""
+            },
+            {
+              "offset": "0x3688a",
+              "instruction": "mov rax, qword ptr [rcx + 0x218]",
+              "callee": ""
+            },
+            {
+              "offset": "0x36891",
+              "instruction": "test rax, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x36894",
+              "instruction": "je 0x18003689a",
+              "callee": ""
+            },
+            {
+              "offset": "0x36896",
+              "instruction": "lock inc dword ptr [rax + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x3689a",
+              "instruction": "mov r14, qword ptr [rcx + 0x210]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368a1",
+              "instruction": "mov qword ptr [rsp + 0x20], r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x368a6",
+              "instruction": "mov rdi, qword ptr [rcx + 0x218]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368ad",
+              "instruction": "mov qword ptr [rsp + 0x28], rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x368b2",
+              "instruction": "lea rcx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368b7",
+              "instruction": "call 0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x368bc",
+              "instruction": "mov rbx, qword ptr [r14]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368bf",
+              "instruction": "mov rsi, qword ptr [r14 + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368c3",
+              "instruction": "cmp rbx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x368c6",
+              "instruction": "je 0x1800368ee",
+              "callee": ""
+            },
+            {
+              "offset": "0x368c8",
+              "instruction": "nop dword ptr [rax + rax]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368d0",
+              "instruction": "mov rcx, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368d3",
+              "instruction": "add rcx, 8",
+              "callee": ""
+            },
+            {
+              "offset": "0x368d7",
+              "instruction": "lea rdx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368dc",
+              "instruction": "call 0x18002e2c0",
+              "callee": "??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x368e1",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x368e3",
+              "instruction": "jne 0x1800368ee",
+              "callee": ""
+            },
+            {
+              "offset": "0x368e5",
+              "instruction": "add rbx, 8",
+              "callee": ""
+            },
+            {
+              "offset": "0x368e9",
+              "instruction": "cmp rbx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x368ec",
+              "instruction": "jne 0x1800368d0",
+              "callee": ""
+            },
+            {
+              "offset": "0x368ee",
+              "instruction": "cmp rbx, qword ptr [r14 + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x368f2",
+              "instruction": "setne bl",
+              "callee": ""
+            },
+            {
+              "offset": "0x368f5",
+              "instruction": "test rdi, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x368f8",
+              "instruction": "je 0x180036926",
+              "callee": ""
+            },
+            {
+              "offset": "0x368fa",
+              "instruction": "mov esi, 0xffffffff",
+              "callee": ""
+            },
+            {
+              "offset": "0x368ff",
+              "instruction": "mov eax, esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36901",
+              "instruction": "lock xadd dword ptr [rdi + 8], eax",
+              "callee": ""
+            },
+            {
+              "offset": "0x36906",
+              "instruction": "cmp eax, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x36909",
+              "instruction": "jne 0x180036926",
+              "callee": ""
+            },
+            {
+              "offset": "0x3690b",
+              "instruction": "mov rdx, qword ptr [rdi]",
+              "callee": ""
+            },
+            {
+              "offset": "0x3690e",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36911",
+              "instruction": "call qword ptr [rdx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x36913",
+              "instruction": "lock xadd dword ptr [rdi + 0xc], esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36918",
+              "instruction": "cmp esi, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x3691b",
+              "instruction": "jne 0x180036926",
+              "callee": ""
+            },
+            {
+              "offset": "0x3691d",
+              "instruction": "mov rdx, qword ptr [rdi]",
+              "callee": ""
+            },
+            {
+              "offset": "0x36920",
+              "instruction": "mov rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36923",
+              "instruction": "call qword ptr [rdx + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x36926",
+              "instruction": "movzx eax, bl",
+              "callee": ""
+            },
+            {
+              "offset": "0x36929",
+              "instruction": "add rsp, 0x48",
+              "callee": ""
+            },
+            {
+              "offset": "0x3692d",
+              "instruction": "pop r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x3692f",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36930",
+              "instruction": "pop rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x36931",
+              "instruction": "pop rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x36932",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36933",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36934",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36935",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36936",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36937",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36938",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x36939",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693a",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693b",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693c",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693d",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693e",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x3693f",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x285d0",
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "operations": [
+            {
+              "offset": "0x285d0",
+              "instruction": "mov qword ptr [rsp + 0x20], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x285d5",
+              "instruction": "mov qword ptr [rsp + 0x18], r8",
+              "callee": ""
+            },
+            {
+              "offset": "0x285da",
+              "instruction": "push rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x285db",
+              "instruction": "push rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x285dc",
+              "instruction": "push rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x285dd",
+              "instruction": "push r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x285df",
+              "instruction": "push r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x285e1",
+              "instruction": "push r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x285e3",
+              "instruction": "push r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x285e5",
+              "instruction": "sub rsp, 0xe0",
+              "callee": ""
+            },
+            {
+              "offset": "0x285ec",
+              "instruction": "mov rax, qword ptr [rip + 0x957cd]",
+              "callee": ""
+            },
+            {
+              "offset": "0x285f3",
+              "instruction": "xor rax, rsp",
+              "callee": ""
+            },
+            {
+              "offset": "0x285f6",
+              "instruction": "mov qword ptr [rsp + 0xd8], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x285fe",
+              "instruction": "movzx r12d, r9b",
+              "callee": ""
+            },
+            {
+              "offset": "0x28602",
+              "instruction": "mov rdi, r8",
+              "callee": ""
+            },
+            {
+              "offset": "0x28605",
+              "instruction": "mov rbp, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x28608",
+              "instruction": "mov r13, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2860b",
+              "instruction": "mov qword ptr [rsp + 0x68], r8",
+              "callee": ""
+            },
+            {
+              "offset": "0x28610",
+              "instruction": "lea r14, [rcx + 0x68]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28614",
+              "instruction": "mov qword ptr [rsp + 0x40], r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x28619",
+              "instruction": "mov qword ptr [rsp + 0x48], r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2861e",
+              "instruction": "mov byte ptr [rsp + 0x50], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x28623",
+              "instruction": "lea r8, [rip + 0x5ef6e]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2862a",
+              "instruction": "xor edx, edx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2862c",
+              "instruction": "mov rcx, r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2862f",
+              "instruction": "call qword ptr [rip + 0x5b4a3]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "offset": "0x28635",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28636",
+              "instruction": "mov rbx, qword ptr [r13 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2863a",
+              "instruction": "mov rsi, qword ptr [rbx + 8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2863e",
+              "instruction": "cmp byte ptr [rsi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x28642",
+              "instruction": "jne 0x18002866d",
+              "callee": ""
+            },
+            {
+              "offset": "0x28644",
+              "instruction": "lea rcx, [rsi + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28648",
+              "instruction": "mov rdx, rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x2864b",
+              "instruction": "call 0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x28650",
+              "instruction": "mov rcx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x28653",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x28655",
+              "instruction": "cmovne rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x28659",
+              "instruction": "mov rbx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2865c",
+              "instruction": "lea rcx, [rsi + 0x10]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28660",
+              "instruction": "cmove rcx, rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x28664",
+              "instruction": "mov rsi, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28667",
+              "instruction": "cmp byte ptr [rsi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2866b",
+              "instruction": "je 0x180028644",
+              "callee": ""
+            },
+            {
+              "offset": "0x2866d",
+              "instruction": "cmp byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "offset": "0x28671",
+              "instruction": "jne 0x1800286b5",
+              "callee": ""
+            },
+            {
+              "offset": "0x28673",
+              "instruction": "lea rdx, [rbx + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28677",
+              "instruction": "mov rcx, rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x2867a",
+              "instruction": "call 0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "offset": "0x2867f",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x28681",
+              "instruction": "jne 0x1800286b5",
+              "callee": ""
+            },
+            {
+              "offset": "0x28683",
+              "instruction": "cmp rbx, qword ptr [r13 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28687",
+              "instruction": "je 0x1800286b5",
+              "callee": ""
+            },
+            {
+              "offset": "0x28689",
+              "instruction": "mov rcx, r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2868c",
+              "instruction": "call qword ptr [rip + 0x5b43e]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "offset": "0x28692",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28693",
+              "instruction": "mov rcx, qword ptr [rdi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28697",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2869a",
+              "instruction": "je 0x1800286ae",
+              "callee": ""
+            },
+            {
+              "offset": "0x2869c",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2869f",
+              "instruction": "cmp rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x286a2",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x286a5",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286a8",
+              "instruction": "xor esi, esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x286aa",
+              "instruction": "mov qword ptr [rdi + 0x38], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x286ae",
+              "instruction": "xor al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x286b0",
+              "instruction": "jmp 0x1800287f7",
+              "callee": ""
+            },
+            {
+              "offset": "0x286b5",
+              "instruction": "mov rdx, rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x286b8",
+              "instruction": "lea rcx, [rsp + 0x88]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286c0",
+              "instruction": "call 0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x286c5",
+              "instruction": "lea rax, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286cd",
+              "instruction": "mov qword ptr [rsp + 0x30], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x286d2",
+              "instruction": "xor esi, esi",
+              "callee": ""
+            },
+            {
+              "offset": "0x286d4",
+              "instruction": "mov qword ptr [rsp + 0xd0], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x286dc",
+              "instruction": "mov rcx, qword ptr [rdi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286e0",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x286e3",
+              "instruction": "je 0x1800286fa",
+              "callee": ""
+            },
+            {
+              "offset": "0x286e5",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286e8",
+              "instruction": "lea rdx, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286f0",
+              "instruction": "call qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "offset": "0x286f2",
+              "instruction": "mov qword ptr [rsp + 0xd0], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x286fa",
+              "instruction": "lea r8, [rsp + 0x88]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28702",
+              "instruction": "lea rdx, [rsp + 0x30]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28707",
+              "instruction": "lea rcx, [r13 + 0x28]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2870b",
+              "instruction": "call 0x180026a20",
+              "callee": ""
+            },
+            {
+              "offset": "0x28710",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28711",
+              "instruction": "mov rcx, qword ptr [rsp + 0xd0]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28719",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2871c",
+              "instruction": "je 0x180028732",
+              "callee": ""
+            },
+            {
+              "offset": "0x2871e",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28721",
+              "instruction": "lea rdx, [rsp + 0x98]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28729",
+              "instruction": "cmp rcx, rdx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2872c",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x2872f",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28732",
+              "instruction": "mov byte ptr [rsp + 0x28], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x28737",
+              "instruction": "mov byte ptr [rsp + 0x20], 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x2873c",
+              "instruction": "mov r9d, 0x258",
+              "callee": ""
+            },
+            {
+              "offset": "0x28742",
+              "instruction": "mov r8b, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x28745",
+              "instruction": "mov rdx, rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x28748",
+              "instruction": "mov rcx, r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x2874b",
+              "instruction": "call 0x180027920",
+              "callee": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "offset": "0x28750",
+              "instruction": "mov rbx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x28753",
+              "instruction": "mov qword ptr [rsp + 0x30], rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x28758",
+              "instruction": "mov rdx, rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x2875b",
+              "instruction": "lea rcx, [rsp + 0x70]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28760",
+              "instruction": "call 0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "offset": "0x28765",
+              "instruction": "mov qword ptr [rsp + 0x80], rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x2876d",
+              "instruction": "lea rcx, [r13 + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28771",
+              "instruction": "lea r8, [rsp + 0x70]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28776",
+              "instruction": "lea rdx, [rsp + 0x58]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2877b",
+              "instruction": "call 0x1800268f0",
+              "callee": ""
+            },
+            {
+              "offset": "0x28780",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28783",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x28786",
+              "instruction": "call qword ptr [rax + 0x58]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28789",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x2878b",
+              "instruction": "je 0x1800287c0",
+              "callee": ""
+            },
+            {
+              "offset": "0x2878d",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28790",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x28793",
+              "instruction": "call qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "offset": "0x28799",
+              "instruction": "mov rdx, qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2879c",
+              "instruction": "mov rcx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x2879f",
+              "instruction": "call qword ptr [rdx + 0x298]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287a5",
+              "instruction": "test al, al",
+              "callee": ""
+            },
+            {
+              "offset": "0x287a7",
+              "instruction": "je 0x1800287c0",
+              "callee": ""
+            },
+            {
+              "offset": "0x287a9",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287ac",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x287af",
+              "instruction": "call qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287b5",
+              "instruction": "mov rdx, rax",
+              "callee": ""
+            },
+            {
+              "offset": "0x287b8",
+              "instruction": "mov rcx, r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x287bb",
+              "instruction": "call 0x1800289c0",
+              "callee": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "offset": "0x287c0",
+              "instruction": "test r12b, r12b",
+              "callee": ""
+            },
+            {
+              "offset": "0x287c3",
+              "instruction": "jne 0x1800287d2",
+              "callee": ""
+            },
+            {
+              "offset": "0x287c5",
+              "instruction": "mov rax, qword ptr [rbx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287c8",
+              "instruction": "mov rcx, rbx",
+              "callee": ""
+            },
+            {
+              "offset": "0x287cb",
+              "instruction": "call qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287d1",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x287d2",
+              "instruction": "mov rcx, r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x287d5",
+              "instruction": "call qword ptr [rip + 0x5b2f5]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "offset": "0x287db",
+              "instruction": "nop ",
+              "callee": ""
+            },
+            {
+              "offset": "0x287dc",
+              "instruction": "mov rcx, qword ptr [rdi + 0x38]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287e0",
+              "instruction": "test rcx, rcx",
+              "callee": ""
+            },
+            {
+              "offset": "0x287e3",
+              "instruction": "je 0x1800287f5",
+              "callee": ""
+            },
+            {
+              "offset": "0x287e5",
+              "instruction": "mov rax, qword ptr [rcx]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287e8",
+              "instruction": "cmp rcx, rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x287eb",
+              "instruction": "setne dl",
+              "callee": ""
+            },
+            {
+              "offset": "0x287ee",
+              "instruction": "call qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287f1",
+              "instruction": "mov qword ptr [rdi + 0x38], rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x287f5",
+              "instruction": "mov al, 1",
+              "callee": ""
+            },
+            {
+              "offset": "0x287f7",
+              "instruction": "mov rcx, qword ptr [rsp + 0xd8]",
+              "callee": ""
+            },
+            {
+              "offset": "0x287ff",
+              "instruction": "xor rcx, rsp",
+              "callee": ""
+            },
+            {
+              "offset": "0x28802",
+              "instruction": "call 0x18007cf40",
+              "callee": ""
+            },
+            {
+              "offset": "0x28807",
+              "instruction": "mov rbx, qword ptr [rsp + 0x138]",
+              "callee": ""
+            },
+            {
+              "offset": "0x2880f",
+              "instruction": "add rsp, 0xe0",
+              "callee": ""
+            },
+            {
+              "offset": "0x28816",
+              "instruction": "pop r15",
+              "callee": ""
+            },
+            {
+              "offset": "0x28818",
+              "instruction": "pop r14",
+              "callee": ""
+            },
+            {
+              "offset": "0x2881a",
+              "instruction": "pop r13",
+              "callee": ""
+            },
+            {
+              "offset": "0x2881c",
+              "instruction": "pop r12",
+              "callee": ""
+            },
+            {
+              "offset": "0x2881e",
+              "instruction": "pop rdi",
+              "callee": ""
+            },
+            {
+              "offset": "0x2881f",
+              "instruction": "pop rsi",
+              "callee": ""
+            },
+            {
+              "offset": "0x28820",
+              "instruction": "pop rbp",
+              "callee": ""
+            },
+            {
+              "offset": "0x28821",
+              "instruction": "ret ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28822",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28823",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28824",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28825",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28826",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28827",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28828",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x28829",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882a",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882b",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882c",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882d",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882e",
+              "instruction": "int3 ",
+              "callee": ""
+            },
+            {
+              "offset": "0x2882f",
+              "instruction": "int3 ",
+              "callee": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

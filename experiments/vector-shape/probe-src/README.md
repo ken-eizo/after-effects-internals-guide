@@ -52,3 +52,15 @@ For repeated trials, copy each TSV to a named capture file before running the co
 **Deployment:** The user has AE 2026 running. Do not overwrite the currently loaded `C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\ShapeLayerAE.aex` while AE is running. Exit AE normally, replace that AEX with `D:\Developer\ShapeLayerAE\build\Release\ShapeLayerAE.aex` (admin permission may be necessary), then restart AE and use the Animation menu command. Preserve your existing project separately for testing. Build success is not host runtime verification.
 
 Supporting source-only snapshot and experiment records are in AEIG `experiments/vector-shape/probe-src/` and `experiments/vector-shape/EXP-SHAPE-005-native-stream-identity-capability-probe.md`.
+
+## 2026-10-11 — v3 research commands (build-only until manually tested)
+
+The latest `build/Release/ShapeLayerAE.aex` has **three** Animation menu commands:
+
+1. `ShapeLayerAE: Dump Stream Tree` — existing public, read-only tree/metadata/capability capture, now adds two independent UID calls with different nonzero sentinels (`uid_second_call`, `second_uid_error`) to investigate 359 all-zero IDs in the AE2026 v2 host capture.
+2. `ShapeLayerAE: Probe Unknown Shape Names (Experimental)` — explicitly opt-in. Calls **only** `AEGP_CanAddStream` for invented Shape/Graphic/Filter-prefixed names on existing Indexed Groups; `%TEMP%/ShapeLayerAE_canadd_unknown.tsv`. **Never calls AddStream** for a made-up type. This tests whether native vector Contents admission operates on known type IDs vs prefix grammar, not whether a stream can be constructed.
+3. `ShapeLayerAE: Probe Private TDB Getter (Read Only)` — explicitly opt-in **unsupported private ABI**. Uses GetModuleHandle/GetProcAddress and verifies the AE2025/2026 code fingerprint of `Get_AE_StreamFactory()` before making a single no-argument read-only call. Records only four booleans at `%TEMP%/ShapeLayerAE_private_factory_probe.tsv`. It neither dereferences the returned pointer nor registers, creates, modifies or deletes any native stream. This is a research-only experimental command that may be unsafe or incompatible in other builds; run only in disposable AE sessions with no unsaved work.
+
+**Important:** AE is currently running with the older installed v2 AEX in MediaCore. The v3 build has NOT been deployed or tested in host; do not replace an in-use loaded plug-in. Close AE normally, back up any project first, replace with the newly built AEX, restart, and only then invoke an experimental menu item if willing to test unsupported ABI. Archive all generated TSVs with precise AE/TDB build hashes.
+
+The major new nonpublic finding is the host-internal TDB stream registration machinery: BEE_Layer::RegisterStreams -> Get_AE_StreamFactory -> TDB_ScRegisterStreams::Register -> TDB_StreamFactory::RegisterFactoryFunc -> CreateStream/Canonical handling. This is **not** a supported third-party registration API. See AEIG `docs/vector-shape-system/native-stream-factory-and-schema.md` and `research/findings/F-VECTOR-008-tdb-native-factory-registration.md`.

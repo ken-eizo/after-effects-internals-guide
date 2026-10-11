@@ -62,6 +62,10 @@ The initial bounded instruction trace for `BEE_VectorLayer::RegisterStreams()` c
 
 BEE's total exports: 13647 (2025) vs 14182 (2026). `BEE_VectorStream` substring appears in 1452 symbols in each version; `TDB_StreamFactory` in 365 vs 401 (full BEE export scan, more than the earlier **filtered** shape-only AEIG CSV). These counts are not independent evidence of type extension and cannot be equated to function counts: a class name can appear in many constructors/templated signatures.
 
+## Actual TDB.dll native factory registration (revised frontier)
+
+A separate 2025/2026 static audit found the host-owned `TDB.dll`, its globally accessed `TDB_StreamFactory`, and its internal `RegisterFactoryFunc`/`TDB_ScRegisterStreams::Register` machinery. Resolved BEE.dll import calls prove base layer initialization calls those registry functions. The vector Contents `CanStore` contains three native type-name prefixes. This is a deeper capability boundary than the older BEE symbol-only study; see [Native Stream Factory and Shape Schema](native-stream-factory-and-schema.md). It must not be represented as a public third-party plug-in SDK.
+
 ## Direct call-site confirmation of a central initialization sequence
 
 Full executable-section static scans (4.49 million decoded instructions in AE 2025; 4.63 million in AE 2026) identified consecutive **direct** calls to multiple layer-class `RegisterStreams` routines from one shared code region in each build. The VectorLayer direct-call site is RVA `0x36DE38` in 2025 and `0x378858` in 2026. This is reproducible, cross-version evidence of a **central layer stream registration/initialization sequence**. The enclosing routine's name and registry data structures are not established, so it is not yet evidence that third-party types can be registered. The scan found three direct references to `PopulateVectorArt` per build but no direct `BEE_VectorLayer::Rasterize2DGraph` calls; virtual/indirect dispatch may explain the latter.

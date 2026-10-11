@@ -10,10 +10,16 @@
 #include <ctime>
 #include <cstdlib>
 #include <string>
+#if defined(MSWindows)
+#include <Windows.h>
+#endif
 
 static SPBasicSuite* g_basic = nullptr;
 static AEGP_PluginID g_id = 0;
 static AEGP_Command g_command = 0;
+static AEGP_Command g_unknown_command = 0;
+static AEGP_Command g_private_command = 0;
+static bool g_probe_unknown = false;
 static const int kMaxDepth = 24;
 static const int kMaxNodes = 20000;
 
@@ -32,12 +38,16 @@ static void Meta(AEGP_SuiteHandler& s, AEGP_StreamRefH ref,
                  int depth, long index, long parent_id,
                  AEGP_StreamGroupingType grouping, const char* match) {
     if (!metadata || !ref) return;
-    int32_t unique_id = -1;
+    // Sentinel controls detect a host implementation that leaves the out-param
+    // unchanged. Two independent calls are observational only.
+    int32_t unique_id = 0x13579BDF;
+    int32_t unique_id2 = 0x02468ACE;
     A_long sdk_depth = -1;
     AEGP_DynStreamFlags dyn_flags = 0;
     A_Boolean modified = FALSE;
     AEGP_StreamType value_type = AEGP_StreamType_NO_DATA;
     A_Err e_id = s.StreamSuite6()->AEGP_GetUniqueStreamID(ref, &unique_id);
+    A_Err e_id2 = s.StreamSuite6()->AEGP_GetUniqueStreamID(ref, &unique_id2);
     A_Err e_depth = s.DynamicStreamSuite2()->AEGP_GetStreamDepth(ref, &sdk_depth);
     A_Err e_flags = s.DynamicStreamSuite2()->AEGP_GetDynamicStreamFlags(ref, &dyn_flags);
     A_Err e_modified = s.DynamicStreamSuite2()->AEGP_GetStreamIsModified(ref, &modified);
@@ -45,11 +55,12 @@ static void Meta(AEGP_SuiteHandler& s, AEGP_StreamRefH ref,
     if (grouping == AEGP_StreamGroupingType_LEAF)
         e_type = s.StreamSuite6()->AEGP_GetStreamType(ref, &value_type);
     fprintf(metadata,
-            "%d\t%ld\t%ld\t%ld\t%d\t%ld\t%lu\t%d\t%ld\t%ld\t%ld\t%ld\t%ld\t%s\n",
+            "%d\t%ld\t%ld\t%ld\t%d\t%ld\t%lu\t%d\t%ld\t%ld\t%ld\t%ld\t%ld\t%s\t%ld\t%ld\n",
             depth,index,parent_id,(long)unique_id,(int)grouping,
             (long)sdk_depth,(unsigned long)dyn_flags,(int)modified,
             (long)value_type,(long)e_id,(long)e_depth,(long)e_flags,
-            (long)(e_modified?e_modified:e_type),match?match:"");
+            (long)(e_modified?e_modified:e_type),match?match:"",
+            (long)unique_id2,(long)e_id2);
     // CanAdd is a read-only query, valid ONLY for an INDEXED_GROUP.
     // Probe ONLY documented built-in match names; never call AddStream here.
     if (addcaps && grouping == AEGP_StreamGroupingType_INDEXED_GROUP) {
@@ -64,6 +75,24 @@ static void Meta(AEGP_SuiteHandler& s, AEGP_StreamRefH ref,
             fprintf(addcaps,"%ld\t%s\t%s\t%d\t%ld\n",
                     (long)unique_id,match?match:"",candidate,
                     (int)allowed,(long)e);
+        }
+        // This special probe runs ONLY from the separate explicit menu command.
+        // Prefix hypotheses are tested without creating any stream objects.
+        if (g_probe_unknown) {
+            static const char* unknown[] = {
+                "ADBE Vector Shape - ShapeLayerAEProbe",
+                "ADBE Vector Graphic - ShapeLayerAEProbe",
+                "ADBE Vector Filter - ShapeLayerAEProbe",
+                "ADBE Vector Group - ShapeLayerAEProbe",
+                "ShapeLayerAE Custom Stream",
+                "ADBE Vector Filter - Repeater"
+            };
+            for (const char* candidate : unknown) {
+                A_Boolean allowed = FALSE;
+                A_Err e = s.DynamicStreamSuite2()->AEGP_CanAddStream(ref, candidate, &allowed);
+                fprintf(addcaps,"%ld\t%s\t%s\t%d\t%ld\n",
+                        (long)unique_id,match?match:"",candidate,(int)allowed,(long)e);
+            }
         }
     }
 }
@@ -111,7 +140,8 @@ static void Visit(AEGP_SuiteHandler& s, AEGP_StreamRefH ref,
     }
 }
 
-static A_Err DumpActiveLayer() {
+static A_Err DumpActiveLayer(bool unknown_names = false) {
+    g_probe_unknown = unknown_names;
     if (!g_basic) return A_Err_NONE;
     AEGP_SuiteHandler s(g_basic);
     AEGP_LayerH layer = nullptr;
@@ -132,8 +162,8 @@ static A_Err DumpActiveLayer() {
     fprintf(out, "depth\tkind\tindex\tgrouping\tchildren\tmatch_name\tdisplay_name\taegp_error\n");
     const std::string base = std::string(tmp ? tmp : ".");
     FILE* meta = fopen((base + "\\ShapeLayerAE_stream_metadata.tsv").c_str(), "wb");
-    FILE* canadd = fopen((base + "\\ShapeLayerAE_canadd.tsv").c_str(), "wb");
-    if (meta) fprintf(meta, "depth\tindex\tparent_stream_uid\tunique_stream_id\tgrouping\tsdk_depth\tdynamic_flags\tis_modified\tleaf_stream_type\tuid_error\tdepth_error\tflags_error\tother_error\tmatch_name\n");
+    FILE* canadd = fopen((base + (unknown_names ? "\\ShapeLayerAE_canadd_unknown.tsv" : "\\ShapeLayerAE_canadd.tsv")).c_str(), "wb");
+    if (meta) fprintf(meta, "depth\tindex\tparent_stream_uid\tunique_stream_id\tgrouping\tsdk_depth\tdynamic_flags\tis_modified\tleaf_stream_type\tuid_error\tdepth_error\tflags_error\tother_error\tmatch_name\tuid_second_call\tsecond_uid_error\n");
     if (canadd) fprintf(canadd, "parent_stream_uid\tparent_match_name\tcandidate_match_name\tcan_add\tquery_error\n");
     AEGP_StreamRefH root = nullptr;
     err = s.DynamicStreamSuite2()->AEGP_GetNewStreamRefForLayer(g_id, layer, &root);
@@ -148,23 +178,84 @@ static A_Err DumpActiveLayer() {
     fclose(out);
     if (meta) fclose(meta);
     if (canadd) fclose(canadd);
+    g_probe_unknown = false;
     s.UtilitySuite3()->AEGP_ReportInfo(g_id, "ShapeLayerAE: Stream tree written to TEMP\\ShapeLayerAE_stream_tree.tsv");
     return err;
+}
+
+// EXPLICIT OPT-IN ONLY: read-only invocation of private *getter*, pinned by its
+// trivial x64 instruction fingerprint. No factory object dereference, registration,
+// typed callback, memory patching, or private vector creation.
+static A_Err ProbePrivateTDBFactoryGetter() {
+    if (!g_basic) return A_Err_NONE;
+    AEGP_SuiteHandler s(g_basic);
+    const char* tmp = getenv("TEMP");
+    const std::string path = std::string(tmp ? tmp : ".") +
+                             "\\ShapeLayerAE_private_factory_probe.tsv";
+    FILE* output = fopen(path.c_str(), "wb");
+    if (!output) {
+        s.UtilitySuite3()->AEGP_ReportInfo(g_id,
+                 "ShapeLayerAE: Cannot write private probe log.");
+        return A_Err_NONE;
+    }
+    int module_found=0, export_found=0, fingerprint_ok=0, result_nonnull=0;
+#if defined(MSWindows) && defined(_M_X64)
+    HMODULE tdb = GetModuleHandleW(L"TDB.dll");
+    if (tdb) {
+        module_found=1;
+        FARPROC getter=GetProcAddress(
+             tdb, "?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ");
+        if (getter) {
+            export_found=1;
+            const unsigned char* b =
+                reinterpret_cast<const unsigned char*>(getter);
+            // AE 2025/26 exact exports are mov rax, [rip+disp32]; ret.
+            // Reject any other code shape BEFORE attempting even a read-only call.
+            if (b[0]==0x48 && b[1]==0x8B && b[2]==0x05 && b[7]==0xC3) {
+                fingerprint_ok=1;
+                using Getter=void* (__cdecl*)();
+                Getter fn=reinterpret_cast<Getter>(getter);
+                void* factory=fn();
+                result_nonnull=(factory!=nullptr);
+                // DO NOT DEREFERENCE factory OR RETAIN the pointer.
+            }
+        }
+    }
+#endif
+    fprintf(output,
+            "module_found\texport_found\tcode_fingerprint_ok\tfactory_pointer_nonnull\n"
+            "%d\t%d\t%d\t%d\n",
+            module_found,export_found,fingerprint_ok,result_nonnull);
+    fclose(output);
+    s.UtilitySuite3()->AEGP_ReportInfo(g_id,
+            "ShapeLayerAE: Private getter probe recorded to TEMP (read-only).");
+    return A_Err_NONE;
 }
 
 static A_Err CommandHook(AEGP_GlobalRefcon, AEGP_CommandRefcon,
                          AEGP_Command command, AEGP_HookPriority,
                          A_Boolean already_handled, A_Boolean* handled) {
-    if (command != g_command || already_handled) return A_Err_NONE;
+    if (already_handled) return A_Err_NONE;
+    if (command == g_private_command) {
+        if (handled) *handled = TRUE;
+        return ProbePrivateTDBFactoryGetter();
+    }
+    if (command != g_command && command != g_unknown_command)
+        return A_Err_NONE;
     if (handled) *handled = TRUE;
-    return DumpActiveLayer();
+    return DumpActiveLayer(command == g_unknown_command);
 }
 static A_Err UpdateMenuHook(AEGP_GlobalRefcon, AEGP_UpdateMenuRefcon,
                             AEGP_WindowType) {
     AEGP_SuiteHandler s(g_basic);
     AEGP_LayerH layer = nullptr;
     s.LayerSuite5()->AEGP_GetActiveLayer(&layer);
-    if (layer) return s.CommandSuite1()->AEGP_EnableCommand(g_command);
+    s.CommandSuite1()->AEGP_EnableCommand(g_private_command);
+    if (layer) {
+        s.CommandSuite1()->AEGP_EnableCommand(g_unknown_command);
+        return s.CommandSuite1()->AEGP_EnableCommand(g_command);
+    }
+    s.CommandSuite1()->AEGP_DisableCommand(g_unknown_command);
     return s.CommandSuite1()->AEGP_DisableCommand(g_command);
 }
 
@@ -178,6 +269,14 @@ A_Err EntryPointFunc(SPBasicSuite* pica, A_long, A_long,
     if (!err) err = s.CommandSuite1()->AEGP_InsertMenuCommand(
         g_command, "ShapeLayerAE: Dump Stream Tree", AEGP_Menu_ANIMATION,
         AEGP_MENU_INSERT_AT_TOP);
+    if (!err) err = s.CommandSuite1()->AEGP_GetUniqueCommand(&g_unknown_command);
+    if (!err) err = s.CommandSuite1()->AEGP_InsertMenuCommand(
+        g_unknown_command, "ShapeLayerAE: Probe Unknown Shape Names (Experimental)",
+        AEGP_Menu_ANIMATION, AEGP_MENU_INSERT_AT_TOP);
+    if (!err) err = s.CommandSuite1()->AEGP_GetUniqueCommand(&g_private_command);
+    if (!err) err = s.CommandSuite1()->AEGP_InsertMenuCommand(
+        g_private_command, "ShapeLayerAE: Probe Private TDB Getter (Read Only)",
+        AEGP_Menu_ANIMATION, AEGP_MENU_INSERT_AT_TOP);
     if (!err) err = s.RegisterSuite5()->AEGP_RegisterCommandHook(
         g_id, AEGP_HP_BeforeAE, AEGP_Command_ALL, CommandHook, nullptr);
     if (!err) err = s.RegisterSuite5()->AEGP_RegisterUpdateMenuHook(

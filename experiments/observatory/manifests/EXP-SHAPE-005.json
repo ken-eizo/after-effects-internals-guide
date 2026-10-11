@@ -1,7 +1,7 @@
 {
   "experiment_id": "EXP-SHAPE-005",
   "title": "AEGP session stream ID and native indexed-group admissibility probe",
-  "status": "compiled-not-host-tested",
+  "status": "observed-v2-in-host; v3-compiled-pending-host",
   "domains": [
     "vector-shape-system",
     "state-model",
@@ -44,7 +44,7 @@
     "host_runtime": "pending for v2",
     "runtime_mutation": false
   },
-  "conclusion": "C++ probe compiled (not yet loaded or tested in AE). Source snapshot and build receipt are reproducible; all host behavior is pending.",
+  "conclusion": "E2-X AE2026 v2 host capture: 359 valid public stream records, 36 successful built-in child CanAdd decisions, 359 GetUniqueStreamID calls returned zero without API error; v3 sentinel and unknown-name probes remain compiled-only.",
   "evidence": [
     "E0-G",
     "E0-H",
@@ -54,5 +54,17 @@
     "Session-unique ID is not stable project identity",
     "CanAdd on existing Indexed Group is not create-native-type API",
     "User workspace should not be modified or reloaded without consent"
-  ]
+  ],
+  "observed_host_capture": {
+    "date_local": "2026-10-11T18:45:17",
+    "files": "experiments/vector-shape/runs/EXP-SHAPE-005/20261011-user-host-v2",
+    "tree_sha256": "38243e05de1d447d8b71104c4d73f4ddd01d778b627d6abceaf14db0ff9b5432",
+    "metadata_sha256": "ba1e318ca21c8a893933b14517a92be46b0ae45c65373cea5089495b7a56767d",
+    "canadd_sha256": "8b51d257014bebcfdc9a7ee1ae348d43d863e408244b6bf026d584c61a40fba0",
+    "stream_count": 359,
+    "canadd_query_count": 36,
+    "stream_id_zero_count": 359,
+    "nonzero_error_count": 0,
+    "report": "experiments/vector-shape/EXP-SHAPE-005-v2-host-confirmation.md"
+  }
 }

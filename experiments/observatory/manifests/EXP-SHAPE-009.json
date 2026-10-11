@@ -1,0 +1,50 @@
+{
+  "experiment_id": "EXP-SHAPE-009",
+  "title": "Read-only CanAdd unknown native names and session UID controls",
+  "status": "compiled-not-host-tested",
+  "question": "Does a Shape Contents Indexed Group admit an unregistered Shape/Graphic/Filter-prefixed match name, independently of actual factory type construction? Why does UID return zero for every stream?",
+  "evidence": [
+    "H",
+    "E0-H",
+    "E2-X prior built-in baseline"
+  ],
+  "environment": {
+    "sdk": "25.6",
+    "target": "AE 2026",
+    "host_executed_v3": false
+  },
+  "procedure": [
+    "Quit AE; replace AEX only while closed; restart in disposable AE project",
+    "Select native Shape Layer; choose Animation > ShapeLayerAE: Probe Unknown Shape Names (Experimental)",
+    "Record all TSVs and exact AE/TDB build hashes; never call AddStream on unknown names",
+    "Compare UID first and second calls preinitialized with two distinct nonzero sentinels",
+    "Interpret CanAdd=true only as parent admission, never as safe instantiation"
+  ],
+  "captures": [
+    "%TEMP%/ShapeLayerAE_canadd_unknown.tsv",
+    "%TEMP%/ShapeLayerAE_stream_metadata.tsv"
+  ],
+  "conclusion": "Probe compiled; no v3 AE runtime results yet.",
+  "limitations": [
+    "Unknown-name CanAdd is unsupported/advisory query and may still emit host errors",
+    "No native stream mutation in this experiment"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Shape prefix grammar CanAdd true for unknown prefixed names in Shape Contents",
+      "falsified_by": "AE returns can_add=0 on all unknown Shape/Graphic/Filter-prefixed names"
+    },
+    {
+      "id": "H2",
+      "prediction": "AE returns zero UID twice despite distinct sentinels",
+      "falsified_by": "Either second call returns nonzero or unmodified sentinel"
+    }
+  ],
+  "build_receipt": {
+    "binary": "D:/Developer/ShapeLayerAE/build/Release/ShapeLayerAE.aex",
+    "sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
+    "installed_version": "older v2; current user AE process not touched",
+    "host_result": "pending"
+  }
+}

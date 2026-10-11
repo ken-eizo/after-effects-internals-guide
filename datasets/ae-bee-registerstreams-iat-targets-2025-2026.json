@@ -1,0 +1,760 @@
+{
+  "classification": "E2-L",
+  "scope": "bounded disassembly with PE IAT resolved; not dynamic execution",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "TDB_import_count": 664,
+      "functions": [
+        {
+          "rva": "0x6e1050",
+          "name": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z",
+          "size_scanned": 304,
+          "calls": [
+            {
+              "at_rva": "0x6e106f",
+              "mnemonic": "call",
+              "instruction": "0x18024df90",
+              "imported": "",
+              "same_module_export": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "at_rva": "0x6e1092",
+              "mnemonic": "call",
+              "instruction": "0x1806e3d20",
+              "imported": "",
+              "same_module_export": "?InitArtCache@BEE_VectorLayer@@IEAAXXZ"
+            },
+            {
+              "at_rva": "0x6e109f",
+              "mnemonic": "call",
+              "instruction": "0x180293450",
+              "imported": "",
+              "same_module_export": "?Set3DGeometryType@BEE_AVLayer@@IEAAXH@Z"
+            },
+            {
+              "at_rva": "0x6e10e3",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e110a",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e111b",
+              "mnemonic": "jmp",
+              "instruction": "0x180ce9094",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e115b",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e116d",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x28fa80",
+          "name": "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z",
+          "size_scanned": 208,
+          "calls": [
+            {
+              "at_rva": "0x28fa89",
+              "mnemonic": "call",
+              "instruction": "0x1802fbb60",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fa90",
+              "mnemonic": "call",
+              "instruction": "0x18025bb60",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fa97",
+              "mnemonic": "call",
+              "instruction": "0x18025c480",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fa9e",
+              "mnemonic": "call",
+              "instruction": "0x18025bd60",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28faa5",
+              "mnemonic": "call",
+              "instruction": "0x18025bf60",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28faac",
+              "mnemonic": "call",
+              "instruction": "0x18025bc80",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fab7",
+              "mnemonic": "jmp",
+              "instruction": "0x18025c5e0",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fae9",
+              "mnemonic": "call",
+              "instruction": "0x180287bd0",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fafa",
+              "mnemonic": "call",
+              "instruction": "0x18065db90",
+              "imported": "",
+              "same_module_export": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "at_rva": "0x28fb03",
+              "mnemonic": "jmp",
+              "instruction": "0x18028fb1d",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fb08",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc2e402]",
+              "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fb11",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc2e1c1]",
+              "imported": "TDB.dll!?GetIndex@TDB_StreamID@@QEBAIXZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fb2f",
+              "mnemonic": "jmp",
+              "instruction": "qword ptr [rip + 0xc2ecb2]",
+              "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x28fb46",
+              "mnemonic": "call",
+              "instruction": "0x180ceacc8",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x2ec310",
+          "name": "?RegisterStreams@BEE_Layer@@SAX_N@Z",
+          "size_scanned": 304,
+          "calls": [
+            {
+              "at_rva": "0x2ec31d",
+              "mnemonic": "call",
+              "instruction": "0x1802e0a00",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec322",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xbd1ab8]",
+              "imported": "TDB.dll!?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec393",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xbd204f]",
+              "imported": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec399",
+              "mnemonic": "call",
+              "instruction": "0x18023abf0",
+              "imported": "",
+              "same_module_export": "?BEE_BetaFeature_AreExpressionEffectsAlwaysAllowedEnabled@@YA_NXZ"
+            },
+            {
+              "at_rva": "0x2ec3d3",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xbd200f]",
+              "imported": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec3e4",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xbd2006]",
+              "imported": "TDB.dll!?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec3fc",
+              "mnemonic": "call",
+              "instruction": "0x180ce9710",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec418",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xbd1fba]",
+              "imported": "TDB.dll!??0TDB_ScRegisterStreams@@QEAA@PEAVTDB_StreamFactory@@@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec425",
+              "mnemonic": "call",
+              "instruction": "0x180ce94e0",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec432",
+              "mnemonic": "call",
+              "instruction": "0x180ce96a4",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2ec437",
+              "mnemonic": "jmp",
+              "instruction": "0x1802ec353",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x5ae290",
+          "name": "?RegisterStreams@BEE_TextLayer@@SAXXZ",
+          "size_scanned": 32,
+          "calls": [
+            {
+              "at_rva": "0x5ae294",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0x911576]",
+              "imported": "U.dll!U_GetRunMode",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x5ae29e",
+              "mnemonic": "jmp",
+              "instruction": "0x1805ca900",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x6e4100",
+          "name": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "size_scanned": 416,
+          "calls": [
+            {
+              "at_rva": "0x6e4100",
+              "mnemonic": "jmp",
+              "instruction": "0x18076b6f0",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e4145",
+              "mnemonic": "call",
+              "instruction": "0x1806622b0",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "at_rva": "0x6e4166",
+              "mnemonic": "call",
+              "instruction": "0x180662d60",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "at_rva": "0x6e418f",
+              "mnemonic": "call",
+              "instruction": "0x18036d5b0",
+              "imported": "",
+              "same_module_export": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x6e41a6",
+              "mnemonic": "call",
+              "instruction": "0x18065f800",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "at_rva": "0x6e41dc",
+              "mnemonic": "call",
+              "instruction": "0x18065f590",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x6e41fa",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0x7dcfd0]",
+              "imported": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e420f",
+              "mnemonic": "call",
+              "instruction": "0x18065f9f0",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x6e4232",
+              "mnemonic": "call",
+              "instruction": "0x1800c7810",
+              "imported": "",
+              "same_module_export": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "at_rva": "0x6e423f",
+              "mnemonic": "call",
+              "instruction": "0x180ce9610",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e4266",
+              "mnemonic": "call",
+              "instruction": "0x180ceacc8",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e427c",
+              "mnemonic": "call",
+              "instruction": "0x180ceacc8",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x6e4292",
+              "mnemonic": "call",
+              "instruction": "0x180ceacc8",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "TDB_import_count": 675,
+      "functions": [
+        {
+          "rva": "0x7058e0",
+          "name": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z",
+          "size_scanned": 336,
+          "calls": [
+            {
+              "at_rva": "0x70591a",
+              "mnemonic": "call",
+              "instruction": "0x180338db0",
+              "imported": "",
+              "same_module_export": "??0BEE_MaterialOverrideLayer@@QEAA@AEBVTDB_MatchName@@0PEBV1@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "at_rva": "0x70593d",
+              "mnemonic": "call",
+              "instruction": "0x1807085b0",
+              "imported": "",
+              "same_module_export": "?InitArtCache@BEE_VectorLayer@@IEAAXXZ"
+            },
+            {
+              "at_rva": "0x70594a",
+              "mnemonic": "call",
+              "instruction": "0x18029c0f0",
+              "imported": "",
+              "same_module_export": "?Set3DGeometryType@BEE_AVLayer@@IEAAXH@Z"
+            },
+            {
+              "at_rva": "0x705993",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x7059ba",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x7059cb",
+              "mnemonic": "jmp",
+              "instruction": "0x180d3a6b4",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x705a0b",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax]",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x705a1d",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rax + 8]",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x298cb0",
+          "name": "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z",
+          "size_scanned": 208,
+          "calls": [
+            {
+              "at_rva": "0x298cb9",
+              "mnemonic": "call",
+              "instruction": "0x180304640",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298cc0",
+              "mnemonic": "call",
+              "instruction": "0x180266710",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298cc7",
+              "mnemonic": "call",
+              "instruction": "0x180267030",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298cce",
+              "mnemonic": "call",
+              "instruction": "0x180266910",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298cd5",
+              "mnemonic": "call",
+              "instruction": "0x180266b10",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298cdc",
+              "mnemonic": "call",
+              "instruction": "0x180266830",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298ce7",
+              "mnemonic": "jmp",
+              "instruction": "0x180267190",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d19",
+              "mnemonic": "call",
+              "instruction": "0x180290e50",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d2d",
+              "mnemonic": "call",
+              "instruction": "0x1806791a0",
+              "imported": "",
+              "same_module_export": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@IUBEE_CmdReorderIndexedGroupEntryOptions@@@Z"
+            },
+            {
+              "at_rva": "0x298d36",
+              "mnemonic": "jmp",
+              "instruction": "0x180298d50",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d3b",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc7e2ff]",
+              "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d44",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc7e8b6]",
+              "imported": "TDB.dll!?GetIndex@TDB_StreamID@@QEBAIXZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d62",
+              "mnemonic": "jmp",
+              "instruction": "qword ptr [rip + 0xc7ed5f]",
+              "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x298d79",
+              "mnemonic": "call",
+              "instruction": "0x180d3bdf8",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x2f4e50",
+          "name": "?RegisterStreams@BEE_Layer@@SAX_N@Z",
+          "size_scanned": 304,
+          "calls": [
+            {
+              "at_rva": "0x2f4e5d",
+              "mnemonic": "call",
+              "instruction": "0x1802e9930",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4e62",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc220b0]",
+              "imported": "TDB.dll!?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4ed3",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc229ef]",
+              "imported": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4ed9",
+              "mnemonic": "call",
+              "instruction": "0x180243770",
+              "imported": "",
+              "same_module_export": "?BEE_BetaFeature_AreExpressionEffectsAlwaysAllowedEnabled@@YA_NXZ"
+            },
+            {
+              "at_rva": "0x2f4f13",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc229af]",
+              "imported": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f24",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc229a6]",
+              "imported": "TDB.dll!?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f3c",
+              "mnemonic": "call",
+              "instruction": "0x180d3ad30",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f58",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0xc2295a]",
+              "imported": "TDB.dll!??0TDB_ScRegisterStreams@@QEAA@PEAVTDB_StreamFactory@@@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f65",
+              "mnemonic": "call",
+              "instruction": "0x180d3ab00",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f72",
+              "mnemonic": "call",
+              "instruction": "0x180d3acc4",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x2f4f77",
+              "mnemonic": "jmp",
+              "instruction": "0x1802f4e93",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x5cd7e0",
+          "name": "?RegisterStreams@BEE_TextLayer@@SAXXZ",
+          "size_scanned": 32,
+          "calls": [
+            {
+              "at_rva": "0x5cd7e4",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0x94b18e]",
+              "imported": "U.dll!U_GetRunMode",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x5cd7ee",
+              "mnemonic": "jmp",
+              "instruction": "0x1805eafd0",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        },
+        {
+          "rva": "0x708a30",
+          "name": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "size_scanned": 400,
+          "calls": [
+            {
+              "at_rva": "0x708a30",
+              "mnemonic": "jmp",
+              "instruction": "0x18078cf60",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x708a70",
+              "mnemonic": "call",
+              "instruction": "0x18067db00",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "at_rva": "0x708a91",
+              "mnemonic": "call",
+              "instruction": "0x18067e640",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "at_rva": "0x708ab8",
+              "mnemonic": "call",
+              "instruction": "0x180377fd0",
+              "imported": "",
+              "same_module_export": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x708acf",
+              "mnemonic": "call",
+              "instruction": "0x18067af80",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "at_rva": "0x708b05",
+              "mnemonic": "call",
+              "instruction": "0x18067ad00",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x708b23",
+              "mnemonic": "call",
+              "instruction": "qword ptr [rip + 0x811acf]",
+              "imported": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x708b38",
+              "mnemonic": "call",
+              "instruction": "0x18067b170",
+              "imported": "",
+              "same_module_export": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "at_rva": "0x708b5b",
+              "mnemonic": "call",
+              "instruction": "0x1800cdd00",
+              "imported": "",
+              "same_module_export": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "at_rva": "0x708b68",
+              "mnemonic": "call",
+              "instruction": "0x180d3ac30",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x708b8b",
+              "mnemonic": "call",
+              "instruction": "0x180d3bdf8",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x708ba1",
+              "mnemonic": "call",
+              "instruction": "0x180d3bdf8",
+              "imported": "",
+              "same_module_export": ""
+            },
+            {
+              "at_rva": "0x708bb7",
+              "mnemonic": "call",
+              "instruction": "0x180d3bdf8",
+              "imported": "",
+              "same_module_export": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
