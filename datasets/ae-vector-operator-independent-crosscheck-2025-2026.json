@@ -1,0 +1,87 @@
+{
+  "classification": "E2-L independent dataset consistency checks only; no host code execution",
+  "checks": {
+    "2025": {
+      "exactly_20_unique_MatchNames": true,
+      "type_name_order_matches_rtti_and_modes": true,
+      "nine_native_geometry_mode_zero": true,
+      "eleven_native_filters_mode_one": true,
+      "primary_and_secondary_vtable_0_and_24_for_all": true,
+      "reference_counted_operator_base_rtti_for_all": true,
+      "path_rect_ellipse_contain_bezier_and_origin_sequences": {
+        "ADBE Vector Shape - Group": "0x6f54d0",
+        "ADBE Vector Shape - Rect": "0x6f5170",
+        "ADBE Vector Shape - Ellipse": "0x6f3760"
+      },
+      "repeater_synthetic_index_direct_calls": [
+        "0x6f13ea",
+        "0x6f1449",
+        "0x6f1ce8"
+      ],
+      "concrete_classes": {
+        "ADBE Vector Filter - Trim": ".?AVTrimOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Offset": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - PB": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Repeater": ".?AVRepeaterOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Reveal": ".?AVRevealOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Merge": ".?AVMergeOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Roughen": ".?AVRoughenOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Wiggler": ".?AVWigglerOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Zigzag": ".?AVZigzagOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - RC": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Twist": ".?AVTwistOperator@BEE_VectorStream@@",
+        "ADBE Vector Group": ".?AVGroupOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Group": ".?AVShapeOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Rect": ".?AVRectOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Ellipse": ".?AVEllipseOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Star": ".?AVPolyStarOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - Fill": ".?AVFillOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - Stroke": ".?AVStrokeOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - G-Fill": ".?AVGradientFillOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - G-Stroke": ".?AVGradientStrokeOperator@BEE_VectorStream@@"
+      }
+    },
+    "2026": {
+      "exactly_20_unique_MatchNames": true,
+      "type_name_order_matches_rtti_and_modes": true,
+      "nine_native_geometry_mode_zero": true,
+      "eleven_native_filters_mode_one": true,
+      "primary_and_secondary_vtable_0_and_24_for_all": true,
+      "reference_counted_operator_base_rtti_for_all": true,
+      "path_rect_ellipse_contain_bezier_and_origin_sequences": {
+        "ADBE Vector Shape - Group": "0x719340",
+        "ADBE Vector Shape - Rect": "0x718fe0",
+        "ADBE Vector Shape - Ellipse": "0x7176c0"
+      },
+      "repeater_synthetic_index_direct_calls": [
+        "0x7157f2",
+        "0x71581b",
+        "0x715859",
+        "0x715d32"
+      ],
+      "concrete_classes": {
+        "ADBE Vector Filter - Trim": ".?AVTrimOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Offset": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - PB": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Repeater": ".?AVRepeaterOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Reveal": ".?AVRevealOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Merge": ".?AVMergeOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Roughen": ".?AVRoughenOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Wiggler": ".?AVWigglerOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Zigzag": ".?AVZigzagOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - RC": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+        "ADBE Vector Filter - Twist": ".?AVTwistOperator@BEE_VectorStream@@",
+        "ADBE Vector Group": ".?AVGroupOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Group": ".?AVShapeOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Rect": ".?AVRectOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Ellipse": ".?AVEllipseOperator@BEE_VectorStream@@",
+        "ADBE Vector Shape - Star": ".?AVPolyStarOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - Fill": ".?AVFillOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - Stroke": ".?AVStrokeOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - G-Fill": ".?AVGradientFillOperator@BEE_VectorStream@@",
+        "ADBE Vector Graphic - G-Stroke": ".?AVGradientStrokeOperator@BEE_VectorStream@@"
+      }
+    },
+    "cross_version_exact_concrete_classes_equal": true
+  }
+}

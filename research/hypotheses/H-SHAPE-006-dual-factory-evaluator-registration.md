@@ -11,6 +11,10 @@ A custom native vector stream created by an independent plugin might require reg
 
 Testable E2-L anchor: The BEE evaluator registry contains 20 native Shape/Graphic/Filter/Group names and 20 concrete RTTI operator classes, while TDB uses separate creator callbacks. The actual AE2026 AEGP invoked only a **getter**, not either registrar.
 
+## Confirmed ABI constraints and remaining registerability hypothesis (2026-10-11)
+
+F-VECTOR-015 independently decodes the native `BEE_VectorStream::Operator` vtable and MSVC inheritance metadata across AE2025/2026. The primary virtual `+0x18` dispatcher branches on native mode 0 for 9 Group/Shape/Graphic nodes and mode 1 for 11 Filter nodes. The underlying C++ instance has a second reference-counting vtable at an object offset of +24 bytes, along with virtual-base RTTI. It would be unsafe to treat the registration payload as a simple C callback, and none has been registered externally. F-VECTOR-016 proves concrete evaluated geometry carries source-path and Repeater synthetic origin metadata. These facts constrain, but do not resolve, independent effect-owned Timeline and Pen editing.
+
 ## H-OWNER
 
 A plugin-owned Effects/Effect Parade instance is not a `BEE_VectorLayer`. A registered TDB + BEE evaluator may still be fundamentally tied to an existing native Shape Layer's owner, failing the requirement of an **effect that is itself a native editable shape**. Success must produce its own regular Timeline indexed hierarchy with stable native selection, no separate Shape Layer.

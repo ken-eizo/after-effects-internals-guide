@@ -36,6 +36,10 @@ The current AE2026 real-host AEGP capture confirms the public `ADBE Root Vectors
 
 **Strongest current inference:** synthetic origin append operations and origin stream-path lookup are part of executed-looking code paths inside the native vector runtime, not simply type declarations. A native selection subsystem also consumes TDB stream paths. **Still not established** is the precise dataflow from rendered `OriginInfo` through hit testing into a selected editable path, nor any externally registerable native edit target.
 
+## Promoted proof: synthetic Repeater provenance in native evaluator code (2026-10-11)
+
+An expanded E2-L experiment traced **`RepeaterOperator`'s concrete geometry generation** (not merely symbol xrefs) in installed AE2025 and 2026 BEE.dll. Its actual processing method calls `BEE_VectorArt::OriginInfo::AppendSyntheticIndex` at least twice in both versions while constructing `Group` / `SymbolGroup` and attaching `OriginInfo`. Concrete Path/Rectangle/Ellipse native evaluator functions also convert authored `OM_Shape` or parametric streams into `CAIMBezierPath`, create `BEE_VectorArt::Path`, and attach `OriginInfo(TDB_StreamIDPath)`. This upgrades the previous Repeater-to-synthetic-index **hypothesis to static callsite-confirmed use**. It **does not** yet prove native Pen tool hit-testing uses the origin metadata or accepts effect-provided vector art. See [Native Vector Operator ABI and Origin](native-vector-operator-abi-and-origin.md), Finding F-VECTOR-016 and EXP-SHAPE-016.
+
 ## Strong compatibility clues and limits
 
 - `BEE_VectorArt::OriginInfo(TDB_StreamIDPath const&)` exists in 2025 and 2026.

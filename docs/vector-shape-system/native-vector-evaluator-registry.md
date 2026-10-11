@@ -77,6 +77,10 @@ The correspondence is established for every entry from *literal text used in the
 
 For path filter operators, intermediate RTTI includes `PathFilterOperatorT<TrimParams>`, `PathFilterOperatorT<OffsetPathParams>`, `PathFilterOperatorT<RoughenParams>`, etc. Most concrete operators have vtable RTTI metadata for subobject offsets 0 and 24 bytes: external subclasses must satisfy more than a single function pointer. No third-party operator has been constructed or called.
 
+## Updated 2026-10-11 evidence: executable operator vtables and geometry provenance
+
+All **20** concrete operators were independently analyzed in AE2025/2026: they carry primary and secondary vtables (RTTI subobject offset +24), a reference-counting hierarchy, and a mode-dispatch method at primary vtable +0x18. Each version has nine mode-0 Group/Shape/Graphic operators and eleven mode-1 Filter operators. Concrete Path/Rect/Ellipse operators build Bezier paths and stamp `OriginInfo(TDB_StreamIDPath)`; Repeater's own algorithm directly calls `AppendSyntheticIndex`. These are executable-code evidence and refine the older name-only or prototype-only model. See [Native Vector Operator ABI and Origin](native-vector-operator-abi-and-origin.md) and Findings F-VECTOR-015/016. No third-party operator registration was performed.
+
 ## What the experiments actually establish
 
 | Contract | E2-X / E2-L result | Remaining obstacle |

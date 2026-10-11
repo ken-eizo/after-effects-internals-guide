@@ -1,0 +1,3895 @@
+{
+  "classification": "E2-L: exact static .rdata vtable code pointers and MSVC RTTI, no plugin ABI guarantee",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "rows": [
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "concrete_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+          "call": "0x6fd508",
+          "tables": [
+            {
+              "rva": "0x10010c0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6eea20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6eea20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef3f0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef3f0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0350",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0350",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f71f0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f71f0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6fa200",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6fa200",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f88b0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1001110",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2b8",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Offset",
+          "concrete_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+          "call": "0x6fd5d5",
+          "tables": [
+            {
+              "rva": "0x10011a8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee760",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee760",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef0f0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef0f0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6efed0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efed0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f5f00",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f5f00",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6f91f0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f91f0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f8830",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10011f8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee234",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - PB",
+          "concrete_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+          "call": "0x6fd6a2",
+          "tables": [
+            {
+              "rva": "0x1001290",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee820",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee820",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef1b0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef1b0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0000",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0000",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f6200",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f6200",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6f9490",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f9490",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f8840",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10012e0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee258",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "concrete_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+          "call": "0x6fd751",
+          "tables": [
+            {
+              "rva": "0x1001720",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee8a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee8a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efb70",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efb70",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f12c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f12c0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1001758",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee270",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Reveal",
+          "concrete_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+          "call": "0x6fd800",
+          "tables": [
+            {
+              "rva": "0x1001780",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee8e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee8e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efc30",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efc30",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f21c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f21c0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10017b8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee27c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Merge",
+          "concrete_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+          "call": "0x6fd8af",
+          "tables": [
+            {
+              "rva": "0x1001810",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee720",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee720",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef990",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef990",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f06a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f06a0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1001848",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee228",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Roughen",
+          "concrete_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+          "call": "0x6fd97c",
+          "tables": [
+            {
+              "rva": "0x1001378",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee920",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee920",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef270",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef270",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0110",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0110",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f6700",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f6700",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6f9be0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f9be0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f88a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10013c8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee288",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Wiggler",
+          "concrete_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+          "call": "0x6fda2b",
+          "tables": [
+            {
+              "rva": "0x10013f0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6eeaa0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6eeaa0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efe10",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efe10",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6fa610",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6fa610",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f2bc0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f2bc0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6f2b50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f2b50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f5be0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f5be0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1001440",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2d0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Zigzag",
+          "concrete_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+          "call": "0x6fdaf8",
+          "tables": [
+            {
+              "rva": "0x10014d8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6eeae0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6eeae0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef570",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef570",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0580",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0580",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f82b0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f82b0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6fac50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6fac50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f8890",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1001528",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2dc",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - RC",
+          "concrete_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+          "call": "0x6fdbc5",
+          "tables": [
+            {
+              "rva": "0x10015c0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee960",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee960",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef330",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef330",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0240",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0240",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f6ce0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f6ce0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6fa100",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6fa100",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f8860",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1001610",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee294",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Twist",
+          "concrete_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+          "call": "0x6fdc92",
+          "tables": [
+            {
+              "rva": "0x10016a8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6eea60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6eea60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef4b0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef4b0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3d50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3d50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x6f0470",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f0470",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x6f7d80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f7d80",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x6fa490",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6fa490",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x6f8880",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10016f8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2c4",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Group",
+          "concrete_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+          "call": "0x6fdd95",
+          "tables": [
+            {
+              "rva": "0x1000e00",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee650",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee650",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef900",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef900",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f4300",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f4300",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1000e30",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee21c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "concrete_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+          "call": "0x6fde29",
+          "tables": [
+            {
+              "rva": "0x1000e98",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee9a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee9a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efcf0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efcf0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f54d0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f54d0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1000ec8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "concrete_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+          "call": "0x6fdebd",
+          "tables": [
+            {
+              "rva": "0x1000ef0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee860",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee860",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efae0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efae0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f5170",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f5170",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1000f20",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee264",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "concrete_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+          "call": "0x6fdf51",
+          "tables": [
+            {
+              "rva": "0x1000f48",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee4e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee4e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef630",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef630",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3760",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3760",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1000f78",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee1e0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Star",
+          "concrete_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+          "call": "0x6fdfe5",
+          "tables": [
+            {
+              "rva": "0x1000fa0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee7e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee7e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efa50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efa50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f4e10",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f4e10",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1000fd0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee24c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "concrete_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+          "call": "0x6fe079",
+          "tables": [
+            {
+              "rva": "0x1001870",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee520",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee520",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef6c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef6c0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3ac0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3ac0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10018a0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee1ec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Stroke",
+          "concrete_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+          "call": "0x6fe10d",
+          "tables": [
+            {
+              "rva": "0x1001920",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee9e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee9e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6efd80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6efd80",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f58d0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f58d0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1001950",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee2ac",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Fill",
+          "concrete_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+          "call": "0x6fe1a1",
+          "tables": [
+            {
+              "rva": "0x10018c8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee5d0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee5d0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef7e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef7e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f3f20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f3f20",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10018f8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee204",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Stroke",
+          "concrete_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+          "call": "0x6fe235",
+          "tables": [
+            {
+              "rva": "0x10019d8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x6ee610",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ee610",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc27eec",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x6ef870",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6ef870",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x6f4080",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x6f4080",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1001a08",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc27eda",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc27ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x6ee210",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "rows": [
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "concrete_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+          "call": "0x72101d",
+          "tables": [
+            {
+              "rva": "0x1061ec0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x713020",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713020",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713980",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713980",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7147f0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7147f0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x71ae70",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71ae70",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71dd80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71dd80",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c3c0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1061f10",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128c0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Offset",
+          "concrete_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+          "call": "0x7210ea",
+          "tables": [
+            {
+              "rva": "0x1061fa8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712d60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712d60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713700",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713700",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x714380",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714380",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x719d00",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x719d00",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71cdd0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71cdd0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c340",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1061ff8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x71283c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - PB",
+          "concrete_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+          "call": "0x7211b7",
+          "tables": [
+            {
+              "rva": "0x1062090",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712e20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712e20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x7137a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7137a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7144a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7144a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x719fe0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x719fe0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71d060",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71d060",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c350",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10620e0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712860",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "concrete_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+          "call": "0x721266",
+          "tables": [
+            {
+              "rva": "0x1062520",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712ea0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712ea0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x714080",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714080",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7156d0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7156d0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1062558",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712878",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Reveal",
+          "concrete_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+          "call": "0x721315",
+          "tables": [
+            {
+              "rva": "0x1062580",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712ee0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712ee0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x714120",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714120",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7161a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7161a0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10625b8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712884",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Merge",
+          "concrete_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+          "call": "0x7213c4",
+          "tables": [
+            {
+              "rva": "0x1062610",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712d20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712d20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713ec0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713ec0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x714b40",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714b40",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1062648",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712830",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Roughen",
+          "concrete_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+          "call": "0x721491",
+          "tables": [
+            {
+              "rva": "0x1062178",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712f20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712f20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713840",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713840",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7145b0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7145b0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x71a480",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71a480",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71d7a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71d7a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c3b0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10621c8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712890",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Wiggler",
+          "concrete_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+          "call": "0x721540",
+          "tables": [
+            {
+              "rva": "0x10621f0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x7130a0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7130a0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x7142e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7142e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x71e180",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71e180",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x716c30",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x716c30",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x716bc0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x716bc0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x7199e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7199e0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1062240",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128d8",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Zigzag",
+          "concrete_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+          "call": "0x72160d",
+          "tables": [
+            {
+              "rva": "0x10622d8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x7130e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7130e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713ac0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713ac0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x714a20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714a20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x71be20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71be20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71e720",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71e720",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c3a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1062328",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128e4",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - RC",
+          "concrete_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+          "call": "0x7216da",
+          "tables": [
+            {
+              "rva": "0x10623c0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712f60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712f60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x7138e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7138e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x7146e0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7146e0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x71a9c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71a9c0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71dc80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71dc80",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c370",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x1062410",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x71289c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Twist",
+          "concrete_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+          "call": "0x7217a7",
+          "tables": [
+            {
+              "rva": "0x10624a8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x713060",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713060",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713a20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713a20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717c90",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717c90",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 5,
+                  "vtable_byte_offset": "0x28",
+                  "func_rva": "0x714910",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714910",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 6,
+                  "vtable_byte_offset": "0x30",
+                  "func_rva": "0x71b960",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71b960",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 7,
+                  "vtable_byte_offset": "0x38",
+                  "func_rva": "0x71e000",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x71e000",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 8,
+                  "vtable_byte_offset": "0x40",
+                  "func_rva": "0x71c390",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            },
+            {
+              "rva": "0x10624f8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128cc",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Group",
+          "concrete_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+          "call": "0x721895",
+          "tables": [
+            {
+              "rva": "0x1061c00",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712c50",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712c50",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713e30",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713e30",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x7181b0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7181b0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1061c30",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712824",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "concrete_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+          "call": "0x721929",
+          "tables": [
+            {
+              "rva": "0x1061c98",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712fa0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712fa0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x7141c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7141c0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x719340",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x719340",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1061cc8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128a8",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "concrete_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+          "call": "0x7219bd",
+          "tables": [
+            {
+              "rva": "0x1061cf0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712e60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712e60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713ff0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713ff0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x718fe0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x718fe0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1061d20",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x71286c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "concrete_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+          "call": "0x721a51",
+          "tables": [
+            {
+              "rva": "0x1061d48",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712ae0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712ae0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713b60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713b60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x7176c0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x7176c0",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1061d78",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7127e8",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Star",
+          "concrete_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+          "call": "0x721ae5",
+          "tables": [
+            {
+              "rva": "0x1061da0",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712de0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712de0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713f60",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713f60",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x718c80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x718c80",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1061dd0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712854",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "concrete_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+          "call": "0x721b79",
+          "tables": [
+            {
+              "rva": "0x1062670",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712b20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712b20",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713bf0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713bf0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717a20",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717a20",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10626a0",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7127f4",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Stroke",
+          "concrete_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+          "call": "0x721c0d",
+          "tables": [
+            {
+              "rva": "0x1062720",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712fe0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712fe0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x714250",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x714250",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x719720",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x719720",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1062750",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x7128b4",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Fill",
+          "concrete_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+          "call": "0x721ca1",
+          "tables": [
+            {
+              "rva": "0x10626c8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712bd0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712bd0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713d10",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713d10",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717e30",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717e30",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x10626f8",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x71280c",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Stroke",
+          "concrete_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+          "call": "0x721d35",
+          "tables": [
+            {
+              "rva": "0x10627d8",
+              "subobject_offset": 0,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0x712c10",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x712c10",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc503a0",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0xc503a6",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 3,
+                  "vtable_byte_offset": "0x18",
+                  "func_rva": "0x713da0",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x713da0",
+                  "starts_at_function_boundary": true
+                },
+                {
+                  "index": 4,
+                  "vtable_byte_offset": "0x20",
+                  "func_rva": "0x717f80",
+                  "exact_export_name": "",
+                  "entry_function_start": "0x717f80",
+                  "starts_at_function_boundary": true
+                }
+              ]
+            },
+            {
+              "rva": "0x1062808",
+              "subobject_offset": 24,
+              "slots": [
+                {
+                  "index": 0,
+                  "vtable_byte_offset": "0x0",
+                  "func_rva": "0xc50394",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 1,
+                  "vtable_byte_offset": "0x8",
+                  "func_rva": "0xc5039a",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                },
+                {
+                  "index": 2,
+                  "vtable_byte_offset": "0x10",
+                  "func_rva": "0x712818",
+                  "exact_export_name": "",
+                  "entry_function_start": null,
+                  "starts_at_function_boundary": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

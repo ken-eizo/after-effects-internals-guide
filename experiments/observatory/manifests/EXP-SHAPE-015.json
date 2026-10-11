@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EXP-SHAPE-015",
+  "title": "Reconstruct native vector operator vtables and evaluation-mode ABI",
+  "status": "observed-static-only",
+  "domains": [
+    "vector-shape-system",
+    "plugin-host"
+  ],
+  "evidence": [
+    "E2-L"
+  ],
+  "question": "Does every native BEE vector evaluator share a vtable +0x18 mode gate and reference-counted class layout?",
+  "observed_result": "20/20 native classes in both installed AE2025/26 have a primary and +24 secondary vftable; 9 mode0 group/shape/graphic gates and 11 mode1 filter gates; exact RTTI base hierarchies recorded.",
+  "limits": [
+    "No third-party class instantiated or registered",
+    "Mode values inferred from machine code, not public enum",
+    "Native ABI validity and renderer integration unproven"
+  ],
+  "artifacts": [
+    "datasets/ae-vector-evaluator-vtable-slot-map-2025-2026.json",
+    "datasets/ae-vector-evaluator-mode-abi-2025-2026.json",
+    "datasets/ae-native-vector-operator-rtti-inheritance-2025-2026.json"
+  ]
+}

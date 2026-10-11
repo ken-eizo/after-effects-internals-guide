@@ -1,0 +1,5899 @@
+{
+  "classification": "E2-L static mode gate at vtable +0x18, no private API or callback invocation",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "mode0_count": 9,
+      "mode1_count": 11,
+      "entries": [
+        {
+          "MatchName": "ADBE Vector Filter - Trim",
+          "entry_rva": "0x6ef3f0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef3f0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef3f5",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef3fa",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef3ff",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef400",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef404",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef407",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef409",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef40c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef40f",
+              "op": "jne",
+              "operands": "0x1806ef44e"
+            },
+            {
+              "rva": "0x6ef411",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef414",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe893fd]"
+            },
+            {
+              "rva": "0x6ef41b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe889ee]"
+            },
+            {
+              "rva": "0x6ef422",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef42a",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef42c",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef42f",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef433",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef438",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef43b",
+              "op": "je",
+              "operands": "0x1806ef470"
+            },
+            {
+              "rva": "0x6ef43d",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef440",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef443",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef445",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef447",
+              "op": "je",
+              "operands": "0x1806ef44e"
+            },
+            {
+              "rva": "0x6ef449",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef44c",
+              "op": "jmp",
+              "operands": "0x1806ef45b"
+            },
+            {
+              "rva": "0x6ef44e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Offset",
+          "entry_rva": "0x6ef0f0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef0f0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef0f5",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef0fa",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef0ff",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef100",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef104",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef107",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef109",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef10c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef10f",
+              "op": "jne",
+              "operands": "0x1806ef14e"
+            },
+            {
+              "rva": "0x6ef111",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef114",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe896fd]"
+            },
+            {
+              "rva": "0x6ef11b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe88cee]"
+            },
+            {
+              "rva": "0x6ef122",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef12a",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef12c",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef12f",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef133",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef138",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef13b",
+              "op": "je",
+              "operands": "0x1806ef170"
+            },
+            {
+              "rva": "0x6ef13d",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef140",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef143",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef145",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef147",
+              "op": "je",
+              "operands": "0x1806ef14e"
+            },
+            {
+              "rva": "0x6ef149",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef14c",
+              "op": "jmp",
+              "operands": "0x1806ef15b"
+            },
+            {
+              "rva": "0x6ef14e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - PB",
+          "entry_rva": "0x6ef1b0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef1b0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef1b5",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef1ba",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef1bf",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef1c0",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef1c4",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef1c7",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef1c9",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef1cc",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef1cf",
+              "op": "jne",
+              "operands": "0x1806ef20e"
+            },
+            {
+              "rva": "0x6ef1d1",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef1d4",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe8963d]"
+            },
+            {
+              "rva": "0x6ef1db",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe88c2e]"
+            },
+            {
+              "rva": "0x6ef1e2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef1ea",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef1ec",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef1ef",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef1f3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef1f8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef1fb",
+              "op": "je",
+              "operands": "0x1806ef230"
+            },
+            {
+              "rva": "0x6ef1fd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef200",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef203",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef205",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef207",
+              "op": "je",
+              "operands": "0x1806ef20e"
+            },
+            {
+              "rva": "0x6ef209",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef20c",
+              "op": "jmp",
+              "operands": "0x1806ef21b"
+            },
+            {
+              "rva": "0x6ef20e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Repeater",
+          "entry_rva": "0x6efb70",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6efb70",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6efb75",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6efb7a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6efb7f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efb80",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efb84",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6efb87",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6efb89",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6efb8c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6efb8f",
+              "op": "jne",
+              "operands": "0x1806efbce"
+            },
+            {
+              "rva": "0x6efb91",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efb94",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88c7d]"
+            },
+            {
+              "rva": "0x6efb9b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8826e]"
+            },
+            {
+              "rva": "0x6efba2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6efbaa",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efbac",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6efbaf",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6efbb3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efbb8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efbbb",
+              "op": "je",
+              "operands": "0x1806efbf0"
+            },
+            {
+              "rva": "0x6efbbd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efbc0",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6efbc3",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6efbc5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efbc7",
+              "op": "je",
+              "operands": "0x1806efbce"
+            },
+            {
+              "rva": "0x6efbc9",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6efbcc",
+              "op": "jmp",
+              "operands": "0x1806efbdb"
+            },
+            {
+              "rva": "0x6efbce",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Reveal",
+          "entry_rva": "0x6efc30",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6efc30",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6efc35",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6efc3a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6efc3f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efc40",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efc44",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6efc47",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6efc49",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6efc4c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6efc4f",
+              "op": "jne",
+              "operands": "0x1806efc8e"
+            },
+            {
+              "rva": "0x6efc51",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efc54",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88bbd]"
+            },
+            {
+              "rva": "0x6efc5b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe881ae]"
+            },
+            {
+              "rva": "0x6efc62",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6efc6a",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efc6c",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6efc6f",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6efc73",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efc78",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efc7b",
+              "op": "je",
+              "operands": "0x1806efcb0"
+            },
+            {
+              "rva": "0x6efc7d",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efc80",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6efc83",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6efc85",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efc87",
+              "op": "je",
+              "operands": "0x1806efc8e"
+            },
+            {
+              "rva": "0x6efc89",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6efc8c",
+              "op": "jmp",
+              "operands": "0x1806efc9b"
+            },
+            {
+              "rva": "0x6efc8e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Merge",
+          "entry_rva": "0x6ef990",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef990",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef995",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef99a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef99f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef9a0",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef9a4",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef9a7",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef9a9",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef9ac",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef9af",
+              "op": "jne",
+              "operands": "0x1806ef9ee"
+            },
+            {
+              "rva": "0x6ef9b1",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef9b4",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88e5d]"
+            },
+            {
+              "rva": "0x6ef9bb",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8844e]"
+            },
+            {
+              "rva": "0x6ef9c2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef9ca",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef9cc",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef9cf",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef9d3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef9d8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef9db",
+              "op": "je",
+              "operands": "0x1806efa10"
+            },
+            {
+              "rva": "0x6ef9dd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef9e0",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef9e3",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef9e5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef9e7",
+              "op": "je",
+              "operands": "0x1806ef9ee"
+            },
+            {
+              "rva": "0x6ef9e9",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef9ec",
+              "op": "jmp",
+              "operands": "0x1806ef9fb"
+            },
+            {
+              "rva": "0x6ef9ee",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Roughen",
+          "entry_rva": "0x6ef270",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef270",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef275",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef27a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef27f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef280",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef284",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef287",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef289",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef28c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef28f",
+              "op": "jne",
+              "operands": "0x1806ef2ce"
+            },
+            {
+              "rva": "0x6ef291",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef294",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe8957d]"
+            },
+            {
+              "rva": "0x6ef29b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe88b6e]"
+            },
+            {
+              "rva": "0x6ef2a2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef2aa",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef2ac",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef2af",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef2b3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef2b8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef2bb",
+              "op": "je",
+              "operands": "0x1806ef2f0"
+            },
+            {
+              "rva": "0x6ef2bd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef2c0",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef2c3",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef2c5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef2c7",
+              "op": "je",
+              "operands": "0x1806ef2ce"
+            },
+            {
+              "rva": "0x6ef2c9",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef2cc",
+              "op": "jmp",
+              "operands": "0x1806ef2db"
+            },
+            {
+              "rva": "0x6ef2ce",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Wiggler",
+          "entry_rva": "0x6efe10",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6efe10",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6efe15",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6efe1a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6efe1f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efe20",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efe24",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6efe27",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6efe29",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6efe2c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6efe2f",
+              "op": "jne",
+              "operands": "0x1806efe6e"
+            },
+            {
+              "rva": "0x6efe31",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efe34",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe889dd]"
+            },
+            {
+              "rva": "0x6efe3b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe87fce]"
+            },
+            {
+              "rva": "0x6efe42",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6efe4a",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efe4c",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6efe4f",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x38]"
+            },
+            {
+              "rva": "0x6efe53",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efe58",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efe5b",
+              "op": "je",
+              "operands": "0x1806efe90"
+            },
+            {
+              "rva": "0x6efe5d",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efe60",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6efe63",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6efe65",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efe67",
+              "op": "je",
+              "operands": "0x1806efe6e"
+            },
+            {
+              "rva": "0x6efe69",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6efe6c",
+              "op": "jmp",
+              "operands": "0x1806efe7b"
+            },
+            {
+              "rva": "0x6efe6e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Zigzag",
+          "entry_rva": "0x6ef570",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef570",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef575",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef57a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef57f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef580",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef584",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef587",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef589",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef58c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef58f",
+              "op": "jne",
+              "operands": "0x1806ef5ce"
+            },
+            {
+              "rva": "0x6ef591",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef594",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe8927d]"
+            },
+            {
+              "rva": "0x6ef59b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8886e]"
+            },
+            {
+              "rva": "0x6ef5a2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef5aa",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef5ac",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef5af",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef5b3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef5b8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef5bb",
+              "op": "je",
+              "operands": "0x1806ef5f0"
+            },
+            {
+              "rva": "0x6ef5bd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef5c0",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef5c3",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef5c5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef5c7",
+              "op": "je",
+              "operands": "0x1806ef5ce"
+            },
+            {
+              "rva": "0x6ef5c9",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef5cc",
+              "op": "jmp",
+              "operands": "0x1806ef5db"
+            },
+            {
+              "rva": "0x6ef5ce",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - RC",
+          "entry_rva": "0x6ef330",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef330",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef335",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef33a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef33f",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef340",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef344",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef347",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef349",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef34c",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef34f",
+              "op": "jne",
+              "operands": "0x1806ef38e"
+            },
+            {
+              "rva": "0x6ef351",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef354",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe894bd]"
+            },
+            {
+              "rva": "0x6ef35b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe88aae]"
+            },
+            {
+              "rva": "0x6ef362",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef36a",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef36c",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef36f",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef373",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef378",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef37b",
+              "op": "je",
+              "operands": "0x1806ef3b0"
+            },
+            {
+              "rva": "0x6ef37d",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef380",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef383",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef385",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef387",
+              "op": "je",
+              "operands": "0x1806ef38e"
+            },
+            {
+              "rva": "0x6ef389",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef38c",
+              "op": "jmp",
+              "operands": "0x1806ef39b"
+            },
+            {
+              "rva": "0x6ef38e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Twist",
+          "entry_rva": "0x6ef4b0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x6ef4b0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0x6ef4b5",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp"
+            },
+            {
+              "rva": "0x6ef4ba",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "rva": "0x6ef4bf",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef4c0",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef4c4",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x6ef4c7",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x6ef4c9",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x6ef4cc",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x6ef4cf",
+              "op": "jne",
+              "operands": "0x1806ef50e"
+            },
+            {
+              "rva": "0x6ef4d1",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef4d4",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe8933d]"
+            },
+            {
+              "rva": "0x6ef4db",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8892e]"
+            },
+            {
+              "rva": "0x6ef4e2",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x6ef4ea",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef4ec",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x6ef4ef",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rax + 0x28]"
+            },
+            {
+              "rva": "0x6ef4f3",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef4f8",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef4fb",
+              "op": "je",
+              "operands": "0x1806ef530"
+            },
+            {
+              "rva": "0x6ef4fd",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef500",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x6ef503",
+              "op": "call",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x6ef505",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef507",
+              "op": "je",
+              "operands": "0x1806ef50e"
+            },
+            {
+              "rva": "0x6ef509",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x6ef50c",
+              "op": "jmp",
+              "operands": "0x1806ef51b"
+            },
+            {
+              "rva": "0x6ef50e",
+              "op": "mov",
+              "operands": "r8, rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Group",
+          "entry_rva": "0x6ef900",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6ef900",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef902",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef906",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6ef909",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6ef90c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef90e",
+              "op": "jne",
+              "operands": "0x1806ef953"
+            },
+            {
+              "rva": "0x6ef910",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef913",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88ec6]"
+            },
+            {
+              "rva": "0x6ef91a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6ef91f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe884ea]"
+            },
+            {
+              "rva": "0x6ef926",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6ef929",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6ef92d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6ef931",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef936",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef939",
+              "op": "je",
+              "operands": "0x1806ef95b"
+            },
+            {
+              "rva": "0x6ef93b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef93e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6ef941",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef943",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6ef948",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef94a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6ef94d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef951",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef952",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6ef953",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef955",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef959",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Group",
+          "entry_rva": "0x6efcf0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6efcf0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efcf2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efcf6",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6efcf9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6efcfc",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efcfe",
+              "op": "jne",
+              "operands": "0x1806efd43"
+            },
+            {
+              "rva": "0x6efd00",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efd03",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88ad6]"
+            },
+            {
+              "rva": "0x6efd0a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6efd0f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe880fa]"
+            },
+            {
+              "rva": "0x6efd16",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6efd19",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6efd1d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6efd21",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efd26",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efd29",
+              "op": "je",
+              "operands": "0x1806efd4b"
+            },
+            {
+              "rva": "0x6efd2b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efd2e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6efd31",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efd33",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6efd38",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efd3a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6efd3d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efd41",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efd42",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6efd43",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efd45",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efd49",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Rect",
+          "entry_rva": "0x6efae0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6efae0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efae2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efae6",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6efae9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6efaec",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efaee",
+              "op": "jne",
+              "operands": "0x1806efb33"
+            },
+            {
+              "rva": "0x6efaf0",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efaf3",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88ce6]"
+            },
+            {
+              "rva": "0x6efafa",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6efaff",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8830a]"
+            },
+            {
+              "rva": "0x6efb06",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6efb09",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6efb0d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6efb11",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efb16",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efb19",
+              "op": "je",
+              "operands": "0x1806efb3b"
+            },
+            {
+              "rva": "0x6efb1b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efb1e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6efb21",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efb23",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6efb28",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efb2a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6efb2d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efb31",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efb32",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6efb33",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efb35",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efb39",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Ellipse",
+          "entry_rva": "0x6ef630",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6ef630",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef632",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef636",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6ef639",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6ef63c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef63e",
+              "op": "jne",
+              "operands": "0x1806ef683"
+            },
+            {
+              "rva": "0x6ef640",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef643",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe89196]"
+            },
+            {
+              "rva": "0x6ef64a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6ef64f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe887ba]"
+            },
+            {
+              "rva": "0x6ef656",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6ef659",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6ef65d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6ef661",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef666",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef669",
+              "op": "je",
+              "operands": "0x1806ef68b"
+            },
+            {
+              "rva": "0x6ef66b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef66e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6ef671",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef673",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6ef678",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef67a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6ef67d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef681",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef682",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6ef683",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef685",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef689",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Star",
+          "entry_rva": "0x6efa50",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6efa50",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efa52",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efa56",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6efa59",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6efa5c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efa5e",
+              "op": "jne",
+              "operands": "0x1806efaa3"
+            },
+            {
+              "rva": "0x6efa60",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efa63",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88d76]"
+            },
+            {
+              "rva": "0x6efa6a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6efa6f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8839a]"
+            },
+            {
+              "rva": "0x6efa76",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6efa79",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6efa7d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6efa81",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efa86",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efa89",
+              "op": "je",
+              "operands": "0x1806efaab"
+            },
+            {
+              "rva": "0x6efa8b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efa8e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6efa91",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efa93",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6efa98",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efa9a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6efa9d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efaa1",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efaa2",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6efaa3",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efaa5",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efaa9",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - Fill",
+          "entry_rva": "0x6ef6c0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6ef6c0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef6c2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef6c6",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6ef6c9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6ef6cc",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef6ce",
+              "op": "jne",
+              "operands": "0x1806ef713"
+            },
+            {
+              "rva": "0x6ef6d0",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef6d3",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe89106]"
+            },
+            {
+              "rva": "0x6ef6da",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6ef6df",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8872a]"
+            },
+            {
+              "rva": "0x6ef6e6",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6ef6e9",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6ef6ed",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6ef6f1",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef6f6",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef6f9",
+              "op": "je",
+              "operands": "0x1806ef71b"
+            },
+            {
+              "rva": "0x6ef6fb",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef6fe",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6ef701",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef703",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6ef708",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef70a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6ef70d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef711",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef712",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6ef713",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef715",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef719",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - Stroke",
+          "entry_rva": "0x6efd80",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6efd80",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efd82",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efd86",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6efd89",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6efd8c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6efd8e",
+              "op": "jne",
+              "operands": "0x1806efdd3"
+            },
+            {
+              "rva": "0x6efd90",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6efd93",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88a46]"
+            },
+            {
+              "rva": "0x6efd9a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6efd9f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8806a]"
+            },
+            {
+              "rva": "0x6efda6",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6efda9",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6efdad",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6efdb1",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6efdb6",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6efdb9",
+              "op": "je",
+              "operands": "0x1806efddb"
+            },
+            {
+              "rva": "0x6efdbb",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6efdbe",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6efdc1",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6efdc3",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6efdc8",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efdca",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6efdcd",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efdd1",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6efdd2",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6efdd3",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6efdd5",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6efdd9",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - G-Fill",
+          "entry_rva": "0x6ef7e0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6ef7e0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef7e2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef7e6",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6ef7e9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6ef7ec",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef7ee",
+              "op": "jne",
+              "operands": "0x1806ef833"
+            },
+            {
+              "rva": "0x6ef7f0",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef7f3",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88fe6]"
+            },
+            {
+              "rva": "0x6ef7fa",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6ef7ff",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8860a]"
+            },
+            {
+              "rva": "0x6ef806",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6ef809",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6ef80d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6ef811",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef816",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef819",
+              "op": "je",
+              "operands": "0x1806ef83b"
+            },
+            {
+              "rva": "0x6ef81b",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef81e",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6ef821",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef823",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6ef828",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef82a",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6ef82d",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef831",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef832",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6ef833",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef835",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef839",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - G-Stroke",
+          "entry_rva": "0x6ef870",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x6ef870",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef872",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef876",
+              "op": "mov",
+              "operands": "r10, r8"
+            },
+            {
+              "rva": "0x6ef879",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x6ef87c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x6ef87e",
+              "op": "jne",
+              "operands": "0x1806ef8c3"
+            },
+            {
+              "rva": "0x6ef880",
+              "op": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x6ef883",
+              "op": "lea",
+              "operands": "r9, [rip + 0xe88f56]"
+            },
+            {
+              "rva": "0x6ef88a",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x6ef88f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xe8857a]"
+            },
+            {
+              "rva": "0x6ef896",
+              "op": "mov",
+              "operands": "rcx, r10"
+            },
+            {
+              "rva": "0x6ef899",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x6ef89d",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rax + 0x20]"
+            },
+            {
+              "rva": "0x6ef8a1",
+              "op": "call",
+              "operands": "0x180ceacd4"
+            },
+            {
+              "rva": "0x6ef8a6",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x6ef8a9",
+              "op": "je",
+              "operands": "0x1806ef8cb"
+            },
+            {
+              "rva": "0x6ef8ab",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x6ef8ae",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x6ef8b1",
+              "op": "call",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x6ef8b3",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x6ef8b8",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef8ba",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x6ef8bd",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef8c1",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x6ef8c2",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x6ef8c3",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x6ef8c5",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x6ef8c9",
+              "op": "pop",
+              "operands": "rbx"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "mode0_count": 9,
+      "mode1_count": 11,
+      "entries": [
+        {
+          "MatchName": "ADBE Vector Filter - Trim",
+          "entry_rva": "0x713980",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713980",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713982",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713983",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713984",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713985",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713989",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x71398c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x71398e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713991",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713994",
+              "op": "jne",
+              "operands": "0x1807139d7"
+            },
+            {
+              "rva": "0x713996",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713999",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03898]"
+            },
+            {
+              "rva": "0x7139a0",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x7139a3",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x7139ab",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02e7e]"
+            },
+            {
+              "rva": "0x7139b2",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x7139b4",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x7139b9",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x7139bc",
+              "op": "je",
+              "operands": "0x1807139ec"
+            },
+            {
+              "rva": "0x7139be",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x7139c1",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x7139c4",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x7139c7",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x7139c9",
+              "op": "je",
+              "operands": "0x1807139d7"
+            },
+            {
+              "rva": "0x7139cb",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x7139ce",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7139d2",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7139d3",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Offset",
+          "entry_rva": "0x713700",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713700",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713702",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713703",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713704",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713705",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713709",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x71370c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x71370e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713711",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713714",
+              "op": "jne",
+              "operands": "0x180713757"
+            },
+            {
+              "rva": "0x713716",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713719",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03b18]"
+            },
+            {
+              "rva": "0x713720",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713723",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x71372b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf030fe]"
+            },
+            {
+              "rva": "0x713732",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713734",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713739",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x71373c",
+              "op": "je",
+              "operands": "0x18071376c"
+            },
+            {
+              "rva": "0x71373e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713741",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713744",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713747",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713749",
+              "op": "je",
+              "operands": "0x180713757"
+            },
+            {
+              "rva": "0x71374b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x71374e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713752",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713753",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - PB",
+          "entry_rva": "0x7137a0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x7137a0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x7137a2",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x7137a3",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x7137a4",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7137a5",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7137a9",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x7137ac",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x7137ae",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x7137b1",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x7137b4",
+              "op": "jne",
+              "operands": "0x1807137f7"
+            },
+            {
+              "rva": "0x7137b6",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x7137b9",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03a78]"
+            },
+            {
+              "rva": "0x7137c0",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x7137c3",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x7137cb",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0305e]"
+            },
+            {
+              "rva": "0x7137d2",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x7137d4",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x7137d9",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x7137dc",
+              "op": "je",
+              "operands": "0x18071380c"
+            },
+            {
+              "rva": "0x7137de",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x7137e1",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x7137e4",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x7137e7",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x7137e9",
+              "op": "je",
+              "operands": "0x1807137f7"
+            },
+            {
+              "rva": "0x7137eb",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x7137ee",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7137f2",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7137f3",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Repeater",
+          "entry_rva": "0x714080",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x714080",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x714082",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x714083",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x714084",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x714085",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x714089",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x71408c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x71408e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x714091",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x714094",
+              "op": "jne",
+              "operands": "0x1807140d7"
+            },
+            {
+              "rva": "0x714096",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x714099",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03198]"
+            },
+            {
+              "rva": "0x7140a0",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x7140a3",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x7140ab",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0277e]"
+            },
+            {
+              "rva": "0x7140b2",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x7140b4",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x7140b9",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x7140bc",
+              "op": "je",
+              "operands": "0x1807140ec"
+            },
+            {
+              "rva": "0x7140be",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x7140c1",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x7140c4",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x7140c7",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x7140c9",
+              "op": "je",
+              "operands": "0x1807140d7"
+            },
+            {
+              "rva": "0x7140cb",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x7140ce",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7140d2",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7140d3",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Reveal",
+          "entry_rva": "0x714120",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x714120",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x714122",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x714123",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x714124",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x714125",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x714129",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x71412c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x71412e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x714131",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x714134",
+              "op": "jne",
+              "operands": "0x180714177"
+            },
+            {
+              "rva": "0x714136",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x714139",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf030f8]"
+            },
+            {
+              "rva": "0x714140",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x714143",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x71414b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf026de]"
+            },
+            {
+              "rva": "0x714152",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x714154",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x714159",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x71415c",
+              "op": "je",
+              "operands": "0x18071418c"
+            },
+            {
+              "rva": "0x71415e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x714161",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x714164",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x714167",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714169",
+              "op": "je",
+              "operands": "0x180714177"
+            },
+            {
+              "rva": "0x71416b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x71416e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x714172",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x714173",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Merge",
+          "entry_rva": "0x713ec0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713ec0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713ec2",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713ec3",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713ec4",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713ec5",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713ec9",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x713ecc",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x713ece",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713ed1",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713ed4",
+              "op": "jne",
+              "operands": "0x180713f17"
+            },
+            {
+              "rva": "0x713ed6",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713ed9",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03358]"
+            },
+            {
+              "rva": "0x713ee0",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713ee3",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x713eeb",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0293e]"
+            },
+            {
+              "rva": "0x713ef2",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713ef4",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713ef9",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713efc",
+              "op": "je",
+              "operands": "0x180713f2c"
+            },
+            {
+              "rva": "0x713efe",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713f01",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713f04",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713f07",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713f09",
+              "op": "je",
+              "operands": "0x180713f17"
+            },
+            {
+              "rva": "0x713f0b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x713f0e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713f12",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713f13",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Roughen",
+          "entry_rva": "0x713840",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713840",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713842",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713843",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713844",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713845",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713849",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x71384c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x71384e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713851",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713854",
+              "op": "jne",
+              "operands": "0x180713897"
+            },
+            {
+              "rva": "0x713856",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713859",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf039d8]"
+            },
+            {
+              "rva": "0x713860",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713863",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x71386b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02fbe]"
+            },
+            {
+              "rva": "0x713872",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713874",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713879",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x71387c",
+              "op": "je",
+              "operands": "0x1807138ac"
+            },
+            {
+              "rva": "0x71387e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713881",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713884",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713887",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713889",
+              "op": "je",
+              "operands": "0x180713897"
+            },
+            {
+              "rva": "0x71388b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x71388e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713892",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713893",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Wiggler",
+          "entry_rva": "0x7142e0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x7142e0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x7142e2",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x7142e3",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x7142e4",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7142e5",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7142e9",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x7142ec",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x7142ee",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x7142f1",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x7142f4",
+              "op": "jne",
+              "operands": "0x180714337"
+            },
+            {
+              "rva": "0x7142f6",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x7142f9",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf02f38]"
+            },
+            {
+              "rva": "0x714300",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x714303",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x71430b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0251e]"
+            },
+            {
+              "rva": "0x714312",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x714314",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x714319",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x71431c",
+              "op": "je",
+              "operands": "0x18071434c"
+            },
+            {
+              "rva": "0x71431e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x714321",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x714324",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x38]"
+            },
+            {
+              "rva": "0x714327",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714329",
+              "op": "je",
+              "operands": "0x180714337"
+            },
+            {
+              "rva": "0x71432b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x71432e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x714332",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x714333",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Zigzag",
+          "entry_rva": "0x713ac0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713ac0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713ac2",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713ac3",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713ac4",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713ac5",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713ac9",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x713acc",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x713ace",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713ad1",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713ad4",
+              "op": "jne",
+              "operands": "0x180713b17"
+            },
+            {
+              "rva": "0x713ad6",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713ad9",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03758]"
+            },
+            {
+              "rva": "0x713ae0",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713ae3",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x713aeb",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02d3e]"
+            },
+            {
+              "rva": "0x713af2",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713af4",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713af9",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713afc",
+              "op": "je",
+              "operands": "0x180713b2c"
+            },
+            {
+              "rva": "0x713afe",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713b01",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713b04",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713b07",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713b09",
+              "op": "je",
+              "operands": "0x180713b17"
+            },
+            {
+              "rva": "0x713b0b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x713b0e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713b12",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713b13",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - RC",
+          "entry_rva": "0x7138e0",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x7138e0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x7138e2",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x7138e3",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x7138e4",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x7138e5",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x7138e9",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x7138ec",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x7138ee",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x7138f1",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x7138f4",
+              "op": "jne",
+              "operands": "0x180713937"
+            },
+            {
+              "rva": "0x7138f6",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x7138f9",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03938]"
+            },
+            {
+              "rva": "0x713900",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713903",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x71390b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02f1e]"
+            },
+            {
+              "rva": "0x713912",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713914",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713919",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x71391c",
+              "op": "je",
+              "operands": "0x18071394c"
+            },
+            {
+              "rva": "0x71391e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713921",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713924",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713927",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713929",
+              "op": "je",
+              "operands": "0x180713937"
+            },
+            {
+              "rva": "0x71392b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x71392e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713932",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713933",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Filter - Twist",
+          "entry_rva": "0x713a20",
+          "kind": "native-filter-mode-1",
+          "initial": [
+            {
+              "rva": "0x713a20",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713a22",
+              "op": "push",
+              "operands": "rbp"
+            },
+            {
+              "rva": "0x713a23",
+              "op": "push",
+              "operands": "rsi"
+            },
+            {
+              "rva": "0x713a24",
+              "op": "push",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713a25",
+              "op": "sub",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713a29",
+              "op": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "rva": "0x713a2c",
+              "op": "mov",
+              "operands": "ebx, edx"
+            },
+            {
+              "rva": "0x713a2e",
+              "op": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "rva": "0x713a31",
+              "op": "cmp",
+              "operands": "edx, 1"
+            },
+            {
+              "rva": "0x713a34",
+              "op": "jne",
+              "operands": "0x180713a77"
+            },
+            {
+              "rva": "0x713a36",
+              "op": "mov",
+              "operands": "rbp, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713a39",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf037f8]"
+            },
+            {
+              "rva": "0x713a40",
+              "op": "mov",
+              "operands": "rcx, rsi"
+            },
+            {
+              "rva": "0x713a43",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], 0"
+            },
+            {
+              "rva": "0x713a4b",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02dde]"
+            },
+            {
+              "rva": "0x713a52",
+              "op": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713a54",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713a59",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713a5c",
+              "op": "je",
+              "operands": "0x180713a8c"
+            },
+            {
+              "rva": "0x713a5e",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713a61",
+              "op": "mov",
+              "operands": "rcx, rdi"
+            },
+            {
+              "rva": "0x713a64",
+              "op": "call",
+              "operands": "qword ptr [rbp + 0x28]"
+            },
+            {
+              "rva": "0x713a67",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713a69",
+              "op": "je",
+              "operands": "0x180713a77"
+            },
+            {
+              "rva": "0x713a6b",
+              "op": "movzx",
+              "operands": "eax, bl"
+            },
+            {
+              "rva": "0x713a6e",
+              "op": "add",
+              "operands": "rsp, 0x38"
+            },
+            {
+              "rva": "0x713a72",
+              "op": "pop",
+              "operands": "rdi"
+            },
+            {
+              "rva": "0x713a73",
+              "op": "pop",
+              "operands": "rsi"
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Group",
+          "entry_rva": "0x713e30",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713e30",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713e32",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713e36",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713e39",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713e3c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713e3e",
+              "op": "jne",
+              "operands": "0x180713e80"
+            },
+            {
+              "rva": "0x713e40",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713e45",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf033b4]"
+            },
+            {
+              "rva": "0x713e4c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713e4f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf029da]"
+            },
+            {
+              "rva": "0x713e56",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713e59",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713e5d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713e62",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713e65",
+              "op": "je",
+              "operands": "0x180713e88"
+            },
+            {
+              "rva": "0x713e67",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713e6a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713e6d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713e70",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713e75",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713e77",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713e7a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713e7e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713e7f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713e80",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713e82",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713e86",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713e87",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Group",
+          "entry_rva": "0x7141c0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x7141c0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x7141c2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x7141c6",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x7141c9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x7141cc",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x7141ce",
+              "op": "jne",
+              "operands": "0x180714210"
+            },
+            {
+              "rva": "0x7141d0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x7141d5",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03024]"
+            },
+            {
+              "rva": "0x7141dc",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x7141df",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0264a]"
+            },
+            {
+              "rva": "0x7141e6",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x7141e9",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x7141ed",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x7141f2",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x7141f5",
+              "op": "je",
+              "operands": "0x180714218"
+            },
+            {
+              "rva": "0x7141f7",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x7141fa",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x7141fd",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x714200",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x714205",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714207",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x71420a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x71420e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x71420f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x714210",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714212",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x714216",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x714217",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Rect",
+          "entry_rva": "0x713ff0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713ff0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713ff2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713ff6",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713ff9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713ffc",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713ffe",
+              "op": "jne",
+              "operands": "0x180714040"
+            },
+            {
+              "rva": "0x714000",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x714005",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf031f4]"
+            },
+            {
+              "rva": "0x71400c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x71400f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf0281a]"
+            },
+            {
+              "rva": "0x714016",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x714019",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x71401d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x714022",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x714025",
+              "op": "je",
+              "operands": "0x180714048"
+            },
+            {
+              "rva": "0x714027",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x71402a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x71402d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x714030",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x714035",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714037",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x71403a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x71403e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x71403f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x714040",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714042",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x714046",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x714047",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Ellipse",
+          "entry_rva": "0x713b60",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713b60",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713b62",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713b66",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713b69",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713b6c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713b6e",
+              "op": "jne",
+              "operands": "0x180713bb0"
+            },
+            {
+              "rva": "0x713b70",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713b75",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03684]"
+            },
+            {
+              "rva": "0x713b7c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713b7f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02caa]"
+            },
+            {
+              "rva": "0x713b86",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713b89",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713b8d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713b92",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713b95",
+              "op": "je",
+              "operands": "0x180713bb8"
+            },
+            {
+              "rva": "0x713b97",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713b9a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713b9d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713ba0",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713ba5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713ba7",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713baa",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713bae",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713baf",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713bb0",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713bb2",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713bb6",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713bb7",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Shape - Star",
+          "entry_rva": "0x713f60",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713f60",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713f62",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713f66",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713f69",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713f6c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713f6e",
+              "op": "jne",
+              "operands": "0x180713fb0"
+            },
+            {
+              "rva": "0x713f70",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713f75",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03284]"
+            },
+            {
+              "rva": "0x713f7c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713f7f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf028aa]"
+            },
+            {
+              "rva": "0x713f86",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713f89",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713f8d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713f92",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713f95",
+              "op": "je",
+              "operands": "0x180713fb8"
+            },
+            {
+              "rva": "0x713f97",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713f9a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713f9d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713fa0",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713fa5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713fa7",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713faa",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713fae",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713faf",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713fb0",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713fb2",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713fb6",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713fb7",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - Fill",
+          "entry_rva": "0x713bf0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713bf0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713bf2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713bf6",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713bf9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713bfc",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713bfe",
+              "op": "jne",
+              "operands": "0x180713c40"
+            },
+            {
+              "rva": "0x713c00",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713c05",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf035f4]"
+            },
+            {
+              "rva": "0x713c0c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713c0f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02c1a]"
+            },
+            {
+              "rva": "0x713c16",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713c19",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713c1d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713c22",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713c25",
+              "op": "je",
+              "operands": "0x180713c48"
+            },
+            {
+              "rva": "0x713c27",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713c2a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713c2d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713c30",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713c35",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713c37",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713c3a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713c3e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713c3f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713c40",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713c42",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713c46",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713c47",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - Stroke",
+          "entry_rva": "0x714250",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x714250",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x714252",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x714256",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x714259",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x71425c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x71425e",
+              "op": "jne",
+              "operands": "0x1807142a0"
+            },
+            {
+              "rva": "0x714260",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x714265",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf02f94]"
+            },
+            {
+              "rva": "0x71426c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x71426f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf025ba]"
+            },
+            {
+              "rva": "0x714276",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x714279",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x71427d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x714282",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x714285",
+              "op": "je",
+              "operands": "0x1807142a8"
+            },
+            {
+              "rva": "0x714287",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x71428a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x71428d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x714290",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x714295",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x714297",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x71429a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x71429e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x71429f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x7142a0",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x7142a2",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x7142a6",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x7142a7",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - G-Fill",
+          "entry_rva": "0x713d10",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713d10",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713d12",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713d16",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713d19",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713d1c",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713d1e",
+              "op": "jne",
+              "operands": "0x180713d60"
+            },
+            {
+              "rva": "0x713d20",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713d25",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf034d4]"
+            },
+            {
+              "rva": "0x713d2c",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713d2f",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02afa]"
+            },
+            {
+              "rva": "0x713d36",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713d39",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713d3d",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713d42",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713d45",
+              "op": "je",
+              "operands": "0x180713d68"
+            },
+            {
+              "rva": "0x713d47",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713d4a",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713d4d",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713d50",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713d55",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713d57",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713d5a",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713d5e",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713d5f",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713d60",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713d62",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713d66",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713d67",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        },
+        {
+          "MatchName": "ADBE Vector Graphic - G-Stroke",
+          "entry_rva": "0x713da0",
+          "kind": "native-shape-graphic-mode-0",
+          "initial": [
+            {
+              "rva": "0x713da0",
+              "op": "push",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713da2",
+              "op": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713da6",
+              "op": "mov",
+              "operands": "rax, r8"
+            },
+            {
+              "rva": "0x713da9",
+              "op": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "rva": "0x713dac",
+              "op": "test",
+              "operands": "edx, edx"
+            },
+            {
+              "rva": "0x713dae",
+              "op": "jne",
+              "operands": "0x180713df0"
+            },
+            {
+              "rva": "0x713db0",
+              "op": "mov",
+              "operands": "qword ptr [rsp + 0x40], rdi"
+            },
+            {
+              "rva": "0x713db5",
+              "op": "lea",
+              "operands": "r9, [rip + 0xf03444]"
+            },
+            {
+              "rva": "0x713dbc",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x713dbf",
+              "op": "lea",
+              "operands": "r8, [rip + 0xf02a6a]"
+            },
+            {
+              "rva": "0x713dc6",
+              "op": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "rva": "0x713dc9",
+              "op": "mov",
+              "operands": "dword ptr [rsp + 0x20], edx"
+            },
+            {
+              "rva": "0x713dcd",
+              "op": "call",
+              "operands": "0x180d3be04"
+            },
+            {
+              "rva": "0x713dd2",
+              "op": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "rva": "0x713dd5",
+              "op": "je",
+              "operands": "0x180713df8"
+            },
+            {
+              "rva": "0x713dd7",
+              "op": "mov",
+              "operands": "rdx, rax"
+            },
+            {
+              "rva": "0x713dda",
+              "op": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "rva": "0x713ddd",
+              "op": "call",
+              "operands": "qword ptr [rdi + 0x20]"
+            },
+            {
+              "rva": "0x713de0",
+              "op": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x40]"
+            },
+            {
+              "rva": "0x713de5",
+              "op": "test",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713de7",
+              "op": "setne",
+              "operands": "al"
+            },
+            {
+              "rva": "0x713dea",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713dee",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713def",
+              "op": "ret",
+              "operands": ""
+            },
+            {
+              "rva": "0x713df0",
+              "op": "xor",
+              "operands": "al, al"
+            },
+            {
+              "rva": "0x713df2",
+              "op": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "rva": "0x713df6",
+              "op": "pop",
+              "operands": "rbx"
+            },
+            {
+              "rva": "0x713df7",
+              "op": "ret",
+              "operands": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

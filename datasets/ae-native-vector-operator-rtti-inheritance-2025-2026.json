@@ -1,0 +1,5031 @@
+{
+  "classification": "E2-L, MSVC x64 static RTTI hierarchy; private ABI, no runtime interaction",
+  "versions": {
+    "2025": {
+      "file_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "rows": [
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10010c0",
+              "complete_object_locator_rva": "0x110da48",
+              "class_name": ".?AVTrimOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTrimOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001110",
+              "complete_object_locator_rva": "0x110db68",
+              "class_name": ".?AVTrimOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTrimOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Offset",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10011a8",
+              "complete_object_locator_rva": "0x110dbe0",
+              "class_name": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10011f8",
+              "complete_object_locator_rva": "0x110dd00",
+              "class_name": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - PB",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001290",
+              "complete_object_locator_rva": "0x110dd78",
+              "class_name": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10012e0",
+              "complete_object_locator_rva": "0x110de98",
+              "class_name": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001720",
+              "complete_object_locator_rva": "0x110e638",
+              "class_name": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRepeaterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001758",
+              "complete_object_locator_rva": "0x110e6d8",
+              "class_name": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRepeaterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Reveal",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001780",
+              "complete_object_locator_rva": "0x110e700",
+              "class_name": ".?AVRevealOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRevealOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10017b8",
+              "complete_object_locator_rva": "0x110e7a0",
+              "class_name": ".?AVRevealOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRevealOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Merge",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001810",
+              "complete_object_locator_rva": "0x110e848",
+              "class_name": ".?AVMergeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVMergeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001848",
+              "complete_object_locator_rva": "0x110e8e8",
+              "class_name": ".?AVMergeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVMergeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Roughen",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001378",
+              "complete_object_locator_rva": "0x110df10",
+              "class_name": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoughenOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10013c8",
+              "complete_object_locator_rva": "0x110e030",
+              "class_name": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoughenOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Wiggler",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10013f0",
+              "complete_object_locator_rva": "0x110e0a8",
+              "class_name": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVWigglerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001440",
+              "complete_object_locator_rva": "0x110e148",
+              "class_name": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVWigglerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Zigzag",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10014d8",
+              "complete_object_locator_rva": "0x110e170",
+              "class_name": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVZigzagOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001528",
+              "complete_object_locator_rva": "0x110e290",
+              "class_name": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVZigzagOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - RC",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10015c0",
+              "complete_object_locator_rva": "0x110e308",
+              "class_name": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001610",
+              "complete_object_locator_rva": "0x110e428",
+              "class_name": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Twist",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10016a8",
+              "complete_object_locator_rva": "0x110e4a0",
+              "class_name": ".?AVTwistOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTwistOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10016f8",
+              "complete_object_locator_rva": "0x110e5c0",
+              "class_name": ".?AVTwistOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTwistOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Group",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1000e00",
+              "complete_object_locator_rva": "0x110d5c8",
+              "class_name": ".?AVGroupOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGroupOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1000e30",
+              "complete_object_locator_rva": "0x110d660",
+              "class_name": ".?AVGroupOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGroupOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1000e98",
+              "complete_object_locator_rva": "0x110d688",
+              "class_name": ".?AVShapeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVShapeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1000ec8",
+              "complete_object_locator_rva": "0x110d720",
+              "class_name": ".?AVShapeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVShapeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1000ef0",
+              "complete_object_locator_rva": "0x110d748",
+              "class_name": ".?AVRectOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVRectOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1000f20",
+              "complete_object_locator_rva": "0x110d7e0",
+              "class_name": ".?AVRectOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVRectOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1000f48",
+              "complete_object_locator_rva": "0x110d808",
+              "class_name": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVEllipseOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1000f78",
+              "complete_object_locator_rva": "0x110d8a0",
+              "class_name": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVEllipseOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Star",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1000fa0",
+              "complete_object_locator_rva": "0x110d8c8",
+              "class_name": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVPolyStarOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1000fd0",
+              "complete_object_locator_rva": "0x110d960",
+              "class_name": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVPolyStarOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001870",
+              "complete_object_locator_rva": "0x110e910",
+              "class_name": ".?AVFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10018a0",
+              "complete_object_locator_rva": "0x110e9a8",
+              "class_name": ".?AVFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Stroke",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1001920",
+              "complete_object_locator_rva": "0x110ea90",
+              "class_name": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001950",
+              "complete_object_locator_rva": "0x110eb28",
+              "class_name": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Fill",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10018c8",
+              "complete_object_locator_rva": "0x110e9d0",
+              "class_name": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10018f8",
+              "complete_object_locator_rva": "0x110ea68",
+              "class_name": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Stroke",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10019d8",
+              "complete_object_locator_rva": "0x110eb50",
+              "class_name": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1001a08",
+              "complete_object_locator_rva": "0x110ebe8",
+              "class_name": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "file_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "rows": [
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061ec0",
+              "complete_object_locator_rva": "0x1176598",
+              "class_name": ".?AVTrimOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTrimOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061f10",
+              "complete_object_locator_rva": "0x11766b8",
+              "class_name": ".?AVTrimOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTrimOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Offset",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061fa8",
+              "complete_object_locator_rva": "0x1176730",
+              "class_name": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061ff8",
+              "complete_object_locator_rva": "0x1176850",
+              "class_name": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - PB",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062090",
+              "complete_object_locator_rva": "0x11768c8",
+              "class_name": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10620e0",
+              "complete_object_locator_rva": "0x11769e8",
+              "class_name": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062520",
+              "complete_object_locator_rva": "0x1177188",
+              "class_name": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRepeaterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062558",
+              "complete_object_locator_rva": "0x1177228",
+              "class_name": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRepeaterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Reveal",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062580",
+              "complete_object_locator_rva": "0x1177250",
+              "class_name": ".?AVRevealOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRevealOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10625b8",
+              "complete_object_locator_rva": "0x11772f0",
+              "class_name": ".?AVRevealOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVRevealOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Merge",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062610",
+              "complete_object_locator_rva": "0x1177398",
+              "class_name": ".?AVMergeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVMergeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062648",
+              "complete_object_locator_rva": "0x1177438",
+              "class_name": ".?AVMergeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVMergeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Roughen",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062178",
+              "complete_object_locator_rva": "0x1176a60",
+              "class_name": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoughenOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10621c8",
+              "complete_object_locator_rva": "0x1176b80",
+              "class_name": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoughenOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Wiggler",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10621f0",
+              "complete_object_locator_rva": "0x1176bf8",
+              "class_name": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVWigglerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062240",
+              "complete_object_locator_rva": "0x1176c98",
+              "class_name": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 6,
+                "bases": [
+                  {
+                    "class": ".?AVWigglerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Zigzag",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10622d8",
+              "complete_object_locator_rva": "0x1176cc0",
+              "class_name": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVZigzagOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062328",
+              "complete_object_locator_rva": "0x1176de0",
+              "class_name": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVZigzagOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - RC",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10623c0",
+              "complete_object_locator_rva": "0x1176e58",
+              "class_name": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062410",
+              "complete_object_locator_rva": "0x1176f78",
+              "class_name": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Twist",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10624a8",
+              "complete_object_locator_rva": "0x1176ff0",
+              "class_name": ".?AVTwistOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTwistOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10624f8",
+              "complete_object_locator_rva": "0x1177110",
+              "class_name": ".?AVTwistOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 7,
+                "bases": [
+                  {
+                    "class": ".?AVTwistOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 6,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 5,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVFilterOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Group",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061c00",
+              "complete_object_locator_rva": "0x1176118",
+              "class_name": ".?AVGroupOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGroupOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061c30",
+              "complete_object_locator_rva": "0x11761b0",
+              "class_name": ".?AVGroupOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGroupOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061c98",
+              "complete_object_locator_rva": "0x11761d8",
+              "class_name": ".?AVShapeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVShapeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061cc8",
+              "complete_object_locator_rva": "0x1176270",
+              "class_name": ".?AVShapeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVShapeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061cf0",
+              "complete_object_locator_rva": "0x1176298",
+              "class_name": ".?AVRectOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVRectOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061d20",
+              "complete_object_locator_rva": "0x1176330",
+              "class_name": ".?AVRectOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVRectOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061d48",
+              "complete_object_locator_rva": "0x1176358",
+              "class_name": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVEllipseOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061d78",
+              "complete_object_locator_rva": "0x11763f0",
+              "class_name": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVEllipseOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Star",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1061da0",
+              "complete_object_locator_rva": "0x1176418",
+              "class_name": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVPolyStarOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1061dd0",
+              "complete_object_locator_rva": "0x11764b0",
+              "class_name": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVPolyStarOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062670",
+              "complete_object_locator_rva": "0x1177460",
+              "class_name": ".?AVFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10626a0",
+              "complete_object_locator_rva": "0x11774f8",
+              "class_name": ".?AVFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Stroke",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x1062720",
+              "complete_object_locator_rva": "0x11775e0",
+              "class_name": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062750",
+              "complete_object_locator_rva": "0x1177678",
+              "class_name": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Fill",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10626c8",
+              "complete_object_locator_rva": "0x1177520",
+              "class_name": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x10626f8",
+              "complete_object_locator_rva": "0x11775b8",
+              "class_name": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientFillOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - G-Stroke",
+          "tables": [
+            {
+              "subobject_offset": 0,
+              "vtable_rva": "0x10627d8",
+              "complete_object_locator_rva": "0x11776a0",
+              "class_name": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            },
+            {
+              "subobject_offset": 24,
+              "vtable_rva": "0x1062808",
+              "complete_object_locator_rva": "0x1177738",
+              "class_name": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "rtti_hierarchy": {
+                "attrs": "0x3",
+                "base_count": 5,
+                "bases": [
+                  {
+                    "class": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 4,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AUOperator@BEE_VectorStream@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 3,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedObject@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 2,
+                    "attributes": "0x40"
+                  },
+                  {
+                    "class": ".?AVRefCountedInterface@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": 16,
+                    "vdisp": 4,
+                    "contained": 0,
+                    "attributes": "0x50"
+                  },
+                  {
+                    "class": ".?AVRefCountedImplementation@utility@dvacore@@",
+                    "mdisp": 0,
+                    "pdisp": -1,
+                    "vdisp": 0,
+                    "contained": 0,
+                    "attributes": "0x40"
+                  }
+                ]
+              },
+              "self_rva_matches": true
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

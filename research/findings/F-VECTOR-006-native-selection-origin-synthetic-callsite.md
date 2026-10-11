@@ -12,4 +12,6 @@ A separate executable-section direct-reference scan of *both* binary versions fo
 
 The `AEGP_StreamSuite6::AEGP_GetUniqueStreamID` is public and session-unique; mapping to private `TDB_StreamIDPath` remains open. A pointer to `PF_World` in an AGM display-list translation constructor indicates a pixel output bridge and must not be construed as a geometry-return API.
 
+**2026-10-11 extension:** F-VECTOR-016 directly locates `OriginInfo::AppendSyntheticIndex` calls **inside both native Repeater operator implementations** (not just anonymous xrefs), alongside native `SymbolGroup` construction and `SetOriginInfo`. These calls narrow the original finding but do not prove editable selection of synthetic copies.
+
 Raw provenance: `datasets/ae-vector-origin-identity-2025-2026.json` and `datasets/ae-vector-selection-origin-xrefs-2025-2026.json`. For the mechanistic program and falsification see `docs/vector-shape-system/native-edit-and-provenance-bridge.md`.

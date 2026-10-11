@@ -23,6 +23,10 @@ These are decorated export names, not verified stable binary contracts. In parti
 
 The **public** SDK 25.6 `AEGP_StreamSuite6::AEGP_GetUniqueStreamID(AEGP_StreamRefH, int32_t*)` explicitly returns a host unique stream identifier. Its returned value is documented by Adobe as **session-unique**; the private representation and mapping to `TDB_StreamIDPath` remain unproven. Do not assume an ID is stable across project reopen. In header it first appears as a Stream Suite 6 addition and is marked `frozen in AE 22.5`. A direct equivalence between public UID and private path would be an unsupported leap.
 
+## E2-L 2026-10-11 follow-up
+
+The first hypothesis can now be narrowed. F-VECTOR-016 traces `RepeaterOperator`'s actual geometry method and demonstrates direct `OriginInfo::AppendSyntheticIndex` calls in both AE2025 and AE2026; source paths are stamped on concrete native Path/Rect/Ellipse vector objects. This is no longer merely evidence from method exports. **It still does not establish the entire hit-test -> Pen tool native editability chain.** The UID-to-private-identity hypothesis remains unproven.
+
 ## Two separable hypotheses
 
 **H-SHAPE-004A**: evaluated `BEE_VectorArt` objects preserve the original TDB stream ID path for associating geometry with host edit selection, with synthetic paths representing non-timeline evaluated objects. Test through static call/dataflow + controlled native path selection + Repeater observation; falsified if provenance is used exclusively for diagnostics/cache without editor link.

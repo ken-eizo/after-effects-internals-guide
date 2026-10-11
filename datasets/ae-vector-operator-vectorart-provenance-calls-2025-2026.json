@@ -1,0 +1,4385 @@
+{
+  "classification": "E2-L static native geometry operator callsites",
+  "versions": {
+    "2025": {
+      "SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "entries": [
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f54d0",
+              "end_rva": "0x6f58c7",
+              "calls": [
+                {
+                  "site": "0x6f5521",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f5555",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x6f5572",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f5585",
+                  "target": "0xebc838",
+                  "symbol": "OM.dll!?GetValue@?$TDB_DerivedStream@UOM_MaskShapeStreamTraits@@@@UEBAPEAVOM_Shape@@AEBUT_Time@@PEBVTDB_ParamBag@@H@Z",
+                  "instruction": "call qword ptr [rip + 0x7c72ad]"
+                },
+                {
+                  "site": "0x6f559e",
+                  "target": "0x66d290",
+                  "symbol": "",
+                  "instruction": "call 0x18066d290"
+                },
+                {
+                  "site": "0x6f55b5",
+                  "target": "0xebc7b0",
+                  "symbol": "OM.dll!?OM_RelToAbs@@YAHAEBUM_FloatShortRect@@PEAVOM_Shape@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c71f5]"
+                },
+                {
+                  "site": "0x6f5622",
+                  "target": "0x6dc4a0",
+                  "symbol": "?GetPathDataFromOM@BEE_VectorArt@@YAXAEBVOM_Shape@@AEAVCAIMBezierPath@BIB_T_MT@@@Z",
+                  "instruction": "call 0x1806dc4a0"
+                },
+                {
+                  "site": "0x6f563a",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x6f5657",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f5689",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call r8"
+                },
+                {
+                  "site": "0x6f568c",
+                  "target": "0xec02e0",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x7cac4e]"
+                },
+                {
+                  "site": "0x6f569e",
+                  "target": "0x6df6e0",
+                  "symbol": "",
+                  "instruction": "call 0x1806df6e0"
+                },
+                {
+                  "site": "0x6f56a8",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f56c5",
+                  "target": "0x6d4630",
+                  "symbol": "",
+                  "instruction": "call 0x1806d4630"
+                },
+                {
+                  "site": "0x6f56d9",
+                  "target": "0x6c9860",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806c9860"
+                },
+                {
+                  "site": "0x6f5702",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f570e",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f5727",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cb993]"
+                },
+                {
+                  "site": "0x6f5731",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cb991]"
+                },
+                {
+                  "site": "0x6f574f",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cba7b]"
+                },
+                {
+                  "site": "0x6f575e",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f576c",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f5774",
+                  "target": "0x6f57af",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f57af"
+                },
+                {
+                  "site": "0x6f577e",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f5787",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f57ac",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f57ba",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f57de",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f57ec",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c8ff6]"
+                },
+                {
+                  "site": "0x6f57f7",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c8feb]"
+                },
+                {
+                  "site": "0x6f5816",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f5826",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefb3fc]"
+                },
+                {
+                  "site": "0x6f5839",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefb3e9]"
+                },
+                {
+                  "site": "0x6f5850",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f585e",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f5890",
+                  "target": "0xceacc8",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacc8"
+                },
+                {
+                  "site": "0x6f58a7",
+                  "target": "0xebf828",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7c9f7b]"
+                },
+                {
+                  "site": "0x6f58c1",
+                  "target": "0xceacc8",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacc8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f5170",
+              "end_rva": "0x6f54c8",
+              "calls": [
+                {
+                  "site": "0x6f51bb",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f5251",
+                  "target": "0x6dcb30",
+                  "symbol": "?GetRectPathData@BEE_VectorArt@@YAXAEBVTDB_NamedStreamGroup@@AEBUT_Time@@PEBVRG_ProgAbort@@AEAVCAIMBezierPath@BIB_T_MT@@PEBVTDB_ParamBag@@@Z",
+                  "instruction": "call 0x1806dcb30"
+                },
+                {
+                  "site": "0x6f5269",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x6f5286",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f52b8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call r8"
+                },
+                {
+                  "site": "0x6f52bb",
+                  "target": "0xec02e0",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x7cb01f]"
+                },
+                {
+                  "site": "0x6f52cd",
+                  "target": "0x6df6e0",
+                  "symbol": "",
+                  "instruction": "call 0x1806df6e0"
+                },
+                {
+                  "site": "0x6f52d7",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f52f4",
+                  "target": "0x6d4630",
+                  "symbol": "",
+                  "instruction": "call 0x1806d4630"
+                },
+                {
+                  "site": "0x6f5308",
+                  "target": "0x6c9860",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806c9860"
+                },
+                {
+                  "site": "0x6f5331",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f533d",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f5356",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cbd64]"
+                },
+                {
+                  "site": "0x6f5360",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cbd62]"
+                },
+                {
+                  "site": "0x6f537e",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cbe4c]"
+                },
+                {
+                  "site": "0x6f538d",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f539b",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f53a3",
+                  "target": "0x6f53de",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f53de"
+                },
+                {
+                  "site": "0x6f53ad",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f53b6",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f53db",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f53e9",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f540d",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f541a",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c93c8]"
+                },
+                {
+                  "site": "0x6f5425",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c93bd]"
+                },
+                {
+                  "site": "0x6f5444",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f5454",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefb7ce]"
+                },
+                {
+                  "site": "0x6f5467",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefb7bb]"
+                },
+                {
+                  "site": "0x6f547a",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f54a8",
+                  "target": "0xebf828",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7ca37a]"
+                },
+                {
+                  "site": "0x6f54c2",
+                  "target": "0xceacc8",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacc8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f3760",
+              "end_rva": "0x6f3ab8",
+              "calls": [
+                {
+                  "site": "0x6f37ab",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f3841",
+                  "target": "0x6dbfa0",
+                  "symbol": "?GetEllipsePathData@BEE_VectorArt@@YAXAEBVTDB_NamedStreamGroup@@AEBUT_Time@@PEBVRG_ProgAbort@@AEAVCAIMBezierPath@BIB_T_MT@@PEBVTDB_ParamBag@@@Z",
+                  "instruction": "call 0x1806dbfa0"
+                },
+                {
+                  "site": "0x6f3859",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x6f3876",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f38a8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call r8"
+                },
+                {
+                  "site": "0x6f38ab",
+                  "target": "0xec02e0",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x7cca2f]"
+                },
+                {
+                  "site": "0x6f38bd",
+                  "target": "0x6df6e0",
+                  "symbol": "",
+                  "instruction": "call 0x1806df6e0"
+                },
+                {
+                  "site": "0x6f38c7",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f38e4",
+                  "target": "0x6d4630",
+                  "symbol": "",
+                  "instruction": "call 0x1806d4630"
+                },
+                {
+                  "site": "0x6f38f8",
+                  "target": "0x6c9860",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806c9860"
+                },
+                {
+                  "site": "0x6f3921",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f392d",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f3946",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd774]"
+                },
+                {
+                  "site": "0x6f3950",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd772]"
+                },
+                {
+                  "site": "0x6f396e",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd85c]"
+                },
+                {
+                  "site": "0x6f397d",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f398b",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3993",
+                  "target": "0x6f39ce",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f39ce"
+                },
+                {
+                  "site": "0x6f399d",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f39a6",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f39cb",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f39d9",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f39fd",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3a0a",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cadd8]"
+                },
+                {
+                  "site": "0x6f3a15",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cadcd]"
+                },
+                {
+                  "site": "0x6f3a34",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3a44",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefd1de]"
+                },
+                {
+                  "site": "0x6f3a57",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xefd1cb]"
+                },
+                {
+                  "site": "0x6f3a6a",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f3a98",
+                  "target": "0xebf828",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7cbd8a]"
+                },
+                {
+                  "site": "0x6f3ab2",
+                  "target": "0xceacc8",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacc8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f3ac0",
+              "end_rva": "0x6f3d4d",
+              "calls": [
+                {
+                  "site": "0x6f3b07",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f3b56",
+                  "target": "0x6ecec0",
+                  "symbol": "",
+                  "instruction": "call 0x1806ecec0"
+                },
+                {
+                  "site": "0x6f3b6f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x6f3b8d",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f3bb3",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call r8"
+                },
+                {
+                  "site": "0x6f3bb6",
+                  "target": "0xec02e0",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x7cc724]"
+                },
+                {
+                  "site": "0x6f3bd5",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd4e5]"
+                },
+                {
+                  "site": "0x6f3bdf",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd4e3]"
+                },
+                {
+                  "site": "0x6f3bf7",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd5d3]"
+                },
+                {
+                  "site": "0x6f3c0a",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f3c24",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd496]"
+                },
+                {
+                  "site": "0x6f3c2e",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd494]"
+                },
+                {
+                  "site": "0x6f3c46",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd584]"
+                },
+                {
+                  "site": "0x6f3c54",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f3c5d",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3c86",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x6f3c93",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f3cb6",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3cc2",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cab20]"
+                },
+                {
+                  "site": "0x6f3ccc",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cab16]"
+                },
+                {
+                  "site": "0x6f3cf4",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3d01",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f3d2f",
+                  "target": "0xebf828",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7cbaf3]"
+                },
+                {
+                  "site": "0x6f3d47",
+                  "target": "0xceacc8",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacc8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f3d50",
+              "end_rva": "0x6f3f16",
+              "calls": [
+                {
+                  "site": "0x6f3d7f",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f3da5",
+                  "target": "0x6c9a20",
+                  "symbol": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+                  "instruction": "call 0x1806c9a20"
+                },
+                {
+                  "site": "0x6f3dad",
+                  "target": "0x6f3db1",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f3db1"
+                },
+                {
+                  "site": "0x6f3dd2",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f3dde",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f3df8",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd2c2]"
+                },
+                {
+                  "site": "0x6f3e02",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd2c0]"
+                },
+                {
+                  "site": "0x6f3e22",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd3a8]"
+                },
+                {
+                  "site": "0x6f3e31",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f3e3f",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3e47",
+                  "target": "0x6f3e82",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f3e82"
+                },
+                {
+                  "site": "0x6f3e51",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f3e5a",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3e7f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f3e8d",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f3eb1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3ebe",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ca924]"
+                },
+                {
+                  "site": "0x6f3ec9",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ca919]"
+                },
+                {
+                  "site": "0x6f3ee8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3ef9",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "begin_rva": "0x6f0350",
+              "end_rva": "0x6f046b",
+              "calls": [
+                {
+                  "site": "0x6f037c",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x38]"
+                },
+                {
+                  "site": "0x6f03a5",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x40]"
+                },
+                {
+                  "site": "0x6f03c6",
+                  "target": "0x6cc5c0",
+                  "symbol": "?CollectObjects@BEE_VectorArt@@YAXV?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@0AEAVBaseContainer@1@W4Type@BaseObject@1@W4CollectSymbolType@1@AEAV?$vector@VObjectCollectionData@BEE_VectorArt@@V?$allocator@VObjectCollectionData@BEE_VectorArt@@@std@@@3@@Z",
+                  "instruction": "call 0x1806cc5c0"
+                },
+                {
+                  "site": "0x6f03df",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x30]"
+                },
+                {
+                  "site": "0x6f03e5",
+                  "target": "0x6ece50",
+                  "symbol": "",
+                  "instruction": "call 0x1806ece50"
+                },
+                {
+                  "site": "0x6f043d",
+                  "target": "0xec0628",
+                  "symbol": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn",
+                  "instruction": "call qword ptr [rip + 0x7d01e5]"
+                },
+                {
+                  "site": "0x6f0447",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f0456",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "begin_rva": "0x6f71f0",
+              "end_rva": "0x6f7d78",
+              "calls": [
+                {
+                  "site": "0x6f7297",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9e23]"
+                },
+                {
+                  "site": "0x6f72a1",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9e21]"
+                },
+                {
+                  "site": "0x6f72b9",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9f11]"
+                },
+                {
+                  "site": "0x6f72db",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f72ed",
+                  "target": "0x6dc620",
+                  "symbol": "",
+                  "instruction": "call 0x1806dc620"
+                },
+                {
+                  "site": "0x6f730a",
+                  "target": "0x6f732f",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f732f"
+                },
+                {
+                  "site": "0x6f7318",
+                  "target": "0x66610",
+                  "symbol": "",
+                  "instruction": "call 0x180066610"
+                },
+                {
+                  "site": "0x6f733f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x6f73ea",
+                  "target": "0x6dbd60",
+                  "symbol": "",
+                  "instruction": "call 0x1806dbd60"
+                },
+                {
+                  "site": "0x6f7453",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9c67]"
+                },
+                {
+                  "site": "0x6f745d",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9c65]"
+                },
+                {
+                  "site": "0x6f7475",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9d55]"
+                },
+                {
+                  "site": "0x6f7497",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                },
+                {
+                  "site": "0x6f75ba",
+                  "target": "0x6f767a",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f767a"
+                },
+                {
+                  "site": "0x6f75d4",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c982e]"
+                },
+                {
+                  "site": "0x6f75f2",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c9810]"
+                },
+                {
+                  "site": "0x6f7610",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c97f2]"
+                },
+                {
+                  "site": "0x6f7637",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c97cb]"
+                },
+                {
+                  "site": "0x6f766f",
+                  "target": "0xec0e18",
+                  "symbol": "dvacore.dll!?ThrowError@config@dvacore@@YAXW4ErrorLevel@12@PEBDIH_NAEBVReplacementValue@12@333@Z",
+                  "instruction": "call qword ptr [rip + 0x7c97a3]"
+                },
+                {
+                  "site": "0x6f7687",
+                  "target": "0x6f768d",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f768d"
+                },
+                {
+                  "site": "0x6f7697",
+                  "target": "0x6f76ae",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f76ae"
+                },
+                {
+                  "site": "0x6f76b8",
+                  "target": "0x6f76cf",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f76cf"
+                },
+                {
+                  "site": "0x6f76f5",
+                  "target": "0x6d9f00",
+                  "symbol": "",
+                  "instruction": "call 0x1806d9f00"
+                },
+                {
+                  "site": "0x6f7780",
+                  "target": "0x6f7786",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f7786"
+                },
+                {
+                  "site": "0x6f7793",
+                  "target": "0x6f7799",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f7799"
+                },
+                {
+                  "site": "0x6f77a3",
+                  "target": "0x6f77ba",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f77ba"
+                },
+                {
+                  "site": "0x6f77c4",
+                  "target": "0x6f77db",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f77db"
+                },
+                {
+                  "site": "0x6f77fd",
+                  "target": "0x6d9f00",
+                  "symbol": "",
+                  "instruction": "call 0x1806d9f00"
+                },
+                {
+                  "site": "0x6f7817",
+                  "target": "0x6dd510",
+                  "symbol": "",
+                  "instruction": "call 0x1806dd510"
+                },
+                {
+                  "site": "0x6f7829",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef93f9]"
+                },
+                {
+                  "site": "0x6f783c",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef93e6]"
+                },
+                {
+                  "site": "0x6f784f",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef93d3]"
+                },
+                {
+                  "site": "0x6f7862",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef93c0]"
+                },
+                {
+                  "site": "0x6f786d",
+                  "target": "0x6f791a",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f791a"
+                },
+                {
+                  "site": "0x6f7894",
+                  "target": "0x6f789a",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f789a"
+                },
+                {
+                  "site": "0x6f78a7",
+                  "target": "0x6f78ad",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f78ad"
+                },
+                {
+                  "site": "0x6f78b7",
+                  "target": "0x6f78ce",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f78ce"
+                },
+                {
+                  "site": "0x6f78d8",
+                  "target": "0x6f78ef",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f78ef"
+                },
+                {
+                  "site": "0x6f7915",
+                  "target": "0x6d9f00",
+                  "symbol": "",
+                  "instruction": "call 0x1806d9f00"
+                },
+                {
+                  "site": "0x6f7928",
+                  "target": "0x6df6e0",
+                  "symbol": "",
+                  "instruction": "call 0x1806df6e0"
+                },
+                {
+                  "site": "0x6f792d",
+                  "target": "0x6f7964",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f7964"
+                },
+                {
+                  "site": "0x6f795f",
+                  "target": "0x6d9f00",
+                  "symbol": "",
+                  "instruction": "call 0x1806d9f00"
+                },
+                {
+                  "site": "0x6f7970",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x6f7978",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f79eb",
+                  "target": "0x6d8830",
+                  "symbol": "",
+                  "instruction": "call 0x1806d8830"
+                },
+                {
+                  "site": "0x6f7a05",
+                  "target": "0xceacda",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacda"
+                },
+                {
+                  "site": "0x6f7a1f",
+                  "target": "0xceacda",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacda"
+                },
+                {
+                  "site": "0x6f7a68",
+                  "target": "0x6c9860",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806c9860"
+                },
+                {
+                  "site": "0x6f7a70",
+                  "target": "0x6f7a75",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f7a75"
+                },
+                {
+                  "site": "0x6f7a95",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f7aa8",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9612]"
+                },
+                {
+                  "site": "0x6f7ab2",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9610]"
+                },
+                {
+                  "site": "0x6f7aca",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9700]"
+                },
+                {
+                  "site": "0x6f7ad7",
+                  "target": "0x6ce940",
+                  "symbol": "?GetOriginInfo@BaseObject@BEE_VectorArt@@QEBAPEBVOriginInfo@2@_N@Z",
+                  "instruction": "call 0x1806ce940"
+                },
+                {
+                  "site": "0x6f7ae2",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f7aee",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f7b31",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f7b3d",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f7b45",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f7b6a",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x6f7b91",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f7bd8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f7be8",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef903a]"
+                },
+                {
+                  "site": "0x6f7bfb",
+                  "target": "0x15f0c28",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xef9027]"
+                },
+                {
+                  "site": "0x6f7c54",
+                  "target": "0xec0628",
+                  "symbol": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn",
+                  "instruction": "call qword ptr [rip + 0x7c89ce]"
+                },
+                {
+                  "site": "0x6f7c79",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c9189]"
+                },
+                {
+                  "site": "0x6f7c97",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c916b]"
+                },
+                {
+                  "site": "0x6f7cb5",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c914d]"
+                },
+                {
+                  "site": "0x6f7cd3",
+                  "target": "0xec0e08",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7c912f]"
+                },
+                {
+                  "site": "0x6f7d0b",
+                  "target": "0xec0e18",
+                  "symbol": "dvacore.dll!?ThrowError@config@dvacore@@YAXW4ErrorLevel@12@PEBDIH_NAEBVReplacementValue@12@333@Z",
+                  "instruction": "call qword ptr [rip + 0x7c9107]"
+                },
+                {
+                  "site": "0x6f7d1b",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f7d2d",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f7d72",
+                  "target": "0xcd0381",
+                  "symbol": "",
+                  "instruction": "call 0x180cd0381"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "begin_rva": "0x6fa200",
+              "end_rva": "0x6fa23e",
+              "calls": [
+                {
+                  "site": "0x6fa22d",
+                  "target": "0xceacd4",
+                  "symbol": "",
+                  "instruction": "call 0x180ceacd4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x6f3d50",
+              "end_rva": "0x6f3f16",
+              "calls": [
+                {
+                  "site": "0x6f3d7f",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f3da5",
+                  "target": "0x6c9a20",
+                  "symbol": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+                  "instruction": "call 0x1806c9a20"
+                },
+                {
+                  "site": "0x6f3dad",
+                  "target": "0x6f3db1",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f3db1"
+                },
+                {
+                  "site": "0x6f3dd2",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f3dde",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f3df8",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd2c2]"
+                },
+                {
+                  "site": "0x6f3e02",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd2c0]"
+                },
+                {
+                  "site": "0x6f3e22",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cd3a8]"
+                },
+                {
+                  "site": "0x6f3e31",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f3e3f",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3e47",
+                  "target": "0x6f3e82",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f3e82"
+                },
+                {
+                  "site": "0x6f3e51",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f3e5a",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f3e7f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f3e8d",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f3eb1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3ebe",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ca924]"
+                },
+                {
+                  "site": "0x6f3ec9",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ca919]"
+                },
+                {
+                  "site": "0x6f3ee8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f3ef9",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "begin_rva": "0x6f12c0",
+              "end_rva": "0x6f21b3",
+              "calls": [
+                {
+                  "site": "0x6f1351",
+                  "target": "0x6f9590",
+                  "symbol": "",
+                  "instruction": "call 0x1806f9590"
+                },
+                {
+                  "site": "0x6f135b",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f1374",
+                  "target": "0xec0230",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x7ceeb6]"
+                },
+                {
+                  "site": "0x6f138a",
+                  "target": "0x6c9660",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806c9660"
+                },
+                {
+                  "site": "0x6f1392",
+                  "target": "0x6f1397",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1397"
+                },
+                {
+                  "site": "0x6f13bb",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f13db",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f13ea",
+                  "target": "0x6cbb30",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806cbb30"
+                },
+                {
+                  "site": "0x6f1402",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfcb8]"
+                },
+                {
+                  "site": "0x6f140c",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfcb6]"
+                },
+                {
+                  "site": "0x6f142a",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfda0]"
+                },
+                {
+                  "site": "0x6f143b",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f1449",
+                  "target": "0x6cbb30",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806cbb30"
+                },
+                {
+                  "site": "0x6f1461",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfc59]"
+                },
+                {
+                  "site": "0x6f146b",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfc57]"
+                },
+                {
+                  "site": "0x6f1489",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfd41]"
+                },
+                {
+                  "site": "0x6f1493",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f14b3",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfc07]"
+                },
+                {
+                  "site": "0x6f14bd",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfc05]"
+                },
+                {
+                  "site": "0x6f14db",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfcef]"
+                },
+                {
+                  "site": "0x6f14e5",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1526",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f1554",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f159a",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f15c8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f160d",
+                  "target": "0x6f161d",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f161d"
+                },
+                {
+                  "site": "0x6f1677",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f1683",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f1697",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f16c6",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f16d6",
+                  "target": "0x6c9c00",
+                  "symbol": "??0SymbolGroup@BEE_VectorArt@@QEAA@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@Z",
+                  "instruction": "call 0x1806c9c00"
+                },
+                {
+                  "site": "0x6f16de",
+                  "target": "0x6f16e3",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f16e3"
+                },
+                {
+                  "site": "0x6f1708",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f171e",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf99c]"
+                },
+                {
+                  "site": "0x6f1728",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf99a]"
+                },
+                {
+                  "site": "0x6f1746",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cfa84]"
+                },
+                {
+                  "site": "0x6f1757",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f1765",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f17a8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f17b4",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f17e4",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f17fc",
+                  "target": "0xec0230",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x7cea2e]"
+                },
+                {
+                  "site": "0x6f1812",
+                  "target": "0x6c9660",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806c9660"
+                },
+                {
+                  "site": "0x6f181a",
+                  "target": "0x6f181f",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f181f"
+                },
+                {
+                  "site": "0x6f183f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f1864",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf856]"
+                },
+                {
+                  "site": "0x6f186e",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf854]"
+                },
+                {
+                  "site": "0x6f188c",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf93e]"
+                },
+                {
+                  "site": "0x6f189b",
+                  "target": "0x6d1600",
+                  "symbol": "?SetAlpha@Group@BEE_VectorArt@@QEAAXM@Z",
+                  "instruction": "call 0x1806d1600"
+                },
+                {
+                  "site": "0x6f1910",
+                  "target": "0x6ed4d0",
+                  "symbol": "",
+                  "instruction": "call 0x1806ed4d0"
+                },
+                {
+                  "site": "0x6f1a4f",
+                  "target": "0xec0230",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x7ce7db]"
+                },
+                {
+                  "site": "0x6f1a65",
+                  "target": "0xec00a8",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x7ce63d]"
+                },
+                {
+                  "site": "0x6f1a7d",
+                  "target": "0xceae84",
+                  "symbol": "",
+                  "instruction": "call 0x180ceae84"
+                },
+                {
+                  "site": "0x6f1a90",
+                  "target": "0xceae84",
+                  "symbol": "",
+                  "instruction": "call 0x180ceae84"
+                },
+                {
+                  "site": "0x6f1ad8",
+                  "target": "0xebf980",
+                  "symbol": "U.dll!?Scale@M_Matrix3@@QEAAXNNNN@Z",
+                  "instruction": "call qword ptr [rip + 0x7cdea2]"
+                },
+                {
+                  "site": "0x6f1af4",
+                  "target": "0xebf988",
+                  "symbol": "U.dll!?Rotate@M_Matrix3@@QEAAXNNN@Z",
+                  "instruction": "call qword ptr [rip + 0x7cde8e]"
+                },
+                {
+                  "site": "0x6f1b0b",
+                  "target": "0xec00a8",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x7ce597]"
+                },
+                {
+                  "site": "0x6f1b22",
+                  "target": "0xec00a8",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x7ce580]"
+                },
+                {
+                  "site": "0x6f1b4c",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f1b6f",
+                  "target": "0x6c9660",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806c9660"
+                },
+                {
+                  "site": "0x6f1b77",
+                  "target": "0x6f1c1f",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1c1f"
+                },
+                {
+                  "site": "0x6f1b9e",
+                  "target": "0x6edb40",
+                  "symbol": "",
+                  "instruction": "call 0x1806edb40"
+                },
+                {
+                  "site": "0x6f1bf3",
+                  "target": "0x6f1c0a",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1c0a"
+                },
+                {
+                  "site": "0x6f1c01",
+                  "target": "0x6ed800",
+                  "symbol": "",
+                  "instruction": "call 0x1806ed800"
+                },
+                {
+                  "site": "0x6f1c18",
+                  "target": "0x6f1919",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1919"
+                },
+                {
+                  "site": "0x6f1c2b",
+                  "target": "0x6f1c46",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1c46"
+                },
+                {
+                  "site": "0x6f1c44",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f1c67",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf453]"
+                },
+                {
+                  "site": "0x6f1c71",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf451]"
+                },
+                {
+                  "site": "0x6f1c8f",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf53b]"
+                },
+                {
+                  "site": "0x6f1c9d",
+                  "target": "0x6d1600",
+                  "symbol": "?SetAlpha@Group@BEE_VectorArt@@QEAAXM@Z",
+                  "instruction": "call 0x1806d1600"
+                },
+                {
+                  "site": "0x6f1cbf",
+                  "target": "0xebe7f0",
+                  "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+                  "instruction": "call qword ptr [rip + 0x7ccb2b]"
+                },
+                {
+                  "site": "0x6f1cd1",
+                  "target": "0xebe7f0",
+                  "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+                  "instruction": "call qword ptr [rip + 0x7ccb19]"
+                },
+                {
+                  "site": "0x6f1ce8",
+                  "target": "0x6cbb30",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806cbb30"
+                },
+                {
+                  "site": "0x6f1d00",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf3ba]"
+                },
+                {
+                  "site": "0x6f1d0a",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf3b8]"
+                },
+                {
+                  "site": "0x6f1d28",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf4a2]"
+                },
+                {
+                  "site": "0x6f1d36",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f1d4e",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf36c]"
+                },
+                {
+                  "site": "0x6f1d58",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf36a]"
+                },
+                {
+                  "site": "0x6f1d76",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf454]"
+                },
+                {
+                  "site": "0x6f1d80",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1da6",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x6f1db4",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f1dd8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f1def",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf2cb]"
+                },
+                {
+                  "site": "0x6f1df9",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf2c9]"
+                },
+                {
+                  "site": "0x6f1e17",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf3b3]"
+                },
+                {
+                  "site": "0x6f1e21",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1e4a",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f1e59",
+                  "target": "0x6c6a50",
+                  "symbol": "",
+                  "instruction": "call 0x1806c6a50"
+                },
+                {
+                  "site": "0x6f1e7d",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f1e8d",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x6f1e95",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc94d]"
+                },
+                {
+                  "site": "0x6f1e9f",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc943]"
+                },
+                {
+                  "site": "0x6f1ec6",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f1f02",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf1b8]"
+                },
+                {
+                  "site": "0x6f1f0c",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf1b6]"
+                },
+                {
+                  "site": "0x6f1f2a",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf2a0]"
+                },
+                {
+                  "site": "0x6f1f34",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1f4c",
+                  "target": "0x6c9700",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806c9700"
+                },
+                {
+                  "site": "0x6f1f65",
+                  "target": "0xec10c0",
+                  "symbol": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf155]"
+                },
+                {
+                  "site": "0x6f1f6f",
+                  "target": "0xec10c8",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf153]"
+                },
+                {
+                  "site": "0x6f1f8d",
+                  "target": "0xec11d0",
+                  "symbol": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+                  "instruction": "call qword ptr [rip + 0x7cf23d]"
+                },
+                {
+                  "site": "0x6f1f9b",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f1fa9",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1fb1",
+                  "target": "0x6f1fec",
+                  "symbol": "",
+                  "instruction": "jmp 0x1806f1fec"
+                },
+                {
+                  "site": "0x6f1fba",
+                  "target": "0x6d1690",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806d1690"
+                },
+                {
+                  "site": "0x6f1fc3",
+                  "target": "0x6cda00",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806cda00"
+                },
+                {
+                  "site": "0x6f1fe9",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x6f2013",
+                  "target": "0xce9048",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9048"
+                },
+                {
+                  "site": "0x6f2036",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc7ac]"
+                },
+                {
+                  "site": "0x6f2040",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc7a2]"
+                },
+                {
+                  "site": "0x6f2097",
+                  "target": "0xec0628",
+                  "symbol": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn",
+                  "instruction": "call qword ptr [rip + 0x7ce58b]"
+                },
+                {
+                  "site": "0x6f20a1",
+                  "target": "0xce9094",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9094"
+                },
+                {
+                  "site": "0x6f20c0",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f20cc",
+                  "target": "0x6ece50",
+                  "symbol": "",
+                  "instruction": "call 0x1806ece50"
+                },
+                {
+                  "site": "0x6f20ec",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f20f7",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc6eb]"
+                },
+                {
+                  "site": "0x6f2104",
+                  "target": "0xebe7e8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7cc6de]"
+                },
+                {
+                  "site": "0x6f2128",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x6f2138",
+                  "target": "0xce9610",
+                  "symbol": "",
+                  "instruction": "call 0x180ce9610"
+                },
+                {
+                  "site": "0x6f21a7",
+                  "target": "0xcd0381",
+                  "symbol": "",
+                  "instruction": "call 0x180cd0381"
+                },
+                {
+                  "site": "0x6f21ad",
+                  "target": "0x6feaa0",
+                  "symbol": "",
+                  "instruction": "call 0x1806feaa0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "entries": [
+        {
+          "matchName": "ADBE Vector Shape - Group",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x719340",
+              "end_rva": "0x71971c",
+              "calls": [
+                {
+                  "site": "0x71938c",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x7193c0",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x7193de",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x7193f1",
+                  "target": "0xf156e0",
+                  "symbol": "OM.dll!?GetValue@?$TDB_DerivedStream@UOM_MaskShapeStreamTraits@@@@UEBAPEAVOM_Shape@@AEBUT_Time@@PEBVTDB_ParamBag@@H@Z",
+                  "instruction": "call qword ptr [rip + 0x7fc2e9]"
+                },
+                {
+                  "site": "0x71940a",
+                  "target": "0x688b20",
+                  "symbol": "",
+                  "instruction": "call 0x180688b20"
+                },
+                {
+                  "site": "0x719421",
+                  "target": "0xf15770",
+                  "symbol": "OM.dll!?OM_RelToAbs@@YAHAEBUM_FloatShortRect@@PEAVOM_Shape@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7fc349]"
+                },
+                {
+                  "site": "0x71949b",
+                  "target": "0x700ec0",
+                  "symbol": "?GetPathDataFromOM@BEE_VectorArt@@YAXAEBVOM_Shape@@AEAVCAIMBezierPath@BIB_T_MT@@@Z",
+                  "instruction": "call 0x180700ec0"
+                },
+                {
+                  "site": "0x7194b3",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x7194d1",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x7194f5",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [r8 + 0x300]"
+                },
+                {
+                  "site": "0x7194fc",
+                  "target": "0xf19490",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x7fff8e]"
+                },
+                {
+                  "site": "0x71950e",
+                  "target": "0x703f30",
+                  "symbol": "",
+                  "instruction": "call 0x180703f30"
+                },
+                {
+                  "site": "0x719518",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x719535",
+                  "target": "0x6f9240",
+                  "symbol": "",
+                  "instruction": "call 0x1806f9240"
+                },
+                {
+                  "site": "0x719549",
+                  "target": "0x6ee4b0",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806ee4b0"
+                },
+                {
+                  "site": "0x719551",
+                  "target": "0x719556",
+                  "symbol": "",
+                  "instruction": "jmp 0x180719556"
+                },
+                {
+                  "site": "0x719574",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x719580",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x719592",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x800f70]"
+                },
+                {
+                  "site": "0x7195a0",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x7195a9",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x7195b6",
+                  "target": "0x7195ed",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807195ed"
+                },
+                {
+                  "site": "0x7195c0",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x7195c9",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x7195ea",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x719613",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x71963b",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe487]"
+                },
+                {
+                  "site": "0x719646",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe47c]"
+                },
+                {
+                  "site": "0x719666",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x719676",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf87f0c]"
+                },
+                {
+                  "site": "0x719689",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf87ef9]"
+                },
+                {
+                  "site": "0x7196a1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x7196af",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                },
+                {
+                  "site": "0x7196cf",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x7196e6",
+                  "target": "0xf18998",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7ff2ac]"
+                },
+                {
+                  "site": "0x719700",
+                  "target": "0xd3bdf8",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bdf8"
+                },
+                {
+                  "site": "0x719716",
+                  "target": "0xd3bdf8",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bdf8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Rect",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x718fe0",
+              "end_rva": "0x719334",
+              "calls": [
+                {
+                  "site": "0x719031",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x7190d4",
+                  "target": "0x701560",
+                  "symbol": "?GetRectPathData@BEE_VectorArt@@YAXAEBVTDB_NamedStreamGroup@@AEBUT_Time@@PEBVRG_ProgAbort@@AEAVCAIMBezierPath@BIB_T_MT@@PEBVTDB_ParamBag@@@Z",
+                  "instruction": "call 0x180701560"
+                },
+                {
+                  "site": "0x7190ec",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x71910a",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x71912e",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [r8 + 0x300]"
+                },
+                {
+                  "site": "0x719135",
+                  "target": "0xf19490",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x800355]"
+                },
+                {
+                  "site": "0x719147",
+                  "target": "0x703f30",
+                  "symbol": "",
+                  "instruction": "call 0x180703f30"
+                },
+                {
+                  "site": "0x719151",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x71916e",
+                  "target": "0x6f9240",
+                  "symbol": "",
+                  "instruction": "call 0x1806f9240"
+                },
+                {
+                  "site": "0x719182",
+                  "target": "0x6ee4b0",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806ee4b0"
+                },
+                {
+                  "site": "0x71918a",
+                  "target": "0x71918f",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071918f"
+                },
+                {
+                  "site": "0x7191ad",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x7191b9",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x7191cb",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x801337]"
+                },
+                {
+                  "site": "0x7191d9",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x7191e2",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x7191ef",
+                  "target": "0x719226",
+                  "symbol": "",
+                  "instruction": "jmp 0x180719226"
+                },
+                {
+                  "site": "0x7191f9",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x719202",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x719223",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x71924c",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x719274",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe84e]"
+                },
+                {
+                  "site": "0x71927f",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe843]"
+                },
+                {
+                  "site": "0x71929f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x7192af",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf882d3]"
+                },
+                {
+                  "site": "0x7192c2",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf882c0]"
+                },
+                {
+                  "site": "0x7192d5",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                },
+                {
+                  "site": "0x7192fd",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x719314",
+                  "target": "0xf18998",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x7ff67e]"
+                },
+                {
+                  "site": "0x71932e",
+                  "target": "0xd3bdf8",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bdf8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Shape - Ellipse",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x7176c0",
+              "end_rva": "0x717a14",
+              "calls": [
+                {
+                  "site": "0x717711",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x7177b4",
+                  "target": "0x7009c0",
+                  "symbol": "?GetEllipsePathData@BEE_VectorArt@@YAXAEBVTDB_NamedStreamGroup@@AEBUT_Time@@PEBVRG_ProgAbort@@AEAVCAIMBezierPath@BIB_T_MT@@PEBVTDB_ParamBag@@@Z",
+                  "instruction": "call 0x1807009c0"
+                },
+                {
+                  "site": "0x7177cc",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x7177ea",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x71780e",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [r8 + 0x300]"
+                },
+                {
+                  "site": "0x717815",
+                  "target": "0xf19490",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x801c75]"
+                },
+                {
+                  "site": "0x717827",
+                  "target": "0x703f30",
+                  "symbol": "",
+                  "instruction": "call 0x180703f30"
+                },
+                {
+                  "site": "0x717831",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x71784e",
+                  "target": "0x6f9240",
+                  "symbol": "",
+                  "instruction": "call 0x1806f9240"
+                },
+                {
+                  "site": "0x717862",
+                  "target": "0x6ee4b0",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806ee4b0"
+                },
+                {
+                  "site": "0x71786a",
+                  "target": "0x71786f",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071786f"
+                },
+                {
+                  "site": "0x71788d",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x717899",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x7178ab",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x802c57]"
+                },
+                {
+                  "site": "0x7178b9",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x7178c2",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x7178cf",
+                  "target": "0x717906",
+                  "symbol": "",
+                  "instruction": "jmp 0x180717906"
+                },
+                {
+                  "site": "0x7178d9",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x7178e2",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717903",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x71792c",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717954",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x80016e]"
+                },
+                {
+                  "site": "0x71795f",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x800163]"
+                },
+                {
+                  "site": "0x71797f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x71798f",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf89bf3]"
+                },
+                {
+                  "site": "0x7179a2",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf89be0]"
+                },
+                {
+                  "site": "0x7179b5",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                },
+                {
+                  "site": "0x7179dd",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x7179f4",
+                  "target": "0xf18998",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x800f9e]"
+                },
+                {
+                  "site": "0x717a0e",
+                  "target": "0xd3bdf8",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bdf8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Graphic - Fill",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x717a20",
+              "end_rva": "0x717c88",
+              "calls": [
+                {
+                  "site": "0x717a4d",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x717aa8",
+                  "target": "0x7111c0",
+                  "symbol": "",
+                  "instruction": "call 0x1807111c0"
+                },
+                {
+                  "site": "0x717ac1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x208]"
+                },
+                {
+                  "site": "0x717adf",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x717b06",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [r8 + 0x300]"
+                },
+                {
+                  "site": "0x717b0d",
+                  "target": "0xf19490",
+                  "symbol": "U.dll!M_RoundDouble",
+                  "instruction": "call qword ptr [rip + 0x80197d]"
+                },
+                {
+                  "site": "0x717b2c",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8029d6]"
+                },
+                {
+                  "site": "0x717b3f",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x717b59",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8029a9]"
+                },
+                {
+                  "site": "0x717b67",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x717b70",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717ba1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x717bca",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717bf5",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffecd]"
+                },
+                {
+                  "site": "0x717c00",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffec2]"
+                },
+                {
+                  "site": "0x717c30",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x717c4b",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x717c62",
+                  "target": "0xf18998",
+                  "symbol": "U.dll!Up_ReportErrString",
+                  "instruction": "call qword ptr [rip + 0x800d30]"
+                },
+                {
+                  "site": "0x717c82",
+                  "target": "0xd3bdf8",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bdf8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Trim",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x717c90",
+              "end_rva": "0x717e2a",
+              "calls": [
+                {
+                  "site": "0x717cad",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717cd6",
+                  "target": "0x6ee670",
+                  "symbol": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+                  "instruction": "call 0x1806ee670"
+                },
+                {
+                  "site": "0x717cde",
+                  "target": "0x717ce2",
+                  "symbol": "",
+                  "instruction": "jmp 0x180717ce2"
+                },
+                {
+                  "site": "0x717d03",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x717d0f",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x717d21",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8027e1]"
+                },
+                {
+                  "site": "0x717d2f",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x717d38",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717d48",
+                  "target": "0x717d82",
+                  "symbol": "",
+                  "instruction": "jmp 0x180717d82"
+                },
+                {
+                  "site": "0x717d52",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x717d5b",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717d7f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x717dac",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717dd4",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffcee]"
+                },
+                {
+                  "site": "0x717ddf",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffce3]"
+                },
+                {
+                  "site": "0x717dff",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x717e24",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "begin_rva": "0x7147f0",
+              "end_rva": "0x71490a",
+              "calls": [
+                {
+                  "site": "0x71481c",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x38]"
+                },
+                {
+                  "site": "0x714845",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x40]"
+                },
+                {
+                  "site": "0x714866",
+                  "target": "0x6f1220",
+                  "symbol": "?CollectObjects@BEE_VectorArt@@YAXV?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@0AEAVBaseContainer@1@W4Type@BaseObject@1@W4CollectSymbolType@1@AEAV?$vector@VObjectCollectionData@BEE_VectorArt@@V?$allocator@VObjectCollectionData@BEE_VectorArt@@@std@@@3@@Z",
+                  "instruction": "call 0x1806f1220"
+                },
+                {
+                  "site": "0x71487f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x30]"
+                },
+                {
+                  "site": "0x714885",
+                  "target": "0x711150",
+                  "symbol": "",
+                  "instruction": "call 0x180711150"
+                },
+                {
+                  "site": "0x7148da",
+                  "target": "0x7148e6",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807148e6"
+                },
+                {
+                  "site": "0x7148e6",
+                  "target": "0xd3a6b4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a6b4"
+                },
+                {
+                  "site": "0x7148f5",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                }
+              ]
+            },
+            {
+              "slot": 6,
+              "begin_rva": "0x71ae70",
+              "end_rva": "0x71b95b",
+              "calls": [
+                {
+                  "site": "0x71af23",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7ff5df]"
+                },
+                {
+                  "site": "0x71af41",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x71af53",
+                  "target": "0x701040",
+                  "symbol": "",
+                  "instruction": "call 0x180701040"
+                },
+                {
+                  "site": "0x71af75",
+                  "target": "0x71af86",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071af86"
+                },
+                {
+                  "site": "0x71af81",
+                  "target": "0x2d6ac0",
+                  "symbol": "",
+                  "instruction": "call 0x1802d6ac0"
+                },
+                {
+                  "site": "0x71af95",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x71b050",
+                  "target": "0x700820",
+                  "symbol": "",
+                  "instruction": "call 0x180700820"
+                },
+                {
+                  "site": "0x71b0b4",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7ff44e]"
+                },
+                {
+                  "site": "0x71b0d5",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                },
+                {
+                  "site": "0x71b1ea",
+                  "target": "0x71b2b8",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b2b8"
+                },
+                {
+                  "site": "0x71b204",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fedde]"
+                },
+                {
+                  "site": "0x71b222",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fedc0]"
+                },
+                {
+                  "site": "0x71b243",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fed9f]"
+                },
+                {
+                  "site": "0x71b26a",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fed78]"
+                },
+                {
+                  "site": "0x71b2a2",
+                  "target": "0xf19ff8",
+                  "symbol": "dvacore.dll!?ThrowError@config@dvacore@@YAXW4ErrorLevel@12@PEBDIH_NAEBVReplacementValue@12@333@Z",
+                  "instruction": "call qword ptr [rip + 0x7fed50]"
+                },
+                {
+                  "site": "0x71b2c5",
+                  "target": "0x71b2d0",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b2d0"
+                },
+                {
+                  "site": "0x71b2da",
+                  "target": "0x71b2e7",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b2e7"
+                },
+                {
+                  "site": "0x71b2f1",
+                  "target": "0x71b2fe",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b2fe"
+                },
+                {
+                  "site": "0x71b320",
+                  "target": "0x6fea00",
+                  "symbol": "",
+                  "instruction": "call 0x1806fea00"
+                },
+                {
+                  "site": "0x71b39d",
+                  "target": "0x71b3a8",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b3a8"
+                },
+                {
+                  "site": "0x71b3b5",
+                  "target": "0x71b3c6",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b3c6"
+                },
+                {
+                  "site": "0x71b3d0",
+                  "target": "0x71b3dd",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b3dd"
+                },
+                {
+                  "site": "0x71b3e7",
+                  "target": "0x71b3f4",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b3f4"
+                },
+                {
+                  "site": "0x71b412",
+                  "target": "0x6fea00",
+                  "symbol": "",
+                  "instruction": "call 0x1806fea00"
+                },
+                {
+                  "site": "0x71b42c",
+                  "target": "0x701f30",
+                  "symbol": "",
+                  "instruction": "call 0x180701f30"
+                },
+                {
+                  "site": "0x71b43e",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf86144]"
+                },
+                {
+                  "site": "0x71b451",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf86131]"
+                },
+                {
+                  "site": "0x71b464",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf8611e]"
+                },
+                {
+                  "site": "0x71b477",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf8610b]"
+                },
+                {
+                  "site": "0x71b480",
+                  "target": "0x71b515",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b515"
+                },
+                {
+                  "site": "0x71b491",
+                  "target": "0x71b4a2",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b4a2"
+                },
+                {
+                  "site": "0x71b4af",
+                  "target": "0x71b4c0",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b4c0"
+                },
+                {
+                  "site": "0x71b4ca",
+                  "target": "0x71b4d7",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b4d7"
+                },
+                {
+                  "site": "0x71b4e1",
+                  "target": "0x71b4ee",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b4ee"
+                },
+                {
+                  "site": "0x71b510",
+                  "target": "0x6fea00",
+                  "symbol": "",
+                  "instruction": "call 0x1806fea00"
+                },
+                {
+                  "site": "0x71b523",
+                  "target": "0x703f30",
+                  "symbol": "",
+                  "instruction": "call 0x180703f30"
+                },
+                {
+                  "site": "0x71b528",
+                  "target": "0x71b55c",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b55c"
+                },
+                {
+                  "site": "0x71b557",
+                  "target": "0x6fea00",
+                  "symbol": "",
+                  "instruction": "call 0x1806fea00"
+                },
+                {
+                  "site": "0x71b567",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x71b56f",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x71b5dd",
+                  "target": "0x6fd370",
+                  "symbol": "",
+                  "instruction": "call 0x1806fd370"
+                },
+                {
+                  "site": "0x71b5f7",
+                  "target": "0xd3be0a",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be0a"
+                },
+                {
+                  "site": "0x71b611",
+                  "target": "0xd3be0a",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be0a"
+                },
+                {
+                  "site": "0x71b655",
+                  "target": "0x6ee4b0",
+                  "symbol": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+                  "instruction": "call 0x1806ee4b0"
+                },
+                {
+                  "site": "0x71b686",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x71b695",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x7fee6d]"
+                },
+                {
+                  "site": "0x71b6a0",
+                  "target": "0x6f3370",
+                  "symbol": "?GetOriginInfo@BaseObject@BEE_VectorArt@@QEBAPEBVOriginInfo@2@_N@Z",
+                  "instruction": "call 0x1806f3370"
+                },
+                {
+                  "site": "0x71b6ab",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x71b6b3",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x71b6f6",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x71b702",
+                  "target": "0xd3a6b4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a6b4"
+                },
+                {
+                  "site": "0x71b70a",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x71b72f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x71b756",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x71b7a8",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x71b7b8",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf85dca]"
+                },
+                {
+                  "site": "0x71b7cb",
+                  "target": "0x16a1588",
+                  "symbol": "",
+                  "instruction": "call qword ptr [rip + 0xf85db7]"
+                },
+                {
+                  "site": "0x71b826",
+                  "target": "0x71b8ef",
+                  "symbol": "",
+                  "instruction": "jmp 0x18071b8ef"
+                },
+                {
+                  "site": "0x71b849",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe799]"
+                },
+                {
+                  "site": "0x71b86a",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe778]"
+                },
+                {
+                  "site": "0x71b888",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe75a]"
+                },
+                {
+                  "site": "0x71b8a6",
+                  "target": "0xf19fe8",
+                  "symbol": "dvacore.dll!??0ReplacementValue@config@dvacore@@QEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7fe73c]"
+                },
+                {
+                  "site": "0x71b8de",
+                  "target": "0xf19ff8",
+                  "symbol": "dvacore.dll!?ThrowError@config@dvacore@@YAXW4ErrorLevel@12@PEBDIH_NAEBVReplacementValue@12@333@Z",
+                  "instruction": "call qword ptr [rip + 0x7fe714]"
+                },
+                {
+                  "site": "0x71b8ef",
+                  "target": "0xd3a6b4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a6b4"
+                },
+                {
+                  "site": "0x71b8fe",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                },
+                {
+                  "site": "0x71b955",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                }
+              ]
+            },
+            {
+              "slot": 7,
+              "begin_rva": "0x71dd80",
+              "end_rva": "0x71ddd3",
+              "calls": [
+                {
+                  "site": "0x71ddad",
+                  "target": "0xd3be04",
+                  "symbol": "",
+                  "instruction": "call 0x180d3be04"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "matchName": "ADBE Vector Filter - Repeater",
+          "slots": [
+            {
+              "slot": 4,
+              "begin_rva": "0x717c90",
+              "end_rva": "0x717e2a",
+              "calls": [
+                {
+                  "site": "0x717cad",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717cd6",
+                  "target": "0x6ee670",
+                  "symbol": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+                  "instruction": "call 0x1806ee670"
+                },
+                {
+                  "site": "0x717cde",
+                  "target": "0x717ce2",
+                  "symbol": "",
+                  "instruction": "jmp 0x180717ce2"
+                },
+                {
+                  "site": "0x717d03",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x717d0f",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x717d21",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8027e1]"
+                },
+                {
+                  "site": "0x717d2f",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x717d38",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717d48",
+                  "target": "0x717d82",
+                  "symbol": "",
+                  "instruction": "jmp 0x180717d82"
+                },
+                {
+                  "site": "0x717d52",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x717d5b",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x717d7f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x717dac",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x717dd4",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffcee]"
+                },
+                {
+                  "site": "0x717ddf",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x7ffce3]"
+                },
+                {
+                  "site": "0x717dff",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x717e24",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                }
+              ]
+            },
+            {
+              "slot": 5,
+              "begin_rva": "0x7156d0",
+              "end_rva": "0x716197",
+              "calls": [
+                {
+                  "site": "0x715761",
+                  "target": "0x71d160",
+                  "symbol": "",
+                  "instruction": "call 0x18071d160"
+                },
+                {
+                  "site": "0x71576b",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x715784",
+                  "target": "0xf193d8",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x803c4e]"
+                },
+                {
+                  "site": "0x71579a",
+                  "target": "0x6ee2b0",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806ee2b0"
+                },
+                {
+                  "site": "0x7157a2",
+                  "target": "0x7157a7",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807157a7"
+                },
+                {
+                  "site": "0x7157cb",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x7157e6",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x7157f2",
+                  "target": "0x6f08b0",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806f08b0"
+                },
+                {
+                  "site": "0x715803",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804cff]"
+                },
+                {
+                  "site": "0x715810",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x71581b",
+                  "target": "0x6f08b0",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806f08b0"
+                },
+                {
+                  "site": "0x715827",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804cdb]"
+                },
+                {
+                  "site": "0x715830",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x71583f",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804cc3]"
+                },
+                {
+                  "site": "0x715845",
+                  "target": "0x715869",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715869"
+                },
+                {
+                  "site": "0x71584e",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715859",
+                  "target": "0x6f08b0",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806f08b0"
+                },
+                {
+                  "site": "0x715861",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x71586c",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715887",
+                  "target": "0x712100",
+                  "symbol": "",
+                  "instruction": "call 0x180712100"
+                },
+                {
+                  "site": "0x715891",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x7158c0",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x7158cf",
+                  "target": "0x6ee840",
+                  "symbol": "??0SymbolGroup@BEE_VectorArt@@QEAA@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@Z",
+                  "instruction": "call 0x1806ee840"
+                },
+                {
+                  "site": "0x7158d7",
+                  "target": "0x7158dc",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807158dc"
+                },
+                {
+                  "site": "0x715901",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x715910",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804bf2]"
+                },
+                {
+                  "site": "0x71591d",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715926",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715978",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x715984",
+                  "target": "0xd3a6b4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a6b4"
+                },
+                {
+                  "site": "0x7159b9",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x7159d2",
+                  "target": "0xf193d8",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x803a00]"
+                },
+                {
+                  "site": "0x7159e8",
+                  "target": "0x6ee2b0",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806ee2b0"
+                },
+                {
+                  "site": "0x7159f0",
+                  "target": "0x7159f5",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807159f5"
+                },
+                {
+                  "site": "0x715a1a",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x715a38",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804aca]"
+                },
+                {
+                  "site": "0x715a46",
+                  "target": "0x6f5e70",
+                  "symbol": "?SetAlpha@Group@BEE_VectorArt@@QEAAXM@Z",
+                  "instruction": "call 0x1806f5e70"
+                },
+                {
+                  "site": "0x715a7a",
+                  "target": "0x71c420",
+                  "symbol": "",
+                  "instruction": "call 0x18071c420"
+                },
+                {
+                  "site": "0x715b1b",
+                  "target": "0x715b26",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715b26"
+                },
+                {
+                  "site": "0x715b42",
+                  "target": "0xf193d8",
+                  "symbol": "U.dll!?SetIdentity@M_Matrix3@@QEAAXXZ",
+                  "instruction": "call qword ptr [rip + 0x803890]"
+                },
+                {
+                  "site": "0x715b61",
+                  "target": "0xf193b0",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x803849]"
+                },
+                {
+                  "site": "0x715b86",
+                  "target": "0xd3bfb4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bfb4"
+                },
+                {
+                  "site": "0x715ba9",
+                  "target": "0xd3bfb4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3bfb4"
+                },
+                {
+                  "site": "0x715bec",
+                  "target": "0xf18af8",
+                  "symbol": "U.dll!?Scale@M_Matrix3@@QEAAXNNNN@Z",
+                  "instruction": "call qword ptr [rip + 0x802f06]"
+                },
+                {
+                  "site": "0x715c0b",
+                  "target": "0xf18b00",
+                  "symbol": "U.dll!?Rotate@M_Matrix3@@QEAAXNNN@Z",
+                  "instruction": "call qword ptr [rip + 0x802eef]"
+                },
+                {
+                  "site": "0x715c22",
+                  "target": "0xf193b0",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x803788]"
+                },
+                {
+                  "site": "0x715c39",
+                  "target": "0xf193b0",
+                  "symbol": "U.dll!?Translate@M_Matrix3@@QEAAXNN@Z",
+                  "instruction": "call qword ptr [rip + 0x803771]"
+                },
+                {
+                  "site": "0x715c88",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x715ca6",
+                  "target": "0x6ee2b0",
+                  "symbol": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+                  "instruction": "call 0x1806ee2b0"
+                },
+                {
+                  "site": "0x715cae",
+                  "target": "0x715cb3",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715cb3"
+                },
+                {
+                  "site": "0x715ccd",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x804835]"
+                },
+                {
+                  "site": "0x715cd3",
+                  "target": "0x715cf4",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715cf4"
+                },
+                {
+                  "site": "0x715ce9",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x715cfb",
+                  "target": "0x6f5e70",
+                  "symbol": "?SetAlpha@Group@BEE_VectorArt@@QEAAXM@Z",
+                  "instruction": "call 0x1806f5e70"
+                },
+                {
+                  "site": "0x715d15",
+                  "target": "0xf17ad0",
+                  "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+                  "instruction": "call qword ptr [rip + 0x801db5]"
+                },
+                {
+                  "site": "0x715d24",
+                  "target": "0xf17ad0",
+                  "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+                  "instruction": "call qword ptr [rip + 0x801da6]"
+                },
+                {
+                  "site": "0x715d32",
+                  "target": "0x6f08b0",
+                  "symbol": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z",
+                  "instruction": "call 0x1806f08b0"
+                },
+                {
+                  "site": "0x715d43",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8047bf]"
+                },
+                {
+                  "site": "0x715d50",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715d5c",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8047a6]"
+                },
+                {
+                  "site": "0x715d62",
+                  "target": "0x715d70",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715d70"
+                },
+                {
+                  "site": "0x715d6b",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715d73",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715d9e",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rdx]"
+                },
+                {
+                  "site": "0x715dca",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x715e07",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8046fb]"
+                },
+                {
+                  "site": "0x715e10",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715e41",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x715e78",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x715eb3",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 0x10]"
+                },
+                {
+                  "site": "0x715ebb",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x801c07]"
+                },
+                {
+                  "site": "0x715ec5",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x801bfd]"
+                },
+                {
+                  "site": "0x715eee",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x715ef7",
+                  "target": "0x715b06",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715b06"
+                },
+                {
+                  "site": "0x715f0d",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8045f5]"
+                },
+                {
+                  "site": "0x715f16",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715f2f",
+                  "target": "0x6ee350",
+                  "symbol": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z",
+                  "instruction": "call 0x1806ee350"
+                },
+                {
+                  "site": "0x715f41",
+                  "target": "0xf1a508",
+                  "symbol": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+                  "instruction": "call qword ptr [rip + 0x8045c1]"
+                },
+                {
+                  "site": "0x715f4e",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715f61",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715f69",
+                  "target": "0x715fa4",
+                  "symbol": "",
+                  "instruction": "jmp 0x180715fa4"
+                },
+                {
+                  "site": "0x715f72",
+                  "target": "0x6f5f00",
+                  "symbol": "?SetOriginInfo@BaseObject@BEE_VectorArt@@QEAAXPEBVOriginInfo@2@@Z",
+                  "instruction": "call 0x1806f5f00"
+                },
+                {
+                  "site": "0x715f80",
+                  "target": "0x6f2610",
+                  "symbol": "?GetChildren@BaseContainer@BEE_VectorArt@@QEAAAEAV?$list@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@V?$allocator@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@XZ",
+                  "instruction": "call 0x1806f2610"
+                },
+                {
+                  "site": "0x715fa1",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax]"
+                },
+                {
+                  "site": "0x715fc9",
+                  "target": "0xd3a668",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a668"
+                },
+                {
+                  "site": "0x715fec",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x801ad6]"
+                },
+                {
+                  "site": "0x715ff6",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x801acc]"
+                },
+                {
+                  "site": "0x715ffc",
+                  "target": "0x716003",
+                  "symbol": "",
+                  "instruction": "jmp 0x180716003"
+                },
+                {
+                  "site": "0x71605f",
+                  "target": "0xd3a6b4",
+                  "symbol": "",
+                  "instruction": "call 0x180d3a6b4"
+                },
+                {
+                  "site": "0x71608f",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x71609c",
+                  "target": "0x7160aa",
+                  "symbol": "",
+                  "instruction": "jmp 0x1807160aa"
+                },
+                {
+                  "site": "0x7160ad",
+                  "target": "0x711150",
+                  "symbol": "",
+                  "instruction": "call 0x180711150"
+                },
+                {
+                  "site": "0x7160cc",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x7160d4",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x8019ee]"
+                },
+                {
+                  "site": "0x7160de",
+                  "target": "0xf17ac8",
+                  "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+                  "instruction": "call qword ptr [rip + 0x8019e4]"
+                },
+                {
+                  "site": "0x7160fe",
+                  "target": null,
+                  "symbol": "",
+                  "instruction": "call qword ptr [rax + 8]"
+                },
+                {
+                  "site": "0x71610e",
+                  "target": "0xd3ac30",
+                  "symbol": "",
+                  "instruction": "call 0x180d3ac30"
+                },
+                {
+                  "site": "0x716177",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x716184",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                },
+                {
+                  "site": "0x716191",
+                  "target": "0xd0d431",
+                  "symbol": "",
+                  "instruction": "call 0x180d0d431"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

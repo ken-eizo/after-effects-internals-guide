@@ -60,6 +60,10 @@ The final Shape layer renderer uses `BEE_VectorLayer::Rasterize2DGraph(...)` ret
 
 The actual native Shape renderer uses a distinct **BEE MatchName evaluator registry**, separate from `TDB_StreamFactory`. This second registry owns polymorphic `BEE_VectorStream::*Operator` objects for exactly 20 names, including Trim, Offset, Repeater, Merge, Path, Fill and Stroke. Both AE2025 and AE2026 show the same mappings and concrete MSVC RTTI classes. Normal evaluated vector art and `StreamBasedFilter::DoFilter` call the **same** registered operator virtual method at vtable +0x18, with different mode arguments. In addition, the TDB factory eagerly invokes a registered type creator during registration, rather than postponing all execution until the user adds a Contents child. Neither registry offers a confirmed external plug-in ABI or a replacement for the `BEE_VectorLayer` owner. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md).
 
+## Concrete evaluated Bezier paths and synthetic identities (2026-10-11)
+
+Static AE2025/26 native C++ RTTI and disassembly traced all 20 evaluated vector operators and their mode dispatch. Nine Group/Shape/Graphic operators use mode 0; eleven Filter operators use mode 1. Shape/Rect/Ellipse build `CAIMBezierPath` and `BEE_VectorArt::Path` and attach source `TDB_StreamIDPath` using `OriginInfo`. Repeater concretely calls `AppendSyntheticIndex` during evaluated copy generation. This proves host-internal authored-to-rendered origin metadata. It does **not** prove an external effect can become the `BEE_VectorLayer` owner, add native selectable Timeline geometry, or use native VectorArt as an output contract. See [Native Vector Operator ABI and Origin](native-vector-operator-abi-and-origin.md).
+
 ## Strongest proof and next falsification gates
 
 | Stage | Required direct evidence | Present state |

@@ -41,3 +41,18 @@ No Adobe binary, private headers, or proprietary DLL contents are redistributed 
 - `datasets/ae-native-vector-evaluator-vtable-rtti-2025-2026.json`: callsite-local polymorphic operator vtables, concrete MSVC RTTI classes, multiple-subobject offsets, `PathFilterOperatorT<Params>` intermediate types. Derived from installed binary only, **not a stable external ABI**.
 
 Reproduction source: `experiments/vector-shape/probe-src/tools`, recorded in `SOURCE_SNAPSHOT.json`. Evidence interpretation: `research/findings/F-VECTOR-013-tdb-eager-canonical-lifecycle.md` and `F-VECTOR-014-dual-native-vector-evaluator-registry.md`. These are **static internal Adobe implementations**, never private registration exercised from external plug-in; distinct earlier E2-X TDB getter and CanAdd read-only experiments remain separate.
+
+## 2026-10-11 third phase: evaluator vtables, RTTI and origin construction in concrete algorithms
+
+The local AE2025 and AE2026 BEE.dll runtime static experiments establish 20 concrete primary/secondary `BEE_VectorStream::*Operator` vtables, with a second RTTI subobject at offset 24 bytes and a common dvacore reference-counted class family. Every primary vtable has a mode dispatch at `+0x18`: **9 Group/Shape/Graphic operators test integer mode 0; 11 Filters compare mode 1**. Concrete vector generators use further polymorphic functions at `+0x20`; Filter evaluations use further methods at `+0x28` or shared dispatcher. The exact second argument representation is read from machine code and not a published external C++ enum or class contract.
+
+`ShapeOperator`, `RectOperator` and `EllipseOperator` concrete evaluation call sequences include `GetPathDataFromOM` / `GetRectPathData` / `GetEllipsePathData` to produce `CAIMBezierPath`, native `BEE_VectorArt::Path` construction, `OriginInfo(TDB_StreamIDPath)` and `SetOriginInfo`. Repeater's native concrete filter algorithm **directly** calls `AppendSyntheticIndex` twice in both AE2025/AE2026 while constructing derived art groups and setting origin/opacity. This is stronger than prior synthetic-ID speculation, but does not establish Pen-tool selection or that effects can own native BEE VectorArt.
+
+Evidence datasets:
+- `datasets/ae-vector-evaluator-vtable-slot-map-2025-2026.json`
+- `datasets/ae-native-vector-evaluator-virtual-evaluation-2025-2026.json`
+- `datasets/ae-vector-evaluator-mode-abi-2025-2026.json`
+- `datasets/ae-native-vector-operator-rtti-inheritance-2025-2026.json`
+- `datasets/ae-vector-operator-vectorart-provenance-calls-2025-2026.json`
+
+Reproduction scripts mirrored at `experiments/vector-shape/probe-src/tools`; findings F-VECTOR-015/016 and experiments EXP-SHAPE-015/016. This is local, read-only reverse-engineering against the user's installed binary only; **no private function call** was performed in AE, no Adobe binary or header committed. Official external chronology: https://github.com/AdobeDocs/after-effects-feature-history (Shape Layers introduced AE CS3/8.0 in 2007). Current native SVG import documentation: https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html — imports as editable Shape Layers, **not** effect-owned native vector output.

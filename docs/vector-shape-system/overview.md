@@ -33,7 +33,7 @@ The same Beta-feature corpus contains GroupAlphaForAIConvertToShapes, exposing a
 
 The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archived raw capture shows 180 public stream nodes with zero reported per-node API errors, including `ADBE Root Vectors Group` as an indexed Contents group and Rectangle/Fill as named child groups. This E2-X result proves real host traversal **only**, not plug-in-owned Contents creation. See repository report `experiments/vector-shape/EXP-SHAPE-001-host-success.md`.
 
-A follow-up read-only probe is available as a **compiled but not host-tested** experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating `CanAddStream` matrix. See [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md) for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.
+A follow-up read-only probe was **executed in AE2026**: it measured session-specific stream IDs, dynamic flags and leaf types, and successfully ran a non-mutating `CanAddStream` matrix. The AE2026 v3 host evidence is archived separately from static native DLL research. See [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md) for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.
 
 ## Native stream factory registration breakthrough (2026-10-11)
 
@@ -46,6 +46,10 @@ An explicitly invoked AE2026 ShapeLayerAE v3 AEGP returned a non-null pointer fr
 ## 2026-10-11 — Second internal vector evaluator registry and 20 concrete native operator types
 
 A cross-version static audit recovered a **separate BEE MatchName-keyed evaluator registry** beyond `TDB_StreamFactory`. The native initializer installs exactly 20 built-in Shape/Graphic/Filter/Group evaluation objects. Each MatchName was recovered from its static constructor literal, paired with its actual registration callsite and concrete MSVC RTTI operator class; the full set matches between AE2025 and AE2026. `PopulateVectorArt` and `StreamBasedFilter::DoFilter` both query the registry and invoke the same evaluator virtual slot (different mode arguments). TDB factory registration also eagerly invokes a creator and canonicalization. None of this demonstrates externally creatable effect-owned vector output. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md), Findings F-VECTOR-013/014.
+
+## 2026-10-11 — Native evaluator vtable and concrete Path/Repeater provenance
+
+The two installed versions now agree on all 20 concrete operator vtables, reference-counted MSVC RTTI inheritance and the native evaluation mode split: **9 Shape/Graphic/Group operators dispatch for mode 0; 11 vector Filters dispatch for mode 1** via the primary vtable at +0x18. Path, Rectangle and Ellipse concrete generators directly build `CAIMBezierPath` / `BEE_VectorArt::Path` and stamp the native `TDB_StreamIDPath` origin. The Repeater algorithm **directly invokes `OriginInfo::AppendSyntheticIndex`** in 2025/2026, promoting the older hypothetical association to supported static evidence. The Pen-tool selection contract and effect-owned native output remain unproven. See [Native Vector Operator ABI and Origin](native-vector-operator-abi-and-origin.md) and Findings F-VECTOR-015/016.
 
 ## Runtime model status
 The runtime-side reconstruction is now tracked in `runtime-architecture.md`. AE 2025 exposes a concrete `BEE_VectorStream -> BEE_VectorArt -> AGM-facing translation -> RG_RenderNode` chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.

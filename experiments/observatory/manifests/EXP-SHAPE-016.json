@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-SHAPE-016",
+  "title": "Trace native Path / Fill / Repeater geometry provenance",
+  "status": "observed-static-only",
+  "domains": [
+    "vector-shape-system",
+    "selection",
+    "rendering"
+  ],
+  "evidence": [
+    "E2-L"
+  ],
+  "question": "Do concrete native BEE operators construct Bezier-path VectorArt with source StreamIDPath and Repeater synthetic indices?",
+  "observed_result": "Shape, Rect, Ellipse, Fill, StreamBasedFilter and Repeater concrete operator callchains link VectorArt constructors with OriginInfo; Repeater uses AppendSyntheticIndex in both 2025 and 2026.",
+  "limits": [
+    "Native Pen tool selection not proven",
+    "Effect owned vector object creation not proven",
+    "No private API executed"
+  ],
+  "artifacts": [
+    "datasets/ae-vector-operator-vectorart-provenance-calls-2025-2026.json"
+  ]
+}
