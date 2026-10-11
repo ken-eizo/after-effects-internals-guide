@@ -1,0 +1,51 @@
+{
+  "experiment_id": "EXP-SHAPE-006",
+  "title": "Cross-version native VectorLayer construction selection and command entrypoints",
+  "status": "observed-static-only",
+  "domains": [
+    "vector-shape-system",
+    "ui-system",
+    "render-graph"
+  ],
+  "question": "What private constructor/command/selection functions coexist with the evaluated native vector path, and how do they change 2025 to 2026?",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "VectorLayer constructors initialize host art caches and geometry state in both builds",
+      "falsified_by": "Resolved call targets from matching-version static disassembly do not include these functions"
+    },
+    {
+      "id": "H2",
+      "prediction": "Selected shape path enumeration uses native layer-selection iterator",
+      "falsified_by": "Original function has no call to BEE_SelIterate on either version's binary"
+    }
+  ],
+  "factors": [
+    "AE2025 BEE.dll exact SHA",
+    "AE2026 BEE.dll exact SHA",
+    "BEE_VectorLayer constructor and BEE_CmdNewVectorLayer functions",
+    "BEE_GetSelectedShapePathsVec"
+  ],
+  "procedure": [
+    "Run tools/trace_vector_layer_creation.py offline (no AE private calls).",
+    "Resolve exports only from the corresponding exact DLL version.",
+    "Compare bounded disassembly and report unresolved indirect calls.",
+    "Store decorated symbols, matched RVA and exact input SHA hashes; do not claim runtime call path."
+  ],
+  "captures": [
+    "datasets/ae-vector-layer-construction-2025-2026.json",
+    "experiments/vector-shape/EXP-SHAPE-006-private-vector-constructor-static.md"
+  ],
+  "environment": {
+    "host_execution": false,
+    "compilation": "not applicable"
+  },
+  "conclusion": "Static export/disassembly evidence confirms native art-cache & geometry constructor calls and selection iterator; no plugin-native object creation has been attempted or proven.",
+  "evidence": [
+    "E2-L"
+  ],
+  "limitations": [
+    "Export-boundary disassembly may omit inlined/indirect calls",
+    "Different resolved parent constructor does not independently prove inheritance layout changes"
+  ]
+}

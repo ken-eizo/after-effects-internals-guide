@@ -1,0 +1,664 @@
+{
+  "evidence": "E2-L static disassembly",
+  "limits": "no runtime proof, unresolved indirect calls; export-boundary heuristic",
+  "versions": {
+    "2025": {
+      "source": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "functions": [
+        {
+          "export_name": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+          "rva": "0x65cdd0",
+          "bytes_scanned": 32,
+          "first_instructions": [
+            "0065CDD0 mov r9, rdx",
+            "0065CDD3 mov r8d, 0x306",
+            "0065CDD9 mov edx, 0x65",
+            "0065CDDE jmp 0x180667610",
+            "0065CDE3 int3 ",
+            "0065CDE4 int3 ",
+            "0065CDE5 int3 ",
+            "0065CDE6 int3 ",
+            "0065CDE7 int3 ",
+            "0065CDE8 int3 ",
+            "0065CDE9 int3 ",
+            "0065CDEA int3 ",
+            "0065CDEB int3 ",
+            "0065CDEC int3 ",
+            "0065CDED int3 ",
+            "0065CDEE int3 ",
+            "0065CDEF int3 "
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x65cdde",
+              "operand": "0x180667610",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z",
+          "rva": "0x6e1050",
+          "bytes_scanned": 304,
+          "first_instructions": [
+            "006E1050 mov qword ptr [rsp + 8], rcx",
+            "006E1055 push rbx",
+            "006E1056 sub rsp, 0x30",
+            "006E105A mov rbx, rcx",
+            "006E105D movzx eax, byte ptr [rsp + 0x68]",
+            "006E1062 mov byte ptr [rsp + 0x28], al",
+            "006E1066 movzx eax, byte ptr [rsp + 0x60]",
+            "006E106B mov byte ptr [rsp + 0x20], al",
+            "006E106F call 0x18024df90",
+            "006E1074 nop ",
+            "006E1075 lea rax, [rip + 0x91eedc]",
+            "006E107C mov qword ptr [rbx], rax",
+            "006E107F xor eax, eax",
+            "006E1081 mov qword ptr [rbx + 0x2810], rax",
+            "006E1088 mov qword ptr [rbx + 0x2818], rax",
+            "006E108F mov rcx, rbx",
+            "006E1092 call 0x1806e3d20",
+            "006E1097 mov edx, 2",
+            "006E109C mov rcx, rbx",
+            "006E109F call 0x180293450",
+            "006E10A4 nop ",
+            "006E10A5 mov rax, rbx",
+            "006E10A8 add rsp, 0x30",
+            "006E10AC pop rbx",
+            "006E10AD ret ",
+            "006E10AE int3 ",
+            "006E10AF int3 ",
+            "006E10B0 push rbx",
+            "006E10B2 sub rsp, 0x20",
+            "006E10B6 mov rbx, qword ptr [rcx]",
+            "006E10B9 test rbx, rbx",
+            "006E10BC je 0x1806e1120",
+            "006E10BE mov rdx, qword ptr [rbx + 8]",
+            "006E10C2 mov qword ptr [rbx + 8], 0",
+            "006E10CA test rdx, rdx",
+            "006E10CD je 0x1806e10e7",
+            "006E10CF mov rax, qword ptr [rdx + 0x10]",
+            "006E10D3 movsxd rcx, dword ptr [rax + 4]",
+            "006E10D7 add rcx, 0x10",
+            "006E10DB add rcx, rdx",
+            "006E10DE je 0x1806e10e7",
+            "006E10E0 mov rax, qword ptr [rcx]",
+            "006E10E3 call qword ptr [rax + 8]",
+            "006E10E6 nop ",
+            "006E10E7 mov rcx, qword ptr [rbx]"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x6e106f",
+              "operand": "0x18024df90",
+              "target_export": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "site_rva": "0x6e1092",
+              "operand": "0x1806e3d20",
+              "target_export": "?InitArtCache@BEE_VectorLayer@@IEAAXXZ"
+            },
+            {
+              "site_rva": "0x6e109f",
+              "operand": "0x180293450",
+              "target_export": "?Set3DGeometryType@BEE_AVLayer@@IEAAXH@Z"
+            },
+            {
+              "site_rva": "0x6e10e3",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e110a",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e111b",
+              "operand": "0x180ce9094",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e115b",
+              "operand": "qword ptr [rax]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e116d",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "rva": "0x6e4100",
+          "bytes_scanned": 416,
+          "first_instructions": [
+            "006E4100 jmp 0x18076b6f0",
+            "006E4105 int3 ",
+            "006E4106 int3 ",
+            "006E4107 int3 ",
+            "006E4108 int3 ",
+            "006E4109 int3 ",
+            "006E410A int3 ",
+            "006E410B int3 ",
+            "006E410C int3 ",
+            "006E410D int3 ",
+            "006E410E int3 ",
+            "006E410F int3 ",
+            "006E4110 mov qword ptr [rsp + 0x18], rbx",
+            "006E4115 mov qword ptr [rsp + 0x20], rsi",
+            "006E411A push rdi",
+            "006E411B sub rsp, 0x70",
+            "006E411F mov rax, qword ptr [rip + 0xe3561a]",
+            "006E4126 xor rax, rsp",
+            "006E4129 mov qword ptr [rsp + 0x60], rax",
+            "006E412E mov rdi, rdx",
+            "006E4131 mov rbx, rcx",
+            "006E4134 cmp byte ptr [rcx], 0",
+            "006E4137 sete r9b",
+            "006E413B mov r8d, 2",
+            "006E4141 mov rcx, qword ptr [rcx + 8]",
+            "006E4145 call 0x1806622b0",
+            "006E414A cmp byte ptr [rbx + 1], 0",
+            "006E414E je 0x1806e4237",
+            "006E4154 mov byte ptr [rsp + 0x20], 1",
+            "006E4159 xor r9d, r9d",
+            "006E415C xor r8d, r8d",
+            "006E415F mov rdx, rdi",
+            "006E4162 mov rcx, qword ptr [rbx + 8]",
+            "006E4166 call 0x180662d60",
+            "006E416B test eax, eax",
+            "006E416D jne 0x1806e426c",
+            "006E4173 xor esi, esi",
+            "006E4175 mov dword ptr [rsp + 0x38], esi",
+            "006E4179 mov dword ptr [rsp + 0x3c], 1",
+            "006E4181 mov r9, qword ptr [rbx + 8]",
+            "006E4185 lea r8, [rsp + 0x38]",
+            "006E418A mov rdx, rdi",
+            "006E418D mov cl, 1",
+            "006E418F call 0x18036d5b0",
+            "006E4194 test eax, eax"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x6e4100",
+              "operand": "0x18076b6f0",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e4145",
+              "operand": "0x1806622b0",
+              "target_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "site_rva": "0x6e4166",
+              "operand": "0x180662d60",
+              "target_export": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "site_rva": "0x6e418f",
+              "operand": "0x18036d5b0",
+              "target_export": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x6e41a6",
+              "operand": "0x18065f800",
+              "target_export": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "site_rva": "0x6e41dc",
+              "operand": "0x18065f590",
+              "target_export": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x6e41fa",
+              "operand": "qword ptr [rip + 0x7dcfd0]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e420f",
+              "operand": "0x18065f9f0",
+              "target_export": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x6e4232",
+              "operand": "0x1800c7810",
+              "target_export": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "site_rva": "0x6e423f",
+              "operand": "0x180ce9610",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e4266",
+              "operand": "0x180ceacc8",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e427c",
+              "operand": "0x180ceacc8",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x6e4292",
+              "operand": "0x180ceacc8",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xaa100",
+          "bytes_scanned": 208,
+          "first_instructions": [
+            "000AA100 mov qword ptr [rsp + 8], rbx",
+            "000AA105 mov qword ptr [rsp + 0x10], rbp",
+            "000AA10A mov qword ptr [rsp + 0x18], rsi",
+            "000AA10F push rdi",
+            "000AA110 sub rsp, 0x70",
+            "000AA114 mov rdi, rdx",
+            "000AA117 mov rbx, rcx",
+            "000AA11A mov rax, qword ptr [rcx + 0x2b8]",
+            "000AA121 mov rbp, qword ptr [rax + 0x258]",
+            "000AA128 lea rcx, [rsp + 0x48]",
+            "000AA12D call qword ptr [rip + 0xe146ad]",
+            "000AA133 nop ",
+            "000AA134 lea rcx, [rsp + 0x30]",
+            "000AA139 call 0x1800c82e0",
+            "000AA13E nop ",
+            "000AA13F mov dword ptr [rsp + 0x30], 0xa",
+            "000AA147 mov qword ptr [rsp + 0x38], rbx",
+            "000AA14C mov rbx, qword ptr [rdi]",
+            "000AA14F mov rsi, qword ptr [rdi + 8]",
+            "000AA153 cmp rbx, rsi",
+            "000AA156 je 0x1800aa17a",
+            "000AA158 nop dword ptr [rax + rax]",
+            "000AA160 mov rax, qword ptr [rbx]",
+            "000AA163 xor edx, edx",
+            "000AA165 mov rcx, rbx",
+            "000AA168 call qword ptr [rax]",
+            "000AA16A add rbx, 0x20",
+            "000AA16E cmp rbx, rsi",
+            "000AA171 jne 0x1800aa160",
+            "000AA173 mov rax, qword ptr [rdi]",
+            "000AA176 mov qword ptr [rdi + 8], rax",
+            "000AA17A mov qword ptr [rsp + 0x28], rdi",
+            "000AA17F lea rax, [rip + 0xc9a]",
+            "000AA186 mov qword ptr [rsp + 0x20], rax",
+            "000AA18B lea r9, [rsp + 0x30]",
+            "000AA190 xor r8d, r8d",
+            "000AA193 xor edx, edx",
+            "000AA195 mov rcx, rbp",
+            "000AA198 call 0x1800aaeb0",
+            "000AA19D mov ebx, eax",
+            "000AA19F lea rcx, [rsp + 0x48]",
+            "000AA1A4 call qword ptr [rip + 0xe1463e]",
+            "000AA1AA mov eax, ebx",
+            "000AA1AC lea r11, [rsp + 0x70]",
+            "000AA1B1 mov rbx, qword ptr [r11 + 0x10]"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0xaa12d",
+              "operand": "qword ptr [rip + 0xe146ad]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0xaa139",
+              "operand": "0x1800c82e0",
+              "target_export": "?Clear@BEE_LayerSelSpec@@QEAAXXZ"
+            },
+            {
+              "site_rva": "0xaa168",
+              "operand": "qword ptr [rax]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0xaa198",
+              "operand": "0x1800aaeb0",
+              "target_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z"
+            },
+            {
+              "site_rva": "0xaa1a4",
+              "operand": "qword ptr [rip + 0xe1463e]",
+              "target_export": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "source": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\BEE.dll",
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "functions": [
+        {
+          "export_name": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+          "rva": "0x6783e0",
+          "bytes_scanned": 32,
+          "first_instructions": [
+            "006783E0 mov r9, rdx",
+            "006783E3 mov r8d, 0x306",
+            "006783E9 mov edx, 0x6a",
+            "006783EE jmp 0x180682f90",
+            "006783F3 int3 ",
+            "006783F4 int3 ",
+            "006783F5 int3 ",
+            "006783F6 int3 ",
+            "006783F7 int3 ",
+            "006783F8 int3 ",
+            "006783F9 int3 ",
+            "006783FA int3 ",
+            "006783FB int3 ",
+            "006783FC int3 ",
+            "006783FD int3 ",
+            "006783FE int3 ",
+            "006783FF int3 "
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x6783ee",
+              "operand": "0x180682f90",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z",
+          "rva": "0x7058e0",
+          "bytes_scanned": 336,
+          "first_instructions": [
+            "007058E0 mov qword ptr [rsp + 8], rcx",
+            "007058E5 push rbx",
+            "007058E6 sub rsp, 0x40",
+            "007058EA mov rbx, rcx",
+            "007058ED movzx eax, byte ptr [rsp + 0x78]",
+            "007058F2 mov byte ptr [rsp + 0x38], al",
+            "007058F6 movzx eax, byte ptr [rsp + 0x70]",
+            "007058FB mov byte ptr [rsp + 0x30], al",
+            "007058FF mov qword ptr [rsp + 0x28], r9",
+            "00705904 mov qword ptr [rsp + 0x20], r8",
+            "00705909 mov r9, rdx",
+            "0070590C lea r8, [rip + 0xf9812d]",
+            "00705913 lea rdx, [rip + 0xf98116]",
+            "0070591A call 0x180338db0",
+            "0070591F nop ",
+            "00705920 lea rax, [rip + 0x95b3c1]",
+            "00705927 mov qword ptr [rbx], rax",
+            "0070592A xor eax, eax",
+            "0070592C mov qword ptr [rbx + 0x2820], rax",
+            "00705933 mov qword ptr [rbx + 0x2828], rax",
+            "0070593A mov rcx, rbx",
+            "0070593D call 0x1807085b0",
+            "00705942 mov edx, 2",
+            "00705947 mov rcx, rbx",
+            "0070594A call 0x18029c0f0",
+            "0070594F nop ",
+            "00705950 mov rax, rbx",
+            "00705953 add rsp, 0x40",
+            "00705957 pop rbx",
+            "00705958 ret ",
+            "00705959 int3 ",
+            "0070595A int3 ",
+            "0070595B int3 ",
+            "0070595C int3 ",
+            "0070595D int3 ",
+            "0070595E int3 ",
+            "0070595F int3 ",
+            "00705960 push rbx",
+            "00705962 sub rsp, 0x20",
+            "00705966 mov rbx, qword ptr [rcx]",
+            "00705969 test rbx, rbx",
+            "0070596C je 0x1807059d0",
+            "0070596E mov rdx, qword ptr [rbx + 8]",
+            "00705972 mov qword ptr [rbx + 8], 0",
+            "0070597A test rdx, rdx"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x70591a",
+              "operand": "0x180338db0",
+              "target_export": "??0BEE_MaterialOverrideLayer@@QEAA@AEBVTDB_MatchName@@0PEBV1@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "site_rva": "0x70593d",
+              "operand": "0x1807085b0",
+              "target_export": "?InitArtCache@BEE_VectorLayer@@IEAAXXZ"
+            },
+            {
+              "site_rva": "0x70594a",
+              "operand": "0x18029c0f0",
+              "target_export": "?Set3DGeometryType@BEE_AVLayer@@IEAAXH@Z"
+            },
+            {
+              "site_rva": "0x705993",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x7059ba",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x7059cb",
+              "operand": "0x180d3a6b4",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x705a0b",
+              "operand": "qword ptr [rax]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x705a1d",
+              "operand": "qword ptr [rax + 8]",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "rva": "0x708a30",
+          "bytes_scanned": 400,
+          "first_instructions": [
+            "00708A30 jmp 0x18078cf60",
+            "00708A35 int3 ",
+            "00708A36 int3 ",
+            "00708A37 int3 ",
+            "00708A38 int3 ",
+            "00708A39 int3 ",
+            "00708A3A int3 ",
+            "00708A3B int3 ",
+            "00708A3C int3 ",
+            "00708A3D int3 ",
+            "00708A3E int3 ",
+            "00708A3F int3 ",
+            "00708A40 mov qword ptr [rsp + 0x18], rbx",
+            "00708A45 push rdi",
+            "00708A46 sub rsp, 0x70",
+            "00708A4A mov rax, qword ptr [rip + 0xe9deaf]",
+            "00708A51 xor rax, rsp",
+            "00708A54 mov qword ptr [rsp + 0x60], rax",
+            "00708A59 mov rdi, rdx",
+            "00708A5C mov rbx, rcx",
+            "00708A5F cmp byte ptr [rcx], 0",
+            "00708A62 sete r9b",
+            "00708A66 mov r8d, 2",
+            "00708A6C mov rcx, qword ptr [rcx + 8]",
+            "00708A70 call 0x18067db00",
+            "00708A75 cmp byte ptr [rbx + 1], 0",
+            "00708A79 je 0x180708b60",
+            "00708A7F mov byte ptr [rsp + 0x20], 1",
+            "00708A84 xor r9d, r9d",
+            "00708A87 xor r8d, r8d",
+            "00708A8A mov rdx, rdi",
+            "00708A8D mov rcx, qword ptr [rbx + 8]",
+            "00708A91 call 0x18067e640",
+            "00708A96 test eax, eax",
+            "00708A98 jne 0x180708b91",
+            "00708A9E mov dword ptr [rsp + 0x38], eax",
+            "00708AA2 mov dword ptr [rsp + 0x3c], 1",
+            "00708AAA mov r9, qword ptr [rbx + 8]",
+            "00708AAE lea r8, [rsp + 0x38]",
+            "00708AB3 mov rdx, rdi",
+            "00708AB6 mov cl, 1",
+            "00708AB8 call 0x180377fd0",
+            "00708ABD test eax, eax",
+            "00708ABF jne 0x180708ba7",
+            "00708AC5 xor r8d, r8d"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0x708a30",
+              "operand": "0x18078cf60",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x708a70",
+              "operand": "0x18067db00",
+              "target_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "site_rva": "0x708a91",
+              "operand": "0x18067e640",
+              "target_export": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "site_rva": "0x708ab8",
+              "operand": "0x180377fd0",
+              "target_export": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x708acf",
+              "operand": "0x18067af80",
+              "target_export": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "site_rva": "0x708b05",
+              "operand": "0x18067ad00",
+              "target_export": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x708b23",
+              "operand": "qword ptr [rip + 0x811acf]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x708b38",
+              "operand": "0x18067b170",
+              "target_export": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "site_rva": "0x708b5b",
+              "operand": "0x1800cdd00",
+              "target_export": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "site_rva": "0x708b68",
+              "operand": "0x180d3ac30",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x708b8b",
+              "operand": "0x180d3bdf8",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x708ba1",
+              "operand": "0x180d3bdf8",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0x708bb7",
+              "operand": "0x180d3bdf8",
+              "target_export": ""
+            }
+          ]
+        },
+        {
+          "export_name": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xafc90",
+          "bytes_scanned": 176,
+          "first_instructions": [
+            "000AFC90 push rbx",
+            "000AFC92 push rbp",
+            "000AFC93 push rsi",
+            "000AFC94 push rdi",
+            "000AFC95 sub rsp, 0x78",
+            "000AFC99 mov rsi, rdx",
+            "000AFC9C mov rbx, rcx",
+            "000AFC9F mov rax, qword ptr [rcx + 0x260]",
+            "000AFCA6 mov rbp, qword ptr [rax + 0x2b0]",
+            "000AFCAD lea rcx, [rsp + 0x48]",
+            "000AFCB2 call qword ptr [rip + 0xe67e08]",
+            "000AFCB8 nop ",
+            "000AFCB9 lea rcx, [rsp + 0x30]",
+            "000AFCBE call 0x1800ce790",
+            "000AFCC3 nop ",
+            "000AFCC4 mov dword ptr [rsp + 0x30], 0xa",
+            "000AFCCC mov qword ptr [rsp + 0x38], rbx",
+            "000AFCD1 mov rdi, qword ptr [rsi + 8]",
+            "000AFCD5 mov rbx, qword ptr [rsi]",
+            "000AFCD8 cmp rbx, rdi",
+            "000AFCDB je 0x1800afcfa",
+            "000AFCDD nop dword ptr [rax]",
+            "000AFCE0 mov rax, qword ptr [rbx]",
+            "000AFCE3 xor edx, edx",
+            "000AFCE5 mov rcx, rbx",
+            "000AFCE8 call qword ptr [rax]",
+            "000AFCEA add rbx, 0x20",
+            "000AFCEE cmp rbx, rdi",
+            "000AFCF1 jne 0x1800afce0",
+            "000AFCF3 mov rax, qword ptr [rsi]",
+            "000AFCF6 mov qword ptr [rsi + 8], rax",
+            "000AFCFA mov qword ptr [rsp + 0x28], rsi",
+            "000AFCFF lea rax, [rip + 0xc9a]",
+            "000AFD06 mov qword ptr [rsp + 0x20], rax",
+            "000AFD0B lea r9, [rsp + 0x30]",
+            "000AFD10 xor r8d, r8d",
+            "000AFD13 xor edx, edx",
+            "000AFD15 mov rcx, rbp",
+            "000AFD18 call 0x1800b0a30",
+            "000AFD1D mov ebx, eax",
+            "000AFD1F lea rcx, [rsp + 0x48]",
+            "000AFD24 call qword ptr [rip + 0xe67d9e]",
+            "000AFD2A mov eax, ebx",
+            "000AFD2C add rsp, 0x78",
+            "000AFD30 pop rdi"
+          ],
+          "calls_or_jmps": [
+            {
+              "site_rva": "0xafcb2",
+              "operand": "qword ptr [rip + 0xe67e08]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0xafcbe",
+              "operand": "0x1800ce790",
+              "target_export": "?Clear@BEE_LayerSelSpec@@QEAAXXZ"
+            },
+            {
+              "site_rva": "0xafce8",
+              "operand": "qword ptr [rax]",
+              "target_export": ""
+            },
+            {
+              "site_rva": "0xafd18",
+              "operand": "0x1800b0a30",
+              "target_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z"
+            },
+            {
+              "site_rva": "0xafd24",
+              "operand": "qword ptr [rip + 0xe67d9e]",
+              "target_export": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

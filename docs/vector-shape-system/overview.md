@@ -29,6 +29,12 @@ MultithreadedAGMShapeRendering is important because it separates vector-domain p
 ## Adjacent 2024 internal features
 The same Beta-feature corpus contains GroupAlphaForAIConvertToShapes, exposing a conversion-specific semantic issue: Illustrator group opacity needs preservation when converted into native shape fills. This is evidence that AI→Shape conversion is not merely path copying; group-level compositing semantics must be lowered into AE's shape/property model.
 
+## Verified native host experiment and identity frontier (2026-10-11)
+
+The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archived raw capture shows 180 public stream nodes with zero reported per-node API errors, including `ADBE Root Vectors Group` as an indexed Contents group and Rectangle/Fill as named child groups. This E2-X result proves real host traversal **only**, not plug-in-owned Contents creation. See repository report `experiments/vector-shape/EXP-SHAPE-001-host-success.md`.
+
+A follow-up read-only probe is available as a **compiled but not host-tested** experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating `CanAddStream` matrix. See [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md) for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.
+
 ## Runtime model status
 The runtime-side reconstruction is now tracked in `runtime-architecture.md`. AE 2025 exposes a concrete `BEE_VectorStream -> BEE_VectorArt -> AGM-facing translation -> RG_RenderNode` chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.
 

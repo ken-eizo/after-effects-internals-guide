@@ -38,6 +38,8 @@ native Shape/Contents owning object
 
 AE 2025 `BEE.dll` export listings include constructor-like signatures referencing `TDB_StreamFactory*` and `TDB_MatchName*`; their existence establishes a **distributed implementation artifact**, not a stable call contract, a plug-in type registration path or a usable vtable layout. ABI may change by version. For the supporting findings, inspect repository files `research/findings/F-VECTOR-002-stream-vectorart-agm-render-boundary.md` and `research/findings/F-ABI-012-aegp-stream-coordinates-bridge-into-bee-tdb.md`. These live outside the MkDocs `docs_dir` and are evidence paths, not site page links.
 
+For the actual AE2026 AEGP experiment, session-unique public stream IDs, the private `TDB_StreamIDPath` selection substrate and a read-only CanAdd matrix, see [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md). This distinguishes the public shape stream projection from true private type registration.
+
 ## Research questions and discriminators
 
 1. **Type registration**: Are built-in vector types registered through a centralized, extensible `TDB_StreamFactory`, or a sealed host initialization table? Locate construction/registration call sites, owner lifecycle, and allowed caller modules by *static* analysis. Distinguish constructor symbols from registration semantics.

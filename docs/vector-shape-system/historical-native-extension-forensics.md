@@ -27,6 +27,10 @@ Separate at least **six contracts**: factory/type definition, runtime host regis
 
 Sources: https://github.com/AdobeDocs/after-effects-feature-history (AE history; AdobeDocs); https://www.provideocoalition.com/shape_layers/ (2007 article); https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ (current official Effect path API); `datasets/ae-shape-native-extension-lineage-2026.json` (local header/binary source hashes).
 
+## An older substrate than Shape Layers
+
+The **distributed SDK 25.6** explicitly calls the dynamic-stream interface `new Dynamic Streams API for AE6` and marks its DynamicStreamSuite4 version as `frozen in AE 9.0`. Adobe’s feature history dates Shape Layers to CS3/8.0 (July 2007). Thus, a dynamic property/stream substrate existed **before** native Shape Layers; shape-specific Contents likely built atop a reusable stream representation. The external registration of an arbitrary native type is nevertheless unproved. A much later public `AEGP_GetUniqueStreamID` is available from AE22.5 onward and is **session-unique**, not guaranteed persistent across save/reopen. See [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md).
+
 ## Public contract, literal SDK 25.6 semantics
 
 The distributed `AE_GeneralPlug.h` enumerates `AEGP_StreamGroupingType_NONE=-1`, `LEAF=0`, `NAMED_GROUP=1`, `INDEXED_GROUP=2`. Its comment on `AEGP_GetNumStreamsInGroup` says **error on leaf** and `AEGP_GetNewStreamRefByIndex` says **legal for namedgroup, indexedgroup, not leaf**. `AEGP_AddStream`, `AEGP_DeleteStream` and `AEGP_ReorderStream` expressly operate in the scope of *existing* indexed groups. The public Effect SDK's parameter topics do not dynamically instantiate a host-owned indexed Contents type.

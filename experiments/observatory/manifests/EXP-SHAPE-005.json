@@ -1,0 +1,58 @@
+{
+  "experiment_id": "EXP-SHAPE-005",
+  "title": "AEGP session stream ID and native indexed-group admissibility probe",
+  "status": "compiled-not-host-tested",
+  "domains": [
+    "vector-shape-system",
+    "state-model",
+    "plugin-host"
+  ],
+  "question": "How do native Shape Contents and ordinary Effect Parade differ in their stream-identity metadata, grouping flags and AEGP_CanAddStream matrix?",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Shape Contents and Effect Parade have indexed-group surface with distinct supported child type names",
+      "falsified_by": "AE2026 host produces indistinguishable per-group CanAdd accept/reject matrices for observed types"
+    },
+    {
+      "id": "H2",
+      "prediction": "AEGP_GetUniqueStreamID associates a session-specific numeric identifier to valid stream refs",
+      "falsified_by": "Real-host API consistently reports error/zero for tested native shape streams"
+    }
+  ],
+  "factors": [
+    "AE2026 in-host binary release",
+    "Shape Layer with nested path/fill and transform",
+    "Ordinary footage layer with effect",
+    "Captured before/after reorder or Undo in same AE session"
+  ],
+  "procedure": [
+    "Quit AE normally before deploying compiled probe; replace old AEX and restart.",
+    "Use Animation > ShapeLayerAE: Dump Stream Tree on native Shape Layer and copy all 3 TSVs to uniquely named captures.",
+    "Repeat for ordinary layer plus effect and separately for native group reorder/Undo.",
+    "Record precise AE version, hashes, screenshots/error dialogs; compare E2-X output.",
+    "Never infer third-party custom factory registration merely from CanAdd results."
+  ],
+  "captures": [
+    "%TEMP%/ShapeLayerAE_stream_tree.tsv",
+    "%TEMP%/ShapeLayerAE_stream_metadata.tsv",
+    "%TEMP%/ShapeLayerAE_canadd.tsv"
+  ],
+  "environment": {
+    "sdk": "25.6",
+    "target": "AE 2026",
+    "host_runtime": "pending for v2",
+    "runtime_mutation": false
+  },
+  "conclusion": "C++ probe compiled (not yet loaded or tested in AE). Source snapshot and build receipt are reproducible; all host behavior is pending.",
+  "evidence": [
+    "E0-G",
+    "E0-H",
+    "H"
+  ],
+  "limitations": [
+    "Session-unique ID is not stable project identity",
+    "CanAdd on existing Indexed Group is not create-native-type API",
+    "User workspace should not be modified or reloaded without consent"
+  ]
+}

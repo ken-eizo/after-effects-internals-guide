@@ -38,3 +38,17 @@ Run `python tools/audit_symbols.py` to produce `results/static_symbol_audit.json
 **2026-10-11 correction:** The first installed AEX is unsafe for recursive traversal: it calls `AEGP_GetNumStreamsInGroup` on LEAF and triggered a user-reported `{GetNumStreamsInGroup only works on groups}` assertion. This is fixed in the current built output (SHA-256 `E572BA538E5DAE6889F789AA6090BEDA61EF713731BBEC198894604B7394B272`). The older AEX in `C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\ShapeLayerAE.aex` has the former SHA-256 (`8764F5...`); **quit AE before replacing it**, restart AE and rerun. The source/repair and evidence are recorded in AEIG `experiments/vector-shape/EXP-SHAPE-001-host-failure.md`.
 
 No post-repair AE-host run, native factory registration or built-in rasterizer redirection has been verified yet.
+
+## 2026-10-11 — Read-only identity + CanAdd probe (v2)
+
+The current **built but not installed/tested in-host** binary extends the original `Animation > ShapeLayerAE: Dump Stream Tree` command and writes three outputs to `%TEMP%`:
+
+- `ShapeLayerAE_stream_tree.tsv` — original public tree projection.
+- `ShapeLayerAE_stream_metadata.tsv` — per-node public `AEGP_GetUniqueStreamID` (available from AE 22.5; **session-unique only**), SDK depth, dynamic flags, change status, LEAF type and error columns.
+- `ShapeLayerAE_canadd.tsv` — `AEGP_CanAddStream` on **indexed groups only**, against known Adobe-native Vector/Fill/Stroke/Slider Control match names; **does not add anything**.
+
+For repeated trials, copy each TSV to a named capture file before running the command again: each run overwrites the three `%TEMP%` output files. Compare in-session UIDs across native child reordering and Undo; do not equate these UIDs with private `TDB_StreamIDPath` or assume persistence after restart.
+
+**Deployment:** The user has AE 2026 running. Do not overwrite the currently loaded `C:\Program Files\Adobe\Common\Plug-ins\7.0\MediaCore\ShapeLayerAE.aex` while AE is running. Exit AE normally, replace that AEX with `D:\Developer\ShapeLayerAE\build\Release\ShapeLayerAE.aex` (admin permission may be necessary), then restart AE and use the Animation menu command. Preserve your existing project separately for testing. Build success is not host runtime verification.
+
+Supporting source-only snapshot and experiment records are in AEIG `experiments/vector-shape/probe-src/` and `experiments/vector-shape/EXP-SHAPE-005-native-stream-identity-capability-probe.md`.

@@ -1,0 +1,397 @@
+{
+  "evidence": "E2-L static direct references only; virtual and indirect calls invisible",
+  "warning": "nearest preceding export is not reliable real caller function boundary",
+  "binaries": {
+    "AE2025": {
+      "binary_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "decoded_instructions": 4488162,
+      "method_refs": {
+        "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z": {
+          "method_rva": "0x6cbb30",
+          "count": 7,
+          "references": [
+            {
+              "callsite_rva": "0x6dec9b",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z"
+            },
+            {
+              "callsite_rva": "0x6f13ea",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x6f1449",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x6f1ce8",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x6f2627",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x6f2791",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x6f3258",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            }
+          ]
+        },
+        "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z": {
+          "method_rva": "0xaa100",
+          "count": 0,
+          "references": []
+        },
+        "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z": {
+          "method_rva": "0x6cd3c0",
+          "count": 4,
+          "references": [
+            {
+              "callsite_rva": "0x6e3358",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x6e3bbb",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x6ead60",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+            },
+            {
+              "callsite_rva": "0x77d3f2",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?CheckAGMSafety@BEE_VectorUtils@@YA_NAEBV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBD1@Z"
+            }
+          ]
+        },
+        "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ": {
+          "method_rva": "0x6ce010",
+          "count": 0,
+          "references": []
+        },
+        "?GetStreamIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ": {
+          "method_rva": "0x6ced00",
+          "count": 2,
+          "references": [
+            {
+              "callsite_rva": "0x6f5c6c",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x705451",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEE_Vec3D_CollectShapeGroupMaterialOverrides@BEE_VectorStream3D@@YAXPEAVBEE_VectorLayer@@UT_Time@@AEAVGroup@BEE_VectorArt@@AEAUShapeGroupState@1@@Z"
+            }
+          ]
+        },
+        "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z": {
+          "method_rva": "0x6e3930",
+          "count": 5,
+          "references": [
+            {
+              "callsite_rva": "0x6b7b9b",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetNumEntries@BEE_StreamGroupUniqueNameHelper@@UEBAIXZ"
+            },
+            {
+              "callsite_rva": "0x6e18a3",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z"
+            },
+            {
+              "callsite_rva": "0x6e3302",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x6e47eb",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?UnregisterStreams@BEE_VectorLayer@@SAXXZ"
+            },
+            {
+              "callsite_rva": "0x6eac9d",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+            }
+          ]
+        },
+        "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z": {
+          "method_rva": "0xc9720",
+          "count": 2,
+          "references": [
+            {
+              "callsite_rva": "0x6667be",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEE_UpdateToAddKeyframes@@YAHPEAVBEE_AddKeyframesInfo@@H@Z"
+            },
+            {
+              "callsite_rva": "0x6729a4",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEEp_CmdLayerLeaving@@YAHPEAVBEE_Layer@@@Z"
+            }
+          ]
+        },
+        "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z": {
+          "method_rva": "0x6833a0",
+          "count": 3,
+          "references": [
+            {
+              "callsite_rva": "0x24eb99",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@@Z"
+            },
+            {
+              "callsite_rva": "0x28ee00",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?NewXformCache2D@BEE_AVLayer@@UEBA?AV?$shared_ptr@VBEE_XformCache@@@std@@AEBUT_Time@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x6a8452",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetNumEntries@BEE_StreamGroupUniqueNameHelper@@UEBAIXZ"
+            }
+          ]
+        },
+        "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z": {
+          "method_rva": "0x6ecb60",
+          "count": 3,
+          "references": [
+            {
+              "callsite_rva": "0x2a1ad8",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z"
+            },
+            {
+              "callsite_rva": "0x6e23f9",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetBoundingBoxCompTime@BEE_VectorLayer@@UEBAPEAVBEE_BoundingBox@@PEBUT_Time@@EPEBVTDB_ParamBag@@_N@Z"
+            },
+            {
+              "callsite_rva": "0x6e3afc",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            }
+          ]
+        }
+      }
+    },
+    "AE2026": {
+      "binary_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "decoded_instructions": 4626191,
+      "method_refs": {
+        "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z": {
+          "method_rva": "0x6f08b0",
+          "count": 8,
+          "references": [
+            {
+              "callsite_rva": "0x70352c",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z"
+            },
+            {
+              "callsite_rva": "0x7157f2",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x71581b",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x715859",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x715d32",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x716755",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x716870",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x7171b6",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            }
+          ]
+        },
+        "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z": {
+          "method_rva": "0xafc90",
+          "count": 0,
+          "references": []
+        },
+        "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z": {
+          "method_rva": "0x6f2000",
+          "count": 4,
+          "references": [
+            {
+              "callsite_rva": "0x707b5a",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x708448",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x70f1a0",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+            },
+            {
+              "callsite_rva": "0x79ddcf",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?CheckAGMSafety@BEE_VectorUtils@@YA_NAEBV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBD1@Z"
+            }
+          ]
+        },
+        "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ": {
+          "method_rva": "0x6f2b70",
+          "count": 0,
+          "references": []
+        },
+        "?GetStreamIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ": {
+          "method_rva": "0x6f3740",
+          "count": 2,
+          "references": [
+            {
+              "callsite_rva": "0x719a71",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+            },
+            {
+              "callsite_rva": "0x727c41",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEE_Vec3D_CollectShapeGroupMaterialOverrides@BEE_VectorStream3D@@YAXPEAVBEE_VectorLayer@@UT_Time@@AEAVGroup@BEE_VectorArt@@AEAUShapeGroupState@1@@Z"
+            }
+          ]
+        },
+        "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z": {
+          "method_rva": "0x7081b0",
+          "count": 6,
+          "references": [
+            {
+              "callsite_rva": "0x6db975",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetNumEntries@BEE_StreamGroupUniqueNameHelper@@UEBAIXZ"
+            },
+            {
+              "callsite_rva": "0x6dc705",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetNumEntries@BEE_StreamGroupUniqueNameHelper@@UEBAIXZ"
+            },
+            {
+              "callsite_rva": "0x706164",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z"
+            },
+            {
+              "callsite_rva": "0x707b2f",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x709c72",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GenerateAnimatedShapesForExtrude@BEE_VectorLayer@@QEAAXAEBUT_Time@@EAEAVBEE_AnimatedShapesArray@@@Z"
+            },
+            {
+              "callsite_rva": "0x70f0cd",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+            }
+          ]
+        },
+        "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z": {
+          "method_rva": "0xcfc70",
+          "count": 2,
+          "references": [
+            {
+              "callsite_rva": "0x68200e",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEE_UpdateToAddKeyframes@@YAHPEAVBEE_AddKeyframesInfo@@H@Z"
+            },
+            {
+              "callsite_rva": "0x68e8a1",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEEp_CmdLayerLeaving@@YAHPEAVBEE_Layer@@@Z"
+            }
+          ]
+        },
+        "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z": {
+          "method_rva": "0x69f7b0",
+          "count": 4,
+          "references": [
+            {
+              "callsite_rva": "0x258e58",
+              "mnemonic": "call",
+              "nearest_preceding_export": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@_N@Z"
+            },
+            {
+              "callsite_rva": "0x298002",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?NewXformCache2D@BEE_AVLayer@@UEBA?AV?$shared_ptr@VBEE_XformCache@@@std@@AEBUT_Time@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "callsite_rva": "0x3ae6cc",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z"
+            },
+            {
+              "callsite_rva": "0x6cbad2",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetNumEntries@BEE_StreamGroupUniqueNameHelper@@UEBAIXZ"
+            }
+          ]
+        },
+        "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z": {
+          "method_rva": "0x710ee0",
+          "count": 3,
+          "references": [
+            {
+              "callsite_rva": "0x2aa759",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z"
+            },
+            {
+              "callsite_rva": "0x706c13",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetBoundingBoxCompTime@BEE_VectorLayer@@UEBAPEAVBEE_BoundingBox@@PEBUT_Time@@EPEBVTDB_ParamBag@@_N@Z"
+            },
+            {
+              "callsite_rva": "0x7083e3",
+              "mnemonic": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

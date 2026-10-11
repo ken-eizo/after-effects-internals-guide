@@ -1,0 +1,560 @@
+{
+  "evidence": "E2-L binary export artifact only",
+  "scope": "AE2025 and AE2026 BEE.dll; no dynamic runtime calls",
+  "modules": {
+    "2025": {
+      "dll": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "export_count": 13647,
+      "categories": {
+        "origin_stream_id": {
+          "count": 20,
+          "symbols": [
+            {
+              "ordinal": 925,
+              "rva": "0029DB60",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@$$QEAV01@@Z"
+            },
+            {
+              "ordinal": 926,
+              "rva": "0029DBA0",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBV01@@Z"
+            },
+            {
+              "ordinal": 927,
+              "rva": "006C9700",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 928,
+              "rva": "0029DBE0",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@XZ"
+            },
+            {
+              "ordinal": 1402,
+              "rva": "0029E670",
+              "decorated": "??1OriginInfo@BEE_VectorArt@@QEAA@XZ"
+            },
+            {
+              "ordinal": 2731,
+              "rva": "0029EB90",
+              "decorated": "??4OriginInfo@BEE_VectorArt@@QEAAAEAV01@$$QEAV01@@Z"
+            },
+            {
+              "ordinal": 2732,
+              "rva": "0029EBD0",
+              "decorated": "??4OriginInfo@BEE_VectorArt@@QEAAAEAV01@AEBV01@@Z"
+            },
+            {
+              "ordinal": 2881,
+              "rva": "006CA6C0",
+              "decorated": "??8OriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 2885,
+              "rva": "0029ED50",
+              "decorated": "??9OriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 2894,
+              "rva": "006CA8B0",
+              "decorated": "??MOriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 3466,
+              "rva": "006CBB30",
+              "decorated": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z"
+            },
+            {
+              "ordinal": 3467,
+              "rva": "006CBB80",
+              "decorated": "?AppendSyntheticPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 6609,
+              "rva": "006CE010",
+              "decorated": "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 9903,
+              "rva": "006CED00",
+              "decorated": "?GetStreamIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 9906,
+              "rva": "006CED10",
+              "decorated": "?GetStreamIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 9951,
+              "rva": "006CED60",
+              "decorated": "?GetSynthIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 9952,
+              "rva": "006CED70",
+              "decorated": "?GetSynthIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 11675,
+              "rva": "006D0530",
+              "decorated": "?IsOriginSynthetic@OriginInfo@BEE_VectorArt@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 12710,
+              "rva": "006D1760",
+              "decorated": "?SetStreamIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 12722,
+              "rva": "006D1840",
+              "decorated": "?SetSynthIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "synthetic_origin": {
+          "count": 6,
+          "symbols": [
+            {
+              "ordinal": 3466,
+              "rva": "006CBB30",
+              "decorated": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z"
+            },
+            {
+              "ordinal": 3467,
+              "rva": "006CBB80",
+              "decorated": "?AppendSyntheticPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 9951,
+              "rva": "006CED60",
+              "decorated": "?GetSynthIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 9952,
+              "rva": "006CED70",
+              "decorated": "?GetSynthIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 11675,
+              "rva": "006D0530",
+              "decorated": "?IsOriginSynthetic@OriginInfo@BEE_VectorArt@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 12722,
+              "rva": "006D1840",
+              "decorated": "?SetSynthIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "layer_select_display_list": {
+          "count": 9,
+          "symbols": [
+            {
+              "ordinal": 878,
+              "rva": "0024EA90",
+              "decorated": "??0C_AGMDLTranslatePort@@QEAA@AEBV0@@Z"
+            },
+            {
+              "ordinal": 879,
+              "rva": "0024EAE0",
+              "decorated": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@@Z"
+            },
+            {
+              "ordinal": 1381,
+              "rva": "002527E0",
+              "decorated": "??1C_AGMDLTranslatePort@@QEAA@XZ"
+            },
+            {
+              "ordinal": 2659,
+              "rva": "00252E40",
+              "decorated": "??4C_AGMDLTranslatePort@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "ordinal": 8402,
+              "rva": "00281140",
+              "decorated": "?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ"
+            },
+            {
+              "ordinal": 9463,
+              "rva": "006831E0",
+              "decorated": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ"
+            },
+            {
+              "ordinal": 11940,
+              "rva": "006833A0",
+              "decorated": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z"
+            },
+            {
+              "ordinal": 11941,
+              "rva": "00683440",
+              "decorated": "?LayerSelectTeardown@C_AGMDLTranslatePort@@QEAAXXZ"
+            },
+            {
+              "ordinal": 13555,
+              "rva": "015EF190",
+              "decorated": "?fProcs@C_AGMDLTranslatePort@@0PEAU_t_NewAGMDLTranslatePortInterface@@EA"
+            }
+          ]
+        },
+        "vector_evaluation": {
+          "count": 3,
+          "symbols": [
+            {
+              "ordinal": 6526,
+              "rva": "006CD3C0",
+              "decorated": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+            },
+            {
+              "ordinal": 10559,
+              "rva": "006E3930",
+              "decorated": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "ordinal": 12076,
+              "rva": "006ECB60",
+              "decorated": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+            }
+          ]
+        },
+        "layer_selection": {
+          "count": 7,
+          "symbols": [
+            {
+              "ordinal": 3457,
+              "rva": "000C6B30",
+              "decorated": "?AnyKeysSelected@BEE_SelLayer@@QEBA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 4121,
+              "rva": "000AA100",
+              "decorated": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 4429,
+              "rva": "000C7560",
+              "decorated": "?BEE_SelectAllKeyframes@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 4430,
+              "rva": "000C7710",
+              "decorated": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 4432,
+              "rva": "000C7810",
+              "decorated": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 6218,
+              "rva": "002A1790",
+              "decorated": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z"
+            },
+            {
+              "ordinal": 11682,
+              "rva": "000C9720",
+              "decorated": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "factory_registration": {
+          "count": 3,
+          "symbols": [
+            {
+              "ordinal": 12188,
+              "rva": "002EC310",
+              "decorated": "?RegisterStreams@BEE_Layer@@SAX_N@Z"
+            },
+            {
+              "ordinal": 12193,
+              "rva": "005AE290",
+              "decorated": "?RegisterStreams@BEE_TextLayer@@SAXXZ"
+            },
+            {
+              "ordinal": 12194,
+              "rva": "006E4100",
+              "decorated": "?RegisterStreams@BEE_VectorLayer@@SAXXZ"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "dll": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\BEE.dll",
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "export_count": 14182,
+      "categories": {
+        "origin_stream_id": {
+          "count": 20,
+          "symbols": [
+            {
+              "ordinal": 995,
+              "rva": "002A6900",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@$$QEAV01@@Z"
+            },
+            {
+              "ordinal": 996,
+              "rva": "002A6940",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBV01@@Z"
+            },
+            {
+              "ordinal": 997,
+              "rva": "006EE350",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 998,
+              "rva": "002A6980",
+              "decorated": "??0OriginInfo@BEE_VectorArt@@QEAA@XZ"
+            },
+            {
+              "ordinal": 1498,
+              "rva": "002A73C0",
+              "decorated": "??1OriginInfo@BEE_VectorArt@@QEAA@XZ"
+            },
+            {
+              "ordinal": 2864,
+              "rva": "002A78D0",
+              "decorated": "??4OriginInfo@BEE_VectorArt@@QEAAAEAV01@$$QEAV01@@Z"
+            },
+            {
+              "ordinal": 2865,
+              "rva": "002A7910",
+              "decorated": "??4OriginInfo@BEE_VectorArt@@QEAAAEAV01@AEBV01@@Z"
+            },
+            {
+              "ordinal": 3014,
+              "rva": "006EF360",
+              "decorated": "??8OriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 3018,
+              "rva": "002A7A90",
+              "decorated": "??9OriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 3027,
+              "rva": "006EF3E0",
+              "decorated": "??MOriginInfo@BEE_VectorArt@@QEBA_NAEBV01@@Z"
+            },
+            {
+              "ordinal": 3641,
+              "rva": "006F08B0",
+              "decorated": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z"
+            },
+            {
+              "ordinal": 3642,
+              "rva": "006F0900",
+              "decorated": "?AppendSyntheticPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 6906,
+              "rva": "006F2B70",
+              "decorated": "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 10279,
+              "rva": "006F3740",
+              "decorated": "?GetStreamIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 10282,
+              "rva": "006F3750",
+              "decorated": "?GetStreamIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 10328,
+              "rva": "006F37A0",
+              "decorated": "?GetSynthIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 10329,
+              "rva": "006F37B0",
+              "decorated": "?GetSynthIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 12127,
+              "rva": "006F4F50",
+              "decorated": "?IsOriginSynthetic@OriginInfo@BEE_VectorArt@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 13205,
+              "rva": "006F5FD0",
+              "decorated": "?SetStreamIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 13220,
+              "rva": "006F60B0",
+              "decorated": "?SetSynthIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "synthetic_origin": {
+          "count": 6,
+          "symbols": [
+            {
+              "ordinal": 3641,
+              "rva": "006F08B0",
+              "decorated": "?AppendSyntheticIndex@OriginInfo@BEE_VectorArt@@QEAAXI@Z"
+            },
+            {
+              "ordinal": 3642,
+              "rva": "006F0900",
+              "decorated": "?AppendSyntheticPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 10328,
+              "rva": "006F37A0",
+              "decorated": "?GetSynthIDPath@OriginInfo@BEE_VectorArt@@QEBAAEBVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 10329,
+              "rva": "006F37B0",
+              "decorated": "?GetSynthIDPathReference@OriginInfo@BEE_VectorArt@@QEAAAEAVTDB_StreamIDPath@@XZ"
+            },
+            {
+              "ordinal": 12127,
+              "rva": "006F4F50",
+              "decorated": "?IsOriginSynthetic@OriginInfo@BEE_VectorArt@@QEBA_NXZ"
+            },
+            {
+              "ordinal": 13220,
+              "rva": "006F60B0",
+              "decorated": "?SetSynthIDPath@OriginInfo@BEE_VectorArt@@QEAAXAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "layer_select_display_list": {
+          "count": 9,
+          "symbols": [
+            {
+              "ordinal": 948,
+              "rva": "00258D50",
+              "decorated": "??0C_AGMDLTranslatePort@@QEAA@AEBV0@@Z"
+            },
+            {
+              "ordinal": 949,
+              "rva": "00258DA0",
+              "decorated": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@_N@Z"
+            },
+            {
+              "ordinal": 1477,
+              "rva": "0025CB90",
+              "decorated": "??1C_AGMDLTranslatePort@@QEAA@XZ"
+            },
+            {
+              "ordinal": 2792,
+              "rva": "0025D300",
+              "decorated": "??4C_AGMDLTranslatePort@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "ordinal": 8768,
+              "rva": "0028A5A0",
+              "decorated": "?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ"
+            },
+            {
+              "ordinal": 9836,
+              "rva": "0069F5F0",
+              "decorated": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ"
+            },
+            {
+              "ordinal": 12411,
+              "rva": "0069F7B0",
+              "decorated": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z"
+            },
+            {
+              "ordinal": 12412,
+              "rva": "0069F850",
+              "decorated": "?LayerSelectTeardown@C_AGMDLTranslatePort@@QEAAXXZ"
+            },
+            {
+              "ordinal": 14090,
+              "rva": "0169FB18",
+              "decorated": "?fProcs@C_AGMDLTranslatePort@@0PEAU_t_NewAGMDLTranslatePortInterface@@EA"
+            }
+          ]
+        },
+        "vector_evaluation": {
+          "count": 3,
+          "symbols": [
+            {
+              "ordinal": 6821,
+              "rva": "006F2000",
+              "decorated": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+            },
+            {
+              "ordinal": 10964,
+              "rva": "007081B0",
+              "decorated": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+            },
+            {
+              "ordinal": 12550,
+              "rva": "00710EE0",
+              "decorated": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+            }
+          ]
+        },
+        "layer_selection": {
+          "count": 7,
+          "symbols": [
+            {
+              "ordinal": 3632,
+              "rva": "000CD040",
+              "decorated": "?AnyKeysSelected@BEE_SelLayer@@QEBA_NAEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "ordinal": 4300,
+              "rva": "000AFC90",
+              "decorated": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z"
+            },
+            {
+              "ordinal": 4618,
+              "rva": "000CDA50",
+              "decorated": "?BEE_SelectAllKeyframes@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 4619,
+              "rva": "000CDBF0",
+              "decorated": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 4621,
+              "rva": "000CDD00",
+              "decorated": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "ordinal": 6505,
+              "rva": "002AA410",
+              "decorated": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z"
+            },
+            {
+              "ordinal": 12134,
+              "rva": "000CFC70",
+              "decorated": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z"
+            }
+          ]
+        },
+        "factory_registration": {
+          "count": 3,
+          "symbols": [
+            {
+              "ordinal": 12664,
+              "rva": "002F4E50",
+              "decorated": "?RegisterStreams@BEE_Layer@@SAX_N@Z"
+            },
+            {
+              "ordinal": 12669,
+              "rva": "005CD7E0",
+              "decorated": "?RegisterStreams@BEE_TextLayer@@SAXXZ"
+            },
+            {
+              "ordinal": 12670,
+              "rva": "00708A30",
+              "decorated": "?RegisterStreams@BEE_VectorLayer@@SAXXZ"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

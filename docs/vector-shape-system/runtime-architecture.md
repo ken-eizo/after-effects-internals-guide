@@ -28,6 +28,10 @@ BEE_VectorLayer::Rasterize2DGraph(...)
         v
 RG_RenderNode -> PF_World / render graph materialization
 ```
+## 2026-10-11 — Native path provenance and edit selection investigation
+
+The AE2026 host-executed ShapeLayerAE traversal is archived in `experiments/vector-shape/EXP-SHAPE-001-host-success.md`. A 2025/2026 static audit established `BEE_VectorArt::OriginInfo` direct and synthetic `TDB_StreamIDPath` accessors, plus a host-side selected-shape-path enumeration function `BEE_GetSelectedShapePathsVec`. Bounded disassembly confirms the latter invokes `BEE_SelIterate`, and the VectorLayer constructor initializes its vector art cache. These E2-L observations do **not** prove a Pen-tool binding, supported independent Contents registration, or a plugin geometry output API. For explicit tests and raw evidence see [Native Vector Editability and Provenance](native-edit-and-provenance-bridge.md).
+
 ## Important boundaries
 `BEE_VectorArt::OriginInfo` stores a `TDB_StreamIDPath`, so evaluated vector objects retain a route back to stream identity. This is consistent with selective invalidation and with operator-specific provenance surviving after stream evaluation.
 
