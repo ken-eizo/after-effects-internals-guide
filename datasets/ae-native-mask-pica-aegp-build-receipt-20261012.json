@@ -1,0 +1,24 @@
+{
+  "classification": "E0-H public AE SDK25.6 + compiled PE metadata static verification. No AE actual runtime execution.",
+  "compiled_aex": "D:\\Developer\\ShapeLayerAE\\build\\native_editable_path\\Release\\NativeEditablePathBridge.aex",
+  "aex_sha256": "42a86fb75c0c96f5bfbeaf0736afc58ed2e9975d81567d08f7593dedc5f3fc8a",
+  "bytes": 30720,
+  "exported_entrypoints": [
+    "EntryPointFunc"
+  ],
+  "pipl_resource_found": true,
+  "native_shape_contents_owned_by_effect": false,
+  "native_mask_ownership_target": "selected BEE AV layer, via public AEGP MaskSuite4",
+  "production_shape_vectorart_renderer_hook": false,
+  "native_mask_compositor_expected_when_add_mode": true,
+  "AE_actual_native_mask_creation_test": false,
+  "commands": [
+    "CompNodeAE: Create Native Editable Mask from PICA",
+    "CompNodeAE: Native Mask Renderer (ADD, Clips Layer)",
+    "CompNodeAE: Inspect Native Owner Roots (Read Only)"
+  ],
+  "native_vertex_geometry": "CNL 4 cubic paths -> mask vertices x0,y0; in tangent previous cubic x2-p_i; out tangent current cubic x1-p_i",
+  "mutation": "only from explicit menu commands; disabled if no active selected AV layer; failure cleanup and undo group",
+  "provider_expected_sha256": "85f189f8e3bfa22ba9858ee1b5b95ae21b5462cf271f9f23f889708d306e5802",
+  "build_parent": "D:/Developer/ShapeLayerAE/build/native_editable_path/Release"
+}

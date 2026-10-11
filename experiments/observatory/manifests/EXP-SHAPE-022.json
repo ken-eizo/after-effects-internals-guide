@@ -1,0 +1,38 @@
+{
+  "experiment_id": "EXP-SHAPE-022",
+  "title": "Host-native Mask Path creation from PICA Bezier output, no Shape Layer",
+  "status": "compiled-not-tested-in-AE",
+  "date": "2026-10-12",
+  "question": "Can a CompNodeAE AEGP author actual cubic Bezier points in AE's host-owned native Mask stream on an ordinary AV layer, making it Pen-editable and composited by AE's own Mask ADD renderer?",
+  "evidence": [
+    "E0-H Adobe SDK25.6 MaskSuite4/MaskOutlineSuite2/StreamSuite2 declarations",
+    "E0-S Adobe Projector SDK sample authoring native mask vertices",
+    "compiled-PE x86-64 plugin with AEGP PiPL and EntryPointFunc",
+    "E2-X earlier AE2026 independent PICA Bezier provider confirmed"
+  ],
+  "result": {
+    "compiled": "PASS",
+    "aex_local": "D:/Developer/ShapeLayerAE/build/native_editable_path/Release/NativeEditablePathBridge.aex",
+    "sha256": "42a86fb75c0c96f5bfbeaf0736afc58ed2e9975d81567d08f7593dedc5f3fc8a",
+    "static_qa": "PASS",
+    "host_test": "NOT RUN",
+    "can_create_editable_mask": "CODE IMPLEMENTED, PENDING USER AE HOST TEST",
+    "can_request_ae_native_mask_rendering": "CODE IMPLEMENTED with PF_MaskMode_ADD, PENDING USER AE HOST TEST",
+    "read_only_host_root_probe": "CODE IMPLEMENTED, PENDING USER AE HOST TEST",
+    "private_TDB_BEE_API_calls": false,
+    "AE_effect_owned_contents": false
+  },
+  "safety": [
+    "No automatic AE installation; user exclusively handles plugin install and host GUI",
+    "Only user-initiated Animation menu invokes mutating mask authoring",
+    "Refuse non-AV layer and missing PICA provider; only call in test project",
+    "Host Undo groups and cleanup of incomplete mask",
+    "Direct TDB native operator registry and host vector renderer remain separate unproven targets"
+  ],
+  "source_paths": [
+    "research/findings/F-VECTOR-024-native-mask-path-pica-bridge.md",
+    "experiments/vector-shape/EXP-SHAPE-022-native-editable-mask-pica-integration.md",
+    "experiments/vector-shape/native-editable-path-lab/NativeEditablePathBridge.cpp",
+    "experiments/vector-shape/native-editable-path-lab/README.md"
+  ]
+}

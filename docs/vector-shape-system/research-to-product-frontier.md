@@ -75,3 +75,12 @@ Each session should explicitly state:
 - **AEIG experiment/result paths, plugin source/build state, build/test status and Git commit**.
 
 Related findings: F-VECTOR-013 through F-VECTOR-023. New observed receipt: datasets/ae-pica-vector-bridge-two-plugin-build-receipt-2026.json. Public source references: local Adobe SDK 25.6 Sweetie/Checkout; https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ ; https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .
+
+
+## 2026-10-12: first actual native editing adapter, not native Effect Contents (E0-H, compiled)
+
+A new independent AEGP uses the already-confirmed PICA procedural cubic geometry to create a **real editable AE native Mask Path** on the user-selected ordinary AV Layer, with four exact cubic vertices and tangent handles. An opt-in Mask NONE mode permits native Pen edit while leaving layer pixels alone. Another explicit Mask ADD command would engage AE's built-in Mask compositor rather than our own PF_World rasterizer. A third read-only command compares root stream MatchNames, useful for locating the ownership difference between Mask Parade and Root Vectors Group.
+
+**Compiled and static-verified only; not installed/tested in actual AE in this session.** This is an intermediate, host-standard path authoring integration, not independent effect-owned Contents, native Shape evaluator or direct BEE/AGM vector output. See Finding F-VECTOR-024, EXP-SHAPE-022 and the standalone native-editable-path-lab. If user confirmation succeeds, compare selected native Mask/Shape identities, native Pen tools and live mask rendering to design a next research probe for independent TDB owner registration.
+
+User-facing consequence of a successful host test: a CompNodeAE companion AEGP could publish code-generated curves as normal-layer **native editable mask geometry** which users change with familiar Pen handles, native project saving and standard mask compositing. An actual new Shape-like effect remains the moonshot.
