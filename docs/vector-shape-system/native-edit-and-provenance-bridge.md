@@ -46,11 +46,15 @@ The current AE2026 real-host AEGP capture confirms the public `ADBE Root Vectors
 
 ## Controlled tests and falsification
 
-**EXP-SHAPE-005** (built but not yet loaded into the host): dump UID, internal grouping flags, stream type, and a non-mutating `CanAddStream` matrix for known built-ins, in addition to the original topology; never call `AddStream`. The plugin is located at `D:\Developer\ShapeLayerAE`, and the source is mirrored under `experiments/vector-shape/probe-src`.
+**EXP-SHAPE-005** (executed in AE2026, followed by v3 EXP-SHAPE-009/010): dump UID, internal grouping flags, stream type, and a non-mutating `CanAddStream` matrix for known built-ins, in addition to the original topology; never call `AddStream`. The plugin is located at `D:\Developer\ShapeLayerAE`, and the source is mirrored under `experiments/vector-shape/probe-src`.
 
 Then collect successive snapshots of the **same host session** before/after native Timeline child reorder and a group Path edit, and before/after Undo. Compare public session UIDs and topology, not `StreamRefH` pointer values. Test a Shape Layer, a nonshape layer with a normal effect, an empty Shape Layer, and a Repeater case. Full parity remains conditional on independent native type registration, host Pen selection, evaluation and project persistence.
 
 **Failure criteria**: a plugin-only custom indexed group cannot be instantiated as a native persistent stream type; a synthetic evaluated instance is not associated with a selectable Timeline stream; or VectorArt can only be drawn through a raster bridge. Each failure narrows the native extensibility frontier without negating successful public AEGP traversal.
+
+## Host v3 note
+
+A user-installed AEGP has now successfully invoked the pinned no-argument private `Get_AE_StreamFactory` getter without dereferencing its non-null pointer; the new unknown-name `CanAddStream` experiment also succeeded. These do not establish external factory registration, editable path ownership or native VectorArt handoff. See `F-VECTOR-010`, `F-VECTOR-011`, `F-VECTOR-012` and [Independent Native Vector Output](native-vector-output-ownership.md).
 
 ## Sources / raw artifacts
 

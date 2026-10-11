@@ -1,0 +1,1935 @@
+{
+  "scope": "bounded static x64 PE import callsite map, E2-L",
+  "versions": {
+    "2025": [
+      {
+        "start": "0x715e80",
+        "end": "0x716882",
+        "calls": 55,
+        "imports": [
+          {
+            "rva": "0x715eca",
+            "op": "call qword ptr [rip + 0x7a8518]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715ef8",
+            "op": "call qword ptr [rip + 0x7a84ea]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715f26",
+            "op": "call qword ptr [rip + 0x7a84bc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715f54",
+            "op": "call qword ptr [rip + 0x7a848e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715f82",
+            "op": "call qword ptr [rip + 0x7a8460]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715fb0",
+            "op": "call qword ptr [rip + 0x7a8432]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x715fde",
+            "op": "call qword ptr [rip + 0x7a8404]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71600c",
+            "op": "call qword ptr [rip + 0x7a83d6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71603a",
+            "op": "call qword ptr [rip + 0x7a83a8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716068",
+            "op": "call qword ptr [rip + 0x7a837a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716096",
+            "op": "call qword ptr [rip + 0x7a834c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7160c4",
+            "op": "call qword ptr [rip + 0x7a831e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7160f2",
+            "op": "call qword ptr [rip + 0x7a82f0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716120",
+            "op": "call qword ptr [rip + 0x7a82c2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71614e",
+            "op": "call qword ptr [rip + 0x7a8294]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71617c",
+            "op": "call qword ptr [rip + 0x7a8266]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7161aa",
+            "op": "call qword ptr [rip + 0x7a8238]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7161d8",
+            "op": "call qword ptr [rip + 0x7a820a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716206",
+            "op": "call qword ptr [rip + 0x7a81dc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716234",
+            "op": "call qword ptr [rip + 0x7a81ae]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716262",
+            "op": "call qword ptr [rip + 0x7a8180]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716290",
+            "op": "call qword ptr [rip + 0x7a8152]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7162be",
+            "op": "call qword ptr [rip + 0x7a8124]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7162ec",
+            "op": "call qword ptr [rip + 0x7a80f6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71631a",
+            "op": "call qword ptr [rip + 0x7a80c8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716348",
+            "op": "call qword ptr [rip + 0x7a809a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716376",
+            "op": "call qword ptr [rip + 0x7a806c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7163a4",
+            "op": "call qword ptr [rip + 0x7a803e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7163d2",
+            "op": "call qword ptr [rip + 0x7a8010]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716400",
+            "op": "call qword ptr [rip + 0x7a7fe2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716427",
+            "op": "call qword ptr [rip + 0x7a7fbb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716455",
+            "op": "call qword ptr [rip + 0x7a7f8d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71647c",
+            "op": "call qword ptr [rip + 0x7a7f66]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7164a3",
+            "op": "call qword ptr [rip + 0x7a7f3f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7164d1",
+            "op": "call qword ptr [rip + 0x7a7f11]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7164ff",
+            "op": "call qword ptr [rip + 0x7a7ee3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71652d",
+            "op": "call qword ptr [rip + 0x7a7eb5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71655b",
+            "op": "call qword ptr [rip + 0x7a7e87]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716589",
+            "op": "call qword ptr [rip + 0x7a7e59]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7165b7",
+            "op": "call qword ptr [rip + 0x7a7e2b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7165e5",
+            "op": "call qword ptr [rip + 0x7a7dfd]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716613",
+            "op": "call qword ptr [rip + 0x7a7dcf]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716641",
+            "op": "call qword ptr [rip + 0x7a7da1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71666f",
+            "op": "call qword ptr [rip + 0x7a7d73]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716696",
+            "op": "call qword ptr [rip + 0x7a7d4c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7166c4",
+            "op": "call qword ptr [rip + 0x7a7d1e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7166f2",
+            "op": "call qword ptr [rip + 0x7a7cf0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716720",
+            "op": "call qword ptr [rip + 0x7a7cc2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71674e",
+            "op": "call qword ptr [rip + 0x7a7c94]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71677c",
+            "op": "call qword ptr [rip + 0x7a7c66]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7167aa",
+            "op": "call qword ptr [rip + 0x7a7c38]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7167d8",
+            "op": "call qword ptr [rip + 0x7a7c0a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716806",
+            "op": "call qword ptr [rip + 0x7a7bdc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716834",
+            "op": "call qword ptr [rip + 0x7a7bae]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716862",
+            "op": "call qword ptr [rip + 0x7a7b80]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x716890",
+        "end": "0x717138",
+        "calls": 48,
+        "imports": [
+          {
+            "rva": "0x7168d6",
+            "op": "call qword ptr [rip + 0x7a7b0c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716904",
+            "op": "call qword ptr [rip + 0x7a7ade]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716932",
+            "op": "call qword ptr [rip + 0x7a7ab0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716960",
+            "op": "call qword ptr [rip + 0x7a7a82]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71698e",
+            "op": "call qword ptr [rip + 0x7a7a54]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7169bc",
+            "op": "call qword ptr [rip + 0x7a7a26]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7169ea",
+            "op": "call qword ptr [rip + 0x7a79f8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716a18",
+            "op": "call qword ptr [rip + 0x7a79ca]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716a46",
+            "op": "call qword ptr [rip + 0x7a799c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716a74",
+            "op": "call qword ptr [rip + 0x7a796e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716aa2",
+            "op": "call qword ptr [rip + 0x7a7940]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716ad0",
+            "op": "call qword ptr [rip + 0x7a7912]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716afe",
+            "op": "call qword ptr [rip + 0x7a78e4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716b2c",
+            "op": "call qword ptr [rip + 0x7a78b6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716b5a",
+            "op": "call qword ptr [rip + 0x7a7888]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716b88",
+            "op": "call qword ptr [rip + 0x7a785a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716bb6",
+            "op": "call qword ptr [rip + 0x7a782c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716be4",
+            "op": "call qword ptr [rip + 0x7a77fe]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716c12",
+            "op": "call qword ptr [rip + 0x7a77d0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716c40",
+            "op": "call qword ptr [rip + 0x7a77a2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716c6e",
+            "op": "call qword ptr [rip + 0x7a7774]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716c9c",
+            "op": "call qword ptr [rip + 0x7a7746]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716cca",
+            "op": "call qword ptr [rip + 0x7a7718]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716cf8",
+            "op": "call qword ptr [rip + 0x7a76ea]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716d26",
+            "op": "call qword ptr [rip + 0x7a76bc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716d54",
+            "op": "call qword ptr [rip + 0x7a768e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716d82",
+            "op": "call qword ptr [rip + 0x7a7660]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716db0",
+            "op": "call qword ptr [rip + 0x7a7632]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716dde",
+            "op": "call qword ptr [rip + 0x7a7604]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716e0c",
+            "op": "call qword ptr [rip + 0x7a75d6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716e3a",
+            "op": "call qword ptr [rip + 0x7a75a8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716e68",
+            "op": "call qword ptr [rip + 0x7a757a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716e96",
+            "op": "call qword ptr [rip + 0x7a754c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716ec4",
+            "op": "call qword ptr [rip + 0x7a751e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716eeb",
+            "op": "call qword ptr [rip + 0x7a74f7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716f19",
+            "op": "call qword ptr [rip + 0x7a74c9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716f47",
+            "op": "call qword ptr [rip + 0x7a749b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716f75",
+            "op": "call qword ptr [rip + 0x7a746d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716fac",
+            "op": "call qword ptr [rip + 0x7a7436]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x716fda",
+            "op": "call qword ptr [rip + 0x7a7408]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717008",
+            "op": "call qword ptr [rip + 0x7a73da]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717036",
+            "op": "call qword ptr [rip + 0x7a73ac]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717064",
+            "op": "call qword ptr [rip + 0x7a737e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717092",
+            "op": "call qword ptr [rip + 0x7a7350]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7170c0",
+            "op": "call qword ptr [rip + 0x7a7322]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7170ee",
+            "op": "call qword ptr [rip + 0x7a72f4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71711c",
+            "op": "call qword ptr [rip + 0x7a72c6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x717140",
+        "end": "0x7174d0",
+        "calls": 19,
+        "imports": [
+          {
+            "rva": "0x717186",
+            "op": "call qword ptr [rip + 0x7a725c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7171b4",
+            "op": "call qword ptr [rip + 0x7a722e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7171e2",
+            "op": "call qword ptr [rip + 0x7a7200]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717210",
+            "op": "call qword ptr [rip + 0x7a71d2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71723e",
+            "op": "call qword ptr [rip + 0x7a71a4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71726c",
+            "op": "call qword ptr [rip + 0x7a7176]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71729a",
+            "op": "call qword ptr [rip + 0x7a7148]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7172c1",
+            "op": "call qword ptr [rip + 0x7a7121]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7172ef",
+            "op": "call qword ptr [rip + 0x7a70f3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71731d",
+            "op": "call qword ptr [rip + 0x7a70c5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71734b",
+            "op": "call qword ptr [rip + 0x7a7097]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717379",
+            "op": "call qword ptr [rip + 0x7a7069]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7173a7",
+            "op": "call qword ptr [rip + 0x7a703b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7173d5",
+            "op": "call qword ptr [rip + 0x7a700d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7173fc",
+            "op": "call qword ptr [rip + 0x7a6fe6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x71742a",
+            "op": "call qword ptr [rip + 0x7a6fb8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717458",
+            "op": "call qword ptr [rip + 0x7a6f8a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x717486",
+            "op": "call qword ptr [rip + 0x7a6f5c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7174b4",
+            "op": "call qword ptr [rip + 0x7a6f2e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x77c630",
+        "end": "0x77d338",
+        "calls": 74,
+        "imports": [
+          {
+            "rva": "0x77c64a",
+            "op": "call qword ptr [rip + 0x741790]",
+            "import": "TDB.dll!?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ"
+          },
+          {
+            "rva": "0x77c6da",
+            "op": "call qword ptr [rip + 0x741d08]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c70c",
+            "op": "call qword ptr [rip + 0x741cd6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c73e",
+            "op": "call qword ptr [rip + 0x741ca4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c770",
+            "op": "call qword ptr [rip + 0x741c72]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c7a2",
+            "op": "call qword ptr [rip + 0x741c40]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c7d4",
+            "op": "call qword ptr [rip + 0x741c0e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c806",
+            "op": "call qword ptr [rip + 0x741bdc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c838",
+            "op": "call qword ptr [rip + 0x741baa]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c86a",
+            "op": "call qword ptr [rip + 0x741b78]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c89c",
+            "op": "call qword ptr [rip + 0x741b46]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c8ce",
+            "op": "call qword ptr [rip + 0x741b14]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c900",
+            "op": "call qword ptr [rip + 0x741ae2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c932",
+            "op": "call qword ptr [rip + 0x741ab0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c964",
+            "op": "call qword ptr [rip + 0x741a7e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c996",
+            "op": "call qword ptr [rip + 0x741a4c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c9c8",
+            "op": "call qword ptr [rip + 0x741a1a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77c9fa",
+            "op": "call qword ptr [rip + 0x7419e8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ca2c",
+            "op": "call qword ptr [rip + 0x7419b6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ca5e",
+            "op": "call qword ptr [rip + 0x741984]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ca90",
+            "op": "call qword ptr [rip + 0x741952]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cac2",
+            "op": "call qword ptr [rip + 0x741920]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77caf4",
+            "op": "call qword ptr [rip + 0x7418ee]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cb26",
+            "op": "call qword ptr [rip + 0x7418bc]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cb58",
+            "op": "call qword ptr [rip + 0x74188a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cb8a",
+            "op": "call qword ptr [rip + 0x741858]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cbbc",
+            "op": "call qword ptr [rip + 0x741826]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cbee",
+            "op": "call qword ptr [rip + 0x7417f4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cc20",
+            "op": "call qword ptr [rip + 0x7417c2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cc52",
+            "op": "call qword ptr [rip + 0x741790]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cc84",
+            "op": "call qword ptr [rip + 0x74175e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ccb6",
+            "op": "call qword ptr [rip + 0x74172c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cce8",
+            "op": "call qword ptr [rip + 0x7416fa]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cd1a",
+            "op": "call qword ptr [rip + 0x7416c8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cd4c",
+            "op": "call qword ptr [rip + 0x741696]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cd7e",
+            "op": "call qword ptr [rip + 0x741664]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cdb0",
+            "op": "call qword ptr [rip + 0x741632]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cde2",
+            "op": "call qword ptr [rip + 0x741600]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ce14",
+            "op": "call qword ptr [rip + 0x7415ce]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ce46",
+            "op": "call qword ptr [rip + 0x74159c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ce78",
+            "op": "call qword ptr [rip + 0x74156a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77ceaa",
+            "op": "call qword ptr [rip + 0x741538]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cedc",
+            "op": "call qword ptr [rip + 0x741506]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cf0e",
+            "op": "call qword ptr [rip + 0x7414d4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cf40",
+            "op": "call qword ptr [rip + 0x7414a2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cf72",
+            "op": "call qword ptr [rip + 0x741470]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cfa4",
+            "op": "call qword ptr [rip + 0x74143e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77cfd6",
+            "op": "call qword ptr [rip + 0x74140c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d008",
+            "op": "call qword ptr [rip + 0x7413da]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d03a",
+            "op": "call qword ptr [rip + 0x7413a8]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d06c",
+            "op": "call qword ptr [rip + 0x741376]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d09e",
+            "op": "call qword ptr [rip + 0x741344]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d0d0",
+            "op": "call qword ptr [rip + 0x741312]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d102",
+            "op": "call qword ptr [rip + 0x7412e0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d134",
+            "op": "call qword ptr [rip + 0x7412ae]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d166",
+            "op": "call qword ptr [rip + 0x74127c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d198",
+            "op": "call qword ptr [rip + 0x74124a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d1ca",
+            "op": "call qword ptr [rip + 0x741218]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d1fc",
+            "op": "call qword ptr [rip + 0x7411e6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d22e",
+            "op": "call qword ptr [rip + 0x7411b4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d260",
+            "op": "call qword ptr [rip + 0x741182]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d28b",
+            "op": "call qword ptr [rip + 0x741157]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d2bd",
+            "op": "call qword ptr [rip + 0x741125]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x77d2cd",
+            "op": "call qword ptr [rip + 0x740fe5]",
+            "import": "TDB.dll!?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "rva": "0x77d2d5",
+            "op": "call qword ptr [rip + 0x741115]",
+            "import": "TDB.dll!?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          },
+          {
+            "rva": "0x77d314",
+            "op": "call qword ptr [rip + 0x7410be]",
+            "import": "TDB.dll!??0TDB_ScRegisterStreams@@QEAA@PEAVTDB_StreamFactory@@@Z"
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "start": "0x738360",
+        "end": "0x738d4a",
+        "calls": 55,
+        "imports": [
+          {
+            "rva": "0x73839f",
+            "op": "call qword ptr [rip + 0x7df523]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7383cd",
+            "op": "call qword ptr [rip + 0x7df4f5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7383fb",
+            "op": "call qword ptr [rip + 0x7df4c7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738429",
+            "op": "call qword ptr [rip + 0x7df499]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738457",
+            "op": "call qword ptr [rip + 0x7df46b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738485",
+            "op": "call qword ptr [rip + 0x7df43d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7384b3",
+            "op": "call qword ptr [rip + 0x7df40f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7384e1",
+            "op": "call qword ptr [rip + 0x7df3e1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73850f",
+            "op": "call qword ptr [rip + 0x7df3b3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73853d",
+            "op": "call qword ptr [rip + 0x7df385]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73856b",
+            "op": "call qword ptr [rip + 0x7df357]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738599",
+            "op": "call qword ptr [rip + 0x7df329]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7385c7",
+            "op": "call qword ptr [rip + 0x7df2fb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7385f5",
+            "op": "call qword ptr [rip + 0x7df2cd]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738623",
+            "op": "call qword ptr [rip + 0x7df29f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738651",
+            "op": "call qword ptr [rip + 0x7df271]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73867f",
+            "op": "call qword ptr [rip + 0x7df243]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7386ad",
+            "op": "call qword ptr [rip + 0x7df215]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7386db",
+            "op": "call qword ptr [rip + 0x7df1e7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738709",
+            "op": "call qword ptr [rip + 0x7df1b9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738737",
+            "op": "call qword ptr [rip + 0x7df18b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738765",
+            "op": "call qword ptr [rip + 0x7df15d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738793",
+            "op": "call qword ptr [rip + 0x7df12f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7387c1",
+            "op": "call qword ptr [rip + 0x7df101]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7387ef",
+            "op": "call qword ptr [rip + 0x7df0d3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73881d",
+            "op": "call qword ptr [rip + 0x7df0a5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73884b",
+            "op": "call qword ptr [rip + 0x7df077]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738879",
+            "op": "call qword ptr [rip + 0x7df049]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7388a7",
+            "op": "call qword ptr [rip + 0x7df01b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7388d5",
+            "op": "call qword ptr [rip + 0x7defed]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7388fc",
+            "op": "call qword ptr [rip + 0x7defc6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73892a",
+            "op": "call qword ptr [rip + 0x7def98]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738951",
+            "op": "call qword ptr [rip + 0x7def71]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738978",
+            "op": "call qword ptr [rip + 0x7def4a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7389a6",
+            "op": "call qword ptr [rip + 0x7def1c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7389d4",
+            "op": "call qword ptr [rip + 0x7deeee]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738a02",
+            "op": "call qword ptr [rip + 0x7deec0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738a30",
+            "op": "call qword ptr [rip + 0x7dee92]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738a5e",
+            "op": "call qword ptr [rip + 0x7dee64]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738a8c",
+            "op": "call qword ptr [rip + 0x7dee36]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738aba",
+            "op": "call qword ptr [rip + 0x7dee08]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738ae8",
+            "op": "call qword ptr [rip + 0x7dedda]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738b16",
+            "op": "call qword ptr [rip + 0x7dedac]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738b44",
+            "op": "call qword ptr [rip + 0x7ded7e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738b6b",
+            "op": "call qword ptr [rip + 0x7ded57]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738b99",
+            "op": "call qword ptr [rip + 0x7ded29]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738bc7",
+            "op": "call qword ptr [rip + 0x7decfb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738bf5",
+            "op": "call qword ptr [rip + 0x7deccd]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738c23",
+            "op": "call qword ptr [rip + 0x7dec9f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738c51",
+            "op": "call qword ptr [rip + 0x7dec71]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738c7f",
+            "op": "call qword ptr [rip + 0x7dec43]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738cad",
+            "op": "call qword ptr [rip + 0x7dec15]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738cdb",
+            "op": "call qword ptr [rip + 0x7debe7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738d09",
+            "op": "call qword ptr [rip + 0x7debb9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738d37",
+            "op": "call qword ptr [rip + 0x7deb8b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x738d50",
+        "end": "0x7395d7",
+        "calls": 47,
+        "imports": [
+          {
+            "rva": "0x738d8b",
+            "op": "call qword ptr [rip + 0x7deb37]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738db9",
+            "op": "call qword ptr [rip + 0x7deb09]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738de7",
+            "op": "call qword ptr [rip + 0x7deadb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738e15",
+            "op": "call qword ptr [rip + 0x7deaad]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738e43",
+            "op": "call qword ptr [rip + 0x7dea7f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738e71",
+            "op": "call qword ptr [rip + 0x7dea51]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738e9f",
+            "op": "call qword ptr [rip + 0x7dea23]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738ecd",
+            "op": "call qword ptr [rip + 0x7de9f5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738efb",
+            "op": "call qword ptr [rip + 0x7de9c7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738f29",
+            "op": "call qword ptr [rip + 0x7de999]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738f57",
+            "op": "call qword ptr [rip + 0x7de96b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738f85",
+            "op": "call qword ptr [rip + 0x7de93d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738fb3",
+            "op": "call qword ptr [rip + 0x7de90f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x738fe1",
+            "op": "call qword ptr [rip + 0x7de8e1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73900f",
+            "op": "call qword ptr [rip + 0x7de8b3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73903d",
+            "op": "call qword ptr [rip + 0x7de885]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73906b",
+            "op": "call qword ptr [rip + 0x7de857]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739099",
+            "op": "call qword ptr [rip + 0x7de829]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7390c7",
+            "op": "call qword ptr [rip + 0x7de7fb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7390f5",
+            "op": "call qword ptr [rip + 0x7de7cd]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739123",
+            "op": "call qword ptr [rip + 0x7de79f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739151",
+            "op": "call qword ptr [rip + 0x7de771]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73917f",
+            "op": "call qword ptr [rip + 0x7de743]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7391ad",
+            "op": "call qword ptr [rip + 0x7de715]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7391db",
+            "op": "call qword ptr [rip + 0x7de6e7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739209",
+            "op": "call qword ptr [rip + 0x7de6b9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739237",
+            "op": "call qword ptr [rip + 0x7de68b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739265",
+            "op": "call qword ptr [rip + 0x7de65d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739293",
+            "op": "call qword ptr [rip + 0x7de62f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7392c1",
+            "op": "call qword ptr [rip + 0x7de601]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7392ef",
+            "op": "call qword ptr [rip + 0x7de5d3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73931d",
+            "op": "call qword ptr [rip + 0x7de5a5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73934b",
+            "op": "call qword ptr [rip + 0x7de577]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739379",
+            "op": "call qword ptr [rip + 0x7de549]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7393a0",
+            "op": "call qword ptr [rip + 0x7de522]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7393ce",
+            "op": "call qword ptr [rip + 0x7de4f4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7393fc",
+            "op": "call qword ptr [rip + 0x7de4c6]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73942a",
+            "op": "call qword ptr [rip + 0x7de498]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739458",
+            "op": "call qword ptr [rip + 0x7de46a]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739486",
+            "op": "call qword ptr [rip + 0x7de43c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7394b4",
+            "op": "call qword ptr [rip + 0x7de40e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7394e2",
+            "op": "call qword ptr [rip + 0x7de3e0]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739510",
+            "op": "call qword ptr [rip + 0x7de3b2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73953e",
+            "op": "call qword ptr [rip + 0x7de384]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73956c",
+            "op": "call qword ptr [rip + 0x7de356]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73959a",
+            "op": "call qword ptr [rip + 0x7de328]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7395c8",
+            "op": "call qword ptr [rip + 0x7de2fa]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x7395e0",
+        "end": "0x739958",
+        "calls": 19,
+        "imports": [
+          {
+            "rva": "0x73961b",
+            "op": "call qword ptr [rip + 0x7de2a7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739649",
+            "op": "call qword ptr [rip + 0x7de279]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739677",
+            "op": "call qword ptr [rip + 0x7de24b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7396a5",
+            "op": "call qword ptr [rip + 0x7de21d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7396d3",
+            "op": "call qword ptr [rip + 0x7de1ef]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739701",
+            "op": "call qword ptr [rip + 0x7de1c1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73972f",
+            "op": "call qword ptr [rip + 0x7de193]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739756",
+            "op": "call qword ptr [rip + 0x7de16c]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739784",
+            "op": "call qword ptr [rip + 0x7de13e]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7397b2",
+            "op": "call qword ptr [rip + 0x7de110]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7397e0",
+            "op": "call qword ptr [rip + 0x7de0e2]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73980e",
+            "op": "call qword ptr [rip + 0x7de0b4]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73983c",
+            "op": "call qword ptr [rip + 0x7de086]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73986a",
+            "op": "call qword ptr [rip + 0x7de058]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739891",
+            "op": "call qword ptr [rip + 0x7de031]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7398bf",
+            "op": "call qword ptr [rip + 0x7de003]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x7398ed",
+            "op": "call qword ptr [rip + 0x7ddfd5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x73991b",
+            "op": "call qword ptr [rip + 0x7ddfa7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x739949",
+            "op": "call qword ptr [rip + 0x7ddf79]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      },
+      {
+        "start": "0x79d040",
+        "end": "0x79dd37",
+        "calls": 73,
+        "imports": [
+          {
+            "rva": "0x79d04f",
+            "op": "call qword ptr [rip + 0x779ec3]",
+            "import": "TDB.dll!?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ"
+          },
+          {
+            "rva": "0x79d0df",
+            "op": "call qword ptr [rip + 0x77a7e3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d111",
+            "op": "call qword ptr [rip + 0x77a7b1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d143",
+            "op": "call qword ptr [rip + 0x77a77f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d175",
+            "op": "call qword ptr [rip + 0x77a74d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d1a7",
+            "op": "call qword ptr [rip + 0x77a71b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d1d9",
+            "op": "call qword ptr [rip + 0x77a6e9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d20b",
+            "op": "call qword ptr [rip + 0x77a6b7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d23d",
+            "op": "call qword ptr [rip + 0x77a685]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d26f",
+            "op": "call qword ptr [rip + 0x77a653]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d2a1",
+            "op": "call qword ptr [rip + 0x77a621]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d2d3",
+            "op": "call qword ptr [rip + 0x77a5ef]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d305",
+            "op": "call qword ptr [rip + 0x77a5bd]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d337",
+            "op": "call qword ptr [rip + 0x77a58b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d369",
+            "op": "call qword ptr [rip + 0x77a559]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d39b",
+            "op": "call qword ptr [rip + 0x77a527]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d3cd",
+            "op": "call qword ptr [rip + 0x77a4f5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d3ff",
+            "op": "call qword ptr [rip + 0x77a4c3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d431",
+            "op": "call qword ptr [rip + 0x77a491]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d463",
+            "op": "call qword ptr [rip + 0x77a45f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d495",
+            "op": "call qword ptr [rip + 0x77a42d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d4c7",
+            "op": "call qword ptr [rip + 0x77a3fb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d4f9",
+            "op": "call qword ptr [rip + 0x77a3c9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d52b",
+            "op": "call qword ptr [rip + 0x77a397]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d55d",
+            "op": "call qword ptr [rip + 0x77a365]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d58f",
+            "op": "call qword ptr [rip + 0x77a333]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d5c1",
+            "op": "call qword ptr [rip + 0x77a301]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d5f3",
+            "op": "call qword ptr [rip + 0x77a2cf]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d625",
+            "op": "call qword ptr [rip + 0x77a29d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d657",
+            "op": "call qword ptr [rip + 0x77a26b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d689",
+            "op": "call qword ptr [rip + 0x77a239]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d6bb",
+            "op": "call qword ptr [rip + 0x77a207]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d6ed",
+            "op": "call qword ptr [rip + 0x77a1d5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d71f",
+            "op": "call qword ptr [rip + 0x77a1a3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d751",
+            "op": "call qword ptr [rip + 0x77a171]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d783",
+            "op": "call qword ptr [rip + 0x77a13f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d7b5",
+            "op": "call qword ptr [rip + 0x77a10d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d7e7",
+            "op": "call qword ptr [rip + 0x77a0db]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d819",
+            "op": "call qword ptr [rip + 0x77a0a9]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d84b",
+            "op": "call qword ptr [rip + 0x77a077]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d87d",
+            "op": "call qword ptr [rip + 0x77a045]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d8af",
+            "op": "call qword ptr [rip + 0x77a013]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d8e1",
+            "op": "call qword ptr [rip + 0x779fe1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d913",
+            "op": "call qword ptr [rip + 0x779faf]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d945",
+            "op": "call qword ptr [rip + 0x779f7d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d977",
+            "op": "call qword ptr [rip + 0x779f4b]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d9a9",
+            "op": "call qword ptr [rip + 0x779f19]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79d9db",
+            "op": "call qword ptr [rip + 0x779ee7]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79da0d",
+            "op": "call qword ptr [rip + 0x779eb5]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79da3f",
+            "op": "call qword ptr [rip + 0x779e83]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79da71",
+            "op": "call qword ptr [rip + 0x779e51]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79daa3",
+            "op": "call qword ptr [rip + 0x779e1f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dad5",
+            "op": "call qword ptr [rip + 0x779ded]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79db07",
+            "op": "call qword ptr [rip + 0x779dbb]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79db39",
+            "op": "call qword ptr [rip + 0x779d89]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79db6b",
+            "op": "call qword ptr [rip + 0x779d57]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79db9d",
+            "op": "call qword ptr [rip + 0x779d25]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dbcf",
+            "op": "call qword ptr [rip + 0x779cf3]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dc01",
+            "op": "call qword ptr [rip + 0x779cc1]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dc33",
+            "op": "call qword ptr [rip + 0x779c8f]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dc65",
+            "op": "call qword ptr [rip + 0x779c5d]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dc90",
+            "op": "call qword ptr [rip + 0x779c32]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dcc2",
+            "op": "call qword ptr [rip + 0x779c00]",
+            "import": "TDB.dll!?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "rva": "0x79dcda",
+            "op": "jmp qword ptr [rip + 0x77988f]",
+            "import": "TDB.dll!?SetupCanonicalStream@TDB_StreamFactory@@QEAAXAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "rva": "0x79dce9",
+            "op": "jmp qword ptr [rip + 0x779be0]",
+            "import": "TDB.dll!?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          },
+          {
+            "rva": "0x79dd13",
+            "op": "call qword ptr [rip + 0x779b9f]",
+            "import": "TDB.dll!??0TDB_ScRegisterStreams@@QEAA@PEAVTDB_StreamFactory@@@Z"
+          }
+        ]
+      }
+    ]
+  }
+}

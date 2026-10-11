@@ -1,0 +1,782 @@
+{
+  "evidence": "E2-L; static direct call or RIP-relative reference only",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "instructions_examined": 4488162,
+      "functions": [
+        {
+          "rva": "0x806f0",
+          "export": "?Create@?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": []
+        },
+        {
+          "rva": "0x80780",
+          "export": "?Create@?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": []
+        },
+        {
+          "rva": "0xb0970",
+          "export": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x77d295",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6cc92c]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x817e0",
+          "export": "?Create@BlendModeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7168a7",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6950ce]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x818d0",
+          "export": "?Create@EllipseStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7172f5",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x695a2c]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81930",
+          "export": "?Create@FillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716f1f",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6955f6]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81990",
+          "export": "?Create@GradientFillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7170c6",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x69573d]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x819f0",
+          "export": "?Create@GradientStrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7170f4",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x69570b]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81ad0",
+          "export": "?Create@MergePathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716186",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6946bd]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81b30",
+          "export": "?Create@OffsetPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x71606e",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694545]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81b90",
+          "export": "?Create@PolyStarStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x71748c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x695903]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81bf0",
+          "export": "?Create@PuckerBloatStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7161de",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6945f5]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81c50",
+          "export": "?Create@RectStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x717272",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x695629]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81cb0",
+          "export": "?Create@RepeaterStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7163d8",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x69472f]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81d10",
+          "export": "?Create@RepeaterTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716320",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694617]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81d70",
+          "export": "?Create@RevealPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716126",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6943bd]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81e30",
+          "export": "?Create@RoughenStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716619",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6947f0]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81e90",
+          "export": "?Create@RoundCornerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7167b0",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694927]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81ef0",
+          "export": "?Create@ShapeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x71718c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6952a3]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81f80",
+          "export": "?Create@ShapeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7171ba",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x695241]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x81fe0",
+          "export": "?Create@StrokeDashesStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716d2c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694d53]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82040",
+          "export": "?Create@StrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716e6e",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694e35]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x820a0",
+          "export": "?Create@StrokeTaperStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716bbc",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694b23]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82100",
+          "export": "?Create@StrokeTaperWaveStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7169f0",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6948f7]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82160",
+          "export": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x77d1a2",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6fb049]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x821c0",
+          "export": "?Create@TrimStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x715f5a",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x693da1]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82220",
+          "export": "?Create@TwistStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x71683a",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694621]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82280",
+          "export": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x77d012",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6fad99]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x822e0",
+          "export": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x77d206",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6faf2d]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x82340",
+          "export": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x77d238",
+              "mnemonic": "lea",
+              "operand": "rbx, [rip - 0x6faeff]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x823a0",
+          "export": "?Create@WigglerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x71669c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x694303]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82400",
+          "export": "?Create@WigglerTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716647",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x69424e]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x82460",
+          "export": "?Create@ZigzagStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x716754",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6942fb]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "instructions_examined": 4626191,
+      "functions": [
+        {
+          "rva": "0x83010",
+          "export": "?Create@?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": []
+        },
+        {
+          "rva": "0x83090",
+          "export": "?Create@?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": []
+        },
+        {
+          "rva": "0xb64e0",
+          "export": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x79dc9a",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6e77c1]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x84260",
+          "export": "?Create@BlendModeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738d5c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4b03]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84340",
+          "export": "?Create@EllipseStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x73978a",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b5451]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x843a0",
+          "export": "?Create@FillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7393d4",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b503b]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84400",
+          "export": "?Create@GradientFillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739572",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b5179]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84460",
+          "export": "?Create@GradientStrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7395a0",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b5147]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84530",
+          "export": "?Create@MergePathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x73865b",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4132]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84590",
+          "export": "?Create@OffsetPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738543",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3fba]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x845f0",
+          "export": "?Create@PolyStarStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739921",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b5338]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84650",
+          "export": "?Create@PuckerBloatStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7386b3",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b406a]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x846b0",
+          "export": "?Create@RectStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739707",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b505e]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84710",
+          "export": "?Create@RepeaterStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7388ad",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b41a4]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84770",
+          "export": "?Create@RepeaterTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7387f5",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b408c]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x847d0",
+          "export": "?Create@RevealPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7385fb",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3e32]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84890",
+          "export": "?Create@RoughenStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738aee",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4265]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x848f0",
+          "export": "?Create@RoundCornerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738c85",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b439c]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84950",
+          "export": "?Create@ShapeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739621",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4cd8]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x849d0",
+          "export": "?Create@ShapeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x73964f",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4c86]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84a30",
+          "export": "?Create@StrokeDashesStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x7391e1",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b47b8]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84a90",
+          "export": "?Create@StrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739323",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b489a]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84af0",
+          "export": "?Create@StrokeTaperStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x739071",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b4588]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84b50",
+          "export": "?Create@StrokeTaperWaveStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738ea5",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b435c]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84bb0",
+          "export": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x79dba7",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x718ffe]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x84c10",
+          "export": "?Create@TrimStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x73842f",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3826]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84c70",
+          "export": "?Create@TwistStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738d0f",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b40a6]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84cd0",
+          "export": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x79da17",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x718d4e]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x84d30",
+          "export": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x79dc0b",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x718ee2]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x84d90",
+          "export": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x79dc3d",
+              "mnemonic": "lea",
+              "operand": "rbx, [rip - 0x718eb4]",
+              "nearest_export_not_real_function_boundary": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+            }
+          ]
+        },
+        {
+          "rva": "0x84df0",
+          "export": "?Create@WigglerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738b71",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3d88]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84e50",
+          "export": "?Create@WigglerTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738b1c",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3cd3]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        },
+        {
+          "rva": "0x84eb0",
+          "export": "?Create@ZigzagStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "static_refs": [
+            {
+              "source_rva": "0x738c29",
+              "mnemonic": "lea",
+              "operand": "rax, [rip - 0x6b3d80]",
+              "nearest_export_not_real_function_boundary": "?ShouldWriteForVersion@?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@SA_NPEBVSLU_File@@@Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "warning": "nearest export is a location hint only; inferred function boundary/retention and caller are not proven"
+}

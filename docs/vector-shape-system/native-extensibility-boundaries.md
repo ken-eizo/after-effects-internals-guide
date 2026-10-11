@@ -1,7 +1,7 @@
 ---
 status: research-active
 last_verified: 2026-10-11
-evidence: E0-G + E0-H + E0-S + E2-L + H; no E2-X host result for this project
+evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: SDK 25.6; AE 2025 symbol corpus; current Adobe Guide (accessed 2026-10-11)
 ---
 
@@ -19,7 +19,7 @@ For the newly confirmed *internal* typed creator-registration chain and existing
 
 | Boundary | What the visible feature requires | Current evidence | Still unproven |
 | --- | --- | --- | --- |
-| Creation/registration | Define a host-owned stream type/child-factory, attach to a host object | E2-L: `TDB_StreamFactory`, `TDB_MatchName`, `BEE_GenericShapeStream` symbols in AE 2025 `BEE.dll` | Whether external code can register new stream types; whether factory is open/closed |
+| Creation/registration | Define a host-owned stream type/child-factory, attach to a host object | E2-X: external AEGP called read-only private getter; E2-L: built-in vector Creators feed `TDB_ScRegisterStreams::Register` | Whether an external C++ plugin can register an **actual new type** and satisfy host ownership |
 | Hierarchy/Timeline | Indexed children, add/remove/reorder, persistence, undo, native tree UI | E0-G/H: `AEGP_DynamicStreamSuite` operates on **existing** indexed groups | Creating a new arbitrary indexed group inside an effect |
 | Tool interaction | Host native pen/selection/vertex UI targets the new object | E0-G: Custom Comp UI and Drawbot can draw **plug-in** handles | Registering an object with AE's native path tool |
 | Vector evaluation | TDB/BEE streams materialize geometry at time t | E2-L: `BEE_VectorStream::PopulateVectorArt`, `BEE_VectorArt::OriginInfo` | External geometry providers and dependency/identity contracts |

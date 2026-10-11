@@ -58,6 +58,12 @@ Exact MSVC signatures and DLL hashes: `research/findings/F-VECTOR-008-tdb-native
 
 The register callback is a C++ `std::function` that returns `TDB_StreamBase*` and takes a `TDB_MatchName const&`, `TDB_StreamFactory*` and additional arguments. That is **not a stable C plug-in ABI**. It depends on private class layouts, compiler C++ ABI, allocator ownership, callback lifecycle, canonical stream ownership, and host shutdown sequencing. Merely discovering the function address does not solve those problems.
 
+## Host-confirmed external access and native Shape registration (2026-10-11)
+
+A separately installed AEGP **called** the pinned private `Get_AE_StreamFactory()` getter in AE2026 and obtained a non-null value (E2-X, read-only; no factory dereference or mutation). Its unknown-type `AEGP_CanAddStream` probe accepted Shape/Graphic/Filter-prefixed names under native Contents even without proving their instantiation (72 calls, zero errors). All 359 streams also returned zero UID on two independently sentinel-initialized calls (zero AEGP errors).
+
+Offline full-code cross-version analysis located 31 built-in vector Creator address references in **four true x64 `.pdata` function regions**, and directly resolved repeated `TDB_ScRegisterStreams::Register()` imported calls in those same regions: 55 + 47 + 19 + 62 static CALL sites in each AE2025/2026 version. This proves built-in type Creator registration via TDB at the code-reference level; **third-party type installation, owner/Timeline integration and VectorArt output are still open**. See `F-VECTOR-010`, `F-VECTOR-011`, `F-VECTOR-012` and [Independent Native Vector Output](native-vector-output-ownership.md).
+
 ## Native Contents admission is partly a string grammar, not just a type enumeration
 
 `BEE_VectorStream::VectorsStreamGroup::CanStore(TDB_MatchName const&)` disassembly refers to three **literal** strings in BOTH versions:
@@ -68,7 +74,7 @@ ADBE Vector Graphic -
 ADBE Vector Filter -
 ```
 
-The function calls a string-search-like helper and compares the returned address with the beginning of the candidate name. This is consistent with **prefix recognition**; a fourth direct `TDB_MatchName` equality check also exists. Whether an unknown prefixed MatchName is admitted by public `CanAddStream` must be measured independently. The native group may still reject its creation if no matching factory callback exists.
+The function calls a string-search-like helper and compares the returned address with the beginning of the candidate name. This is consistent with **prefix recognition**; a fourth direct `TDB_MatchName` equality check also exists. An unknown prefixed MatchName **was admitted** by public `CanAddStream` in the real AE2026 host, but no object was created. The native group may still reject its creation if no matching factory callback exists.
 
 This explains why two distinct gates matter:
 
@@ -77,17 +83,17 @@ This explains why two distinct gates matter:
 
 One gate passing never implies the other.
 
-AE2026 E2-X data: 36/36 successful non-mutating CanAdd queries distinguished Shape Contents/Effects. Native vector names were allowed in Contents but rejected in Effect Parade; `ADBE Slider Control` showed the opposite. Experimental **unknown-prefixed** names will be tested through a distinct explicit menu command, NEVER through actual `AEGP_AddStream` until the factory relationship is proven.
+AE2026 E2-X data: 36/36 successful non-mutating CanAdd queries distinguished Shape Contents/Effects. Native vector names were allowed in Contents but rejected in Effect Parade; `ADBE Slider Control` showed the opposite. Experimental **unknown-prefixed** names were tested via a distinct explicit menu command; no `AEGP_AddStream` or native registration was attempted.
 
 ## The stream UID anomaly is a separate potential feature-gate issue
 
 AE2026 E2-X capture returned **0 for all 359 stream UIDs** while every UID API error field was zero. This contradicts the *expected utility* of the documented session-unique ID, but it does not prove that the function is generally broken. In local runtime export/import evidence, `TDB_Project::TDB_AreTDBStreamScriptingIDsEnabled` and AEIG's historical `EnableTDBStreamScriptingIDs` Beta flag suggest a related identity prototype, but there is **no verified causal connection**.
 
-The new ShapeLayerAE v3 performs two UID calls with distinct nonzero output-buffer sentinels to distinguish host-written zero from untouched memory; that experiment is **compiled but not host-tested**.
+ShapeLayerAE v3 performed two UID calls with distinct nonzero sentinels in AE2026: **359/359 streams returned zero twice**, with 718 zero error codes. The cause remains unresolved.
 
 ## Five breakpoints to independent native objects
 
-1. **Factory access**: pinned `TDB.dll` exact runtime and matching decorated `Get_AE_StreamFactory` symbol; read-only getter call and nonnull pointer test, no dereference. This is a prepared opt-in experiment, NOT yet executed.
+1. **Factory access**: pinned `TDB.dll` exact runtime and matching decorated `Get_AE_StreamFactory` symbol; read-only getter call and nonnull pointer test, no dereference. This read-only getter experiment was **executed and succeeded in AE2026**; no factory methods were called.
 2. **Custom matchname structural admissibility**: query unknown but matching Shape/Graphic/Filter prefix with `AEGP_CanAddStream` against Contents. Do not add.
 3. **Creator+canonical registration**: recover TDB_MatchName private layout and std::function ABI; prove a complete, reversibly registered custom stream in a disposable host. Critical: callback code/vtable lifetime must outlive any host-owned instance and be correctly unregistered before unloading; save/reopen behavior must be tested.
 4. **Native owner and Timeline**: attach a TDB_IndexedStreamGroup to a genuinely *independent plug-in-owned native object*, not to an ordinary Shape Layer. This may require internal BEE owner type dispatch. A generic group showing in some UI is insufficient.
@@ -99,8 +105,8 @@ The architecture supports a plausible new native **stream class** experiment, bu
 
 - EXP-SHAPE-005 — real AE2026 public topology, metadata/UID and built-in admissibility (host verified).
 - EXP-SHAPE-008 — read-only TDB factory export, per-version import/callsite/dataflow and string grammar (static verified).
-- EXP-SHAPE-009 — **opt-in** unknown prefixed names CanAdd, plus UID sentinel control (built, not host-tested).
-- EXP-SHAPE-010 — **opt-in** pinned private factory pointer Getter: verify module, decorated export, first-instruction fingerprint and call the zero-argument getter only, record nonnull Boolean. No pointer dereference, no registration, no factory callback; compiled but not host-tested.
+- EXP-SHAPE-009 — **AE2026 host-confirmed** unknown prefixed names CanAdd and dual UID sentinel control (72 CanAdd calls, 359 × 2 UID calls).
+- EXP-SHAPE-010 — **AE2026 host-confirmed** read-only pinned private factory pointer Getter: module/export/opcode checks succeeded and pointer returned non-null; no dereference, registration or mutation.
 - Future gated tests of creator registration ONLY on a disposable AE installation, clean project, exact pinned binaries, with crash capture and rollback plan; do not inject into an active working AE session or write third-party type definitions directly into production projects.
 
 Production effects must still respect AE cache dependencies and rendering contracts: a native factory object is not an effect output channel. Custom Comp UI and Drawbot are separate UI facilities. Adobe SDK is not extended by these private findings.

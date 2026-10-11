@@ -39,6 +39,10 @@ A follow-up read-only probe is available as a **compiled but not host-tested** e
 
 Offline BEE/TDB PE/IAT analysis found the host-internal `TDB.dll` and confirmed **BEE_Layer::RegisterStreams -> Get_AE_StreamFactory -> TDB_ScRegisterStreams::Register -> TDB_StreamFactory::RegisterFactoryFunc**, with canonical stream creation and guarded unregister. The native `VectorsStreamGroup::CanStore` references built-in `ADBE Vector Shape -`, `ADBE Vector Graphic -`, and `ADBE Vector Filter -` prefixes. See [Native Stream Factory and Shape Schema](native-stream-factory-and-schema.md) for evidence, safety boundaries and *unverified* third-party factory integration.
 
+## 2026-10-11 — External read-only private factory accessor, typed registration and native VectorArt evaluation
+
+An explicitly invoked AE2026 ShapeLayerAE v3 AEGP returned a non-null pointer from the pinned private `TDB.dll!Get_AE_StreamFactory()` accessor. The same user-run AEGP demonstrated unknown Shape/Graphic/Filter-prefixed match names are admitted by native Contents `CanAddStream`, without instantiating them. Cross-version bounded binary disassembly confirmed that the native Shape creators feed `TDB_ScRegisterStreams::Register`, and `BEE_VectorLayer::GetVectorArt` directly calls `PopulateVectorArt` and `GetBounds`. **No independent plugin-owned editable native Contents or geometry output is yet demonstrated.** Details: [Native Stream Factory](native-stream-factory-and-schema.md), [Independent Native Vector Output](native-vector-output-ownership.md) and original raw experiment `EXP-SHAPE-009-010-v3-host-confirmation.md`.
+
 ## Runtime model status
 The runtime-side reconstruction is now tracked in `runtime-architecture.md`. AE 2025 exposes a concrete `BEE_VectorStream -> BEE_VectorArt -> AGM-facing translation -> RG_RenderNode` chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.
 

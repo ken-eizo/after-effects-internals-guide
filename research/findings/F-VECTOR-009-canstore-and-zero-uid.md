@@ -28,7 +28,7 @@ The private class `BEE_VectorStream::VectorsStreamGroup::CanStore(TDB_MatchName 
 
 A separate MatchName equality check also exists. These instructions are **consistent with a prefix-admission rule** for shape operators and graphics. The actual complete predicate and interaction with factory availability are not established from this single routine alone.
 
-Strong falsification: an **unregistered** name such as `ADBE Vector Shape - ShapeLayerAEProbe` would be accepted by `CanAddStream` but still be non-creatable without `RegisterFactoryFunc`. This is deliberately separated into an optional read-only probe, because an actual `AEGP_AddStream` on an unknown MatchName may hit host assertions or project corruption.
+**Confirmed E2-X:** `ADBE Vector Shape - ShapeLayerAEProbe` and corresponding unknown Graphic/Filter names returned CanAdd=true in the native Contents, with query error zero. They have **not** been instantiated; the factory callback may still be missing. The experiment did not call `AEGP_AddStream`.
 
 ## UID anomaly — 359 zero values despite successful calls
 
@@ -36,7 +36,7 @@ All 359 `AEGP_GetUniqueStreamID` calls produced `outID=0`; all 359 error fields 
 
 This is an **unexpected host-specific observation**, not an established general bug in Adobe's API. Possible causes to test: stream ID namespace not initialized on that version/build/fixture, StreamSuite6 limitations, implementation defect, or a condition on the host's internal ID feature flag. AEIG already contains `F-STATE-005` about `EnableTDBStreamScriptingIDs`, and TDB exports `TDB_Project::TDB_AreTDBStreamScriptingIDsEnabled`; **no causation is established** between that feature flag and this result.
 
-The next compiled probe initializes two different nonzero sentinel values and calls the UID suite twice to differentiate persistent 0, uninitialized output, and per-call differences. It must be tested in AE and on a second layer/host build before asserting a systemic defect.
+The v3 follow-up was run in AE2026: two different nonzero sentinels per stream resulted in 359/359 repeated zero IDs (718 API errors all zero). Thus the buffer was actively assigned zero twice on this fixture. A second layer and another host build are still required before asserting a systemic SDK defect.
 
 ## Provenance and status
 

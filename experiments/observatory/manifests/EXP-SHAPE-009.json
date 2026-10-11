@@ -1,7 +1,7 @@
 {
   "experiment_id": "EXP-SHAPE-009",
   "title": "Read-only CanAdd unknown native names and session UID controls",
-  "status": "compiled-not-host-tested",
+  "status": "observed-in-host",
   "question": "Does a Shape Contents Indexed Group admit an unregistered Shape/Graphic/Filter-prefixed match name, independently of actual factory type construction? Why does UID return zero for every stream?",
   "evidence": [
     "H",
@@ -24,7 +24,7 @@
     "%TEMP%/ShapeLayerAE_canadd_unknown.tsv",
     "%TEMP%/ShapeLayerAE_stream_metadata.tsv"
   ],
-  "conclusion": "Probe compiled; no v3 AE runtime results yet.",
+  "conclusion": "E2-X host: unknown Shape/Graphic/Filter prefixed match names are admitted into existing native Contents by CanAdd without being created; 359x2 UID calls returned zero/error0.",
   "limitations": [
     "Unknown-name CanAdd is unsupported/advisory query and may still emit host errors",
     "No native stream mutation in this experiment"
@@ -46,5 +46,16 @@
     "sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
     "installed_version": "older v2; current user AE process not touched",
     "host_result": "pending"
+  },
+  "host_result": {
+    "date_local": "2026-10-11",
+    "host": "AE2026",
+    "installed_aex_sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
+    "report": "experiments/vector-shape/EXP-SHAPE-009-010-v3-host-confirmation.md",
+    "archive": "experiments/vector-shape/runs/EXP-SHAPE-009-010/20261011-user-host-v3",
+    "unknown_matchname_canadd_queries": 72,
+    "errors": 0,
+    "streams_with_two_uid_calls": 359,
+    "uid_nonzero_count": 0
   }
 }

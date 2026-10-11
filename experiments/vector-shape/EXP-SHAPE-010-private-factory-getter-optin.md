@@ -1,7 +1,7 @@
 ---
-status: compiled-not-host-tested
+status: confirmed-in-host
 last_verified: 2026-10-11
-evidence: E2-L + build artifact; no host runtime E2-X
+evidence: E2-L + E2-X
 versions: SDK25.6, optional AE2025/AE2026 exact private getter
 ---
 # EXP-SHAPE-010 — Optional in-host read-only private TDB factory getter
@@ -16,4 +16,4 @@ Output: `%TEMP%\ShapeLayerAE_private_factory_probe.tsv`, four Booleans: module l
 
 **Risks/limits:** this is still **private unsupported ABI**, even though the callsite is simple and guarded. It is not an Adobe-endorsed operation, may be unavailable/change in other builds, and would not prove external registration or editor/render integration. Do not execute on a production AE session/project; user must explicitly choose the command in a disposable project with no unsaved work. The host currently running has NOT been injected or restarted by this research session.
 
-On a successful run, a **new** E2-X observation may establish a third-party AEGP can actually call an internal factory getter, which is categorically different from registering a new native stream. Store host version+module hash, output TSV and any error dialogs.
+**Observed outcome:** on 2026-10-11 the user's AE2026 host reported `1/1/1/1`: TDB module found, private exported getter found, fingerprint matched and getter returned non-null. This establishes a third-party AEGP can call the private no-argument getter, **not** that a custom stream is registered. Raw TSV and hashes: `experiments/vector-shape/EXP-SHAPE-009-010-v3-host-confirmation.md`.

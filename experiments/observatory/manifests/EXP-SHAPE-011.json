@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-011",
+  "title": "Native Shape typed creator registration bundle reverse engineering",
+  "status": "observed-static-only",
+  "question": "Do actual built-in BEE_VectorStream Creator callbacks feed into the native TDB_ScRegisterStreams::Register?",
+  "evidence": [
+    "E2-L"
+  ],
+  "environment": {
+    "installed_binaries": "AE 2025/2026",
+    "host_private_mutations": false
+  },
+  "observed_result": "4 true Windows x64 function regions per version, 31 explicit creator-address references; 183 TDB Register direct IAT callsites per version.",
+  "limitations": [
+    "Offline CALL references do not prove native third-party custom type registration",
+    "No native independent CompNodeAE-owned vector object has been created"
+  ]
+}

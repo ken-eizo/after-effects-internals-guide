@@ -1,7 +1,7 @@
 {
   "experiment_id": "EXP-SHAPE-010",
   "title": "Opt-in private AE TDB stream factory getter read-only probe",
-  "status": "compiled-not-host-tested",
+  "status": "observed-in-host",
   "question": "Can an independently built AEGP resolve and execute only Get_AE_StreamFactory() from a pinned TDB.dll without dereferencing or mutating its returned pointer?",
   "evidence": [
     "E2-L",
@@ -22,7 +22,7 @@
   "captures": [
     "%TEMP%/ShapeLayerAE_private_factory_probe.tsv"
   ],
-  "conclusion": "C++ compiled. NO in-host private API invocation has been performed.",
+  "conclusion": "E2-X host: independently installed AEGP resolves and calls the private no-argument getter and obtains a nonnull factory pointer. No dereference, registration or mutation.",
   "limitations": [
     "Executing even a simple private getter is unsupported and version-sensitive",
     "Getter pointer availability does not establish permissible registration or native vector output"
@@ -39,5 +39,17 @@
     "sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
     "installed_version": "older v2; current user AE process not touched",
     "host_result": "pending"
+  },
+  "host_result": {
+    "date_local": "2026-10-11",
+    "host": "AE2026",
+    "installed_aex_sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1",
+    "report": "experiments/vector-shape/EXP-SHAPE-009-010-v3-host-confirmation.md",
+    "archive": "experiments/vector-shape/runs/EXP-SHAPE-009-010/20261011-user-host-v3",
+    "getter_module_found": true,
+    "getter_export_present": true,
+    "fingerprint_ok": true,
+    "factory_return_nonnull": true,
+    "private_method_calls_other_than_getter": 0
   }
 }

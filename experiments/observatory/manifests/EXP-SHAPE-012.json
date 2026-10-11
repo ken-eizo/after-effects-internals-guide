@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-012",
+  "title": "VectorLayer native evaluated VectorArt handoff",
+  "status": "observed-static-only",
+  "question": "Does BEE_VectorLayer::GetVectorArt invoke TDB stream path creation and PopulateVectorArt before bounds?",
+  "evidence": [
+    "E2-L"
+  ],
+  "environment": {
+    "installed_binaries": "AE 2025/2026",
+    "host_private_mutations": false
+  },
+  "observed_result": "Both versions have direct CALLs to Group constructor, TDB_StreamID, TDB_StreamIDPath, PopulateVectorArt, GetBounds; path returns intrusive VectorArt group.",
+  "limitations": [
+    "Offline CALL references do not prove native third-party custom type registration",
+    "No native independent CompNodeAE-owned vector object has been created"
+  ]
+}

@@ -1,0 +1,1113 @@
+{
+  "evidence": "E2-L static direct/IAT calls; bounded x64 runtime function table",
+  "versions": {
+    "2025": [
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@AEBV01@@Z",
+        "rva": "0x6c9730",
+        "method_end": "0x6c97ab",
+        "calls": [
+          {
+            "at": "0x6c9763",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6c8f60"
+          },
+          {
+            "at": "0x6c9774",
+            "import": "",
+            "export": "",
+            "target": "0x6dbc10"
+          }
+        ]
+      },
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@AEBVCAGMPath@BIB_T_MT@@W4Usage@01@@Z",
+        "rva": "0x6c97b0",
+        "method_end": "0x6c9860",
+        "calls": [
+          {
+            "at": "0x6c97ea",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xec1198"
+          },
+          {
+            "at": "0x6c9827",
+            "import": "",
+            "export": "",
+            "target": "0x6dbc10"
+          }
+        ]
+      },
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+        "rva": "0x6c9860",
+        "method_end": "0x6c99af",
+        "calls": [
+          {
+            "at": "0x6c98ab",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xec1198"
+          },
+          {
+            "at": "0x6c98ec",
+            "import": "",
+            "export": "",
+            "target": "0xc2ca30"
+          },
+          {
+            "at": "0x6c9921",
+            "import": "",
+            "export": "",
+            "target": "0xc5ca00"
+          },
+          {
+            "at": "0x6c992f",
+            "import": "",
+            "export": "",
+            "target": "0xc358d0"
+          },
+          {
+            "at": "0x6c9935",
+            "import": "",
+            "export": "",
+            "target": "0xc554e0"
+          },
+          {
+            "at": "0x6c9943",
+            "import": "",
+            "export": "",
+            "target": "0xc2d390"
+          },
+          {
+            "at": "0x6c9975",
+            "import": "",
+            "export": "",
+            "target": "0x15f0c28"
+          },
+          {
+            "at": "0x6c9988",
+            "import": "",
+            "export": "",
+            "target": "0x15f0c28"
+          },
+          {
+            "at": "0x6c999a",
+            "import": "",
+            "export": "",
+            "target": "0xce9610"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@$$QEAV01@@Z",
+        "rva": "0x29dc80",
+        "method_end": "0x29dd20",
+        "calls": [
+          {
+            "at": "0x29dcb3",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6c8f60"
+          },
+          {
+            "at": "0x29dd04",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@$$QEAV0@@Z",
+            "export": "",
+            "target": "0xebe7f8"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBV01@@Z",
+        "rva": "0x29dd20",
+        "method_end": "0x29ddc0",
+        "calls": [
+          {
+            "at": "0x29dd53",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6c8f60"
+          },
+          {
+            "at": "0x29dda4",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "export": "",
+            "target": "0xebe7f0"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+        "rva": "0x6c9a20",
+        "method_end": "0x6c9af0",
+        "calls": [
+          {
+            "at": "0x6c9a5c",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xec1198"
+          },
+          {
+            "at": "0x6c9ad6",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "export": "",
+            "target": "0xebe7f0"
+          }
+        ]
+      },
+      {
+        "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+        "rva": "0x6e3930",
+        "method_end": "0x6e3c6a",
+        "calls": [
+          {
+            "at": "0x6e3979",
+            "import": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+            "export": "",
+            "target": "0xebf908"
+          },
+          {
+            "at": "0x6e3983",
+            "import": "",
+            "export": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+            "target": "0x23b230"
+          },
+          {
+            "at": "0x6e3997",
+            "import": "U.dll!?IsIdentityWithinEpsilon@M_Matrix3@@QEBA_NN@Z",
+            "export": "",
+            "target": "0xebf9a8"
+          },
+          {
+            "at": "0x6e39b2",
+            "import": "",
+            "export": "",
+            "target": "0x6e3db0"
+          },
+          {
+            "at": "0x6e39e9",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e39eb",
+            "import": "",
+            "export": "",
+            "target": "0x6e3c43"
+          },
+          {
+            "at": "0x6e39f3",
+            "import": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+            "export": "",
+            "target": "0xebf908"
+          },
+          {
+            "at": "0x6e39fd",
+            "import": "",
+            "export": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+            "target": "0x23b230"
+          },
+          {
+            "at": "0x6e3a2c",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3a34",
+            "import": "",
+            "export": "",
+            "target": "0xce9048"
+          },
+          {
+            "at": "0x6e3a4f",
+            "import": "",
+            "export": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+            "target": "0x6c9660"
+          },
+          {
+            "at": "0x6e3a57",
+            "import": "",
+            "export": "",
+            "target": "0x6e3a5c"
+          },
+          {
+            "at": "0x6e3a7d",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3aa8",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3aba",
+            "import": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+            "export": "",
+            "target": "0xebdf50"
+          },
+          {
+            "at": "0x6e3acd",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+            "export": "",
+            "target": "0xebdcd0"
+          },
+          {
+            "at": "0x6e3afc",
+            "import": "",
+            "export": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+            "target": "0x6ecb60"
+          },
+          {
+            "at": "0x6e3b07",
+            "import": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "export": "",
+            "target": "0xebe7e8"
+          },
+          {
+            "at": "0x6e3b1e",
+            "import": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xec10c0"
+          },
+          {
+            "at": "0x6e3b28",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+            "export": "",
+            "target": "0xec10c8"
+          },
+          {
+            "at": "0x6e3b42",
+            "import": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+            "export": "",
+            "target": "0xec11d0"
+          },
+          {
+            "at": "0x6e3b52",
+            "import": "",
+            "export": "",
+            "target": "0x6eca10"
+          },
+          {
+            "at": "0x6e3b6c",
+            "import": "",
+            "export": "",
+            "target": "0x6e11f0"
+          },
+          {
+            "at": "0x6e3b82",
+            "import": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xec10c0"
+          },
+          {
+            "at": "0x6e3b8c",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+            "export": "",
+            "target": "0xec10c8"
+          },
+          {
+            "at": "0x6e3ba6",
+            "import": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+            "export": "",
+            "target": "0xec11d0"
+          },
+          {
+            "at": "0x6e3bbb",
+            "import": "",
+            "export": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z",
+            "target": "0x6cd3c0"
+          },
+          {
+            "at": "0x6e3be3",
+            "import": "",
+            "export": "",
+            "target": "0x6e3c80"
+          },
+          {
+            "at": "0x6e3c1e",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3c3a",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3c3e",
+            "import": "",
+            "export": "",
+            "target": "0x6e3c43"
+          },
+          {
+            "at": "0x6e3c51",
+            "import": "",
+            "export": "",
+            "target": "0xce9610"
+          }
+        ]
+      },
+      {
+        "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+        "rva": "0x6ecb60",
+        "method_end": "0x6ecc64",
+        "calls": [
+          {
+            "at": "0x6ecbc0",
+            "import": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xec10c0"
+          },
+          {
+            "at": "0x6ecbca",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+            "export": "",
+            "target": "0xec10c8"
+          },
+          {
+            "at": "0x6ecbe4",
+            "import": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+            "export": "",
+            "target": "0xec11d0"
+          },
+          {
+            "at": "0x6ecc16",
+            "import": "",
+            "export": "",
+            "target": "0x6ecc70"
+          },
+          {
+            "at": "0x6ecc3f",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6ecc4b",
+            "import": "",
+            "export": "",
+            "target": "0xce9610"
+          }
+        ]
+      },
+      {
+        "name": "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+        "rva": "0x6e3e90",
+        "method_end": "0x6e40f3",
+        "calls": [
+          {
+            "at": "0x6e3ee4",
+            "import": "",
+            "export": "?GetNumExtraMatrices@BEE_AVLayer@@QEBAHAEBVBEE_RenderTrace@@AEBVBEE_LayerRenderOptions@@@Z",
+            "target": "0x281a90"
+          },
+          {
+            "at": "0x6e3efb",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e3f06",
+            "import": "",
+            "export": "?IsGeometryOverridden@BEE_LayerRenderOptions@@QEBA_N_N@Z",
+            "target": "0x4add60"
+          },
+          {
+            "at": "0x6e3f2e",
+            "import": "U.dll!U_PurgeLoop",
+            "export": "",
+            "target": "0xec0078"
+          },
+          {
+            "at": "0x6e3f55",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xebfd90"
+          },
+          {
+            "at": "0x6e3f64",
+            "import": "",
+            "export": "",
+            "target": "0xce90a4"
+          },
+          {
+            "at": "0x6e3f7c",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xebfd90"
+          },
+          {
+            "at": "0x6e3f89",
+            "import": "",
+            "export": "?GetOverrideMatrix@BEE_LayerRenderOptions@@QEBAXPEAVM_Matrix3@@@Z",
+            "target": "0x4abc80"
+          },
+          {
+            "at": "0x6e3f92",
+            "import": "",
+            "export": "",
+            "target": "0x6e3fd2"
+          },
+          {
+            "at": "0x6e3fad",
+            "import": "",
+            "export": "",
+            "target": "0x4b26d0"
+          },
+          {
+            "at": "0x6e3fcd",
+            "import": "",
+            "export": "",
+            "target": "0x47fac0"
+          },
+          {
+            "at": "0x6e3fd6",
+            "import": "U.dll!?Determinant@M_Matrix3@@QEBANXZ",
+            "export": "",
+            "target": "0xec0210"
+          },
+          {
+            "at": "0x6e3fee",
+            "import": "U.dll!?Determinant@M_Matrix3@@QEBANXZ",
+            "export": "",
+            "target": "0xec0210"
+          },
+          {
+            "at": "0x6e4002",
+            "import": "",
+            "export": "",
+            "target": "0x6e4062"
+          },
+          {
+            "at": "0x6e4009",
+            "import": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+            "export": "",
+            "target": "0xebf7f0"
+          },
+          {
+            "at": "0x6e4055",
+            "import": "",
+            "export": "",
+            "target": "0x6e9410"
+          },
+          {
+            "at": "0x6e405d",
+            "import": "",
+            "export": "",
+            "target": "0x6e4062"
+          },
+          {
+            "at": "0x6e407e",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x6e408a",
+            "import": "",
+            "export": "",
+            "target": "0xce90a4"
+          },
+          {
+            "at": "0x6e40a1",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xebfd90"
+          },
+          {
+            "at": "0x6e40d9",
+            "import": "",
+            "export": "",
+            "target": "0xceacc8"
+          },
+          {
+            "at": "0x6e40ed",
+            "import": "",
+            "export": "",
+            "target": "0xceacc8"
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@AEBV01@@Z",
+        "rva": "0x6ee380",
+        "method_end": "0x6ee3fb",
+        "calls": [
+          {
+            "at": "0x6ee3b3",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6edbc0"
+          },
+          {
+            "at": "0x6ee3c4",
+            "import": "",
+            "export": "",
+            "target": "0x7006d0"
+          }
+        ]
+      },
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@AEBVCAGMPath@BIB_T_MT@@W4Usage@01@@Z",
+        "rva": "0x6ee400",
+        "method_end": "0x6ee4b0",
+        "calls": [
+          {
+            "at": "0x6ee43a",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xf1a5c0"
+          },
+          {
+            "at": "0x6ee477",
+            "import": "",
+            "export": "",
+            "target": "0x7006d0"
+          }
+        ]
+      },
+      {
+        "name": "??0Path@BEE_VectorArt@@QEAA@VCAIMBezierPath@BIB_T_MT@@W4Usage@01@@Z",
+        "rva": "0x6ee4b0",
+        "method_end": "0x6ee5ff",
+        "calls": [
+          {
+            "at": "0x6ee4fb",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xf1a5c0"
+          },
+          {
+            "at": "0x6ee53c",
+            "import": "",
+            "export": "",
+            "target": "0xc55320"
+          },
+          {
+            "at": "0x6ee571",
+            "import": "",
+            "export": "",
+            "target": "0xc84c40"
+          },
+          {
+            "at": "0x6ee57f",
+            "import": "",
+            "export": "",
+            "target": "0xc5dbd0"
+          },
+          {
+            "at": "0x6ee585",
+            "import": "",
+            "export": "",
+            "target": "0xc7d3a0"
+          },
+          {
+            "at": "0x6ee593",
+            "import": "",
+            "export": "",
+            "target": "0xc55cb0"
+          },
+          {
+            "at": "0x6ee5c5",
+            "import": "",
+            "export": "",
+            "target": "0x16a1588"
+          },
+          {
+            "at": "0x6ee5d8",
+            "import": "",
+            "export": "",
+            "target": "0x16a1588"
+          },
+          {
+            "at": "0x6ee5ea",
+            "import": "",
+            "export": "",
+            "target": "0xd3ac30"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@$$QEAV01@@Z",
+        "rva": "0x2a6a20",
+        "method_end": "0x2a6ac0",
+        "calls": [
+          {
+            "at": "0x2a6a53",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6edbc0"
+          },
+          {
+            "at": "0x2a6aa4",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@$$QEAV0@@Z",
+            "export": "",
+            "target": "0xf17ad8"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBV01@@Z",
+        "rva": "0x2a6ac0",
+        "method_end": "0x2a6b60",
+        "calls": [
+          {
+            "at": "0x2a6af3",
+            "import": "",
+            "export": "??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z",
+            "target": "0x6edbc0"
+          },
+          {
+            "at": "0x2a6b44",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "export": "",
+            "target": "0xf17ad0"
+          }
+        ]
+      },
+      {
+        "name": "??0StreamBasedFilter@BEE_VectorArt@@QEAA@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+        "rva": "0x6ee670",
+        "method_end": "0x6ee740",
+        "calls": [
+          {
+            "at": "0x6ee6ac",
+            "import": "dvacore.dll!??0RefCountedObject@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xf1a5c0"
+          },
+          {
+            "at": "0x6ee726",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "export": "",
+            "target": "0xf17ad0"
+          }
+        ]
+      },
+      {
+        "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+        "rva": "0x7081b0",
+        "method_end": "0x7084f3",
+        "calls": [
+          {
+            "at": "0x7081f7",
+            "import": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+            "export": "",
+            "target": "0xf18a78"
+          },
+          {
+            "at": "0x708205",
+            "import": "",
+            "export": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+            "target": "0x243d70"
+          },
+          {
+            "at": "0x70821d",
+            "import": "U.dll!?IsIdentityWithinEpsilon@M_Matrix3@@QEBA_NN@Z",
+            "export": "",
+            "target": "0xf18b20"
+          },
+          {
+            "at": "0x708236",
+            "import": "dvacore.dll!??0Murmur3MixerState@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xf1a578"
+          },
+          {
+            "at": "0x70824d",
+            "import": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+            "export": "",
+            "target": "0xf1a570"
+          },
+          {
+            "at": "0x708260",
+            "import": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+            "export": "",
+            "target": "0xf1a570"
+          },
+          {
+            "at": "0x708274",
+            "import": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+            "export": "",
+            "target": "0xf1a570"
+          },
+          {
+            "at": "0x70827e",
+            "import": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ",
+            "export": "",
+            "target": "0xf1a5d8"
+          },
+          {
+            "at": "0x70828c",
+            "import": "dvacore.dll!?GetHashResult@utility@dvacore@@YA_NAEBUMurmur3MixerState@12@AEAVGuid@12@@Z",
+            "export": "",
+            "target": "0xf1a568"
+          },
+          {
+            "at": "0x7082da",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x7082dc",
+            "import": "",
+            "export": "",
+            "target": "0x7084d0"
+          },
+          {
+            "at": "0x7082e4",
+            "import": "",
+            "export": "",
+            "target": "0x7082e9"
+          },
+          {
+            "at": "0x7082e9",
+            "import": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+            "export": "",
+            "target": "0xf18a78"
+          },
+          {
+            "at": "0x7082f3",
+            "import": "",
+            "export": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+            "target": "0x243d70"
+          },
+          {
+            "at": "0x708326",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x70832e",
+            "import": "",
+            "export": "",
+            "target": "0xd3a668"
+          },
+          {
+            "at": "0x708348",
+            "import": "",
+            "export": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+            "target": "0x6ee2b0"
+          },
+          {
+            "at": "0x708350",
+            "import": "",
+            "export": "",
+            "target": "0x708354"
+          },
+          {
+            "at": "0x708371",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x708399",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x7083a7",
+            "import": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+            "export": "",
+            "target": "0xf17080"
+          },
+          {
+            "at": "0x7083b5",
+            "import": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+            "export": "",
+            "target": "0xf17608"
+          },
+          {
+            "at": "0x7083e3",
+            "import": "",
+            "export": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+            "target": "0x710ee0"
+          },
+          {
+            "at": "0x7083ed",
+            "import": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "export": "",
+            "target": "0xf17ac8"
+          },
+          {
+            "at": "0x7083ff",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xf1a508"
+          },
+          {
+            "at": "0x70840e",
+            "import": "",
+            "export": "",
+            "target": "0x710d90"
+          },
+          {
+            "at": "0x708427",
+            "import": "",
+            "export": "",
+            "target": "0x705ac0"
+          },
+          {
+            "at": "0x708438",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xf1a508"
+          },
+          {
+            "at": "0x708448",
+            "import": "",
+            "export": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z",
+            "target": "0x6f2000"
+          },
+          {
+            "at": "0x708470",
+            "import": "",
+            "export": "",
+            "target": "0x708510"
+          },
+          {
+            "at": "0x7084ab",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x7084c7",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x7084cb",
+            "import": "",
+            "export": "",
+            "target": "0x7084d0"
+          },
+          {
+            "at": "0x7084da",
+            "import": "",
+            "export": "",
+            "target": "0xd3ac30"
+          }
+        ]
+      },
+      {
+        "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+        "rva": "0x710ee0",
+        "method_end": "0x710f8b",
+        "calls": [
+          {
+            "at": "0x710f10",
+            "import": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+            "export": "",
+            "target": "0xf1a508"
+          },
+          {
+            "at": "0x710f51",
+            "import": "",
+            "export": "",
+            "target": "0x710f90"
+          },
+          {
+            "at": "0x710f7a",
+            "import": "",
+            "export": "",
+            "target": ""
+          }
+        ]
+      },
+      {
+        "name": "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+        "rva": "0x708720",
+        "method_end": "0x708a24",
+        "calls": [
+          {
+            "at": "0x70876e",
+            "import": "",
+            "export": "?GetNumExtraMatrices@BEE_AVLayer@@QEBAHAEBVBEE_RenderTrace@@AEBVBEE_LayerRenderOptions@@@Z",
+            "target": "0x28afd0"
+          },
+          {
+            "at": "0x708787",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x708793",
+            "import": "",
+            "export": "?IsGeometryOverridden@BEE_LayerRenderOptions@@QEBA_N_N@Z",
+            "target": "0x4c29a0"
+          },
+          {
+            "at": "0x7087bb",
+            "import": "U.dll!U_PurgeLoop",
+            "export": "",
+            "target": "0xf19220"
+          },
+          {
+            "at": "0x7087e6",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xf190d0"
+          },
+          {
+            "at": "0x7087f5",
+            "import": "",
+            "export": "",
+            "target": "0xd3a6c4"
+          },
+          {
+            "at": "0x70880c",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xf190d0"
+          },
+          {
+            "at": "0x708819",
+            "import": "",
+            "export": "?GetOverrideMatrix@BEE_LayerRenderOptions@@QEBAXPEAVM_Matrix3@@@Z",
+            "target": "0x4c0830"
+          },
+          {
+            "at": "0x708821",
+            "import": "",
+            "export": "",
+            "target": "0x7088e1"
+          },
+          {
+            "at": "0x708860",
+            "import": "U.dll!U_PurgeLoop",
+            "export": "",
+            "target": "0xf19220"
+          },
+          {
+            "at": "0x70887d",
+            "import": "",
+            "export": "",
+            "target": "0x708881"
+          },
+          {
+            "at": "0x70888f",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xf190d0"
+          },
+          {
+            "at": "0x70889e",
+            "import": "",
+            "export": "",
+            "target": "0xd3a6c4"
+          },
+          {
+            "at": "0x7088b4",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xf190d0"
+          },
+          {
+            "at": "0x7088d9",
+            "import": "",
+            "export": "",
+            "target": "0x494ab0"
+          },
+          {
+            "at": "0x7088e5",
+            "import": "U.dll!?Determinant@M_Matrix3@@QEBANXZ",
+            "export": "",
+            "target": "0xf19398"
+          },
+          {
+            "at": "0x7088fd",
+            "import": "U.dll!?Determinant@M_Matrix3@@QEBANXZ",
+            "export": "",
+            "target": "0xf19398"
+          },
+          {
+            "at": "0x708911",
+            "import": "",
+            "export": "",
+            "target": "0x708971"
+          },
+          {
+            "at": "0x708918",
+            "import": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+            "export": "",
+            "target": "0xf18960"
+          },
+          {
+            "at": "0x708964",
+            "import": "",
+            "export": "",
+            "target": "0x70da40"
+          },
+          {
+            "at": "0x70896c",
+            "import": "",
+            "export": "",
+            "target": "0x708971"
+          },
+          {
+            "at": "0x70898d",
+            "import": "",
+            "export": "",
+            "target": ""
+          },
+          {
+            "at": "0x708999",
+            "import": "",
+            "export": "",
+            "target": "0xd3a6c4"
+          },
+          {
+            "at": "0x7089b0",
+            "import": "U.dll!U_AccountAllocationEx",
+            "export": "",
+            "target": "0xf190d0"
+          },
+          {
+            "at": "0x7089e2",
+            "import": "",
+            "export": "",
+            "target": "0xd3bdf8"
+          },
+          {
+            "at": "0x7089f6",
+            "import": "",
+            "export": "",
+            "target": "0xd3bdf8"
+          },
+          {
+            "at": "0x708a0a",
+            "import": "",
+            "export": "",
+            "target": "0xd3bdf8"
+          },
+          {
+            "at": "0x708a1e",
+            "import": "",
+            "export": "",
+            "target": "0xd3bdf8"
+          }
+        ]
+      }
+    ]
+  }
+}

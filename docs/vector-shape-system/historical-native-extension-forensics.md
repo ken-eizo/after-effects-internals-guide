@@ -82,7 +82,7 @@ Raw E2-L artifact: `datasets/ae-vector-registerstreams-xrefs-2025-2026.json`. Th
 6. **Native renderer** — trace the VectorArt to AGM and `Rasterize2DGraph`, distinguish Shape-native rendering from an effect using AGM to emit `PF_World`. A pixel-output effect remains a raster effect even if it internally calls the same mathematics.
 7. **Persistence, reproducibility and compatibility** — a native object must save/reopen, retain stable selection, support Undo/redo, keyframes and expression evaluation, survive AE restart, and render consistently. Major-version binary exports have different RVAs; no binary ABI stability is promised.
 
-No use of private function calls or host memory patching is justified by the present evidence. Later experiments require an isolated disposable AE session, a backed-up project, frozen exact binary hash, runtime trace provenance, explicit crash/rollback strategy, and independently reproduced minimal hypotheses. Avoid shipping private Adobe headers or binary contents to source control.
+As of 2026-10-11, an independently installed AEGP has called the **single pinned read-only private** `Get_AE_StreamFactory()` getter and received a non-null value (E2-X). No private registration, factory object dereference, host memory patching or native type creation has been attempted. Later experiments require an isolated disposable AE session, a backed-up project, frozen exact binary hash, runtime trace provenance, explicit crash/rollback strategy, and independently reproduced minimal hypotheses. Avoid shipping private Adobe headers or binary contents to source control.
 
 ## What counts as a breakthrough?
 
