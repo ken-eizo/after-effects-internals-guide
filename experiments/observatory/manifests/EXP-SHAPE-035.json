@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-SHAPE-035",
+  "title": "Native VectorLayer::RegisterStreams entry trampoline and evaluator initializer",
+  "date": "2026-10-12",
+  "status": "pass-two-native-PE-static",
+  "evidence": "E2-L installed AE2025/2026 BEE.dll direct machine-code check",
+  "results": {
+    "2025_entry": "0x6e4100",
+    "2025_evaluator_init": "0x6eef40",
+    "2026_entry": "0x708a30",
+    "2026_evaluator_init": "0x713550",
+    "native_editor_connected": false,
+    "foreign_registration_proven": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-036-bee-vector-layer-registerstreams-init-trampoline.md",
+    "experiments/vector-shape/EXP-SHAPE-035-vector-registerstreams-startup-chain.md",
+    "datasets/ae-bee-vector-registerstreams-startup-chain-2025-2026.json"
+  ]
+}

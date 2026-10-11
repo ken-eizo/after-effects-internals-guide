@@ -31,7 +31,9 @@ inline CNL_IsolationCheck CNL_CheckDisposableProject(AEGP_SuiteHandler& suites){
  if(suites.ProjSuite6()->AEGP_ProjectIsDirty(project,&s.dirty)!=A_Err_NONE){
   s.reason="project_dirty_state_unavailable";return s;
  }
- if(s.dirty){s.reason="project_dirty";return s;}
+ // Continue READ-ONLY checks even when the project is dirty, so the
+ // safe probe can distinguish an empty-but-dirty project from real content.
+ // The dirty status is still a hard blocker after collecting public evidence.
  // A saved (even empty/clean) project is not a disposable scratch host.
  // SDK 25.6 explicitly documents an empty UTF-16 path for unsaved projects.
  AEGP_MemHandle project_path=nullptr;
@@ -54,7 +56,8 @@ inline CNL_IsolationCheck CNL_CheckDisposableProject(AEGP_SuiteHandler& suites){
  if(unlock_error!=A_Err_NONE||free_error!=A_Err_NONE){
   s.reason="project_path_cleanup_failed";return s;
  }
- if(s.saved_project){s.reason="saved_project_not_disposable";return s;}
+ // Defer the saved-path rejection until after checking item/queue inventory;
+ // this changes diagnostics only, never makes a saved project acceptable.
  AEGP_ItemH root=nullptr;
  if(suites.ProjSuite6()->AEGP_GetProjectRootFolder(project,&root)!=A_Err_NONE||!root){
   s.reason="project_root_unavailable";return s;
@@ -89,6 +92,8 @@ inline CNL_IsolationCheck CNL_CheckDisposableProject(AEGP_SuiteHandler& suites){
  }
  s.render_queue_items=rq;
  if(rq!=0){s.reason="render_queue_not_empty";return s;}
+ if(s.saved_project){s.reason="saved_project_not_disposable";return s;}
+ if(s.dirty){s.reason="project_dirty";return s;}
  s.empty=true;s.reason="empty_project_preflight_only";
  return s;
 }

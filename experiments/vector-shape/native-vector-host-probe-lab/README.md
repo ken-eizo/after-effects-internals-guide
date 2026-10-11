@@ -39,3 +39,15 @@ This project-status predicate alone is NOT a guarantee that native private API m
 ## v3 shared empty-project gate (2026-10-12)
 
 The rebuilt read-only AEX now also rejects a saved project, even if its contents and dirty flag are empty/clean. This uses public AEGP_GetProjectPath plus MemorySuite1 lock/unlock/free; errors block the gate. This change does NOT involve private registration. The existing v1 user-verified getter result still stands, but this v3 gate has **NOT** been tested inside After Effects. The v3 AEX was compiled and PE-verified offline only.
+
+## v4 (2026-10-12): actual AE2026 v3 preflight and readable failure reason
+
+The user ran the previous v3 read-only AEX inside AE2026; real TEMP TSV was inspected and archived as AEIG EXP-SHAPE-034. Native independent Bezier creation, four cubic segments, 373-byte archive and non-null private getter all succeeded. The empty-project isolation gate returned BLOCKED specifically because AEGP_ProjectIsDirty returned TRUE (`project_dirty`). The other item and Render Queue queries were not reached; they remain unknown, NOT zero.
+
+This v4 safe AEX shows the **actual fail reason** in its info dialog and fails TDB hashing closed on an OS file read error. Build and PE verification pass. This new v4 binary has NOT been runtime tested. It does not call the private mutating TDB registrar or instantiate any Adobe Shape or Mask. The separate CNLPrivateTDBDisposable AEX remains HIGH RISK and should NOT be installed or run merely because the safe getter succeeded.
+
+## v5 (2026-10-12): better full public read-only inventory without relaxing isolation
+
+The shared NativeProjectSafety.h now defers dirty-project and saved-path **rejection** until AFTER read-only checks of the native root, active project item, non-root project items and Render Queue. This is designed to tell apart empty-but-dirty AE projects from projects containing substantive work. Dirty projects and saved projects STILL FAIL. Earlier SDK errors or actual content still fail closed.
+
+The safe AEX TSV now adds `disposable_project_has_saved_path` and `disposable_active_non_root`. The popup includes the exact stop reason. Existing TSV values `-1` represent fields not reached, not zeros. Rebuilt binaries are statically verified, but the new v5 runtime diagnostics are NOT host tested. Do not reinstall the dangerous AEX to test these changes; the read-only AEX is the only appropriate user preflight.

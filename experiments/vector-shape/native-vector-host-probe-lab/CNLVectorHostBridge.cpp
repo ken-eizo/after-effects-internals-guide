@@ -36,7 +36,9 @@ std::string exeModuleSHA256(const wchar_t* name) {
  if(ok)ok=CryptCreateHash(prov,CALG_SHA_256,0,0,&h)!=FALSE;
  unsigned char bytes[65536];
  DWORD count=0;
- while(ok && ReadFile(file,bytes,sizeof(bytes),&count,nullptr)&&count){
+ while(ok){
+  if(!ReadFile(file,bytes,sizeof(bytes),&count,nullptr)){ok=false;break;}
+  if(count==0)break;
   if(!CryptHashData(h,bytes,count,0)){ok=false;break;}
  }
  BYTE digest[32]{};
@@ -125,6 +127,8 @@ A_Err RunPreflight(){
  std::fprintf(output,"disposable_non_root_items\t%ld\n",(long)projectGate.non_root_items);
  std::fprintf(output,"disposable_render_queue_items\t%ld\n",(long)projectGate.render_queue_items);
  std::fprintf(output,"disposable_project_is_dirty\t%d\n",projectGate.dirty?1:0);
+ std::fprintf(output,"disposable_project_has_saved_path\t%d\n",projectGate.saved_project?1:0);
+ std::fprintf(output,"disposable_active_non_root\t%d\n",projectGate.active_non_root?1:0);
  std::fprintf(output,"private_registry_registration_invoked\t0\n");
  std::fprintf(output,"new_native_host_stream_created\t0\n");
  std::fprintf(output,"AE_native_Pen_tool_linked\t0\n");
@@ -167,11 +171,11 @@ A_Err RunPreflight(){
  char msg[510]{};
  std::snprintf(msg,sizeof(msg),
   "CNL Native Vector Host Preflight: Bezier=%s, pinned TDB=%d, "
-  "factory getter=%d, empty-project gate=%s. "
+  "factory getter=%d, empty-project gate=%s (reason=%s). "
   "Adobe native type NOT registered. "
   "Report: TEMP\\CNL_NativeVector_HostPreflight.tsv",
   status==CNL_OK?"YES":"FAIL",obs.pinned,obs.factory_nonnull,
-  projectGate.empty?"PASS":"BLOCKED");
+  projectGate.empty?"PASS":"BLOCKED",projectGate.reason);
  suites.UtilitySuite3()->AEGP_ReportInfo(g_plugin,msg);
  return A_Err_NONE;
 }

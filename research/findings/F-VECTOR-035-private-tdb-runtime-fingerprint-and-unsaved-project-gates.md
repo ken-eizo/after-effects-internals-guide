@@ -50,3 +50,11 @@ This improves the experimental basis for determining whether an external creator
 Only after a real native owner exists could one probe Pen selection binding and the separate BEE MatchName/operator + VectorArt pipeline, toward a plugin-defined genuine vector object. Such a feature is a research possibility, not an accomplished product.
 
 See EXP-SHAPE-033, F-VECTOR-025/026/028/031/034, EXP-SHAPE-031/032. Phase F (CompNodeAE integration) is deliberately deferred and no `D:/Developer/CompNodeAE` files were edited.
+
+## Follow-up: AE2026 read-only host evidence and diagnostic refinement (2026-10-12)
+
+The user ran the v3 `CNLNativeVectorHostProbe` in the real AE2026 process (EXP-SHAPE-034). The genuine TSV confirmed all prior read-only native CNL Bezier and factory-getter signals, while the disposable project gate returned `BLOCKED` specifically at `AEGP_ProjectIsDirty=1`. No TDB type mutation was invoked. `non_root_items=-1` and `render_queue_items=-1` reflect not-reached checks in that tested version, NOT verified empty content.
+
+After this evidence, the shared public SDK gate was refined to continue reading path/root/items/Render Queue even when a project is dirty or has a saved path, then reject dirty or saved projects **at the end**. This preserves the hard blocking decision and improves diagnostics. The read-only AEX also reports saved-path/active-non-root flags, displays the exact rejection reason in its dialog, and fails SHA256 on Windows ReadFile errors. Both dependent AEX files were rebuilt and statically verified. These *newer* AEX versions have NOT been user-tested, and there is still no private registrar live result.
+
+The precise 2025/2026 BEE_VectorLayer registration entrypoints and secondary evaluator initialization were also traced independently (F-VECTOR-036, EXP-SHAPE-035). That native owner/evaluator boundary has no verified foreign extension contract.
