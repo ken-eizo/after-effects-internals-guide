@@ -12192,6 +12192,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-creator-callback-automatic-initialization-and-lifetime-are-now-partially-decoded" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Creator callback, automatic initialization and lifetime are now partially decoded
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12321,6 +12332,10 @@
 <li>datasets/ae-native-vector-owner-contract-summary-2025-2026.json: compact verified per-version facts.</li>
 </ul>
 <p>The earlier Mask experiment F-VECTOR-024 is retained as an independent side branch for evidence preservation, but it is <strong>explicitly NOT a milestone</strong> toward registering a new native path type or plugin-owned Contents.</p>
+<h2 id="2026-10-12-creator-callback-automatic-initialization-and-lifetime-are-now-partially-decoded">2026-10-12 — Creator callback, automatic initialization and lifetime are now partially decoded<a class="headerlink" href="#2026-10-12-creator-callback-automatic-initialization-and-lifetime-are-now-partially-decoded" title="Permanent link">&para;</a></h2>
+<p>Finding F-VECTOR-026 and EXP-SHAPE-024 extend the native typed-stream registry ABI evidence: factory registration retains/clones an MSVC std::function-erased creator, calls its CreateStream synchronously during type registration, and demands a real TDB_StreamBase with working IsLeaf, GetAsLeaf, SetupCanonicalLayout and (on native leaf) IsSeparationLeader virtual methods. Concrete TDB.dll native vftables in AE2025/2026 map these names to offsets 0x58, 0x80, 0x150 and leaf 0x298, respectively.</p>
+<p>Crucial destructor caveat: TDB_ScRegisterStreams::~ only frees its own vector; explicit UnregisterAll performs reverse-order registration removal; UnregisterFactoryFunc deletes canonical/creator entries and destroys a native stream instance. An external plugin cannot count on implicit RAII cleanup of its native factory callback after unload.</p>
+<p>No external Stream Creator, native Timeline owner, tool binding or BEE VectorArt evaluator was registered. This lowers research uncertainty about the first private ABI gate but does not move the user-visible S1-S3 success milestone. Next inspect cloning/serialization, registry startup/init order, project object survival and independent native owner adoption. Scripts/results in AEIG F-VECTOR-026, EXP-SHAPE-024 and 2025/2026 concise verifier data.</p>
 
 
 
@@ -12341,7 +12356,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 17:46:31 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 18:06:23 UTC">October 11, 2026</span>
   </span>
 
     
