@@ -1,0 +1,3647 @@
+{
+  "classification": "E2-L static x64 code, no AE host private API executed",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "functions": [
+        {
+          "query": "BEE_IsShapeGroupOwnerStreamPath@@",
+          "symbol": "?BEE_IsShapeGroupOwnerStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x36cdb0",
+          "end": "0x36cdfe",
+          "instructions": [
+            {
+              "rva": "0x36cdb0",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdb2",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdb6",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51154]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf10",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cdbc",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdbf",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51173]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf38",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cdc5",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdc8",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x1280279]",
+              "rip_refs": [
+                {
+                  "rva": "0x15ed048",
+                  "export": "?BEE_StreamGroupName_MASK_PARADE@@3V?$TDB_DerivedMatchName@VBEE_MaskParade@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cdcf",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdd2",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51198]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cdd8",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdda",
+              "opcode": "jne",
+              "operands": "0x18036cdf6",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cddc",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x128266d]",
+              "rip_refs": [
+                {
+                  "rva": "0x15ef450",
+                  "export": "?StreamName_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cde3",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cde6",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51184]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36cdec",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdee",
+              "opcode": "jne",
+              "operands": "0x18036cdf6",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdf0",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdf4",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdf5",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdf6",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdf8",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdfc",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cdfd",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_IsShapeGroupStreamPath@@",
+          "symbol": "?BEE_IsShapeGroupStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x36ce00",
+          "end": "0x36ce4e",
+          "instructions": [
+            {
+              "rva": "0x36ce00",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce02",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce06",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51104]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf10",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce0c",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce0f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51123]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf38",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce15",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce18",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x1280239]",
+              "rip_refs": [
+                {
+                  "rva": "0x15ed058",
+                  "export": "?BEE_StreamGroupName_MASK_ATOM@@3V?$TDB_DerivedMatchName@VBEE_MaskAtom@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce1f",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce22",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51148]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce28",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce2a",
+              "opcode": "jne",
+              "operands": "0x18036ce46",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce2c",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x12829dd]",
+              "rip_refs": [
+                {
+                  "rva": "0x15ef810",
+                  "export": "?StreamName_SHAPE_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStreamGroup@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce33",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce36",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb51134]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce3c",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce3e",
+              "opcode": "jne",
+              "operands": "0x18036ce46",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce40",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce44",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce45",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce46",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce48",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce4c",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce4d",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_IsShapeStreamPath@@",
+          "symbol": "?BEE_IsShapeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x36ce50",
+          "end": "0x36cea1",
+          "instructions": [
+            {
+              "rva": "0x36ce50",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce52",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce56",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb510b4]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf10",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce5c",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce5f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb510d3]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf38",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce65",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rip + 0xb4f924]",
+              "rip_refs": [
+                {
+                  "rva": "0xebc790",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce6c",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce6f",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce72",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rdx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce75",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb510f5]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce7b",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce7d",
+              "opcode": "jne",
+              "operands": "0x18036ce99",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce7f",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x128299a]",
+              "rip_refs": [
+                {
+                  "rva": "0x15ef820",
+                  "export": "?StreamName_SHAPE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStream@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce86",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce89",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb510e1]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdf70",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x36ce8f",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce91",
+              "opcode": "jne",
+              "operands": "0x18036ce99",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce93",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce97",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce98",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce99",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce9b",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36ce9f",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x36cea0",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_GetShapePathsVec@@",
+          "symbol": "?BEE_GetShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "start": "0xaa1d0",
+          "end": "0xaa283",
+          "instructions": [
+            {
+              "rva": "0xaa1d0",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1d5",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1da",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1df",
+              "opcode": "push",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1e0",
+              "opcode": "sub",
+              "operands": "rsp, 0x50",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1e4",
+              "opcode": "mov",
+              "operands": "rdi, rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1e7",
+              "opcode": "mov",
+              "operands": "rbp, rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1ea",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rdx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1ed",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rdx + 8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1f1",
+              "opcode": "cmp",
+              "operands": "rbx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1f4",
+              "opcode": "je",
+              "operands": "0x1800aa210",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1f6",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rbx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1f9",
+              "opcode": "xor",
+              "operands": "edx, edx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1fb",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa1fe",
+              "opcode": "call",
+              "operands": "qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa200",
+              "opcode": "add",
+              "operands": "rbx, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa204",
+              "opcode": "cmp",
+              "operands": "rbx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa207",
+              "opcode": "jne",
+              "operands": "0x1800aa1f6",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa209",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rdi]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa20c",
+              "opcode": "mov",
+              "operands": "qword ptr [rdi + 8], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa210",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa215",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe145c5]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe7e0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xaa21b",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa21e",
+              "opcode": "mov",
+              "operands": "r8d, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa224",
+              "opcode": "mov",
+              "operands": "rdx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa227",
+              "opcode": "mov",
+              "operands": "rcx, rbp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa22a",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe13b20]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdd50",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xaa230",
+              "opcode": "test",
+              "operands": "rax, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa233",
+              "opcode": "je",
+              "operands": "0x1800aa25e",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa235",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa238",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa23b",
+              "opcode": "call",
+              "operands": "qword ptr [rdx + 0x88]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa241",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa246",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x20], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa24b",
+              "opcode": "mov",
+              "operands": "r9, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa24e",
+              "opcode": "mov",
+              "operands": "r8, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa251",
+              "opcode": "mov",
+              "operands": "rdx, rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa254",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x68]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa259",
+              "opcode": "call",
+              "operands": "0x1800a7e20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa25e",
+              "opcode": "movzx",
+              "operands": "ebx, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa261",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa266",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe1457c]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe7e8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xaa26c",
+              "opcode": "mov",
+              "operands": "eax, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa26e",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x60]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa273",
+              "opcode": "mov",
+              "operands": "rbp, qword ptr [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa278",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rsp + 0x78]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa27d",
+              "opcode": "add",
+              "operands": "rsp, 0x50",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa281",
+              "opcode": "pop",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xaa282",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_CmdAddToIndexedStreamGroup@@",
+          "symbol": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z",
+          "start": "0x657820",
+          "end": "0x657a75",
+          "instructions": [
+            {
+              "rva": "0x657820",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657822",
+              "opcode": "push",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657823",
+              "opcode": "push",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657824",
+              "opcode": "push",
+              "operands": "r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657826",
+              "opcode": "push",
+              "operands": "r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657828",
+              "opcode": "push",
+              "operands": "r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65782a",
+              "opcode": "push",
+              "operands": "r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65782c",
+              "opcode": "sub",
+              "operands": "rsp, 0xe0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657833",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0xec1f06]",
+              "rip_refs": [
+                {
+                  "rva": "0x1519740",
+                  "export": "",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x65783a",
+              "opcode": "xor",
+              "operands": "rax, rsp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65783d",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xd8], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657845",
+              "opcode": "mov",
+              "operands": "r13, r9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657848",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], r8",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65784d",
+              "opcode": "mov",
+              "operands": "r12, rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657850",
+              "opcode": "mov",
+              "operands": "rbx, rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657853",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xa8], rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65785b",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657860",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x140]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657868",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x38], rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65786d",
+              "opcode": "lea",
+              "operands": "rax, [rsp + 0x60]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657872",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657877",
+              "opcode": "lea",
+              "operands": "r14, [rip + 0x86d7f2]",
+              "rip_refs": [
+                {
+                  "rva": "0xec5070",
+                  "export": "??_7?$BEE_StreamSpec_Base_T@PEAVBEE_Layer@@@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x65787e",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657883",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657888",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x866f52]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe7e0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x65788e",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65788f",
+              "opcode": "xor",
+              "operands": "esi, esi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657891",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657896",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65789b",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x866f7f]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe820",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x6578a1",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578a2",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x86d7d7]",
+              "rip_refs": [
+                {
+                  "rva": "0xec5080",
+                  "export": "??_7BEE_StreamSpec@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x6578a9",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578ae",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x90], esi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578b5",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x94], 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578bd",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x98], rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578c5",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578ca",
+              "opcode": "mov",
+              "operands": "rdx, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578cd",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578d2",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x866f28]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe800",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x6578d8",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578db",
+              "opcode": "call",
+              "operands": "0x1802ea2b0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578e0",
+              "opcode": "mov",
+              "operands": "rsi, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578e3",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578e8",
+              "opcode": "mov",
+              "operands": "r8d, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578ee",
+              "opcode": "mov",
+              "operands": "rdx, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578f1",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578f4",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x86645e]",
+              "rip_refs": [
+                {
+                  "rva": "0xebdd58",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x6578fa",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6578fd",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657900",
+              "opcode": "call",
+              "operands": "qword ptr [rdx + 0x90]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657906",
+              "opcode": "mov",
+              "operands": "r15, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657909",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65790c",
+              "opcode": "mov",
+              "operands": "rcx, r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65790f",
+              "opcode": "call",
+              "operands": "qword ptr [rax + 0x168]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657915",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x90], eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65791c",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657921",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x20], 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657926",
+              "opcode": "mov",
+              "operands": "r9d, 0x258",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65792c",
+              "opcode": "mov",
+              "operands": "r8b, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65792f",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657934",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657937",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x86605b]",
+              "rip_refs": [
+                {
+                  "rva": "0xebd998",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x65793d",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x98], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657945",
+              "opcode": "test",
+              "operands": "r13, r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657948",
+              "opcode": "je",
+              "operands": "0x180657993",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65794a",
+              "opcode": "mov",
+              "operands": "rdx, r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65794d",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0xb8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657955",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x867f8d]",
+              "rip_refs": [
+                {
+                  "rva": "0xebf8e8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x65795b",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65795c",
+              "opcode": "mov",
+              "operands": "rdx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65795f",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0x98]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657967",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x866f2b]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe898",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x65796d",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65796e",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rsp + 0xd0]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657976",
+              "opcode": "cmp",
+              "operands": "rdx, 7",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65797a",
+              "opcode": "jbe",
+              "operands": "0x180657993",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65797c",
+              "opcode": "lea",
+              "operands": "rdx, [rdx*2 + 2]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657984",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0xb8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65798c",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x86983e]",
+              "rip_refs": [
+                {
+                  "rva": "0xec11d0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x657992",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657993",
+              "opcode": "cmp",
+              "operands": "byte ptr [rsp + 0x148], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65799b",
+              "opcode": "jne",
+              "operands": "0x1806579b9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x65799d",
+              "opcode": "mov",
+              "operands": "r9, r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579a0",
+              "opcode": "mov",
+              "operands": "edx, 3",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579a5",
+              "opcode": "mov",
+              "operands": "r8d, 0x80000000",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579ab",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0x98]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579b3",
+              "opcode": "call",
+              "operands": "0x18066dbc0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579b8",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579b9",
+              "opcode": "jmp",
+              "operands": "0x1806579e1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579bb",
+              "opcode": "mov",
+              "operands": "ebx, dword ptr [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579bf",
+              "opcode": "lea",
+              "operands": "r14, [rip + 0x86d6aa]",
+              "rip_refs": [
+                {
+                  "rva": "0xec5070",
+                  "export": "??_7?$BEE_StreamSpec_Base_T@PEAVBEE_Layer@@@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x6579c6",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x38]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579cb",
+              "opcode": "test",
+              "operands": "ebx, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579cd",
+              "opcode": "jne",
+              "operands": "0x180657a32",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579cf",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rsp + 0x40]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579d4",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0xa8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579dc",
+              "opcode": "mov",
+              "operands": "r12, qword ptr [rsp + 0x48]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579e1",
+              "opcode": "mov",
+              "operands": "edx, 0x46",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579e6",
+              "opcode": "mov",
+              "operands": "r9, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579e9",
+              "opcode": "mov",
+              "operands": "r8, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579ec",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579ef",
+              "opcode": "call",
+              "operands": "0x18067b1a0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579f4",
+              "opcode": "mov",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579f6",
+              "opcode": "test",
+              "operands": "eax, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579f8",
+              "opcode": "jne",
+              "operands": "0x180657a32",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579fa",
+              "opcode": "lea",
+              "operands": "rax, [rsp + 0x60]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x6579ff",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a04",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x50], 0x40",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a0d",
+              "opcode": "mov",
+              "operands": "edx, 0x46",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a12",
+              "opcode": "lea",
+              "operands": "r8, [rsp + 0x48]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a17",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a1a",
+              "opcode": "call",
+              "operands": "0x18064ba20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a1f",
+              "opcode": "mov",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a21",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a24",
+              "opcode": "call",
+              "operands": "0x18067ac80",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a29",
+              "opcode": "test",
+              "operands": "eax, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a2b",
+              "opcode": "je",
+              "operands": "0x180657a32",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a2d",
+              "opcode": "test",
+              "operands": "ebx, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a2f",
+              "opcode": "cmove",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a32",
+              "opcode": "test",
+              "operands": "rdi, rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a35",
+              "opcode": "je",
+              "operands": "0x180657a40",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a37",
+              "opcode": "mov",
+              "operands": "eax, dword ptr [rsp + 0x90]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a3e",
+              "opcode": "mov",
+              "operands": "dword ptr [rdi], eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a40",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a45",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a4a",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x866d98]",
+              "rip_refs": [
+                {
+                  "rva": "0xebe7e8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x657a50",
+              "opcode": "mov",
+              "operands": "eax, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a52",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0xd8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a5a",
+              "opcode": "xor",
+              "operands": "rcx, rsp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a5d",
+              "opcode": "call",
+              "operands": "0x180ce9610",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a62",
+              "opcode": "add",
+              "operands": "rsp, 0xe0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a69",
+              "opcode": "pop",
+              "operands": "r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a6b",
+              "opcode": "pop",
+              "operands": "r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a6d",
+              "opcode": "pop",
+              "operands": "r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a6f",
+              "opcode": "pop",
+              "operands": "r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a71",
+              "opcode": "pop",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a72",
+              "opcode": "pop",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a73",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x657a74",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "functions": [
+        {
+          "query": "BEE_IsShapeGroupOwnerStreamPath@@",
+          "symbol": "?BEE_IsShapeGroupOwnerStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x3777f0",
+          "end": "0x37783e",
+          "instructions": [
+            {
+              "rva": "0x3777f0",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3777f2",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3777f6",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f844]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17040",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x3777fc",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3777ff",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f863]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17068",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x377805",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377808",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x1326091]",
+              "rip_refs": [
+                {
+                  "rva": "0x169d8a0",
+                  "export": "?BEE_StreamGroupName_MASK_PARADE@@3V?$TDB_DerivedMatchName@VBEE_MaskParade@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x37780f",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377812",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f888]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x377818",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37781a",
+              "opcode": "jne",
+              "operands": "0x180377836",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37781c",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x13285fd]",
+              "rip_refs": [
+                {
+                  "rva": "0x169fe20",
+                  "export": "?StreamName_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x377823",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377826",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f874]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x37782c",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37782e",
+              "opcode": "jne",
+              "operands": "0x180377836",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377830",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377834",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377835",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377836",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377838",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37783c",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37783d",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_IsShapeGroupStreamPath@@",
+          "symbol": "?BEE_IsShapeGroupStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x377840",
+          "end": "0x37788e",
+          "instructions": [
+            {
+              "rva": "0x377840",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377842",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377846",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f7f4]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17040",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x37784c",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37784f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f813]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17068",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x377855",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377858",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x1326051]",
+              "rip_refs": [
+                {
+                  "rva": "0x169d8b0",
+                  "export": "?BEE_StreamGroupName_MASK_ATOM@@3V?$TDB_DerivedMatchName@VBEE_MaskAtom@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x37785f",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377862",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f838]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x377868",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37786a",
+              "opcode": "jne",
+              "operands": "0x180377886",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37786c",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x132896d]",
+              "rip_refs": [
+                {
+                  "rva": "0x16a01e0",
+                  "export": "?StreamName_SHAPE_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStreamGroup@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x377873",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377876",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f824]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x37787c",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37787e",
+              "opcode": "jne",
+              "operands": "0x180377886",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377880",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377884",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377885",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377886",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377888",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37788c",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37788d",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_IsShapeStreamPath@@",
+          "symbol": "?BEE_IsShapeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "start": "0x377890",
+          "end": "0x3778e1",
+          "instructions": [
+            {
+              "rva": "0x377890",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377892",
+              "opcode": "sub",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x377896",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f7a4]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17040",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x37789c",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x37789f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f7c3]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17068",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x3778a5",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rip + 0xb9ded4]",
+              "rip_refs": [
+                {
+                  "rva": "0xf15780",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x3778ac",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778af",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778b2",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rdx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778b5",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f7e5]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x3778bb",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778bd",
+              "opcode": "jne",
+              "operands": "0x1803778d9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778bf",
+              "opcode": "lea",
+              "operands": "rdx, [rip + 0x132892a]",
+              "rip_refs": [
+                {
+                  "rva": "0x16a01f0",
+                  "export": "?StreamName_SHAPE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStream@BEE_VectorStream@@@@B",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x3778c6",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778c9",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xb9f7d1]",
+              "rip_refs": [
+                {
+                  "rva": "0xf170a0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x3778cf",
+              "opcode": "test",
+              "operands": "al, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778d1",
+              "opcode": "jne",
+              "operands": "0x1803778d9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778d3",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778d7",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778d8",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778d9",
+              "opcode": "mov",
+              "operands": "al, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778db",
+              "opcode": "add",
+              "operands": "rsp, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778df",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x3778e0",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_GetShapePathsVec@@",
+          "symbol": "?BEE_GetShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "start": "0xafd40",
+          "end": "0xafde9",
+          "instructions": [
+            {
+              "rva": "0xafd40",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd42",
+              "opcode": "push",
+              "operands": "rbp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd43",
+              "opcode": "push",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd44",
+              "opcode": "push",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd45",
+              "opcode": "sub",
+              "operands": "rsp, 0x58",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd49",
+              "opcode": "mov",
+              "operands": "rsi, rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd4c",
+              "opcode": "mov",
+              "operands": "rbp, rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd4f",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [rdx + 8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd53",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rdx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd56",
+              "opcode": "cmp",
+              "operands": "rbx, rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd59",
+              "opcode": "je",
+              "operands": "0x1800afd7a",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd5b",
+              "opcode": "nop",
+              "operands": "dword ptr [rax + rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd60",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rbx]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd63",
+              "opcode": "xor",
+              "operands": "edx, edx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd65",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd68",
+              "opcode": "call",
+              "operands": "qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd6a",
+              "opcode": "add",
+              "operands": "rbx, 0x20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd6e",
+              "opcode": "cmp",
+              "operands": "rbx, rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd71",
+              "opcode": "jne",
+              "operands": "0x1800afd60",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd73",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rsi]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd76",
+              "opcode": "mov",
+              "operands": "qword ptr [rsi + 8], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd7a",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd7f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe67d3b]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17ac0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xafd85",
+              "opcode": "mov",
+              "operands": "rbx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd88",
+              "opcode": "mov",
+              "operands": "r8d, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd8e",
+              "opcode": "mov",
+              "operands": "rdx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd91",
+              "opcode": "mov",
+              "operands": "rcx, rbp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd94",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe670f6]",
+              "rip_refs": [
+                {
+                  "rva": "0xf16e90",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xafd9a",
+              "opcode": "test",
+              "operands": "rax, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd9d",
+              "opcode": "je",
+              "operands": "0x1800afdd0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafd9f",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafda2",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafda5",
+              "opcode": "call",
+              "operands": "qword ptr [rdx + 0x88]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdab",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdb0",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x20], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdb5",
+              "opcode": "mov",
+              "operands": "r9, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdb8",
+              "opcode": "mov",
+              "operands": "r8, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdbb",
+              "opcode": "mov",
+              "operands": "rdx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdbe",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x88]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdc6",
+              "opcode": "call",
+              "operands": "0x1800ada50",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdcb",
+              "opcode": "movzx",
+              "operands": "ebx, al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdce",
+              "opcode": "jmp",
+              "operands": "0x1800afdd2",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdd0",
+              "opcode": "xor",
+              "operands": "bl, bl",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdd2",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafdd7",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0xe67ceb]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17ac8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0xafddd",
+              "opcode": "movzx",
+              "operands": "eax, bl",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde0",
+              "opcode": "add",
+              "operands": "rsp, 0x58",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde4",
+              "opcode": "pop",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde5",
+              "opcode": "pop",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde6",
+              "opcode": "pop",
+              "operands": "rbp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde7",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0xafde8",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        },
+        {
+          "query": "BEE_CmdAddToIndexedStreamGroup@@",
+          "symbol": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z",
+          "start": "0x672a20",
+          "end": "0x672c8d",
+          "instructions": [
+            {
+              "rva": "0x672a20",
+              "opcode": "push",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a22",
+              "opcode": "push",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a23",
+              "opcode": "push",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a24",
+              "opcode": "push",
+              "operands": "r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a26",
+              "opcode": "push",
+              "operands": "r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a28",
+              "opcode": "push",
+              "operands": "r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a2a",
+              "opcode": "push",
+              "operands": "r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a2c",
+              "opcode": "sub",
+              "operands": "rsp, 0xf0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a33",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0xf33ec6]",
+              "rip_refs": [
+                {
+                  "rva": "0x15a6900",
+                  "export": "",
+                  "section": ".data"
+                }
+              ]
+            },
+            {
+              "rva": "0x672a3a",
+              "opcode": "xor",
+              "operands": "rax, rsp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a3d",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xe8], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a45",
+              "opcode": "mov",
+              "operands": "r13, r9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a48",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], r8",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a4d",
+              "opcode": "mov",
+              "operands": "r12, rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a50",
+              "opcode": "mov",
+              "operands": "rbx, rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a53",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xb8], rcx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a5b",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], rdx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a60",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x150]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a68",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x38], rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a6d",
+              "opcode": "lea",
+              "operands": "rax, [rsp + 0x60]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a72",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a77",
+              "opcode": "lea",
+              "operands": "r15, [rip + 0x8ab862]",
+              "rip_refs": [
+                {
+                  "rva": "0xf1e2e0",
+                  "export": "??_7?$BEE_StreamSpec_Base_T@PEAVBEE_Layer@@@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672a7e",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a83",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a88",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a5032]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17ac0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672a8e",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a8f",
+              "opcode": "xor",
+              "operands": "esi, esi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a91",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a96",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672a9b",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a505f]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17b00",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672aa1",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672aa2",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x8ab847]",
+              "rip_refs": [
+                {
+                  "rva": "0xf1e2f0",
+                  "export": "??_7BEE_StreamSpec@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672aa9",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672aae",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x90], esi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ab5",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x94], 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672abd",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x98], rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ac5",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0xa0], sil",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672acd",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ad2",
+              "opcode": "mov",
+              "operands": "rdx, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ad5",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ada",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a5000]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17ae0",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672ae0",
+              "opcode": "movzx",
+              "operands": "eax, byte ptr [rsp + 0x159]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ae8",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0xa0], al",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672aef",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672af2",
+              "opcode": "call",
+              "operands": "0x1802f2e60",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672af7",
+              "opcode": "mov",
+              "operands": "rsi, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672afa",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672aff",
+              "opcode": "mov",
+              "operands": "r8d, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b05",
+              "opcode": "mov",
+              "operands": "rdx, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b08",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b0b",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a4387]",
+              "rip_refs": [
+                {
+                  "rva": "0xf16e98",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672b11",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b14",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b17",
+              "opcode": "call",
+              "operands": "qword ptr [rdx + 0x90]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b1d",
+              "opcode": "mov",
+              "operands": "r14, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b20",
+              "opcode": "mov",
+              "operands": "r8, qword ptr [rax]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b23",
+              "opcode": "mov",
+              "operands": "rcx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b26",
+              "opcode": "call",
+              "operands": "qword ptr [r8 + 0x168]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b2d",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x90], eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b34",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b39",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x20], 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b3e",
+              "opcode": "mov",
+              "operands": "r9d, 0x258",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b44",
+              "opcode": "mov",
+              "operands": "r8b, 1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b47",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b4c",
+              "opcode": "mov",
+              "operands": "rcx, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b4f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a4153]",
+              "rip_refs": [
+                {
+                  "rva": "0xf16ca8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672b55",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x98], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b5d",
+              "opcode": "test",
+              "operands": "r13, r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b60",
+              "opcode": "je",
+              "operands": "0x180672bab",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b62",
+              "opcode": "mov",
+              "operands": "rdx, r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b65",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0xc8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b6d",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a5ee5]",
+              "rip_refs": [
+                {
+                  "rva": "0xf18a58",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672b73",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b74",
+              "opcode": "mov",
+              "operands": "rdx, rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b77",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0x98]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b7f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a4ff3]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17b78",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672b85",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b86",
+              "opcode": "mov",
+              "operands": "rdx, qword ptr [rsp + 0xe0]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b8e",
+              "opcode": "cmp",
+              "operands": "rdx, 7",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b92",
+              "opcode": "jbe",
+              "operands": "0x180672bab",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b94",
+              "opcode": "lea",
+              "operands": "rdx, [rdx*2 + 2]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672b9c",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0xc8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672ba4",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a7a4e]",
+              "rip_refs": [
+                {
+                  "rva": "0xf1a5f8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672baa",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bab",
+              "opcode": "cmp",
+              "operands": "byte ptr [rsp + 0x158], 0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bb3",
+              "opcode": "jne",
+              "operands": "0x180672bd1",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bb5",
+              "opcode": "mov",
+              "operands": "r9, r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bb8",
+              "opcode": "mov",
+              "operands": "edx, 3",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bbd",
+              "opcode": "mov",
+              "operands": "r8d, 0x80000000",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bc3",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0x98]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bcb",
+              "opcode": "call",
+              "operands": "0x1806898e0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bd0",
+              "opcode": "nop",
+              "operands": "",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bd1",
+              "opcode": "jmp",
+              "operands": "0x180672bf9",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bd3",
+              "opcode": "mov",
+              "operands": "ebx, dword ptr [rsp + 0x30]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bd7",
+              "opcode": "lea",
+              "operands": "r15, [rip + 0x8ab702]",
+              "rip_refs": [
+                {
+                  "rva": "0xf1e2e0",
+                  "export": "??_7?$BEE_StreamSpec_Base_T@PEAVBEE_Layer@@@@6B@",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672bde",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [rsp + 0x38]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672be3",
+              "opcode": "test",
+              "operands": "ebx, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672be5",
+              "opcode": "jne",
+              "operands": "0x180672c4a",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672be7",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rsp + 0x40]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bec",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0xb8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bf4",
+              "opcode": "mov",
+              "operands": "r12, qword ptr [rsp + 0x48]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bf9",
+              "opcode": "mov",
+              "operands": "edx, 0x47",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672bfe",
+              "opcode": "mov",
+              "operands": "r9, r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c01",
+              "opcode": "mov",
+              "operands": "r8, rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c04",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c07",
+              "opcode": "call",
+              "operands": "0x1806971b0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c0c",
+              "opcode": "mov",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c0e",
+              "opcode": "test",
+              "operands": "eax, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c10",
+              "opcode": "jne",
+              "operands": "0x180672c4a",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c12",
+              "opcode": "lea",
+              "operands": "rax, [rsp + 0x60]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c17",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], rax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c1c",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x50], 0x48",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c25",
+              "opcode": "mov",
+              "operands": "edx, 0x47",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c2a",
+              "opcode": "lea",
+              "operands": "r8, [rsp + 0x48]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c2f",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c32",
+              "opcode": "call",
+              "operands": "0x180666320",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c37",
+              "opcode": "mov",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c39",
+              "opcode": "mov",
+              "operands": "rcx, rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c3c",
+              "opcode": "call",
+              "operands": "0x180696d20",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c41",
+              "opcode": "test",
+              "operands": "eax, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c43",
+              "opcode": "je",
+              "operands": "0x180672c4a",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c45",
+              "opcode": "test",
+              "operands": "ebx, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c47",
+              "opcode": "cmove",
+              "operands": "ebx, eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c4a",
+              "opcode": "test",
+              "operands": "rdi, rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c4d",
+              "opcode": "je",
+              "operands": "0x180672c58",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c4f",
+              "opcode": "mov",
+              "operands": "eax, dword ptr [rsp + 0x90]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c56",
+              "opcode": "mov",
+              "operands": "dword ptr [rdi], eax",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c58",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c5d",
+              "opcode": "lea",
+              "operands": "rcx, [rsp + 0x70]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c62",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x8a4e60]",
+              "rip_refs": [
+                {
+                  "rva": "0xf17ac8",
+                  "export": "",
+                  "section": ".rdata"
+                }
+              ]
+            },
+            {
+              "rva": "0x672c68",
+              "opcode": "mov",
+              "operands": "eax, ebx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c6a",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [rsp + 0xe8]",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c72",
+              "opcode": "xor",
+              "operands": "rcx, rsp",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c75",
+              "opcode": "call",
+              "operands": "0x180d3ac30",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c7a",
+              "opcode": "add",
+              "operands": "rsp, 0xf0",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c81",
+              "opcode": "pop",
+              "operands": "r15",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c83",
+              "opcode": "pop",
+              "operands": "r14",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c85",
+              "opcode": "pop",
+              "operands": "r13",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c87",
+              "opcode": "pop",
+              "operands": "r12",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c89",
+              "opcode": "pop",
+              "operands": "rdi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c8a",
+              "opcode": "pop",
+              "operands": "rsi",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c8b",
+              "opcode": "pop",
+              "operands": "rbx",
+              "rip_refs": []
+            },
+            {
+              "rva": "0x672c8c",
+              "opcode": "ret",
+              "operands": "",
+              "rip_refs": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

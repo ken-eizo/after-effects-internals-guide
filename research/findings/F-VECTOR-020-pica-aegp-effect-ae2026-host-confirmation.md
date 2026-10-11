@@ -1,6 +1,6 @@
 ---
-status: confirmed-in-host-with-followup-binary-staged
-last_verified: 2026-10-11
+status: corrected-binary-confirmed-in-host
+last_verified: 2026-10-12
 evidence: E2-X (user AE host screenshots) + E2-T (compiled mock run) + E0-H (SDK/PiPL)
 versions: installed AE2026, SDK25.6, VectorBridgeAEGP + VectorBridgeConsumer x64
 ---
@@ -89,3 +89,19 @@ Original screenshots were user-supplied in the conversation and their text was t
 ## Installation status after corrected build
 
 The installed original `C:/Program Files/Adobe/Common/Plug-ins/7.0/MediaCore/VectorBridgeConsumer.aex` has SHA256 `11363e5637f748b2390c8ee084a0590ee676f8978e9d11a732a4c60984ec0793`. Its byte-identical backup was made at `D:/Developer/ShapeLayerAE/backups/VectorBridgeConsumer_pre_PiPL_fix_20261011.aex`. An automated overwrite attempt was **denied by Windows UnauthorizedAccessException** in the protected Program Files directory; the original installed hash remained unchanged. The fixed binary SHA256 `4271c8b7b1c710df12681c57cfda6eb9e148eff59114ffdd1477e31e5d4d411f` remains staged at `D:/Developer/ShapeLayerAE/build/vector_bridge/Release/VectorBridgeConsumer.aex` and **must be copied by an administrator** after closing AE. No new AE2026 host success is asserted for the patched Consumer yet.
+
+
+## 2026-10-12 actual corrected AEX host confirmation
+
+The user submitted an additional After Effects 2026 screenshot showing the applied effect and its About dialog:
+
+  CompNodeAE Vector Geometry Bridge
+  PICA suite: connected
+  Native Bezier segments: 4; first X: 100.00
+  This is NOT a host Shape Layer or native AE vector renderer.
+
+A separate authorized local hash check read both the installed Consumer AEX and the staged corrected Release Consumer binary and returned the EXACT SAME SHA256 for each: 4271C8B7B1C710DF12681C57CFDA6EB9E148EFF59114FFDD1477E31E5D4D411F. Therefore the **corrected Consumer AEX was indeed installed and running successfully inside AE2026**; the earlier "not yet reloaded" installation paragraph above is HISTORICAL and superseded by this later observation.
+
+The user screenshot shows no active yellow warning icon next to the effect and no error popup; the user did not report the previous PiPL mismatch dialogs in this retest. This supports the metadata fix, but absence of warning on one screenshot does not test all project/startup conditions or concurrent MFR rendering. The exact original provider-to-consumer PICA native cubic handoff remains correct after rebuild.
+
+Product boundary is unchanged: numeric cross-plugin geometry service is host-confirmed; native BEE_VectorArt output, editable native Contents owned by an Effect SDK effect, and host renderer integration remain unproven.

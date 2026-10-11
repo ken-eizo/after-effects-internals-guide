@@ -37,3 +37,28 @@ Only the two .aex files would be installed in a **separate, disposable test AE e
 5. Native Timeline/Path tool/VectorArt ownership. The Adobe BEE/TDB private registries remain a separate research track.
 
 No user-visible claim of an effect that itself owns native AE Shape Contents is made. This lab gives a **technically plausible independent vector data protocol** for multiple cooperating CompNodeAE or third-party effects, pending real-host observation.
+
+
+## 2026-10-12 — Actually generated a non-raster vector artwork from the AEGP
+
+VectorBridgeToSVG.cpp is now a separate x64 program that calls the **actual compiled VectorBridgeAEGP.aex** through a minimal public PICA service stub, then requests its native double-precision four-cubic Bézier geometry at a rational time. It transforms the returned numerical cubic control points, creates **28 editable path elements / 112 cubic Bezier segments**, and serializes a 1024x1024 SVG with only <path> elements (no image nodes or bitmaps).
+
+Build, then execute in PowerShell (quoting shown):
+
+    & 'D:\Developer\ShapeLayerAE\build\vector_bridge\Release\VectorBridgeToSVG.exe' 'D:\Developer\ShapeLayerAE\build\vector_bridge\Release\VectorBridgeAEGP.aex' 'D:\Developer\ShapeLayerAE\results\CNL_Vector_Rosette_28.svg' 12 24 1 28
+
+Arguments: provider AEX, SVG output path, time numerator, time denominator, shape kind (0=circle; 1=ellipse), repeat count (1..256).
+
+To validate both the generated SVG and time-dependent geometry:
+
+    python 'D:\Developer\ShapeLayerAE\labs\vector_bridge\verify_svg_vector_art.py'
+
+Validation succeeded on two separate frame times: exactly 28 unique editable paths and 112 cubic commands, no image/foreignObject/raster elements, all finite in bounds, hash differs by time. JSON receipt in AEIG datasets/ae-pica-vector-svg-rosette-geometry-validation-2026.json.
+
+The test SVG is available at:
+
+    D:\Developer\ShapeLayerAE\results\CNL_Vector_Rosette_28.svg
+
+This is an executable **code → cubic vector data → procedural instancing → vector-only SVG** flow and a possible starting point for an explicit **Bake To Native Shape** operation through AE2026 SVG import. The AE import of this exact SVG has **not yet been executed**; path/group/stroke roundtrip fidelity remains a user experiment. The SVG file is NOT a native Effect-owned Contents tree or host VectorArt return value.
+
+Important: Keep running AE untouched. This program is a standalone native PICA client; it does not install a new AEX or execute private BEE/TDB entrypoints.

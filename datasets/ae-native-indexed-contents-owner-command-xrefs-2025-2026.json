@@ -1,0 +1,656 @@
+{
+  "classification": "E2-L direct call and export-boundary evidence; no runtime execution, indirect calls not scanned",
+  "years": {
+    "2025": {
+      "hash_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "instruction_count": 4488162,
+      "results": [
+        {
+          "symbol": "?BEE_GetShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xaa1d0",
+          "num_direct_calls": 1,
+          "callsites": [
+            {
+              "callsite": "0xacd49",
+              "caller_function_start": "0xac9b0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsShapeGroupOwnerStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x36cdb0",
+          "num_direct_calls": 0,
+          "callsites": []
+        },
+        {
+          "symbol": "?BEE_IsShapeGroupStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x36ce00",
+          "num_direct_calls": 7,
+          "callsites": [
+            {
+              "callsite": "0xa8c7a",
+              "caller_function_start": "0xa8880",
+              "caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xab111",
+              "caller_function_start": "0xaaeb0",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xab189",
+              "caller_function_start": "0xaaeb0",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xabb4a",
+              "caller_function_start": "0xaaeb0",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xabbc8",
+              "caller_function_start": "0xaaeb0",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xaca8a",
+              "caller_function_start": "0xac9b0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xacecd",
+              "caller_function_start": "0xac9b0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsShapeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x36ce50",
+          "num_direct_calls": 8,
+          "callsites": [
+            {
+              "callsite": "0xa7fd0",
+              "caller_function_start": "0xa7e20",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0xa9eaf",
+              "caller_function_start": "0xa9e40",
+              "caller_export": "?BEE_GetMaskFeatherSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xaa00f",
+              "caller_function_start": "0xa9fa0",
+              "caller_export": "?BEE_GetMaskVertexSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xae53f",
+              "caller_function_start": "0xae4d0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0xae73f",
+              "caller_function_start": "0xae6d0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x6623a9",
+              "caller_function_start": "0x6622b0",
+              "caller_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x66b62c",
+              "caller_function_start": "0x66b430",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x671be6",
+              "caller_function_start": "0x670b20",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z",
+          "rva": "0x657820",
+          "num_direct_calls": 13,
+          "callsites": [
+            {
+              "callsite": "0x259c33",
+              "caller_function_start": "0x259ae0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x269673",
+              "caller_function_start": "0x2695c0",
+              "caller_export": "?CreateSet@BEE_AVLayer@@QEAAPEAVBEE_LayerSet@@XZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2ef70a",
+              "caller_function_start": "0x2ef600",
+              "caller_export": "?AddProperty@BEE_LayerSet@@QEAA?AVTDB_StreamIDPath@@AEBVBEE_StreamSpec@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2ef9d8",
+              "caller_function_start": "0x2ef930",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2efaee",
+              "caller_function_start": "0x2ef930",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2efc23",
+              "caller_function_start": "0x2ef930",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x32b098",
+              "caller_function_start": "0x32b030",
+              "caller_export": "?InitEnvironmentStream@BEE_LightLayer@@QEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x3355b0",
+              "caller_function_start": "0x3350f0",
+              "caller_export": "?SyncMaterialStreams@BEE_MaterialOverrideLayer@@UEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x578f0f",
+              "caller_function_start": "0x578e70",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x5790ee",
+              "caller_function_start": "0x578f70",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x670551",
+              "caller_function_start": "0x6702f0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x67852a",
+              "caller_function_start": "0x678490",
+              "caller_export": "?CmdAddEffectMask@BEE_EffectMaskHelper@@UEAA?AVTDB_StreamIDPath@@I@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x6e72cc",
+              "caller_function_start": "0x6e7260",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+          "rva": "0x65cdd0",
+          "num_direct_calls": 2,
+          "callsites": [
+            {
+              "callsite": "0x25e950",
+              "caller_function_start": "0x25e620",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x5a7000",
+              "caller_function_start": "0x5a6c80",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdRemoveIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x65cf50",
+          "num_direct_calls": 2,
+          "callsites": [
+            {
+              "callsite": "0x335687",
+              "caller_function_start": "0x3350f0",
+              "caller_export": "?SyncMaterialStreams@BEE_MaterialOverrideLayer@@UEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x6786e7",
+              "caller_function_start": "0x678610",
+              "caller_export": "?CmdRemoveEffectMask@BEE_EffectMaskHelper@@UEAAXH@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdAddVectorProperty@@YA?AVTDB_StreamIDPath@@PEAVBEE_VectorLayer@@AEBVTDB_MatchName@@V1@V?$Flags@I@utility@dvacore@@@Z",
+          "rva": "0x6e6c30",
+          "num_direct_calls": 9,
+          "callsites": [
+            {
+              "callsite": "0x258318",
+              "caller_function_start": "0x258260",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2585fb",
+              "caller_function_start": "0x258570",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x25895a",
+              "caller_function_start": "0x258860",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x258996",
+              "caller_function_start": "0x258860",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x259a28",
+              "caller_function_start": "0x2599a0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x259b80",
+              "caller_function_start": "0x259ae0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x259ff7",
+              "caller_function_start": "0x259f00",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2610c2",
+              "caller_function_start": "0x261010",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x5a7b4e",
+              "caller_function_start": "0x5a7ac0",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "hash_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "instruction_count": 4626191,
+      "results": [
+        {
+          "symbol": "?BEE_GetShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xafd40",
+          "num_direct_calls": 1,
+          "callsites": [
+            {
+              "callsite": "0xb2936",
+              "caller_function_start": "0xb25a0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsShapeGroupOwnerStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x3777f0",
+          "num_direct_calls": 0,
+          "callsites": []
+        },
+        {
+          "symbol": "?BEE_IsShapeGroupStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x377840",
+          "num_direct_calls": 7,
+          "callsites": [
+            {
+              "callsite": "0xae89b",
+              "caller_function_start": "0xae4a0",
+              "caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb0c99",
+              "caller_function_start": "0xb0a30",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb0d12",
+              "caller_function_start": "0xb0a30",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb1713",
+              "caller_function_start": "0xb0a30",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb1798",
+              "caller_function_start": "0xb0a30",
+              "caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb267a",
+              "caller_function_start": "0xb25a0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb2aab",
+              "caller_function_start": "0xb25a0",
+              "caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_IsShapeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x377890",
+          "num_direct_calls": 8,
+          "callsites": [
+            {
+              "callsite": "0xadc00",
+              "caller_function_start": "0xada50",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0xafa4b",
+              "caller_function_start": "0xaf9e0",
+              "caller_export": "?BEE_GetMaskFeatherSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xafb9b",
+              "caller_function_start": "0xafb30",
+              "caller_export": "?BEE_GetMaskVertexSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb413b",
+              "caller_function_start": "0xb40d0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0xb432b",
+              "caller_function_start": "0xb42c0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x67dbfb",
+              "caller_function_start": "0x67db00",
+              "caller_export": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x686dfc",
+              "caller_function_start": "0x686c00",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x68d9a9",
+              "caller_function_start": "0x68c9c0",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z",
+          "rva": "0x3ae190",
+          "num_direct_calls": 1,
+          "callsites": [
+            {
+              "callsite": "0x57e554",
+              "caller_function_start": "0x57e400",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdPasteSVGIntoLayer@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@V?$function@$$A6A?AV?$shared_ptr@VBEE_NonRenderProgAbort@@@std@@XZ@4@@Z",
+          "rva": "0x57e210",
+          "num_direct_calls": 0,
+          "callsites": []
+        },
+        {
+          "symbol": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z",
+          "rva": "0x672a20",
+          "num_direct_calls": 13,
+          "callsites": [
+            {
+              "callsite": "0x264797",
+              "caller_function_start": "0x264640",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x273dff",
+              "caller_function_start": "0x273d50",
+              "caller_export": "?CreateSet@BEE_AVLayer@@QEAAPEAVBEE_LayerSet@@XZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2f85a4",
+              "caller_function_start": "0x2f8490",
+              "caller_export": "?AddProperty@BEE_LayerSet@@QEAA?AVTDB_StreamIDPath@@AEBVBEE_StreamSpec@@@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2f8884",
+              "caller_function_start": "0x2f87d0",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2f89a4",
+              "caller_function_start": "0x2f87d0",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2f8ae3",
+              "caller_function_start": "0x2f87d0",
+              "caller_export": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x3342c7",
+              "caller_function_start": "0x334250",
+              "caller_export": "?InitEnvironmentStream@BEE_LightLayer@@QEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x34064a",
+              "caller_function_start": "0x340070",
+              "caller_export": "?SyncMaterialStreams@BEE_MaterialOverrideLayer@@UEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x599e9b",
+              "caller_function_start": "0x599df0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x59a08c",
+              "caller_function_start": "0x599f00",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x68c40b",
+              "caller_function_start": "0x68c1a0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x6945a0",
+              "caller_function_start": "0x694500",
+              "caller_export": "?CmdAddEffectMask@BEE_EffectMaskHelper@@UEAA?AVTDB_StreamIDPath@@I@Z",
+              "type": "call"
+            },
+            {
+              "callsite": "0x70ba36",
+              "caller_function_start": "0x70b9c0",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+          "rva": "0x6783e0",
+          "num_direct_calls": 2,
+          "callsites": [
+            {
+              "callsite": "0x269679",
+              "caller_function_start": "0x269340",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x5c5aaa",
+              "caller_function_start": "0x5c5740",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdRemoveIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z",
+          "rva": "0x678540",
+          "num_direct_calls": 3,
+          "callsites": [
+            {
+              "callsite": "0x340726",
+              "caller_function_start": "0x340070",
+              "caller_export": "?SyncMaterialStreams@BEE_MaterialOverrideLayer@@UEAAXXZ",
+              "type": "call"
+            },
+            {
+              "callsite": "0x57e8cf",
+              "caller_function_start": "0x57e790",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x694757",
+              "caller_function_start": "0x694680",
+              "caller_export": "?CmdRemoveEffectMask@BEE_EffectMaskHelper@@UEAAXH@Z",
+              "type": "call"
+            }
+          ]
+        },
+        {
+          "symbol": "?BEE_CmdAddVectorProperty@@YA?AVTDB_StreamIDPath@@PEAVBEE_VectorLayer@@AEBVTDB_MatchName@@V1@V?$Flags@I@utility@dvacore@@@Z",
+          "rva": "0x70b3a0",
+          "num_direct_calls": 9,
+          "callsites": [
+            {
+              "callsite": "0x262988",
+              "caller_function_start": "0x2628d0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x262c5b",
+              "caller_function_start": "0x262bd0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x262fb8",
+              "caller_function_start": "0x262eb0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x262ff6",
+              "caller_function_start": "0x262eb0",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x264588",
+              "caller_function_start": "0x264500",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x2646e3",
+              "caller_function_start": "0x264640",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x264b57",
+              "caller_function_start": "0x264a60",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x26be48",
+              "caller_function_start": "0x26bc20",
+              "caller_export": "",
+              "type": "call"
+            },
+            {
+              "callsite": "0x5c65ee",
+              "caller_function_start": "0x5c6560",
+              "caller_export": "",
+              "type": "call"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

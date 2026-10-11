@@ -59,3 +59,16 @@ Reproducible local inventory: `datasets/ae-2025-vector-shape-symbols.csv`; core 
 ## Native shape extension research (2026-10-11)
 
 [Native Shape Extensibility: Authoring, Evaluation, Tools and Rendering](native-extensibility-boundaries.md) and [Historical Native Shape Forensics](historical-native-extension-forensics.md) investigate a stricter goal than editing existing paths: independently registering a mutable native Contents hierarchy, participating in native Pen/Selection tools, and supplying geometry to AE's production vector renderer without creating a Shape Layer. This is presently a **research objective**, not an achieved host capability. See `research/hypotheses/H-SHAPE-001-native-stream-registration.md`, `H-SHAPE-002-native-vector-output.md`, and `experiments/observatory/manifests/EXP-SHAPE-001.json` / `EXP-SHAPE-003.json`.
+
+
+## 2026-10-12 — The indexed Contents and mask/vector editor boundary is shared; importer bootstrap is not
+
+Exact executable-instruction audits across AE2025/2026 show BEE_CmdAddToIndexedStreamGroup is **a generic BEE_Layer stream-child/Undo command**, with 13 real callers in mask, layer-set, material and other native subsystems; the specialized Vector property command is distinct. The Shape stream-path identity predicates compare end-of-path MatchNames for **both Masks and Vector Shapes**. Native mask vertex and feather selection routines actually call these shared predicates. This is a host-internal path/selection abstraction broader than a concrete VectorLayer class. See [Research-to-Product Vector Frontier](research-to-product-frontier.md) and Finding F-VECTOR-021.
+
+However, the AE2026 SVG Paste command callback now proves it calls TDB_StreamGroup::FindStream on **ROOT_VECTORS_GROUP** and exits the conversion branch if that stream is absent; a generic BEE_Layer* argument does not make the importer a way to install a missing native Contents root on an arbitrary effect. See F-VECTOR-022 and EXP-SHAPE-020. All native BEE/TDB work is **static binary research**, not user-installed runtime private calls.
+
+## 2026-10-12 — Tested procedural PICA vector output and user-facing product prototype
+
+The user installed and re-tested the corrected native VectorBridge Consumer AEX in AE2026; the screenshot showed PICA suite: connected and four native cubic segments, with installed hash identical to the corrected binary. Independently, a new compiled C++ consumer VectorBridgeToSVG dynamically loads the actual AEGP, receives the four cubic segments at rational time, applies path-level affine instancing and writes an **SVG with 28 distinct path objects / 112 cubic Beziers**. A two-timepoint validation passed and confirmed zero raster image nodes. It is a practical code-to-vector artifact, though native Shape import fidelity is not yet tested. See [Research-to-Product Vector Frontier](research-to-product-frontier.md), Findings F-VECTOR-020/023, and EXP-SHAPE-021.
+
+The high-risk flagship goal is unchanged: ordinary CompNodeAE Effect SDK plug-in owns native Timeline Contents, native Pen/Selection, and a BEE_VectorArt renderer input **without creating a separate Shape Layer**. The PICA geometry bus and generated SVG are real intermediate product capabilities, **not** proof of this native parity.

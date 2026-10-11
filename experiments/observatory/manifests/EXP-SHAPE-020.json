@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-020",
+  "title": "Native Contents Ownership Shared Command and SVG Paste Root Precondition",
+  "status": "strongly-supported-static",
+  "date": "2026-10-12",
+  "evidence": [
+    "E2-L cross-version installed BEE2025/BEE2026 static disassembly"
+  ],
+  "question": "Does AE's native indexed child command and Path selection require a concrete Shape Layer, and does SVG paste bootstrap a new Root Vectors group?",
+  "observed_result": "Generic BEE_CmdAddToIndexedStreamGroup(BEE_Layer*) has 13 direct native callers in each version and handles TDB CreateStream and Undo; native Mask and Shape path classifiers share stream tail MatchNames; native Mask vertex selection calls shared predicate; AE2026 SVG paste callback requires existing ROOT_VECTORS_GROUP and exits without conversion if missing.",
+  "limits": [
+    "Static binary only; no external plugin implemented native stream child commands",
+    "A generic BEE_Layer* parameter does not imply any Effect owns its own native Contents",
+    "Pen editing and BEE_VectorArt renderer ownership unproven"
+  ],
+  "artifacts": [
+    "research/findings/F-VECTOR-021-shared-indexed-contents-and-mask-shape-selection.md",
+    "research/findings/F-VECTOR-022-svg-importer-requires-preexisting-native-root.md",
+    "datasets/ae-native-indexed-contents-owner-command-xrefs-2025-2026.json",
+    "datasets/ae-svg-contents-owner-async-callback-and-find-2026.json"
+  ]
+}

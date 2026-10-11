@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-SHAPE-021",
+  "title": "Procedural Native AEGP Cubics to Vector-only SVG pattern",
+  "status": "pass-standalone",
+  "date": "2026-10-12",
+  "evidence": [
+    "E2-T compiled x64 independent AEGP loaded via public PICA mock and resulting SVG parsed",
+    "E2-X separate prior real AE2026 original/corrected PICA plugin connection"
+  ],
+  "question": "Can actual compiled AEGP-native cubic geometry be transformed by code into a procedurally instanced editable vector artifact without a raster stage?",
+  "observed_result": "VectorBridgeToSVG.exe loads actual VectorBridgeAEGP.aex; generates 28 SVG path elements with 4 cubics each (112 total); no SVG image/foreignObject, finite and in bounds; output differs between t=0 and t=.5.",
+  "limits": [
+    "Not an Adobe-host-native BEE_VectorArt renderer output",
+    "SVG import into AE native Shape Layer of this exact sample still untested",
+    "No effect-instance-aware geometry or AE renderer dependencies"
+  ],
+  "artifacts": [
+    "research/findings/F-VECTOR-023-pica-procedural-cubics-to-svg-artifact.md",
+    "datasets/ae-pica-vector-svg-rosette-geometry-validation-2026.json",
+    "experiments/vector-shape/vector-bridge-lab/samples/CNL_Vector_Rosette_28.svg",
+    "experiments/vector-shape/vector-bridge-lab/VectorBridgeToSVG.cpp"
+  ]
+}

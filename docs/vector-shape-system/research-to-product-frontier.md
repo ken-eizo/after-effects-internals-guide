@@ -1,6 +1,6 @@
 ---
 status: research-active
-last_verified: 2026-10-11
+last_verified: 2026-10-12
 evidence: E0-S + E0-H + E2-L + compiled-PE + E2-X + H
 versions: AE2025/AE2026, SDK25.6
 ---
@@ -16,7 +16,7 @@ The program also has **independent product opportunities** using exposed Adobe-s
 
 **What users could do:** Place a procedural CompNodeAE effect that produces mathematically precise Bezier geometry, then let another separately developed CNL-aware effect consume the same control points for deformation, outlining, boolean operations, stroke synthesis, path instancing, motion paths or export. No intermediate image texture is required **between these two aware plug-ins**. This unlocks a developer SDK in which source, operator and consumer extensions exchange geometry instead of repeatedly rasterizing/edge-detecting pixels.
 
-**What we have:** Adobe's distributed Sweetie AEGP and Checkout effect independently demonstrate producer-side AddSuite and consumer-side suite acquisition. We wrote two original, independently compiled AMD64 .aex modules in ShapeLayerAE/labs/vector_bridge: VectorBridgeAEGP exports a procedural double-precision four-cubic path; VectorBridgeConsumer retrieves those native numeric curves. PiPL/exports/build PE validation passed. **The user then installed them in AE2026 and showed `PICA suite: connected`, `Native Bezier segments: 4; first X: 100.00` in the actual Effect About dialog (E2-X).** The original Consumer had version/OutFlags mismatch dialogs and MFR warning; a corrected Consumer was rebuilt, the compiled PiPL metadata was inspected, and a two-AEX standalone mock geometry exchange passed. **The corrected Consumer has not yet been retested in AE.** See F-VECTOR-020.
+**What we have:** Adobe's distributed Sweetie AEGP and Checkout effect independently demonstrate producer-side AddSuite and consumer-side suite acquisition. We wrote two original, independently compiled AMD64 .aex modules in ShapeLayerAE/labs/vector_bridge: VectorBridgeAEGP exports a procedural double-precision four-cubic path; VectorBridgeConsumer retrieves those native numeric curves. PiPL/exports/build PE validation passed. **The user then installed them in AE2026 and showed `PICA suite: connected`, `Native Bezier segments: 4; first X: 100.00` in the actual Effect About dialog (E2-X).** The original Consumer had version/OutFlags mismatch dialogs and MFR warning; a corrected Consumer was rebuilt, the compiled PiPL metadata was inspected, and a two-AEX standalone mock geometry exchange passed. **A later user screenshot now confirms the corrected Consumer in real AE2026 again displays PICA suite: connected and four native cubic segments.** Hash inspection confirms the installed Consumer is the rebuilt fixed binary. A MFR stress test and renderer graph dependency test remain outstanding. See F-VECTOR-020.
 
 **What is needed for a shippable feature:** Explicit producer identity, project/comp/effect-instance lifetime, time/subframe/quality/coordinate space, data snapshots, client-owned allocation contracts, suite-load order, MFR concurrency, dependency tracking/cache invalidation, inter-process and CPU/GPU readback policy. PICA alone does not register native AE rendering dependencies. Producer and consumer can be jointly implemented inside CompNodeAE to control those contracts before opening them to third parties.
 
@@ -54,15 +54,15 @@ The program also has **independent product opportunities** using exposed Adobe-s
 
 **New native lead:** The installed AE2026 BEE_PasteSVGIntoComp(BEE_Layer*, ..., shared_ptr<ScSVGParse>, ...) directly builds a TDB_StreamIDPath from StreamName_ROOT_VECTORS_GROUP, uses BEE_Layer mutation-suppression scopes, and AGM transform ports. Its generic BEE_Layer* parameter suggests an owner experiment but proves **neither** non-Shape-Layer acceptance nor safe private API access.
 
-**The more radical hypothesis:** Discover whether the SVG importer can attach an authentic Root Vectors tree to an independently owned object that is not a native Shape Layer. This would address one owner/serialization boundary but still needs editor and renderer proofs.
+**Native owner gate now resolved negatively for this command path:** F-VECTOR-022 traces the true BEE_CmdPasteSVGIntoLayer callback. It builds ROOT_VECTORS_GROUP and explicitly calls TDB_StreamGroup::FindStream; if the native root is missing, it branches to cleanup and does NOT invoke BEE_PasteSVGIntoComp. A generic BEE_Layer* formal parameter is therefore NOT a shortcut for bootstrap. The new radical hypothesis is to create a legitimate independent host-owned native Root Vectors tree BEFORE import, and separately prove Timeline/editor/renderer lifecycle.
 
 ## Priorities after this session
 
-1. **Next high-confidence test**: The original pair **did connect in AE2026**; replace only the Consumer with the corrected, PiPL-aligned build after closing AE. Confirm the old 25::16 mismatch dialogs and the MFR performance notice do not appear; the Effect About must still report `PICA suite: connected` and four cubic Beziers. Then test frame-time geometry and teardown/MFR. Do not hot-replace DLLs in a running host.
+1. **Host regression**: The corrected AEX hash matches the installed copy, and actual AE2026 screenshot again reports PICA suite: connected and four native Bezier segments. Next test actual concurrent-frame/MFR rendering, teardown/restart, and real per-instance geometry; no automatic host render-dependency is implied.
 2. **Product v1**: Add immutable per-instance geometry snapshots and a CompNodeAE-internal typed path API; test under MFR and random-access rendering. Ship only when dependencies and lifetimes are correct.
-3. **Private moonshot**: Reconstruct the caller/owner preconditions of BEE_PasteSVGIntoComp and the exact BEE_VectorLayer/Effect stream-owner acceptance policy. Trace OriginInfo -> native hit-test -> FindEditableStream dataflow.
+3. **Private moonshot**: The SVG importer callback is proven to require pre-existing ROOT_VECTORS_GROUP (F-VECTOR-022). Next trace the exact *owner constructor* and canonical TDB lifecycle, find where an AV Layer/Effect owner could legitimately register a nonstandard root without a native VectorLayer, and then trace OriginInfo -> editable hit-test -> FindEditableStream and renderer registration.
 4. **High-risk ABI lab**: Version-pinned standalone operator interface and refcount construction in a non-AE mock, then gated reversible registration in an empty throwaway AE instance. Registration can run creators *during registration*, so never use dummy pointers.
-5. **Feature exploration**: Build a concrete vector-node demonstration (boolean/instancer/path morph) consuming CNL_VectorCubicV1 **without** pixels; implement real consumer data semantics before native editor parity.
+5. **Feature shipped as prototype**: A new C++ VectorBridgeToSVG consumer has actually loaded the compiled AEGP, consumed CNL_VectorCubicV1 and generated a 28-path / 112-cubic procedural SVG rosette without pixels. Two frame times were validated. Next import that SVG in AE2026 and compare native path/point/group fidelity, then advance beyond standalone global-service demo into per-instance effect-aware geometry.
 
 ## Product-report template for all subsequent vector-research sessions
 
@@ -74,4 +74,4 @@ Each session should explicitly state:
 - **Next runnable experiment and exact success/failure criteria**.
 - **AEIG experiment/result paths, plugin source/build state, build/test status and Git commit**.
 
-Related findings: F-VECTOR-013 through F-VECTOR-020. New observed receipt: datasets/ae-pica-vector-bridge-two-plugin-build-receipt-2026.json. Public source references: local Adobe SDK 25.6 Sweetie/Checkout; https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ ; https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .
+Related findings: F-VECTOR-013 through F-VECTOR-023. New observed receipt: datasets/ae-pica-vector-bridge-two-plugin-build-receipt-2026.json. Public source references: local Adobe SDK 25.6 Sweetie/Checkout; https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ ; https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .

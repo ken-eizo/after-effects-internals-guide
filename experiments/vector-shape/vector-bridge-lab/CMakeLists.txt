@@ -32,3 +32,12 @@ target_compile_definitions(VectorBridgeHostMock PRIVATE MSWindows WIN32 _WINDOWS
 target_include_directories(VectorBridgeHostMock PRIVATE
   "${AE_SDK_EXAMPLES}/Headers" "${AE_SDK_EXAMPLES}/Headers/SP"
   "${AE_SDK_EXAMPLES}/Headers/Win" "${AE_SDK_EXAMPLES}/Util")
+
+# Practical geometry product candidate: PICA Bezier consumer to vector-only SVG.
+# Isolated command-line tool; does not install a third AEX or modify running AE.
+add_executable(VectorBridgeToSVG VectorBridgeToSVG.cpp)
+target_compile_features(VectorBridgeToSVG PRIVATE cxx_std_17)
+target_compile_definitions(VectorBridgeToSVG PRIVATE MSWindows WIN32 _WINDOWS)
+target_include_directories(VectorBridgeToSVG PRIVATE
+  "${AE_SDK_EXAMPLES}/Headers" "${AE_SDK_EXAMPLES}/Headers/SP"
+  "${AE_SDK_EXAMPLES}/Headers/Win" "${AE_SDK_EXAMPLES}/Util")

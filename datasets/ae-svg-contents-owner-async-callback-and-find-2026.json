@@ -1,0 +1,4793 @@
+{
+  "classification": "E2-L native code disassembly x64 .pdata; exact binary only, not runtime plugin API",
+  "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+  "functions": {
+    "svg_paste_command_callback": {
+      "start": "0x57e400",
+      "end": "0x57e782",
+      "code_instructions": [
+        {
+          "at": "0x57e400",
+          "opcode": "push",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57e402",
+          "opcode": "push",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x57e403",
+          "opcode": "push",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x57e404",
+          "opcode": "push",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57e405",
+          "opcode": "push",
+          "operand": "r12"
+        },
+        {
+          "at": "0x57e407",
+          "opcode": "push",
+          "operand": "r13"
+        },
+        {
+          "at": "0x57e409",
+          "opcode": "push",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57e40b",
+          "opcode": "push",
+          "operand": "r15"
+        },
+        {
+          "at": "0x57e40d",
+          "opcode": "lea",
+          "operand": "rbp, [rsp - 0x1f]"
+        },
+        {
+          "at": "0x57e412",
+          "opcode": "sub",
+          "operand": "rsp, 0xc8"
+        },
+        {
+          "at": "0x57e419",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rip + 0x10284e0]"
+        },
+        {
+          "at": "0x57e420",
+          "opcode": "xor",
+          "operand": "rax, rsp"
+        },
+        {
+          "at": "0x57e423",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0xf], rax"
+        },
+        {
+          "at": "0x57e427",
+          "opcode": "mov",
+          "operand": "rbx, rcx"
+        },
+        {
+          "at": "0x57e42a",
+          "opcode": "xor",
+          "operand": "r13d, r13d"
+        },
+        {
+          "at": "0x57e42d",
+          "opcode": "mov",
+          "operand": "rdi, qword ptr [rcx + 8]"
+        },
+        {
+          "at": "0x57e431",
+          "opcode": "test",
+          "operand": "rdi, rdi"
+        },
+        {
+          "at": "0x57e434",
+          "opcode": "je",
+          "operand": "0x18057e76a"
+        },
+        {
+          "at": "0x57e43a",
+          "opcode": "cmp",
+          "operand": "qword ptr [rcx + 0x10], r13"
+        },
+        {
+          "at": "0x57e43e",
+          "opcode": "je",
+          "operand": "0x18057e76a"
+        },
+        {
+          "at": "0x57e444",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0x11219e5]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x57e44b",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 9]"
+        },
+        {
+          "at": "0x57e44f",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998c2b]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x57e455",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 9]"
+        },
+        {
+          "at": "0x57e459",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x57e45d",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x9991a5]",
+          "resolved": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x57e463",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e464",
+          "opcode": "mov",
+          "operand": "r8d, 1"
+        },
+        {
+          "at": "0x57e46a",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x57e46e",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x57e471",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998a21]",
+          "resolved": "TDB.dll!?FindStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+        },
+        {
+          "at": "0x57e477",
+          "opcode": "mov",
+          "operand": "rsi, rax"
+        },
+        {
+          "at": "0x57e47a",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x57e47e",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x999644]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x57e484",
+          "opcode": "test",
+          "operand": "rsi, rsi"
+        },
+        {
+          "at": "0x57e487",
+          "opcode": "je",
+          "operand": "0x18057e752"
+        },
+        {
+          "at": "0x57e48d",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x57e490",
+          "opcode": "mov",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e493",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x88]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e499",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e49c",
+          "opcode": "je",
+          "operand": "0x18057e752"
+        },
+        {
+          "at": "0x57e4a2",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x57e4a5",
+          "opcode": "mov",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e4a8",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x88]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e4ae",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x57e4b1",
+          "opcode": "mov",
+          "operand": "rcx, rax"
+        },
+        {
+          "at": "0x57e4b4",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x168]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e4ba",
+          "opcode": "mov",
+          "operand": "r15d, eax"
+        },
+        {
+          "at": "0x57e4bd",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e4c1",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp - 9], xmm0"
+        },
+        {
+          "at": "0x57e4c6",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rbx + 0x30]"
+        },
+        {
+          "at": "0x57e4ca",
+          "opcode": "test",
+          "operand": "rdx, rdx"
+        },
+        {
+          "at": "0x57e4cd",
+          "opcode": "jne",
+          "operand": "0x18057e4f8"
+        },
+        {
+          "at": "0x57e4cf",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbx + 0x70]"
+        },
+        {
+          "at": "0x57e4d3",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e4d6",
+          "opcode": "je",
+          "operand": "0x18057e4f8"
+        },
+        {
+          "at": "0x57e4d8",
+          "opcode": "mov",
+          "operand": "r8, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e4db",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e4e0",
+          "opcode": "call",
+          "operand": "qword ptr [r8 + 0x10]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e4e4",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e4e9",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 9], rdx"
+        },
+        {
+          "at": "0x57e4ed",
+          "opcode": "mov",
+          "operand": "rdi, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e4f2",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 1], rdi"
+        },
+        {
+          "at": "0x57e4f6",
+          "opcode": "jmp",
+          "operand": "0x18057e4fc",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e4f8",
+          "opcode": "mov",
+          "operand": "rdi, qword ptr [rbp - 1]"
+        },
+        {
+          "at": "0x57e4fc",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e500",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rsp + 0x20], xmm0"
+        },
+        {
+          "at": "0x57e506",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x28]"
+        },
+        {
+          "at": "0x57e50a",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e50d",
+          "opcode": "je",
+          "operand": "0x18057e513"
+        },
+        {
+          "at": "0x57e50f",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e513",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x20]"
+        },
+        {
+          "at": "0x57e517",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x20], rax"
+        },
+        {
+          "at": "0x57e51c",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x28]"
+        },
+        {
+          "at": "0x57e520",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x28], rax"
+        },
+        {
+          "at": "0x57e525",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp - 0x71], xmm0"
+        },
+        {
+          "at": "0x57e52a",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x18]"
+        },
+        {
+          "at": "0x57e52e",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e531",
+          "opcode": "je",
+          "operand": "0x18057e537"
+        },
+        {
+          "at": "0x57e533",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e537",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x57e53b",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], rax"
+        },
+        {
+          "at": "0x57e53f",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x18]"
+        },
+        {
+          "at": "0x57e543",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x69], rax"
+        },
+        {
+          "at": "0x57e547",
+          "opcode": "lea",
+          "operand": "r9, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e54c",
+          "opcode": "lea",
+          "operand": "r8, [rbp - 0x71]"
+        },
+        {
+          "at": "0x57e550",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbx + 8]"
+        },
+        {
+          "at": "0x57e554",
+          "opcode": "call",
+          "operand": "0x1803ae190",
+          "resolved": "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z"
+        },
+        {
+          "at": "0x57e559",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsi]"
+        },
+        {
+          "at": "0x57e55c",
+          "opcode": "mov",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e55f",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x88]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e565",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x57e568",
+          "opcode": "mov",
+          "operand": "rcx, rax"
+        },
+        {
+          "at": "0x57e56b",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x168]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e571",
+          "opcode": "mov",
+          "operand": "r12d, eax"
+        },
+        {
+          "at": "0x57e574",
+          "opcode": "mov",
+          "operand": "ecx, 0x78"
+        },
+        {
+          "at": "0x57e579",
+          "opcode": "call",
+          "operand": "0x180d3a668",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e57e",
+          "opcode": "mov",
+          "operand": "r14, rax"
+        },
+        {
+          "at": "0x57e581",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x79], rax"
+        },
+        {
+          "at": "0x57e585",
+          "opcode": "mov",
+          "operand": "esi, 0xffffffff"
+        },
+        {
+          "at": "0x57e58a",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e58d",
+          "opcode": "je",
+          "operand": "0x18057e700"
+        },
+        {
+          "at": "0x57e593",
+          "opcode": "sub",
+          "operand": "r12d, r15d"
+        },
+        {
+          "at": "0x57e596",
+          "opcode": "lea",
+          "operand": "rdx, [rbx + 0x38]"
+        },
+        {
+          "at": "0x57e59a",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x57e59e",
+          "opcode": "call",
+          "operand": "0x18057d570",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e5a3",
+          "opcode": "mov",
+          "operand": "r15, rax"
+        },
+        {
+          "at": "0x57e5a6",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x61], rax"
+        },
+        {
+          "at": "0x57e5aa",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e5ae",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rsp + 0x20], xmm0"
+        },
+        {
+          "at": "0x57e5b4",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x28]"
+        },
+        {
+          "at": "0x57e5b8",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e5bb",
+          "opcode": "je",
+          "operand": "0x18057e5c1"
+        },
+        {
+          "at": "0x57e5bd",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e5c1",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbx + 0x20]"
+        },
+        {
+          "at": "0x57e5c5",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x20], rcx"
+        },
+        {
+          "at": "0x57e5ca",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x28]"
+        },
+        {
+          "at": "0x57e5ce",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x28], rax"
+        },
+        {
+          "at": "0x57e5d3",
+          "opcode": "lea",
+          "operand": "rax, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e5d8",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x59], rax"
+        },
+        {
+          "at": "0x57e5dc",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp - 0x71], xmm0"
+        },
+        {
+          "at": "0x57e5e1",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x18]"
+        },
+        {
+          "at": "0x57e5e5",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e5e8",
+          "opcode": "je",
+          "operand": "0x18057e5ee"
+        },
+        {
+          "at": "0x57e5ea",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e5ee",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x57e5f2",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], rax"
+        },
+        {
+          "at": "0x57e5f6",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x18]"
+        },
+        {
+          "at": "0x57e5fa",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x69], rax"
+        },
+        {
+          "at": "0x57e5fe",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x71]"
+        },
+        {
+          "at": "0x57e602",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x51], rax"
+        },
+        {
+          "at": "0x57e606",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rbx + 8]"
+        },
+        {
+          "at": "0x57e60a",
+          "opcode": "mov",
+          "operand": "rcx, r14"
+        },
+        {
+          "at": "0x57e60d",
+          "opcode": "call",
+          "operand": "0x180586c50",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e612",
+          "opcode": "lea",
+          "operand": "rax, [rip + 0xa733c7]"
+        },
+        {
+          "at": "0x57e619",
+          "opcode": "mov",
+          "operand": "qword ptr [r14], rax"
+        },
+        {
+          "at": "0x57e61c",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 8], rbx"
+        },
+        {
+          "at": "0x57e620",
+          "opcode": "mov",
+          "operand": "dword ptr [r14 + 0x10], r12d"
+        },
+        {
+          "at": "0x57e624",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x18], r13"
+        },
+        {
+          "at": "0x57e628",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x20], r13"
+        },
+        {
+          "at": "0x57e62c",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbp - 0x71]"
+        },
+        {
+          "at": "0x57e630",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x18], rax"
+        },
+        {
+          "at": "0x57e634",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbp - 0x69]"
+        },
+        {
+          "at": "0x57e638",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x20], rax"
+        },
+        {
+          "at": "0x57e63c",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e640",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp - 0x71], xmm0"
+        },
+        {
+          "at": "0x57e645",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x28], r13"
+        },
+        {
+          "at": "0x57e649",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x30], r13"
+        },
+        {
+          "at": "0x57e64d",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e652",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e655",
+          "opcode": "je",
+          "operand": "0x18057e65b"
+        },
+        {
+          "at": "0x57e657",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e65b",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e660",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x28], rax"
+        },
+        {
+          "at": "0x57e664",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e669",
+          "opcode": "mov",
+          "operand": "qword ptr [r14 + 0x30], rax"
+        },
+        {
+          "at": "0x57e66d",
+          "opcode": "lea",
+          "operand": "rcx, [r14 + 0x38]"
+        },
+        {
+          "at": "0x57e671",
+          "opcode": "mov",
+          "operand": "qword ptr [rcx + 0x38], r13"
+        },
+        {
+          "at": "0x57e675",
+          "opcode": "mov",
+          "operand": "rdx, r15"
+        },
+        {
+          "at": "0x57e678",
+          "opcode": "call",
+          "operand": "0x18057ec40",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e67d",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e67e",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rbp - 0x69]"
+        },
+        {
+          "at": "0x57e682",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e685",
+          "opcode": "je",
+          "operand": "0x18057e6b1"
+        },
+        {
+          "at": "0x57e687",
+          "opcode": "mov",
+          "operand": "eax, esi"
+        },
+        {
+          "at": "0x57e689",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57e68e",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e691",
+          "opcode": "jne",
+          "operand": "0x18057e6b1"
+        },
+        {
+          "at": "0x57e693",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e696",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e699",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e69b",
+          "opcode": "mov",
+          "operand": "eax, esi"
+        },
+        {
+          "at": "0x57e69d",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], eax"
+        },
+        {
+          "at": "0x57e6a2",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e6a5",
+          "opcode": "jne",
+          "operand": "0x18057e6b1"
+        },
+        {
+          "at": "0x57e6a7",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e6aa",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e6ad",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e6b0",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e6b1",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e6b6",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e6b9",
+          "opcode": "je",
+          "operand": "0x18057e6e5"
+        },
+        {
+          "at": "0x57e6bb",
+          "opcode": "mov",
+          "operand": "eax, esi"
+        },
+        {
+          "at": "0x57e6bd",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57e6c2",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e6c5",
+          "opcode": "jne",
+          "operand": "0x18057e6e5"
+        },
+        {
+          "at": "0x57e6c7",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e6ca",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e6cd",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e6cf",
+          "opcode": "mov",
+          "operand": "eax, esi"
+        },
+        {
+          "at": "0x57e6d1",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], eax"
+        },
+        {
+          "at": "0x57e6d6",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e6d9",
+          "opcode": "jne",
+          "operand": "0x18057e6e5"
+        },
+        {
+          "at": "0x57e6db",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e6de",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e6e1",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e6e4",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e6e5",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [r15 + 0x38]"
+        },
+        {
+          "at": "0x57e6e9",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e6ec",
+          "opcode": "je",
+          "operand": "0x18057e703"
+        },
+        {
+          "at": "0x57e6ee",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e6f1",
+          "opcode": "cmp",
+          "operand": "rcx, r15"
+        },
+        {
+          "at": "0x57e6f4",
+          "opcode": "setne",
+          "operand": "dl"
+        },
+        {
+          "at": "0x57e6f7",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x20]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e6fa",
+          "opcode": "mov",
+          "operand": "qword ptr [r15 + 0x38], r13"
+        },
+        {
+          "at": "0x57e6fe",
+          "opcode": "jmp",
+          "operand": "0x18057e703",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e700",
+          "opcode": "mov",
+          "operand": "r14, r13"
+        },
+        {
+          "at": "0x57e703",
+          "opcode": "test",
+          "operand": "rdi, rdi"
+        },
+        {
+          "at": "0x57e706",
+          "opcode": "je",
+          "operand": "0x18057e72f"
+        },
+        {
+          "at": "0x57e708",
+          "opcode": "mov",
+          "operand": "eax, esi"
+        },
+        {
+          "at": "0x57e70a",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rdi + 8], eax"
+        },
+        {
+          "at": "0x57e70f",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e712",
+          "opcode": "jne",
+          "operand": "0x18057e72f"
+        },
+        {
+          "at": "0x57e714",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rdi]"
+        },
+        {
+          "at": "0x57e717",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x57e71a",
+          "opcode": "call",
+          "operand": "qword ptr [rdx]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e71c",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rdi + 0xc], esi"
+        },
+        {
+          "at": "0x57e721",
+          "opcode": "cmp",
+          "operand": "esi, 1"
+        },
+        {
+          "at": "0x57e724",
+          "opcode": "jne",
+          "operand": "0x18057e72f"
+        },
+        {
+          "at": "0x57e726",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rdi]"
+        },
+        {
+          "at": "0x57e729",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x57e72c",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e72f",
+          "opcode": "mov",
+          "operand": "rax, r14"
+        },
+        {
+          "at": "0x57e732",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp + 0xf]"
+        },
+        {
+          "at": "0x57e736",
+          "opcode": "xor",
+          "operand": "rcx, rsp"
+        },
+        {
+          "at": "0x57e739",
+          "opcode": "call",
+          "operand": "0x180d3ac30",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e73e",
+          "opcode": "add",
+          "operand": "rsp, 0xc8"
+        },
+        {
+          "at": "0x57e745",
+          "opcode": "pop",
+          "operand": "r15"
+        },
+        {
+          "at": "0x57e747",
+          "opcode": "pop",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57e749",
+          "opcode": "pop",
+          "operand": "r13"
+        },
+        {
+          "at": "0x57e74b",
+          "opcode": "pop",
+          "operand": "r12"
+        },
+        {
+          "at": "0x57e74d",
+          "opcode": "pop",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57e74e",
+          "opcode": "pop",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x57e74f",
+          "opcode": "pop",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x57e750",
+          "opcode": "pop",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57e751",
+          "opcode": "ret",
+          "operand": ""
+        },
+        {
+          "at": "0x57e752",
+          "opcode": "mov",
+          "operand": "dword ptr [rbp - 0x79], 1"
+        },
+        {
+          "at": "0x57e759",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xe7cc58]"
+        },
+        {
+          "at": "0x57e760",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x79]"
+        },
+        {
+          "at": "0x57e764",
+          "opcode": "call",
+          "operand": "0x180d3bdf8",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e769",
+          "opcode": "int3",
+          "operand": ""
+        },
+        {
+          "at": "0x57e76a",
+          "opcode": "mov",
+          "operand": "dword ptr [rbp - 0x79], 1"
+        },
+        {
+          "at": "0x57e771",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xe7cc40]"
+        },
+        {
+          "at": "0x57e778",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x79]"
+        },
+        {
+          "at": "0x57e77c",
+          "opcode": "call",
+          "operand": "0x180d3bdf8",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e781",
+          "opcode": "int3",
+          "operand": ""
+        }
+      ]
+    },
+    "svg_paste_target_layer_cleanup": {
+      "start": "0x57e790",
+      "end": "0x57eafe",
+      "code_instructions": [
+        {
+          "at": "0x57e790",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x10], rbx"
+        },
+        {
+          "at": "0x57e795",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x18], rsi"
+        },
+        {
+          "at": "0x57e79a",
+          "opcode": "push",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57e79b",
+          "opcode": "push",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57e79c",
+          "opcode": "push",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57e79e",
+          "opcode": "lea",
+          "operand": "rbp, [rsp - 0x47]"
+        },
+        {
+          "at": "0x57e7a3",
+          "opcode": "sub",
+          "operand": "rsp, 0x100"
+        },
+        {
+          "at": "0x57e7aa",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rip + 0x102814f]"
+        },
+        {
+          "at": "0x57e7b1",
+          "opcode": "xor",
+          "operand": "rax, rsp"
+        },
+        {
+          "at": "0x57e7b4",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0x37], rax"
+        },
+        {
+          "at": "0x57e7b8",
+          "opcode": "mov",
+          "operand": "rdi, rcx"
+        },
+        {
+          "at": "0x57e7bb",
+          "opcode": "xor",
+          "operand": "r14d, r14d"
+        },
+        {
+          "at": "0x57e7be",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rcx + 8]"
+        },
+        {
+          "at": "0x57e7c2",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e7c5",
+          "opcode": "je",
+          "operand": "0x18057eae4"
+        },
+        {
+          "at": "0x57e7cb",
+          "opcode": "call",
+          "operand": "0x1802f2e60",
+          "resolved": "?GetUndoContext@BEE_Layer@@QEAAAEAVBEE_UndoContext@@XZ"
+        },
+        {
+          "at": "0x57e7d0",
+          "opcode": "mov",
+          "operand": "rdx, rax"
+        },
+        {
+          "at": "0x57e7d3",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 1]"
+        },
+        {
+          "at": "0x57e7d7",
+          "opcode": "call",
+          "operand": "0x18069b580",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e7dc",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e7dd",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rdi + 8]"
+        },
+        {
+          "at": "0x57e7e1",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x19]"
+        },
+        {
+          "at": "0x57e7e5",
+          "opcode": "call",
+          "operand": "0x1802e7850",
+          "resolved": "??0ScSuppressStreamRemovedCallbacks@BEE_Layer@@QEAA@PEAV1@@Z"
+        },
+        {
+          "at": "0x57e7ea",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e7eb",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rdi + 8]"
+        },
+        {
+          "at": "0x57e7ef",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0x112163a]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x57e7f6",
+          "opcode": "lea",
+          "operand": "rcx, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e7fa",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998880]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x57e800",
+          "opcode": "lea",
+          "operand": "rdx, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e804",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e809",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998df9]",
+          "resolved": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x57e80f",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e810",
+          "opcode": "mov",
+          "operand": "r8d, 1"
+        },
+        {
+          "at": "0x57e816",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e81b",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e81e",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998674]",
+          "resolved": "TDB.dll!?FindStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z"
+        },
+        {
+          "at": "0x57e824",
+          "opcode": "mov",
+          "operand": "rbx, rax"
+        },
+        {
+          "at": "0x57e827",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e82c",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x999296]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x57e832",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e835",
+          "opcode": "je",
+          "operand": "0x18057e8ee"
+        },
+        {
+          "at": "0x57e83b",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e83e",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e841",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x88]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e847",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e84a",
+          "opcode": "je",
+          "operand": "0x18057e8ee"
+        },
+        {
+          "at": "0x57e850",
+          "opcode": "cmp",
+          "operand": "dword ptr [rdi + 0x10], r14d"
+        },
+        {
+          "at": "0x57e854",
+          "opcode": "jbe",
+          "operand": "0x18057e8ee"
+        },
+        {
+          "at": "0x57e85a",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e85d",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e860",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x88]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e866",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x57e869",
+          "opcode": "mov",
+          "operand": "rcx, rax"
+        },
+        {
+          "at": "0x57e86c",
+          "opcode": "call",
+          "operand": "qword ptr [rdx + 0x168]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e872",
+          "opcode": "mov",
+          "operand": "esi, eax"
+        },
+        {
+          "at": "0x57e874",
+          "opcode": "mov",
+          "operand": "ebx, r14d"
+        },
+        {
+          "at": "0x57e877",
+          "opcode": "cmp",
+          "operand": "dword ptr [rdi + 0x10], ebx"
+        },
+        {
+          "at": "0x57e87a",
+          "opcode": "jbe",
+          "operand": "0x18057e8ee"
+        },
+        {
+          "at": "0x57e87c",
+          "opcode": "nop",
+          "operand": "dword ptr [rax]"
+        },
+        {
+          "at": "0x57e880",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0x11215a9]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x57e887",
+          "opcode": "lea",
+          "operand": "rcx, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e88b",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x9987ef]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x57e891",
+          "opcode": "lea",
+          "operand": "rdx, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e895",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e89a",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x998d68]",
+          "resolved": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x57e8a0",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e8a1",
+          "opcode": "mov",
+          "operand": "edx, esi"
+        },
+        {
+          "at": "0x57e8a3",
+          "opcode": "sub",
+          "operand": "edx, ebx"
+        },
+        {
+          "at": "0x57e8a5",
+          "opcode": "dec",
+          "operand": "edx"
+        },
+        {
+          "at": "0x57e8a7",
+          "opcode": "lea",
+          "operand": "r8, [rip + 0x1121542]",
+          "referenced_constant": "?StreamName_VECTOR_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x57e8ae",
+          "opcode": "lea",
+          "operand": "rcx, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e8b2",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x9991d8]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@IAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x57e8b8",
+          "opcode": "mov",
+          "operand": "rdx, rax"
+        },
+        {
+          "at": "0x57e8bb",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e8c0",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x99878a]",
+          "resolved": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x57e8c6",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e8cb",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rdi + 8]"
+        },
+        {
+          "at": "0x57e8cf",
+          "opcode": "call",
+          "operand": "0x180678540",
+          "resolved": "?BEE_CmdRemoveIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z"
+        },
+        {
+          "at": "0x57e8d4",
+          "opcode": "test",
+          "operand": "eax, eax"
+        },
+        {
+          "at": "0x57e8d6",
+          "opcode": "jne",
+          "operand": "0x18057eace"
+        },
+        {
+          "at": "0x57e8dc",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e8e1",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x9991e1]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x57e8e7",
+          "opcode": "inc",
+          "operand": "ebx"
+        },
+        {
+          "at": "0x57e8e9",
+          "opcode": "cmp",
+          "operand": "ebx, dword ptr [rdi + 0x10]"
+        },
+        {
+          "at": "0x57e8ec",
+          "opcode": "jb",
+          "operand": "0x18057e880"
+        },
+        {
+          "at": "0x57e8ee",
+          "opcode": "mov",
+          "operand": "ecx, 0x78"
+        },
+        {
+          "at": "0x57e8f3",
+          "opcode": "call",
+          "operand": "0x180d3a668",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e8f8",
+          "opcode": "mov",
+          "operand": "rsi, rax"
+        },
+        {
+          "at": "0x57e8fb",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x20], rax"
+        },
+        {
+          "at": "0x57e900",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e903",
+          "opcode": "je",
+          "operand": "0x18057ea91"
+        },
+        {
+          "at": "0x57e909",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x59]"
+        },
+        {
+          "at": "0x57e90d",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], rax"
+        },
+        {
+          "at": "0x57e911",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x21], r14"
+        },
+        {
+          "at": "0x57e915",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rdi + 0x70]"
+        },
+        {
+          "at": "0x57e919",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e91c",
+          "opcode": "je",
+          "operand": "0x18057e92b"
+        },
+        {
+          "at": "0x57e91e",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e921",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x57e925",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e927",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x21], rax"
+        },
+        {
+          "at": "0x57e92b",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x59]"
+        },
+        {
+          "at": "0x57e92f",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], rax"
+        },
+        {
+          "at": "0x57e933",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e937",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp + 0x1f], xmm0"
+        },
+        {
+          "at": "0x57e93c",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x30]"
+        },
+        {
+          "at": "0x57e940",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e943",
+          "opcode": "je",
+          "operand": "0x18057e949"
+        },
+        {
+          "at": "0x57e945",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e949",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x28]"
+        },
+        {
+          "at": "0x57e94d",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0x1f], rax"
+        },
+        {
+          "at": "0x57e951",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x30]"
+        },
+        {
+          "at": "0x57e955",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0x27], rax"
+        },
+        {
+          "at": "0x57e959",
+          "opcode": "lea",
+          "operand": "rax, [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e95d",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x69], rax"
+        },
+        {
+          "at": "0x57e961",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rsp + 0x28], xmm0"
+        },
+        {
+          "at": "0x57e967",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x20]"
+        },
+        {
+          "at": "0x57e96b",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e96e",
+          "opcode": "je",
+          "operand": "0x18057e974"
+        },
+        {
+          "at": "0x57e970",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e974",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x18]"
+        },
+        {
+          "at": "0x57e978",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x28], rax"
+        },
+        {
+          "at": "0x57e97d",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdi + 0x20]"
+        },
+        {
+          "at": "0x57e981",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x30], rax"
+        },
+        {
+          "at": "0x57e986",
+          "opcode": "lea",
+          "operand": "rax, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e98b",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x61], rax"
+        },
+        {
+          "at": "0x57e98f",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rdi + 8]"
+        },
+        {
+          "at": "0x57e993",
+          "opcode": "mov",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e996",
+          "opcode": "call",
+          "operand": "0x180586c50",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e99b",
+          "opcode": "lea",
+          "operand": "rax, [rip + 0xa7301e]"
+        },
+        {
+          "at": "0x57e9a2",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi], rax"
+        },
+        {
+          "at": "0x57e9a5",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 8], rbx"
+        },
+        {
+          "at": "0x57e9a9",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x10], r14"
+        },
+        {
+          "at": "0x57e9ad",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x18], r14"
+        },
+        {
+          "at": "0x57e9b1",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e9b6",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x10], rax"
+        },
+        {
+          "at": "0x57e9ba",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rsp + 0x30]"
+        },
+        {
+          "at": "0x57e9bf",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x18], rax"
+        },
+        {
+          "at": "0x57e9c3",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e9c7",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rsp + 0x28], xmm0"
+        },
+        {
+          "at": "0x57e9cd",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x20], r14"
+        },
+        {
+          "at": "0x57e9d1",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x28], r14"
+        },
+        {
+          "at": "0x57e9d5",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbp + 0x27]"
+        },
+        {
+          "at": "0x57e9d9",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e9dc",
+          "opcode": "je",
+          "operand": "0x18057e9e2"
+        },
+        {
+          "at": "0x57e9de",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e9e2",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbp + 0x1f]"
+        },
+        {
+          "at": "0x57e9e6",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x20], rax"
+        },
+        {
+          "at": "0x57e9ea",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbp + 0x27]"
+        },
+        {
+          "at": "0x57e9ee",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x28], rax"
+        },
+        {
+          "at": "0x57e9f2",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x30], r14"
+        },
+        {
+          "at": "0x57e9f6",
+          "opcode": "lea",
+          "operand": "rcx, [rsi + 0x38]"
+        },
+        {
+          "at": "0x57e9fa",
+          "opcode": "mov",
+          "operand": "qword ptr [rcx + 0x38], r14"
+        },
+        {
+          "at": "0x57e9fe",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x57ea02",
+          "opcode": "call",
+          "operand": "0x18057ec40",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea07",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57ea08",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rsp + 0x30]"
+        },
+        {
+          "at": "0x57ea0d",
+          "opcode": "mov",
+          "operand": "edi, 0xffffffff"
+        },
+        {
+          "at": "0x57ea12",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57ea15",
+          "opcode": "je",
+          "operand": "0x18057ea41"
+        },
+        {
+          "at": "0x57ea17",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57ea19",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57ea1e",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57ea21",
+          "opcode": "jne",
+          "operand": "0x18057ea41"
+        },
+        {
+          "at": "0x57ea23",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57ea26",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57ea29",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea2b",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57ea2d",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], eax"
+        },
+        {
+          "at": "0x57ea32",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57ea35",
+          "opcode": "jne",
+          "operand": "0x18057ea41"
+        },
+        {
+          "at": "0x57ea37",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57ea3a",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57ea3d",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea40",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57ea41",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rbp + 0x27]"
+        },
+        {
+          "at": "0x57ea45",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57ea48",
+          "opcode": "je",
+          "operand": "0x18057ea72"
+        },
+        {
+          "at": "0x57ea4a",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57ea4c",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57ea51",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57ea54",
+          "opcode": "jne",
+          "operand": "0x18057ea72"
+        },
+        {
+          "at": "0x57ea56",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57ea59",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57ea5c",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea5e",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], edi"
+        },
+        {
+          "at": "0x57ea63",
+          "opcode": "cmp",
+          "operand": "edi, 1"
+        },
+        {
+          "at": "0x57ea66",
+          "opcode": "jne",
+          "operand": "0x18057ea72"
+        },
+        {
+          "at": "0x57ea68",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57ea6b",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57ea6e",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea71",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57ea72",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp - 0x21]"
+        },
+        {
+          "at": "0x57ea76",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57ea79",
+          "opcode": "je",
+          "operand": "0x18057ea94"
+        },
+        {
+          "at": "0x57ea7b",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57ea7e",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x57ea82",
+          "opcode": "cmp",
+          "operand": "rcx, rdx"
+        },
+        {
+          "at": "0x57ea85",
+          "opcode": "setne",
+          "operand": "dl"
+        },
+        {
+          "at": "0x57ea88",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x20]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea8b",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x21], r14"
+        },
+        {
+          "at": "0x57ea8f",
+          "opcode": "jmp",
+          "operand": "0x18057ea94",
+          "resolved": ""
+        },
+        {
+          "at": "0x57ea91",
+          "opcode": "mov",
+          "operand": "rsi, r14"
+        },
+        {
+          "at": "0x57ea94",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x19]"
+        },
+        {
+          "at": "0x57ea98",
+          "opcode": "call",
+          "operand": "0x1802e86d0",
+          "resolved": "??1ScSuppressStreamRemovedCallbacks@BEE_Layer@@QEAA@XZ"
+        },
+        {
+          "at": "0x57ea9d",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57ea9e",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 1]"
+        },
+        {
+          "at": "0x57eaa2",
+          "opcode": "call",
+          "operand": "0x18069bdd0",
+          "resolved": ""
+        },
+        {
+          "at": "0x57eaa7",
+          "opcode": "mov",
+          "operand": "rax, rsi"
+        },
+        {
+          "at": "0x57eaaa",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp + 0x37]"
+        },
+        {
+          "at": "0x57eaae",
+          "opcode": "xor",
+          "operand": "rcx, rsp"
+        },
+        {
+          "at": "0x57eab1",
+          "opcode": "call",
+          "operand": "0x180d3ac30",
+          "resolved": ""
+        },
+        {
+          "at": "0x57eab6",
+          "opcode": "lea",
+          "operand": "r11, [rsp + 0x100]"
+        },
+        {
+          "at": "0x57eabe",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [r11 + 0x28]"
+        },
+        {
+          "at": "0x57eac2",
+          "opcode": "mov",
+          "operand": "rsi, qword ptr [r11 + 0x30]"
+        },
+        {
+          "at": "0x57eac6",
+          "opcode": "mov",
+          "operand": "rsp, r11"
+        },
+        {
+          "at": "0x57eac9",
+          "opcode": "pop",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57eacb",
+          "opcode": "pop",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57eacc",
+          "opcode": "pop",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57eacd",
+          "opcode": "ret",
+          "operand": ""
+        },
+        {
+          "at": "0x57eace",
+          "opcode": "mov",
+          "operand": "dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x57ead2",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xe7c8df]"
+        },
+        {
+          "at": "0x57ead9",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57eade",
+          "opcode": "call",
+          "operand": "0x180d3bdf8",
+          "resolved": ""
+        },
+        {
+          "at": "0x57eae3",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57eae4",
+          "opcode": "mov",
+          "operand": "dword ptr [rsp + 0x20], 1"
+        },
+        {
+          "at": "0x57eaec",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xe7c8c5]"
+        },
+        {
+          "at": "0x57eaf3",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57eaf8",
+          "opcode": "call",
+          "operand": "0x180d3bdf8",
+          "resolved": ""
+        },
+        {
+          "at": "0x57eafd",
+          "opcode": "int3",
+          "operand": ""
+        }
+      ]
+    },
+    "generic_find_contents_group": {
+      "start": "0x70b660",
+      "end": "0x70b73b",
+      "code_instructions": [
+        {
+          "at": "0x70b660",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x10], rbx"
+        },
+        {
+          "at": "0x70b665",
+          "opcode": "push",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x70b666",
+          "opcode": "sub",
+          "operand": "rsp, 0x70"
+        },
+        {
+          "at": "0x70b66a",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rip + 0xe9b28f]"
+        },
+        {
+          "at": "0x70b671",
+          "opcode": "xor",
+          "operand": "rax, rsp"
+        },
+        {
+          "at": "0x70b674",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x60], rax"
+        },
+        {
+          "at": "0x70b679",
+          "opcode": "mov",
+          "operand": "rdi, rcx"
+        },
+        {
+          "at": "0x70b67c",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf947ad]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x70b683",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x70b688",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80b9f2]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x70b68e",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x70b693",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x70b698",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80bf6a]",
+          "resolved": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x70b69e",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x70b69f",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x70b6a4",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x70b6a7",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80b463]",
+          "resolved": "TDB.dll!??9TDB_StreamIDPath@@QEBA_NAEBV0@@Z"
+        },
+        {
+          "at": "0x70b6ad",
+          "opcode": "movzx",
+          "operand": "ebx, al"
+        },
+        {
+          "at": "0x70b6b0",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x70b6b5",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80c40d]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x70b6bb",
+          "opcode": "test",
+          "operand": "bl, bl"
+        },
+        {
+          "at": "0x70b6bd",
+          "opcode": "je",
+          "operand": "0x18070b71a"
+        },
+        {
+          "at": "0x70b6bf",
+          "opcode": "mov",
+          "operand": "r8, rdi"
+        },
+        {
+          "at": "0x70b6c2",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf94727]",
+          "referenced_constant": "?StreamName_VECTOR_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x70b6c9",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x70b6ce",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80c244]",
+          "resolved": "TDB.dll!?TDB_FindFromReverse@@YA?AVTDB_StreamIDPath@@AEBVTDB_MatchName@@AEBV1@@Z"
+        },
+        {
+          "at": "0x70b6d4",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x70b6d5",
+          "opcode": "mov",
+          "operand": "rdx, rax"
+        },
+        {
+          "at": "0x70b6d8",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x70b6db",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80c407]",
+          "resolved": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@$$QEAV0@@Z"
+        },
+        {
+          "at": "0x70b6e1",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x70b6e2",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x70b6e7",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80c3db]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x70b6ed",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x70b6f0",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80b962]",
+          "resolved": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ"
+        },
+        {
+          "at": "0x70b6f6",
+          "opcode": "test",
+          "operand": "eax, eax"
+        },
+        {
+          "at": "0x70b6f8",
+          "opcode": "je",
+          "operand": "0x18070b737"
+        },
+        {
+          "at": "0x70b6fa",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf9471f]",
+          "referenced_constant": "?StreamName_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x70b701",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x70b706",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80b974]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x70b70c",
+          "opcode": "lea",
+          "operand": "rdx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x70b711",
+          "opcode": "mov",
+          "operand": "rcx, rdi"
+        },
+        {
+          "at": "0x70b714",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80b936]",
+          "resolved": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x70b71a",
+          "opcode": "mov",
+          "operand": "al, 1"
+        },
+        {
+          "at": "0x70b71c",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rsp + 0x60]"
+        },
+        {
+          "at": "0x70b721",
+          "opcode": "xor",
+          "operand": "rcx, rsp"
+        },
+        {
+          "at": "0x70b724",
+          "opcode": "call",
+          "operand": "0x180d3ac30",
+          "resolved": ""
+        },
+        {
+          "at": "0x70b729",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rsp + 0x88]"
+        },
+        {
+          "at": "0x70b731",
+          "opcode": "add",
+          "operand": "rsp, 0x70"
+        },
+        {
+          "at": "0x70b735",
+          "opcode": "pop",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x70b736",
+          "opcode": "ret",
+          "operand": ""
+        },
+        {
+          "at": "0x70b737",
+          "opcode": "xor",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x70b739",
+          "opcode": "jmp",
+          "operand": "0x18070b71c",
+          "resolved": ""
+        }
+      ]
+    },
+    "contents_classifier": {
+      "start": "0x726de0",
+      "end": "0x726e1c",
+      "code_instructions": [
+        {
+          "at": "0x726de0",
+          "opcode": "push",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x726de2",
+          "opcode": "sub",
+          "operand": "rsp, 0x20"
+        },
+        {
+          "at": "0x726de6",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf79033]",
+          "referenced_constant": "?StreamName_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x726ded",
+          "opcode": "mov",
+          "operand": "rbx, rcx"
+        },
+        {
+          "at": "0x726df0",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x7f02aa]",
+          "resolved": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+        },
+        {
+          "at": "0x726df6",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x726df8",
+          "opcode": "jne",
+          "operand": "0x180726e14"
+        },
+        {
+          "at": "0x726dfa",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf7902f]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x726e01",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x726e04",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x7f0296]",
+          "resolved": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+        },
+        {
+          "at": "0x726e0a",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x726e0c",
+          "opcode": "jne",
+          "operand": "0x180726e14"
+        },
+        {
+          "at": "0x726e0e",
+          "opcode": "add",
+          "operand": "rsp, 0x20"
+        },
+        {
+          "at": "0x726e12",
+          "opcode": "pop",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x726e13",
+          "opcode": "ret",
+          "operand": ""
+        },
+        {
+          "at": "0x726e14",
+          "opcode": "mov",
+          "operand": "al, 1"
+        },
+        {
+          "at": "0x726e16",
+          "opcode": "add",
+          "operand": "rsp, 0x20"
+        },
+        {
+          "at": "0x726e1a",
+          "opcode": "pop",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x726e1b",
+          "opcode": "ret",
+          "operand": ""
+        }
+      ]
+    },
+    "native_vectorart_getter": {
+      "start": "0x7081b0",
+      "end": "0x7084f3",
+      "code_instructions": [
+        {
+          "at": "0x7081b0",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x10], rdx"
+        },
+        {
+          "at": "0x7081b5",
+          "opcode": "push",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x7081b6",
+          "opcode": "push",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x7081b7",
+          "opcode": "push",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x7081b8",
+          "opcode": "push",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x7081b9",
+          "opcode": "push",
+          "operand": "r12"
+        },
+        {
+          "at": "0x7081bb",
+          "opcode": "push",
+          "operand": "r13"
+        },
+        {
+          "at": "0x7081bd",
+          "opcode": "push",
+          "operand": "r14"
+        },
+        {
+          "at": "0x7081bf",
+          "opcode": "push",
+          "operand": "r15"
+        },
+        {
+          "at": "0x7081c1",
+          "opcode": "lea",
+          "operand": "rbp, [rsp - 0xf]"
+        },
+        {
+          "at": "0x7081c6",
+          "opcode": "sub",
+          "operand": "rsp, 0xc8"
+        },
+        {
+          "at": "0x7081cd",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rip + 0xe9e72c]"
+        },
+        {
+          "at": "0x7081d4",
+          "opcode": "xor",
+          "operand": "rax, rsp"
+        },
+        {
+          "at": "0x7081d7",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 9], rax"
+        },
+        {
+          "at": "0x7081db",
+          "opcode": "mov",
+          "operand": "rsi, r9"
+        },
+        {
+          "at": "0x7081de",
+          "opcode": "mov",
+          "operand": "r15, r8"
+        },
+        {
+          "at": "0x7081e1",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x69], r8"
+        },
+        {
+          "at": "0x7081e5",
+          "opcode": "mov",
+          "operand": "rdi, rdx"
+        },
+        {
+          "at": "0x7081e8",
+          "opcode": "mov",
+          "operand": "r14, rcx"
+        },
+        {
+          "at": "0x7081eb",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x79], rdx"
+        },
+        {
+          "at": "0x7081ef",
+          "opcode": "mov",
+          "operand": "r12, qword ptr [rbp + 0x77]"
+        },
+        {
+          "at": "0x7081f3",
+          "opcode": "mov",
+          "operand": "r13, qword ptr [rbp + 0x7f]"
+        },
+        {
+          "at": "0x7081f7",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x81087b]",
+          "resolved": "U.dll!?U_IsOnMainThread@@YA_NXZ"
+        },
+        {
+          "at": "0x7081fd",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x7081ff",
+          "opcode": "je",
+          "operand": "0x1807082e6"
+        },
+        {
+          "at": "0x708205",
+          "opcode": "call",
+          "operand": "0x180243d70",
+          "resolved": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ"
+        },
+        {
+          "at": "0x70820a",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x70820c",
+          "opcode": "je",
+          "operand": "0x1807082e6"
+        },
+        {
+          "at": "0x708212",
+          "opcode": "vmovsd",
+          "operand": "xmm1, qword ptr [rip + 0x864266]"
+        },
+        {
+          "at": "0x70821a",
+          "opcode": "mov",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x70821d",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x8108fd]",
+          "resolved": "U.dll!?IsIdentityWithinEpsilon@M_Matrix3@@QEBA_NN@Z"
+        },
+        {
+          "at": "0x708223",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x708225",
+          "opcode": "je",
+          "operand": "0x1807082e6"
+        },
+        {
+          "at": "0x70822b",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x708232",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x708236",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x81233c]",
+          "resolved": "dvacore.dll!??0Murmur3MixerState@utility@dvacore@@QEAA@XZ"
+        },
+        {
+          "at": "0x70823c",
+          "opcode": "mov",
+          "operand": "r8d, 0x11"
+        },
+        {
+          "at": "0x708242",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0x9592ef]"
+        },
+        {
+          "at": "0x708249",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x70824d",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x81231d]",
+          "resolved": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z"
+        },
+        {
+          "at": "0x708253",
+          "opcode": "mov",
+          "operand": "r8d, 4"
+        },
+        {
+          "at": "0x708259",
+          "opcode": "mov",
+          "operand": "rdx, r15"
+        },
+        {
+          "at": "0x70825c",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x708260",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x81230a]",
+          "resolved": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z"
+        },
+        {
+          "at": "0x708266",
+          "opcode": "lea",
+          "operand": "rdx, [r15 + 4]"
+        },
+        {
+          "at": "0x70826a",
+          "opcode": "mov",
+          "operand": "r8d, 4"
+        },
+        {
+          "at": "0x708270",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x708274",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x8122f6]",
+          "resolved": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z"
+        },
+        {
+          "at": "0x70827a",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x70827e",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x812354]",
+          "resolved": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ"
+        },
+        {
+          "at": "0x708284",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x708288",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x70828c",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x8122d6]",
+          "resolved": "dvacore.dll!?GetHashResult@utility@dvacore@@YA_NAEBUMurmur3MixerState@12@AEAVGuid@12@@Z"
+        },
+        {
+          "at": "0x708292",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x708296",
+          "opcode": "cmp",
+          "operand": "qword ptr [rbp - 0x59], rax"
+        },
+        {
+          "at": "0x70829a",
+          "opcode": "jne",
+          "operand": "0x1807082e1"
+        },
+        {
+          "at": "0x70829c",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x18]"
+        },
+        {
+          "at": "0x7082a0",
+          "opcode": "cmp",
+          "operand": "qword ptr [rbp - 0x51], rax"
+        },
+        {
+          "at": "0x7082a4",
+          "opcode": "jne",
+          "operand": "0x1807082e1"
+        },
+        {
+          "at": "0x7082a6",
+          "opcode": "cmp",
+          "operand": "qword ptr [rbx], 0"
+        },
+        {
+          "at": "0x7082aa",
+          "opcode": "je",
+          "operand": "0x1807082e1"
+        },
+        {
+          "at": "0x7082ac",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x7082b3",
+          "opcode": "mov",
+          "operand": "r8, qword ptr [rax]"
+        },
+        {
+          "at": "0x7082b6",
+          "opcode": "mov",
+          "operand": "qword ptr [rdi], r8"
+        },
+        {
+          "at": "0x7082b9",
+          "opcode": "test",
+          "operand": "r8, r8"
+        },
+        {
+          "at": "0x7082bc",
+          "opcode": "je",
+          "operand": "0x1807084d0"
+        },
+        {
+          "at": "0x7082c2",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [r8 + 0x10]"
+        },
+        {
+          "at": "0x7082c6",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rcx + 4]"
+        },
+        {
+          "at": "0x7082ca",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x7082ce",
+          "opcode": "add",
+          "operand": "rcx, r8"
+        },
+        {
+          "at": "0x7082d1",
+          "opcode": "je",
+          "operand": "0x1807084d0"
+        },
+        {
+          "at": "0x7082d7",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rcx]"
+        },
+        {
+          "at": "0x7082da",
+          "opcode": "call",
+          "operand": "qword ptr [rdx]",
+          "resolved": ""
+        },
+        {
+          "at": "0x7082dc",
+          "opcode": "jmp",
+          "operand": "0x1807084d0",
+          "resolved": ""
+        },
+        {
+          "at": "0x7082e1",
+          "opcode": "mov",
+          "operand": "r15b, 1"
+        },
+        {
+          "at": "0x7082e4",
+          "opcode": "jmp",
+          "operand": "0x1807082e9",
+          "resolved": ""
+        },
+        {
+          "at": "0x7082e6",
+          "opcode": "xor",
+          "operand": "r15b, r15b"
+        },
+        {
+          "at": "0x7082e9",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x810789]",
+          "resolved": "U.dll!?U_IsOnMainThread@@YA_NXZ"
+        },
+        {
+          "at": "0x7082ef",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x7082f1",
+          "opcode": "je",
+          "operand": "0x180708329"
+        },
+        {
+          "at": "0x7082f3",
+          "opcode": "call",
+          "operand": "0x180243d70",
+          "resolved": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ"
+        },
+        {
+          "at": "0x7082f8",
+          "opcode": "test",
+          "operand": "al, al"
+        },
+        {
+          "at": "0x7082fa",
+          "opcode": "je",
+          "operand": "0x180708329"
+        },
+        {
+          "at": "0x7082fc",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x708303",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x708306",
+          "opcode": "mov",
+          "operand": "qword ptr [rax], 0"
+        },
+        {
+          "at": "0x70830d",
+          "opcode": "test",
+          "operand": "rdx, rdx"
+        },
+        {
+          "at": "0x708310",
+          "opcode": "je",
+          "operand": "0x180708329"
+        },
+        {
+          "at": "0x708312",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdx + 0x10]"
+        },
+        {
+          "at": "0x708316",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rax + 4]"
+        },
+        {
+          "at": "0x70831a",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x70831e",
+          "opcode": "add",
+          "operand": "rcx, rdx"
+        },
+        {
+          "at": "0x708321",
+          "opcode": "je",
+          "operand": "0x180708329"
+        },
+        {
+          "at": "0x708323",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x708326",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x708329",
+          "opcode": "mov",
+          "operand": "ecx, 0x98"
+        },
+        {
+          "at": "0x70832e",
+          "opcode": "call",
+          "operand": "0x180d3a668",
+          "resolved": ""
+        },
+        {
+          "at": "0x708333",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x79], rax"
+        },
+        {
+          "at": "0x708337",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x70833a",
+          "opcode": "je",
+          "operand": "0x180708352"
+        },
+        {
+          "at": "0x70833c",
+          "opcode": "mov",
+          "operand": "r8d, 1"
+        },
+        {
+          "at": "0x708342",
+          "opcode": "mov",
+          "operand": "rdx, rsi"
+        },
+        {
+          "at": "0x708345",
+          "opcode": "mov",
+          "operand": "rcx, rax"
+        },
+        {
+          "at": "0x708348",
+          "opcode": "call",
+          "operand": "0x1806ee2b0",
+          "resolved": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z"
+        },
+        {
+          "at": "0x70834d",
+          "opcode": "mov",
+          "operand": "rbx, rax"
+        },
+        {
+          "at": "0x708350",
+          "opcode": "jmp",
+          "operand": "0x180708354",
+          "resolved": ""
+        },
+        {
+          "at": "0x708352",
+          "opcode": "xor",
+          "operand": "ebx, ebx"
+        },
+        {
+          "at": "0x708354",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x79], rbx"
+        },
+        {
+          "at": "0x708358",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x70835b",
+          "opcode": "je",
+          "operand": "0x180708374"
+        },
+        {
+          "at": "0x70835d",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x708361",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rax + 4]"
+        },
+        {
+          "at": "0x708365",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x708369",
+          "opcode": "add",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x70836c",
+          "opcode": "je",
+          "operand": "0x180708374"
+        },
+        {
+          "at": "0x70836e",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x708371",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x708373",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x708374",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x71]"
+        },
+        {
+          "at": "0x708378",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x59], rax"
+        },
+        {
+          "at": "0x70837c",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], rbx"
+        },
+        {
+          "at": "0x708380",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x708383",
+          "opcode": "je",
+          "operand": "0x18070839c"
+        },
+        {
+          "at": "0x708385",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x708389",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rax + 4]"
+        },
+        {
+          "at": "0x70838d",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x708391",
+          "opcode": "add",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x708394",
+          "opcode": "je",
+          "operand": "0x18070839c"
+        },
+        {
+          "at": "0x708396",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x708399",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x70839b",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x70839c",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xf97a8d]",
+          "referenced_constant": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B"
+        },
+        {
+          "at": "0x7083a3",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x21]"
+        },
+        {
+          "at": "0x7083a7",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80ecd3]",
+          "resolved": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "at": "0x7083ad",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x21]"
+        },
+        {
+          "at": "0x7083b1",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x7083b5",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80f24d]",
+          "resolved": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z"
+        },
+        {
+          "at": "0x7083bb",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x7083bc",
+          "opcode": "xor",
+          "operand": "ecx, ecx"
+        },
+        {
+          "at": "0x7083be",
+          "opcode": "mov",
+          "operand": "dword ptr [rsp + 0x38], ecx"
+        },
+        {
+          "at": "0x7083c2",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x30], r13"
+        },
+        {
+          "at": "0x7083c7",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x71]"
+        },
+        {
+          "at": "0x7083cb",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x28], rax"
+        },
+        {
+          "at": "0x7083d0",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x20], rcx"
+        },
+        {
+          "at": "0x7083d5",
+          "opcode": "mov",
+          "operand": "r9, r12"
+        },
+        {
+          "at": "0x7083d8",
+          "opcode": "mov",
+          "operand": "r8, qword ptr [rbp - 0x69]"
+        },
+        {
+          "at": "0x7083dc",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x7083e0",
+          "opcode": "mov",
+          "operand": "rcx, r14"
+        },
+        {
+          "at": "0x7083e3",
+          "opcode": "call",
+          "operand": "0x180710ee0",
+          "resolved": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+        },
+        {
+          "at": "0x7083e8",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x7083e9",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x7083ed",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x80f6d5]",
+          "resolved": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "at": "0x7083f3",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x7083f6",
+          "opcode": "jne",
+          "operand": "0x180708405"
+        },
+        {
+          "at": "0x7083f8",
+          "opcode": "lea",
+          "operand": "rcx, [rip + 0xea5451]"
+        },
+        {
+          "at": "0x7083ff",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x812103]",
+          "resolved": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z"
+        },
+        {
+          "at": "0x708405",
+          "opcode": "mov",
+          "operand": "r8, r13"
+        },
+        {
+          "at": "0x708408",
+          "opcode": "mov",
+          "operand": "rdx, rbx"
+        },
+        {
+          "at": "0x70840b",
+          "opcode": "mov",
+          "operand": "rcx, r12"
+        },
+        {
+          "at": "0x70840e",
+          "opcode": "call",
+          "operand": "0x180710d90",
+          "resolved": ""
+        },
+        {
+          "at": "0x708413",
+          "opcode": "test",
+          "operand": "r15b, r15b"
+        },
+        {
+          "at": "0x708416",
+          "opcode": "je",
+          "operand": "0x1807084cd"
+        },
+        {
+          "at": "0x70841c",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x79]"
+        },
+        {
+          "at": "0x708420",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x708427",
+          "opcode": "call",
+          "operand": "0x180705ac0",
+          "resolved": ""
+        },
+        {
+          "at": "0x70842c",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x70842f",
+          "opcode": "jne",
+          "operand": "0x18070843e"
+        },
+        {
+          "at": "0x708431",
+          "opcode": "lea",
+          "operand": "rcx, [rip + 0xea5418]"
+        },
+        {
+          "at": "0x708438",
+          "opcode": "call",
+          "operand": "qword ptr [rip + 0x8120ca]",
+          "resolved": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z"
+        },
+        {
+          "at": "0x70843e",
+          "opcode": "xor",
+          "operand": "r8d, r8d"
+        },
+        {
+          "at": "0x708441",
+          "opcode": "mov",
+          "operand": "rdx, rbx"
+        },
+        {
+          "at": "0x708444",
+          "opcode": "lea",
+          "operand": "rcx, [rbp - 0x49]"
+        },
+        {
+          "at": "0x708448",
+          "opcode": "call",
+          "operand": "0x1806f2000",
+          "resolved": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+        },
+        {
+          "at": "0x70844d",
+          "opcode": "vmovups",
+          "operand": "ymm0, ymmword ptr [rax + 8]"
+        },
+        {
+          "at": "0x708452",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x708459",
+          "opcode": "vmovups",
+          "operand": "ymmword ptr [rax + 0x20], ymm0"
+        },
+        {
+          "at": "0x70845e",
+          "opcode": "mov",
+          "operand": "r8, qword ptr [rbp - 0x69]"
+        },
+        {
+          "at": "0x708462",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x59]"
+        },
+        {
+          "at": "0x708466",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x70846d",
+          "opcode": "vzeroupper",
+          "operand": ""
+        },
+        {
+          "at": "0x708470",
+          "opcode": "call",
+          "operand": "0x180708510",
+          "resolved": ""
+        },
+        {
+          "at": "0x708475",
+          "opcode": "vmovups",
+          "operand": "xmm0, xmmword ptr [rax]"
+        },
+        {
+          "at": "0x708479",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x708480",
+          "opcode": "vmovups",
+          "operand": "xmmword ptr [rax + 0x10], xmm0"
+        },
+        {
+          "at": "0x708485",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r14 + 0x2820]"
+        },
+        {
+          "at": "0x70848c",
+          "opcode": "mov",
+          "operand": "rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x70848f",
+          "opcode": "mov",
+          "operand": "qword ptr [rdi], rdx"
+        },
+        {
+          "at": "0x708492",
+          "opcode": "test",
+          "operand": "rdx, rdx"
+        },
+        {
+          "at": "0x708495",
+          "opcode": "je",
+          "operand": "0x1807084ae"
+        },
+        {
+          "at": "0x708497",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rdx + 0x10]"
+        },
+        {
+          "at": "0x70849b",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rax + 4]"
+        },
+        {
+          "at": "0x70849f",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x7084a3",
+          "opcode": "add",
+          "operand": "rcx, rdx"
+        },
+        {
+          "at": "0x7084a6",
+          "opcode": "je",
+          "operand": "0x1807084ae"
+        },
+        {
+          "at": "0x7084a8",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x7084ab",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x7084ad",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x7084ae",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x7084b1",
+          "opcode": "je",
+          "operand": "0x1807084cb"
+        },
+        {
+          "at": "0x7084b3",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx + 0x10]"
+        },
+        {
+          "at": "0x7084b7",
+          "opcode": "movsxd",
+          "operand": "rcx, dword ptr [rax + 4]"
+        },
+        {
+          "at": "0x7084bb",
+          "opcode": "add",
+          "operand": "rcx, 0x10"
+        },
+        {
+          "at": "0x7084bf",
+          "opcode": "add",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x7084c2",
+          "opcode": "je",
+          "operand": "0x1807084cb"
+        },
+        {
+          "at": "0x7084c4",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x7084c7",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x7084ca",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x7084cb",
+          "opcode": "jmp",
+          "operand": "0x1807084d0",
+          "resolved": ""
+        },
+        {
+          "at": "0x7084cd",
+          "opcode": "mov",
+          "operand": "qword ptr [rdi], rbx"
+        },
+        {
+          "at": "0x7084d0",
+          "opcode": "mov",
+          "operand": "rax, rdi"
+        },
+        {
+          "at": "0x7084d3",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp - 9]"
+        },
+        {
+          "at": "0x7084d7",
+          "opcode": "xor",
+          "operand": "rcx, rsp"
+        },
+        {
+          "at": "0x7084da",
+          "opcode": "call",
+          "operand": "0x180d3ac30",
+          "resolved": ""
+        },
+        {
+          "at": "0x7084df",
+          "opcode": "add",
+          "operand": "rsp, 0xc8"
+        },
+        {
+          "at": "0x7084e6",
+          "opcode": "pop",
+          "operand": "r15"
+        },
+        {
+          "at": "0x7084e8",
+          "opcode": "pop",
+          "operand": "r14"
+        },
+        {
+          "at": "0x7084ea",
+          "opcode": "pop",
+          "operand": "r13"
+        },
+        {
+          "at": "0x7084ec",
+          "opcode": "pop",
+          "operand": "r12"
+        },
+        {
+          "at": "0x7084ee",
+          "opcode": "pop",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x7084ef",
+          "opcode": "pop",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x7084f0",
+          "opcode": "pop",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x7084f1",
+          "opcode": "pop",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x7084f2",
+          "opcode": "ret",
+          "operand": ""
+        }
+      ]
+    },
+    "svg_paste_command": {
+      "start": "0x57e210",
+      "end": "0x57e3fa",
+      "code_instructions": [
+        {
+          "at": "0x57e210",
+          "opcode": "push",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57e212",
+          "opcode": "push",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x57e213",
+          "opcode": "push",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x57e214",
+          "opcode": "push",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57e215",
+          "opcode": "push",
+          "operand": "r12"
+        },
+        {
+          "at": "0x57e217",
+          "opcode": "push",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57e219",
+          "opcode": "push",
+          "operand": "r15"
+        },
+        {
+          "at": "0x57e21b",
+          "opcode": "lea",
+          "operand": "rbp, [rsp - 0x1f]"
+        },
+        {
+          "at": "0x57e220",
+          "opcode": "sub",
+          "operand": "rsp, 0xd0"
+        },
+        {
+          "at": "0x57e227",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rip + 0x10286d2]"
+        },
+        {
+          "at": "0x57e22e",
+          "opcode": "xor",
+          "operand": "rax, rsp"
+        },
+        {
+          "at": "0x57e231",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0x17], rax"
+        },
+        {
+          "at": "0x57e235",
+          "opcode": "mov",
+          "operand": "r14, r9"
+        },
+        {
+          "at": "0x57e238",
+          "opcode": "mov",
+          "operand": "r15, r8"
+        },
+        {
+          "at": "0x57e23b",
+          "opcode": "mov",
+          "operand": "rbx, rcx"
+        },
+        {
+          "at": "0x57e23e",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x79], r8"
+        },
+        {
+          "at": "0x57e242",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x71], r9"
+        },
+        {
+          "at": "0x57e246",
+          "opcode": "mov",
+          "operand": "rsi, qword ptr [rbp + 0x7f]"
+        },
+        {
+          "at": "0x57e24a",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp + 0xf], rsi"
+        },
+        {
+          "at": "0x57e24e",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x61], rcx"
+        },
+        {
+          "at": "0x57e252",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x59], r8"
+        },
+        {
+          "at": "0x57e256",
+          "opcode": "vpxor",
+          "operand": "xmm0, xmm0, xmm0"
+        },
+        {
+          "at": "0x57e25a",
+          "opcode": "vmovdqu",
+          "operand": "xmmword ptr [rbp - 0x51], xmm0"
+        },
+        {
+          "at": "0x57e25f",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r9 + 8]"
+        },
+        {
+          "at": "0x57e263",
+          "opcode": "test",
+          "operand": "rax, rax"
+        },
+        {
+          "at": "0x57e266",
+          "opcode": "je",
+          "operand": "0x18057e26c"
+        },
+        {
+          "at": "0x57e268",
+          "opcode": "lock inc",
+          "operand": "dword ptr [rax + 8]"
+        },
+        {
+          "at": "0x57e26c",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r9]"
+        },
+        {
+          "at": "0x57e26f",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x51], rax"
+        },
+        {
+          "at": "0x57e273",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [r9 + 8]"
+        },
+        {
+          "at": "0x57e277",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x49], rax"
+        },
+        {
+          "at": "0x57e27b",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 0x41], rdx"
+        },
+        {
+          "at": "0x57e27f",
+          "opcode": "xor",
+          "operand": "r12d, r12d"
+        },
+        {
+          "at": "0x57e282",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 1], r12"
+        },
+        {
+          "at": "0x57e286",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rsi + 0x38]"
+        },
+        {
+          "at": "0x57e28a",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e28d",
+          "opcode": "je",
+          "operand": "0x18057e2c1"
+        },
+        {
+          "at": "0x57e28f",
+          "opcode": "cmp",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e292",
+          "opcode": "jne",
+          "operand": "0x18057e2b9"
+        },
+        {
+          "at": "0x57e294",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e297",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x39]"
+        },
+        {
+          "at": "0x57e29b",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e29e",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 1], rax"
+        },
+        {
+          "at": "0x57e2a2",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rsi + 0x38]"
+        },
+        {
+          "at": "0x57e2a6",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e2a9",
+          "opcode": "je",
+          "operand": "0x18057e2c1"
+        },
+        {
+          "at": "0x57e2ab",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e2ae",
+          "opcode": "cmp",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e2b1",
+          "opcode": "setne",
+          "operand": "dl"
+        },
+        {
+          "at": "0x57e2b4",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x20]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e2b7",
+          "opcode": "jmp",
+          "operand": "0x18057e2bd",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e2b9",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 1], rcx"
+        },
+        {
+          "at": "0x57e2bd",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x38], r12"
+        },
+        {
+          "at": "0x57e2c1",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x30], r12"
+        },
+        {
+          "at": "0x57e2c6",
+          "opcode": "lea",
+          "operand": "rax, [rbp - 0x61]"
+        },
+        {
+          "at": "0x57e2ca",
+          "opcode": "mov",
+          "operand": "qword ptr [rsp + 0x28], rax"
+        },
+        {
+          "at": "0x57e2cf",
+          "opcode": "mov",
+          "operand": "edi, 0x9e"
+        },
+        {
+          "at": "0x57e2d4",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e2d7",
+          "opcode": "call",
+          "operand": "0x1802f2e60",
+          "resolved": "?GetUndoContext@BEE_Layer@@QEAAAEAVBEE_UndoContext@@XZ"
+        },
+        {
+          "at": "0x57e2dc",
+          "opcode": "mov",
+          "operand": "rcx, rax"
+        },
+        {
+          "at": "0x57e2df",
+          "opcode": "lea",
+          "operand": "r8, [rsp + 0x28]"
+        },
+        {
+          "at": "0x57e2e4",
+          "opcode": "movzx",
+          "operand": "edx, di"
+        },
+        {
+          "at": "0x57e2e7",
+          "opcode": "call",
+          "operand": "0x180666320",
+          "resolved": "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z"
+        },
+        {
+          "at": "0x57e2ec",
+          "opcode": "test",
+          "operand": "eax, eax"
+        },
+        {
+          "at": "0x57e2ee",
+          "opcode": "jne",
+          "operand": "0x18057e3e4"
+        },
+        {
+          "at": "0x57e2f4",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp - 1]"
+        },
+        {
+          "at": "0x57e2f8",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e2fb",
+          "opcode": "je",
+          "operand": "0x18057e311"
+        },
+        {
+          "at": "0x57e2fd",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e300",
+          "opcode": "lea",
+          "operand": "rdx, [rbp - 0x39]"
+        },
+        {
+          "at": "0x57e304",
+          "opcode": "cmp",
+          "operand": "rcx, rdx"
+        },
+        {
+          "at": "0x57e307",
+          "opcode": "setne",
+          "operand": "dl"
+        },
+        {
+          "at": "0x57e30a",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x20]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e30d",
+          "opcode": "mov",
+          "operand": "qword ptr [rbp - 1], r12"
+        },
+        {
+          "at": "0x57e311",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [rbp - 0x49]"
+        },
+        {
+          "at": "0x57e315",
+          "opcode": "mov",
+          "operand": "edi, 0xffffffff"
+        },
+        {
+          "at": "0x57e31a",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e31d",
+          "opcode": "je",
+          "operand": "0x18057e349"
+        },
+        {
+          "at": "0x57e31f",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57e321",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57e326",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e329",
+          "opcode": "jne",
+          "operand": "0x18057e349"
+        },
+        {
+          "at": "0x57e32b",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e32e",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e331",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e333",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57e335",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], eax"
+        },
+        {
+          "at": "0x57e33a",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e33d",
+          "opcode": "jne",
+          "operand": "0x18057e349"
+        },
+        {
+          "at": "0x57e33f",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e342",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e345",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e348",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e349",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [r15 + 8]"
+        },
+        {
+          "at": "0x57e34d",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e350",
+          "opcode": "je",
+          "operand": "0x18057e37c"
+        },
+        {
+          "at": "0x57e352",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57e354",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57e359",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e35c",
+          "opcode": "jne",
+          "operand": "0x18057e37c"
+        },
+        {
+          "at": "0x57e35e",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e361",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e364",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e366",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57e368",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], eax"
+        },
+        {
+          "at": "0x57e36d",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e370",
+          "opcode": "jne",
+          "operand": "0x18057e37c"
+        },
+        {
+          "at": "0x57e372",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e375",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e378",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e37b",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e37c",
+          "opcode": "mov",
+          "operand": "rbx, qword ptr [r14 + 8]"
+        },
+        {
+          "at": "0x57e380",
+          "opcode": "test",
+          "operand": "rbx, rbx"
+        },
+        {
+          "at": "0x57e383",
+          "opcode": "je",
+          "operand": "0x18057e3ad"
+        },
+        {
+          "at": "0x57e385",
+          "opcode": "mov",
+          "operand": "eax, edi"
+        },
+        {
+          "at": "0x57e387",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 8], eax"
+        },
+        {
+          "at": "0x57e38c",
+          "opcode": "cmp",
+          "operand": "eax, 1"
+        },
+        {
+          "at": "0x57e38f",
+          "opcode": "jne",
+          "operand": "0x18057e3ad"
+        },
+        {
+          "at": "0x57e391",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e394",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e397",
+          "opcode": "call",
+          "operand": "qword ptr [rax]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e399",
+          "opcode": "lock xadd",
+          "operand": "dword ptr [rbx + 0xc], edi"
+        },
+        {
+          "at": "0x57e39e",
+          "opcode": "cmp",
+          "operand": "edi, 1"
+        },
+        {
+          "at": "0x57e3a1",
+          "opcode": "jne",
+          "operand": "0x18057e3ad"
+        },
+        {
+          "at": "0x57e3a3",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rbx]"
+        },
+        {
+          "at": "0x57e3a6",
+          "opcode": "mov",
+          "operand": "rcx, rbx"
+        },
+        {
+          "at": "0x57e3a9",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 8]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e3ac",
+          "opcode": "nop",
+          "operand": ""
+        },
+        {
+          "at": "0x57e3ad",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rsi + 0x38]"
+        },
+        {
+          "at": "0x57e3b1",
+          "opcode": "test",
+          "operand": "rcx, rcx"
+        },
+        {
+          "at": "0x57e3b4",
+          "opcode": "je",
+          "operand": "0x18057e3c6"
+        },
+        {
+          "at": "0x57e3b6",
+          "opcode": "mov",
+          "operand": "rax, qword ptr [rcx]"
+        },
+        {
+          "at": "0x57e3b9",
+          "opcode": "cmp",
+          "operand": "rcx, rsi"
+        },
+        {
+          "at": "0x57e3bc",
+          "opcode": "setne",
+          "operand": "dl"
+        },
+        {
+          "at": "0x57e3bf",
+          "opcode": "call",
+          "operand": "qword ptr [rax + 0x20]",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e3c2",
+          "opcode": "mov",
+          "operand": "qword ptr [rsi + 0x38], r12"
+        },
+        {
+          "at": "0x57e3c6",
+          "opcode": "mov",
+          "operand": "rcx, qword ptr [rbp + 0x17]"
+        },
+        {
+          "at": "0x57e3ca",
+          "opcode": "xor",
+          "operand": "rcx, rsp"
+        },
+        {
+          "at": "0x57e3cd",
+          "opcode": "call",
+          "operand": "0x180d3ac30",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e3d2",
+          "opcode": "add",
+          "operand": "rsp, 0xd0"
+        },
+        {
+          "at": "0x57e3d9",
+          "opcode": "pop",
+          "operand": "r15"
+        },
+        {
+          "at": "0x57e3db",
+          "opcode": "pop",
+          "operand": "r14"
+        },
+        {
+          "at": "0x57e3dd",
+          "opcode": "pop",
+          "operand": "r12"
+        },
+        {
+          "at": "0x57e3df",
+          "opcode": "pop",
+          "operand": "rdi"
+        },
+        {
+          "at": "0x57e3e0",
+          "opcode": "pop",
+          "operand": "rsi"
+        },
+        {
+          "at": "0x57e3e1",
+          "opcode": "pop",
+          "operand": "rbx"
+        },
+        {
+          "at": "0x57e3e2",
+          "opcode": "pop",
+          "operand": "rbp"
+        },
+        {
+          "at": "0x57e3e3",
+          "opcode": "ret",
+          "operand": ""
+        },
+        {
+          "at": "0x57e3e4",
+          "opcode": "mov",
+          "operand": "dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x57e3e8",
+          "opcode": "lea",
+          "operand": "rdx, [rip + 0xe7cfc9]"
+        },
+        {
+          "at": "0x57e3ef",
+          "opcode": "lea",
+          "operand": "rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x57e3f4",
+          "opcode": "call",
+          "operand": "0x180d3bdf8",
+          "resolved": ""
+        },
+        {
+          "at": "0x57e3f9",
+          "opcode": "int3",
+          "operand": ""
+        }
+      ]
+    }
+  }
+}

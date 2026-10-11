@@ -46,11 +46,16 @@
       "outflags2": "PF_OutFlag2_SUPPORTS_THREADED_RENDERING"
     },
     "recompiled": true,
-    "post_patch_AE2026_retested": false,
+    "post_patch_AE2026_retested": true,
+    "post_patch_user_screenshot": "PICA suite: connected; Native Bezier segments: 4; first X: 100.00",
+    "installed_hash_matched_corrected_consumer": true,
+    "installed_corrected_AE2026_confirmation_date": "2026-10-12",
+    "post_patch_MFR_stress_tested": false,
     "installed_original_sha256": "11363e5637f748b2390c8ee084a0590ee676f8978e9d11a732a4c60984ec0793",
     "automatic_install_attempt": "DENIED by Windows permission on Program Files; original remains unchanged",
     "backup": "D:/Developer/ShapeLayerAE/backups/VectorBridgeConsumer_pre_PiPL_fix_20261011.aex",
-    "action_required": "Copy corrected Consumer AEX to C:/Program Files/Adobe/Common/Plug-ins/7.0/MediaCore with admin privileges after closing AE"
+    "prior_action_required": "Historical 2026-10-11: copy corrected Consumer AEX to Program Files with admin permission",
+    "current_status": "Corrected Consumer AEX manually installed and visually retested in AE2026 on 2026-10-12; original automatic attempt denied is historical"
   },
   "standalone_mock": {
     "run_result": "PASS",
@@ -66,5 +71,5 @@
   },
   "native_vectorart_output": false,
   "native_contents_and_pen_tool": false,
-  "followup": "Quit AE, replace only VectorBridgeConsumer.aex, restart, check three warnings absent and About still connected. MFR stress test remains."
+  "followup": "Corrected Consumer confirmed in AE2026; next verify stress-tested MFR, per-effect-instance source identity, native SVG import fidelity, and host render dependencies."
 }

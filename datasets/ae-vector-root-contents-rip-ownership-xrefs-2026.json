@@ -1,0 +1,1794 @@
+{
+  "classification": "E2-L direct RIP data refs to exported MatchName objects; not proof of runtime owner acceptance or third-party ABI",
+  "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+  "instructions_scanned": 4626191,
+  "results": [
+    {
+      "constant_rva": "0x169cee8",
+      "symbol": "?StreamName_FILL_OPACITY@BEE_LayerStyleStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_GenericOpacityStreamTraitsT@$0DBC@@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x15dca",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1687117]"
+        },
+        {
+          "site": "0x3008d0",
+          "caller_function_start": "0x3008c0",
+          "caller_function_export": "?FillInCanonicalUILayout@AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0x139c611]"
+        },
+        {
+          "site": "0x3046eb",
+          "caller_function_start": "0x304640",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x13987f6]"
+        },
+        {
+          "site": "0x48d840",
+          "caller_function_start": "0x48d760",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x120f6a1]"
+        },
+        {
+          "site": "0x49070d",
+          "caller_function_start": "0x490610",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x120c7d4]"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "constant_rva": "0x169fdf0",
+      "symbol": "?StreamName_VECTOR_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b76a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168467f]"
+        },
+        {
+          "site": "0x262979",
+          "caller_function_start": "0x2628d0",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x143d470]"
+        },
+        {
+          "site": "0x26be3a",
+          "caller_function_start": "0x26bc20",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x1433faf]"
+        },
+        {
+          "site": "0x57e8a7",
+          "caller_function_start": "0x57e790",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x1121542]"
+        },
+        {
+          "site": "0x5c65df",
+          "caller_function_start": "0x5c6560",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x10d980a]"
+        },
+        {
+          "site": "0x70b6c2",
+          "caller_function_start": "0x70b660",
+          "caller_function_export": "?BEE_FindContentsGroup@@YA_NAEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0xf94727]"
+        },
+        {
+          "site": "0x70bb0e",
+          "caller_function_start": "0x70b9c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf942db]"
+        },
+        {
+          "site": "0x72188e",
+          "caller_function_start": "0x7217dd",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7e55b]"
+        },
+        {
+          "site": "0x723c89",
+          "caller_function_start": "0x723c80",
+          "caller_function_export": "?CanStore@VectorsStreamGroup@BEE_VectorStream@@UEBA_NAEBVTDB_MatchName@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c160]"
+        },
+        {
+          "site": "0x7258d8",
+          "caller_function_start": "0x7258c0",
+          "caller_function_export": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a511]"
+        },
+        {
+          "site": "0x726a5f",
+          "caller_function_start": "0x726a00",
+          "caller_function_export": "?GetShapeToLayerMatrix@BEE_VectorStream@@YA?AVM_Matrix3@@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+          "asm": "lea rdx, [rip + 0xf7938a]"
+        },
+        {
+          "site": "0x726f50",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf78e99]"
+        },
+        {
+          "site": "0x727c63",
+          "caller_function_start": "0x727bf0",
+          "caller_function_export": "?BEE_Vec3D_CollectShapeGroupMaterialOverrides@BEE_VectorStream3D@@YAXPEAVBEE_VectorLayer@@UT_Time@@AEAVGroup@BEE_VectorArt@@AEAUShapeGroupState@1@@Z",
+          "asm": "lea rdx, [rip + 0xf78186]"
+        },
+        {
+          "site": "0x79dc25",
+          "caller_function_start": "0x79d040",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf021c4]"
+        },
+        {
+          "site": "0x79dcc8",
+          "caller_function_start": "0x79d040",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf02121]"
+        }
+      ],
+      "reference_count": 15
+    },
+    {
+      "constant_rva": "0x169fe10",
+      "symbol": "?StreamName_VECTOR_DURATION@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VBEE_GraphicDurationStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b74a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16846bf]"
+        },
+        {
+          "site": "0x79dbf3",
+          "caller_function_start": "0x79d040",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf02216]"
+        }
+      ],
+      "reference_count": 2
+    },
+    {
+      "constant_rva": "0x169fe20",
+      "symbol": "?StreamName_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b72a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16846ef]"
+        },
+        {
+          "site": "0xadb0f",
+          "caller_function_start": "0xada50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x15f230a]"
+        },
+        {
+          "site": "0x37781c",
+          "caller_function_start": "0x3777f0",
+          "caller_function_export": "?BEE_IsShapeGroupOwnerStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x13285fd]"
+        },
+        {
+          "site": "0x37cf8a",
+          "caller_function_start": "0x37cf70",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x1322e8f]"
+        },
+        {
+          "site": "0x681f0c",
+          "caller_function_start": "0x681e30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101df0d]"
+        },
+        {
+          "site": "0x682080",
+          "caller_function_start": "0x681e30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101dd99]"
+        },
+        {
+          "site": "0x70b6fa",
+          "caller_function_start": "0x70b660",
+          "caller_function_export": "?BEE_FindContentsGroup@@YA_NAEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0xf9471f]"
+        },
+        {
+          "site": "0x71881d",
+          "caller_function_start": "0x7181b0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf875fc]"
+        },
+        {
+          "site": "0x72584f",
+          "caller_function_start": "0x725820",
+          "caller_function_export": "?FillInCanonicalUILayout@VectorStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a5ca]"
+        },
+        {
+          "site": "0x726de6",
+          "caller_function_start": "0x726de0",
+          "caller_function_export": "?IsContents@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+          "asm": "lea rdx, [rip + 0xf79033]"
+        },
+        {
+          "site": "0x79dc57",
+          "caller_function_start": "0x79d040",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf021c2]"
+        }
+      ],
+      "reference_count": 11
+    },
+    {
+      "constant_rva": "0x169fe30",
+      "symbol": "?StreamName_ROOT_VECTORS_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VVectorsStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1afaa",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1684e7f]"
+        },
+        {
+          "site": "0xadafb",
+          "caller_function_start": "0xada50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x15f232e]"
+        },
+        {
+          "site": "0xc2eec",
+          "caller_function_start": "0xc2bb0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x15dcf3d]"
+        },
+        {
+          "site": "0x269bad",
+          "caller_function_start": "0x269340",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143627c]"
+        },
+        {
+          "site": "0x29f8cb",
+          "caller_function_start": "0x29e710",
+          "caller_function_export": "?UpdateStreamVisibility@BEE_AVLayer@@UEAAX_N@Z",
+          "asm": "lea rdx, [rip + 0x140055e]"
+        },
+        {
+          "site": "0x2aa704",
+          "caller_function_start": "0x2aa410",
+          "caller_function_export": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z",
+          "asm": "lea rdx, [rip + 0x13f5725]"
+        },
+        {
+          "site": "0x377926",
+          "caller_function_start": "0x3778f0",
+          "caller_function_export": "?BEE_IsShapeSubtypeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x1328503]"
+        },
+        {
+          "site": "0x3ae542",
+          "caller_function_start": "0x3ae190",
+          "caller_function_export": "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z",
+          "asm": "lea rdx, [rip + 0x12f18e7]"
+        },
+        {
+          "site": "0x50dc38",
+          "caller_function_start": "0x50da50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x11921f1]"
+        },
+        {
+          "site": "0x57e444",
+          "caller_function_start": "0x57e400",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x11219e5]"
+        },
+        {
+          "site": "0x57e7ef",
+          "caller_function_start": "0x57e790",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x112163a]"
+        },
+        {
+          "site": "0x57e880",
+          "caller_function_start": "0x57e790",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x11215a9]"
+        },
+        {
+          "site": "0x5c2854",
+          "caller_function_start": "0x5c27a0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x10dd5d5]"
+        },
+        {
+          "site": "0x70652f",
+          "caller_function_start": "0x706500",
+          "caller_function_export": "?FillInCanonicalUILayout@BEE_VectorLayer@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf998fa]"
+        },
+        {
+          "site": "0x706bc8",
+          "caller_function_start": "0x7066b0",
+          "caller_function_export": "?GetBoundingBoxCompTime@BEE_VectorLayer@@UEBAPEAVBEE_BoundingBox@@PEBUT_Time@@EPEBVTDB_ParamBag@@_N@Z",
+          "asm": "lea rdx, [rip + 0xf99261]"
+        },
+        {
+          "site": "0x70839c",
+          "caller_function_start": "0x7081b0",
+          "caller_function_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+          "asm": "lea rdx, [rip + 0xf97a8d]"
+        },
+        {
+          "site": "0x70b67c",
+          "caller_function_start": "0x70b660",
+          "caller_function_export": "?BEE_FindContentsGroup@@YA_NAEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0xf947ad]"
+        },
+        {
+          "site": "0x70ef2c",
+          "caller_function_start": "0x70ed90",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf90efd]"
+        },
+        {
+          "site": "0x723261",
+          "caller_function_start": "0x723230",
+          "caller_function_export": "??0VectorsStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "asm": "lea rdx, [rip + 0xf7cbc8]"
+        },
+        {
+          "site": "0x726dfa",
+          "caller_function_start": "0x726de0",
+          "caller_function_export": "?IsContents@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+          "asm": "lea rdx, [rip + 0xf7902f]"
+        },
+        {
+          "site": "0x79dc82",
+          "caller_function_start": "0x79d040",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf021a7]"
+        }
+      ],
+      "reference_count": 21
+    },
+    {
+      "constant_rva": "0x16a01d0",
+      "symbol": "?StreamName_SHAPE_DIRECTION@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_PopupStream@UShapeDirectionStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b1aa",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168501f]"
+        },
+        {
+          "site": "0x7177c2",
+          "caller_function_start": "0x7176c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf88a07]"
+        },
+        {
+          "site": "0x718d82",
+          "caller_function_start": "0x718c80",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf87447]"
+        },
+        {
+          "site": "0x7190e2",
+          "caller_function_start": "0x718fe0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf870e7]"
+        },
+        {
+          "site": "0x7194a9",
+          "caller_function_start": "0x719340",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf86d20]"
+        },
+        {
+          "site": "0x723ed0",
+          "caller_function_start": "0x723ec0",
+          "caller_function_export": "?FillInCanonicalUILayout@EllipseStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c2f9]"
+        },
+        {
+          "site": "0x724540",
+          "caller_function_start": "0x724530",
+          "caller_function_export": "?FillInCanonicalUILayout@PolyStarStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7bc89]"
+        },
+        {
+          "site": "0x7246c0",
+          "caller_function_start": "0x7246b0",
+          "caller_function_export": "?FillInCanonicalUILayout@RectStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7bb09]"
+        },
+        {
+          "site": "0x724ad0",
+          "caller_function_start": "0x724ac0",
+          "caller_function_export": "?FillInCanonicalUILayout@ShapeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b6f9]"
+        },
+        {
+          "site": "0x739611",
+          "caller_function_start": "0x7395e0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66bb8]"
+        }
+      ],
+      "reference_count": 10
+    },
+    {
+      "constant_rva": "0x16a01e0",
+      "symbol": "?StreamName_SHAPE_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b1ca",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168500f]"
+        },
+        {
+          "site": "0x2646d5",
+          "caller_function_start": "0x264640",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x143bb04]"
+        },
+        {
+          "site": "0x37786c",
+          "caller_function_start": "0x377840",
+          "caller_function_export": "?BEE_IsShapeGroupStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x132896d]"
+        },
+        {
+          "site": "0x378671",
+          "caller_function_start": "0x3785e0",
+          "caller_function_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x1327b68]"
+        },
+        {
+          "site": "0x3786da",
+          "caller_function_start": "0x3785e0",
+          "caller_function_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x1327aff]"
+        },
+        {
+          "site": "0x37cf4a",
+          "caller_function_start": "0x37cf30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x132328f]"
+        },
+        {
+          "site": "0x721922",
+          "caller_function_start": "0x7217dd",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7e8b7]"
+        },
+        {
+          "site": "0x7258f5",
+          "caller_function_start": "0x7258c0",
+          "caller_function_export": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a8e4]"
+        },
+        {
+          "site": "0x739669",
+          "caller_function_start": "0x7395e0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66b70]"
+        }
+      ],
+      "reference_count": 9
+    },
+    {
+      "constant_rva": "0x16a01f0",
+      "symbol": "?StreamName_SHAPE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VShapeStream@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b0ca",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168511f]"
+        },
+        {
+          "site": "0x14d8a7",
+          "caller_function_start": "0x14d7d0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x1552942]"
+        },
+        {
+          "site": "0x14da46",
+          "caller_function_start": "0x14d9c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x15527a3]"
+        },
+        {
+          "site": "0x264739",
+          "caller_function_start": "0x264640",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143bab0]"
+        },
+        {
+          "site": "0x3224ad",
+          "caller_function_start": "0x322460",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x137dd3c]"
+        },
+        {
+          "site": "0x37567f",
+          "caller_function_start": "0x3755a0",
+          "caller_function_export": "?BEE_DuplicateStreamFPV@@YAHQEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBTBEE_StreamFPV@@PEAT3@@Z",
+          "asm": "lea rdx, [rip + 0x132ab6a]"
+        },
+        {
+          "site": "0x3778bf",
+          "caller_function_start": "0x377890",
+          "caller_function_export": "?BEE_IsShapeStreamPath@@YA_NAEBVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x132892a]"
+        },
+        {
+          "site": "0x3780c9",
+          "caller_function_start": "0x377fd0",
+          "caller_function_export": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z",
+          "asm": "lea rdx, [rip + 0x1328120]"
+        },
+        {
+          "site": "0x378630",
+          "caller_function_start": "0x3785e0",
+          "caller_function_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x1327bb9]"
+        },
+        {
+          "site": "0x3786ee",
+          "caller_function_start": "0x3785e0",
+          "caller_function_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+          "asm": "lea rdx, [rip + 0x1327afb]"
+        },
+        {
+          "site": "0x37a5e6",
+          "caller_function_start": "0x37a5c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x1325c03]"
+        },
+        {
+          "site": "0x37cfcd",
+          "caller_function_start": "0x37cfb0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x132321c]"
+        },
+        {
+          "site": "0x681f9a",
+          "caller_function_start": "0x681e30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101e24f]"
+        },
+        {
+          "site": "0x681fc5",
+          "caller_function_start": "0x681e30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101e224]"
+        },
+        {
+          "site": "0x685551",
+          "caller_function_start": "0x685470",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101ac98]"
+        },
+        {
+          "site": "0x7193b6",
+          "caller_function_start": "0x719340",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf86e33]"
+        },
+        {
+          "site": "0x724aef",
+          "caller_function_start": "0x724ac0",
+          "caller_function_export": "?FillInCanonicalUILayout@ShapeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b6fa]"
+        },
+        {
+          "site": "0x73963b",
+          "caller_function_start": "0x7395e0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66bae]"
+        }
+      ],
+      "reference_count": 18
+    },
+    {
+      "constant_rva": "0x16a0300",
+      "symbol": "?StreamName_FILL_RULE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_PopupStream@UFillRuleStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1a94a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16859af]"
+        },
+        {
+          "site": "0x717ab7",
+          "caller_function_start": "0x717a20",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf88842]"
+        },
+        {
+          "site": "0x720e13",
+          "caller_function_start": "0x720770",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7f4e6]"
+        },
+        {
+          "site": "0x723f91",
+          "caller_function_start": "0x723f40",
+          "caller_function_export": "?FillInCanonicalUILayout@FillStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c368]"
+        },
+        {
+          "site": "0x724065",
+          "caller_function_start": "0x724010",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientFillStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c294]"
+        },
+        {
+          "site": "0x73936b",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66f8e]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0320",
+      "symbol": "?StreamName_FILL_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VFillStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1a90a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1685a0f]"
+        },
+        {
+          "site": "0x262c4d",
+          "caller_function_start": "0x262bd0",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x143d6cc]"
+        },
+        {
+          "site": "0x721b72",
+          "caller_function_start": "0x7217dd",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7e7a7]"
+        },
+        {
+          "site": "0x725975",
+          "caller_function_start": "0x7258c0",
+          "caller_function_export": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a9a4]"
+        },
+        {
+          "site": "0x7393ee",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66f2b]"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "constant_rva": "0x16a0330",
+      "symbol": "?StreamName_FILL_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_GenericColorStreamTraits@$0CGE@UBEE_DefaultColorRed@@@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1a8ea",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1685a3f]"
+        },
+        {
+          "site": "0x262cb1",
+          "caller_function_start": "0x262bd0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143d678]"
+        },
+        {
+          "site": "0x717a8e",
+          "caller_function_start": "0x717a20",
+          "caller_function_export": "",
+          "asm": "lea r9, [rip + 0xf8889b]"
+        },
+        {
+          "site": "0x723fb3",
+          "caller_function_start": "0x723f40",
+          "caller_function_export": "?FillInCanonicalUILayout@FillStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c376]"
+        },
+        {
+          "site": "0x7393c0",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66f69]"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "constant_rva": "0x16a0340",
+      "symbol": "?StreamName_FILL_OPACITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_GenericOpacityStreamTraitsT@$0CHB@@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1a92a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1685a0f]"
+        },
+        {
+          "site": "0x262d40",
+          "caller_function_start": "0x262bd0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143d5f9]"
+        },
+        {
+          "site": "0x2643b1",
+          "caller_function_start": "0x262eb0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143bf88]"
+        },
+        {
+          "site": "0x717a82",
+          "caller_function_start": "0x717a20",
+          "caller_function_export": "",
+          "asm": "lea rax, [rip + 0xf888b7]"
+        },
+        {
+          "site": "0x720863",
+          "caller_function_start": "0x720770",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7fad6]"
+        },
+        {
+          "site": "0x723fd5",
+          "caller_function_start": "0x723f40",
+          "caller_function_export": "?FillInCanonicalUILayout@FillStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c364]"
+        },
+        {
+          "site": "0x724185",
+          "caller_function_start": "0x724010",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientFillStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c1b4]"
+        },
+        {
+          "site": "0x739396",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf66fa3]"
+        }
+      ],
+      "reference_count": 8
+    },
+    {
+      "constant_rva": "0x16a03f0",
+      "symbol": "?StreamName_STROKE_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VStrokeStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b34a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168509f]"
+        },
+        {
+          "site": "0x264b49",
+          "caller_function_start": "0x264a60",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0x143b8a0]"
+        },
+        {
+          "site": "0x721c06",
+          "caller_function_start": "0x7217dd",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7e7e3]"
+        },
+        {
+          "site": "0x7259b5",
+          "caller_function_start": "0x7258c0",
+          "caller_function_export": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7aa34]"
+        },
+        {
+          "site": "0x739341",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf670a8]"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "constant_rva": "0x16a0400",
+      "symbol": "?StreamName_STROKE_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_GenericColorStreamTraits@$0CGE@UDefaultStrokeColor@BEE_VectorStream@@@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b22a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851cf]"
+        },
+        {
+          "site": "0x264bb1",
+          "caller_function_start": "0x264a60",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b848]"
+        },
+        {
+          "site": "0x719794",
+          "caller_function_start": "0x719720",
+          "caller_function_export": "",
+          "asm": "lea r9, [rip + 0xf86c65]"
+        },
+        {
+          "site": "0x724c81",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b778]"
+        },
+        {
+          "site": "0x73930f",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf670ea]"
+        }
+      ],
+      "reference_count": 5
+    },
+    {
+      "constant_rva": "0x16a0410",
+      "symbol": "?StreamName_STROKE_OPACITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_GenericOpacityStreamTraitsT@$0CHB@@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b3ca",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168503f]"
+        },
+        {
+          "site": "0x2643ed",
+          "caller_function_start": "0x262eb0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143c01c]"
+        },
+        {
+          "site": "0x264c55",
+          "caller_function_start": "0x264a60",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b7b4]"
+        },
+        {
+          "site": "0x719788",
+          "caller_function_start": "0x719720",
+          "caller_function_export": "",
+          "asm": "lea rax, [rip + 0xf86c81]"
+        },
+        {
+          "site": "0x72086c",
+          "caller_function_start": "0x720770",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7fb9d]"
+        },
+        {
+          "site": "0x724315",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0f4]"
+        },
+        {
+          "site": "0x724ca3",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b766]"
+        },
+        {
+          "site": "0x7392e8",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67121]"
+        }
+      ],
+      "reference_count": 8
+    },
+    {
+      "constant_rva": "0x16a0420",
+      "symbol": "?StreamName_STROKE_WIDTH@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeWidthStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b42a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x1684fef]"
+        },
+        {
+          "site": "0x9a067",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x16063b2]"
+        },
+        {
+          "site": "0x9a0aa",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x160636f]"
+        },
+        {
+          "site": "0x9a0f6",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x1606323]"
+        },
+        {
+          "site": "0x264cc6",
+          "caller_function_start": "0x264a60",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b753]"
+        },
+        {
+          "site": "0x71e9fa",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf81a1f]"
+        },
+        {
+          "site": "0x724335",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0e4]"
+        },
+        {
+          "site": "0x724cc5",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b754]"
+        },
+        {
+          "site": "0x7392b3",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67166]"
+        }
+      ],
+      "reference_count": 9
+    },
+    {
+      "constant_rva": "0x16a0430",
+      "symbol": "?StreamName_STROKE_LINE_CAP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_PopupStream@ULineCapStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b36a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16850bf]"
+        },
+        {
+          "site": "0x264da2",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b687]"
+        },
+        {
+          "site": "0x71eb07",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf81922]"
+        },
+        {
+          "site": "0x724355",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0d4]"
+        },
+        {
+          "site": "0x724ce7",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b742]"
+        },
+        {
+          "site": "0x739285",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf671a4]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0440",
+      "symbol": "?StreamName_STROKE_LINE_JOIN@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_PopupStream@ULineJoinStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b38a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16850af]"
+        },
+        {
+          "site": "0x264de1",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b658]"
+        },
+        {
+          "site": "0x705e60",
+          "caller_function_start": "0x705d10",
+          "caller_function_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+          "asm": "lea rdx, [rip + 0xf9a5d9]"
+        },
+        {
+          "site": "0x705eba",
+          "caller_function_start": "0x705d10",
+          "caller_function_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+          "asm": "lea r9, [rip + 0xf9a57f]"
+        },
+        {
+          "site": "0x71eaaa",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf8198f]"
+        },
+        {
+          "site": "0x724375",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0c4]"
+        },
+        {
+          "site": "0x724d09",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b730]"
+        },
+        {
+          "site": "0x739257",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf671e2]"
+        }
+      ],
+      "reference_count": 8
+    },
+    {
+      "constant_rva": "0x16a0450",
+      "symbol": "?StreamName_STROKE_MITER_LIMIT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeMiterLimitStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b3aa",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168509f]"
+        },
+        {
+          "site": "0x9a157",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x16062f2]"
+        },
+        {
+          "site": "0x9a19a",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16062af]"
+        },
+        {
+          "site": "0x9a1e6",
+          "caller_function_start": "0x99d40",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x1606263]"
+        },
+        {
+          "site": "0x264e25",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b624]"
+        },
+        {
+          "site": "0x705ea8",
+          "caller_function_start": "0x705d10",
+          "caller_function_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+          "asm": "lea rax, [rip + 0xf9a5a1]"
+        },
+        {
+          "site": "0x71ea52",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf819f7]"
+        },
+        {
+          "site": "0x724395",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0b4]"
+        },
+        {
+          "site": "0x724d2b",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b71e]"
+        },
+        {
+          "site": "0x739229",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67220]"
+        }
+      ],
+      "reference_count": 10
+    },
+    {
+      "constant_rva": "0x16a0460",
+      "symbol": "?StreamName_STROKE_DASHES_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VStrokeDashesStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b24a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168520f]"
+        },
+        {
+          "site": "0x264e7d",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b5dc]"
+        },
+        {
+          "site": "0x6821b0",
+          "caller_function_start": "0x6820c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x101e2a9]"
+        },
+        {
+          "site": "0x71ebf0",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf81869]"
+        },
+        {
+          "site": "0x71ec60",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf817f9]"
+        },
+        {
+          "site": "0x7238fd",
+          "caller_function_start": "0x723830",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7cb5c]"
+        },
+        {
+          "site": "0x7243b5",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c0a4]"
+        },
+        {
+          "site": "0x724d4d",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b70c]"
+        },
+        {
+          "site": "0x726c7a",
+          "caller_function_start": "0x726c50",
+          "caller_function_export": "?GetVectorDashCount@BEE_VectorStream@@YAFAEBVTDB_StreamIDPath@@AEBVBEE_VectorLayer@@@Z",
+          "asm": "lea rdx, [rip + 0xf797df]"
+        },
+        {
+          "site": "0x7391fb",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf6725e]"
+        }
+      ],
+      "reference_count": 10
+    },
+    {
+      "constant_rva": "0x16a0470",
+      "symbol": "?StreamName_STROKE_DASH_1@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeDashStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b26a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851ff]"
+        },
+        {
+          "site": "0x264ebe",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b5ab]"
+        },
+        {
+          "site": "0x724b30",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b939]"
+        },
+        {
+          "site": "0x7391cd",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf6729c]"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "constant_rva": "0x16a0480",
+      "symbol": "?StreamName_STROKE_DASH_2@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeDashStreamTraits2@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b28a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851ef]"
+        },
+        {
+          "site": "0x264fac",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b4cd]"
+        },
+        {
+          "site": "0x724b71",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b908]"
+        },
+        {
+          "site": "0x739171",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67308]"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "constant_rva": "0x16a0490",
+      "symbol": "?StreamName_STROKE_DASH_3@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeDashStreamTraits3@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b2aa",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851df]"
+        },
+        {
+          "site": "0x26509c",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b3ed]"
+        },
+        {
+          "site": "0x724bb5",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b8d4]"
+        },
+        {
+          "site": "0x739115",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67374]"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "constant_rva": "0x16a04a0",
+      "symbol": "?StreamName_STROKE_GAP_1@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeGapStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b2ea",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851af]"
+        },
+        {
+          "site": "0x264f34",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b565]"
+        },
+        {
+          "site": "0x724b4f",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b94a]"
+        },
+        {
+          "site": "0x73919f",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf672fa]"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "constant_rva": "0x16a04b0",
+      "symbol": "?StreamName_STROKE_GAP_2@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeGapStreamTraits2@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b30a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168519f]"
+        },
+        {
+          "site": "0x265024",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b485]"
+        },
+        {
+          "site": "0x724b93",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b916]"
+        },
+        {
+          "site": "0x739143",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67366]"
+        }
+      ],
+      "reference_count": 4
+    },
+    {
+      "constant_rva": "0x16a04c0",
+      "symbol": "?StreamName_STROKE_GAP_3@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeGapStreamTraits3@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b32a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168518f]"
+        },
+        {
+          "site": "0x265114",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b3a5]"
+        },
+        {
+          "site": "0x7239a2",
+          "caller_function_start": "0x723830",
+          "caller_function_export": "",
+          "asm": "lea r8, [rip + 0xf7cb17]"
+        },
+        {
+          "site": "0x724bd7",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b8e2]"
+        },
+        {
+          "site": "0x726046",
+          "caller_function_start": "0x726040",
+          "caller_function_export": "?GetLastDashStreamID@BEE_VectorStream@@YA?AVTDB_StreamID@@AEBVTDB_StreamIDPath@@AEBVBEE_Layer@@@Z",
+          "asm": "lea r8, [rip + 0xf7a473]"
+        },
+        {
+          "site": "0x726ce3",
+          "caller_function_start": "0x726c50",
+          "caller_function_export": "?GetVectorDashCount@BEE_VectorStream@@YAFAEBVTDB_StreamIDPath@@AEBVBEE_VectorLayer@@@Z",
+          "asm": "lea r8, [rip + 0xf797d6]"
+        },
+        {
+          "site": "0x7390e7",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf673d2]"
+        }
+      ],
+      "reference_count": 7
+    },
+    {
+      "constant_rva": "0x16a04d0",
+      "symbol": "?StreamName_STROKE_DASH_OFFSET@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@UStrokeDashOffsetStreamTraits@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b2ca",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16851ff]"
+        },
+        {
+          "site": "0x26518c",
+          "caller_function_start": "0x264d30",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0x143b33d]"
+        },
+        {
+          "site": "0x71eeba",
+          "caller_function_start": "0x71e990",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf8160f]"
+        },
+        {
+          "site": "0x723a48",
+          "caller_function_start": "0x723830",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7ca81]"
+        },
+        {
+          "site": "0x723a76",
+          "caller_function_start": "0x723830",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf7ca53]"
+        },
+        {
+          "site": "0x724bf9",
+          "caller_function_start": "0x724b20",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeDashesStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b8d0]"
+        },
+        {
+          "site": "0x7390b9",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67410]"
+        }
+      ],
+      "reference_count": 7
+    },
+    {
+      "constant_rva": "0x16a04e0",
+      "symbol": "?StreamName_STROKE_TAPER_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VStrokeTaperStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b3ea",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16850ef]"
+        },
+        {
+          "site": "0x71f14b",
+          "caller_function_start": "0x71f0c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf8138e]"
+        },
+        {
+          "site": "0x7243d5",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c104]"
+        },
+        {
+          "site": "0x724d6f",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b76a]"
+        },
+        {
+          "site": "0x726fda",
+          "caller_function_start": "0x726fc0",
+          "caller_function_export": "?IsResettableGroup@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+          "asm": "lea rdx, [rip + 0xf794ff]"
+        },
+        {
+          "site": "0x73908b",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf6744e]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0580",
+      "symbol": "?StreamName_STROKE_TAPER_WAVE_GROUP@BEE_VectorStream@@3V?$TDB_DerivedMatchName@VStrokeTaperWaveStreamGroup@BEE_VectorStream@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b40a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168516f]"
+        },
+        {
+          "site": "0x71f184",
+          "caller_function_start": "0x71f0c0",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf813f5]"
+        },
+        {
+          "site": "0x7243f5",
+          "caller_function_start": "0x7241c0",
+          "caller_function_export": "?FillInCanonicalUILayout@GradientStrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7c184]"
+        },
+        {
+          "site": "0x724d91",
+          "caller_function_start": "0x724c30",
+          "caller_function_export": "?FillInCanonicalUILayout@StrokeStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7b7e8]"
+        },
+        {
+          "site": "0x726fc6",
+          "caller_function_start": "0x726fc0",
+          "caller_function_export": "?IsResettableGroup@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+          "asm": "lea rdx, [rip + 0xf795b3]"
+        },
+        {
+          "site": "0x738ebf",
+          "caller_function_start": "0x738d50",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf676ba]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0840",
+      "symbol": "?StreamName_SHAPEEFFECT_WIGGLE_PATHS_TEMPORAL_FREQUENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b16a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x16856cf]"
+        },
+        {
+          "site": "0x71d94d",
+          "caller_function_start": "0x71d800",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82eec]"
+        },
+        {
+          "site": "0x7249d3",
+          "caller_function_start": "0x724960",
+          "caller_function_export": "?FillInCanonicalUILayout@RoughenStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7be66]"
+        },
+        {
+          "site": "0x7264d3",
+          "caller_function_start": "0x726420",
+          "caller_function_export": "?GetRenderGuid@RoughenStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a366]"
+        },
+        {
+          "site": "0x726531",
+          "caller_function_start": "0x726420",
+          "caller_function_export": "?GetRenderGuid@RoughenStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z",
+          "asm": "lea rdx, [rip + 0xf7a308]"
+        },
+        {
+          "site": "0x738a29",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67e10]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0850",
+      "symbol": "?StreamName_SHAPEEFFECT_CORRELATION@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectCorrelationTraits@$0CKM@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b0ea",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168575f]"
+        },
+        {
+          "site": "0x71d9a2",
+          "caller_function_start": "0x71d800",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82ea7]"
+        },
+        {
+          "site": "0x71e447",
+          "caller_function_start": "0x71e1eb",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82402]"
+        },
+        {
+          "site": "0x7249f5",
+          "caller_function_start": "0x724960",
+          "caller_function_export": "?FillInCanonicalUILayout@RoughenStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7be54]"
+        },
+        {
+          "site": "0x725b9f",
+          "caller_function_start": "0x725b70",
+          "caller_function_export": "?FillInCanonicalUILayout@WigglerStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7acaa]"
+        },
+        {
+          "site": "0x738a50",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67df9]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0860",
+      "symbol": "?StreamName_SHAPEEFFECT_TEMPORAL_PHASE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectRotationStreamTraits@$0CKP@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b14a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168570f]"
+        },
+        {
+          "site": "0x71da2f",
+          "caller_function_start": "0x71d800",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82e2a]"
+        },
+        {
+          "site": "0x71e4d4",
+          "caller_function_start": "0x71e1eb",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82385]"
+        },
+        {
+          "site": "0x724a17",
+          "caller_function_start": "0x724960",
+          "caller_function_export": "?FillInCanonicalUILayout@RoughenStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7be42]"
+        },
+        {
+          "site": "0x725bc1",
+          "caller_function_start": "0x725b70",
+          "caller_function_export": "?FillInCanonicalUILayout@WigglerStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7ac98]"
+        },
+        {
+          "site": "0x738a7e",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67ddb]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0870",
+      "symbol": "?StreamName_SHAPEEFFECT_SPATIAL_PHASE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectRotationStreamTraits@$0CLA@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b12a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168573f]"
+        },
+        {
+          "site": "0x71da82",
+          "caller_function_start": "0x71d800",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82de7]"
+        },
+        {
+          "site": "0x71e527",
+          "caller_function_start": "0x71e1eb",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82342]"
+        },
+        {
+          "site": "0x724a39",
+          "caller_function_start": "0x724960",
+          "caller_function_export": "?FillInCanonicalUILayout@RoughenStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7be30]"
+        },
+        {
+          "site": "0x725be3",
+          "caller_function_start": "0x725b70",
+          "caller_function_export": "?FillInCanonicalUILayout@WigglerStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7ac86]"
+        },
+        {
+          "site": "0x738ab0",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67db9]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a0880",
+      "symbol": "?StreamName_SHAPEEFFECT_RANDOM_SEED@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectRandomSeedStreamTraits@$0COM@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b10a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168576f]"
+        },
+        {
+          "site": "0x71dadd",
+          "caller_function_start": "0x71d800",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf82d9c]"
+        },
+        {
+          "site": "0x71e582",
+          "caller_function_start": "0x71e1eb",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf822f7]"
+        },
+        {
+          "site": "0x724a5b",
+          "caller_function_start": "0x724960",
+          "caller_function_export": "?FillInCanonicalUILayout@RoughenStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7be1e]"
+        },
+        {
+          "site": "0x725c05",
+          "caller_function_start": "0x725b70",
+          "caller_function_export": "?FillInCanonicalUILayout@WigglerStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7ac74]"
+        },
+        {
+          "site": "0x738ada",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67d9f]"
+        }
+      ],
+      "reference_count": 6
+    },
+    {
+      "constant_rva": "0x16a08f0",
+      "symbol": "?StreamName_SHAPEEFFECT_WIGGLE_TRANSFORM_TEMPORAL_FREQUENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@@@@@B",
+      "direct_rip_references": [
+        {
+          "site": "0x1b18a",
+          "caller_function_start": null,
+          "caller_function_export": "",
+          "asm": "lea rcx, [rip + 0x168575f]"
+        },
+        {
+          "site": "0x71e3f1",
+          "caller_function_start": "0x71e1eb",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf824f8]"
+        },
+        {
+          "site": "0x725b80",
+          "caller_function_start": "0x725b70",
+          "caller_function_export": "?FillInCanonicalUILayout@WigglerStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "asm": "lea rdx, [rip + 0xf7ad69]"
+        },
+        {
+          "site": "0x7268f2",
+          "caller_function_start": "0x726850",
+          "caller_function_export": "?GetRenderGuid@WigglerStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z",
+          "asm": "lea rdx, [rip + 0xf79ff7]"
+        },
+        {
+          "site": "0x738b61",
+          "caller_function_start": "0x738360",
+          "caller_function_export": "",
+          "asm": "lea rdx, [rip + 0xf67d88]"
+        }
+      ],
+      "reference_count": 5
+    }
+  ]
+}
