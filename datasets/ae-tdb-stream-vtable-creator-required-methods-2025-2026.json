@@ -1,0 +1,365 @@
+{
+  "evidence": "E2-L native exported vftable slots",
+  "versions": {
+    "2025": {
+      "TDB_hash": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "BEE_hash": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "tables": {
+        "TDB_StreamBase": {
+          "module": "TDB.dll",
+          "rva": "0x73330",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3c150",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x37720",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x376c0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x3fab0",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_Stream": {
+          "module": "TDB.dll",
+          "rva": "0x6fe80",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3c140",
+              "exported_symbol": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x37700",
+              "exported_symbol": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x376c0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x3fab0",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3bb20",
+              "exported_symbol": "?InsertDefaultKey@TDB_Stream@@UEAAXAEBUT_Time@@@Z",
+              "target_executable": true
+            },
+            "0x298": {
+              "index": 83,
+              "function_rva": "0x3c4c0",
+              "exported_symbol": "?IsSeparationLeader@TDB_Stream@@UEBA_NXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_StreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x73540",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3c150",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x37720",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2b580",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x3fac0",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_IndexedStreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x707b0",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3c150",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x37720",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2b580",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x3fac0",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3ae60",
+              "exported_symbol": "?GetStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_NamedStreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x70548",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3c150",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x37720",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2b580",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x3fac0",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3b020",
+              "exported_symbol": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z",
+              "target_executable": true
+            }
+          }
+        }
+      }
+    },
+    "2026": {
+      "TDB_hash": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "BEE_hash": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "tables": {
+        "TDB_StreamBase": {
+          "module": "TDB.dll",
+          "rva": "0x87900",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3cca0",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x38230",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x381d0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x40510",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_Stream": {
+          "module": "TDB.dll",
+          "rva": "0x83e60",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3cc90",
+              "exported_symbol": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x38210",
+              "exported_symbol": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x381d0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamBase@@UEAAPEAVTDB_StreamGroup@@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x40510",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3c670",
+              "exported_symbol": "?InsertDefaultKey@TDB_Stream@@UEAAXAEBUT_Time@@@Z",
+              "target_executable": true
+            },
+            "0x298": {
+              "index": 83,
+              "function_rva": "0x3cfd0",
+              "exported_symbol": "?IsSeparationLeader@TDB_Stream@@UEBA_NXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_StreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x87b10",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3cca0",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x38230",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2c2c0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x40520",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_IndexedStreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x84c40",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3cca0",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x38230",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2c2c0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x40520",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3ba20",
+              "exported_symbol": "?GetStream@TDB_IndexedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z",
+              "target_executable": true
+            }
+          }
+        },
+        "TDB_NamedStreamGroup": {
+          "module": "TDB.dll",
+          "rva": "0x849d8",
+          "slots": {
+            "0x58": {
+              "index": 11,
+              "function_rva": "0x3cca0",
+              "exported_symbol": "?IsLeaf@TDB_StreamBase@@UEBA_NXZ",
+              "target_executable": true
+            },
+            "0x80": {
+              "index": 16,
+              "function_rva": "0x38230",
+              "exported_symbol": "?GetAsLeaf@TDB_StreamBase@@UEAAPEAVTDB_Stream@@XZ",
+              "target_executable": true
+            },
+            "0x90": {
+              "index": 18,
+              "function_rva": "0x2c2c0",
+              "exported_symbol": "?GetAsGroup@TDB_StreamGroup@@UEAAPEAV1@XZ",
+              "target_executable": true
+            },
+            "0x150": {
+              "index": 42,
+              "function_rva": "0x40520",
+              "exported_symbol": "?SetupCanonicalLayout@TDB_StreamGroup@@EEAAXXZ",
+              "target_executable": true
+            },
+            "0x190": {
+              "index": 50,
+              "function_rva": "0x3bbd0",
+              "exported_symbol": "?GetStream@TDB_NamedStreamGroup@@UEBAPEBVTDB_StreamBase@@IW4IfMissing@TDB_StreamGroup@@@Z",
+              "target_executable": true
+            }
+          }
+        }
+      }
+    }
+  }
+}

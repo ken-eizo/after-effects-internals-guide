@@ -1,0 +1,135 @@
+{
+  "classification": "E2-L native machine-code facts; not host plugin compatibility",
+  "method": "compare unique exported function addresses and .pdata-bounded instructions against targeted concrete native calls",
+  "result": "cross-version checks passed; external TDB type registration not performed",
+  "warnings": [
+    "register factory eagerly constructs native stream, expects correct vtable and allocator",
+    "std::function-erased callback may outlive plugin; explicit unregister required",
+    "factory separate canonical/map lifetime and host shutdown timing not established",
+    "experimental version-pinned complete ABI required before attempting registration"
+  ],
+  "versions": {
+    "2025": {
+      "binary_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "factory_register_rva": "0x27400",
+      "factory_create_rva": "0x26710",
+      "factory_unregister_inner_rva": "0x28bd0",
+      "factory_destructor_rva": "0x260b0",
+      "sc_wrapper_destructor_rva": "0x26050",
+      "register_wrapper_rva": "0x27060",
+      "unregister_all_rva": "0x287a0",
+      "register_factory_clones_std_function_via_virt_slot0": [
+        "0x27524"
+      ],
+      "register_factory_destroys_temporary_std_function_via_virt_slot_0x20": [
+        "0x274d5",
+        "0x27563",
+        "0x27622"
+      ],
+      "create_stream_invokes_std_function_via_virt_slot_0x10": [
+        "0x268d7"
+      ],
+      "registration_eager_CreateStream_sites": [
+        "0x2757f"
+      ],
+      "register_streams_wrapper_invoke_factory": [
+        "0x270be"
+      ],
+      "registration_wrapper_record_advance": [
+        "0x270dc"
+      ],
+      "eager_stream_virtual_post_create_checks": {
+        "58": [
+          "0x275ba"
+        ],
+        "80": [
+          "0x275c7",
+          "0x275e3"
+        ],
+        "150": [
+          "0x275ff"
+        ]
+      },
+      "canonical_separated_dimension_registration_sites": [
+        "0x275ef"
+      ],
+      "explicit_unregister_all_reverse_iteration": [
+        "0x287d0"
+      ],
+      "unregister_all_unlinks_names": [
+        "0x287da"
+      ],
+      "sc_registration_wrapper_destructor_calls_unregister_all": false,
+      "factory_unregister_native_destructor_virtual_call": [
+        "0x28e10"
+      ],
+      "factory_unregister_native_destructor_argument_1": [
+        "0x28e08"
+      ],
+      "factory_destructor_has_independent_cleanup": true,
+      "third_party_abi_safe": false,
+      "private_registration_executed": false
+    },
+    "2026": {
+      "binary_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "factory_register_rva": "0x285d0",
+      "factory_create_rva": "0x27920",
+      "factory_unregister_inner_rva": "0x29c20",
+      "factory_destructor_rva": "0x272f0",
+      "sc_wrapper_destructor_rva": "0x27290",
+      "register_wrapper_rva": "0x28220",
+      "unregister_all_rva": "0x29850",
+      "register_factory_clones_std_function_via_virt_slot0": [
+        "0x286f0"
+      ],
+      "register_factory_destroys_temporary_std_function_via_virt_slot_0x20": [
+        "0x286a5",
+        "0x2872f",
+        "0x287ee"
+      ],
+      "create_stream_invokes_std_function_via_virt_slot_0x10": [
+        "0x27a50"
+      ],
+      "registration_eager_CreateStream_sites": [
+        "0x2874b"
+      ],
+      "register_streams_wrapper_invoke_factory": [
+        "0x2828d"
+      ],
+      "registration_wrapper_record_advance": [
+        "0x282ab"
+      ],
+      "eager_stream_virtual_post_create_checks": {
+        "58": [
+          "0x28786"
+        ],
+        "80": [
+          "0x28793",
+          "0x287af"
+        ],
+        "150": [
+          "0x287cb"
+        ]
+      },
+      "canonical_separated_dimension_registration_sites": [
+        "0x287bb"
+      ],
+      "explicit_unregister_all_reverse_iteration": [
+        "0x29870"
+      ],
+      "unregister_all_unlinks_names": [
+        "0x2987a"
+      ],
+      "sc_registration_wrapper_destructor_calls_unregister_all": false,
+      "factory_unregister_native_destructor_virtual_call": [
+        "0x29e4c"
+      ],
+      "factory_unregister_native_destructor_argument_1": [
+        "0x29e44"
+      ],
+      "factory_destructor_has_independent_cleanup": true,
+      "third_party_abi_safe": false,
+      "private_registration_executed": false
+    }
+  }
+}

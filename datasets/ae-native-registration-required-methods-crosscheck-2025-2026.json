@@ -1,0 +1,29 @@
+{
+  "classification": "E2-L cross-validation independent disassembly paths, not external plugin proof",
+  "versions": {
+    "2025": {
+      "creator_callback_is_C++_std_function_erasure": true,
+      "registration_sync_creates_stream": true,
+      "stream_creator_invoked_at_std_function_virtual_offset": "0x10",
+      "TDB_StreamBase_IsLeaf_virtual_offset": "0x58",
+      "TDB_StreamBase_GetAsLeaf_virtual_offset": "0x80",
+      "TDB_StreamBase_SetupCanonicalLayout_virtual_offset": "0x150",
+      "TDB_Stream_IsSeparationLeader_virtual_offset": "0x298",
+      "helper_unregister_in_reverse_order": true,
+      "helper_destructor_does_not_automatically_unregister": true,
+      "external_plugin_type_registered": false
+    },
+    "2026": {
+      "creator_callback_is_C++_std_function_erasure": true,
+      "registration_sync_creates_stream": true,
+      "stream_creator_invoked_at_std_function_virtual_offset": "0x10",
+      "TDB_StreamBase_IsLeaf_virtual_offset": "0x58",
+      "TDB_StreamBase_GetAsLeaf_virtual_offset": "0x80",
+      "TDB_StreamBase_SetupCanonicalLayout_virtual_offset": "0x150",
+      "TDB_Stream_IsSeparationLeader_virtual_offset": "0x298",
+      "helper_unregister_in_reverse_order": true,
+      "helper_destructor_does_not_automatically_unregister": true,
+      "external_plugin_type_registered": false
+    }
+  }
+}

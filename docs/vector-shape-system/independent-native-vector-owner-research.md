@@ -83,3 +83,12 @@ Every session must report findings vs hypotheses, exact data and version, reprod
 - datasets/ae-native-vector-owner-contract-summary-2025-2026.json: compact verified per-version facts.
 
 The earlier Mask experiment F-VECTOR-024 is retained as an independent side branch for evidence preservation, but it is **explicitly NOT a milestone** toward registering a new native path type or plugin-owned Contents.
+
+
+## 2026-10-12 — Creator callback, automatic initialization and lifetime are now partially decoded
+
+Finding F-VECTOR-026 and EXP-SHAPE-024 extend the native typed-stream registry ABI evidence: factory registration retains/clones an MSVC std::function-erased creator, calls its CreateStream synchronously during type registration, and demands a real TDB_StreamBase with working IsLeaf, GetAsLeaf, SetupCanonicalLayout and (on native leaf) IsSeparationLeader virtual methods. Concrete TDB.dll native vftables in AE2025/2026 map these names to offsets 0x58, 0x80, 0x150 and leaf 0x298, respectively.
+
+Crucial destructor caveat: TDB_ScRegisterStreams::~ only frees its own vector; explicit UnregisterAll performs reverse-order registration removal; UnregisterFactoryFunc deletes canonical/creator entries and destroys a native stream instance. An external plugin cannot count on implicit RAII cleanup of its native factory callback after unload.
+
+No external Stream Creator, native Timeline owner, tool binding or BEE VectorArt evaluator was registered. This lowers research uncertainty about the first private ABI gate but does not move the user-visible S1-S3 success milestone. Next inspect cloning/serialization, registry startup/init order, project object survival and independent native owner adoption. Scripts/results in AEIG F-VECTOR-026, EXP-SHAPE-024 and 2025/2026 concise verifier data.

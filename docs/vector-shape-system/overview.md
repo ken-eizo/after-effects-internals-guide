@@ -90,3 +90,10 @@ The user's actual goal is direct control of **the native path object, its editab
 New two-version vftable and native command work proves that AE's AV Layer and Vector Layer put their distinct Rasterize2DGraph implementations into **the same virtual Layer slot** (2025 index235, 2026 index238), with distinct GetLayerType and factory-created native C++ class identities. This means renderer participation is an **owner/layer class contract**, not merely Bezier geometry or a BEE operator MatchName registration. Separate TDB and BEE evaluator registries must be connected to a legitimate native owner, editor/selection model and render-graph dispatch.
 
 See [Independent Native Vector Objects: Type, Owner, Editor and Renderer](independent-native-vector-owner-research.md), F-VECTOR-025 and EXP-SHAPE-023. The older Mask PICA bridge is retained for historical completeness but no longer treated as a step meeting the main independent native Contents objective.
+
+
+## 2026-10-12 — TDB Creator lifecycle ABI landmark
+
+The first native type registration requirement is more constrained than callback installation: RegisterFactoryFunc clones an erased MSVC std::function then eagerly creates a real native TDB_StreamBase instance and invokes virtual IsLeaf/GetAsLeaf/SetupCanonicalLayout and separated-dimensions checks. These virtual methods were identified directly in AE2025 and AE2026 exported TDB vftables. Registering with an invalid/dummy subclass is unsafe even before placing a stream in the Timeline.
+
+TDB_ScRegisterStreams::UnregisterAll walks registrations in reverse, while its destructor does NOT automatically unregister. This is critical for any future plugin unload / host state lifecycle test. See F-VECTOR-026 and EXP-SHAPE-024; the independent-Contents product milestone remains unachieved until host creation, editor and renderer integration work end-to-end.

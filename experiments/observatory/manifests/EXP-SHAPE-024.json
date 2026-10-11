@@ -1,0 +1,40 @@
+{
+  "experiment_id": "EXP-SHAPE-024",
+  "title": "TDB private native Stream creator erased callback, eager virtual methods and explicit teardown",
+  "status": "pass-static",
+  "date": "2026-10-12",
+  "classification": "E2-L: exported PE/x64 PData disassembly and two-version native vtable cross-validation",
+  "question": "What ABI/lifetime obligations does third-party native TDB stream registration impose, before any host attempt, without using an ordinary Mask or Shape Layer?",
+  "results": {
+    "2025_native_factory_registration_callback": true,
+    "2026_native_factory_registration_callback": true,
+    "MSVC_erased_callable_is_copied_owned_and_called": true,
+    "erased_std_function_clone_slot": "0x0",
+    "erased_std_function_call_slot": "0x10",
+    "erased_std_function_delete_slot": "0x20",
+    "new_stream_synchronously_constructed_during_type_registration": true,
+    "native_IsLeaf_virtual_offset": "0x58",
+    "native_GetAsLeaf_virtual_offset": "0x80",
+    "native_SetupCanonicalLayout_virtual_offset": "0x150",
+    "native_Leaf_IsSeparationLeader_virtual_offset": "0x298",
+    "UnregisterAll_reverses_registration_key_order": true,
+    "ScRegisterStreams_destructor_automatically_unregisters": false,
+    "UnregisterFactoryFunc_deletes_native_stream_object": true,
+    "third_party_type_created": false,
+    "native_editable_contents_owned_by_plugin": false,
+    "native_VectorArt_effect_output": false
+  },
+  "limits": [
+    "Static native code evidence, no private ABI invocation from AEGP",
+    "Lifetime of plugin module relative to host project still unknown",
+    "Complete native stream serialization and refcount ABI unproven",
+    "BEE native editor/renderer ownership remain separate gates"
+  ],
+  "artifacts": [
+    "research/findings/F-VECTOR-026-tdb-private-creator-abi-eager-virtual-methods-and-lifetime.md",
+    "experiments/vector-shape/EXP-SHAPE-024-tdb-native-creator-callback-lifetime.md",
+    "datasets/ae-native-stream-private-registration-lifetime-2025-2026.json",
+    "datasets/ae-tdb-stream-vtable-creator-required-methods-2025-2026.json",
+    "datasets/ae-native-registration-required-methods-crosscheck-2025-2026.json"
+  ]
+}
