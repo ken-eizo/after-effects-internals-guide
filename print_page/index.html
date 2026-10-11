@@ -3575,6 +3575,8 @@
       
         
       
+        
+      
     
     
     
@@ -3740,6 +3742,41 @@
     
   
     Native Vector Editability and Provenance
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-shape-system/native-stream-factory-and-schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Stream Factory and Shape Schema
   
 
     
@@ -12955,10 +12992,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vector-shape-system-native-stream-factory-and-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.5 Native Stream Factory and Shape Schema
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vector-shape-system-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.5 Vector and Shape System
+        16.6 Vector and Shape System
       
     </span>
   </a>
@@ -19049,6 +19097,7 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <h2 id="vector-shape-system-native-extensibility-boundaries-research-objective-and-non-goals">Research objective and non-goals<a class="headerlink" href="#vector-shape-system-native-extensibility-boundaries-research-objective-and-non-goals" title="Permanent link">&para;</a></h2>
 <p>Determine whether a third-party plug-in can independently <strong>instantiate and register a native dynamic Contents hierarchy</strong>, expose it in the regular AE Timeline, receive native Pen/Selection tool edits, and feed paths into AE's built-in vector evaluation/rasterizer <strong>without creating or depending on an ordinary Shape Layer</strong>. Ultimately test a CompNodeAE-owned native vector object. Reading or writing an existing Shape Path through AEGP/scripting is an observation/control baseline, <strong>not</strong> a success criterion.</p>
 <p>This is a system reconstruction, not a promise that undocumented APIs are stable or extensible. Avoid calling private exports or modifying host process memory during the initial phase.</p>
+<p>For the newly confirmed <em>internal</em> typed creator-registration chain and existing Shape Contents prefix-based child admission, see <a href="#vector-shape-system-native-stream-factory-and-schema">Native Stream Factory and Shape Schema</a>. A private factory callback registry now has reproducible static evidence in both AE2025 and AE2026; <strong>third-party creation/ownership/tool/render integration remain unverified</strong>.</p>
 <h2 id="vector-shape-system-native-extensibility-boundaries-five-distinct-contracts-do-not-conflate">Five distinct contracts (do not conflate)<a class="headerlink" href="#vector-shape-system-native-extensibility-boundaries-five-distinct-contracts-do-not-conflate" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -19248,6 +19297,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <p><code>BEE_AVLayer::RegisterStreams</code> also calls <code>BEE_CmdReorderIndexedGroupEntry</code> in the analyzed window. This is a worthwhile cross-layer lead for native Timeline structural actions. The bounded disassembly is not a complete control-flow graph, and exports targeted by an indirect jump/call cannot be resolved simply from decorated names.</p>
 <h3 id="vector-shape-system-historical-native-extension-forensics-reconciling-the-counts">Reconciling the counts<a class="headerlink" href="#vector-shape-system-historical-native-extension-forensics-reconciling-the-counts" title="Permanent link">&para;</a></h3>
 <p>BEE's total exports: 13647 (2025) vs 14182 (2026). <code>BEE_VectorStream</code> substring appears in 1452 symbols in each version; <code>TDB_StreamFactory</code> in 365 vs 401 (full BEE export scan, more than the earlier <strong>filtered</strong> shape-only AEIG CSV). These counts are not independent evidence of type extension and cannot be equated to function counts: a class name can appear in many constructors/templated signatures.</p>
+<h2 id="vector-shape-system-historical-native-extension-forensics-actual-tdbdll-native-factory-registration-revised-frontier">Actual TDB.dll native factory registration (revised frontier)<a class="headerlink" href="#vector-shape-system-historical-native-extension-forensics-actual-tdbdll-native-factory-registration-revised-frontier" title="Permanent link">&para;</a></h2>
+<p>A separate 2025/2026 static audit found the host-owned <code>TDB.dll</code>, its globally accessed <code>TDB_StreamFactory</code>, and its internal <code>RegisterFactoryFunc</code>/<code>TDB_ScRegisterStreams::Register</code> machinery. Resolved BEE.dll import calls prove base layer initialization calls those registry functions. The vector Contents <code>CanStore</code> contains three native type-name prefixes. This is a deeper capability boundary than the older BEE symbol-only study; see <a href="#vector-shape-system-native-stream-factory-and-schema">Native Stream Factory and Shape Schema</a>. It must not be represented as a public third-party plug-in SDK.</p>
 <h2 id="vector-shape-system-historical-native-extension-forensics-direct-call-site-confirmation-of-a-central-initialization-sequence">Direct call-site confirmation of a central initialization sequence<a class="headerlink" href="#vector-shape-system-historical-native-extension-forensics-direct-call-site-confirmation-of-a-central-initialization-sequence" title="Permanent link">&para;</a></h2>
 <p>Full executable-section static scans (4.49 million decoded instructions in AE 2025; 4.63 million in AE 2026) identified consecutive <strong>direct</strong> calls to multiple layer-class <code>RegisterStreams</code> routines from one shared code region in each build. The VectorLayer direct-call site is RVA <code>0x36DE38</code> in 2025 and <code>0x378858</code> in 2026. This is reproducible, cross-version evidence of a <strong>central layer stream registration/initialization sequence</strong>. The enclosing routine's name and registry data structures are not established, so it is not yet evidence that third-party types can be registered. The scan found three direct references to <code>PopulateVectorArt</code> per build but no direct <code>BEE_VectorLayer::Rasterize2DGraph</code> calls; virtual/indirect dispatch may explain the latter.</p>
 <p>Raw E2-L artifact: <code>datasets/ae-vector-registerstreams-xrefs-2025-2026.json</code>. The first attempt without Capstone SKIPDATA prematurely stopped and was replaced; instruction decoding of an executable section is not a perfect function-boundary reconstruction.</p>
@@ -19364,7 +19415,138 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <li><code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code> and raw <code>experiments/vector-shape/runs/EXP-SHAPE-001/20261011-first-success/shape_layer_stream_tree.tsv</code>.</li>
 <li><code>datasets/ae-vector-origin-identity-2025-2026.json</code>, SHA-256 <code>E6B96B78AE68E77C274B71F8BA31644E0F5D8F81FA9E1E70739251E7E3AE7C7D</code>.</li>
 <li><code>datasets/ae-vector-selection-origin-xrefs-2025-2026.json</code>, SHA-256 <code>EE9B818E0DE72405E6116E1C6CC006F663789C026802757135BCD85DAFB8E253</code>.</li>
-</ul></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.5"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="vector-shape-system-native-stream-factory-and-schema" heading-number="16.5"><h1 id="vector-shape-system-native-stream-factory-and-schema-native-shape-factory-creator-registration-canonical-streams-and-indexed-group-admission">Native Shape Factory — Creator Registration, Canonical Streams and Indexed Group Admission<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-native-shape-factory-creator-registration-canonical-streams-and-indexed-group-admission" title="Permanent link">&para;</a></h1>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-the-actual-goal">The actual goal<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-the-actual-goal" title="Permanent link">&para;</a></h2>
+<p>CompNodeAE should someday provide <strong>its own host-native editable vector objects and Contents hierarchy</strong>, participating in the AE Timeline, native Pen and Selection tools, expression/animation/Undo, host-native vector evaluation and rasterization, without depending on an extra standard Shape Layer. Copying paths into an existing Shape Layer, drawing an overlay through Drawbot or returning PF_World pixels fails this goal.</p>
+<p>The project has now found a concrete native factory/registration boundary. This is a significant step beyond public AEGP traversal, <strong>but it remains internal Adobe ABI, not a documented plug-in extension</strong>.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-confirmed-layered-architecture">Confirmed layered architecture<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-confirmed-layered-architecture" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">AE project / layer owner
+</span><span id="__span-0-2">   |
+</span><span id="__span-0-3">   |  BEE_Layer::RegisterStreams(bool) [BEE.dll]
+</span><span id="__span-0-4">   |    -&gt; TDB.dll!Get_AE_StreamFactory()
+</span><span id="__span-0-5">   |    -&gt; TDB_ScRegisterStreams::Register(match name, creator)
+</span><span id="__span-0-6">   |          -&gt; TDB_StreamFactory::RegisterFactoryFunc(...)
+</span><span id="__span-0-7">   |             -&gt; TDB_StreamFactory::CreateStream(...)
+</span><span id="__span-0-8">   |             -&gt; Canonical stream / separated dimensions registration
+</span><span id="__span-0-9">   |
+</span><span id="__span-0-10">   +-- TDB_IndexedStreamGroup / TDB_NamedStreamGroup
+</span><span id="__span-0-11">   |     -&gt; child admissibility (CanStore / AEGP_CanAddStream)
+</span><span id="__span-0-12">   |     -&gt; UILayout and child insert/move/remove notification
+</span><span id="__span-0-13">   |
+</span><span id="__span-0-14">   +-- BEE_VectorLayer / BEE_VectorStream
+</span><span id="__span-0-15">   |     -&gt; authored Contents / Path / Fill / Stroke / Filter
+</span><span id="__span-0-16">   |     -&gt; PopulateVectorArt(time, stream-path)
+</span><span id="__span-0-17">   |     -&gt; BEE_VectorArt::OriginInfo(TDB_StreamIDPath)
+</span><span id="__span-0-18">   |
+</span><span id="__span-0-19">   +-- BEE_SelLayer / BEE_GetSelectedShapePathsVec / Selection
+</span><span id="__span-0-20">   |
+</span><span id="__span-0-21">   +-- AGM / BEE_VectorLayer::Rasterize2DGraph / RG
+</span><span id="__span-0-22">          -&gt; pixel materialization, only at the final rendering stage
+</span></code></pre></div>
+<p>This is a reconstructed <em>boundary map</em>. Direct call edges among <code>BEE_Layer</code>, <code>Get_AE_StreamFactory</code>, <code>TDB_ScRegisterStreams::Register</code>, <code>RegisterFactoryFunc</code> and <code>CreateStream</code> have offline code/IAT evidence. The exact connection between custom TDB child creation, native Pen editing and the production renderer is a <strong>hypothesis</strong> until host-tested.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-internal-factory-entrypoints-found-in-both-ae2025-and-ae2026">Internal factory entrypoints found in BOTH AE2025 and AE2026<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-internal-factory-entrypoints-found-in-both-ae2025-and-ae2026" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>TDB function</th>
+<th>2025 RVA</th>
+<th>2026 RVA</th>
+<th>Evidence meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Get_AE_StreamFactory()</code></td>
+<td><code>0x8100</code></td>
+<td><code>0x81B0</code></td>
+<td>no-argument getter loads a global factory pointer</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::RegisterFactoryFunc</code></td>
+<td><code>0x27400</code></td>
+<td><code>0x285D0</code></td>
+<td>registers creator by MatchName; static code locks mutex and performs further setup</td>
+</tr>
+<tr>
+<td><code>TDB_ScRegisterStreams::Register</code></td>
+<td><code>0x27060</code></td>
+<td><code>0x28220</code></td>
+<td>wrapper calls RegisterFactoryFunc</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::RegisterCanonicalInstance</code></td>
+<td><code>0x27130</code></td>
+<td><code>0x28300</code></td>
+<td>canonical/prototype registration mechanism</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::CreateStream</code></td>
+<td><code>0x26710</code></td>
+<td><code>0x27920</code></td>
+<td>materializes native TDB stream from registered match name</td>
+</tr>
+<tr>
+<td><code>TDB_ScRegisterStreams::UnregisterAll</code></td>
+<td><code>0x287A0</code></td>
+<td><code>0x29850</code></td>
+<td>calls UnregisterFactoryFunc</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::UnregisterFactoryFunc</code></td>
+<td><code>0x28BC0</code></td>
+<td><code>0x29C10</code></td>
+<td>removes creator registration</td>
+</tr>
+</tbody>
+</table>
+<p>Exact MSVC signatures and DLL hashes: <code>research/findings/F-VECTOR-008-tdb-native-factory-registration.md</code>, and raw <code>datasets/ae-tdb-native-stream-factory-2025-2026.json</code>.</p>
+<p>The register callback is a C++ <code>std::function</code> that returns <code>TDB_StreamBase*</code> and takes a <code>TDB_MatchName const&amp;</code>, <code>TDB_StreamFactory*</code> and additional arguments. That is <strong>not a stable C plug-in ABI</strong>. It depends on private class layouts, compiler C++ ABI, allocator ownership, callback lifecycle, canonical stream ownership, and host shutdown sequencing. Merely discovering the function address does not solve those problems.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration">Native Contents admission is partly a string grammar, not just a type enumeration<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration" title="Permanent link">&para;</a></h2>
+<p><code>BEE_VectorStream::VectorsStreamGroup::CanStore(TDB_MatchName const&amp;)</code> disassembly refers to three <strong>literal</strong> strings in BOTH versions:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">ADBE Vector Shape -
+</span><span id="__span-1-2">ADBE Vector Graphic -
+</span><span id="__span-1-3">ADBE Vector Filter -
+</span></code></pre></div>
+<p>The function calls a string-search-like helper and compares the returned address with the beginning of the candidate name. This is consistent with <strong>prefix recognition</strong>; a fourth direct <code>TDB_MatchName</code> equality check also exists. Whether an unknown prefixed MatchName is admitted by public <code>CanAddStream</code> must be measured independently. The native group may still reject its creation if no matching factory callback exists.</p>
+<p>This explains why two distinct gates matter:</p>
+<ul>
+<li><strong>Structural parent admissibility</strong>: Is this category of child allowed under this indexed parent? (<code>CanStore</code> / <code>CanAddStream</code> surface)</li>
+<li><strong>Type construction</strong>: Does the factory know how to instantiate that precise match name? (<code>RegisterFactoryFunc</code> / <code>CreateStream</code>)</li>
+</ul>
+<p>One gate passing never implies the other.</p>
+<p>AE2026 E2-X data: 36/36 successful non-mutating CanAdd queries distinguished Shape Contents/Effects. Native vector names were allowed in Contents but rejected in Effect Parade; <code>ADBE Slider Control</code> showed the opposite. Experimental <strong>unknown-prefixed</strong> names will be tested through a distinct explicit menu command, NEVER through actual <code>AEGP_AddStream</code> until the factory relationship is proven.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue">The stream UID anomaly is a separate potential feature-gate issue<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue" title="Permanent link">&para;</a></h2>
+<p>AE2026 E2-X capture returned <strong>0 for all 359 stream UIDs</strong> while every UID API error field was zero. This contradicts the <em>expected utility</em> of the documented session-unique ID, but it does not prove that the function is generally broken. In local runtime export/import evidence, <code>TDB_Project::TDB_AreTDBStreamScriptingIDsEnabled</code> and AEIG's historical <code>EnableTDBStreamScriptingIDs</code> Beta flag suggest a related identity prototype, but there is <strong>no verified causal connection</strong>.</p>
+<p>The new ShapeLayerAE v3 performs two UID calls with distinct nonzero output-buffer sentinels to distinguish host-written zero from untouched memory; that experiment is <strong>compiled but not host-tested</strong>.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-five-breakpoints-to-independent-native-objects">Five breakpoints to independent native objects<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-five-breakpoints-to-independent-native-objects" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Factory access</strong>: pinned <code>TDB.dll</code> exact runtime and matching decorated <code>Get_AE_StreamFactory</code> symbol; read-only getter call and nonnull pointer test, no dereference. This is a prepared opt-in experiment, NOT yet executed.</li>
+<li><strong>Custom matchname structural admissibility</strong>: query unknown but matching Shape/Graphic/Filter prefix with <code>AEGP_CanAddStream</code> against Contents. Do not add.</li>
+<li><strong>Creator+canonical registration</strong>: recover TDB_MatchName private layout and std::function ABI; prove a complete, reversibly registered custom stream in a disposable host. Critical: callback code/vtable lifetime must outlive any host-owned instance and be correctly unregistered before unloading; save/reopen behavior must be tested.</li>
+<li><strong>Native owner and Timeline</strong>: attach a TDB_IndexedStreamGroup to a genuinely <em>independent plug-in-owned native object</em>, not to an ordinary Shape Layer. This may require internal BEE owner type dispatch. A generic group showing in some UI is insufficient.</li>
+<li><strong>Native vector renderer/editor</strong>: custom stream must provide evaluated art accepted by <code>BEE_VectorStream::PopulateVectorArt</code> and <code>BEE_VectorArt::OriginInfo</code>, expose native selection/vertex tools, and produce host AGM/RG pixels with correct caching and Undo. Registering a new data stream alone does not establish the vector-provider contract.</li>
+</ol>
+<p>The architecture supports a plausible new native <strong>stream class</strong> experiment, but a full native <strong>vector class/layer</strong> remains a separate, harder question.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-research-and-safety-plan">Research and safety plan<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-research-and-safety-plan" title="Permanent link">&para;</a></h2>
+<ul>
+<li>EXP-SHAPE-005 — real AE2026 public topology, metadata/UID and built-in admissibility (host verified).</li>
+<li>EXP-SHAPE-008 — read-only TDB factory export, per-version import/callsite/dataflow and string grammar (static verified).</li>
+<li>EXP-SHAPE-009 — <strong>opt-in</strong> unknown prefixed names CanAdd, plus UID sentinel control (built, not host-tested).</li>
+<li>EXP-SHAPE-010 — <strong>opt-in</strong> pinned private factory pointer Getter: verify module, decorated export, first-instruction fingerprint and call the zero-argument getter only, record nonnull Boolean. No pointer dereference, no registration, no factory callback; compiled but not host-tested.</li>
+<li>Future gated tests of creator registration ONLY on a disposable AE installation, clean project, exact pinned binaries, with crash capture and rollback plan; do not inject into an active working AE session or write third-party type definitions directly into production projects.</li>
+</ul>
+<p>Production effects must still respect AE cache dependencies and rendering contracts: a native factory object is not an effect output channel. Custom Comp UI and Drawbot are separate UI facilities. Adobe SDK is not extended by these private findings.</p>
+<h2 id="vector-shape-system-native-stream-factory-and-schema-source-of-truth">Source of truth<a class="headerlink" href="#vector-shape-system-native-stream-factory-and-schema-source-of-truth" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>research/findings/F-VECTOR-008-tdb-native-factory-registration.md</code> — internal call graph.</li>
+<li><code>research/findings/F-VECTOR-009-canstore-and-zero-uid.md</code> — user-confirmed E2-X vs static prefix predicate.</li>
+<li><code>research/hypotheses/H-SHAPE-005-creator-registration-native-contents.md</code> — falsification and alternate models.</li>
+<li><code>experiments/vector-shape/runs/EXP-SHAPE-005/20261011-user-host-v2</code> — raw sample.</li>
+<li><code>datasets/ae-tdb-register-callsite-disasm-2025-2026.json</code> — bound direct/import calls.</li>
+<li><code>datasets/ae-tdb-vector-canstore-disasm-2025-2026.json</code> — grouped type-admission predicate.</li>
+<li><code>E:/ae25.6_61.64bit.AfterEffectsSDK/Examples/Headers/AE_GeneralPlug.h</code> — public supported baseline.</li>
+<li>Adobe official https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/ — stream API contract.</li>
+</ul></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.6"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
 <p>Shape layers combine a persistent vector object model, hierarchical transforms/modifiers and a renderer-facing tessellation/rasterization path.</p>
 <h2 id="vector-shape-system-overview-questions">Questions<a class="headerlink" href="#vector-shape-system-overview-questions" title="Permanent link">&para;</a></h2>
 <ul>
@@ -19387,6 +19569,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <h2 id="vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11">Verified native host experiment and identity frontier (2026-10-11)<a class="headerlink" href="#vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archived raw capture shows 180 public stream nodes with zero reported per-node API errors, including <code>ADBE Root Vectors Group</code> as an indexed Contents group and Rectangle/Fill as named child groups. This E2-X result proves real host traversal <strong>only</strong>, not plug-in-owned Contents creation. See repository report <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>.</p>
 <p>A follow-up read-only probe is available as a <strong>compiled but not host-tested</strong> experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating <code>CanAddStream</code> matrix. See <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a> for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.</p>
+<h2 id="vector-shape-system-overview-native-stream-factory-registration-breakthrough-2026-10-11">Native stream factory registration breakthrough (2026-10-11)<a class="headerlink" href="#vector-shape-system-overview-native-stream-factory-registration-breakthrough-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>Offline BEE/TDB PE/IAT analysis found the host-internal <code>TDB.dll</code> and confirmed <strong>BEE_Layer::RegisterStreams -&gt; Get_AE_StreamFactory -&gt; TDB_ScRegisterStreams::Register -&gt; TDB_StreamFactory::RegisterFactoryFunc</strong>, with canonical stream creation and guarded unregister. The native <code>VectorsStreamGroup::CanStore</code> references built-in <code>ADBE Vector Shape -</code>, <code>ADBE Vector Graphic -</code>, and <code>ADBE Vector Filter -</code> prefixes. See <a href="#vector-shape-system-native-stream-factory-and-schema">Native Stream Factory and Shape Schema</a> for evidence, safety boundaries and <em>unverified</em> third-party factory integration.</p>
 <h2 id="vector-shape-system-overview-runtime-model-status">Runtime model status<a class="headerlink" href="#vector-shape-system-overview-runtime-model-status" title="Permanent link">&para;</a></h2>
 <p>The runtime-side reconstruction is now tracked in <code>runtime-architecture.md</code>. AE 2025 exposes a concrete <code>BEE_VectorStream -&gt; BEE_VectorArt -&gt; AGM-facing translation -&gt; RG_RenderNode</code> chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.</p>
 <p>Reproducible local inventory: <code>datasets/ae-2025-vector-shape-symbols.csv</code>; core finding: <code>F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code>.</p>
@@ -27138,9 +27322,14 @@ dumpbin failures: <strong>0</strong>.</p>
                 .print-site-enumerate-headings #vector-shape-system-native-edit-and-provenance-bridge h2:before { content: '16.4.' counter(counter-vector-shape-system-native-edit-and-provenance-bridge-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-native-edit-and-provenance-bridge h2 {  counter-increment: counter-vector-shape-system-native-edit-and-provenance-bridge-2 }
             
-.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.5 ' }
+.print-site-enumerate-headings #vector-shape-system-native-stream-factory-and-schema > h1:before { content: '16.5 ' }
 
-                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.5.' counter(counter-vector-shape-system-overview-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-stream-factory-and-schema h2:before { content: '16.5.' counter(counter-vector-shape-system-native-stream-factory-and-schema-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-stream-factory-and-schema h2 {  counter-increment: counter-vector-shape-system-native-stream-factory-and-schema-2 }
+            
+.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.6 ' }
+
+                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.6.' counter(counter-vector-shape-system-overview-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-overview h2 {  counter-increment: counter-vector-shape-system-overview-2 }
             
 .print-site-enumerate-headings #section-17 > h1:before { content: '17 ' }
