@@ -12236,6 +12236,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-two-new-product-level-constraints-closed-layer-kind-generic-editable-stream-valueundo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Two new product-level constraints: closed Layer kind, generic editable Stream value/Undo
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12385,6 +12396,11 @@
 <p>A new public SDK project-state isolation gate is SHARED by both CNL AEGP builds: requires one non-dirty empty project, no non-root active/project items, no Render Queue items and all host queries available. The dangerous manual-only AEX checks this before consuming user acknowledgments and before touching private registration. Creator invocation count uses static storage rather than capturing a local stack reference into potentially host-retained callback.</p>
 <p>CNLNativeVectorHostProbe safe v1 already ran in AE2026 and produced genuine CNL cubic vectors (4), factory getter non-null and exact host version fingerprint, while showing native registration count 0. The NEW safe v2 adds public-project gate data to the TSV and dialog; it has only been COMPILED, not yet tried in AE. Future user test should replace the old safe probe and verify v2's new report. The dangerous AEX is still NEVER run and CANNOT be certified safe.</p>
 <p>Native independent owner, Adobe Timeline/Pen controls, BEE evaluator insertion and VectorArt rendering are unsolved and must not be represented by the standalone CNL core or a successful type-registry function call.</p>
+<h2 id="2026-10-12-two-new-product-level-constraints-closed-layer-kind-generic-editable-stream-valueundo">2026-10-12 — Two new product-level constraints: closed Layer kind, generic editable Stream value/Undo<a class="headerlink" href="#2026-10-12-two-new-product-level-constraints-closed-layer-kind-generic-editable-stream-valueundo" title="Permanent link">&para;</a></h2>
+<p>F-VECTOR-037 (EXP-SHAPE-036) reconstructs the exact native <code>BEE_Layer::CreateLayerFromType</code> eight-case dispatch table in both installed AE2025/2026 BEE.dlls. It is integer-bounded to 0..7 and routes to seven hardcoded native C++ constructors (type 6 shares AVLayer; type 4 is VectorLayer). External TDB Stream Creator registration cannot <strong>by itself</strong> create an eighth native Layer kind through this specific factory. This is a substantive narrowing of the new-Layer product route, but does not exclude unstudied extension dispatchers elsewhere.</p>
+<p>F-VECTOR-038 (EXP-SHAPE-037) establishes the positive counterpart: native Mask and Vector Shape <em>reset</em> operations invoke a single common native helper in each version, which calls <code>BEE_CmdSetStreamFPVPlus</code>, <code>BEE_DoCommand</code> and host Undo grouping. The generic writer takes <code>BEE_Layer*</code> and <code>TDB_StreamIDPath</code>, resolves the stream via <code>BEE_GetStreamWithSpec</code>, writes using <code>BEE_SetStreamFPV</code>, and brackets a native Undo transaction. This is not native Pen drag integration but establishes a usable shared internal writer contract <strong>conditional on obtaining a legal independent editable TDB owner</strong>.</p>
+<p>The two findings together change engineering priority. Instead of building a speculative foreign VectorLayer subclass based only on TDB registration, prioritize (1) discovering/creating a real plugin-attached <strong>non-Shape/non-Mask native Contents owner</strong>, (2) proving its <code>BEE_StreamSpec</code> resolves to a writable, serialized TDB Stream, (3) tracing AE Pen/Selection to that exact IDPath and its editing callbacks, and (4) locating a native <code>BEE_VectorArt</code>/RG source interface that doesn't require <code>BEE_VectorLayer</code>. Each is a separate falsifiable experimental gate. The existing CNLNativeVectorCore remains independent typed geometry and can serve as the authored data source once those gates are met, but no native host vector output has yet been created.</p>
+<p>EXP-SHAPE-038 records actual user AE2026 read-only probe: Bezier and private factory getter succeeded while the conservative gate refused <code>active_item_not_root</code>; the project was also dirty. This has no bearing on the native ownership/render research. No mutating AEX was installed or executed by the researcher. Phase F and the CompNodeAE repository remain entirely out of scope.</p>
 
 
 
@@ -12405,7 +12421,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 19:43:54 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 20:49:46 UTC">October 11, 2026</span>
   </span>
 
     
