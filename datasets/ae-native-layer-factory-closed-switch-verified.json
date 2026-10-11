@@ -1,0 +1,64 @@
+{
+  "classification": "E2-L static current-installed BEE CreateLayerFromType scope only",
+  "does_not_prove": "No other native type extension mechanism anywhere in AE",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "bound_seven": true,
+      "concrete_direct_constructors": {
+        "BEE_AVLayer": [
+          "0x2e3eb2"
+        ],
+        "BEE_LightLayer": [
+          "0x2e3ef9"
+        ],
+        "BEE_CameraLayer": [
+          "0x2e3f40"
+        ],
+        "BEE_TextLayer": [
+          "0x2e3f87"
+        ],
+        "BEE_VectorLayer": [
+          "0x2e3fce"
+        ],
+        "BEE_ModelLayer": [
+          "0x2e4018"
+        ],
+        "BEE_ParametricMeshLayer": [
+          "0x2e4065"
+        ]
+      },
+      "beta_feature_guard_call": true,
+      "external_custom_layer_constructor_in_this_dispatcher": false
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "bound_seven": true,
+      "concrete_direct_constructors": {
+        "BEE_AVLayer": [
+          "0x2ecd95"
+        ],
+        "BEE_LightLayer": [
+          "0x2ecddd"
+        ],
+        "BEE_CameraLayer": [
+          "0x2ece25"
+        ],
+        "BEE_TextLayer": [
+          "0x2ece6d"
+        ],
+        "BEE_VectorLayer": [
+          "0x2eceb5"
+        ],
+        "BEE_ModelLayer": [
+          "0x2ecf00"
+        ],
+        "BEE_ParametricMeshLayer": [
+          "0x2ecf45"
+        ]
+      },
+      "beta_feature_guard_call": false,
+      "external_custom_layer_constructor_in_this_dispatcher": false
+    }
+  }
+}

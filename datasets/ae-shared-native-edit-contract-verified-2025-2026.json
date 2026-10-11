@@ -1,0 +1,35 @@
+{
+  "classification": "E2-L exact native code xrefs; public AE SDK extension not established",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "reset_mask_and_vector_same_helper": "0x67a350",
+      "generic_value_writer": "0x6625d0",
+      "generic_value_writer_calls": [
+        "BEE_GetStreamWithSpec",
+        "BEE_StreamTypeHasStream",
+        "BEE_StartGroupNamed",
+        "BEE_SetStreamFPV",
+        "BEE_DoCommand",
+        "BEE_EndGroup"
+      ],
+      "native_pen_drag_callback_proven": false,
+      "external_owner_proven": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "reset_mask_and_vector_same_helper": "0x696380",
+      "generic_value_writer": "0x67de40",
+      "generic_value_writer_calls": [
+        "BEE_GetStreamWithSpec",
+        "BEE_StreamTypeHasStream",
+        "BEE_StartGroupNamed",
+        "BEE_SetStreamFPV",
+        "BEE_DoCommand",
+        "BEE_EndGroup"
+      ],
+      "native_pen_drag_callback_proven": false,
+      "external_owner_proven": false
+    }
+  }
+}

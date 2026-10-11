@@ -1,0 +1,257 @@
+{
+  "classification": "E2-L 8-entry native factory jump table mapping; no host calls",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "jump_table_rva": "0x2e4108",
+      "cases": [
+        {
+          "layer_type_integer": 0,
+          "branch_rva": "0x2e3e78",
+          "constructor_family": [
+            "BEE_AVLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2810",
+            "call qword ptr [rip + 0xbdc22d]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 1,
+          "branch_rva": "0x2e3ebf",
+          "constructor_family": [
+            "BEE_LightLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2728",
+            "call qword ptr [rip + 0xbdc1e6]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 2,
+          "branch_rva": "0x2e3f06",
+          "constructor_family": [
+            "BEE_CameraLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2728",
+            "call qword ptr [rip + 0xbdc19f]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 3,
+          "branch_rva": "0x2e3f4d",
+          "constructor_family": [
+            "BEE_TextLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2870",
+            "call qword ptr [rip + 0xbdc158]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 4,
+          "branch_rva": "0x2e3f94",
+          "constructor_family": [
+            "BEE_VectorLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2820",
+            "call qword ptr [rip + 0xbdc111]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 5,
+          "branch_rva": "0x2e3fdb",
+          "constructor_family": [
+            "BEE_ModelLayer"
+          ],
+          "first_operations": [
+            "mov r12b, 1",
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2868",
+            "call qword ptr [rip + 0xbdc0c7]",
+            "mov qword ptr [rsp + 0x88], rax"
+          ]
+        },
+        {
+          "layer_type_integer": 6,
+          "branch_rva": "0x2e3e78",
+          "constructor_family": [
+            "BEE_AVLayer"
+          ],
+          "first_operations": [
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2810",
+            "call qword ptr [rip + 0xbdc22d]",
+            "mov qword ptr [rsp + 0x88], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 7,
+          "branch_rva": "0x2e4022",
+          "constructor_family": [
+            "BEE_ParametricMeshLayer"
+          ],
+          "first_operations": [
+            "call 0x18023ad00",
+            "test al, al",
+            "je 0x1802e4095",
+            "mov r8, rdi",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x28a0"
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "jump_table_rva": "0x2ecfe8",
+      "cases": [
+        {
+          "layer_type_integer": 0,
+          "branch_rva": "0x2ecd5e",
+          "constructor_family": [
+            "BEE_AVLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x27d8",
+            "call qword ptr [rip + 0xc2c4e7]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 1,
+          "branch_rva": "0x2ecda6",
+          "constructor_family": [
+            "BEE_LightLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x26f0",
+            "call qword ptr [rip + 0xc2c49f]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 2,
+          "branch_rva": "0x2ecdee",
+          "constructor_family": [
+            "BEE_CameraLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x26f0",
+            "call qword ptr [rip + 0xc2c457]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 3,
+          "branch_rva": "0x2ece36",
+          "constructor_family": [
+            "BEE_TextLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x28b8",
+            "call qword ptr [rip + 0xc2c40f]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 4,
+          "branch_rva": "0x2ece7e",
+          "constructor_family": [
+            "BEE_VectorLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2830",
+            "call qword ptr [rip + 0xc2c3c7]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 5,
+          "branch_rva": "0x2ecec6",
+          "constructor_family": [
+            "BEE_ModelLayer"
+          ],
+          "first_operations": [
+            "mov r14b, 1",
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2830",
+            "call qword ptr [rip + 0xc2c37c]",
+            "mov qword ptr [rsp + 0x78], rax"
+          ]
+        },
+        {
+          "layer_type_integer": 6,
+          "branch_rva": "0x2ecd5e",
+          "constructor_family": [
+            "BEE_AVLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x27d8",
+            "call qword ptr [rip + 0xc2c4e7]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        },
+        {
+          "layer_type_integer": 7,
+          "branch_rva": "0x2ecf0e",
+          "constructor_family": [
+            "BEE_ParametricMeshLayer"
+          ],
+          "first_operations": [
+            "mov r8, rax",
+            "mov edx, 0x1a0062",
+            "mov ecx, 0x2858",
+            "call qword ptr [rip + 0xc2c337]",
+            "mov qword ptr [rsp + 0x78], rax",
+            "test rax, rax"
+          ]
+        }
+      ]
+    }
+  }
+}

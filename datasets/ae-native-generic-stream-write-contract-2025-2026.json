@@ -1,0 +1,2071 @@
+{
+  "evidence": "E2-L pinned BEE static direct calls only; unknown native plugin owner",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "functions": [
+        {
+          "name": "?BEE_SetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@PEAVTDB_Stream@@PEAVBEE_SetStreamChange@@@Z",
+          "rva": "0x664a00",
+          "pdata_end": "0x665476",
+          "calls": [
+            {
+              "site": "0x664acf",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664ae6",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x664b19",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664b30",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x664b5c",
+              "destination_rva": "0x461c20",
+              "symbol": ""
+            },
+            {
+              "site": "0x664b62",
+              "destination_rva": "0x664bc5",
+              "symbol": ""
+            },
+            {
+              "site": "0x664bdd",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x664bf7",
+              "destination_rva": "0xebe4f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664c13",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x664c39",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x664c64",
+              "destination_rva": "0x664c99",
+              "symbol": ""
+            },
+            {
+              "site": "0x664c7e",
+              "destination_rva": "0x36a1f0",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x664c83",
+              "destination_rva": "0x664c8f",
+              "symbol": ""
+            },
+            {
+              "site": "0x664c8a",
+              "destination_rva": "0x36b480",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x664cb6",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664ccd",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x664d03",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664d1a",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x664d4e",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x664d74",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x664d9a",
+              "destination_rva": "0x664dc7",
+              "symbol": ""
+            },
+            {
+              "site": "0x664db4",
+              "destination_rva": "0x36a1f0",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x664db9",
+              "destination_rva": "0x664dc5",
+              "symbol": ""
+            },
+            {
+              "site": "0x664dc0",
+              "destination_rva": "0x36b480",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x664de7",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e1c",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e33",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e44",
+              "destination_rva": "0xebde88",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e54",
+              "destination_rva": "0xebdf70",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e69",
+              "destination_rva": "0xebde88",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e72",
+              "destination_rva": "0x372450",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e82",
+              "destination_rva": "0xebde88",
+              "symbol": ""
+            },
+            {
+              "site": "0x664e92",
+              "destination_rva": "0xebdf70",
+              "symbol": ""
+            },
+            {
+              "site": "0x664ec3",
+              "destination_rva": "0x665021",
+              "symbol": ""
+            },
+            {
+              "site": "0x664ed5",
+              "destination_rva": "0xce9048",
+              "symbol": ""
+            },
+            {
+              "site": "0x664f9b",
+              "destination_rva": "0x664fa0",
+              "symbol": ""
+            },
+            {
+              "site": "0x664fb0",
+              "destination_rva": "0x665021",
+              "symbol": ""
+            },
+            {
+              "site": "0x664fdc",
+              "destination_rva": "0x665021",
+              "symbol": ""
+            },
+            {
+              "site": "0x664ffb",
+              "destination_rva": "0xceacd4",
+              "symbol": ""
+            },
+            {
+              "site": "0x665036",
+              "destination_rva": "0xebe900",
+              "symbol": ""
+            },
+            {
+              "site": "0x66503e",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x66504e",
+              "destination_rva": "0xebe888",
+              "symbol": ""
+            },
+            {
+              "site": "0x66505d",
+              "destination_rva": "0xebe888",
+              "symbol": ""
+            },
+            {
+              "site": "0x665069",
+              "destination_rva": "0xebb3e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x665071",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x665082",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x66509a",
+              "destination_rva": "0x6650bf",
+              "symbol": ""
+            },
+            {
+              "site": "0x6650c6",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x6650e4",
+              "destination_rva": "0xebe4f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6650ea",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x665114",
+              "destination_rva": "0x36a480",
+              "symbol": "?BEE_ConvertStreamFPV@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_ConvertDir@@PEATBEE_StreamFPV@@@Z"
+            },
+            {
+              "site": "0x665163",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x665186",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6651a3",
+              "destination_rva": "0xceacd4",
+              "symbol": ""
+            },
+            {
+              "site": "0x6651ca",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6651e7",
+              "destination_rva": "0xceacd4",
+              "symbol": ""
+            },
+            {
+              "site": "0x665205",
+              "destination_rva": "0x5b9d20",
+              "symbol": ""
+            },
+            {
+              "site": "0x66520a",
+              "destination_rva": "0x6653d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x665231",
+              "destination_rva": "0xce9048",
+              "symbol": ""
+            },
+            {
+              "site": "0x665261",
+              "destination_rva": "0x665266",
+              "symbol": ""
+            },
+            {
+              "site": "0x66526b",
+              "destination_rva": "0x6652b7",
+              "symbol": ""
+            },
+            {
+              "site": "0x6652a3",
+              "destination_rva": "0x6652b7",
+              "symbol": ""
+            },
+            {
+              "site": "0x6652c3",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x6652db",
+              "destination_rva": "0x665396",
+              "symbol": ""
+            },
+            {
+              "site": "0x665308",
+              "destination_rva": "0x665396",
+              "symbol": ""
+            },
+            {
+              "site": "0x665333",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x66533b",
+              "destination_rva": "0xebf908",
+              "symbol": ""
+            },
+            {
+              "site": "0x66538e",
+              "destination_rva": "0xebc710",
+              "symbol": ""
+            },
+            {
+              "site": "0x66539d",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x6653b7",
+              "destination_rva": "0xebe4f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6653cb",
+              "destination_rva": "0xce9094",
+              "symbol": ""
+            },
+            {
+              "site": "0x6653f5",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x66541e",
+              "destination_rva": "0x2cb760",
+              "symbol": ""
+            },
+            {
+              "site": "0x665434",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x66544b",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x66545e",
+              "destination_rva": "0xce9610",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0x210",
+            "mov rax, qword ptr [rip + 0xeb4d26]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0x200], rax",
+            "mov qword ptr [rsp + 0xb0], r9",
+            "mov rax, r8",
+            "mov qword ptr [rsp + 0x80], rax",
+            "mov r13, rdx",
+            "mov qword ptr [rsp + 0x68], rdx",
+            "mov rbx, rcx",
+            "mov qword ptr [rsp + 0x98], rcx",
+            "mov qword ptr [rsp + 0x148], rcx",
+            "mov qword ptr [rsp + 0x150], rdx",
+            "mov qword ptr [rsp + 0x70], rax",
+            "mov qword ptr [rsp + 0x88], r9",
+            "mov r12, qword ptr [rsp + 0x270]",
+            "mov qword ptr [rsp + 0xa0], r12",
+            "mov rsi, qword ptr [rsp + 0x278]"
+          ]
+        },
+        {
+          "name": "?BEE_CmdSetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@@Z",
+          "rva": "0x6625b0",
+          "pdata_end": "0x6625d0",
+          "calls": [
+            {
+              "site": "0x6625c6",
+              "destination_rva": "0x6625d0",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            }
+          ],
+          "first_instructions": [
+            "sub rsp, 0x38",
+            "mov rax, qword ptr [rsp + 0x60]",
+            "mov dword ptr [rsp + 0x28], 0",
+            "mov qword ptr [rsp + 0x20], rax",
+            "call 0x1806625d0",
+            "add rsp, 0x38",
+            "ret "
+          ]
+        },
+        {
+          "name": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z",
+          "rva": "0x6625d0",
+          "pdata_end": "0x662b73",
+          "calls": [
+            {
+              "site": "0x662646",
+              "destination_rva": "0xebe7f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x662684",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x66269b",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x6626c5",
+              "destination_rva": "0x36e2d0",
+              "symbol": "?BEE_StreamTypeHasStream@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAE@Z"
+            },
+            {
+              "site": "0x6626ec",
+              "destination_rva": "0x36c9d0",
+              "symbol": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "site": "0x6626f9",
+              "destination_rva": "0x662726",
+              "symbol": ""
+            },
+            {
+              "site": "0x66270b",
+              "destination_rva": "0x36a1f0",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x662710",
+              "destination_rva": "0x66271c",
+              "symbol": ""
+            },
+            {
+              "site": "0x662717",
+              "destination_rva": "0x36b480",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x662724",
+              "destination_rva": "0x6626df",
+              "symbol": ""
+            },
+            {
+              "site": "0x662755",
+              "destination_rva": "0xebde20",
+              "symbol": ""
+            },
+            {
+              "site": "0x662775",
+              "destination_rva": "0xebdd38",
+              "symbol": ""
+            },
+            {
+              "site": "0x6627ce",
+              "destination_rva": "0x6625d0",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            },
+            {
+              "site": "0x6627db",
+              "destination_rva": "0x6627ef",
+              "symbol": ""
+            },
+            {
+              "site": "0x6627e2",
+              "destination_rva": "0x6625d0",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            },
+            {
+              "site": "0x6627f7",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6627ff",
+              "destination_rva": "0x662750",
+              "symbol": ""
+            },
+            {
+              "site": "0x66280a",
+              "destination_rva": "0x2cf120",
+              "symbol": "?BEE_CmdEnableOverrideAfterEdit@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N@Z"
+            },
+            {
+              "site": "0x66280f",
+              "destination_rva": "0x662a7c",
+              "symbol": ""
+            },
+            {
+              "site": "0x662840",
+              "destination_rva": "0x2e9590",
+              "symbol": ""
+            },
+            {
+              "site": "0x66285b",
+              "destination_rva": "0x2e9590",
+              "symbol": ""
+            },
+            {
+              "site": "0x662878",
+              "destination_rva": "0x38d630",
+              "symbol": ""
+            },
+            {
+              "site": "0x6628a1",
+              "destination_rva": "0xebddc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6628c1",
+              "destination_rva": "0xebf7d8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6628d2",
+              "destination_rva": "0xebf7c8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6628de",
+              "destination_rva": "0x2ea2b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x662917",
+              "destination_rva": "0x3fd8d0",
+              "symbol": "??0BEE_ProjectSetContext@@QEAA@PEAVBEE_Project@@@Z"
+            },
+            {
+              "site": "0x662923",
+              "destination_rva": "0x67b170",
+              "symbol": "?BEE_StartGroupNamed@@YAXAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "site": "0x662938",
+              "destination_rva": "0x3ff910",
+              "symbol": "??1BEE_ProjectSetContext@@UEAA@XZ"
+            },
+            {
+              "site": "0x66295c",
+              "destination_rva": "0xec11d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6629c4",
+              "destination_rva": "0x664a00",
+              "symbol": "?BEE_SetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@PEAVTDB_Stream@@PEAVBEE_SetStreamChange@@@Z"
+            },
+            {
+              "site": "0x6629db",
+              "destination_rva": "0x2ea2b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x662a0c",
+              "destination_rva": "0x64ba20",
+              "symbol": "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z"
+            },
+            {
+              "site": "0x662a2a",
+              "destination_rva": "0x2cf120",
+              "symbol": "?BEE_CmdEnableOverrideAfterEdit@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N@Z"
+            },
+            {
+              "site": "0x662a4e",
+              "destination_rva": "0x3fd8d0",
+              "symbol": "??0BEE_ProjectSetContext@@QEAA@PEAVBEE_Project@@@Z"
+            },
+            {
+              "site": "0x662a56",
+              "destination_rva": "0x67ac80",
+              "symbol": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+            },
+            {
+              "site": "0x662a63",
+              "destination_rva": "0x3ff910",
+              "symbol": "??1BEE_ProjectSetContext@@UEAA@XZ"
+            },
+            {
+              "site": "0x662a93",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662aaa",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662ab1",
+              "destination_rva": "0x662ab7",
+              "symbol": ""
+            },
+            {
+              "site": "0x662ac4",
+              "destination_rva": "0xce9610",
+              "symbol": ""
+            },
+            {
+              "site": "0x662aec",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b01",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b16",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b2c",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b41",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b57",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            },
+            {
+              "site": "0x662b6c",
+              "destination_rva": "0xceacc8",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0x1a0",
+            "mov rax, qword ptr [rip + 0xeb7156]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0x190], rax",
+            "mov rbx, r9",
+            "mov qword ptr [rsp + 0xb8], rbx",
+            "mov r14, r8",
+            "mov qword ptr [rsp + 0x80], r8",
+            "mov r12, rdx",
+            "mov rdi, rcx",
+            "mov r13, qword ptr [rsp + 0x200]",
+            "xor esi, esi",
+            "mov dword ptr [rsp + 0x48], esi",
+            "mov dword ptr [rsp + 0x4c], 1",
+            "lea rax, [rip + 0x862a42]",
+            "mov qword ptr [rsp + 0x100], rax",
+            "mov qword ptr [rsp + 0x108], rcx",
+            "lea rcx, [rsp + 0x110]"
+          ]
+        },
+        {
+          "name": "?BEE_CmdResetVectorShape@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z",
+          "rva": "0x65ed30",
+          "pdata_end": "0x65ed50",
+          "calls": [
+            {
+              "site": "0x65ed46",
+              "destination_rva": "0x67a350",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "sub rsp, 0x38",
+            "xor eax, eax",
+            "mov r9d, 1",
+            "mov qword ptr [rsp + 0x28], rax",
+            "mov qword ptr [rsp + 0x20], rax",
+            "call 0x18067a350",
+            "add rsp, 0x38",
+            "ret "
+          ]
+        },
+        {
+          "name": "?BEE_CmdResetMaskShape@@YAHPEAVBEE_Layer@@HEHPEBUT_Time@@1@Z",
+          "rva": "0x65ebd0",
+          "pdata_end": "0x65ec3e",
+          "calls": [
+            {
+              "site": "0x65ebee",
+              "destination_rva": "0x24e7d0",
+              "symbol": "??0BEE_MaskShapeStreamIDPath@@QEAA@I@Z"
+            },
+            {
+              "site": "0x65ec1a",
+              "destination_rva": "0x67a350",
+              "symbol": ""
+            },
+            {
+              "site": "0x65ec26",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "mov qword ptr [rsp + 8], rbx",
+            "mov qword ptr [rsp + 0x10], rsi",
+            "push rdi",
+            "sub rsp, 0x50",
+            "mov rsi, rcx",
+            "mov ebx, r9d",
+            "lea rcx, [rsp + 0x30]",
+            "movzx edi, r8b",
+            "call 0x18024e7d0",
+            "mov rdx, qword ptr [rsp + 0x88]",
+            "mov r9d, ebx",
+            "mov qword ptr [rsp + 0x28], rdx",
+            "movzx r8d, dil",
+            "mov rdx, qword ptr [rsp + 0x80]",
+            "mov rcx, rsi",
+            "mov qword ptr [rsp + 0x20], rdx",
+            "mov rdx, rax",
+            "call 0x18067a350",
+            "lea rcx, [rsp + 0x30]",
+            "mov ebx, eax",
+            "call qword ptr [rip + 0x85fbbc]",
+            "mov rsi, qword ptr [rsp + 0x68]",
+            "mov eax, ebx",
+            "mov rbx, qword ptr [rsp + 0x60]",
+            "add rsp, 0x50"
+          ]
+        },
+        {
+          "name": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z",
+          "rva": "0x657820",
+          "pdata_end": "0x657a75",
+          "calls": [
+            {
+              "site": "0x657888",
+              "destination_rva": "0xebe7e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x65789b",
+              "destination_rva": "0xebe820",
+              "symbol": ""
+            },
+            {
+              "site": "0x6578d2",
+              "destination_rva": "0xebe800",
+              "symbol": ""
+            },
+            {
+              "site": "0x6578db",
+              "destination_rva": "0x2ea2b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6578f4",
+              "destination_rva": "0xebdd58",
+              "symbol": ""
+            },
+            {
+              "site": "0x657937",
+              "destination_rva": "0xebd998",
+              "symbol": ""
+            },
+            {
+              "site": "0x657955",
+              "destination_rva": "0xebf8e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x657967",
+              "destination_rva": "0xebe898",
+              "symbol": ""
+            },
+            {
+              "site": "0x65798c",
+              "destination_rva": "0xec11d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6579b3",
+              "destination_rva": "0x66dbc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6579b9",
+              "destination_rva": "0x6579e1",
+              "symbol": ""
+            },
+            {
+              "site": "0x6579ef",
+              "destination_rva": "0x67b1a0",
+              "symbol": "?BEE_StartGroupWithNameFromStreamOperation@@YAHAEAVBEE_UndoContext@@FPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "site": "0x657a1a",
+              "destination_rva": "0x64ba20",
+              "symbol": "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z"
+            },
+            {
+              "site": "0x657a24",
+              "destination_rva": "0x67ac80",
+              "symbol": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+            },
+            {
+              "site": "0x657a4a",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x657a5d",
+              "destination_rva": "0xce9610",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0xe0",
+            "mov rax, qword ptr [rip + 0xec1f06]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0xd8], rax",
+            "mov r13, r9",
+            "mov qword ptr [rsp + 0x30], r8",
+            "mov r12, rdx",
+            "mov rbx, rcx",
+            "mov qword ptr [rsp + 0xa8], rcx",
+            "mov qword ptr [rsp + 0x48], rdx",
+            "mov rdi, qword ptr [rsp + 0x140]",
+            "mov qword ptr [rsp + 0x38], rdi",
+            "lea rax, [rsp + 0x60]",
+            "mov qword ptr [rsp + 0x40], rax",
+            "lea r14, [rip + 0x86d7f2]",
+            "mov qword ptr [rsp + 0x60], r14",
+            "lea rcx, [rsp + 0x70]",
+            "call qword ptr [rip + 0x866f52]"
+          ]
+        },
+        {
+          "name": "?BEE_CmdAddVectorProperty@@YA?AVTDB_StreamIDPath@@PEAVBEE_VectorLayer@@AEBVTDB_MatchName@@V1@V?$Flags@I@utility@dvacore@@@Z",
+          "rva": "0x6e6c30",
+          "pdata_end": "0x6e6ec8",
+          "calls": [
+            {
+              "site": "0x6e6ca6",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6cd8",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6d12",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6d45",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6d7d",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6d91",
+              "destination_rva": "0xa29f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6dc8",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6ddc",
+              "destination_rva": "0xce9048",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e12",
+              "destination_rva": "0xebd990",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e20",
+              "destination_rva": "0x6e6e25",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e34",
+              "destination_rva": "0x6e6e3a",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e41",
+              "destination_rva": "0xc6de0",
+              "symbol": "?BEE_CmdModifySelection@@YAXAEBV?$function@$$A6AXPEAVBEE_Selection@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z@boost@@PEAVBEE_CompItem@@@Z"
+            },
+            {
+              "site": "0x6e6e72",
+              "destination_rva": "0x6e6e90",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e8b",
+              "destination_rva": "0x6e7420",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6e96",
+              "destination_rva": "0xebe7f8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6ea0",
+              "destination_rva": "0xebe7e8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6e6eb3",
+              "destination_rva": "0xce9610",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbp",
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r14",
+            "push r15",
+            "lea rbp, [rsp - 0xa8]",
+            "sub rsp, 0x1a8",
+            "mov rax, qword ptr [rip + 0xe32af1]",
+            "xor rax, rsp",
+            "mov qword ptr [rbp + 0x90], rax",
+            "mov rdi, r9",
+            "mov r10, r8",
+            "mov rbx, rdx",
+            "mov rsi, rcx",
+            "mov qword ptr [rsp + 0x30], rcx",
+            "mov qword ptr [rbp + 0x60], r9",
+            "xor r15d, r15d",
+            "mov rax, qword ptr [rbp + 0x100]",
+            "mov ecx, dword ptr [rax]",
+            "mov eax, ecx",
+            "shr eax, 1",
+            "test al, 1",
+            "je 0x1806e6e74",
+            "mov r14, qword ptr [rdx + 0x2b8]"
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "functions": [
+        {
+          "name": "?BEE_SetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@PEAVTDB_Stream@@PEAVBEE_SetStreamChange@@@Z",
+          "rva": "0x680290",
+          "pdata_end": "0x680cca",
+          "calls": [
+            {
+              "site": "0x680354",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x68036b",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x6803a1",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6803b8",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x6803e4",
+              "destination_rva": "0x4768b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6803ea",
+              "destination_rva": "0x680437",
+              "symbol": ""
+            },
+            {
+              "site": "0x680452",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680469",
+              "destination_rva": "0xf179d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680485",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6804ab",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6804d3",
+              "destination_rva": "0x680505",
+              "symbol": ""
+            },
+            {
+              "site": "0x6804e5",
+              "destination_rva": "0x374a20",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x6804ea",
+              "destination_rva": "0x6804f6",
+              "symbol": ""
+            },
+            {
+              "site": "0x6804f1",
+              "destination_rva": "0x375d60",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x680522",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680539",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x68056f",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680586",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x6805c1",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6805e7",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680605",
+              "destination_rva": "0x68062b",
+              "symbol": ""
+            },
+            {
+              "site": "0x680617",
+              "destination_rva": "0x374a20",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x68061c",
+              "destination_rva": "0x680628",
+              "symbol": ""
+            },
+            {
+              "site": "0x680623",
+              "destination_rva": "0x375d60",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x68064b",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680680",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x680697",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806a8",
+              "destination_rva": "0xf16fc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806b8",
+              "destination_rva": "0xf170a0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806cd",
+              "destination_rva": "0xf16fc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806d6",
+              "destination_rva": "0x37cfb0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806e6",
+              "destination_rva": "0xf16fc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x6806f6",
+              "destination_rva": "0xf170a0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680728",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x68073b",
+              "destination_rva": "0xd3a668",
+              "symbol": ""
+            },
+            {
+              "site": "0x6807fa",
+              "destination_rva": "0x6807ff",
+              "symbol": ""
+            },
+            {
+              "site": "0x680809",
+              "destination_rva": "0x680882",
+              "symbol": ""
+            },
+            {
+              "site": "0x68082f",
+              "destination_rva": "0x680882",
+              "symbol": ""
+            },
+            {
+              "site": "0x680854",
+              "destination_rva": "0xd3be04",
+              "symbol": ""
+            },
+            {
+              "site": "0x680897",
+              "destination_rva": "0xf17be0",
+              "symbol": ""
+            },
+            {
+              "site": "0x68089f",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x6808b0",
+              "destination_rva": "0xf17b68",
+              "symbol": ""
+            },
+            {
+              "site": "0x6808bf",
+              "destination_rva": "0xf17b68",
+              "symbol": ""
+            },
+            {
+              "site": "0x6808d0",
+              "destination_rva": "0xf143c8",
+              "symbol": ""
+            },
+            {
+              "site": "0x6808d8",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x6808f1",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680909",
+              "destination_rva": "0x68092b",
+              "symbol": ""
+            },
+            {
+              "site": "0x680932",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680944",
+              "destination_rva": "0xf179d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x68094a",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x680972",
+              "destination_rva": "0x374cc0",
+              "symbol": "?BEE_ConvertStreamFPV@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_ConvertDir@@PEATBEE_StreamFPV@@@Z"
+            },
+            {
+              "site": "0x6809c1",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x6809e4",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a01",
+              "destination_rva": "0xd3be04",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a25",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a42",
+              "destination_rva": "0xd3be04",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a60",
+              "destination_rva": "0x5da250",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a65",
+              "destination_rva": "0x680c24",
+              "symbol": ""
+            },
+            {
+              "site": "0x680a89",
+              "destination_rva": "0xd3a668",
+              "symbol": ""
+            },
+            {
+              "site": "0x680ab3",
+              "destination_rva": "0x680ab8",
+              "symbol": ""
+            },
+            {
+              "site": "0x680abd",
+              "destination_rva": "0x680afd",
+              "symbol": ""
+            },
+            {
+              "site": "0x680aea",
+              "destination_rva": "0x680afd",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b16",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b2e",
+              "destination_rva": "0x680b55",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b5c",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b69",
+              "destination_rva": "0x680c06",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b8e",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680b96",
+              "destination_rva": "0xf18a78",
+              "symbol": ""
+            },
+            {
+              "site": "0x680be5",
+              "destination_rva": "0xf15908",
+              "symbol": ""
+            },
+            {
+              "site": "0x680bf4",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c0b",
+              "destination_rva": "0xf179d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c1f",
+              "destination_rva": "0xd3a6b4",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c49",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c72",
+              "destination_rva": "0x2d46d0",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c88",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x680c9f",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x680cb2",
+              "destination_rva": "0xd3ac30",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0x200",
+            "mov rax, qword ptr [rip + 0xf26656]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0x1f0], rax",
+            "mov rax, r9",
+            "mov qword ptr [rsp + 0x50], rax",
+            "mov r15, r8",
+            "mov r13, rdx",
+            "mov qword ptr [rsp + 0x68], rdx",
+            "mov rbx, rcx",
+            "mov qword ptr [rsp + 0x98], rcx",
+            "mov rcx, qword ptr [rsp + 0x260]",
+            "mov qword ptr [rsp + 0x88], rcx",
+            "mov qword ptr [rsp + 0x138], rbx",
+            "mov qword ptr [rsp + 0x140], rdx",
+            "mov qword ptr [rsp + 0x78], r8",
+            "mov qword ptr [rsp + 0xa0], rax",
+            "mov qword ptr [rsp + 0x90], rcx"
+          ]
+        },
+        {
+          "name": "?BEE_CmdSetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@@Z",
+          "rva": "0x67de20",
+          "pdata_end": "0x67de40",
+          "calls": [
+            {
+              "site": "0x67de36",
+              "destination_rva": "0x67de40",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            }
+          ],
+          "first_instructions": [
+            "sub rsp, 0x38",
+            "mov rax, qword ptr [rsp + 0x60]",
+            "mov dword ptr [rsp + 0x28], 0",
+            "mov qword ptr [rsp + 0x20], rax",
+            "call 0x18067de40",
+            "add rsp, 0x38",
+            "ret "
+          ]
+        },
+        {
+          "name": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z",
+          "rva": "0x67de40",
+          "pdata_end": "0x67e458",
+          "calls": [
+            {
+              "site": "0x67deb5",
+              "destination_rva": "0xf17ad0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67def3",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67df0a",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x67df34",
+              "destination_rva": "0x378cf0",
+              "symbol": "?BEE_StreamTypeHasStream@@YAHPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAE@Z"
+            },
+            {
+              "site": "0x67df5c",
+              "destination_rva": "0x3773c0",
+              "symbol": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "site": "0x67df69",
+              "destination_rva": "0x67df96",
+              "symbol": ""
+            },
+            {
+              "site": "0x67df7b",
+              "destination_rva": "0x374a20",
+              "symbol": "?BEE_CompToLayerTime@@YAHPEBVBEE_Layer@@PEBUT_Time@@PEAU2@@Z"
+            },
+            {
+              "site": "0x67df80",
+              "destination_rva": "0x67df8c",
+              "symbol": ""
+            },
+            {
+              "site": "0x67df87",
+              "destination_rva": "0x375d60",
+              "symbol": "?BEE_GetLayerCurrentTime@@YAHPEBVBEE_Layer@@PEAUT_Time@@@Z"
+            },
+            {
+              "site": "0x67df94",
+              "destination_rva": "0x67df4f",
+              "symbol": ""
+            },
+            {
+              "site": "0x67dfc5",
+              "destination_rva": "0xf16f58",
+              "symbol": ""
+            },
+            {
+              "site": "0x67dfe5",
+              "destination_rva": "0xf16e78",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e03c",
+              "destination_rva": "0x67de40",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            },
+            {
+              "site": "0x67e049",
+              "destination_rva": "0x67e05d",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e050",
+              "destination_rva": "0x67de40",
+              "symbol": "?BEE_CmdSetStreamFPVPlus@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@H@Z"
+            },
+            {
+              "site": "0x67e065",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e06d",
+              "destination_rva": "0x67dfc0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e078",
+              "destination_rva": "0x2d8100",
+              "symbol": "?BEE_CmdEnableOverrideAfterEdit@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N@Z"
+            },
+            {
+              "site": "0x67e07d",
+              "destination_rva": "0x67e35f",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e0ae",
+              "destination_rva": "0x2f21c0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e0c9",
+              "destination_rva": "0x2f21c0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e0e6",
+              "destination_rva": "0x398b50",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e10f",
+              "destination_rva": "0xf16f00",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e12f",
+              "destination_rva": "0xf18948",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e140",
+              "destination_rva": "0xf18938",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e14c",
+              "destination_rva": "0x2f2e60",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e189",
+              "destination_rva": "0x40d930",
+              "symbol": "??0BEE_ProjectSetContext@@QEAA@PEAVBEE_Project@@@Z"
+            },
+            {
+              "site": "0x67e195",
+              "destination_rva": "0x697180",
+              "symbol": "?BEE_StartGroupNamed@@YAXAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "site": "0x67e1aa",
+              "destination_rva": "0x40fb40",
+              "symbol": "??1BEE_ProjectSetContext@@UEAA@XZ"
+            },
+            {
+              "site": "0x67e1ce",
+              "destination_rva": "0xf1a5f8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e233",
+              "destination_rva": "0x680290",
+              "symbol": "?BEE_SetStreamFPV@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@2PEBTBEE_StreamFPV@@PEAVTDB_Stream@@PEAVBEE_SetStreamChange@@@Z"
+            },
+            {
+              "site": "0x67e25a",
+              "destination_rva": "0xf17080",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e26f",
+              "destination_rva": "0xf17080",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e28d",
+              "destination_rva": "0xf17060",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e29a",
+              "destination_rva": "0xf17af0",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e2b8",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e2c1",
+              "destination_rva": "0x2f2e60",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e2f0",
+              "destination_rva": "0x666320",
+              "symbol": "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z"
+            },
+            {
+              "site": "0x67e30d",
+              "destination_rva": "0x2d8100",
+              "symbol": "?BEE_CmdEnableOverrideAfterEdit@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N@Z"
+            },
+            {
+              "site": "0x67e331",
+              "destination_rva": "0x40d930",
+              "symbol": "??0BEE_ProjectSetContext@@QEAA@PEAVBEE_Project@@@Z"
+            },
+            {
+              "site": "0x67e339",
+              "destination_rva": "0x696d20",
+              "symbol": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+            },
+            {
+              "site": "0x67e346",
+              "destination_rva": "0x40fb40",
+              "symbol": "??1BEE_ProjectSetContext@@UEAA@XZ"
+            },
+            {
+              "site": "0x67e376",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e38d",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e398",
+              "destination_rva": "0x67e39e",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e3a9",
+              "destination_rva": "0xd3ac30",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e3d1",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e3e6",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e3fb",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e411",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e426",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e43c",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            },
+            {
+              "site": "0x67e451",
+              "destination_rva": "0xd3bdf8",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0x1c0",
+            "mov rax, qword ptr [rip + 0xf28aa6]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0x1b0], rax",
+            "mov r13, r9",
+            "mov rbx, r8",
+            "mov qword ptr [rsp + 0x160], rbx",
+            "mov r15, rdx",
+            "mov rdi, rcx",
+            "mov r12, qword ptr [rsp + 0x220]",
+            "xor r14d, r14d",
+            "mov dword ptr [rsp + 0x74], r14d",
+            "mov dword ptr [rsp + 0x48], r14d",
+            "mov dword ptr [rsp + 0x4c], 1",
+            "lea rax, [rip + 0x8a0443]",
+            "mov qword ptr [rsp + 0xf0], rax",
+            "mov qword ptr [rsp + 0xf8], rcx",
+            "lea rcx, [rsp + 0x100]"
+          ]
+        },
+        {
+          "name": "?BEE_CmdResetVectorShape@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z",
+          "rva": "0x67a380",
+          "pdata_end": "0x67a3a0",
+          "calls": [
+            {
+              "site": "0x67a396",
+              "destination_rva": "0x696380",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "sub rsp, 0x38",
+            "xor eax, eax",
+            "mov r9d, 1",
+            "mov qword ptr [rsp + 0x28], rax",
+            "mov qword ptr [rsp + 0x20], rax",
+            "call 0x180696380",
+            "add rsp, 0x38",
+            "ret "
+          ]
+        },
+        {
+          "name": "?BEE_CmdResetMaskShape@@YAHPEAVBEE_Layer@@HEHPEBUT_Time@@1@Z",
+          "rva": "0x67a220",
+          "pdata_end": "0x67a28e",
+          "calls": [
+            {
+              "site": "0x67a23e",
+              "destination_rva": "0x258a90",
+              "symbol": "??0BEE_MaskShapeStreamIDPath@@QEAA@I@Z"
+            },
+            {
+              "site": "0x67a26a",
+              "destination_rva": "0x696380",
+              "symbol": ""
+            },
+            {
+              "site": "0x67a276",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "mov qword ptr [rsp + 8], rbx",
+            "mov qword ptr [rsp + 0x10], rsi",
+            "push rdi",
+            "sub rsp, 0x50",
+            "mov rsi, rcx",
+            "mov ebx, r9d",
+            "lea rcx, [rsp + 0x30]",
+            "movzx edi, r8b",
+            "call 0x180258a90",
+            "mov rdx, qword ptr [rsp + 0x88]",
+            "mov r9d, ebx",
+            "mov qword ptr [rsp + 0x28], rdx",
+            "movzx r8d, dil",
+            "mov rdx, qword ptr [rsp + 0x80]",
+            "mov rcx, rsi",
+            "mov qword ptr [rsp + 0x20], rdx",
+            "mov rdx, rax",
+            "call 0x180696380",
+            "lea rcx, [rsp + 0x30]",
+            "mov ebx, eax",
+            "call qword ptr [rip + 0x89d84c]",
+            "mov rsi, qword ptr [rsp + 0x68]",
+            "mov eax, ebx",
+            "mov rbx, qword ptr [rsp + 0x60]",
+            "add rsp, 0x50"
+          ]
+        },
+        {
+          "name": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z",
+          "rva": "0x672a20",
+          "pdata_end": "0x672c8d",
+          "calls": [
+            {
+              "site": "0x672a88",
+              "destination_rva": "0xf17ac0",
+              "symbol": ""
+            },
+            {
+              "site": "0x672a9b",
+              "destination_rva": "0xf17b00",
+              "symbol": ""
+            },
+            {
+              "site": "0x672ada",
+              "destination_rva": "0xf17ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x672af2",
+              "destination_rva": "0x2f2e60",
+              "symbol": ""
+            },
+            {
+              "site": "0x672b0b",
+              "destination_rva": "0xf16e98",
+              "symbol": ""
+            },
+            {
+              "site": "0x672b4f",
+              "destination_rva": "0xf16ca8",
+              "symbol": ""
+            },
+            {
+              "site": "0x672b6d",
+              "destination_rva": "0xf18a58",
+              "symbol": ""
+            },
+            {
+              "site": "0x672b7f",
+              "destination_rva": "0xf17b78",
+              "symbol": ""
+            },
+            {
+              "site": "0x672ba4",
+              "destination_rva": "0xf1a5f8",
+              "symbol": ""
+            },
+            {
+              "site": "0x672bcb",
+              "destination_rva": "0x6898e0",
+              "symbol": ""
+            },
+            {
+              "site": "0x672bd1",
+              "destination_rva": "0x672bf9",
+              "symbol": ""
+            },
+            {
+              "site": "0x672c07",
+              "destination_rva": "0x6971b0",
+              "symbol": "?BEE_StartGroupWithNameFromStreamOperation@@YAHAEAVBEE_UndoContext@@FPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "site": "0x672c32",
+              "destination_rva": "0x666320",
+              "symbol": "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z"
+            },
+            {
+              "site": "0x672c3c",
+              "destination_rva": "0x696d20",
+              "symbol": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+            },
+            {
+              "site": "0x672c62",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x672c75",
+              "destination_rva": "0xd3ac30",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r12",
+            "push r13",
+            "push r14",
+            "push r15",
+            "sub rsp, 0xf0",
+            "mov rax, qword ptr [rip + 0xf33ec6]",
+            "xor rax, rsp",
+            "mov qword ptr [rsp + 0xe8], rax",
+            "mov r13, r9",
+            "mov qword ptr [rsp + 0x30], r8",
+            "mov r12, rdx",
+            "mov rbx, rcx",
+            "mov qword ptr [rsp + 0xb8], rcx",
+            "mov qword ptr [rsp + 0x48], rdx",
+            "mov rdi, qword ptr [rsp + 0x150]",
+            "mov qword ptr [rsp + 0x38], rdi",
+            "lea rax, [rsp + 0x60]",
+            "mov qword ptr [rsp + 0x40], rax",
+            "lea r15, [rip + 0x8ab862]",
+            "mov qword ptr [rsp + 0x60], r15",
+            "lea rcx, [rsp + 0x70]",
+            "call qword ptr [rip + 0x8a5032]"
+          ]
+        },
+        {
+          "name": "?BEE_CmdAddVectorProperty@@YA?AVTDB_StreamIDPath@@PEAVBEE_VectorLayer@@AEBVTDB_MatchName@@V1@V?$Flags@I@utility@dvacore@@@Z",
+          "rva": "0x70b3a0",
+          "pdata_end": "0x70b635",
+          "calls": [
+            {
+              "site": "0x70b413",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b445",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b47f",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b4b2",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b4ea",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b4fe",
+              "destination_rva": "0xa7ae0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b535",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b549",
+              "destination_rva": "0xd3a668",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b57f",
+              "destination_rva": "0xf170b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b58d",
+              "destination_rva": "0x70b592",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b5a1",
+              "destination_rva": "0x70b5a7",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b5ae",
+              "destination_rva": "0xcd2e0",
+              "symbol": "?BEE_CmdModifySelection@@YAXAEBV?$function@$$A6AXPEAVBEE_Selection@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z@boost@@PEAVBEE_CompItem@@@Z"
+            },
+            {
+              "site": "0x70b5df",
+              "destination_rva": "0x70b5fd",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b5f8",
+              "destination_rva": "0x70bb80",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b603",
+              "destination_rva": "0xf17ad8",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b60d",
+              "destination_rva": "0xf17ac8",
+              "symbol": ""
+            },
+            {
+              "site": "0x70b620",
+              "destination_rva": "0xd3ac30",
+              "symbol": ""
+            }
+          ],
+          "first_instructions": [
+            "push rbp",
+            "push rbx",
+            "push rsi",
+            "push rdi",
+            "push r14",
+            "push r15",
+            "lea rbp, [rsp - 0xa8]",
+            "sub rsp, 0x1a8",
+            "mov rax, qword ptr [rip + 0xe9b541]",
+            "xor rax, rsp",
+            "mov qword ptr [rbp + 0x90], rax",
+            "mov rdi, r9",
+            "mov r10, r8",
+            "mov rbx, rdx",
+            "mov rsi, rcx",
+            "mov qword ptr [rsp + 0x30], rcx",
+            "mov qword ptr [rbp + 0x60], r9",
+            "xor r15d, r15d",
+            "mov rax, qword ptr [rbp + 0x100]",
+            "mov ecx, dword ptr [rax]",
+            "test cl, 2",
+            "je 0x18070b5e1",
+            "mov r14, qword ptr [rdx + 0x260]",
+            "lea rax, [rip + 0x77f]",
+            "mov qword ptr [rbp + 0x30], rax"
+          ]
+        }
+      ]
+    }
+  }
+}
