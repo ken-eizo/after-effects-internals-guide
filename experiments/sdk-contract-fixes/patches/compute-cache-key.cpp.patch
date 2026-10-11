@@ -1,0 +1,13 @@
+--- a/compute-cache-key.cpp
++++ b/compute-cache-key.cpp
+@@ -12,8 +12,8 @@
+             out_dataP);
+ 
+         // define a simple buffer that is easy to recognize as a starting hash
+-        const char* hash_buffer = "Level2Histo";
+-        err = hash_suite->AEGP_CreateHashFromPtr(sizeof(hash_buffer), hash_buffer, out_keyP);
++        const char hash_buffer[] = "Level2Histo";
++        err = hash_suite->AEGP_CreateHashFromPtr(sizeof(hash_buffer) - 1, hash_buffer, out_keyP);
+ 
+         // Mix in effect parameters that would create a different compute result and should generate a different cache entry and key.
+         if (!err) {

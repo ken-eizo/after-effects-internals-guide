@@ -1,0 +1,105 @@
+// Source fragments are inserted from hash-checked SDK copies.
+// Mocks do not claim SDK ABI or After Effects execution coverage.
+#include <cstdint>
+#include <cstring>
+#include <cmath>
+#include <iostream>
+#include <string>
+
+struct Pixel8 { std::uint8_t alpha, red, green, blue; };
+struct Pixel16 { std::uint16_t alpha, red, green, blue; };
+struct PixelFloat { float alpha, red, green, blue; };
+struct Data { short blend; };
+using PF_Err = int;
+constexpr int PF_Err_NONE = 0;
+constexpr int SMARTY_CHANNEL = 1;
+struct PF_InData { int current_time=0, time_step=1, time_scale=1; };
+struct PF_OutData { std::uint32_t out_flags2=0; };
+struct PF_ParamDef { struct { struct { int value; } pd; } u; };
+static int selected_channel=0, checkout_error=0;
+static int checkout(PF_InData*,int,int,int,int,PF_ParamDef* def) {
+    def->u.pd.value=selected_channel; return checkout_error;
+}
+static int checkin(PF_InData*,PF_ParamDef*) { return 0; }
+#define AEFX_CLR_STRUCT(x) std::memset(&(x),0,sizeof(x))
+#define PF_CHECKOUT_PARAM checkout
+#define PF_CHECKIN_PARAM checkin
+#define ERR(x) do { if (!err) err=(x); } while(false)
+#define ERR2(x) do { err2=(x); if (!err) err=err2; } while(false)
+static std::string captured_seed;
+struct HashSuite {
+    int AEGP_CreateHashFromPtr(std::size_t length,const void* data,int*) {
+        captured_seed.assign(static_cast<const char*>(data),length); return 0;
+    }
+};
+
+// EXTRACTED_SOURCE
+
+template<class P> bool rgb_equal(const P& a,const P& b) {
+    return a.red==b.red && a.green==b.green && a.blue==b.blue;
+}
+
+int main() {
+    std::uint64_t failures8=0, failures16=0, failures32=0, failures_rgb=0;
+    // Independent integer oracle: rational numerator / 256, floor for nonnegative values.
+    // ActuallyRender routes blend==256 through PF_COPY; callback tests use 0..255.
+    for (int blend=0; blend<256; ++blend) {
+        for (int alpha=0; alpha<=255; ++alpha) {
+            Pixel8 in{static_cast<std::uint8_t>(alpha),17,31,63};
+            auto out=alpha8(static_cast<short>(blend),in);
+            const std::int64_t expected=(std::int64_t(blend)*alpha+(256-blend)*(255-alpha))/256;
+            failures8 += out.alpha!=expected;
+            failures_rgb += !rgb_equal(in,out);
+        }
+        for (int alpha=0; alpha<=32768; ++alpha) {
+            Pixel16 in{static_cast<std::uint16_t>(alpha),1000,2000,3000};
+            auto out=alpha16(static_cast<short>(blend),in);
+            const std::int64_t expected=(std::int64_t(blend)*alpha+(256-blend)*(32768-alpha))/256;
+            failures16 += out.alpha!=expected;
+            failures_rgb += !rgb_equal(in,out);
+        }
+        for (int index=0; index<=1024; ++index) {
+            const float alpha=index/1024.0f;
+            PixelFloat in{alpha,0.125f,0.25f,0.75f};
+            auto out=alphaFloat(static_cast<short>(blend),in);
+            const double weight=blend/256.0;
+            const double expected=(1.0-alpha)+weight*(2.0*alpha-1.0);
+            failures32 += std::abs(out.alpha-expected)>1e-7;
+            failures_rgb += !rgb_equal(in,out);
+        }
+    }
+    std::uint64_t flag_failures=0, flag_cases=0;
+    PF_InData input;
+    // Lower 16-bit masks and four unrelated high-bit patterns;
+    // Alpha/RGB channels and success/error callback paths.
+    for (std::uint32_t mask=0; mask<65536; ++mask) {
+        for (auto high : {0u, 0x00200000u, 0x08000000u, 0x80000000u}) {
+            for (int channel : {Channel_RGB, Channel_ALPHA}) {
+                for (int error : {0,7}) {
+                    selected_channel=channel; checkout_error=error;
+                    const auto before=mask|high;
+                    PF_OutData output{before};
+                    const int returned=QueryDynamicFlags(&input,&output,nullptr,nullptr);
+                    const auto expected=(error==0 && channel==Channel_ALPHA)
+                        ? before & ~std::uint32_t(PF_OutFlag2_DOESNT_NEED_EMPTY_PIXELS) : before;
+                    flag_failures += output.out_flags2!=expected || returned!=error;
+                    ++flag_cases;
+                }
+            }
+        }
+    }
+    seed_bytes();
+    auto a16=alpha16(0,Pixel16{0,0,0,0});
+    auto a32=alphaFloat(128,PixelFloat{0.25f,0,0,0});
+    std::cout << "{\"alpha8_cases\":65536,\"alpha16_cases\":8388864,\"alpha32_cases\":262400,"
+              << "\"alpha8_failures\":" << failures8
+              << ",\"alpha16_failures\":" << failures16
+              << ",\"alpha32_failures\":" << failures32
+              << ",\"preserved_rgb_failures\":" << failures_rgb
+              << ",\"flag_cases\":" << flag_cases
+              << ",\"flag_failures\":" << flag_failures
+              << ",\"seed_bytes\":" << captured_seed.size()
+              << ",\"seed_text\":\"" << captured_seed << "\",\"pointer_bytes\":" << sizeof(const char*)
+              << ",\"alpha16_zero_blend_zero_input\":" << a16.alpha
+              << ",\"alpha32_half_blend_quarter_input\":" << a32.alpha << "}\n";
+}

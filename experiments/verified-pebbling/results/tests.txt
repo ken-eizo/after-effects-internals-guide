@@ -1,0 +1,27 @@
+test_cheap_compute_successors_cannot_be_omitted (test_saturation.SaturatedCertificateTests.test_cheap_compute_successors_cannot_be_omitted) ... ok
+test_cheap_irrelevant_branches_can_still_require_exponential_states (test_saturation.SaturatedCertificateTests.test_cheap_irrelevant_branches_can_still_require_exponential_states) ... ok
+test_empty_targets_have_zero_cost_and_no_recorded_states (test_saturation.SaturatedCertificateTests.test_empty_targets_have_zero_cost_and_no_recorded_states) ... ok
+test_full_closure_argument_is_strict (test_saturation.SaturatedCertificateTests.test_full_closure_argument_is_strict) ... ok
+test_goal_and_zero_cost_suffix_may_be_omitted (test_saturation.SaturatedCertificateTests.test_goal_and_zero_cost_suffix_may_be_omitted) ... ok
+test_handwritten_v1_remains_accepted (test_saturation.SaturatedCertificateTests.test_handwritten_v1_remains_accepted) ... ok
+test_independent_irrelevant_branches_reduce_recorded_states (test_saturation.SaturatedCertificateTests.test_independent_irrelevant_branches_reduce_recorded_states) ... ok
+test_nonempty_target_cannot_claim_the_zero_cost_certificate (test_saturation.SaturatedCertificateTests.test_nonempty_target_cannot_claim_the_zero_cost_certificate) ... ok
+test_random_weighted_workspace_and_multiple_targets (test_saturation.SaturatedCertificateTests.test_random_weighted_workspace_and_multiple_targets) ... ok
+test_saturation_and_goal_tampering (test_saturation.SaturatedCertificateTests.test_saturation_and_goal_tampering) ... ok
+test_v1_v2_and_independent_oracle_on_all_small_dags (test_saturation.SaturatedCertificateTests.test_v1_v2_and_independent_oracle_on_all_small_dags) ... ok
+test_zero_cost_eviction_successors_cannot_be_omitted (test_saturation.SaturatedCertificateTests.test_zero_cost_eviction_successors_cannot_be_omitted) ... ok
+test_bellman_and_closure_checks_not_just_metadata (test_solver.CertifiedPlannerTests.test_bellman_and_closure_checks_not_just_metadata) ... ok
+test_certificate_tampering (test_solver.CertifiedPlannerTests.test_certificate_tampering) ... ok
+test_every_ordered_dag_through_four_nodes (test_solver.CertifiedPlannerTests.test_every_ordered_dag_through_four_nodes) ... ok
+test_input_order_does_not_change_optimum (test_solver.CertifiedPlannerTests.test_input_order_does_not_change_optimum) ... ok
+test_invalid_models_fail_closed (test_solver.CertifiedPlannerTests.test_invalid_models_fail_closed) ... ok
+test_limit_is_inconclusive_even_if_goal_exists (test_solver.CertifiedPlannerTests.test_limit_is_inconclusive_even_if_goal_exists) ... ok
+test_random_weighted_workspace_multiple_targets (test_solver.CertifiedPlannerTests.test_random_weighted_workspace_multiple_targets) ... ok
+test_recomputation_is_necessary (test_solver.CertifiedPlannerTests.test_recomputation_is_necessary) ... ok
+test_workspace_and_output_overlap (test_solver.CertifiedPlannerTests.test_workspace_and_output_overlap) ... ok
+test_zero_memory_and_empty_targets (test_solver.CertifiedPlannerTests.test_zero_memory_and_empty_targets) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.660s
+
+OK

@@ -1,6 +1,6 @@
 ---
-status: probable-source-bug
-last_verified: 2026-09-14
+status: source-repair-verified
+last_verified: 2026-09-22
 evidence: AE-25.6-distributed-sample + sibling-sample comparison
 ---
 # F-SAMPLE-001 — SmartyPants likely contains a Dynamic Flags bitmask defect
@@ -16,3 +16,8 @@ High confidence as a source-level logic defect candidate. Runtime impact remains
 
 ## Test
 Instrument Query Dynamic Flags, record incoming/outgoing `out_flags2`, toggle the Alpha channel, and compare cache/bounds behavior against a corrected local build using `|=` or `&= ~` according to intended semantics.
+## Source-level verification, 2026-09-22
+
+experiments/sdk-contract-fixes pins the source and checks the exact QueryDynamicFlags body over 1048576 input-mask/channel/error cases. Clearing with the complemented target mask preserves unrelated bits; the original fails 262143 cases and the corrected source fails none. The repair chooses clear semantics because Alpha may produce nonempty output from zero-alpha input.
+
+This supersedes the candidate-only algebra assessment above. The current SmartFX Guide treats DOESNT_NEED_EMPTY_PIXELS as obsolete; no current-host bounds/cache effect is inferred. The proposed host test remains a separate gate. See [scoped sample repairs](../../docs/host-integration/cpp-sdk/verified-sample-repairs.md).

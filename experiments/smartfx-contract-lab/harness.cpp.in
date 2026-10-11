@@ -1,0 +1,191 @@
+// Real SDK data structures and ERR/checkout macros; host service implementations are mocked.
+#include <cstring>
+#include <cstdint>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include "AEConfig.h"
+#include "AE_Effect.h"
+#include "AE_GeneralPlug.h"
+#include "AE_Macros.h"
+#include "Smart_Utils.h"
+
+constexpr PF_ParamIndex SMARTY_INPUT=0, SMARTY_CHANNEL=1;
+// EXTRACTED_ENUM
+
+struct Scenario {
+    unsigned fail_mask=0;
+    int channel=Channel_RGB;
+    int geometry=0;
+    bool result_written=false;
+    bool result_success=false;
+    int union_calls=0;
+    int invalid_reads=0;
+    std::vector<int> trace;
+    PF_RenderRequest received{};
+    bool has_request=false;
+} scenario;
+
+static int event(int number) {
+    scenario.trace.push_back(number);
+    return (scenario.fail_mask & (1u<<(number-1))) ? 100+number : 0;
+}
+
+static A_Err get_effect_layer(PF_ProgPtr, AEGP_LayerH* out) {
+    // Initialize even on failure so exercising the *original* never evaluates an indeterminate handle.
+    *out=reinterpret_cast<AEGP_LayerH>(std::uintptr_t(11));
+    return event(1);
+}
+static A_Err get_parent_comp(AEGP_LayerH, AEGP_CompH* out) {
+    *out=reinterpret_cast<AEGP_CompH>(std::uintptr_t(12));
+    return event(2);
+}
+static A_Err get_bg(AEGP_CompH, AEGP_ColorVal* out) {
+    *out=AEGP_ColorVal{1.0,0.25,0.5,0.75};
+    return event(3);
+}
+static PF_Err mix_guid(PF_ProgPtr, A_u_long length, const void* bytes) {
+    if (length!=sizeof(AEGP_ColorVal) || bytes==nullptr) return 199;
+    return event(4);
+}
+static PF_Err checkout_param(PF_ProgPtr, PF_ParamIndex, A_long, A_long, A_u_long, PF_ParamDef* out) {
+    out->u.pd.value=scenario.channel;
+    return event(5);
+}
+static PF_LRect intersection(PF_LRect a, PF_LRect b) {
+    PF_LRect r{std::max(a.left,b.left),std::max(a.top,b.top),
+               std::min(a.right,b.right),std::min(a.bottom,b.bottom)};
+    if (r.left>=r.right || r.top>=r.bottom) return PF_LRect{};
+    return r;
+}
+static PF_LRect input_support() {
+    switch(scenario.geometry) {
+        case 0: return PF_LRect{};
+        case 1: return PF_LRect{0,0,100,80};
+        case 2: return PF_LRect{-20,-10,40,30};
+        case 3: return PF_LRect{200,300,230,350};
+        default: return PF_LRect{10,20,60,70};
+    }
+}
+static PF_Err checkout_layer(PF_ProgPtr, PF_ParamIndex, A_long,
+                            const PF_RenderRequest* req, A_long, A_long, A_u_long, PF_CheckoutResult* out) {
+    scenario.received=*req;
+    scenario.has_request=true;
+    const int err=event(6);
+    // A failing service may fill its out parameter before discovering an error.
+    *out=PF_CheckoutResult{};
+    out->max_result_rect=input_support();
+    out->result_rect=intersection(input_support(),req->rect);
+    if(err) {
+        out->result_rect=PF_LRect{-900,-800,700,600};
+        out->max_result_rect=out->result_rect;
+    }
+    scenario.result_written=true;
+    scenario.result_success=!err;
+    return err;
+}
+
+static AEGP_PFInterfaceSuite1 pf_interface{};
+static AEGP_LayerSuite8 layers{};
+static AEGP_CompSuite10 compositions{};
+template<class T> static T* mock_suite();
+template<> AEGP_PFInterfaceSuite1* mock_suite<AEGP_PFInterfaceSuite1>() { return &pf_interface; }
+template<> AEGP_LayerSuite8* mock_suite<AEGP_LayerSuite8>() { return &layers; }
+template<> AEGP_CompSuite10* mock_suite<AEGP_CompSuite10>() { return &compositions; }
+template<class T> class AEFX_SuiteScoper {
+public:
+    AEFX_SuiteScoper(PF_InData*,const char*,A_long,PF_OutData*) {}
+    T* operator->() { return mock_suite<T>(); }
+};
+
+// EXTRACTED_UTIL
+
+// Intercept an attempted use of an unavailable result before reading its storage.
+// This makes the original parameter-failure path observable without executing undefined reads.
+void UnionLRect(const PF_LRect* from, PF_LRect* to) {
+    ++scenario.union_calls;
+    if(!scenario.result_success) ++scenario.invalid_reads;
+    if(scenario.result_written) SDK_UnionLRect(from,to);
+}
+
+// EXTRACTED_PRERENDER
+
+static bool rect_equal(PF_LRect a,PF_LRect b) {
+    return a.left==b.left && a.top==b.top && a.right==b.right && a.bottom==b.bottom;
+}
+static PF_LRect reference_union(PF_LRect a,PF_LRect b) {
+    auto empty=[](PF_LRect r){return r.left>=r.right || r.top>=r.bottom;};
+    if(empty(a)) return b;
+    if(empty(b)) return a;
+    return PF_LRect{std::min(a.left,b.left),std::min(a.top,b.top),
+                    std::max(a.right,b.right),std::max(a.bottom,b.bottom)};
+}
+int main() {
+    pf_interface.AEGP_GetEffectLayer=get_effect_layer;
+    layers.AEGP_GetLayerParentComp=get_parent_comp;
+    compositions.AEGP_GetCompBGColor=get_bg;
+    std::uint64_t cases=0, return_errors=0, trace_errors=0, publication_errors=0;
+    std::uint64_t request_errors=0, invalid_reads=0, false_successes=0, output_changed_onfailure=0;
+    std::vector<int> single_failure_returns;
+    for(bool guid : {false,true}) for(unsigned mask=0;mask<64;++mask)
+    for(int channel : {Channel_RGB,Channel_ALPHA}) for(int geometry=0;geometry<7;++geometry) {
+        scenario=Scenario{};
+        scenario.fail_mask=mask; scenario.channel=channel; scenario.geometry=geometry;
+        PF_InData in{};
+        in.current_time=17; in.time_step=1; in.time_scale=24;
+        in.inter.checkout_param=checkout_param;
+        PF_OutData out{};
+        PF_PreRenderInput input{};
+        input.output_request.rect= geometry==5 ? PF_LRect{} : PF_LRect{-30,-20,120,90};
+        input.output_request.channel_mask=PF_ChannelMask_RED;
+        input.output_request.preserve_rgb_of_zero_alpha=geometry%2;
+        PF_PreRenderOutput output{};
+        if(geometry==6) { output.result_rect=PF_LRect{10,10,20,20}; output.max_result_rect=output.result_rect; }
+        const auto before=output;
+        PF_PreRenderCallbacks callbacks{};
+        callbacks.checkout_layer=checkout_layer;
+        callbacks.GuidMixInPtr=guid ? mix_guid : nullptr;
+        PF_PreRenderExtra extra{&input,&output,&callbacks};
+        std::vector<int> wanted=guid ? std::vector<int>{1,2,3,4,5,6} : std::vector<int>{5,6};
+        int expected_error=0;
+        for(std::size_t i=0;i<wanted.size();++i) {
+            if(mask & (1u<<(wanted[i]-1))) {
+                expected_error=100+wanted[i]; wanted.resize(i+1); break;
+            }
+        }
+        const int returned=PreRender(&in,&out,&extra);
+        ++cases;
+        return_errors += returned!=expected_error;
+        trace_errors += scenario.trace!=wanted;
+        invalid_reads += scenario.invalid_reads;
+        false_successes += expected_error!=0 && returned==0;
+        if(expected_error) {
+            const bool changed=std::memcmp(&before,&output,sizeof(output))!=0;
+            output_changed_onfailure += changed;
+            publication_errors += changed || scenario.union_calls!=0;
+        } else {
+            const auto result=reference_union(before.result_rect,intersection(input_support(),input.output_request.rect));
+            const auto maximum=reference_union(before.max_result_rect,input_support());
+            publication_errors += !rect_equal(output.result_rect,result)
+                               || !rect_equal(output.max_result_rect,maximum)
+                               || scenario.union_calls!=2;
+        }
+        if(scenario.has_request) {
+            auto expected=input.output_request;
+            expected.preserve_rgb_of_zero_alpha=TRUE;
+            if(channel==Channel_ALPHA) expected.channel_mask |= PF_ChannelMask_ALPHA;
+            request_errors += std::memcmp(&scenario.received,&expected,sizeof(expected))!=0;
+        }
+        if(guid && channel==Channel_ALPHA && geometry==1 && mask!=0 && (mask&(mask-1))==0)
+            single_failure_returns.push_back(returned);
+    }
+    std::cout<<"{\"cases\":"<<cases<<",\"return_errors\":"<<return_errors
+             <<",\"trace_errors\":"<<trace_errors<<",\"publication_errors\":"<<publication_errors
+             <<",\"request_errors\":"<<request_errors<<",\"invalid_result_reads\":"<<invalid_reads
+             <<",\"false_successes\":"<<false_successes
+             <<",\"output_changed_onfailure\":"<<output_changed_onfailure
+             <<",\"single_failure_returns\":[";
+    for(std::size_t i=0;i<single_failure_returns.size();++i)
+        std::cout<<(i?",":"")<<single_failure_returns[i];
+    std::cout<<"]}\n";
+}

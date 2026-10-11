@@ -5,37 +5,37 @@
     {
       "check": "receipt-complete",
       "ok": true,
-      "detail": "ess=100 errors=0 matches=100 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok True\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
+      "detail": "ess=100 errors=0 matches=100 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok True\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
     },
     {
       "check": "receipt-api-error-is-semantic",
       "ok": true,
-      "detail": "ccess=99 errors=1 matches=99 nonmatches=1 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok True\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
+      "detail": "ccess=99 errors=1 matches=99 nonmatches=1 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok True\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
     },
     {
       "check": "receipt-missing-key-rejected",
       "ok": true,
-      "detail": "cess=99 errors=0 matches=99 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 49, 'missing_keys': 1}} mechanical_ok False\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
+      "detail": "cess=99 errors=0 matches=99 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 49, 'missing_keys': 1}} mechanical_ok False\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
     },
     {
       "check": "receipt-duplicate-key-rejected",
       "ok": true,
-      "detail": "ss=101 errors=0 matches=101 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok False\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
+      "detail": "ss=101 errors=0 matches=101 nonmatches=0 malformed=0\ncoverage {'A': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}, 'B': {'effect_counts': [3], 'unique_keys': 50, 'missing_keys': 0}} mechanical_ok False\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n"
     },
     {
       "check": "plugin-grid-complete",
       "ok": true,
-      "detail": "rows=1536 success=48 unexpected=19 published_failed=112 missing_labels=0\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-plugin-001-suite-acquisition.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\analysis-summary.md\nexpected_labels 48 expected_attempts 1536 missing_attempts 0 duplicate_attempts 0 malformed 0\n"
+      "detail": "rows=1536 success=48 unexpected=19 published_failed=112 missing_labels=0\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-plugin-001-suite-acquisition.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\analysis-summary.md\nexpected_labels 48 expected_attempts 1536 missing_attempts 0 duplicate_attempts 0 malformed 0\n"
     },
     {
       "check": "plugin-duplicate-rejected",
       "ok": true,
-      "detail": "ss=49 unexpected=19 published_failed=112 missing_labels=0\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-plugin-001-suite-acquisition.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\analysis-summary.md\nexpected_labels 48 expected_attempts 1536 missing_attempts 0 duplicate_attempts 1 malformed 0\nfirst duplicate attempts [(('AEGPArtisanUtilSuite', 1), 2)]\n"
+      "detail": "ss=49 unexpected=19 published_failed=112 missing_labels=0\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-plugin-001-suite-acquisition.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\analysis-summary.md\nexpected_labels 48 expected_attempts 1536 missing_attempts 0 duplicate_attempts 1 malformed 0\nfirst duplicate attempts [(('AEGPArtisanUtilSuite', 1), 2)]\n"
     },
     {
       "check": "rg-complete",
       "ok": true,
-      "detail": "uid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\npass B blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-rg-001-trace-summary.csv\ntarget_category_lines 16 semantic_observation present\n"
+      "detail": "uid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\npass B blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-rg-001-trace-summary.csv\ntarget_category_lines 16 semantic_observation present\n"
     },
     {
       "check": "rg-content-fingerprint-diff",
@@ -45,27 +45,27 @@
     {
       "check": "rg-trace-control-key-mismatch-rejected",
       "ok": true,
-      "detail": "val': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\npass B blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-rg-001-trace-summary.csv\n"
+      "detail": "val': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\npass B blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-rg-001-trace-summary.csv\n"
     },
     {
       "check": "rg-zero-category-is-semantic",
       "ok": true,
-      "detail": "blocks 2 passes ['A', 'B'] incomplete_markers 0\ncontrol_groups 2 control_passes ['A', 'B'] malformed 0 bad_groups 0 trace_duplicate_keys False orphan_trace 0 orphan_control 0\npass A blocks 1 lines 1 relevant 0\n   {}\npass B blocks 1 lines 1 relevant 0\n   {}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-rg-001-trace-summary.csv\ntarget_category_lines 0 semantic_observation absent\n"
+      "detail": "blocks 2 passes ['A', 'B'] incomplete_markers 0\ncontrol_groups 2 control_passes ['A', 'B'] malformed 0 bad_groups 0 trace_duplicate_keys False orphan_trace 0 orphan_control 0\npass A blocks 1 lines 1 relevant 0\n   {}\npass B blocks 1 lines 1 relevant 0\n   {}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-rg-001-trace-summary.csv\ntarget_category_lines 0 semantic_observation absent\n"
     },
     {
       "check": "rg-incomplete-marker-rejected",
       "ok": true,
-      "detail": " 1 passes ['A'] incomplete_markers 1\ncontrol_groups 2 control_passes ['A', 'B'] malformed 0 bad_groups 0 trace_duplicate_keys False orphan_trace 0 orphan_control 1\npass A blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-rg-001-trace-summary.csv\n"
+      "detail": " 1 passes ['A'] incomplete_markers 1\ncontrol_groups 2 control_passes ['A', 'B'] malformed 0 bad_groups 0 trace_duplicate_keys False orphan_trace 0 orphan_control 1\npass A blocks 1 lines 8 relevant 8\n   {'BEE_Eval': 1, 'BEE_Cache': 1, 'BEE_WorkQueue': 1, 'MixHashGuid': 1, 'RenderNode.RG_CacheNodeBase': 1, 'RenderNode.RG_XformNode': 1, 'TDB_StreamBase': 1, 'DiskCache': 1}\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-rg-001-trace-summary.csv\n"
     },
     {
       "check": "reflection-complete",
       "ok": true,
-      "detail": "runtime_rows 7 compared_rows 7 missing_labels []\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-script-001-runtime-reflection.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\analysis-summary.md\n"
+      "detail": "runtime_rows 7 compared_rows 7 missing_labels []\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-script-001-runtime-reflection.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\analysis-summary.md\n"
     },
     {
       "check": "reflection-missing-label-rejected",
       "ok": true,
-      "detail": "runtime_rows 6 compared_rows 6 missing_labels ['OutputModule']\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\datasets\\exp-script-001-runtime-reflection.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-4a_nm1ts\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\analysis-summary.md\n"
+      "detail": "runtime_rows 6 compared_rows 6 missing_labels ['OutputModule']\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\datasets\\exp-script-001-runtime-reflection.csv\nwrote D:\\Developer\\After Effects Internals Guide\\scratch\\aeig-analyzer-selftest-canq62lb\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\analysis-summary.md\n"
     }
   ]
 }

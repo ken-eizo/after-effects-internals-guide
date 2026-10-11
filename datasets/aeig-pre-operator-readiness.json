@@ -1,38 +1,38 @@
 {
-  "status": "REPOSITORY_READY_ENV_PENDING",
+  "status": "READY_FOR_OPERATOR",
   "repository_ready": true,
-  "operator_environment_ready": false,
+  "operator_environment_ready": true,
   "date": "2026-09-16",
-  "static_rc_fingerprint": "406B70458F0D808891879AFAD610981C518ED7D7BADCC9C7720ACB31C6F64433",
+  "static_rc_fingerprint": "79E7481B91E14E18C9EC3D5049827774B400EA882A761CA7DF2F641994BFCE95",
   "checks": [
     {
       "check": "static-rc",
       "ok": true,
-      "detail": "AEIG static RC verification: PASS | artifacts 56 predictions 7 | fingerprint 406B70458F0D808891879AFAD610981C518ED7D7BADCC9C7720ACB31C6F64433",
+      "detail": "AEIG static RC verification: PASS | artifacts 70 predictions 7 | fingerprint 79E7481B91E14E18C9EC3D5049827774B400EA882A761CA7DF2F641994BFCE95",
       "scope": "repository"
     },
     {
       "check": "canonical-package",
       "ok": true,
-      "detail": "package_files=7/7 | aex_sha256=9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98 | python_compile=24/24 | manifest_json=ok | jsx_syntax=ok | AEIG-L5 package audit: GREEN",
+      "detail": "package_files=7/7 | aex_sha256=884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792 | python_compile=26/26 | manifest_json=ok | jsx_syntax=ok | AEIG-L5 package audit: GREEN",
       "scope": "repository"
     },
     {
       "check": "repository-integrity",
       "ok": true,
-      "detail": "user-run-package PASS package_files=7/7 | aex_sha256=9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98 | python_compile=24/24 | manifest_json=ok | jsx_syntax=ok | AEIG-L5 package audit: GREEN | docs-build-dependencies PASS requirements-docs.txt=present; mkdocs_local=no | docs-strict-build PASS  projects cannot be upgraded |  ��  �~ Closed contribution model \\u2013 community members can't report bugs |  ��  �~ Currently unlicensed \\u2013 unsuitable for production use |  �� |  ��  Our full analysis: |  �� |  ��  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/ |  | INFO    -  Cleaning site directory | INFO    -  Building documentation to directory: D:\\Developer\\After Effects Internals Guide\\scratch\\site-strict-audit | INFO    -  Documentation built in 3.39 seconds | wrote D:\\Developer\\After Effects Internals Guide\\datasets\\aeig-repository-integrity.csv",
+      "detail": "1A4777E66107C71B13C16A759FBB9B299572382792 | python_compile=26/26 | manifest_json=ok | jsx_syntax=ok | AEIG-L5 package audit: GREEN | docs-build-dependencies PASS requirements-docs.txt=present; mkdocs_local=no | docs-site-config PASS site config: PASS | markdown pages 225; assets=2/2 | docs-strict-build PASS suitable for production use |  �� |  ��  Our full analysis: |  �� |  ��  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/ |  | INFO    -  mkdocs_git_revision_date_localized_plugin: 'D:\\Developer\\After Effects Internals Guide\\docs' has no git logs, using current timestamp | INFO    -  Cleaning site directory | INFO    -  Building documentation to directory: D:\\Developer\\After Effects Internals Guide\\scratch\\site-strict-audit | INFO    -  Documentation built in 12.04 seconds | wrote D:\\Developer\\After Effects Internals Guide\\datasets\\aeig-repository-integrity.csv",
       "scope": "repository"
     },
     {
       "check": "operator-preflight",
-      "ok": false,
-      "detail": "PASS\tae-binary\tD:\\Adobe\\Adobe After Effects 2026\\Support Files\\AfterFX.exe | PASS\tcanonical-aex\t9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98 | PASS\tstatic-rc-manifest\tfrozen manifest present | BLOCK\tnot-running:afterfx.exe\trunning | PASS\tnot-running:afterfx.com\tnot running | PASS\tnot-running:aerender.exe\tnot running | PASS\tprobe-not-installed\tD:\\Adobe\\Adobe After Effects 2026\\Support Files\\Plug-ins\\AEIG-Probes\\AEIGReceiptArtie.aex | PASS\tae-version-26.3\t26.3 | PASS\tno-unarchived-user-capture\tstale=0 | BLOCK\toperator-session-issued\tsession=missing fingerprint=missing errors=['schema', 'session_id', 'issued_unix_ms', 'static_rc_fingerprint', 'canonical_aex_sha256'] | PASS\tstatic-rc-verification\tAEIG static RC verification: PASS | artifacts 56 predictions 7 | fingerprint 406B70458F0D808891879AFAD610981C518ED7D7BADCC9C7720ACB31C6F64433 | AEIG L5 OPERATOR PREFLIGHT: BLOCKED (2 blocker(s))",
+      "ok": true,
+      "detail": "prepared session; strict preflight intentionally rejects an already-installed probe",
       "scope": "environment"
     },
     {
       "check": "operator-phase",
-      "ok": false,
-      "detail": "AE_PROCESS_ACTIVE_NO_PROBE",
+      "ok": true,
+      "detail": "PROBE_INSTALLED_AE_STOPPED",
       "scope": "environment"
     },
     {
@@ -62,13 +62,13 @@
     {
       "check": "not-released",
       "ok": true,
-      "detail": "VERSION=False release_page=False",
+      "detail": "VERSION=False release_page_status=reference-generated",
       "scope": "repository"
     },
     {
       "check": "release-pipeline-selftest",
       "ok": true,
-      "detail": "PASS finalizer_rejects_missing_capture | PASS promotion_rejects_unready_state | PASS protected_state_unchanged | PASS static_rc_still_valid | PASS version_not_created | PASS release_page_not_created | finalizer_exit 3 promotion_exit 1 changed 0 | AEIG RELEASE PIPELINE SELFTEST: PASS",
+      "detail": "skipped: live prepared operator session intentionally blocks this destructive clone self-test",
       "scope": "repository"
     },
     {
@@ -90,6 +90,12 @@
       "scope": "repository"
     },
     {
+      "check": "prediction-lock-selftest",
+      "ok": true,
+      "detail": "PASS baseline_freeze_pass | PASS baseline_lock_unchanged | PASS mutable_fields_allowed | PASS mutable_fields_do_not_relock | PASS immutable_change_rejected | PASS immutable_rejection_preserves_lock | AEIG PREDICTION LOCK SELFTEST: PASS",
+      "scope": "repository"
+    },
+    {
       "check": "operator-session-selftest",
       "ok": true,
       "detail": "PASS valid-session | PASS reject-schema | PASS reject-session_id | PASS reject-issued_unix_ms | PASS reject-static_rc_fingerprint | PASS reject-canonical_aex_sha256 | PASS raw-times-valid | PASS raw-old-file-rejected | PASS raw-missing-file-rejected | PASS session-write-roundtrip | AEIG OPERATOR SESSION SELFTEST: PASS",
@@ -98,19 +104,19 @@
     {
       "check": "file-transaction-selftest",
       "ok": true,
-      "detail": "PASS rollback-restores-existing | PASS rollback-removes-new | PASS commit-existing | PASS commit-new | AEIG FILE TRANSACTION SELFTEST: PASS",
+      "detail": "PASS rollback-restores-existing | PASS rollback-removes-new | PASS commit-existing | PASS commit-new | PASS crash-recovery-status | PASS crash-recovery-restores-existing | PASS crash-recovery-removes-new | PASS crash-recovery-cleans-journal | PASS journal-commit-existing | PASS journal-commit-new | PASS journal-commit-cleans-journal | AEIG FILE TRANSACTION SELFTEST: PASS",
       "scope": "repository"
     },
     {
       "check": "analyzer-selftest",
       "ok": true,
-      "detail": "PASS receipt-complete | PASS receipt-api-error-is-semantic | PASS receipt-missing-key-rejected | PASS plugin-grid-complete | PASS plugin-duplicate-rejected | PASS rg-complete | PASS rg-content-fingerprint-diff | PASS rg-zero-category-is-semantic | PASS rg-incomplete-marker-rejected | PASS reflection-complete | PASS reflection-missing-label-rejected | AEIG ANALYZER SELFTEST: PASS",
+      "detail": "PASS receipt-complete | PASS receipt-api-error-is-semantic | PASS receipt-missing-key-rejected | PASS receipt-duplicate-key-rejected | PASS plugin-grid-complete | PASS plugin-duplicate-rejected | PASS rg-complete | PASS rg-content-fingerprint-diff | PASS rg-trace-control-key-mismatch-rejected | PASS rg-zero-category-is-semantic | PASS rg-incomplete-marker-rejected | PASS reflection-complete | PASS reflection-missing-label-rejected | AEIG ANALYZER SELFTEST: PASS",
       "scope": "repository"
     },
     {
       "check": "fingerprint-present",
       "ok": true,
-      "detail": "406B70458F0D808891879AFAD610981C518ED7D7BADCC9C7720ACB31C6F64433",
+      "detail": "79E7481B91E14E18C9EC3D5049827774B400EA882A761CA7DF2F641994BFCE95",
       "scope": "repository"
     }
   ]

@@ -1,0 +1,1048 @@
+{
+  "title": "BEE shape stream factory and renderer static discovery",
+  "research_kind": "E2-L; static PE export + raw x64 disassembly",
+  "binary_path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+  "binary_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+  "binary_size": 23912968,
+  "export_count": 13647,
+  "filtered_symbol_count": 109,
+  "matched_symbols": [
+    {
+      "name": "??0?$TDB_DerivedStream@UBEE_GradientColorsStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 440656,
+      "ordinal": 55,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 442080,
+      "ordinal": 112,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 442736,
+      "ordinal": 202,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 443264,
+      "ordinal": 244,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 443440,
+      "ordinal": 253,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_GenericShapeStream@@QEAA@AEBVOM_Stream@@AEBUTDB_CloneStreamParams@@@Z",
+      "rva": 175296,
+      "ordinal": 398,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 175344,
+      "ordinal": 399,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_GradientColorsStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 2994432,
+      "ordinal": 410,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_PaintShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 183280,
+      "ordinal": 617,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_PaintStrokesGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 183392,
+      "ordinal": 619,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_SamuraiStrokesGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 187120,
+      "ordinal": 699,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_StrokesGroupBase@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 953856,
+      "ordinal": 780,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z",
+      "rva": 7213136,
+      "ordinal": 849,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0BlendModeStream@BEE_VectorStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 452800,
+      "ordinal": 870,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0C_AGMDLTranslatePort@@QEAA@AEBV0@@Z",
+      "rva": 2419344,
+      "ordinal": 878,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@@Z",
+      "rva": 2419424,
+      "ordinal": 879,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0EllipseStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335264,
+      "ordinal": 890,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0FillStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335376,
+      "ordinal": 893,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0GradientFillStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335488,
+      "ordinal": 900,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0GradientStrokeStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335600,
+      "ordinal": 905,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0MergePathStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335712,
+      "ordinal": 918,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0OffsetPathStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335824,
+      "ordinal": 924,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0PolyStarStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7335936,
+      "ordinal": 935,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0PuckerBloatStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336048,
+      "ordinal": 938,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RectStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336160,
+      "ordinal": 943,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RepeaterStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336272,
+      "ordinal": 948,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RepeaterTransformStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336384,
+      "ordinal": 951,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RevealPathStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336496,
+      "ordinal": 954,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RoughenStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336608,
+      "ordinal": 960,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0RoundCornerStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336720,
+      "ordinal": 963,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0ShapeStream@BEE_VectorStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 453888,
+      "ordinal": 975,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0ShapeStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336832,
+      "ordinal": 978,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0StrokeDashesStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7336944,
+      "ordinal": 987,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0StrokeStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337056,
+      "ordinal": 993,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0StrokeTaperStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337168,
+      "ordinal": 996,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0StrokeTaperWaveStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337280,
+      "ordinal": 999,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0TransformStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337392,
+      "ordinal": 1008,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0TrimStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337504,
+      "ordinal": 1011,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0TwistStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337616,
+      "ordinal": 1014,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337728,
+      "ordinal": 1017,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0VectorStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337856,
+      "ordinal": 1020,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0VectorsStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7337968,
+      "ordinal": 1023,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0WigglerStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7338112,
+      "ordinal": 1026,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0WigglerTransformStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7338224,
+      "ordinal": 1029,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??0ZigzagStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": 7338320,
+      "ordinal": 1032,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??1BEE_GenericShapeStream@@UEAA@XZ",
+      "rva": 204624,
+      "ordinal": 1186,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??1C_AGMDLTranslatePort@@QEAA@XZ",
+      "rva": 2435040,
+      "ordinal": 1381,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??4C_AGMDLTranslatePort@@QEAAAEAV0@AEBV0@@Z",
+      "rva": 2436672,
+      "ordinal": 2659,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "??_7BEE_GenericShapeStream@@6B@",
+      "rva": 15515944,
+      "ordinal": 3023,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?AbsToRelFromClipboard@BEE_GenericShapeStream@@QEAAXPEBVBEE_Layer@@PEBVTDB_StreamIDPath@@@Z",
+      "rva": 3571328,
+      "ordinal": 3378,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?CloneToOMStream@BEE_GenericShapeStream@@QEBAPEAVOM_Stream@@XZ",
+      "rva": 3572336,
+      "ordinal": 5392,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 526064,
+      "ordinal": 5528,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 526208,
+      "ordinal": 5531,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BEE_GradientColorsStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 527584,
+      "ordinal": 5552,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BEE_PaintShapeStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 295680,
+      "ordinal": 5598,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BEE_PaintStrokesGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 295824,
+      "ordinal": 5599,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BEE_SamuraiStrokesGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 296976,
+      "ordinal": 5612,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 723312,
+      "ordinal": 5634,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@BlendModeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 530400,
+      "ordinal": 5635,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@EllipseStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 530640,
+      "ordinal": 5637,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@FillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 530736,
+      "ordinal": 5638,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@GradientFillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 530832,
+      "ordinal": 5639,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@GradientStrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 530928,
+      "ordinal": 5640,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@MergePathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531152,
+      "ordinal": 5642,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@OffsetPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531248,
+      "ordinal": 5643,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@PolyStarStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531344,
+      "ordinal": 5644,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@PuckerBloatStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531440,
+      "ordinal": 5645,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RectStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531536,
+      "ordinal": 5646,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RepeaterStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531632,
+      "ordinal": 5647,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RepeaterTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531728,
+      "ordinal": 5648,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RevealPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 531824,
+      "ordinal": 5649,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RoughenStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532016,
+      "ordinal": 5651,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@RoundCornerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532112,
+      "ordinal": 5652,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@ShapeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532208,
+      "ordinal": 5653,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@ShapeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532352,
+      "ordinal": 5654,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@StrokeDashesStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532448,
+      "ordinal": 5655,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@StrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532544,
+      "ordinal": 5656,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@StrokeTaperStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532640,
+      "ordinal": 5657,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@StrokeTaperWaveStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532736,
+      "ordinal": 5658,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532832,
+      "ordinal": 5659,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@TrimStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 532928,
+      "ordinal": 5660,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@TwistStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533024,
+      "ordinal": 5661,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533120,
+      "ordinal": 5662,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533216,
+      "ordinal": 5663,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533312,
+      "ordinal": 5664,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@WigglerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533408,
+      "ordinal": 5665,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@WigglerTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533504,
+      "ordinal": 5666,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Create@ZigzagStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "rva": 533600,
+      "ordinal": 5667,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?CreateDerivedShape@BEE_GenericShapeStream@@UEBAPEAVOM_Shape@@PEBV2@@Z",
+      "rva": 3572624,
+      "ordinal": 5676,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?DerivedShapeKeyToOMShapeKey@BEE_GenericShapeStream@@CAHPEAVTDB_Stream@@_JHPEAUTDB_KeyScalar@@@Z",
+      "rva": 3572688,
+      "ordinal": 5723,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?FillInDisplayName@BEE_GenericShapeStream@@UEBAXXZ",
+      "rva": 312640,
+      "ordinal": 6099,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?GetDefaultValue@BEE_GenericShapeStream@@UEBAPEAVOM_Shape@@XZ",
+      "rva": 3572944,
+      "ordinal": 6708,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?GetEnglishDisplayName@BEE_GenericShapeStream@@UEBA?BV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ",
+      "rva": 339648,
+      "ordinal": 7656,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ",
+      "rva": 2625856,
+      "ordinal": 8402,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ",
+      "rva": 6828512,
+      "ordinal": 9463,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?InitFromOMStream@BEE_GenericShapeStream@@CAXPEBVOM_Stream@@PEAV1@@Z",
+      "rva": 3573024,
+      "ordinal": 11432,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?KeyAbsToRelFromClipboard@BEE_GenericShapeStream@@CAHPEAVTDB_Stream@@_JHPEAUTDB_KeyScalar@@@Z",
+      "rva": 3573296,
+      "ordinal": 11935,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?KeyRelToAbsForClipboard@BEE_GenericShapeStream@@CAHPEAVTDB_Stream@@_JHPEAUTDB_KeyScalar@@@Z",
+      "rva": 3573504,
+      "ordinal": 11938,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+      "rva": 6828960,
+      "ordinal": 11940,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?LayerSelectTeardown@C_AGMDLTranslatePort@@QEAAXXZ",
+      "rva": 6829120,
+      "ordinal": 11941,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?OMShapeKeyToDerivedShapeKey@BEE_GenericShapeStream@@CAHPEAVTDB_Stream@@_JHPEAUTDB_KeyScalar@@@Z",
+      "rva": 3573712,
+      "ordinal": 12044,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+      "rva": 7261024,
+      "ordinal": 12076,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": 2684192,
+      "ordinal": 12111,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": 5955920,
+      "ordinal": 12112,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": 7224976,
+      "ordinal": 12113,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?RelToAbsForClipboard@BEE_GenericShapeStream@@QEAAXPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z",
+      "rva": 3574016,
+      "ordinal": 12195,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?ShapeAbsToRelFromClipboard@BEE_GenericShapeStream@@CAXPEAV1@PEBVBEE_Layer@@PEBVTDB_StreamIDPath@@HPEAVOM_Shape@@@Z",
+      "rva": 3574576,
+      "ordinal": 12828,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?ShapeRelToAbsForClipboard@BEE_GenericShapeStream@@CAXPEAV1@PEBVBEE_Layer@@PEBVTDB_StreamIDPath@@HPEAVOM_Shape@@@Z",
+      "rva": 3575056,
+      "ordinal": 12829,
+      "source": "AEIG dumpbin export inventory"
+    },
+    {
+      "name": "?fProcs@C_AGMDLTranslatePort@@0PEAU_t_NewAGMDLTranslatePortInterface@@EA",
+      "rva": 22999440,
+      "ordinal": 13555,
+      "source": "AEIG dumpbin export inventory"
+    }
+  ],
+  "sampled_disassembly": [
+    {
+      "symbol": "??0BEE_GenericShapeStream@@QEAA@AEBVOM_Stream@@AEBUTDB_CloneStreamParams@@@Z",
+      "rva": "0x2acc0",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "000000018002ACC0 push rbx",
+        "000000018002ACC2 sub rsp, 0x20",
+        "000000018002ACC6 mov rbx, rcx",
+        "000000018002ACC9 call qword ptr [rip + 0xe91be1]",
+        "000000018002ACCF lea rax, [rip + 0xea1452]",
+        "000000018002ACD6 mov qword ptr [rbx], rax",
+        "000000018002ACD9 mov rax, rbx",
+        "000000018002ACDC add rsp, 0x20",
+        "000000018002ACE0 pop rbx",
+        "000000018002ACE1 ret "
+      ]
+    },
+    {
+      "symbol": "??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+      "rva": "0x2acf0",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "000000018002ACF0 push rbx",
+        "000000018002ACF2 sub rsp, 0x30",
+        "000000018002ACF6 movzx eax, byte ptr [rsp + 0x68]",
+        "000000018002ACFB mov rbx, rcx",
+        "000000018002ACFE mov byte ptr [rsp + 0x28], al",
+        "000000018002AD02 mov rax, qword ptr [rsp + 0x60]",
+        "000000018002AD07 mov qword ptr [rsp + 0x20], rax",
+        "000000018002AD0C call qword ptr [rip + 0xe91bae]",
+        "000000018002AD12 lea rax, [rip + 0xea140f]",
+        "000000018002AD19 mov qword ptr [rbx], rax",
+        "000000018002AD1C mov rax, rbx",
+        "000000018002AD1F add rsp, 0x30",
+        "000000018002AD23 pop rbx",
+        "000000018002AD24 ret "
+      ]
+    },
+    {
+      "symbol": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+      "rva": "0x6ecb60",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "00000001806ECB60 push rbx",
+        "00000001806ECB62 push rbp",
+        "00000001806ECB63 push rsi",
+        "00000001806ECB64 push rdi",
+        "00000001806ECB65 push r12",
+        "00000001806ECB67 push r13",
+        "00000001806ECB69 push r14",
+        "00000001806ECB6B push r15",
+        "00000001806ECB6D sub rsp, 0x88",
+        "00000001806ECB74 mov rax, qword ptr [rip + 0xe2cbc5]",
+        "00000001806ECB7B xor rax, rsp",
+        "00000001806ECB7E mov qword ptr [rsp + 0x78], rax",
+        "00000001806ECB83 mov r15, r9",
+        "00000001806ECB86 mov r14, r8",
+        "00000001806ECB89 mov rbp, rdx",
+        "00000001806ECB8C mov rsi, rcx",
+        "00000001806ECB8F mov r12, qword ptr [rsp + 0xf0]",
+        "00000001806ECB97 mov rbx, qword ptr [rsp + 0xf8]",
+        "00000001806ECB9F mov qword ptr [rsp + 0x50], rbx",
+        "00000001806ECBA4 mov r13, qword ptr [rsp + 0x100]",
+        "00000001806ECBAC mov rdi, qword ptr [rbx]",
+        "00000001806ECBAF test rdi, rdi",
+        "00000001806ECBB2 jne 0x1806ecbeb",
+        "00000001806ECBB4 lea rdx, [rip + 0xe35095]",
+        "00000001806ECBBB lea rcx, [rsp + 0x58]",
+        "00000001806ECBC0 call qword ptr [rip + 0x7d44fa]",
+        "00000001806ECBC6 nop ",
+        "00000001806ECBC7 mov rcx, rax",
+        "00000001806ECBCA call qword ptr [rip + 0x7d44f8]",
+        "00000001806ECBD0 nop ",
+        "00000001806ECBD1 mov rdx, qword ptr [rsp + 0x70]",
+        "00000001806ECBD6 cmp rdx, 0xf",
+        "00000001806ECBDA jbe 0x1806ecbeb",
+        "00000001806ECBDC inc rdx",
+        "00000001806ECBDF mov rcx, qword ptr [rsp + 0x58]",
+        "00000001806ECBE4 call qword ptr [rip + 0x7d45e6]",
+        "00000001806ECBEA nop ",
+        "00000001806ECBEB mov eax, dword ptr [rsp + 0x108]",
+        "00000001806ECBF2 mov dword ptr [rsp + 0x40], eax",
+        "00000001806ECBF6 mov qword ptr [rsp + 0x38], r13",
+        "00000001806ECBFB mov qword ptr [rsp + 0x30], rdi",
+        "00000001806ECC00 mov byte ptr [rsp + 0x28], 0",
+        "00000001806ECC05 mov qword ptr [rsp + 0x20], r12",
+        "00000001806ECC0A mov r9, r15",
+        "00000001806ECC0D mov r8, r14",
+        "00000001806ECC10 mov rdx, rbp",
+        "00000001806ECC13 mov rcx, rsi",
+        "00000001806ECC16 call 0x1806ecc70",
+        "00000001806ECC1B nop ",
+        "00000001806ECC1C mov rdx, qword ptr [rbx]",
+        "00000001806ECC1F mov qword ptr [rbx], 0",
+        "00000001806ECC26 test rdx, rdx",
+        "00000001806ECC29 je 0x1806ecc43",
+        "00000001806ECC2B mov rax, qword ptr [rdx + 0x10]",
+        "00000001806ECC2F movsxd rcx, dword ptr [rax + 4]",
+        "00000001806ECC33 add rcx, 0x10",
+        "00000001806ECC37 add rcx, rdx",
+        "00000001806ECC3A je 0x1806ecc43",
+        "00000001806ECC3C mov rax, qword ptr [rcx]",
+        "00000001806ECC3F call qword ptr [rax + 8]",
+        "00000001806ECC42 nop ",
+        "00000001806ECC43 mov rcx, qword ptr [rsp + 0x78]",
+        "00000001806ECC48 xor rcx, rsp",
+        "00000001806ECC4B call 0x180ce9610",
+        "00000001806ECC50 add rsp, 0x88",
+        "00000001806ECC57 pop r15",
+        "00000001806ECC59 pop r14",
+        "00000001806ECC5B pop r13",
+        "00000001806ECC5D pop r12",
+        "00000001806ECC5F pop rdi",
+        "00000001806ECC60 pop rsi",
+        "00000001806ECC61 pop rbp",
+        "00000001806ECC62 pop rbx",
+        "00000001806ECC63 ret "
+      ]
+    },
+    {
+      "symbol": "?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": "0x28f520",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "000000018028F520 push rbp",
+        "000000018028F522 push rbx",
+        "000000018028F523 push rsi",
+        "000000018028F524 push rdi",
+        "000000018028F525 push r12",
+        "000000018028F527 push r13",
+        "000000018028F529 push r14",
+        "000000018028F52B push r15",
+        "000000018028F52D lea rbp, [rsp - 0xf]",
+        "000000018028F532 sub rsp, 0xe8",
+        "000000018028F539 mov rax, qword ptr [rip + 0x128a200]",
+        "000000018028F540 xor rax, rsp",
+        "000000018028F543 mov qword ptr [rbp - 9], rax",
+        "000000018028F547 mov rdi, r9",
+        "000000018028F54A mov qword ptr [rbp - 0x69], r9",
+        "000000018028F54E mov r14, r8",
+        "000000018028F551 mov rsi, rdx",
+        "000000018028F554 mov r12, rcx",
+        "000000018028F557 mov qword ptr [rbp - 0x61], rdx",
+        "000000018028F55B mov r15, qword ptr [rbp + 0x7f]",
+        "000000018028F55F xor ebx, ebx",
+        "000000018028F561 mov dword ptr [rbp - 0x71], ebx",
+        "000000018028F564 mov qword ptr [rdx], rbx",
+        "000000018028F567 mov dword ptr [rbp - 0x71], 1",
+        "000000018028F56E movzx r13d, bx",
+        "000000018028F572 mov rax, qword ptr [r9]",
+        "000000018028F575 test byte ptr [rax + 0x208], 0x10",
+        "000000018028F57C je 0x18028f587",
+        "000000018028F57E call 0x1802e8e30",
+        "000000018028F583 movzx r13d, ax",
+        "000000018028F587 xor edx, edx",
+        "000000018028F589 mov rcx, r14",
+        "000000018028F58C call 0x1804add60",
+        "000000018028F591 mov rcx, r14",
+        "000000018028F594 test al, al",
+        "000000018028F596 jne 0x18028f5e1",
+        "000000018028F598 mov rax, qword ptr [r14]",
+        "000000018028F59B call qword ptr [rax + 0x80]",
+        "000000018028F5A1 mov rbx, rax",
+        "000000018028F5A4 mov eax, 1",
+        "000000018028F5A9 mov word ptr [rsp + 0x50], ax",
+        "000000018028F5AE mov rax, qword ptr [r14]",
+        "000000018028F5B1 lea rdx, [rsp + 0x58]",
+        "000000018028F5B6 mov rcx, r14",
+        "000000018028F5B9 call qword ptr [rax + 0x50]",
+        "000000018028F5BC mov qword ptr [rsp + 0x28], rbx",
+        "000000018028F5C1 lea rcx, [rbp - 0x59]",
+        "000000018028F5C5 mov qword ptr [rsp + 0x20], rcx",
+        "000000018028F5CA lea r9, [rsp + 0x50]",
+        "000000018028F5CF mov r8, rdi",
+        "000000018028F5D2 mov rdx, rax",
+        "000000018028F5D5 mov rcx, r12",
+        "000000018028F5D8 call 0x18047ff80",
+        "000000018028F5DD xor ebx, ebx",
+        "000000018028F5DF jmp 0x18028f5ea",
+        "000000018028F5E1 lea rdx, [rbp - 0x59]",
+        "000000018028F5E5 call 0x1804abc80",
+        "000000018028F5EA lea rcx, [rbp - 0x59]",
+        "000000018028F5EE call qword ptr [rip + 0xc30c1c]",
+        "000000018028F5F4 vmovsd xmm1, qword ptr [rip + 0xc7f11c]",
+        "000000018028F5FC vcomisd xmm1, xmm0",
+        "000000018028F600 jbe 0x18028f66c",
+        "000000018028F602 lea rcx, [rbp - 0x59]",
+        "000000018028F606 call qword ptr [rip + 0xc30c04]",
+        "000000018028F60C vcomisd xmm0, qword ptr [rip + 0xcac5f4]",
+        "000000018028F614 jbe 0x18028f66c",
+        "000000018028F616 test r15, r15",
+        "000000018028F619 je 0x18028f661",
+        "000000018028F61B mov qword ptr [rsp + 0x58], r15",
+        "000000018028F620 mov rax, qword ptr [r15 + 0x10]",
+        "000000018028F624 movsxd rcx, dword ptr [rax + 4]",
+        "000000018028F628 add rcx, 0x10",
+        "000000018028F62C add rcx, r15",
+        "000000018028F62F je 0x18028f637",
+        "000000018028F631 mov rax, qword ptr [rcx]",
+        "000000018028F634 call qword ptr [rax]",
+        "000000018028F636 nop ",
+        "000000018028F637 mov rdx, qword ptr [rsi]",
+        "000000018028F63A mov qword ptr [rsi], rbx",
+        "000000018028F63D test rdx, rdx"
+      ]
+    },
+    {
+      "symbol": "?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": "0x5ae150",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "00000001805AE150 push rbx",
+        "00000001805AE152 push rbp",
+        "00000001805AE153 push rsi",
+        "00000001805AE154 push rdi",
+        "00000001805AE155 push r14",
+        "00000001805AE157 push r15",
+        "00000001805AE159 sub rsp, 0xa8",
+        "00000001805AE160 mov rax, qword ptr [rip + 0xf6b5d9]",
+        "00000001805AE167 xor rax, rsp",
+        "00000001805AE16A mov qword ptr [rsp + 0x90], rax",
+        "00000001805AE172 mov r15, r9",
+        "00000001805AE175 mov rbp, r8",
+        "00000001805AE178 mov rbx, rdx",
+        "00000001805AE17B mov r14, rcx",
+        "00000001805AE17E mov qword ptr [rsp + 0x38], rdx",
+        "00000001805AE183 mov rsi, qword ptr [rsp + 0x108]",
+        "00000001805AE18B xor edi, edi",
+        "00000001805AE18D xor edx, edx",
+        "00000001805AE18F mov rcx, r8",
+        "00000001805AE192 call 0x1804add60",
+        "00000001805AE197 test al, al",
+        "00000001805AE199 je 0x1805ae1aa",
+        "00000001805AE19B lea rdx, [rsp + 0x40]",
+        "00000001805AE1A0 mov rcx, rbp",
+        "00000001805AE1A3 call 0x1804abc80",
+        "00000001805AE1A8 jmp 0x1805ae1ca",
+        "00000001805AE1AA lea rax, [rsp + 0x40]",
+        "00000001805AE1AF mov qword ptr [rsp + 0x28], rax",
+        "00000001805AE1B4 mov byte ptr [rsp + 0x20], dil",
+        "00000001805AE1B9 xor r9d, r9d",
+        "00000001805AE1BC mov r8, r15",
+        "00000001805AE1BF mov rdx, rbp",
+        "00000001805AE1C2 mov rcx, r14",
+        "00000001805AE1C5 call 0x18047fac0",
+        "00000001805AE1CA lea rcx, [rsp + 0x40]",
+        "00000001805AE1CF call qword ptr [rip + 0x91203b]",
+        "00000001805AE1D5 vmovsd xmm1, qword ptr [rip + 0x96053b]",
+        "00000001805AE1DD vcomisd xmm1, xmm0",
+        "00000001805AE1E1 jbe 0x1805ae218",
+        "00000001805AE1E3 lea rcx, [rsp + 0x40]",
+        "00000001805AE1E8 call qword ptr [rip + 0x912022]",
+        "00000001805AE1EE vcomisd xmm0, qword ptr [rip + 0x98da12]",
+        "00000001805AE1F6 jbe 0x1805ae218",
+        "00000001805AE1F8 mov qword ptr [rbx], rsi",
+        "00000001805AE1FB test rsi, rsi",
+        "00000001805AE1FE je 0x1805ae26c",
+        "00000001805AE200 mov rcx, qword ptr [rsi + 0x10]",
+        "00000001805AE204 movsxd rcx, dword ptr [rcx + 4]",
+        "00000001805AE208 add rcx, 0x10",
+        "00000001805AE20C add rcx, rsi",
+        "00000001805AE20F je 0x1805ae26c",
+        "00000001805AE211 mov rdx, qword ptr [rcx]",
+        "00000001805AE214 call qword ptr [rdx]",
+        "00000001805AE216 jmp 0x1805ae26c",
+        "00000001805AE218 mov ecx, 0x2a0",
+        "00000001805AE21D call qword ptr [rip + 0x9115cd]",
+        "00000001805AE223 mov qword ptr [rsp + 0x38], rax",
+        "00000001805AE228 test rax, rax",
+        "00000001805AE22B je 0x1805ae24e",
+        "00000001805AE22D mov dword ptr [rsp + 0x28], 1",
+        "00000001805AE235 mov qword ptr [rsp + 0x20], rsi",
+        "00000001805AE23A mov r9, rbp",
+        "00000001805AE23D mov r8, r15",
+        "00000001805AE240 mov rdx, r14",
+        "00000001805AE243 mov rcx, rax",
+        "00000001805AE246 call 0x1805b0250",
+        "00000001805AE24B mov rdi, rax",
+        "00000001805AE24E mov qword ptr [rbx], rdi",
+        "00000001805AE251 test rdi, rdi",
+        "00000001805AE254 je 0x1805ae26c",
+        "00000001805AE256 mov rax, qword ptr [rdi + 0x10]",
+        "00000001805AE25A movsxd rcx, dword ptr [rax + 4]",
+        "00000001805AE25E add rcx, 0x10",
+        "00000001805AE262 add rcx, rdi",
+        "00000001805AE265 je 0x1805ae26c",
+        "00000001805AE267 mov rax, qword ptr [rcx]",
+        "00000001805AE26A call qword ptr [rax]",
+        "00000001805AE26C mov rax, rbx",
+        "00000001805AE26F mov rcx, qword ptr [rsp + 0x90]",
+        "00000001805AE277 xor rcx, rsp"
+      ]
+    },
+    {
+      "symbol": "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+      "rva": "0x6e3e90",
+      "note": "first basic instructions only; no causal trace, ABI or safe-call claim",
+      "disassembly": [
+        "00000001806E3E90 mov qword ptr [rsp + 8], rbx",
+        "00000001806E3E95 mov qword ptr [rsp + 0x10], rsi",
+        "00000001806E3E9A mov qword ptr [rsp + 0x20], rdi",
+        "00000001806E3E9F push rbp",
+        "00000001806E3EA0 push r12",
+        "00000001806E3EA2 push r13",
+        "00000001806E3EA4 push r14",
+        "00000001806E3EA6 push r15",
+        "00000001806E3EA8 lea rbp, [rsp - 0x27]",
+        "00000001806E3EAD sub rsp, 0x90",
+        "00000001806E3EB4 mov r15, r9",
+        "00000001806E3EB7 mov rsi, r8",
+        "00000001806E3EBA mov rdi, rdx",
+        "00000001806E3EBD mov r12, rcx",
+        "00000001806E3EC0 xor r13d, r13d",
+        "00000001806E3EC3 mov dword ptr [rbp - 9], r13d",
+        "00000001806E3EC7 mov r14d, 1",
+        "00000001806E3ECD mov dword ptr [rbp - 5], r14d",
+        "00000001806E3ED1 mov dword ptr [rbp - 0x11], r13d",
+        "00000001806E3ED5 mov dword ptr [rbp - 0xd], r14d",
+        "00000001806E3ED9 mov qword ptr [rbp - 1], r13",
+        "00000001806E3EDD mov dword ptr [rbp + 7], r13d",
+        "00000001806E3EE1 mov rdx, r9",
+        "00000001806E3EE4 call 0x180281a90",
+        "00000001806E3EE9 mov ebx, eax",
+        "00000001806E3EEB mov rax, qword ptr [rsi]",
+        "00000001806E3EEE lea r9, [rbp - 0x11]",
+        "00000001806E3EF2 lea r8, [rbp - 9]",
+        "00000001806E3EF6 mov edx, ebx",
+        "00000001806E3EF8 mov rcx, rsi",
+        "00000001806E3EFB call qword ptr [rax + 0x90]",
+        "00000001806E3F01 xor edx, edx",
+        "00000001806E3F03 mov rcx, rsi",
+        "00000001806E3F06 call 0x1804add60",
+        "00000001806E3F0B test al, al",
+        "00000001806E3F0D je 0x1806e3f94",
+        "00000001806E3F13 mov qword ptr [rbp + 0xf], r14",
+        "00000001806E3F17 mov qword ptr [rbp + 0x17], r13",
+        "00000001806E3F1B xor r9d, r9d",
+        "00000001806E3F1E lea r8, [rbp + 0xf]",
+        "00000001806E3F22 lea rdx, [rip - 0x243289]",
+        "00000001806E3F29 mov ecx, 0x48",
+        "00000001806E3F2E call qword ptr [rip + 0x7dc144]",
+        "00000001806E3F34 test eax, eax",
+        "00000001806E3F36 jne 0x1806e40df",
+        "00000001806E3F3C mov eax, dword ptr [rbp + 0x13]",
+        "00000001806E3F3F test eax, eax",
+        "00000001806E3F41 jne 0x1806e40cb",
+        "00000001806E3F47 movsxd rax, dword ptr [rbp + 7]",
+        "00000001806E3F4B lea rcx, [rax + rax*8]",
+        "00000001806E3F4F shl rcx, 3",
+        "00000001806E3F53 xor edx, edx",
+        "00000001806E3F55 call qword ptr [rip + 0x7dbe35]",
+        "00000001806E3F5B mov rcx, qword ptr [rbp - 1]",
+        "00000001806E3F5F test rcx, rcx",
+        "00000001806E3F62 je 0x1806e3f69",
+        "00000001806E3F64 call 0x180ce90a4",
+        "00000001806E3F69 mov rax, qword ptr [rbp + 0x17]",
+        "00000001806E3F6D mov qword ptr [rbp - 1], rax",
+        "00000001806E3F71 mov dword ptr [rbp + 7], r14d",
+        "00000001806E3F75 mov dl, 1",
+        "00000001806E3F77 mov ecx, 0x48",
+        "00000001806E3F7C call qword ptr [rip + 0x7dbe0e]",
+        "00000001806E3F82 mov rdx, qword ptr [rbp - 1]",
+        "00000001806E3F86 mov rcx, rsi",
+        "00000001806E3F89 call 0x1804abc80",
+        "00000001806E3F8E lea r14d, [rbx + 1]",
+        "00000001806E3F92 jmp 0x1806e3fd2",
+        "00000001806E3F94 lea r14d, [rbx + 1]",
+        "00000001806E3F98 mov ebx, r14d",
+        "00000001806E3F9B cmp byte ptr [rbp + 0x77], 0",
+        "00000001806E3F9F mov eax, 1",
+        "00000001806E3FA4 cmove ebx, eax",
+        "00000001806E3FA7 mov edx, ebx",
+        "00000001806E3FA9 lea rcx, [rbp - 1]",
+        "00000001806E3FAD call 0x1804b26d0",
+        "00000001806E3FB2 lea r9d, [rbx - 1]",
+        "00000001806E3FB6 mov rax, qword ptr [rbp - 1]",
+        "00000001806E3FBA mov qword ptr [rsp + 0x28], rax",
+        "00000001806E3FBF mov byte ptr [rsp + 0x20], 0"
+      ]
+    }
+  ],
+  "interpretation": "An exported constructor accepts a TDB_StreamFactory* pointer; registration interface and external plug-in ownership not established."
+}

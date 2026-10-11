@@ -1,0 +1,57 @@
+{
+  "experiment_id": "EXP-SHAPE-003",
+  "title": "Shape stream factory and vector renderer static boundary audit",
+  "status": "runnable",
+  "domains": [
+    "vector-shape-system",
+    "state-model",
+    "render-graph"
+  ],
+  "question": "Which locally distributed exports/imports correlate factory-construction, stream evaluation and vector rendering, and which edges remain unproven?",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "BEE exports constructor-like signatures involving TDB_StreamFactory alongside distinct VectorArt-to-AGM and RG-related functions.",
+      "falsified_by": "Neither class of symbols is reproducible from the recorded binary corpus."
+    }
+  ],
+  "factors": [
+    "AE 2025 BEE/AGM/COR export/import inventory",
+    "TDB_StreamFactory",
+    "BEE_VectorStream",
+    "BEE_VectorArt",
+    "AGM",
+    "Rasterize2DGraph"
+  ],
+  "procedure": [
+    "Run ShapeLayerAE/tools/audit_symbols.py using AEIG datasets/ae-2025-vector-shape-symbols.csv.",
+    "Record output SHA-256, matched symbol rows and the source dataset hash.",
+    "Interpret only as runtime presence, not a callable third-party API or executable call chain.",
+    "For causal call-chain claims require additional disassembly and host experiment."
+  ],
+  "captures": [
+    "ShapeLayerAE/results/static_symbol_audit.json",
+    "AEIG/datasets/ae-2025-vector-shape-symbols.csv"
+  ],
+  "environment": {
+    "ae_binary_corpus": "AE 2025 evidence indexed in AEIG",
+    "sdk": "25.6 present",
+    "ae_running": "not required"
+  },
+  "conclusion": "Static E2-L audit completed: 2517 inventory rows, 79 TDB_StreamFactory hits, 6 bounded PE disassemblies. No native registration or causal execution established; AE host observation remains pending.",
+  "static_receipts": {
+    "inventory_sha256": "484cb6882928b52f34d27f5e2be5004508b52cf70270e10902708004543b70bb",
+    "inventory_output_sha256": "04f10deeda3f0e068edff27c79022539eaccb1fa3000db6f51a95c40b1eae478",
+    "runtime_BEE_dll_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+    "disassembly_output_sha256": "21d9f8d8cc2017fb7e54350fbf44cf6e2d93902f6cdaaa3b6471530995b6677a",
+    "report": "experiments/vector-shape/EXP-SHAPE-003-static-audit.md",
+    "scope": "Static PE/export evidence only; does not count as runtime E2-X L5 evidence"
+  },
+  "evidence": [
+    "E2-L",
+    "H"
+  ],
+  "limitations": [
+    "Symbol pattern correlation is not proof of private ABI safety or registration ability."
+  ]
+}

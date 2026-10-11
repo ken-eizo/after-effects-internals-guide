@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "session": {
+      "exists": true,
+      "bytes": 319
+    },
+    "fixture_log": {
+      "exists": true,
+      "bytes": 983
+    },
+    "receipt": {
+      "exists": true,
+      "bytes": 0
+    },
+    "output_A": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "output_B": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "suite": {
+      "exists": true,
+      "bytes": 127621
+    },
+    "trace": {
+      "exists": true,
+      "bytes": 0
+    },
+    "trace_control": {
+      "exists": true,
+      "bytes": 0
+    },
+    "current_pass": {
+      "exists": true,
+      "bytes": 4
+    },
+    "reflection": {
+      "exists": true,
+      "bytes": 28245
+    },
+    "environment": {
+      "exists": true,
+      "bytes": 386
+    }
+  },
+  "session": {
+    "ok": false,
+    "errors": [
+      "static_rc_fingerprint",
+      "canonical_aex_sha256"
+    ],
+    "issued_unix_ms": 1789572134257,
+    "session_id": "20260916T152214Z-E5D8E4CEC197",
+    "fingerprint": "AE42FE2F62722BCB151A7321F0DEF268A53C61521B32A11183208D3144FC3DE1",
+    "aex_hash": "884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792"
+  },
+  "raw_session_time": {
+    "tolerance_ms": 2000,
+    "files": {
+      "fixture_log": {
+        "exists": true,
+        "mtime_unix_ms": 1789572632672,
+        "after_session_issue": true
+      },
+      "receipt": {
+        "exists": true,
+        "mtime_unix_ms": 1789572631866,
+        "after_session_issue": true
+      },
+      "output_A": {
+        "exists": true,
+        "mtime_unix_ms": 1789572632414,
+        "after_session_issue": true
+      },
+      "output_B": {
+        "exists": true,
+        "mtime_unix_ms": 1789572632613,
+        "after_session_issue": true
+      },
+      "suite": {
+        "exists": true,
+        "mtime_unix_ms": 1789572610831,
+        "after_session_issue": true
+      },
+      "trace": {
+        "exists": true,
+        "mtime_unix_ms": 1789572631867,
+        "after_session_issue": true
+      },
+      "trace_control": {
+        "exists": true,
+        "mtime_unix_ms": 1789572631867,
+        "after_session_issue": true
+      },
+      "current_pass": {
+        "exists": true,
+        "mtime_unix_ms": 1789572632654,
+        "after_session_issue": true
+      },
+      "reflection": {
+        "exists": true,
+        "mtime_unix_ms": 1789572632319,
+        "after_session_issue": true
+      },
+      "environment": {
+        "exists": true,
+        "mtime_unix_ms": 1789572627381,
+        "after_session_issue": true
+      }
+    },
+    "all_after_issue": true
+  },
+  "issues": [
+    "operator session metadata invalid: static_rc_fingerprint,canonical_aex_sha256",
+    "environment canonical AEX hash does not match"
+  ],
+  "status": "INCOMPLETE"
+}

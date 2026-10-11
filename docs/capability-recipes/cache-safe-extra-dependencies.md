@@ -1,6 +1,6 @@
 ---
 status: active
-last_verified: 2026-09-15
+last_verified: 2026-09-23
 ---
 # Recipe: Make Non-Parameter State Cache-Safe
 
@@ -20,6 +20,10 @@ The public contract explicitly says these bytes contribute to AE's internal cach
 
 ## Temporal state
 For time-dependent upstream inputs, use checkout/state APIs so AE can register the actual temporal footprint. `GuidMixInPtr` is not a substitute for declaring source-time dependencies.
+
+A different case is an effect whose own semantic program reads **the current render time itself** as non-parameter state. The public `PF_OutFlag_NON_PARAM_VARY` contract explicitly names current frame time as a reason to set the bit. If only some effect instances use that dependency, advertise `PF_OutFlag2_SUPPORTS_QUERY_DYNAMIC_FLAGS` and answer `PF_Cmd_QUERY_DYNAMIC_FLAGS` from the same persisted/versioned configuration that render will consume instead of setting `NON_PARAM_VARY` globally for every instance.
+
+For a host-independent language/runtime, prefer binding AE time into an ordinary typed scalar formal at the host boundary rather than adding a host-specific `time()` intrinsic to the language. Resolve the actual from `in_data->current_time / time_scale` for the render request, and include that concrete actual in any extra SmartFX GUID contribution used by the effect. This preserves static-frame cache reuse for instances that do not bind time while making time-bound instances vary correctly.
 
 ## Historical warning
 Adobe's SmartyPants sample mixes parent-comp background color but warns that its example does not handle collapsed-comp context. Collapse Transformations can make project topology differ from render topology.

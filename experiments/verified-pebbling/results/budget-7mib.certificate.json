@@ -1,0 +1,74 @@
+{
+  "certificate_version": 2,
+  "model_version": "aeig-pebbling-v1",
+  "model_sha256": "6387b1d4caedadd01a981bc248562b511ff519a44e18acb764ea6eab27ab4f58",
+  "status": "optimal",
+  "states": [
+    {
+      "mask": 0,
+      "distance": 0
+    },
+    {
+      "mask": 1,
+      "distance": 3
+    },
+    {
+      "mask": 2,
+      "distance": 8
+    },
+    {
+      "mask": 3,
+      "distance": 8
+    },
+    {
+      "mask": 4,
+      "distance": 15
+    },
+    {
+      "mask": 5,
+      "distance": 15
+    },
+    {
+      "mask": 6,
+      "distance": 15
+    },
+    {
+      "mask": 7,
+      "distance": 15
+    }
+  ],
+  "path": [
+    {
+      "action": "compute",
+      "node": "source",
+      "state": 1
+    },
+    {
+      "action": "compute",
+      "node": "analysis",
+      "state": 3
+    },
+    {
+      "action": "compute",
+      "node": "workspace",
+      "state": 7
+    },
+    {
+      "action": "evict",
+      "node": "analysis",
+      "state": 5
+    },
+    {
+      "action": "compute",
+      "node": "composite",
+      "state": 13
+    }
+  ],
+  "goal_state": 13,
+  "cost": 26,
+  "stats": {
+    "states_discovered": 8,
+    "states_settled": 8,
+    "transitions_examined": 22
+  }
+}

@@ -1,6 +1,6 @@
 ---
 status: generated
-last_verified: 2026-09-16
+last_verified: 2026-09-17
 ---
 # Repository Integrity
 
@@ -14,9 +14,9 @@ PASS **12**, BLOCKER **0**, WARN **0**.
 | `bug-quirk-registry` | **PASS** | BUG/QUIRK REGISTRY: PASS / entries 32 fixed 15 nonfixed 17 / sources {'adobe-fixed-issue': 14, 'adobe-known-issue': 2, 'adobe-sdk-known-issue': 1, 'sdk-contract-warning': 7, 'sdk-contract-quirk': 1, 'aeig-finding': 1, 'sdk-sample-pitfall': 2, 'sdk-contract-lifecycle': 1, 'sdk-contract-pitfall': 1, 'historical-abi-bug': 1, 'historical-compat-quirk': 1} / statuses {'fixed': 15, 'known/mitigated': 1, 'active-risk': 1, 'active-contract': 9, 'historical-pitfall': 1, 'sample-pitfall': 2, 'historical': 1, 'historical-compat': 1, 'known': 1} / wrote D:\Developer\After Effects Internals Guide\datasets\aeig-bug-quirk-registry.csv / wrote D:\Developer\After Effects Internals Guide\docs\reference\bug-quirk-registry.md |
 | `page-depth-audit` | **PASS** | e-model-analogs.md experiment;unknowns;crosslinks / 6 575 developed docs/host-integration/cpp-sdk/state-api-evolution.md version;unknowns;crosslinks / 6 593 developed docs/persistence/sequence-data.md experiment;unknowns;crosslinks / 6 596 developed docs/persistence/aep-binary-model.md failure_bug;experiment;crosslinks / 6 597 developed docs/threading-system/overview.md experiment;unknowns;crosslinks / 6 640 developed docs/state-model/handle-lifetimes.md evidence;experiment;unknowns;crosslinks / 7 301 developed docs/observability/trace-database.md failure_bug;unknowns / 7 361 developed docs/evaluation/evaluation-model.md api_context;failure_bug / 7 369 developed docs/vector-shape-system/overview.md failure_bug;unknowns / wrote D:\Developer\After Effects Internals Guide\datasets\aeig-page-depth-audit.csv / wrote D:\Developer\After Effects Internals Guide\docs\reference\page-depth-audit.md |
 | `docs-depth-floor` | **PASS** | scored=162 below_developed=0 |
-| `json-parse` | **PASS** | files=19 failed=0 |
+| `json-parse` | **PASS** | files=18 failed=0 |
 | `dataset-csv-structure` | **PASS** | files=68 malformed=0 empty=0 |
-| `canonical-user-run-package` | **PASS** | package_files=7/7 / aex_sha256=884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792 / python_compile=26/26 / manifest_json=ok / jsx_syntax=ok / AEIG-L5 package audit: GREEN |
+| `canonical-user-run-package` | **PASS** | package_files=7/7 / aex_sha256=DA8693DBD6B7CCC1BBF3043608D4FD7C93557D9CAF3F08A6B78D0BD5B6A1BB0F / python_compile=26/26 / manifest_json=ok / jsx_syntax=ok / AEIG-L5 package audit: GREEN |
 | `docs-build-dependencies` | **PASS** | requirements-docs.txt=present; mkdocs_local=no |
 | `docs-site-config` | **PASS** | site config: PASS / markdown pages 225; assets=2/2 |
-| `docs-strict-build` | **PASS** | suitable for production use /  �� /  ��  Our full analysis: /  �� /  ��  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/ /  / INFO    -  mkdocs_git_revision_date_localized_plugin: 'D:\Developer\After Effects Internals Guide\docs' has no git logs, using current timestamp / INFO    -  Cleaning site directory / INFO    -  Building documentation to directory: D:\Developer\After Effects Internals Guide\scratch\site-strict-audit / INFO    -  Documentation built in 12.00 seconds |
+| `docs-strict-build` | **PASS** | suitable for production use /  �� /  ��  Our full analysis: /  �� /  ��  https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/ /  / INFO    -  mkdocs_git_revision_date_localized_plugin: 'D:\Developer\After Effects Internals Guide\docs' has no git logs, using current timestamp / INFO    -  Cleaning site directory / INFO    -  Building documentation to directory: D:\Developer\After Effects Internals Guide\scratch\site-strict-audit / INFO    -  Documentation built in 13.87 seconds |

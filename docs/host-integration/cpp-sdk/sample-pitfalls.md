@@ -65,3 +65,11 @@ A sample can prove that Adobe expected a call sequence or feature family to exis
 AEIG records sample defects as developer hazards while keeping the underlying public API contract separate.
 
 Cross-links: `suite-versioning-and-abi.md`, `host-reimplementation-failure-patterns.md`, `performance-and-escape-hatches.md`, `../../mfr/state-ownership.md`, `../../image-pipeline/pixel-formats.md`.
+
+## Verified corrections and numerical counterexamples
+
+The [source repair study](verified-sample-repairs.md) now provides a pinned-source patch and compiled extracted-code regressions for SmartyPants. It additionally identifies two concrete Alpha blend inconsistencies: the 16-bpc weights sum to 255 before division by 256, and the 32-bpc Alpha path ignores Blend. A common affine expression restores the intended interpolation while preserving the sample's integer quantization.
+
+The dynamic-mask correction preserves unrelated bits, but DOESNT_NEED_EMPTY_PIXELS is obsolete for SmartFX in the current Guide, so no current-host pixel or performance impact is inferred from that flag expression alone. The Compute Cache example correction makes the literal byte length explicit; it does not prove hash uniqueness or a previously observed cache failure.
+
+All corrections live in experiments/sdk-contract-fixes rather than the original SDK. The package distinguishes source-level validation from a completed AE host test.

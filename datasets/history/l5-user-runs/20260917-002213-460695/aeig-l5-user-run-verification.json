@@ -1,0 +1,139 @@
+{
+  "session": {
+    "exists": true,
+    "ok": false,
+    "errors": [
+      "static_rc_fingerprint"
+    ],
+    "issued_unix_ms": 1789571842588,
+    "session_id": "20260916T151722Z-3E6315C1A57A",
+    "fingerprint": "8B788DEA934D080DFB5401B7E3DD00025ADA6214CC1600D04976B81C585748B9",
+    "aex_hash": "884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792"
+  },
+  "receipt_analysis": {
+    "exit": 2,
+    "stdout": "not-run: missing D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-CACHE-002\\receipt-matrix.tsv\n",
+    "stderr": ""
+  },
+  "plugin_analysis": {
+    "exit": 2,
+    "stdout": "not-run: missing D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\suite-acquisition.tsv\n",
+    "stderr": ""
+  },
+  "rg_analysis": {
+    "exit": 2,
+    "stdout": "trace missing D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-RG-001\\host-trace.log\n",
+    "stderr": ""
+  },
+  "script_analysis": {
+    "exit": 2,
+    "stdout": "not-run: missing D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\runtime-reflection.tsv\n",
+    "stderr": ""
+  },
+  "aex": {
+    "exists": true,
+    "sha256": "884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792",
+    "matches_expected": true
+  },
+  "output_A": {
+    "exists": false,
+    "size": 0,
+    "sha256": ""
+  },
+  "output_B": {
+    "exists": false,
+    "size": 0,
+    "sha256": ""
+  },
+  "output_pair_materialized": false,
+  "outputs_differ": false,
+  "fixture": {
+    "exists": false,
+    "renderer": false,
+    "three_d": false,
+    "three_effects": false,
+    "pass_a": false,
+    "initial_blur_10": false,
+    "mutation_blur_75": false,
+    "pass_b": false,
+    "script_exit": false,
+    "no_script_error": true
+  },
+  "environment": {
+    "exists": false,
+    "ae_version": "",
+    "build_number": "",
+    "os": "",
+    "ae_26_3": false,
+    "build_number_present": false,
+    "os_present": false,
+    "session_id_matches": false,
+    "session_fingerprint_matches": false,
+    "session_issued_matches": false,
+    "session_aex_matches": false
+  },
+  "raw_session_time": {
+    "tolerance_ms": 2000,
+    "files": {
+      "receipt": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "fixture": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "output_a": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "output_b": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "environment": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "suite": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "trace": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "trace_control": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "current_pass": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "reflection": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      }
+    },
+    "all_after_issue": false
+  },
+  "current_pass_done": false,
+  "fixture_session_matches": false,
+  "capture_complete": false,
+  "semantic_checks": {
+    "outputs_differ": false
+  },
+  "semantic_checks_passed": false,
+  "all_required_checks_passed": false
+}

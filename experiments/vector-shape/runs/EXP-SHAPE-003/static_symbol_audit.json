@@ -1,0 +1,479 @@
+{
+  "experiment_id": "EXP-SHAPE-003",
+  "evidence": "E2-L (static module inventory only)",
+  "conclusion": "Symbols observed only. No code execution or new stream registration is proven.",
+  "source": "D:\\Developer\\After Effects Internals Guide\\datasets\\ae-2025-vector-shape-symbols.csv",
+  "source_sha256": "484cb6882928b52f34d27f5e2be5004508b52cf70270e10902708004543b70bb",
+  "row_count": 2517,
+  "patterns": {
+    "factory": {
+      "TDB_StreamFactory": {
+        "count": 79,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "55   36 0006B950 ??0?$TDB_DerivedStream@UBEE_GradientColorsStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "112   6F 0006BEE0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "202   C9 0006C170 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "244   F3 0006C380 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "253   FC 0006C430 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "399  18E 0002ACF0 ??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          }
+        ]
+      },
+      "TDB_MatchName": {
+        "count": 120,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "55   36 0006B950 ??0?$TDB_DerivedStream@UBEE_GradientColorsStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "112   6F 0006BEE0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "202   C9 0006C170 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "244   F3 0006C380 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "253   FC 0006C430 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "399  18E 0002ACF0 ??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          }
+        ]
+      },
+      "BEE_GenericShapeStream": {
+        "count": 18,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "398  18D 0002ACC0 ??0BEE_GenericShapeStream@@QEAA@AEBVOM_Stream@@AEBUTDB_CloneStreamParams@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "399  18E 0002ACF0 ??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "1186  4A1 00031F50 ??1BEE_GenericShapeStream@@UEAA@XZ"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "3023  BCE 00ECC128 ??_7BEE_GenericShapeStream@@6B@"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "3378  D31 00367E80 ?AbsToRelFromClipboard@BEE_GenericShapeStream@@QEAAXPEBVBEE_Layer@@PEBVTDB_StreamIDPath@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "5392 150F 00368270 ?CloneToOMStream@BEE_GenericShapeStream@@QEBAPEAVOM_Stream@@XZ"
+          }
+        ]
+      }
+    },
+    "vector_stream": {
+      "BEE_VectorStream": {
+        "count": 1452,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "110   6D 0006BE80 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "111   6E 0006BEB0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@AEBV0@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "112   6F 0006BEE0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "200   C7 0006C100 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "201   C8 0006C130 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "202   C9 0006C170 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          }
+        ]
+      },
+      "PopulateVectorArt": {
+        "count": 1,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12076 2F2B 006ECB60 ?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          }
+        ]
+      }
+    },
+    "vector_art": {
+      "BEE_VectorArt": {
+        "count": 208,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "863  35E 0029D510 ??0BaseContainer@BEE_VectorArt@@QEAA@$$QEAV01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "864  35F 0029D5A0 ??0BaseContainer@BEE_VectorArt@@QEAA@AEBV01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "865  360 006C8ED0 ??0BaseContainer@BEE_VectorArt@@QEAA@W4Type@BaseObject@1@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "866  361 006C8F60 ??0BaseObject@BEE_VectorArt@@QEAA@AEBV01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "867  362 006C9040 ??0BaseObject@BEE_VectorArt@@QEAA@W4Type@01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "894  37D 0029D780 ??0Filter@BEE_VectorArt@@QEAA@$$QEAV01@@Z"
+          }
+        ]
+      },
+      "OriginInfo": {
+        "count": 24,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "925  39C 0029DB60 ??0OriginInfo@BEE_VectorArt@@QEAA@$$QEAV01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "926  39D 0029DBA0 ??0OriginInfo@BEE_VectorArt@@QEAA@AEBV01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "927  39E 006C9700 ??0OriginInfo@BEE_VectorArt@@QEAA@AEBVTDB_StreamIDPath@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "928  39F 0029DBE0 ??0OriginInfo@BEE_VectorArt@@QEAA@XZ"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "1402  579 0029E670 ??1OriginInfo@BEE_VectorArt@@QEAA@XZ"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "2731  AAA 0029EB90 ??4OriginInfo@BEE_VectorArt@@QEAAAEAV01@$$QEAV01@@Z"
+          }
+        ]
+      },
+      "GetBounds": {
+        "count": 2,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "6526 197D 006CD3C0 ?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "6527 197E 006CD5A0 ?GetBounds@Graphic@BEE_VectorArt@@UEBA?AU?$pair@_NUM_FloatRect@@@std@@AEBVM_Matrix3@@U?$pair@V?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@4@W4RenderExtentMode@2@@Z"
+          }
+        ]
+      }
+    },
+    "raster_graph": {
+      "Rasterize2DGraph": {
+        "count": 3,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12111 2F4E 0028F520 ?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12112 2F4F 005AE150 ?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12113 2F50 006E3E90 ?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          }
+        ]
+      },
+      "RG_RenderNode": {
+        "count": 3,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12111 2F4E 0028F520 ?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12112 2F4F 005AE150 ?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12113 2F50 006E3E90 ?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          }
+        ]
+      },
+      "C_AGMDLTranslatePort": {
+        "count": 9,
+        "modules": [
+          "BEE.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "878  36D 0024EA90 ??0C_AGMDLTranslatePort@@QEAA@AEBV0@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "879  36E 0024EAE0 ??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "1381  564 002527E0 ??1C_AGMDLTranslatePort@@QEAA@XZ"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "2659  A62 00252E40 ??4C_AGMDLTranslatePort@@QEAAAEAV0@AEBV0@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "8402 20D1 00281140 ?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "9463 24F6 006831E0 ?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ"
+          }
+        ]
+      }
+    },
+    "agm_bridge": {
+      "CAGMPath": {
+        "count": 15,
+        "modules": [
+          "BEE.dll",
+          "COR.dll",
+          "drawbotagm.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "930  3A1 006C97B0 ??0Path@BEE_VectorArt@@QEAA@AEBVCAGMPath@BIB_T_MT@@W4Usage@01@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "6226 1851 006CD1C0 ?FindGraphicPaths@BEE_VectorArt@@YAXAEBVGroup@1@AEBVOriginInfo@1@AEAVCAGMPath@BIB_T_MT@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "9268 2433 006CEBC0 ?GetPaths@Graphic@BEE_VectorArt@@QEBA?AVCAGMPath@BIB_T_MT@@U?$pair@V?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "9910 26B5 006DCCB0 ?GetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "export",
+            "entry": "12046 2F0D 006DEF20 ?OffsetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "relation": "import",
+            "entry": "3A ?COR_CombineAGMPaths@@YA?AVCAGMPath@BIB_T_MT@@AEBV?$vector@VCAGMPath@BIB_T_MT@@V?$allocator@VCAGMPath@BIB_T_MT@@@std@@@std@@_N@Z"
+          }
+        ]
+      },
+      "COR_NewAGMPort": {
+        "count": 2,
+        "modules": [
+          "BEE.dll",
+          "COR.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "import",
+            "entry": "4C ?COR_NewAGMPort@@YAXPEBVPF_World@@AEAV?$U_ScAutoPtr@VCAGMRasterPort@BIB_T_MT@@@@@Z"
+          },
+          {
+            "module": "COR.dll",
+            "relation": "export",
+            "entry": "77   4C 0000A410 ?COR_NewAGMPort@@YAXPEBVPF_World@@AEAV?$U_ScAutoPtr@VCAGMRasterPort@BIB_T_MT@@@@@Z"
+          }
+        ]
+      },
+      "COR_PlayOutlines": {
+        "count": 4,
+        "modules": [
+          "BEE.dll",
+          "COR.dll"
+        ],
+        "examples": [
+          {
+            "module": "BEE.dll",
+            "relation": "import",
+            "entry": "4F ?COR_PlayOutlines@@YAXAEBVCAGMPath@BIB_T_MT@@AEAUCOR_OutlinePlayer@@@Z"
+          },
+          {
+            "module": "COR.dll",
+            "relation": "export",
+            "entry": "80   4F 0000A5C0 ?COR_PlayOutlines@@YAXAEBVCAGMPath@BIB_T_MT@@AEAUCOR_OutlinePlayer@@@Z"
+          },
+          {
+            "module": "COR.dll",
+            "relation": "export",
+            "entry": "81   50 0000A740 ?COR_PlayOutlines@@YAXAEBVCAGMSharedBezierPath@BIB_T_MT@@AEAUCOR_OutlinePlayer@@@Z"
+          },
+          {
+            "module": "COR.dll",
+            "relation": "export",
+            "entry": "82   51 0000A860 ?COR_PlayOutlines@@YAXAEBVCAIMBezierPath@BIB_T_MT@@AEAUCOR_OutlinePlayer@@@Z"
+          }
+        ]
+      },
+      "AdobeSVGAGM": {
+        "count": 4,
+        "modules": [
+          "AdobeSVGAGM.dll"
+        ],
+        "examples": [
+          {
+            "module": "AdobeSVGAGM.dll",
+            "relation": "export",
+            "entry": "Dump of file C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\AdobeSVGAGM.dll"
+          },
+          {
+            "module": "AdobeSVGAGM.dll",
+            "relation": "export",
+            "entry": "Section contains the following exports for AdobeSVGAGM.dll"
+          },
+          {
+            "module": "AdobeSVGAGM.dll",
+            "relation": "import",
+            "entry": "Dump of file C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\AdobeSVGAGM.dll"
+          },
+          {
+            "module": "AdobeSVGAGM.dll",
+            "relation": "dependent",
+            "entry": "Dump of file C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\AdobeSVGAGM.dll"
+          }
+        ]
+      }
+    }
+  }
+}

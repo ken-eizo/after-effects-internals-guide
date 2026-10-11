@@ -1,0 +1,1948 @@
+{
+  "evidence": "E2-L",
+  "limits": "static disassembly only, not complete CFG, unresolved indirect calls; no public extension authorization",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "source_path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+      "functions": {
+        "RegisterStreams@BEE_VectorLayer@@": {
+          "rva": "0x6e4100",
+          "export": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "scan_bytes": 416,
+          "instructions_seen": 115,
+          "calls": [
+            {
+              "address": "0x6e4145",
+              "operand": "0x1806622b0",
+              "resolved_export_target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "address": "0x6e4166",
+              "operand": "0x180662d60",
+              "resolved_export_target": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "address": "0x6e418f",
+              "operand": "0x18036d5b0",
+              "resolved_export_target": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x6e41a6",
+              "operand": "0x18065f800",
+              "resolved_export_target": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "address": "0x6e41dc",
+              "operand": "0x18065f590",
+              "resolved_export_target": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x6e41fa",
+              "operand": "qword ptr [rip + 0x7dcfd0]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x6e420f",
+              "operand": "0x18065f9f0",
+              "resolved_export_target": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x6e4232",
+              "operand": "0x1800c7810",
+              "resolved_export_target": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "address": "0x6e423f",
+              "operand": "0x180ce9610",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x6e4266",
+              "operand": "0x180ceacc8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x6e427c",
+              "operand": "0x180ceacc8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x6e4292",
+              "operand": "0x180ceacc8",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1806E4100 jmp 0x18076b6f0",
+            "1806E4105 int3 ",
+            "1806E4106 int3 ",
+            "1806E4107 int3 ",
+            "1806E4108 int3 ",
+            "1806E4109 int3 ",
+            "1806E410A int3 ",
+            "1806E410B int3 ",
+            "1806E410C int3 ",
+            "1806E410D int3 ",
+            "1806E410E int3 ",
+            "1806E410F int3 ",
+            "1806E4110 mov qword ptr [rsp + 0x18], rbx",
+            "1806E4115 mov qword ptr [rsp + 0x20], rsi",
+            "1806E411A push rdi",
+            "1806E411B sub rsp, 0x70",
+            "1806E411F mov rax, qword ptr [rip + 0xe3561a]",
+            "1806E4126 xor rax, rsp",
+            "1806E4129 mov qword ptr [rsp + 0x60], rax",
+            "1806E412E mov rdi, rdx",
+            "1806E4131 mov rbx, rcx",
+            "1806E4134 cmp byte ptr [rcx], 0",
+            "1806E4137 sete r9b",
+            "1806E413B mov r8d, 2",
+            "1806E4141 mov rcx, qword ptr [rcx + 8]",
+            "1806E4145 call 0x1806622b0",
+            "1806E414A cmp byte ptr [rbx + 1], 0",
+            "1806E414E je 0x1806e4237",
+            "1806E4154 mov byte ptr [rsp + 0x20], 1",
+            "1806E4159 xor r9d, r9d",
+            "1806E415C xor r8d, r8d",
+            "1806E415F mov rdx, rdi",
+            "1806E4162 mov rcx, qword ptr [rbx + 8]",
+            "1806E4166 call 0x180662d60",
+            "1806E416B test eax, eax",
+            "1806E416D jne 0x1806e426c",
+            "1806E4173 xor esi, esi",
+            "1806E4175 mov dword ptr [rsp + 0x38], esi",
+            "1806E4179 mov dword ptr [rsp + 0x3c], 1",
+            "1806E4181 mov r9, qword ptr [rbx + 8]",
+            "1806E4185 lea r8, [rsp + 0x38]",
+            "1806E418A mov rdx, rdi",
+            "1806E418D mov cl, 1",
+            "1806E418F call 0x18036d5b0",
+            "1806E4194 test eax, eax",
+            "1806E4196 jne 0x1806e4282",
+            "1806E419C xor r8d, r8d",
+            "1806E419F mov rdx, rdi",
+            "1806E41A2 mov rcx, qword ptr [rbx + 8]",
+            "1806E41A6 call 0x18065f800",
+            "1806E41AB test eax, eax",
+            "1806E41AD jne 0x1806e4256",
+            "1806E41B3 vpxor xmm0, xmm0, xmm0",
+            "1806E41B7 vmovups xmmword ptr [rsp + 0x40], xmm0",
+            "1806E41BD vmovdqu xmm1, xmmword ptr [rip + 0x808dab]",
+            "1806E41C5 vmovdqu xmmword ptr [rsp + 0x50], xmm1",
+            "1806E41CB mov word ptr [rsp + 0x40], si",
+            "1806E41D0 mov r8, qword ptr [rbx + 8]",
+            "1806E41D4 mov rdx, rdi",
+            "1806E41D7 lea rcx, [rsp + 0x40]",
+            "1806E41DC call 0x18065f590",
+            "1806E41E1 nop ",
+            "1806E41E2 mov rdx, qword ptr [rsp + 0x58]",
+            "1806E41E7 cmp rdx, 7",
+            "1806E41EB jbe 0x1806e4201",
+            "1806E41ED lea rdx, [rdx*2 + 2]",
+            "1806E41F5 mov rcx, qword ptr [rsp + 0x40]",
+            "1806E41FA call qword ptr [rip + 0x7dcfd0]",
+            "1806E4200 nop ",
+            "1806E4201 mov r9, qword ptr [rbx + 8]",
+            "1806E4205 mov r8, rdi",
+            "1806E4208 xor edx, edx",
+            "1806E420A mov ecx, 0xffffffff",
+            "1806E420F call 0x18065f9f0",
+            "1806E4214 mov rax, qword ptr [rbx + 0x10]",
+            "1806E4218 test rax, rax",
+            "1806E421B je 0x1806e4237",
+            "1806E421D mov qword ptr [rsp + 0x20], rax",
+            "1806E4222 xor r9d, r9d",
+            "1806E4225 mov r8d, 1",
+            "1806E422B mov rdx, rdi",
+            "1806E422E mov rcx, qword ptr [rbx + 8]",
+            "1806E4232 call 0x1800c7810",
+            "1806E4237 mov rcx, qword ptr [rsp + 0x60]",
+            "1806E423C xor rcx, rsp",
+            "1806E423F call 0x180ce9610",
+            "1806E4244 lea r11, [rsp + 0x70]",
+            "1806E4249 mov rbx, qword ptr [r11 + 0x20]",
+            "1806E424D mov rsi, qword ptr [r11 + 0x28]",
+            "1806E4251 mov rsp, r11",
+            "1806E4254 pop rdi",
+            "1806E4255 ret ",
+            "1806E4256 mov dword ptr [rsp + 0x30], eax",
+            "1806E425A lea rdx, [rip + 0xc9b3a7]",
+            "1806E4261 lea rcx, [rsp + 0x30]",
+            "1806E4266 call 0x180ceacc8",
+            "1806E426B int3 ",
+            "1806E426C mov dword ptr [rsp + 0x30], eax",
+            "1806E4270 lea rdx, [rip + 0xc9b391]",
+            "1806E4277 lea rcx, [rsp + 0x30]"
+          ]
+        },
+        "RegisterStreams@BEE_TextLayer@@": {
+          "rva": "0x5ae290",
+          "export": "?RegisterStreams@BEE_TextLayer@@SAXXZ",
+          "scan_bytes": 32,
+          "instructions_seen": 17,
+          "calls": [
+            {
+              "address": "0x5ae294",
+              "operand": "qword ptr [rip + 0x911576]",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1805AE290 sub rsp, 0x28",
+            "1805AE294 call qword ptr [rip + 0x911576]",
+            "1805AE29A add rsp, 0x28",
+            "1805AE29E jmp 0x1805ca900",
+            "1805AE2A3 int3 ",
+            "1805AE2A4 int3 ",
+            "1805AE2A5 int3 ",
+            "1805AE2A6 int3 ",
+            "1805AE2A7 int3 ",
+            "1805AE2A8 int3 ",
+            "1805AE2A9 int3 ",
+            "1805AE2AA int3 ",
+            "1805AE2AB int3 ",
+            "1805AE2AC int3 ",
+            "1805AE2AD int3 ",
+            "1805AE2AE int3 ",
+            "1805AE2AF int3 "
+          ]
+        },
+        "RegisterStreams@BEE_Layer@@": {
+          "rva": "0x2ec310",
+          "export": "?RegisterStreams@BEE_Layer@@SAX_N@Z",
+          "scan_bytes": 304,
+          "instructions_seen": 66,
+          "calls": [
+            {
+              "address": "0x2ec31d",
+              "operand": "0x1802e0a00",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec322",
+              "operand": "qword ptr [rip + 0xbd1ab8]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec393",
+              "operand": "qword ptr [rip + 0xbd204f]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec399",
+              "operand": "0x18023abf0",
+              "resolved_export_target": "?BEE_BetaFeature_AreExpressionEffectsAlwaysAllowedEnabled@@YA_NXZ"
+            },
+            {
+              "address": "0x2ec3d3",
+              "operand": "qword ptr [rip + 0xbd200f]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec3e4",
+              "operand": "qword ptr [rip + 0xbd2006]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec3fc",
+              "operand": "0x180ce9710",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec418",
+              "operand": "qword ptr [rip + 0xbd1fba]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec425",
+              "operand": "0x180ce94e0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ec432",
+              "operand": "0x180ce96a4",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1802EC310 mov qword ptr [rsp + 8], rbx",
+            "1802EC315 push rdi",
+            "1802EC316 sub rsp, 0x60",
+            "1802EC31A movzx ebx, cl",
+            "1802EC31D call 0x1802e0a00",
+            "1802EC322 call qword ptr [rip + 0xbd1ab8]",
+            "1802EC328 mov rdi, rax",
+            "1802EC32B mov r8d, dword ptr [rip + 0x130a8ee]",
+            "1802EC332 mov rdx, qword ptr gs:[0x58]",
+            "1802EC33B mov eax, 0xb0",
+            "1802EC340 mov rdx, qword ptr [rdx + r8*8]",
+            "1802EC344 mov edx, dword ptr [rax + rdx]",
+            "1802EC347 cmp dword ptr [rip + 0x1300323], edx",
+            "1802EC34D jg 0x1802ec3f5",
+            "1802EC353 lea rcx, [rip + 0x13002f6]",
+            "1802EC35A test bl, bl",
+            "1802EC35C je 0x1802ec3e4",
+            "1802EC362 lea rbx, [rip + 0xc2bf87]",
+            "1802EC369 mov qword ptr [rsp + 0x20], rbx",
+            "1802EC36E lea rax, [rip - 0x2a4d75]",
+            "1802EC375 mov qword ptr [rsp + 0x28], rax",
+            "1802EC37A lea rax, [rsp + 0x20]",
+            "1802EC37F mov qword ptr [rsp + 0x58], rax",
+            "1802EC384 xor r9d, r9d",
+            "1802EC387 lea r8, [rsp + 0x20]",
+            "1802EC38C lea rdx, [rip + 0x1300ca5]",
+            "1802EC393 call qword ptr [rip + 0xbd204f]",
+            "1802EC399 call 0x18023abf0",
+            "1802EC39E test al, al",
+            "1802EC3A0 je 0x1802ec3ea",
+            "1802EC3A2 mov qword ptr [rsp + 0x20], rbx",
+            "1802EC3A7 lea rax, [rip - 0x2a525e]",
+            "1802EC3AE mov qword ptr [rsp + 0x28], rax",
+            "1802EC3B3 lea rax, [rsp + 0x20]",
+            "1802EC3B8 mov qword ptr [rsp + 0x58], rax",
+            "1802EC3BD xor r9d, r9d",
+            "1802EC3C0 lea r8, [rsp + 0x20]",
+            "1802EC3C5 lea rdx, [rip + 0x1300ccc]",
+            "1802EC3CC lea rcx, [rip + 0x130027d]",
+            "1802EC3D3 call qword ptr [rip + 0xbd200f]",
+            "1802EC3D9 mov rbx, qword ptr [rsp + 0x70]",
+            "1802EC3DE add rsp, 0x60",
+            "1802EC3E2 pop rdi",
+            "1802EC3E3 ret ",
+            "1802EC3E4 call qword ptr [rip + 0xbd2006]",
+            "1802EC3EA mov rbx, qword ptr [rsp + 0x70]",
+            "1802EC3EF add rsp, 0x60",
+            "1802EC3F3 pop rdi",
+            "1802EC3F4 ret ",
+            "1802EC3F5 lea rcx, [rip + 0x1300274]",
+            "1802EC3FC call 0x180ce9710",
+            "1802EC401 cmp dword ptr [rip + 0x1300268], -1",
+            "1802EC408 jne 0x1802ec353",
+            "1802EC40E mov rdx, rdi",
+            "1802EC411 lea rcx, [rip + 0x1300238]",
+            "1802EC418 call qword ptr [rip + 0xbd1fba]",
+            "1802EC41E lea rcx, [rip + 0xbbff6b]",
+            "1802EC425 call 0x180ce94e0",
+            "1802EC42A nop ",
+            "1802EC42B lea rcx, [rip + 0x130023e]",
+            "1802EC432 call 0x180ce96a4",
+            "1802EC437 jmp 0x1802ec353",
+            "1802EC43C int3 ",
+            "1802EC43D int3 ",
+            "1802EC43E int3 ",
+            "1802EC43F int3 "
+          ]
+        },
+        "RegisterStreams@BEE_AVLayer@@": {
+          "rva": "0x28fa80",
+          "export": "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z",
+          "scan_bytes": 208,
+          "instructions_seen": 61,
+          "calls": [
+            {
+              "address": "0x28fa89",
+              "operand": "0x1802fbb60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fa90",
+              "operand": "0x18025bb60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fa97",
+              "operand": "0x18025c480",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fa9e",
+              "operand": "0x18025bd60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28faa5",
+              "operand": "0x18025bf60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28faac",
+              "operand": "0x18025bc80",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fae9",
+              "operand": "0x180287bd0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fafa",
+              "operand": "0x18065db90",
+              "resolved_export_target": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "address": "0x28fb08",
+              "operand": "qword ptr [rip + 0xc2e402]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fb11",
+              "operand": "qword ptr [rip + 0xc2e1c1]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x28fb46",
+              "operand": "0x180ceacc8",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "18028FA80 sub rsp, 0x28",
+            "18028FA84 mov rdx, rcx",
+            "18028FA87 mov cl, 1",
+            "18028FA89 call 0x1802fbb60",
+            "18028FA8E mov cl, 1",
+            "18028FA90 call 0x18025bb60",
+            "18028FA95 mov cl, 1",
+            "18028FA97 call 0x18025c480",
+            "18028FA9C mov cl, 1",
+            "18028FA9E call 0x18025bd60",
+            "18028FAA3 mov cl, 1",
+            "18028FAA5 call 0x18025bf60",
+            "18028FAAA mov cl, 1",
+            "18028FAAC call 0x18025bc80",
+            "18028FAB1 mov cl, 1",
+            "18028FAB3 add rsp, 0x28",
+            "18028FAB7 jmp 0x18025c5e0",
+            "18028FABC int3 ",
+            "18028FABD int3 ",
+            "18028FABE int3 ",
+            "18028FABF int3 ",
+            "18028FAC0 mov qword ptr [rsp + 0x18], rbx",
+            "18028FAC5 mov qword ptr [rsp + 0x20], rsi",
+            "18028FACA mov qword ptr [rsp + 0x10], rdx",
+            "18028FACF push rdi",
+            "18028FAD0 sub rsp, 0x20",
+            "18028FAD4 mov rbx, rdx",
+            "18028FAD7 mov rdi, rcx",
+            "18028FADA mov esi, dword ptr [rcx + 0xac]",
+            "18028FAE0 cmp esi, -1",
+            "18028FAE3 je 0x18028fb05",
+            "18028FAE5 add rcx, 8",
+            "18028FAE9 call 0x180287bd0",
+            "18028FAEE mov r9b, 1",
+            "18028FAF1 mov r8d, esi",
+            "18028FAF4 mov rdx, rbx",
+            "18028FAF7 mov rcx, rax",
+            "18028FAFA call 0x18065db90",
+            "18028FAFF test eax, eax",
+            "18028FB01 jne 0x18028fb36",
+            "18028FB03 jmp 0x18028fb1d",
+            "18028FB05 mov rcx, rbx",
+            "18028FB08 call qword ptr [rip + 0xc2e402]",
+            "18028FB0E mov rcx, rax",
+            "18028FB11 call qword ptr [rip + 0xc2e1c1]",
+            "18028FB17 mov dword ptr [rdi + 0xac], eax",
+            "18028FB1D mov rcx, rbx",
+            "18028FB20 mov rbx, qword ptr [rsp + 0x40]",
+            "18028FB25 mov rsi, qword ptr [rsp + 0x48]",
+            "18028FB2A add rsp, 0x20",
+            "18028FB2E pop rdi",
+            "18028FB2F jmp qword ptr [rip + 0xc2ecb2]",
+            "18028FB36 mov dword ptr [rsp + 0x30], eax",
+            "18028FB3A lea rdx, [rip + 0x10efac7]",
+            "18028FB41 lea rcx, [rsp + 0x30]",
+            "18028FB46 call 0x180ceacc8",
+            "18028FB4B int3 ",
+            "18028FB4C int3 ",
+            "18028FB4D int3 ",
+            "18028FB4E int3 ",
+            "18028FB4F int3 "
+          ]
+        },
+        "RegisterStreams@BEE_CameraLayer@@": {
+          "rva": "0x2ba790",
+          "export": "?RegisterStreams@BEE_CameraLayer@@SAXXZ",
+          "scan_bytes": 4096,
+          "instructions_seen": 1012,
+          "calls": [
+            {
+              "address": "0x2ba796",
+              "operand": "qword ptr [rip + 0xc03644]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba7a4",
+              "operand": "0x1802af0a0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba7dd",
+              "operand": "qword ptr [rip + 0xc03c7d]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba825",
+              "operand": "qword ptr [rip + 0xc040a5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba85b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba898",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba8c3",
+              "operand": "0x1802ada10",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba8d3",
+              "operand": "0x1802ada10",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba935",
+              "operand": "qword ptr [rip + 0xc03f95]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba96b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba9a8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba9d3",
+              "operand": "0x1802ada30",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2ba9e3",
+              "operand": "0x1802ada30",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baa45",
+              "operand": "qword ptr [rip + 0xc03e85]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baa7b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baab8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baae3",
+              "operand": "0x1802ada50",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baaf3",
+              "operand": "0x1802ada50",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bab55",
+              "operand": "qword ptr [rip + 0xc03d75]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bab8b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2babc8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2babf3",
+              "operand": "0x1802ada70",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bac03",
+              "operand": "0x1802ada70",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bac65",
+              "operand": "qword ptr [rip + 0xc03c65]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bac9b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bacd8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bad03",
+              "operand": "0x1802ada90",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bad13",
+              "operand": "0x1802ada90",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bad75",
+              "operand": "qword ptr [rip + 0xc03b55]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2badab",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bade8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bae13",
+              "operand": "0x1802adab0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bae23",
+              "operand": "0x1802adab0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bae85",
+              "operand": "qword ptr [rip + 0xc03a45]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baebb",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baef8",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baf23",
+              "operand": "0x1802adad0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baf33",
+              "operand": "0x1802adad0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2baf92",
+              "operand": "qword ptr [rip + 0xc03938]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bafcd",
+              "operand": "r9",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb011",
+              "operand": "r9",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb052",
+              "operand": "0x1802adaf0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb062",
+              "operand": "0x1802adaf0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb0c5",
+              "operand": "qword ptr [rip + 0xc03805]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb0fb",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb138",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb163",
+              "operand": "0x1802adb20",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb173",
+              "operand": "0x1802adb20",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb1d5",
+              "operand": "qword ptr [rip + 0xc036f5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb20b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb248",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb273",
+              "operand": "0x1802adb40",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb283",
+              "operand": "0x1802adb40",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb2e5",
+              "operand": "qword ptr [rip + 0xc035e5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb31b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb358",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb383",
+              "operand": "0x1802adb60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb393",
+              "operand": "0x1802adb60",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb3f5",
+              "operand": "qword ptr [rip + 0xc034d5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb42b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb468",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb493",
+              "operand": "0x1802adb80",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb4a3",
+              "operand": "0x1802adb80",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb505",
+              "operand": "qword ptr [rip + 0xc033c5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb53b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb578",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb5a3",
+              "operand": "0x1802adba0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb5b3",
+              "operand": "0x1802adba0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb615",
+              "operand": "qword ptr [rip + 0xc032b5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb64b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb688",
+              "operand": "r8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb6b3",
+              "operand": "0x1802adbc0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb6c3",
+              "operand": "0x1802adbc0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb725",
+              "operand": "qword ptr [rip + 0xc031a5]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2bb75b",
+              "operand": "r8",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1802BA790 push rbx",
+            "1802BA792 sub rsp, 0x60",
+            "1802BA796 call qword ptr [rip + 0xc03644]",
+            "1802BA79C mov rdx, rax",
+            "1802BA79F mov cl, 1",
+            "1802BA7A1 mov rbx, rax",
+            "1802BA7A4 call 0x1802af0a0",
+            "1802BA7A9 lea rax, [rip + 0xc5db40]",
+            "1802BA7B0 xor r9d, r9d",
+            "1802BA7B3 mov qword ptr [rsp + 0x20], rax",
+            "1802BA7B8 lea r8, [rsp + 0x20]",
+            "1802BA7BD lea rax, [rip - 0x239f54]",
+            "1802BA7C4 mov rcx, rbx",
+            "1802BA7C7 mov qword ptr [rsp + 0x28], rax",
+            "1802BA7CC lea rdx, [rip + 0x13329c5]",
+            "1802BA7D3 lea rax, [rsp + 0x20]",
+            "1802BA7D8 mov qword ptr [rsp + 0x58], rax",
+            "1802BA7DD call qword ptr [rip + 0xc03c7d]",
+            "1802BA7E3 add rsp, 0x60",
+            "1802BA7E7 pop rbx",
+            "1802BA7E8 ret ",
+            "1802BA7E9 int3 ",
+            "1802BA7EA int3 ",
+            "1802BA7EB int3 ",
+            "1802BA7EC int3 ",
+            "1802BA7ED int3 ",
+            "1802BA7EE int3 ",
+            "1802BA7EF int3 ",
+            "1802BA7F0 mov qword ptr [rsp + 8], rbx",
+            "1802BA7F5 mov qword ptr [rsp + 0x10], rsi",
+            "1802BA7FA mov qword ptr [rsp + 0x18], rdi",
+            "1802BA7FF mov qword ptr [rsp + 0x20], r14",
+            "1802BA804 push r15",
+            "1802BA806 sub rsp, 0x80",
+            "1802BA80D vmovaps xmmword ptr [rsp + 0x70], xmm6",
+            "1802BA813 mov rsi, r9",
+            "1802BA816 mov r14, r8",
+            "1802BA819 mov r15, rdx",
+            "1802BA81C mov rdi, rcx",
+            "1802BA81F xor ebx, ebx",
+            "1802BA821 mov dword ptr [rsp + 0x20], ebx",
+            "1802BA825 call qword ptr [rip + 0xc040a5]",
+            "1802BA82B test al, al",
+            "1802BA82D jne 0x1802ba8b3",
+            "1802BA833 mov qword ptr [rsp + 0x48], rdi",
+            "1802BA838 mov rax, qword ptr [rdi]",
+            "1802BA83B mov r8, qword ptr [rax + 0x300]",
+            "1802BA842 mov rax, qword ptr [r15]",
+            "1802BA845 mov qword ptr [rsp + 0x28], rax",
+            "1802BA84A mov dword ptr [rsp + 0x30], ebx",
+            "1802BA84E mov qword ptr [rsp + 0x38], rsi",
+            "1802BA853 lea rdx, [rsp + 0x28]",
+            "1802BA858 mov rcx, rdi",
+            "1802BA85B call r8",
+            "1802BA85E vmovaps xmm6, xmm0",
+            "1802BA862 vmovsd qword ptr [rsp + 0x40], xmm0",
+            "1802BA868 mov dword ptr [rsp + 0x20], 1",
+            "1802BA870 mov qword ptr [rsp + 0x30], rdi",
+            "1802BA875 mov rax, qword ptr [rdi]",
+            "1802BA878 mov r8, qword ptr [rax + 0x300]",
+            "1802BA87F mov rax, qword ptr [r14]",
+            "1802BA882 mov qword ptr [rsp + 0x50], rax",
+            "1802BA887 mov dword ptr [rsp + 0x58], ebx",
+            "1802BA88B mov qword ptr [rsp + 0x60], rsi",
+            "1802BA890 lea rdx, [rsp + 0x50]",
+            "1802BA895 mov rcx, rdi",
+            "1802BA898 call r8",
+            "1802BA89B vmovsd qword ptr [rsp + 0x28], xmm0",
+            "1802BA8A1 mov ebx, 3",
+            "1802BA8A6 vucomisd xmm6, xmm0",
+            "1802BA8AA jp 0x1802ba8ae",
+            "1802BA8AC je 0x1802ba8b3",
+            "1802BA8AE xor dil, dil",
+            "1802BA8B1 jmp 0x1802ba8b6",
+            "1802BA8B3 mov dil, 1",
+            "1802BA8B6 test bl, 2",
+            "1802BA8B9 je 0x1802ba8c9",
+            "1802BA8BB and ebx, 0xfffffffd",
+            "1802BA8BE lea rcx, [rsp + 0x28]",
+            "1802BA8C3 call 0x1802ada10",
+            "1802BA8C8 nop ",
+            "1802BA8C9 test bl, 1",
+            "1802BA8CC je 0x1802ba8d8",
+            "1802BA8CE lea rcx, [rsp + 0x40]",
+            "1802BA8D3 call 0x1802ada10",
+            "1802BA8D8 movzx eax, dil",
+            "1802BA8DC lea r11, [rsp + 0x80]",
+            "1802BA8E4 mov rbx, qword ptr [r11 + 0x10]",
+            "1802BA8E8 mov rsi, qword ptr [r11 + 0x18]",
+            "1802BA8EC mov rdi, qword ptr [r11 + 0x20]",
+            "1802BA8F0 mov r14, qword ptr [r11 + 0x28]",
+            "1802BA8F4 vmovaps xmm6, xmmword ptr [rsp + 0x70]",
+            "1802BA8FA mov rsp, r11",
+            "1802BA8FD pop r15",
+            "1802BA8FF ret ",
+            "1802BA900 mov qword ptr [rsp + 8], rbx",
+            "1802BA905 mov qword ptr [rsp + 0x10], rsi",
+            "1802BA90A mov qword ptr [rsp + 0x18], rdi",
+            "1802BA90F mov qword ptr [rsp + 0x20], r14",
+            "1802BA914 push r15"
+          ]
+        },
+        "RegisterStreams@BEE_ModelLayer@@": {
+          "rva": "0x339140",
+          "export": "?RegisterStreams@BEE_ModelLayer@@SAXXZ",
+          "scan_bytes": 16,
+          "instructions_seen": 11,
+          "calls": [],
+          "first_instructions": [
+            "180339140 mov cl, 1",
+            "180339142 jmp 0x180338a70",
+            "180339147 int3 ",
+            "180339148 int3 ",
+            "180339149 int3 ",
+            "18033914A int3 ",
+            "18033914B int3 ",
+            "18033914C int3 ",
+            "18033914D int3 ",
+            "18033914E int3 ",
+            "18033914F int3 "
+          ]
+        }
+      }
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "source_path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\BEE.dll",
+      "functions": {
+        "RegisterStreams@BEE_VectorLayer@@": {
+          "rva": "0x708a30",
+          "export": "?RegisterStreams@BEE_VectorLayer@@SAXXZ",
+          "scan_bytes": 400,
+          "instructions_seen": 106,
+          "calls": [
+            {
+              "address": "0x708a70",
+              "operand": "0x18067db00",
+              "resolved_export_target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "address": "0x708a91",
+              "operand": "0x18067e640",
+              "resolved_export_target": "?BEE_CmdSetStreamVary@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBUT_Time@@E_N@Z"
+            },
+            {
+              "address": "0x708ab8",
+              "operand": "0x180377fd0",
+              "resolved_export_target": "?BEE_ResetStream@@YAHEAEBVTDB_StreamIDPath@@PEBUT_Time@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x708acf",
+              "operand": "0x18067af80",
+              "resolved_export_target": "?BEE_CmdSetExpressionEnabled@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@E@Z"
+            },
+            {
+              "address": "0x708b05",
+              "operand": "0x18067ad00",
+              "resolved_export_target": "?BEE_CmdSetExpression@@YAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x708b23",
+              "operand": "qword ptr [rip + 0x811acf]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x708b38",
+              "operand": "0x18067b170",
+              "resolved_export_target": "?BEE_CmdSetExpressionFlags@@YAXIIPEBVTDB_StreamIDPath@@PEAVBEE_Layer@@@Z"
+            },
+            {
+              "address": "0x708b5b",
+              "operand": "0x1800cdd00",
+              "resolved_export_target": "?BEE_SelectKeyframe@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@W4BEE_SelectType@@HPEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z"
+            },
+            {
+              "address": "0x708b68",
+              "operand": "0x180d3ac30",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x708b8b",
+              "operand": "0x180d3bdf8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x708ba1",
+              "operand": "0x180d3bdf8",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x708bb7",
+              "operand": "0x180d3bdf8",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "180708A30 jmp 0x18078cf60",
+            "180708A35 int3 ",
+            "180708A36 int3 ",
+            "180708A37 int3 ",
+            "180708A38 int3 ",
+            "180708A39 int3 ",
+            "180708A3A int3 ",
+            "180708A3B int3 ",
+            "180708A3C int3 ",
+            "180708A3D int3 ",
+            "180708A3E int3 ",
+            "180708A3F int3 ",
+            "180708A40 mov qword ptr [rsp + 0x18], rbx",
+            "180708A45 push rdi",
+            "180708A46 sub rsp, 0x70",
+            "180708A4A mov rax, qword ptr [rip + 0xe9deaf]",
+            "180708A51 xor rax, rsp",
+            "180708A54 mov qword ptr [rsp + 0x60], rax",
+            "180708A59 mov rdi, rdx",
+            "180708A5C mov rbx, rcx",
+            "180708A5F cmp byte ptr [rcx], 0",
+            "180708A62 sete r9b",
+            "180708A66 mov r8d, 2",
+            "180708A6C mov rcx, qword ptr [rcx + 8]",
+            "180708A70 call 0x18067db00",
+            "180708A75 cmp byte ptr [rbx + 1], 0",
+            "180708A79 je 0x180708b60",
+            "180708A7F mov byte ptr [rsp + 0x20], 1",
+            "180708A84 xor r9d, r9d",
+            "180708A87 xor r8d, r8d",
+            "180708A8A mov rdx, rdi",
+            "180708A8D mov rcx, qword ptr [rbx + 8]",
+            "180708A91 call 0x18067e640",
+            "180708A96 test eax, eax",
+            "180708A98 jne 0x180708b91",
+            "180708A9E mov dword ptr [rsp + 0x38], eax",
+            "180708AA2 mov dword ptr [rsp + 0x3c], 1",
+            "180708AAA mov r9, qword ptr [rbx + 8]",
+            "180708AAE lea r8, [rsp + 0x38]",
+            "180708AB3 mov rdx, rdi",
+            "180708AB6 mov cl, 1",
+            "180708AB8 call 0x180377fd0",
+            "180708ABD test eax, eax",
+            "180708ABF jne 0x180708ba7",
+            "180708AC5 xor r8d, r8d",
+            "180708AC8 mov rdx, rdi",
+            "180708ACB mov rcx, qword ptr [rbx + 8]",
+            "180708ACF call 0x18067af80",
+            "180708AD4 test eax, eax",
+            "180708AD6 jne 0x180708b7b",
+            "180708ADC vpxor xmm0, xmm0, xmm0",
+            "180708AE0 vmovups xmmword ptr [rsp + 0x40], xmm0",
+            "180708AE6 vmovdqu xmm1, xmmword ptr [rip + 0x841c22]",
+            "180708AEE vmovdqu xmmword ptr [rsp + 0x50], xmm1",
+            "180708AF4 mov word ptr [rsp + 0x40], ax",
+            "180708AF9 mov r8, qword ptr [rbx + 8]",
+            "180708AFD mov rdx, rdi",
+            "180708B00 lea rcx, [rsp + 0x40]",
+            "180708B05 call 0x18067ad00",
+            "180708B0A nop ",
+            "180708B0B mov rdx, qword ptr [rsp + 0x58]",
+            "180708B10 cmp rdx, 7",
+            "180708B14 jbe 0x180708b2a",
+            "180708B16 lea rdx, [rdx*2 + 2]",
+            "180708B1E mov rcx, qword ptr [rsp + 0x40]",
+            "180708B23 call qword ptr [rip + 0x811acf]",
+            "180708B29 nop ",
+            "180708B2A mov r9, qword ptr [rbx + 8]",
+            "180708B2E mov r8, rdi",
+            "180708B31 xor edx, edx",
+            "180708B33 mov ecx, 0xffffffff",
+            "180708B38 call 0x18067b170",
+            "180708B3D mov rax, qword ptr [rbx + 0x10]",
+            "180708B41 test rax, rax",
+            "180708B44 je 0x180708b60",
+            "180708B46 mov qword ptr [rsp + 0x20], rax",
+            "180708B4B xor r9d, r9d",
+            "180708B4E mov r8d, 1",
+            "180708B54 mov rdx, rdi",
+            "180708B57 mov rcx, qword ptr [rbx + 8]",
+            "180708B5B call 0x1800cdd00",
+            "180708B60 mov rcx, qword ptr [rsp + 0x60]",
+            "180708B65 xor rcx, rsp",
+            "180708B68 call 0x180d3ac30",
+            "180708B6D mov rbx, qword ptr [rsp + 0x90]",
+            "180708B75 add rsp, 0x70",
+            "180708B79 pop rdi",
+            "180708B7A ret ",
+            "180708B7B mov dword ptr [rsp + 0x30], eax",
+            "180708B7F lea rdx, [rip + 0xcf2832]",
+            "180708B86 lea rcx, [rsp + 0x30]",
+            "180708B8B call 0x180d3bdf8",
+            "180708B90 int3 ",
+            "180708B91 mov dword ptr [rsp + 0x30], eax",
+            "180708B95 lea rdx, [rip + 0xcf281c]",
+            "180708B9C lea rcx, [rsp + 0x30]",
+            "180708BA1 call 0x180d3bdf8",
+            "180708BA6 int3 ",
+            "180708BA7 mov dword ptr [rsp + 0x30], eax",
+            "180708BAB lea rdx, [rip + 0xcf2806]"
+          ]
+        },
+        "RegisterStreams@BEE_TextLayer@@": {
+          "rva": "0x5cd7e0",
+          "export": "?RegisterStreams@BEE_TextLayer@@SAXXZ",
+          "scan_bytes": 32,
+          "instructions_seen": 17,
+          "calls": [
+            {
+              "address": "0x5cd7e4",
+              "operand": "qword ptr [rip + 0x94b18e]",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1805CD7E0 sub rsp, 0x28",
+            "1805CD7E4 call qword ptr [rip + 0x94b18e]",
+            "1805CD7EA add rsp, 0x28",
+            "1805CD7EE jmp 0x1805eafd0",
+            "1805CD7F3 int3 ",
+            "1805CD7F4 int3 ",
+            "1805CD7F5 int3 ",
+            "1805CD7F6 int3 ",
+            "1805CD7F7 int3 ",
+            "1805CD7F8 int3 ",
+            "1805CD7F9 int3 ",
+            "1805CD7FA int3 ",
+            "1805CD7FB int3 ",
+            "1805CD7FC int3 ",
+            "1805CD7FD int3 ",
+            "1805CD7FE int3 ",
+            "1805CD7FF int3 "
+          ]
+        },
+        "RegisterStreams@BEE_Layer@@": {
+          "rva": "0x2f4e50",
+          "export": "?RegisterStreams@BEE_Layer@@SAX_N@Z",
+          "scan_bytes": 304,
+          "instructions_seen": 66,
+          "calls": [
+            {
+              "address": "0x2f4e5d",
+              "operand": "0x1802e9930",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4e62",
+              "operand": "qword ptr [rip + 0xc220b0]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4ed3",
+              "operand": "qword ptr [rip + 0xc229ef]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4ed9",
+              "operand": "0x180243770",
+              "resolved_export_target": "?BEE_BetaFeature_AreExpressionEffectsAlwaysAllowedEnabled@@YA_NXZ"
+            },
+            {
+              "address": "0x2f4f13",
+              "operand": "qword ptr [rip + 0xc229af]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4f24",
+              "operand": "qword ptr [rip + 0xc229a6]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4f3c",
+              "operand": "0x180d3ad30",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4f58",
+              "operand": "qword ptr [rip + 0xc2295a]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4f65",
+              "operand": "0x180d3ab00",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2f4f72",
+              "operand": "0x180d3acc4",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1802F4E50 mov qword ptr [rsp + 8], rbx",
+            "1802F4E55 push rdi",
+            "1802F4E56 sub rsp, 0x60",
+            "1802F4E5A movzx ebx, cl",
+            "1802F4E5D call 0x1802e9930",
+            "1802F4E62 call qword ptr [rip + 0xc220b0]",
+            "1802F4E68 mov rdi, rax",
+            "1802F4E6B mov r8d, dword ptr [rip + 0x13b2816]",
+            "1802F4E72 mov rdx, qword ptr gs:[0x58]",
+            "1802F4E7B mov eax, 0xb0",
+            "1802F4E80 mov rdx, qword ptr [rdx + r8*8]",
+            "1802F4E84 mov edx, dword ptr [rax + rdx]",
+            "1802F4E87 cmp dword ptr [rip + 0x13a7fb3], edx",
+            "1802F4E8D jg 0x1802f4f35",
+            "1802F4E93 lea rcx, [rip + 0x13a7f86]",
+            "1802F4E9A test bl, bl",
+            "1802F4E9C je 0x1802f4f24",
+            "1802F4EA2 lea rbx, [rip + 0xc8069f]",
+            "1802F4EA9 mov qword ptr [rsp + 0x20], rbx",
+            "1802F4EAE lea rax, [rip - 0x2adf75]",
+            "1802F4EB5 mov qword ptr [rsp + 0x28], rax",
+            "1802F4EBA lea rax, [rsp + 0x20]",
+            "1802F4EBF mov qword ptr [rsp + 0x58], rax",
+            "1802F4EC4 xor r9d, r9d",
+            "1802F4EC7 lea r8, [rsp + 0x20]",
+            "1802F4ECC lea rdx, [rip + 0x13a89bd]",
+            "1802F4ED3 call qword ptr [rip + 0xc229ef]",
+            "1802F4ED9 call 0x180243770",
+            "1802F4EDE test al, al",
+            "1802F4EE0 je 0x1802f4f2a",
+            "1802F4EE2 mov qword ptr [rsp + 0x20], rbx",
+            "1802F4EE7 lea rax, [rip - 0x2ae42e]",
+            "1802F4EEE mov qword ptr [rsp + 0x28], rax",
+            "1802F4EF3 lea rax, [rsp + 0x20]",
+            "1802F4EF8 mov qword ptr [rsp + 0x58], rax",
+            "1802F4EFD xor r9d, r9d",
+            "1802F4F00 lea r8, [rsp + 0x20]",
+            "1802F4F05 lea rdx, [rip + 0x13a89e4]",
+            "1802F4F0C lea rcx, [rip + 0x13a7f0d]",
+            "1802F4F13 call qword ptr [rip + 0xc229af]",
+            "1802F4F19 mov rbx, qword ptr [rsp + 0x70]",
+            "1802F4F1E add rsp, 0x60",
+            "1802F4F22 pop rdi",
+            "1802F4F23 ret ",
+            "1802F4F24 call qword ptr [rip + 0xc229a6]",
+            "1802F4F2A mov rbx, qword ptr [rsp + 0x70]",
+            "1802F4F2F add rsp, 0x60",
+            "1802F4F33 pop rdi",
+            "1802F4F34 ret ",
+            "1802F4F35 lea rcx, [rip + 0x13a7f04]",
+            "1802F4F3C call 0x180d3ad30",
+            "1802F4F41 cmp dword ptr [rip + 0x13a7ef8], -1",
+            "1802F4F48 jne 0x1802f4e93",
+            "1802F4F4E mov rdx, rdi",
+            "1802F4F51 lea rcx, [rip + 0x13a7ec8]",
+            "1802F4F58 call qword ptr [rip + 0xc2295a]",
+            "1802F4F5E lea rcx, [rip + 0xc0fbeb]",
+            "1802F4F65 call 0x180d3ab00",
+            "1802F4F6A nop ",
+            "1802F4F6B lea rcx, [rip + 0x13a7ece]",
+            "1802F4F72 call 0x180d3acc4",
+            "1802F4F77 jmp 0x1802f4e93",
+            "1802F4F7C int3 ",
+            "1802F4F7D int3 ",
+            "1802F4F7E int3 ",
+            "1802F4F7F int3 "
+          ]
+        },
+        "RegisterStreams@BEE_AVLayer@@": {
+          "rva": "0x298cb0",
+          "export": "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z",
+          "scan_bytes": 208,
+          "instructions_seen": 58,
+          "calls": [
+            {
+              "address": "0x298cb9",
+              "operand": "0x180304640",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298cc0",
+              "operand": "0x180266710",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298cc7",
+              "operand": "0x180267030",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298cce",
+              "operand": "0x180266910",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298cd5",
+              "operand": "0x180266b10",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298cdc",
+              "operand": "0x180266830",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298d19",
+              "operand": "0x180290e50",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298d2d",
+              "operand": "0x1806791a0",
+              "resolved_export_target": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@IUBEE_CmdReorderIndexedGroupEntryOptions@@@Z"
+            },
+            {
+              "address": "0x298d3b",
+              "operand": "qword ptr [rip + 0xc7e2ff]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298d44",
+              "operand": "qword ptr [rip + 0xc7e8b6]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x298d79",
+              "operand": "0x180d3bdf8",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "180298CB0 sub rsp, 0x28",
+            "180298CB4 mov rdx, rcx",
+            "180298CB7 mov cl, 1",
+            "180298CB9 call 0x180304640",
+            "180298CBE mov cl, 1",
+            "180298CC0 call 0x180266710",
+            "180298CC5 mov cl, 1",
+            "180298CC7 call 0x180267030",
+            "180298CCC mov cl, 1",
+            "180298CCE call 0x180266910",
+            "180298CD3 mov cl, 1",
+            "180298CD5 call 0x180266b10",
+            "180298CDA mov cl, 1",
+            "180298CDC call 0x180266830",
+            "180298CE1 mov cl, 1",
+            "180298CE3 add rsp, 0x28",
+            "180298CE7 jmp 0x180267190",
+            "180298CEC int3 ",
+            "180298CED int3 ",
+            "180298CEE int3 ",
+            "180298CEF int3 ",
+            "180298CF0 mov qword ptr [rsp + 0x18], rbx",
+            "180298CF5 mov qword ptr [rsp + 0x20], rsi",
+            "180298CFA mov qword ptr [rsp + 0x10], rdx",
+            "180298CFF push rdi",
+            "180298D00 sub rsp, 0x20",
+            "180298D04 mov rbx, rdx",
+            "180298D07 mov rdi, rcx",
+            "180298D0A mov esi, dword ptr [rcx + 0xac]",
+            "180298D10 cmp esi, -1",
+            "180298D13 je 0x180298d38",
+            "180298D15 add rcx, 8",
+            "180298D19 call 0x180290e50",
+            "180298D1E mov r9d, 1",
+            "180298D24 mov r8d, esi",
+            "180298D27 mov rdx, rbx",
+            "180298D2A mov rcx, rax",
+            "180298D2D call 0x1806791a0",
+            "180298D32 test eax, eax",
+            "180298D34 jne 0x180298d69",
+            "180298D36 jmp 0x180298d50",
+            "180298D38 mov rcx, rbx",
+            "180298D3B call qword ptr [rip + 0xc7e2ff]",
+            "180298D41 mov rcx, rax",
+            "180298D44 call qword ptr [rip + 0xc7e8b6]",
+            "180298D4A mov dword ptr [rdi + 0xac], eax",
+            "180298D50 mov rcx, rbx",
+            "180298D53 mov rbx, qword ptr [rsp + 0x40]",
+            "180298D58 mov rsi, qword ptr [rsp + 0x48]",
+            "180298D5D add rsp, 0x20",
+            "180298D61 pop rdi",
+            "180298D62 jmp qword ptr [rip + 0xc7ed5f]",
+            "180298D69 mov dword ptr [rsp + 0x30], eax",
+            "180298D6D lea rdx, [rip + 0x1162644]",
+            "180298D74 lea rcx, [rsp + 0x30]",
+            "180298D79 call 0x180d3bdf8",
+            "180298D7E int3 ",
+            "180298D7F int3 "
+          ]
+        },
+        "RegisterStreams@BEE_CameraLayer@@": {
+          "rva": "0x2c2d70",
+          "export": "?RegisterStreams@BEE_CameraLayer@@SAXXZ",
+          "scan_bytes": 3744,
+          "instructions_seen": 1133,
+          "calls": [
+            {
+              "address": "0x2c2d76",
+              "operand": "qword ptr [rip + 0xc5419c]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2d84",
+              "operand": "0x1802b79b0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2dbd",
+              "operand": "qword ptr [rip + 0xc54b7d]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2df7",
+              "operand": "qword ptr [rip + 0xc54db3]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2e22",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2e5b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2e89",
+              "operand": "0x1802b6360",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2e99",
+              "operand": "0x1802b6360",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2ee7",
+              "operand": "qword ptr [rip + 0xc54cc3]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2f12",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2f4b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2f79",
+              "operand": "0x1802b6380",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2f89",
+              "operand": "0x1802b6380",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c2fd7",
+              "operand": "qword ptr [rip + 0xc54bd3]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3002",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c303b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3069",
+              "operand": "0x1802b63a0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3079",
+              "operand": "0x1802b63a0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c30c7",
+              "operand": "qword ptr [rip + 0xc54ae3]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c30f2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c312b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3159",
+              "operand": "0x1802b63c0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3169",
+              "operand": "0x1802b63c0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c31b7",
+              "operand": "qword ptr [rip + 0xc549f3]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c31e2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c321b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3249",
+              "operand": "0x1802b63e0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3259",
+              "operand": "0x1802b63e0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c32a7",
+              "operand": "qword ptr [rip + 0xc54903]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c32d2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c330b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3339",
+              "operand": "0x1802b6400",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3349",
+              "operand": "0x1802b6400",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3397",
+              "operand": "qword ptr [rip + 0xc54813]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c33c2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c33fb",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3429",
+              "operand": "0x1802b6420",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3439",
+              "operand": "0x1802b6420",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3491",
+              "operand": "qword ptr [rip + 0xc54719]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c34bf",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3500",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3543",
+              "operand": "0x1802b6440",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3552",
+              "operand": "0x1802b6440",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c35a7",
+              "operand": "qword ptr [rip + 0xc54603]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c35d2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c360b",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3639",
+              "operand": "0x1802b6470",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3649",
+              "operand": "0x1802b6470",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3697",
+              "operand": "qword ptr [rip + 0xc54513]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c36c2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c36fb",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3729",
+              "operand": "0x1802b6490",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3739",
+              "operand": "0x1802b6490",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3787",
+              "operand": "qword ptr [rip + 0xc54423]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c37b2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c37eb",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3819",
+              "operand": "0x1802b64b0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3829",
+              "operand": "0x1802b64b0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3877",
+              "operand": "qword ptr [rip + 0xc54333]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c38a2",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c38db",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3909",
+              "operand": "0x1802b64d0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3919",
+              "operand": "0x1802b64d0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3967",
+              "operand": "qword ptr [rip + 0xc54243]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3992",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c39cb",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c39f9",
+              "operand": "0x1802b64f0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3a09",
+              "operand": "0x1802b64f0",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3a57",
+              "operand": "qword ptr [rip + 0xc54153]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3a82",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3abb",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3ae9",
+              "operand": "0x1802b6510",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3af9",
+              "operand": "0x1802b6510",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3b47",
+              "operand": "qword ptr [rip + 0xc54063]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3b72",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3bab",
+              "operand": "qword ptr [rax + 0x300]",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3bd9",
+              "operand": "0x1802b6530",
+              "resolved_export_target": ""
+            },
+            {
+              "address": "0x2c3be9",
+              "operand": "0x1802b6530",
+              "resolved_export_target": ""
+            }
+          ],
+          "first_instructions": [
+            "1802C2D70 push rbx",
+            "1802C2D72 sub rsp, 0x60",
+            "1802C2D76 call qword ptr [rip + 0xc5419c]",
+            "1802C2D7C mov rdx, rax",
+            "1802C2D7F mov cl, 1",
+            "1802C2D81 mov rbx, rax",
+            "1802C2D84 call 0x1802b79b0",
+            "1802C2D89 lea rax, [rip + 0xcb27b8]",
+            "1802C2D90 xor r9d, r9d",
+            "1802C2D93 mov qword ptr [rsp + 0x20], rax",
+            "1802C2D98 lea r8, [rsp + 0x20]",
+            "1802C2D9D lea rax, [rip - 0x23fc34]",
+            "1802C2DA4 mov rcx, rbx",
+            "1802C2DA7 mov qword ptr [rsp + 0x28], rax",
+            "1802C2DAC lea rdx, [rip + 0x13dac3d]",
+            "1802C2DB3 lea rax, [rsp + 0x20]",
+            "1802C2DB8 mov qword ptr [rsp + 0x58], rax",
+            "1802C2DBD call qword ptr [rip + 0xc54b7d]",
+            "1802C2DC3 add rsp, 0x60",
+            "1802C2DC7 pop rbx",
+            "1802C2DC8 ret ",
+            "1802C2DC9 int3 ",
+            "1802C2DCA int3 ",
+            "1802C2DCB int3 ",
+            "1802C2DCC int3 ",
+            "1802C2DCD int3 ",
+            "1802C2DCE int3 ",
+            "1802C2DCF int3 ",
+            "1802C2DD0 push rbx",
+            "1802C2DD2 push rsi",
+            "1802C2DD3 push rdi",
+            "1802C2DD4 push r14",
+            "1802C2DD6 push r15",
+            "1802C2DD8 sub rsp, 0x80",
+            "1802C2DDF vmovaps xmmword ptr [rsp + 0x70], xmm6",
+            "1802C2DE5 mov rsi, r9",
+            "1802C2DE8 mov r14, r8",
+            "1802C2DEB mov r15, rdx",
+            "1802C2DEE mov rdi, rcx",
+            "1802C2DF1 xor ebx, ebx",
+            "1802C2DF3 mov dword ptr [rsp + 0x20], ebx",
+            "1802C2DF7 call qword ptr [rip + 0xc54db3]",
+            "1802C2DFD test al, al",
+            "1802C2DFF jne 0x1802c2e79",
+            "1802C2E01 mov qword ptr [rsp + 0x48], rdi",
+            "1802C2E06 mov rax, qword ptr [r15]",
+            "1802C2E09 mov qword ptr [rsp + 0x28], rax",
+            "1802C2E0E mov dword ptr [rsp + 0x30], ebx",
+            "1802C2E12 mov qword ptr [rsp + 0x38], rsi",
+            "1802C2E17 mov rax, qword ptr [rdi]",
+            "1802C2E1A lea rdx, [rsp + 0x28]",
+            "1802C2E1F mov rcx, rdi",
+            "1802C2E22 call qword ptr [rax + 0x300]",
+            "1802C2E28 vmovaps xmm6, xmm0",
+            "1802C2E2C vmovsd qword ptr [rsp + 0x40], xmm0",
+            "1802C2E32 mov dword ptr [rsp + 0x20], 1",
+            "1802C2E3A mov qword ptr [rsp + 0x30], rdi",
+            "1802C2E3F mov rax, qword ptr [r14]",
+            "1802C2E42 mov qword ptr [rsp + 0x50], rax",
+            "1802C2E47 mov dword ptr [rsp + 0x58], ebx",
+            "1802C2E4B mov qword ptr [rsp + 0x60], rsi",
+            "1802C2E50 mov rax, qword ptr [rdi]",
+            "1802C2E53 lea rdx, [rsp + 0x50]",
+            "1802C2E58 mov rcx, rdi",
+            "1802C2E5B call qword ptr [rax + 0x300]",
+            "1802C2E61 vmovsd qword ptr [rsp + 0x28], xmm0",
+            "1802C2E67 mov ebx, 3",
+            "1802C2E6C vucomisd xmm6, xmm0",
+            "1802C2E70 jp 0x1802c2e74",
+            "1802C2E72 je 0x1802c2e79",
+            "1802C2E74 xor dil, dil",
+            "1802C2E77 jmp 0x1802c2e7c",
+            "1802C2E79 mov dil, 1",
+            "1802C2E7C test bl, 2",
+            "1802C2E7F je 0x1802c2e8f",
+            "1802C2E81 and ebx, 0xfffffffd",
+            "1802C2E84 lea rcx, [rsp + 0x28]",
+            "1802C2E89 call 0x1802b6360",
+            "1802C2E8E nop ",
+            "1802C2E8F test bl, 1",
+            "1802C2E92 je 0x1802c2e9e",
+            "1802C2E94 lea rcx, [rsp + 0x40]",
+            "1802C2E99 call 0x1802b6360",
+            "1802C2E9E movzx eax, dil",
+            "1802C2EA2 vmovaps xmm6, xmmword ptr [rsp + 0x70]",
+            "1802C2EA8 add rsp, 0x80",
+            "1802C2EAF pop r15",
+            "1802C2EB1 pop r14",
+            "1802C2EB3 pop rdi",
+            "1802C2EB4 pop rsi",
+            "1802C2EB5 pop rbx",
+            "1802C2EB6 ret ",
+            "1802C2EB7 int3 ",
+            "1802C2EB8 int3 ",
+            "1802C2EB9 int3 ",
+            "1802C2EBA int3 ",
+            "1802C2EBB int3 ",
+            "1802C2EBC int3 ",
+            "1802C2EBD int3 ",
+            "1802C2EBE int3 "
+          ]
+        },
+        "RegisterStreams@BEE_ModelLayer@@": {
+          "rva": "0x344740",
+          "export": "?RegisterStreams@BEE_ModelLayer@@SAXXZ",
+          "scan_bytes": 16,
+          "instructions_seen": 11,
+          "calls": [],
+          "first_instructions": [
+            "180344740 mov cl, 1",
+            "180344742 jmp 0x180343eb0",
+            "180344747 int3 ",
+            "180344748 int3 ",
+            "180344749 int3 ",
+            "18034474A int3 ",
+            "18034474B int3 ",
+            "18034474C int3 ",
+            "18034474D int3 ",
+            "18034474E int3 ",
+            "18034474F int3 "
+          ]
+        }
+      }
+    }
+  }
+}

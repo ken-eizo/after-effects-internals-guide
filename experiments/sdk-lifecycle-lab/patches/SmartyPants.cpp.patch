@@ -1,0 +1,28 @@
+--- a/SmartyPants.cpp
++++ b/SmartyPants.cpp
+@@ -824,7 +824,8 @@
+ {
+ 	PF_Err				err 	= PF_Err_NONE,
+ 						err2 	= PF_Err_NONE;
+-	SmartyPantsData		*id;
++	SmartyPantsData		render_data{};
++	SmartyPantsData		*id = &render_data;
+ 	SmartyPantsDataPlus	idp;
+ 	PF_Point			origin;
+ 	PF_Rect				src_rect, areaR;
+@@ -846,13 +847,10 @@
+ 							(void**)&wsP));
+ 
+ 
+-	if (!in_data->sequence_data) {
+-		PF_COPY(input, output, &src_rect, NULL);
+-		err = PF_Err_INTERNAL_STRUCT_DAMAGED;
+-	}
++	// Render parameters belong to this invocation; MFR sequence_data may be NULL.
+ 
+ 	if (!err){
+-		id = (SmartyPantsData*)*(in_data->sequence_data);
++		id->channel = channel_paramP->u.pd.value;
+ 
+ 		id->blend = (A_short)(2.56 * blend_paramP->u.fs_d.value);
+ 		

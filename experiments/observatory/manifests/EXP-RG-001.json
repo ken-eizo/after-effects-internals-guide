@@ -2,9 +2,13 @@
   "experiment_id": "EXP-RG-001",
   "title": "BEE/RG/TDB trace correlation across a controlled state mutation",
   "status": "runnable",
-  "domains": ["render-graph", "cache", "state-identity"],
+  "domains": [
+    "render-graph",
+    "cache",
+    "state-identity"
+  ],
   "question": "During two otherwise identical Artisan renders, does a controlled Gaussian Blur value mutation produce observable changes in BEE evaluation/cache/work-queue, MixHashGuid, TDB stream, and RG cache-node trace activity?",
-  "source_note": "The SDK 25.6 Artie-derived probe temporarily installs dvacore's stderr trace handler only around Canvas RenderTexture, labels each capture A/B, and restores the previous trace handler, master volume, stderr handle and category volumes afterward.",
+  "source_note": "The SDK 25.6 Artie-derived v5 probe starts dvacore trace capture in FrameSetup when available, spans the frame lifecycle through FrameSetdown, and retains Render as a fallback capture path. It labels each capture A/B and restores the previous handler, master volume, stderr handle and category volumes afterward.",
   "environment": {
     "ae_version": "user-run target: installed AE 26.3; probe compiled against SDK 25.6",
     "os": "Windows 10 local research host",
@@ -13,10 +17,23 @@
     "notes": "Trace wrapper also passed standalone ABI smoke tests against installed AE 25.6 and 26.3 dvacore.dll. Full provider behavior is evaluated only in the user-run host."
   },
   "hypotheses": [
-    {"id": "H1", "prediction": "Target BEE/RG/TDB/GUID categories emit trace lines inside the real host render window.", "falsified_by": "No target-category lines occur between AEIG_TRACE_BEGIN/END despite successful rendering."},
-    {"id": "H2", "prediction": "Changing the blur state between pass A and B changes at least part of the identity/evaluation/cache/RG trace footprint.", "falsified_by": "A and B produce indistinguishable target-category trace footprints under a confirmed state change."}
+    {
+      "id": "H1",
+      "prediction": "Target BEE/RG/TDB/GUID categories emit trace lines inside the real host render window.",
+      "falsified_by": "No target-category lines occur between AEIG_TRACE_BEGIN/END despite successful rendering."
+    },
+    {
+      "id": "H2",
+      "prediction": "Changing the blur state between pass A and B changes at least part of the identity/evaluation/cache/RG trace footprint.",
+      "falsified_by": "A and B produce indistinguishable target-category trace footprints under a confirmed state change."
+    }
   ],
-  "factors": ["pass A blur=10", "pass B blur=75", "same comp/layer/effect stack", "same Artisan render path"],
+  "factors": [
+    "pass A blur=10",
+    "pass B blur=75",
+    "same comp/layer/effect stack",
+    "same Artisan render path"
+  ],
   "captures": [
     "runs/EXP-RG-001/host-trace.log",
     "runs/EXP-RG-001/trace-control.tsv",
@@ -30,7 +47,7 @@
     "User installs the canonical AEIG L5 Artie probe while AE is closed and launches a disposable blank session.",
     "User runs experiments/user-run/AEIG-1.0-L5/01_RUN_IN_AE.jsx once.",
     "The script renders pass A with blur 10, mutates only blur to 75, then renders pass B.",
-    "The Artisan labels each render using current-pass.txt and captures target dvacore trace categories only around RenderTexture.",
+    "The Artisan labels each frame using current-pass.txt; FrameSetup->FrameSetdown is the primary trace window and Render is a fallback when no frame-level window is active.",
     "The probe restores the original master trace handler, master/category volumes and stderr handle after every capture.",
     "analyze_rg_trace_experiment.py partitions the raw trace by pass and reports target-category activity without assuming that category-name frequency alone identifies a unique internal object."
   ],

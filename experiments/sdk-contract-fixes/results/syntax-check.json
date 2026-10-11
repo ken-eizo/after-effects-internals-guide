@@ -1,0 +1,46 @@
+{
+  "original": {
+    "command": [
+      "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+      "-std=c++17",
+      "-fsyntax-only",
+      "-DMSWindows",
+      "-DWIN32",
+      "-D_WINDOWS",
+      "D:\\Developer\\After Effects Internals Guide\\experiments\\sdk-contract-fixes\\workbench\\original\\SmartyPants.cpp",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\SP",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\Win",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Resources",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Util",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants"
+    ],
+    "returncode": 0,
+    "source_sha256": "4865f3d8db8de37f5109cb34fdf04b7ae8f5b5582f12f490baa67f7f179104c2",
+    "warning_count": 43,
+    "diagnostics_sha256": "82e67f915378c59226a6d584f7a98c9a7678e5df1e9fa3bbe1b639c90b5129f8",
+    "scope": "whole translation unit, actual SDK headers; syntax only; no link or host execution"
+  },
+  "copy": {
+    "command": [
+      "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+      "-std=c++17",
+      "-fsyntax-only",
+      "-DMSWindows",
+      "-DWIN32",
+      "-D_WINDOWS",
+      "D:\\Developer\\After Effects Internals Guide\\experiments\\sdk-contract-fixes\\workbench\\copy\\SmartyPants.cpp",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\SP",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\Win",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Resources",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Util",
+      "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants"
+    ],
+    "returncode": 0,
+    "source_sha256": "75851467c8782f2f66133c8997948dce5f7caa3abaeb40f834af7489a3f497cd",
+    "warning_count": 43,
+    "diagnostics_sha256": "cbe1f65a4b7a1875c0ddf75d4885fcd2f7b35811094d199fa97e16e5471f70b9",
+    "scope": "whole translation unit, actual SDK headers; syntax only; no link or host execution"
+  }
+}

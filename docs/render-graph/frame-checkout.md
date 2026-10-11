@@ -25,11 +25,11 @@ PF_Cmd_SMART_RENDER
 This is a public analogue of the internal distinction between pre-render graph construction/dependency planning and RG execution/materialization.
 ## Checkout-ID contract
 
-The SmartFX `checkout_id` is chosen by the effect, must be positive and unique within the request, and is the handle linking PreRender dependency declaration to SmartRender pixel access.
+The SmartFX `checkout_id` is chosen by the effect and must be unique within the request. Adobe's current SDK Guide says the ID must be **positive**, while the AE 25.6 public header comment says **`>= 0`**. Portable plug-ins should therefore prefer positive IDs and record the version/source distinction rather than assuming that zero is uniformly forbidden by every published contract.
 
-The mapping is deliberately strict: each PreRender checkout corresponds to one `checkout_layer_pixels()` use. If the effect needs the same layer twice as two independently materialized inputs, it must issue two PreRender checkouts with different IDs.
+`checkout_layer_pixels()` may be called at most once for a checkout ID that was declared during PreRender. If the effect needs independently materialized pixels from the same layer more than once, it must issue separate PreRender checkouts with different IDs. The converse is intentionally weaker: a PreRender checkout does **not** have to be materialized later. Adobe explicitly documents that an input checked out during PreRender may go unused in SmartRender and then need never be rendered.
 
-This prevents a plug-in from treating one logical dependency declaration as an unlimited pixel pointer. The checkout ID is better understood as a request-local dependency slot.
+This matters for bounds-first planning. Adobe's SmartFX Guide explicitly permits `checkout_layer` with an empty request rectangle to obtain `ref_width` / `ref_height` and `max_result_rect` without rendering pixels, so an effect may use one request-local ID for a bounds/dependency probe and a different ID for the later pixel ROI derived from that geometry. The checkout ID is therefore best understood as a request-local dependency/materialization slot, not a persistent layer handle.
 
 `checkout_layer_pixels()` returns a world valid for the current command or until checked in. Explicit `checkin_layer_pixels()` is optional for correctness because AE cleans up when SmartRender returns, but early checkin can reduce peak memory.
 

@@ -1,0 +1,69 @@
+{
+  "scope": "extracted source fragments compiled as C++17; mocked SDK callback; no AE host execution",
+  "compiler": "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+  "compiler_version": "clang version 20.1.2",
+  "results": {
+    "original": {
+      "alpha8_cases": 65536,
+      "alpha16_cases": 8388864,
+      "alpha32_cases": 262400,
+      "alpha8_failures": 0,
+      "alpha16_failures": 8356992,
+      "alpha32_failures": 261120,
+      "preserved_rgb_failures": 0,
+      "flag_cases": 1048576,
+      "flag_failures": 262143,
+      "seed_bytes": 8,
+      "seed_text": "Level2Hi",
+      "pointer_bytes": 8,
+      "alpha16_zero_blend_zero_input": 32640,
+      "alpha32_half_blend_quarter_input": 0.75,
+      "extracted_harness_sha256": "5de0a13d4204433c84d2d9094ac6b3acdbb6e065617629be16d906f6c4c1162a"
+    },
+    "copy": {
+      "alpha8_cases": 65536,
+      "alpha16_cases": 8388864,
+      "alpha32_cases": 262400,
+      "alpha8_failures": 0,
+      "alpha16_failures": 0,
+      "alpha32_failures": 0,
+      "preserved_rgb_failures": 0,
+      "flag_cases": 1048576,
+      "flag_failures": 0,
+      "seed_bytes": 11,
+      "seed_text": "Level2Histo",
+      "pointer_bytes": 8,
+      "alpha16_zero_blend_zero_input": 32768,
+      "alpha32_half_blend_quarter_input": 0.5,
+      "extracted_harness_sha256": "2b06aa9b74da7772564906b2623d7b58e8da5579f311f0c350141fad1ca2774e"
+    }
+  },
+  "provenance": {
+    "SmartyPants.cpp": {
+      "source": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants\\SmartyPants.cpp",
+      "sha256": "4865f3d8db8de37f5109cb34fdf04b7ae8f5b5582f12f490baa67f7f179104c2",
+      "bytes": 29277,
+      "repaired_sha256": "75851467c8782f2f66133c8997948dce5f7caa3abaeb40f834af7489a3f497cd"
+    },
+    "SmartyPants.h": {
+      "source": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants\\SmartyPants.h",
+      "sha256": "842b1fd4f3366ce456b3b7a0e6ec9edf032aef08f90cf9d06b21dc4e83c4f654",
+      "bytes": 4173
+    },
+    "AE_Effect.h": {
+      "source": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\AE_Effect.h",
+      "sha256": "215d07b840ef2c731d2394f00edad40d05cc23ec33d0a001b19a1468cf662faf",
+      "bytes": 128967
+    },
+    "print_page.html": {
+      "source": "D:\\Developer\\After Effects Internals Guide\\research\\external-sources\\guide-26.5\\print_page.html",
+      "sha256": "7536e99abb8850b5bd89939eab1f2c284b7665e96e7b3e557f14f95198718046",
+      "bytes": 1318008
+    },
+    "compute-cache-key.cpp": {
+      "source": "extracted HTML code block",
+      "sha256": "4138daaffc9c9cb0b46057ebbfb293bb5126e78bfec0990e5c0d4cfb480d68dd",
+      "repaired_sha256": "61502d8f04360c6e433691da02ee0e11c32483b318a8eb33e4164eeb6cd28e33"
+    }
+  }
+}

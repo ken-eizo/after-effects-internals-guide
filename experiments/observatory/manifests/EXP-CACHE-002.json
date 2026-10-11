@@ -8,13 +8,13 @@
     "state-identity"
   ],
   "question": "Does VALID_BUT_INCOMPLETE mean a receipt remains valid for an earlier effect-stack prefix but cannot directly satisfy a later requested prefix, and does that relation remain stable across a controlled effect-state mutation?",
-  "source_note": "Instrumented Adobe Artie Artisan built from SDK 25.6. Receipt checks use CanvasSuite8 while the stock renderer remains on CanvasSuite5. The same A/B render passes are correlated with EXP-RG-001 host tracing.",
+  "source_note": "Instrumented Adobe Artie Artisan built from SDK 25.6. v5 captures receipt evidence once per pass at the earliest frame lifecycle callback with a valid render context (FrameSetup primary, Render fallback). Receipt checks use CanvasSuite8 while scene rendering remains Artie-derived.",
   "environment": {
     "ae_version": "user-run target: installed AE 26.3; probe compiled against SDK 25.6",
     "os": "Windows 10 local research host",
     "hardware": "not a manipulated factor",
     "gpu": "not a manipulated factor in the prefix matrix",
-    "notes": "Run only in a disposable blank AE session. Canonical probe SHA-256: 884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792."
+    "notes": "Run only in a disposable blank AE session. Canonical probe SHA-256: DA8693DBD6B7CCC1BBF3043608D4FD7C93557D9CAF3F08A6B78D0BD5B6A1BB0F."
   },
   "hypotheses": [
     {
@@ -54,7 +54,7 @@
     "User runs experiments/user-run/AEIG-1.0-L5/01_RUN_IN_AE.jsx once.",
     "Pass A renders a 64x64 solid with Gaussian Blur=10, Fill and Tint using AEIG Receipt Probe.",
     "The script changes only Gaussian Blur to 75 and renders pass B with identical topology.",
-    "For each pass the Artisan enumerates software-effect count, generates every prefix plus ALL_EFFECTS, and checks every requested prefix with geometry checking off/on.",
+    "For each canonical pass, the probe claims the pass once, enumerates the layer effect count, records the raw software-effect count separately, generates every prefix plus ALL_EFFECTS, and checks every requested prefix with geometry checking off/on.",
     "analyze_receipt_experiment.py validates the prefix model independently for A and B; raw captures remain immutable evidence."
   ],
   "result": null

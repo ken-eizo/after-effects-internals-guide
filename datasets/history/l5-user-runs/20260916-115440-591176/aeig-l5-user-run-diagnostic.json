@@ -1,0 +1,118 @@
+{
+  "checks": {
+    "session": {
+      "exists": true,
+      "bytes": 319
+    },
+    "fixture_log": {
+      "exists": true,
+      "bytes": 791
+    },
+    "receipt": {
+      "exists": true,
+      "bytes": 69
+    },
+    "output_A": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "output_B": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "suite": {
+      "exists": true,
+      "bytes": 253706
+    },
+    "trace": {
+      "exists": false,
+      "bytes": 0
+    },
+    "trace_control": {
+      "exists": false,
+      "bytes": 0
+    },
+    "current_pass": {
+      "exists": true,
+      "bytes": 4
+    },
+    "reflection": {
+      "exists": true,
+      "bytes": 28245
+    },
+    "environment": {
+      "exists": true,
+      "bytes": 386
+    }
+  },
+  "session": {
+    "ok": true,
+    "errors": [],
+    "issued_unix_ms": 1789521942078,
+    "session_id": "20260916T012542Z-D7B6D810463C",
+    "fingerprint": "A1BB56997261C8A871DCC43A233F74CB85173BC3BE5270442FB2737A79D766C2",
+    "aex_hash": "9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98"
+  },
+  "raw_session_time": {
+    "tolerance_ms": 2000,
+    "files": {
+      "fixture_log": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255566,
+        "after_session_issue": true
+      },
+      "receipt": {
+        "exists": true,
+        "mtime_unix_ms": 1789522231304,
+        "after_session_issue": true
+      },
+      "output_A": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255325,
+        "after_session_issue": true
+      },
+      "output_B": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255489,
+        "after_session_issue": true
+      },
+      "suite": {
+        "exists": true,
+        "mtime_unix_ms": 1789522231487,
+        "after_session_issue": true
+      },
+      "trace": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "trace_control": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "current_pass": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255548,
+        "after_session_issue": true
+      },
+      "reflection": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255150,
+        "after_session_issue": true
+      },
+      "environment": {
+        "exists": true,
+        "mtime_unix_ms": 1789522250852,
+        "after_session_issue": true
+      }
+    },
+    "all_after_issue": false
+  },
+  "issues": [
+    "missing capture: trace",
+    "missing capture: trace_control",
+    "one or more raw artifacts predate the prepared operator session"
+  ],
+  "status": "INCOMPLETE"
+}

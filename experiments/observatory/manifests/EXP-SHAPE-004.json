@@ -1,0 +1,56 @@
+{
+  "experiment_id": "EXP-SHAPE-004",
+  "title": "Cross-version RegisterStreams and vector pipeline binary surface comparison",
+  "status": "runnable",
+  "domains": [
+    "vector-shape-system",
+    "state-model",
+    "render-graph",
+    "plugin-host"
+  ],
+  "question": "Do per-layer registration-named functions persist from AE2025 to AE2026, and are their immediate callees type constructors or stream operation handlers?",
+  "evidence": [
+    "E0-H",
+    "E2-L",
+    "H"
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Vector, text, base/AV layer have RegisterStreams routines in both versions.",
+      "falsified_by": "Binary export inventory lacks equivalent signatures in either pinned DLL."
+    },
+    {
+      "id": "H2",
+      "prediction": "The vector RegisterStreams routine registers operations / commands, not necessarily stream types.",
+      "falsified_by": "An independently verified factory registration dataflow demonstrates the routine only inserts native stream type descriptors."
+    }
+  ],
+  "factors": [
+    "AE2025 BEE.dll SHA-256 98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+    "AE2026 BEE.dll SHA-256 5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+    "CS6/CC2014/SDK25.6 distributed header comparison"
+  ],
+  "procedure": [
+    "Run python D:/Developer/ShapeLayerAE/tools/compare_vector_lineage.py.",
+    "Run python D:/Developer/ShapeLayerAE/tools/analyze_registerstreams.py.",
+    "Verify SHA-256 of both binaries and retain raw JSON output.",
+    "Compare bounded disassembly call targets to command-handling entrypoints without inferring an extensible type factory.",
+    "Host runtime tests and complete call/dataflow analysis remain separate experiments."
+  ],
+  "captures": [
+    "datasets/ae-shape-native-extension-lineage-2026.json",
+    "datasets/ae-vector-registerstreams-static-2025-2026.json",
+    "experiments/vector-shape/EXP-SHAPE-004-registerstreams-cross-version.md"
+  ],
+  "environment": {
+    "host_running": "not required",
+    "ae_versions": "Installed 2025 and 2026 binary files",
+    "sdk_versions": "CS6, CC2014, 25.6"
+  },
+  "conclusion": "E2-L static audit observed (layer-specific RegisterStreams plus command-related call targets). No dynamic host invocation or plug-in-native registration established.",
+  "limitations": [
+    "Disassembly only; no complete control-flow or register lifetime analysis",
+    "A named RegisterStreams routine does not entail third-party registration support."
+  ]
+}

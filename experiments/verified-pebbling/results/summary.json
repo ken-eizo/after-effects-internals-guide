@@ -1,0 +1,423 @@
+{
+  "schema_version": 2,
+  "evidence_class": "synthetic finite-model experiment",
+  "ae_host_executed": false,
+  "private_scheduler_modified": false,
+  "global_open_problem_solved": false,
+  "scope": "sequential pure immutable DAG; explicit memory and fixed costs",
+  "test_exit_code": 0,
+  "exhaustive_dag_budget_cases": 437,
+  "seeded_weighted_cases": 120,
+  "v1_v2_oracle_crosscheck_cases": 437,
+  "saturation_seeded_weighted_cases": 200,
+  "test_methods": 22,
+  "provenance": {
+    "python_version": "3.13.5",
+    "source_sha256": {
+      "experiments/verified-pebbling/solver.py": "e42be0ec2e33c6bd894cd1436e661fea49ae834dfc74af18669266bb08547dad",
+      "experiments/verified-pebbling/verify.py": "e00164c2ac0a1e08f3721148b58ebad59ca0c9a26eca7a7b4cdca498c7dee151",
+      "experiments/verified-pebbling/test_solver.py": "920572250c10bd73d92e1cfec069f374e5605407e05e31931504465dce5d8914",
+      "experiments/verified-pebbling/test_saturation.py": "4b48798cfa95d3aeb989e0c3da23b4bdf85178e7a5992fc306c8bd8a35f6f6ec",
+      "experiments/verified-pebbling/run_experiment.py": "122892cb63e09086e5ef8453dc9204398ae6987fc9c2765aa8a65e5e121edd98",
+      "experiments/verified-pebbling/fixtures/recompute.json": "abacf68e9694dc73bea1446ec533cfdc8ee6b5407c021a06214234f068c5a3d0",
+      "docs/render-graph/verified-memory-planning.md": "9ce23feacd661271689d2e44e6f9f4454e7dfe00ec650a15dbbe296af16845a6"
+    },
+    "sdk_evidence": {
+      "path": "research/external-sources/ae-sdk-25.6-mac/Headers/AE_ComputeCacheSuite.h",
+      "available": true,
+      "sha256": "40e2bc8df1a4e994c7c36724d746e44e1894f254f6fac46e3b500ff9655893cc",
+      "lines": "55-59; 69-75; 99-141",
+      "scope": "distributed contract evidence, not private scheduler source"
+    }
+  },
+  "results": [
+    {
+      "budget_bytes": 4194304,
+      "status": "infeasible",
+      "cost_units": null,
+      "certificate_verified": {
+        "valid": true,
+        "status": "infeasible",
+        "cost": null,
+        "message": "closed state set contains start and no goal"
+      },
+      "stats": {
+        "states_discovered": 4,
+        "states_settled": 4,
+        "transitions_examined": 7
+      },
+      "replay": null,
+      "model_file": "budget-4mib.model.json",
+      "certificate_file": "budget-4mib.certificate.json"
+    },
+    {
+      "budget_bytes": 5242880,
+      "status": "optimal",
+      "cost_units": 29,
+      "certificate_verified": {
+        "valid": true,
+        "status": "optimal",
+        "cost": 29,
+        "message": "legal goal path meets the saturated Bellman lower bound"
+      },
+      "stats": {
+        "states_discovered": 8,
+        "states_settled": 8,
+        "transitions_examined": 21
+      },
+      "replay": {
+        "peak_model_bytes": 5242880,
+        "compute_counts": {
+          "source": 2,
+          "analysis": 1,
+          "workspace": 1,
+          "composite": 1
+        },
+        "cost_units": 29,
+        "output_equal_to_direct": true,
+        "synthetic_output_sha256": "26326da997fb6c07a5aec4db3d1c6c5469eaa57b3e06100400953d64d9fac944",
+        "trace": [
+          {
+            "action": "compute",
+            "node": "source",
+            "peak_during_step_bytes": 2097152,
+            "resident_after": [
+              "source"
+            ],
+            "cumulative_cost": 3
+          },
+          {
+            "action": "compute",
+            "node": "analysis",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "analysis",
+              "source"
+            ],
+            "cumulative_cost": 8
+          },
+          {
+            "action": "evict",
+            "node": "source",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "analysis"
+            ],
+            "cumulative_cost": 8
+          },
+          {
+            "action": "compute",
+            "node": "workspace",
+            "peak_during_step_bytes": 5242880,
+            "resident_after": [
+              "analysis",
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "evict",
+            "node": "analysis",
+            "peak_during_step_bytes": 2097152,
+            "resident_after": [
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "compute",
+            "node": "source",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 18
+          },
+          {
+            "action": "compute",
+            "node": "composite",
+            "peak_during_step_bytes": 4194304,
+            "resident_after": [
+              "composite",
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 29
+          }
+        ]
+      },
+      "model_file": "budget-5mib.model.json",
+      "certificate_file": "budget-5mib.certificate.json"
+    },
+    {
+      "budget_bytes": 6291456,
+      "status": "optimal",
+      "cost_units": 29,
+      "certificate_verified": {
+        "valid": true,
+        "status": "optimal",
+        "cost": 29,
+        "message": "legal goal path meets the saturated Bellman lower bound"
+      },
+      "stats": {
+        "states_discovered": 8,
+        "states_settled": 8,
+        "transitions_examined": 21
+      },
+      "replay": {
+        "peak_model_bytes": 5242880,
+        "compute_counts": {
+          "source": 2,
+          "analysis": 1,
+          "workspace": 1,
+          "composite": 1
+        },
+        "cost_units": 29,
+        "output_equal_to_direct": true,
+        "synthetic_output_sha256": "26326da997fb6c07a5aec4db3d1c6c5469eaa57b3e06100400953d64d9fac944",
+        "trace": [
+          {
+            "action": "compute",
+            "node": "source",
+            "peak_during_step_bytes": 2097152,
+            "resident_after": [
+              "source"
+            ],
+            "cumulative_cost": 3
+          },
+          {
+            "action": "compute",
+            "node": "analysis",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "analysis",
+              "source"
+            ],
+            "cumulative_cost": 8
+          },
+          {
+            "action": "evict",
+            "node": "source",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "analysis"
+            ],
+            "cumulative_cost": 8
+          },
+          {
+            "action": "compute",
+            "node": "workspace",
+            "peak_during_step_bytes": 5242880,
+            "resident_after": [
+              "analysis",
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "evict",
+            "node": "analysis",
+            "peak_during_step_bytes": 2097152,
+            "resident_after": [
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "compute",
+            "node": "source",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 18
+          },
+          {
+            "action": "compute",
+            "node": "composite",
+            "peak_during_step_bytes": 4194304,
+            "resident_after": [
+              "composite",
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 29
+          }
+        ]
+      },
+      "model_file": "budget-6mib.model.json",
+      "certificate_file": "budget-6mib.certificate.json"
+    },
+    {
+      "budget_bytes": 7340032,
+      "status": "optimal",
+      "cost_units": 26,
+      "certificate_verified": {
+        "valid": true,
+        "status": "optimal",
+        "cost": 26,
+        "message": "legal goal path meets the saturated Bellman lower bound"
+      },
+      "stats": {
+        "states_discovered": 8,
+        "states_settled": 8,
+        "transitions_examined": 22
+      },
+      "replay": {
+        "peak_model_bytes": 7340032,
+        "compute_counts": {
+          "source": 1,
+          "analysis": 1,
+          "workspace": 1,
+          "composite": 1
+        },
+        "cost_units": 26,
+        "output_equal_to_direct": true,
+        "synthetic_output_sha256": "26326da997fb6c07a5aec4db3d1c6c5469eaa57b3e06100400953d64d9fac944",
+        "trace": [
+          {
+            "action": "compute",
+            "node": "source",
+            "peak_during_step_bytes": 2097152,
+            "resident_after": [
+              "source"
+            ],
+            "cumulative_cost": 3
+          },
+          {
+            "action": "compute",
+            "node": "analysis",
+            "peak_during_step_bytes": 3145728,
+            "resident_after": [
+              "analysis",
+              "source"
+            ],
+            "cumulative_cost": 8
+          },
+          {
+            "action": "compute",
+            "node": "workspace",
+            "peak_during_step_bytes": 7340032,
+            "resident_after": [
+              "analysis",
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "evict",
+            "node": "analysis",
+            "peak_during_step_bytes": 4194304,
+            "resident_after": [
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 15
+          },
+          {
+            "action": "compute",
+            "node": "composite",
+            "peak_during_step_bytes": 4194304,
+            "resident_after": [
+              "composite",
+              "source",
+              "workspace"
+            ],
+            "cumulative_cost": 26
+          }
+        ]
+      },
+      "model_file": "budget-7mib.model.json",
+      "certificate_file": "budget-7mib.certificate.json"
+    }
+  ],
+  "saturation_comparisons": [
+    {
+      "case": "expensive-independent-branches",
+      "node_count": 13,
+      "cost_units": 1,
+      "v1": {
+        "recorded_states": 8192,
+        "stats": {
+          "states_discovered": 8192,
+          "states_settled": 8192,
+          "transitions_examined": 106496
+        },
+        "verification": {
+          "valid": true,
+          "status": "optimal",
+          "cost": 1,
+          "message": "legal goal path meets the Bellman lower bound"
+        },
+        "certificate_file": "expensive-independent-branches.v1.certificate.json"
+      },
+      "v2": {
+        "recorded_states": 1,
+        "stats": {
+          "states_discovered": 1,
+          "states_settled": 1,
+          "transitions_examined": 13
+        },
+        "verification": {
+          "valid": true,
+          "status": "optimal",
+          "cost": 1,
+          "message": "legal goal path meets the saturated Bellman lower bound"
+        },
+        "certificate_file": "expensive-independent-branches.v2.certificate.json"
+      },
+      "state_limit_comparison": {
+        "max_states": 1,
+        "v1_status": "inconclusive",
+        "v2_status": "optimal"
+      },
+      "model_file": "expensive-independent-branches.model.json",
+      "timing_claim": false
+    },
+    {
+      "case": "cheap-independent-branches",
+      "node_count": 9,
+      "cost_units": 100,
+      "v1": {
+        "recorded_states": 512,
+        "stats": {
+          "states_discovered": 512,
+          "states_settled": 512,
+          "transitions_examined": 4608
+        },
+        "verification": {
+          "valid": true,
+          "status": "optimal",
+          "cost": 100,
+          "message": "legal goal path meets the Bellman lower bound"
+        },
+        "certificate_file": "cheap-independent-branches.v1.certificate.json"
+      },
+      "v2": {
+        "recorded_states": 256,
+        "stats": {
+          "states_discovered": 256,
+          "states_settled": 256,
+          "transitions_examined": 2304
+        },
+        "verification": {
+          "valid": true,
+          "status": "optimal",
+          "cost": 100,
+          "message": "legal goal path meets the saturated Bellman lower bound"
+        },
+        "certificate_file": "cheap-independent-branches.v2.certificate.json"
+      },
+      "state_limit_comparison": {
+        "max_states": 32,
+        "v1_status": "inconclusive",
+        "v2_status": "inconclusive"
+      },
+      "model_file": "cheap-independent-branches.model.json",
+      "timing_claim": false
+    }
+  ]
+}

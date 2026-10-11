@@ -1,0 +1,69 @@
+{
+  "experiment_id": "EXP-SHAPE-001",
+  "title": "Shape Layer vs Effect Parade stream topology",
+  "status": "runnable",
+  "domains": [
+    "vector-shape-system",
+    "state-model",
+    "ui-system",
+    "plugin-host"
+  ],
+  "question": "Does the public AEGP stream topology expose genuinely different ownership/Indexed Group semantics for Shape Layer Contents and effect parameters?",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "prediction": "Native Contents has indexed children and concrete vector match-names absent from an effect parameter topic tree.",
+      "falsified_by": "Both surfaces exhibit identical group creation contracts including plug-in-defined arbitrary child types."
+    },
+    {
+      "id": "H2",
+      "prediction": "An effect's parameter topic does not expose a general new native Contents-type registration operation.",
+      "falsified_by": "Reproducible supported AEGP registration produces a plug-in-owned new Indexed Group type."
+    }
+  ],
+  "factors": [
+    "native shape layer with empty and populated Contents",
+    "normal footage/solid layer with a third-party effect",
+    "nested group and vector operator count",
+    "host and SDK version"
+  ],
+  "procedure": [
+    "Build ShapeLayerAE read-only AEGP inspector against SDK 25.6.",
+    "In a disposable project create a shape layer, native rectangle/path/fill/repeater, and a conventional effect.",
+    "Select each layer and run Animation > ShapeLayerAE: Dump Stream Tree.",
+    "Record TSV logs and host version; compare match names, grouping kinds, child counts, depth, and observed errors.",
+    "Do not manipulate streams in this probe; record SHA-256 of captures; publish a separate result interpretation."
+  ],
+  "captures": [
+    "ShapeLayerAE/results/stream_tree_*.tsv (generated only after host run)",
+    "experiment/run metadata and SHA-256 (pending)"
+  ],
+  "environment": {
+    "sdk": "25.6",
+    "ae_version": "not captured",
+    "os": "Windows x64 (planned)",
+    "plugin": "ShapeLayerAE; source present; build status recorded separately"
+  },
+  "conclusion": "User reported host failure in old AEX: GetNumStreamsInGroup only works on groups. Header precondition bug confirmed and source repaired; corrected AEX compiled but not host-retested. Native registry remains unproven.",
+  "user_reported_failure": {
+    "error": "After Effects error: internal verification failure, sorry! {GetNumStreamsInGroup only works on groups}",
+    "root_cause": "AEGP LEAF=0 passed non-NONE predicate and was mistakenly treated as a group.",
+    "fix": "Allow only NAMED_GROUP or INDEXED_GROUP; status: built, host retest pending.",
+    "fixed_aex_sha256": "E572BA538E5DAE6889F789AA6090BEDA61EF713731BBEC198894604B7394B272",
+    "incident": "experiments/vector-shape/EXP-SHAPE-001-host-failure.md"
+  },
+  "build_receipt": {
+    "artifact": "D:/Developer/ShapeLayerAE/build/Release/ShapeLayerAE.aex",
+    "sha256": "8764f538d554bc46dd0b65a7741841ea5026cc90fed27542037d71962133555c",
+    "verification": "MSVC link succeeded; PiPL and exported EntryPointFunc confirmed; AE host load not tested",
+    "report": "experiments/vector-shape/EXP-SHAPE-001-plugin-build.md"
+  },
+  "evidence": [
+    "E0-H",
+    "E0-S",
+    "H"
+  ],
+  "limitations": [
+    "AEGP traversal reveals public representation only; it cannot prove hidden type-registration mechanism."
+  ]
+}

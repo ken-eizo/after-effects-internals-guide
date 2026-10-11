@@ -1,0 +1,61 @@
+--- a/SmartyPants.cpp
++++ b/SmartyPants.cpp
+@@ -332,15 +332,15 @@
+ 	PF_Err err = PF_Err_NONE;
+ 	PF_ParamDef channel_param;
+ 	PF_RenderRequest req = extra->input->output_request;
+-	PF_CheckoutResult in_result;
++	PF_CheckoutResult in_result = {};
+ 
+ 	// Mix in the background color of the comp, as a demonstration of GuidMixInPtr()
+ 	// When the background color changes, the effect will need to be rerendered.
+ 	// Note: This doesn't handle the collapsed comp case
+ 	// Your effect can use a similar approach to trigger a rerender based on changes beyond just its effect parameters.
+-	AEGP_LayerH		layerH;
+-	AEGP_CompH		compH;
+-	AEGP_ColorVal	bg_color;
++	AEGP_LayerH		layerH = NULL;
++	AEGP_CompH		compH = NULL;
++	AEGP_ColorVal	bg_color = {};
+ 	if (extra->cb->GuidMixInPtr) {
+ 
+ 		AEFX_SuiteScoper<AEGP_PFInterfaceSuite1> PFInterfaceSuite = AEFX_SuiteScoper<AEGP_PFInterfaceSuite1>(	in_data,
+@@ -356,11 +356,11 @@
+ 																							kAEGPCompSuiteVersion10,
+ 																							out_data);
+ 
+-		PFInterfaceSuite->AEGP_GetEffectLayer(in_data->effect_ref, &layerH);
+-		layerSuite->AEGP_GetLayerParentComp(layerH, &compH);
+-		compSuite->AEGP_GetCompBGColor(compH, &bg_color);
+-
+-		extra->cb->GuidMixInPtr(in_data->effect_ref, sizeof(bg_color), reinterpret_cast<void *>(&bg_color));
++		ERR(PFInterfaceSuite->AEGP_GetEffectLayer(in_data->effect_ref, &layerH));
++		ERR(layerSuite->AEGP_GetLayerParentComp(layerH, &compH));
++		ERR(compSuite->AEGP_GetCompBGColor(compH, &bg_color));
++
++		ERR(extra->cb->GuidMixInPtr(in_data->effect_ref, sizeof(bg_color), reinterpret_cast<void *>(&bg_color)));
+ 	}
+ 	
+ 	AEFX_CLR_STRUCT(channel_param);
+@@ -377,7 +377,7 @@
+ 							in_data->time_scale, 
+ 							&channel_param));
+ 
+-	if (channel_param.u.pd.value == Channel_ALPHA){
++	if (!err && (channel_param.u.pd.value == Channel_ALPHA)){
+ 		req.channel_mask |=  PF_ChannelMask_ALPHA;	
+ 	}
+ 
+@@ -393,8 +393,10 @@
+ 									&in_result));
+ 
+ 
+-	UnionLRect(&in_result.result_rect, 		&extra->output->result_rect);
+-	UnionLRect(&in_result.max_result_rect, 	&extra->output->max_result_rect);	
++	if (!err) {
++		UnionLRect(&in_result.result_rect, 		&extra->output->result_rect);
++		UnionLRect(&in_result.max_result_rect, 	&extra->output->max_result_rect);
++	}	
+ 	
+ 	//	Notice something missing, namely the PF_CHECKIN_PARAM to balance
+ 	//	the old-fashioned PF_CHECKOUT_PARAM, above? 

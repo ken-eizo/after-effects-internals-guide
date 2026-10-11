@@ -1,0 +1,162 @@
+--- a/Effect/SmartyPants/SmartyPants.cpp
++++ b/Effect/SmartyPants/SmartyPants.cpp
+@@ -37,6 +37,8 @@
+ */
+ 
+ #include "SmartyPants.h"
++#include <cmath>
++#include <limits>
+ 
+ 
+ static 
+@@ -674,6 +676,56 @@
+  	return PF_Err_NONE;
+ }
+ 
++// AEIG repair: explicit arithmetic domain, no claim of a universal HDR HSL.
++static bool
++AEIGHdrInputSupported(const PF_PixelFloat& p)
++{
++    const double limit = double((std::numeric_limits<PF_FpShort>::max)()) / 32.0;
++    return std::isfinite(p.red) && std::isfinite(p.green) && std::isfinite(p.blue) &&
++           std::isfinite(p.alpha) && std::fabs(double(p.red)) <= limit &&
++           std::fabs(double(p.green)) <= limit && std::fabs(double(p.blue)) <= limit &&
++           std::fabs(double(p.alpha)) <= limit;
++}
++
++static bool
++AEIGHdrOutputSupported(double r, double g, double b)
++{
++    const double limit = double((std::numeric_limits<PF_FpShort>::max)());
++    return std::isfinite(r) && std::isfinite(g) && std::isfinite(b) &&
++           std::fabs(r) <= limit && std::fabs(g) <= limit && std::fabs(b) <= limit;
++}
++
++static PF_Err
++AEIGHdrInvertYIQ(const PF_PixelFloat& input, PF_PixelFloat& output, A_long channel)
++{
++    // A uses the sample's decimal forward coefficients, now on unquantized RGB.
++    // The inverse is adj(A)/det(A), not the sample's approximate reverse matrix.
++    const double a = 0.2989, b = 0.5866, c = 0.1144;
++    const double d = 0.5959, e = -0.2741, f = -0.3218;
++    const double g = 0.2113, h = -0.5227, i = 0.3113;
++    const double determinant = a*(e*i-f*h) - b*(d*i-f*g) + c*(d*h-e*g);
++    double y = a*double(input.red) + b*double(input.green) + c*double(input.blue);
++    double phase = d*double(input.red) + e*double(input.green) + f*double(input.blue);
++    double quadrature = g*double(input.red) + h*double(input.green) + i*double(input.blue);
++    switch (channel) {
++        case Channel_YIQ: y = 1.0-y; phase = -phase; quadrature = -quadrature; break;
++        case Channel_LUMINANCE: y = 1.0-y; break;
++        case Channel_IN_PHASE_CHROMINANCE: phase = -phase; break;
++        case Channel_QUADRATURE_CHROMINANCE: quadrature = -quadrature; break;
++        default: return PF_Err_BAD_CALLBACK_PARAM;
++    }
++    const double r = ((e*i-f*h)*y + (c*h-b*i)*phase + (b*f-c*e)*quadrature) / determinant;
++    const double green = ((f*g-d*i)*y + (a*i-c*g)*phase + (c*d-a*f)*quadrature) / determinant;
++    const double blue = ((d*h-e*g)*y + (b*g-a*h)*phase + (a*e-b*d)*quadrature) / determinant;
++    if (!AEIGHdrOutputSupported(r, green, blue)) return PF_Err_BAD_CALLBACK_PARAM;
++    output.alpha = input.alpha;
++    output.red = static_cast<PF_FpShort>(r);
++    output.green = static_cast<PF_FpShort>(green);
++    output.blue = static_cast<PF_FpShort>(blue);
++    return PF_Err_NONE;
++}
++
++
+ static PF_Err
+ InvertPixelFloat(
+ 	void			*refcon, 
+@@ -684,10 +736,11 @@
+ {
+ 	SmartyPantsDataPlus	*idp 	= reinterpret_cast<SmartyPantsDataPlus*>(refcon);
+ 	SmartyPantsData		*id		= idp->id;
++	if (id->blend < 0 || id->blend > 256) return PF_Err_BAD_CALLBACK_PARAM;
+ 
+ 	for (A_long iL = x; iL < idp->outputP->width+x; iL++) {
+ 		A_long	        		hueL, satL, lightL;
+-		A_FpLong					yF, iF, qF;
++		if (!AEIGHdrInputSupported(*in)) return PF_Err_BAD_CALLBACK_PARAM;
+  
+  		switch (id->channel) {
+ 			case Channel_ALPHA:
+@@ -720,7 +773,10 @@
+ 			case Channel_SATURATION:
+  
+ 				out->alpha = in->alpha;
+- 				RGBtoHSL16((A_u_short)(32768.0 * in->red), (A_u_short)(32768.0 * in->green), (A_u_short)(32768.0 * in->blue), &hueL, &satL, &lightL);
++ 				// Legacy HSL has a bounded [0,1] RGB domain; reject unsupported HDR.
++				if (in->red < 0 || in->red > 1 || in->green < 0 || in->green > 1 ||
++				    in->blue < 0 || in->blue > 1) return PF_Err_BAD_CALLBACK_PARAM;
++				RGBtoHSL16((A_u_short)(32768.0 * in->red), (A_u_short)(32768.0 * in->green), (A_u_short)(32768.0 * in->blue), &hueL, &satL, &lightL);
+ 
+ 				switch (id->channel) {
+ 				case Channel_HLS:
+@@ -758,39 +814,9 @@
+ 			case Channel_LUMINANCE:
+ 			case Channel_IN_PHASE_CHROMINANCE:
+ 			case Channel_QUADRATURE_CHROMINANCE:
+-				out->alpha = in->alpha;
+-				RGBtoYIQ(	(A_u_short)(32768.0 * in->red), 
+-							(A_u_short)(32768.0 * in->green), 
+-							(A_u_short)(32768.0 * in->blue), 
+-							&yF, 
+-							&iF, 
+-							&qF ); 
+-
+- 				switch (id->channel) {
+-					case Channel_YIQ:
+-
+-						yF = PF_MAX_CHAN16 - yF;
+-						iF = -iF;
+-						qF = -qF;
+-	  					break;
+-					case Channel_LUMINANCE:
+-						yF = PF_MAX_CHAN16 - yF;
+-	  					break;
+-					case Channel_IN_PHASE_CHROMINANCE:
+-	 					iF = -iF;
+-						break;
+-					case Channel_QUADRATURE_CHROMINANCE:
+-						qF = -qF;
+-	 					break;
+-				}
+-				YIQtoRGBFloat(	yF, 
+-								iF, 
+-								qF, 
+-								&(out->red), 
+-								&(out->green), 
+-								&(out->blue)); 
+-
+- 				break;
++				if (AEIGHdrInvertYIQ(*in, *out, id->channel) != PF_Err_NONE)
++					return PF_Err_BAD_CALLBACK_PARAM;
++				break;
+ 
+ 			default:
+ 				*out = *in;
+@@ -798,15 +824,17 @@
+ 		}
+ 
+ 		if (id->blend && (id->channel != Channel_ALPHA)) {
+-			/*
+-			out->red 	= (out->red 	+ in->red)		/ 2.0;
+-			out->green 	= (out->green 	+ in->green)	/ 2.0;
+-			out->blue 	= (out->blue 	+ in->blue)		/ 2.0;
+-			*/
+-			out->red 	= out->red 		+ (((in->red - out->red) 		* id->blend) / 256.0);
+-			out->green 	= out->green 	+ (((in->green - out->green) 	* id->blend) / 256.0);
+-			out->blue 	= out->blue 	+ (((in->blue - out->blue) 		* id->blend) / 256.0);
++			// Widen before subtraction/multiplication to avoid float intermediate overflow.
++			const double t = id->blend / 256.0;
++			const double r = double(out->red) + (double(in->red) - double(out->red)) * t;
++			const double g = double(out->green) + (double(in->green) - double(out->green)) * t;
++			const double b = double(out->blue) + (double(in->blue) - double(out->blue)) * t;
++			if (!AEIGHdrOutputSupported(r, g, b)) return PF_Err_BAD_CALLBACK_PARAM;
++			out->red = static_cast<PF_FpShort>(r);
++			out->green = static_cast<PF_FpShort>(g);
++			out->blue = static_cast<PF_FpShort>(b);
+ 		}
++
+ 		++in;
+ 		++out;
+ 	}

@@ -1,0 +1,752 @@
+{
+  "classification": "E0-H historical public headers; E2-L static runtime exports",
+  "claim_boundary": "Version-specific presence/absence within scanned scopes; NOT proof of callable private APIs, nor exhaustive private registration",
+  "historical_public_headers": {
+    "CS6": {
+      "AE_GeneralPlug.h": {
+        "sha256": "c101ebbd86b6fa87e28662a5e38c4197722a16d62a62db617408dfe14803684f",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            1489,
+            1490,
+            1491,
+            1492,
+            1494,
+            1549,
+            1580,
+            1583,
+            1587,
+            1594,
+            1603,
+            1622
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            1551
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            1568
+          ],
+          "AEGP_AddStream": [
+            1603
+          ],
+          "AEGP_CanAddStream": [
+            1598
+          ],
+          "AEGP_Register": [
+            2587,
+            2589,
+            2599,
+            2604,
+            2609,
+            2614,
+            2619,
+            2624,
+            2633,
+            2639,
+            2645,
+            2654,
+            2668,
+            2674,
+            2784,
+            4316,
+            4327,
+            4328,
+            4335,
+            4336,
+            5037
+          ],
+          "AEGP_CreateNew": [
+            484,
+            2166
+          ]
+        }
+      },
+      "AE_EffectSuites.h": {
+        "sha256": "09701e52b4001f0cca0b5f182144ed9bb244b84de3759570896b07325991294d",
+        "hits": {
+          "PF_PathQuerySuite": [
+            44,
+            65
+          ],
+          "PF_PathDataSuite": [
+            87,
+            157
+          ]
+        }
+      },
+      "AE_GeneralPlugOld.h": {
+        "sha256": "41057188a0bdc965eba99248f47e4d875f11887f57dcb03f89e13b2e2dc5cafc",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            6361,
+            6390,
+            6393,
+            6397,
+            6404,
+            6413,
+            6450,
+            6481,
+            6484,
+            6488,
+            6495,
+            6504,
+            6541,
+            6572,
+            6575,
+            6579,
+            6586,
+            6595,
+            6614
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            6363,
+            6452,
+            6543
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            6378,
+            6469,
+            6560
+          ],
+          "AEGP_AddStream": [
+            6413,
+            6504,
+            6595
+          ],
+          "AEGP_CanAddStream": [
+            6408,
+            6499,
+            6590
+          ],
+          "AEGP_Register": [
+            5709,
+            5837,
+            5943,
+            6014
+          ],
+          "AEGP_CreateNew": [
+            4268,
+            4358,
+            4448,
+            4514,
+            4572,
+            4692,
+            4806,
+            4918,
+            5012,
+            5109,
+            5212,
+            5655
+          ]
+        }
+      },
+      "AE_IO.h": {
+        "sha256": "4a9002c341e394be7ebd11032ea9dd6c258137be0adc66c111539fc7af85a504",
+        "hits": {}
+      },
+      "AE_Effect.h": {
+        "sha256": "689425c60612832b380fba2e757620d26ed3fd1b83c154680c81a2c255fbb2fa",
+        "hits": {
+          "PF_PathQuerySuite": [
+            1581
+          ],
+          "PF_PathDataSuite": [
+            1581
+          ],
+          "PF_Param_PATH": [
+            281,
+            1577,
+            1900
+          ],
+          "PF_Param_ARBITRARY_DATA": [
+            280,
+            1900,
+            1907
+          ]
+        }
+      }
+    },
+    "CC2014": {
+      "AE_GeneralPlug.h": {
+        "sha256": "953c89c06079d66ef19804fdea1c6ecb03684770b7751ba20eea8c9b9460e874",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            1757,
+            1758,
+            1759,
+            1760,
+            1762,
+            1817,
+            1848,
+            1851,
+            1855,
+            1862,
+            1871,
+            1890
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            1819
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            1836
+          ],
+          "AEGP_AddStream": [
+            1871
+          ],
+          "AEGP_CanAddStream": [
+            1866
+          ],
+          "AEGP_Register": [
+            2879,
+            2881,
+            2891,
+            2896,
+            2901,
+            2906,
+            2911,
+            2916,
+            2925,
+            2931,
+            2937,
+            2946,
+            2960,
+            2966,
+            3091,
+            4659,
+            4670,
+            4671,
+            4678,
+            4679,
+            5491
+          ],
+          "AEGP_CreateNew": [
+            500,
+            2458
+          ]
+        }
+      },
+      "AE_EffectSuites.h": {
+        "sha256": "12349fc0975a0ac7430a8ade6311eea9d24fbf2fc0c171f0a0cf066d5370f303",
+        "hits": {
+          "PF_PathQuerySuite": [
+            44,
+            65
+          ],
+          "PF_PathDataSuite": [
+            87,
+            157
+          ]
+        }
+      },
+      "AE_GeneralPlugOld.h": {
+        "sha256": "f3a4abde3baff2cc7657f747986abcf4caf82ef1904ae977fdbd9560f7d404c0",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            7134,
+            7163,
+            7166,
+            7170,
+            7177,
+            7186,
+            7223,
+            7254,
+            7257,
+            7261,
+            7268,
+            7277,
+            7314,
+            7345,
+            7348,
+            7352,
+            7359,
+            7368,
+            7387
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            7136,
+            7225,
+            7316
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            7151,
+            7242,
+            7333
+          ],
+          "AEGP_AddStream": [
+            7186,
+            7277,
+            7368
+          ],
+          "AEGP_CanAddStream": [
+            7181,
+            7272,
+            7363
+          ],
+          "AEGP_Register": [
+            6275,
+            6410,
+            6538,
+            6644,
+            6715
+          ],
+          "AEGP_CreateNew": [
+            4832,
+            4922,
+            5012,
+            5078,
+            5136,
+            5256,
+            5370,
+            5482,
+            5576,
+            5673,
+            5776,
+            6219
+          ]
+        }
+      },
+      "AE_IO.h": {
+        "sha256": "2df0ca36d48d2aadecdb30fa4b314ceb5368c549498f6bbe61a5552660abba4c",
+        "hits": {}
+      },
+      "AE_Effect.h": {
+        "sha256": "1f255e7c8d83e095a774ea20a786a9d6bd1d8b91bf1f4edf229e4801efdd6a30",
+        "hits": {
+          "PF_PathQuerySuite": [
+            1606
+          ],
+          "PF_PathDataSuite": [
+            1606
+          ],
+          "PF_Param_PATH": [
+            306,
+            1602,
+            1925
+          ],
+          "PF_Param_ARBITRARY_DATA": [
+            302,
+            1925,
+            1932
+          ]
+        }
+      }
+    },
+    "SDK25.6": {
+      "AE_GeneralPlug.h": {
+        "sha256": "df4e0cce90f910e06e04018e16bcf8a796099283fee5ba9d0261709e0888691a",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            1600,
+            1601,
+            1602,
+            1603,
+            1605,
+            1660,
+            1691,
+            1694,
+            1698,
+            1705,
+            1714,
+            1733
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            1662
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            1679
+          ],
+          "AEGP_AddStream": [
+            1714
+          ],
+          "AEGP_CanAddStream": [
+            1709
+          ],
+          "AEGP_Register": [
+            2745,
+            2747,
+            2757,
+            2762,
+            2767,
+            2772,
+            2777,
+            2782,
+            2791,
+            2797,
+            2803,
+            2812,
+            2826,
+            2832,
+            2960,
+            4687,
+            4698,
+            4699,
+            4706,
+            4707,
+            5595
+          ],
+          "AEGP_CreateNew": [
+            517,
+            2324
+          ]
+        }
+      },
+      "AE_EffectSuites.h": {
+        "sha256": "8859406c41828afaf526a9d65be09455bca33a4cab1f1084f9abaa672d0699c6",
+        "hits": {
+          "PF_PathQuerySuite": [
+            56,
+            77
+          ],
+          "PF_PathDataSuite": [
+            99,
+            169
+          ]
+        }
+      },
+      "AE_GeneralPlugOld.h": {
+        "sha256": "3b1e2ae650111a01cc80845cd1e602a2f9479a4a85ac3666e089d0d6837bd058",
+        "hits": {
+          "AEGP_StreamGroupingType": [
+            8777,
+            8806,
+            8809,
+            8813,
+            8820,
+            8829,
+            8866,
+            8897,
+            8900,
+            8904,
+            8911,
+            8920,
+            8957,
+            8988,
+            8991,
+            8995,
+            9002,
+            9011,
+            9030
+          ],
+          "AEGP_GetNumStreamsInGroup": [
+            8779,
+            8868,
+            8959
+          ],
+          "AEGP_GetNewStreamRefByIndex": [
+            8794,
+            8885,
+            8976
+          ],
+          "AEGP_AddStream": [
+            8829,
+            8920,
+            9011
+          ],
+          "AEGP_CanAddStream": [
+            8824,
+            8915,
+            9006
+          ],
+          "AEGP_Register": [
+            7837,
+            7972,
+            8100,
+            8206,
+            8277,
+            10836,
+            10847,
+            10848,
+            10855,
+            10856
+          ],
+          "AEGP_CreateNew": [
+            6152,
+            6242,
+            6332,
+            6398,
+            6456,
+            6578,
+            6696,
+            6815,
+            6921,
+            7015,
+            7123,
+            7687,
+            7781
+          ]
+        }
+      },
+      "AE_IO.h": {
+        "sha256": "f761a44d0107567e7869e67948882c8d9ee9ca0116abca470fbb9cb757420355",
+        "hits": {}
+      },
+      "AE_Effect.h": {
+        "sha256": "215d07b840ef2c731d2394f00edad40d05cc23ec33d0a001b19a1468cf662faf",
+        "hits": {
+          "PF_PathQuerySuite": [
+            1938
+          ],
+          "PF_PathDataSuite": [
+            1938
+          ],
+          "PF_Param_PATH": [
+            404,
+            1934,
+            2300
+          ],
+          "PF_Param_ARBITRARY_DATA": [
+            400,
+            2300,
+            2307
+          ]
+        }
+      }
+    }
+  },
+  "runtime_exports": {
+    "AE2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "file_size": 23912968,
+      "export_count": 13647,
+      "category_hits": {
+        "constructor_generic_shape": {
+          "count": 2,
+          "examples": [
+            "398  18D 0002ACC0 ??0BEE_GenericShapeStream@@QEAA@AEBVOM_Stream@@AEBUTDB_CloneStreamParams@@@Z",
+            "399  18E 0002ACF0 ??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "tbd_stream_factory": {
+          "count": 365,
+          "examples": [
+            "34   21 00025630 ??0?$TDB_DerivedStream@U?$BEE_GenericColorStreamTraits@$0CGE@UBEE_DefaultColorRed@@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "37   24 00025730 ??0?$TDB_DerivedStream@U?$BEE_ShadowColorStreamTraits@$0DNP@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "40   27 00025830 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPF@$0BO@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "43   2A 00025960 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPG@$0BO@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "46   2D 00025A90 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPI@$0A@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "49   30 00025BC0 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPJ@$0GE@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "52   33 00025CF0 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0LN@$00@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "55   36 0006B950 ??0?$TDB_DerivedStream@UBEE_GradientColorsStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "58   39 00025E20 ??0?$TDB_DerivedStream@UBEE_GraphicDurationStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "61   3C 00025F30 ??0?$TDB_DerivedStream@UBEE_IntrinsicBaseColorStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "64   3F 00026030 ??0?$TDB_DerivedStream@UBEE_IntrinsicEmissionColorStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "67   42 00026130 ??0?$TDB_DerivedStream@UBEE_LayerSetCopiesStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "70   45 00026240 ??0?$TDB_DerivedStream@UBEE_LayerSetStopRelPosStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "73   48 0006BA60 ??0?$TDB_DerivedStream@UBEE_LayerSourceAlternateStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "76   4B 00026370 ??0?$TDB_DerivedStream@UBEE_MarkerStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "79   4E 000264B0 ??0?$TDB_DerivedStream@UBEE_MaterialProjectionStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "82   51 000265D0 ??0?$TDB_DerivedStream@UBEE_MaterialScaleStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "85   54 00026700 ??0?$TDB_DerivedStream@UBEE_ModelAnimationName2StreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "populate_vector_art": {
+          "count": 1,
+          "examples": [
+            "12076 2F2B 006ECB60 ?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          ]
+        },
+        "rasterize_2d": {
+          "count": 3,
+          "examples": [
+            "12111 2F4E 0028F520 ?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+            "12112 2F4F 005AE150 ?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+            "12113 2F50 006E3E90 ?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          ]
+        },
+        "vector_art_getbounds": {
+          "count": 1,
+          "examples": [
+            "6526 197D 006CD3C0 ?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+          ]
+        },
+        "vector_stream": {
+          "count": 1452,
+          "examples": [
+            "110   6D 0006BE80 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "111   6E 0006BEB0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@AEBV0@@Z",
+            "112   6F 0006BEE0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "200   C7 0006C100 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "201   C8 0006C130 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "202   C9 0006C170 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "242   F1 0006C310 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "243   F2 0006C340 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "244   F3 0006C380 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "251   FA 0006C3C0 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "252   FB 0006C3F0 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "253   FC 0006C430 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "868  363 0006E850 ??0BlendModeStream@BEE_VectorStream@@IEAA@AEBV01@AEBUTDB_CloneStreamParams@@@Z",
+            "869  364 0006E880 ??0BlendModeStream@BEE_VectorStream@@IEAA@AEBV01@_N@Z",
+            "870  365 0006E8C0 ??0BlendModeStream@BEE_VectorStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "888  377 006FED30 ??0EllipseStreamGroup@BEE_VectorStream@@IEAA@AEBV01@AEBUTDB_CloneStreamParams@@@Z",
+            "889  378 0006E930 ??0EllipseStreamGroup@BEE_VectorStream@@QEAA@AEBV01@@Z",
+            "890  379 006FED60 ??0EllipseStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "type_registration_names": {
+          "count": 163,
+          "examples": [
+            "5507 1582 000462C0 ?Create@?$TDB_Float2Stream@UBEE_GraphicDurationStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5508 1583 00046350 ?Create@?$TDB_Float2Stream@UBEE_MaterialScaleStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5509 1584 000463E0 ?Create@?$TDB_Float2Stream@UBEE_PaintClonePositionStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5510 1585 00046470 ?Create@?$TDB_Float3Stream@UBEE_OrientationStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5511 1586 00046500 ?Create@?$TDB_Float4Stream@U?$BEE_GenericColorStreamTraits@$0CGE@UBEE_DefaultColorRed@@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5512 1587 00046590 ?Create@?$TDB_Float4Stream@U?$BEE_ShadowColorStreamTraits@$0DNP@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5513 1588 00046620 ?Create@?$TDB_Float4Stream@UBEE_IntrinsicBaseColorStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5514 1589 000466B0 ?Create@?$TDB_Float4Stream@UBEE_IntrinsicEmissionColorStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5515 158A 00046740 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPF@$0BO@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5516 158B 000467D0 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPG@$0BO@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5517 158C 00046860 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPI@$0A@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5518 158D 000468F0 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPJ@$0GE@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5519 158E 00046980 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0LN@$00@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5520 158F 00046A10 ?Create@?$TDB_FloatStream@UBEE_LayerSetCopiesStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5521 1590 00046AA0 ?Create@?$TDB_FloatStream@UBEE_LayerSetStopRelPosStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5522 1591 00046B30 ?Create@?$TDB_FloatStream@UBEE_MaterialProjectionStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5523 1592 00046BC0 ?Create@?$TDB_FloatStream@UBEE_PaintCloneTimeShiftStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5524 1593 00046C50 ?Create@?$TDB_FloatStream@UBEE_PaintCloneTimeStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+          ]
+        },
+        "AGM_port": {
+          "count": 16,
+          "examples": [
+            "689  2B0 00693DD0 ??0BEE_SVGToAGMDisplayListConverter@@QEAA@AEBV0@@Z",
+            "690  2B1 00693E20 ??0BEE_SVGToAGMDisplayListConverter@@QEAA@XZ",
+            "930  3A1 006C97B0 ??0Path@BEE_VectorArt@@QEAA@AEBVCAGMPath@BIB_T_MT@@W4Usage@01@@Z",
+            "1300  513 00693F10 ??1BEE_SVGToAGMDisplayListConverter@@QEAA@XZ",
+            "2477  9AC 00693FF0 ??4BEE_SVGToAGMDisplayListConverter@@QEAAAEAV0@AEBV0@@Z",
+            "5394 1511 006941B0 ?Close@BEE_SVGToAGMDisplayListConverter@@QEAAXXZ",
+            "6226 1851 006CD1C0 ?FindGraphicPaths@BEE_VectorArt@@YAXAEBVGroup@1@AEBVOriginInfo@1@AEAVCAGMPath@BIB_T_MT@@@Z",
+            "7013 1B64 006941E0 ?GetDisplayListPort@BEE_SVGToAGMDisplayListConverter@@QEAA?AV?$shared_ptr@VCAGMDisplayListPort@BIB_T_MT@@@std@@XZ",
+            "7371 1CCA 006943F0 ?GetDocBounds@BEE_SVGToAGMDisplayListConverter@@QEAA?AU_t_BRVFixedRect@@XZ",
+            "8402 20D1 00281140 ?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ",
+            "9268 2433 006CEBC0 ?GetPaths@Graphic@BEE_VectorArt@@QEBA?AVCAGMPath@BIB_T_MT@@U?$pair@V?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@@Z",
+            "9910 26B5 006DCCB0 ?GetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z",
+            "10567 2946 006944C0 ?GetViewBox@BEE_SVGToAGMDisplayListConverter@@QEAA?AUSVGViewBoxInfo_t@@XZ",
+            "11940 2EA3 006833A0 ?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+            "12046 2F0D 006DEF20 ?OffsetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z",
+            "12058 2F19 00694500 ?Open@BEE_SVGToAGMDisplayListConverter@@QEAA_NAEBVFile@filesupport@dvacore@@@Z"
+          ]
+        }
+      }
+    },
+    "AE2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "file_size": 24676360,
+      "export_count": 14182,
+      "category_hits": {
+        "constructor_generic_shape": {
+          "count": 2,
+          "examples": [
+            "458  1C9 0002A900 ??0BEE_GenericShapeStream@@QEAA@AEBVOM_Stream@@AEBUTDB_CloneStreamParams@@@Z",
+            "459  1CA 0002A930 ??0BEE_GenericShapeStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "tbd_stream_factory": {
+          "count": 401,
+          "examples": [
+            "32   1F 0006A380 ??0?$TDB_CheckBoxStream@UBEE_ConeInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "35   22 0006A430 ??0?$TDB_CheckBoxStream@UBEE_CylinderInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "38   25 0006A4E0 ??0?$TDB_CheckBoxStream@UBEE_SphereInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "41   28 0006A590 ??0?$TDB_CheckBoxStream@UBEE_TorusInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "44   2B 00025080 ??0?$TDB_DerivedStream@U?$BEE_GenericColorStreamTraits@$0CGE@UBEE_DefaultColorRed@@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "47   2E 00025180 ??0?$TDB_DerivedStream@U?$BEE_ShadowColorStreamTraits@$0DNP@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "50   31 00025280 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPF@$0BO@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "53   34 000253A0 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPG@$0BO@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "56   37 000254C0 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPI@$0A@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "59   3A 000255E0 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0DPJ@$0GE@@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "62   3D 00025700 ??0?$TDB_DerivedStream@U?$BEE_SimplePercentStreamTraits@$0LN@$00@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "65   40 0006A630 ??0?$TDB_DerivedStream@UBEE_ConeInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "68   43 0006A740 ??0?$TDB_DerivedStream@UBEE_CylinderInvertSliceStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "71   46 0006A850 ??0?$TDB_DerivedStream@UBEE_GradientColorsStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "74   49 00025820 ??0?$TDB_DerivedStream@UBEE_GraphicDurationStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "77   4C 00025930 ??0?$TDB_DerivedStream@UBEE_IntrinsicBaseColorStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "80   4F 00025A30 ??0?$TDB_DerivedStream@UBEE_IntrinsicEmissionColorStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "83   52 00025B30 ??0?$TDB_DerivedStream@UBEE_LayerSetCopiesStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "populate_vector_art": {
+          "count": 1,
+          "examples": [
+            "12550 3105 00710EE0 ?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          ]
+        },
+        "rasterize_2d": {
+          "count": 3,
+          "examples": [
+            "12586 3129 00298720 ?Rasterize2DGraph@BEE_AVLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+            "12587 312A 005CD6A0 ?Rasterize2DGraph@BEE_TextLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z",
+            "12588 312B 00708720 ?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z"
+          ]
+        },
+        "vector_art_getbounds": {
+          "count": 1,
+          "examples": [
+            "6821 1AA4 006F2000 ?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z"
+          ]
+        },
+        "vector_stream": {
+          "count": 1452,
+          "examples": [
+            "132   83 0006AF80 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "133   84 0006AFB0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@AEBV0@@Z",
+            "134   85 0006AFE0 ??0?$TDB_DerivedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "237   EC 0006B570 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "238   ED 0006B5A0 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "239   EE 0006B5E0 ??0?$TDB_FloatBasedStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "288  11F 0006B990 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "289  120 0006B9C0 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "290  121 0006BA00 ??0?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "297  128 0006BA40 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@AEBUTDB_CloneStreamParams@@@Z",
+            "298  129 0006BA70 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@IEAA@AEBV0@_N@Z",
+            "299  12A 0006BAB0 ??0?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "938  3A9 0006E280 ??0BlendModeStream@BEE_VectorStream@@IEAA@AEBV01@AEBUTDB_CloneStreamParams@@@Z",
+            "939  3AA 0006E2B0 ??0BlendModeStream@BEE_VectorStream@@IEAA@AEBV01@_N@Z",
+            "940  3AB 0006E2F0 ??0BlendModeStream@BEE_VectorStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+            "958  3BD 00722770 ??0EllipseStreamGroup@BEE_VectorStream@@IEAA@AEBV01@AEBUTDB_CloneStreamParams@@@Z",
+            "959  3BE 0006E360 ??0EllipseStreamGroup@BEE_VectorStream@@QEAA@AEBV01@@Z",
+            "960  3BF 007227A0 ??0EllipseStreamGroup@BEE_VectorStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+          ]
+        },
+        "type_registration_names": {
+          "count": 177,
+          "examples": [
+            "5743 166E 00082B10 ?Create@?$TDB_CheckBoxStream@UBEE_ConeInvertSliceStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5744 166F 00082B90 ?Create@?$TDB_CheckBoxStream@UBEE_CylinderInvertSliceStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5745 1670 00082C10 ?Create@?$TDB_CheckBoxStream@UBEE_SphereInvertSliceStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5746 1671 00082C90 ?Create@?$TDB_CheckBoxStream@UBEE_TorusInvertSliceStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5747 1672 00045CF0 ?Create@?$TDB_Float2Stream@UBEE_GraphicDurationStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5748 1673 00045D70 ?Create@?$TDB_Float2Stream@UBEE_MaterialScaleStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5749 1674 00045DF0 ?Create@?$TDB_Float2Stream@UBEE_PaintClonePositionStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5750 1675 00082D10 ?Create@?$TDB_Float2Stream@UBEE_TextVariableFontAxisStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5751 1676 00045E70 ?Create@?$TDB_Float3Stream@UBEE_OrientationStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5752 1677 00045EF0 ?Create@?$TDB_Float4Stream@U?$BEE_GenericColorStreamTraits@$0CGE@UBEE_DefaultColorRed@@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5753 1678 00045F70 ?Create@?$TDB_Float4Stream@U?$BEE_ShadowColorStreamTraits@$0DNP@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5754 1679 00045FF0 ?Create@?$TDB_Float4Stream@UBEE_IntrinsicBaseColorStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5755 167A 00046070 ?Create@?$TDB_Float4Stream@UBEE_IntrinsicEmissionColorStreamTraits@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5756 167B 000460F0 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPF@$0BO@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5757 167C 00046170 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPG@$0BO@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5758 167D 000461F0 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPI@$0A@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5759 167E 00046270 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0DPJ@$0GE@@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "5760 167F 000462F0 ?Create@?$TDB_FloatStream@U?$BEE_SimplePercentStreamTraits@$0LN@$00@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+          ]
+        },
+        "AGM_port": {
+          "count": 7,
+          "examples": [
+            "1000  3E7 006EE400 ??0Path@BEE_VectorArt@@QEAA@AEBVCAGMPath@BIB_T_MT@@W4Usage@01@@Z",
+            "6513 1970 006F1E10 ?FindGraphicPaths@BEE_VectorArt@@YAXAEBVGroup@1@AEBVOriginInfo@1@AEAVCAGMPath@BIB_T_MT@@@Z",
+            "8768 223F 0028A5A0 ?GetLayerFilterProc@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZXZ",
+            "9636 25A3 006F3600 ?GetPaths@Graphic@BEE_VectorArt@@QEBA?AVCAGMPath@BIB_T_MT@@U?$pair@V?$_List_const_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@@Z",
+            "10286 282D 007016C0 ?GetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z",
+            "12411 307A 0069F7B0 ?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+            "12518 30E5 00703750 ?OffsetStrokePath@BEE_VectorArt@@YAXV?$IntrusivePtr@VStrokeData@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@_NPEBVRG_ProgAbort@@AEBVCAGMPath@BIB_T_MT@@AEAVCAIMBezierPath@8@@Z"
+          ]
+        }
+      }
+    }
+  },
+  "sources": {
+    "CS6": "D:\\Developer\\After Effects Internals Guide\\research\\external-sources\\ae-sdk-cs6\\Headers",
+    "CC2014": "D:\\Developer\\After Effects Internals Guide\\research\\external-sources\\ae-sdk-cc2014\\Headers",
+    "SDK25.6": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers"
+  }
+}

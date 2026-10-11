@@ -1,0 +1,43 @@
+{
+  "budget_bytes": 4194304,
+  "targets": [
+    "composite"
+  ],
+  "nodes": [
+    {
+      "id": "source",
+      "deps": [],
+      "bytes": 2097152,
+      "cost": 3,
+      "scratch_bytes": 0
+    },
+    {
+      "id": "analysis",
+      "deps": [
+        "source"
+      ],
+      "bytes": 1048576,
+      "cost": 5,
+      "scratch_bytes": 0
+    },
+    {
+      "id": "workspace",
+      "deps": [
+        "analysis"
+      ],
+      "bytes": 1048576,
+      "cost": 7,
+      "scratch_bytes": 3145728
+    },
+    {
+      "id": "composite",
+      "deps": [
+        "source",
+        "workspace"
+      ],
+      "bytes": 1048576,
+      "cost": 11,
+      "scratch_bytes": 0
+    }
+  ]
+}

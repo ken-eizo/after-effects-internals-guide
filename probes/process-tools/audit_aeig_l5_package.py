@@ -4,7 +4,7 @@ import hashlib, json, py_compile, shutil, subprocess, sys, tempfile
 ROOT = Path(r"D:\Developer\After Effects Internals Guide")
 PKG = ROOT / "experiments" / "user-run" / "AEIG-1.0-L5"
 AEX = PKG / "plugin" / "AEGP" / "AEIGReceiptArtie.aex"
-EXPECTED = "884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792"
+EXPECTED = "DA8693DBD6B7CCC1BBF3043608D4FD7C93557D9CAF3F08A6B78D0BD5B6A1BB0F"
 REQUIRED = [
     "00_PREPARE_RESULTS.cmd", "INSTALL_26_3.cmd", "01_RUN_IN_AE.jsx",
     "REMOVE_26_3.cmd", "02_VERIFY_RESULTS.cmd", "README.md",
@@ -53,13 +53,16 @@ if jsx.exists():
     if r.returncode: errors.append("JSX syntax: " + (r.stderr or r.stdout).strip())
     fixture_sequence = [
         'comp.renderer="AEIG Receipt Probe"', '"AEIG_SOLID",32,32,1,1', 'layer.threeDLayer=true',
-        'e1.property(1).setValue(10)', 'renderPass(comp,"WARMUP"', 'CANONICAL_CAPTURE_RESET_AFTER_WARMUP',
-        'renderPass(comp,"A"', 'layer=comp.layer("AEIG_SOLID")',
+        'e1.property(1).setValue(10)', 'e1.property(1).setValue(9)', 'renderPass(comp,"WARMUP"',
+        'e1.property(1).setValue(10); log("POST_WARMUP blur="', 'CANONICAL_CAPTURE_RESET_AFTER_WARMUP',
+        'renderPass(comp,"A"',
         'e1.property(1).setValue(75)', 'log("MUTATION blur="+e1.property(1).value)', 'renderPass(comp,"B"',
     ]
     pos = [jsx_text.find(x) for x in fixture_sequence]
     if any(x < 0 for x in pos): errors.append("JSX fixture guard: required 3D/rebind sequence missing")
     elif pos != sorted(pos): errors.append("JSX fixture guard: render/mutation sequence out of order")
+    if jsx_text.count('layer=comp.layer("AEIG_SOLID")') < 3 or jsx_text.count('e1=fx.property(1)') < 3:
+        errors.append("JSX fixture guard: effect references must be rebound before WARMUP, after WARMUP, and after pass A")
     for token in ('var SESSION = ','readKV(SESSION)','aeig.session_id=','aeig.static_rc_fingerprint=','SESSION_ID='):
         if token not in jsx_text: errors.append("JSX operator-session contract missing: "+token)
 prep_tool=TOOLS/"prepare_aeig_l5_user_run.py"
@@ -115,7 +118,8 @@ old_hashes = ["8FAD5221BC5AA270CFF9505F6E3F2ABF7916F4B4DFE7820BA653DFDA759E9FEE"
               "9D74BE748771D60A63CF3770E346DC7D69348BB5C8B007235CB325FBAF5D9AAB",
               "9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98",
               "E3546DB78AA3454FEE5EF6C5A14A3B1152111D2A543E249C3DBB1036AE3DFF33",
-              "01B019CFE9AF26A7CB5B8580F9C5297D263FB8742BFBF06721A79BD6E7725062"]
+              "01B019CFE9AF26A7CB5B8580F9C5297D263FB8742BFBF06721A79BD6E7725062",
+              "884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792"]
 text_ext = {".md", ".json", ".py", ".cmd", ".jsx", ".txt", ".csv", ".tsv", ".h", ".cpp"}
 for base in [PKG, ROOT / "experiments" / "observatory" / "manifests", TOOLS]:
     for p in base.rglob("*"):

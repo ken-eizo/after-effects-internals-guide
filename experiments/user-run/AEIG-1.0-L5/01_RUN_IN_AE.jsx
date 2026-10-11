@@ -87,14 +87,20 @@ try {
   var e2=fx.addProperty("ADBE Fill"); dumpReflect(e2,"Fill"); log("fx2="+e2.matchName);
   var e3=fx.addProperty("ADBE Tint"); dumpReflect(e3,"Tint"); log("fx3="+e3.matchName);
   log("numEffects="+fx.numProperties);
+  layer=comp.layer("AEIG_SOLID"); fx=layer.property("ADBE Effect Parade"); e1=fx.property(1);
+  e1.property(1).setValue(9); log("WARMUP blur="+e1.property(1).value);
   renderPass(comp,"WARMUP",CACHE+"fixture-output-WARMUP.avi");
   try{ (new File(CACHE+"fixture-output-WARMUP.avi")).remove(); }catch(e){}
+  layer=comp.layer("AEIG_SOLID"); fx=layer.property("ADBE Effect Parade"); e1=fx.property(1);
+  e1.property(1).setValue(10); log("POST_WARMUP blur="+e1.property(1).value);
   writeText(RECEIPT,""); writeText(HOSTTRACE,""); writeText(TRACECONTROL,""); writeText(ARTSTAGE,"");
   log("CANONICAL_CAPTURE_RESET_AFTER_WARMUP");
+  comp.renderer="ADBE Advanced 3d"; comp.renderer="AEIG Receipt Probe"; log("REBIND_A renderer="+comp.renderer);
   renderPass(comp,"A",CACHE+"fixture-output-A.avi");
   layer=comp.layer("AEIG_SOLID"); fx=layer.property("ADBE Effect Parade"); e1=fx.property(1);
   e1.property(1).setValue(75);
   log("MUTATION blur="+e1.property(1).value);
+  comp.renderer="ADBE Advanced 3d"; comp.renderer="AEIG Receipt Probe"; log("REBIND_B renderer="+comp.renderer);
   renderPass(comp,"B",CACHE+"fixture-output-B.avi");
 } catch(e) {
   log("ERR="+e.toString()+" line="+e.line);

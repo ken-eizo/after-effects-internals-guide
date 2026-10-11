@@ -1,0 +1,126 @@
+{
+  "issue": "F-THREAD-004",
+  "schema": 1,
+  "scope": "full source-extracted ActuallyRender under a mock SDK backend",
+  "normative_case": "MFR render input sequence_data is NULL (AE_Effect.h:926-927)",
+  "conditional_case": "sequential nested invocations sharing a non-NULL handle; not a claimed AE scheduling trace",
+  "ae_host_executed": false,
+  "concurrent_cpp_data_race_executed": false,
+  "original_sdk_modified": false,
+  "compiler": "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+  "compiler_version": "clang version 20.1.2",
+  "sources": {
+    "SmartyPants.cpp": {
+      "path": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants\\SmartyPants.cpp",
+      "sha256": "4865f3d8db8de37f5109cb34fdf04b7ae8f5b5582f12f490baa67f7f179104c2"
+    },
+    "SmartyPants.h": {
+      "path": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants\\SmartyPants.h",
+      "sha256": "842b1fd4f3366ce456b3b7a0e6ec9edf032aef08f90cf9d06b21dc4e83c4f654"
+    },
+    "AE_Effect.h": {
+      "path": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\AE_Effect.h",
+      "sha256": "215d07b840ef2c731d2394f00edad40d05cc23ec33d0a001b19a1468cf662faf"
+    }
+  },
+  "results": {
+    "original": {
+      "null_sequence": {
+        "error": 5001,
+        "output_alpha": 64,
+        "expected_alpha": 191,
+        "kernel_calls": 0,
+        "copy_calls": 1
+      },
+      "nested_shared_handle": {
+        "outer_error": 0,
+        "inner_error": 0,
+        "outer_alpha": 127,
+        "expected_outer_alpha": 191,
+        "outer_blend": 128,
+        "inner_blend": 128,
+        "same_parameter_storage": true,
+        "shared_storage_unchanged": false
+      },
+      "nested_channels": {
+        "outer_channel": 1,
+        "expected_channel": 16
+      },
+      "sequential": {
+        "cases": 101,
+        "case_failures": 0
+      },
+      "harness_sha256": "5d0a8097273928cd592eb3a1219fef93867ea79b7a385dc212b1ab765256df5d",
+      "source_sha256": "4865f3d8db8de37f5109cb34fdf04b7ae8f5b5582f12f490baa67f7f179104c2",
+      "whole_source_syntax": {
+        "exit_code": 0,
+        "warning_count": 42,
+        "command": [
+          "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+          "-std=c++17",
+          "-fsyntax-only",
+          "-DMSWindows",
+          "-DWIN32",
+          "-D_WINDOWS",
+          "D:\\Developer\\After Effects Internals Guide\\experiments\\sdk-lifecycle-lab\\workbench\\original\\SmartyPants.cpp",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\SP",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\Win",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Resources",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Util",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants"
+        ],
+        "scope": "actual SDK headers, syntax only; not linked or run in AE"
+      }
+    },
+    "copy": {
+      "null_sequence": {
+        "error": 0,
+        "output_alpha": 191,
+        "expected_alpha": 191,
+        "kernel_calls": 1,
+        "copy_calls": 0
+      },
+      "nested_shared_handle": {
+        "outer_error": 0,
+        "inner_error": 0,
+        "outer_alpha": 191,
+        "expected_outer_alpha": 191,
+        "outer_blend": 0,
+        "inner_blend": 128,
+        "same_parameter_storage": false,
+        "shared_storage_unchanged": true
+      },
+      "nested_channels": {
+        "outer_channel": 16,
+        "expected_channel": 16
+      },
+      "sequential": {
+        "cases": 101,
+        "case_failures": 0
+      },
+      "harness_sha256": "c778b3893a097d60a62f8c695ca144f1e5dd627f9aa5b38ecafbe7f2804b2a1f",
+      "source_sha256": "ff1504bec12c951cbeaa64d4b5776f2136dfc9f116dc92ea4b4a7bc4c66d8cf7",
+      "whole_source_syntax": {
+        "exit_code": 0,
+        "warning_count": 42,
+        "command": [
+          "C:\\Program Files\\LLVM\\bin\\clang++.EXE",
+          "-std=c++17",
+          "-fsyntax-only",
+          "-DMSWindows",
+          "-DWIN32",
+          "-D_WINDOWS",
+          "D:\\Developer\\After Effects Internals Guide\\experiments\\sdk-lifecycle-lab\\workbench\\copy\\SmartyPants.cpp",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\SP",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\Win",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Resources",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Util",
+          "-IE:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Effect\\SmartyPants"
+        ],
+        "scope": "actual SDK headers, syntax only; not linked or run in AE"
+      }
+    }
+  }
+}

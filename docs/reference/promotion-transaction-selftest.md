@@ -1,6 +1,6 @@
 ---
 status: generated
-last_verified: 2026-09-16
+last_verified: 2026-09-17
 ---
 # Promotion Transaction Self-Test
 

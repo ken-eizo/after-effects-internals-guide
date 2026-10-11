@@ -1,0 +1,340 @@
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:32:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\entry.h:28:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_PluginData.h:30:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\A.h:80:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   80 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:32:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\entry.h:28:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_PluginData.h:30:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\A.h:145:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  145 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\A.h:165:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  165 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:32:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\entry.h:28:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_PluginData.h:30:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\A.h:187:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  187 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:32:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\entry.h:28:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_PluginData.h:39:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   39 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:32:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\entry.h:28:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_PluginData.h:160:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  160 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:33:
+D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\AE_Effect.h:89:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   89 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:33:
+D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\AE_Effect.h:2212:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 2212 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\AE_Effect.h:2230:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 2230 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:33:
+D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\AE_Effect.h:3228:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 3228 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:34:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectCB.h:72:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   72 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:34:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectCB.h:1268:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 1268 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectCBSuites.h:37:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   37 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectCBSuites.h:927:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  927 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:26:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectUI.h:40:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/drawbotsuite/DrawbotSuiteTypes.h:30:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   30 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:26:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectUI.h:40:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/drawbotsuite/DrawbotSuiteTypes.h:157:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  157 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:26:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectUI.h:51:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   51 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:26:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectUI.h:595:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  595 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:36:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   36 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:31:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\PR_Public.h:63:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuites.h:749:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  749 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:38:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   38 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:291:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  291 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:313:11: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  313 |         #include <adobesdk/config/PreConfig.h>
+      |                  ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:415:11: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  415 |         #include <adobesdk/config/PostConfig.h>
+      |                  ^
+note: previous '#pragma pack' directive that modifies alignment is here
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:430:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  430 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:37:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_IO.h:870:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  870 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:47:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugPre.h:12:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   12 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:47:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   47 | #include <AE_GeneralPlugPre.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5728:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugPost.h:15:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   15 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5728:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 5728 | #include <AE_GeneralPlugPost.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5739:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugOld.h:35:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugPre.h:12:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   12 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5739:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugOld.h:35:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   35 | #include <AE_GeneralPlugPre.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5739:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugOld.h:10877:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugPost.h:15:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   15 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:39:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h:5739:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlugOld.h:10877:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+ 10877 | #include <AE_GeneralPlugPost.h>
+       |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:40:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\Smart_Utils.h:22:10: warning: #include resolved using non-portable Microsoft search rules as: D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\AE_Effect.h [-Wmicrosoft-include]
+   22 | #include "AE_Effect.h"
+      |          ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:70:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_AdvEffectSuites.h:36:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   36 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:70:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_AdvEffectSuites.h:359:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  359 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:72:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuitesHelper.h:42:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   42 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:72:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_EffectSuitesHelper.h:175:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  175 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:73:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/DrawbotSuite.h:34:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/AdobesdkTypes.h:35:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   35 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:73:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/DrawbotSuite.h:34:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/AdobesdkTypes.h:67:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   67 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:73:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/DrawbotSuite.h:43:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+   43 | #include <adobesdk/config/PreConfig.h>
+      |          ^
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/config/PreConfig.h:6:9: note: previous '#pragma pack' directive that modifies alignment is here
+    6 | #pragma pack( push, AdobeSDKExternalAlign, 8 )
+      |         ^
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.cpp:39:
+In file included from D:\Developer\After Effects Internals Guide\experiments\sdk-contract-fixes\workbench\original\SmartyPants.h:41:
+In file included from E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Util\AEGP_SuiteHandler.h:73:
+E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\adobesdk/DrawbotSuite.h:646:10: warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+  646 | #include <adobesdk/config/PostConfig.h>
+      |          ^
+note: previous '#pragma pack' directive that modifies alignment is here
+43 warnings generated.

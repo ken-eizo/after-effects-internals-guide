@@ -1,0 +1,32 @@
+{
+  "certificate_version": 1,
+  "model_version": "aeig-pebbling-v1",
+  "model_sha256": "bd8cfff52d8b7052ffa19c9e7a84d714bc64944eac5ebfdcef5bac51b8ce437a",
+  "status": "infeasible",
+  "states": [
+    {
+      "mask": 0,
+      "distance": 0
+    },
+    {
+      "mask": 1,
+      "distance": 3
+    },
+    {
+      "mask": 2,
+      "distance": 8
+    },
+    {
+      "mask": 3,
+      "distance": 8
+    }
+  ],
+  "path": [],
+  "goal_state": null,
+  "cost": null,
+  "stats": {
+    "states_discovered": 4,
+    "states_settled": 4,
+    "transitions_examined": 7
+  }
+}

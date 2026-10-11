@@ -1,0 +1,29 @@
+--- a/SmartyPants.cpp
++++ b/SmartyPants.cpp
+@@ -550,7 +550,7 @@
+  		switch (id->channel) {
+ 			case Channel_ALPHA:
+ 				*out = *in;
+- 				out->alpha = (id->blend * in->alpha + (PF_MAX_CHAN8 - id->blend) * (PF_MAX_CHAN16 - in->alpha)) >> 8;
++ 				out->alpha = (id->blend * in->alpha + (256 - id->blend) * (PF_MAX_CHAN16 - in->alpha)) >> 8;
+ 				break;
+ 			case Channel_RGB:
+ 				out->red 	= PF_MAX_CHAN16 - in->red;
+@@ -692,7 +692,7 @@
+  		switch (id->channel) {
+ 			case Channel_ALPHA:
+ 				*out = *in;
+- 				out->alpha = 1.0 - in->alpha;
++ 				out->alpha = (id->blend * in->alpha + (256 - id->blend) * (1.0 - in->alpha)) / 256.0;
+ 				break;
+ 			case Channel_RGB:
+ 				out->red 	= 1.0 - in->red;
+@@ -1097,7 +1097,7 @@
+ 							&def));
+ 
+ 	if (!err && (def.u.pd.value == Channel_ALPHA)){
+-		out_data->out_flags2 &= PF_OutFlag2_DOESNT_NEED_EMPTY_PIXELS;
++		out_data->out_flags2 &= ~PF_OutFlag2_DOESNT_NEED_EMPTY_PIXELS;
+ 	}
+ 	ERR2(PF_CHECKIN_PARAM(in_data, &def));
+ 	return err;

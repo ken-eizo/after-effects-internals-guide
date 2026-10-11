@@ -1,6 +1,6 @@
 ---
 status: generated
-last_verified: 2026-09-16
+last_verified: 2026-09-17
 ---
 # AEIG 1.0 Release Readiness
 
@@ -18,8 +18,8 @@ Checks: **16** — PASS 13, BLOCKER 2, WARN 0, INFO 1.
 | `api-guide-relations` | **PASS** | reviewed=113 open=0 |
 | `master-surface-registry` | **PASS** | rows=53728 classes=13 missing= blanks={'name': 0, 'support_class': 0, 'host_scope': 0, 'source': 0} |
 | `predictive-validation` | **BLOCKER** | prospective=7 locked=7 confirmed=2 unresolved=5 refuted_unrevised=0 |
-| `l5-user-run-package` | **PASS** | package_files=7/7 / aex_sha256=884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792 / python_compile=26/26 / manifest_json=ok / jsx_syntax=ok / AEIG-L5 package audit: GREEN |
-| `static-rc-freeze` | **PASS** | AEIG static RC verification: PASS / artifacts 70 predictions 7 / fingerprint 79E7481B91E14E18C9EC3D5049827774B400EA882A761CA7DF2F641994BFCE95 |
+| `l5-user-run-package` | **PASS** | package_files=7/7 / aex_sha256=DA8693DBD6B7CCC1BBF3043608D4FD7C93557D9CAF3F08A6B78D0BD5B6A1BB0F / python_compile=26/26 / manifest_json=ok / jsx_syntax=ok / AEIG-L5 package audit: GREEN |
+| `static-rc-freeze` | **PASS** | AEIG static RC verification: PASS / artifacts 70 predictions 7 / fingerprint F49F129696277D2E3C08ADC1925CE9EE2DE1B90927FB6EE8210B76F3111DDA26 |
 | `seed-pages` | **PASS** | seed_pages=0 |
 | `doc-todo-markers` | **PASS** | docs_with_todo_like_markers=0 |
 | `markdown-local-links` | **PASS** | checked=0 broken=0 |

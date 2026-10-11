@@ -38,6 +38,7 @@ nav:
         - "Speculative Evaluation": evaluation/speculative-evaluation.md
     - "Render Graph":
         - "Async Render Requests and Obsolescence": render-graph/async-render-requests.md
+        - "Certified Memory-Bounded Recomputation": render-graph/verified-memory-planning.md
         - "Frame Checkout and Dependency Materialization": render-graph/frame-checkout.md
         - "Layer Input Stage as a Render-Graph Address": render-graph/layer-input-stage.md
         - "Layer Pipeline Stages": render-graph/layer-pipeline-stages.md
@@ -89,6 +90,8 @@ nav:
         - "Text System": text-system/overview.md
     - "Vector / Shape System":
         - "Vector / Shape Runtime Architecture": vector-shape-system/runtime-architecture.md
+        - "Native Shape Extensibility Research": vector-shape-system/native-extensibility-boundaries.md
+        - "Native Shape Historical / Private API Forensics": vector-shape-system/historical-native-extension-forensics.md
         - "Vector and Shape System": vector-shape-system/overview.md
     - "3D System":
         - "3D System": three-d-system/overview.md
@@ -140,6 +143,7 @@ nav:
             - "SDK Sample Pitfalls and Fossilized Defects": host-integration/cpp-sdk/sample-pitfalls.md
             - "State API Evolution: From Conservative Dirty Checks to Dependency Receipts": host-integration/cpp-sdk/state-api-evolution.md
             - "Suite Versioning and ABI": host-integration/cpp-sdk/suite-versioning-and-abi.md
+            - "Verified SDK Sample Repairs": host-integration/cpp-sdk/verified-sample-repairs.md
             - "AEGPs":
                 - "C++ SDK - AEGPs": host-integration/cpp-sdk/aegps/index.md
             - "AEIOs":
@@ -284,6 +288,7 @@ nav:
         - "Prediction Status": reference/prediction-status.md
         - "Promotion Transaction Self-Test": reference/promotion-transaction-selftest.md
         - "Querying the Master Surface Registry": reference/master-surface-query.md
+        - "Radical Resolution Register": reference/radical-resolution-register.md
         - "Release Pipeline Self-Test": reference/release-pipeline-selftest.md
         - "Repository Integrity": reference/repository-integrity.md
         - "Roadmap Status": reference/roadmap-status.md

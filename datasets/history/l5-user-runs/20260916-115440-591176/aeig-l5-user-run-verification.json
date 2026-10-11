@@ -1,0 +1,137 @@
+{
+  "session": {
+    "exists": true,
+    "ok": true,
+    "errors": [],
+    "issued_unix_ms": 1789521942078,
+    "session_id": "20260916T012542Z-D7B6D810463C",
+    "fingerprint": "A1BB56997261C8A871DCC43A233F74CB85173BC3BE5270442FB2737A79D766C2",
+    "aex_hash": "9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98"
+  },
+  "receipt_analysis": {
+    "exit": 3,
+    "stdout": "rows=2 attempts=0 success=0 errors=0 matches=0 nonmatches=0 malformed=0\ncoverage {} mechanical_ok False\nwrote D:\\Developer\\After Effects Internals Guide\\datasets\\exp-cache-002-receipt-matrix.csv\nwrote D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-CACHE-002\\analysis-summary.md\n",
+    "stderr": ""
+  },
+  "plugin_analysis": {
+    "exit": 4,
+    "stdout": "rows=3072 success=294 unexpected=18 published_failed=6 missing_labels=0\nwrote D:\\Developer\\After Effects Internals Guide\\datasets\\exp-plugin-001-suite-acquisition.csv\nwrote D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-PLUGIN-001\\analysis-summary.md\nexpected_labels 48 expected_attempts 1536 missing_attempts 0 duplicate_attempts 1536 malformed 0\nfirst duplicate attempts [(('AEGPArtisanUtilSuite', 1), 2), (('AEGPArtisanUtilSuite', 2), 2), (('AEGPArtisanUtilSuite', 3), 2), (('AEGPArtisanUtilSuite', 4), 2), (('AEGPArtisanUtilSuite', 5), 2), (('AEGPArtisanUtilSuite', 6), 2), (('AEGPArtisanUtilSuite', 7), 2), (('AEGPArtisanUtilSuite', 8), 2), (('AEGPArtisanUtilSuite', 9), 2), (('AEGPArtisanUtilSuite', 10), 2), (('AEGPArtisanUtilSuite', 11), 2), (('AEGPArtisanUtilSuite', 12), 2), (('AEGPArtisanUtilSuite', 13), 2), (('AEGPArtisanUtilSuite', 14), 2), (('AEGPArtisanUtilSuite', 15), 2), (('AEGPArtisanUtilSuite', 16), 2), (('AEGPArtisanUtilSuite', 17), 2), (('AEGPArtisanUtilSuite', 18), 2), (('AEGPArtisanUtilSuite', 19), 2), (('AEGPArtisanUtilSuite', 20), 2)]\n",
+    "stderr": ""
+  },
+  "rg_analysis": {
+    "exit": 2,
+    "stdout": "trace missing D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-RG-001\\host-trace.log\n",
+    "stderr": ""
+  },
+  "script_analysis": {
+    "exit": 0,
+    "stdout": "runtime_rows 496 compared_rows 380 missing_labels []\nwrote D:\\Developer\\After Effects Internals Guide\\datasets\\exp-script-001-runtime-reflection.csv\nwrote D:\\Developer\\After Effects Internals Guide\\experiments\\observatory\\runs\\EXP-SCRIPT-001\\analysis-summary.md\n",
+    "stderr": ""
+  },
+  "aex": {
+    "exists": true,
+    "sha256": "9768BC9B463F6377E1AE246303D6AEDD8BF11725E8D96034DF14E85F1AD9BE98",
+    "matches_expected": true
+  },
+  "output_A": {
+    "exists": true,
+    "size": 19528,
+    "sha256": "3BA8DD2D513588548C7F5C4F9053B1D6A2DD2E82846974710899789C64E89746"
+  },
+  "output_B": {
+    "exists": true,
+    "size": 19528,
+    "sha256": "32046DE8B6A4D71DC06FD8170A71115E6D3E712EE61F8119FD8F70E2880EBE11"
+  },
+  "output_pair_materialized": true,
+  "outputs_differ": true,
+  "fixture": {
+    "exists": true,
+    "renderer": true,
+    "three_d": true,
+    "three_effects": true,
+    "pass_a": true,
+    "initial_blur_10": true,
+    "mutation_blur_75": true,
+    "pass_b": true,
+    "script_exit": true,
+    "no_script_error": true
+  },
+  "environment": {
+    "exists": true,
+    "ae_version": "26.3x87",
+    "build_number": "87",
+    "os": "Windows/64 10.0",
+    "ae_26_3": true,
+    "build_number_present": true,
+    "os_present": true,
+    "session_id_matches": true,
+    "session_fingerprint_matches": true,
+    "session_issued_matches": true,
+    "session_aex_matches": true
+  },
+  "raw_session_time": {
+    "tolerance_ms": 2000,
+    "files": {
+      "receipt": {
+        "exists": true,
+        "mtime_unix_ms": 1789522231304,
+        "after_session_issue": true
+      },
+      "fixture": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255566,
+        "after_session_issue": true
+      },
+      "output_a": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255325,
+        "after_session_issue": true
+      },
+      "output_b": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255489,
+        "after_session_issue": true
+      },
+      "environment": {
+        "exists": true,
+        "mtime_unix_ms": 1789522250852,
+        "after_session_issue": true
+      },
+      "suite": {
+        "exists": true,
+        "mtime_unix_ms": 1789522231487,
+        "after_session_issue": true
+      },
+      "trace": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "trace_control": {
+        "exists": false,
+        "mtime_unix_ms": 0,
+        "after_session_issue": false
+      },
+      "current_pass": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255548,
+        "after_session_issue": true
+      },
+      "reflection": {
+        "exists": true,
+        "mtime_unix_ms": 1789522255150,
+        "after_session_issue": true
+      }
+    },
+    "all_after_issue": false
+  },
+  "current_pass_done": true,
+  "fixture_session_matches": true,
+  "capture_complete": false,
+  "semantic_checks": {
+    "outputs_differ": true
+  },
+  "semantic_checks_passed": true,
+  "all_required_checks_passed": false
+}

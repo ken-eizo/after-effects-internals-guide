@@ -1,0 +1,26 @@
+{
+  "certificate_version": 2,
+  "model_version": "aeig-pebbling-v1",
+  "model_sha256": "2c8ac9f8cffe0fedd6b35b134a02ade2fc914e3a0b3b25f8eb7253725190346e",
+  "status": "optimal",
+  "states": [
+    {
+      "mask": 0,
+      "distance": 0
+    }
+  ],
+  "path": [
+    {
+      "action": "compute",
+      "node": "goal",
+      "state": 4096
+    }
+  ],
+  "goal_state": 4096,
+  "cost": 1,
+  "stats": {
+    "states_discovered": 1,
+    "states_settled": 1,
+    "transitions_examined": 13
+  }
+}

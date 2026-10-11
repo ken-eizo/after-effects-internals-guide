@@ -1,0 +1,213 @@
+// Full ActuallyRender and the 8-bit Alpha branch are source-extracted.
+// This backend models synchronous iterator calls; it is not the AE ABI.
+// Nested calls run serially: no C++ data race or real AE schedule is asserted.
+#include <cstdint>
+#include <cstring>
+#include <iostream>
+#include <vector>
+#include <type_traits>
+#include <array>
+using A_long = std::int32_t;
+using A_short = std::int16_t;
+using A_char = char;
+using A_Boolean = std::uint8_t;
+using PF_Err = int;
+constexpr PF_Err PF_Err_NONE=0, PF_Err_INTERNAL_STRUCT_DAMAGED=5001,
+                 PF_Err_BAD_CALLBACK_PARAM=5002;
+struct PF_Pixel { std::uint8_t alpha=64,red=17,green=31,blue=63; };
+struct PF_Pixel16 { std::uint16_t alpha=0,red=0,green=0,blue=0; };
+struct PF_PixelFloat { float alpha=0,red=0,green=0,blue=0; };
+struct PF_EffectWorld { int width=1,height=1; PF_Pixel pixel{}; };
+using PF_LayerDef=PF_EffectWorld;
+using PF_RGBtoYIQFunc=void(*)();
+using PF_YIQtoRGBFunc=void(*)();
+using PF_RGBtoHLSFunc=void(*)();
+using PF_HLStoRGBFunc=void(*)();
+struct PF_UtilCallbacks {
+    struct { PF_RGBtoYIQFunc RGBtoYIQ=nullptr; PF_RGBtoHLSFunc RGBtoHLS=nullptr;
+             PF_HLStoRGBFunc HLStoRGB=nullptr; PF_YIQtoRGBFunc YIQtoRGB=nullptr; } colorCB;
+};
+struct PF_InData {
+    void** sequence_data=nullptr;
+    int output_origin_x=0,output_origin_y=0,tag=1;
+    void* pica_basicP=nullptr;
+    PF_UtilCallbacks* utils=nullptr;
+};
+struct PF_OutData {};
+struct PF_ParamDef {
+    struct { struct { double value=0; } fs_d; struct { int value=0; } pd; } u;
+};
+struct PF_Point { int h=0,v=0; };
+struct PF_Rect { int left=0,top=0,right=0,bottom=0; };
+using PF_PixelFormat=int;
+constexpr PF_PixelFormat PF_PixelFormat_INVALID=0,PF_PixelFormat_ARGB32=1,
+                         PF_PixelFormat_ARGB64=2,PF_PixelFormat_ARGB128=3;
+constexpr const char* kPFWorldSuite="mock world";
+constexpr int kPFWorldSuiteVersion2=2;
+// SDK_MAXIMUM
+// SDK_DEFINITIONS
+
+#define ERR(x) do { if(!err) err=(x); } while(false)
+#define ERR2(x) do { err2=(x); if(!err) err=err2; } while(false)
+static int copies=0;
+static PF_Err mock_copy(PF_EffectWorld* input,PF_EffectWorld* output,PF_Rect*,void*) {
+    ++copies; output->pixel=input->pixel; return 0;
+}
+#define PF_COPY mock_copy
+
+struct Observation { int tag,blend,channel; std::uintptr_t address; };
+static std::vector<Observation> observations;
+static PF_Err InvertPixel8(void* refcon,A_long,A_long,PF_Pixel* in,PF_Pixel* out) {
+    auto* idp=static_cast<SmartyPantsDataPlus*>(refcon);
+    auto* id=idp->id;
+    observations.push_back({idp->in_data->tag,id->blend,id->channel,
+                            reinterpret_cast<std::uintptr_t>(id)});
+    if (id->channel==Channel_ALPHA) {
+        // ALPHA8_BODY
+    } else {
+        // Other channel algorithms are outside this ownership harness.
+        *out=*in;
+    }
+    return 0;
+}
+static PF_Err InvertPixel16(void*,A_long,A_long,PF_Pixel16*,PF_Pixel16*) { return 0; }
+static PF_Err InvertPixelFloat(void*,A_long,A_long,PF_PixelFloat*,PF_PixelFloat*) { return 0; }
+static PF_Err ActuallyRender(PF_InData*,PF_EffectWorld*,PF_ParamDef*,
+                            PF_ParamDef*,PF_OutData*,PF_EffectWorld*);
+
+static bool nested=false;
+static int inner_error=0;
+static PF_InData* nested_input=nullptr;
+static PF_EffectWorld *nested_source=nullptr,*nested_output=nullptr;
+static PF_ParamDef *nested_blend=nullptr,*nested_channel=nullptr;
+static PF_OutData* nested_outdata=nullptr;
+
+template<class Pixel> struct IterateSuite {
+    PF_Err iterate_origin(PF_InData* in,int,int,PF_EffectWorld* src,PF_Rect*,
+                          PF_Point*,void* refcon,
+                          PF_Err(*callback)(void*,A_long,A_long,Pixel*,Pixel*),
+                          PF_EffectWorld* dst) {
+        if (nested && in->tag==1) {
+            nested=false;
+            inner_error=ActuallyRender(nested_input,nested_source,nested_blend,
+                                       nested_channel,nested_outdata,nested_output);
+        }
+        if constexpr (std::is_same_v<Pixel,PF_Pixel>)
+            return callback(refcon,0,0,&src->pixel,&dst->pixel);
+        else {
+            Pixel source{},output{};
+            return callback(refcon,0,0,&source,&output);
+        }
+    }
+};
+static IterateSuite<PF_Pixel> iterate8;
+static IterateSuite<PF_Pixel16> iterate16;
+static IterateSuite<PF_PixelFloat> iterate_float;
+struct AEGP_SuiteHandler {
+    explicit AEGP_SuiteHandler(void*) {}
+    IterateSuite<PF_Pixel>* Iterate8Suite2() { return &iterate8; }
+    IterateSuite<PF_Pixel16>* Iterate16Suite2() { return &iterate16; }
+    IterateSuite<PF_PixelFloat>* IterateFloatSuite2() { return &iterate_float; }
+};
+struct PF_WorldSuite2 {
+    PF_Err PF_GetPixelFormat(PF_EffectWorld*,PF_PixelFormat* result) {
+        *result=PF_PixelFormat_ARGB32; return 0;
+    }
+};
+static PF_WorldSuite2 world_suite;
+static PF_Err AEFX_AcquireSuite(PF_InData*,PF_OutData*,const char*,int,const char*,void** suite) {
+    *suite=&world_suite; return 0;
+}
+static PF_Err AEFX_ReleaseSuite(PF_InData*,PF_OutData*,const char*,int,const char*) { return 0; }
+
+// ACTUALLY_RENDER
+
+struct Fixture {
+    SmartyPantsData shared{};
+    void* shared_pointer=&shared;
+    PF_UtilCallbacks utils{};
+    PF_InData input{};
+    PF_OutData outdata{};
+    PF_EffectWorld source{},output{};
+    PF_ParamDef blend{},channel{};
+    Fixture() {
+        input.utils=&utils;
+        input.sequence_data=&shared_pointer;
+        channel.u.pd.value=Channel_ALPHA;
+        shared.channel=-7; shared.blend=-9;
+    }
+    PF_Err render() {
+        return ActuallyRender(&input,&source,&blend,&channel,&outdata,&output);
+    }
+};
+static Observation observation(int tag) {
+    for (const auto& o : observations) if(o.tag==tag) return o;
+    return {-1,-1,-1,0};
+}
+static void reset() {
+    observations.clear(); copies=0; nested=false; inner_error=0;
+}
+static void arrange_nested(Fixture& outer,Fixture& inner,bool change_channel=false) {
+    inner.input.tag=2;
+    inner.input.sequence_data=outer.input.sequence_data;
+    inner.blend.u.fs_d.value=50;
+    if(change_channel) inner.channel.u.pd.value=Channel_RGB;
+    nested=true;
+    nested_input=&inner.input; nested_source=&inner.source;
+    nested_output=&inner.output; nested_blend=&inner.blend;
+    nested_channel=&inner.channel; nested_outdata=&inner.outdata;
+}
+int main() {
+    reset();
+    Fixture normative;
+    normative.input.sequence_data=nullptr;
+    const auto null_error=normative.render();
+    const int null_alpha=normative.output.pixel.alpha;
+    const int null_calls=static_cast<int>(observations.size());
+    const int null_copies=copies;
+
+    reset();
+    Fixture outer,inner;
+    std::array<unsigned char,sizeof(SmartyPantsData)> before{};
+    std::memcpy(before.data(),&outer.shared,before.size());
+    arrange_nested(outer,inner);
+    const auto outer_error=outer.render();
+    const auto oa=observation(1),ob=observation(2);
+    const int outer_alpha=outer.output.pixel.alpha;
+    const bool unchanged=std::memcmp(before.data(),&outer.shared,before.size())==0;
+    const int saved_inner_error=inner_error;
+
+    reset();
+    Fixture ca,cb;
+    arrange_nested(ca,cb,true);
+    ca.render();
+    const auto channel_observation=observation(1);
+
+    std::uint64_t cases=0,failures=0;
+    for(int percent=0;percent<=100;++percent) {
+        reset();
+        Fixture sequential;
+        sequential.blend.u.fs_d.value=percent;
+        const auto error=sequential.render();
+        const int b=static_cast<int>(2.56*percent);
+        const int expected=(b*64+(256-b)*(255-64))/256;
+        failures += error!=0 || sequential.output.pixel.alpha!=expected;
+        ++cases;
+    }
+    std::cout << std::boolalpha
+      << "{\"null_sequence\":{\"error\":" << null_error
+      << ",\"output_alpha\":" << null_alpha
+      << ",\"expected_alpha\":191,\"kernel_calls\":" << null_calls
+      << ",\"copy_calls\":" << null_copies << "},"
+      << "\"nested_shared_handle\":{\"outer_error\":" << outer_error
+      << ",\"inner_error\":" << saved_inner_error
+      << ",\"outer_alpha\":" << outer_alpha
+      << ",\"expected_outer_alpha\":191,\"outer_blend\":" << oa.blend
+      << ",\"inner_blend\":" << ob.blend
+      << ",\"same_parameter_storage\":" << (oa.address==ob.address)
+      << ",\"shared_storage_unchanged\":" << unchanged << "},"
+      << "\"nested_channels\":{\"outer_channel\":" << channel_observation.channel
+      << ",\"expected_channel\":" << Channel_ALPHA << "},"
+      << "\"sequential\":{\"cases\":" << cases
+      << ",\"case_failures\":" << failures << "}}\n";
+}

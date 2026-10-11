@@ -1,0 +1,114 @@
+{
+  "checks": {
+    "session": {
+      "exists": true,
+      "bytes": 319
+    },
+    "fixture_log": {
+      "exists": true,
+      "bytes": 791
+    },
+    "receipt": {
+      "exists": true,
+      "bytes": 35
+    },
+    "output_A": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "output_B": {
+      "exists": true,
+      "bytes": 19528
+    },
+    "suite": {
+      "exists": true,
+      "bytes": 127621
+    },
+    "trace": {
+      "exists": true,
+      "bytes": 0
+    },
+    "trace_control": {
+      "exists": true,
+      "bytes": 1626
+    },
+    "current_pass": {
+      "exists": true,
+      "bytes": 4
+    },
+    "reflection": {
+      "exists": true,
+      "bytes": 28245
+    },
+    "environment": {
+      "exists": true,
+      "bytes": 386
+    }
+  },
+  "session": {
+    "ok": true,
+    "errors": [],
+    "issued_unix_ms": 1789527281177,
+    "session_id": "20260916T025441Z-F43780C9B3EC",
+    "fingerprint": "4254DD9C5960FE7716F06737C187F628C03C06A68D9C4D1D88E19C95F2888735",
+    "aex_hash": "E3546DB78AA3454FEE5EF6C5A14A3B1152111D2A543E249C3DBB1036AE3DFF33"
+  },
+  "raw_session_time": {
+    "tolerance_ms": 2000,
+    "files": {
+      "fixture_log": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339644,
+        "after_session_issue": true
+      },
+      "receipt": {
+        "exists": true,
+        "mtime_unix_ms": 1789527313000,
+        "after_session_issue": true
+      },
+      "output_A": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339381,
+        "after_session_issue": true
+      },
+      "output_B": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339570,
+        "after_session_issue": true
+      },
+      "suite": {
+        "exists": true,
+        "mtime_unix_ms": 1789527313174,
+        "after_session_issue": true
+      },
+      "trace": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339229,
+        "after_session_issue": true
+      },
+      "trace_control": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339540,
+        "after_session_issue": true
+      },
+      "current_pass": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339628,
+        "after_session_issue": true
+      },
+      "reflection": {
+        "exists": true,
+        "mtime_unix_ms": 1789527339069,
+        "after_session_issue": true
+      },
+      "environment": {
+        "exists": true,
+        "mtime_unix_ms": 1789527335021,
+        "after_session_issue": true
+      }
+    },
+    "all_after_issue": true
+  },
+  "issues": [],
+  "status": "PASS"
+}

@@ -4,7 +4,7 @@ from aeig_operator_session import read_kv, evaluate_session, evaluate_raw_times
 ROOT=Path(r"D:\Developer\After Effects Internals Guide")
 RUNS=ROOT/"experiments"/"observatory"/"runs"
 DATA=ROOT/"datasets"
-EXPECTED_AEX="884E9CB19AF32AFA1DBFB11A4777E66107C71B13C16A759FBB9B299572382792"
+EXPECTED_AEX="DA8693DBD6B7CCC1BBF3043608D4FD7C93557D9CAF3F08A6B78D0BD5B6A1BB0F"
 checks={
  "session":DATA/"aeig-l5-operator-session.env",
  "fixture_log":RUNS/"EXP-CACHE-002"/"fixture-script.log",

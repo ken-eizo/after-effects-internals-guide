@@ -1,6 +1,6 @@
 ---
 status: active
-last_verified: 2026-09-14
+last_verified: 2026-09-23
 ---
 # GPU System
 
@@ -40,6 +40,17 @@ During `PF_Cmd_SMART_RENDER_GPU`, `PF_LayerDef` metadata is populated but `data 
 Code that branches only on pixel format and blindly dereferences `data` is architecturally wrong even if its CPU path is correct.
 
 The device setup/render/setdown lifecycle also means compiled kernels, command queues and device allocations must be scoped to the exact device/framework identity rather than treated as one application-global GPU context.
+
+## Host-managed GPU memory is part of the Effect API contract
+`PF_GPUDeviceSuite1` is not merely an optional convenience allocator. The public AE 25.6 header states that GPU effects must allocate device memory through the suite and provides paired `AllocateDeviceMemory` / `FreeDeviceMemory` and `AllocateHostMemory` / `FreeHostMemory` entry points. For DirectX, the returned opaque value is an `ID3D12Resource*`; for CUDA it is a device pointer; Metal exposes its own framework object.
+
+This has an architectural consequence for D3D12 backends: an effect-owned `ID3D12Device::CreateCommittedResource` pool is not a drop-in substitute for AE-accounted GPU memory, even if rendering appears to work. A portable design should separate **semantic/schedule identity** from **physical realization** so the same compiled graph can have a standalone/native D3D12 realization and an AE-specific host-managed realization.
+
+A practical AE DirectX realization can use the suite-backed row-pitched linear GPU buffers together with borrowed GPU worlds at the graph boundary. Keep the AE allocator request-scoped or otherwise tied to the exact effect/device lifetime; do not cache a PICA suite pointer as a process-global allocator.
+
+The public header does **not** document the initial D3D12 resource state of the `ID3D12Resource*` returned by `AllocateDeviceMemory`. Do not silently assume `COMMON`, `COPY_DEST`, `UNORDERED_ACCESS`, or another state for a multi-pass intermediate without runtime evidence. If an implementation cannot establish that contract, reject GPU feasibility for that realization and fall back to a proven path rather than issuing an unverified barrier.
+
+This distinction matters especially for multi-pass FFT/convolution/reduction. Single-pass kernels can often operate entirely on borrowed host worlds plus suite-backed upload constants, while multi-pass algorithms require intermediate storage whose state/lifetime contract must be proven separately.
 
 ## GPU residency, validity and synchronization
 A GPU-resident frame can be semantically valid yet unavailable after device loss/purge, and a resident allocation can be semantically obsolete after upstream state changes. Keep device residency separate from render identity and cache validity.

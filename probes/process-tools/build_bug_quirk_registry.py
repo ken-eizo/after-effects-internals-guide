@@ -67,7 +67,7 @@ active=sum(r["status"]!="fixed" for r in enriched)
 
 lines=["---","status: generated",f"last_verified: {date.today().isoformat()}","---",
        "# AEIG Bug / Quirk / Regression Registry","",
-       f"Curated entries: **{len(enriched)}**. Fixed: **{fixed}**. Non-fixed / contract / historical entries: **{active}**.","",
+       f"Curated entries: **{len(enriched)}**. Upstream-reported fixed: **{fixed}**. Other / source-repaired / contract / historical entries: **{active}**.","",
        "This registry is an evidence index, not a claim that AEIG knows every After Effects bug. A symptom identifies a boundary to investigate; it does not by itself prove a private root cause.","",
        "## Source classes","","| Source type | Entries |","|---|---:|"]
 for k,v in source_counts.most_common(): lines.append(f"| `{k}` | {v} |")
@@ -84,7 +84,8 @@ lines += ["","## Editorial rules","",
           "2. Unsupported SDK/sample behavior is labeled as a contract warning or pitfall rather than public functionality.",
           "3. Version scope is mandatory. Historical quirks are not silently described as current behavior.",
           "4. Add a Finding when a bug materially supports an architectural conclusion; keep the registry row as the symptom/version index.",
-          "5. Preserve unknowns. If no workaround or cause is established, say so rather than inventing one.","",
+          "5. Preserve unknowns. If no workaround or cause is established, say so rather than inventing one.",
+          "6. Source-repair statuses describe pinned laboratory evidence. They neither assign an Adobe fixed version nor establish real-host validation; partial policies retain their unsupported domains.","",
           "Machine-readable registry: `datasets/aeig-bug-quirk-registry.csv`. Curated source: `research/bug-quirks.csv`."]
 PAGE.write_text("\n".join(lines)+"\n",encoding="utf-8")
 print("BUG/QUIRK REGISTRY: PASS")
