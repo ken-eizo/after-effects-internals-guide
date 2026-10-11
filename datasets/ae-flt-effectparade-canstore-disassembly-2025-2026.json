@@ -1,0 +1,159 @@
+{
+  "scope": "offline native FLT_Parade CanStore; real host acceptance not yet tested",
+  "versions": {
+    "2025": {
+      "sha256": "5ee0aed35dd093397a95bcec10387370d05e691790a817c5927109f3c88e6e9e",
+      "function_pdata": [
+        "0x53580",
+        "0x535b5"
+      ],
+      "instructions": [
+        {
+          "rva": "0x53580",
+          "m": "sub",
+          "op": "rsp, 0x38"
+        },
+        {
+          "rva": "0x53584",
+          "m": "call",
+          "op": "qword ptr [rip + 0x6be46]",
+          "target_rva": "0xbf3d0",
+          "export": ""
+        },
+        {
+          "rva": "0x5358a",
+          "m": "lea",
+          "op": "r9, [rip + 0xdc82f]",
+          "target_rva": "0x12fdc0",
+          "export": ""
+        },
+        {
+          "rva": "0x53591",
+          "m": "mov",
+          "op": "dword ptr [rsp + 0x20], 0"
+        },
+        {
+          "rva": "0x53599",
+          "m": "mov",
+          "op": "rcx, rax"
+        },
+        {
+          "rva": "0x5359c",
+          "m": "lea",
+          "op": "r8, [rip + 0xdc7f5]",
+          "target_rva": "0x12fd98",
+          "export": ""
+        },
+        {
+          "rva": "0x535a3",
+          "m": "xor",
+          "op": "edx, edx"
+        },
+        {
+          "rva": "0x535a5",
+          "m": "call",
+          "op": "0x1800aa838",
+          "target_rva": "0xaa838",
+          "export": ""
+        },
+        {
+          "rva": "0x535aa",
+          "m": "test",
+          "op": "rax, rax"
+        },
+        {
+          "rva": "0x535ad",
+          "m": "setne",
+          "op": "al"
+        },
+        {
+          "rva": "0x535b0",
+          "m": "add",
+          "op": "rsp, 0x38"
+        },
+        {
+          "rva": "0x535b4",
+          "m": "ret",
+          "op": ""
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "65eb2a26803a76e868d20abc72e96ea45e2949573213d21d78d0f7a36494b940",
+      "function_pdata": [
+        "0x55300",
+        "0x55335"
+      ],
+      "instructions": [
+        {
+          "rva": "0x55300",
+          "m": "sub",
+          "op": "rsp, 0x38"
+        },
+        {
+          "rva": "0x55304",
+          "m": "call",
+          "op": "qword ptr [rip + 0x9912e]",
+          "target_rva": "0xee438",
+          "export": ""
+        },
+        {
+          "rva": "0x5530a",
+          "m": "lea",
+          "op": "r9, [rip + 0x110e3f]",
+          "target_rva": "0x166150",
+          "export": ""
+        },
+        {
+          "rva": "0x55311",
+          "m": "mov",
+          "op": "dword ptr [rsp + 0x20], 0"
+        },
+        {
+          "rva": "0x55319",
+          "m": "mov",
+          "op": "rcx, rax"
+        },
+        {
+          "rva": "0x5531c",
+          "m": "lea",
+          "op": "r8, [rip + 0x113ced]",
+          "target_rva": "0x169010",
+          "export": ""
+        },
+        {
+          "rva": "0x55323",
+          "m": "xor",
+          "op": "edx, edx"
+        },
+        {
+          "rva": "0x55325",
+          "m": "call",
+          "op": "0x1800d8c1e",
+          "target_rva": "0xd8c1e",
+          "export": ""
+        },
+        {
+          "rva": "0x5532a",
+          "m": "test",
+          "op": "rax, rax"
+        },
+        {
+          "rva": "0x5532d",
+          "m": "setne",
+          "op": "al"
+        },
+        {
+          "rva": "0x55330",
+          "m": "add",
+          "op": "rsp, 0x38"
+        },
+        {
+          "rva": "0x55334",
+          "m": "ret",
+          "op": ""
+        }
+      ]
+    }
+  }
+}

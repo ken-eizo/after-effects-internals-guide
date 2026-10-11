@@ -1,0 +1,21 @@
+{
+  "result": "compiled_release_static_pass_host_NOT_tested",
+  "sha256": "f5ea3ba03cde31295e403dbf2a613832954b59f7fda142ab76c81ebd7a691089",
+  "size": 26112,
+  "entrypoint": "EntryPointFunc",
+  "machine": "AMD64",
+  "import_dlls": [
+    "kernel32.dll",
+    "msvcp140.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "api-ms-win-crt-heap-l1-1-0.dll"
+  ],
+  "candidates": 6,
+  "bounded_max_nodes": 240,
+  "bounded_max_depth": 4,
+  "creates_host_stream": false
+}

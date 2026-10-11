@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-041",
+  "date": "2026-10-12",
+  "title": "effect-nested-tdb-whitelist-layout",
+  "status": "pass-offline-two-native-binaries",
+  "evidence": "EXP-SHAPE-039 E2-B; EXP-SHAPE-040/041 E2-L; no new AE host mutation",
+  "results": {
+    "inner_canstore_inherits_TDB_StreamGroup": true,
+    "parent_matchname_whitelist_search": true,
+    "fill_canonical_ui_layout_empty": true,
+    "dynamic_add_layout_method_present": true,
+    "third_party_child_registered": false
+  }
+}

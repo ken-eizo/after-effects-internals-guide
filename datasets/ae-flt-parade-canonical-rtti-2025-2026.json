@@ -1,0 +1,37 @@
+{
+  "scope": "two pinned native FLT binaries; compiler-level observed RTTI, not external plugin registration",
+  "versions": {
+    "2025": {
+      "sha256": "5ee0aed35dd093397a95bcec10387370d05e691790a817c5927109f3c88e6e9e",
+      "function": "?CanStore@FLT_Parade@@UEBA_NAEBVTDB_MatchName@@@Z",
+      "rva": "0x53580",
+      "canonical_import": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+      "dynamic_cast": {
+        "thunk": "0xaa838",
+        "import": "VCRUNTIME140.dll!__RTDynamicCast"
+      },
+      "types": {
+        "destination": ".?AVFLT_FCSeqSpec@@",
+        "source": ".?AVTDB_StreamBase@@"
+      },
+      "return": "CanStore = (dynamic_cast<FLT_FCSeqSpec*>(canonical) != nullptr)",
+      "admission_success_proven_in_host": false
+    },
+    "2026": {
+      "sha256": "65eb2a26803a76e868d20abc72e96ea45e2949573213d21d78d0f7a36494b940",
+      "function": "?CanStore@FLT_Parade@@UEBA_NAEBVTDB_MatchName@@@Z",
+      "rva": "0x55300",
+      "canonical_import": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+      "dynamic_cast": {
+        "thunk": "0xd8c1e",
+        "import": "VCRUNTIME140.dll!__RTDynamicCast"
+      },
+      "types": {
+        "destination": ".?AVFLT_FCSeqSpec@@",
+        "source": ".?AVTDB_StreamBase@@"
+      },
+      "return": "CanStore = (dynamic_cast<FLT_FCSeqSpec*>(canonical) != nullptr)",
+      "admission_success_proven_in_host": false
+    }
+  }
+}

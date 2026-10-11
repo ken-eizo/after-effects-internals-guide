@@ -1,0 +1,29 @@
+{
+  "evidence": "E2-L compiled TDB exact allowed-matchname linear scan",
+  "versions": {
+    "2025": {
+      "sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "entry_rva": "0x35e10",
+      "pdata_end": "0x35ed2",
+      "matchname_copy_equal_calls": [
+        "??0TDB_MatchName@@QEAA@AEBV0@@Z",
+        "??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+      ],
+      "observed_8byte_vector_iteration": true,
+      "exact_matchname_comparison": true,
+      "custom_child_instantiation_proven": false
+    },
+    "2026": {
+      "sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "entry_rva": "0x36880",
+      "pdata_end": "0x36933",
+      "matchname_copy_equal_calls": [
+        "??0TDB_MatchName@@QEAA@AEBV0@@Z",
+        "??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+      ],
+      "observed_8byte_vector_iteration": true,
+      "exact_matchname_comparison": true,
+      "custom_child_instantiation_proven": false
+    }
+  }
+}
