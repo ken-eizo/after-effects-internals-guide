@@ -24,5 +24,5 @@ target_compile_definitions(NativeEditablePathBridge PRIVATE MSWindows WIN32 _WIN
 target_include_directories(NativeEditablePathBridge PRIVATE
  "${AE_SDK_EXAMPLES}/Headers" "${AE_SDK_EXAMPLES}/Headers/SP"
  "${AE_SDK_EXAMPLES}/Headers/Win" "${AE_SDK_EXAMPLES}/Util"
- "${CMAKE_CURRENT_SOURCE_DIR}/../vector_bridge")
+ "${CMAKE_CURRENT_SOURCE_DIR}")
 set_target_properties(NativeEditablePathBridge PROPERTIES PREFIX "" SUFFIX ".aex")
