@@ -1,0 +1,1608 @@
+{
+  "classification": "E2-L, static BEE 2026 native SVG paste code callgraph, not third-party API",
+  "file_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+  "entries": {
+    "?BEE_CompHitCheckSelection@@YAHPEAVBEE_Item@@PEBUFLT_CameraView@@PEBUT_Time@@UM_FixedPoint@@PEAVBEE_Selection@@PEAFPEAPEAVBEE_Layer@@@Z": {
+      "start": "0x3ac970",
+      "end": "0x3acb07",
+      "disassembled_bytes": 407,
+      "first_instructions": [
+        [
+          "0x3ac970",
+          "mov",
+          "qword ptr [rsp + 0x20], r9"
+        ],
+        [
+          "0x3ac975",
+          "mov",
+          "qword ptr [rsp + 0x18], r8"
+        ],
+        [
+          "0x3ac97a",
+          "mov",
+          "qword ptr [rsp + 0x10], rdx"
+        ],
+        [
+          "0x3ac97f",
+          "mov",
+          "qword ptr [rsp + 8], rcx"
+        ],
+        [
+          "0x3ac984",
+          "push",
+          "rbx"
+        ],
+        [
+          "0x3ac985",
+          "push",
+          "rsi"
+        ],
+        [
+          "0x3ac986",
+          "push",
+          "rdi"
+        ],
+        [
+          "0x3ac987",
+          "push",
+          "r14"
+        ],
+        [
+          "0x3ac989",
+          "push",
+          "r15"
+        ],
+        [
+          "0x3ac98b",
+          "sub",
+          "rsp, 0x80"
+        ],
+        [
+          "0x3ac992",
+          "mov",
+          "r14, rcx"
+        ],
+        [
+          "0x3ac995",
+          "mov",
+          "ecx, 0xa4"
+        ],
+        [
+          "0x3ac99a",
+          "mov",
+          "rdx, r14"
+        ],
+        [
+          "0x3ac99d",
+          "call",
+          "0x1803e9050"
+        ],
+        [
+          "0x3ac9a2",
+          "mov",
+          "ebx, eax"
+        ],
+        [
+          "0x3ac9a4",
+          "mov",
+          "byte ptr [rsp + 0x41], 0"
+        ],
+        [
+          "0x3ac9a9",
+          "mov",
+          "eax, 0xffffffff"
+        ],
+        [
+          "0x3ac9ae",
+          "mov",
+          "word ptr [rsp + 0x48], ax"
+        ],
+        [
+          "0x3ac9b3",
+          "xor",
+          "r15d, r15d"
+        ],
+        [
+          "0x3ac9b6",
+          "mov",
+          "qword ptr [rsp + 0x68], r15"
+        ],
+        [
+          "0x3ac9bb",
+          "test",
+          "ebx, ebx"
+        ],
+        [
+          "0x3ac9bd",
+          "jne",
+          "0x1803acac4"
+        ],
+        [
+          "0x3ac9c3",
+          "mov",
+          "rcx, r14"
+        ],
+        [
+          "0x3ac9c6",
+          "call",
+          "0x1803a1c70"
+        ],
+        [
+          "0x3ac9cb",
+          "mov",
+          "rsi, rax"
+        ],
+        [
+          "0x3ac9ce",
+          "mov",
+          "qword ptr [rsp + 0x60], rax"
+        ],
+        [
+          "0x3ac9d3",
+          "movzx",
+          "edi, r15w"
+        ],
+        [
+          "0x3ac9d7",
+          "mov",
+          "word ptr [rsp + 0x44], di"
+        ],
+        [
+          "0x3ac9dc",
+          "test",
+          "ebx, ebx"
+        ],
+        [
+          "0x3ac9de",
+          "jne",
+          "0x1803acac4"
+        ],
+        [
+          "0x3ac9e4",
+          "mov",
+          "rcx, qword ptr [rsi + 8]"
+        ],
+        [
+          "0x3ac9e8",
+          "sub",
+          "rcx, qword ptr [rsi]"
+        ],
+        [
+          "0x3ac9eb",
+          "sar",
+          "rcx, 3"
+        ],
+        [
+          "0x3ac9ef",
+          "movsx",
+          "rax, di"
+        ],
+        [
+          "0x3ac9f3",
+          "cmp",
+          "rax, rcx"
+        ],
+        [
+          "0x3ac9f6",
+          "jae",
+          "0x1803acac4"
+        ],
+        [
+          "0x3ac9fc",
+          "movsx",
+          "edx, di"
+        ],
+        [
+          "0x3ac9ff",
+          "lea",
+          "r8, [rsp + 0x58]"
+        ],
+        [
+          "0x3aca04",
+          "mov",
+          "rcx, r14"
+        ],
+        [
+          "0x3aca07",
+          "call",
+          "0x18030c9a0"
+        ],
+        [
+          "0x3aca0c",
+          "mov",
+          "ebx, eax"
+        ],
+        [
+          "0x3aca0e",
+          "mov",
+          "dword ptr [rsp + 0x50], eax"
+        ],
+        [
+          "0x3aca12",
+          "test",
+          "eax, eax"
+        ],
+        [
+          "0x3aca14",
+          "jne",
+          "0x1803acaff"
+        ],
+        [
+          "0x3aca1a",
+          "mov",
+          "rcx, qword ptr [rsp + 0xd0]"
+        ],
+        [
+          "0x3aca22",
+          "test",
+          "rcx, rcx"
+        ],
+        [
+          "0x3aca25",
+          "je",
+          "0x1803aca39"
+        ],
+        [
+          "0x3aca27",
+          "mov",
+          "rdx, qword ptr [rsp + 0x58]"
+        ],
+        [
+          "0x3aca2c",
+          "call",
+          "0x1800cfb10"
+        ],
+        [
+          "0x3aca31",
+          "test",
+          "al, al"
+        ],
+        [
+          "0x3aca33",
+          "je",
+          "0x1803aca39"
+        ],
+        [
+          "0x3aca35",
+          "mov",
+          "al, 1"
+        ],
+        [
+          "0x3aca37",
+          "jmp",
+          "0x1803aca3b"
+        ],
+        [
+          "0x3aca39",
+          "xor",
+          "al, al"
+        ],
+        [
+          "0x3aca3b",
+          "mov",
+          "byte ptr [rsp + 0x40], al"
+        ],
+        [
+          "0x3aca3f",
+          "jmp",
+          "0x1803aca6b"
+        ],
+        [
+          "0x3aca41",
+          "mov",
+          "ebx, dword ptr [rsp + 0x4c]"
+        ],
+        [
+          "0x3aca45",
+          "xor",
+          "r15d, r15d"
+        ],
+        [
+          "0x3aca48",
+          "mov",
+          "r14, qword ptr [rsp + 0xb0]"
+        ],
+        [
+          "0x3aca50",
+          "mov",
+          "rsi, qword ptr [rsp + 0x60]"
+        ],
+        [
+          "0x3aca55",
+          "movzx",
+          "edi, word ptr [rsp + 0x44]"
+        ],
+        [
+          "0x3aca5a",
+          "test",
+          "ebx, ebx"
+        ],
+        [
+          "0x3aca5c",
+          "jne",
+          "0x1803acaff"
+        ],
+        [
+          "0x3aca62",
+          "mov",
+          "ebx, dword ptr [rsp + 0x50]"
+        ],
+        [
+          "0x3aca66",
+          "movzx",
+          "eax, byte ptr [rsp + 0x40]"
+        ],
+        [
+          "0x3aca6b",
+          "test",
+          "al, al"
+        ],
+        [
+          "0x3aca6d",
+          "je",
+          "0x1803acaff"
+        ],
+        [
+          "0x3aca73",
+          "mov",
+          "qword ptr [rsp + 0x30], r15"
+        ],
+        [
+          "0x3aca78",
+          "lea",
+          "rax, [rsp + 0x41]"
+        ],
+        [
+          "0x3aca7d",
+          "mov",
+          "qword ptr [rsp + 0x28], rax"
+        ],
+        [
+          "0x3aca82",
+          "mov",
+          "byte ptr [rsp + 0x20], 1"
+        ],
+        [
+          "0x3aca87",
+          "lea",
+          "r9, [rsp + 0xc8]"
+        ],
+        [
+          "0x3aca8f",
+          "mov",
+          "r8, qword ptr [rsp + 0xc0]"
+        ],
+        [
+          "0x3aca97",
+          "mov",
+          "rdx, qword ptr [rsp + 0xb8]"
+        ],
+        [
+          "0x3aca9f",
+          "mov",
+          "rcx, qword ptr [rsp + 0x58]"
+        ],
+        [
+          "0x3acaa4",
+          "call",
+          "0x180326a70"
+        ],
+        [
+          "0x3acaa9",
+          "mov",
+          "ebx, eax"
+        ],
+        [
+          "0x3acaab",
+          "test",
+          "eax, eax"
+        ],
+        [
+          "0x3acaad",
+          "jne",
+          "0x1803acaff"
+        ],
+        [
+          "0x3acaaf",
+          "cmp",
+          "byte ptr [rsp + 0x41], al"
+        ],
+        [
+          "0x3acab3",
+          "je",
+          "0x1803acaff"
+        ],
+        [
+          "0x3acab5",
+          "mov",
+          "rax, qword ptr [rsp + 0x58]"
+        ],
+        [
+          "0x3acaba",
+          "mov",
+          "qword ptr [rsp + 0x68], rax"
+        ],
+        [
+          "0x3acabf",
+          "mov",
+          "word ptr [rsp + 0x48], di"
+        ],
+        [
+          "0x3acac4",
+          "mov",
+          "rcx, qword ptr [rsp + 0xd8]"
+        ],
+        [
+          "0x3acacc",
+          "test",
+          "rcx, rcx"
+        ],
+        [
+          "0x3acacf",
+          "je",
+          "0x1803acad9"
+        ],
+        [
+          "0x3acad1",
+          "movzx",
+          "eax, word ptr [rsp + 0x48]"
+        ],
+        [
+          "0x3acad6",
+          "mov",
+          "word ptr [rcx], ax"
+        ],
+        [
+          "0x3acad9",
+          "mov",
+          "rcx, qword ptr [rsp + 0xe0]"
+        ],
+        [
+          "0x3acae1",
+          "test",
+          "rcx, rcx"
+        ],
+        [
+          "0x3acae4",
+          "je",
+          "0x1803acaee"
+        ],
+        [
+          "0x3acae6",
+          "mov",
+          "rax, qword ptr [rsp + 0x68]"
+        ],
+        [
+          "0x3acaeb",
+          "mov",
+          "qword ptr [rcx], rax"
+        ],
+        [
+          "0x3acaee",
+          "mov",
+          "eax, ebx"
+        ],
+        [
+          "0x3acaf0",
+          "add",
+          "rsp, 0x80"
+        ],
+        [
+          "0x3acaf7",
+          "pop",
+          "r15"
+        ],
+        [
+          "0x3acaf9",
+          "pop",
+          "r14"
+        ],
+        [
+          "0x3acafb",
+          "pop",
+          "rdi"
+        ],
+        [
+          "0x3acafc",
+          "pop",
+          "rsi"
+        ],
+        [
+          "0x3acafd",
+          "pop",
+          "rbx"
+        ],
+        [
+          "0x3acafe",
+          "ret",
+          ""
+        ],
+        [
+          "0x3acaff",
+          "inc",
+          "di"
+        ],
+        [
+          "0x3acb02",
+          "jmp",
+          "0x1803ac9d7"
+        ]
+      ],
+      "calls": [
+        {
+          "at_rva": "0x3ac99d",
+          "target_rva": "0x3e9050",
+          "name": "",
+          "op": "call 0x1803e9050"
+        },
+        {
+          "at_rva": "0x3ac9c6",
+          "target_rva": "0x3a1c70",
+          "name": "?GetLayers@BEE_CompItem@@QEAAPEAV?$vector@PEAVBEE_Layer@@V?$U_Allocator@PEAVBEE_Layer@@@@@std@@XZ",
+          "op": "call 0x1803a1c70"
+        },
+        {
+          "at_rva": "0x3aca07",
+          "target_rva": "0x30c9a0",
+          "name": "?BEE_GetIndLayer@@YAHPEAVBEE_CompItem@@HPEAPEAVBEE_Layer@@@Z",
+          "op": "call 0x18030c9a0"
+        },
+        {
+          "at_rva": "0x3aca2c",
+          "target_rva": "0xcfb10",
+          "name": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+          "op": "call 0x1800cfb10"
+        },
+        {
+          "at_rva": "0x3aca37",
+          "target_rva": "0x3aca3b",
+          "name": "",
+          "op": "jmp 0x1803aca3b"
+        },
+        {
+          "at_rva": "0x3aca3f",
+          "target_rva": "0x3aca6b",
+          "name": "",
+          "op": "jmp 0x1803aca6b"
+        },
+        {
+          "at_rva": "0x3acaa4",
+          "target_rva": "0x326a70",
+          "name": "?BEE_LayerHitCheck@@YAHPEAVBEE_Layer@@PEBUFLT_CameraView@@PEBUT_Time@@AEBUM_FixedPoint@@EPEAEPEAV?$M_Vector3T@N@@@Z",
+          "op": "call 0x180326a70"
+        },
+        {
+          "at_rva": "0x3acb02",
+          "target_rva": "0x3ac9d7",
+          "name": "",
+          "op": "jmp 0x1803ac9d7"
+        }
+      ],
+      "shape_related_calls": [
+        {
+          "at_rva": "0x3ac9c6",
+          "target_rva": "0x3a1c70",
+          "name": "?GetLayers@BEE_CompItem@@QEAAPEAV?$vector@PEAVBEE_Layer@@V?$U_Allocator@PEAVBEE_Layer@@@@@std@@XZ",
+          "op": "call 0x1803a1c70"
+        },
+        {
+          "at_rva": "0x3aca07",
+          "target_rva": "0x30c9a0",
+          "name": "?BEE_GetIndLayer@@YAHPEAVBEE_CompItem@@HPEAPEAVBEE_Layer@@@Z",
+          "op": "call 0x18030c9a0"
+        },
+        {
+          "at_rva": "0x3aca2c",
+          "target_rva": "0xcfb10",
+          "name": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+          "op": "call 0x1800cfb10"
+        },
+        {
+          "at_rva": "0x3acaa4",
+          "target_rva": "0x326a70",
+          "name": "?BEE_LayerHitCheck@@YAHPEAVBEE_Layer@@PEBUFLT_CameraView@@PEBUT_Time@@AEBUM_FixedPoint@@EPEAEPEAV?$M_Vector3T@N@@@Z",
+          "op": "call 0x180326a70"
+        }
+      ]
+    },
+    "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z": {
+      "start": "0x3ae190",
+      "end": "0x3ae9c3",
+      "disassembled_bytes": 2099,
+      "first_instructions": [
+        [
+          "0x3ae190",
+          "mov",
+          "qword ptr [rsp + 0x10], rbx"
+        ],
+        [
+          "0x3ae195",
+          "push",
+          "rbp"
+        ],
+        [
+          "0x3ae196",
+          "push",
+          "rsi"
+        ],
+        [
+          "0x3ae197",
+          "push",
+          "rdi"
+        ],
+        [
+          "0x3ae198",
+          "push",
+          "r12"
+        ],
+        [
+          "0x3ae19a",
+          "push",
+          "r13"
+        ],
+        [
+          "0x3ae19c",
+          "push",
+          "r14"
+        ],
+        [
+          "0x3ae19e",
+          "push",
+          "r15"
+        ],
+        [
+          "0x3ae1a0",
+          "lea",
+          "rbp, [rsp - 0x1e0]"
+        ],
+        [
+          "0x3ae1a8",
+          "sub",
+          "rsp, 0x2e0"
+        ],
+        [
+          "0x3ae1af",
+          "vmovaps",
+          "xmmword ptr [rsp + 0x2d0], xmm6"
+        ],
+        [
+          "0x3ae1b8",
+          "mov",
+          "rax, qword ptr [rip + 0x11f8741]"
+        ],
+        [
+          "0x3ae1bf",
+          "xor",
+          "rax, rsp"
+        ],
+        [
+          "0x3ae1c2",
+          "mov",
+          "qword ptr [rbp + 0x1c0], rax"
+        ],
+        [
+          "0x3ae1c9",
+          "mov",
+          "r13, r9"
+        ],
+        [
+          "0x3ae1cc",
+          "mov",
+          "r12, r8"
+        ],
+        [
+          "0x3ae1cf",
+          "mov",
+          "qword ptr [rbp - 0x78], rdx"
+        ],
+        [
+          "0x3ae1d3",
+          "mov",
+          "r14, rcx"
+        ],
+        [
+          "0x3ae1d6",
+          "mov",
+          "qword ptr [rbp + 0x18], r8"
+        ],
+        [
+          "0x3ae1da",
+          "mov",
+          "qword ptr [rbp + 0x20], r9"
+        ],
+        [
+          "0x3ae1de",
+          "xor",
+          "r15d, r15d"
+        ],
+        [
+          "0x3ae1e1",
+          "mov",
+          "dword ptr [rsp + 0x30], r15d"
+        ],
+        [
+          "0x3ae1e6",
+          "call",
+          "qword ptr [rip + 0xb6c1fc]"
+        ],
+        [
+          "0x3ae1ec",
+          "mov",
+          "rcx, rax"
+        ],
+        [
+          "0x3ae1ef",
+          "call",
+          "qword ptr [rip + 0xb6c1e3]"
+        ],
+        [
+          "0x3ae1f5",
+          "test",
+          "al, al"
+        ],
+        [
+          "0x3ae1f7",
+          "je",
+          "0x1803ae2ba"
+        ],
+        [
+          "0x3ae1fd",
+          "mov",
+          "rax, qword ptr [rip + 0xb6c1ac]"
+        ],
+        [
+          "0x3ae204",
+          "mov",
+          "ebx, dword ptr [rax]"
+        ],
+        [
+          "0x3ae206",
+          "call",
+          "qword ptr [rip + 0xb6c1dc]"
+        ],
+        [
+          "0x3ae20c",
+          "mov",
+          "rcx, rax"
+        ],
+        [
+          "0x3ae20f",
+          "call",
+          "qword ptr [rip + 0xb6c1bb]"
+        ],
+        [
+          "0x3ae215",
+          "cmp",
+          "ebx, eax"
+        ],
+        [
+          "0x3ae217",
+          "jg",
+          "0x1803ae2ba"
+        ],
+        [
+          "0x3ae21d",
+          "xor",
+          "r9d, r9d"
+        ],
+        [
+          "0x3ae220",
+          "lea",
+          "r8, [rsp + 0x30]"
+        ],
+        [
+          "0x3ae225",
+          "xor",
+          "edx, edx"
+        ],
+        [
+          "0x3ae227",
+          "lea",
+          "rbx, [rip + 0x12efaca]"
+        ],
+        [
+          "0x3ae22e",
+          "mov",
+          "rcx, rbx"
+        ],
+        [
+          "0x3ae231",
+          "call",
+          "qword ptr [rip + 0xb66931]"
+        ],
+        [
+          "0x3ae237",
+          "test",
+          "eax, eax"
+        ],
+        [
+          "0x3ae239",
+          "jne",
+          "0x1803ae242"
+        ],
+        [
+          "0x3ae23b",
+          "mov",
+          "ecx, 5"
+        ],
+        [
+          "0x3ae240",
+          "int",
+          "0x29"
+        ],
+        [
+          "0x3ae242",
+          "cmp",
+          "dword ptr [rsp + 0x30], 0"
+        ],
+        [
+          "0x3ae247",
+          "je",
+          "0x1803ae272"
+        ],
+        [
+          "0x3ae249",
+          "mov",
+          "qword ptr [rsp + 0x38], rbx"
+        ],
+        [
+          "0x3ae24e",
+          "mov",
+          "dword ptr [rsp + 0x40], 4"
+        ],
+        [
+          "0x3ae256",
+          "call",
+          "0x1803bcbb0"
+        ],
+        [
+          "0x3ae25b",
+          "nop",
+          ""
+        ],
+        [
+          "0x3ae25c",
+          "xor",
+          "r8d, r8d"
+        ],
+        [
+          "0x3ae25f",
+          "xor",
+          "edx, edx"
+        ],
+        [
+          "0x3ae261",
+          "mov",
+          "rcx, rbx"
+        ],
+        [
+          "0x3ae264",
+          "call",
+          "qword ptr [rip + 0xb668f6]"
+        ],
+        [
+          "0x3ae26a",
+          "test",
+          "eax, eax"
+        ],
+        [
+          "0x3ae26c",
+          "je",
+          "0x1803ae9bd"
+        ],
+        [
+          "0x3ae272",
+          "mov",
+          "eax, 1"
+        ],
+        [
+          "0x3ae277",
+          "xchg",
+          "byte ptr [rip + 0x12efa77], al"
+        ],
+        [
+          "0x3ae27d",
+          "call",
+          "0x1803bcbb0"
+        ],
+        [
+          "0x3ae282",
+          "mov",
+          "rbx, qword ptr [rax]"
+        ],
+        [
+          "0x3ae285",
+          "mov",
+          "qword ptr [rbp + 0x90], rbx"
+        ],
+        [
+          "0x3ae28c",
+          "test",
+          "rbx, rbx"
+        ],
+        [
+          "0x3ae28f",
+          "je",
+          "0x1803ae2a7"
+        ],
+        [
+          "0x3ae291",
+          "mov",
+          "rax, qword ptr [rbx + 0x10]"
+        ],
+        [
+          "0x3ae295",
+          "movsxd",
+          "rcx, dword ptr [rax + 4]"
+        ],
+        [
+          "0x3ae299",
+          "add",
+          "rcx, 0x10"
+        ],
+        [
+          "0x3ae29d",
+          "add",
+          "rcx, rbx"
+        ],
+        [
+          "0x3ae2a0",
+          "je",
+          "0x1803ae2a7"
+        ],
+        [
+          "0x3ae2a2",
+          "mov",
+          "rax, qword ptr [rcx]"
+        ],
+        [
+          "0x3ae2a5",
+          "call",
+          "qword ptr [rax]"
+        ],
+        [
+          "0x3ae2a7",
+          "lea",
+          "rax, [rbp + 0x90]"
+        ],
+        [
+          "0x3ae2ae",
+          "mov",
+          "edi, 1"
+        ],
+        [
+          "0x3ae2b3",
+          "mov",
+          "rsi, qword ptr [rsp + 0x38]"
+        ],
+        [
+          "0x3ae2b8",
+          "jmp",
+          "0x1803ae2d4"
+        ],
+        [
+          "0x3ae2ba",
+          "mov",
+          "rsi, r15"
+        ],
+        [
+          "0x3ae2bd",
+          "mov",
+          "qword ptr [rsp + 0x38], r15"
+        ],
+        [
+          "0x3ae2c2",
+          "mov",
+          "qword ptr [rsp + 0x60], r15"
+        ],
+        [
+          "0x3ae2c7",
+          "lea",
+          "rax, [rsp + 0x60]"
+        ],
+        [
+          "0x3ae2cc",
+          "mov",
+          "edi, 6"
+        ],
+        [
+          "0x3ae2d1",
+          "mov",
+          "rbx, r15"
+        ],
+        [
+          "0x3ae2d4",
+          "mov",
+          "dword ptr [rsp + 0x30], edi"
+        ],
+        [
+          "0x3ae2d8",
+          "mov",
+          "qword ptr [rax], r15"
+        ],
+        [
+          "0x3ae2db",
+          "mov",
+          "qword ptr [rbp - 0x70], rbx"
+        ],
+        [
+          "0x3ae2df",
+          "lea",
+          "rdx, [rbp - 0x70]"
+        ],
+        [
+          "0x3ae2e3",
+          "lea",
+          "rcx, [rbp + 0x28]"
+        ],
+        [
+          "0x3ae2e7",
+          "call",
+          "qword ptr [rip + 0xb6c0db]"
+        ],
+        [
+          "0x3ae2ed",
+          "nop",
+          ""
+        ],
+        [
+          "0x3ae2ee",
+          "test",
+          "dil, 4"
+        ],
+        [
+          "0x3ae2f2",
+          "je",
+          "0x1803ae31d"
+        ],
+        [
+          "0x3ae2f4",
+          "and",
+          "edi, 0xfffffffb"
+        ],
+        [
+          "0x3ae2f7",
+          "mov",
+          "dword ptr [rsp + 0x30], edi"
+        ],
+        [
+          "0x3ae2fb",
+          "mov",
+          "rdx, qword ptr [rsp + 0x60]"
+        ],
+        [
+          "0x3ae300",
+          "test",
+          "rdx, rdx"
+        ],
+        [
+          "0x3ae303",
+          "je",
+          "0x1803ae31d"
+        ],
+        [
+          "0x3ae305",
+          "mov",
+          "rax, qword ptr [rdx + 0x10]"
+        ],
+        [
+          "0x3ae309",
+          "movsxd",
+          "rcx, dword ptr [rax + 4]"
+        ],
+        [
+          "0x3ae30d",
+          "add",
+          "rcx, 0x10"
+        ],
+        [
+          "0x3ae311",
+          "add",
+          "rcx, rdx"
+        ],
+        [
+          "0x3ae314",
+          "je",
+          "0x1803ae31d"
+        ],
+        [
+          "0x3ae316",
+          "mov",
+          "rax, qword ptr [rcx]"
+        ],
+        [
+          "0x3ae319",
+          "call",
+          "qword ptr [rax + 8]"
+        ],
+        [
+          "0x3ae31c",
+          "nop",
+          ""
+        ],
+        [
+          "0x3ae31d",
+          "test",
+          "dil, 2"
+        ],
+        [
+          "0x3ae321",
+          "je",
+          "0x1803ae347"
+        ],
+        [
+          "0x3ae323",
+          "and",
+          "edi, 0xfffffffd"
+        ],
+        [
+          "0x3ae326",
+          "mov",
+          "dword ptr [rsp + 0x30], edi"
+        ],
+        [
+          "0x3ae32a",
+          "test",
+          "rsi, rsi"
+        ],
+        [
+          "0x3ae32d",
+          "je",
+          "0x1803ae347"
+        ],
+        [
+          "0x3ae32f",
+          "mov",
+          "rax, qword ptr [rsi + 0x10]"
+        ],
+        [
+          "0x3ae333",
+          "movsxd",
+          "rcx, dword ptr [rax + 4]"
+        ]
+      ],
+      "calls": [
+        {
+          "at_rva": "0x3ae1e6",
+          "target_rva": "0xf1a3e8",
+          "name": "dvacore.dll!?Get@CodeProfilerManager@debug@dvacore@@SAAEAV123@XZ",
+          "op": "call qword ptr [rip + 0xb6c1fc]"
+        },
+        {
+          "at_rva": "0x3ae1ef",
+          "target_rva": "0xf1a3d8",
+          "name": "dvacore.dll!?IsConditionalProfiling@CodeProfilerManager@debug@dvacore@@QEAA_NXZ",
+          "op": "call qword ptr [rip + 0xb6c1e3]"
+        },
+        {
+          "at_rva": "0x3ae206",
+          "target_rva": "0xf1a3e8",
+          "name": "dvacore.dll!?Get@CodeProfilerManager@debug@dvacore@@SAAEAV123@XZ",
+          "op": "call qword ptr [rip + 0xb6c1dc]"
+        },
+        {
+          "at_rva": "0x3ae20f",
+          "target_rva": "0xf1a3d0",
+          "name": "dvacore.dll!?GetProfilingVolume@CodeProfilerManager@debug@dvacore@@QEAAHXZ",
+          "op": "call qword ptr [rip + 0xb6c1bb]"
+        },
+        {
+          "at_rva": "0x3ae231",
+          "target_rva": "0xf14b68",
+          "name": "KERNEL32.dll!InitOnceBeginInitialize",
+          "op": "call qword ptr [rip + 0xb66931]"
+        },
+        {
+          "at_rva": "0x3ae256",
+          "target_rva": "0x3bcbb0",
+          "name": "",
+          "op": "call 0x1803bcbb0"
+        },
+        {
+          "at_rva": "0x3ae264",
+          "target_rva": "0xf14b60",
+          "name": "KERNEL32.dll!InitOnceComplete",
+          "op": "call qword ptr [rip + 0xb668f6]"
+        },
+        {
+          "at_rva": "0x3ae27d",
+          "target_rva": "0x3bcbb0",
+          "name": "",
+          "op": "call 0x1803bcbb0"
+        },
+        {
+          "at_rva": "0x3ae2b8",
+          "target_rva": "0x3ae2d4",
+          "name": "",
+          "op": "jmp 0x1803ae2d4"
+        },
+        {
+          "at_rva": "0x3ae2e7",
+          "target_rva": "0xf1a3c8",
+          "name": "dvacore.dll!??0CodeProfiler@debug@dvacore@@QEAA@V?$IntrusivePtr@VProfileDataLog@debug@dvacore@@@RefCountedInterface@utility@2@@Z",
+          "op": "call qword ptr [rip + 0xb6c0db]"
+        },
+        {
+          "at_rva": "0x3ae379",
+          "target_rva": "0xf15a28",
+          "name": "PF.dll!??$GetAdjustedColorSpace@V?$shared_ptr@VCOR_ACE_Profile@@@boost@@@PF_ColorSettings@@QEBA?AV?$shared_ptr@VCOR_ACE_Profile@@@boost@@XZ",
+          "op": "call qword ptr [rip + 0xb676a9]"
+        },
+        {
+          "at_rva": "0x3ae384",
+          "target_rva": "0xf13f70",
+          "name": "COR.dll!?COR_ACE_GetSRGBProfile@@YA?AV?$shared_ptr@VCOR_ACE_Profile@@@boost@@XZ",
+          "op": "call qword ptr [rip + 0xb65be6]"
+        },
+        {
+          "at_rva": "0x3ae38f",
+          "target_rva": "0xc55320",
+          "name": "",
+          "op": "call 0x180c55320"
+        },
+        {
+          "at_rva": "0x3ae3ac",
+          "target_rva": "0xf13f88",
+          "name": "COR.dll!?COR_MakeAGMProfile@@YA?AVCAGMColorProfile@BIB_T_MT@@AEBV?$shared_ptr@VCOR_ACE_Profile@@@boost@@@Z",
+          "op": "call qword ptr [rip + 0xb65bd6]"
+        },
+        {
+          "at_rva": "0x3ae3c8",
+          "target_rva": "0xc84e50",
+          "name": "",
+          "op": "call 0x180c84e50"
+        },
+        {
+          "at_rva": "0x3ae3d8",
+          "target_rva": "0xc5c6f0",
+          "name": "",
+          "op": "call 0x180c5c6f0"
+        },
+        {
+          "at_rva": "0x3ae3de",
+          "target_rva": "0xc75b50",
+          "name": "",
+          "op": "call 0x180c75b50"
+        },
+        {
+          "at_rva": "0x3ae3f2",
+          "target_rva": "0xc55280",
+          "name": "",
+          "op": "call 0x180c55280"
+        },
+        {
+          "at_rva": "0x3ae40e",
+          "target_rva": "0xc55cb0",
+          "name": "",
+          "op": "call 0x180c55cb0"
+        },
+        {
+          "at_rva": "0x3ae421",
+          "target_rva": "0xc55cb0",
+          "name": "",
+          "op": "call 0x180c55cb0"
+        },
+        {
+          "at_rva": "0x3ae42e",
+          "target_rva": "0xc55cb0",
+          "name": "",
+          "op": "call 0x180c55cb0"
+        },
+        {
+          "at_rva": "0x3ae47d",
+          "target_rva": "0xf15a30",
+          "name": "PF.dll!?PF_MakeColorTransformWithBestRenderIntents@@YA?AVCOR_ACE_Transform@@V?$shared_ptr@VCOR_ACE_Profile@@@boost@@0@Z",
+          "op": "call qword ptr [rip + 0xb675ad]"
+        },
+        {
+          "at_rva": "0x3ae48b",
+          "target_rva": "0xf13f60",
+          "name": "COR.dll!??4COR_ACE_Transform@@QEAAAEBV0@AEBV0@@Z",
+          "op": "call qword ptr [rip + 0xb65acf]"
+        },
+        {
+          "at_rva": "0x3ae496",
+          "target_rva": "0xf13f80",
+          "name": "COR.dll!??1COR_ACE_Transform@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb65ae4]"
+        },
+        {
+          "at_rva": "0x3ae526",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69594]"
+        },
+        {
+          "at_rva": "0x3ae534",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69586]"
+        },
+        {
+          "at_rva": "0x3ae550",
+          "target_rva": "0xf17080",
+          "name": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+          "op": "call qword ptr [rip + 0xb68b2a]"
+        },
+        {
+          "at_rva": "0x3ae562",
+          "target_rva": "0xf17608",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+          "op": "call qword ptr [rip + 0xb690a0]"
+        },
+        {
+          "at_rva": "0x3ae575",
+          "target_rva": "0xf17ae8",
+          "name": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@$$QEAV0@@Z",
+          "op": "call qword ptr [rip + 0xb6956d]"
+        },
+        {
+          "at_rva": "0x3ae581",
+          "target_rva": "0xf17ac8",
+          "name": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69541]"
+        },
+        {
+          "at_rva": "0x3ae5c5",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb694f5]"
+        },
+        {
+          "at_rva": "0x3ae5d6",
+          "target_rva": "0x2e7880",
+          "name": "??0ScSuppressStreamReordered@BEE_Layer@@QEAA@PEAV1@@Z",
+          "op": "call 0x1802e7880"
+        },
+        {
+          "at_rva": "0x3ae5ed",
+          "target_rva": "0x2e78b0",
+          "name": "??0ScSuppressStreamVisibilityUpdate@BEE_Layer@@QEAA@PEAV1@_N1@Z",
+          "op": "call 0x1802e78b0"
+        },
+        {
+          "at_rva": "0x3ae603",
+          "target_rva": "0xf15a20",
+          "name": "PF.dll!?New@PF_World@@SAPEAV1@HHFH@Z",
+          "op": "call qword ptr [rip + 0xb67417]"
+        },
+        {
+          "at_rva": "0x3ae641",
+          "target_rva": "0x69f5f0",
+          "name": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ",
+          "op": "call 0x18069f5f0"
+        },
+        {
+          "at_rva": "0x3ae64b",
+          "target_rva": "0x69f5f0",
+          "name": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ",
+          "op": "call 0x18069f5f0"
+        },
+        {
+          "at_rva": "0x3ae699",
+          "target_rva": "0xc552d0",
+          "name": "",
+          "op": "call 0x180c552d0"
+        },
+        {
+          "at_rva": "0x3ae6aa",
+          "target_rva": "0xc83550",
+          "name": "",
+          "op": "call 0x180c83550"
+        },
+        {
+          "at_rva": "0x3ae6bb",
+          "target_rva": "0xc834d0",
+          "name": "",
+          "op": "call 0x180c834d0"
+        },
+        {
+          "at_rva": "0x3ae6cc",
+          "target_rva": "0x69f7b0",
+          "name": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+          "op": "call 0x18069f7b0"
+        },
+        {
+          "at_rva": "0x3ae74a",
+          "target_rva": "0xc5b560",
+          "name": "",
+          "op": "call 0x180c5b560"
+        },
+        {
+          "at_rva": "0x3ae74f",
+          "target_rva": "0x3ae76a",
+          "name": "",
+          "op": "jmp 0x1803ae76a"
+        },
+        {
+          "at_rva": "0x3ae771",
+          "target_rva": "0xc5b910",
+          "name": "",
+          "op": "call 0x180c5b910"
+        },
+        {
+          "at_rva": "0x3ae780",
+          "target_rva": "0xc58110",
+          "name": "",
+          "op": "call 0x180c58110"
+        },
+        {
+          "at_rva": "0x3ae7b8",
+          "target_rva": "0xc55990",
+          "name": "",
+          "op": "call 0x180c55990"
+        },
+        {
+          "at_rva": "0x3ae7cb",
+          "target_rva": "0xc55d10",
+          "name": "",
+          "op": "call 0x180c55d10"
+        },
+        {
+          "at_rva": "0x3ae7ea",
+          "target_rva": "0xc55990",
+          "name": "",
+          "op": "call 0x180c55990"
+        },
+        {
+          "at_rva": "0x3ae7fd",
+          "target_rva": "0xc55d10",
+          "name": "",
+          "op": "call 0x180c55d10"
+        },
+        {
+          "at_rva": "0x3ae813",
+          "target_rva": "0x16a12d0",
+          "name": "",
+          "op": "call qword ptr [rip + 0x12f2ab7]"
+        },
+        {
+          "at_rva": "0x3ae84d",
+          "target_rva": "0x69f850",
+          "name": "?LayerSelectTeardown@C_AGMDLTranslatePort@@QEAAXXZ",
+          "op": "call 0x18069f850"
+        },
+        {
+          "at_rva": "0x3ae856",
+          "target_rva": "0xc55cb0",
+          "name": "",
+          "op": "call 0x180c55cb0"
+        },
+        {
+          "at_rva": "0x3ae876",
+          "target_rva": "0x25c160",
+          "name": "",
+          "op": "call 0x18025c160"
+        },
+        {
+          "at_rva": "0x3ae880",
+          "target_rva": "0xf13f80",
+          "name": "COR.dll!??1COR_ACE_Transform@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb656fa]"
+        },
+        {
+          "at_rva": "0x3ae88a",
+          "target_rva": "0xc55cb0",
+          "name": "",
+          "op": "call 0x180c55cb0"
+        },
+        {
+          "at_rva": "0x3ae8fc",
+          "target_rva": "0xf1a3c0",
+          "name": "dvacore.dll!??1CodeProfiler@debug@dvacore@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb6babe]"
+        },
+        {
+          "at_rva": "0x3ae971",
+          "target_rva": "0xd3ac30",
+          "name": "",
+          "op": "call 0x180d3ac30"
+        },
+        {
+          "at_rva": "0x3ae99d",
+          "target_rva": "0xc57080",
+          "name": "",
+          "op": "call 0x180c57080"
+        },
+        {
+          "at_rva": "0x3ae9b7",
+          "target_rva": "0xd3bdf8",
+          "name": "",
+          "op": "call 0x180d3bdf8"
+        },
+        {
+          "at_rva": "0x3ae9bd",
+          "target_rva": "0xd39c10",
+          "name": "",
+          "op": "call 0x180d39c10"
+        }
+      ],
+      "shape_related_calls": [
+        {
+          "at_rva": "0x3ae3ac",
+          "target_rva": "0xf13f88",
+          "name": "COR.dll!?COR_MakeAGMProfile@@YA?AVCAGMColorProfile@BIB_T_MT@@AEBV?$shared_ptr@VCOR_ACE_Profile@@@boost@@@Z",
+          "op": "call qword ptr [rip + 0xb65bd6]"
+        },
+        {
+          "at_rva": "0x3ae526",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69594]"
+        },
+        {
+          "at_rva": "0x3ae534",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69586]"
+        },
+        {
+          "at_rva": "0x3ae550",
+          "target_rva": "0xf17080",
+          "name": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+          "op": "call qword ptr [rip + 0xb68b2a]"
+        },
+        {
+          "at_rva": "0x3ae562",
+          "target_rva": "0xf17608",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+          "op": "call qword ptr [rip + 0xb690a0]"
+        },
+        {
+          "at_rva": "0x3ae575",
+          "target_rva": "0xf17ae8",
+          "name": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@$$QEAV0@@Z",
+          "op": "call qword ptr [rip + 0xb6956d]"
+        },
+        {
+          "at_rva": "0x3ae581",
+          "target_rva": "0xf17ac8",
+          "name": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+          "op": "call qword ptr [rip + 0xb69541]"
+        },
+        {
+          "at_rva": "0x3ae5c5",
+          "target_rva": "0xf17ac0",
+          "name": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+          "op": "call qword ptr [rip + 0xb694f5]"
+        },
+        {
+          "at_rva": "0x3ae5d6",
+          "target_rva": "0x2e7880",
+          "name": "??0ScSuppressStreamReordered@BEE_Layer@@QEAA@PEAV1@@Z",
+          "op": "call 0x1802e7880"
+        },
+        {
+          "at_rva": "0x3ae5ed",
+          "target_rva": "0x2e78b0",
+          "name": "??0ScSuppressStreamVisibilityUpdate@BEE_Layer@@QEAA@PEAV1@_N1@Z",
+          "op": "call 0x1802e78b0"
+        },
+        {
+          "at_rva": "0x3ae641",
+          "target_rva": "0x69f5f0",
+          "name": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ",
+          "op": "call 0x18069f5f0"
+        },
+        {
+          "at_rva": "0x3ae64b",
+          "target_rva": "0x69f5f0",
+          "name": "?GetProcs@C_AGMDLTranslatePort@@CAPEAU_t_NewAGMDLTranslatePortInterface@@XZ",
+          "op": "call 0x18069f5f0"
+        },
+        {
+          "at_rva": "0x3ae6cc",
+          "target_rva": "0x69f7b0",
+          "name": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+          "op": "call 0x18069f7b0"
+        },
+        {
+          "at_rva": "0x3ae84d",
+          "target_rva": "0x69f850",
+          "name": "?LayerSelectTeardown@C_AGMDLTranslatePort@@QEAAXXZ",
+          "op": "call 0x18069f850"
+        }
+      ]
+    }
+  }
+}

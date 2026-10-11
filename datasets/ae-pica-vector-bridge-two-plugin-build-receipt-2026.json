@@ -1,0 +1,52 @@
+{
+  "evidence": "E0-S distributed Adobe Sweetie/Checkout + locally compiled AEX PE inspection",
+  "host_executed_by_this_static_verifier": false,
+  "external_host_confirmation": "research/findings/F-VECTOR-020-pica-aegp-effect-ae2026-host-confirmation.md",
+  "mock_execution_result": "PASS after mock PF_UtilCallbacks fix",
+  "vector_geometry_caller_buffer_pod": true,
+  "adobe_effect_native_contents_or_vectorart_output": false,
+  "artifacts": {
+    "VectorBridgeAEGP.aex": {
+      "path": "D:\\Developer\\ShapeLayerAE\\build\\vector_bridge\\Release\\VectorBridgeAEGP.aex",
+      "sha256": "85f189f8e3bfa22ba9858ee1b5b95ae21b5462cf271f9f23f889708d306e5802",
+      "bytes": 11776,
+      "machine": "AMD64",
+      "exported_names": [
+        "EntryPointFunc"
+      ],
+      "expected_exports_ok": true,
+      "suite_identifier_present": true,
+      "resource_directory_types": 2,
+      "imported_modules": [
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-math-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "private_BEE_TDB_linkage": false
+    },
+    "VectorBridgeConsumer.aex": {
+      "path": "D:\\Developer\\ShapeLayerAE\\build\\vector_bridge\\Release\\VectorBridgeConsumer.aex",
+      "sha256": "4271c8b7b1c710df12681c57cfda6eb9e148eff59114ffdd1477e31e5d4d411f",
+      "bytes": 12800,
+      "machine": "AMD64",
+      "exported_names": [
+        "EffectMain",
+        "PluginDataEntryFunction2"
+      ],
+      "expected_exports_ok": true,
+      "suite_identifier_present": true,
+      "resource_directory_types": 2,
+      "imported_modules": [
+        "VCRUNTIME140.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "KERNEL32.dll"
+      ],
+      "private_BEE_TDB_linkage": false
+    },
+    "original_v3_untouched": {
+      "same_sha256_as_installed": true,
+      "sha256": "6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1"
+    }
+  }
+}

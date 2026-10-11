@@ -1,0 +1,70 @@
+{
+  "experiment_id": "EXP-SHAPE-019",
+  "date_local": "2026-10-11",
+  "evidence": {
+    "initial_host": "E2-X user-submitted screenshots",
+    "corrected_aex_metadata": "compiled PiPL PE resource inspection",
+    "standalone_aex_pair": "isolated mock process"
+  },
+  "ae2026_original_pair": {
+    "user_observed": true,
+    "consumer_about": [
+      "PICA suite: connected",
+      "Native Bezier segments: 4; first X: 100.00"
+    ],
+    "errors": [
+      {
+        "type": "version_mismatch",
+        "code": "1.0",
+        "pipl": "0.2",
+        "version_number_code_hex": "0x80001"
+      },
+      {
+        "type": "global_outflags_mismatch",
+        "code_hex": "0x400",
+        "pipl_hex": "0x0"
+      },
+      {
+        "type": "mfr_warning",
+        "text": "This effect may slow down Preview and Export as it is not optimized for Multi-Frame Rendering."
+      }
+    ],
+    "assertion": "PICA suite provider/consumer native cubic-data transfer succeeded despite metadata warnings"
+  },
+  "corrected_pair": {
+    "path": "D:/Developer/ShapeLayerAE/build/vector_bridge/Release/VectorBridgeConsumer.aex",
+    "consumer_sha256": "4271c8b7b1c710df12681c57cfda6eb9e148eff59114ffdd1477e31e5d4d411f",
+    "provider_sha256": "85f189f8e3bfa22ba9858ee1b5b95ae21b5462cf271f9f23f889708d306e5802",
+    "pipl_binary_resource": {
+      "version": 524289,
+      "outflags": 0,
+      "outflags2": 134217728
+    },
+    "cpp": {
+      "PF_VERSION": "PF_VERSION(1,0,0,PF_Stage_DEVELOP,1)",
+      "outflags": "PF_OutFlag_NONE",
+      "outflags2": "PF_OutFlag2_SUPPORTS_THREADED_RENDERING"
+    },
+    "recompiled": true,
+    "post_patch_AE2026_retested": false,
+    "installed_original_sha256": "11363e5637f748b2390c8ee084a0590ee676f8978e9d11a732a4c60984ec0793",
+    "automatic_install_attempt": "DENIED by Windows permission on Program Files; original remains unchanged",
+    "backup": "D:/Developer/ShapeLayerAE/backups/VectorBridgeConsumer_pre_PiPL_fix_20261011.aex",
+    "action_required": "Copy corrected Consumer AEX to C:/Program Files/Adobe/Common/Plug-ins/7.0/MediaCore with admin privileges after closing AE"
+  },
+  "standalone_mock": {
+    "run_result": "PASS",
+    "real_AEX_pair_loaded": true,
+    "suite_registered": 1,
+    "native_cubics": 4,
+    "at_0s_radius": 100,
+    "at_0_5s_radius": 115.13,
+    "consumer_suite_acquires": 1,
+    "consumer_about_connected": true,
+    "not_an_After_Effects_host": true,
+    "original_mock_crash_cause": "Mock omitted PF_InData.utils->ansi.sprintf; the real AE host supplied the callback; fixed mock, no AEX runtime geometry bug."
+  },
+  "native_vectorart_output": false,
+  "native_contents_and_pen_tool": false,
+  "followup": "Quit AE, replace only VectorBridgeConsumer.aex, restart, check three warnings absent and About still connected. MFR stress test remains."
+}

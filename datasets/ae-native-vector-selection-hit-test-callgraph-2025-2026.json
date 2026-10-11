@@ -1,0 +1,582 @@
+{
+  "classification": "E2-L actual call/jmp sites and verified .pdata caller spans; indirect calls are outside scope",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "decoded_instructions": 4488162,
+      "results": [
+        {
+          "name": "?BEE_CompHitCheckSelection@@YAHPEAVBEE_Item@@PEBUFLT_CameraView@@PEBUT_Time@@UM_FixedPoint@@PEAVBEE_Selection@@PEAFPEAPEAVBEE_Layer@@@Z",
+          "rva": "0x3a14a0",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?BEE_GetMaskVertexSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+          "rva": "0xa9fa0",
+          "direct_xrefs": 8,
+          "caller_sites": [
+            {
+              "caller_site": "0xa8c10",
+              "calling_function_rva": "0xa8880",
+              "exact_caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xa8da3",
+              "calling_function_rva": "0xa8880",
+              "exact_caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xaabeb",
+              "calling_function_rva": "0xaa820",
+              "exact_caller_export": "?BEE_IsSelected@@YAHPEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAVBEE_SelRec@@PEAE@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xab411",
+              "calling_function_rva": "0xaaeb0",
+              "exact_caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xab8cc",
+              "calling_function_rva": "0xaaeb0",
+              "exact_caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xac050",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xac5cb",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xa9fa0"
+            },
+            {
+              "caller_site": "0xaea8c",
+              "calling_function_rva": "0xae8d0",
+              "exact_caller_export": "",
+              "callee_rva": "0xa9fa0"
+            }
+          ]
+        },
+        {
+          "name": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xaa100",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z",
+          "rva": "0xc7710",
+          "direct_xrefs": 1,
+          "caller_sites": [
+            {
+              "caller_site": "0x57917d",
+              "calling_function_rva": "0x578f70",
+              "exact_caller_export": "",
+              "callee_rva": "0xc7710"
+            }
+          ]
+        },
+        {
+          "name": "?FindGraphicPaths@BEE_VectorArt@@YAXAEBVGroup@1@AEBVOriginInfo@1@AEAVCAGMPath@BIB_T_MT@@@Z",
+          "rva": "0x6cd1c0",
+          "direct_xrefs": 1,
+          "caller_sites": [
+            {
+              "caller_site": "0x6e1905",
+              "calling_function_rva": "0x6e1440",
+              "exact_caller_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+              "callee_rva": "0x6cd1c0"
+            }
+          ]
+        },
+        {
+          "name": "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ",
+          "rva": "0x6ce010",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?IsParentShapeSelected@BEE_Selection@@QEAA_NPEBVBEE_StreamSpec@@@Z",
+          "rva": "0xc9600",
+          "direct_xrefs": 1,
+          "caller_sites": [
+            {
+              "caller_site": "0xcaf8e",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xc9600"
+            }
+          ]
+        },
+        {
+          "name": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0xc9720",
+          "direct_xrefs": 2,
+          "caller_sites": [
+            {
+              "caller_site": "0x6667be",
+              "calling_function_rva": "0x6665e0",
+              "exact_caller_export": "",
+              "callee_rva": "0xc9720"
+            },
+            {
+              "caller_site": "0x6729a4",
+              "calling_function_rva": "0x6727f0",
+              "exact_caller_export": "",
+              "callee_rva": "0xc9720"
+            }
+          ]
+        },
+        {
+          "name": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+          "rva": "0x6833a0",
+          "direct_xrefs": 3,
+          "caller_sites": [
+            {
+              "caller_site": "0x24eb99",
+              "calling_function_rva": "0x24eae0",
+              "exact_caller_export": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@@Z",
+              "callee_rva": "0x6833a0"
+            },
+            {
+              "caller_site": "0x28ee00",
+              "calling_function_rva": "0x28e660",
+              "exact_caller_export": "",
+              "callee_rva": "0x6833a0"
+            },
+            {
+              "caller_site": "0x6a8452",
+              "calling_function_rva": "0x6a80e0",
+              "exact_caller_export": "",
+              "callee_rva": "0x6833a0"
+            }
+          ]
+        },
+        {
+          "name": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+          "rva": "0xcaca0",
+          "direct_xrefs": 20,
+          "caller_sites": [
+            {
+              "caller_site": "0xac218",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xac295",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xac764",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xac801",
+              "calling_function_rva": "0xabf40",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xacf65",
+              "calling_function_rva": "0xac9b0",
+              "exact_caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xae567",
+              "calling_function_rva": "0xae4d0",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xae767",
+              "calling_function_rva": "0xae6d0",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xb071d",
+              "calling_function_rva": "0xb04b0",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xc77df",
+              "calling_function_rva": "0xc7710",
+              "exact_caller_export": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xcadef",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xcaffd",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xcb067",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xcb174",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0xcb21a",
+              "calling_function_rva": "0xcaca0",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x65c612",
+              "calling_function_rva": "0x65c130",
+              "exact_caller_export": "?BEE_CmdMoveKeyframes@@YAHPEAVBEE_Item@@PEAVBEE_Selection@@PEBUT_Time@@PEAVQuickOffsetInfo@@_N@Z",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x6759b4",
+              "calling_function_rva": "0x675850",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x675b29",
+              "calling_function_rva": "0x675a40",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x675c22",
+              "calling_function_rva": "0x675b90",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x675d1b",
+              "calling_function_rva": "0x675c60",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            },
+            {
+              "caller_site": "0x677356",
+              "calling_function_rva": "0x676bb0",
+              "exact_caller_export": "",
+              "callee_rva": "0xcaca0"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "decoded_instructions": 4626191,
+      "results": [
+        {
+          "name": "?BEE_CompHitCheckSelection@@YAHPEAVBEE_Item@@PEBUFLT_CameraView@@PEBUT_Time@@UM_FixedPoint@@PEAVBEE_Selection@@PEAFPEAPEAVBEE_Layer@@@Z",
+          "rva": "0x3ac970",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?BEE_GetMaskVertexSelH@@YAHPEAVBEE_Selection@@PEBVBEE_StreamSpec@@PEAPEAPEAULIST_Head@@@Z",
+          "rva": "0xafb30",
+          "direct_xrefs": 8,
+          "caller_sites": [
+            {
+              "caller_site": "0xae837",
+              "calling_function_rva": "0xae4a0",
+              "exact_caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xae9c4",
+              "calling_function_rva": "0xae4a0",
+              "exact_caller_export": "?BEE_CountSelected@@YAHQEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAH@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb076b",
+              "calling_function_rva": "0xb03a0",
+              "exact_caller_export": "?BEE_IsSelected@@YAHPEAVBEE_Selection@@PEAVBEE_LayerSelSpec@@PEAVBEE_SelRec@@PEAE@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb0f9e",
+              "calling_function_rva": "0xb0a30",
+              "exact_caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb148b",
+              "calling_function_rva": "0xb0a30",
+              "exact_caller_export": "?BEE_SelIterate@@YAHPEAVBEE_Selection@@_N1PEBVBEE_LayerSelSpec@@P6AHQEAV1@PEAVBEE_SelRec@@PEAX@Z5@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb1c49",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb21c7",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xafb30"
+            },
+            {
+              "caller_site": "0xb4658",
+              "calling_function_rva": "0xb44b0",
+              "exact_caller_export": "",
+              "callee_rva": "0xafb30"
+            }
+          ]
+        },
+        {
+          "name": "?BEE_GetSelectedShapePathsVec@@YAHPEAVBEE_Layer@@PEAV?$vector@VTDB_StreamIDPath@@V?$allocator@VTDB_StreamIDPath@@@std@@@std@@@Z",
+          "rva": "0xafc90",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z",
+          "rva": "0xcdbf0",
+          "direct_xrefs": 1,
+          "caller_sites": [
+            {
+              "caller_site": "0x59a119",
+              "calling_function_rva": "0x599f00",
+              "exact_caller_export": "",
+              "callee_rva": "0xcdbf0"
+            }
+          ]
+        },
+        {
+          "name": "?FindGraphicPaths@BEE_VectorArt@@YAXAEBVGroup@1@AEBVOriginInfo@1@AEAVCAGMPath@BIB_T_MT@@@Z",
+          "rva": "0x6f1e10",
+          "direct_xrefs": 1,
+          "caller_sites": [
+            {
+              "caller_site": "0x7061da",
+              "calling_function_rva": "0x705d10",
+              "exact_caller_export": "?CmdParamChanged@BEE_VectorLayer@@UEAAXAEBVTDB_StreamIDPath@@AEBUT_Time@@@Z",
+              "callee_rva": "0x6f1e10"
+            }
+          ]
+        },
+        {
+          "name": "?GetCompletePath@OriginInfo@BEE_VectorArt@@QEBA?AVTDB_StreamIDPath@@XZ",
+          "rva": "0x6f2b70",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?IsParentShapeSelected@BEE_Selection@@QEAA_NPEBVBEE_StreamSpec@@@Z",
+          "rva": "0xcfb60",
+          "direct_xrefs": 0,
+          "caller_sites": []
+        },
+        {
+          "name": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+          "rva": "0xcfc70",
+          "direct_xrefs": 2,
+          "caller_sites": [
+            {
+              "caller_site": "0x68200e",
+              "calling_function_rva": "0x681e30",
+              "exact_caller_export": "",
+              "callee_rva": "0xcfc70"
+            },
+            {
+              "caller_site": "0x68e8a1",
+              "calling_function_rva": "0x68e700",
+              "exact_caller_export": "",
+              "callee_rva": "0xcfc70"
+            }
+          ]
+        },
+        {
+          "name": "?LayerSelectSetupPrePlayback@C_AGMDLTranslatePort@@QEAAP6AXPEBVAGMPort@BIB_T_MT@@HPEAX_K@ZH@Z",
+          "rva": "0x69f7b0",
+          "direct_xrefs": 4,
+          "caller_sites": [
+            {
+              "caller_site": "0x258e58",
+              "calling_function_rva": "0x258da0",
+              "exact_caller_export": "??0C_AGMDLTranslatePort@@QEAA@PEAVPF_World@@AEAVBEE_IllusShapeTarget@@AEBUAGMTranslatePortColorConverter@@VM_Matrix3@@HAEBV?$shared_ptr@UBEE_AGMGradientInfo@@@std@@_N@Z",
+              "callee_rva": "0x69f7b0"
+            },
+            {
+              "caller_site": "0x298002",
+              "calling_function_rva": "0x297710",
+              "exact_caller_export": "",
+              "callee_rva": "0x69f7b0"
+            },
+            {
+              "caller_site": "0x3ae6cc",
+              "calling_function_rva": "0x3ae190",
+              "exact_caller_export": "?BEE_PasteSVGIntoComp@@YAXPEAVBEE_Layer@@PEBVBEE_NonRenderProgAbort@@V?$shared_ptr@VScSVGParse@@@std@@V?$shared_ptr@$$CBVPF_ColorSettings@@@4@@Z",
+              "callee_rva": "0x69f7b0"
+            },
+            {
+              "caller_site": "0x6cbad2",
+              "calling_function_rva": "0x6cb780",
+              "exact_caller_export": "",
+              "callee_rva": "0x69f7b0"
+            }
+          ]
+        },
+        {
+          "name": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+          "rva": "0xd1170",
+          "direct_xrefs": 20,
+          "caller_sites": [
+            {
+              "caller_site": "0xb1e10",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb1e83",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb235b",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb23ea",
+              "calling_function_rva": "0xb1b30",
+              "exact_caller_export": "?BEE_Select@@YAHEPEAVBEE_SelRec@@PEAVBEE_Selection@@PEAE@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb2b37",
+              "calling_function_rva": "0xb25a0",
+              "exact_caller_export": "?BEE_SelectAll@@YAHEPEAVBEE_LayerSelSpec@@PEAVBEE_Selection@@@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb4163",
+              "calling_function_rva": "0xb40d0",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb4353",
+              "calling_function_rva": "0xb42c0",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xb6280",
+              "calling_function_rva": "0xb6010",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xcdcd3",
+              "calling_function_rva": "0xcdbf0",
+              "exact_caller_export": "?BEE_SelectGroup@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAV?$U_ScAutoPtr@VBEE_Selection@@@@@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xd12c3",
+              "calling_function_rva": "0xd1170",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xd14ee",
+              "calling_function_rva": "0xd1170",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xd1558",
+              "calling_function_rva": "0xd1170",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xd1665",
+              "calling_function_rva": "0xd1170",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0xd170c",
+              "calling_function_rva": "0xd1170",
+              "exact_caller_export": "?SelectStream@BEE_Selection@@QEAAXPEBVBEE_StreamSpec@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x677c2b",
+              "calling_function_rva": "0x677770",
+              "exact_caller_export": "?BEE_CmdMoveKeyframes@@YAHPEAVBEE_Item@@PEAVBEE_Selection@@PEBUT_Time@@PEAVQuickOffsetInfo@@_N@Z",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x6918b4",
+              "calling_function_rva": "0x691750",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x691a19",
+              "calling_function_rva": "0x691940",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x691b02",
+              "calling_function_rva": "0x691a70",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x691bec",
+              "calling_function_rva": "0x691b40",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            },
+            {
+              "caller_site": "0x693217",
+              "calling_function_rva": "0x692a70",
+              "exact_caller_export": "",
+              "callee_rva": "0xd1170"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

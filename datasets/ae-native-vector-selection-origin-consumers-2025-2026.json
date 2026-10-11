@@ -1,0 +1,2403 @@
+{
+  "classification": "E2-L x64 direct CALL/JMP sites in verified .pdata callers, not full selection mapping",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "caller_functions": [
+        {
+          "function_start": "0x6665e0",
+          "function_end": "0x666863",
+          "code_bytes": 643,
+          "direct_calls": [
+            {
+              "site": "0x66661a",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rax + 0x40]"
+            },
+            {
+              "site": "0x666624",
+              "target": "0x666635",
+              "symbol": "",
+              "asm": "jmp 0x180666635"
+            },
+            {
+              "site": "0x66662c",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rax + 0x88]"
+            },
+            {
+              "site": "0x666638",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8578ea]"
+            },
+            {
+              "site": "0x666647",
+              "target": "0xebe7e0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x858193]"
+            },
+            {
+              "site": "0x666651",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8578d1]"
+            },
+            {
+              "site": "0x666667",
+              "target": "0xebdf08",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x85789b]"
+            },
+            {
+              "site": "0x666675",
+              "target": "0xebdf40",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8578c5]"
+            },
+            {
+              "site": "0x666685",
+              "target": "0xebdb20",
+              "symbol": "TDB.dll!?AddHead@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x857495]"
+            },
+            {
+              "site": "0x666690",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x8578a2]"
+            },
+            {
+              "site": "0x666699",
+              "target": "0xebdf58",
+              "symbol": "TDB.dll!?IsValid@TDB_MatchName@@QEBA_NXZ",
+              "asm": "call qword ptr [rip + 0x8578b9]"
+            },
+            {
+              "site": "0x6666aa",
+              "target": "0xebde88",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x8577d8]"
+            },
+            {
+              "site": "0x6666b3",
+              "target": "0x704760",
+              "symbol": "?IsGroup@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+              "asm": "call 0x180704760"
+            },
+            {
+              "site": "0x6666c6",
+              "target": "0xebdcc0",
+              "symbol": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x8575f4]"
+            },
+            {
+              "site": "0x6666d2",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rdx + 0x88]"
+            },
+            {
+              "site": "0x6666ea",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x857848]"
+            },
+            {
+              "site": "0x6666f6",
+              "target": null,
+              "symbol": "",
+              "asm": "call rbx"
+            },
+            {
+              "site": "0x66670e",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x857824]"
+            },
+            {
+              "site": "0x66671a",
+              "target": "0xebde88",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x857768]"
+            },
+            {
+              "site": "0x666729",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x857841]"
+            },
+            {
+              "site": "0x666740",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x85782a]"
+            },
+            {
+              "site": "0x666754",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x857816]"
+            },
+            {
+              "site": "0x66676b",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8577ff]"
+            },
+            {
+              "site": "0x66677f",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8577eb]"
+            },
+            {
+              "site": "0x666791",
+              "target": "0xc95b0",
+              "symbol": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800c95b0"
+            },
+            {
+              "site": "0x6667a9",
+              "target": "0xc8e00",
+              "symbol": "?GetIndex@BEE_Selection@@QEBAIPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800c8e00"
+            },
+            {
+              "site": "0x6667b3",
+              "target": "0xc92c0",
+              "symbol": "?GetSelLayer@BEE_Selection@@QEAAPEAVBEE_SelLayer@@I@Z",
+              "asm": "call 0x1800c92c0"
+            },
+            {
+              "site": "0x6667be",
+              "target": "0xc9720",
+              "symbol": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+              "asm": "call 0x1800c9720"
+            },
+            {
+              "site": "0x6667df",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x857753]"
+            },
+            {
+              "site": "0x6667eb",
+              "target": null,
+              "symbol": "",
+              "asm": "call rbx"
+            },
+            {
+              "site": "0x666806",
+              "target": "0xebe7e8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x857fdc]"
+            },
+            {
+              "site": "0x666817",
+              "target": "0xce9610",
+              "symbol": "",
+              "asm": "call 0x180ce9610"
+            },
+            {
+              "site": "0x66683c",
+              "target": "0xebdf50",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x85770e]"
+            },
+            {
+              "site": "0x66684a",
+              "target": "0xebdf20",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x8576d0]"
+            },
+            {
+              "site": "0x666858",
+              "target": "0xebd988",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBV1@@Z",
+              "asm": "call qword ptr [rip + 0x85712a]"
+            },
+            {
+              "site": "0x666860",
+              "target": "0x666801",
+              "symbol": "",
+              "asm": "jmp 0x180666801"
+            }
+          ],
+          "first_instructions": [
+            [
+              "0x6665e0",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x6665e2",
+              "push",
+              "rbp"
+            ],
+            [
+              "0x6665e3",
+              "push",
+              "rsi"
+            ],
+            [
+              "0x6665e4",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x6665e5",
+              "push",
+              "r12"
+            ],
+            [
+              "0x6665e7",
+              "push",
+              "r13"
+            ],
+            [
+              "0x6665e9",
+              "push",
+              "r14"
+            ],
+            [
+              "0x6665eb",
+              "push",
+              "r15"
+            ],
+            [
+              "0x6665ed",
+              "sub",
+              "rsp, 0x88"
+            ],
+            [
+              "0x6665f4",
+              "mov",
+              "rax, qword ptr [rip + 0xeb3145]"
+            ],
+            [
+              "0x6665fb",
+              "xor",
+              "rax, rsp"
+            ],
+            [
+              "0x6665fe",
+              "mov",
+              "qword ptr [rsp + 0x78], rax"
+            ],
+            [
+              "0x666603",
+              "mov",
+              "r13, r9"
+            ],
+            [
+              "0x666606",
+              "mov",
+              "r15, r8"
+            ],
+            [
+              "0x666609",
+              "mov",
+              "rbx, rdx"
+            ],
+            [
+              "0x66660c",
+              "mov",
+              "qword ptr [rsp + 0x20], rdx"
+            ],
+            [
+              "0x666611",
+              "mov",
+              "rbp, rcx"
+            ],
+            [
+              "0x666614",
+              "mov",
+              "rax, qword ptr [r8]"
+            ],
+            [
+              "0x666617",
+              "mov",
+              "rcx, r8"
+            ],
+            [
+              "0x66661a",
+              "call",
+              "qword ptr [rax + 0x40]"
+            ],
+            [
+              "0x66661d",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x66661f",
+              "jne",
+              "0x180666626"
+            ],
+            [
+              "0x666621",
+              "xor",
+              "r14d, r14d"
+            ],
+            [
+              "0x666624",
+              "jmp",
+              "0x180666635"
+            ],
+            [
+              "0x666626",
+              "mov",
+              "rax, qword ptr [r15]"
+            ],
+            [
+              "0x666629",
+              "mov",
+              "rcx, r15"
+            ],
+            [
+              "0x66662c",
+              "call",
+              "qword ptr [rax + 0x88]"
+            ],
+            [
+              "0x666632",
+              "mov",
+              "r14, rax"
+            ],
+            [
+              "0x666635",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x666638",
+              "call",
+              "qword ptr [rip + 0x8578ea]"
+            ],
+            [
+              "0x66663e",
+              "lea",
+              "r12d, [rax - 1]"
+            ],
+            [
+              "0x666642",
+              "lea",
+              "rcx, [rsp + 0x28]"
+            ],
+            [
+              "0x666647",
+              "call",
+              "qword ptr [rip + 0x858193]"
+            ],
+            [
+              "0x66664d",
+              "nop",
+              ""
+            ],
+            [
+              "0x66664e",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x666651",
+              "call",
+              "qword ptr [rip + 0x8578d1]"
+            ],
+            [
+              "0x666657",
+              "mov",
+              "esi, eax"
+            ],
+            [
+              "0x666659",
+              "sub",
+              "esi, 1"
+            ],
+            [
+              "0x66665c",
+              "js",
+              "0x1806667ff"
+            ],
+            [
+              "0x666662",
+              "mov",
+              "edx, esi"
+            ],
+            [
+              "0x666664",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x666667",
+              "call",
+              "qword ptr [rip + 0x85789b]"
+            ],
+            [
+              "0x66666d",
+              "mov",
+              "rdx, rax"
+            ],
+            [
+              "0x666670",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x666675",
+              "call",
+              "qword ptr [rip + 0x8578c5]"
+            ],
+            [
+              "0x66667b",
+              "lea",
+              "rdx, [rsp + 0x48]"
+            ],
+            [
+              "0x666680",
+              "lea",
+              "rcx, [rsp + 0x28]"
+            ],
+            [
+              "0x666685",
+              "call",
+              "qword ptr [rip + 0x857495]"
+            ],
+            [
+              "0x66668b",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x666690",
+              "call",
+              "qword ptr [rip + 0x8578a2]"
+            ],
+            [
+              "0x666696",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x666699",
+              "call",
+              "qword ptr [rip + 0x8578b9]"
+            ],
+            [
+              "0x66669f",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x6666a1",
+              "je",
+              "0x1806667f6"
+            ],
+            [
+              "0x6666a7",
+              "mov",
+              "rcx, r15"
+            ],
+            [
+              "0x6666aa",
+              "call",
+              "qword ptr [rip + 0x8577d8]"
+            ],
+            [
+              "0x6666b0",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x6666b3",
+              "call",
+              "0x180704760"
+            ],
+            [
+              "0x6666b8",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x6666ba",
+              "je",
+              "0x180666700"
+            ]
+          ]
+        },
+        {
+          "function_start": "0x6727f0",
+          "function_end": "0x672bf9",
+          "code_bytes": 1033,
+          "direct_calls": [
+            {
+              "site": "0x67283d",
+              "target": "0xebe7f0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84bfad]"
+            },
+            {
+              "site": "0x67284c",
+              "target": "0xebe7f0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84bf9e]"
+            },
+            {
+              "site": "0x672864",
+              "target": "0x666b30",
+              "symbol": "",
+              "asm": "call 0x180666b30"
+            },
+            {
+              "site": "0x67287f",
+              "target": "0x6665e0",
+              "symbol": "",
+              "asm": "call 0x1806665e0"
+            },
+            {
+              "site": "0x672894",
+              "target": "0xebe800",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84bf66]"
+            },
+            {
+              "site": "0x67289e",
+              "target": "0xebe7e0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84bf3c]"
+            },
+            {
+              "site": "0x6728ac",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b676]"
+            },
+            {
+              "site": "0x6728c7",
+              "target": "0xebdf08",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x84b63b]"
+            },
+            {
+              "site": "0x6728d4",
+              "target": "0xebdf40",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84b666]"
+            },
+            {
+              "site": "0x6728dd",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b645]"
+            },
+            {
+              "site": "0x6728e9",
+              "target": "0xebdce8",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84b3f9]"
+            },
+            {
+              "site": "0x6728fc",
+              "target": "0xebdf08",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x84b606]"
+            },
+            {
+              "site": "0x672909",
+              "target": "0xebdce0",
+              "symbol": "TDB.dll!??4TDB_StreamID@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84b3d1]"
+            },
+            {
+              "site": "0x672913",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x84b61f]"
+            },
+            {
+              "site": "0x672920",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x84b612]"
+            },
+            {
+              "site": "0x67292c",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84b63e]"
+            },
+            {
+              "site": "0x672942",
+              "target": "0xebdf20",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x84b5d8]"
+            },
+            {
+              "site": "0x67294f",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b5d3]"
+            },
+            {
+              "site": "0x672961",
+              "target": "0xebe7e8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84be81]"
+            },
+            {
+              "site": "0x672975",
+              "target": "0xc95b0",
+              "symbol": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800c95b0"
+            },
+            {
+              "site": "0x67298d",
+              "target": "0xc8e00",
+              "symbol": "?GetIndex@BEE_Selection@@QEBAIPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800c8e00"
+            },
+            {
+              "site": "0x672997",
+              "target": "0xc92c0",
+              "symbol": "?GetSelLayer@BEE_Selection@@QEAAPEAVBEE_SelLayer@@I@Z",
+              "asm": "call 0x1800c92c0"
+            },
+            {
+              "site": "0x6729a4",
+              "target": "0xc9720",
+              "symbol": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+              "asm": "call 0x1800c9720"
+            },
+            {
+              "site": "0x6729b6",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b56c]"
+            },
+            {
+              "site": "0x6729cd",
+              "target": "0xebdf18",
+              "symbol": "TDB.dll!?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x84b545]"
+            },
+            {
+              "site": "0x6729d6",
+              "target": "0x672a5f",
+              "symbol": "",
+              "asm": "jmp 0x180672a5f"
+            },
+            {
+              "site": "0x6729e4",
+              "target": "0xebe800",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84be16]"
+            },
+            {
+              "site": "0x6729ef",
+              "target": "0xebe7e8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84bdf3]"
+            },
+            {
+              "site": "0x6729ff",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b523]"
+            },
+            {
+              "site": "0x672a0e",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b514]"
+            },
+            {
+              "site": "0x672a1b",
+              "target": "0xebdf10",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x84b4ef]"
+            },
+            {
+              "site": "0x672a24",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x84b50e]"
+            },
+            {
+              "site": "0x672a32",
+              "target": "0xebdf10",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x84b4d8]"
+            },
+            {
+              "site": "0x672a3b",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x84b4f7]"
+            },
+            {
+              "site": "0x672a47",
+              "target": "0xebdf70",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84b523]"
+            },
+            {
+              "site": "0x672a51",
+              "target": "0x67296d",
+              "symbol": "",
+              "asm": "jmp 0x18067296d"
+            },
+            {
+              "site": "0x672a64",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b4be]"
+            },
+            {
+              "site": "0x672a76",
+              "target": "0xebe800",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84bd84]"
+            },
+            {
+              "site": "0x672a7c",
+              "target": "0x672aef",
+              "symbol": "",
+              "asm": "jmp 0x180672aef"
+            },
+            {
+              "site": "0x672a83",
+              "target": "0xebe800",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84bd77]"
+            },
+            {
+              "site": "0x672a8c",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b496]"
+            },
+            {
+              "site": "0x672a99",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b489]"
+            },
+            {
+              "site": "0x672aa8",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b47a]"
+            },
+            {
+              "site": "0x672ab3",
+              "target": "0xebdf08",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x84b44f]"
+            },
+            {
+              "site": "0x672ac0",
+              "target": "0xebdf40",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x84b47a]"
+            },
+            {
+              "site": "0x672acf",
+              "target": "0xebdf20",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x84b44b]"
+            },
+            {
+              "site": "0x672ad8",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b44a]"
+            },
+            {
+              "site": "0x672ae5",
+              "target": "0xebdf28",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x84b43d]"
+            },
+            {
+              "site": "0x672b09",
+              "target": "0xebde08",
+              "symbol": "TDB.dll!?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+              "asm": "call qword ptr [rip + 0x84b2f9]"
+            },
+            {
+              "site": "0x672b35",
+              "target": "0x672c00",
+              "symbol": "",
+              "asm": "call 0x180672c00"
+            },
+            {
+              "site": "0x672b48",
+              "target": "0x672b7f",
+              "symbol": "",
+              "asm": "jmp 0x180672b7f"
+            },
+            {
+              "site": "0x672b6c",
+              "target": "0x672c00",
+              "symbol": "",
+              "asm": "call 0x180672c00"
+            },
+            {
+              "site": "0x672b84",
+              "target": "0xebdf10",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x84b386]"
+            },
+            {
+              "site": "0x672b8d",
+              "target": "0xebdf38",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x84b3a5]"
+            },
+            {
+              "site": "0x672b99",
+              "target": "0xebdcc0",
+              "symbol": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x84b121]"
+            },
+            {
+              "site": "0x672ba5",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rdx + 0x40]"
+            },
+            {
+              "site": "0x672bb9",
+              "target": "0x6553d0",
+              "symbol": "",
+              "asm": "call 0x1806553d0"
+            },
+            {
+              "site": "0x672bc4",
+              "target": "0xebe7e8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84bc1e]"
+            },
+            {
+              "site": "0x672bd0",
+              "target": "0xebe7e8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x84bc12]"
+            },
+            {
+              "site": "0x672be0",
+              "target": "0xce9610",
+              "symbol": "",
+              "asm": "call 0x180ce9610"
+            }
+          ],
+          "first_instructions": [
+            [
+              "0x6727f0",
+              "push",
+              "rbp"
+            ],
+            [
+              "0x6727f2",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x6727f3",
+              "push",
+              "rsi"
+            ],
+            [
+              "0x6727f4",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x6727f5",
+              "push",
+              "r12"
+            ],
+            [
+              "0x6727f7",
+              "push",
+              "r13"
+            ],
+            [
+              "0x6727f9",
+              "push",
+              "r14"
+            ],
+            [
+              "0x6727fb",
+              "push",
+              "r15"
+            ],
+            [
+              "0x6727fd",
+              "lea",
+              "rbp, [rsp - 0xf]"
+            ],
+            [
+              "0x672802",
+              "sub",
+              "rsp, 0xf8"
+            ],
+            [
+              "0x672809",
+              "mov",
+              "rax, qword ptr [rip + 0xea6f30]"
+            ],
+            [
+              "0x672810",
+              "xor",
+              "rax, rsp"
+            ],
+            [
+              "0x672813",
+              "mov",
+              "qword ptr [rbp - 1], rax"
+            ],
+            [
+              "0x672817",
+              "mov",
+              "rdi, r9"
+            ],
+            [
+              "0x67281a",
+              "mov",
+              "r13, r8"
+            ],
+            [
+              "0x67281d",
+              "mov",
+              "rsi, rdx"
+            ],
+            [
+              "0x672820",
+              "mov",
+              "r14, rcx"
+            ],
+            [
+              "0x672823",
+              "mov",
+              "rbx, qword ptr [rbp + 0x77]"
+            ],
+            [
+              "0x672827",
+              "mov",
+              "r12, qword ptr [rbp + 0x7f]"
+            ],
+            [
+              "0x67282b",
+              "mov",
+              "qword ptr [rbp - 0x61], r12"
+            ],
+            [
+              "0x67282f",
+              "mov",
+              "r15d, 0xffffffff"
+            ],
+            [
+              "0x672835",
+              "mov",
+              "rdx, r9"
+            ],
+            [
+              "0x672838",
+              "lea",
+              "rcx, [rsp + 0x68]"
+            ],
+            [
+              "0x67283d",
+              "call",
+              "qword ptr [rip + 0x84bfad]"
+            ],
+            [
+              "0x672843",
+              "nop",
+              ""
+            ],
+            [
+              "0x672844",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x672847",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x67284c",
+              "call",
+              "qword ptr [rip + 0x84bf9e]"
+            ],
+            [
+              "0x672852",
+              "nop",
+              ""
+            ],
+            [
+              "0x672853",
+              "mov",
+              "qword ptr [rsp + 0x20], rbx"
+            ],
+            [
+              "0x672858",
+              "mov",
+              "r9, rdi"
+            ],
+            [
+              "0x67285b",
+              "mov",
+              "r8, r13"
+            ],
+            [
+              "0x67285e",
+              "mov",
+              "rdx, rsi"
+            ],
+            [
+              "0x672861",
+              "mov",
+              "rcx, r14"
+            ],
+            [
+              "0x672864",
+              "call",
+              "0x180666b30"
+            ],
+            [
+              "0x672869",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x67286b",
+              "jne",
+              "0x180672b4a"
+            ],
+            [
+              "0x672871",
+              "lea",
+              "r9, [rsp + 0x68]"
+            ],
+            [
+              "0x672876",
+              "mov",
+              "r8, rbx"
+            ],
+            [
+              "0x672879",
+              "mov",
+              "rdx, rsi"
+            ],
+            [
+              "0x67287c",
+              "mov",
+              "rcx, r14"
+            ],
+            [
+              "0x67287f",
+              "call",
+              "0x1806665e0"
+            ],
+            [
+              "0x672884",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x672886",
+              "jne",
+              "0x180672b4a"
+            ],
+            [
+              "0x67288c",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x67288f",
+              "lea",
+              "rcx, [rsp + 0x68]"
+            ],
+            [
+              "0x672894",
+              "call",
+              "qword ptr [rip + 0x84bf66]"
+            ],
+            [
+              "0x67289a",
+              "lea",
+              "rcx, [rbp - 0x51]"
+            ],
+            [
+              "0x67289e",
+              "call",
+              "qword ptr [rip + 0x84bf3c]"
+            ],
+            [
+              "0x6728a4",
+              "nop",
+              ""
+            ],
+            [
+              "0x6728a5",
+              "xor",
+              "edi, edi"
+            ],
+            [
+              "0x6728a7",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x6728ac",
+              "call",
+              "qword ptr [rip + 0x84b676]"
+            ],
+            [
+              "0x6728b2",
+              "test",
+              "eax, eax"
+            ],
+            [
+              "0x6728b4",
+              "je",
+              "0x18067295d"
+            ],
+            [
+              "0x6728ba",
+              "nop",
+              "word ptr [rax + rax]"
+            ],
+            [
+              "0x6728c0",
+              "mov",
+              "edx, edi"
+            ],
+            [
+              "0x6728c2",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x6728c7",
+              "call",
+              "qword ptr [rip + 0x84b63b]"
+            ],
+            [
+              "0x6728cd",
+              "mov",
+              "rdx, rax"
+            ]
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "caller_functions": [
+        {
+          "function_start": "0x681e30",
+          "function_end": "0x6820b3",
+          "code_bytes": 643,
+          "direct_calls": [
+            {
+              "site": "0x681e6a",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rax + 0x40]"
+            },
+            {
+              "site": "0x681e74",
+              "target": "0x681e85",
+              "symbol": "",
+              "asm": "jmp 0x180681e85"
+            },
+            {
+              "site": "0x681e7c",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rax + 0x88]"
+            },
+            {
+              "site": "0x681e88",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8951ca]"
+            },
+            {
+              "site": "0x681e97",
+              "target": "0xf17ac0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x895c23]"
+            },
+            {
+              "site": "0x681ea1",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8951b1]"
+            },
+            {
+              "site": "0x681eb7",
+              "target": "0xf17038",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x89517b]"
+            },
+            {
+              "site": "0x681ec5",
+              "target": "0xf17aa0",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x895bd5]"
+            },
+            {
+              "site": "0x681ed5",
+              "target": "0xf16dd0",
+              "symbol": "TDB.dll!?AddHead@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x894ef5]"
+            },
+            {
+              "site": "0x681ee0",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x895182]"
+            },
+            {
+              "site": "0x681ee9",
+              "target": "0xf17088",
+              "symbol": "TDB.dll!?IsValid@TDB_MatchName@@QEBA_NXZ",
+              "asm": "call qword ptr [rip + 0x895199]"
+            },
+            {
+              "site": "0x681efa",
+              "target": "0xf16fc0",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x8950c0]"
+            },
+            {
+              "site": "0x681f03",
+              "target": "0x726f50",
+              "symbol": "?IsGroup@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z",
+              "asm": "call 0x180726f50"
+            },
+            {
+              "site": "0x681f16",
+              "target": "0xf17618",
+              "symbol": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x8956fc]"
+            },
+            {
+              "site": "0x681f22",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rdx + 0x88]"
+            },
+            {
+              "site": "0x681f3a",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x895128]"
+            },
+            {
+              "site": "0x681f46",
+              "target": null,
+              "symbol": "",
+              "asm": "call rbx"
+            },
+            {
+              "site": "0x681f5e",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x895104]"
+            },
+            {
+              "site": "0x681f6a",
+              "target": "0xf16fc0",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x895050]"
+            },
+            {
+              "site": "0x681f79",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x895121]"
+            },
+            {
+              "site": "0x681f90",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x89510a]"
+            },
+            {
+              "site": "0x681fa4",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8950f6]"
+            },
+            {
+              "site": "0x681fbb",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8950df]"
+            },
+            {
+              "site": "0x681fcf",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8950cb]"
+            },
+            {
+              "site": "0x681fe1",
+              "target": "0xcfb10",
+              "symbol": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800cfb10"
+            },
+            {
+              "site": "0x681ff9",
+              "target": "0xcf2d0",
+              "symbol": "?GetIndex@BEE_Selection@@QEBAIPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800cf2d0"
+            },
+            {
+              "site": "0x682003",
+              "target": "0xcf770",
+              "symbol": "?GetSelLayer@BEE_Selection@@QEAAPEAVBEE_SelLayer@@I@Z",
+              "asm": "call 0x1800cf770"
+            },
+            {
+              "site": "0x68200e",
+              "target": "0xcfc70",
+              "symbol": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+              "asm": "call 0x1800cfc70"
+            },
+            {
+              "site": "0x68202f",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x895033]"
+            },
+            {
+              "site": "0x68203b",
+              "target": null,
+              "symbol": "",
+              "asm": "call rbx"
+            },
+            {
+              "site": "0x682056",
+              "target": "0xf17ac8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x895a6c]"
+            },
+            {
+              "site": "0x682067",
+              "target": "0xd3ac30",
+              "symbol": "",
+              "asm": "call 0x180d3ac30"
+            },
+            {
+              "site": "0x68208c",
+              "target": "0xf17080",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x894fee]"
+            },
+            {
+              "site": "0x68209a",
+              "target": "0xf17050",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x894fb0]"
+            },
+            {
+              "site": "0x6820a8",
+              "target": "0xf16ca0",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBV1@@Z",
+              "asm": "call qword ptr [rip + 0x894bf2]"
+            },
+            {
+              "site": "0x6820b0",
+              "target": "0x682051",
+              "symbol": "",
+              "asm": "jmp 0x180682051"
+            }
+          ],
+          "first_instructions": [
+            [
+              "0x681e30",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x681e32",
+              "push",
+              "rbp"
+            ],
+            [
+              "0x681e33",
+              "push",
+              "rsi"
+            ],
+            [
+              "0x681e34",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x681e35",
+              "push",
+              "r12"
+            ],
+            [
+              "0x681e37",
+              "push",
+              "r13"
+            ],
+            [
+              "0x681e39",
+              "push",
+              "r14"
+            ],
+            [
+              "0x681e3b",
+              "push",
+              "r15"
+            ],
+            [
+              "0x681e3d",
+              "sub",
+              "rsp, 0x88"
+            ],
+            [
+              "0x681e44",
+              "mov",
+              "rax, qword ptr [rip + 0xf24ab5]"
+            ],
+            [
+              "0x681e4b",
+              "xor",
+              "rax, rsp"
+            ],
+            [
+              "0x681e4e",
+              "mov",
+              "qword ptr [rsp + 0x78], rax"
+            ],
+            [
+              "0x681e53",
+              "mov",
+              "r13, r9"
+            ],
+            [
+              "0x681e56",
+              "mov",
+              "r15, r8"
+            ],
+            [
+              "0x681e59",
+              "mov",
+              "rbx, rdx"
+            ],
+            [
+              "0x681e5c",
+              "mov",
+              "qword ptr [rsp + 0x20], rdx"
+            ],
+            [
+              "0x681e61",
+              "mov",
+              "rbp, rcx"
+            ],
+            [
+              "0x681e64",
+              "mov",
+              "rax, qword ptr [r8]"
+            ],
+            [
+              "0x681e67",
+              "mov",
+              "rcx, r8"
+            ],
+            [
+              "0x681e6a",
+              "call",
+              "qword ptr [rax + 0x40]"
+            ],
+            [
+              "0x681e6d",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x681e6f",
+              "jne",
+              "0x180681e76"
+            ],
+            [
+              "0x681e71",
+              "xor",
+              "r14d, r14d"
+            ],
+            [
+              "0x681e74",
+              "jmp",
+              "0x180681e85"
+            ],
+            [
+              "0x681e76",
+              "mov",
+              "rax, qword ptr [r15]"
+            ],
+            [
+              "0x681e79",
+              "mov",
+              "rcx, r15"
+            ],
+            [
+              "0x681e7c",
+              "call",
+              "qword ptr [rax + 0x88]"
+            ],
+            [
+              "0x681e82",
+              "mov",
+              "r14, rax"
+            ],
+            [
+              "0x681e85",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x681e88",
+              "call",
+              "qword ptr [rip + 0x8951ca]"
+            ],
+            [
+              "0x681e8e",
+              "lea",
+              "r12d, [rax - 1]"
+            ],
+            [
+              "0x681e92",
+              "lea",
+              "rcx, [rsp + 0x28]"
+            ],
+            [
+              "0x681e97",
+              "call",
+              "qword ptr [rip + 0x895c23]"
+            ],
+            [
+              "0x681e9d",
+              "nop",
+              ""
+            ],
+            [
+              "0x681e9e",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x681ea1",
+              "call",
+              "qword ptr [rip + 0x8951b1]"
+            ],
+            [
+              "0x681ea7",
+              "mov",
+              "esi, eax"
+            ],
+            [
+              "0x681ea9",
+              "sub",
+              "esi, 1"
+            ],
+            [
+              "0x681eac",
+              "js",
+              "0x18068204f"
+            ],
+            [
+              "0x681eb2",
+              "mov",
+              "edx, esi"
+            ],
+            [
+              "0x681eb4",
+              "mov",
+              "rcx, rbx"
+            ],
+            [
+              "0x681eb7",
+              "call",
+              "qword ptr [rip + 0x89517b]"
+            ],
+            [
+              "0x681ebd",
+              "mov",
+              "rdx, rax"
+            ],
+            [
+              "0x681ec0",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x681ec5",
+              "call",
+              "qword ptr [rip + 0x895bd5]"
+            ],
+            [
+              "0x681ecb",
+              "lea",
+              "rdx, [rsp + 0x48]"
+            ],
+            [
+              "0x681ed0",
+              "lea",
+              "rcx, [rsp + 0x28]"
+            ],
+            [
+              "0x681ed5",
+              "call",
+              "qword ptr [rip + 0x894ef5]"
+            ],
+            [
+              "0x681edb",
+              "lea",
+              "rcx, [rsp + 0x48]"
+            ],
+            [
+              "0x681ee0",
+              "call",
+              "qword ptr [rip + 0x895182]"
+            ],
+            [
+              "0x681ee6",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x681ee9",
+              "call",
+              "qword ptr [rip + 0x895199]"
+            ],
+            [
+              "0x681eef",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x681ef1",
+              "je",
+              "0x180682046"
+            ],
+            [
+              "0x681ef7",
+              "mov",
+              "rcx, r15"
+            ],
+            [
+              "0x681efa",
+              "call",
+              "qword ptr [rip + 0x8950c0]"
+            ],
+            [
+              "0x681f00",
+              "mov",
+              "rcx, rax"
+            ],
+            [
+              "0x681f03",
+              "call",
+              "0x180726f50"
+            ],
+            [
+              "0x681f08",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x681f0a",
+              "je",
+              "0x180681f50"
+            ]
+          ]
+        },
+        {
+          "function_start": "0x68e700",
+          "function_end": "0x68eae8",
+          "code_bytes": 1000,
+          "direct_calls": [
+            {
+              "site": "0x68e740",
+              "target": "0xf17ad0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88938a]"
+            },
+            {
+              "site": "0x68e74f",
+              "target": "0xf17ad0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88937b]"
+            },
+            {
+              "site": "0x68e767",
+              "target": "0x682370",
+              "symbol": "",
+              "asm": "call 0x180682370"
+            },
+            {
+              "site": "0x68e781",
+              "target": "0x681e30",
+              "symbol": "",
+              "asm": "call 0x180681e30"
+            },
+            {
+              "site": "0x68e795",
+              "target": "0xf17ae0",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x889345]"
+            },
+            {
+              "site": "0x68e79f",
+              "target": "0xf17ac0",
+              "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x88931b]"
+            },
+            {
+              "site": "0x68e7ad",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8888a5]"
+            },
+            {
+              "site": "0x68e7c7",
+              "target": "0xf17038",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x88886b]"
+            },
+            {
+              "site": "0x68e7d4",
+              "target": "0xf17aa0",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8892c6]"
+            },
+            {
+              "site": "0x68e7dd",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x888875]"
+            },
+            {
+              "site": "0x68e7e9",
+              "target": "0xf175f0",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@XZ",
+              "asm": "call qword ptr [rip + 0x888e01]"
+            },
+            {
+              "site": "0x68e7fc",
+              "target": "0xf17038",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x888836]"
+            },
+            {
+              "site": "0x68e809",
+              "target": "0xf175f8",
+              "symbol": "TDB.dll!??4TDB_StreamID@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x888de9]"
+            },
+            {
+              "site": "0x68e813",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x88884f]"
+            },
+            {
+              "site": "0x68e820",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x888842]"
+            },
+            {
+              "site": "0x68e82c",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88886e]"
+            },
+            {
+              "site": "0x68e842",
+              "target": "0xf17050",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x888808]"
+            },
+            {
+              "site": "0x68e84f",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x888803]"
+            },
+            {
+              "site": "0x68e861",
+              "target": "0xf17ac8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x889261]"
+            },
+            {
+              "site": "0x68e872",
+              "target": "0xcfb10",
+              "symbol": "?IsLayerSelected@BEE_Selection@@QEBA_NPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800cfb10"
+            },
+            {
+              "site": "0x68e88a",
+              "target": "0xcf2d0",
+              "symbol": "?GetIndex@BEE_Selection@@QEBAIPEBVBEE_Layer@@@Z",
+              "asm": "call 0x1800cf2d0"
+            },
+            {
+              "site": "0x68e894",
+              "target": "0xcf770",
+              "symbol": "?GetSelLayer@BEE_Selection@@QEAAPEAVBEE_SelLayer@@I@Z",
+              "asm": "call 0x1800cf770"
+            },
+            {
+              "site": "0x68e8a1",
+              "target": "0xcfc70",
+              "symbol": "?IsPathOrChildSelected@BEE_SelLayer@@QEAA_NAEBVTDB_StreamIDPath@@@Z",
+              "asm": "call 0x1800cfc70"
+            },
+            {
+              "site": "0x68e8b3",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x88879f]"
+            },
+            {
+              "site": "0x68e8ca",
+              "target": "0xf17048",
+              "symbol": "TDB.dll!?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x888778]"
+            },
+            {
+              "site": "0x68e8d3",
+              "target": "0x68e958",
+              "symbol": "",
+              "asm": "jmp 0x18068e958"
+            },
+            {
+              "site": "0x68e8e1",
+              "target": "0xf17ae0",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8891f9]"
+            },
+            {
+              "site": "0x68e8ec",
+              "target": "0xf17ac8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x8891d6]"
+            },
+            {
+              "site": "0x68e8f8",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x88875a]"
+            },
+            {
+              "site": "0x68e907",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x88874b]"
+            },
+            {
+              "site": "0x68e914",
+              "target": "0xf17040",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x888726]"
+            },
+            {
+              "site": "0x68e91d",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x888745]"
+            },
+            {
+              "site": "0x68e92b",
+              "target": "0xf17040",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x88870f]"
+            },
+            {
+              "site": "0x68e934",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x88872e]"
+            },
+            {
+              "site": "0x68e940",
+              "target": "0xf170a0",
+              "symbol": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88875a]"
+            },
+            {
+              "site": "0x68e94a",
+              "target": "0x68e86a",
+              "symbol": "",
+              "asm": "jmp 0x18068e86a"
+            },
+            {
+              "site": "0x68e95d",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8886f5]"
+            },
+            {
+              "site": "0x68e96e",
+              "target": "0xf17ae0",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88916c]"
+            },
+            {
+              "site": "0x68e974",
+              "target": "0x68e9e9",
+              "symbol": "",
+              "asm": "jmp 0x18068e9e9"
+            },
+            {
+              "site": "0x68e97b",
+              "target": "0xf17ae0",
+              "symbol": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x88915f]"
+            },
+            {
+              "site": "0x68e984",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8886ce]"
+            },
+            {
+              "site": "0x68e990",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8886c2]"
+            },
+            {
+              "site": "0x68e9a4",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x8886ae]"
+            },
+            {
+              "site": "0x68e9af",
+              "target": "0xf17038",
+              "symbol": "TDB.dll!?GetComponent@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@I@Z",
+              "asm": "call qword ptr [rip + 0x888683]"
+            },
+            {
+              "site": "0x68e9bc",
+              "target": "0xf17aa0",
+              "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBV0@@Z",
+              "asm": "call qword ptr [rip + 0x8890de]"
+            },
+            {
+              "site": "0x68e9ca",
+              "target": "0xf17050",
+              "symbol": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+              "asm": "call qword ptr [rip + 0x888680]"
+            },
+            {
+              "site": "0x68e9d3",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x88867f]"
+            },
+            {
+              "site": "0x68e9df",
+              "target": "0xf17058",
+              "symbol": "TDB.dll!?GetLength@TDB_StreamIDPath@@QEBAIXZ",
+              "asm": "call qword ptr [rip + 0x888673]"
+            },
+            {
+              "site": "0x68ea08",
+              "target": "0xf16f40",
+              "symbol": "TDB.dll!?FindEditableStream@TDB_StreamGroup@@QEAAPEAVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+              "asm": "call qword ptr [rip + 0x888532]"
+            },
+            {
+              "site": "0x68ea2f",
+              "target": "0x68eaf0",
+              "symbol": "",
+              "asm": "call 0x18068eaf0"
+            },
+            {
+              "site": "0x68ea40",
+              "target": "0x68ea74",
+              "symbol": "",
+              "asm": "jmp 0x18068ea74"
+            },
+            {
+              "site": "0x68ea63",
+              "target": "0x68eaf0",
+              "symbol": "",
+              "asm": "call 0x18068eaf0"
+            },
+            {
+              "site": "0x68ea78",
+              "target": "0xf17040",
+              "symbol": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+              "asm": "call qword ptr [rip + 0x8885c2]"
+            },
+            {
+              "site": "0x68ea81",
+              "target": "0xf17068",
+              "symbol": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+              "asm": "call qword ptr [rip + 0x8885e1]"
+            },
+            {
+              "site": "0x68ea8d",
+              "target": "0xf17618",
+              "symbol": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z",
+              "asm": "call qword ptr [rip + 0x888b85]"
+            },
+            {
+              "site": "0x68ea99",
+              "target": null,
+              "symbol": "",
+              "asm": "call qword ptr [rdx + 0x40]"
+            },
+            {
+              "site": "0x68eaac",
+              "target": "0x670130",
+              "symbol": "",
+              "asm": "call 0x180670130"
+            },
+            {
+              "site": "0x68eab7",
+              "target": "0xf17ac8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x88900b]"
+            },
+            {
+              "site": "0x68eac2",
+              "target": "0xf17ac8",
+              "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "asm": "call qword ptr [rip + 0x889000]"
+            },
+            {
+              "site": "0x68ead1",
+              "target": "0xd3ac30",
+              "symbol": "",
+              "asm": "call 0x180d3ac30"
+            }
+          ],
+          "first_instructions": [
+            [
+              "0x68e700",
+              "push",
+              "rbp"
+            ],
+            [
+              "0x68e702",
+              "push",
+              "rbx"
+            ],
+            [
+              "0x68e703",
+              "push",
+              "rsi"
+            ],
+            [
+              "0x68e704",
+              "push",
+              "rdi"
+            ],
+            [
+              "0x68e705",
+              "push",
+              "r12"
+            ],
+            [
+              "0x68e707",
+              "push",
+              "r14"
+            ],
+            [
+              "0x68e709",
+              "push",
+              "r15"
+            ],
+            [
+              "0x68e70b",
+              "lea",
+              "rbp, [rsp - 0x17]"
+            ],
+            [
+              "0x68e710",
+              "sub",
+              "rsp, 0xe0"
+            ],
+            [
+              "0x68e717",
+              "mov",
+              "rax, qword ptr [rip + 0xf181e2]"
+            ],
+            [
+              "0x68e71e",
+              "xor",
+              "rax, rsp"
+            ],
+            [
+              "0x68e721",
+              "mov",
+              "qword ptr [rbp + 7], rax"
+            ],
+            [
+              "0x68e725",
+              "mov",
+              "rdi, r9"
+            ],
+            [
+              "0x68e728",
+              "mov",
+              "r15, r8"
+            ],
+            [
+              "0x68e72b",
+              "mov",
+              "rsi, rdx"
+            ],
+            [
+              "0x68e72e",
+              "mov",
+              "r14, rcx"
+            ],
+            [
+              "0x68e731",
+              "mov",
+              "rbx, qword ptr [rbp + 0x77]"
+            ],
+            [
+              "0x68e735",
+              "mov",
+              "r12, qword ptr [rbp + 0x7f]"
+            ],
+            [
+              "0x68e739",
+              "mov",
+              "rdx, r9"
+            ],
+            [
+              "0x68e73c",
+              "lea",
+              "rcx, [rbp - 0x69]"
+            ],
+            [
+              "0x68e740",
+              "call",
+              "qword ptr [rip + 0x88938a]"
+            ],
+            [
+              "0x68e746",
+              "nop",
+              ""
+            ],
+            [
+              "0x68e747",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x68e74a",
+              "lea",
+              "rcx, [rsp + 0x40]"
+            ],
+            [
+              "0x68e74f",
+              "call",
+              "qword ptr [rip + 0x88937b]"
+            ],
+            [
+              "0x68e755",
+              "nop",
+              ""
+            ],
+            [
+              "0x68e756",
+              "mov",
+              "qword ptr [rsp + 0x20], rbx"
+            ],
+            [
+              "0x68e75b",
+              "mov",
+              "r9, rdi"
+            ],
+            [
+              "0x68e75e",
+              "mov",
+              "r8, r15"
+            ],
+            [
+              "0x68e761",
+              "mov",
+              "rdx, rsi"
+            ],
+            [
+              "0x68e764",
+              "mov",
+              "rcx, r14"
+            ],
+            [
+              "0x68e767",
+              "call",
+              "0x180682370"
+            ],
+            [
+              "0x68e76c",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x68e76e",
+              "jne",
+              "0x18068ea42"
+            ],
+            [
+              "0x68e774",
+              "lea",
+              "r9, [rbp - 0x69]"
+            ],
+            [
+              "0x68e778",
+              "mov",
+              "r8, rbx"
+            ],
+            [
+              "0x68e77b",
+              "mov",
+              "rdx, rsi"
+            ],
+            [
+              "0x68e77e",
+              "mov",
+              "rcx, r14"
+            ],
+            [
+              "0x68e781",
+              "call",
+              "0x180681e30"
+            ],
+            [
+              "0x68e786",
+              "test",
+              "al, al"
+            ],
+            [
+              "0x68e788",
+              "jne",
+              "0x18068ea42"
+            ],
+            [
+              "0x68e78e",
+              "mov",
+              "rdx, rdi"
+            ],
+            [
+              "0x68e791",
+              "lea",
+              "rcx, [rbp - 0x69]"
+            ],
+            [
+              "0x68e795",
+              "call",
+              "qword ptr [rip + 0x889345]"
+            ],
+            [
+              "0x68e79b",
+              "lea",
+              "rcx, [rbp - 0x49]"
+            ],
+            [
+              "0x68e79f",
+              "call",
+              "qword ptr [rip + 0x88931b]"
+            ],
+            [
+              "0x68e7a5",
+              "nop",
+              ""
+            ],
+            [
+              "0x68e7a6",
+              "xor",
+              "edi, edi"
+            ],
+            [
+              "0x68e7a8",
+              "lea",
+              "rcx, [rsp + 0x40]"
+            ],
+            [
+              "0x68e7ad",
+              "call",
+              "qword ptr [rip + 0x8888a5]"
+            ],
+            [
+              "0x68e7b3",
+              "test",
+              "eax, eax"
+            ],
+            [
+              "0x68e7b5",
+              "je",
+              "0x18068e85d"
+            ],
+            [
+              "0x68e7bb",
+              "nop",
+              "dword ptr [rax + rax]"
+            ],
+            [
+              "0x68e7c0",
+              "mov",
+              "edx, edi"
+            ],
+            [
+              "0x68e7c2",
+              "lea",
+              "rcx, [rsp + 0x40]"
+            ],
+            [
+              "0x68e7c7",
+              "call",
+              "qword ptr [rip + 0x88886b]"
+            ],
+            [
+              "0x68e7cd",
+              "mov",
+              "rdx, rax"
+            ],
+            [
+              "0x68e7d0",
+              "lea",
+              "rcx, [rbp - 0x29]"
+            ],
+            [
+              "0x68e7d4",
+              "call",
+              "qword ptr [rip + 0x8892c6]"
+            ],
+            [
+              "0x68e7da",
+              "mov",
+              "rcx, rsi"
+            ]
+          ]
+        }
+      ]
+    }
+  }
+}

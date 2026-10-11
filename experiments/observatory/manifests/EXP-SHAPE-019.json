@@ -1,0 +1,43 @@
+{
+  "experiment_id": "EXP-SHAPE-019",
+  "title": "PICA AEGP-to-Effect Bezier Geometry Bridge In-Host Confirmation and PiPL Metadata Repair",
+  "status": "observed-in-host-original-and-staged-corrected-build",
+  "question": "Can a separately built native AEGP PICA Suite deliver numeric cubic Bezier geometry to an ordinary Effect SDK effect in actual After Effects, and can its mismatched PiPL metadata be corrected?",
+  "evidence": [
+    "E2-X actual AE2026 UI screenshot",
+    "E2-T compiled two-AEX isolated mock",
+    "E0-H Adobe SDK resource and header metadata"
+  ],
+  "environment": {
+    "host": "AE2026",
+    "sdk": "25.6",
+    "build": "MSVC2022 AMD64"
+  },
+  "observed_result": {
+    "original_pair_in_host": "PICA suite: connected; Native Bezier segments: 4; first X: 100.00",
+    "initial_warnings": [
+      "Code 1.0 vs PiPL 0.2",
+      "Code 0x400 vs PiPL 0",
+      "MFR not optimized"
+    ],
+    "corrected_consumer_resource": {
+      "REVe": 524289,
+      "OLGe": 0,
+      "2LGe": 134217728
+    },
+    "corrected_consumer_sha256": "4271c8b7b1c710df12681c57cfda6eb9e148eff59114ffdd1477e31e5d4d411f",
+    "mock_run": "PASS; provider and consumer AEX loaded, 4 cubics, time 0 radius 100, t=.5 radius 115.130; consumer About connected",
+    "corrected_binary_after_effects_retest": false
+  },
+  "limits": [
+    "No native AE Contents hierarchy or Pen tool support",
+    "No host VectorArt output or renderer hook",
+    "MFR concurrent stress and lifecycle remain untested",
+    "The fixed binary must be reloaded in AE before claiming the metadata warnings disappear"
+  ],
+  "sources": [
+    "research/findings/F-VECTOR-020-pica-aegp-effect-ae2026-host-confirmation.md",
+    "datasets/ae-pica-vector-bridge-20261011-host-and-fix.json",
+    "experiments/vector-shape/vector-bridge-lab/verify_pipl_metadata.py"
+  ]
+}
