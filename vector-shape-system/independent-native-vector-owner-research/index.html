@@ -12225,6 +12225,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#latest-safety-and-abi-milestone-2026-10-12-rebuilt-native-type-experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latest safety-and-ABI milestone (2026-10-12): rebuilt native type experiments
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12369,6 +12380,11 @@
 <p>Offline cross-module MSVC std::function Creator ABI/lifetime and reverse explicit cleanup model passed (EXP-SHAPE-029), BUT it is a model of the native callable pattern, not Adobe's actual C++ Stream class, allocator, host project lifetime or unmanaged private factory.</p>
 <p>A separate guarded, HIGH RISK CNLPrivateTDBDisposable.aex was compiled for a manually authorized disposable AE host only (F-VECTOR-033, EXP-SHAPE-030). Its private mutation code is <strong>NOT tested in AE</strong>, and its automatic unregister remains best-effort, not assured rollback. Never recommend this AEX for regular project use, automatic startup or before the safe AEX is host-tested. Installation and AE GUI checks belong to the user.</p>
 <p>Current research gates unchanged in the host: independent new TDB type (NOT PROVEN), non-Shape native indexed Contents owner (NOT PROVEN), AE-native Pen editing (NOT PROVEN), BEE evaluator insertion (NOT PROVEN), native VectorArt/RG from custom owner (NOT PROVEN). The compile success is a genuine engineering milestone, not a host-native feature claim.</p>
+<h2 id="latest-safety-and-abi-milestone-2026-10-12-rebuilt-native-type-experiments">Latest safety-and-ABI milestone (2026-10-12): rebuilt native type experiments<a class="headerlink" href="#latest-safety-and-abi-milestone-2026-10-12-rebuilt-native-type-experiments" title="Permanent link">&para;</a></h2>
+<p>F-VECTOR-034 pinpoints and fixes the HIGH-RISK registration test's mismatched native callback fifth argument (bool rather than unsigned int). A new MSVC2022 C++ object compiles the exact native TDB_StreamBase<em>(TDB_MatchName const&amp;, TDB_StreamFactory</em>, bool, unsigned int, bool) std::function signature, whose decorated function parameter suffix exactly matches Adobe's RegisterFactoryFunc exports in both installed AE2025 and AE2026 binaries. This establishes symbol-level ABI agreement, not permitted external plugin registration or full C++ object lifetime compatibility.</p>
+<p>A new public SDK project-state isolation gate is SHARED by both CNL AEGP builds: requires one non-dirty empty project, no non-root active/project items, no Render Queue items and all host queries available. The dangerous manual-only AEX checks this before consuming user acknowledgments and before touching private registration. Creator invocation count uses static storage rather than capturing a local stack reference into potentially host-retained callback.</p>
+<p>CNLNativeVectorHostProbe safe v1 already ran in AE2026 and produced genuine CNL cubic vectors (4), factory getter non-null and exact host version fingerprint, while showing native registration count 0. The NEW safe v2 adds public-project gate data to the TSV and dialog; it has only been COMPILED, not yet tried in AE. Future user test should replace the old safe probe and verify v2's new report. The dangerous AEX is still NEVER run and CANNOT be certified safe.</p>
+<p>Native independent owner, Adobe Timeline/Pen controls, BEE evaluator insertion and VectorArt rendering are unsolved and must not be represented by the standalone CNL core or a successful type-registry function call.</p>
 
 
 
@@ -12389,7 +12405,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 19:06:07 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 19:43:54 UTC">October 11, 2026</span>
   </span>
 
     

@@ -4225,6 +4225,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-critical-native-callback-abi-correction-and-project-state-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Critical native callback ABI correction and project-state gate
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12573,6 +12584,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-critical-native-callback-abi-correction-and-project-state-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Critical native callback ABI correction and project-state gate
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12667,6 +12689,10 @@
 <p>A different, explicitly HIGH RISK disposable native type registration AEX has also been compiled but <strong>NEVER installed or run</strong>. It is version-pinned, menu-triggered, double-acknowledged and contains an immediate best-effort unregister attempt. It forwards a new CNL MatchName to Adobe's own complete TDB_ParamPathStream native Creator. The target is ONLY to test private TDB factory acceptance of a brand-new MatchName, not native Contents/Pen/VectorArt. It may crash or corrupt AE; no safety or rollback is proven. F-VECTOR-030/031/033 and EXP-SHAPE-027..030.</p>
 <p>Offline x64 DLL/EXE lifetime simulation with MSVC std::function pass-by-value passed, but this is not actual Adobe ABI. See EXP-SHAPE-029.</p>
 <p><strong>Next success gate:</strong> the user tests the safe AEX preflight and supplies its report. Only after that and explicit user acceptance of disposable-host risk should the separate mutating AEX ever be considered. An actual external new TDB type registration is still UNPROVEN. Further owner/editor/evaluator/render contracts remain after that.</p>
+<h2 id="2026-10-12-critical-native-callback-abi-correction-and-project-state-gate">2026-10-12 — Critical native callback ABI correction and project-state gate<a class="headerlink" href="#2026-10-12-critical-native-callback-abi-correction-and-project-state-gate" title="Permanent link">&para;</a></h2>
+<p>A later code audit discovered that the earlier HIGH-RISK native type registrar AEX had the wrong fifth Creator callback parameter: unsigned int instead of bool. This is NOT a harmless cosmetic difference. F-VECTOR-034 and EXP-SHAPE-031 show the corrected MSVC function object uses native C++ TDB classes and bool/unsigned int/bool, and an independently compiled C++ COFF decorated signature matches Adobe's actual RegisterFactoryFunc exported parameter-type suffix in AE2025 and AE2026. No private registration was called.</p>
+<p>The previous gate of 'no active selected AE layer' was also inadequate. The rebuilt dangerous AEX and the read-only safe AEX v2 now share a public-SDK-only project guard which blocks non-empty or dirty projects, non-root active items, nonempty Render Queue and unavailable host state. This is risk reduction, NOT a guarantee of safe Adobe private ABI mutation. Both new AEX binaries compile and pass source/PE checks, but new gate v2 is NOT yet tested inside AE. The user's earlier safe v1 probe DID pass inside AE2026 (EXP-SHAPE-028-LIVE-001).</p>
+<p>Old dangerous AEX builds must NOT be run. There is still no AE-native registered plugin type, independent Contents, native Pen editor, BEE VectorArt or AE RG renderer.</p>
 
 
 
@@ -12687,7 +12713,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 19:06:07 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 19:43:54 UTC">October 11, 2026</span>
   </span>
 
     
