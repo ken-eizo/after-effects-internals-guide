@@ -1,0 +1,2977 @@
+{
+  "classification": "E2-L read-only, Native Creator registration feasibility, NOT third-party registration proof",
+  "versions": {
+    "2025": {
+      "TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "functions": {
+        "native_path_create": {
+          "entry_rva": "0x10750",
+          "size_bytes": 175,
+          "symbol": "?Create@TDB_ParamPathStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "first30_instructions": [
+            {
+              "site": "0x10750",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x10755",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x10], rbp"
+            },
+            {
+              "site": "0x1075a",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], rsi"
+            },
+            {
+              "site": "0x1075f",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rdi"
+            },
+            {
+              "site": "0x10764",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x10766",
+              "opcode": "sub",
+              "operands": "rsp, 0x40"
+            },
+            {
+              "site": "0x1076a",
+              "opcode": "mov",
+              "operands": "edi, r9d"
+            },
+            {
+              "site": "0x1076d",
+              "opcode": "movzx",
+              "operands": "esi, r8b"
+            },
+            {
+              "site": "0x10771",
+              "opcode": "mov",
+              "operands": "rbp, rdx"
+            },
+            {
+              "site": "0x10774",
+              "opcode": "mov",
+              "operands": "r14, rcx"
+            },
+            {
+              "site": "0x10777",
+              "opcode": "mov",
+              "operands": "ecx, 0x468"
+            },
+            {
+              "site": "0x1077c",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x5f0a6]"
+            },
+            {
+              "site": "0x10782",
+              "opcode": "mov",
+              "operands": "rbx, rax"
+            },
+            {
+              "site": "0x10785",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "site": "0x1078a",
+              "opcode": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "site": "0x1078d",
+              "opcode": "je",
+              "operands": "0x1800107e4"
+            },
+            {
+              "site": "0x1078f",
+              "opcode": "movzx",
+              "operands": "eax, byte ptr [rsp + 0x70]"
+            },
+            {
+              "site": "0x10794",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], al"
+            },
+            {
+              "site": "0x10798",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "site": "0x1079d",
+              "opcode": "mov",
+              "operands": "r9, r14"
+            },
+            {
+              "site": "0x107a0",
+              "opcode": "movzx",
+              "operands": "r8d, sil"
+            },
+            {
+              "site": "0x107a4",
+              "opcode": "mov",
+              "operands": "edx, edi"
+            },
+            {
+              "site": "0x107a6",
+              "opcode": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "site": "0x107a9",
+              "opcode": "call",
+              "operands": "0x18000e2d0"
+            },
+            {
+              "site": "0x107ae",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0x107b2",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rbx + 0x448], xmm0"
+            },
+            {
+              "site": "0x107ba",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0x107bc",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x458], rax"
+            },
+            {
+              "site": "0x107c3",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x460], 7"
+            },
+            {
+              "site": "0x107ce",
+              "opcode": "mov",
+              "operands": "word ptr [rbx + 0x448], ax"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x1077c",
+              "target_rva": "0x6f828",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x107a9",
+              "target_rva": "0xe2d0",
+              "symbol": "??0?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x107e2",
+              "target_rva": "0x107e4",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_layer_param_create": {
+          "entry_rva": "0x106d0",
+          "size_bytes": 113,
+          "symbol": "?Create@TDB_ParamLayerStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "first30_instructions": [
+            {
+              "site": "0x106d0",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x106d5",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x10], rbp"
+            },
+            {
+              "site": "0x106da",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], rsi"
+            },
+            {
+              "site": "0x106df",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x106e0",
+              "opcode": "sub",
+              "operands": "rsp, 0x40"
+            },
+            {
+              "site": "0x106e4",
+              "opcode": "mov",
+              "operands": "ebx, r9d"
+            },
+            {
+              "site": "0x106e7",
+              "opcode": "movzx",
+              "operands": "edi, r8b"
+            },
+            {
+              "site": "0x106eb",
+              "opcode": "mov",
+              "operands": "rsi, rdx"
+            },
+            {
+              "site": "0x106ee",
+              "opcode": "mov",
+              "operands": "rbp, rcx"
+            },
+            {
+              "site": "0x106f1",
+              "opcode": "mov",
+              "operands": "ecx, 0x468"
+            },
+            {
+              "site": "0x106f6",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x5f12c]"
+            },
+            {
+              "site": "0x106fc",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "site": "0x10701",
+              "opcode": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "site": "0x10704",
+              "opcode": "je",
+              "operands": "0x18001072a"
+            },
+            {
+              "site": "0x10706",
+              "opcode": "movzx",
+              "operands": "r10d, byte ptr [rsp + 0x70]"
+            },
+            {
+              "site": "0x1070c",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], r10b"
+            },
+            {
+              "site": "0x10711",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "site": "0x10716",
+              "opcode": "mov",
+              "operands": "r9, rbp"
+            },
+            {
+              "site": "0x10719",
+              "opcode": "movzx",
+              "operands": "r8d, dil"
+            },
+            {
+              "site": "0x1071d",
+              "opcode": "mov",
+              "operands": "edx, ebx"
+            },
+            {
+              "site": "0x1071f",
+              "opcode": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "site": "0x10722",
+              "opcode": "call",
+              "operands": "0x180032630"
+            },
+            {
+              "site": "0x10727",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x10728",
+              "opcode": "jmp",
+              "operands": "0x18001072c"
+            },
+            {
+              "site": "0x1072a",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0x1072c",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x50]"
+            },
+            {
+              "site": "0x10731",
+              "opcode": "mov",
+              "operands": "rbp, qword ptr [rsp + 0x58]"
+            },
+            {
+              "site": "0x10736",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rsp + 0x60]"
+            },
+            {
+              "site": "0x1073b",
+              "opcode": "add",
+              "operands": "rsp, 0x40"
+            },
+            {
+              "site": "0x1073f",
+              "opcode": "pop",
+              "operands": "rdi"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x106f6",
+              "target_rva": "0x6f828",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x10722",
+              "target_rva": "0x32630",
+              "symbol": "??0TDB_ParamLayerStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x10728",
+              "target_rva": "0x1072c",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_path_ctor": {
+          "entry_rva": "0xea90",
+          "size_bytes": 91,
+          "symbol": "??0TDB_ParamPathStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0xea90",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0xea92",
+              "opcode": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0xea96",
+              "opcode": "movzx",
+              "operands": "eax, byte ptr [rsp + 0x68]"
+            },
+            {
+              "site": "0xea9b",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0xea9e",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], al"
+            },
+            {
+              "site": "0xeaa2",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rsp + 0x60]"
+            },
+            {
+              "site": "0xeaa7",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rax"
+            },
+            {
+              "site": "0xeaac",
+              "opcode": "call",
+              "operands": "0x18000e2d0"
+            },
+            {
+              "site": "0xeab1",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0xeab3",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0xeab7",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rbx + 0x448], xmm0"
+            },
+            {
+              "site": "0xeabf",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x458], rax"
+            },
+            {
+              "site": "0xeac6",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x460], 7"
+            },
+            {
+              "site": "0xead1",
+              "opcode": "mov",
+              "operands": "word ptr [rbx + 0x448], ax"
+            },
+            {
+              "site": "0xead8",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x63ec9]"
+            },
+            {
+              "site": "0xeadf",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx], rax"
+            },
+            {
+              "site": "0xeae2",
+              "opcode": "mov",
+              "operands": "rax, rbx"
+            },
+            {
+              "site": "0xeae5",
+              "opcode": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0xeae9",
+              "opcode": "pop",
+              "operands": "rbx"
+            },
+            {
+              "site": "0xeaea",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0xeaac",
+              "target_rva": "0xe2d0",
+              "symbol": "??0?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        "matchname_from_chars": {
+          "entry_rva": "0x2c610",
+          "size_bytes": 65,
+          "symbol": "??0TDB_MatchName@@QEAA@PEBD_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x2c610",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x2c615",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2c616",
+              "opcode": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0x2c61a",
+              "opcode": "mov",
+              "operands": "rbx, rdx"
+            },
+            {
+              "site": "0x2c61d",
+              "opcode": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "site": "0x2c620",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x4349a]"
+            },
+            {
+              "site": "0x2c626",
+              "opcode": "call",
+              "operands": "0x18002e000"
+            },
+            {
+              "site": "0x2c62b",
+              "opcode": "mov",
+              "operands": "r8, rbx"
+            },
+            {
+              "site": "0x2c62e",
+              "opcode": "lea",
+              "operands": "rdx, [rsp + 0x20]"
+            },
+            {
+              "site": "0x2c633",
+              "opcode": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "site": "0x2c636",
+              "opcode": "call",
+              "operands": "0x18002e080"
+            },
+            {
+              "site": "0x2c63b",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x40]"
+            },
+            {
+              "site": "0x2c640",
+              "opcode": "vmovups",
+              "operands": "xmm0, xmmword ptr [rax]"
+            },
+            {
+              "site": "0x2c644",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rdi], xmm0"
+            },
+            {
+              "site": "0x2c648",
+              "opcode": "mov",
+              "operands": "rax, rdi"
+            },
+            {
+              "site": "0x2c64b",
+              "opcode": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0x2c64f",
+              "opcode": "pop",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2c650",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2c620",
+              "target_rva": "0x6fac0",
+              "symbol": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ"
+            },
+            {
+              "site": "0x2c626",
+              "target_rva": "0x2e000",
+              "symbol": ""
+            },
+            {
+              "site": "0x2c636",
+              "target_rva": "0x2e080",
+              "symbol": "?GuidFromName@TDBp_MatchNamePool@@QEAA?AVGuid@utility@dvacore@@PEBE@Z"
+            }
+          ]
+        },
+        "matchname_copy": {
+          "entry_rva": "0x2c590",
+          "size_bytes": 44,
+          "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z",
+          "first30_instructions": [
+            {
+              "site": "0x2c590",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x2c595",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2c596",
+              "opcode": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x2c59a",
+              "opcode": "mov",
+              "operands": "rbx, rdx"
+            },
+            {
+              "site": "0x2c59d",
+              "opcode": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "site": "0x2c5a0",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x4351a]"
+            },
+            {
+              "site": "0x2c5a6",
+              "opcode": "vmovups",
+              "operands": "xmm0, xmmword ptr [rbx]"
+            },
+            {
+              "site": "0x2c5aa",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "site": "0x2c5af",
+              "opcode": "mov",
+              "operands": "rax, rdi"
+            },
+            {
+              "site": "0x2c5b2",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rdi], xmm0"
+            },
+            {
+              "site": "0x2c5b6",
+              "opcode": "add",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x2c5ba",
+              "opcode": "pop",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2c5bb",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2c5a0",
+              "target_rva": "0x6fac0",
+              "symbol": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ"
+            }
+          ]
+        },
+        "native_indexed_group_ctor": {
+          "entry_rva": "0x32330",
+          "size_bytes": 74,
+          "symbol": "??0TDB_IndexedStreamGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x32330",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rcx"
+            },
+            {
+              "site": "0x32335",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x32336",
+              "opcode": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x3233a",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0x3233d",
+              "opcode": "call",
+              "operands": "0x1800337a0"
+            },
+            {
+              "site": "0x32342",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x32343",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x3e466]"
+            },
+            {
+              "site": "0x3234a",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx], rax"
+            },
+            {
+              "site": "0x3234d",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0x3234f",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x220], rax"
+            },
+            {
+              "site": "0x32356",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x228], rax"
+            },
+            {
+              "site": "0x3235d",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x230], rax"
+            },
+            {
+              "site": "0x32364",
+              "opcode": "lea",
+              "operands": "rcx, [rbx + 0x238]"
+            },
+            {
+              "site": "0x3236b",
+              "opcode": "call",
+              "operands": "0x180031e40"
+            },
+            {
+              "site": "0x32370",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x32371",
+              "opcode": "mov",
+              "operands": "rax, rbx"
+            },
+            {
+              "site": "0x32374",
+              "opcode": "add",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x32378",
+              "opcode": "pop",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x32379",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x3233d",
+              "target_rva": "0x337a0",
+              "symbol": "??0TDB_StreamGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x3236b",
+              "target_rva": "0x31e40",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_stream_base_ctor": {
+          "entry_rva": "0x33320",
+          "size_bytes": 1007,
+          "symbol": "??0TDB_StreamBase@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x33320",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "site": "0x33325",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x33326",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x33327",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x33328",
+              "opcode": "push",
+              "operands": "r12"
+            },
+            {
+              "site": "0x3332a",
+              "opcode": "push",
+              "operands": "r13"
+            },
+            {
+              "site": "0x3332c",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x3332e",
+              "opcode": "push",
+              "operands": "r15"
+            },
+            {
+              "site": "0x33330",
+              "opcode": "lea",
+              "operands": "rbp, [rsp - 0x70]"
+            },
+            {
+              "site": "0x33335",
+              "opcode": "sub",
+              "operands": "rsp, 0x170"
+            },
+            {
+              "site": "0x3333c",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0x719fd]"
+            },
+            {
+              "site": "0x33343",
+              "opcode": "xor",
+              "operands": "rax, rsp"
+            },
+            {
+              "site": "0x33346",
+              "opcode": "mov",
+              "operands": "qword ptr [rbp + 0x60], rax"
+            },
+            {
+              "site": "0x3334a",
+              "opcode": "movzx",
+              "operands": "r12d, r9b"
+            },
+            {
+              "site": "0x3334e",
+              "opcode": "mov",
+              "operands": "rdi, r8"
+            },
+            {
+              "site": "0x33351",
+              "opcode": "mov",
+              "operands": "r14, rdx"
+            },
+            {
+              "site": "0x33354",
+              "opcode": "mov",
+              "operands": "rsi, rcx"
+            },
+            {
+              "site": "0x33357",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rcx"
+            },
+            {
+              "site": "0x3335c",
+              "opcode": "xor",
+              "operands": "ebx, ebx"
+            },
+            {
+              "site": "0x3335e",
+              "opcode": "mov",
+              "operands": "r13d, ebx"
+            },
+            {
+              "site": "0x33361",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x20], ebx"
+            },
+            {
+              "site": "0x33365",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x3ffc4]"
+            },
+            {
+              "site": "0x3336c",
+              "opcode": "mov",
+              "operands": "qword ptr [rcx], rax"
+            },
+            {
+              "site": "0x3336f",
+              "opcode": "add",
+              "operands": "rcx, 8"
+            },
+            {
+              "site": "0x33373",
+              "opcode": "call",
+              "operands": "0x18002c6b0"
+            },
+            {
+              "site": "0x33378",
+              "opcode": "mov",
+              "operands": "dword ptr [rsi + 0xe0], ebx"
+            },
+            {
+              "site": "0x3337e",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0x33382",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rsi + 0xf0], xmm0"
+            },
+            {
+              "site": "0x3338a",
+              "opcode": "mov",
+              "operands": "qword ptr [rsi + 0x100], rbx"
+            },
+            {
+              "site": "0x33391",
+              "opcode": "mov",
+              "operands": "qword ptr [rsi + 0x108], 7"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x33373",
+              "target_rva": "0x2c6b0",
+              "symbol": "??0TDB_MatchName@@QEAA@XZ"
+            },
+            {
+              "site": "0x333da",
+              "target_rva": "0x2cbf0",
+              "symbol": "??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "site": "0x33466",
+              "target_rva": "0x2d370",
+              "symbol": "??4TDB_MatchName@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "site": "0x3346e",
+              "target_rva": "0x1fdd0",
+              "symbol": "?TDB_AreTDBStreamScriptingIDsEnabled@TDB_Project@@SA_NXZ"
+            },
+            {
+              "site": "0x33477",
+              "target_rva": "0x6fa08",
+              "symbol": "dvacore.dll!?CurrentThreadIsMainThread@threads@dvacore@@YA_NXZ"
+            },
+            {
+              "site": "0x3348e",
+              "target_rva": "0x6fa50",
+              "symbol": "dvacore.dll!?TraceChangeCount@debug@dvacore@@YAHXZ"
+            },
+            {
+              "site": "0x334c2",
+              "target_rva": "0x6fa40",
+              "symbol": "dvacore.dll!?TraceEnabled@debug@dvacore@@YA_NAEBV?$basic_string_view@DU?$char_traits@D@std@@@std@@H_N@Z"
+            },
+            {
+              "site": "0x334d1",
+              "target_rva": "0x334db",
+              "symbol": ""
+            },
+            {
+              "site": "0x334f3",
+              "target_rva": "0x6f3e8",
+              "symbol": "MSVCP140.dll!??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ"
+            },
+            {
+              "site": "0x33513",
+              "target_rva": "0x6f3f0",
+              "symbol": "MSVCP140.dll!??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z"
+            },
+            {
+              "site": "0x33547",
+              "target_rva": "0x6f2c8",
+              "symbol": "MSVCP140.dll!??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ"
+            },
+            {
+              "site": "0x33572",
+              "target_rva": "0x30040",
+              "symbol": ""
+            },
+            {
+              "site": "0x33580",
+              "target_rva": "0x6f410",
+              "symbol": "MSVCP140.dll!??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z"
+            },
+            {
+              "site": "0x33590",
+              "target_rva": "0x30040",
+              "symbol": ""
+            },
+            {
+              "site": "0x3359c",
+              "target_rva": "0x2dec0",
+              "symbol": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "site": "0x335a7",
+              "target_rva": "0x30040",
+              "symbol": ""
+            },
+            {
+              "site": "0x335b6",
+              "target_rva": "0x6f408",
+              "symbol": "MSVCP140.dll!??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+            },
+            {
+              "site": "0x335c5",
+              "target_rva": "0x464b0",
+              "symbol": ""
+            },
+            {
+              "site": "0x335f6",
+              "target_rva": "0x6fa48",
+              "symbol": "dvacore.dll!?Trace@debug@dvacore@@YAXHAEBV?$basic_string_view@DU?$char_traits@D@std@@@std@@0@Z"
+            },
+            {
+              "site": "0x3362f",
+              "target_rva": "0x6f978",
+              "symbol": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn"
+            },
+            {
+              "site": "0x33636",
+              "target_rva": "0x683f4",
+              "symbol": ""
+            },
+            {
+              "site": "0x33662",
+              "target_rva": "0x34070",
+              "symbol": ""
+            },
+            {
+              "site": "0x3366c",
+              "target_rva": "0x6f3f8",
+              "symbol": "MSVCP140.dll!??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ"
+            },
+            {
+              "site": "0x33676",
+              "target_rva": "0x6f308",
+              "symbol": "MSVCP140.dll!??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ"
+            },
+            {
+              "site": "0x3369a",
+              "target_rva": "0x69cd0",
+              "symbol": ""
+            },
+            {
+              "site": "0x336a2",
+              "target_rva": "0x36790",
+              "symbol": "?FillInParamDef@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "site": "0x336b2",
+              "target_rva": "0x68530",
+              "symbol": ""
+            },
+            {
+              "site": "0x336dd",
+              "target_rva": "0x6f678",
+              "symbol": "U.dll!?U_ZStringToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+            },
+            {
+              "site": "0x336ef",
+              "target_rva": "0x6f760",
+              "symbol": "U.dll!?U_ReportError@@YAXIGAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "site": "0x33709",
+              "target_rva": "0x69cb8",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_sc_register": {
+          "entry_rva": "0x27060",
+          "size_bytes": 196,
+          "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x27060",
+              "opcode": "mov",
+              "operands": "r11, rsp"
+            },
+            {
+              "site": "0x27063",
+              "opcode": "mov",
+              "operands": "qword ptr [r11 + 0x10], rbx"
+            },
+            {
+              "site": "0x27067",
+              "opcode": "mov",
+              "operands": "qword ptr [r11 + 0x20], rbp"
+            },
+            {
+              "site": "0x2706b",
+              "opcode": "mov",
+              "operands": "qword ptr [r11 + 0x18], r8"
+            },
+            {
+              "site": "0x2706f",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x27070",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x27071",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x27073",
+              "opcode": "sub",
+              "operands": "rsp, 0x60"
+            },
+            {
+              "site": "0x27077",
+              "opcode": "movzx",
+              "operands": "ebp, r9b"
+            },
+            {
+              "site": "0x2707b",
+              "opcode": "mov",
+              "operands": "rdi, r8"
+            },
+            {
+              "site": "0x2707e",
+              "opcode": "mov",
+              "operands": "rsi, rdx"
+            },
+            {
+              "site": "0x27081",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0x27084",
+              "opcode": "mov",
+              "operands": "r14, qword ptr [rcx + 0x18]"
+            },
+            {
+              "site": "0x27088",
+              "opcode": "lea",
+              "operands": "rax, [r11 - 0x58]"
+            },
+            {
+              "site": "0x2708c",
+              "opcode": "mov",
+              "operands": "qword ptr [r11 + 8], rax"
+            },
+            {
+              "site": "0x27090",
+              "opcode": "mov",
+              "operands": "qword ptr [r11 - 0x20], 0"
+            },
+            {
+              "site": "0x27098",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [r8 + 0x38]"
+            },
+            {
+              "site": "0x2709c",
+              "opcode": "test",
+              "operands": "rcx, rcx"
+            },
+            {
+              "site": "0x2709f",
+              "opcode": "je",
+              "operands": "0x1800270af"
+            },
+            {
+              "site": "0x270a1",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "site": "0x270a4",
+              "opcode": "lea",
+              "operands": "rdx, [r11 - 0x58]"
+            },
+            {
+              "site": "0x270a8",
+              "opcode": "call",
+              "operands": "qword ptr [rax]"
+            },
+            {
+              "site": "0x270aa",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x58], rax"
+            },
+            {
+              "site": "0x270af",
+              "opcode": "movzx",
+              "operands": "r9d, bpl"
+            },
+            {
+              "site": "0x270b3",
+              "opcode": "lea",
+              "operands": "r8, [rsp + 0x20]"
+            },
+            {
+              "site": "0x270b8",
+              "opcode": "mov",
+              "operands": "rdx, rsi"
+            },
+            {
+              "site": "0x270bb",
+              "opcode": "mov",
+              "operands": "rcx, r14"
+            },
+            {
+              "site": "0x270be",
+              "opcode": "call",
+              "operands": "0x180027400"
+            },
+            {
+              "site": "0x270c3",
+              "opcode": "test",
+              "operands": "al, al"
+            },
+            {
+              "site": "0x270c5",
+              "opcode": "je",
+              "operands": "0x1800270f2"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x270be",
+              "target_rva": "0x27400",
+              "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "site": "0x270d7",
+              "target_rva": "0x2c590",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x270e1",
+              "target_rva": "0x270f2",
+              "symbol": ""
+            },
+            {
+              "site": "0x270ec",
+              "target_rva": "0x24fb0",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_factory_register": {
+          "entry_rva": "0x27400",
+          "size_bytes": 594,
+          "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x27400",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x27402",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x27403",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x27404",
+              "opcode": "push",
+              "operands": "r12"
+            },
+            {
+              "site": "0x27406",
+              "opcode": "push",
+              "operands": "r13"
+            },
+            {
+              "site": "0x27408",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x2740a",
+              "opcode": "push",
+              "operands": "r15"
+            },
+            {
+              "site": "0x2740c",
+              "opcode": "sub",
+              "operands": "rsp, 0xe0"
+            },
+            {
+              "site": "0x27413",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0x7d926]"
+            },
+            {
+              "site": "0x2741a",
+              "opcode": "xor",
+              "operands": "rax, rsp"
+            },
+            {
+              "site": "0x2741d",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xd8], rax"
+            },
+            {
+              "site": "0x27425",
+              "opcode": "movzx",
+              "operands": "r13d, r9b"
+            },
+            {
+              "site": "0x27429",
+              "opcode": "mov",
+              "operands": "rsi, r8"
+            },
+            {
+              "site": "0x2742c",
+              "opcode": "mov",
+              "operands": "r15, rdx"
+            },
+            {
+              "site": "0x2742f",
+              "opcode": "mov",
+              "operands": "r14, rcx"
+            },
+            {
+              "site": "0x27432",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], r8"
+            },
+            {
+              "site": "0x27437",
+              "opcode": "lea",
+              "operands": "r12, [rcx + 0x68]"
+            },
+            {
+              "site": "0x2743b",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], r12"
+            },
+            {
+              "site": "0x27440",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x50], r12"
+            },
+            {
+              "site": "0x27445",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x58], 1"
+            },
+            {
+              "site": "0x2744a",
+              "opcode": "lea",
+              "operands": "r8, [rip + 0x4bc0f]"
+            },
+            {
+              "site": "0x27451",
+              "opcode": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "site": "0x27453",
+              "opcode": "mov",
+              "operands": "rcx, r12"
+            },
+            {
+              "site": "0x27456",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x486ac]"
+            },
+            {
+              "site": "0x2745c",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x2745d",
+              "opcode": "mov",
+              "operands": "rdi, qword ptr [r14 + 0x28]"
+            },
+            {
+              "site": "0x27461",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rdi + 8]"
+            },
+            {
+              "site": "0x27465",
+              "opcode": "mov",
+              "operands": "rax, rdi"
+            },
+            {
+              "site": "0x27468",
+              "opcode": "cmp",
+              "operands": "byte ptr [rbx + 0x19], 0"
+            },
+            {
+              "site": "0x2746c",
+              "opcode": "jne",
+              "operands": "0x180027496"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x27456",
+              "target_rva": "0x6fb08",
+              "symbol": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "site": "0x27477",
+              "target_rva": "0x2d680",
+              "symbol": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "site": "0x27484",
+              "target_rva": "0x2748c",
+              "symbol": ""
+            },
+            {
+              "site": "0x274a3",
+              "target_rva": "0x2d680",
+              "symbol": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "site": "0x274bc",
+              "target_rva": "0x6fb00",
+              "symbol": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "site": "0x274e2",
+              "target_rva": "0x2762f",
+              "symbol": ""
+            },
+            {
+              "site": "0x274f2",
+              "target_rva": "0x2c590",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x2753f",
+              "target_rva": "0x24b50",
+              "symbol": ""
+            },
+            {
+              "site": "0x2757f",
+              "target_rva": "0x26710",
+              "symbol": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "site": "0x27594",
+              "target_rva": "0x2c590",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x275af",
+              "target_rva": "0x257f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x275ef",
+              "target_rva": "0x277f0",
+              "symbol": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "site": "0x27609",
+              "target_rva": "0x6fb00",
+              "symbol": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "site": "0x2763a",
+              "target_rva": "0x68530",
+              "symbol": ""
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "functions": {
+        "native_path_create": {
+          "entry_rva": "0x107c0",
+          "size_bytes": 156,
+          "symbol": "?Create@TDB_ParamPathStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "first30_instructions": [
+            {
+              "site": "0x107c0",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x107c2",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x107c3",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x107c4",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x107c5",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x107c7",
+              "opcode": "sub",
+              "operands": "rsp, 0x40"
+            },
+            {
+              "site": "0x107cb",
+              "opcode": "mov",
+              "operands": "edi, r9d"
+            },
+            {
+              "site": "0x107ce",
+              "opcode": "movzx",
+              "operands": "esi, r8b"
+            },
+            {
+              "site": "0x107d2",
+              "opcode": "mov",
+              "operands": "rbp, rdx"
+            },
+            {
+              "site": "0x107d5",
+              "opcode": "mov",
+              "operands": "r14, rcx"
+            },
+            {
+              "site": "0x107d8",
+              "opcode": "mov",
+              "operands": "ecx, 0x468"
+            },
+            {
+              "site": "0x107dd",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x72ffd]"
+            },
+            {
+              "site": "0x107e3",
+              "opcode": "mov",
+              "operands": "rbx, rax"
+            },
+            {
+              "site": "0x107e6",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "site": "0x107eb",
+              "opcode": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "site": "0x107ee",
+              "opcode": "je",
+              "operands": "0x180010851"
+            },
+            {
+              "site": "0x107f0",
+              "opcode": "movzx",
+              "operands": "eax, byte ptr [rsp + 0x90]"
+            },
+            {
+              "site": "0x107f8",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], al"
+            },
+            {
+              "site": "0x107fc",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbp"
+            },
+            {
+              "site": "0x10801",
+              "opcode": "mov",
+              "operands": "r9, r14"
+            },
+            {
+              "site": "0x10804",
+              "opcode": "movzx",
+              "operands": "r8d, sil"
+            },
+            {
+              "site": "0x10808",
+              "opcode": "mov",
+              "operands": "edx, edi"
+            },
+            {
+              "site": "0x1080a",
+              "opcode": "mov",
+              "operands": "rcx, rbx"
+            },
+            {
+              "site": "0x1080d",
+              "opcode": "call",
+              "operands": "0x18000e380"
+            },
+            {
+              "site": "0x10812",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0x10816",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rbx + 0x448], xmm0"
+            },
+            {
+              "site": "0x1081e",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0x10820",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x458], rax"
+            },
+            {
+              "site": "0x10827",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x460], 7"
+            },
+            {
+              "site": "0x10832",
+              "opcode": "mov",
+              "operands": "word ptr [rbx + 0x448], ax"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x107dd",
+              "target_rva": "0x837e0",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x1080d",
+              "target_rva": "0xe380",
+              "symbol": "??0?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        "native_layer_param_create": {
+          "entry_rva": "0x10750",
+          "size_bytes": 100,
+          "symbol": "?Create@TDB_ParamLayerStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "first30_instructions": [
+            {
+              "site": "0x10750",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x10752",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x10753",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x10754",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x10755",
+              "opcode": "sub",
+              "operands": "rsp, 0x48"
+            },
+            {
+              "site": "0x10759",
+              "opcode": "mov",
+              "operands": "ebx, r9d"
+            },
+            {
+              "site": "0x1075c",
+              "opcode": "movzx",
+              "operands": "edi, r8b"
+            },
+            {
+              "site": "0x10760",
+              "opcode": "mov",
+              "operands": "rsi, rdx"
+            },
+            {
+              "site": "0x10763",
+              "opcode": "mov",
+              "operands": "rbp, rcx"
+            },
+            {
+              "site": "0x10766",
+              "opcode": "mov",
+              "operands": "ecx, 0x468"
+            },
+            {
+              "site": "0x1076b",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x7306f]"
+            },
+            {
+              "site": "0x10771",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "site": "0x10776",
+              "opcode": "test",
+              "operands": "rax, rax"
+            },
+            {
+              "site": "0x10779",
+              "opcode": "je",
+              "operands": "0x1800107a9"
+            },
+            {
+              "site": "0x1077b",
+              "opcode": "movzx",
+              "operands": "r10d, byte ptr [rsp + 0x90]"
+            },
+            {
+              "site": "0x10784",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], r10b"
+            },
+            {
+              "site": "0x10789",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rsi"
+            },
+            {
+              "site": "0x1078e",
+              "opcode": "mov",
+              "operands": "r9, rbp"
+            },
+            {
+              "site": "0x10791",
+              "opcode": "movzx",
+              "operands": "r8d, dil"
+            },
+            {
+              "site": "0x10795",
+              "opcode": "mov",
+              "operands": "edx, ebx"
+            },
+            {
+              "site": "0x10797",
+              "opcode": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "site": "0x1079a",
+              "opcode": "call",
+              "operands": "0x180033200"
+            },
+            {
+              "site": "0x1079f",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x107a0",
+              "opcode": "add",
+              "operands": "rsp, 0x48"
+            },
+            {
+              "site": "0x107a4",
+              "opcode": "pop",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x107a5",
+              "opcode": "pop",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x107a6",
+              "opcode": "pop",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x107a7",
+              "opcode": "pop",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x107a8",
+              "opcode": "ret",
+              "operands": ""
+            },
+            {
+              "site": "0x107a9",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x1076b",
+              "target_rva": "0x837e0",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x1079a",
+              "target_rva": "0x33200",
+              "symbol": "??0TDB_ParamLayerStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        "native_path_ctor": {
+          "entry_rva": "0xeb30",
+          "size_bytes": 95,
+          "symbol": "??0TDB_ParamPathStream@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0xeb30",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0xeb32",
+              "opcode": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0xeb36",
+              "opcode": "movzx",
+              "operands": "eax, byte ptr [rsp + 0x68]"
+            },
+            {
+              "site": "0xeb3b",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0xeb3e",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x28], al"
+            },
+            {
+              "site": "0xeb42",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rsp + 0x60]"
+            },
+            {
+              "site": "0xeb47",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rax"
+            },
+            {
+              "site": "0xeb4c",
+              "opcode": "call",
+              "operands": "0x18000e380"
+            },
+            {
+              "site": "0xeb51",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0xeb53",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0xeb57",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rbx + 0x448], xmm0"
+            },
+            {
+              "site": "0xeb5f",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x458], 0"
+            },
+            {
+              "site": "0xeb6a",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x460], 7"
+            },
+            {
+              "site": "0xeb75",
+              "opcode": "mov",
+              "operands": "word ptr [rbx + 0x448], ax"
+            },
+            {
+              "site": "0xeb7c",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x782bd]"
+            },
+            {
+              "site": "0xeb83",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx], rax"
+            },
+            {
+              "site": "0xeb86",
+              "opcode": "mov",
+              "operands": "rax, rbx"
+            },
+            {
+              "site": "0xeb89",
+              "opcode": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0xeb8d",
+              "opcode": "pop",
+              "operands": "rbx"
+            },
+            {
+              "site": "0xeb8e",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0xeb4c",
+              "target_rva": "0xe380",
+              "symbol": "??0?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@QEAA@IEPEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        "matchname_from_chars": {
+          "entry_rva": "0x2d1f0",
+          "size_bytes": 65,
+          "symbol": "??0TDB_MatchName@@QEAA@PEBD_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x2d1f0",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x2d1f5",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2d1f6",
+              "opcode": "sub",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0x2d1fa",
+              "opcode": "mov",
+              "operands": "rbx, rdx"
+            },
+            {
+              "site": "0x2d1fd",
+              "opcode": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "site": "0x2d200",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x567aa]"
+            },
+            {
+              "site": "0x2d206",
+              "opcode": "call",
+              "operands": "0x18002ee30"
+            },
+            {
+              "site": "0x2d20b",
+              "opcode": "mov",
+              "operands": "r8, rbx"
+            },
+            {
+              "site": "0x2d20e",
+              "opcode": "lea",
+              "operands": "rdx, [rsp + 0x20]"
+            },
+            {
+              "site": "0x2d213",
+              "opcode": "mov",
+              "operands": "rcx, rax"
+            },
+            {
+              "site": "0x2d216",
+              "opcode": "call",
+              "operands": "0x18002eeb0"
+            },
+            {
+              "site": "0x2d21b",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x40]"
+            },
+            {
+              "site": "0x2d220",
+              "opcode": "vmovups",
+              "operands": "xmm0, xmmword ptr [rax]"
+            },
+            {
+              "site": "0x2d224",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rdi], xmm0"
+            },
+            {
+              "site": "0x2d228",
+              "opcode": "mov",
+              "operands": "rax, rdi"
+            },
+            {
+              "site": "0x2d22b",
+              "opcode": "add",
+              "operands": "rsp, 0x30"
+            },
+            {
+              "site": "0x2d22f",
+              "opcode": "pop",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2d230",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2d200",
+              "target_rva": "0x839b0",
+              "symbol": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ"
+            },
+            {
+              "site": "0x2d206",
+              "target_rva": "0x2ee30",
+              "symbol": ""
+            },
+            {
+              "site": "0x2d216",
+              "target_rva": "0x2eeb0",
+              "symbol": "?GuidFromName@TDBp_MatchNamePool@@QEAA?AVGuid@utility@dvacore@@PEBE@Z"
+            }
+          ]
+        },
+        "matchname_copy": {
+          "entry_rva": "0x2d170",
+          "size_bytes": 44,
+          "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z",
+          "first30_instructions": [
+            {
+              "site": "0x2d170",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rbx"
+            },
+            {
+              "site": "0x2d175",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2d176",
+              "opcode": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x2d17a",
+              "opcode": "mov",
+              "operands": "rbx, rdx"
+            },
+            {
+              "site": "0x2d17d",
+              "opcode": "mov",
+              "operands": "rdi, rcx"
+            },
+            {
+              "site": "0x2d180",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x5682a]"
+            },
+            {
+              "site": "0x2d186",
+              "opcode": "vmovups",
+              "operands": "xmm0, xmmword ptr [rbx]"
+            },
+            {
+              "site": "0x2d18a",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "site": "0x2d18f",
+              "opcode": "mov",
+              "operands": "rax, rdi"
+            },
+            {
+              "site": "0x2d192",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rdi], xmm0"
+            },
+            {
+              "site": "0x2d196",
+              "opcode": "add",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x2d19a",
+              "opcode": "pop",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x2d19b",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2d180",
+              "target_rva": "0x839b0",
+              "symbol": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ"
+            }
+          ]
+        },
+        "native_indexed_group_ctor": {
+          "entry_rva": "0x32e30",
+          "size_bytes": 74,
+          "symbol": "??0TDB_IndexedStreamGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x32e30",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 8], rcx"
+            },
+            {
+              "site": "0x32e35",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x32e36",
+              "opcode": "sub",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x32e3a",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0x32e3d",
+              "opcode": "call",
+              "operands": "0x180034410"
+            },
+            {
+              "site": "0x32e42",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x32e43",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x51df6]"
+            },
+            {
+              "site": "0x32e4a",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx], rax"
+            },
+            {
+              "site": "0x32e4d",
+              "opcode": "xor",
+              "operands": "eax, eax"
+            },
+            {
+              "site": "0x32e4f",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x220], rax"
+            },
+            {
+              "site": "0x32e56",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x228], rax"
+            },
+            {
+              "site": "0x32e5d",
+              "opcode": "mov",
+              "operands": "qword ptr [rbx + 0x230], rax"
+            },
+            {
+              "site": "0x32e64",
+              "opcode": "lea",
+              "operands": "rcx, [rbx + 0x238]"
+            },
+            {
+              "site": "0x32e6b",
+              "opcode": "call",
+              "operands": "0x1800329d0"
+            },
+            {
+              "site": "0x32e70",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x32e71",
+              "opcode": "mov",
+              "operands": "rax, rbx"
+            },
+            {
+              "site": "0x32e74",
+              "opcode": "add",
+              "operands": "rsp, 0x20"
+            },
+            {
+              "site": "0x32e78",
+              "opcode": "pop",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x32e79",
+              "opcode": "ret",
+              "operands": ""
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x32e3d",
+              "target_rva": "0x34410",
+              "symbol": "??0TDB_StreamGroup@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x32e6b",
+              "target_rva": "0x329d0",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_stream_base_ctor": {
+          "entry_rva": "0x33f80",
+          "size_bytes": 1021,
+          "symbol": "??0TDB_StreamBase@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x33f80",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], rbx"
+            },
+            {
+              "site": "0x33f85",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x33f86",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x33f87",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x33f88",
+              "opcode": "push",
+              "operands": "r12"
+            },
+            {
+              "site": "0x33f8a",
+              "opcode": "push",
+              "operands": "r13"
+            },
+            {
+              "site": "0x33f8c",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x33f8e",
+              "opcode": "push",
+              "operands": "r15"
+            },
+            {
+              "site": "0x33f90",
+              "opcode": "lea",
+              "operands": "rbp, [rsp - 0x70]"
+            },
+            {
+              "site": "0x33f95",
+              "opcode": "sub",
+              "operands": "rsp, 0x170"
+            },
+            {
+              "site": "0x33f9c",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0x89e1d]"
+            },
+            {
+              "site": "0x33fa3",
+              "opcode": "xor",
+              "operands": "rax, rsp"
+            },
+            {
+              "site": "0x33fa6",
+              "opcode": "mov",
+              "operands": "qword ptr [rbp + 0x60], rax"
+            },
+            {
+              "site": "0x33faa",
+              "opcode": "movzx",
+              "operands": "r12d, r9b"
+            },
+            {
+              "site": "0x33fae",
+              "opcode": "mov",
+              "operands": "rdi, r8"
+            },
+            {
+              "site": "0x33fb1",
+              "opcode": "mov",
+              "operands": "r14, rdx"
+            },
+            {
+              "site": "0x33fb4",
+              "opcode": "mov",
+              "operands": "rsi, rcx"
+            },
+            {
+              "site": "0x33fb7",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], rcx"
+            },
+            {
+              "site": "0x33fbc",
+              "opcode": "xor",
+              "operands": "r13d, r13d"
+            },
+            {
+              "site": "0x33fbf",
+              "opcode": "mov",
+              "operands": "dword ptr [rsp + 0x20], r13d"
+            },
+            {
+              "site": "0x33fc4",
+              "opcode": "lea",
+              "operands": "rax, [rip + 0x53935]"
+            },
+            {
+              "site": "0x33fcb",
+              "opcode": "mov",
+              "operands": "qword ptr [rcx], rax"
+            },
+            {
+              "site": "0x33fce",
+              "opcode": "add",
+              "operands": "rcx, 8"
+            },
+            {
+              "site": "0x33fd2",
+              "opcode": "call",
+              "operands": "0x18002d290"
+            },
+            {
+              "site": "0x33fd7",
+              "opcode": "mov",
+              "operands": "dword ptr [rsi + 0xe0], r13d"
+            },
+            {
+              "site": "0x33fde",
+              "opcode": "vpxor",
+              "operands": "xmm0, xmm0, xmm0"
+            },
+            {
+              "site": "0x33fe2",
+              "opcode": "vmovups",
+              "operands": "xmmword ptr [rsi + 0xf0], xmm0"
+            },
+            {
+              "site": "0x33fea",
+              "opcode": "mov",
+              "operands": "qword ptr [rsi + 0x100], r13"
+            },
+            {
+              "site": "0x33ff1",
+              "opcode": "mov",
+              "operands": "qword ptr [rsi + 0x108], 7"
+            },
+            {
+              "site": "0x33ffc",
+              "opcode": "mov",
+              "operands": "word ptr [rsi + 0xf0], r13w"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x33fd2",
+              "target_rva": "0x2d290",
+              "symbol": "??0TDB_MatchName@@QEAA@XZ"
+            },
+            {
+              "site": "0x34035",
+              "target_rva": "0x2d790",
+              "symbol": "??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "site": "0x340ce",
+              "target_rva": "0x2e160",
+              "symbol": "??4TDB_MatchName@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "site": "0x340d6",
+              "target_rva": "0x20650",
+              "symbol": "?TDB_AreTDBStreamScriptingIDsEnabled@TDB_Project@@SA_NXZ"
+            },
+            {
+              "site": "0x340df",
+              "target_rva": "0x83a18",
+              "symbol": "dvacore.dll!?CurrentThreadIsMainThread@threads@dvacore@@YA_NXZ"
+            },
+            {
+              "site": "0x340f6",
+              "target_rva": "0x83a10",
+              "symbol": "dvacore.dll!?TraceChangeCount@debug@dvacore@@YAHXZ"
+            },
+            {
+              "site": "0x3412a",
+              "target_rva": "0x83a00",
+              "symbol": "dvacore.dll!?TraceEnabled@debug@dvacore@@YA_NV?$basic_string_view@DU?$char_traits@D@std@@@std@@H_N@Z"
+            },
+            {
+              "site": "0x34139",
+              "target_rva": "0x34143",
+              "symbol": ""
+            },
+            {
+              "site": "0x3415b",
+              "target_rva": "0x83328",
+              "symbol": "MSVCP140.dll!??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ"
+            },
+            {
+              "site": "0x3417a",
+              "target_rva": "0x83330",
+              "symbol": "MSVCP140.dll!??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z"
+            },
+            {
+              "site": "0x341ae",
+              "target_rva": "0x83278",
+              "symbol": "MSVCP140.dll!??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ"
+            },
+            {
+              "site": "0x341d7",
+              "target_rva": "0x30e80",
+              "symbol": ""
+            },
+            {
+              "site": "0x341e5",
+              "target_rva": "0x83350",
+              "symbol": "MSVCP140.dll!??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z"
+            },
+            {
+              "site": "0x341f5",
+              "target_rva": "0x30e80",
+              "symbol": ""
+            },
+            {
+              "site": "0x34201",
+              "target_rva": "0x2ed00",
+              "symbol": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "site": "0x3420c",
+              "target_rva": "0x30e80",
+              "symbol": ""
+            },
+            {
+              "site": "0x3421b",
+              "target_rva": "0x83348",
+              "symbol": "MSVCP140.dll!??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z"
+            },
+            {
+              "site": "0x3422a",
+              "target_rva": "0x46d10",
+              "symbol": ""
+            },
+            {
+              "site": "0x34269",
+              "target_rva": "0x83a08",
+              "symbol": "dvacore.dll!?Trace@debug@dvacore@@YAXHV?$basic_string_view@DU?$char_traits@D@std@@@std@@0@Z"
+            },
+            {
+              "site": "0x3429f",
+              "target_rva": "0x342ab",
+              "symbol": ""
+            },
+            {
+              "site": "0x342ab",
+              "target_rva": "0x7cdfc",
+              "symbol": ""
+            },
+            {
+              "site": "0x342d7",
+              "target_rva": "0x34b50",
+              "symbol": ""
+            },
+            {
+              "site": "0x342e1",
+              "target_rva": "0x83338",
+              "symbol": "MSVCP140.dll!??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ"
+            },
+            {
+              "site": "0x342eb",
+              "target_rva": "0x83280",
+              "symbol": "MSVCP140.dll!??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ"
+            },
+            {
+              "site": "0x34308",
+              "target_rva": "0x7e200",
+              "symbol": ""
+            },
+            {
+              "site": "0x34310",
+              "target_rva": "0x37310",
+              "symbol": "?FillInParamDef@TDB_StreamBase@@MEAAXXZ"
+            },
+            {
+              "site": "0x34320",
+              "target_rva": "0x7cf40",
+              "symbol": ""
+            },
+            {
+              "site": "0x3434b",
+              "target_rva": "0x83718",
+              "symbol": "U.dll!?U_ZStringToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+            },
+            {
+              "site": "0x3435d",
+              "target_rva": "0x83710",
+              "symbol": "U.dll!?U_ReportError@@YAXIGAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "site": "0x34377",
+              "target_rva": "0x7e1e8",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_sc_register": {
+          "entry_rva": "0x28220",
+          "size_bytes": 217,
+          "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x28220",
+              "opcode": "push",
+              "operands": "rbx"
+            },
+            {
+              "site": "0x28222",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x28223",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x28224",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x28225",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x28227",
+              "opcode": "sub",
+              "operands": "rsp, 0x80"
+            },
+            {
+              "site": "0x2822e",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0x95b8b]"
+            },
+            {
+              "site": "0x28235",
+              "opcode": "xor",
+              "operands": "rax, rsp"
+            },
+            {
+              "site": "0x28238",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x70], rax"
+            },
+            {
+              "site": "0x2823d",
+              "opcode": "movzx",
+              "operands": "ebp, r9b"
+            },
+            {
+              "site": "0x28241",
+              "opcode": "mov",
+              "operands": "rdi, r8"
+            },
+            {
+              "site": "0x28244",
+              "opcode": "mov",
+              "operands": "rsi, rdx"
+            },
+            {
+              "site": "0x28247",
+              "opcode": "mov",
+              "operands": "rbx, rcx"
+            },
+            {
+              "site": "0x2824a",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], r8"
+            },
+            {
+              "site": "0x2824f",
+              "opcode": "mov",
+              "operands": "r14, qword ptr [rcx + 0x18]"
+            },
+            {
+              "site": "0x28253",
+              "opcode": "lea",
+              "operands": "rax, [rsp + 0x28]"
+            },
+            {
+              "site": "0x28258",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rax"
+            },
+            {
+              "site": "0x2825d",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], 0"
+            },
+            {
+              "site": "0x28266",
+              "opcode": "mov",
+              "operands": "rcx, qword ptr [r8 + 0x38]"
+            },
+            {
+              "site": "0x2826a",
+              "opcode": "test",
+              "operands": "rcx, rcx"
+            },
+            {
+              "site": "0x2826d",
+              "opcode": "je",
+              "operands": "0x18002827e"
+            },
+            {
+              "site": "0x2826f",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rcx]"
+            },
+            {
+              "site": "0x28272",
+              "opcode": "lea",
+              "operands": "rdx, [rsp + 0x28]"
+            },
+            {
+              "site": "0x28277",
+              "opcode": "call",
+              "operands": "qword ptr [rax]"
+            },
+            {
+              "site": "0x28279",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x60], rax"
+            },
+            {
+              "site": "0x2827e",
+              "opcode": "movzx",
+              "operands": "r9d, bpl"
+            },
+            {
+              "site": "0x28282",
+              "opcode": "lea",
+              "operands": "r8, [rsp + 0x28]"
+            },
+            {
+              "site": "0x28287",
+              "opcode": "mov",
+              "operands": "rdx, rsi"
+            },
+            {
+              "site": "0x2828a",
+              "opcode": "mov",
+              "operands": "rcx, r14"
+            },
+            {
+              "site": "0x2828d",
+              "opcode": "call",
+              "operands": "0x1800285d0"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2828d",
+              "target_rva": "0x285d0",
+              "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "site": "0x282a6",
+              "target_rva": "0x2d170",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x282b0",
+              "target_rva": "0x282c1",
+              "symbol": ""
+            },
+            {
+              "site": "0x282bb",
+              "target_rva": "0x25ec0",
+              "symbol": ""
+            },
+            {
+              "site": "0x282e6",
+              "target_rva": "0x7cf40",
+              "symbol": ""
+            }
+          ]
+        },
+        "native_factory_register": {
+          "entry_rva": "0x285d0",
+          "size_bytes": 594,
+          "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "first30_instructions": [
+            {
+              "site": "0x285d0",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x20], rbx"
+            },
+            {
+              "site": "0x285d5",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x18], r8"
+            },
+            {
+              "site": "0x285da",
+              "opcode": "push",
+              "operands": "rbp"
+            },
+            {
+              "site": "0x285db",
+              "opcode": "push",
+              "operands": "rsi"
+            },
+            {
+              "site": "0x285dc",
+              "opcode": "push",
+              "operands": "rdi"
+            },
+            {
+              "site": "0x285dd",
+              "opcode": "push",
+              "operands": "r12"
+            },
+            {
+              "site": "0x285df",
+              "opcode": "push",
+              "operands": "r13"
+            },
+            {
+              "site": "0x285e1",
+              "opcode": "push",
+              "operands": "r14"
+            },
+            {
+              "site": "0x285e3",
+              "opcode": "push",
+              "operands": "r15"
+            },
+            {
+              "site": "0x285e5",
+              "opcode": "sub",
+              "operands": "rsp, 0xe0"
+            },
+            {
+              "site": "0x285ec",
+              "opcode": "mov",
+              "operands": "rax, qword ptr [rip + 0x957cd]"
+            },
+            {
+              "site": "0x285f3",
+              "opcode": "xor",
+              "operands": "rax, rsp"
+            },
+            {
+              "site": "0x285f6",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0xd8], rax"
+            },
+            {
+              "site": "0x285fe",
+              "opcode": "movzx",
+              "operands": "r12d, r9b"
+            },
+            {
+              "site": "0x28602",
+              "opcode": "mov",
+              "operands": "rdi, r8"
+            },
+            {
+              "site": "0x28605",
+              "opcode": "mov",
+              "operands": "rbp, rdx"
+            },
+            {
+              "site": "0x28608",
+              "opcode": "mov",
+              "operands": "r13, rcx"
+            },
+            {
+              "site": "0x2860b",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x68], r8"
+            },
+            {
+              "site": "0x28610",
+              "opcode": "lea",
+              "operands": "r14, [rcx + 0x68]"
+            },
+            {
+              "site": "0x28614",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x40], r14"
+            },
+            {
+              "site": "0x28619",
+              "opcode": "mov",
+              "operands": "qword ptr [rsp + 0x48], r14"
+            },
+            {
+              "site": "0x2861e",
+              "opcode": "mov",
+              "operands": "byte ptr [rsp + 0x50], 1"
+            },
+            {
+              "site": "0x28623",
+              "opcode": "lea",
+              "operands": "r8, [rip + 0x5ef6e]"
+            },
+            {
+              "site": "0x2862a",
+              "opcode": "xor",
+              "operands": "edx, edx"
+            },
+            {
+              "site": "0x2862c",
+              "opcode": "mov",
+              "operands": "rcx, r14"
+            },
+            {
+              "site": "0x2862f",
+              "opcode": "call",
+              "operands": "qword ptr [rip + 0x5b4a3]"
+            },
+            {
+              "site": "0x28635",
+              "opcode": "nop",
+              "operands": ""
+            },
+            {
+              "site": "0x28636",
+              "opcode": "mov",
+              "operands": "rbx, qword ptr [r13 + 0x28]"
+            },
+            {
+              "site": "0x2863a",
+              "opcode": "mov",
+              "operands": "rsi, qword ptr [rbx + 8]"
+            },
+            {
+              "site": "0x2863e",
+              "opcode": "cmp",
+              "operands": "byte ptr [rsi + 0x19], 0"
+            }
+          ],
+          "symbolized_calls": [
+            {
+              "site": "0x2862f",
+              "target_rva": "0x83ad8",
+              "symbol": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "site": "0x2864b",
+              "target_rva": "0x2e470",
+              "symbol": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "site": "0x2867a",
+              "target_rva": "0x2e470",
+              "symbol": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "site": "0x2868c",
+              "target_rva": "0x83ad0",
+              "symbol": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "site": "0x286b0",
+              "target_rva": "0x287f7",
+              "symbol": ""
+            },
+            {
+              "site": "0x286c0",
+              "target_rva": "0x2d170",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x2870b",
+              "target_rva": "0x26a20",
+              "symbol": ""
+            },
+            {
+              "site": "0x2874b",
+              "target_rva": "0x27920",
+              "symbol": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "site": "0x28760",
+              "target_rva": "0x2d170",
+              "symbol": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "site": "0x2877b",
+              "target_rva": "0x268f0",
+              "symbol": ""
+            },
+            {
+              "site": "0x287bb",
+              "target_rva": "0x289c0",
+              "symbol": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "site": "0x287d5",
+              "target_rva": "0x83ad0",
+              "symbol": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "site": "0x28802",
+              "target_rva": "0x7cf40",
+              "symbol": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

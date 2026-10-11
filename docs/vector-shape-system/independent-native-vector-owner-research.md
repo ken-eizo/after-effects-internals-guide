@@ -103,3 +103,16 @@ A genuine C++ component is now compiled: CNLNativeVectorCore.dll (F-VECTOR-029, 
 The missing, NON-NEGOTIABLE native host gates remain: (1) safe independent TDB type registration, (2) host-owned Timeline root for plugin Contents, (3) AE Pen/Selection binding with stream IDs, (4) BEE native evaluator registration and managed unload, (5) genuine host BEE_VectorArt/RG/AGM rendering instead of PF_World. A CNL archive must never be misreported as AEP/SLU-native persistence.
 
 Next experiment should be a version-pinned, staged TDB type-registration host adapter design relying on native MSVC class/layout evidence. One candidate for offline assessment is a registration thunk using an existing correctly constructed TDB class under a new MatchName, to test factory admission without guessing a complete subclass; however even that is an UNPROVEN, potentially crashing private API that must not be executed in a working AE session. Investigate constructor/class invariants and reversible unregister/refcounts before any live test.
+
+
+## 2026-10-12 — Concrete host plugins prepared; prove registry permission before declaring victory
+
+F-VECTOR-031 confirms exact AE2025/2026 MatchName private constructor stores a 16-byte GUID obtained from TDBp_MatchNamePool::GuidFromName, and Adobe's complete ParamPathStream::Create allocates a 0x468-byte native TDB object. This suggests a cleaner FIRST external-registry admissibility test: register that complete built-in Creator under a NEW name, rather than guessing a foreign TDB_StreamBase layout. A ParamPathStream is, however, an effect/parameter path class, not a native Shape VectorArt owner. Registry acceptance, if achieved, cannot satisfy editable independent Contents.
+
+The new safe CNLNativeVectorHostProbe AEX (F-VECTOR-032) actually embeds CNL-owned procedural cubic geometry into an AEGP, with user-invoked read-only private export/version preflight. It compiled and passed x64 PE checks; no AE installation or host test was performed. This is now the preferred next user-validation artifact.
+
+Offline cross-module MSVC std::function Creator ABI/lifetime and reverse explicit cleanup model passed (EXP-SHAPE-029), BUT it is a model of the native callable pattern, not Adobe's actual C++ Stream class, allocator, host project lifetime or unmanaged private factory.
+
+A separate guarded, HIGH RISK CNLPrivateTDBDisposable.aex was compiled for a manually authorized disposable AE host only (F-VECTOR-033, EXP-SHAPE-030). Its private mutation code is **NOT tested in AE**, and its automatic unregister remains best-effort, not assured rollback. Never recommend this AEX for regular project use, automatic startup or before the safe AEX is host-tested. Installation and AE GUI checks belong to the user.
+
+Current research gates unchanged in the host: independent new TDB type (NOT PROVEN), non-Shape native indexed Contents owner (NOT PROVEN), AE-native Pen editing (NOT PROVEN), BEE evaluator insertion (NOT PROVEN), native VectorArt/RG from custom owner (NOT PROVEN). The compile success is a genuine engineering milestone, not a host-native feature claim.

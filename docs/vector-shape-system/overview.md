@@ -104,3 +104,14 @@ TDB_ScRegisterStreams::UnregisterAll walks registrations in reverse, while its d
 The independent native path/Contents project now has a real source implementation separate from AE standard Masks/Shapes: CNLNativeVectorCore.dll with typed tree, true cubic Bezier handles, procedural geometry, deterministic archive, cloning and 20-function C ABI; actual compiled DLL and CTest/ctypes cross-language tests passed (F-VECTOR-029, EXP-SHAPE-026). This is NOT an AE AEX and does NOT yet satisfy native TDB/Timeline/Pen/VectorArt renderer integration.
 
 Static AE2025/2026 work (F-VECTOR-027/028) separately established native Group Read/Write stream IDs and canonical layout, CloneStream/SetParent behavior and BEE's native operator registry's polymorphic lifetime. That clarifies next host integration requirements; no private registrar was invoked, no AE UI action was performed. Retain these as separately falsifiable gates, not as successful host-native third-party output.
+
+
+## 2026-10-12 — Compiled host AEGP and separate native registration acceptance experiment
+
+The independent CNL vector-core is now compiled into an actual AEGP as CNLNativeVectorHostProbe.aex. This AEX has a user-invoked Animation menu to create true independent CNL cubic geometry and report the loaded TDB.dll's SHA256 and exported private factory methods. It calls NO private mutating native functions; even the read-only getter is invoked only when the installed TDB module hash and opcode pattern match the pinned AE2025/2026 builds. The build is complete, **AE in-host execution is not yet tested**. F-VECTOR-032, EXP-SHAPE-028.
+
+A different, explicitly HIGH RISK disposable native type registration AEX has also been compiled but **NEVER installed or run**. It is version-pinned, menu-triggered, double-acknowledged and contains an immediate best-effort unregister attempt. It forwards a new CNL MatchName to Adobe's own complete TDB_ParamPathStream native Creator. The target is ONLY to test private TDB factory acceptance of a brand-new MatchName, not native Contents/Pen/VectorArt. It may crash or corrupt AE; no safety or rollback is proven. F-VECTOR-030/031/033 and EXP-SHAPE-027..030.
+
+Offline x64 DLL/EXE lifetime simulation with MSVC std::function pass-by-value passed, but this is not actual Adobe ABI. See EXP-SHAPE-029.
+
+**Next success gate:** the user tests the safe AEX preflight and supplies its report. Only after that and explicit user acceptance of disposable-host risk should the separate mutating AEX ever be considered. An actual external new TDB type registration is still UNPROVEN. Further owner/editor/evaluator/render contracts remain after that.

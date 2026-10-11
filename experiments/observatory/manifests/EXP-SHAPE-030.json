@@ -1,0 +1,24 @@
+{
+  "experiment_id": "EXP-SHAPE-030",
+  "title": "Build manually gated HIGH RISK native Adobe private type-registration disposable AEX",
+  "status": "compiled-NOT-executed-unsafe",
+  "evidence": "E2-B x64 AEX PE static verification, no AE host execution",
+  "observations": {
+    "AEX_compiled": true,
+    "private_registration_code_present": true,
+    "requires_exact_SHA256": true,
+    "requires_manual_menu": true,
+    "requires_explicit_env_ack": true,
+    "requires_consumable_flag": true,
+    "tries_best_effort_unregister": true,
+    "host_registration_attempt_count": 0,
+    "external_TDB_type_proven": false,
+    "independent_Contents_editor_renderer_proven": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-033-gated-private-tdb-registry-probe-aex-built.md",
+    "experiments/vector-shape/native-tdb-registration-disposable-lab",
+    "datasets/ae-private-tdb-disposable-build-receipt-20261012.json"
+  ],
+  "date": "2026-10-12"
+}

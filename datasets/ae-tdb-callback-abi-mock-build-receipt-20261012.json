@@ -1,0 +1,25 @@
+{
+  "experiment": "EXP-SHAPE-029",
+  "date": "2026-10-12",
+  "status": "pass-cross-module-MSVC-mock",
+  "evidence": "E2-B compiled Windows x64 DLL+separate EXE",
+  "host_mock_file": "D:\\Developer\\ShapeLayerAE\\build\\tdb_callback_abi_mock\\Release\\TDBNativeCallbackHostMock.dll",
+  "client_test_file": "D:\\Developer\\ShapeLayerAE\\build\\tdb_callback_abi_mock\\Release\\TDBNativeCallbackClientTest.exe",
+  "host_mock_SHA256": "2c1b22148af3c311dcd0f74088ca9d5e38bfbbc7a996371cc27f68215200bb95",
+  "client_test_SHA256": "aeb0a06dea0c86e2ada1e789b8af89d591a9080cee993336211cdfd984ed3a22",
+  "host_DLL_exports": [
+    "MockCanonicalLayoutCalls",
+    "MockCount",
+    "MockHasCanonical",
+    "MockIsRegistered",
+    "MockRegister",
+    "MockStreamDestructors",
+    "MockUnregister"
+  ],
+  "ctest": "PASS",
+  "client_stdout": "PASS cross-EXE/DLL MSVC std::function NativeCreator ABI mock; 16-byte keys, eager construction, canonical, duplicate, callable retention, explicit reverse unregistration; created=2 destroyed=2",
+  "actually_called_Adobe_TDB_registry": false,
+  "actually_created_AE_native_type": false,
+  "registered_TDB_StreamBase_in_real_host": false,
+  "warning": "This only verifies corresponding C++ std::function inter-module protocol and cleanup in a NON-Adobe toy host; it does not validate Adobe C++ class ABI or lifecycle."
+}

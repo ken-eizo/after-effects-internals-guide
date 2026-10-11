@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-SHAPE-027",
+  "title": "Adobe built-in ParamPathStream as new-MatchName registry acceptance candidate (static)",
+  "status": "pass-static-no-host-registration",
+  "evidence": "E2-L exact installed TDB2025/2026 x64 PE disassembly",
+  "observations": {
+    "TDB_MatchName_ctor_guid_bytes": 16,
+    "ParamPathStream_Create_native_bytes": "0x468",
+    "native_CreateStream_eager": true,
+    "external_registration_executed": false,
+    "native_Contents_Pen_VectorArt": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-030-native-creator-custom-matchname-bootstrap-candidate.md",
+    "research/findings/F-VECTOR-031-matchname-guid-and-native-complete-path-creator.md",
+    "datasets/ae-native-tdb-built-in-path-creator-registration-feasibility-2025-2026.json",
+    "datasets/ae-tdb-matchname-guid-and-built-in-path-creator-check-2025-2026.json"
+  ],
+  "date": "2026-10-12"
+}

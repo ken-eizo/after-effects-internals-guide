@@ -102,3 +102,12 @@ Evidence: [Independent Native Vector Objects](independent-native-vector-owner-re
 A first practical future plugin backend exists as a compiled CNLNativeVectorCore DLL with independent typed Contents and cubic geometry, stable 64-bit identities, deterministic CNL archive, clone and C ABI. It avoids Mask/Shape storage and does not materialize PF_World output. Passing native compiled tests and Python ctypes proves the module works externally, not that Adobe recognizes it.
 
 The large potential product breakthrough remains third-party host-owned, AE-native vector objects: new editable path source, native indexed Contents, AE Pen selection, CNL-defined geometry/operators and native BEE_VectorArt/RG output. The current library is a source-side dependency, not the breakthrough. Remaining integrations require a private TDB registrar, Timeline owner, BEE evaluator registry and renderer dispatch with exact version-pinned lifetime. Details F-VECTOR-027/028/029 and EXP-SHAPE-025/026.
+
+
+## From CNL core to native host registration: staged experimental plugin binaries (2026-10-12)
+
+Two source-only AEIG labs now build AEGP binaries at the user's local ShapeLayerAE tree: the safe CNLNativeVectorHostProbe.aex (read-only version/export check plus procedural geometry already compiled into an AEGP), and a separate **unsafe, never-tested** CNLPrivateTDBDisposable.aex (requires exact version hash and explicit disposable-user ACK, attempts one native new MatchName registration and then best-effort unregister). Neither is a native AE vector result today.
+
+This separation protects ordinary iteration: only the first AEX should be used for initial AE validation. A nominally successful private TDB registration would prove factory acceptance but still require a new independent AE Contents owner, selection/Pen handler, BEE evaluator and native RG output. The huge product vision is wholly new code-defined, AE editable/animatable host-native vector types and operators; that vision is **not yet implemented**.
+
+For the source and objective evidence see F-VECTOR-030..033, EXP-SHAPE-027..030. Do not replace this difficult native-host contract with regular Masks, Shape Layers, Drawbot overlays or a PF_World CPU/GPU raster effect.

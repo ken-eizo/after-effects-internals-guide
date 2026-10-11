@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-029",
+  "title": "Cross-DLL MSVC std::function Native Creator ABI lifetime offline model",
+  "status": "pass-compiled-mock-NOT-Adobe",
+  "evidence": "E2-B independent Windows DLL/EXE compiled, CTest passed",
+  "observations": {
+    "mock_callback_copy_and_eager_creation": true,
+    "mock_explicit_unregister_disposes_closure": true,
+    "MSVC_two_module_build_pass": true,
+    "real_Adobe_factory_calls": false,
+    "adobe_ABI_proven": false
+  },
+  "artifacts": [
+    "experiments/vector-shape/tdb-callback-abi-mock",
+    "datasets/ae-tdb-callback-abi-mock-build-receipt-20261012.json"
+  ],
+  "date": "2026-10-12"
+}

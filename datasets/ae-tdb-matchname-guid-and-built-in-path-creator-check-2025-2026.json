@@ -1,0 +1,33 @@
+{
+  "classification": "E2-L native symbol+first30 x64 assembly cross-check only",
+  "hypothesis": "an existing complete ParamPathStream creator might be used as a safer host-registry acceptance test",
+  "warning": "C++ MatchName class layout, callback value ABI, host lifetime and native editor ownership are still unverified",
+  "versions": {
+    "2025": {
+      "source_tdb_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "MatchName_char_ctor_rva": "0x2c610",
+      "MatchName_internal_payload_static_observation": "16-byte GUID copied from TDBp_MatchNamePool::GuidFromName",
+      "MatchName_cpp_class_layout_fully_known": false,
+      "ParamPathStream_create_rva": "0x10750",
+      "ParamPathStream_create_allocation_bytes": 1128,
+      "ParamPathStream_derived_traits": "TDB_ParamPathStreamTraits",
+      "ParamPathStream_is_native_BEE_VectorArt": false,
+      "ParamPathStream_can_be_assigned_new_external_matchname_proven": false,
+      "independent_parent_timeline_owner_proven": false,
+      "static_candidate_for_host_test": true
+    },
+    "2026": {
+      "source_tdb_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "MatchName_char_ctor_rva": "0x2d1f0",
+      "MatchName_internal_payload_static_observation": "16-byte GUID copied from TDBp_MatchNamePool::GuidFromName",
+      "MatchName_cpp_class_layout_fully_known": false,
+      "ParamPathStream_create_rva": "0x107c0",
+      "ParamPathStream_create_allocation_bytes": 1128,
+      "ParamPathStream_derived_traits": "TDB_ParamPathStreamTraits",
+      "ParamPathStream_is_native_BEE_VectorArt": false,
+      "ParamPathStream_can_be_assigned_new_external_matchname_proven": false,
+      "independent_parent_timeline_owner_proven": false,
+      "static_candidate_for_host_test": true
+    }
+  }
+}
