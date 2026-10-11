@@ -1,0 +1,188 @@
+{
+  "classification": "E2-L static direct xrefs; indirect calls omitted; approximate owner labels",
+  "note": "Nearest preceding *export* is not always the real containing function.",
+  "data": {
+    "AE2025": {
+      "source_binary": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+      "binary_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "decoded_executable_section_instructions": 4488162,
+      "elapsed_seconds": 15.33,
+      "target_direct_xrefs": {
+        "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z": {
+          "target_rva": "0x6ecb60",
+          "count": 3,
+          "sites": [
+            {
+              "callsite_rva": "0x2a1ad8",
+              "instruction": "call",
+              "nearest_preceding_export": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z",
+              "nearest_preceding_export_rva": "0x2a1790"
+            },
+            {
+              "callsite_rva": "0x6e23f9",
+              "instruction": "call",
+              "nearest_preceding_export": "?GetBoundingBoxCompTime@BEE_VectorLayer@@UEBAPEAVBEE_BoundingBox@@PEBUT_Time@@EPEBVTDB_ParamBag@@_N@Z",
+              "nearest_preceding_export_rva": "0x6e1e80"
+            },
+            {
+              "callsite_rva": "0x6e3afc",
+              "instruction": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+              "nearest_preceding_export_rva": "0x6e3930"
+            }
+          ]
+        },
+        "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z": {
+          "target_rva": "0x6e3e90",
+          "count": 0,
+          "sites": []
+        },
+        "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z": {
+          "target_rva": "0x28fa80",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x36de29",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x36dbc0"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_Layer@@SAX_N@Z": {
+          "target_rva": "0x2ec310",
+          "count": 2,
+          "sites": [
+            {
+              "callsite_rva": "0x36de21",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x36dbc0"
+            },
+            {
+              "callsite_rva": "0x36defc",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_StreamCanVary@@YA_NPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAVBEE_StreamConstSpec@@PEAPEBVTDB_Stream@@@Z",
+              "nearest_preceding_export_rva": "0x36de60"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_TextLayer@@SAXXZ": {
+          "target_rva": "0x5ae290",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x36de33",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x36dbc0"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "target_rva": "0x6e4100",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x36de38",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x36dbc0"
+            }
+          ]
+        }
+      }
+    },
+    "AE2026": {
+      "source_binary": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\BEE.dll",
+      "binary_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "decoded_executable_section_instructions": 4626191,
+      "elapsed_seconds": 16.41,
+      "target_direct_xrefs": {
+        "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z": {
+          "target_rva": "0x710ee0",
+          "count": 3,
+          "sites": [
+            {
+              "callsite_rva": "0x2aa759",
+              "instruction": "call",
+              "nearest_preceding_export": "?FindClosestMaskSnapPoint@BEE_BoundingBox@@QEAA?AW4BEE_HandType@@PEAV?$M_Vector3T@N@@NPEAHPEAN@Z",
+              "nearest_preceding_export_rva": "0x2aa410"
+            },
+            {
+              "callsite_rva": "0x706c13",
+              "instruction": "call",
+              "nearest_preceding_export": "?GetBoundingBoxCompTime@BEE_VectorLayer@@UEBAPEAVBEE_BoundingBox@@PEBUT_Time@@EPEBVTDB_ParamBag@@_N@Z",
+              "nearest_preceding_export_rva": "0x7066b0"
+            },
+            {
+              "callsite_rva": "0x7083e3",
+              "instruction": "call",
+              "nearest_preceding_export": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+              "nearest_preceding_export_rva": "0x7081b0"
+            }
+          ]
+        },
+        "?Rasterize2DGraph@BEE_VectorLayer@@UEBA?AV?$IntrusivePtr@VRG_RenderNode@@@RefCountedInterface@utility@dvacore@@AEBVBEE_LayerRenderOptions@@PEBVBEE_RenderTrace@@_NPEAVRG_RenderNode@@@Z": {
+          "target_rva": "0x708720",
+          "count": 0,
+          "sites": []
+        },
+        "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z": {
+          "target_rva": "0x298cb0",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x378849",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x3785e0"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_Layer@@SAX_N@Z": {
+          "target_rva": "0x2f4e50",
+          "count": 2,
+          "sites": [
+            {
+              "callsite_rva": "0x378841",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x3785e0"
+            },
+            {
+              "callsite_rva": "0x37891c",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_StreamCanVary@@YA_NPEBVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAVBEE_StreamConstSpec@@PEAPEBVTDB_Stream@@@Z",
+              "nearest_preceding_export_rva": "0x378880"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_TextLayer@@SAXXZ": {
+          "target_rva": "0x5cd7e0",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x378853",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x3785e0"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "target_rva": "0x708a30",
+          "count": 1,
+          "sites": [
+            {
+              "callsite_rva": "0x378858",
+              "instruction": "call",
+              "nearest_preceding_export": "?BEE_ShapeGroupToShape@@YAHPEAVTDB_StreamIDPath@@@Z",
+              "nearest_preceding_export_rva": "0x3785e0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -9,20 +9,20 @@ versions: AE runtime reported by user after installing ShapeLayerAE; probe SDK 2
 ## Failure
 
 User reported three After Effects dialogs:
-\`After Effects error: internal verification failure, sorry! {GetNumStreamsInGroup only works on groups}\`
+`After Effects error: internal verification failure, sorry! {GetNumStreamsInGroup only works on groups}`
 
-The original observer at \`D:\Developer\ShapeLayerAE\src\ShapeLayerProbe.cpp\` used \`grouping != AEGP_StreamGroupingType_NONE\` as the precondition for \`AEGP_GetNumStreamsInGroup\`. This was **wrong**: \`LEAF\` is not \`NONE\`, but is not a group.
+The original observer at `D:\Developer\ShapeLayerAE\src\ShapeLayerProbe.cpp` used `grouping != AEGP_StreamGroupingType_NONE` as the precondition for `AEGP_GetNumStreamsInGroup`. This was **wrong**: `LEAF` is not `NONE`, but is not a group.
 
-**Distributed E0-H SDK 25.6** \`AE_GeneralPlug.h\` enum (around line 1600):
-\`NONE = -1, LEAF = 0, NAMED_GROUP = 1, INDEXED_GROUP = 2\`.
-\`AEGP_GetNumStreamsInGroup\` is documented with the explicit comment \`// error on leaf\` (around line 1662).
-\`AEGP_GetNewStreamRefByIndex\` says \`// legal for namedgroup, indexedgroup, not leaf\` (around line 1679).
+**Distributed E0-H SDK 25.6** `AE_GeneralPlug.h` enum (around line 1600):
+`NONE = -1, LEAF = 0, NAMED_GROUP = 1, INDEXED_GROUP = 2`.
+`AEGP_GetNumStreamsInGroup` is documented with the explicit comment `// error on leaf` (around line 1662).
+`AEGP_GetNewStreamRefByIndex` says `// legal for namedgroup, indexedgroup, not leaf` (around line 1679).
 
 ## Repair
 
-Only call \`AEGP_GetNumStreamsInGroup\` when grouping is \`NAMED_GROUP\` or \`INDEXED_GROUP\` and grouping query succeeded. This also avoids making an invalid child request on LEAF.
+Only call `AEGP_GetNumStreamsInGroup` when grouping is `NAMED_GROUP` or `INDEXED_GROUP` and grouping query succeeded. This also avoids making an invalid child request on LEAF.
 
-The corrected C++ source compiled successfully against the local SDK 25.6 using CMake/MSVC. Note: a successfully linked AEX **does not prove** successful run, host restart/reinstall, or that other errors will not arise. The installed plugin is an older file until it is replaced with the newly built \`ShapeLayerAE.aex\` while AE is closed and AE restarted.
+The corrected C++ source compiled successfully against the local SDK 25.6 using CMake/MSVC. Note: a successfully linked AEX **does not prove** successful run, host restart/reinstall, or that other errors will not arise. The installed plugin is an older file until it is replaced with the newly built `ShapeLayerAE.aex` while AE is closed and AE restarted.
 
 ## What this observation proves and does not
 

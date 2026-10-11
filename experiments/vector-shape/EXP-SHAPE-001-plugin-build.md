@@ -25,3 +25,7 @@ Adds an Animation-menu command, acquires the active layer's public AEGP root str
 ## AEIG procedure for host test
 
 Use a disposable project and closed AE installation during deployment. Verify the plug-in loads, choose a Shape Layer then a normal layer with an effect, run the menu command and archive output `%TEMP%\ShapeLayerAE_stream_tree.tsv` under unique capture names, together with host build/version, SHA-256, failures and screenshots if necessary. Do not promote EXP-SHAPE-001 to observed without captured host output. See `experiments/observatory/manifests/EXP-SHAPE-001.json`.
+
+## Correction build (2026-10-11)
+
+After user-reported `GetNumStreamsInGroup` leaf assertion, ShapeLayerAE's recursion now guards **both** `AEGP_StreamGroupingType_NAMED_GROUP` and `AEGP_StreamGroupingType_INDEXED_GROUP` and never queries children from LEAF. MSVC/SDK 25.6 rebuilt `D:\Developer\ShapeLayerAE\build\Release\ShapeLayerAE.aex` successfully; SHA-256 `E572BA538E5DAE6889F789AA6090BEDA61EF713731BBEC198894604B7394B272`. The MediaCore-installed old AEX still had SHA-256 `8764F538D554BC46DD0B65A7741841EA5026CC90FED27542037D71962133555C` at last check. AE was running, so automatic replacement/restart was deliberately not performed. No post-fix AE-host test has been claimed. The corrected source and reproducibility tooling are snapshotted (without Adobe SDK binaries) to `experiments/vector-shape/probe-src/` with `SOURCE_SNAPSHOT.json` SHA-256 manifest.
