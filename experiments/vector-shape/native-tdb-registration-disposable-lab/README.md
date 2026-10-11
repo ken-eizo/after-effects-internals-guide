@@ -47,3 +47,19 @@ The previous no-active-layer gate was insufficient. This build now uses the SAME
 New MatchName includes process id/tick for collision resistance. Creator invocation count is logged via a plugin-static LONG (no stack-captured callback references). After registering (never yet attempted), automatic unregister is best-effort and does not certify rollback.
 
 Even with all gates this remains HIGH RISK and cannot be certified safe; only consider a separate explicitly authorized, isolated disposable AE environment. No private registrar function has been called in an AE host by this research.
+
+## v3 (2026-10-12): fail-closed runtime entrypoint fingerprints and UNSAVED project guard
+
+This supersedes prior v2 AEX binaries. The shared public-only disposable-project gate now rejects even a clean, EMPTY project if the public AEGP_GetProjectPath returns a non-empty UTF-16 path. AEGP project path handles are locked, unlocked, and released through MemorySuite1; missing or failed SDK operations reject the test. Both AEX files have been rebuilt after this shared change.
+
+The dangerous AEX now checks 16 code bytes at EACH of 5 private function entrypoints (getter, MatchName constructor, ParamPathStream creator, registrar, unregistrar), against both exact pinned TDB.dll versions. These values were extracted from the actual PE export RVAs with tools/audit_tdb_native_entry_fingerprints.py. They are compared against live executable memory, not only the on-disk DLL hash. Discrepancies or uninspectable pages cause refusal.
+
+Other v3 changes:
+- AEGP_GetActiveLayer API errors also fail closed (previous logic ignored an error).
+- Consumes the existing explicit one-shot confirmation, then checks public project state AGAIN before the first private call.
+- Uses an atomic, per-AEX-module one-attempt latch; after any private attempt, further clicks are refused for this loaded AEX instance.
+- Records creator invocation count and post-attempt public project state. The audit log explicitly writes private_registry_rollback_proven=0 even if unregister returned success.
+- The static AEX verifier checks all five fingerprints against the actual installed, pinned 2025 and 2026 PE binaries; static verification is NOT an AE runtime test.
+
+Build output: build/native_tdb_registration_disposable/Release/CNLPrivateTDBDisposable.aex.
+**DO NOT INSTALL OR RUN THIS MUTATING AEX YET.** The 2026-10-12 v3 build is compiled and statically verified ONLY. Runtime acceptance, canonical object cleanup, dangling callback safety, native editing and renderer integration remain UNPROVEN. Entry fingerprints cannot prevent a crash caused by a correct-but-unsupported internal operation. The public project gate does not isolate global host memory. The latch does not persist across DLL reload and cannot compensate for an unsafe registrar.

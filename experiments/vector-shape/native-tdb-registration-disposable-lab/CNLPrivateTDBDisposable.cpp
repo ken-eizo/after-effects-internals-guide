@@ -29,6 +29,7 @@ SPBasicSuite* g_basic=nullptr;
 AEGP_PluginID g_id=0;
 AEGP_Command g_command=0;
 static volatile LONG g_creator_calls=0;
+static volatile LONG g_native_attempted_once=0;
 static_assert(sizeof(void*)==8,"Only Windows x64 MSVC permitted");
 
 // Forward-declared Adobe native classes. We never instantiate StreamBase or
@@ -86,6 +87,44 @@ int pinned(const std::string& digest){
  if(digest=="2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69")return 2025;
  return 0;
 }
+void writeLog(FILE* out,const char* state,int number);
+// Strict runtime CODE fingerprint (not only the file on disk). 16 bytes of
+// each private entrypoint, extracted from the exact pinned 2025/2026 PE files.
+// No patch, prologue trampoline, forwarder or relocated code is allowed.
+// These checks reduce ABI drift risk; they do NOT establish safe ownership.
+bool verifyEntryBytes(FARPROC entry,const char* expectedHex,const char* label,FILE* log){
+ if(!entry||std::strlen(expectedHex)!=32)return false;
+ MEMORY_BASIC_INFORMATION region{};
+ const auto address=reinterpret_cast<uintptr_t>(entry);
+ if(!VirtualQuery(entry,&region,sizeof(region))||region.State!=MEM_COMMIT||
+    (region.Protect&(PAGE_GUARD|PAGE_NOACCESS))){
+  writeLog(log,"native_code_region_unreadable",1);return false;
+ }
+ const auto protect=region.Protect&0xff;
+ if(protect!=PAGE_EXECUTE_READ && protect!=PAGE_EXECUTE_READWRITE &&
+    protect!=PAGE_EXECUTE_WRITECOPY){
+  writeLog(log,"native_code_page_not_executable_readable",1);return false;
+ }
+ if(address<reinterpret_cast<uintptr_t>(region.BaseAddress)||
+    address-reinterpret_cast<uintptr_t>(region.BaseAddress)>region.RegionSize||
+    region.RegionSize-(address-reinterpret_cast<uintptr_t>(region.BaseAddress))<16){
+  writeLog(log,"native_code_entry_crosses_page",1);return false;
+ }
+ const unsigned char* bytes=reinterpret_cast<const unsigned char*>(entry);
+ for(int i=0;i<16;i++){
+  auto nibble=[](char c)->int{
+   if(c>='0'&&c<='9')return c-'0';
+   if(c>='a'&&c<='f')return c-'a'+10;
+   return -1;
+  };
+  const int hi=nibble(expectedHex[2*i]),lo=nibble(expectedHex[2*i+1]);
+  if(hi<0||lo<0||bytes[i]!=(hi<<4|lo)){
+   if(log){std::fprintf(log,"fact\tentrypoint_mismatch\t%s\n",label);std::fflush(log);}
+   return false;
+  }
+ }
+ return true;
+}
 void writeLog(FILE* out,const char* state,int number){
  if(!out)return;
  std::fprintf(out,"stage\t%s\t%d\n",state,number);
@@ -106,6 +145,7 @@ bool verifyDisposableProject(AEGP_SuiteHandler& s,FILE* log){
  writeLog(log,"non_root_project_items",static_cast<int>(status.non_root_items));
  writeLog(log,"render_queue_items",static_cast<int>(status.render_queue_items));
  writeLog(log,"project_dirty",status.dirty?1:0);
+ writeLog(log,"project_has_saved_path",status.saved_project?1:0);
  return status.empty;
 }
 bool ackAndConsume(const std::string& tempDir,FILE* log){
@@ -155,7 +195,7 @@ A_Err Run(){
  // Additional selected-layer check. Explicit acknowledgements follow below.
  AEGP_LayerH current=nullptr;
  A_Err layerResult=s.LayerSuite5()->AEGP_GetActiveLayer(&current);
- if(layerResult==A_Err_NONE&&current){
+ if(layerResult!=A_Err_NONE||current){
   writeLog(log,"active_layer_not_allowed",1);
   fclose(log);report("CNL Private TDB: REFUSED. Active layer detected.");return A_Err_NONE;
  }
@@ -183,6 +223,34 @@ A_Err Run(){
   writeLog(log,"exact_exports_missing",1);
   fclose(log);report("CNL Private TDB: REFUSED. Native exports missing.");return A_Err_NONE;
  }
+ // Static PE-derived 16-byte entry fingerprints, compared to LIVE mapped
+ // code pages. SHA256 above only covers the on-disk file, not host patches.
+ const char* const fp2025[5]={
+  "488b05f9f70900c3cccccccccccccccc",
+  "48895c2408574883ec30488bda488bf9",
+  "48895c240848896c2410488974241848",
+  "4053565741544155415641574881ece0",
+  "4533c0e908000000cccccccccccccccc"
+ };
+ const char* const fp2026[5]={
+  "488b05d9870b00c3cccccccccccccccc",
+  "48895c2408574883ec30488bda488bf9",
+  "405355565741564883ec40418bf9410f",
+  "48895c24204c89442418555657415441",
+  "4533c0e908000000cccccccccccccccc"
+ };
+ const FARPROC entrypoints[5]={get,ctor,create,reg,unreg};
+ const char* const labels[5]={"getter","matchname_ctor","parampath_create",
+                              "register","unregister"};
+ const auto expected=(year==2025)?fp2025:fp2026;
+ for(int i=0;i<5;i++){
+  if(!verifyEntryBytes(entrypoints[i],expected[i],labels[i],log)){
+   writeLog(log,"loaded_private_entrypoint_fingerprint_failed",1);
+   fclose(log);report("CNL Private TDB: REFUSED. Loaded native code differs from pinned binary.");
+   return A_Err_NONE;
+  }
+ }
+ writeLog(log,"loaded_private_code_fingerprints_match",1);
  const auto b=reinterpret_cast<const uint8_t*>(get);
  MEMORY_BASIC_INFORMATION mbi{};
  if(!VirtualQuery(b,&mbi,sizeof(mbi))||mbi.State!=MEM_COMMIT ||
@@ -192,10 +260,30 @@ A_Err Run(){
   fclose(log);report("CNL Private TDB: REFUSED. Getter fingerprint mismatch.");return A_Err_NONE;
  }
  writeLog(log,"exact_host_binary_and_exports_validated",1);
+ // Any previous native attempt in this AEX process disables further attempts.
+ // No amount of re-creating the one-shot file overrides this quarantine.
+ if(InterlockedCompareExchange(&g_native_attempted_once,0,0)!=0){
+  writeLog(log,"one_native_attempt_per_process_exhausted",1);
+  fclose(log);report("CNL Private TDB: REFUSED. Restart AE after the prior private attempt.");
+  return A_Err_NONE;
+ }
  // Do not consume the one-shot ack until all read-only preflight checks pass.
  if(!ackAndConsume(tempDir,log)){
   fclose(log);report("CNL Private TDB: REFUSED. Disposable-test acknowledgement missing.");return A_Err_NONE;
  }
+ // Check the public project state a second time AFTER consuming the
+ // one-shot token, immediately before entering Adobe's private ABI.
+ if(!verifyDisposableProject(s,log)){
+  writeLog(log,"disposable_project_changed_before_private_calls",1);
+  fclose(log);report("CNL Private TDB: REFUSED. Project changed during preflight.");
+  return A_Err_NONE;
+ }
+ if(InterlockedCompareExchange(&g_native_attempted_once,1,0)!=0){
+  writeLog(log,"concurrent_or_repeated_native_attempt_blocked",1);
+  fclose(log);report("CNL Private TDB: REFUSED. Another attempt already started.");
+  return A_Err_NONE;
+ }
+ writeLog(log,"native_abi_entered_one_attempt_per_process",1);
  // No standard Shape Layer or Mask is created here. This registration is
  // strictly a new MatchName to native class Creator factory-acceptance test.
  TDB_StreamFactory* factory=reinterpret_cast<Getter>(get)();
@@ -234,6 +322,10 @@ A_Err Run(){
   removed=reinterpret_cast<NativeUnregister>(unreg)(factory,name);
   writeLog(log,"unregister_result",removed?1:0);
  }
+ // Public host state cannot see private registry remnants, but it can catch
+ // unexpected visible project mutations. The result is NOT rollback proof.
+ writeLog(log,"post_attempt_public_project_unchanged",verifyDisposableProject(s,log)?1:0);
+ writeLog(log,"private_registry_rollback_proven",0);
  std::fprintf(log,"fact\tmatched_existing_Shape_Contents\t0\n");
  std::fprintf(log,"fact\tcreated_Mask_or_Shape_Layer\t0\n");
  std::fprintf(log,"fact\tindependent_Contents_owner_proven\t0\n");

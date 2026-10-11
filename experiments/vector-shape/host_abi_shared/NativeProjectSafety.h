@@ -13,6 +13,7 @@ struct CNL_IsolationCheck {
  A_long render_queue_items=-1;
  A_Boolean dirty=TRUE;
  bool active_non_root=false;
+ bool saved_project=false;
 };
 
 inline CNL_IsolationCheck CNL_CheckDisposableProject(AEGP_SuiteHandler& suites){
@@ -31,6 +32,29 @@ inline CNL_IsolationCheck CNL_CheckDisposableProject(AEGP_SuiteHandler& suites){
   s.reason="project_dirty_state_unavailable";return s;
  }
  if(s.dirty){s.reason="project_dirty";return s;}
+ // A saved (even empty/clean) project is not a disposable scratch host.
+ // SDK 25.6 explicitly documents an empty UTF-16 path for unsaved projects.
+ AEGP_MemHandle project_path=nullptr;
+ if(suites.ProjSuite6()->AEGP_GetProjectPath(project,&project_path)!=A_Err_NONE||
+    !project_path){
+  s.reason="project_path_unavailable";return s;
+ }
+ void* project_path_data=nullptr;
+ const A_Err lock_error=suites.MemorySuite1()->AEGP_LockMemHandle(
+  project_path,&project_path_data);
+ if(lock_error!=A_Err_NONE||!project_path_data){
+  if(lock_error==A_Err_NONE)
+   suites.MemorySuite1()->AEGP_UnlockMemHandle(project_path);
+  suites.MemorySuite1()->AEGP_FreeMemHandle(project_path);
+  s.reason="project_path_lock_failed";return s;
+ }
+ s.saved_project=(*static_cast<const A_UTF16Char*>(project_path_data)!=0);
+ const A_Err unlock_error=suites.MemorySuite1()->AEGP_UnlockMemHandle(project_path);
+ const A_Err free_error=suites.MemorySuite1()->AEGP_FreeMemHandle(project_path);
+ if(unlock_error!=A_Err_NONE||free_error!=A_Err_NONE){
+  s.reason="project_path_cleanup_failed";return s;
+ }
+ if(s.saved_project){s.reason="saved_project_not_disposable";return s;}
  AEGP_ItemH root=nullptr;
  if(suites.ProjSuite6()->AEGP_GetProjectRootFolder(project,&root)!=A_Err_NONE||!root){
   s.reason="project_root_unavailable";return s;

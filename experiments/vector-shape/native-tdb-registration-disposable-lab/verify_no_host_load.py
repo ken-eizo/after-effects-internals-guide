@@ -31,6 +31,12 @@ guards=[
 "project_dirty",
 "non_root_project_items",
 "render_queue_items",
+"project_has_saved_path",
+"loaded_private_code_fingerprints_match",
+"one_native_attempt_per_process_exhausted",
+"native_abi_entered_one_attempt_per_process",
+"post_attempt_public_project_unchanged",
+"private_registry_rollback_proven",
 "creator_invocations",
 "before_private_register_factory_func",
 "before_private_unregister_factory_func",
@@ -46,11 +52,47 @@ assert "creator_invocations" in source
 gate=(root/"labs/host_abi_shared/NativeProjectSafety.h").read_text(encoding="utf8")
 for required in ("AEGP_ProjectIsDirty","AEGP_GetFirstProjItem","AEGP_GetNextProjItem",
                  "AEGP_GetNumRQItems","AEGP_GetActiveItem","project_count_not_one",
-                 "non_root_project_item_found","project_dirty","render_queue_not_empty"):
+                 "non_root_project_item_found","project_dirty","render_queue_not_empty","AEGP_GetProjectPath",
+                 "AEGP_LockMemHandle","AEGP_UnlockMemHandle","AEGP_FreeMemHandle",
+                 "saved_project_not_disposable"):
  assert required in gate,("missing public host safety gate",required)
 assert source.index("if(!verifyDisposableProject(s,log))") < source.index("if(!ackAndConsume(tempDir,log))") < source.index("reinterpret_cast<NativeRegister>(reg)")
 assert source.count("reinterpret_cast<NativeRegister>(reg)") == 1
 assert source.count("reinterpret_cast<NativeUnregister>(unreg)") == 1
+assert 'if(layerResult!=A_Err_NONE||current)' in source
+assert source.count('InterlockedCompareExchange(&g_native_attempted_once,1,0)') == 1
+assert source.index('loaded_private_code_fingerprints_match') < source.index('if(!ackAndConsume(tempDir,log))')
+assert source.index('if(!verifyDisposableProject(s,log))',source.index('if(!ackAndConsume(tempDir,log))')) < source.index('reinterpret_cast<NativeRegister>(reg)')
+assert 'writeLog(log,"private_registry_rollback_proven",0);' in source
+
+# Assert hard-coded live-code fingerprint gates against actual PINNED PE entry
+# bytes in both versions. This is fully offline: NEVER load TDB.dll into AE.
+native_sym={
+ "getter":"?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ",
+ "ctor":"??0TDB_MatchName@@QEAA@PEBD_N@Z",
+ "create":"?Create@TDB_ParamPathStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+ "reg":"?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+ "unreg":"?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+}
+fingerprint_evidence={}
+for year,file in {
+ 2025:Path(r"C:\Program Files\Adobe\Adobe After Effects 2025\Support Files\TDB.dll"),
+ 2026:Path(r"D:\Adobe\Adobe After Effects 2026\Support Files\TDB.dll")
+}.items():
+ data=file.read_bytes()
+ digest=hashlib.sha256(data).hexdigest()
+ assert digest in source
+ native=pefile.PE(data=data)
+ symbols={e.name.decode(errors="replace"):e.address for e in native.DIRECTORY_ENTRY_EXPORT.symbols if e.name}
+ native_fingerprints={}
+ for label,symbol in native_sym.items():
+  rva=symbols[symbol]
+  native_fingerprints[label]=data[native.get_offset_from_rva(rva):][:16].hex()
+ m=re.search(r'const char\* const fp%d\[5\]=\{(.*?)\};'%year,source,re.S)
+ assert m,(year,"fingerprints absent")
+ hardcoded=re.findall(r'"([0-9a-f]{32})"',m.group(1))
+ assert hardcoded==list(native_fingerprints.values()),(year,"native live fingerprint sources differ")
+ fingerprint_evidence[str(year)]={"sha256":digest,"bytes":native_fingerprints}
 # Both call expressions are guarded inside Run() and no explicit/private API calls
 # appear in EntryPointFunc (the AEGP initialization path).
 entry=source.split('A_Err EntryPointFunc(')[1]
@@ -77,6 +119,10 @@ receipt={
 "one_shot_manual_ack_required":True,
 "pin_exact_loaded_DLL_sha256":True,
 "new_empty_public_project_gate":True,
+"unsaved_project_path_gate":True,
+"native_memory_entrypoint_fingerprint_static_verification":fingerprint_evidence,
+"one_native_attempt_per_AEX_process":True,
+"rollback_certified":False,
 "render_queue_must_be_empty":True,
 "exact_MSVC_creator_signature":"TDB_StreamBase*(TDB_MatchName const&,TDB_StreamFactory*,bool,unsigned,bool)",
 "callback_invocation_count_logged":True,

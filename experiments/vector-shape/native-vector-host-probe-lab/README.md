@@ -35,3 +35,7 @@ To test v2, the USER must replace the previously installed safe AEX with the new
 The previous v1 was successfully tested by the user on AE2026 (2026-10-12 04:12 JST; archive=373 bytes, cubic=4, native getter nonnull); this v2 project gate has NOT YET been tested inside AE.
 
 This project-status predicate alone is NOT a guarantee that native private API mutation is safe.
+
+## v3 shared empty-project gate (2026-10-12)
+
+The rebuilt read-only AEX now also rejects a saved project, even if its contents and dirty flag are empty/clean. This uses public AEGP_GetProjectPath plus MemorySuite1 lock/unlock/free; errors block the gate. This change does NOT involve private registration. The existing v1 user-verified getter result still stands, but this v3 gate has **NOT** been tested inside After Effects. The v3 AEX was compiled and PE-verified offline only.

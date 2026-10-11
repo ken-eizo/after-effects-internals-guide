@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-SHAPE-033",
+  "title": "Read-only unsaved-project gate and five private TDB mapped-entrypoint fingerprints",
+  "status": "pass-static-compiled-no-new-live-AE-test",
+  "date": "2026-10-12",
+  "evidence": "E2-B compiled AEX plus pinned installed native PE source; no private ABI executed",
+  "results": {
+    "reject_saved_clean_project": true,
+    "ensure_project_path_handle_cleanup": true,
+    "fail_closed_on_selected_layer_query_error": true,
+    "five_live_entrypoint_checks_against_both_pinned_versions": true,
+    "one_attempt_per_loaded_plugin_instance": true,
+    "post_attempt_public_snapshot": true,
+    "private_registry_rollback_proven": false,
+    "private_registry_called": false,
+    "independent_native_vector_owner_proven": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-035-private-tdb-runtime-fingerprint-and-unsaved-project-gates.md",
+    "experiments/vector-shape/EXP-SHAPE-033-runtime-private-tdb-entry-fingerprint-gates.md",
+    "experiments/vector-shape/native-tdb-registration-disposable-lab/verify_no_host_load.py",
+    "experiments/vector-shape/host_abi_shared/NativeProjectSafety.h",
+    "datasets/ae-private-tdb-disposable-v3-build-receipt-20261012.json"
+  ]
+}
