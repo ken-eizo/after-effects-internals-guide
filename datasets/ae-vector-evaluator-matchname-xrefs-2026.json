@@ -1,0 +1,478 @@
+{
+  "evidence": "E2-L direct RIP refs to static MatchName globals, not initialized values",
+  "version": "2026",
+  "references": {
+    "0x16a0240": [
+      {
+        "instruction_rva": "0x1a88a",
+        "op": "lea rcx, [rip + 0x16859af]"
+      },
+      {
+        "instruction_rva": "0x721a4a",
+        "op": "lea rdx, [rip + 0xf7e7ef]"
+      },
+      {
+        "instruction_rva": "0x725955",
+        "op": "lea rdx, [rip + 0xf7a8e4]"
+      },
+      {
+        "instruction_rva": "0x7397a4",
+        "op": "lea rdx, [rip + 0xf66a95]"
+      }
+    ],
+    "0x16a0320": [
+      {
+        "instruction_rva": "0x1a90a",
+        "op": "lea rcx, [rip + 0x1685a0f]"
+      },
+      {
+        "instruction_rva": "0x262c4d",
+        "op": "lea r8, [rip + 0x143d6cc]"
+      },
+      {
+        "instruction_rva": "0x721b72",
+        "op": "lea rdx, [rip + 0xf7e7a7]"
+      },
+      {
+        "instruction_rva": "0x725975",
+        "op": "lea rdx, [rip + 0xf7a9a4]"
+      },
+      {
+        "instruction_rva": "0x7393ee",
+        "op": "lea rdx, [rip + 0xf66f2b]"
+      }
+    ],
+    "0x16a0350": [
+      {
+        "instruction_rva": "0x1a9aa",
+        "op": "lea rcx, [rip + 0x168599f]"
+      },
+      {
+        "instruction_rva": "0x262fa7",
+        "op": "lea r8, [rip + 0x143d3a2]"
+      },
+      {
+        "instruction_rva": "0x721c9a",
+        "op": "lea rdx, [rip + 0xf7e6af]"
+      },
+      {
+        "instruction_rva": "0x725995",
+        "op": "lea rdx, [rip + 0xf7a9b4]"
+      },
+      {
+        "instruction_rva": "0x726ec0",
+        "op": "lea rdx, [rip + 0xf79489]"
+      },
+      {
+        "instruction_rva": "0x726eea",
+        "op": "lea rdx, [rip + 0xf7945f]"
+      },
+      {
+        "instruction_rva": "0x73958c",
+        "op": "lea rdx, [rip + 0xf66dbd]"
+      }
+    ],
+    "0x16a03e0": [
+      {
+        "instruction_rva": "0x1aa6a",
+        "op": "lea rcx, [rip + 0x168596f]"
+      },
+      {
+        "instruction_rva": "0x262fe5",
+        "op": "lea r8, [rip + 0x143d3f4]"
+      },
+      {
+        "instruction_rva": "0x721d2e",
+        "op": "lea rdx, [rip + 0xf7e6ab]"
+      },
+      {
+        "instruction_rva": "0x7259d5",
+        "op": "lea rdx, [rip + 0xf7aa04]"
+      },
+      {
+        "instruction_rva": "0x726ed6",
+        "op": "lea rdx, [rip + 0xf79503]"
+      },
+      {
+        "instruction_rva": "0x726f10",
+        "op": "lea rdx, [rip + 0xf794c9]"
+      },
+      {
+        "instruction_rva": "0x7395ba",
+        "op": "lea rdx, [rip + 0xf66e1f]"
+      }
+    ],
+    "0x16a06d0": [
+      {
+        "instruction_rva": "0x1aaca",
+        "op": "lea rcx, [rip + 0x1685bff]"
+      },
+      {
+        "instruction_rva": "0x264576",
+        "op": "lea r8, [rip + 0x143c153]"
+      },
+      {
+        "instruction_rva": "0x70c075",
+        "op": "lea rdx, [rip + 0xf94654]"
+      },
+      {
+        "instruction_rva": "0x7213bd",
+        "op": "lea rdx, [rip + 0xf7f30c]"
+      },
+      {
+        "instruction_rva": "0x725a95",
+        "op": "lea rdx, [rip + 0xf7ac34]"
+      },
+      {
+        "instruction_rva": "0x738674",
+        "op": "lea rdx, [rip + 0xf68055]"
+      }
+    ],
+    "0x16a0630": [
+      {
+        "instruction_rva": "0x1abaa",
+        "op": "lea rcx, [rip + 0x1685a7f]"
+      },
+      {
+        "instruction_rva": "0x7210e3",
+        "op": "lea rdx, [rip + 0xf7f546]"
+      },
+      {
+        "instruction_rva": "0x725a15",
+        "op": "lea rdx, [rip + 0xf7ac14]"
+      },
+      {
+        "instruction_rva": "0x73855d",
+        "op": "lea rdx, [rip + 0xf680cc]"
+      }
+    ],
+    "0x16a0270": [
+      {
+        "instruction_rva": "0x1abca",
+        "op": "lea rcx, [rip + 0x168569f]"
+      },
+      {
+        "instruction_rva": "0x721ade",
+        "op": "lea rdx, [rip + 0xf7e78b]"
+      },
+      {
+        "instruction_rva": "0x725915",
+        "op": "lea rdx, [rip + 0xf7a954]"
+      },
+      {
+        "instruction_rva": "0x73993b",
+        "op": "lea rdx, [rip + 0xf6692e]"
+      }
+    ],
+    "0x16a06f0": [
+      {
+        "instruction_rva": "0x1ad2a",
+        "op": "lea rcx, [rip + 0x16859bf]"
+      },
+      {
+        "instruction_rva": "0x7211b0",
+        "op": "lea rdx, [rip + 0xf7f539]"
+      },
+      {
+        "instruction_rva": "0x725a35",
+        "op": "lea rdx, [rip + 0xf7acb4]"
+      },
+      {
+        "instruction_rva": "0x7386cd",
+        "op": "lea rdx, [rip + 0xf6801c]"
+      }
+    ],
+    "0x16a0200": [
+      {
+        "instruction_rva": "0x1ad4a",
+        "op": "lea rcx, [rip + 0x16854af]"
+      },
+      {
+        "instruction_rva": "0x7219b6",
+        "op": "lea rdx, [rip + 0xf7e843]"
+      },
+      {
+        "instruction_rva": "0x725935",
+        "op": "lea rdx, [rip + 0xf7a8c4]"
+      },
+      {
+        "instruction_rva": "0x739721",
+        "op": "lea rdx, [rip + 0xf66ad8]"
+      }
+    ],
+    "0x16a0710": [
+      {
+        "instruction_rva": "0x1ae2a",
+        "op": "lea rcx, [rip + 0x16858df]"
+      },
+      {
+        "instruction_rva": "0x70bd55",
+        "op": "lea rdx, [rip + 0xf949b4]"
+      },
+      {
+        "instruction_rva": "0x72125f",
+        "op": "lea rdx, [rip + 0xf7f4aa]"
+      },
+      {
+        "instruction_rva": "0x725a55",
+        "op": "lea rdx, [rip + 0xf7acb4]"
+      },
+      {
+        "instruction_rva": "0x726f8a",
+        "op": "lea rdx, [rip + 0xf7977f]"
+      },
+      {
+        "instruction_rva": "0x7388c7",
+        "op": "lea rdx, [rip + 0xf67e42]"
+      }
+    ],
+    "0x16a0690": [
+      {
+        "instruction_rva": "0x1af4a",
+        "op": "lea rcx, [rip + 0x168573f]"
+      },
+      {
+        "instruction_rva": "0x72130e",
+        "op": "lea rdx, [rip + 0xf7f37b]"
+      },
+      {
+        "instruction_rva": "0x725a75",
+        "op": "lea rdx, [rip + 0xf7ac14]"
+      },
+      {
+        "instruction_rva": "0x738615",
+        "op": "lea rdx, [rip + 0xf68074]"
+      }
+    ],
+    "0x16a07c0": [
+      {
+        "instruction_rva": "0x1b00a",
+        "op": "lea rcx, [rip + 0x16857af]"
+      },
+      {
+        "instruction_rva": "0x72148a",
+        "op": "lea rdx, [rip + 0xf7f32f]"
+      },
+      {
+        "instruction_rva": "0x725ab5",
+        "op": "lea rdx, [rip + 0xf7ad04]"
+      },
+      {
+        "instruction_rva": "0x738b08",
+        "op": "lea rdx, [rip + 0xf67cb1]"
+      }
+    ],
+    "0x16a0890": [
+      {
+        "instruction_rva": "0x1b06a",
+        "op": "lea rcx, [rip + 0x168581f]"
+      },
+      {
+        "instruction_rva": "0x7216d3",
+        "op": "lea rdx, [rip + 0xf7f1b6]"
+      },
+      {
+        "instruction_rva": "0x725af5",
+        "op": "lea rdx, [rip + 0xf7ad94]"
+      },
+      {
+        "instruction_rva": "0x738c9f",
+        "op": "lea rdx, [rip + 0xf67bea]"
+      }
+    ],
+    "0x16a01e0": [
+      {
+        "instruction_rva": "0x1b1ca",
+        "op": "lea rcx, [rip + 0x168500f]"
+      },
+      {
+        "instruction_rva": "0x2646d5",
+        "op": "lea r8, [rip + 0x143bb04]"
+      },
+      {
+        "instruction_rva": "0x37786c",
+        "op": "lea rdx, [rip + 0x132896d]"
+      },
+      {
+        "instruction_rva": "0x378671",
+        "op": "lea rdx, [rip + 0x1327b68]"
+      },
+      {
+        "instruction_rva": "0x3786da",
+        "op": "lea rdx, [rip + 0x1327aff]"
+      },
+      {
+        "instruction_rva": "0x37cf4a",
+        "op": "lea rdx, [rip + 0x132328f]"
+      },
+      {
+        "instruction_rva": "0x721922",
+        "op": "lea rdx, [rip + 0xf7e8b7]"
+      },
+      {
+        "instruction_rva": "0x7258f5",
+        "op": "lea rdx, [rip + 0xf7a8e4]"
+      },
+      {
+        "instruction_rva": "0x739669",
+        "op": "lea rdx, [rip + 0xf66b70]"
+      }
+    ],
+    "0x16a03f0": [
+      {
+        "instruction_rva": "0x1b34a",
+        "op": "lea rcx, [rip + 0x168509f]"
+      },
+      {
+        "instruction_rva": "0x264b49",
+        "op": "lea r8, [rip + 0x143b8a0]"
+      },
+      {
+        "instruction_rva": "0x721c06",
+        "op": "lea rdx, [rip + 0xf7e7e3]"
+      },
+      {
+        "instruction_rva": "0x7259b5",
+        "op": "lea rdx, [rip + 0xf7aa34]"
+      },
+      {
+        "instruction_rva": "0x739341",
+        "op": "lea rdx, [rip + 0xf670a8]"
+      }
+    ],
+    "0x16a05e0": [
+      {
+        "instruction_rva": "0x1b64a",
+        "op": "lea rcx, [rip + 0x1684f8f]"
+      },
+      {
+        "instruction_rva": "0x721016",
+        "op": "lea rdx, [rip + 0xf7f5c3]"
+      },
+      {
+        "instruction_rva": "0x7259f5",
+        "op": "lea rdx, [rip + 0xf7abe4]"
+      },
+      {
+        "instruction_rva": "0x738449",
+        "op": "lea rdx, [rip + 0xf68190]"
+      }
+    ],
+    "0x16a08b0": [
+      {
+        "instruction_rva": "0x1b70a",
+        "op": "lea rcx, [rip + 0x168519f]"
+      },
+      {
+        "instruction_rva": "0x7217a0",
+        "op": "lea rdx, [rip + 0xf7f109]"
+      },
+      {
+        "instruction_rva": "0x725b15",
+        "op": "lea rdx, [rip + 0xf7ad94]"
+      },
+      {
+        "instruction_rva": "0x738d29",
+        "op": "lea rdx, [rip + 0xf67b80]"
+      }
+    ],
+    "0x169fdf0": [
+      {
+        "instruction_rva": "0x1b76a",
+        "op": "lea rcx, [rip + 0x168467f]"
+      },
+      {
+        "instruction_rva": "0x262979",
+        "op": "lea r8, [rip + 0x143d470]"
+      },
+      {
+        "instruction_rva": "0x26be3a",
+        "op": "lea r8, [rip + 0x1433faf]"
+      },
+      {
+        "instruction_rva": "0x57e8a7",
+        "op": "lea r8, [rip + 0x1121542]"
+      },
+      {
+        "instruction_rva": "0x5c65df",
+        "op": "lea r8, [rip + 0x10d980a]"
+      },
+      {
+        "instruction_rva": "0x70b6c2",
+        "op": "lea rdx, [rip + 0xf94727]"
+      },
+      {
+        "instruction_rva": "0x70bb0e",
+        "op": "lea rdx, [rip + 0xf942db]"
+      },
+      {
+        "instruction_rva": "0x72188e",
+        "op": "lea rdx, [rip + 0xf7e55b]"
+      },
+      {
+        "instruction_rva": "0x723c89",
+        "op": "lea rdx, [rip + 0xf7c160]"
+      },
+      {
+        "instruction_rva": "0x7258d8",
+        "op": "lea rdx, [rip + 0xf7a511]"
+      },
+      {
+        "instruction_rva": "0x726a5f",
+        "op": "lea rdx, [rip + 0xf7938a]"
+      },
+      {
+        "instruction_rva": "0x726f50",
+        "op": "lea rdx, [rip + 0xf78e99]"
+      },
+      {
+        "instruction_rva": "0x727c63",
+        "op": "lea rdx, [rip + 0xf78186]"
+      },
+      {
+        "instruction_rva": "0x79dc25",
+        "op": "lea rdx, [rip + 0xf021c4]"
+      },
+      {
+        "instruction_rva": "0x79dcc8",
+        "op": "lea rdx, [rip + 0xf02121]"
+      }
+    ],
+    "0x16a08e0": [
+      {
+        "instruction_rva": "0x1b7ca",
+        "op": "lea rcx, [rip + 0x168510f]"
+      },
+      {
+        "instruction_rva": "0x721539",
+        "op": "lea rdx, [rip + 0xf7f3a0]"
+      },
+      {
+        "instruction_rva": "0x725b35",
+        "op": "lea rdx, [rip + 0xf7ada4]"
+      },
+      {
+        "instruction_rva": "0x738b8b",
+        "op": "lea rdx, [rip + 0xf67d4e]"
+      }
+    ],
+    "0x16a0800": [
+      {
+        "instruction_rva": "0x1b88a",
+        "op": "lea rcx, [rip + 0x1684f6f]"
+      },
+      {
+        "instruction_rva": "0x721606",
+        "op": "lea rdx, [rip + 0xf7f1f3]"
+      },
+      {
+        "instruction_rva": "0x725ad5",
+        "op": "lea rdx, [rip + 0xf7ad24]"
+      },
+      {
+        "instruction_rva": "0x738c43",
+        "op": "lea rdx, [rip + 0xf67bb6]"
+      }
+    ]
+  }
+}

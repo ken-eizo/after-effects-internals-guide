@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-SHAPE-013",
+  "title": "TDB eager creator and canonical stream registration",
+  "status": "observed-static-only",
+  "evidence": [
+    "E2-L"
+  ],
+  "question": "Is the registered C++ creator invoked synchronously during TDB registration, with canonical/separated-dimension setup?",
+  "methods": [
+    "Compare direct TDB callsites in pinned AE2025 and AE2026 DLLs",
+    "Determine duplicate guard, mutex ownership, immediate CreateStream and canonical call chains; do not call private code"
+  ],
+  "observed_result": "In both versions, RegisterFactoryFunc invokes CreateStream immediately; conditional RegisterSeparatedDimensions subsequently uses RegisterCanonicalInstance. No external type registered.",
+  "limits": [
+    "Host mutation not tested",
+    "Callback ABI and valid virtual interface not reconstructed"
+  ],
+  "sources": [
+    "datasets/ae-tdb-factory-lifetime-canonical-controlflow-2025-2026.json"
+  ]
+}

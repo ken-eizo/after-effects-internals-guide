@@ -72,6 +72,10 @@ Full executable-section static scans (4.49 million decoded instructions in AE 20
 
 Raw E2-L artifact: `datasets/ae-vector-registerstreams-xrefs-2025-2026.json`. The first attempt without Capstone SKIPDATA prematurely stopped and was replaced; instruction decoding of an executable section is not a perfect function-boundary reconstruction.
 
+## Evidence update: two separate native shape registries (2026-10-11)
+
+Static code-level analysis has now located **both** an eager-creating `TDB_StreamFactory` type-creator registry and a separate `BEE.dll` MatchName->polymorphic evaluator registry with 20 exact builtin names and RTTI classes in both 2025/2026. Native shape evaluation, including `StreamBasedFilter::DoFilter`, uses the second registry for dispatch. This is evidence of Adobe-internal extensibility primitives, **not** a third-party ABI nor effect-owned native Contents or editor integration. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md) and F-VECTOR-013/014.
+
 ## Private integration path: hypotheses with required proof
 
 1. **Factory ownership / schema** — locate the host bootstrap that creates the factory, installs built-in type descriptors, owns/refcounts the resulting objects, and controls allowed match names. Is this a closed built-in registry? A callable export does not make an externally usable extension point. Alternative: registration routines are only operation-handler tables.

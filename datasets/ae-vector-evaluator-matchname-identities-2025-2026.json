@@ -1,0 +1,295 @@
+{
+  "evidence": "E2-L native static literal linkage; names recovered at constructor sites, never runtime private calls",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "records": [
+        {
+          "registration_call_rva": "0x6fd508",
+          "matchname_global_rva": "0x15efc10",
+          "matchname_init_rva": "0x1bf1a",
+          "ascii_constant_rva": "0x1002b00",
+          "name": "ADBE Vector Filter - Trim"
+        },
+        {
+          "registration_call_rva": "0x6fd5d5",
+          "matchname_global_rva": "0x15efc60",
+          "matchname_init_rva": "0x1b47a",
+          "ascii_constant_rva": "0x1002b80",
+          "name": "ADBE Vector Filter - Offset"
+        },
+        {
+          "registration_call_rva": "0x6fd6a2",
+          "matchname_global_rva": "0x15efd20",
+          "matchname_init_rva": "0x1b5fa",
+          "ascii_constant_rva": "0x1002cf8",
+          "name": "ADBE Vector Filter - PB"
+        },
+        {
+          "registration_call_rva": "0x6fd751",
+          "matchname_global_rva": "0x15efd40",
+          "matchname_init_rva": "0x1b6fa",
+          "ascii_constant_rva": "0x1002d30",
+          "name": "ADBE Vector Filter - Repeater"
+        },
+        {
+          "registration_call_rva": "0x6fd800",
+          "matchname_global_rva": "0x15efcc0",
+          "matchname_init_rva": "0x1b81a",
+          "ascii_constant_rva": "0x1002c40",
+          "name": "ADBE Vector Filter - Reveal"
+        },
+        {
+          "registration_call_rva": "0x6fd8af",
+          "matchname_global_rva": "0x15efd00",
+          "matchname_init_rva": "0x1b39a",
+          "ascii_constant_rva": "0x1002cc0",
+          "name": "ADBE Vector Filter - Merge"
+        },
+        {
+          "registration_call_rva": "0x6fd97c",
+          "matchname_global_rva": "0x15efdf0",
+          "matchname_init_rva": "0x1b8da",
+          "ascii_constant_rva": "0x1002e90",
+          "name": "ADBE Vector Filter - Roughen"
+        },
+        {
+          "registration_call_rva": "0x6fda2b",
+          "matchname_global_rva": "0x15eff10",
+          "matchname_init_rva": "0x1c09a",
+          "ascii_constant_rva": "0x10030a8",
+          "name": "ADBE Vector Filter - Wiggler"
+        },
+        {
+          "registration_call_rva": "0x6fdaf8",
+          "matchname_global_rva": "0x15efe30",
+          "matchname_init_rva": "0x1c15a",
+          "ascii_constant_rva": "0x1002f10",
+          "name": "ADBE Vector Filter - Zigzag"
+        },
+        {
+          "registration_call_rva": "0x6fdbc5",
+          "matchname_global_rva": "0x15efec0",
+          "matchname_init_rva": "0x1b93a",
+          "ascii_constant_rva": "0x1003018",
+          "name": "ADBE Vector Filter - RC"
+        },
+        {
+          "registration_call_rva": "0x6fdc92",
+          "matchname_global_rva": "0x15efee0",
+          "matchname_init_rva": "0x1bfda",
+          "ascii_constant_rva": "0x1003050",
+          "name": "ADBE Vector Filter - Twist"
+        },
+        {
+          "registration_call_rva": "0x6fdd95",
+          "matchname_global_rva": "0x15ef420",
+          "matchname_init_rva": "0x1c03a",
+          "ascii_constant_rva": "0x1001c80",
+          "name": "ADBE Vector Group"
+        },
+        {
+          "registration_call_rva": "0x6fde29",
+          "matchname_global_rva": "0x15ef810",
+          "matchname_init_rva": "0x1ba9a",
+          "ascii_constant_rva": "0x1002358",
+          "name": "ADBE Vector Shape - Group"
+        },
+        {
+          "registration_call_rva": "0x6fdebd",
+          "matchname_global_rva": "0x15ef830",
+          "matchname_init_rva": "0x1b61a",
+          "ascii_constant_rva": "0x1002390",
+          "name": "ADBE Vector Shape - Rect"
+        },
+        {
+          "registration_call_rva": "0x6fdf51",
+          "matchname_global_rva": "0x15ef870",
+          "matchname_init_rva": "0x1b15a",
+          "ascii_constant_rva": "0x1002408",
+          "name": "ADBE Vector Shape - Ellipse"
+        },
+        {
+          "registration_call_rva": "0x6fdfe5",
+          "matchname_global_rva": "0x15ef8a0",
+          "matchname_init_rva": "0x1b49a",
+          "ascii_constant_rva": "0x1002468",
+          "name": "ADBE Vector Shape - Star"
+        },
+        {
+          "registration_call_rva": "0x6fe079",
+          "matchname_global_rva": "0x15ef950",
+          "matchname_init_rva": "0x1b1da",
+          "ascii_constant_rva": "0x10025b0",
+          "name": "ADBE Vector Graphic - Fill"
+        },
+        {
+          "registration_call_rva": "0x6fe10d",
+          "matchname_global_rva": "0x15efa20",
+          "matchname_init_rva": "0x1bc1a",
+          "ascii_constant_rva": "0x1002728",
+          "name": "ADBE Vector Graphic - Stroke"
+        },
+        {
+          "registration_call_rva": "0x6fe1a1",
+          "matchname_global_rva": "0x15ef980",
+          "matchname_init_rva": "0x1b27a",
+          "ascii_constant_rva": "0x1002608",
+          "name": "ADBE Vector Graphic - G-Fill"
+        },
+        {
+          "registration_call_rva": "0x6fe235",
+          "matchname_global_rva": "0x15efa10",
+          "matchname_init_rva": "0x1b33a",
+          "ascii_constant_rva": "0x1002708",
+          "name": "ADBE Vector Graphic - G-Stroke"
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "records": [
+        {
+          "registration_call_rva": "0x72101d",
+          "matchname_global_rva": "0x16a05e0",
+          "matchname_init_rva": "0x1b64a",
+          "ascii_constant_rva": "0x1062f30",
+          "name": "ADBE Vector Filter - Trim"
+        },
+        {
+          "registration_call_rva": "0x7210ea",
+          "matchname_global_rva": "0x16a0630",
+          "matchname_init_rva": "0x1abaa",
+          "ascii_constant_rva": "0x1062fb0",
+          "name": "ADBE Vector Filter - Offset"
+        },
+        {
+          "registration_call_rva": "0x7211b7",
+          "matchname_global_rva": "0x16a06f0",
+          "matchname_init_rva": "0x1ad2a",
+          "ascii_constant_rva": "0x1063128",
+          "name": "ADBE Vector Filter - PB"
+        },
+        {
+          "registration_call_rva": "0x721266",
+          "matchname_global_rva": "0x16a0710",
+          "matchname_init_rva": "0x1ae2a",
+          "ascii_constant_rva": "0x1063160",
+          "name": "ADBE Vector Filter - Repeater"
+        },
+        {
+          "registration_call_rva": "0x721315",
+          "matchname_global_rva": "0x16a0690",
+          "matchname_init_rva": "0x1af4a",
+          "ascii_constant_rva": "0x1063070",
+          "name": "ADBE Vector Filter - Reveal"
+        },
+        {
+          "registration_call_rva": "0x7213c4",
+          "matchname_global_rva": "0x16a06d0",
+          "matchname_init_rva": "0x1aaca",
+          "ascii_constant_rva": "0x10630f0",
+          "name": "ADBE Vector Filter - Merge"
+        },
+        {
+          "registration_call_rva": "0x721491",
+          "matchname_global_rva": "0x16a07c0",
+          "matchname_init_rva": "0x1b00a",
+          "ascii_constant_rva": "0x10632c0",
+          "name": "ADBE Vector Filter - Roughen"
+        },
+        {
+          "registration_call_rva": "0x721540",
+          "matchname_global_rva": "0x16a08e0",
+          "matchname_init_rva": "0x1b7ca",
+          "ascii_constant_rva": "0x10634d8",
+          "name": "ADBE Vector Filter - Wiggler"
+        },
+        {
+          "registration_call_rva": "0x72160d",
+          "matchname_global_rva": "0x16a0800",
+          "matchname_init_rva": "0x1b88a",
+          "ascii_constant_rva": "0x1063340",
+          "name": "ADBE Vector Filter - Zigzag"
+        },
+        {
+          "registration_call_rva": "0x7216da",
+          "matchname_global_rva": "0x16a0890",
+          "matchname_init_rva": "0x1b06a",
+          "ascii_constant_rva": "0x1063448",
+          "name": "ADBE Vector Filter - RC"
+        },
+        {
+          "registration_call_rva": "0x7217a7",
+          "matchname_global_rva": "0x16a08b0",
+          "matchname_init_rva": "0x1b70a",
+          "ascii_constant_rva": "0x1063480",
+          "name": "ADBE Vector Filter - Twist"
+        },
+        {
+          "registration_call_rva": "0x721895",
+          "matchname_global_rva": "0x169fdf0",
+          "matchname_init_rva": "0x1b76a",
+          "ascii_constant_rva": "0x10635b8",
+          "name": "ADBE Vector Group"
+        },
+        {
+          "registration_call_rva": "0x721929",
+          "matchname_global_rva": "0x16a01e0",
+          "matchname_init_rva": "0x1b1ca",
+          "ascii_constant_rva": "0x1063c90",
+          "name": "ADBE Vector Shape - Group"
+        },
+        {
+          "registration_call_rva": "0x7219bd",
+          "matchname_global_rva": "0x16a0200",
+          "matchname_init_rva": "0x1ad4a",
+          "ascii_constant_rva": "0x1063cc8",
+          "name": "ADBE Vector Shape - Rect"
+        },
+        {
+          "registration_call_rva": "0x721a51",
+          "matchname_global_rva": "0x16a0240",
+          "matchname_init_rva": "0x1a88a",
+          "ascii_constant_rva": "0x1063d40",
+          "name": "ADBE Vector Shape - Ellipse"
+        },
+        {
+          "registration_call_rva": "0x721ae5",
+          "matchname_global_rva": "0x16a0270",
+          "matchname_init_rva": "0x1abca",
+          "ascii_constant_rva": "0x1063da0",
+          "name": "ADBE Vector Shape - Star"
+        },
+        {
+          "registration_call_rva": "0x721b79",
+          "matchname_global_rva": "0x16a0320",
+          "matchname_init_rva": "0x1a90a",
+          "ascii_constant_rva": "0x1063ee8",
+          "name": "ADBE Vector Graphic - Fill"
+        },
+        {
+          "registration_call_rva": "0x721c0d",
+          "matchname_global_rva": "0x16a03f0",
+          "matchname_init_rva": "0x1b34a",
+          "ascii_constant_rva": "0x1062b58",
+          "name": "ADBE Vector Graphic - Stroke"
+        },
+        {
+          "registration_call_rva": "0x721ca1",
+          "matchname_global_rva": "0x16a0350",
+          "matchname_init_rva": "0x1a9aa",
+          "ascii_constant_rva": "0x1063f40",
+          "name": "ADBE Vector Graphic - G-Fill"
+        },
+        {
+          "registration_call_rva": "0x721d35",
+          "matchname_global_rva": "0x16a03e0",
+          "matchname_init_rva": "0x1aa6a",
+          "ascii_constant_rva": "0x1062b38",
+          "name": "ADBE Vector Graphic - G-Stroke"
+        }
+      ]
+    }
+  }
+}

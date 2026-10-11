@@ -70,3 +70,14 @@ The major new nonpublic finding is the host-internal TDB stream registration mac
 v3 **was installed and executed in AE2026**. The experimental no-argument private TDB getter returned a non-null pointer with all four guard statuses true. Its pointer was **never dereferenced** and no private registration/mutation method was called. The separate unknown name CanAdd test accepted unregistered `ADBE Vector Shape - ...`, `Graphic - ...`, and `Filter - ...` names in native Shape Contents, not elsewhere; **CanAdd is not Create**. All 359 public unique stream IDs returned zero on both sentinel-initialized queries with error code zero (cause unresolved). Original TSVs, hashes, and reproducible observations are in AEIG `experiments/vector-shape/EXP-SHAPE-009-010-v3-host-confirmation.md`.
 
 The offline internal type registration study separately established native vector `Create` function references and TDB `Register` CALLs for actual Adobe implementations in both 2025 and 2026. This does NOT yet create any CompNodeAE-owned native vector tree or effect-owned geometry result. The active installed binary and Release build retain SHA-256 `6a20aaa59100a68aaa5e8aa4af126756a9dd8dd6cf50951dce8cf1bf6ec6dbf1`; no replacement required for these completed v3 results.
+
+## 2026-10-11 second native evaluator registry forensic breakthrough
+
+Offline AE2025/AE2026 binary comparisons prove that built-in native vector kinds are dispatched through **two separate registries**, neither exposed as a supported Effect SDK extension:
+
+- **TDB StreamFactory**: matchname-to-creator registration. `RegisterFactoryFunc` eagerly invokes `CreateStream` and may set up canonical/separated dimensions while the host registration is in progress. Creator stubs and unknown-object pointers are NOT safe to test.
+- **BEE evaluator registry**: distinct MatchName-to-polymorphic-operator mapping; 20 native names and concrete `BEE_VectorStream::*Operator` RTTI classes in both versions. Both normal `PopulateVectorArt` and `BEE_VectorArt::StreamBasedFilter::DoFilter` use its lookup and virtual evaluation slot, with distinct mode arguments. The registry's initialization, duplicate detection and destruction are accounted for in the static evidence.
+
+Research source scripts live under `tools/` and are snapshotted source-only into AEIG `experiments/vector-shape/probe-src/tools`. The new AEIG page is `docs/vector-shape-system/native-vector-evaluator-registry.md`. Findings `F-VECTOR-013` and `F-VECTOR-014`, Hypothesis `H-SHAPE-006`, and experiments `EXP-SHAPE-013/014` contain reproducible data.
+
+**No new AEX was deployed or changed**. The active v3 `ShapeLayerAE.aex` remains unchanged. No private registration, host memory patching, or native Shape-layer/project mutation was performed. Built-in type registration is not evidence that CompNodeAE can already emit native host-owned vector geometry.

@@ -36,6 +36,10 @@ The AE2026 host-executed ShapeLayerAE traversal is archived in `experiments/vect
 
 AE2025/AE2026 `.pdata`-bounded direct CALL analysis confirmed `BEE_VectorLayer::GetVectorArt` first constructs a `BEE_VectorArt::Group` plus `TDB_StreamID/StreamIDPath`, calls `BEE_VectorStream::PopulateVectorArt`, then queries `BEE_VectorArt::GetBounds`. The return type is `IntrusivePtr<BEE_VectorArt::Group>`, distinct from an image world and distinct from the `RG_RenderNode` returned by `Rasterize2DGraph`. This **does not** provide a documented Effect SDK vector output; see [Independent Native Vector Output](native-vector-output-ownership.md) and `F-VECTOR-012`.
 
+## Second evaluator registration plane (2026-10-11)
+
+The `BEE_VectorStream::PopulateVectorArt` implementation delegates to a private recursive stream tree traversal, then a MatchName-keyed global **BEE evaluator registry**. `BEE_VectorArt::StreamBasedFilter::DoFilter` independently uses that same registry, dispatching to registered operator object vtable +0x18 in a distinct mode. Both installed AE2025 and AE2026 binaries register exactly 20 concrete operators, with individual name/RTTI pairings recovered. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md). Its existence does not establish an external Effect SDK vector output channel.
+
 ## Important boundaries
 `BEE_VectorArt::OriginInfo` stores a `TDB_StreamIDPath`, so evaluated vector objects retain a route back to stream identity. This is consistent with selective invalidation and with operator-specific provenance surviving after stream evaluation.
 

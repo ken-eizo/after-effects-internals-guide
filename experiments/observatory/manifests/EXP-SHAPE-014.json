@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-SHAPE-014",
+  "title": "BEE separate vector evaluator registry names and RTTI",
+  "status": "observed-static-only",
+  "evidence": [
+    "E2-L"
+  ],
+  "question": "Does BEE maintain a distinct MatchName-keyed polymorphic evaluator table, and what are its built-in registered operator classes?",
+  "methods": [
+    "Trace PopulateVectorArt recursive dispatch and StreamBasedFilter dispatch in both versions",
+    "Resolve the 20 native registrar calls and static MatchName constructor text",
+    "Recover MSVC RTTI from callsite-local virtual-table references; no private API execution"
+  ],
+  "observed_result": "Exactly 20 builtin evaluator operators, identical MatchNames and concrete RTTI classes in AE2025/2026, separate from TDB creator registry. Host effect-owned vector output remains unproven.",
+  "limits": [
+    "RTTI and vtable offsets do not define supported third-party ABI",
+    "No independent Contents owner or Pen tool hookup observed"
+  ],
+  "sources": [
+    "datasets/ae-vector-evaluator-matchname-identities-2025-2026.json",
+    "datasets/ae-native-vector-evaluator-vtable-rtti-2025-2026.json"
+  ]
+}

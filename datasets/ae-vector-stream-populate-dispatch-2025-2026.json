@@ -1,0 +1,774 @@
+{
+  "evidence": "E2-L static code callsite and symbol inventory; no runtime evaluation",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "selected_export_list": [
+        {
+          "rva": "0x6e5410",
+          "name": "?AcquireOutlinesForAnAnimatedShape@BEE_VectorLayer@@SAXAEBVTDL_VectorArt@@AEAVOM_ShapeArray@@@Z"
+        },
+        {
+          "rva": "0x806f0",
+          "name": "?Create@?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x80780",
+          "name": "?Create@?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x817e0",
+          "name": "?Create@BlendModeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x818d0",
+          "name": "?Create@EllipseStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81930",
+          "name": "?Create@FillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81990",
+          "name": "?Create@GradientFillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x819f0",
+          "name": "?Create@GradientStrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81ad0",
+          "name": "?Create@MergePathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81b30",
+          "name": "?Create@OffsetPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81b90",
+          "name": "?Create@PolyStarStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81bf0",
+          "name": "?Create@PuckerBloatStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81c50",
+          "name": "?Create@RectStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81cb0",
+          "name": "?Create@RepeaterStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81d10",
+          "name": "?Create@RepeaterTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81d70",
+          "name": "?Create@RevealPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81e30",
+          "name": "?Create@RoughenStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81e90",
+          "name": "?Create@RoundCornerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81ef0",
+          "name": "?Create@ShapeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81f80",
+          "name": "?Create@ShapeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x81fe0",
+          "name": "?Create@StrokeDashesStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82040",
+          "name": "?Create@StrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x820a0",
+          "name": "?Create@StrokeTaperStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82100",
+          "name": "?Create@StrokeTaperWaveStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82160",
+          "name": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x821c0",
+          "name": "?Create@TrimStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82220",
+          "name": "?Create@TwistStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82280",
+          "name": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x822e0",
+          "name": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82340",
+          "name": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x823a0",
+          "name": "?Create@WigglerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82400",
+          "name": "?Create@WigglerTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x82460",
+          "name": "?Create@ZigzagStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x6e55f0",
+          "name": "?GetAnimatedShapeColor@BEE_VectorLayer@@SAXAEBVTDL_VectorArt@@AEAVPF_PixelFloat@@@Z"
+        },
+        {
+          "rva": "0x703c10",
+          "name": "?GetRenderGuid@RoughenStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x703ef0",
+          "name": "?GetRenderGuid@VectorStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x704050",
+          "name": "?GetRenderGuid@WigglerStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x704200",
+          "name": "?GetShapeToLayerMatrix@BEE_VectorStream@@YA?AVM_Matrix3@@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z"
+        },
+        {
+          "rva": "0x6e2f70",
+          "name": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+        },
+        {
+          "rva": "0x6e3930",
+          "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+        },
+        {
+          "rva": "0x7046a0",
+          "name": "?IsFilter@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x704770",
+          "name": "?IsPathFilter@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x6ecb60",
+          "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+        }
+      ],
+      "eval_callsite_functions": [
+        {
+          "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+          "rva": "0x6e3930",
+          "end_rva": "0x6e3c6a",
+          "function_bytes": 826,
+          "callsite_count": 32,
+          "calls": [
+            {
+              "at_rva": "0x6e3979",
+              "call": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+              "operand": "qword ptr [rip + 0x7dbf89]"
+            },
+            {
+              "at_rva": "0x6e3983",
+              "call": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+              "operand": "0x18023b230"
+            },
+            {
+              "at_rva": "0x6e3997",
+              "call": "U.dll!?IsIdentityWithinEpsilon@M_Matrix3@@QEBA_NN@Z",
+              "operand": "qword ptr [rip + 0x7dc00b]"
+            },
+            {
+              "at_rva": "0x6e39b2",
+              "call": "",
+              "operand": "0x1806e3db0"
+            },
+            {
+              "at_rva": "0x6e39e9",
+              "call": "",
+              "operand": "qword ptr [rdx]"
+            },
+            {
+              "at_rva": "0x6e39eb",
+              "call": "",
+              "operand": "0x1806e3c43"
+            },
+            {
+              "at_rva": "0x6e39f3",
+              "call": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+              "operand": "qword ptr [rip + 0x7dbf0f]"
+            },
+            {
+              "at_rva": "0x6e39fd",
+              "call": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+              "operand": "0x18023b230"
+            },
+            {
+              "at_rva": "0x6e3a2c",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            },
+            {
+              "at_rva": "0x6e3a34",
+              "call": "",
+              "operand": "0x180ce9048"
+            },
+            {
+              "at_rva": "0x6e3a4f",
+              "call": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+              "operand": "0x1806c9660"
+            },
+            {
+              "at_rva": "0x6e3a57",
+              "call": "",
+              "operand": "0x1806e3a5c"
+            },
+            {
+              "at_rva": "0x6e3a7d",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x6e3aa8",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x6e3aba",
+              "call": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+              "operand": "qword ptr [rip + 0x7da490]"
+            },
+            {
+              "at_rva": "0x6e3acd",
+              "call": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+              "operand": "qword ptr [rip + 0x7da1fd]"
+            },
+            {
+              "at_rva": "0x6e3afc",
+              "call": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+              "operand": "0x1806ecb60"
+            },
+            {
+              "at_rva": "0x6e3b07",
+              "call": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "operand": "qword ptr [rip + 0x7dacdb]"
+            },
+            {
+              "at_rva": "0x6e3b1e",
+              "call": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x7dd59c]"
+            },
+            {
+              "at_rva": "0x6e3b28",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+              "operand": "qword ptr [rip + 0x7dd59a]"
+            },
+            {
+              "at_rva": "0x6e3b42",
+              "call": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "operand": "qword ptr [rip + 0x7dd688]"
+            },
+            {
+              "at_rva": "0x6e3b52",
+              "call": "",
+              "operand": "0x1806eca10"
+            },
+            {
+              "at_rva": "0x6e3b6c",
+              "call": "",
+              "operand": "0x1806e11f0"
+            },
+            {
+              "at_rva": "0x6e3b82",
+              "call": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x7dd538]"
+            },
+            {
+              "at_rva": "0x6e3b8c",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+              "operand": "qword ptr [rip + 0x7dd536]"
+            },
+            {
+              "at_rva": "0x6e3ba6",
+              "call": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "operand": "qword ptr [rip + 0x7dd624]"
+            },
+            {
+              "at_rva": "0x6e3bbb",
+              "call": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z",
+              "operand": "0x1806cd3c0"
+            },
+            {
+              "at_rva": "0x6e3be3",
+              "call": "",
+              "operand": "0x1806e3c80"
+            },
+            {
+              "at_rva": "0x6e3c1e",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x6e3c3a",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            },
+            {
+              "at_rva": "0x6e3c3e",
+              "call": "",
+              "operand": "0x1806e3c43"
+            },
+            {
+              "at_rva": "0x6e3c51",
+              "call": "",
+              "operand": "0x180ce9610"
+            }
+          ]
+        },
+        {
+          "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+          "rva": "0x6ecb60",
+          "end_rva": "0x6ecc64",
+          "function_bytes": 260,
+          "callsite_count": 6,
+          "calls": [
+            {
+              "at_rva": "0x6ecbc0",
+              "call": "dvacore.dll!?GetTypeName@debug@dvacore@@YA?AV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@AEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x7d44fa]"
+            },
+            {
+              "at_rva": "0x6ecbca",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@@Z",
+              "operand": "qword ptr [rip + 0x7d44f8]"
+            },
+            {
+              "at_rva": "0x6ecbe4",
+              "call": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z",
+              "operand": "qword ptr [rip + 0x7d45e6]"
+            },
+            {
+              "at_rva": "0x6ecc16",
+              "call": "",
+              "operand": "0x1806ecc70"
+            },
+            {
+              "at_rva": "0x6ecc3f",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            },
+            {
+              "at_rva": "0x6ecc4b",
+              "call": "",
+              "operand": "0x180ce9610"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "selected_export_list": [
+        {
+          "rva": "0x709b80",
+          "name": "?AcquireOutlinesForAnAnimatedShape@BEE_VectorLayer@@SAXAEBVTDL_VectorArt@@AEAVOM_ShapeArray@@@Z"
+        },
+        {
+          "rva": "0x83010",
+          "name": "?Create@?$TDB_FloatStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x83090",
+          "name": "?Create@?$TDB_PopupStream@UBlendModeStreamTraits@BEE_VectorStream@@@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84260",
+          "name": "?Create@BlendModeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84340",
+          "name": "?Create@EllipseStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x843a0",
+          "name": "?Create@FillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84400",
+          "name": "?Create@GradientFillStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84460",
+          "name": "?Create@GradientStrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84530",
+          "name": "?Create@MergePathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84590",
+          "name": "?Create@OffsetPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x845f0",
+          "name": "?Create@PolyStarStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84650",
+          "name": "?Create@PuckerBloatStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x846b0",
+          "name": "?Create@RectStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84710",
+          "name": "?Create@RepeaterStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84770",
+          "name": "?Create@RepeaterTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x847d0",
+          "name": "?Create@RevealPathStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84890",
+          "name": "?Create@RoughenStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x848f0",
+          "name": "?Create@RoundCornerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84950",
+          "name": "?Create@ShapeStream@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x849d0",
+          "name": "?Create@ShapeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84a30",
+          "name": "?Create@StrokeDashesStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84a90",
+          "name": "?Create@StrokeStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84af0",
+          "name": "?Create@StrokeTaperStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84b50",
+          "name": "?Create@StrokeTaperWaveStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84bb0",
+          "name": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84c10",
+          "name": "?Create@TrimStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84c70",
+          "name": "?Create@TwistStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84cd0",
+          "name": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84d30",
+          "name": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84d90",
+          "name": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84df0",
+          "name": "?Create@WigglerStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84e50",
+          "name": "?Create@WigglerTransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x84eb0",
+          "name": "?Create@ZigzagStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x709eb0",
+          "name": "?GetAnimatedShapeColor@BEE_VectorLayer@@SAXAEBVTDL_VectorArt@@AEAVPF_PixelFloat@@@Z"
+        },
+        {
+          "rva": "0x726420",
+          "name": "?GetRenderGuid@RoughenStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x7266f0",
+          "name": "?GetRenderGuid@VectorStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x726850",
+          "name": "?GetRenderGuid@WigglerStreamGroup@BEE_VectorStream@@UEBA?AVGuid@utility@dvacore@@AEBVTDB_RenderOptionsBase@@PEAVGetRenderGuidFilter@@@Z"
+        },
+        {
+          "rva": "0x726a00",
+          "name": "?GetShapeToLayerMatrix@BEE_VectorStream@@YA?AVM_Matrix3@@AEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@@Z"
+        },
+        {
+          "rva": "0x707790",
+          "name": "?GetSourceFloatRectHelper@BEE_VectorLayer@@IEBA?AUM_FloatRect@@AEBUT_Time@@W4RenderExtentMode@BEE_VectorArt@@HV?$shared_ptr@VBEE_XformTimeCache@@@std@@PEBVTDB_ParamBag@@@Z"
+        },
+        {
+          "rva": "0x7081b0",
+          "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z"
+        },
+        {
+          "rva": "0x726e90",
+          "name": "?IsFilter@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x726f60",
+          "name": "?IsPathFilter@BEE_VectorStream@@YA_NAEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x710ee0",
+          "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+        }
+      ],
+      "eval_callsite_functions": [
+        {
+          "name": "?GetVectorArt@BEE_VectorLayer@@QEBA?AV?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@AEBUT_Time@@AEBVM_Matrix3@@PEBVRG_ProgAbort@@PEBVTDB_ParamBag@@@Z",
+          "rva": "0x7081b0",
+          "end_rva": "0x7084f3",
+          "function_bytes": 835,
+          "callsite_count": 34,
+          "calls": [
+            {
+              "at_rva": "0x7081f7",
+              "call": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+              "operand": "qword ptr [rip + 0x81087b]"
+            },
+            {
+              "at_rva": "0x708205",
+              "call": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+              "operand": "0x180243d70"
+            },
+            {
+              "at_rva": "0x70821d",
+              "call": "U.dll!?IsIdentityWithinEpsilon@M_Matrix3@@QEBA_NN@Z",
+              "operand": "qword ptr [rip + 0x8108fd]"
+            },
+            {
+              "at_rva": "0x708236",
+              "call": "dvacore.dll!??0Murmur3MixerState@utility@dvacore@@QEAA@XZ",
+              "operand": "qword ptr [rip + 0x81233c]"
+            },
+            {
+              "at_rva": "0x70824d",
+              "call": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+              "operand": "qword ptr [rip + 0x81231d]"
+            },
+            {
+              "at_rva": "0x708260",
+              "call": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+              "operand": "qword ptr [rip + 0x81230a]"
+            },
+            {
+              "at_rva": "0x708274",
+              "call": "dvacore.dll!?UpdateHashState@utility@dvacore@@YAXAEAUMurmur3MixerState@12@PEBX_K@Z",
+              "operand": "qword ptr [rip + 0x8122f6]"
+            },
+            {
+              "at_rva": "0x70827e",
+              "call": "dvacore.dll!??0Guid@utility@dvacore@@QEAA@XZ",
+              "operand": "qword ptr [rip + 0x812354]"
+            },
+            {
+              "at_rva": "0x70828c",
+              "call": "dvacore.dll!?GetHashResult@utility@dvacore@@YA_NAEBUMurmur3MixerState@12@AEAVGuid@12@@Z",
+              "operand": "qword ptr [rip + 0x8122d6]"
+            },
+            {
+              "at_rva": "0x7082da",
+              "call": "",
+              "operand": "qword ptr [rdx]"
+            },
+            {
+              "at_rva": "0x7082dc",
+              "call": "",
+              "operand": "0x1807084d0"
+            },
+            {
+              "at_rva": "0x7082e4",
+              "call": "",
+              "operand": "0x1807082e9"
+            },
+            {
+              "at_rva": "0x7082e9",
+              "call": "U.dll!?U_IsOnMainThread@@YA_NXZ",
+              "operand": "qword ptr [rip + 0x810789]"
+            },
+            {
+              "at_rva": "0x7082f3",
+              "call": "?BEE_BetaFeature_IsArtGroupCachingForVectorLayerBoundsEnabled@@YA_NXZ",
+              "operand": "0x180243d70"
+            },
+            {
+              "at_rva": "0x708326",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            },
+            {
+              "at_rva": "0x70832e",
+              "call": "",
+              "operand": "0x180d3a668"
+            },
+            {
+              "at_rva": "0x708348",
+              "call": "??0Group@BEE_VectorArt@@QEAA@AEBVM_Matrix3@@@Z",
+              "operand": "0x1806ee2b0"
+            },
+            {
+              "at_rva": "0x708350",
+              "call": "",
+              "operand": "0x180708354"
+            },
+            {
+              "at_rva": "0x708371",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x708399",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x7083a7",
+              "call": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z",
+              "operand": "qword ptr [rip + 0x80ecd3]"
+            },
+            {
+              "at_rva": "0x7083b5",
+              "call": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@@Z",
+              "operand": "qword ptr [rip + 0x80f24d]"
+            },
+            {
+              "at_rva": "0x7083e3",
+              "call": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+              "operand": "0x180710ee0"
+            },
+            {
+              "at_rva": "0x7083ed",
+              "call": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+              "operand": "qword ptr [rip + 0x80f6d5]"
+            },
+            {
+              "at_rva": "0x7083ff",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x812103]"
+            },
+            {
+              "at_rva": "0x70840e",
+              "call": "",
+              "operand": "0x180710d90"
+            },
+            {
+              "at_rva": "0x708427",
+              "call": "",
+              "operand": "0x180705ac0"
+            },
+            {
+              "at_rva": "0x708438",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x8120ca]"
+            },
+            {
+              "at_rva": "0x708448",
+              "call": "?GetBounds@BEE_VectorArt@@YA?AU?$pair@_NUM_FloatRect@@@std@@AEBVGroup@1@W4RenderExtentMode@1@@Z",
+              "operand": "0x1806f2000"
+            },
+            {
+              "at_rva": "0x708470",
+              "call": "",
+              "operand": "0x180708510"
+            },
+            {
+              "at_rva": "0x7084ab",
+              "call": "",
+              "operand": "qword ptr [rax]"
+            },
+            {
+              "at_rva": "0x7084c7",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            },
+            {
+              "at_rva": "0x7084cb",
+              "call": "",
+              "operand": "0x1807084d0"
+            },
+            {
+              "at_rva": "0x7084da",
+              "call": "",
+              "operand": "0x180d3ac30"
+            }
+          ]
+        },
+        {
+          "name": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z",
+          "rva": "0x710ee0",
+          "end_rva": "0x710f8b",
+          "function_bytes": 171,
+          "callsite_count": 3,
+          "calls": [
+            {
+              "at_rva": "0x710f10",
+              "call": "dvacore.dll!?DoThrowNullPtrException@config@dvacore@@YAXAEBVtype_info@@@Z",
+              "operand": "qword ptr [rip + 0x8095f2]"
+            },
+            {
+              "at_rva": "0x710f51",
+              "call": "",
+              "operand": "0x180710f90"
+            },
+            {
+              "at_rva": "0x710f7a",
+              "call": "",
+              "operand": "qword ptr [rax + 8]"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

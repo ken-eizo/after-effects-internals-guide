@@ -56,6 +56,10 @@ BEE_VectorLayer::GetVectorArt(time, matrix, ...)
 
 The final Shape layer renderer uses `BEE_VectorLayer::Rasterize2DGraph(...)` returning `IntrusivePtr<RG_RenderNode>`. `BEE_VectorArt::Path` has constructors from `CAGMPath` and `CAIMBezierPath`. These are useful native vector intermediate types, but there is **no demonstrated public effect-output channel that returns a BEE_VectorArt object**. Creating such an object, even with correct internals, is different from making the host evaluate/cache/serialize/render it as an independent layer/effect.
 
+## Newly reconstructed second registry and plugin ABI barrier (2026-10-11)
+
+The actual native Shape renderer uses a distinct **BEE MatchName evaluator registry**, separate from `TDB_StreamFactory`. This second registry owns polymorphic `BEE_VectorStream::*Operator` objects for exactly 20 names, including Trim, Offset, Repeater, Merge, Path, Fill and Stroke. Both AE2025 and AE2026 show the same mappings and concrete MSVC RTTI classes. Normal evaluated vector art and `StreamBasedFilter::DoFilter` call the **same** registered operator virtual method at vtable +0x18, with different mode arguments. In addition, the TDB factory eagerly invokes a registered type creator during registration, rather than postponing all execution until the user adds a Contents child. Neither registry offers a confirmed external plug-in ABI or a replacement for the `BEE_VectorLayer` owner. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md).
+
 ## Strongest proof and next falsification gates
 
 | Stage | Required direct evidence | Present state |

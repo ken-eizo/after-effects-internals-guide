@@ -1,0 +1,1205 @@
+{
+  "evidence": "E2-L; static, bounded native registry init/cleanup",
+  "versions": {
+    "2025": [
+      {
+        "function_begin": "0x6eef40",
+        "function_end": "0x6eeffa",
+        "bytes": 186,
+        "instructions": [
+          {
+            "site": "0x6eef40",
+            "op": "mov qword ptr [rsp + 0x18], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef45",
+            "op": "push rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef46",
+            "op": "sub rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef4a",
+            "op": "cmp qword ptr [rip + 0xf00496], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef52",
+            "op": "jne 0x1806eefc9",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef54",
+            "op": "mov ecx, 0x18",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef59",
+            "op": "call qword ptr [rip + 0x7d0891]",
+            "import": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+            "target_rva": "0xebf7f0"
+          },
+          {
+            "site": "0x6eef5f",
+            "op": "mov rdi, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef62",
+            "op": "mov qword ptr [rsp + 0x30], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef67",
+            "op": "test rax, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef6a",
+            "op": "je 0x1806eefae",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef6c",
+            "op": "lea rax, [rip + 0x911d9d]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef73",
+            "op": "mov qword ptr [rdi], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef76",
+            "op": "lea rbx, [rdi + 8]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef7a",
+            "op": "mov qword ptr [rsp + 0x38], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef7f",
+            "op": "mov qword ptr [rbx], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef86",
+            "op": "mov qword ptr [rbx + 8], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef8e",
+            "op": "mov ecx, 0x38",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef93",
+            "op": "call 0x180ce9048",
+            "import": "",
+            "target_rva": "0xce9048"
+          },
+          {
+            "site": "0x6eef98",
+            "op": "mov qword ptr [rax], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef9b",
+            "op": "mov qword ptr [rax + 8], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eef9f",
+            "op": "mov qword ptr [rax + 0x10], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefa3",
+            "op": "mov word ptr [rax + 0x18], 0x101",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefa9",
+            "op": "mov qword ptr [rbx], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefac",
+            "op": "jmp 0x1806eefb0",
+            "import": "",
+            "target_rva": "0x6eefb0"
+          },
+          {
+            "site": "0x6eefae",
+            "op": "xor edi, edi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefb0",
+            "op": "mov qword ptr [rip + 0xf00431], rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefb7",
+            "op": "mov byte ptr [rip + 0xe23b4e], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefbe",
+            "op": "mov rbx, qword ptr [rsp + 0x40]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefc3",
+            "op": "add rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefc7",
+            "op": "pop rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefc8",
+            "op": "ret ",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefc9",
+            "op": "lea r9, [rip + 0x911d98]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefd0",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefd3",
+            "op": "mov edx, 0x93",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefd8",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefda",
+            "op": "call qword ptr [rip + 0x7d08b0]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xebf890"
+          },
+          {
+            "site": "0x6eefe0",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefe8",
+            "op": "lea rdx, [rip + 0xc90619]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eefef",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6eeff4",
+            "op": "call 0x180ceacc8",
+            "import": "",
+            "target_rva": "0xceacc8"
+          },
+          {
+            "site": "0x6eeff9",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x6ef060",
+        "function_end": "0x6ef0e7",
+        "bytes": 135,
+        "instructions": [
+          {
+            "site": "0x6ef060",
+            "op": "push rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef062",
+            "op": "sub rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef066",
+            "op": "mov rbx, qword ptr [rip + 0xf00383]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef06d",
+            "op": "lea rdx, [rip + 0xf0037c]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef074",
+            "op": "lea rcx, [rip + 0xf00375]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef07b",
+            "op": "mov r8, qword ptr [rbx + 8]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef07f",
+            "op": "call 0x1806ed9a0",
+            "import": "",
+            "target_rva": "0x6ed9a0"
+          },
+          {
+            "site": "0x6ef084",
+            "op": "mov qword ptr [rbx + 8], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef088",
+            "op": "mov qword ptr [rbx], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef08b",
+            "op": "mov qword ptr [rbx + 0x10], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef08f",
+            "op": "mov rcx, qword ptr [rip + 0xf00352]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef096",
+            "op": "mov qword ptr [rip + 0xf00357], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0a1",
+            "op": "test rcx, rcx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0a4",
+            "op": "je 0x1806ef0b6",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0a6",
+            "op": "mov rax, qword ptr [rcx]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0a9",
+            "op": "mov edx, 1",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0ae",
+            "op": "add rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0b2",
+            "op": "pop rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0b3",
+            "op": "jmp qword ptr [rax]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0b6",
+            "op": "lea r9, [rip + 0x911cdb]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0bd",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0c0",
+            "op": "mov edx, 0x9e",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0c5",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0c7",
+            "op": "call qword ptr [rip + 0x7d07c3]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xebf890"
+          },
+          {
+            "site": "0x6ef0cd",
+            "op": "lea rdx, [rip + 0xc90534]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0d4",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0dc",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6ef0e1",
+            "op": "call 0x180ceacc8",
+            "import": "",
+            "target_rva": "0xceacc8"
+          },
+          {
+            "site": "0x6ef0e6",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x6f88c0",
+        "function_end": "0x6f8906",
+        "bytes": 70,
+        "instructions": [
+          {
+            "site": "0x6f88c0",
+            "op": "sub rsp, 0x28",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88c4",
+            "op": "mov rax, qword ptr [rip + 0xef6b1d]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88cb",
+            "op": "test rax, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88ce",
+            "op": "je 0x1806f88d5",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88d0",
+            "op": "add rsp, 0x28",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88d4",
+            "op": "ret ",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88d5",
+            "op": "lea r9, [rip + 0x9084ec]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88dc",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88df",
+            "op": "mov edx, 0xa5",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88e4",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88e6",
+            "op": "call qword ptr [rip + 0x7c6fa4]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xebf890"
+          },
+          {
+            "site": "0x6f88ec",
+            "op": "lea rdx, [rip + 0xc86d15]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88f3",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f88fb",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6f8900",
+            "op": "call 0x180ceacc8",
+            "import": "",
+            "target_rva": "0xceacc8"
+          },
+          {
+            "site": "0x6f8905",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x6fdcc0",
+        "function_end": "0x6fdcdd",
+        "bytes": 29,
+        "instructions": [
+          {
+            "site": "0x6fdcc0",
+            "op": "push rbp",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcc2",
+            "op": "push rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcc3",
+            "op": "push rsi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcc4",
+            "op": "mov rbp, rsp",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcc7",
+            "op": "sub rsp, 0x30",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdccb",
+            "op": "mov rbx, qword ptr [rip + 0xef1716]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcd2",
+            "op": "xor esi, esi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcd4",
+            "op": "test rbx, rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x6fdcd7",
+            "op": "je 0x1806fe25d",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "function_begin": "0x713550",
+        "function_end": "0x713603",
+        "bytes": 179,
+        "instructions": [
+          {
+            "site": "0x713550",
+            "op": "mov qword ptr [rsp + 0x18], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713555",
+            "op": "push rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713556",
+            "op": "sub rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71355a",
+            "op": "cmp qword ptr [rip + 0xf8c856], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713562",
+            "op": "jne 0x1807135d2",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713564",
+            "op": "mov ecx, 0x18",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713569",
+            "op": "call qword ptr [rip + 0x8053f1]",
+            "import": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z",
+            "target_rva": "0xf18960"
+          },
+          {
+            "site": "0x71356f",
+            "op": "mov rdi, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713572",
+            "op": "mov qword ptr [rsp + 0x30], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713577",
+            "op": "test rax, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71357a",
+            "op": "je 0x1807135b7",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71357c",
+            "op": "lea rax, [rip + 0x94e58d]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713583",
+            "op": "mov qword ptr [rdi], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713586",
+            "op": "mov qword ptr [rdi + 8], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71358e",
+            "op": "mov qword ptr [rdi + 0x10], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713596",
+            "op": "mov ecx, 0x38",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71359b",
+            "op": "call 0x180d3a668",
+            "import": "",
+            "target_rva": "0xd3a668"
+          },
+          {
+            "site": "0x7135a0",
+            "op": "mov qword ptr [rax], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135a3",
+            "op": "mov qword ptr [rax + 8], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135a7",
+            "op": "mov qword ptr [rax + 0x10], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135ab",
+            "op": "mov word ptr [rax + 0x18], 0x101",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135b1",
+            "op": "mov qword ptr [rdi + 8], rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135b5",
+            "op": "jmp 0x1807135b9",
+            "import": "",
+            "target_rva": "0x7135b9"
+          },
+          {
+            "site": "0x7135b7",
+            "op": "xor edi, edi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135b9",
+            "op": "mov qword ptr [rip + 0xf8c7f8], rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135c0",
+            "op": "mov byte ptr [rip + 0xe8c6e5], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135c7",
+            "op": "mov rbx, qword ptr [rsp + 0x40]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135cc",
+            "op": "add rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135d0",
+            "op": "pop rdi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135d1",
+            "op": "ret ",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135d2",
+            "op": "lea r9, [rip + 0x94e58f]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135d9",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135dc",
+            "op": "mov edx, 0x93",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135e1",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135e3",
+            "op": "call qword ptr [rip + 0x805417]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xf18a00"
+          },
+          {
+            "site": "0x7135e9",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135f1",
+            "op": "lea rdx, [rip + 0xce7dc0]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135f8",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7135fd",
+            "op": "call 0x180d3bdf8",
+            "import": "",
+            "target_rva": "0xd3bdf8"
+          },
+          {
+            "site": "0x713602",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x713670",
+        "function_end": "0x7136f7",
+        "bytes": 135,
+        "instructions": [
+          {
+            "site": "0x713670",
+            "op": "push rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713672",
+            "op": "sub rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713676",
+            "op": "mov rbx, qword ptr [rip + 0xf8c743]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71367d",
+            "op": "lea rdx, [rip + 0xf8c73c]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713684",
+            "op": "lea rcx, [rip + 0xf8c735]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71368b",
+            "op": "mov r8, qword ptr [rbx + 8]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71368f",
+            "op": "call 0x180711fa0",
+            "import": "",
+            "target_rva": "0x711fa0"
+          },
+          {
+            "site": "0x713694",
+            "op": "mov qword ptr [rbx + 8], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x713698",
+            "op": "mov qword ptr [rbx], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71369b",
+            "op": "mov qword ptr [rbx + 0x10], rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71369f",
+            "op": "mov rcx, qword ptr [rip + 0xf8c712]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136a6",
+            "op": "mov qword ptr [rip + 0xf8c717], 0",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136b1",
+            "op": "test rcx, rcx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136b4",
+            "op": "je 0x1807136c6",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136b6",
+            "op": "mov rax, qword ptr [rcx]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136b9",
+            "op": "mov edx, 1",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136be",
+            "op": "add rsp, 0x20",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136c2",
+            "op": "pop rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136c3",
+            "op": "jmp qword ptr [rax]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136c6",
+            "op": "lea r9, [rip + 0x94e4cb]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136cd",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136d0",
+            "op": "mov edx, 0x9e",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136d5",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136d7",
+            "op": "call qword ptr [rip + 0x805323]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xf18a00"
+          },
+          {
+            "site": "0x7136dd",
+            "op": "lea rdx, [rip + 0xce7cd4]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136e4",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136ec",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7136f1",
+            "op": "call 0x180d3bdf8",
+            "import": "",
+            "target_rva": "0xd3bdf8"
+          },
+          {
+            "site": "0x7136f6",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x71c3d0",
+        "function_end": "0x71c416",
+        "bytes": 70,
+        "instructions": [
+          {
+            "site": "0x71c3d0",
+            "op": "sub rsp, 0x28",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3d4",
+            "op": "mov rax, qword ptr [rip + 0xf839dd]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3db",
+            "op": "test rax, rax",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3de",
+            "op": "je 0x18071c3e5",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3e0",
+            "op": "add rsp, 0x28",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3e4",
+            "op": "ret ",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3e5",
+            "op": "lea r9, [rip + 0x9457dc]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3ec",
+            "op": "xor r8d, r8d",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3ef",
+            "op": "mov edx, 0xa5",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3f4",
+            "op": "xor ecx, ecx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c3f6",
+            "op": "call qword ptr [rip + 0x7fc604]",
+            "import": "U.dll!U_ReportFailedVerification",
+            "target_rva": "0xf18a00"
+          },
+          {
+            "site": "0x71c3fc",
+            "op": "lea rdx, [rip + 0xcdefb5]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c403",
+            "op": "mov dword ptr [rsp + 0x30], 3",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c40b",
+            "op": "lea rcx, [rsp + 0x30]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x71c410",
+            "op": "call 0x180d3bdf8",
+            "import": "",
+            "target_rva": "0xd3bdf8"
+          },
+          {
+            "site": "0x71c415",
+            "op": "int3 ",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      },
+      {
+        "function_begin": "0x7217c0",
+        "function_end": "0x7217dd",
+        "bytes": 29,
+        "instructions": [
+          {
+            "site": "0x7217c0",
+            "op": "push rbp",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217c2",
+            "op": "push rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217c3",
+            "op": "push rsi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217c4",
+            "op": "mov rbp, rsp",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217c7",
+            "op": "sub rsp, 0x30",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217cb",
+            "op": "mov rbx, qword ptr [rip + 0xf7e5e6]",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217d2",
+            "op": "xor esi, esi",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217d4",
+            "op": "test rbx, rbx",
+            "import": "",
+            "target_rva": ""
+          },
+          {
+            "site": "0x7217d7",
+            "op": "je 0x180721d5d",
+            "import": "",
+            "target_rva": ""
+          }
+        ]
+      }
+    ]
+  }
+}

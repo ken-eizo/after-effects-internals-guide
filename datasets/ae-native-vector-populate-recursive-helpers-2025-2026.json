@@ -1,0 +1,670 @@
+{
+  "evidence": "E2-L PE exception/function-boundary static call graph; no dynamic execution",
+  "versions": {
+    "2025": [
+      {
+        "start": "0x6ecc70",
+        "end": "0x6ecd39",
+        "depth": 0,
+        "calls": [
+          {
+            "site": "0x6eccc3",
+            "operation": "call",
+            "target_rva": "0xebdd50",
+            "imported": "TDB.dll!?FindStream@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6ecd2b",
+            "operation": "call",
+            "target_rva": "0x6ec3c0",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": []
+      },
+      {
+        "start": "0x6ec3c0",
+        "end": "0x6ec63e",
+        "depth": 1,
+        "calls": [
+          {
+            "site": "0x6ec400",
+            "operation": "call",
+            "target_rva": "0xebde60",
+            "imported": "TDB.dll!?IsActive@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec41b",
+            "operation": "call",
+            "target_rva": "0xebdf10",
+            "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec424",
+            "operation": "call",
+            "target_rva": "0xebdf38",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec456",
+            "operation": "jmp",
+            "target_rva": "0x6ec5eb",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec464",
+            "operation": "call",
+            "target_rva": "0x6ecd40",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec483",
+            "operation": "call",
+            "target_rva": "0xebe7f0",
+            "imported": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec4be",
+            "operation": "call",
+            "target_rva": "0xebde88",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec4d1",
+            "operation": "call",
+            "target_rva": "0xebdf48",
+            "imported": "TDB.dll!??0TDB_StreamID@@QEAA@IAEBVTDB_MatchName@@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec4df",
+            "operation": "call",
+            "target_rva": "0xebdf20",
+            "imported": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec501",
+            "operation": "call",
+            "target_rva": "0xebde58",
+            "imported": "TDB.dll!?IsHidden@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec514",
+            "operation": "call",
+            "target_rva": "0xebdf10",
+            "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec51d",
+            "operation": "call",
+            "target_rva": "0xebdf38",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec550",
+            "operation": "jmp",
+            "target_rva": "0x6ec5c3",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec55d",
+            "operation": "call",
+            "target_rva": "0x6ecd40",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec562",
+            "operation": "jmp",
+            "target_rva": "0x6ec5c0",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec56c",
+            "operation": "call",
+            "target_rva": "0xebde60",
+            "imported": "TDB.dll!?IsActive@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec5bb",
+            "operation": "call",
+            "target_rva": "0x6ec3c0",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec5d0",
+            "operation": "call",
+            "target_rva": "0xebdf18",
+            "imported": "TDB.dll!?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec5e5",
+            "operation": "call",
+            "target_rva": "0xebe7e8",
+            "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec5f9",
+            "operation": "call",
+            "target_rva": "0xce9610",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec618",
+            "operation": "call",
+            "target_rva": "0xc5e30",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec621",
+            "operation": "call",
+            "target_rva": "0x6b870",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec62f",
+            "operation": "call",
+            "target_rva": "0xc5e30",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ec638",
+            "operation": "call",
+            "target_rva": "0x6b870",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": []
+      },
+      {
+        "start": "0x6ecd40",
+        "end": "0x6ece4d",
+        "depth": 2,
+        "calls": [
+          {
+            "site": "0x6ecd67",
+            "operation": "call",
+            "target_rva": "0x6f87e0",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ecd72",
+            "operation": "call",
+            "target_rva": "0xebde88",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x6ecd81",
+            "operation": "call",
+            "target_rva": "0x6f9020",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6ecddf",
+            "operation": "call",
+            "target_rva": "0xebe7f0",
+            "imported": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6ece29",
+            "operation": "call",
+            "target_rva": "0xebe7e8",
+            "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x6ecdb4",
+            "target_rva": "0x1000c88",
+            "exported": ""
+          }
+        ]
+      },
+      {
+        "start": "0x6f87e0",
+        "end": "0x6f8826",
+        "depth": 3,
+        "calls": [
+          {
+            "site": "0x6f8806",
+            "operation": "call",
+            "target_rva": "0xebf890",
+            "imported": "U.dll!U_ReportFailedVerification",
+            "exported": ""
+          },
+          {
+            "site": "0x6f8820",
+            "operation": "call",
+            "target_rva": "0xceacc8",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x6f87f5",
+            "target_rva": "0x1000dc8",
+            "exported": ""
+          },
+          {
+            "site": "0x6f880c",
+            "target_rva": "0x137f608",
+            "exported": ""
+          }
+        ]
+      },
+      {
+        "start": "0x6f9020",
+        "end": "0x6f90ed",
+        "depth": 3,
+        "calls": [
+          {
+            "site": "0x6f9059",
+            "operation": "call",
+            "target_rva": "0xebdf60",
+            "imported": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6f9067",
+            "operation": "jmp",
+            "target_rva": "0x6f906f",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x6f9082",
+            "operation": "call",
+            "target_rva": "0xebdf60",
+            "imported": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x6f90cd",
+            "operation": "call",
+            "target_rva": "0xebf890",
+            "imported": "U.dll!U_ReportFailedVerification",
+            "exported": ""
+          },
+          {
+            "site": "0x6f90e7",
+            "operation": "call",
+            "target_rva": "0xceacc8",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x6f90bc",
+            "target_rva": "0x1000d18",
+            "exported": ""
+          },
+          {
+            "site": "0x6f90d3",
+            "target_rva": "0x137f608",
+            "exported": ""
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "start": "0x710f90",
+        "end": "0x71103e",
+        "depth": 0,
+        "calls": [
+          {
+            "site": "0x710fab",
+            "operation": "call",
+            "target_rva": "0xf16e90",
+            "imported": "TDB.dll!?FindStream@TDB_StreamGroup@@QEBAPEBVTDB_StreamBase@@AEBVTDB_StreamIDPath@@W4IfMissing@1@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x711030",
+            "operation": "call",
+            "target_rva": "0x710790",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": []
+      },
+      {
+        "start": "0x710790",
+        "end": "0x7109ea",
+        "depth": 1,
+        "calls": [
+          {
+            "site": "0x7107cd",
+            "operation": "call",
+            "target_rva": "0xf16f98",
+            "imported": "TDB.dll!?IsActive@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x7107ea",
+            "operation": "call",
+            "target_rva": "0xf17040",
+            "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x7107f3",
+            "operation": "call",
+            "target_rva": "0xf17068",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x710823",
+            "operation": "jmp",
+            "target_rva": "0x710835",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x71082e",
+            "operation": "call",
+            "target_rva": "0x711040",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x710847",
+            "operation": "call",
+            "target_rva": "0xf17ad0",
+            "imported": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x71087e",
+            "operation": "call",
+            "target_rva": "0xf16fc0",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x710891",
+            "operation": "call",
+            "target_rva": "0xf17a90",
+            "imported": "TDB.dll!??0TDB_StreamID@@QEAA@IAEBVTDB_MatchName@@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x71089f",
+            "operation": "call",
+            "target_rva": "0xf17050",
+            "imported": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x7108c1",
+            "operation": "call",
+            "target_rva": "0xf16f90",
+            "imported": "TDB.dll!?IsHidden@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x7108d4",
+            "operation": "call",
+            "target_rva": "0xf17040",
+            "imported": "TDB.dll!?GetTail@TDB_StreamIDPath@@QEBAAEBVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x7108dd",
+            "operation": "call",
+            "target_rva": "0xf17068",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamID@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x71090d",
+            "operation": "jmp",
+            "target_rva": "0x71096f",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x71091a",
+            "operation": "call",
+            "target_rva": "0x711040",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x71091f",
+            "operation": "jmp",
+            "target_rva": "0x71096c",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x710929",
+            "operation": "call",
+            "target_rva": "0xf16f98",
+            "imported": "TDB.dll!?IsActive@TDB_StreamBase@@QEBA_NXZ",
+            "exported": ""
+          },
+          {
+            "site": "0x710967",
+            "operation": "call",
+            "target_rva": "0x710790",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x71097c",
+            "operation": "call",
+            "target_rva": "0xf17048",
+            "imported": "TDB.dll!?RemoveTail@TDB_StreamIDPath@@QEAA?AVTDB_StreamID@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x710991",
+            "operation": "call",
+            "target_rva": "0xf17ac8",
+            "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x7109a5",
+            "operation": "call",
+            "target_rva": "0xd3ac30",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x7109c4",
+            "operation": "call",
+            "target_rva": "0xcc020",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x7109cd",
+            "operation": "call",
+            "target_rva": "0x6a290",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x7109db",
+            "operation": "call",
+            "target_rva": "0xcc020",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x7109e4",
+            "operation": "call",
+            "target_rva": "0x6a290",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": []
+      },
+      {
+        "start": "0x711040",
+        "end": "0x71114d",
+        "depth": 2,
+        "calls": [
+          {
+            "site": "0x711067",
+            "operation": "call",
+            "target_rva": "0x71c2f0",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x711072",
+            "operation": "call",
+            "target_rva": "0xf16fc0",
+            "imported": "TDB.dll!?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ",
+            "exported": ""
+          },
+          {
+            "site": "0x711081",
+            "operation": "call",
+            "target_rva": "0x71cc00",
+            "imported": "",
+            "exported": ""
+          },
+          {
+            "site": "0x7110df",
+            "operation": "call",
+            "target_rva": "0xf17ad0",
+            "imported": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x711129",
+            "operation": "call",
+            "target_rva": "0xf17ac8",
+            "imported": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x7110b4",
+            "target_rva": "0x1061a98",
+            "exported": ""
+          }
+        ]
+      },
+      {
+        "start": "0x71c2f0",
+        "end": "0x71c336",
+        "depth": 3,
+        "calls": [
+          {
+            "site": "0x71c316",
+            "operation": "call",
+            "target_rva": "0xf18a00",
+            "imported": "U.dll!U_ReportFailedVerification",
+            "exported": ""
+          },
+          {
+            "site": "0x71c330",
+            "operation": "call",
+            "target_rva": "0xd3bdf8",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x71c305",
+            "target_rva": "0x1061bc8",
+            "exported": ""
+          },
+          {
+            "site": "0x71c31c",
+            "target_rva": "0x13fb3b8",
+            "exported": ""
+          }
+        ]
+      },
+      {
+        "start": "0x71cc00",
+        "end": "0x71ccc9",
+        "depth": 3,
+        "calls": [
+          {
+            "site": "0x71cc37",
+            "operation": "call",
+            "target_rva": "0xf17090",
+            "imported": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x71cc6a",
+            "operation": "call",
+            "target_rva": "0xf17090",
+            "imported": "TDB.dll!??MTDB_MatchName@@QEBA_NAEBV0@@Z",
+            "exported": ""
+          },
+          {
+            "site": "0x71cca9",
+            "operation": "call",
+            "target_rva": "0xf18a00",
+            "imported": "U.dll!U_ReportFailedVerification",
+            "exported": ""
+          },
+          {
+            "site": "0x71ccc3",
+            "operation": "call",
+            "target_rva": "0xd3bdf8",
+            "imported": "",
+            "exported": ""
+          }
+        ],
+        "lea_refs": [
+          {
+            "site": "0x71cc98",
+            "target_rva": "0x1061b18",
+            "exported": ""
+          },
+          {
+            "site": "0x71ccaf",
+            "target_rva": "0x13fb3b8",
+            "exported": ""
+          }
+        ]
+      }
+    ]
+  }
+}

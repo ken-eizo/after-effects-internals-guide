@@ -1,0 +1,1077 @@
+{
+  "classification": "E2-L static RTTI from callsite-local vtable pointers; not full ABI",
+  "versions": {
+    "2025": {
+      "records": [
+        {
+          "registration_call_rva": "0x6fd508",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd42e",
+              "vtable_rva": "0xf0c460",
+              "class_rtti": ".?AVRefCountedInterface@utility@dvacore@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd438",
+              "vtable_rva": "0x1000cc8",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd43f",
+              "vtable_rva": "0x1000cf0",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd446",
+              "vtable_rva": "0x1000ff8",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd492",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd49e",
+              "vtable_rva": "0x1001050",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd4b0",
+              "vtable_rva": "0x10010a0",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd4bc",
+              "vtable_rva": "0x10010c0",
+              "class_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd4ce",
+              "vtable_rva": "0x1001110",
+              "class_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd5d5",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd55f",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd56b",
+              "vtable_rva": "0x1001138",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd57d",
+              "vtable_rva": "0x1001188",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd589",
+              "vtable_rva": "0x10011a8",
+              "class_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd59b",
+              "vtable_rva": "0x10011f8",
+              "class_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd6a2",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd62c",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd638",
+              "vtable_rva": "0x1001220",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd64a",
+              "vtable_rva": "0x1001270",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd656",
+              "vtable_rva": "0x1001290",
+              "class_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd668",
+              "vtable_rva": "0x10012e0",
+              "class_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd751",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd6f9",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd705",
+              "vtable_rva": "0x1001720",
+              "class_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd717",
+              "vtable_rva": "0x1001758",
+              "class_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd800",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd7a8",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd7b4",
+              "vtable_rva": "0x1001780",
+              "class_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd7c6",
+              "vtable_rva": "0x10017b8",
+              "class_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd8af",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd857",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd863",
+              "vtable_rva": "0x1001810",
+              "class_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd875",
+              "vtable_rva": "0x1001848",
+              "class_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fd97c",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd906",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd912",
+              "vtable_rva": "0x1001308",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd924",
+              "vtable_rva": "0x1001358",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd930",
+              "vtable_rva": "0x1001378",
+              "class_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd942",
+              "vtable_rva": "0x10013c8",
+              "class_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fda2b",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fd9d3",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fd9df",
+              "vtable_rva": "0x10013f0",
+              "class_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fd9f1",
+              "vtable_rva": "0x1001440",
+              "class_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdaf8",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fda82",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fda8e",
+              "vtable_rva": "0x1001468",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdaa0",
+              "vtable_rva": "0x10014b8",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdaac",
+              "vtable_rva": "0x10014d8",
+              "class_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdabe",
+              "vtable_rva": "0x1001528",
+              "class_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdbc5",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fdb4f",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdb5b",
+              "vtable_rva": "0x1001550",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdb6d",
+              "vtable_rva": "0x10015a0",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdb79",
+              "vtable_rva": "0x10015c0",
+              "class_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdb8b",
+              "vtable_rva": "0x1001610",
+              "class_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdc92",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fdc1c",
+              "vtable_rva": "0x1001028",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdc28",
+              "vtable_rva": "0x1001638",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdc3a",
+              "vtable_rva": "0x1001688",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdc46",
+              "vtable_rva": "0x10016a8",
+              "class_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdc58",
+              "vtable_rva": "0x10016f8",
+              "class_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdd95",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fdcfb",
+              "vtable_rva": "0xf0c460",
+              "class_rtti": ".?AVRefCountedInterface@utility@dvacore@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdd05",
+              "vtable_rva": "0x1000cc8",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdd0c",
+              "vtable_rva": "0x1000cf0",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x6fdd44",
+              "vtable_rva": "0x1000e00",
+              "class_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdd5b",
+              "vtable_rva": "0x1000e30",
+              "class_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fde29",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fddd8",
+              "vtable_rva": "0x1000e98",
+              "class_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fddef",
+              "vtable_rva": "0x1000ec8",
+              "class_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdebd",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fde6c",
+              "vtable_rva": "0x1000ef0",
+              "class_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fde83",
+              "vtable_rva": "0x1000f20",
+              "class_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdf51",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fdf00",
+              "vtable_rva": "0x1000f48",
+              "class_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdf17",
+              "vtable_rva": "0x1000f78",
+              "class_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fdfe5",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fdf94",
+              "vtable_rva": "0x1000fa0",
+              "class_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fdfab",
+              "vtable_rva": "0x1000fd0",
+              "class_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fe079",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fe028",
+              "vtable_rva": "0x1001870",
+              "class_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fe03f",
+              "vtable_rva": "0x10018a0",
+              "class_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fe10d",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fe0bc",
+              "vtable_rva": "0x1001920",
+              "class_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fe0d3",
+              "vtable_rva": "0x1001950",
+              "class_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fe1a1",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fe150",
+              "vtable_rva": "0x10018c8",
+              "class_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fe167",
+              "vtable_rva": "0x10018f8",
+              "class_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x6fe235",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x6fe1e4",
+              "vtable_rva": "0x10019d8",
+              "class_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x6fe1fb",
+              "vtable_rva": "0x1001a08",
+              "class_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "records": [
+        {
+          "registration_call_rva": "0x72101d",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x720f43",
+              "vtable_rva": "0xf6a238",
+              "class_rtti": ".?AVRefCountedInterface@utility@dvacore@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x720f4d",
+              "vtable_rva": "0x1061ac8",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x720f54",
+              "vtable_rva": "0x1061af0",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x720f5b",
+              "vtable_rva": "0x1061df8",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x720fa7",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x720fb3",
+              "vtable_rva": "0x1061e50",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x720fc5",
+              "vtable_rva": "0x1061ea0",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTrimParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x720fd1",
+              "vtable_rva": "0x1061ec0",
+              "class_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x720fe3",
+              "vtable_rva": "0x1061f10",
+              "class_rtti": ".?AVTrimOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7210ea",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721074",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721080",
+              "vtable_rva": "0x1061f38",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721092",
+              "vtable_rva": "0x1061f88",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UOffsetPathParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72109e",
+              "vtable_rva": "0x1061fa8",
+              "class_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7210b0",
+              "vtable_rva": "0x1061ff8",
+              "class_rtti": ".?AVOffsetPathOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7211b7",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721141",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72114d",
+              "vtable_rva": "0x1062020",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72115f",
+              "vtable_rva": "0x1062070",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UPuckerBloatParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72116b",
+              "vtable_rva": "0x1062090",
+              "class_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72117d",
+              "vtable_rva": "0x10620e0",
+              "class_rtti": ".?AVPuckerBloatOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721266",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x72120e",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72121a",
+              "vtable_rva": "0x1062520",
+              "class_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72122c",
+              "vtable_rva": "0x1062558",
+              "class_rtti": ".?AVRepeaterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721315",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x7212bd",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x7212c9",
+              "vtable_rva": "0x1062580",
+              "class_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7212db",
+              "vtable_rva": "0x10625b8",
+              "class_rtti": ".?AVRevealOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7213c4",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x72136c",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721378",
+              "vtable_rva": "0x1062610",
+              "class_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72138a",
+              "vtable_rva": "0x1062648",
+              "class_rtti": ".?AVMergeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721491",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x72141b",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721427",
+              "vtable_rva": "0x1062108",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721439",
+              "vtable_rva": "0x1062158",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoughenParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721445",
+              "vtable_rva": "0x1062178",
+              "class_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721457",
+              "vtable_rva": "0x10621c8",
+              "class_rtti": ".?AVRoughenOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721540",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x7214e8",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x7214f4",
+              "vtable_rva": "0x10621f0",
+              "class_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721506",
+              "vtable_rva": "0x1062240",
+              "class_rtti": ".?AVWigglerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x72160d",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721597",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x7215a3",
+              "vtable_rva": "0x1062268",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7215b5",
+              "vtable_rva": "0x10622b8",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UZigzagParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x7215c1",
+              "vtable_rva": "0x10622d8",
+              "class_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7215d3",
+              "vtable_rva": "0x1062328",
+              "class_rtti": ".?AVZigzagOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7216da",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721664",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721670",
+              "vtable_rva": "0x1062350",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721682",
+              "vtable_rva": "0x10623a0",
+              "class_rtti": ".?AV?$PathFilterOperatorT@URoundCornerParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72168e",
+              "vtable_rva": "0x10623c0",
+              "class_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7216a0",
+              "vtable_rva": "0x1062410",
+              "class_rtti": ".?AVRoundCornerOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7217a7",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721731",
+              "vtable_rva": "0x1061e28",
+              "class_rtti": ".?AVFilterOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72173d",
+              "vtable_rva": "0x1062438",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72174f",
+              "vtable_rva": "0x1062488",
+              "class_rtti": ".?AV?$PathFilterOperatorT@UTwistParams@BEE_VectorStream@@@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x72175b",
+              "vtable_rva": "0x10624a8",
+              "class_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72176d",
+              "vtable_rva": "0x10624f8",
+              "class_rtti": ".?AVTwistOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721895",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x7217fb",
+              "vtable_rva": "0xf6a238",
+              "class_rtti": ".?AVRefCountedInterface@utility@dvacore@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721805",
+              "vtable_rva": "0x1061ac8",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72180c",
+              "vtable_rva": "0x1061af0",
+              "class_rtti": ".?AUOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            },
+            {
+              "reference_instruction_rva": "0x721844",
+              "vtable_rva": "0x1061c00",
+              "class_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x72185b",
+              "vtable_rva": "0x1061c30",
+              "class_rtti": ".?AVGroupOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721929",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x7218d8",
+              "vtable_rva": "0x1061c98",
+              "class_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x7218ef",
+              "vtable_rva": "0x1061cc8",
+              "class_rtti": ".?AVShapeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x7219bd",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x72196c",
+              "vtable_rva": "0x1061cf0",
+              "class_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721983",
+              "vtable_rva": "0x1061d20",
+              "class_rtti": ".?AVRectOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721a51",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721a00",
+              "vtable_rva": "0x1061d48",
+              "class_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721a17",
+              "vtable_rva": "0x1061d78",
+              "class_rtti": ".?AVEllipseOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721ae5",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721a94",
+              "vtable_rva": "0x1061da0",
+              "class_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721aab",
+              "vtable_rva": "0x1061dd0",
+              "class_rtti": ".?AVPolyStarOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721b79",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721b28",
+              "vtable_rva": "0x1062670",
+              "class_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721b3f",
+              "vtable_rva": "0x10626a0",
+              "class_rtti": ".?AVFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721c0d",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721bbc",
+              "vtable_rva": "0x1062720",
+              "class_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721bd3",
+              "vtable_rva": "0x1062750",
+              "class_rtti": ".?AVStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721ca1",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721c50",
+              "vtable_rva": "0x10626c8",
+              "class_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721c67",
+              "vtable_rva": "0x10626f8",
+              "class_rtti": ".?AVGradientFillOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        },
+        {
+          "registration_call_rva": "0x721d35",
+          "matched_evaluator_classes": [
+            {
+              "reference_instruction_rva": "0x721ce4",
+              "vtable_rva": "0x10627d8",
+              "class_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 0
+            },
+            {
+              "reference_instruction_rva": "0x721cfb",
+              "vtable_rva": "0x1062808",
+              "class_rtti": ".?AVGradientStrokeOperator@BEE_VectorStream@@",
+              "secondary_vtable_offset": 24
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

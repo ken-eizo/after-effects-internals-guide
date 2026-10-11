@@ -1,0 +1,4553 @@
+{
+  "classification": "E2-L disassembly, no private calls, not ABI stability guarantee",
+  "versions": {
+    "2025": {
+      "TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "entries": [
+        {
+          "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z",
+          "rva": "0x26710",
+          "function_end": "0x26a54",
+          "scanned_bytes": 836,
+          "instructions": [
+            {
+              "rva": "0x2677d",
+              "op": "call",
+              "args": "qword ptr [rip + 0x49385]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x2678f",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26793",
+              "op": "jne",
+              "args": "0x1800267c6",
+              "callee": ""
+            },
+            {
+              "rva": "0x267a7",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x267ac",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x267ae",
+              "op": "je",
+              "args": "0x1800267b6",
+              "callee": ""
+            },
+            {
+              "rva": "0x267b4",
+              "op": "jmp",
+              "args": "0x1800267bc",
+              "callee": ""
+            },
+            {
+              "rva": "0x267bc",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x267c0",
+              "op": "je",
+              "args": "0x1800267a0",
+              "callee": ""
+            },
+            {
+              "rva": "0x267c6",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x267ca",
+              "op": "jne",
+              "args": "0x1800267e0",
+              "callee": ""
+            },
+            {
+              "rva": "0x267d3",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x267d8",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x267da",
+              "op": "je",
+              "args": "0x1800267e3",
+              "callee": ""
+            },
+            {
+              "rva": "0x267e3",
+              "op": "cmp",
+              "args": "rdi, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x267e7",
+              "op": "jne",
+              "args": "0x18002687a",
+              "callee": ""
+            },
+            {
+              "rva": "0x267ed",
+              "op": "cmp",
+              "args": "byte ptr [rbp + 0x130], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x267f4",
+              "op": "je",
+              "args": "0x180026850",
+              "callee": ""
+            },
+            {
+              "rva": "0x267f9",
+              "op": "call",
+              "args": "0x18002dec0",
+              "callee": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "rva": "0x26813",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48d5f]",
+              "callee": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x26828",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48eb2]",
+              "callee": "U.dll!U_SubString"
+            },
+            {
+              "rva": "0x26842",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48f68]",
+              "callee": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x26848",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x2684a",
+              "op": "jne",
+              "args": "0x180026a38",
+              "callee": ""
+            },
+            {
+              "rva": "0x26853",
+              "op": "call",
+              "args": "qword ptr [rip + 0x492a7]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x2685e",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x26861",
+              "op": "je",
+              "args": "0x180026873",
+              "callee": ""
+            },
+            {
+              "rva": "0x26867",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x26870",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x26875",
+              "op": "jmp",
+              "args": "0x1800269e2",
+              "callee": ""
+            },
+            {
+              "rva": "0x26882",
+              "op": "call",
+              "args": "0x180026330",
+              "callee": ""
+            },
+            {
+              "rva": "0x2688b",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4926f]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x268aa",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x268ad",
+              "op": "je",
+              "args": "0x180026a4e",
+              "callee": ""
+            },
+            {
+              "rva": "0x268d7",
+              "op": "call",
+              "args": "qword ptr [rax + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x268dd",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x268e0",
+              "op": "jne",
+              "args": "0x18002694d",
+              "callee": ""
+            },
+            {
+              "rva": "0x268e2",
+              "op": "cmp",
+              "args": "byte ptr [rbp + 0x130], al",
+              "callee": ""
+            },
+            {
+              "rva": "0x268e8",
+              "op": "je",
+              "args": "0x18002685a",
+              "callee": ""
+            },
+            {
+              "rva": "0x268f1",
+              "op": "call",
+              "args": "0x18002dec0",
+              "callee": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "rva": "0x2690b",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48c67]",
+              "callee": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x26920",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48dba]",
+              "callee": "U.dll!U_SubString"
+            },
+            {
+              "rva": "0x2693a",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48e70]",
+              "callee": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x26940",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x26942",
+              "op": "jne",
+              "args": "0x180026a22",
+              "callee": ""
+            },
+            {
+              "rva": "0x26948",
+              "op": "jmp",
+              "args": "0x18002685a",
+              "callee": ""
+            },
+            {
+              "rva": "0x26953",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2695c",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x2695f",
+              "op": "je",
+              "args": "0x18002699e",
+              "callee": ""
+            },
+            {
+              "rva": "0x26983",
+              "op": "call",
+              "args": "r8",
+              "callee": ""
+            },
+            {
+              "rva": "0x26986",
+              "op": "cmp",
+              "args": "byte ptr [rsp + 0x40], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2698b",
+              "op": "jne",
+              "args": "0x18002699e",
+              "callee": ""
+            },
+            {
+              "rva": "0x26995",
+              "op": "call",
+              "args": "0x18003e830",
+              "callee": "?SetConstant@TDB_Stream@@QEAAHEE@Z"
+            },
+            {
+              "rva": "0x2699a",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x2699c",
+              "op": "jne",
+              "args": "0x180026a0c",
+              "callee": ""
+            },
+            {
+              "rva": "0x2699e",
+              "op": "test",
+              "args": "r12b, r12b",
+              "callee": ""
+            },
+            {
+              "rva": "0x269a1",
+              "op": "jne",
+              "args": "0x1800269c6",
+              "callee": ""
+            },
+            {
+              "rva": "0x269a3",
+              "op": "call",
+              "args": "0x18004b2a0",
+              "callee": "?TDB_ShouldAlwaysDecanonicalize@@YA_NXZ"
+            },
+            {
+              "rva": "0x269a8",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x269aa",
+              "op": "je",
+              "args": "0x1800269c6",
+              "callee": ""
+            },
+            {
+              "rva": "0x269b2",
+              "op": "call",
+              "args": "qword ptr [rax + 0x90]",
+              "callee": ""
+            },
+            {
+              "rva": "0x269b8",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x269bb",
+              "op": "je",
+              "args": "0x1800269c6",
+              "callee": ""
+            },
+            {
+              "rva": "0x269c0",
+              "op": "call",
+              "args": "0x18004b180",
+              "callee": "?TDB_DecanonicalizeAllChildStreamsDeep@@YAXPEAVTDB_StreamGroup@@@Z"
+            },
+            {
+              "rva": "0x269ca",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x269cd",
+              "op": "je",
+              "args": "0x1800269df",
+              "callee": ""
+            },
+            {
+              "rva": "0x269d6",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x269dc",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x269ec",
+              "op": "call",
+              "args": "0x180068530",
+              "callee": ""
+            },
+            {
+              "rva": "0x26a0b",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x26a1c",
+              "op": "call",
+              "args": "0x180069cb8",
+              "callee": ""
+            },
+            {
+              "rva": "0x26a32",
+              "op": "call",
+              "args": "0x180069cb8",
+              "callee": ""
+            },
+            {
+              "rva": "0x26a48",
+              "op": "call",
+              "args": "0x180069cb8",
+              "callee": ""
+            },
+            {
+              "rva": "0x26a4e",
+              "op": "call",
+              "args": "0x18004fd99",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+          "rva": "0x26cc0",
+          "function_end": "0x26d93",
+          "scanned_bytes": 211,
+          "instructions": [
+            {
+              "rva": "0x26cfd",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48e05]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x26d0f",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d13",
+              "op": "jne",
+              "args": "0x180026d42",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d27",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x26d2c",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d2e",
+              "op": "je",
+              "args": "0x180026d36",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d34",
+              "op": "jmp",
+              "args": "0x180026d3c",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d3c",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d40",
+              "op": "je",
+              "args": "0x180026d20",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d42",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d46",
+              "op": "jne",
+              "args": "0x180026d6d",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d4f",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x26d54",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d56",
+              "op": "jne",
+              "args": "0x180026d6d",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d58",
+              "op": "cmp",
+              "args": "rdi, qword ptr [rbp + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d5c",
+              "op": "je",
+              "args": "0x180026d6d",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d65",
+              "op": "call",
+              "args": "0x1800264c0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26d70",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48d8a]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x26d92",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+          "rva": "0x26da0",
+          "function_end": "0x26e5e",
+          "scanned_bytes": 190,
+          "instructions": [
+            {
+              "rva": "0x26ddb",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48d27]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x26dea",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26dee",
+              "op": "jne",
+              "args": "0x180026e12",
+              "callee": ""
+            },
+            {
+              "rva": "0x26df7",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x26dfc",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x26dfe",
+              "op": "je",
+              "args": "0x180026e06",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e04",
+              "op": "jmp",
+              "args": "0x180026e0c",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e0c",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e10",
+              "op": "je",
+              "args": "0x180026df0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e12",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e16",
+              "op": "jne",
+              "args": "0x180026e34",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e1f",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x26e24",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e26",
+              "op": "jne",
+              "args": "0x180026e34",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e28",
+              "op": "cmp",
+              "args": "rdi, qword ptr [r14 + 0x38]",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e2c",
+              "op": "je",
+              "args": "0x180026e34",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e32",
+              "op": "jmp",
+              "args": "0x180026e36",
+              "callee": ""
+            },
+            {
+              "rva": "0x26e39",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48cc1]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x26e5d",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ",
+          "rva": "0x8100",
+          "function_end": "0x8180",
+          "scanned_bytes": 128,
+          "instructions": [
+            {
+              "rva": "0x8107",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x8136",
+              "op": "call",
+              "args": "qword ptr [rip + 0x67474]",
+              "callee": "U.dll!ALOG_Log"
+            },
+            {
+              "rva": "0x813c",
+              "op": "call",
+              "args": "0x18003cc70",
+              "callee": ""
+            },
+            {
+              "rva": "0x8146",
+              "op": "call",
+              "args": "qword ptr [rip + 0x676dc]",
+              "callee": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0x8151",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x8154",
+              "op": "je",
+              "args": "0x18000815f",
+              "callee": ""
+            },
+            {
+              "rva": "0x8159",
+              "op": "call",
+              "args": "0x180025a90",
+              "callee": "??0TDB_StreamFactory@@QEAA@XZ"
+            },
+            {
+              "rva": "0x8166",
+              "op": "call",
+              "args": "0x180035c50",
+              "callee": "?Birth@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "rva": "0x8172",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x817b",
+              "op": "test",
+              "args": "ecx, ecx",
+              "callee": ""
+            },
+            {
+              "rva": "0x817d",
+              "op": "cmovne",
+              "args": "eax, ecx",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z",
+          "rva": "0x26f90",
+          "function_end": "0x27059",
+          "scanned_bytes": 201,
+          "instructions": [
+            {
+              "rva": "0x26fab",
+              "op": "call",
+              "args": "0x180026da0",
+              "callee": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x26fc9",
+              "op": "call",
+              "args": "r10",
+              "callee": ""
+            },
+            {
+              "rva": "0x26fd4",
+              "op": "call",
+              "args": "0x18003e800",
+              "callee": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "rva": "0x26fe1",
+              "op": "call",
+              "args": "0x18003a8b0",
+              "callee": "?GetSMDataPath@TDB_StreamBase@@QEBA?AVany@std@@XZ"
+            },
+            {
+              "rva": "0x26fec",
+              "op": "call",
+              "args": "0x18003f1a0",
+              "callee": "?SetSMDataPath@TDB_StreamBase@@QEAAXVany@std@@@Z"
+            },
+            {
+              "rva": "0x26ff7",
+              "op": "call",
+              "args": "qword ptr [rdx + 0x58]",
+              "callee": ""
+            },
+            {
+              "rva": "0x26ffa",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x26ffc",
+              "op": "je",
+              "args": "0x18002702a",
+              "callee": ""
+            },
+            {
+              "rva": "0x27004",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27012",
+              "op": "call",
+              "args": "0x18003f330",
+              "callee": "?SetTimeScale@TDB_Stream@@QEAAXI@Z"
+            },
+            {
+              "rva": "0x27021",
+              "op": "call",
+              "args": "0x18003e830",
+              "callee": "?SetConstant@TDB_Stream@@QEAAHEE@Z"
+            },
+            {
+              "rva": "0x27026",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27028",
+              "op": "jne",
+              "args": "0x180027043",
+              "callee": ""
+            },
+            {
+              "rva": "0x27042",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x27053",
+              "op": "call",
+              "args": "0x180069cb8",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "rva": "0x27060",
+          "function_end": "0x27124",
+          "scanned_bytes": 196,
+          "instructions": [
+            {
+              "rva": "0x2709c",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2709f",
+              "op": "je",
+              "args": "0x1800270af",
+              "callee": ""
+            },
+            {
+              "rva": "0x270a8",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x270be",
+              "op": "call",
+              "args": "0x180027400",
+              "callee": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "rva": "0x270c3",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x270c5",
+              "op": "je",
+              "args": "0x1800270f2",
+              "callee": ""
+            },
+            {
+              "rva": "0x270cb",
+              "op": "cmp",
+              "args": "rax, qword ptr [rbx + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x270cf",
+              "op": "je",
+              "args": "0x1800270e3",
+              "callee": ""
+            },
+            {
+              "rva": "0x270d7",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x270e1",
+              "op": "jmp",
+              "args": "0x1800270f2",
+              "callee": ""
+            },
+            {
+              "rva": "0x270ec",
+              "op": "call",
+              "args": "0x180024fb0",
+              "callee": ""
+            },
+            {
+              "rva": "0x270f6",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x270f9",
+              "op": "je",
+              "args": "0x18002710f",
+              "callee": ""
+            },
+            {
+              "rva": "0x270fe",
+              "op": "cmp",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x27104",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27123",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z",
+          "rva": "0x27130",
+          "function_end": "0x27316",
+          "scanned_bytes": 486,
+          "instructions": [
+            {
+              "rva": "0x27178",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4898a]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x27182",
+              "op": "call",
+              "args": "0x180039b80",
+              "callee": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "rva": "0x2718e",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2719e",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x271a2",
+              "op": "jne",
+              "args": "0x1800271d7",
+              "callee": ""
+            },
+            {
+              "rva": "0x271b8",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x271bd",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x271bf",
+              "op": "je",
+              "args": "0x1800271c7",
+              "callee": ""
+            },
+            {
+              "rva": "0x271c5",
+              "op": "jmp",
+              "args": "0x1800271cd",
+              "callee": ""
+            },
+            {
+              "rva": "0x271cd",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x271d1",
+              "op": "je",
+              "args": "0x1800271b0",
+              "callee": ""
+            },
+            {
+              "rva": "0x271d7",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x271db",
+              "op": "jne",
+              "args": "0x1800271f2",
+              "callee": ""
+            },
+            {
+              "rva": "0x271e5",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x271ea",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x271ec",
+              "op": "je",
+              "args": "0x1800271f5",
+              "callee": ""
+            },
+            {
+              "rva": "0x271f5",
+              "op": "cmp",
+              "args": "rdi, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x271f9",
+              "op": "je",
+              "args": "0x180027222",
+              "callee": ""
+            },
+            {
+              "rva": "0x271fb",
+              "op": "test",
+              "args": "rsi, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x271fe",
+              "op": "je",
+              "args": "0x18002720d",
+              "callee": ""
+            },
+            {
+              "rva": "0x2720b",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27215",
+              "op": "call",
+              "args": "0x1800264c0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2721d",
+              "op": "jmp",
+              "args": "0x1800272e6",
+              "callee": ""
+            },
+            {
+              "rva": "0x2722b",
+              "op": "call",
+              "args": "0x18003e800",
+              "callee": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "rva": "0x27236",
+              "op": "call",
+              "args": "qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27244",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2725a",
+              "op": "call",
+              "args": "0x1800257f0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2727d",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x272c6",
+              "op": "call",
+              "args": "0x180024b50",
+              "callee": ""
+            },
+            {
+              "rva": "0x272d0",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x272d3",
+              "op": "je",
+              "args": "0x1800272e6",
+              "callee": ""
+            },
+            {
+              "rva": "0x272dc",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x272e2",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x272e9",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48811]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x272fa",
+              "op": "call",
+              "args": "0x180068530",
+              "callee": ""
+            },
+            {
+              "rva": "0x27315",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "rva": "0x27400",
+          "function_end": "0x27652",
+          "scanned_bytes": 594,
+          "instructions": [
+            {
+              "rva": "0x27456",
+              "op": "call",
+              "args": "qword ptr [rip + 0x486ac]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x27468",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2746c",
+              "op": "jne",
+              "args": "0x180027496",
+              "callee": ""
+            },
+            {
+              "rva": "0x27477",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x2747c",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x2747e",
+              "op": "je",
+              "args": "0x180027486",
+              "callee": ""
+            },
+            {
+              "rva": "0x27484",
+              "op": "jmp",
+              "args": "0x18002748c",
+              "callee": ""
+            },
+            {
+              "rva": "0x2748c",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27490",
+              "op": "je",
+              "args": "0x180027470",
+              "callee": ""
+            },
+            {
+              "rva": "0x27496",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2749a",
+              "op": "jne",
+              "args": "0x1800274b0",
+              "callee": ""
+            },
+            {
+              "rva": "0x274a3",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x274a8",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x274aa",
+              "op": "je",
+              "args": "0x1800274b3",
+              "callee": ""
+            },
+            {
+              "rva": "0x274b3",
+              "op": "cmp",
+              "args": "rdi, qword ptr [r14 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x274b7",
+              "op": "je",
+              "args": "0x1800274e7",
+              "callee": ""
+            },
+            {
+              "rva": "0x274bc",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4863e]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x274c7",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x274ca",
+              "op": "je",
+              "args": "0x1800274e0",
+              "callee": ""
+            },
+            {
+              "rva": "0x274cf",
+              "op": "cmp",
+              "args": "rcx, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x274d5",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x274e2",
+              "op": "jmp",
+              "args": "0x18002762f",
+              "callee": ""
+            },
+            {
+              "rva": "0x274f2",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x27514",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27517",
+              "op": "je",
+              "args": "0x18002752e",
+              "callee": ""
+            },
+            {
+              "rva": "0x27524",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2753f",
+              "op": "call",
+              "args": "0x180024b50",
+              "callee": ""
+            },
+            {
+              "rva": "0x2754d",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27550",
+              "op": "je",
+              "args": "0x180027566",
+              "callee": ""
+            },
+            {
+              "rva": "0x2755d",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27563",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2757f",
+              "op": "call",
+              "args": "0x180026710",
+              "callee": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "rva": "0x27594",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x275af",
+              "op": "call",
+              "args": "0x1800257f0",
+              "callee": ""
+            },
+            {
+              "rva": "0x275ba",
+              "op": "call",
+              "args": "qword ptr [rax + 0x58]",
+              "callee": ""
+            },
+            {
+              "rva": "0x275bd",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x275bf",
+              "op": "je",
+              "args": "0x1800275f4",
+              "callee": ""
+            },
+            {
+              "rva": "0x275c7",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x275d3",
+              "op": "call",
+              "args": "qword ptr [rdx + 0x298]",
+              "callee": ""
+            },
+            {
+              "rva": "0x275d9",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x275db",
+              "op": "je",
+              "args": "0x1800275f4",
+              "callee": ""
+            },
+            {
+              "rva": "0x275e3",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x275ef",
+              "op": "call",
+              "args": "0x1800277f0",
+              "callee": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x275f4",
+              "op": "test",
+              "args": "r13b, r13b",
+              "callee": ""
+            },
+            {
+              "rva": "0x275f7",
+              "op": "jne",
+              "args": "0x180027606",
+              "callee": ""
+            },
+            {
+              "rva": "0x275ff",
+              "op": "call",
+              "args": "qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27609",
+              "op": "call",
+              "args": "qword ptr [rip + 0x484f1]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x27614",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27617",
+              "op": "je",
+              "args": "0x18002762d",
+              "callee": ""
+            },
+            {
+              "rva": "0x2761c",
+              "op": "cmp",
+              "args": "rcx, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x27622",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2763a",
+              "op": "call",
+              "args": "0x180068530",
+              "callee": ""
+            },
+            {
+              "rva": "0x27651",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z",
+          "rva": "0x277f0",
+          "function_end": "0x28145",
+          "scanned_bytes": 2389,
+          "instructions": [
+            {
+              "rva": "0x2784f",
+              "op": "call",
+              "args": "qword ptr [rip + 0x482b3]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x27861",
+              "op": "call",
+              "args": "0x180037ec0",
+              "callee": "?GetDimension@TDB_Stream@@QEBAFXZ"
+            },
+            {
+              "rva": "0x27866",
+              "op": "cmp",
+              "args": "r12w, ax",
+              "callee": ""
+            },
+            {
+              "rva": "0x2795d",
+              "op": "call",
+              "args": "0x180006860",
+              "callee": ""
+            },
+            {
+              "rva": "0x27973",
+              "op": "cmp",
+              "args": "byte ptr [rax + r8], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27978",
+              "op": "jne",
+              "args": "0x180027970",
+              "callee": ""
+            },
+            {
+              "rva": "0x27988",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48152]",
+              "callee": "dvacore.dll!?AsciiToUTF16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD_K@Z"
+            },
+            {
+              "rva": "0x27992",
+              "op": "call",
+              "args": "0x180039a20",
+              "callee": "?GetMatchName16Str@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x279ab",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4812f]",
+              "callee": "dvacore.dll!?AsciiToUTF16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD_K@Z"
+            },
+            {
+              "rva": "0x27a14",
+              "op": "call",
+              "args": "qword ptr [rip + 0x480be]",
+              "callee": "dvacore.dll!?ReplaceInString@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV34@0000000000@Z"
+            },
+            {
+              "rva": "0x27a1f",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a31",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48109]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27a50",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a65",
+              "op": "call",
+              "args": "qword ptr [rip + 0x480d5]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27a8a",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a9c",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4809e]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27ab8",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27aca",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48070]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27ae6",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27af8",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48042]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27b17",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b29",
+              "op": "call",
+              "args": "qword ptr [rip + 0x48011]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27b4e",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b63",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47fd7]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27b8b",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ba0",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47f9a]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27bc5",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bd7",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47f63]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27bf3",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c05",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47f35]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27c2e",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47aa4]",
+              "callee": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x27c35",
+              "op": "cmp",
+              "args": "qword ptr [rax + 0x18], 0xf",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c4c",
+              "op": "call",
+              "args": "0x18002c610",
+              "callee": "??0TDB_MatchName@@QEAA@PEBD_N@Z"
+            },
+            {
+              "rva": "0x27c59",
+              "op": "cmp",
+              "args": "rdx, 0xf",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c6c",
+              "op": "cmp",
+              "args": "rdx, 0x1000",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c73",
+              "op": "jb",
+              "args": "0x180027c8e",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c84",
+              "op": "cmp",
+              "args": "rax, 0x1f",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c88",
+              "op": "ja",
+              "args": "0x180028103",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c8e",
+              "op": "call",
+              "args": "0x1800683f4",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c98",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47b8a]",
+              "callee": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0x27ca5",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ca8",
+              "op": "je",
+              "args": "0x180027d3d",
+              "callee": ""
+            },
+            {
+              "rva": "0x27cb1",
+              "op": "call",
+              "args": "0x18003b340",
+              "callee": "?GetTimeScale@TDB_Stream@@QEBAIXZ"
+            },
+            {
+              "rva": "0x27d04",
+              "op": "call",
+              "args": "0x180032c50",
+              "callee": "??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "rva": "0x27d23",
+              "op": "call",
+              "args": "0x18003f250",
+              "callee": "?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            },
+            {
+              "rva": "0x27d34",
+              "op": "mov",
+              "args": "qword ptr [r13 + 0x448], r12",
+              "callee": ""
+            },
+            {
+              "rva": "0x27d3b",
+              "op": "jmp",
+              "args": "0x180027d40",
+              "callee": ""
+            },
+            {
+              "rva": "0x27d48",
+              "op": "call",
+              "args": "0x180038030",
+              "callee": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x27d65",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47d75]",
+              "callee": "dvacore.dll!?AsciiToUTF16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD_K@Z"
+            },
+            {
+              "rva": "0x27d7c",
+              "op": "call",
+              "args": "qword ptr [rax + 0x280]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27d89",
+              "op": "cmp",
+              "args": "qword ptr [rax + 0x18], 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27da1",
+              "op": "cmp",
+              "args": "r12, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27da4",
+              "op": "ja",
+              "args": "0x180027e33",
+              "callee": ""
+            },
+            {
+              "rva": "0x27db5",
+              "op": "cmp",
+              "args": "rcx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dc2",
+              "op": "cmp",
+              "args": "rax, r15",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dcb",
+              "op": "cmp",
+              "args": "rsi, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dce",
+              "op": "ja",
+              "args": "0x180027de5",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dd0",
+              "op": "cmp",
+              "args": "r15, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dd3",
+              "op": "ja",
+              "args": "0x180027dda",
+              "callee": ""
+            },
+            {
+              "rva": "0x27dd8",
+              "op": "jmp",
+              "args": "0x180027de8",
+              "callee": ""
+            },
+            {
+              "rva": "0x27de3",
+              "op": "jmp",
+              "args": "0x180027de8",
+              "callee": ""
+            },
+            {
+              "rva": "0x27df7",
+              "op": "call",
+              "args": "0x180069cca",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e09",
+              "op": "call",
+              "args": "0x180069cc4",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e23",
+              "op": "call",
+              "args": "0x180069cc4",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e31",
+              "op": "jmp",
+              "args": "0x180027e51",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e49",
+              "op": "call",
+              "args": "0x180025680",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e82",
+              "op": "cmp",
+              "args": "qword ptr [rbx + 0x18], 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27e96",
+              "op": "call",
+              "args": "0x18002aed0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ecf",
+              "op": "call",
+              "args": "0x18003ebc0",
+              "callee": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "rva": "0x27ed9",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27eeb",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47c4f]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27f07",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f19",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47c21]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27f35",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f47",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47bf3]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27f66",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f7b",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47bbf]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x27f85",
+              "op": "call",
+              "args": "0x180039dc0",
+              "callee": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ"
+            },
+            {
+              "rva": "0x27f96",
+              "op": "call",
+              "args": "0x180039b80",
+              "callee": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "rva": "0x27fad",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fb1",
+              "op": "jne",
+              "args": "0x180027ff1",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fcb",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x27fd0",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fd2",
+              "op": "je",
+              "args": "0x180027fde",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fdc",
+              "op": "jmp",
+              "args": "0x180027feb",
+              "callee": ""
+            },
+            {
+              "rva": "0x27feb",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fef",
+              "op": "je",
+              "args": "0x180027fc0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ff1",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ff5",
+              "op": "jne",
+              "args": "0x180028007",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ffe",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x28003",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28005",
+              "op": "je",
+              "args": "0x180028085",
+              "callee": ""
+            },
+            {
+              "rva": "0x28011",
+              "op": "cmp",
+              "args": "qword ptr [r15 + 8], rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x28015",
+              "op": "je",
+              "args": "0x18002813f",
+              "callee": ""
+            },
+            {
+              "rva": "0x2802b",
+              "op": "call",
+              "args": "0x1800683a8",
+              "callee": ""
+            },
+            {
+              "rva": "0x2803e",
+              "op": "call",
+              "args": "0x18002c590",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x28078",
+              "op": "call",
+              "args": "0x18002a720",
+              "callee": ""
+            },
+            {
+              "rva": "0x28091",
+              "op": "cmp",
+              "args": "rdx, qword ptr [rcx + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28095",
+              "op": "je",
+              "args": "0x1800280a1",
+              "callee": ""
+            },
+            {
+              "rva": "0x2809f",
+              "op": "jmp",
+              "args": "0x1800280aa",
+              "callee": ""
+            },
+            {
+              "rva": "0x280a5",
+              "op": "call",
+              "args": "0x1800251a0",
+              "callee": ""
+            },
+            {
+              "rva": "0x280ba",
+              "op": "call",
+              "args": "0x180027130",
+              "callee": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+            },
+            {
+              "rva": "0x280c7",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x280dc",
+              "op": "call",
+              "args": "qword ptr [rip + 0x47a5e]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x280f3",
+              "op": "call",
+              "args": "0x180037ec0",
+              "callee": "?GetDimension@TDB_Stream@@QEBAFXZ"
+            },
+            {
+              "rva": "0x280fb",
+              "op": "cmp",
+              "args": "r14d, ecx",
+              "callee": ""
+            },
+            {
+              "rva": "0x280fe",
+              "op": "jmp",
+              "args": "0x18002786a",
+              "callee": ""
+            },
+            {
+              "rva": "0x28103",
+              "op": "call",
+              "args": "qword ptr [rip + 0x4786f]",
+              "callee": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn"
+            },
+            {
+              "rva": "0x2810e",
+              "op": "call",
+              "args": "qword ptr [rip + 0x479ec]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x2811f",
+              "op": "call",
+              "args": "0x180068530",
+              "callee": ""
+            },
+            {
+              "rva": "0x2813e",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x2813f",
+              "op": "call",
+              "args": "0x180005270",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ",
+          "rva": "0x287a0",
+          "function_end": "0x28806",
+          "scanned_bytes": 102,
+          "instructions": [
+            {
+              "rva": "0x287c2",
+              "op": "cmp",
+              "args": "rbx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x287c5",
+              "op": "je",
+              "args": "0x1800287e4",
+              "callee": ""
+            },
+            {
+              "rva": "0x287da",
+              "op": "call",
+              "args": "0x180028bc0",
+              "callee": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x287df",
+              "op": "cmp",
+              "args": "rbx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x287e2",
+              "op": "jne",
+              "args": "0x1800287d0",
+              "callee": ""
+            },
+            {
+              "rva": "0x287e7",
+              "op": "cmp",
+              "args": "rax, qword ptr [rsi + 8]",
+              "callee": ""
+            },
+            {
+              "rva": "0x287eb",
+              "op": "je",
+              "args": "0x1800287f1",
+              "callee": ""
+            },
+            {
+              "rva": "0x28805",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z",
+          "rva": "0x28bc0",
+          "function_end": "0x28c40",
+          "scanned_bytes": 128,
+          "instructions": [
+            {
+              "rva": "0x28bc3",
+              "op": "jmp",
+              "args": "0x180028bd0",
+              "callee": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+            },
+            {
+              "rva": "0x28c15",
+              "op": "call",
+              "args": "qword ptr [rip + 0x46eed]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x28c1c",
+              "op": "mov",
+              "args": "rdi, qword ptr [r13 + 0x38]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c24",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c28",
+              "op": "jne",
+              "args": "0x180028c52",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c37",
+              "op": "call",
+              "args": "0x18002d680",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x28c3c",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c3e",
+              "op": "je",
+              "args": "0x180028c46",
+              "callee": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "entries": [
+        {
+          "name": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z",
+          "rva": "0x27920",
+          "function_end": "0x27c57",
+          "scanned_bytes": 823,
+          "instructions": [
+            {
+              "rva": "0x2798d",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5c145]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x2799c",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x279a0",
+              "op": "jne",
+              "args": "0x1800279cb",
+              "callee": ""
+            },
+            {
+              "rva": "0x279a9",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x279b1",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x279b3",
+              "op": "cmovne",
+              "args": "rcx, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x279be",
+              "op": "cmove",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x279c5",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x279c9",
+              "op": "je",
+              "args": "0x1800279a2",
+              "callee": ""
+            },
+            {
+              "rva": "0x279cb",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x279cf",
+              "op": "jne",
+              "args": "0x180027b61",
+              "callee": ""
+            },
+            {
+              "rva": "0x279dc",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x279e1",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x279e3",
+              "op": "jne",
+              "args": "0x180027b61",
+              "callee": ""
+            },
+            {
+              "rva": "0x279e9",
+              "op": "cmp",
+              "args": "rbx, qword ptr [r15 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x279ed",
+              "op": "je",
+              "args": "0x180027b61",
+              "callee": ""
+            },
+            {
+              "rva": "0x279fb",
+              "op": "call",
+              "args": "0x180027560",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a04",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5c0c6]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x27a23",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a26",
+              "op": "je",
+              "args": "0x180027c3b",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a50",
+              "op": "call",
+              "args": "qword ptr [rax + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a56",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a59",
+              "op": "jne",
+              "args": "0x180027ac6",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a5b",
+              "op": "cmp",
+              "args": "byte ptr [rbp + 0x130], al",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a61",
+              "op": "je",
+              "args": "0x180027bca",
+              "callee": ""
+            },
+            {
+              "rva": "0x27a6a",
+              "op": "call",
+              "args": "0x18002ed00",
+              "callee": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "rva": "0x27a84",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bab6]",
+              "callee": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x27a99",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bc01]",
+              "callee": "U.dll!U_SubString"
+            },
+            {
+              "rva": "0x27ab3",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bcaf]",
+              "callee": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x27ab9",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27abb",
+              "op": "jne",
+              "args": "0x180027c25",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ac1",
+              "op": "jmp",
+              "args": "0x180027bca",
+              "callee": ""
+            },
+            {
+              "rva": "0x27acc",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ad5",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ad8",
+              "op": "je",
+              "args": "0x180027b18",
+              "callee": ""
+            },
+            {
+              "rva": "0x27af5",
+              "op": "call",
+              "args": "qword ptr [r8 + 0x190]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27afc",
+              "op": "cmp",
+              "args": "byte ptr [rsp + 0x40], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b01",
+              "op": "jne",
+              "args": "0x180027b18",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b0b",
+              "op": "call",
+              "args": "0x18003f2d0",
+              "callee": "?SetConstant@TDB_Stream@@QEAAHEE@Z"
+            },
+            {
+              "rva": "0x27b10",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b12",
+              "op": "jne",
+              "args": "0x180027c41",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b18",
+              "op": "test",
+              "args": "r12b, r12b",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b1b",
+              "op": "jne",
+              "args": "0x180027b40",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b1d",
+              "op": "call",
+              "args": "0x18004bb00",
+              "callee": "?TDB_ShouldAlwaysDecanonicalize@@YA_NXZ"
+            },
+            {
+              "rva": "0x27b22",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b24",
+              "op": "je",
+              "args": "0x180027b40",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b2c",
+              "op": "call",
+              "args": "qword ptr [rax + 0x90]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b32",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b35",
+              "op": "je",
+              "args": "0x180027b40",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b3a",
+              "op": "call",
+              "args": "0x18004b9e0",
+              "callee": "?TDB_DecanonicalizeAllChildStreamsDeep@@YAXPEAVTDB_StreamGroup@@@Z"
+            },
+            {
+              "rva": "0x27b44",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b47",
+              "op": "je",
+              "args": "0x180027b59",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b50",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b56",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b5c",
+              "op": "jmp",
+              "args": "0x180027be5",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b61",
+              "op": "cmp",
+              "args": "byte ptr [rbp + 0x130], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b68",
+              "op": "je",
+              "args": "0x180027bc0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27b6d",
+              "op": "call",
+              "args": "0x18002ed00",
+              "callee": "?GetName@TDB_MatchName@@QEBAPEBEXZ"
+            },
+            {
+              "rva": "0x27b87",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b9b3]",
+              "callee": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x27b9c",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bafe]",
+              "callee": "U.dll!U_SubString"
+            },
+            {
+              "rva": "0x27bb6",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bbac]",
+              "callee": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x27bbc",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bbe",
+              "op": "jne",
+              "args": "0x180027c0f",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bc3",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bf07]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x27bce",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bd1",
+              "op": "je",
+              "args": "0x180027be3",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bd7",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27be0",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27bef",
+              "op": "call",
+              "args": "0x18007cf40",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c0e",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c1f",
+              "op": "call",
+              "args": "0x18007e1e8",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c35",
+              "op": "call",
+              "args": "0x18007e1e8",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c3b",
+              "op": "call",
+              "args": "0x1800504c8",
+              "callee": ""
+            },
+            {
+              "rva": "0x27c51",
+              "op": "call",
+              "args": "0x18007e1e8",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?GetCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+          "rva": "0x27eb0",
+          "function_end": "0x27f71",
+          "scanned_bytes": 193,
+          "instructions": [
+            {
+              "rva": "0x27ee2",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bbf0]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x27ef4",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ef8",
+              "op": "jne",
+              "args": "0x180027f2c",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f07",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x27f12",
+              "op": "test",
+              "args": "cl, cl",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f14",
+              "op": "cmovne",
+              "args": "rax, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f1f",
+              "op": "cmove",
+              "args": "rax, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f26",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f2a",
+              "op": "je",
+              "args": "0x180027f00",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f2c",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], r15b",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f30",
+              "op": "jne",
+              "args": "0x180027f57",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f39",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x27f3e",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f40",
+              "op": "jne",
+              "args": "0x180027f57",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f42",
+              "op": "cmp",
+              "args": "rbx, qword ptr [rbp + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f46",
+              "op": "je",
+              "args": "0x180027f57",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f4f",
+              "op": "call",
+              "args": "0x1800276d0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27f5a",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bb70]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x27f70",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z",
+          "rva": "0x27f80",
+          "function_end": "0x28035",
+          "scanned_bytes": 181,
+          "instructions": [
+            {
+              "rva": "0x27fb0",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5bb22]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x27fbf",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fc3",
+              "op": "jne",
+              "args": "0x180027ff9",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fd7",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x27fdf",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fe1",
+              "op": "cmovne",
+              "args": "rcx, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x27fec",
+              "op": "cmove",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ff3",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ff7",
+              "op": "je",
+              "args": "0x180027fd0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ff9",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x27ffd",
+              "op": "jne",
+              "args": "0x18002801b",
+              "callee": ""
+            },
+            {
+              "rva": "0x28006",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x2800b",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x2800d",
+              "op": "jne",
+              "args": "0x18002801b",
+              "callee": ""
+            },
+            {
+              "rva": "0x2800f",
+              "op": "cmp",
+              "args": "rbx, qword ptr [r14 + 0x38]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28013",
+              "op": "je",
+              "args": "0x18002801b",
+              "callee": ""
+            },
+            {
+              "rva": "0x28019",
+              "op": "jmp",
+              "args": "0x18002801d",
+              "callee": ""
+            },
+            {
+              "rva": "0x28020",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5baaa]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x28034",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?Get_AE_StreamFactory@@YAPEAVTDB_StreamFactory@@XZ",
+          "rva": "0x81b0",
+          "function_end": "0x8230",
+          "scanned_bytes": 128,
+          "instructions": [
+            {
+              "rva": "0x81b7",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x81e6",
+              "op": "call",
+              "args": "qword ptr [rip + 0x7b3a4]",
+              "callee": "U.dll!ALOG_Log"
+            },
+            {
+              "rva": "0x81ec",
+              "op": "call",
+              "args": "0x18003d7d0",
+              "callee": ""
+            },
+            {
+              "rva": "0x81f6",
+              "op": "call",
+              "args": "qword ptr [rip + 0x7b5e4]",
+              "callee": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0x8201",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x8204",
+              "op": "je",
+              "args": "0x18000820f",
+              "callee": ""
+            },
+            {
+              "rva": "0x8209",
+              "op": "call",
+              "args": "0x180026d00",
+              "callee": "??0TDB_StreamFactory@@QEAA@XZ"
+            },
+            {
+              "rva": "0x8216",
+              "op": "call",
+              "args": "0x1800366d0",
+              "callee": "?Birth@TDB_StreamBase@@SAXXZ"
+            },
+            {
+              "rva": "0x8223",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x822c",
+              "op": "test",
+              "args": "ecx, ecx",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?MakeInstanceFromCanonical@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI@Z",
+          "rva": "0x28170",
+          "function_end": "0x2821e",
+          "scanned_bytes": 174,
+          "instructions": [
+            {
+              "rva": "0x28180",
+              "op": "call",
+              "args": "0x180027f80",
+              "callee": "?GetCanonicalStream@TDB_StreamFactory@@QEAAPEBVTDB_StreamBase@@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x2819a",
+              "op": "call",
+              "args": "qword ptr [r10 + 8]",
+              "callee": ""
+            },
+            {
+              "rva": "0x281a6",
+              "op": "call",
+              "args": "0x18003f2a0",
+              "callee": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "rva": "0x281b3",
+              "op": "call",
+              "args": "0x18003b4a0",
+              "callee": "?GetSMDataPath@TDB_StreamBase@@QEBA?AVany@std@@XZ"
+            },
+            {
+              "rva": "0x281be",
+              "op": "call",
+              "args": "0x18003fbe0",
+              "callee": "?SetSMDataPath@TDB_StreamBase@@QEAAXVany@std@@@Z"
+            },
+            {
+              "rva": "0x281c9",
+              "op": "call",
+              "args": "qword ptr [rdx + 0x58]",
+              "callee": ""
+            },
+            {
+              "rva": "0x281cc",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x281ce",
+              "op": "je",
+              "args": "0x1800281fc",
+              "callee": ""
+            },
+            {
+              "rva": "0x281d6",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x281e4",
+              "op": "call",
+              "args": "0x18003fd70",
+              "callee": "?SetTimeScale@TDB_Stream@@QEAAXI@Z"
+            },
+            {
+              "rva": "0x281f3",
+              "op": "call",
+              "args": "0x18003f2d0",
+              "callee": "?SetConstant@TDB_Stream@@QEAAHEE@Z"
+            },
+            {
+              "rva": "0x281f8",
+              "op": "test",
+              "args": "eax, eax",
+              "callee": ""
+            },
+            {
+              "rva": "0x281fa",
+              "op": "jne",
+              "args": "0x180028208",
+              "callee": ""
+            },
+            {
+              "rva": "0x28207",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x28218",
+              "op": "call",
+              "args": "0x18007e1e8",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "rva": "0x28220",
+          "function_end": "0x282f9",
+          "scanned_bytes": 217,
+          "instructions": [
+            {
+              "rva": "0x2826a",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2826d",
+              "op": "je",
+              "args": "0x18002827e",
+              "callee": ""
+            },
+            {
+              "rva": "0x28277",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2828d",
+              "op": "call",
+              "args": "0x1800285d0",
+              "callee": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+            },
+            {
+              "rva": "0x28292",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28294",
+              "op": "je",
+              "args": "0x1800282c1",
+              "callee": ""
+            },
+            {
+              "rva": "0x2829a",
+              "op": "cmp",
+              "args": "rax, qword ptr [rbx + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2829e",
+              "op": "je",
+              "args": "0x1800282b2",
+              "callee": ""
+            },
+            {
+              "rva": "0x282a6",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x282b0",
+              "op": "jmp",
+              "args": "0x1800282c1",
+              "callee": ""
+            },
+            {
+              "rva": "0x282bb",
+              "op": "call",
+              "args": "0x180025ec0",
+              "callee": ""
+            },
+            {
+              "rva": "0x282c5",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x282c8",
+              "op": "je",
+              "args": "0x1800282de",
+              "callee": ""
+            },
+            {
+              "rva": "0x282cd",
+              "op": "cmp",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x282d3",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x282e6",
+              "op": "call",
+              "args": "0x18007cf40",
+              "callee": ""
+            },
+            {
+              "rva": "0x282f8",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z",
+          "rva": "0x28300",
+          "function_end": "0x284e2",
+          "scanned_bytes": 482,
+          "instructions": [
+            {
+              "rva": "0x2834e",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b784]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x28358",
+              "op": "call",
+              "args": "0x18003a760",
+              "callee": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "rva": "0x28364",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x28371",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28375",
+              "op": "jne",
+              "args": "0x1800283aa",
+              "callee": ""
+            },
+            {
+              "rva": "0x28388",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x28390",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28392",
+              "op": "cmovne",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x2839d",
+              "op": "cmove",
+              "args": "rcx, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x283a4",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x283a8",
+              "op": "je",
+              "args": "0x180028380",
+              "callee": ""
+            },
+            {
+              "rva": "0x283aa",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x283ae",
+              "op": "jne",
+              "args": "0x1800283ee",
+              "callee": ""
+            },
+            {
+              "rva": "0x283b8",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x283bd",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x283bf",
+              "op": "jne",
+              "args": "0x1800283ee",
+              "callee": ""
+            },
+            {
+              "rva": "0x283c1",
+              "op": "cmp",
+              "args": "rdi, qword ptr [r15 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x283c5",
+              "op": "je",
+              "args": "0x1800283ee",
+              "callee": ""
+            },
+            {
+              "rva": "0x283c7",
+              "op": "test",
+              "args": "rsi, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x283ca",
+              "op": "je",
+              "args": "0x1800283d9",
+              "callee": ""
+            },
+            {
+              "rva": "0x283d7",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x283e1",
+              "op": "call",
+              "args": "0x1800276d0",
+              "callee": ""
+            },
+            {
+              "rva": "0x283e9",
+              "op": "jmp",
+              "args": "0x1800284ad",
+              "callee": ""
+            },
+            {
+              "rva": "0x283f8",
+              "op": "call",
+              "args": "0x18003f2a0",
+              "callee": "?SetCanonical@TDB_StreamBase@@AEAAX_N@Z"
+            },
+            {
+              "rva": "0x28403",
+              "op": "call",
+              "args": "qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28411",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x28427",
+              "op": "call",
+              "args": "0x1800268f0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2843b",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2848d",
+              "op": "call",
+              "args": "0x180026a20",
+              "callee": ""
+            },
+            {
+              "rva": "0x28497",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2849a",
+              "op": "je",
+              "args": "0x1800284ad",
+              "callee": ""
+            },
+            {
+              "rva": "0x284a3",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x284a9",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x284b0",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b61a]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x284c1",
+              "op": "call",
+              "args": "0x18007cf40",
+              "callee": ""
+            },
+            {
+              "rva": "0x284e1",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z",
+          "rva": "0x285d0",
+          "function_end": "0x28822",
+          "scanned_bytes": 594,
+          "instructions": [
+            {
+              "rva": "0x2862f",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b4a3]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x28636",
+              "op": "mov",
+              "args": "rbx, qword ptr [r13 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2863e",
+              "op": "cmp",
+              "args": "byte ptr [rsi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28642",
+              "op": "jne",
+              "args": "0x18002866d",
+              "callee": ""
+            },
+            {
+              "rva": "0x2864b",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x28653",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28655",
+              "op": "cmovne",
+              "args": "rcx, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x28660",
+              "op": "cmove",
+              "args": "rcx, rsi",
+              "callee": ""
+            },
+            {
+              "rva": "0x28667",
+              "op": "cmp",
+              "args": "byte ptr [rsi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2866b",
+              "op": "je",
+              "args": "0x180028644",
+              "callee": ""
+            },
+            {
+              "rva": "0x2866d",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28671",
+              "op": "jne",
+              "args": "0x1800286b5",
+              "callee": ""
+            },
+            {
+              "rva": "0x2867a",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x2867f",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x28681",
+              "op": "jne",
+              "args": "0x1800286b5",
+              "callee": ""
+            },
+            {
+              "rva": "0x28683",
+              "op": "cmp",
+              "args": "rbx, qword ptr [r13 + 0x28]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28687",
+              "op": "je",
+              "args": "0x1800286b5",
+              "callee": ""
+            },
+            {
+              "rva": "0x2868c",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b43e]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x28697",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2869a",
+              "op": "je",
+              "args": "0x1800286ae",
+              "callee": ""
+            },
+            {
+              "rva": "0x2869f",
+              "op": "cmp",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x286a5",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x286b0",
+              "op": "jmp",
+              "args": "0x1800287f7",
+              "callee": ""
+            },
+            {
+              "rva": "0x286c0",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x286e0",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x286e3",
+              "op": "je",
+              "args": "0x1800286fa",
+              "callee": ""
+            },
+            {
+              "rva": "0x286f0",
+              "op": "call",
+              "args": "qword ptr [rax]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2870b",
+              "op": "call",
+              "args": "0x180026a20",
+              "callee": ""
+            },
+            {
+              "rva": "0x28719",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2871c",
+              "op": "je",
+              "args": "0x180028732",
+              "callee": ""
+            },
+            {
+              "rva": "0x28729",
+              "op": "cmp",
+              "args": "rcx, rdx",
+              "callee": ""
+            },
+            {
+              "rva": "0x2872f",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2874b",
+              "op": "call",
+              "args": "0x180027920",
+              "callee": "?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z"
+            },
+            {
+              "rva": "0x28760",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2877b",
+              "op": "call",
+              "args": "0x1800268f0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28786",
+              "op": "call",
+              "args": "qword ptr [rax + 0x58]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28789",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x2878b",
+              "op": "je",
+              "args": "0x1800287c0",
+              "callee": ""
+            },
+            {
+              "rva": "0x28793",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2879f",
+              "op": "call",
+              "args": "qword ptr [rdx + 0x298]",
+              "callee": ""
+            },
+            {
+              "rva": "0x287a5",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x287a7",
+              "op": "je",
+              "args": "0x1800287c0",
+              "callee": ""
+            },
+            {
+              "rva": "0x287af",
+              "op": "call",
+              "args": "qword ptr [rax + 0x80]",
+              "callee": ""
+            },
+            {
+              "rva": "0x287bb",
+              "op": "call",
+              "args": "0x1800289c0",
+              "callee": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x287c0",
+              "op": "test",
+              "args": "r12b, r12b",
+              "callee": ""
+            },
+            {
+              "rva": "0x287c3",
+              "op": "jne",
+              "args": "0x1800287d2",
+              "callee": ""
+            },
+            {
+              "rva": "0x287cb",
+              "op": "call",
+              "args": "qword ptr [rax + 0x150]",
+              "callee": ""
+            },
+            {
+              "rva": "0x287d5",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b2f5]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x287e0",
+              "op": "test",
+              "args": "rcx, rcx",
+              "callee": ""
+            },
+            {
+              "rva": "0x287e3",
+              "op": "je",
+              "args": "0x1800287f5",
+              "callee": ""
+            },
+            {
+              "rva": "0x287e8",
+              "op": "cmp",
+              "args": "rcx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x287ee",
+              "op": "call",
+              "args": "qword ptr [rax + 0x20]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28802",
+              "op": "call",
+              "args": "0x18007cf40",
+              "callee": ""
+            },
+            {
+              "rva": "0x28821",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?RegisterSeparatedDimensions@TDB_StreamFactory@@QEAAXPEBVTDB_Stream@@@Z",
+          "rva": "0x289c0",
+          "function_end": "0x2924f",
+          "scanned_bytes": 2191,
+          "instructions": [
+            {
+              "rva": "0x28a1e",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5b0b4]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x28a30",
+              "op": "call",
+              "args": "0x180038b30",
+              "callee": "?GetDimension@TDB_Stream@@QEBAFXZ"
+            },
+            {
+              "rva": "0x28a35",
+              "op": "cmp",
+              "args": "r12w, ax",
+              "callee": ""
+            },
+            {
+              "rva": "0x28b32",
+              "op": "call",
+              "args": "0x18005002a",
+              "callee": ""
+            },
+            {
+              "rva": "0x28b3b",
+              "op": "call",
+              "args": "0x18003a600",
+              "callee": "?GetMatchName16Str@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x28b54",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5af46]",
+              "callee": "dvacore.dll!?AsciiToUTF16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD_K@Z"
+            },
+            {
+              "rva": "0x28bc0",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aeca]",
+              "callee": "dvacore.dll!?ReplaceInString@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV34@0000000000@Z"
+            },
+            {
+              "rva": "0x28bcb",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28bdd",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5af25]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28bfc",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c11",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aef1]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28c36",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c48",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aeba]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28c64",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28c76",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ae8c]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28c95",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28ca7",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ae5b]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28ccc",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28ce1",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ae21]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28d09",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28d1e",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ade4]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28d46",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28d5b",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ada7]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28d80",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28d92",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ad70]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28dae",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28dc0",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ad42]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x28de9",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5a8a9]",
+              "callee": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x28df0",
+              "op": "cmp",
+              "args": "qword ptr [rax + 0x18], 0xf",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e07",
+              "op": "call",
+              "args": "0x18002d1f0",
+              "callee": "??0TDB_MatchName@@QEAA@PEBD_N@Z"
+            },
+            {
+              "rva": "0x28e14",
+              "op": "cmp",
+              "args": "rdx, 0xf",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e24",
+              "op": "cmp",
+              "args": "rdx, 0x1000",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e2b",
+              "op": "jb",
+              "args": "0x180028e49",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e38",
+              "op": "cmp",
+              "args": "rcx, 0x1f",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e3c",
+              "op": "ja",
+              "args": "0x18002920d",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e49",
+              "op": "call",
+              "args": "0x18007cdfc",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e53",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5a987]",
+              "callee": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0x28e60",
+              "op": "test",
+              "args": "rax, rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e63",
+              "op": "je",
+              "args": "0x180028ef6",
+              "callee": ""
+            },
+            {
+              "rva": "0x28e6c",
+              "op": "call",
+              "args": "0x18003beb0",
+              "callee": "?GetTimeScale@TDB_Stream@@QEBAIXZ"
+            },
+            {
+              "rva": "0x28ebf",
+              "op": "call",
+              "args": "0x180033880",
+              "callee": "??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "rva": "0x28edd",
+              "op": "call",
+              "args": "0x18003fc90",
+              "callee": "?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            },
+            {
+              "rva": "0x28ef4",
+              "op": "jmp",
+              "args": "0x180028ef9",
+              "callee": ""
+            },
+            {
+              "rva": "0x28f01",
+              "op": "call",
+              "args": "0x180038cb0",
+              "callee": "?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x28f1a",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ab80]",
+              "callee": "dvacore.dll!?AsciiToUTF16@string@dvacore@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD_K@Z"
+            },
+            {
+              "rva": "0x28f31",
+              "op": "call",
+              "args": "qword ptr [r9 + 0x280]",
+              "callee": ""
+            },
+            {
+              "rva": "0x28f3d",
+              "op": "cmp",
+              "args": "qword ptr [rax + 0x18], 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28f4f",
+              "op": "call",
+              "args": "0x180026540",
+              "callee": ""
+            },
+            {
+              "rva": "0x28f82",
+              "op": "cmp",
+              "args": "qword ptr [rbx + 0x18], 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28f96",
+              "op": "call",
+              "args": "0x180025950",
+              "callee": ""
+            },
+            {
+              "rva": "0x28fcf",
+              "op": "call",
+              "args": "0x18003f650",
+              "callee": "?SetDisplayName@TDB_StreamBase@@QEAAXAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@@Z"
+            },
+            {
+              "rva": "0x28fd9",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x28feb",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5ab17]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x29007",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x29019",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aae9]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x29035",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x29047",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aabb]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x29066",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x2907b",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5aa87]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x29085",
+              "op": "call",
+              "args": "0x18003a9a0",
+              "callee": "?GetParamDef@TDB_StreamBase@@QEAAPEAUPF_ParamDef@@XZ"
+            },
+            {
+              "rva": "0x29091",
+              "op": "call",
+              "args": "0x18003a760",
+              "callee": "?GetMatchName@TDB_StreamBase@@QEBAAEBVTDB_MatchName@@XZ"
+            },
+            {
+              "rva": "0x290a0",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x290a4",
+              "op": "jne",
+              "args": "0x1800290e0",
+              "callee": ""
+            },
+            {
+              "rva": "0x290ba",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x290bf",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x290c1",
+              "op": "je",
+              "args": "0x1800290cc",
+              "callee": ""
+            },
+            {
+              "rva": "0x290ca",
+              "op": "jmp",
+              "args": "0x1800290d8",
+              "callee": ""
+            },
+            {
+              "rva": "0x290d8",
+              "op": "cmp",
+              "args": "byte ptr [rbx + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x290dc",
+              "op": "je",
+              "args": "0x1800290b0",
+              "callee": ""
+            },
+            {
+              "rva": "0x290de",
+              "op": "jmp",
+              "args": "0x1800290e6",
+              "callee": ""
+            },
+            {
+              "rva": "0x290e6",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x290ea",
+              "op": "jne",
+              "args": "0x180029109",
+              "callee": ""
+            },
+            {
+              "rva": "0x290f3",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x290f8",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x290fa",
+              "op": "jne",
+              "args": "0x180029109",
+              "callee": ""
+            },
+            {
+              "rva": "0x29104",
+              "op": "jmp",
+              "args": "0x180029192",
+              "callee": ""
+            },
+            {
+              "rva": "0x29113",
+              "op": "cmp",
+              "args": "qword ptr [rsi + 8], rax",
+              "callee": ""
+            },
+            {
+              "rva": "0x29117",
+              "op": "je",
+              "args": "0x180029249",
+              "callee": ""
+            },
+            {
+              "rva": "0x29131",
+              "op": "call",
+              "args": "0x18007cdb0",
+              "callee": ""
+            },
+            {
+              "rva": "0x29144",
+              "op": "call",
+              "args": "0x18002d170",
+              "callee": "??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2918a",
+              "op": "call",
+              "args": "0x18002b6d0",
+              "callee": ""
+            },
+            {
+              "rva": "0x2919f",
+              "op": "cmp",
+              "args": "rdx, qword ptr [rcx + 0x10]",
+              "callee": ""
+            },
+            {
+              "rva": "0x291a3",
+              "op": "je",
+              "args": "0x1800291af",
+              "callee": ""
+            },
+            {
+              "rva": "0x291ad",
+              "op": "jmp",
+              "args": "0x1800291b9",
+              "callee": ""
+            },
+            {
+              "rva": "0x291b4",
+              "op": "call",
+              "args": "0x1800260e0",
+              "callee": ""
+            },
+            {
+              "rva": "0x291c4",
+              "op": "call",
+              "args": "0x180028300",
+              "callee": "?RegisterCanonicalInstance@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@PEAV2@@Z"
+            },
+            {
+              "rva": "0x291d1",
+              "op": "cmp",
+              "args": "rdx, 7",
+              "callee": ""
+            },
+            {
+              "rva": "0x291e6",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5a91c]",
+              "callee": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x291fe",
+              "op": "call",
+              "args": "0x180038b30",
+              "callee": "?GetDimension@TDB_Stream@@QEBAFXZ"
+            },
+            {
+              "rva": "0x29206",
+              "op": "cmp",
+              "args": "esi, ecx",
+              "callee": ""
+            },
+            {
+              "rva": "0x29208",
+              "op": "jmp",
+              "args": "0x180028a39",
+              "callee": ""
+            },
+            {
+              "rva": "0x29218",
+              "op": "call",
+              "args": "qword ptr [rip + 0x5a8b2]",
+              "callee": "dvacore.dll!?Unlock@RecursiveMutex@threads@dvacore@@QEBAXXZ"
+            },
+            {
+              "rva": "0x29229",
+              "op": "call",
+              "args": "0x18007cf40",
+              "callee": ""
+            },
+            {
+              "rva": "0x29248",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            },
+            {
+              "rva": "0x29249",
+              "op": "call",
+              "args": "0x1800054a0",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ",
+          "rva": "0x29850",
+          "function_end": "0x2989a",
+          "scanned_bytes": 74,
+          "instructions": [
+            {
+              "rva": "0x29867",
+              "op": "cmp",
+              "args": "rbx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x2986a",
+              "op": "je",
+              "args": "0x180029884",
+              "callee": ""
+            },
+            {
+              "rva": "0x2987a",
+              "op": "call",
+              "args": "0x180029c10",
+              "callee": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x2987f",
+              "op": "cmp",
+              "args": "rbx, rdi",
+              "callee": ""
+            },
+            {
+              "rva": "0x29882",
+              "op": "jne",
+              "args": "0x180029870",
+              "callee": ""
+            },
+            {
+              "rva": "0x29887",
+              "op": "cmp",
+              "args": "rax, qword ptr [rsi + 8]",
+              "callee": ""
+            },
+            {
+              "rva": "0x2988b",
+              "op": "je",
+              "args": "0x180029891",
+              "callee": ""
+            },
+            {
+              "rva": "0x29899",
+              "op": "ret",
+              "args": "",
+              "callee": ""
+            }
+          ]
+        },
+        {
+          "name": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z",
+          "rva": "0x29c10",
+          "function_end": "0x29c90",
+          "scanned_bytes": 128,
+          "instructions": [
+            {
+              "rva": "0x29c13",
+              "op": "jmp",
+              "args": "0x180029c20",
+              "callee": "?UnregisterFactoryFunc_NullOK@TDB_StreamFactory@@AEAA_NAEBVTDB_MatchName@@_N@Z"
+            },
+            {
+              "rva": "0x29c5a",
+              "op": "call",
+              "args": "qword ptr [rip + 0x59e78]",
+              "callee": "dvacore.dll!?Lock@RecursiveMutex@threads@dvacore@@QEBAXPEBDAEBV?$duration@_JU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z"
+            },
+            {
+              "rva": "0x29c61",
+              "op": "mov",
+              "args": "rbx, qword ptr [r13 + 0x38]",
+              "callee": ""
+            },
+            {
+              "rva": "0x29c69",
+              "op": "cmp",
+              "args": "byte ptr [rdi + 0x19], 0",
+              "callee": ""
+            },
+            {
+              "rva": "0x29c6d",
+              "op": "jne",
+              "args": "0x180029c99",
+              "callee": ""
+            },
+            {
+              "rva": "0x29c77",
+              "op": "call",
+              "args": "0x18002e470",
+              "callee": "??MTDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x29c7f",
+              "op": "test",
+              "args": "al, al",
+              "callee": ""
+            },
+            {
+              "rva": "0x29c81",
+              "op": "cmovne",
+              "args": "rcx, rbx",
+              "callee": ""
+            },
+            {
+              "rva": "0x29c8c",
+              "op": "cmove",
+              "args": "rcx, rdi",
+              "callee": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

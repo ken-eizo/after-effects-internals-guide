@@ -28,3 +28,16 @@ No Adobe binary, private headers, or proprietary DLL contents are redistributed 
 | TDB-12 | E2-X | `.../ShapeLayerAE_stream_metadata.tsv` SHA256 `1a5355c8a6ff0810285cd68aa47b240c93b83952ac16462a6a95efd96c4a4816` | 359/359 public session ID returned 0 twice, each API error 0; cause unresolved. |
 | TDB-13 | E2-L | `datasets/ae-vector-creator-registration-bundles-2025-2026.json` SHA256 `B51DC197A4826AB399CC45A3FC294EF3F085730637BA39A1D3E7596940A92286` | Built-in typed vector creator callbacks referenced within BEE functions repeatedly importing TDB `Register`. |
 | TDB-14 | E2-L | `datasets/ae-vectorart-render-entry-calls-2025-2026.json` SHA256 `70482A8AE5C5408B74A7F7E76C5363E82B6BCE21AF29DFBFA2FFA2A95ABCB787` | GetVectorArt creates TDB stream path, calls PopulateVectorArt and GetBounds. |
+
+## Dual-registry evaluator code and RTTI provenance (E2-L, 2026-10-11)
+
+- `datasets/ae-tdb-factory-lifetime-canonical-controlflow-2025-2026.json`: TDB eager CreateStream/Canonical/SeparatedDimensions registrar and unregister control flow in both installed versions.
+- `datasets/ae-vector-stream-populate-dispatch-2025-2026.json`, `datasets/ae-native-vector-populate-recursive-helpers-2025-2026.json`: private native traversal, MatchName evaluator lookup, vtable dispatch.
+- `datasets/ae-vector-evaluator-registry-xrefs-2025-2026.json`: bounded-memory full PE x64 code xrefs, 20 native BEE evaluator registration sites in 2025 and 2026; identifies global registry constructor and users.
+- `datasets/ae-native-vector-evaluator-registry-lifecycle-2025-2026.json`: BEE evaluator registry initialization, tree ownership and shutdown.
+- `datasets/ae-native-vector-evaluator-registration-records-2025-2026.json`: each evaluator registrar callsite and its static MatchName global RVA in both versions.
+- `datasets/ae-vector-evaluator-matchname-xrefs-2025.json` and `...2026.json`: source code xrefs connecting static C++ MatchName globals to initializers/registrars.
+- `datasets/ae-vector-evaluator-matchname-identities-2025-2026.json`: 20 exact native operator MatchNames, same identity order in both versions, with constructor literal addresses.
+- `datasets/ae-native-vector-evaluator-vtable-rtti-2025-2026.json`: callsite-local polymorphic operator vtables, concrete MSVC RTTI classes, multiple-subobject offsets, `PathFilterOperatorT<Params>` intermediate types. Derived from installed binary only, **not a stable external ABI**.
+
+Reproduction source: `experiments/vector-shape/probe-src/tools`, recorded in `SOURCE_SNAPSHOT.json`. Evidence interpretation: `research/findings/F-VECTOR-013-tdb-eager-canonical-lifecycle.md` and `F-VECTOR-014-dual-native-vector-evaluator-registry.md`. These are **static internal Adobe implementations**, never private registration exercised from external plug-in; distinct earlier E2-X TDB getter and CanAdd read-only experiments remain separate.

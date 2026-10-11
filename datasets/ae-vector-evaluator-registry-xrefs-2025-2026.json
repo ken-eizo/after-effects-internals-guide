@@ -1,0 +1,521 @@
+{
+  "classification": "E2-L; bounded static PE scan using low-memory disasm_lite",
+  "versions": {
+    "2025": {
+      "scanned_instructions": 4488162,
+      "targets": {
+        "accessor": 7309280,
+        "lookup": 7311392,
+        "dispatch": 7261504,
+        "insert_accessor": 7309504,
+        "registry_construct": 7270208,
+        "register_evaluator": 7269152,
+        "global": 23000040
+      },
+      "matches": {
+        "accessor": [
+          {
+            "at": "0x6cc986",
+            "mnemonic": "call",
+            "operands": "0x1806f87e0",
+            "function_start": "0x6cc930",
+            "nearest_export_hypothesis": "?DoFilter@StreamBasedFilter@BEE_VectorArt@@UEAAXPEBVRG_ProgAbort@@PEBU?$pair@V?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@PEAVBaseContainer@2@PEBVTDB_ParamBag@@@Z"
+          },
+          {
+            "at": "0x6ecd67",
+            "mnemonic": "call",
+            "operands": "0x1806f87e0",
+            "function_start": "0x6ecd40",
+            "nearest_export_hypothesis": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          }
+        ],
+        "lookup": [
+          {
+            "at": "0x6cc9a0",
+            "mnemonic": "call",
+            "operands": "0x1806f9020",
+            "function_start": "0x6cc930",
+            "nearest_export_hypothesis": "?DoFilter@StreamBasedFilter@BEE_VectorArt@@UEAAXPEBVRG_ProgAbort@@PEBU?$pair@V?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@PEAVBaseContainer@2@PEBVTDB_ParamBag@@@Z"
+          },
+          {
+            "at": "0x6ecd81",
+            "mnemonic": "call",
+            "operands": "0x1806f9020",
+            "function_start": "0x6ecd40",
+            "nearest_export_hypothesis": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          }
+        ],
+        "dispatch": [
+          {
+            "at": "0x6ec464",
+            "mnemonic": "call",
+            "operands": "0x1806ecd40",
+            "function_start": "0x6ec3c0",
+            "nearest_export_hypothesis": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+          },
+          {
+            "at": "0x6ec55d",
+            "mnemonic": "call",
+            "operands": "0x1806ecd40",
+            "function_start": "0x6ec3c0",
+            "nearest_export_hypothesis": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+          }
+        ],
+        "insert_accessor": [],
+        "registry_construct": [
+          {
+            "at": "0x76b6fb",
+            "mnemonic": "call",
+            "operands": "0x1806eef40",
+            "function_start": "0x76b6f0",
+            "nearest_export_hypothesis": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ],
+        "register_evaluator": [
+          {
+            "at": "0x6fd508",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd5d5",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd6a2",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd751",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd800",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd8af",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fd97c",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fda2b",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdaf8",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdbc5",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdc92",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fd400",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdd95",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fde29",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdebd",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdf51",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fdfe5",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fe079",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fe10d",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fe1a1",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x6fe235",
+            "mnemonic": "call",
+            "operands": "0x1806eeb20",
+            "function_start": "0x6fdcdd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ],
+        "global": [
+          {
+            "at": "0x6eef4a",
+            "mnemonic": "cmp",
+            "operands": "qword ptr [rip + 0xf00496], 0",
+            "function_start": "0x6eef40",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x6eefb0",
+            "mnemonic": "mov",
+            "operands": "qword ptr [rip + 0xf00431], rdi",
+            "function_start": "0x6eef40",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x6ef08f",
+            "mnemonic": "mov",
+            "operands": "rcx, qword ptr [rip + 0xf00352]",
+            "function_start": "0x6ef060",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x6f87e4",
+            "mnemonic": "mov",
+            "operands": "rax, qword ptr [rip + 0xef6bfd]",
+            "function_start": "0x6f87e0",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x6f88c4",
+            "mnemonic": "mov",
+            "operands": "rax, qword ptr [rip + 0xef6b1d]",
+            "function_start": "0x6f88c0",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x6fdccb",
+            "mnemonic": "mov",
+            "operands": "rbx, qword ptr [rip + 0xef1716]",
+            "function_start": "0x6fdcc0",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ]
+      }
+    },
+    "2026": {
+      "scanned_instructions": 4626191,
+      "targets": {
+        "accessor": 7455472,
+        "lookup": 7457792,
+        "dispatch": 7409728,
+        "insert_accessor": 7455696,
+        "registry_construct": 7419216,
+        "register_evaluator": 7418144,
+        "global": 23723448
+      },
+      "matches": {
+        "accessor": [
+          {
+            "at": "0x6f15d6",
+            "mnemonic": "call",
+            "operands": "0x18071c2f0",
+            "function_start": "0x6f1590",
+            "nearest_export_hypothesis": "?DoFilter@StreamBasedFilter@BEE_VectorArt@@UEAAXPEBVRG_ProgAbort@@PEBU?$pair@V?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@PEAVBaseContainer@2@PEBVTDB_ParamBag@@@Z"
+          },
+          {
+            "at": "0x711067",
+            "mnemonic": "call",
+            "operands": "0x18071c2f0",
+            "function_start": "0x711040",
+            "nearest_export_hypothesis": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          }
+        ],
+        "lookup": [
+          {
+            "at": "0x6f15f0",
+            "mnemonic": "call",
+            "operands": "0x18071cc00",
+            "function_start": "0x6f1590",
+            "nearest_export_hypothesis": "?DoFilter@StreamBasedFilter@BEE_VectorArt@@UEAAXPEBVRG_ProgAbort@@PEBU?$pair@V?$_List_iterator@V?$_List_val@U?$_List_simple_types@V?$IntrusivePtr@VBaseObject@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@@std@@@std@@@std@@V12@@std@@PEAVBaseContainer@2@PEBVTDB_ParamBag@@@Z"
+          },
+          {
+            "at": "0x711081",
+            "mnemonic": "call",
+            "operands": "0x18071cc00",
+            "function_start": "0x711040",
+            "nearest_export_hypothesis": "?PopulateVectorArt@BEE_VectorStream@@YAXAEBVBEE_VectorLayer@@AEBVTDB_StreamIDPath@@AEBUT_Time@@PEBVRG_ProgAbort@@PEAV?$function1@_NAEBVTDB_MatchName@@@boost@@V?$IntrusivePtr@VGroup@BEE_VectorArt@@@RefCountedInterface@utility@dvacore@@PEBVTDB_ParamBag@@W4PopulateCacheVariant@BEE_VectorArt@@@Z"
+          }
+        ],
+        "dispatch": [
+          {
+            "at": "0x71082e",
+            "mnemonic": "call",
+            "operands": "0x180711040",
+            "function_start": "0x710790",
+            "nearest_export_hypothesis": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+          },
+          {
+            "at": "0x71091a",
+            "mnemonic": "call",
+            "operands": "0x180711040",
+            "function_start": "0x710790",
+            "nearest_export_hypothesis": "?Union@BEE_VectorPropertySortRange@@QEAAXI@Z"
+          }
+        ],
+        "insert_accessor": [],
+        "registry_construct": [
+          {
+            "at": "0x78cf6b",
+            "mnemonic": "call",
+            "operands": "0x180713550",
+            "function_start": "0x78cf60",
+            "nearest_export_hypothesis": "?IsSpatial@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ],
+        "register_evaluator": [
+          {
+            "at": "0x72101d",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7210ea",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7211b7",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721266",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721315",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7213c4",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721491",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721540",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x72160d",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7216da",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7217a7",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x720f20",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721895",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721929",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x7219bd",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721a51",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721ae5",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721b79",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721c0d",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721ca1",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          },
+          {
+            "at": "0x721d35",
+            "mnemonic": "call",
+            "operands": "0x180713120",
+            "function_start": "0x7217dd",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ],
+        "global": [
+          {
+            "at": "0x71355a",
+            "mnemonic": "cmp",
+            "operands": "qword ptr [rip + 0xf8c856], 0",
+            "function_start": "0x713550",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x7135b9",
+            "mnemonic": "mov",
+            "operands": "qword ptr [rip + 0xf8c7f8], rdi",
+            "function_start": "0x713550",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x71369f",
+            "mnemonic": "mov",
+            "operands": "rcx, qword ptr [rip + 0xf8c712]",
+            "function_start": "0x713670",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x71c2f4",
+            "mnemonic": "mov",
+            "operands": "rax, qword ptr [rip + 0xf83abd]",
+            "function_start": "0x71c2f0",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x71c3d4",
+            "mnemonic": "mov",
+            "operands": "rax, qword ptr [rip + 0xf839dd]",
+            "function_start": "0x71c3d0",
+            "nearest_export_hypothesis": "??4?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@QEAAAEAU01@AEBU01@@Z"
+          },
+          {
+            "at": "0x7217cb",
+            "mnemonic": "mov",
+            "operands": "rbx, qword ptr [rip + 0xf7e5e6]",
+            "function_start": "0x7217c0",
+            "nearest_export_hypothesis": "?HasMinValue@?$ShapeEffectWigglePathsFrequencyTraits@$0CKL@V?$TDB_DefaultMFloat@$01@@@BEE_VectorStream@@SA_NXZ"
+          }
+        ]
+      }
+    }
+  }
+}

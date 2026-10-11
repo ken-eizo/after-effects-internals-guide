@@ -91,6 +91,10 @@ AE2026 E2-X capture returned **0 for all 359 stream UIDs** while every UID API e
 
 ShapeLayerAE v3 performed two UID calls with distinct nonzero sentinels in AE2026: **359/359 streams returned zero twice**, with 718 zero error codes. The cause remains unresolved.
 
+## New constraint: registering a TDB creator eagerly constructs its native stream
+
+Detailed .pdata-bounded AE2025/26 disassembly proves `TDB_StreamFactory::RegisterFactoryFunc` calls `CreateStream` before registration has finished and can traverse virtual methods, canonical stream and separated dimension setup. Thus an external dummy `std::function` callback is unsafe even as a preliminary registration test. A second, **BEE-owned** MatchName-to-polymorphic-operator registry is used by the native Shape evaluator, and separately registers 20 standard evaluators in both host versions. See [Native Vector Evaluator Registry](native-vector-evaluator-registry.md) for the exact class mapping and the distinction between schema, evaluation, owner and editor.
+
 ## Five breakpoints to independent native objects
 
 1. **Factory access**: pinned `TDB.dll` exact runtime and matching decorated `Get_AE_StreamFactory` symbol; read-only getter call and nonnull pointer test, no dereference. This read-only getter experiment was **executed and succeeded in AE2026**; no factory methods were called.

@@ -8,7 +8,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "428f17857002acbd44b9dd5b69dcd9a967cd960af59ac985127148720ed12208"
+      "sha256": "f73740e0d98ef6d6eec394a11d35169221370d7015d8ea22a79fc8b740e1c289"
     },
     {
       "path": "src/ShapeLayerProbe.cpp",
@@ -128,7 +128,7 @@
     },
     {
       "path": "tools/snapshot_probe_source.py",
-      "sha256": "7a98d40a37ae8023e6e7f6360d2d5a7efa648a5d225e02ceed92ff57f26f8656"
+      "sha256": "c58a5a5167f4d411d5d537012a27be361c37ea02001a624cbd3f0251c9cb2f03"
     },
     {
       "path": "tools/verify_research.py",
@@ -161,6 +161,90 @@
     {
       "path": "tools/trace_vectorart_render_entrycalls.py",
       "sha256": "801aa7061d59ffde8e86e174b1355163b93ca4cc90ba030895522387ab3e4e21"
+    },
+    {
+      "path": "tools/audit_tdb_factory_lifetime.py",
+      "sha256": "b419e8b2789fee4fde19b5547a4ba7eacf3a9cf9e81662a20c11b7ce92f03c94"
+    },
+    {
+      "path": "tools/print_tdb_factory_lifetime_2026.py",
+      "sha256": "c17862082ccee89ea23c170bc7a84c6b60e2e494a9231642234c4434fb4d4898"
+    },
+    {
+      "path": "tools/audit_vector_populate_dispatch.py",
+      "sha256": "e9e24b14dac3bd4edf7a598550f7e1360f5561f84d57163cc9e98d425244c59b"
+    },
+    {
+      "path": "tools/print_vector_populate_dispatch.py",
+      "sha256": "9f700b315585f7f38de8ca8f828e26ce31b1d04244f6a01b05f7a1ddb868f56e"
+    },
+    {
+      "path": "tools/trace_vector_populate_helpers.py",
+      "sha256": "77e3c0d9536962e8e5bf29f0e4a2a61158d6c6ba31d181dfba31148d3c8c5a27"
+    },
+    {
+      "path": "tools/print_vector_art_dispatch_2026.py",
+      "sha256": "4d11e41bc4baee0ebf180eb6aa0ccb80de68e45f556a606d33b5865e0ce4ffe8"
+    },
+    {
+      "path": "tools/print_vector_evaluator_lookup.py",
+      "sha256": "e160c1c7435f4adea59eec49232937ff74196457500fe8f9011224509e29f08f"
+    },
+    {
+      "path": "tools/trace_vector_evaluator_registry_xrefs_lite.py",
+      "sha256": "d9d672fb87b466ffde0643cb9b3e1883eddefa1efffdd3d4c90aaaac85ac970b"
+    },
+    {
+      "path": "tools/audit_vector_evaluator_registry_lifecycle.py",
+      "sha256": "1c8b8184bed9718c4ac8bf19e2d8332b7aa305396fe6c09c7ab4095791028ce0"
+    },
+    {
+      "path": "tools/print_vector_evaluator_registry_constructor.py",
+      "sha256": "ffaec8a660f1ae7282e6daf534a2996af99e0b5946c070b9091e15157954b94f"
+    },
+    {
+      "path": "tools/trace_vector_evaluator_startup.py",
+      "sha256": "e9379a96b74a0a36670775f166d853197c10fe35683f91168fe54bfe52fc051f"
+    },
+    {
+      "path": "tools/print_vector_evaluator_registrations.py",
+      "sha256": "e9cd79274978c3616a5bd1f6ff5adf06b5bcabcaa0772c8216391aa2eb63b35e"
+    },
+    {
+      "path": "tools/print_native_vector_eval_registrar.py",
+      "sha256": "b612b4a98a9fb90f161293ffa84b15b9ed95208c9ad80abc98b2b167ace40b31"
+    },
+    {
+      "path": "tools/scan_evaluator_registration_chain.py",
+      "sha256": "643944900fec50ffe78646a9078779297ade1e94873350f518498c6722900c2f"
+    },
+    {
+      "path": "tools/print_native_filter_dispatch.py",
+      "sha256": "7b1cff2425a2f90d6f2e73216c0cee066bfa13c6448eaea49ca16593eea47c4a"
+    },
+    {
+      "path": "tools/extract_vector_evaluator_registration_keys.py",
+      "sha256": "c184e3af5e6c587436022baaf221703c10288fc0763dc7d9abff0339e917d5dd"
+    },
+    {
+      "path": "tools/trace_eval_matchname_initializers.py",
+      "sha256": "06c601a449fedd9c84a820affbc98b94c75bc0ec2b99673bc66fc7203dc2e7f6"
+    },
+    {
+      "path": "tools/inspect_matchname_static_initializer.py",
+      "sha256": "a550bbbd56381dd86ae8668122bad4cbdc138ddc5839d2a4877f45caa742d55c"
+    },
+    {
+      "path": "tools/decode_vector_evaluator_matchnames.py",
+      "sha256": "f476ad1a3209634e5bb4ec71566fd4f0c5c52483768d1009fd8e4b4deafeeff3"
+    },
+    {
+      "path": "tools/inspect_vector_evaluator_rtti.py",
+      "sha256": "db8f1d30d8e924bd240b1bfde588051eb6b4bc31b540ca1ff745d7757fa6a442"
+    },
+    {
+      "path": "tools/decode_vector_evaluator_vtable_rtti.py",
+      "sha256": "a57f8a2b7ab774de511a10a7a506a862c55a7f7bb7d940fa8fe5edeff09b920f"
     }
   ]
 }
