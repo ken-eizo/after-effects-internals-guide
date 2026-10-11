@@ -3583,6 +3583,8 @@
       
         
       
+        
+      
     
     
     
@@ -3888,6 +3890,41 @@
     
   
     Native Vector Operator ABI and Origin
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-shape-system/research-to-product-frontier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research-to-Product Vector Frontier
   
 
     
@@ -13147,10 +13184,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vector-shape-system-research-to-product-frontier" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.9 Research-to-Product Vector Frontier
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vector-shape-system-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.9 Vector and Shape System
+        16.10 Vector and Shape System
       
     </span>
   </a>
@@ -20084,7 +20132,49 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <li><code>experiments/vector-shape/EXP-SHAPE-015-operator-mode-abi.md</code></li>
 <li><code>experiments/vector-shape/EXP-SHAPE-016-art-origin-stamping.md</code></li>
 </ul>
-<p>The official Adobe feature history places Shape Layers in <strong>CS3 (2007)</strong>; native editable vector mask facilities predate that. The emergence of editable SVG imports in 2025/2026 concerns conversion <strong>into standard Shape Layers</strong>, not an Effect SDK vector-return type. References: https://github.com/AdobeDocs/after-effects-feature-history and https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .</p></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.9"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
+<p>The official Adobe feature history places Shape Layers in <strong>CS3 (2007)</strong>; native editable vector mask facilities predate that. The emergence of editable SVG imports in 2025/2026 concerns conversion <strong>into standard Shape Layers</strong>, not an Effect SDK vector-return type. References: https://github.com/AdobeDocs/after-effects-feature-history and https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .</p></section><section class="print-page" id="vector-shape-system-research-to-product-frontier" heading-number="16.9"><h1 id="vector-shape-system-research-to-product-frontier-compnodeae-research-to-product-vector-frontier">CompNodeAE — Research-to-Product Vector Frontier<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-compnodeae-research-to-product-vector-frontier" title="Permanent link">&para;</a></h1>
+<h2 id="vector-shape-system-research-to-product-frontier-mission">Mission<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-mission" title="Permanent link">&para;</a></h2>
+<p>The primary ambition is <strong>an ordinary After Effects effect that is itself a native editable vector producer</strong>. The user must be able to use AE's normal Pen and Selection tools, see a true structured Timeline Contents hierarchy belonging to that effect, evaluate its Bezier / Group / Fill / Stroke / Filter structure, and have the production AE Shape renderer consume its vector result directly. Do not substitute a separate native Shape Layer, script-populated paths, a Drawbot overlay, a PF_World raster or topic-group parameters as a claim of completion.</p>
+<p>The program also has <strong>independent product opportunities</strong> using exposed Adobe-supported interfaces. Research should always answer: which specific new user workflow could a plug-in developer ship, what bridge is still missing, and what explicit test would falsify the feature?</p>
+<h2 id="vector-shape-system-research-to-product-frontier-opportunity-1-vector-geometry-bus-for-plug-ins-near-term-public-sdk-substrate">Opportunity 1 — Vector Geometry Bus for plug-ins (near-term, public SDK substrate)<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-opportunity-1-vector-geometry-bus-for-plug-ins-near-term-public-sdk-substrate" title="Permanent link">&para;</a></h2>
+<p><strong>What users could do:</strong> Place a procedural CompNodeAE effect that produces mathematically precise Bezier geometry, then let another separately developed CNL-aware effect consume the same control points for deformation, outlining, boolean operations, stroke synthesis, path instancing, motion paths or export. No intermediate image texture is required <strong>between these two aware plug-ins</strong>. This unlocks a developer SDK in which source, operator and consumer extensions exchange geometry instead of repeatedly rasterizing/edge-detecting pixels.</p>
+<p><strong>What we have:</strong> Adobe's distributed Sweetie AEGP and Checkout effect independently demonstrate producer-side AddSuite and consumer-side suite acquisition. We wrote two original, independently compiled AMD64 .aex modules in ShapeLayerAE/labs/vector_bridge: VectorBridgeAEGP exports a procedural double-precision four-cubic path; VectorBridgeConsumer retrieves those native numeric curves. PiPL/exports/build PE validation passed. <strong>The user then installed them in AE2026 and showed <code>PICA suite: connected</code>, <code>Native Bezier segments: 4; first X: 100.00</code> in the actual Effect About dialog (E2-X).</strong> The original Consumer had version/OutFlags mismatch dialogs and MFR warning; a corrected Consumer was rebuilt, the compiled PiPL metadata was inspected, and a two-AEX standalone mock geometry exchange passed. <strong>The corrected Consumer has not yet been retested in AE.</strong> See F-VECTOR-020.</p>
+<p><strong>What is needed for a shippable feature:</strong> Explicit producer identity, project/comp/effect-instance lifetime, time/subframe/quality/coordinate space, data snapshots, client-owned allocation contracts, suite-load order, MFR concurrency, dependency tracking/cache invalidation, inter-process and CPU/GPU readback policy. PICA alone does not register native AE rendering dependencies. Producer and consumer can be jointly implemented inside CompNodeAE to control those contracts before opening them to third parties.</p>
+<p><strong>What this is not:</strong> Not a new AE-native editable Contents type, not Pen-tool targeting and not an Effect SDK vector result channel. It is a new <strong>cross-plug-in contract</strong> on Adobe's supported PICA transport.</p>
+<h2 id="vector-shape-system-research-to-product-frontier-opportunity-2-native-editable-path-inputs-without-separate-shape-layers-near-term-limited">Opportunity 2 — Native-editable path inputs without separate Shape Layers (near-term, limited)<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-opportunity-2-native-editable-path-inputs-without-separate-shape-layers-near-term-limited" title="Permanent link">&para;</a></h2>
+<p><strong>Potential user workflow:</strong> Apply CompNodeAE to a normal solid or footage layer. Draw ordinary native <strong>mask paths</strong> on that same layer with the AE Pen tool. Use the mask path as the vector input, process it through a procedural non-raster node chain and offer the computed geometry to other CompNode-aware plug-ins over the Vector Geometry Suite.</p>
+<p><strong>Supported basis:</strong> SDK 25.6 AE_Effect.h describes PF_Param_PATH as a way to access the host layer's mask/path/shapes, and PF_PathQuerySuite1 / PF_PathDataSuite1 are provided. This is a host-owned editable path input; it does not make the effect own editable output paths. The eventual normal AE effect composite remains PF_World unless a separate vector handoff is realized.</p>
+<p><strong>Impact:</strong> Creative studios could use built-in Pen handles for data entry while keeping downstream procedural operations in an editable Bezier domain, not silhouettes extracted from rendered masks. This is <em>not</em> the user's full native effect-owned Contents objective and must be labeled a constrained input solution.</p>
+<h2 id="vector-shape-system-research-to-product-frontier-opportunity-3-native-bee-vector-operator-plug-ins-high-risk-private-abi">Opportunity 3 — Native BEE vector operator plug-ins (high-risk, private ABI)<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-opportunity-3-native-bee-vector-operator-plug-ins-high-risk-private-abi" title="Permanent link">&para;</a></h2>
+<p><strong>If proven:</strong> Independently authored geometric operators could appear inside the regular AE Contents hierarchy and run before the production vector renderer. The user could add advanced boolean, offset, variable-width strokes, nonlinear Bezier warps, path-based particle paths, formula-driven branching, procedural lettering, constructive geometry, topology-preserving morphs and other operators with host-native preview and resolution-independent fidelity.</p>
+<p><strong>Real internal evidence:</strong> AE2025/2026 each register 20 MatchName-keyed polymorphic BEE_VectorStream operators in a <strong>separate</strong> evaluator registry from TDB StreamFactory. Every operator has a known C++ RTTI reference-counted family and a virtual mode dispatcher at vtable+0x18; 9 Group/Shape/Graphic types consume mode 0, 11 Filters use mode 1. TDB registration eagerly creates stream instances. All private registry ABI and destructor/canonical invariants remain unsafe for external registration without an isolated test.</p>
+<p><strong>Limit:</strong> Even if registered, this may work <em>only under an existing native Shape Layer</em>. It would be an impressive new product capability but still not the independent ordinary-effect objective.</p>
+<h2 id="vector-shape-system-research-to-product-frontier-opportunity-4-true-effect-owned-native-contents-ae-pen-handles-and-vector-output-moonshot">Opportunity 4 — True effect-owned native Contents, AE Pen handles and vector output (moonshot)<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-opportunity-4-true-effect-owned-native-contents-ae-pen-handles-and-vector-output-moonshot" title="Permanent link">&para;</a></h2>
+<p><strong>The breakthrough users would experience:</strong> A normal Effect Controls/Timeline effect turns into an editable vector authoring and computation surface. Users draw or select points with AE's <strong>own</strong> Pen and Selection tools, edit real Group/Path/Stroke/Fill/Transform children in the native Timeline, and stack arbitrary CompNodeAE nodes that return geometry—not pixels. Downstream compatible effects and the host's own BEE/AGM production renderer would receive true vector geometry. A finished motion design could remain mathematically resolution-independent until final composite. The old distinction "only Shape Layers produce host-native editable vector geometry" would change.</p>
+<p><strong>Verified host constraints:</strong> Generic BEE_Selection::SelectStream operates on BEE_StreamSpec(BEE_Layer*, TDB_StreamIDPath). The native selection-related function bodies actually call IsPathOrChildSelected, FindEditableStream and GetCanonicalStream while reconstructing hierarchical IDs in both versions. The native Repeater evaluation stamps synthetic OriginInfo indices; Path/Rect/Ellipse generators create native CAIMBezierPath/VectorArt and stamp authored StreamIDPath. This establishes important host-internal building blocks.</p>
+<p><strong>Still missing:</strong> An external owning BEE layer/effect with legal TDB indexed Contents, a type creator + renderer evaluator, a public/private stable registration path, editor hit-test and drag-to-authored-stream binding, project serializer, undo, renderer invalidation and host lifecycle. These are separate blockers; none have been solved by an external plug-in. This project is high-risk research, not a promised feature.</p>
+<p><strong>Proof gates:</strong> Independent plugin-defined Contents without a native Shape Layer; user-created children survive Undo + Save/Reopen; AE native Pen tool recognizes the plugin's own path; edits update source geometry; native BEE VectorArt participates in RG/AGM output; coherent cache/MFR behavior across versions. A mock overlay or a duplicate Shape Layer <strong>fails</strong> the gate.</p>
+<h2 id="vector-shape-system-research-to-product-frontier-opportunity-5-svg-to-native-vector-bridge-2026-useful-fallback-only">Opportunity 5 — SVG-to-native-vector bridge (2026, useful fallback only)<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-opportunity-5-svg-to-native-vector-bridge-2026-useful-fallback-only" title="Permanent link">&para;</a></h2>
+<p><strong>Practical feature:</strong> CompNodeAE could export internally computed Bezier/Fill/Stroke trees to SVG and offer an explicit <strong>Bake to Native Shape</strong> command through AE's supported SVG import/paste workflow. This gives users real editable Shape Layer content quickly, often higher quality than raster intermediates, and may preserve more group semantics in AE26+. It is a conversion/bake feature and does not satisfy the requirement that the effect itself remain a live native vector owner.</p>
+<p><strong>New native lead:</strong> The installed AE2026 BEE_PasteSVGIntoComp(BEE_Layer<em>, ..., shared_ptr<ScSVGParse>, ...) directly builds a TDB_StreamIDPath from StreamName_ROOT_VECTORS_GROUP, uses BEE_Layer mutation-suppression scopes, and AGM transform ports. Its generic BEE_Layer</em> parameter suggests an owner experiment but proves <strong>neither</strong> non-Shape-Layer acceptance nor safe private API access.</p>
+<p><strong>The more radical hypothesis:</strong> Discover whether the SVG importer can attach an authentic Root Vectors tree to an independently owned object that is not a native Shape Layer. This would address one owner/serialization boundary but still needs editor and renderer proofs.</p>
+<h2 id="vector-shape-system-research-to-product-frontier-priorities-after-this-session">Priorities after this session<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-priorities-after-this-session" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Next high-confidence test</strong>: The original pair <strong>did connect in AE2026</strong>; replace only the Consumer with the corrected, PiPL-aligned build after closing AE. Confirm the old 25::16 mismatch dialogs and the MFR performance notice do not appear; the Effect About must still report <code>PICA suite: connected</code> and four cubic Beziers. Then test frame-time geometry and teardown/MFR. Do not hot-replace DLLs in a running host.</li>
+<li><strong>Product v1</strong>: Add immutable per-instance geometry snapshots and a CompNodeAE-internal typed path API; test under MFR and random-access rendering. Ship only when dependencies and lifetimes are correct.</li>
+<li><strong>Private moonshot</strong>: Reconstruct the caller/owner preconditions of BEE_PasteSVGIntoComp and the exact BEE_VectorLayer/Effect stream-owner acceptance policy. Trace OriginInfo -&gt; native hit-test -&gt; FindEditableStream dataflow.</li>
+<li><strong>High-risk ABI lab</strong>: Version-pinned standalone operator interface and refcount construction in a non-AE mock, then gated reversible registration in an empty throwaway AE instance. Registration can run creators <em>during registration</em>, so never use dummy pointers.</li>
+<li><strong>Feature exploration</strong>: Build a concrete vector-node demonstration (boolean/instancer/path morph) consuming CNL_VectorCubicV1 <strong>without</strong> pixels; implement real consumer data semantics before native editor parity.</li>
+</ol>
+<h2 id="vector-shape-system-research-to-product-frontier-product-report-template-for-all-subsequent-vector-research-sessions">Product-report template for all subsequent vector-research sessions<a class="headerlink" href="#vector-shape-system-research-to-product-frontier-product-report-template-for-all-subsequent-vector-research-sessions" title="Permanent link">&para;</a></h2>
+<p>Each session should explicitly state:
+- <strong>Finding and evidence grade</strong> (SDK-confirmed, local binary static, in-AE observed, hypothesis).
+- <strong>What a creator can implement today</strong> without a new unsupported private ABI.
+- <strong>Large potential user-facing features</strong>, with examples of real creative workflows and the user-visible benefit.
+- <strong>Gap to genuine native host parity</strong> and which capabilities are not yet proven.
+- <strong>Next runnable experiment and exact success/failure criteria</strong>.
+- <strong>AEIG experiment/result paths, plugin source/build state, build/test status and Git commit</strong>.</p>
+<p>Related findings: F-VECTOR-013 through F-VECTOR-020. New observed receipt: datasets/ae-pica-vector-bridge-two-plugin-build-receipt-2026.json. Public source references: local Adobe SDK 25.6 Sweetie/Checkout; https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ ; https://helpx.adobe.com/after-effects/desktop/import-files/import-svg-files/import-svg-files.html .</p></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.10"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
 <p>Shape layers combine a persistent vector object model, hierarchical transforms/modifiers and a renderer-facing tessellation/rasterization path.</p>
 <h2 id="vector-shape-system-overview-questions">Questions<a class="headerlink" href="#vector-shape-system-overview-questions" title="Permanent link">&para;</a></h2>
 <ul>
@@ -27886,9 +27976,14 @@ dumpbin failures: <strong>0</strong>.</p>
                 .print-site-enumerate-headings #vector-shape-system-native-vector-operator-abi-and-origin h2:before { content: '16.8.' counter(counter-vector-shape-system-native-vector-operator-abi-and-origin-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-native-vector-operator-abi-and-origin h2 {  counter-increment: counter-vector-shape-system-native-vector-operator-abi-and-origin-2 }
             
-.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.9 ' }
+.print-site-enumerate-headings #vector-shape-system-research-to-product-frontier > h1:before { content: '16.9 ' }
 
-                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.9.' counter(counter-vector-shape-system-overview-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-research-to-product-frontier h2:before { content: '16.9.' counter(counter-vector-shape-system-research-to-product-frontier-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-research-to-product-frontier h2 {  counter-increment: counter-vector-shape-system-research-to-product-frontier-2 }
+            
+.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.10 ' }
+
+                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.10.' counter(counter-vector-shape-system-overview-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-overview h2 {  counter-increment: counter-vector-shape-system-overview-2 }
             
 .print-site-enumerate-headings #section-17 > h1:before { content: '17 ' }
