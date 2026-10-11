@@ -84,3 +84,14 @@ A new independent AEGP uses the already-confirmed PICA procedural cubic geometry
 **Compiled and static-verified only; not installed/tested in actual AE in this session.** This is an intermediate, host-standard path authoring integration, not independent effect-owned Contents, native Shape evaluator or direct BEE/AGM vector output. See Finding F-VECTOR-024, EXP-SHAPE-022 and the standalone native-editable-path-lab. If user confirmation succeeds, compare selected native Mask/Shape identities, native Pen tools and live mask rendering to design a next research probe for independent TDB owner registration.
 
 User-facing consequence of a successful host test: a CompNodeAE companion AEGP could publish code-generated curves as normal-layer **native editable mask geometry** which users change with familiar Pen handles, native project saving and standard mask compositing. An actual new Shape-like effect remains the moonshot.
+
+
+## 2026-10-12 — Hard boundary of the research (user clarification)
+
+A true CompNodeAE native vector product cannot delegate essential creation/ownership/editability/renderer contracts back to a built-in Mask or Shape Layer. Such experiments can be useful controls, but success requires a new plugin-controlled native source class and registered host behavior.
+
+The newest native vtable audit establishes a concrete owner-specific render requirement: BEE_AVLayer and BEE_VectorLayer override Rasterize2DGraph in the same virtual slot, whose position changed from +0x758 (AE2025) to +0x770 (AE2026). VectorLayer has distinct native Create allocation/constructor, GetLayerType 4, default type magic 0x05192004, BEE_CompItem/Project command ownership and TDB stream registration. This is **a major architecture finding, not proof of third-party plug-in support**.
+
+**Large future product consequence if solved:** plugins could define wholly new AE-native editable vector types — not a fake Shape Layer, not Mask, not raster — with unique path filters, procedural geometry as persistent native Contents, AE's actual Pen and Selection handles, and production RG/AGM rendering. It would allow visual coding languages to return an authorable vector object rather than only a composited pixel image.
+
+Evidence: [Independent Native Vector Objects](independent-native-vector-owner-research.md), F-VECTOR-025, H-SHAPE-007, EXP-SHAPE-023. Remaining highest-risk gate is a truly registered independent native Stream Creator/owner with a safe, complete, version-pinned ABI and no host process patching.

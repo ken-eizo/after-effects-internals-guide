@@ -1,0 +1,53 @@
+{
+  "classification": "E2-L machine code corroboration, compact fact-only digest",
+  "goal": "Third-party effect-owned editable native path, new Contents, native VectorArt output without Mask/Shape layer dependence",
+  "success_gate": "not yet achieved; only internal native class/render contract reconstructed",
+  "source_raw_local_only": [
+    "ae-native-av-vs-vector-layer-raster-vtable-2025-2026.json",
+    "ae-vector-layer-native-owner-vs-avlayer-render-2025-2026.json",
+    "ae-native-shape-layer-command-type-adapter-2025-2026.json",
+    "ae-native-vector-layer-creation-adapter-target-2025-2026.json"
+  ],
+  "versions": {
+    "AE2025": {
+      "source_bee_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "av_vtable_rva": "0xf1bee8",
+      "vector_vtable_rva": "0xffff58",
+      "raster_slot_index": 235,
+      "raster_slot_byte_offset": "0x758",
+      "av_raster_function_rva": "0x28f520",
+      "vector_raster_function_rva": "0x6e3e90",
+      "layer_type_slot_index": 80,
+      "ordinary_av_layer_type": 0,
+      "shape_vector_layer_type": 4,
+      "vector_default_type_magic": "0x05192004",
+      "av_layer_allocated_bytes": 10256,
+      "vector_layer_allocated_bytes": 10272,
+      "vector_native_newlayer_command_id": "0x65",
+      "vector_native_newlayer_resource_id": "0x306",
+      "producer_creator_is_native_tdb_callback": true,
+      "third_party_creator_registration_proven": false,
+      "effect_native_geometry_output_proven": false
+    },
+    "AE2026": {
+      "source_bee_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "av_vtable_rva": "0xf79128",
+      "vector_vtable_rva": "0x1060ce8",
+      "raster_slot_index": 238,
+      "raster_slot_byte_offset": "0x770",
+      "av_raster_function_rva": "0x298720",
+      "vector_raster_function_rva": "0x708720",
+      "layer_type_slot_index": 80,
+      "ordinary_av_layer_type": 0,
+      "shape_vector_layer_type": 4,
+      "vector_default_type_magic": "0x05192004",
+      "av_layer_allocated_bytes": 10200,
+      "vector_layer_allocated_bytes": 10288,
+      "vector_native_newlayer_command_id": "0x6a",
+      "vector_native_newlayer_resource_id": "0x306",
+      "producer_creator_is_native_tdb_callback": true,
+      "third_party_creator_registration_proven": false,
+      "effect_native_geometry_output_proven": false
+    }
+  }
+}

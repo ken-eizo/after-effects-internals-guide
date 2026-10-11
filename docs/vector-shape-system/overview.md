@@ -81,3 +81,12 @@ A third AEGP prototype is now compiled from original C++ source and the distribu
 **No actual AE host action has been tested for the new plugin; compiled-PiPL/PE and SDK signatures only are confirmed.** The user will install and test it separately. No Shape Layer is created in the intended workflow, but the resulting Mask belongs to the ordinary BEE AV Layer — NOT the CompNodeAE effect's own Contents. This does NOT prove direct BEE_VectorArt, native custom BEE operator registration, native Shape Layer renderer interception or Pen editing of effect-owned procedural vertices. A native Mask is a real AE editing and mask-rendering route, but was publicly accessible before this project; the novel local connection is PICA procedural geometry entering that host-owned stream without raster intermediate.
 
 If native mask test passes: next implement live path-input/expression-free sync from the edited native Mask to CompNodeAE nodes, while continuing the independent private-ABI stream/renderer owner research. See F-VECTOR-021 for BEE's shared Mask/Shape path selection identity substrate.
+
+
+## 2026-10-12 — Reconfirming the actual flagship: no Mask/Shape shortcuts
+
+The user's actual goal is direct control of **the native path object, its editable Timeline hierarchy, Pen tool binding, vector evaluation and native AE render output** from a plugin-owned new type. Creating a Mask, writing to standard Shape Contents, rendering PF_World or exporting SVG cannot be promoted to that achievement.
+
+New two-version vftable and native command work proves that AE's AV Layer and Vector Layer put their distinct Rasterize2DGraph implementations into **the same virtual Layer slot** (2025 index235, 2026 index238), with distinct GetLayerType and factory-created native C++ class identities. This means renderer participation is an **owner/layer class contract**, not merely Bezier geometry or a BEE operator MatchName registration. Separate TDB and BEE evaluator registries must be connected to a legitimate native owner, editor/selection model and render-graph dispatch.
+
+See [Independent Native Vector Objects: Type, Owner, Editor and Renderer](independent-native-vector-owner-research.md), F-VECTOR-025 and EXP-SHAPE-023. The older Mask PICA bridge is retained for historical completeness but no longer treated as a step meeting the main independent native Contents objective.

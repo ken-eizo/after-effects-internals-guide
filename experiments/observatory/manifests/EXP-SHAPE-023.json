@@ -1,0 +1,53 @@
+{
+  "experiment_id": "EXP-SHAPE-023",
+  "title": "Native AV vs Vector layer creator, render vtable and host command ownership ABI",
+  "status": "pass-static",
+  "date": "2026-10-12",
+  "evidence": [
+    "E2-L pinned installed AE2025/AE2026 BEE.dll PE exports",
+    ".pdata-bounded function disassembly",
+    "exported MSVC virtual function table decoded",
+    "independent compact fact verification PASS"
+  ],
+  "goal": "Discover native generation, owner, editor and renderer contracts for plugin-owned shape-like geometry WITHOUT Mask, existing Shape Layer or PF_World",
+  "result": {
+    "native_renderer_class_specific": true,
+    "av_vs_vector_render_vtable_same_slot": true,
+    "raster_slot_2025": 235,
+    "raster_slot_2026": 238,
+    "vector_layer_type_both_versions": 4,
+    "av_layer_type_both_versions": 0,
+    "vector_default_type_magic": "0x05192004",
+    "av_sizes_hex": [
+      "0x2810",
+      "0x27D8"
+    ],
+    "vector_sizes_hex": [
+      "0x2820",
+      "0x2830"
+    ],
+    "native_new_vector_command_ids_hex": [
+      "0x65",
+      "0x6a"
+    ],
+    "compiled_external_owner_or_vector_operator": false,
+    "direct_BEE_VectorArt_as_effect_output": false,
+    "new_native_plugin_layer_registration_proven": false,
+    "changed_production_AEX": false,
+    "installed_new_AEX": false
+  },
+  "limits": [
+    "Host internal ABI is private and changes between versions",
+    "The public Effect SDK has no identified native VectorArt return API",
+    "Neither the stream factory nor BEE evaluator registered by third-party",
+    "No new editable native Contents or native Pen tool host integration achieved"
+  ],
+  "next": "Reconstruct complete TDB creator and BEE evaluator lifetime/allocator ABI, then actual BEE_CompItem/Project owner registration gate. Only propose external registration after safe version-pinned reversible conditions are known. Do not use Mask or ordinary Shape Layer as a success substitute.",
+  "sources": [
+    "research/findings/F-VECTOR-025-native-vector-owner-vtable-layer-render-dispatch.md",
+    "docs/vector-shape-system/independent-native-vector-owner-research.md",
+    "datasets/ae-native-vector-owner-contract-summary-2025-2026.json",
+    "experiments/vector-shape/EXP-SHAPE-023-native-layer-vtable-owner-dispatch.md",
+    "research/hypotheses/H-SHAPE-007-independent-native-vector-owner.md"
+  ]
+}
