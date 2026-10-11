@@ -3577,6 +3577,8 @@
       
         
       
+        
+      
     
     
     
@@ -3865,6 +3867,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#host-v3-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host v3 note
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sources-raw-artifacts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3899,6 +3912,41 @@
     
   
     Native Stream Factory and Shape Schema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-output-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Independent Native Vector Output
   
 
     
@@ -12151,6 +12199,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#host-v3-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host v3 note
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sources-raw-artifacts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12271,9 +12330,11 @@
 <li><code>BEE_GetSelectedShapePathsVec</code> exists, takes <code>BEE_Layer*</code> and <code>std::vector&lt;TDB_StreamIDPath&gt;*</code> according to MSVC decoration, but has no validated plug-in-facing lifetime, ownership or thread contract.</li>
 </ul>
 <h2 id="controlled-tests-and-falsification">Controlled tests and falsification<a class="headerlink" href="#controlled-tests-and-falsification" title="Permanent link">&para;</a></h2>
-<p><strong>EXP-SHAPE-005</strong> (built but not yet loaded into the host): dump UID, internal grouping flags, stream type, and a non-mutating <code>CanAddStream</code> matrix for known built-ins, in addition to the original topology; never call <code>AddStream</code>. The plugin is located at <code>D:\Developer\ShapeLayerAE</code>, and the source is mirrored under <code>experiments/vector-shape/probe-src</code>.</p>
+<p><strong>EXP-SHAPE-005</strong> (executed in AE2026, followed by v3 EXP-SHAPE-009/010): dump UID, internal grouping flags, stream type, and a non-mutating <code>CanAddStream</code> matrix for known built-ins, in addition to the original topology; never call <code>AddStream</code>. The plugin is located at <code>D:\Developer\ShapeLayerAE</code>, and the source is mirrored under <code>experiments/vector-shape/probe-src</code>.</p>
 <p>Then collect successive snapshots of the <strong>same host session</strong> before/after native Timeline child reorder and a group Path edit, and before/after Undo. Compare public session UIDs and topology, not <code>StreamRefH</code> pointer values. Test a Shape Layer, a nonshape layer with a normal effect, an empty Shape Layer, and a Repeater case. Full parity remains conditional on independent native type registration, host Pen selection, evaluation and project persistence.</p>
 <p><strong>Failure criteria</strong>: a plugin-only custom indexed group cannot be instantiated as a native persistent stream type; a synthetic evaluated instance is not associated with a selectable Timeline stream; or VectorArt can only be drawn through a raster bridge. Each failure narrows the native extensibility frontier without negating successful public AEGP traversal.</p>
+<h2 id="host-v3-note">Host v3 note<a class="headerlink" href="#host-v3-note" title="Permanent link">&para;</a></h2>
+<p>A user-installed AEGP has now successfully invoked the pinned no-argument private <code>Get_AE_StreamFactory</code> getter without dereferencing its non-null pointer; the new unknown-name <code>CanAddStream</code> experiment also succeeded. These do not establish external factory registration, editable path ownership or native VectorArt handoff. See <code>F-VECTOR-010</code>, <code>F-VECTOR-011</code>, <code>F-VECTOR-012</code> and <a href="../native-vector-output-ownership/">Independent Native Vector Output</a>.</p>
 <h2 id="sources-raw-artifacts">Sources / raw artifacts<a class="headerlink" href="#sources-raw-artifacts" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Adobe official AEGP Stream Suite reference: https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/ (<code>AEGP_GetUniqueStreamID</code> is explicitly session-unique; AE 22.5+).</li>
@@ -12302,7 +12363,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 09:04:47 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
   </span>
 
     

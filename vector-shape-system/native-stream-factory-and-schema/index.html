@@ -16,7 +16,7 @@
         <link rel="prev" href="../native-edit-and-provenance-bridge/">
       
       
-        <link rel="next" href="../overview/">
+        <link rel="next" href="../native-vector-output-ownership/">
       
       
         
@@ -3577,6 +3577,8 @@
       
         
       
+        
+      
     
     
     
@@ -3878,6 +3880,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#host-confirmed-external-access-and-native-shape-registration-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host-confirmed external access and native Shape registration (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3936,6 +3949,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-output-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Independent Native Vector Output
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -12151,6 +12199,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#host-confirmed-external-access-and-native-shape-registration-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Host-confirmed external access and native Shape registration (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12324,26 +12383,29 @@
 </table>
 <p>Exact MSVC signatures and DLL hashes: <code>research/findings/F-VECTOR-008-tdb-native-factory-registration.md</code>, and raw <code>datasets/ae-tdb-native-stream-factory-2025-2026.json</code>.</p>
 <p>The register callback is a C++ <code>std::function</code> that returns <code>TDB_StreamBase*</code> and takes a <code>TDB_MatchName const&amp;</code>, <code>TDB_StreamFactory*</code> and additional arguments. That is <strong>not a stable C plug-in ABI</strong>. It depends on private class layouts, compiler C++ ABI, allocator ownership, callback lifecycle, canonical stream ownership, and host shutdown sequencing. Merely discovering the function address does not solve those problems.</p>
+<h2 id="host-confirmed-external-access-and-native-shape-registration-2026-10-11">Host-confirmed external access and native Shape registration (2026-10-11)<a class="headerlink" href="#host-confirmed-external-access-and-native-shape-registration-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>A separately installed AEGP <strong>called</strong> the pinned private <code>Get_AE_StreamFactory()</code> getter in AE2026 and obtained a non-null value (E2-X, read-only; no factory dereference or mutation). Its unknown-type <code>AEGP_CanAddStream</code> probe accepted Shape/Graphic/Filter-prefixed names under native Contents even without proving their instantiation (72 calls, zero errors). All 359 streams also returned zero UID on two independently sentinel-initialized calls (zero AEGP errors).</p>
+<p>Offline full-code cross-version analysis located 31 built-in vector Creator address references in <strong>four true x64 <code>.pdata</code> function regions</strong>, and directly resolved repeated <code>TDB_ScRegisterStreams::Register()</code> imported calls in those same regions: 55 + 47 + 19 + 62 static CALL sites in each AE2025/2026 version. This proves built-in type Creator registration via TDB at the code-reference level; <strong>third-party type installation, owner/Timeline integration and VectorArt output are still open</strong>. See <code>F-VECTOR-010</code>, <code>F-VECTOR-011</code>, <code>F-VECTOR-012</code> and <a href="../native-vector-output-ownership/">Independent Native Vector Output</a>.</p>
 <h2 id="native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration">Native Contents admission is partly a string grammar, not just a type enumeration<a class="headerlink" href="#native-contents-admission-is-partly-a-string-grammar-not-just-a-type-enumeration" title="Permanent link">&para;</a></h2>
 <p><code>BEE_VectorStream::VectorsStreamGroup::CanStore(TDB_MatchName const&amp;)</code> disassembly refers to three <strong>literal</strong> strings in BOTH versions:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">ADBE Vector Shape -
 </span><span id="__span-1-2">ADBE Vector Graphic -
 </span><span id="__span-1-3">ADBE Vector Filter -
 </span></code></pre></div>
-<p>The function calls a string-search-like helper and compares the returned address with the beginning of the candidate name. This is consistent with <strong>prefix recognition</strong>; a fourth direct <code>TDB_MatchName</code> equality check also exists. Whether an unknown prefixed MatchName is admitted by public <code>CanAddStream</code> must be measured independently. The native group may still reject its creation if no matching factory callback exists.</p>
+<p>The function calls a string-search-like helper and compares the returned address with the beginning of the candidate name. This is consistent with <strong>prefix recognition</strong>; a fourth direct <code>TDB_MatchName</code> equality check also exists. An unknown prefixed MatchName <strong>was admitted</strong> by public <code>CanAddStream</code> in the real AE2026 host, but no object was created. The native group may still reject its creation if no matching factory callback exists.</p>
 <p>This explains why two distinct gates matter:</p>
 <ul>
 <li><strong>Structural parent admissibility</strong>: Is this category of child allowed under this indexed parent? (<code>CanStore</code> / <code>CanAddStream</code> surface)</li>
 <li><strong>Type construction</strong>: Does the factory know how to instantiate that precise match name? (<code>RegisterFactoryFunc</code> / <code>CreateStream</code>)</li>
 </ul>
 <p>One gate passing never implies the other.</p>
-<p>AE2026 E2-X data: 36/36 successful non-mutating CanAdd queries distinguished Shape Contents/Effects. Native vector names were allowed in Contents but rejected in Effect Parade; <code>ADBE Slider Control</code> showed the opposite. Experimental <strong>unknown-prefixed</strong> names will be tested through a distinct explicit menu command, NEVER through actual <code>AEGP_AddStream</code> until the factory relationship is proven.</p>
+<p>AE2026 E2-X data: 36/36 successful non-mutating CanAdd queries distinguished Shape Contents/Effects. Native vector names were allowed in Contents but rejected in Effect Parade; <code>ADBE Slider Control</code> showed the opposite. Experimental <strong>unknown-prefixed</strong> names were tested via a distinct explicit menu command; no <code>AEGP_AddStream</code> or native registration was attempted.</p>
 <h2 id="the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue">The stream UID anomaly is a separate potential feature-gate issue<a class="headerlink" href="#the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue" title="Permanent link">&para;</a></h2>
 <p>AE2026 E2-X capture returned <strong>0 for all 359 stream UIDs</strong> while every UID API error field was zero. This contradicts the <em>expected utility</em> of the documented session-unique ID, but it does not prove that the function is generally broken. In local runtime export/import evidence, <code>TDB_Project::TDB_AreTDBStreamScriptingIDsEnabled</code> and AEIG's historical <code>EnableTDBStreamScriptingIDs</code> Beta flag suggest a related identity prototype, but there is <strong>no verified causal connection</strong>.</p>
-<p>The new ShapeLayerAE v3 performs two UID calls with distinct nonzero output-buffer sentinels to distinguish host-written zero from untouched memory; that experiment is <strong>compiled but not host-tested</strong>.</p>
+<p>ShapeLayerAE v3 performed two UID calls with distinct nonzero sentinels in AE2026: <strong>359/359 streams returned zero twice</strong>, with 718 zero error codes. The cause remains unresolved.</p>
 <h2 id="five-breakpoints-to-independent-native-objects">Five breakpoints to independent native objects<a class="headerlink" href="#five-breakpoints-to-independent-native-objects" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>Factory access</strong>: pinned <code>TDB.dll</code> exact runtime and matching decorated <code>Get_AE_StreamFactory</code> symbol; read-only getter call and nonnull pointer test, no dereference. This is a prepared opt-in experiment, NOT yet executed.</li>
+<li><strong>Factory access</strong>: pinned <code>TDB.dll</code> exact runtime and matching decorated <code>Get_AE_StreamFactory</code> symbol; read-only getter call and nonnull pointer test, no dereference. This read-only getter experiment was <strong>executed and succeeded in AE2026</strong>; no factory methods were called.</li>
 <li><strong>Custom matchname structural admissibility</strong>: query unknown but matching Shape/Graphic/Filter prefix with <code>AEGP_CanAddStream</code> against Contents. Do not add.</li>
 <li><strong>Creator+canonical registration</strong>: recover TDB_MatchName private layout and std::function ABI; prove a complete, reversibly registered custom stream in a disposable host. Critical: callback code/vtable lifetime must outlive any host-owned instance and be correctly unregistered before unloading; save/reopen behavior must be tested.</li>
 <li><strong>Native owner and Timeline</strong>: attach a TDB_IndexedStreamGroup to a genuinely <em>independent plug-in-owned native object</em>, not to an ordinary Shape Layer. This may require internal BEE owner type dispatch. A generic group showing in some UI is insufficient.</li>
@@ -12354,8 +12416,8 @@
 <ul>
 <li>EXP-SHAPE-005 — real AE2026 public topology, metadata/UID and built-in admissibility (host verified).</li>
 <li>EXP-SHAPE-008 — read-only TDB factory export, per-version import/callsite/dataflow and string grammar (static verified).</li>
-<li>EXP-SHAPE-009 — <strong>opt-in</strong> unknown prefixed names CanAdd, plus UID sentinel control (built, not host-tested).</li>
-<li>EXP-SHAPE-010 — <strong>opt-in</strong> pinned private factory pointer Getter: verify module, decorated export, first-instruction fingerprint and call the zero-argument getter only, record nonnull Boolean. No pointer dereference, no registration, no factory callback; compiled but not host-tested.</li>
+<li>EXP-SHAPE-009 — <strong>AE2026 host-confirmed</strong> unknown prefixed names CanAdd and dual UID sentinel control (72 CanAdd calls, 359 × 2 UID calls).</li>
+<li>EXP-SHAPE-010 — <strong>AE2026 host-confirmed</strong> read-only pinned private factory pointer Getter: module/export/opcode checks succeeded and pointer returned non-null; no dereference, registration or mutation.</li>
 <li>Future gated tests of creator registration ONLY on a disposable AE installation, clean project, exact pinned binaries, with crash capture and rollback plan; do not inject into an active working AE session or write third-party type definitions directly into production projects.</li>
 </ul>
 <p>Production effects must still respect AE cache dependencies and rendering contracts: a native factory object is not an effect output channel. Custom Comp UI and Drawbot are separate UI facilities. Adobe SDK is not extended by these private findings.</p>
@@ -12390,7 +12452,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:17:28 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
   </span>
 
     
@@ -12437,13 +12499,13 @@
         
         
           
-          <a href="../overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Vector and Shape System">
+          <a href="../native-vector-output-ownership/" class="md-footer__link md-footer__link--next" aria-label="Next: Independent Native Vector Output">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Vector and Shape System
+                Independent Native Vector Output
               </div>
             </div>
             <div class="md-footer__button md-icon">

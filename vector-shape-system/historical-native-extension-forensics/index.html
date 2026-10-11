@@ -3577,6 +3577,8 @@
       
         
       
+        
+      
     
     
     
@@ -3971,6 +3973,41 @@
     
   
     Native Stream Factory and Shape Schema
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-output-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Independent Native Vector Output
   
 
     
@@ -12466,7 +12503,7 @@
 <li><strong>Native renderer</strong> — trace the VectorArt to AGM and <code>Rasterize2DGraph</code>, distinguish Shape-native rendering from an effect using AGM to emit <code>PF_World</code>. A pixel-output effect remains a raster effect even if it internally calls the same mathematics.</li>
 <li><strong>Persistence, reproducibility and compatibility</strong> — a native object must save/reopen, retain stable selection, support Undo/redo, keyframes and expression evaluation, survive AE restart, and render consistently. Major-version binary exports have different RVAs; no binary ABI stability is promised.</li>
 </ol>
-<p>No use of private function calls or host memory patching is justified by the present evidence. Later experiments require an isolated disposable AE session, a backed-up project, frozen exact binary hash, runtime trace provenance, explicit crash/rollback strategy, and independently reproduced minimal hypotheses. Avoid shipping private Adobe headers or binary contents to source control.</p>
+<p>As of 2026-10-11, an independently installed AEGP has called the <strong>single pinned read-only private</strong> <code>Get_AE_StreamFactory()</code> getter and received a non-null value (E2-X). No private registration, factory object dereference, host memory patching or native type creation has been attempted. Later experiments require an isolated disposable AE session, a backed-up project, frozen exact binary hash, runtime trace provenance, explicit crash/rollback strategy, and independently reproduced minimal hypotheses. Avoid shipping private Adobe headers or binary contents to source control.</p>
 <h2 id="what-counts-as-a-breakthrough">What counts as a breakthrough?<a class="headerlink" href="#what-counts-as-a-breakthrough" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>S0</strong>: AEGP reads Shape Contents: baseline, <strong>not success</strong>.</li>
@@ -12503,7 +12540,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:17:28 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
   </span>
 
     
