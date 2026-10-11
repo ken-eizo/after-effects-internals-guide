@@ -3573,6 +3573,8 @@
       
         
       
+        
+      
     
     
     
@@ -3703,6 +3705,41 @@
     
   
     Native Shape Historical / Private API Forensics
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vector-shape-system/native-edit-and-provenance-bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Editability and Provenance
   
 
     
@@ -12907,10 +12944,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#vector-shape-system-native-edit-and-provenance-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16.4 Native Vector Editability and Provenance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#vector-shape-system-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        16.4 Vector and Shape System
+        16.5 Vector and Shape System
       
     </span>
   </a>
@@ -18955,6 +19003,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 </span><span id="__span-0-19">        v
 </span><span id="__span-0-20">RG_RenderNode -&gt; PF_World / render graph materialization
 </span></code></pre></div>
+<h2 id="vector-shape-system-runtime-architecture-2026-10-11-native-path-provenance-and-edit-selection-investigation">2026-10-11 — Native path provenance and edit selection investigation<a class="headerlink" href="#vector-shape-system-runtime-architecture-2026-10-11-native-path-provenance-and-edit-selection-investigation" title="Permanent link">&para;</a></h2>
+<p>The AE2026 host-executed ShapeLayerAE traversal is archived in <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>. A 2025/2026 static audit established <code>BEE_VectorArt::OriginInfo</code> direct and synthetic <code>TDB_StreamIDPath</code> accessors, plus a host-side selected-shape-path enumeration function <code>BEE_GetSelectedShapePathsVec</code>. Bounded disassembly confirms the latter invokes <code>BEE_SelIterate</code>, and the VectorLayer constructor initializes its vector art cache. These E2-L observations do <strong>not</strong> prove a Pen-tool binding, supported independent Contents registration, or a plugin geometry output API. For explicit tests and raw evidence see <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a>.</p>
 <h2 id="vector-shape-system-runtime-architecture-important-boundaries">Important boundaries<a class="headerlink" href="#vector-shape-system-runtime-architecture-important-boundaries" title="Permanent link">&para;</a></h2>
 <p><code>BEE_VectorArt::OriginInfo</code> stores a <code>TDB_StreamIDPath</code>, so evaluated vector objects retain a route back to stream identity. This is consistent with selective invalidation and with operator-specific provenance surviving after stream evaluation.</p>
 <p>Bounds are not merely inferred from the final raster. <code>BEE_VectorArt::GetBounds</code> accepts a <code>RenderExtentMode</code>, and <code>BEE_VectorLayer</code> has dedicated source-rect helpers before <code>Rasterize2DGraph</code> constructs the render node. AEIG should therefore treat vector bounds as an explicit intermediate computation.</p>
@@ -19052,6 +19102,7 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 </span><span id="__span-0-6">  -&gt; BEE_VectorLayer::Rasterize2DGraph -&gt; RG_RenderNode -&gt; pixel materialization
 </span></code></pre></div>
 <p>AE 2025 <code>BEE.dll</code> export listings include constructor-like signatures referencing <code>TDB_StreamFactory*</code> and <code>TDB_MatchName*</code>; their existence establishes a <strong>distributed implementation artifact</strong>, not a stable call contract, a plug-in type registration path or a usable vtable layout. ABI may change by version. For the supporting findings, inspect repository files <code>research/findings/F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code> and <code>research/findings/F-ABI-012-aegp-stream-coordinates-bridge-into-bee-tdb.md</code>. These live outside the MkDocs <code>docs_dir</code> and are evidence paths, not site page links.</p>
+<p>For the actual AE2026 AEGP experiment, session-unique public stream IDs, the private <code>TDB_StreamIDPath</code> selection substrate and a read-only CanAdd matrix, see <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a>. This distinguishes the public shape stream projection from true private type registration.</p>
 <h2 id="vector-shape-system-native-extensibility-boundaries-research-questions-and-discriminators">Research questions and discriminators<a class="headerlink" href="#vector-shape-system-native-extensibility-boundaries-research-questions-and-discriminators" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Type registration</strong>: Are built-in vector types registered through a centralized, extensible <code>TDB_StreamFactory</code>, or a sealed host initialization table? Locate construction/registration call sites, owner lifecycle, and allowed caller modules by <em>static</em> analysis. Distinguish constructor symbols from registration semantics.</li>
@@ -19136,6 +19187,8 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 </tbody>
 </table>
 <p>Sources: https://github.com/AdobeDocs/after-effects-feature-history (AE history; AdobeDocs); https://www.provideocoalition.com/shape_layers/ (2007 article); https://ae-plugins.docsforadobe.dev/effect-details/working-with-paths/ (current official Effect path API); <code>datasets/ae-shape-native-extension-lineage-2026.json</code> (local header/binary source hashes).</p>
+<h2 id="vector-shape-system-historical-native-extension-forensics-an-older-substrate-than-shape-layers">An older substrate than Shape Layers<a class="headerlink" href="#vector-shape-system-historical-native-extension-forensics-an-older-substrate-than-shape-layers" title="Permanent link">&para;</a></h2>
+<p>The <strong>distributed SDK 25.6</strong> explicitly calls the dynamic-stream interface <code>new Dynamic Streams API for AE6</code> and marks its DynamicStreamSuite4 version as <code>frozen in AE 9.0</code>. Adobe’s feature history dates Shape Layers to CS3/8.0 (July 2007). Thus, a dynamic property/stream substrate existed <strong>before</strong> native Shape Layers; shape-specific Contents likely built atop a reusable stream representation. The external registration of an arbitrary native type is nevertheless unproved. A much later public <code>AEGP_GetUniqueStreamID</code> is available from AE22.5 onward and is <strong>session-unique</strong>, not guaranteed persistent across save/reopen. See <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a>.</p>
 <h2 id="vector-shape-system-historical-native-extension-forensics-public-contract-literal-sdk-256-semantics">Public contract, literal SDK 25.6 semantics<a class="headerlink" href="#vector-shape-system-historical-native-extension-forensics-public-contract-literal-sdk-256-semantics" title="Permanent link">&para;</a></h2>
 <p>The distributed <code>AE_GeneralPlug.h</code> enumerates <code>AEGP_StreamGroupingType_NONE=-1</code>, <code>LEAF=0</code>, <code>NAMED_GROUP=1</code>, <code>INDEXED_GROUP=2</code>. Its comment on <code>AEGP_GetNumStreamsInGroup</code> says <strong>error on leaf</strong> and <code>AEGP_GetNewStreamRefByIndex</code> says <strong>legal for namedgroup, indexedgroup, not leaf</strong>. <code>AEGP_AddStream</code>, <code>AEGP_DeleteStream</code> and <code>AEGP_ReorderStream</code> expressly operate in the scope of <em>existing</em> indexed groups. The public Effect SDK's parameter topics do not dynamically instantiate a host-owned indexed Contents type.</p>
 <p>Some contemporary third-party notes contradict the <em>real header</em> (for example a shape SDK KB displays <code>NONE=0</code>). Treat that note as a discovery lead only, not ABI fact. The supplied client error <code>{GetNumStreamsInGroup only works on groups}</code> follows directly from erroneously treating LEAF as a group. See the incident note <code>experiments/vector-shape/EXP-SHAPE-001-host-failure.md</code>.</p>
@@ -19224,7 +19277,94 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <li><code>experiments/vector-shape/EXP-SHAPE-001-host-failure.md</code> — screenshot-reported precondition bug, repair and pending retest.</li>
 <li><code>experiments/vector-shape/EXP-SHAPE-004-registerstreams-cross-version.md</code> — binary/probe receipt.</li>
 <li><code>D:\Developer\ShapeLayerAE\tools\compare_vector_lineage.py</code>, <code>analyze_registerstreams.py</code>, and read-only AEGP observer.</li>
-</ul></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.4"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="vector-shape-system-native-edit-and-provenance-bridge" heading-number="16.4"><h1 id="vector-shape-system-native-edit-and-provenance-bridge-native-vector-editability-and-object-provenance-a-cross-system-research-program">Native Vector Editability and Object Provenance — A Cross-System Research Program<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-native-vector-editability-and-object-provenance-a-cross-system-research-program" title="Permanent link">&para;</a></h1>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-why-this-boundary-matters">Why this boundary matters<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-why-this-boundary-matters" title="Permanent link">&para;</a></h2>
+<p>CompNodeAE's ambition is <strong>not</strong> to produce a bitmap, create a separate Shape Layer, copy shape paths into one, or simulate the Pen tool with a Custom Comp UI. The target is a plug-in-owned native <strong>stream/object</strong> that the AE Timeline, tool/selection subsystem, VectorArt evaluator and AGM/RG renderer recognize in one coherent host architecture. Those four native effects do not follow merely from C++ access to a path array.</p>
+<p>The current AE2026 real-host AEGP capture confirms the public <code>ADBE Root Vectors Group</code> is an INDEXED_GROUP, with named Rectangle/Fill children, while the Effect Parade is another indexed group on the same layer. That demonstrates a shared <strong>AEGP stream traversal</strong> surface, not that external effects can define a new typed/native Contents group.</p>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-four-independent-identity-domains">Four independent identity domains<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-four-independent-identity-domains" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Public AEGP StreamRef</strong> — opaque, short-lived <code>AEGP_StreamRefH</code>. It is not a serializable pointer.</li>
+<li><strong>Public session UID</strong> — <code>AEGP_StreamSuite6::AEGP_GetUniqueStreamID</code> (added AE 22.5). Official Guide says <strong>session-unique numeric ID</strong>, not stable persistent ID across sessions. The returned ID must be considered only within the session unless a contrary controlled test proves a stronger guarantee.</li>
+<li><strong>Private authored TDB path</strong> — <code>TDB_StreamIDPath</code> used by native stream/path commands and selection. Its exact layout and relationship to the public UID is not known.</li>
+<li><strong>Evaluated art's origin path</strong> — <code>BEE_VectorArt::OriginInfo</code> embeds/returns StreamIDPath, with extra synthetic path information; it is not the same object as the authored stream and should not automatically be assigned the authored object's lifetime.</li>
+</ol>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-independently-observed-static-sites-in-two-host-binaries">Independently observed static sites in two host binaries<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-independently-observed-static-sites-in-two-host-binaries" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Private function family</th>
+<th style="text-align: right;">AE2025</th>
+<th style="text-align: right;">AE2026</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OriginInfo::AppendSyntheticIndex</code></td>
+<td style="text-align: right;">7 direct CALLs</td>
+<td style="text-align: right;">8</td>
+<td>executable-section Capstone direct-reference scan</td>
+</tr>
+<tr>
+<td><code>OriginInfo::GetStreamIDPath</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>direct-reference scan</td>
+</tr>
+<tr>
+<td><code>BEE_SelLayer::IsPathOrChildSelected</code></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td>direct-reference scan</td>
+</tr>
+<tr>
+<td><code>C_AGMDLTranslatePort::LayerSelectSetupPrePlayback</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td>direct-reference scan</td>
+</tr>
+<tr>
+<td><code>BEE_VectorLayer::GetVectorArt</code></td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+<td>direct-reference scan</td>
+</tr>
+<tr>
+<td><code>BEE_VectorStream::PopulateVectorArt</code></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td>direct-reference scan</td>
+</tr>
+<tr>
+<td><code>BEE_VectorArt::GetBounds</code></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td>direct-reference scan</td>
+</tr>
+</tbody>
+</table>
+<p><code>BEE_GetSelectedShapePathsVec</code> and <code>OriginInfo::GetCompletePath</code> each had zero <strong>direct</strong> references, which does not establish non-use. They may be called through indirect callbacks, virtual dispatch, or another module. The code-section scanner used Capstone SKIPDATA, scanned ~4.49M and ~4.63M instructions and produced <code>datasets/ae-vector-selection-origin-xrefs-2025-2026.json</code>. Its inferred “nearest preceding export” is <strong>not</strong> a verified function boundary; treat as location hint only.</p>
+<p><strong>Strongest current inference:</strong> synthetic origin append operations and origin stream-path lookup are part of executed-looking code paths inside the native vector runtime, not simply type declarations. A native selection subsystem also consumes TDB stream paths. <strong>Still not established</strong> is the precise dataflow from rendered <code>OriginInfo</code> through hit testing into a selected editable path, nor any externally registerable native edit target.</p>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-strong-compatibility-clues-and-limits">Strong compatibility clues and limits<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-strong-compatibility-clues-and-limits" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>BEE_VectorArt::OriginInfo(TDB_StreamIDPath const&amp;)</code> exists in 2025 and 2026.</li>
+<li><code>OriginInfo::AppendSyntheticIndex</code> and <code>AppendSyntheticPath</code> imply separate authored and evaluated/synthetic child paths. <strong>Hypothesis:</strong> path modifiers/repeaters may create synthetic instances without independent authored Timeline nodes. Do not promote to proof for any particular modifier without runtime traces.</li>
+<li><code>C_AGMDLTranslatePort</code> constructors include <code>PF_World*</code> and a <code>BEE_IllusShapeTarget</code> reference; this is strong static evidence of a <strong>raster materialization bridge</strong>. It does not provide an Effect SDK geometry output return type.</li>
+<li>The Adobe-distributed <code>AEGP_INTERNAL</code> gate references a non-distributed <code>AE_GeneralPlug_Private.h</code> with host-owned stream and layer types. An opaque public handle does not authorize direct cast to those private types. See <code>F-ABI-011</code>.</li>
+<li><code>BEE_GetSelectedShapePathsVec</code> exists, takes <code>BEE_Layer*</code> and <code>std::vector&lt;TDB_StreamIDPath&gt;*</code> according to MSVC decoration, but has no validated plug-in-facing lifetime, ownership or thread contract.</li>
+</ul>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-controlled-tests-and-falsification">Controlled tests and falsification<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-controlled-tests-and-falsification" title="Permanent link">&para;</a></h2>
+<p><strong>EXP-SHAPE-005</strong> (built but not yet loaded into the host): dump UID, internal grouping flags, stream type, and a non-mutating <code>CanAddStream</code> matrix for known built-ins, in addition to the original topology; never call <code>AddStream</code>. The plugin is located at <code>D:\Developer\ShapeLayerAE</code>, and the source is mirrored under <code>experiments/vector-shape/probe-src</code>.</p>
+<p>Then collect successive snapshots of the <strong>same host session</strong> before/after native Timeline child reorder and a group Path edit, and before/after Undo. Compare public session UIDs and topology, not <code>StreamRefH</code> pointer values. Test a Shape Layer, a nonshape layer with a normal effect, an empty Shape Layer, and a Repeater case. Full parity remains conditional on independent native type registration, host Pen selection, evaluation and project persistence.</p>
+<p><strong>Failure criteria</strong>: a plugin-only custom indexed group cannot be instantiated as a native persistent stream type; a synthetic evaluated instance is not associated with a selectable Timeline stream; or VectorArt can only be drawn through a raster bridge. Each failure narrows the native extensibility frontier without negating successful public AEGP traversal.</p>
+<h2 id="vector-shape-system-native-edit-and-provenance-bridge-sources-raw-artifacts">Sources / raw artifacts<a class="headerlink" href="#vector-shape-system-native-edit-and-provenance-bridge-sources-raw-artifacts" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Adobe official AEGP Stream Suite reference: https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/ (<code>AEGP_GetUniqueStreamID</code> is explicitly session-unique; AE 22.5+).</li>
+<li>Distributed local SDK <code>E:\ae25.6_61.64bit.AfterEffectsSDK\Examples\Headers\AE_GeneralPlug.h</code>: DynamicStreamSuite versioned interface, group type enum and GetUniqueStreamID declaration.</li>
+<li><code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code> and raw <code>experiments/vector-shape/runs/EXP-SHAPE-001/20261011-first-success/shape_layer_stream_tree.tsv</code>.</li>
+<li><code>datasets/ae-vector-origin-identity-2025-2026.json</code>, SHA-256 <code>E6B96B78AE68E77C274B71F8BA31644E0F5D8F81FA9E1E70739251E7E3AE7C7D</code>.</li>
+<li><code>datasets/ae-vector-selection-origin-xrefs-2025-2026.json</code>, SHA-256 <code>EE9B818E0DE72405E6116E1C6CC006F663789C026802757135BCD85DAFB8E253</code>.</li>
+</ul></section><section class="print-page" id="vector-shape-system-overview" heading-number="16.5"><h1 id="vector-shape-system-overview-vector-and-shape-system">Vector and Shape System<a class="headerlink" href="#vector-shape-system-overview-vector-and-shape-system" title="Permanent link">&para;</a></h1>
 <p>Shape layers combine a persistent vector object model, hierarchical transforms/modifiers and a renderer-facing tessellation/rasterization path.</p>
 <h2 id="vector-shape-system-overview-questions">Questions<a class="headerlink" href="#vector-shape-system-overview-questions" title="Permanent link">&para;</a></h2>
 <ul>
@@ -19244,6 +19384,9 @@ That makes another Adobe application starting or stopping a legitimate cause of 
 <p>MultithreadedAGMShapeRendering is important because it separates vector-domain parallelism from frame-level MFR. Benchmarking should hold frame concurrency constant while varying single-frame shape complexity to isolate AGM's own threading.</p>
 <h2 id="vector-shape-system-overview-adjacent-2024-internal-features">Adjacent 2024 internal features<a class="headerlink" href="#vector-shape-system-overview-adjacent-2024-internal-features" title="Permanent link">&para;</a></h2>
 <p>The same Beta-feature corpus contains GroupAlphaForAIConvertToShapes, exposing a conversion-specific semantic issue: Illustrator group opacity needs preservation when converted into native shape fills. This is evidence that AI→Shape conversion is not merely path copying; group-level compositing semantics must be lowered into AE's shape/property model.</p>
+<h2 id="vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11">Verified native host experiment and identity frontier (2026-10-11)<a class="headerlink" href="#vector-shape-system-overview-verified-native-host-experiment-and-identity-frontier-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>The fixed read-only ShapeLayerAE AEGP probe was executed in AE 2026. Its archived raw capture shows 180 public stream nodes with zero reported per-node API errors, including <code>ADBE Root Vectors Group</code> as an indexed Contents group and Rectangle/Fill as named child groups. This E2-X result proves real host traversal <strong>only</strong>, not plug-in-owned Contents creation. See repository report <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>.</p>
+<p>A follow-up read-only probe is available as a <strong>compiled but not host-tested</strong> experiment to measure session-specific stream IDs, dynamic flags, leaf types, and a non-mutating <code>CanAddStream</code> matrix. See <a href="#vector-shape-system-native-edit-and-provenance-bridge">Native Vector Editability and Provenance</a> for the distinct TDB/VectorArt selection identities, renderer handoff, and strict criteria for full native parity.</p>
 <h2 id="vector-shape-system-overview-runtime-model-status">Runtime model status<a class="headerlink" href="#vector-shape-system-overview-runtime-model-status" title="Permanent link">&para;</a></h2>
 <p>The runtime-side reconstruction is now tracked in <code>runtime-architecture.md</code>. AE 2025 exposes a concrete <code>BEE_VectorStream -&gt; BEE_VectorArt -&gt; AGM-facing translation -&gt; RG_RenderNode</code> chain, with explicit vector bounds computation before rasterization. This upgrades the domain from surface mapping to a working internal model while leaving cache variants, operator-level reuse and the exact AGM/GPU execution boundary open.</p>
 <p>Reproducible local inventory: <code>datasets/ae-2025-vector-shape-symbols.csv</code>; core finding: <code>F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code>.</p>
@@ -26990,9 +27133,14 @@ dumpbin failures: <strong>0</strong>.</p>
                 .print-site-enumerate-headings #vector-shape-system-historical-native-extension-forensics h2:before { content: '16.3.' counter(counter-vector-shape-system-historical-native-extension-forensics-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-historical-native-extension-forensics h2 {  counter-increment: counter-vector-shape-system-historical-native-extension-forensics-2 }
             
-.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.4 ' }
+.print-site-enumerate-headings #vector-shape-system-native-edit-and-provenance-bridge > h1:before { content: '16.4 ' }
 
-                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.4.' counter(counter-vector-shape-system-overview-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-edit-and-provenance-bridge h2:before { content: '16.4.' counter(counter-vector-shape-system-native-edit-and-provenance-bridge-2) ' ' }
+                .print-site-enumerate-headings #vector-shape-system-native-edit-and-provenance-bridge h2 {  counter-increment: counter-vector-shape-system-native-edit-and-provenance-bridge-2 }
+            
+.print-site-enumerate-headings #vector-shape-system-overview > h1:before { content: '16.5 ' }
+
+                .print-site-enumerate-headings #vector-shape-system-overview h2:before { content: '16.5.' counter(counter-vector-shape-system-overview-2) ' ' }
                 .print-site-enumerate-headings #vector-shape-system-overview h2 {  counter-increment: counter-vector-shape-system-overview-2 }
             
 .print-site-enumerate-headings #section-17 > h1:before { content: '17 ' }

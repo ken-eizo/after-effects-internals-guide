@@ -3573,6 +3573,8 @@
       
         
       
+        
+      
     
     
     
@@ -3836,6 +3838,41 @@
     
   
     Native Shape Historical / Private API Forensics
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-edit-and-provenance-bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Editability and Provenance
   
 
     
@@ -12199,6 +12236,7 @@
 </span><span id="__span-0-6">  -&gt; BEE_VectorLayer::Rasterize2DGraph -&gt; RG_RenderNode -&gt; pixel materialization
 </span></code></pre></div>
 <p>AE 2025 <code>BEE.dll</code> export listings include constructor-like signatures referencing <code>TDB_StreamFactory*</code> and <code>TDB_MatchName*</code>; their existence establishes a <strong>distributed implementation artifact</strong>, not a stable call contract, a plug-in type registration path or a usable vtable layout. ABI may change by version. For the supporting findings, inspect repository files <code>research/findings/F-VECTOR-002-stream-vectorart-agm-render-boundary.md</code> and <code>research/findings/F-ABI-012-aegp-stream-coordinates-bridge-into-bee-tdb.md</code>. These live outside the MkDocs <code>docs_dir</code> and are evidence paths, not site page links.</p>
+<p>For the actual AE2026 AEGP experiment, session-unique public stream IDs, the private <code>TDB_StreamIDPath</code> selection substrate and a read-only CanAdd matrix, see <a href="../native-edit-and-provenance-bridge/">Native Vector Editability and Provenance</a>. This distinguishes the public shape stream projection from true private type registration.</p>
 <h2 id="research-questions-and-discriminators">Research questions and discriminators<a class="headerlink" href="#research-questions-and-discriminators" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Type registration</strong>: Are built-in vector types registered through a centralized, extensible <code>TDB_StreamFactory</code>, or a sealed host initialization table? Locate construction/registration call sites, owner lifecycle, and allowed caller modules by <em>static</em> analysis. Distinguish constructor symbols from registration semantics.</li>
@@ -12252,7 +12290,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 02:05:29 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 09:04:47 UTC">October 11, 2026</span>
   </span>
 
     

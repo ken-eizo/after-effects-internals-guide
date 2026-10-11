@@ -3573,6 +3573,8 @@
       
         
       
+        
+      
     
     
     
@@ -3699,6 +3701,17 @@
       Page Contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2026-10-11-native-path-provenance-and-edit-selection-investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-11 — Native path provenance and edit selection investigation
+      
+    </span>
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#important-boundaries" class="md-nav__link">
@@ -3858,6 +3871,41 @@
     
   
     Native Shape Historical / Private API Forensics
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-edit-and-provenance-bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Editability and Provenance
   
 
     
@@ -12055,6 +12103,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#2026-10-11-native-path-provenance-and-edit-selection-investigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-11 — Native path provenance and edit selection investigation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12209,6 +12268,8 @@
 </span><span id="__span-0-19">        v
 </span><span id="__span-0-20">RG_RenderNode -&gt; PF_World / render graph materialization
 </span></code></pre></div>
+<h2 id="2026-10-11-native-path-provenance-and-edit-selection-investigation">2026-10-11 — Native path provenance and edit selection investigation<a class="headerlink" href="#2026-10-11-native-path-provenance-and-edit-selection-investigation" title="Permanent link">&para;</a></h2>
+<p>The AE2026 host-executed ShapeLayerAE traversal is archived in <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>. A 2025/2026 static audit established <code>BEE_VectorArt::OriginInfo</code> direct and synthetic <code>TDB_StreamIDPath</code> accessors, plus a host-side selected-shape-path enumeration function <code>BEE_GetSelectedShapePathsVec</code>. Bounded disassembly confirms the latter invokes <code>BEE_SelIterate</code>, and the VectorLayer constructor initializes its vector art cache. These E2-L observations do <strong>not</strong> prove a Pen-tool binding, supported independent Contents registration, or a plugin geometry output API. For explicit tests and raw evidence see <a href="../native-edit-and-provenance-bridge/">Native Vector Editability and Provenance</a>.</p>
 <h2 id="important-boundaries">Important boundaries<a class="headerlink" href="#important-boundaries" title="Permanent link">&para;</a></h2>
 <p><code>BEE_VectorArt::OriginInfo</code> stores a <code>TDB_StreamIDPath</code>, so evaluated vector objects retain a route back to stream identity. This is consistent with selective invalidation and with operator-specific provenance surviving after stream evaluation.</p>
 <p>Bounds are not merely inferred from the final raster. <code>BEE_VectorArt::GetBounds</code> accepts a <code>RenderExtentMode</code>, and <code>BEE_VectorLayer</code> has dedicated source-rect helpers before <code>Rasterize2DGraph</code> constructs the render node. AEIG should therefore treat vector bounds as an explicit intermediate computation.</p>
@@ -12270,7 +12331,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 23:52:07 UTC">September 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 09:04:47 UTC">October 11, 2026</span>
   </span>
 
     
