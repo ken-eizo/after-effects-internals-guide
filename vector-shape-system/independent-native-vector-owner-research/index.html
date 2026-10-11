@@ -12203,6 +12203,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-native-persistence-abi-and-a-real-independent-cnl-vector-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Native persistence ABI and a real independent CNL vector core
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12336,6 +12347,11 @@
 <p>Finding F-VECTOR-026 and EXP-SHAPE-024 extend the native typed-stream registry ABI evidence: factory registration retains/clones an MSVC std::function-erased creator, calls its CreateStream synchronously during type registration, and demands a real TDB_StreamBase with working IsLeaf, GetAsLeaf, SetupCanonicalLayout and (on native leaf) IsSeparationLeader virtual methods. Concrete TDB.dll native vftables in AE2025/2026 map these names to offsets 0x58, 0x80, 0x150 and leaf 0x298, respectively.</p>
 <p>Crucial destructor caveat: TDB_ScRegisterStreams::~ only frees its own vector; explicit UnregisterAll performs reverse-order registration removal; UnregisterFactoryFunc deletes canonical/creator entries and destroys a native stream instance. An external plugin cannot count on implicit RAII cleanup of its native factory callback after unload.</p>
 <p>No external Stream Creator, native Timeline owner, tool binding or BEE VectorArt evaluator was registered. This lowers research uncertainty about the first private ABI gate but does not move the user-visible S1-S3 success milestone. Next inspect cloning/serialization, registry startup/init order, project object survival and independent native owner adoption. Scripts/results in AEIG F-VECTOR-026, EXP-SHAPE-024 and 2025/2026 concise verifier data.</p>
+<h2 id="2026-10-12-native-persistence-abi-and-a-real-independent-cnl-vector-core">2026-10-12 — Native persistence ABI and a real independent CNL vector core<a class="headerlink" href="#2026-10-12-native-persistence-abi-and-a-real-independent-cnl-vector-core" title="Permanent link">&para;</a></h2>
+<p>F-VECTOR-027 reconstructs native TDB Stream cloning, group/leaf serialization, unique stream identities, canonical stream lookup and host parent notification from both installed AE2025/AE2026 binaries. F-VECTOR-028 confirms additional BEE MatchName evaluator registry lifetime/lookup requirements. These native ABI observations do NOT establish third-party registration.</p>
+<p>A genuine C++ component is now compiled: CNLNativeVectorCore.dll (F-VECTOR-029, EXP-SHAPE-026). It owns its own double-precision Bezier path tree, 64-bit stable object IDs, indexed nested Group/Path hierarchy, real path-control handles, procedural 4-cubic ellipse generation, deep clone and deterministic checksummed archive. CMake native tests, 2048 nested levels, Python ctypes loading the DLL and 20 PE exports all passed. This is a plugin-owned geometry-value source and future host adapter target, NOT AE-native TDB, not a Shape/Mask and not an AEX.</p>
+<p>The missing, NON-NEGOTIABLE native host gates remain: (1) safe independent TDB type registration, (2) host-owned Timeline root for plugin Contents, (3) AE Pen/Selection binding with stream IDs, (4) BEE native evaluator registration and managed unload, (5) genuine host BEE_VectorArt/RG/AGM rendering instead of PF_World. A CNL archive must never be misreported as AEP/SLU-native persistence.</p>
+<p>Next experiment should be a version-pinned, staged TDB type-registration host adapter design relying on native MSVC class/layout evidence. One candidate for offline assessment is a registration thunk using an existing correctly constructed TDB class under a new MatchName, to test factory admission without guessing a complete subclass; however even that is an UNPROVEN, potentially crashing private API that must not be executed in a working AE session. Investigate constructor/class invariants and reversible unregister/refcounts before any live test.</p>
 
 
 
@@ -12356,7 +12372,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 18:06:23 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 18:36:58 UTC">October 11, 2026</span>
   </span>
 
     
