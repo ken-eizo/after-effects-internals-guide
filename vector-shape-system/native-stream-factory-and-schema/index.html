@@ -3579,6 +3579,8 @@
       
         
       
+        
+      
     
     
     
@@ -3913,6 +3915,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-constraint-registering-a-tdb-creator-eagerly-constructs-its-native-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New constraint: registering a TDB creator eagerly constructs its native stream
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#five-breakpoints-to-independent-native-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3969,6 +3982,41 @@
     
   
     Independent Native Vector Output
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-evaluator-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Evaluator Registry
   
 
     
@@ -12232,6 +12280,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#new-constraint-registering-a-tdb-creator-eagerly-constructs-its-native-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        New constraint: registering a TDB creator eagerly constructs its native stream
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#five-breakpoints-to-independent-native-objects" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12403,6 +12462,8 @@
 <h2 id="the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue">The stream UID anomaly is a separate potential feature-gate issue<a class="headerlink" href="#the-stream-uid-anomaly-is-a-separate-potential-feature-gate-issue" title="Permanent link">&para;</a></h2>
 <p>AE2026 E2-X capture returned <strong>0 for all 359 stream UIDs</strong> while every UID API error field was zero. This contradicts the <em>expected utility</em> of the documented session-unique ID, but it does not prove that the function is generally broken. In local runtime export/import evidence, <code>TDB_Project::TDB_AreTDBStreamScriptingIDsEnabled</code> and AEIG's historical <code>EnableTDBStreamScriptingIDs</code> Beta flag suggest a related identity prototype, but there is <strong>no verified causal connection</strong>.</p>
 <p>ShapeLayerAE v3 performed two UID calls with distinct nonzero sentinels in AE2026: <strong>359/359 streams returned zero twice</strong>, with 718 zero error codes. The cause remains unresolved.</p>
+<h2 id="new-constraint-registering-a-tdb-creator-eagerly-constructs-its-native-stream">New constraint: registering a TDB creator eagerly constructs its native stream<a class="headerlink" href="#new-constraint-registering-a-tdb-creator-eagerly-constructs-its-native-stream" title="Permanent link">&para;</a></h2>
+<p>Detailed .pdata-bounded AE2025/26 disassembly proves <code>TDB_StreamFactory::RegisterFactoryFunc</code> calls <code>CreateStream</code> before registration has finished and can traverse virtual methods, canonical stream and separated dimension setup. Thus an external dummy <code>std::function</code> callback is unsafe even as a preliminary registration test. A second, <strong>BEE-owned</strong> MatchName-to-polymorphic-operator registry is used by the native Shape evaluator, and separately registers 20 standard evaluators in both host versions. See <a href="../native-vector-evaluator-registry/">Native Vector Evaluator Registry</a> for the exact class mapping and the distinction between schema, evaluation, owner and editor.</p>
 <h2 id="five-breakpoints-to-independent-native-objects">Five breakpoints to independent native objects<a class="headerlink" href="#five-breakpoints-to-independent-native-objects" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Factory access</strong>: pinned <code>TDB.dll</code> exact runtime and matching decorated <code>Get_AE_StreamFactory</code> symbol; read-only getter call and nonnull pointer test, no dereference. This read-only getter experiment was <strong>executed and succeeded in AE2026</strong>; no factory methods were called.</li>
@@ -12452,7 +12513,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 11:50:26 UTC">October 11, 2026</span>
   </span>
 
     

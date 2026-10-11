@@ -3579,6 +3579,8 @@
       
         
       
+        
+      
     
     
     
@@ -3882,6 +3884,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#evidence-update-two-separate-native-shape-registries-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence update: two separate native shape registries (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#private-integration-path-hypotheses-with-required-proof" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -4008,6 +4021,41 @@
     
   
     Independent Native Vector Output
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-evaluator-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Evaluator Registry
   
 
     
@@ -12310,6 +12358,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#evidence-update-two-separate-native-shape-registries-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evidence update: two separate native shape registries (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#private-integration-path-hypotheses-with-required-proof" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12493,6 +12552,8 @@
 <h2 id="direct-call-site-confirmation-of-a-central-initialization-sequence">Direct call-site confirmation of a central initialization sequence<a class="headerlink" href="#direct-call-site-confirmation-of-a-central-initialization-sequence" title="Permanent link">&para;</a></h2>
 <p>Full executable-section static scans (4.49 million decoded instructions in AE 2025; 4.63 million in AE 2026) identified consecutive <strong>direct</strong> calls to multiple layer-class <code>RegisterStreams</code> routines from one shared code region in each build. The VectorLayer direct-call site is RVA <code>0x36DE38</code> in 2025 and <code>0x378858</code> in 2026. This is reproducible, cross-version evidence of a <strong>central layer stream registration/initialization sequence</strong>. The enclosing routine's name and registry data structures are not established, so it is not yet evidence that third-party types can be registered. The scan found three direct references to <code>PopulateVectorArt</code> per build but no direct <code>BEE_VectorLayer::Rasterize2DGraph</code> calls; virtual/indirect dispatch may explain the latter.</p>
 <p>Raw E2-L artifact: <code>datasets/ae-vector-registerstreams-xrefs-2025-2026.json</code>. The first attempt without Capstone SKIPDATA prematurely stopped and was replaced; instruction decoding of an executable section is not a perfect function-boundary reconstruction.</p>
+<h2 id="evidence-update-two-separate-native-shape-registries-2026-10-11">Evidence update: two separate native shape registries (2026-10-11)<a class="headerlink" href="#evidence-update-two-separate-native-shape-registries-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>Static code-level analysis has now located <strong>both</strong> an eager-creating <code>TDB_StreamFactory</code> type-creator registry and a separate <code>BEE.dll</code> MatchName-&gt;polymorphic evaluator registry with 20 exact builtin names and RTTI classes in both 2025/2026. Native shape evaluation, including <code>StreamBasedFilter::DoFilter</code>, uses the second registry for dispatch. This is evidence of Adobe-internal extensibility primitives, <strong>not</strong> a third-party ABI nor effect-owned native Contents or editor integration. See <a href="../native-vector-evaluator-registry/">Native Vector Evaluator Registry</a> and F-VECTOR-013/014.</p>
 <h2 id="private-integration-path-hypotheses-with-required-proof">Private integration path: hypotheses with required proof<a class="headerlink" href="#private-integration-path-hypotheses-with-required-proof" title="Permanent link">&para;</a></h2>
 <ol>
 <li><strong>Factory ownership / schema</strong> — locate the host bootstrap that creates the factory, installs built-in type descriptors, owns/refcounts the resulting objects, and controls allowed match names. Is this a closed built-in registry? A callable export does not make an externally usable extension point. Alternative: registration routines are only operation-handler tables.</li>
@@ -12540,7 +12601,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 11:50:26 UTC">October 11, 2026</span>
   </span>
 
     

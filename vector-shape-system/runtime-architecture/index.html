@@ -3579,6 +3579,8 @@
       
         
       
+        
+      
     
     
     
@@ -3722,6 +3724,17 @@
     <span class="md-ellipsis">
       
         Verified ShapeLayer GetVectorArt() call boundary (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-evaluator-registration-plane-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second evaluator registration plane (2026-10-11)
       
     </span>
   </a>
@@ -3991,6 +4004,41 @@
     
   
     Independent Native Vector Output
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--research-active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../native-vector-evaluator-registry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Vector Evaluator Registry
   
 
     
@@ -12210,6 +12258,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#second-evaluator-registration-plane-2026-10-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Second evaluator registration plane (2026-10-11)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -12368,6 +12427,8 @@
 <p>The AE2026 host-executed ShapeLayerAE traversal is archived in <code>experiments/vector-shape/EXP-SHAPE-001-host-success.md</code>. A 2025/2026 static audit established <code>BEE_VectorArt::OriginInfo</code> direct and synthetic <code>TDB_StreamIDPath</code> accessors, plus a host-side selected-shape-path enumeration function <code>BEE_GetSelectedShapePathsVec</code>. Bounded disassembly confirms the latter invokes <code>BEE_SelIterate</code>, and the VectorLayer constructor initializes its vector art cache. These E2-L observations do <strong>not</strong> prove a Pen-tool binding, supported independent Contents registration, or a plugin geometry output API. For explicit tests and raw evidence see <a href="../native-edit-and-provenance-bridge/">Native Vector Editability and Provenance</a>.</p>
 <h2 id="verified-shapelayer-getvectorart-call-boundary-2026-10-11">Verified ShapeLayer <code>GetVectorArt()</code> call boundary (2026-10-11)<a class="headerlink" href="#verified-shapelayer-getvectorart-call-boundary-2026-10-11" title="Permanent link">&para;</a></h2>
 <p>AE2025/AE2026 <code>.pdata</code>-bounded direct CALL analysis confirmed <code>BEE_VectorLayer::GetVectorArt</code> first constructs a <code>BEE_VectorArt::Group</code> plus <code>TDB_StreamID/StreamIDPath</code>, calls <code>BEE_VectorStream::PopulateVectorArt</code>, then queries <code>BEE_VectorArt::GetBounds</code>. The return type is <code>IntrusivePtr&lt;BEE_VectorArt::Group&gt;</code>, distinct from an image world and distinct from the <code>RG_RenderNode</code> returned by <code>Rasterize2DGraph</code>. This <strong>does not</strong> provide a documented Effect SDK vector output; see <a href="../native-vector-output-ownership/">Independent Native Vector Output</a> and <code>F-VECTOR-012</code>.</p>
+<h2 id="second-evaluator-registration-plane-2026-10-11">Second evaluator registration plane (2026-10-11)<a class="headerlink" href="#second-evaluator-registration-plane-2026-10-11" title="Permanent link">&para;</a></h2>
+<p>The <code>BEE_VectorStream::PopulateVectorArt</code> implementation delegates to a private recursive stream tree traversal, then a MatchName-keyed global <strong>BEE evaluator registry</strong>. <code>BEE_VectorArt::StreamBasedFilter::DoFilter</code> independently uses that same registry, dispatching to registered operator object vtable +0x18 in a distinct mode. Both installed AE2025 and AE2026 binaries register exactly 20 concrete operators, with individual name/RTTI pairings recovered. See <a href="../native-vector-evaluator-registry/">Native Vector Evaluator Registry</a>. Its existence does not establish an external Effect SDK vector output channel.</p>
 <h2 id="important-boundaries">Important boundaries<a class="headerlink" href="#important-boundaries" title="Permanent link">&para;</a></h2>
 <p><code>BEE_VectorArt::OriginInfo</code> stores a <code>TDB_StreamIDPath</code>, so evaluated vector objects retain a route back to stream identity. This is consistent with selective invalidation and with operator-specific provenance surviving after stream evaluation.</p>
 <p>Bounds are not merely inferred from the final raster. <code>BEE_VectorArt::GetBounds</code> accepts a <code>RenderExtentMode</code>, and <code>BEE_VectorLayer</code> has dedicated source-rect helpers before <code>Rasterize2DGraph</code> constructs the render node. AEIG should therefore treat vector bounds as an explicit intermediate computation.</p>
@@ -12429,7 +12490,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 10:55:24 UTC">October 11, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 11, 2026 11:50:26 UTC">October 11, 2026</span>
   </span>
 
     
