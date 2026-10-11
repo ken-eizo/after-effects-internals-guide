@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-SHAPE-044",
+  "date": "2026-10-12",
+  "title": "Native BEE Dynamic Effects Parser canonical layout direct callsites",
+  "status": "pass-static-AE2025-2026",
+  "evidence": "E2-L imported TDB layout child insertion CALL instructions in native BEE compiled code",
+  "results": {
+    "2025_end_effect_calls": [
+      "0x2f6cbf",
+      "0x2f6d1a"
+    ],
+    "2026_end_effect_calls": [
+      "0x2ff8d9",
+      "0x2ff92a"
+    ],
+    "base_create_effect_group_returns_null_both_versions": true,
+    "FRP_only_import_jmp_found": true,
+    "independent_plugin_owned_path_proven": false,
+    "private_ABI_executed": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-043-native-dynamic-effect-parser-canonical-layout-insertion.md",
+    "experiments/vector-shape/EXP-SHAPE-044-bee-dynamic-effects-canonical-layout-insertion.md",
+    "datasets/ae-bee-dynamic-effects-layout-call-verification-2025-2026.json"
+  ]
+}

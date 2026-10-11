@@ -1,0 +1,1117 @@
+{
+  "classification": "E2-L exact on-disk executable FF15/FF25 relocations; indirect dispatch not exhaustive",
+  "years": {
+    "2025": {
+      "BEE.dll": {
+        "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+        "target_imports": [
+          {
+            "iat": "0xebe4b8",
+            "name": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z"
+          },
+          {
+            "iat": "0xebb2c0",
+            "name": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+          }
+        ],
+        "static_sites": [
+          {
+            "site": "0x2c4a5f",
+            "instruction": "call",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2c46a0",
+            "caller_pdata_end": "0x2c4ab4",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x2c4a41",
+                "m": "mov",
+                "args": "rdx, r13"
+              },
+              {
+                "rva": "0x2c4a44",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbf9236]"
+              },
+              {
+                "rva": "0x2c4a4a",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2c4a4d",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2c4a50",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x2c4a56",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2c4a59",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2c4a5c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2c4a5f",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbf9a53]"
+              },
+              {
+                "rva": "0x2c4a65",
+                "m": "mov",
+                "args": "rax, rdi"
+              },
+              {
+                "rva": "0x2c4a68",
+                "m": "mov",
+                "args": "rcx, qword ptr [rbp + 0x140]"
+              },
+              {
+                "rva": "0x2c4a6f",
+                "m": "xor",
+                "args": "rcx, rsp"
+              },
+              {
+                "rva": "0x2c4a72",
+                "m": "call",
+                "args": "0x180ce9610"
+              },
+              {
+                "rva": "0x2c4a77",
+                "m": "mov",
+                "args": "rbx, qword ptr [rsp + 0x2a0]"
+              }
+            ]
+          },
+          {
+            "site": "0x2f6cbf",
+            "instruction": "call",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2f6800",
+            "caller_pdata_end": "0x2f6da4",
+            "caller_export": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+            "context": [
+              {
+                "rva": "0x2f6ca1",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6ca4",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc6fd6]"
+              },
+              {
+                "rva": "0x2f6caa",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2f6cad",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6cb0",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x2f6cb6",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2f6cb9",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2f6cbc",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6cbf",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc77f3]"
+              },
+              {
+                "rva": "0x2f6cc5",
+                "m": "mov",
+                "args": "r14, qword ptr [rsp + 0x60]"
+              },
+              {
+                "rva": "0x2f6cca",
+                "m": "mov",
+                "args": "rsi, r14"
+              },
+              {
+                "rva": "0x2f6ccd",
+                "m": "cmp",
+                "args": "r14, r12"
+              },
+              {
+                "rva": "0x2f6cd0",
+                "m": "je",
+                "args": "0x1802f6d29"
+              },
+              {
+                "rva": "0x2f6cd2",
+                "m": "nop",
+                "args": "dword ptr [rax]"
+              }
+            ]
+          },
+          {
+            "site": "0x2f6d1a",
+            "instruction": "call",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2f6800",
+            "caller_pdata_end": "0x2f6da4",
+            "caller_export": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+            "context": [
+              {
+                "rva": "0x2f6cfb",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6cfe",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc6f7c]"
+              },
+              {
+                "rva": "0x2f6d04",
+                "m": "mov",
+                "args": "r8, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2f6d07",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6d0a",
+                "m": "call",
+                "args": "qword ptr [r8 + 0x88]"
+              },
+              {
+                "rva": "0x2f6d11",
+                "m": "mov",
+                "args": "r8d, ebx"
+              },
+              {
+                "rva": "0x2f6d14",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2f6d17",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2f6d1a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc7798]"
+              },
+              {
+                "rva": "0x2f6d20",
+                "m": "add",
+                "args": "rsi, 8"
+              },
+              {
+                "rva": "0x2f6d24",
+                "m": "cmp",
+                "args": "rsi, r12"
+              },
+              {
+                "rva": "0x2f6d27",
+                "m": "jne",
+                "args": "0x1802f6ce0"
+              },
+              {
+                "rva": "0x2f6d29",
+                "m": "test",
+                "args": "r14, r14"
+              },
+              {
+                "rva": "0x2f6d2c",
+                "m": "je",
+                "args": "0x1802f6d68"
+              }
+            ]
+          },
+          {
+            "site": "0x2fbe4a",
+            "instruction": "call",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2fbb60",
+            "caller_pdata_end": "0x2fc0c0",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x2fbe2c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe2f",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc1e4b]"
+              },
+              {
+                "rva": "0x2fbe35",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2fbe38",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe3b",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x2fbe41",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2fbe44",
+                "m": "mov",
+                "args": "rdx, rbx"
+              },
+              {
+                "rva": "0x2fbe47",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe4a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc2668]"
+              },
+              {
+                "rva": "0x2fbe50",
+                "m": "lea",
+                "args": "rdx, [rip + 0x12f0891]"
+              },
+              {
+                "rva": "0x2fbe57",
+                "m": "mov",
+                "args": "rcx, rsi"
+              },
+              {
+                "rva": "0x2fbe5a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc1e20]"
+              },
+              {
+                "rva": "0x2fbe60",
+                "m": "mov",
+                "args": "rbx, rax"
+              },
+              {
+                "rva": "0x2fbe63",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc1f77]"
+              }
+            ]
+          },
+          {
+            "site": "0x2fbe8f",
+            "instruction": "call",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2fbb60",
+            "caller_pdata_end": "0x2fc0c0",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x2fbe70",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe73",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc1e07]"
+              },
+              {
+                "rva": "0x2fbe79",
+                "m": "mov",
+                "args": "r8, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2fbe7c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe7f",
+                "m": "call",
+                "args": "qword ptr [r8 + 0x88]"
+              },
+              {
+                "rva": "0x2fbe86",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2fbe89",
+                "m": "mov",
+                "args": "rdx, rbx"
+              },
+              {
+                "rva": "0x2fbe8c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2fbe8f",
+                "m": "call",
+                "args": "qword ptr [rip + 0xbc2623]"
+              },
+              {
+                "rva": "0x2fbe95",
+                "m": "mov",
+                "args": "rdx, r14"
+              },
+              {
+                "rva": "0x2fbe98",
+                "m": "lea",
+                "args": "rcx, [rbp - 1]"
+              },
+              {
+                "rva": "0x2fbe9c",
+                "m": "call",
+                "args": "0x1800e1980"
+              },
+              {
+                "rva": "0x2fbea1",
+                "m": "nop",
+                "args": ""
+              },
+              {
+                "rva": "0x2fbea2",
+                "m": "lea",
+                "args": "rax, [rbp - 0x39]"
+              }
+            ]
+          },
+          {
+            "site": "0xc2af78",
+            "instruction": "jmp",
+            "import_iat_rva": "0xebe4b8",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0xc2af78",
+            "caller_pdata_end": "0xc2afa8",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0xc2af78",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x29353a]"
+              },
+              {
+                "rva": "0xc2af7e",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x29353c]"
+              },
+              {
+                "rva": "0xc2af84",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x29353e]"
+              },
+              {
+                "rva": "0xc2af8a",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x293540]"
+              },
+              {
+                "rva": "0xc2af90",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x293542]"
+              },
+              {
+                "rva": "0xc2af96",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x293544]"
+              }
+            ]
+          },
+          {
+            "site": "0xc2c1f0",
+            "instruction": "jmp",
+            "import_iat_rva": "0xebb2c0",
+            "import": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z",
+            "caller_pdata_start": "0xc2c1f0",
+            "caller_pdata_end": "0xc2c220",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0xc2c1f0",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f0ca]"
+              },
+              {
+                "rva": "0xc2c1f6",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f0bc]"
+              },
+              {
+                "rva": "0xc2c1fc",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f0ae]"
+              },
+              {
+                "rva": "0xc2c202",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f098]"
+              },
+              {
+                "rva": "0xc2c208",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f08a]"
+              },
+              {
+                "rva": "0xc2c20e",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x28f07c]"
+              }
+            ]
+          }
+        ]
+      },
+      "FRP.dll": {
+        "sha256": "6634bd78b271d01fcb5aea9c0f37e296cd8b799d0c6006add659287213d6e461",
+        "target_imports": [
+          {
+            "iat": "0x15ff0a0",
+            "name": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+          }
+        ],
+        "static_sites": [
+          {
+            "site": "0x1462706",
+            "instruction": "jmp",
+            "import_iat_rva": "0x15ff0a0",
+            "import": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z",
+            "caller_pdata_start": "0x1462706",
+            "caller_pdata_end": "0x1462736",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x1462706",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c994]"
+              },
+              {
+                "rva": "0x146270c",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c986]"
+              },
+              {
+                "rva": "0x1462712",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c958]"
+              },
+              {
+                "rva": "0x1462718",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c94a]"
+              },
+              {
+                "rva": "0x146271e",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c93c]"
+              },
+              {
+                "rva": "0x1462724",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x19c92e]"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2026": {
+      "BEE.dll": {
+        "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+        "target_imports": [
+          {
+            "iat": "0xf17998",
+            "name": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z"
+          },
+          {
+            "iat": "0xf14288",
+            "name": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+          }
+        ],
+        "static_sites": [
+          {
+            "site": "0x2cd09e",
+            "instruction": "call",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2cccf0",
+            "caller_pdata_end": "0x2cd0f4",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x2cd080",
+                "m": "mov",
+                "args": "rdx, r13"
+              },
+              {
+                "rva": "0x2cd083",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc4a5df]"
+              },
+              {
+                "rva": "0x2cd089",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2cd08c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2cd08f",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x2cd095",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2cd098",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2cd09b",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2cd09e",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc4a8f4]"
+              },
+              {
+                "rva": "0x2cd0a4",
+                "m": "mov",
+                "args": "rax, rdi"
+              },
+              {
+                "rva": "0x2cd0a7",
+                "m": "mov",
+                "args": "rcx, qword ptr [rbp + 0x140]"
+              },
+              {
+                "rva": "0x2cd0ae",
+                "m": "xor",
+                "args": "rcx, rsp"
+              },
+              {
+                "rva": "0x2cd0b1",
+                "m": "call",
+                "args": "0x180d3ac30"
+              },
+              {
+                "rva": "0x2cd0b6",
+                "m": "mov",
+                "args": "rbx, qword ptr [rsp + 0x2a0]"
+              }
+            ]
+          },
+          {
+            "site": "0x2ff8d9",
+            "instruction": "call",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2ff440",
+            "caller_pdata_end": "0x2ff9b2",
+            "caller_export": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+            "context": [
+              {
+                "rva": "0x2ff8bb",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff8be",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc17da4]"
+              },
+              {
+                "rva": "0x2ff8c4",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2ff8c7",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff8ca",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x2ff8d0",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x2ff8d3",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2ff8d6",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff8d9",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc180b9]"
+              },
+              {
+                "rva": "0x2ff8df",
+                "m": "mov",
+                "args": "r14, qword ptr [rsp + 0x50]"
+              },
+              {
+                "rva": "0x2ff8e4",
+                "m": "mov",
+                "args": "rsi, qword ptr [rsp + 0x48]"
+              },
+              {
+                "rva": "0x2ff8e9",
+                "m": "cmp",
+                "args": "rsi, r14"
+              },
+              {
+                "rva": "0x2ff8ec",
+                "m": "je",
+                "args": "0x1802ff93e"
+              },
+              {
+                "rva": "0x2ff8ee",
+                "m": "nop",
+                "args": ""
+              }
+            ]
+          },
+          {
+            "site": "0x2ff92a",
+            "instruction": "call",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x2ff440",
+            "caller_pdata_end": "0x2ff9b2",
+            "caller_export": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+            "context": [
+              {
+                "rva": "0x2ff90b",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff90e",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc17d54]"
+              },
+              {
+                "rva": "0x2ff914",
+                "m": "mov",
+                "args": "r8, qword ptr [rax]"
+              },
+              {
+                "rva": "0x2ff917",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff91a",
+                "m": "call",
+                "args": "qword ptr [r8 + 0x88]"
+              },
+              {
+                "rva": "0x2ff921",
+                "m": "mov",
+                "args": "r8d, ebx"
+              },
+              {
+                "rva": "0x2ff924",
+                "m": "mov",
+                "args": "rdx, rdi"
+              },
+              {
+                "rva": "0x2ff927",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x2ff92a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc18068]"
+              },
+              {
+                "rva": "0x2ff930",
+                "m": "add",
+                "args": "rsi, 8"
+              },
+              {
+                "rva": "0x2ff934",
+                "m": "cmp",
+                "args": "rsi, r14"
+              },
+              {
+                "rva": "0x2ff937",
+                "m": "jne",
+                "args": "0x1802ff8f0"
+              },
+              {
+                "rva": "0x2ff939",
+                "m": "mov",
+                "args": "rsi, qword ptr [rsp + 0x48]"
+              },
+              {
+                "rva": "0x2ff93e",
+                "m": "test",
+                "args": "rsi, rsi"
+              }
+            ]
+          },
+          {
+            "site": "0x30492a",
+            "instruction": "call",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x304640",
+            "caller_pdata_end": "0x304bad",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x30490c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x30490f",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc12d53]"
+              },
+              {
+                "rva": "0x304915",
+                "m": "mov",
+                "args": "rdx, qword ptr [rax]"
+              },
+              {
+                "rva": "0x304918",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x30491b",
+                "m": "call",
+                "args": "qword ptr [rdx + 0x88]"
+              },
+              {
+                "rva": "0x304921",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x304924",
+                "m": "mov",
+                "args": "rdx, rbx"
+              },
+              {
+                "rva": "0x304927",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x30492a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc13068]"
+              },
+              {
+                "rva": "0x304930",
+                "m": "lea",
+                "args": "rdx, [rip + 0x1398581]"
+              },
+              {
+                "rva": "0x304937",
+                "m": "mov",
+                "args": "rcx, rsi"
+              },
+              {
+                "rva": "0x30493a",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc12d28]"
+              },
+              {
+                "rva": "0x304940",
+                "m": "mov",
+                "args": "rbx, rax"
+              },
+              {
+                "rva": "0x304943",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc125cf]"
+              }
+            ]
+          },
+          {
+            "site": "0x30496f",
+            "instruction": "call",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0x304640",
+            "caller_pdata_end": "0x304bad",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x304950",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x304953",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc12d0f]"
+              },
+              {
+                "rva": "0x304959",
+                "m": "mov",
+                "args": "r8, qword ptr [rax]"
+              },
+              {
+                "rva": "0x30495c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x30495f",
+                "m": "call",
+                "args": "qword ptr [r8 + 0x88]"
+              },
+              {
+                "rva": "0x304966",
+                "m": "xor",
+                "args": "r8d, r8d"
+              },
+              {
+                "rva": "0x304969",
+                "m": "mov",
+                "args": "rdx, rbx"
+              },
+              {
+                "rva": "0x30496c",
+                "m": "mov",
+                "args": "rcx, rax"
+              },
+              {
+                "rva": "0x30496f",
+                "m": "call",
+                "args": "qword ptr [rip + 0xc13023]"
+              },
+              {
+                "rva": "0x304975",
+                "m": "mov",
+                "args": "rdx, r14"
+              },
+              {
+                "rva": "0x304978",
+                "m": "lea",
+                "args": "rcx, [rbp - 1]"
+              },
+              {
+                "rva": "0x30497c",
+                "m": "call",
+                "args": "0x1800e7d70"
+              },
+              {
+                "rva": "0x304981",
+                "m": "nop",
+                "args": ""
+              },
+              {
+                "rva": "0x304982",
+                "m": "lea",
+                "args": "rax, [rbp - 0x39]"
+              }
+            ]
+          },
+          {
+            "site": "0xc5368a",
+            "instruction": "jmp",
+            "import_iat_rva": "0xf17998",
+            "import": "TDB.dll!?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z",
+            "caller_pdata_start": "0xc5368a",
+            "caller_pdata_end": "0xc536ba",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0xc5368a",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c4308]"
+              },
+              {
+                "rva": "0xc53690",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c430a]"
+              },
+              {
+                "rva": "0xc53696",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c430c]"
+              },
+              {
+                "rva": "0xc5369c",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c430e]"
+              },
+              {
+                "rva": "0xc536a2",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c4310]"
+              },
+              {
+                "rva": "0xc536a8",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2c4312]"
+              }
+            ]
+          },
+          {
+            "site": "0xc54998",
+            "instruction": "jmp",
+            "import_iat_rva": "0xf14288",
+            "import": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z",
+            "caller_pdata_start": "0xc54998",
+            "caller_pdata_end": "0xc549c8",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0xc54998",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8ea]"
+              },
+              {
+                "rva": "0xc5499e",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8ec]"
+              },
+              {
+                "rva": "0xc549a4",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8ee]"
+              },
+              {
+                "rva": "0xc549aa",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8f0]"
+              },
+              {
+                "rva": "0xc549b0",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8f2]"
+              },
+              {
+                "rva": "0xc549b6",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x2bf8f4]"
+              }
+            ]
+          }
+        ]
+      },
+      "FRP.dll": {
+        "sha256": "592bc37e87cb951b35466f82004fbb5a4fbe0267cad8ab38e3aa991bf7d6c33c",
+        "target_imports": [
+          {
+            "iat": "0x16120a8",
+            "name": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+          }
+        ],
+        "static_sites": [
+          {
+            "site": "0x14621bc",
+            "instruction": "jmp",
+            "import_iat_rva": "0x16120a8",
+            "import": "FLT.dll!?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z",
+            "caller_pdata_start": "0x14621bc",
+            "caller_pdata_end": "0x14621ec",
+            "caller_export": "",
+            "context": [
+              {
+                "rva": "0x14621bc",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afee6]"
+              },
+              {
+                "rva": "0x14621c2",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afed8]"
+              },
+              {
+                "rva": "0x14621c8",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afeca]"
+              },
+              {
+                "rva": "0x14621ce",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afebc]"
+              },
+              {
+                "rva": "0x14621d4",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afeae]"
+              },
+              {
+                "rva": "0x14621da",
+                "m": "jmp",
+                "args": "qword ptr [rip + 0x1afea0]"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

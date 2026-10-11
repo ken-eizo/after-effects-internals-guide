@@ -1,0 +1,83 @@
+{
+  "classification": "E2-L exported body machine-code; no actual plugin implementation",
+  "years": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "methods": {
+        "?CreateEffectGroup@DynamicStreamEffectsParser@": {
+          "entry": "0xe3960",
+          "instructions": [
+            {
+              "rva": "0xe3960",
+              "mnemonic": "xor",
+              "args": "eax, eax",
+              "target_import": "",
+              "target_export": ""
+            },
+            {
+              "rva": "0xe3962",
+              "mnemonic": "ret",
+              "args": "",
+              "target_import": "",
+              "target_export": ""
+            }
+          ],
+          "exact_export": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z"
+        },
+        "?GetStreamFactory@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        },
+        "?ParameterMatchNameFromExternalID@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        },
+        "?StartEffect@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        }
+      },
+      "base_CreateEffectGroup_returns_null": true,
+      "derived_virtual_override_possibility": "unresolved, requires vtable caller/RTTI audit"
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "methods": {
+        "?CreateEffectGroup@DynamicStreamEffectsParser@": {
+          "entry": "0xe9d20",
+          "instructions": [
+            {
+              "rva": "0xe9d20",
+              "mnemonic": "xor",
+              "args": "eax, eax",
+              "target_import": "",
+              "target_export": ""
+            },
+            {
+              "rva": "0xe9d22",
+              "mnemonic": "ret",
+              "args": "",
+              "target_import": "",
+              "target_export": ""
+            }
+          ],
+          "exact_export": "?CreateEffectGroup@DynamicStreamEffectsParser@BEE@ae@@MEAAPEAVTDB_NamedStreamGroup@@AEBVTDB_MatchName@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@1@Z"
+        },
+        "?GetStreamFactory@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        },
+        "?ParameterMatchNameFromExternalID@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        },
+        "?StartEffect@DynamicStreamEffectsParser@": {
+          "exported": false,
+          "reason": "no matching PE export (possible inline/nonexported method)"
+        }
+      },
+      "base_CreateEffectGroup_returns_null": true,
+      "derived_virtual_override_possibility": "unresolved, requires vtable caller/RTTI audit"
+    }
+  }
+}

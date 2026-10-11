@@ -1,0 +1,325 @@
+{
+  "evidence": "E2-L code calls validated separately from imported JMP trampolines",
+  "years": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "direct_end_effect_calls": [
+        {
+          "callsite": "0x2f6cbf",
+          "function": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+          "reg_setup": [
+            {
+              "rva": "0x2f6ca1",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6ca4",
+              "m": "call",
+              "args": "qword ptr [rip + 0xbc6fd6]"
+            },
+            {
+              "rva": "0x2f6caa",
+              "m": "mov",
+              "args": "rdx, qword ptr [rax]"
+            },
+            {
+              "rva": "0x2f6cad",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6cb0",
+              "m": "call",
+              "args": "qword ptr [rdx + 0x88]"
+            },
+            {
+              "rva": "0x2f6cb6",
+              "m": "xor",
+              "args": "r8d, r8d"
+            },
+            {
+              "rva": "0x2f6cb9",
+              "m": "mov",
+              "args": "rdx, rdi"
+            },
+            {
+              "rva": "0x2f6cbc",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6cbf",
+              "m": "call",
+              "args": "qword ptr [rip + 0xbc77f3]"
+            },
+            {
+              "rva": "0x2f6cc5",
+              "m": "mov",
+              "args": "r14, qword ptr [rsp + 0x60]"
+            },
+            {
+              "rva": "0x2f6cca",
+              "m": "mov",
+              "args": "rsi, r14"
+            },
+            {
+              "rva": "0x2f6ccd",
+              "m": "cmp",
+              "args": "r14, r12"
+            },
+            {
+              "rva": "0x2f6cd0",
+              "m": "je",
+              "args": "0x1802f6d29"
+            },
+            {
+              "rva": "0x2f6cd2",
+              "m": "nop",
+              "args": "dword ptr [rax]"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2f6d1a",
+          "function": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+          "reg_setup": [
+            {
+              "rva": "0x2f6cfb",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6cfe",
+              "m": "call",
+              "args": "qword ptr [rip + 0xbc6f7c]"
+            },
+            {
+              "rva": "0x2f6d04",
+              "m": "mov",
+              "args": "r8, qword ptr [rax]"
+            },
+            {
+              "rva": "0x2f6d07",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6d0a",
+              "m": "call",
+              "args": "qword ptr [r8 + 0x88]"
+            },
+            {
+              "rva": "0x2f6d11",
+              "m": "mov",
+              "args": "r8d, ebx"
+            },
+            {
+              "rva": "0x2f6d14",
+              "m": "mov",
+              "args": "rdx, rdi"
+            },
+            {
+              "rva": "0x2f6d17",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2f6d1a",
+              "m": "call",
+              "args": "qword ptr [rip + 0xbc7798]"
+            },
+            {
+              "rva": "0x2f6d20",
+              "m": "add",
+              "args": "rsi, 8"
+            },
+            {
+              "rva": "0x2f6d24",
+              "m": "cmp",
+              "args": "rsi, r12"
+            },
+            {
+              "rva": "0x2f6d27",
+              "m": "jne",
+              "args": "0x1802f6ce0"
+            },
+            {
+              "rva": "0x2f6d29",
+              "m": "test",
+              "args": "r14, r14"
+            },
+            {
+              "rva": "0x2f6d2c",
+              "m": "je",
+              "args": "0x1802f6d68"
+            }
+          ]
+        }
+      ],
+      "BEE_AddStream_import_jump_thunks": 2,
+      "FRP_FLT_AddStream_import_jump_thunks": 1,
+      "FLT_FCSeqSpec_AddStream_direct_call_proven_in_FRP": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "direct_end_effect_calls": [
+        {
+          "callsite": "0x2ff8d9",
+          "function": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+          "reg_setup": [
+            {
+              "rva": "0x2ff8bb",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff8be",
+              "m": "call",
+              "args": "qword ptr [rip + 0xc17da4]"
+            },
+            {
+              "rva": "0x2ff8c4",
+              "m": "mov",
+              "args": "rdx, qword ptr [rax]"
+            },
+            {
+              "rva": "0x2ff8c7",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff8ca",
+              "m": "call",
+              "args": "qword ptr [rdx + 0x88]"
+            },
+            {
+              "rva": "0x2ff8d0",
+              "m": "xor",
+              "args": "r8d, r8d"
+            },
+            {
+              "rva": "0x2ff8d3",
+              "m": "mov",
+              "args": "rdx, rdi"
+            },
+            {
+              "rva": "0x2ff8d6",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff8d9",
+              "m": "call",
+              "args": "qword ptr [rip + 0xc180b9]"
+            },
+            {
+              "rva": "0x2ff8df",
+              "m": "mov",
+              "args": "r14, qword ptr [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ff8e4",
+              "m": "mov",
+              "args": "rsi, qword ptr [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2ff8e9",
+              "m": "cmp",
+              "args": "rsi, r14"
+            },
+            {
+              "rva": "0x2ff8ec",
+              "m": "je",
+              "args": "0x1802ff93e"
+            },
+            {
+              "rva": "0x2ff8ee",
+              "m": "nop",
+              "args": ""
+            }
+          ]
+        },
+        {
+          "callsite": "0x2ff92a",
+          "function": "?EndEffect@DynamicStreamEffectsParser@BEE@ae@@MEAAXXZ",
+          "reg_setup": [
+            {
+              "rva": "0x2ff90b",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff90e",
+              "m": "call",
+              "args": "qword ptr [rip + 0xc17d54]"
+            },
+            {
+              "rva": "0x2ff914",
+              "m": "mov",
+              "args": "r8, qword ptr [rax]"
+            },
+            {
+              "rva": "0x2ff917",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff91a",
+              "m": "call",
+              "args": "qword ptr [r8 + 0x88]"
+            },
+            {
+              "rva": "0x2ff921",
+              "m": "mov",
+              "args": "r8d, ebx"
+            },
+            {
+              "rva": "0x2ff924",
+              "m": "mov",
+              "args": "rdx, rdi"
+            },
+            {
+              "rva": "0x2ff927",
+              "m": "mov",
+              "args": "rcx, rax"
+            },
+            {
+              "rva": "0x2ff92a",
+              "m": "call",
+              "args": "qword ptr [rip + 0xc18068]"
+            },
+            {
+              "rva": "0x2ff930",
+              "m": "add",
+              "args": "rsi, 8"
+            },
+            {
+              "rva": "0x2ff934",
+              "m": "cmp",
+              "args": "rsi, r14"
+            },
+            {
+              "rva": "0x2ff937",
+              "m": "jne",
+              "args": "0x1802ff8f0"
+            },
+            {
+              "rva": "0x2ff939",
+              "m": "mov",
+              "args": "rsi, qword ptr [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2ff93e",
+              "m": "test",
+              "args": "rsi, rsi"
+            }
+          ]
+        }
+      ],
+      "BEE_AddStream_import_jump_thunks": 2,
+      "FRP_FLT_AddStream_import_jump_thunks": 1,
+      "FLT_FCSeqSpec_AddStream_direct_call_proven_in_FRP": false
+    }
+  }
+}

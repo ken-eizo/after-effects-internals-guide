@@ -1,0 +1,39 @@
+{
+  "classification": "E2-L executable import tables only; indirect/virtual/dynamic loading excluded",
+  "root": "D:\\Adobe\\Adobe After Effects 2026\\Support Files",
+  "scan_scope": "direct Support Files DLL/EXE, no nested plugin dirs",
+  "scanned": 443,
+  "failed": [],
+  "matches": [
+    {
+      "module": "BEE.dll",
+      "imported_dll": "TDB.dll",
+      "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+    },
+    {
+      "module": "BEE.dll",
+      "imported_dll": "TDB.dll",
+      "symbol": "?AddStreamToUILayout@TDB_StreamGroup@@QEBAXPEBVTDB_StreamBase@@I@Z"
+    },
+    {
+      "module": "BEE.dll",
+      "imported_dll": "FLT.dll",
+      "symbol": "?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+    },
+    {
+      "module": "BEE.dll",
+      "imported_dll": "FLT.dll",
+      "symbol": "?FLT_RegisterPseudoEffect@@YAXPEBEAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@AEBV?$vector@VTDB_ParamDef@@V?$allocator@VTDB_ParamDef@@@std@@@2@@Z"
+    },
+    {
+      "module": "FRP.dll",
+      "imported_dll": "FLT.dll",
+      "symbol": "?AddStreamToUILayout@FLT_FCSeqSpec@@UEBAXPEBVTDB_StreamBase@@@Z"
+    },
+    {
+      "module": "OM.dll",
+      "imported_dll": "TDB.dll",
+      "symbol": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+    }
+  ]
+}
