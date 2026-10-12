@@ -12319,6 +12319,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#2026-10-12-actual-ae2026-sdk-index-0-host-assertion-and-v2-corrective-boundary-f-vector-052" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-10-12 — Actual AE2026 SDK index-0 host assertion and v2 corrective boundary (F-VECTOR-052)
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12493,6 +12504,9 @@
 <h2 id="2026-10-12-first-in-ae-native-effect-parade-admission-of-compiled-cnl-data-effect-f-vector-051">2026-10-12 — First in-AE native Effect Parade admission of compiled CNL data effect, F-VECTOR-051<a class="headerlink" href="#2026-10-12-first-in-ae-native-effect-parade-admission-of-compiled-cnl-data-effect-f-vector-051" title="Permanent link">&para;</a></h2>
 <p>The user's genuine 13:23:48 <code>CNL_NativeOwner_Admission.tsv</code> confirms AE2026 recognizes <code>CNL Owned Vector Document</code> in the real <code>ADBE Effect Parade</code> under an AV Layer. It owns <strong>five native host-visible Effect parameter leaves</strong> named <code>CNL Owned Vector Document-0000</code> through <code>-0004</code>, plus <code>ADBE Effect Built In Params</code>. The host trace visited 173 nodes, created none and invoked no private factory. The CNL Effect group is a named group with <strong>zero</strong> <code>CanAddStream</code> acceptance for all tested external/vector group types, ruling out naïve public SDK <code>AEGP_AddStream</code> for native independent Contents. This host observation now validates a step beyond the earlier compiled AEX-only F-VECTOR-049: the effect itself has been instantiated in AE 2026. The trace does not prove the ellipse rendered or project persistence.</p>
 <p>The next separate read-only public AEGP <code>CNLArchiveIdentity.aex</code> has also been implemented and built twice independently. It resolves actual per-parameter PF and AEGP value types, unique stream IDs and animation eligibility without reading the Arbitrary blob or mutating AE. Its new user-run report would be <code>%TEMP%/CNL_OwnedEffect_StreamIdentity.tsv</code>. Current code is archived in <code>experiments/vector-shape/native-owned-effect-identity-lab/</code> and documented as EXP-SHAPE-051. It has <strong>not</strong> been executed in real AE. F-VECTOR-050 establishes the host FLT/TDB opaque arbitrary leaf, not native sub-Contents; Adobe SDK disallows using generic <code>AEGP_SetStreamValue</code> for arbitrary data. All remaining native Pen/Vertex and BEE_VectorArt product gates remain open; no private registration, <code>CompNodeAE</code> edit or Phase F integration.</p>
+<h2 id="2026-10-12-actual-ae2026-sdk-index-0-host-assertion-and-v2-corrective-boundary-f-vector-052">2026-10-12 — Actual AE2026 SDK index-0 host assertion and v2 corrective boundary (F-VECTOR-052)<a class="headerlink" href="#2026-10-12-actual-ae2026-sdk-index-0-host-assertion-and-v2-corrective-boundary-f-vector-052" title="Permanent link">&para;</a></h2>
+<p>The user's v1 <code>CNLArchiveIdentity</code> probe did reach native <code>CNL Owned Vector Document</code> in AE2026 but triggered two internal <code>param_index out of range</code> assertions (5027::56 and 5027::150). Actual user-run <code>%TEMP%/CNL_OwnedEffect_StreamIdentity.tsv</code> conclusively shows <code>AEGP_GetEffectNumParamStreams=5</code>, with <em>both</em> <code>AEGP_GetEffectParamUnionByIndex</code> and <code>AEGP_GetNewEffectStreamByIndex</code> returning <code>A_Err=3</code> at input index <strong>0</strong>. The previous probe called both and therefore caused the dialogs. Indices <strong>1–4 all passed</strong>; index1 returned <em>real host</em> <code>PF_Param_ARBITRARY_DATA=11</code> and <code>AEGP_StreamType_ARB=7</code>, confirming actual native opaque archive leaf. IDs queried through <code>AEGP_GetUniqueStreamID</code> returned 0 for every valid parameter, so no unique stable per-parameter identity is established.</p>
+<p>The read-only AEGP is patched to <strong>never query index0</strong>, to produce a distinct <code>_v2.tsv</code>, and to report explicitly that the input index was skipped. Original and AEIG independent-source AEX builds both pass offline static source + PE verifier (including regression check that enumeration starts at index1). This is <strong>not</strong> yet validated in AE GUI; user must manually replace old AEX and restart if they choose to retest. No project mutations or private calls occurred; AE2026 saving, Pen/Contents and VectorArt remain open gates. Source and results: F-VECTOR-052 / EXP-SHAPE-052.</p>
 
 
 
@@ -12513,7 +12527,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 12, 2026 04:34:23 UTC">October 12, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 12, 2026 07:18:35 UTC">October 12, 2026</span>
   </span>
 
     
