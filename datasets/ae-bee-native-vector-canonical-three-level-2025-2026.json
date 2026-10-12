@@ -1,0 +1,994 @@
+{
+  "evidence": "E2-L exact 2025/2026 BEE PE exported FillInCanonicalUILayout x64 code, native TDB imported canonical stream links, static only",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "three_schema_classes": [
+        {
+          "symbol": "?FillInCanonicalUILayout@BEE_VectorLayer@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x6e1c40",
+          "code_range": [
+            "0x6e1c40",
+            "0x6e1e7d"
+          ],
+          "canonical_child_lookup_count": 10,
+          "canonical_children": [
+            {
+              "callsite": "0x6e1c57",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ed038",
+                "known_operator": null,
+                "site": "0x6e1c50"
+              }
+            },
+            {
+              "callsite": "0x6e1c8d",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef460",
+                "known_operator": null,
+                "site": "0x6e1c83"
+              }
+            },
+            {
+              "callsite": "0x6e1cc3",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ed048",
+                "known_operator": null,
+                "site": "0x6e1cb9"
+              }
+            },
+            {
+              "callsite": "0x6e1cf9",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ed098",
+                "known_operator": null,
+                "site": "0x6e1cef"
+              }
+            },
+            {
+              "callsite": "0x6e1d2f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ec598",
+                "known_operator": null,
+                "site": "0x6e1d25"
+              }
+            },
+            {
+              "callsite": "0x6e1d65",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ec6c8",
+                "known_operator": null,
+                "site": "0x6e1d5b"
+              }
+            },
+            {
+              "callsite": "0x6e1d9b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ec090",
+                "known_operator": null,
+                "site": "0x6e1d91"
+              }
+            },
+            {
+              "callsite": "0x6e1dd1",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ebf10",
+                "known_operator": null,
+                "site": "0x6e1dc7"
+              }
+            },
+            {
+              "callsite": "0x6e1e07",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ebf00",
+                "known_operator": null,
+                "site": "0x6e1dfd"
+              }
+            },
+            {
+              "callsite": "0x6e1e3d",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ed0d8",
+                "known_operator": null,
+                "site": "0x6e1e33"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x6e1c57",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1c8d",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1cc3",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1cf9",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1d2f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1d65",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1d9b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1dd1",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1e07",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x6e1e3d",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        {
+          "symbol": "?FillInCanonicalUILayout@VectorStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x702cb0",
+          "code_range": [
+            "0x702cb0",
+            "0x702da9"
+          ],
+          "canonical_child_lookup_count": 4,
+          "canonical_children": [
+            {
+              "callsite": "0x702cc7",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef430",
+                "known_operator": null,
+                "site": "0x702cc0"
+              }
+            },
+            {
+              "callsite": "0x702cfd",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef450",
+                "known_operator": null,
+                "site": "0x702cf3"
+              }
+            },
+            {
+              "callsite": "0x702d33",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef470",
+                "known_operator": null,
+                "site": "0x702d29"
+              }
+            },
+            {
+              "callsite": "0x702d69",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef480",
+                "known_operator": null,
+                "site": "0x702d5f"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x702cc7",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702cfd",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702d33",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702d69",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        {
+          "symbol": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x702db0",
+          "code_range": [
+            "0x702db0",
+            "0x7031f3"
+          ],
+          "canonical_child_lookup_count": 20,
+          "canonical_children": [
+            {
+              "callsite": "0x702dcf",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef420",
+                "known_operator": "ADBE Vector Group",
+                "site": "0x702dc8"
+              }
+            },
+            {
+              "callsite": "0x702e03",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef810",
+                "known_operator": "ADBE Vector Shape - Group",
+                "site": "0x702df9"
+              }
+            },
+            {
+              "callsite": "0x702e37",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef8a0",
+                "known_operator": "ADBE Vector Shape - Star",
+                "site": "0x702e2d"
+              }
+            },
+            {
+              "callsite": "0x702e6b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef830",
+                "known_operator": "ADBE Vector Shape - Rect",
+                "site": "0x702e61"
+              }
+            },
+            {
+              "callsite": "0x702e9f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef870",
+                "known_operator": "ADBE Vector Shape - Ellipse",
+                "site": "0x702e95"
+              }
+            },
+            {
+              "callsite": "0x702ed3",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef950",
+                "known_operator": "ADBE Vector Graphic - Fill",
+                "site": "0x702ec9"
+              }
+            },
+            {
+              "callsite": "0x702f07",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15ef980",
+                "known_operator": "ADBE Vector Graphic - G-Fill",
+                "site": "0x702efd"
+              }
+            },
+            {
+              "callsite": "0x702f3b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efa20",
+                "known_operator": "ADBE Vector Graphic - Stroke",
+                "site": "0x702f31"
+              }
+            },
+            {
+              "callsite": "0x702f6f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efa10",
+                "known_operator": "ADBE Vector Graphic - G-Stroke",
+                "site": "0x702f65"
+              }
+            },
+            {
+              "callsite": "0x702fa3",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efc10",
+                "known_operator": "ADBE Vector Filter - Trim",
+                "site": "0x702f99"
+              }
+            },
+            {
+              "callsite": "0x702fd7",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efc60",
+                "known_operator": "ADBE Vector Filter - Offset",
+                "site": "0x702fcd"
+              }
+            },
+            {
+              "callsite": "0x70300b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efd20",
+                "known_operator": "ADBE Vector Filter - PB",
+                "site": "0x703001"
+              }
+            },
+            {
+              "callsite": "0x70303f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efd40",
+                "known_operator": "ADBE Vector Filter - Repeater",
+                "site": "0x703035"
+              }
+            },
+            {
+              "callsite": "0x703073",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efcc0",
+                "known_operator": "ADBE Vector Filter - Reveal",
+                "site": "0x703069"
+              }
+            },
+            {
+              "callsite": "0x7030a7",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efd00",
+                "known_operator": "ADBE Vector Filter - Merge",
+                "site": "0x70309d"
+              }
+            },
+            {
+              "callsite": "0x7030db",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efdf0",
+                "known_operator": "ADBE Vector Filter - Roughen",
+                "site": "0x7030d1"
+              }
+            },
+            {
+              "callsite": "0x70310f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efe30",
+                "known_operator": "ADBE Vector Filter - Zigzag",
+                "site": "0x703105"
+              }
+            },
+            {
+              "callsite": "0x703143",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efec0",
+                "known_operator": "ADBE Vector Filter - RC",
+                "site": "0x703139"
+              }
+            },
+            {
+              "callsite": "0x703177",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15efee0",
+                "known_operator": "ADBE Vector Filter - Twist",
+                "site": "0x70316d"
+              }
+            },
+            {
+              "callsite": "0x7031ab",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x15eff10",
+                "known_operator": "ADBE Vector Filter - Wiggler",
+                "site": "0x7031a1"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x702dcf",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702e03",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702e37",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702e6b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702e9f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702ed3",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702f07",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702f3b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702f6f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702fa3",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x702fd7",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70300b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70303f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x703073",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7030a7",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7030db",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70310f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x703143",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x703177",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7031ab",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "three_schema_classes": [
+        {
+          "symbol": "?FillInCanonicalUILayout@BEE_VectorLayer@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x706500",
+          "code_range": [
+            "0x706500",
+            "0x7066a2"
+          ],
+          "canonical_child_lookup_count": 11,
+          "canonical_children": [
+            {
+              "callsite": "0x706517",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169d890",
+                "known_operator": null,
+                "site": "0x706510"
+              }
+            },
+            {
+              "callsite": "0x706539",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fe30",
+                "known_operator": null,
+                "site": "0x70652f"
+              }
+            },
+            {
+              "callsite": "0x70655b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169d8a0",
+                "known_operator": null,
+                "site": "0x706551"
+              }
+            },
+            {
+              "callsite": "0x70657d",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169d8f0",
+                "known_operator": null,
+                "site": "0x706573"
+              }
+            },
+            {
+              "callsite": "0x70659f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169cd68",
+                "known_operator": null,
+                "site": "0x706595"
+              }
+            },
+            {
+              "callsite": "0x7065c1",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169ce98",
+                "known_operator": null,
+                "site": "0x7065b7"
+              }
+            },
+            {
+              "callsite": "0x7065e3",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169c878",
+                "known_operator": null,
+                "site": "0x7065d9"
+              }
+            },
+            {
+              "callsite": "0x706605",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169c6f8",
+                "known_operator": null,
+                "site": "0x7065fb"
+              }
+            },
+            {
+              "callsite": "0x706627",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169c6e8",
+                "known_operator": null,
+                "site": "0x70661d"
+              }
+            },
+            {
+              "callsite": "0x706649",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169d930",
+                "known_operator": null,
+                "site": "0x70663f"
+              }
+            },
+            {
+              "callsite": "0x706675",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169db10",
+                "known_operator": null,
+                "site": "0x70666b"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x706517",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x706539",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70655b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70657d",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x70659f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7065c1",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7065e3",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x706605",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x706627",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x706649",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x706661",
+              "target": "PIN.dll!?PIN_BetaFeature_IsContentAuthenticityEnabled@@YA_NXZ"
+            },
+            {
+              "rva": "0x706675",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        {
+          "symbol": "?FillInCanonicalUILayout@VectorStreamGroup@BEE_VectorStream@@MEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x725820",
+          "code_range": [
+            "0x725820",
+            "0x7258c0"
+          ],
+          "canonical_child_lookup_count": 4,
+          "canonical_children": [
+            {
+              "callsite": "0x725837",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fe00",
+                "known_operator": null,
+                "site": "0x725830"
+              }
+            },
+            {
+              "callsite": "0x725859",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fe20",
+                "known_operator": null,
+                "site": "0x72584f"
+              }
+            },
+            {
+              "callsite": "0x72587b",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fe40",
+                "known_operator": null,
+                "site": "0x725871"
+              }
+            },
+            {
+              "callsite": "0x72589d",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fe50",
+                "known_operator": null,
+                "site": "0x725893"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x725837",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725859",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72587b",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72589d",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        },
+        {
+          "symbol": "?FillInCanonicalUILayout@VectorsStreamGroup@BEE_VectorStream@@UEBAXPEAV?$vector@PEBVTDB_StreamBase@@V?$U_Allocator@PEBVTDB_StreamBase@@@@@std@@@Z",
+          "entry_rva": "0x7258c0",
+          "code_range": [
+            "0x7258c0",
+            "0x725b65"
+          ],
+          "canonical_child_lookup_count": 20,
+          "canonical_children": [
+            {
+              "callsite": "0x7258df",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x169fdf0",
+                "known_operator": "ADBE Vector Group",
+                "site": "0x7258d8"
+              }
+            },
+            {
+              "callsite": "0x7258ff",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a01e0",
+                "known_operator": "ADBE Vector Shape - Group",
+                "site": "0x7258f5"
+              }
+            },
+            {
+              "callsite": "0x72591f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0270",
+                "known_operator": "ADBE Vector Shape - Star",
+                "site": "0x725915"
+              }
+            },
+            {
+              "callsite": "0x72593f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0200",
+                "known_operator": "ADBE Vector Shape - Rect",
+                "site": "0x725935"
+              }
+            },
+            {
+              "callsite": "0x72595f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0240",
+                "known_operator": "ADBE Vector Shape - Ellipse",
+                "site": "0x725955"
+              }
+            },
+            {
+              "callsite": "0x72597f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0320",
+                "known_operator": "ADBE Vector Graphic - Fill",
+                "site": "0x725975"
+              }
+            },
+            {
+              "callsite": "0x72599f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0350",
+                "known_operator": "ADBE Vector Graphic - G-Fill",
+                "site": "0x725995"
+              }
+            },
+            {
+              "callsite": "0x7259bf",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a03f0",
+                "known_operator": "ADBE Vector Graphic - Stroke",
+                "site": "0x7259b5"
+              }
+            },
+            {
+              "callsite": "0x7259df",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a03e0",
+                "known_operator": "ADBE Vector Graphic - G-Stroke",
+                "site": "0x7259d5"
+              }
+            },
+            {
+              "callsite": "0x7259ff",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a05e0",
+                "known_operator": "ADBE Vector Filter - Trim",
+                "site": "0x7259f5"
+              }
+            },
+            {
+              "callsite": "0x725a1f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0630",
+                "known_operator": "ADBE Vector Filter - Offset",
+                "site": "0x725a15"
+              }
+            },
+            {
+              "callsite": "0x725a3f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a06f0",
+                "known_operator": "ADBE Vector Filter - PB",
+                "site": "0x725a35"
+              }
+            },
+            {
+              "callsite": "0x725a5f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0710",
+                "known_operator": "ADBE Vector Filter - Repeater",
+                "site": "0x725a55"
+              }
+            },
+            {
+              "callsite": "0x725a7f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0690",
+                "known_operator": "ADBE Vector Filter - Reveal",
+                "site": "0x725a75"
+              }
+            },
+            {
+              "callsite": "0x725a9f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a06d0",
+                "known_operator": "ADBE Vector Filter - Merge",
+                "site": "0x725a95"
+              }
+            },
+            {
+              "callsite": "0x725abf",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a07c0",
+                "known_operator": "ADBE Vector Filter - Roughen",
+                "site": "0x725ab5"
+              }
+            },
+            {
+              "callsite": "0x725adf",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0800",
+                "known_operator": "ADBE Vector Filter - Zigzag",
+                "site": "0x725ad5"
+              }
+            },
+            {
+              "callsite": "0x725aff",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a0890",
+                "known_operator": "ADBE Vector Filter - RC",
+                "site": "0x725af5"
+              }
+            },
+            {
+              "callsite": "0x725b1f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a08b0",
+                "known_operator": "ADBE Vector Filter - Twist",
+                "site": "0x725b15"
+              }
+            },
+            {
+              "callsite": "0x725b3f",
+              "last_matchname_arg": {
+                "reg": "rdx",
+                "matchname_rva": "0x16a08e0",
+                "known_operator": "ADBE Vector Filter - Wiggler",
+                "site": "0x725b35"
+              }
+            }
+          ],
+          "import_calls": [
+            {
+              "rva": "0x7258df",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7258ff",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72591f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72593f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72595f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72597f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x72599f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7259bf",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7259df",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x7259ff",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725a1f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725a3f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725a5f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725a7f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725a9f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725abf",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725adf",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725aff",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725b1f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            },
+            {
+              "rva": "0x725b3f",
+              "target": "TDB.dll!?GetCanonicalStream@TDB_StreamBase@@QEBAPEBV1@AEBVTDB_MatchName@@@Z"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

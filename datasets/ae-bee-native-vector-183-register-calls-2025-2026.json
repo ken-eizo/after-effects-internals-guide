@@ -1,0 +1,2241 @@
+{
+  "evidence": "E2-L exact AE2025/26 Shape native initializer; 55+47+19+62 potential registration sites; conditional runtime branches not assumed",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "stages": [
+        {
+          "name": "base_properties",
+          "function_entry": "0x715e80",
+          "register_call_count": 55,
+          "registrations": [
+            {
+              "site": "0x715eca",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715ef8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715f26",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715f54",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715f82",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc10",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715fb0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efcb0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x715fde",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efca0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71600c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc90",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71603a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc80",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716068",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716096",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7160c4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efcf0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7160f2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efce0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716120",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efcd0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71614e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efcc0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71617c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd10",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7161aa",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7161d8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716206",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716234",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efde0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716262",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efdd0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716290",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efdc0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7162be",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efdb0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7162ec",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efda0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71631a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd90",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716348",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd80",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716376",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7163a4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7163d2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716400",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efd40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716427",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716455",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71647c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7164a3",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7164d1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7164ff",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe10",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71652d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71655b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716589",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe80",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7165b7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe90",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7165e5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efea0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716613",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efeb0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716641",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efdf0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71666f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716696",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7166c4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff10",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7166f2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716720",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71674e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71677c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efe30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7167aa",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efed0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7167d8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efec0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716806",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15eff00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716834",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efef0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716862",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efee0",
+                "export": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "vector_properties",
+          "function_entry": "0x716890",
+          "register_call_count": 47,
+          "registrations": [
+            {
+              "site": "0x7168d6",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef430",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716904",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef940",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716932",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efc00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716960",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efbf0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71698e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efbe0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7169bc",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efbd0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7169ea",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efbc0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716a18",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efbb0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716a46",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efba0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716a74",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb90",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716aa2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb80",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716ad0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716afe",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716b2c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716b5a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716b88",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716bb6",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716be4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb10",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716c12",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efb00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716c40",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efaf0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716c6e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efac0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716c9c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efae0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716cca",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efab0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716cf8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efad0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716d26",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efaa0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716d54",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa90",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716d82",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa80",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716db0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa70",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716dde",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa60",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716e0c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa50",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716e3a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa40",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716e68",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa30",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716e96",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa20",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716ec4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef930",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716eeb",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef970",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716f19",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef960",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716f47",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef950",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716f75",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716fac",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x716fda",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717008",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717036",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717064",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717092",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef9a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7170c0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef990",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7170ee",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef980",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71711c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15efa10",
+                "export": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "vector_operators",
+          "function_entry": "0x717140",
+          "register_call_count": 19,
+          "registrations": [
+            {
+              "site": "0x717186",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef800",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7171b4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef820",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7171e2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef810",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717210",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef860",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71723e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef850",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71726c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef840",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71729a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef830",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7172c1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef890",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7172ef",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef880",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71731d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef870",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71734b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef920",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717379",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef910",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7173a7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef900",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7173d5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7173fc",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x71742a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717458",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x717486",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7174b4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x15ef8a0",
+                "export": ""
+              }
+            }
+          ]
+        }
+      ],
+      "vector_layer_main_registration_count": 62,
+      "total_static_registration_calls": 183,
+      "operator_matchnames_joined_to_native_TDB_creator_registration": {
+        "ADBE Vector Filter - Trim": [
+          {
+            "block": "base_properties",
+            "site": "0x715f82"
+          }
+        ],
+        "ADBE Vector Filter - Offset": [
+          {
+            "block": "base_properties",
+            "site": "0x716096"
+          }
+        ],
+        "ADBE Vector Filter - Reveal": [
+          {
+            "block": "base_properties",
+            "site": "0x71614e"
+          }
+        ],
+        "ADBE Vector Filter - Merge": [
+          {
+            "block": "base_properties",
+            "site": "0x7161aa"
+          }
+        ],
+        "ADBE Vector Filter - PB": [
+          {
+            "block": "base_properties",
+            "site": "0x716206"
+          }
+        ],
+        "ADBE Vector Filter - Repeater": [
+          {
+            "block": "base_properties",
+            "site": "0x716400"
+          }
+        ],
+        "ADBE Vector Filter - Roughen": [
+          {
+            "block": "base_properties",
+            "site": "0x716641"
+          }
+        ],
+        "ADBE Vector Filter - Wiggler": [
+          {
+            "block": "base_properties",
+            "site": "0x7166c4"
+          }
+        ],
+        "ADBE Vector Filter - Zigzag": [
+          {
+            "block": "base_properties",
+            "site": "0x71677c"
+          }
+        ],
+        "ADBE Vector Filter - RC": [
+          {
+            "block": "base_properties",
+            "site": "0x7167d8"
+          }
+        ],
+        "ADBE Vector Filter - Twist": [
+          {
+            "block": "base_properties",
+            "site": "0x716862"
+          }
+        ],
+        "ADBE Vector Graphic - Stroke": [
+          {
+            "block": "vector_properties",
+            "site": "0x716e96"
+          }
+        ],
+        "ADBE Vector Graphic - Fill": [
+          {
+            "block": "vector_properties",
+            "site": "0x716f47"
+          }
+        ],
+        "ADBE Vector Graphic - G-Fill": [
+          {
+            "block": "vector_properties",
+            "site": "0x7170ee"
+          }
+        ],
+        "ADBE Vector Graphic - G-Stroke": [
+          {
+            "block": "vector_properties",
+            "site": "0x71711c"
+          }
+        ],
+        "ADBE Vector Shape - Group": [
+          {
+            "block": "vector_operators",
+            "site": "0x7171e2"
+          }
+        ],
+        "ADBE Vector Shape - Rect": [
+          {
+            "block": "vector_operators",
+            "site": "0x71729a"
+          }
+        ],
+        "ADBE Vector Shape - Ellipse": [
+          {
+            "block": "vector_operators",
+            "site": "0x71731d"
+          }
+        ],
+        "ADBE Vector Shape - Star": [
+          {
+            "block": "vector_operators",
+            "site": "0x7174b4"
+          }
+        ],
+        "ADBE Vector Group": [
+          {
+            "block": "vector_layer_main",
+            "site": "0x77d22e"
+          }
+        ]
+      }
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "stages": [
+        {
+          "name": "base_properties",
+          "function_entry": "0x738360",
+          "register_call_count": 55,
+          "registrations": [
+            {
+              "site": "0x73839f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0620",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7383cd",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0610",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7383fb",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0600",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738429",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738457",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738485",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0680",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7384b3",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0670",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7384e1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0660",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73850f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0650",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73853d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0640",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73856b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0630",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738599",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7385c7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7385f5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738623",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0690",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738651",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73867f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7386ad",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0700",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7386db",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a06f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738709",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738737",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738765",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0790",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738793",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0780",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7387c1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0770",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7387ef",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0760",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73881d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0750",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73884b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0740",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738879",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0730",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7388a7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0720",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7388d5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0710",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7388fc",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0940",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73892a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0930",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738951",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0920",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738978",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0910",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7389a6",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7389d4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738a02",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738a30",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0840",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738a5e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0850",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738a8c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0860",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738aba",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0870",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738ae8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0880",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738b16",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a07c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738b44",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0900",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738b6b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738b99",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738bc7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0810",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738bf5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0820",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738c23",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0830",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738c51",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0800",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738c7f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738cad",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0890",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738cdb",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738d09",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738d37",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a08b0",
+                "export": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "vector_properties",
+          "function_entry": "0x738d50",
+          "register_call_count": 47,
+          "registrations": [
+            {
+              "site": "0x738d8b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x169fe00",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738db9",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0310",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738de7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738e15",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738e43",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738e71",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a05a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738e9f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0590",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738ecd",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0580",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738efb",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0570",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738f29",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0560",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738f57",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0550",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738f85",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0540",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738fb3",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0530",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x738fe1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0520",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73900f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0510",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73903d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0500",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73906b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739099",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7390c7",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7390f5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739123",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0490",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739151",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73917f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0480",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7391ad",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a04a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7391db",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0470",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739209",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0460",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739237",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0450",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739265",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0440",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739293",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0430",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7392c1",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0420",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7392ef",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0410",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73931d",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0400",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73934b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739379",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0300",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7393a0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0340",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7393ce",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0330",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7393fc",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0320",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73942a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739458",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739486",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7394b4",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7394e2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0390",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739510",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0380",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73953e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0370",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73956c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0360",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73959a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0350",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7395c8",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a03e0",
+                "export": ""
+              }
+            }
+          ]
+        },
+        {
+          "name": "vector_operators",
+          "function_entry": "0x7395e0",
+          "register_call_count": 19,
+          "registrations": [
+            {
+              "site": "0x73961b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a01d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739649",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a01f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739677",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a01e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7396a5",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0230",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7396d3",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0220",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739701",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0210",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73972f",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0200",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739756",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0260",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739784",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0250",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7397b2",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0240",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7397e0",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02f0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73980e",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02e0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73983c",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02d0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73986a",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02c0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739891",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02a0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7398bf",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a02b0",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x7398ed",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0290",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x73991b",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0280",
+                "export": ""
+              }
+            },
+            {
+              "site": "0x739949",
+              "matchname": {
+                "arg": "rdx",
+                "rva": "0x16a0270",
+                "export": ""
+              }
+            }
+          ]
+        }
+      ],
+      "vector_layer_main_registration_count": 62,
+      "total_static_registration_calls": 183,
+      "operator_matchnames_joined_to_native_TDB_creator_registration": {
+        "ADBE Vector Filter - Trim": [
+          {
+            "block": "base_properties",
+            "site": "0x738457"
+          }
+        ],
+        "ADBE Vector Filter - Offset": [
+          {
+            "block": "base_properties",
+            "site": "0x73856b"
+          }
+        ],
+        "ADBE Vector Filter - Reveal": [
+          {
+            "block": "base_properties",
+            "site": "0x738623"
+          }
+        ],
+        "ADBE Vector Filter - Merge": [
+          {
+            "block": "base_properties",
+            "site": "0x73867f"
+          }
+        ],
+        "ADBE Vector Filter - PB": [
+          {
+            "block": "base_properties",
+            "site": "0x7386db"
+          }
+        ],
+        "ADBE Vector Filter - Repeater": [
+          {
+            "block": "base_properties",
+            "site": "0x7388d5"
+          }
+        ],
+        "ADBE Vector Filter - Roughen": [
+          {
+            "block": "base_properties",
+            "site": "0x738b16"
+          }
+        ],
+        "ADBE Vector Filter - Wiggler": [
+          {
+            "block": "base_properties",
+            "site": "0x738b99"
+          }
+        ],
+        "ADBE Vector Filter - Zigzag": [
+          {
+            "block": "base_properties",
+            "site": "0x738c51"
+          }
+        ],
+        "ADBE Vector Filter - RC": [
+          {
+            "block": "base_properties",
+            "site": "0x738cad"
+          }
+        ],
+        "ADBE Vector Filter - Twist": [
+          {
+            "block": "base_properties",
+            "site": "0x738d37"
+          }
+        ],
+        "ADBE Vector Graphic - Stroke": [
+          {
+            "block": "vector_properties",
+            "site": "0x73934b"
+          }
+        ],
+        "ADBE Vector Graphic - Fill": [
+          {
+            "block": "vector_properties",
+            "site": "0x7393fc"
+          }
+        ],
+        "ADBE Vector Graphic - G-Fill": [
+          {
+            "block": "vector_properties",
+            "site": "0x73959a"
+          }
+        ],
+        "ADBE Vector Graphic - G-Stroke": [
+          {
+            "block": "vector_properties",
+            "site": "0x7395c8"
+          }
+        ],
+        "ADBE Vector Shape - Group": [
+          {
+            "block": "vector_operators",
+            "site": "0x739677"
+          }
+        ],
+        "ADBE Vector Shape - Rect": [
+          {
+            "block": "vector_operators",
+            "site": "0x73972f"
+          }
+        ],
+        "ADBE Vector Shape - Ellipse": [
+          {
+            "block": "vector_operators",
+            "site": "0x7397b2"
+          }
+        ],
+        "ADBE Vector Shape - Star": [
+          {
+            "block": "vector_operators",
+            "site": "0x739949"
+          }
+        ],
+        "ADBE Vector Group": [
+          {
+            "block": "vector_layer_main",
+            "site": "0x79dc33"
+          }
+        ]
+      }
+    }
+  }
+}

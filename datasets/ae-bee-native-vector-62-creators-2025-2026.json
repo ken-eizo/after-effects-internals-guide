@@ -1,0 +1,2469 @@
+{
+  "evidence": "E2-L BEE VectorLayer bootstrap typed factory and owner canonical stream registrations, static two-version PE",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "registration_count": 62,
+      "entries": [
+        {
+          "index": 0,
+          "call_rva": "0x77c6da",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef780",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DGA@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c6cc"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7217f0",
+            "symbol": "",
+            "site": "0x77c6b2"
+          }
+        },
+        {
+          "index": 1,
+          "call_rva": "0x77c70c",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef770",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFP@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c6fe"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722df0",
+            "symbol": "",
+            "site": "0x77c6e4"
+          }
+        },
+        {
+          "index": 2,
+          "call_rva": "0x77c73e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef760",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFO@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c730"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722cf0",
+            "symbol": "",
+            "site": "0x77c716"
+          }
+        },
+        {
+          "index": 3,
+          "call_rva": "0x77c770",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef750",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFN@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c762"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722bf0",
+            "symbol": "",
+            "site": "0x77c748"
+          }
+        },
+        {
+          "index": 4,
+          "call_rva": "0x77c7a2",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef740",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFM@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c794"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722af0",
+            "symbol": "",
+            "site": "0x77c77a"
+          }
+        },
+        {
+          "index": 5,
+          "call_rva": "0x77c7d4",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef730",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFL@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c7c6"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7229f0",
+            "symbol": "",
+            "site": "0x77c7ac"
+          }
+        },
+        {
+          "index": 6,
+          "call_rva": "0x77c806",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef720",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFK@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c7f8"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7228f0",
+            "symbol": "",
+            "site": "0x77c7de"
+          }
+        },
+        {
+          "index": 7,
+          "call_rva": "0x77c838",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef710",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFJ@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x77c82a"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7227f0",
+            "symbol": "",
+            "site": "0x77c810"
+          }
+        },
+        {
+          "index": 8,
+          "call_rva": "0x77c86a",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef700",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFI@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c85c"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7226f0",
+            "symbol": "",
+            "site": "0x77c842"
+          }
+        },
+        {
+          "index": 9,
+          "call_rva": "0x77c89c",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6f0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFH@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c88e"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7225f0",
+            "symbol": "",
+            "site": "0x77c874"
+          }
+        },
+        {
+          "index": 10,
+          "call_rva": "0x77c8ce",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6e0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c8c0"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7224f0",
+            "symbol": "",
+            "site": "0x77c8a6"
+          }
+        },
+        {
+          "index": 11,
+          "call_rva": "0x77c900",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6d0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DFB@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c8f2"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7210f0",
+            "symbol": "",
+            "site": "0x77c8d8"
+          }
+        },
+        {
+          "index": 12,
+          "call_rva": "0x77c932",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6c0",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DIM@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c924"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7219f0",
+            "symbol": "",
+            "site": "0x77c90a"
+          }
+        },
+        {
+          "index": 13,
+          "call_rva": "0x77c964",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6b0",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c956"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7241f0",
+            "symbol": "",
+            "site": "0x77c93c"
+          }
+        },
+        {
+          "index": 14,
+          "call_rva": "0x77c996",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef6a0",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIK@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c988"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7240f0",
+            "symbol": "",
+            "site": "0x77c96e"
+          }
+        },
+        {
+          "index": 15,
+          "call_rva": "0x77c9c8",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef690",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIJ@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c9ba"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723ff0",
+            "symbol": "",
+            "site": "0x77c9a0"
+          }
+        },
+        {
+          "index": 16,
+          "call_rva": "0x77c9fa",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef680",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DII@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77c9ec"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723ef0",
+            "symbol": "",
+            "site": "0x77c9d2"
+          }
+        },
+        {
+          "index": 17,
+          "call_rva": "0x77ca2c",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef670",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIH@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ca1e"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723df0",
+            "symbol": "",
+            "site": "0x77ca04"
+          }
+        },
+        {
+          "index": 18,
+          "call_rva": "0x77ca5e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef660",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ca50"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723cf0",
+            "symbol": "",
+            "site": "0x77ca36"
+          }
+        },
+        {
+          "index": 19,
+          "call_rva": "0x77ca90",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef650",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIF@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x77ca82"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723bf0",
+            "symbol": "",
+            "site": "0x77ca68"
+          }
+        },
+        {
+          "index": 20,
+          "call_rva": "0x77cac2",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef640",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIE@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cab4"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x723af0",
+            "symbol": "",
+            "site": "0x77ca9a"
+          }
+        },
+        {
+          "index": 21,
+          "call_rva": "0x77caf4",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef630",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DID@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cae6"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7239f0",
+            "symbol": "",
+            "site": "0x77cacc"
+          }
+        },
+        {
+          "index": 22,
+          "call_rva": "0x77cb26",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef620",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIC@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cb18"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7238f0",
+            "symbol": "",
+            "site": "0x77cafe"
+          }
+        },
+        {
+          "index": 23,
+          "call_rva": "0x77cb58",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef610",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DHN@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cb4a"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7212f0",
+            "symbol": "",
+            "site": "0x77cb30"
+          }
+        },
+        {
+          "index": 24,
+          "call_rva": "0x77cb8a",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef600",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DHG@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cb7c"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7218f0",
+            "symbol": "",
+            "site": "0x77cb62"
+          }
+        },
+        {
+          "index": 25,
+          "call_rva": "0x77cbbc",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5f0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHF@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cbae"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7237f0",
+            "symbol": "",
+            "site": "0x77cb94"
+          }
+        },
+        {
+          "index": 26,
+          "call_rva": "0x77cbee",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5e0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHE@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cbe0"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7236f0",
+            "symbol": "",
+            "site": "0x77cbc6"
+          }
+        },
+        {
+          "index": 27,
+          "call_rva": "0x77cc20",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5d0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHD@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cc12"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7235f0",
+            "symbol": "",
+            "site": "0x77cbf8"
+          }
+        },
+        {
+          "index": 28,
+          "call_rva": "0x77cc52",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5c0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHC@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cc44"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7234f0",
+            "symbol": "",
+            "site": "0x77cc2a"
+          }
+        },
+        {
+          "index": 29,
+          "call_rva": "0x77cc84",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5b0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHB@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cc76"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7233f0",
+            "symbol": "",
+            "site": "0x77cc5c"
+          }
+        },
+        {
+          "index": 30,
+          "call_rva": "0x77ccb6",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef5a0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHA@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cca8"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7232f0",
+            "symbol": "",
+            "site": "0x77cc8e"
+          }
+        },
+        {
+          "index": 31,
+          "call_rva": "0x77cce8",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef590",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGP@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x77ccda"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7231f0",
+            "symbol": "",
+            "site": "0x77ccc0"
+          }
+        },
+        {
+          "index": 32,
+          "call_rva": "0x77cd1a",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef580",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGO@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cd0c"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7230f0",
+            "symbol": "",
+            "site": "0x77ccf2"
+          }
+        },
+        {
+          "index": 33,
+          "call_rva": "0x77cd4c",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef570",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGN@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cd3e"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722ff0",
+            "symbol": "",
+            "site": "0x77cd24"
+          }
+        },
+        {
+          "index": 34,
+          "call_rva": "0x77cd7e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef560",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGM@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cd70"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x722ef0",
+            "symbol": "",
+            "site": "0x77cd56"
+          }
+        },
+        {
+          "index": 35,
+          "call_rva": "0x77cdb0",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef550",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DGH@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cda2"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7211f0",
+            "symbol": "",
+            "site": "0x77cd88"
+          }
+        },
+        {
+          "index": 36,
+          "call_rva": "0x77cde2",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef540",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DEK@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cdd4"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7216f0",
+            "symbol": "",
+            "site": "0x77cdba"
+          }
+        },
+        {
+          "index": 37,
+          "call_rva": "0x77ce14",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef530",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEJ@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ce06"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7223f0",
+            "symbol": "",
+            "site": "0x77cdec"
+          }
+        },
+        {
+          "index": 38,
+          "call_rva": "0x77ce46",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef520",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEI@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ce38"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7222f0",
+            "symbol": "",
+            "site": "0x77ce1e"
+          }
+        },
+        {
+          "index": 39,
+          "call_rva": "0x77ce78",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef510",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEH@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ce6a"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7221f0",
+            "symbol": "",
+            "site": "0x77ce50"
+          }
+        },
+        {
+          "index": 40,
+          "call_rva": "0x77ceaa",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef500",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77ce9c"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7220f0",
+            "symbol": "",
+            "site": "0x77ce82"
+          }
+        },
+        {
+          "index": 41,
+          "call_rva": "0x77cedc",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4f0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEF@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cece"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721ff0",
+            "symbol": "",
+            "site": "0x77ceb4"
+          }
+        },
+        {
+          "index": 42,
+          "call_rva": "0x77cf0e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4e0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEE@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cf00"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721ef0",
+            "symbol": "",
+            "site": "0x77cee6"
+          }
+        },
+        {
+          "index": 43,
+          "call_rva": "0x77cf40",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4d0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DED@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x77cf32"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721df0",
+            "symbol": "",
+            "site": "0x77cf18"
+          }
+        },
+        {
+          "index": 44,
+          "call_rva": "0x77cf72",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4c0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEC@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cf64"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721cf0",
+            "symbol": "",
+            "site": "0x77cf4a"
+          }
+        },
+        {
+          "index": 45,
+          "call_rva": "0x77cfa4",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4b0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEB@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cf96"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721bf0",
+            "symbol": "",
+            "site": "0x77cf7c"
+          }
+        },
+        {
+          "index": 46,
+          "call_rva": "0x77cfd6",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef4a0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEA@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cfc8"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x721af0",
+            "symbol": "",
+            "site": "0x77cfae"
+          }
+        },
+        {
+          "index": 47,
+          "call_rva": "0x77d008",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef490",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DDL@@BEE_VectorStream@@@@@@B",
+            "site": "0x77cffa"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x720ff0",
+            "symbol": "",
+            "site": "0x77cfe0"
+          }
+        },
+        {
+          "index": 48,
+          "call_rva": "0x77d03a",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef480",
+            "symbol": "",
+            "site": "0x77d02c"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x82280",
+            "symbol": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d012"
+          }
+        },
+        {
+          "index": 49,
+          "call_rva": "0x77d06c",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7f0",
+            "symbol": "",
+            "site": "0x77d05e"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x267000",
+            "symbol": "",
+            "site": "0x77d044"
+          }
+        },
+        {
+          "index": 50,
+          "call_rva": "0x77d09e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef790",
+            "symbol": "",
+            "site": "0x77d090"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x267100",
+            "symbol": "",
+            "site": "0x77d076"
+          }
+        },
+        {
+          "index": 51,
+          "call_rva": "0x77d0d0",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7b0",
+            "symbol": "",
+            "site": "0x77d0c2"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7213f0",
+            "symbol": "",
+            "site": "0x77d0a8"
+          }
+        },
+        {
+          "index": 52,
+          "call_rva": "0x77d102",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7a0",
+            "symbol": "",
+            "site": "0x77d0f4"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x725ae0",
+            "symbol": "",
+            "site": "0x77d0da"
+          }
+        },
+        {
+          "index": 53,
+          "call_rva": "0x77d134",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7c0",
+            "symbol": "",
+            "site": "0x77d126"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x266a00",
+            "symbol": "",
+            "site": "0x77d10c"
+          }
+        },
+        {
+          "index": 54,
+          "call_rva": "0x77d166",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7d0",
+            "symbol": "",
+            "site": "0x77d158"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x266900",
+            "symbol": "",
+            "site": "0x77d13e"
+          }
+        },
+        {
+          "index": 55,
+          "call_rva": "0x77d198",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef7e0",
+            "symbol": "",
+            "site": "0x77d18a"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x266800",
+            "symbol": "",
+            "site": "0x77d170"
+          }
+        },
+        {
+          "index": 56,
+          "call_rva": "0x77d1ca",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef470",
+            "symbol": "",
+            "site": "0x77d1bc"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x82160",
+            "symbol": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d1a2"
+          }
+        },
+        {
+          "index": 57,
+          "call_rva": "0x77d1fc",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef440",
+            "symbol": "",
+            "site": "0x77d1ee"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x47210",
+            "symbol": "?Create@BEE_GraphicDurationStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d1d4"
+          }
+        },
+        {
+          "index": 58,
+          "call_rva": "0x77d22e",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef420",
+            "symbol": "",
+            "site": "0x77d220"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x822e0",
+            "symbol": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d206"
+          }
+        },
+        {
+          "index": 59,
+          "call_rva": "0x77d260",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef450",
+            "symbol": "",
+            "site": "0x77d252"
+          },
+          "creator": {
+            "reg": "rbx",
+            "data_rva": "0x82340",
+            "symbol": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d238"
+          }
+        },
+        {
+          "index": 60,
+          "call_rva": "0x77d28b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ef460",
+            "symbol": "",
+            "site": "0x77d27d"
+          },
+          "creator": {
+            "reg": "rbx",
+            "data_rva": "0x82340",
+            "symbol": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d238"
+          }
+        },
+        {
+          "index": 61,
+          "call_rva": "0x77d2bd",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x15ed188",
+            "symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B",
+            "site": "0x77d2af"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0xb0970",
+            "symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x77d295"
+          }
+        }
+      ],
+      "canonical_setup_rva": "0x77d2cd",
+      "canonical_setup_neighborhood": [
+        {
+          "rva": "0x77d260",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x741182]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d266",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x40], rsi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d26a",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x38], rbx",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d26e",
+          "mnemonic": "lea",
+          "args": "rax, [rbp - 0x40]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d272",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 8], rax",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d276",
+          "mnemonic": "xor",
+          "args": "r9d, r9d",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d279",
+          "mnemonic": "lea",
+          "args": "r8, [rbp - 0x40]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d27d",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xe721dc]",
+          "target": "0x15ef460",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d284",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xe72cf5]",
+          "target": "0x15eff80",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d28b",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x741157]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d291",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x40], rsi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d295",
+          "mnemonic": "lea",
+          "args": "rax, [rip - 0x6cc92c]",
+          "target": "0xb0970",
+          "symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x77d29c",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x38], rax",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2a0",
+          "mnemonic": "lea",
+          "args": "rax, [rbp - 0x40]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2a4",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 8], rax",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2a8",
+          "mnemonic": "xor",
+          "args": "r9d, r9d",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2ab",
+          "mnemonic": "lea",
+          "args": "r8, [rbp - 0x40]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2af",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xe6fed2]",
+          "target": "0x15ed188",
+          "symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B"
+        },
+        {
+          "rva": "0x77d2b6",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xe72cc3]",
+          "target": "0x15eff80",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2bd",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x741125]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2c3",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xe72156]",
+          "target": "0x15ef420",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2ca",
+          "mnemonic": "mov",
+          "args": "rcx, rdi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2cd",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x740fe5]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2d3",
+          "mnemonic": "jmp",
+          "args": "0x18077d2db",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2d5",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x741115]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2db",
+          "mnemonic": "lea",
+          "args": "r11, [rsp + 0x60]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2e0",
+          "mnemonic": "mov",
+          "args": "rbx, qword ptr [r11 + 0x10]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2e4",
+          "mnemonic": "mov",
+          "args": "rsi, qword ptr [r11 + 0x20]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2e8",
+          "mnemonic": "mov",
+          "args": "rdi, qword ptr [r11 + 0x28]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2ec",
+          "mnemonic": "mov",
+          "args": "rsp, r11",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2ef",
+          "mnemonic": "pop",
+          "args": "rbp",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2f0",
+          "mnemonic": "ret",
+          "args": "",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x77d2f1",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xe72ca8]",
+          "target": "0x15effa0",
+          "symbol": ""
+        }
+      ]
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "registration_count": 62,
+      "entries": [
+        {
+          "index": 0,
+          "call_rva": "0x79d0df",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0150",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DGA@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d0d1"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743430",
+            "symbol": "",
+            "site": "0x79d0b7"
+          }
+        },
+        {
+          "index": 1,
+          "call_rva": "0x79d111",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0140",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFP@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d103"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7448d0",
+            "symbol": "",
+            "site": "0x79d0e9"
+          }
+        },
+        {
+          "index": 2,
+          "call_rva": "0x79d143",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0130",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFO@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d135"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7447e0",
+            "symbol": "",
+            "site": "0x79d11b"
+          }
+        },
+        {
+          "index": 3,
+          "call_rva": "0x79d175",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0120",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFN@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d167"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7446f0",
+            "symbol": "",
+            "site": "0x79d14d"
+          }
+        },
+        {
+          "index": 4,
+          "call_rva": "0x79d1a7",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0110",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFM@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d199"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744600",
+            "symbol": "",
+            "site": "0x79d17f"
+          }
+        },
+        {
+          "index": 5,
+          "call_rva": "0x79d1d9",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0100",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFL@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d1cb"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744510",
+            "symbol": "",
+            "site": "0x79d1b1"
+          }
+        },
+        {
+          "index": 6,
+          "call_rva": "0x79d20b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00f0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFK@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d1fd"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744420",
+            "symbol": "",
+            "site": "0x79d1e3"
+          }
+        },
+        {
+          "index": 7,
+          "call_rva": "0x79d23d",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00e0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFJ@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x79d22f"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744330",
+            "symbol": "",
+            "site": "0x79d215"
+          }
+        },
+        {
+          "index": 8,
+          "call_rva": "0x79d26f",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00d0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFI@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d261"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744240",
+            "symbol": "",
+            "site": "0x79d247"
+          }
+        },
+        {
+          "index": 9,
+          "call_rva": "0x79d2a1",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00c0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFH@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d293"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744150",
+            "symbol": "",
+            "site": "0x79d279"
+          }
+        },
+        {
+          "index": 10,
+          "call_rva": "0x79d2d3",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00b0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DFG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d2c5"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744060",
+            "symbol": "",
+            "site": "0x79d2ab"
+          }
+        },
+        {
+          "index": 11,
+          "call_rva": "0x79d305",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a00a0",
+            "symbol": "?BEE_StreamName_VEC_3D_BACK_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DFB@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d2f7"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x742dd0",
+            "symbol": "",
+            "site": "0x79d2dd"
+          }
+        },
+        {
+          "index": 12,
+          "call_rva": "0x79d337",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0090",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DIM@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d329"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743610",
+            "symbol": "",
+            "site": "0x79d30f"
+          }
+        },
+        {
+          "index": 13,
+          "call_rva": "0x79d369",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0080",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIL@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d35b"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745b90",
+            "symbol": "",
+            "site": "0x79d341"
+          }
+        },
+        {
+          "index": 14,
+          "call_rva": "0x79d39b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0070",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIK@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d38d"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745aa0",
+            "symbol": "",
+            "site": "0x79d373"
+          }
+        },
+        {
+          "index": 15,
+          "call_rva": "0x79d3cd",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0060",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIJ@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d3bf"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7459b0",
+            "symbol": "",
+            "site": "0x79d3a5"
+          }
+        },
+        {
+          "index": 16,
+          "call_rva": "0x79d3ff",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0050",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DII@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d3f1"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7458c0",
+            "symbol": "",
+            "site": "0x79d3d7"
+          }
+        },
+        {
+          "index": 17,
+          "call_rva": "0x79d431",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0040",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIH@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d423"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7457d0",
+            "symbol": "",
+            "site": "0x79d409"
+          }
+        },
+        {
+          "index": 18,
+          "call_rva": "0x79d463",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0030",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d455"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7456e0",
+            "symbol": "",
+            "site": "0x79d43b"
+          }
+        },
+        {
+          "index": 19,
+          "call_rva": "0x79d495",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0020",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIF@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x79d487"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7455f0",
+            "symbol": "",
+            "site": "0x79d46d"
+          }
+        },
+        {
+          "index": 20,
+          "call_rva": "0x79d4c7",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0010",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIE@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d4b9"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745500",
+            "symbol": "",
+            "site": "0x79d49f"
+          }
+        },
+        {
+          "index": 21,
+          "call_rva": "0x79d4f9",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0000",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DID@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d4eb"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745410",
+            "symbol": "",
+            "site": "0x79d4d1"
+          }
+        },
+        {
+          "index": 22,
+          "call_rva": "0x79d52b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fff0",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DIC@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d51d"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745320",
+            "symbol": "",
+            "site": "0x79d503"
+          }
+        },
+        {
+          "index": 23,
+          "call_rva": "0x79d55d",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ffe0",
+            "symbol": "?BEE_StreamName_VEC_3D_SIDE_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DHN@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d54f"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x742fb0",
+            "symbol": "",
+            "site": "0x79d535"
+          }
+        },
+        {
+          "index": 24,
+          "call_rva": "0x79d58f",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ffd0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DHG@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d581"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743520",
+            "symbol": "",
+            "site": "0x79d567"
+          }
+        },
+        {
+          "index": 25,
+          "call_rva": "0x79d5c1",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ffc0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHF@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d5b3"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745230",
+            "symbol": "",
+            "site": "0x79d599"
+          }
+        },
+        {
+          "index": 26,
+          "call_rva": "0x79d5f3",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ffb0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHE@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d5e5"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745140",
+            "symbol": "",
+            "site": "0x79d5cb"
+          }
+        },
+        {
+          "index": 27,
+          "call_rva": "0x79d625",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ffa0",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHD@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d617"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x745050",
+            "symbol": "",
+            "site": "0x79d5fd"
+          }
+        },
+        {
+          "index": 28,
+          "call_rva": "0x79d657",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff90",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHC@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d649"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744f60",
+            "symbol": "",
+            "site": "0x79d62f"
+          }
+        },
+        {
+          "index": 29,
+          "call_rva": "0x79d689",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff80",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHB@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d67b"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744e70",
+            "symbol": "",
+            "site": "0x79d661"
+          }
+        },
+        {
+          "index": 30,
+          "call_rva": "0x79d6bb",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff70",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DHA@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d6ad"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744d80",
+            "symbol": "",
+            "site": "0x79d693"
+          }
+        },
+        {
+          "index": 31,
+          "call_rva": "0x79d6ed",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff60",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGP@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x79d6df"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744c90",
+            "symbol": "",
+            "site": "0x79d6c5"
+          }
+        },
+        {
+          "index": 32,
+          "call_rva": "0x79d71f",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff50",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGO@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d711"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744ba0",
+            "symbol": "",
+            "site": "0x79d6f7"
+          }
+        },
+        {
+          "index": 33,
+          "call_rva": "0x79d751",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff40",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGN@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d743"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x744ab0",
+            "symbol": "",
+            "site": "0x79d729"
+          }
+        },
+        {
+          "index": 34,
+          "call_rva": "0x79d783",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff30",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DGM@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d775"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7449c0",
+            "symbol": "",
+            "site": "0x79d75b"
+          }
+        },
+        {
+          "index": 35,
+          "call_rva": "0x79d7b5",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff20",
+            "symbol": "?BEE_StreamName_VEC_3D_BEVEL_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DGH@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d7a7"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x742ec0",
+            "symbol": "",
+            "site": "0x79d78d"
+          }
+        },
+        {
+          "index": 36,
+          "call_rva": "0x79d7e7",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff10",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_IOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DIORStreamTraits@$0DEK@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d7d9"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743340",
+            "symbol": "",
+            "site": "0x79d7bf"
+          }
+        },
+        {
+          "index": 37,
+          "call_rva": "0x79d819",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169ff00",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_TRANSPARENCY_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEJ@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d80b"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743f70",
+            "symbol": "",
+            "site": "0x79d7f1"
+          }
+        },
+        {
+          "index": 38,
+          "call_rva": "0x79d84b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fef0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_TRANSPARENCY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEI@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d83d"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743e80",
+            "symbol": "",
+            "site": "0x79d823"
+          }
+        },
+        {
+          "index": 39,
+          "call_rva": "0x79d87d",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fee0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_ROLLOFF@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEH@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d86f"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743d90",
+            "symbol": "",
+            "site": "0x79d855"
+          }
+        },
+        {
+          "index": 40,
+          "call_rva": "0x79d8af",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fed0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_SHARPNESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEG@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d8a1"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743ca0",
+            "symbol": "",
+            "site": "0x79d887"
+          }
+        },
+        {
+          "index": 41,
+          "call_rva": "0x79d8e1",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fec0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_REFLECTION_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEF@$0A@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d8d3"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743bb0",
+            "symbol": "",
+            "site": "0x79d8b9"
+          }
+        },
+        {
+          "index": 42,
+          "call_rva": "0x79d913",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169feb0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_METAL@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEE@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d905"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743ac0",
+            "symbol": "",
+            "site": "0x79d8eb"
+          }
+        },
+        {
+          "index": 43,
+          "call_rva": "0x79d945",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fea0",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_SPECULAR_SHININESS@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DED@$04@BEE_VectorStream@@@@@@B",
+            "site": "0x79d937"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7439d0",
+            "symbol": "",
+            "site": "0x79d91d"
+          }
+        },
+        {
+          "index": 44,
+          "call_rva": "0x79d977",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe90",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_SPECULAR_INTENSITY@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEC@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d969"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7438e0",
+            "symbol": "",
+            "site": "0x79d94f"
+          }
+        },
+        {
+          "index": 45,
+          "call_rva": "0x79d9a9",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe80",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_DIFFUSE@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEB@$0DC@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d99b"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7437f0",
+            "symbol": "",
+            "site": "0x79d981"
+          }
+        },
+        {
+          "index": 46,
+          "call_rva": "0x79d9db",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe70",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_AMBIENT@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_FloatStream@U?$BEE_Vec3DPercentStreamTraits@$0DEA@$0GE@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d9cd"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x743700",
+            "symbol": "",
+            "site": "0x79d9b3"
+          }
+        },
+        {
+          "index": 47,
+          "call_rva": "0x79da0d",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe60",
+            "symbol": "?BEE_StreamName_VEC_3D_FRONT_COLOR@BEE_VectorStream@@3V?$TDB_DerivedMatchName@V?$TDB_Float4Stream@U?$BEE_Vec3DColorRGBStreamTraits@$0DDL@@BEE_VectorStream@@@@@@B",
+            "site": "0x79d9ff"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x742ce0",
+            "symbol": "",
+            "site": "0x79d9e5"
+          }
+        },
+        {
+          "index": 48,
+          "call_rva": "0x79da3f",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe50",
+            "symbol": "",
+            "site": "0x79da31"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x84cd0",
+            "symbol": "?Create@Vec3D_MaterialOptionsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79da17"
+          }
+        },
+        {
+          "index": 49,
+          "call_rva": "0x79da71",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a01c0",
+            "symbol": "",
+            "site": "0x79da63"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x271960",
+            "symbol": "",
+            "site": "0x79da49"
+          }
+        },
+        {
+          "index": 50,
+          "call_rva": "0x79daa3",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0160",
+            "symbol": "",
+            "site": "0x79da95"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x271a50",
+            "symbol": "",
+            "site": "0x79da7b"
+          }
+        },
+        {
+          "index": 51,
+          "call_rva": "0x79dad5",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0180",
+            "symbol": "",
+            "site": "0x79dac7"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7430a0",
+            "symbol": "",
+            "site": "0x79daad"
+          }
+        },
+        {
+          "index": 52,
+          "call_rva": "0x79db07",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0170",
+            "symbol": "",
+            "site": "0x79daf9"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x7472a0",
+            "symbol": "",
+            "site": "0x79dadf"
+          }
+        },
+        {
+          "index": 53,
+          "call_rva": "0x79db39",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a0190",
+            "symbol": "",
+            "site": "0x79db2b"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x271400",
+            "symbol": "",
+            "site": "0x79db11"
+          }
+        },
+        {
+          "index": 54,
+          "call_rva": "0x79db6b",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a01a0",
+            "symbol": "",
+            "site": "0x79db5d"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x271310",
+            "symbol": "",
+            "site": "0x79db43"
+          }
+        },
+        {
+          "index": 55,
+          "call_rva": "0x79db9d",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x16a01b0",
+            "symbol": "",
+            "site": "0x79db8f"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x271220",
+            "symbol": "",
+            "site": "0x79db75"
+          }
+        },
+        {
+          "index": 56,
+          "call_rva": "0x79dbcf",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe40",
+            "symbol": "",
+            "site": "0x79dbc1"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x84bb0",
+            "symbol": "?Create@TransformStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dba7"
+          }
+        },
+        {
+          "index": 57,
+          "call_rva": "0x79dc01",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe10",
+            "symbol": "",
+            "site": "0x79dbf3"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x46b80",
+            "symbol": "?Create@BEE_GraphicDurationStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dbd9"
+          }
+        },
+        {
+          "index": 58,
+          "call_rva": "0x79dc33",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fdf0",
+            "symbol": "",
+            "site": "0x79dc25"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0x84d30",
+            "symbol": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dc0b"
+          }
+        },
+        {
+          "index": 59,
+          "call_rva": "0x79dc65",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe20",
+            "symbol": "",
+            "site": "0x79dc57"
+          },
+          "creator": {
+            "reg": "rbx",
+            "data_rva": "0x84d90",
+            "symbol": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dc3d"
+          }
+        },
+        {
+          "index": 60,
+          "call_rva": "0x79dc90",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169fe30",
+            "symbol": "",
+            "site": "0x79dc82"
+          },
+          "creator": {
+            "reg": "rbx",
+            "data_rva": "0x84d90",
+            "symbol": "?Create@VectorsStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dc3d"
+          }
+        },
+        {
+          "index": 61,
+          "call_rva": "0x79dcc2",
+          "match": {
+            "reg": "rdx",
+            "data_rva": "0x169d9e0",
+            "symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B",
+            "site": "0x79dcb4"
+          },
+          "creator": {
+            "reg": "rax",
+            "data_rva": "0xb64e0",
+            "symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+            "site": "0x79dc9a"
+          }
+        }
+      ],
+      "canonical_setup_rva": "0x79dcda",
+      "canonical_setup_neighborhood": [
+        {
+          "rva": "0x79dc7b",
+          "mnemonic": "xor",
+          "args": "r9d, r9d",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc7e",
+          "mnemonic": "lea",
+          "args": "r8, [rbp - 0x48]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc82",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xf021a7]",
+          "target": "0x169fe30",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc89",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xf02cc0]",
+          "target": "0x16a0950",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc90",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x779c32]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc96",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x48], rsi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dc9a",
+          "mnemonic": "lea",
+          "args": "rax, [rip - 0x6e77c1]",
+          "target": "0xb64e0",
+          "symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z"
+        },
+        {
+          "rva": "0x79dca1",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x40], rax",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dca5",
+          "mnemonic": "lea",
+          "args": "rax, [rbp - 0x48]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dca9",
+          "mnemonic": "mov",
+          "args": "qword ptr [rbp - 0x10], rax",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcad",
+          "mnemonic": "xor",
+          "args": "r9d, r9d",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcb0",
+          "mnemonic": "lea",
+          "args": "r8, [rbp - 0x48]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcb4",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xeffd25]",
+          "target": "0x169d9e0",
+          "symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B"
+        },
+        {
+          "rva": "0x79dcbb",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xf02c8e]",
+          "target": "0x16a0950",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcc2",
+          "mnemonic": "call",
+          "args": "qword ptr [rip + 0x779c00]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcc8",
+          "mnemonic": "lea",
+          "args": "rdx, [rip + 0xf02121]",
+          "target": "0x169fdf0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dccf",
+          "mnemonic": "mov",
+          "args": "rcx, rdi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcd2",
+          "mnemonic": "add",
+          "args": "rsp, 0x68",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcd6",
+          "mnemonic": "pop",
+          "args": "rdi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcd7",
+          "mnemonic": "pop",
+          "args": "rsi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcd8",
+          "mnemonic": "pop",
+          "args": "rbx",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcd9",
+          "mnemonic": "pop",
+          "args": "rbp",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcda",
+          "mnemonic": "jmp",
+          "args": "qword ptr [rip + 0x77988f]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce1",
+          "mnemonic": "add",
+          "args": "rsp, 0x68",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce5",
+          "mnemonic": "pop",
+          "args": "rdi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce6",
+          "mnemonic": "pop",
+          "args": "rsi",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce7",
+          "mnemonic": "pop",
+          "args": "rbx",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce8",
+          "mnemonic": "pop",
+          "args": "rbp",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dce9",
+          "mnemonic": "jmp",
+          "args": "qword ptr [rip + 0x779be0]",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcf0",
+          "mnemonic": "lea",
+          "args": "rcx, [rip + 0xf02c79]",
+          "target": "0x16a0970",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcf7",
+          "mnemonic": "call",
+          "args": "0x180d3ad30",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dcfc",
+          "mnemonic": "cmp",
+          "args": "dword ptr [rip + 0xf02c6d], -1",
+          "target": "",
+          "symbol": ""
+        },
+        {
+          "rva": "0x79dd03",
+          "mnemonic": "jne",
+          "args": "0x18079d080",
+          "target": "",
+          "symbol": ""
+        }
+      ]
+    }
+  }
+}

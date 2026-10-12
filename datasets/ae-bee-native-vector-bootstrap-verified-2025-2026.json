@@ -1,0 +1,42 @@
+{
+  "evidence": "E2-L exact installed AE2025/2026 BEE PE images, static typed-creator source map and startup wrapper",
+  "scope_warning": "No runtime invocation. Native owner/Pen/VectorArt external plug-in contracts NOT proven.",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "TDB_registration_calls": 62,
+      "distinct_matchname_address_count": 62,
+      "match_names_with_export_symbol": 49,
+      "creators_with_export_symbol": 7,
+      "distinct_creator_function_address_count": 61,
+      "registered_group_root_matchname_rva": "0x15ef420",
+      "native_group_root_creator_symbol": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "two_VectorsStreamGroup_matchnames_share_creator": true,
+      "registered_BEE_VectorLayer_owner_matchname_symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B",
+      "registered_BEE_VectorLayer_owner_creator_symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "SetupCanonicalStream_receives_registered_root_matchname": true,
+      "reg_and_canonical_init_are_separate_from_conditional_unregister_branch": true,
+      "second_stage_is_independent_BEE_evaluator_registry": true,
+      "third_party_registration_executed": false,
+      "external_AEX_entry_point_to_register_native_types_proven": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "TDB_registration_calls": 62,
+      "distinct_matchname_address_count": 62,
+      "match_names_with_export_symbol": 49,
+      "creators_with_export_symbol": 7,
+      "distinct_creator_function_address_count": 61,
+      "registered_group_root_matchname_rva": "0x169fdf0",
+      "native_group_root_creator_symbol": "?Create@VectorStreamGroup@BEE_VectorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "two_VectorsStreamGroup_matchnames_share_creator": true,
+      "registered_BEE_VectorLayer_owner_matchname_symbol": "?BEE_StreamGroupName_VECTOR_LAYER@@3V?$TDB_DerivedMatchName@VBEE_VectorLayer@@@@B",
+      "registered_BEE_VectorLayer_owner_creator_symbol": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+      "SetupCanonicalStream_receives_registered_root_matchname": true,
+      "reg_and_canonical_init_are_separate_from_conditional_unregister_branch": true,
+      "second_stage_is_independent_BEE_evaluator_registry": true,
+      "third_party_registration_executed": false,
+      "external_AEX_entry_point_to_register_native_types_proven": false
+    }
+  }
+}

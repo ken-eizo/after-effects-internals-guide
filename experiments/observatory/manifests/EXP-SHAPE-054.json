@@ -1,0 +1,28 @@
+{
+  "experiment_id": "EXP-SHAPE-054",
+  "date": "2026-10-12",
+  "status": "PASS E2-L cross-version actual BEE native Shape schema verified",
+  "evidence": "AE2025/AE2026 pinned BEE.dll static executable, exported virtuals, MatchName initializers, TDB imports",
+  "results": {
+    "static_tdb_creator_registration_sites_2025": 183,
+    "static_tdb_creator_registration_sites_2026": 183,
+    "contents_native_children": 20,
+    "contents_path_shape": 4,
+    "contents_graphic": 4,
+    "contents_filter": 11,
+    "contents_opaque_group": 1,
+    "root_vector_groups": 4,
+    "layer_children_2025": 10,
+    "layer_children_2026": 11,
+    "added_layer_field_2026": "ADBE Layer Credential ID",
+    "native_20_contents_matchnames_tdb_registered": true,
+    "real_native_owner_creation_from_foreign_plugin": false,
+    "external_type_registration_performed": false,
+    "private_Adobe_calls": 0,
+    "host_GUI_operations": 0,
+    "compnodeae_modified": false
+  },
+  "finding": "research/findings/F-VECTOR-054-native-shape-full-schema-and-183-creator-pipeline.md",
+  "datasets_prefix": "datasets/ae-bee-native-vector-",
+  "privacy": "Native code offline read-only"
+}

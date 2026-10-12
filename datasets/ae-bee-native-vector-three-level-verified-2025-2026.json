@@ -1,0 +1,96 @@
+{
+  "evidence": "E2-L actual exported BEE native 3-level FillInCanonicalUILayout implementations, all 183 typed registration call sites, 20 operator typed creators",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "layer_canonical_slots": 10,
+      "vector_stream_group_fixed_canonical_slots": 4,
+      "contents_child_type_count": 20,
+      "shape_type_count": 4,
+      "graphic_type_count": 4,
+      "filter_type_count": 11,
+      "contents_canonical_types_in_native_order": [
+        "ADBE Vector Group",
+        "ADBE Vector Shape - Group",
+        "ADBE Vector Shape - Star",
+        "ADBE Vector Shape - Rect",
+        "ADBE Vector Shape - Ellipse",
+        "ADBE Vector Graphic - Fill",
+        "ADBE Vector Graphic - G-Fill",
+        "ADBE Vector Graphic - Stroke",
+        "ADBE Vector Graphic - G-Stroke",
+        "ADBE Vector Filter - Trim",
+        "ADBE Vector Filter - Offset",
+        "ADBE Vector Filter - PB",
+        "ADBE Vector Filter - Repeater",
+        "ADBE Vector Filter - Reveal",
+        "ADBE Vector Filter - Merge",
+        "ADBE Vector Filter - Roughen",
+        "ADBE Vector Filter - Zigzag",
+        "ADBE Vector Filter - RC",
+        "ADBE Vector Filter - Twist",
+        "ADBE Vector Filter - Wiggler"
+      ],
+      "vector_stream_group_canonical_ref_registrations": {
+        "contents_group_slot_1": "VectorsStreamGroup::Create (entry 59)",
+        "transform_group_slot_2": "TransformStreamGroup::Create (entry 56)",
+        "3d_material_options_group_slot_3": "Vec3D_MaterialOptionsStreamGroup::Create (entry 48)",
+        "slot_0": "native group canonical child exists; no matching direct registration in 62-entry block"
+      },
+      "layer_canonical_child_belonging_to_VectorsStreamGroup_registry_entry_60": true,
+      "TDB_creator_site_count": 183,
+      "all_twenty_contents_child_types_have_creator_registrations": true,
+      "user_CNL_content_type_registered": false,
+      "independent_plugin_vector_layer_enabled": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "layer_canonical_slots": 11,
+      "vector_stream_group_fixed_canonical_slots": 4,
+      "contents_child_type_count": 20,
+      "shape_type_count": 4,
+      "graphic_type_count": 4,
+      "filter_type_count": 11,
+      "contents_canonical_types_in_native_order": [
+        "ADBE Vector Group",
+        "ADBE Vector Shape - Group",
+        "ADBE Vector Shape - Star",
+        "ADBE Vector Shape - Rect",
+        "ADBE Vector Shape - Ellipse",
+        "ADBE Vector Graphic - Fill",
+        "ADBE Vector Graphic - G-Fill",
+        "ADBE Vector Graphic - Stroke",
+        "ADBE Vector Graphic - G-Stroke",
+        "ADBE Vector Filter - Trim",
+        "ADBE Vector Filter - Offset",
+        "ADBE Vector Filter - PB",
+        "ADBE Vector Filter - Repeater",
+        "ADBE Vector Filter - Reveal",
+        "ADBE Vector Filter - Merge",
+        "ADBE Vector Filter - Roughen",
+        "ADBE Vector Filter - Zigzag",
+        "ADBE Vector Filter - RC",
+        "ADBE Vector Filter - Twist",
+        "ADBE Vector Filter - Wiggler"
+      ],
+      "vector_stream_group_canonical_ref_registrations": {
+        "contents_group_slot_1": "VectorsStreamGroup::Create (entry 59)",
+        "transform_group_slot_2": "TransformStreamGroup::Create (entry 56)",
+        "3d_material_options_group_slot_3": "Vec3D_MaterialOptionsStreamGroup::Create (entry 48)",
+        "slot_0": "native group canonical child exists; no matching direct registration in 62-entry block"
+      },
+      "layer_canonical_child_belonging_to_VectorsStreamGroup_registry_entry_60": true,
+      "TDB_creator_site_count": 183,
+      "all_twenty_contents_child_types_have_creator_registrations": true,
+      "user_CNL_content_type_registered": false,
+      "independent_plugin_vector_layer_enabled": false
+    }
+  },
+  "across_two_versions_all_twenty_contents_types_same_order": true,
+  "limitations": [
+    "Native schema not yet externally injectable",
+    "No foreign class instance",
+    "No native Pen/Undo/RG acceptance demonstrated",
+    "No private host function invoked"
+  ]
+}
