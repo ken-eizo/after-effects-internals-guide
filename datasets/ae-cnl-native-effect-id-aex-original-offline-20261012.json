@@ -1,0 +1,32 @@
+{
+  "status": "PASS offline x64 PE + source read-only audit; not yet AE-host run",
+  "sha256": "b20c10725f738eb9cf01dbfc68558edafca74b858b6f9718e5eb6bcb2490895a",
+  "aex": "D:\\Developer\\ShapeLayerAE\\build\\native_owned_archive_identity\\Release\\CNLArchiveIdentity.aex",
+  "imports": [
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-stdio-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "kernel32.dll",
+    "msvcp140.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll"
+  ],
+  "AEGP_entry": true,
+  "read_api_contract": [
+    "AEGP_GetEffectNumParamStreams",
+    "AEGP_GetNewEffectStreamByIndex",
+    "AEGP_GetEffectParamUnionByIndex",
+    "AEGP_GetStreamType",
+    "AEGP_GetUniqueStreamID",
+    "AEGP_CanVaryOverTime",
+    "AEGP_GetMatchName",
+    "AEGP_GetEffectMatchName",
+    "AEGP_DisposeEffect",
+    "AEGP_DisposeStream"
+  ],
+  "private_TDB_BEE_FLT_import": false,
+  "mutation_api_absent": true,
+  "arb_value_payload_requested": false,
+  "user_host_executed": false
+}

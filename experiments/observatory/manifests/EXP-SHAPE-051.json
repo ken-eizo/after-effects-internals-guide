@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-SHAPE-051",
+  "date": "2026-10-12",
+  "status": "actual AE2026 owner hierarchy confirmed; focused public AEGP offline builds passed; new host-test pending",
+  "evidence": "H user-run AE2026 TSV; two independently built read-only public AEGP x64 binaries",
+  "outcomes": {
+    "real_ae2026_cnl_effect_attached": true,
+    "effect_parent_group": "ADBE Effect Parade",
+    "named_effect_group": true,
+    "host_effect_child_leaf_count": 5,
+    "candidates_directly_admitted_under_effect_group": 0,
+    "visited_nodes": 173,
+    "host_stream_created": 0,
+    "private_registry_called": 0,
+    "new_probe_compiled": true,
+    "new_probe_live_tested": false,
+    "AE2026_effect_render_and_save_reopen_verified": false,
+    "compnodeae_modified": false
+  },
+  "assets": [
+    "research/findings/F-VECTOR-051-real-host-effect-acceptance-and-native-param-identity.md",
+    "datasets/ae-cnl-owned-effect-actual-host-admission-sanitized-20261012.json",
+    "experiments/vector-shape/native-owned-effect-identity-lab/"
+  ]
+}
