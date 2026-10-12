@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-SHAPE-049",
+  "date": "2026-10-12",
+  "title": "Actual Adobe public-SDK AEX with independent CNL vector document owner and renderer",
+  "status": "pass-two-independent-offline-release-builds; AE2026 host-test-pending",
+  "evidence": "CMake MSVC x64 Release, AEX exports/PiPL and no private Adobe imports, separately compiled AEX host mock, native archive and CPU render",
+  "results": {
+    "compiled_aex": true,
+    "native_tdb_ae_contents": false,
+    "compiled_native_cnl_document": true,
+    "archive_binary_roundtrip": true,
+    "archive_text_hex_roundtrip": true,
+    "nested_multiple_ellipse_geometry_changes_render": true,
+    "invalid_archive_rejected": true,
+    "host_simulated_handles_no_leak": true,
+    "host_ae2026_tested": false,
+    "host_native_pen": false,
+    "bee_vector_art": false,
+    "private_tdb_registry_invoked": false,
+    "compnodeae_modified": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-049-independent-effect-owned-bezier-archive-and-renderer.md",
+    "experiments/vector-shape/EXP-SHAPE-049-effect-owned-native-cubic-archive-bridge.md",
+    "experiments/vector-shape/native-owned-vector-effect-lab/",
+    "datasets/ae-owned-vector-document-effect-original-offline-receipt-20261012.json",
+    "datasets/ae-owned-vector-document-effect-independent-offline-receipt-20261012.json"
+  ]
+}

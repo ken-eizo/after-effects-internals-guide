@@ -1,0 +1,36 @@
+{
+  "status": "pass-offline-only",
+  "classification": "new CNL-owned arbitrary doc and CPU-raster effect; NOT AE-native Contents/Pen/BEE_VectorArt",
+  "AEX": "D:\\Developer\\ShapeLayerAE\\build\\native_vector_document_effect\\Release\\CNLOwnedVectorEffect.aex",
+  "AEX_sha256": "104d89e1050c5f13d9a4d06a05aea64bf9b6a1799f9797dab4ad86ff53840625",
+  "AEX_size": 62976,
+  "AEX_machine": "0x8664",
+  "PE_exports_present": [
+    "EffectMain",
+    "PluginDataEntryFunction2",
+    "cnl_document_copy_cubics",
+    "cnl_document_create",
+    "cnl_document_deserialize",
+    "cnl_document_serialize",
+    "cnl_document_set_vertex"
+  ],
+  "imported_modules": [
+    "api-ms-win-crt-heap-l1-1-0.dll",
+    "api-ms-win-crt-math-l1-1-0.dll",
+    "api-ms-win-crt-runtime-l1-1-0.dll",
+    "api-ms-win-crt-string-l1-1-0.dll",
+    "kernel32.dll",
+    "msvcp140.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll"
+  ],
+  "PiPL_match_name": "CNL Owned Vector Document",
+  "mask_shape_carrier_used": false,
+  "private_BEE_TDB_FLT_module_imports": false,
+  "archive_callbacks": "NEW/DISPOSE/COPY/SIZE/FLATTEN/UNFLATTEN/INTERP/COMPARE/PRINT/SIZE/SCAN reversible HEX with invalid scan rejection",
+  "render": "native CNL cubic document --> single CPU 8bpc PF_World",
+  "host_mock_stdout": "PASS AE effect-owned archive lifecycle: Params=5 bytes=342 rendered=4168 framehash=14326401045282646331 strokehash=3386912913488900511 copy/flatten/unflatten/corrupt/compare/interp/print-scan/dispose clean",
+  "host_AE_installation_tested": false,
+  "host_AE_save_reopen_tested": false,
+  "host_native_Pen_or_VectorArt": false
+}
