@@ -1,0 +1,727 @@
+{
+  "evidence": "E2-L native caller RIP operand source map, no host API use",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "registration_calls": [
+        {
+          "callsite": "0x2fbc12",
+          "rip_sources": [
+            {
+              "site": "0x2fbbe6",
+              "dest": "rbx",
+              "target_rva": "0xf182f0",
+              "export": "",
+              "hex48": "c0912480010000004092248001000000f0912480010000006092248001000000e0912480010000003092248001000000"
+            },
+            {
+              "site": "0x2fbbf1",
+              "dest": "rax",
+              "target_rva": "0x2f6000",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbc0b",
+              "dest": "rdx",
+              "target_rva": "0x15ec718",
+              "export": "",
+              "hex48": "48204700e06c230150204700cf204700a46c2301d02047004f22470084742301502247007f2247008c78230130234700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbc44",
+          "rip_sources": [
+            {
+              "site": "0x2fbc0b",
+              "dest": "rdx",
+              "target_rva": "0x15ec718",
+              "export": "",
+              "hex48": "48204700e06c230150204700cf204700a46c2301d02047004f22470084742301502247007f2247008c78230130234700"
+            },
+            {
+              "site": "0x2fbc1c",
+              "dest": "rax",
+              "target_rva": "0x2f5c00",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbc36",
+              "dest": "rdx",
+              "target_rva": "0x15ec728",
+              "export": "",
+              "hex48": "a46c2301d02047004f22470084742301502247007f2247008c782301302347003f234700c08723013f23470075234700"
+            },
+            {
+              "site": "0x2fbc3d",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbc76",
+          "rip_sources": [
+            {
+              "site": "0x2fbc3d",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbc4e",
+              "dest": "rax",
+              "target_rva": "0x2f5d00",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbc68",
+              "dest": "rdx",
+              "target_rva": "0x15ec738",
+              "export": "",
+              "hex48": "502247007f2247008c782301302347003f234700c08723013f23470075234700c8872301752347007b234700dc872301"
+            },
+            {
+              "site": "0x2fbc6f",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbca8",
+          "rip_sources": [
+            {
+              "site": "0x2fbc6f",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbc80",
+              "dest": "rax",
+              "target_rva": "0x2f5e00",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbc9a",
+              "dest": "rdx",
+              "target_rva": "0x15ec748",
+              "export": "",
+              "hex48": "3f234700c08723013f23470075234700c8872301752347007b234700dc872301b0234700be234700908f2301be234700"
+            },
+            {
+              "site": "0x2fbca1",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbcda",
+          "rip_sources": [
+            {
+              "site": "0x2fbca1",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbcb2",
+              "dest": "rax",
+              "target_rva": "0x2f5b00",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbccc",
+              "dest": "rdx",
+              "target_rva": "0x15ec758",
+              "export": "",
+              "hex48": "c8872301752347007b234700dc872301b0234700be234700908f2301be2347000f244700988f23010f24470015244700"
+            },
+            {
+              "site": "0x2fbcd3",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbd0c",
+          "rip_sources": [
+            {
+              "site": "0x2fbcd3",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbce4",
+              "dest": "rax",
+              "target_rva": "0x2f5f00",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbcfe",
+              "dest": "rdx",
+              "target_rva": "0x15ec768",
+              "export": "",
+              "hex48": "b0234700be234700908f2301be2347000f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301"
+            },
+            {
+              "site": "0x2fbd05",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbd3e",
+          "rip_sources": [
+            {
+              "site": "0x2fbd05",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbd16",
+              "dest": "rax",
+              "target_rva": "0x80810",
+              "export": "?Create@AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b960020000ff15c5efe30048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x2fbd30",
+              "dest": "rdx",
+              "target_rva": "0x15ec6e8",
+              "export": "",
+              "hex48": "d11c470064652301e01c4700b81d47001c662301c01d4700531e47006c662301601e4700b01e47000c642301b01e4700"
+            },
+            {
+              "site": "0x2fbd37",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbd70",
+          "rip_sources": [
+            {
+              "site": "0x2fbd37",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbd48",
+              "dest": "rax",
+              "target_rva": "0x2f6100",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbd62",
+              "dest": "rdx",
+              "target_rva": "0x15ec6f8",
+              "export": "",
+              "hex48": "1c662301c01d4700531e47006c662301601e4700b01e47000c642301b01e470048204700e06c230150204700cf204700"
+            },
+            {
+              "site": "0x2fbd69",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbda2",
+          "rip_sources": [
+            {
+              "site": "0x2fbd69",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbd7a",
+              "dest": "rax",
+              "target_rva": "0x2f6200",
+              "export": "",
+              "hex48": "48895c240848896c2410488974241848897c242041564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff"
+            },
+            {
+              "site": "0x2fbd94",
+              "dest": "rdx",
+              "target_rva": "0x15ec708",
+              "export": "",
+              "hex48": "601e4700b01e47000c642301b01e470048204700e06c230150204700cf204700a46c2301d02047004f22470084742301"
+            },
+            {
+              "site": "0x2fbd9b",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbdd4",
+          "rip_sources": [
+            {
+              "site": "0x2fbd9b",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbdac",
+              "dest": "rax",
+              "target_rva": "0x81870",
+              "export": "?Create@BlendingOptionsStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b960020000ff1565dfe30048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x2fbdc6",
+              "dest": "rdx",
+              "target_rva": "0x15ec6d8",
+              "export": "",
+              "hex48": "30174700061847002460230110184700d11c470064652301e01c4700b81d47001c662301c01d4700531e47006c662301"
+            },
+            {
+              "site": "0x2fbdcd",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        },
+        {
+          "callsite": "0x2fbe06",
+          "rip_sources": [
+            {
+              "site": "0x2fbdcd",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            },
+            {
+              "site": "0x2fbdde",
+              "dest": "rax",
+              "target_rva": "0x81dd0",
+              "export": "?Create@RootLayerStyleStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b960020000ff1505dae30048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x2fbdf8",
+              "dest": "rdx",
+              "target_rva": "0x15ec6c8",
+              "export": "",
+              "hex48": "246d2301d0134700211747005c60230130174700061847002460230110184700d11c470064652301e01c4700b81d4700"
+            },
+            {
+              "site": "0x2fbdff",
+              "dest": "rcx",
+              "target_rva": "0x15ec778",
+              "export": "",
+              "hex48": "0f244700988f23010f24470015244700b08f2301402447006c2447008c6c2301c0244700ee244700e48b230110254700"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "registration_calls": [
+        {
+          "callsite": "0x3046f2",
+          "rip_sources": [
+            {
+              "site": "0x3046c6",
+              "dest": "rbx",
+              "target_rva": "0xf75548",
+              "export": "",
+              "hex48": "1034258001000000a0342580010000004034258001000000c03425800100000030342580010000009034258001000000"
+            },
+            {
+              "site": "0x3046d1",
+              "dest": "rax",
+              "target_rva": "0x2feca0",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff159a9cc100488bd848894424604885"
+            },
+            {
+              "site": "0x3046eb",
+              "dest": "rdx",
+              "target_rva": "0x169cee8",
+              "export": "",
+              "hex48": "88d62901596e43007f6e430098d629017f6e43008c6e4300c4d62901906e4300c06e4300b8d02901c06e4300216f4300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x304724",
+          "rip_sources": [
+            {
+              "site": "0x3046eb",
+              "dest": "rdx",
+              "target_rva": "0x169cee8",
+              "export": "",
+              "hex48": "88d62901596e43007f6e430098d629017f6e43008c6e4300c4d62901906e4300c06e4300b8d02901c06e4300216f4300"
+            },
+            {
+              "site": "0x3046fc",
+              "dest": "rax",
+              "target_rva": "0x2fe920",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff151aa0c100488bd848894424604885"
+            },
+            {
+              "site": "0x304716",
+              "dest": "rdx",
+              "target_rva": "0x169cef8",
+              "export": "",
+              "hex48": "7f6e43008c6e4300c4d62901906e4300c06e4300b8d02901c06e4300216f4300c0d02901216f4300c5704300e4d02901"
+            },
+            {
+              "site": "0x30471d",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x304756",
+          "rip_sources": [
+            {
+              "site": "0x30471d",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x30472e",
+              "dest": "rax",
+              "target_rva": "0x2fea00",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff153a9fc100488bd848894424604885"
+            },
+            {
+              "site": "0x304748",
+              "dest": "rdx",
+              "target_rva": "0x169cf08",
+              "export": "",
+              "hex48": "c06e4300b8d02901c06e4300216f4300c0d02901216f4300c5704300e4d02901c5704300e5704300fcd02901e5704300"
+            },
+            {
+              "site": "0x30474f",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x304788",
+          "rip_sources": [
+            {
+              "site": "0x30474f",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x304760",
+              "dest": "rax",
+              "target_rva": "0x2feae0",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff155a9ec100488bd848894424604885"
+            },
+            {
+              "site": "0x30477a",
+              "dest": "rdx",
+              "target_rva": "0x169cf18",
+              "export": "",
+              "hex48": "c0d02901216f4300c5704300e4d02901c5704300e5704300fcd02901e57043000b7143000cd129010b71430018714300"
+            },
+            {
+              "site": "0x304781",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x3047ba",
+          "rip_sources": [
+            {
+              "site": "0x304781",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x304792",
+              "dest": "rax",
+              "target_rva": "0x2fe840",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff15faa0c100488bd848894424604885"
+            },
+            {
+              "site": "0x3047ac",
+              "dest": "rdx",
+              "target_rva": "0x169cf28",
+              "export": "",
+              "hex48": "c5704300e5704300fcd02901e57043000b7143000cd129010b7143001871430038d1290120714300ac724300e4d22901"
+            },
+            {
+              "site": "0x3047b3",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x3047ec",
+          "rip_sources": [
+            {
+              "site": "0x3047b3",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x3047c4",
+              "dest": "rax",
+              "target_rva": "0x2febc0",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff157a9dc100488bd848894424604885"
+            },
+            {
+              "site": "0x3047de",
+              "dest": "rdx",
+              "target_rva": "0x169cf38",
+              "export": "",
+              "hex48": "0b7143000cd129010b7143001871430038d1290120714300ac724300e4d22901b07243003c744300fcd1290140744300"
+            },
+            {
+              "site": "0x3047e5",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x30481e",
+          "rip_sources": [
+            {
+              "site": "0x3047e5",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x3047f6",
+              "dest": "rax",
+              "target_rva": "0x83110",
+              "export": "?Create@AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b930020000ff153558e90048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x304810",
+              "dest": "rdx",
+              "target_rva": "0x169ceb8",
+              "export": "",
+              "hex48": "44dc2901f06b4300206c430044d62901206c4300816c43004cd62901816c4300396e430070d62901396e4300596e4300"
+            },
+            {
+              "site": "0x304817",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x304850",
+          "rip_sources": [
+            {
+              "site": "0x304817",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x304828",
+              "dest": "rax",
+              "target_rva": "0x2fed90",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff15aa9bc100488bd848894424604885"
+            },
+            {
+              "site": "0x304842",
+              "dest": "rdx",
+              "target_rva": "0x169cec8",
+              "export": "",
+              "hex48": "206c4300816c43004cd62901816c4300396e430070d62901396e4300596e430088d62901596e43007f6e430098d62901"
+            },
+            {
+              "site": "0x304849",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x304882",
+          "rip_sources": [
+            {
+              "site": "0x304849",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x30485a",
+              "dest": "rax",
+              "target_rva": "0x2fee70",
+              "export": "",
+              "hex48": "405355565741564881ec80000000418bf9410fb6f0488bea4c8bf1b948040000ff15ca9ac100488bd848894424604885"
+            },
+            {
+              "site": "0x304874",
+              "dest": "rdx",
+              "target_rva": "0x169ced8",
+              "export": "",
+              "hex48": "396e430070d62901396e4300596e430088d62901596e43007f6e430098d629017f6e43008c6e4300c4d62901906e4300"
+            },
+            {
+              "site": "0x30487b",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x3048b4",
+          "rip_sources": [
+            {
+              "site": "0x30487b",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x30488c",
+              "dest": "rax",
+              "target_rva": "0x842e0",
+              "export": "?Create@BlendingOptionsStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b930020000ff156546e90048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x3048a6",
+              "dest": "rdx",
+              "target_rva": "0x169cea8",
+              "export": "",
+              "hex48": "db6b430018dc2901db6b4300e86b430044dc2901f06b4300206c430044d62901206c4300816c43004cd62901816c4300"
+            },
+            {
+              "site": "0x3048ad",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        },
+        {
+          "callsite": "0x3048e6",
+          "rip_sources": [
+            {
+              "site": "0x3048ad",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            },
+            {
+              "site": "0x3048be",
+              "dest": "rax",
+              "target_rva": "0x84830",
+              "export": "?Create@RootLayerStyleStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "hex48": "48895c2408574883ec30488bda488bf9b930020000ff151541e90048894424204885c07420440fb64c24604c8bc3488b"
+            },
+            {
+              "site": "0x3048d8",
+              "dest": "rdx",
+              "target_rva": "0x169ce98",
+              "export": "",
+              "hex48": "956b4300b56b430008dc2901b56b4300db6b430018dc2901db6b4300e86b430044dc2901f06b4300206c430044d62901"
+            },
+            {
+              "site": "0x3048df",
+              "dest": "rcx",
+              "target_rva": "0x169cf60",
+              "export": "",
+              "hex48": "fcd12901407443006f7443008cd429016f744300bf74430094d42901bf744300ad754300b0d42901ad754300c2754300"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

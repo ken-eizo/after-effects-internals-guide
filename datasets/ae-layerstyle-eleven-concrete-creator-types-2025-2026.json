@@ -1,0 +1,563 @@
+{
+  "evidence": "E2-L x64 .text static callback class allocator/vtable resolution, no Adobe calls",
+  "years": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "registered_callback_creators": [
+        {
+          "register_call": "0x2fbc12",
+          "callback_rva": "0x2f6000",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448",
+            "ecx, 0xffff"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f602f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f609e",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f60af",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f60c0",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbc44",
+          "callback_rva": "0x2f5c00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f5c2f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f5c9d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f5cae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f5cbf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbc76",
+          "callback_rva": "0x2f5d00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f5d2f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f5d9d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f5dae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f5dbf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbca8",
+          "callback_rva": "0x2f5e00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f5e2f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f5e9d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f5eae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f5ebf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbcda",
+          "callback_rva": "0x2f5b00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f5b2f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f5b9d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f5bae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f5bbf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbd0c",
+          "callback_rva": "0x2f5f00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f5f2f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f5f9d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f5fae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f5fbf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbd3e",
+          "callback_rva": "0x80810",
+          "export_symbol": "?Create@AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x260"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x80825",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x80844",
+              "symbol": "??0AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbd70",
+          "callback_rva": "0x2f6100",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f612f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f619d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f61ae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f61bf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbda2",
+          "callback_rva": "0x2f6200",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2f622f",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2f629d",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2f62ae",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2f62bf",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbdd4",
+          "callback_rva": "0x81870",
+          "export_symbol": "?Create@BlendingOptionsStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x260"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x81885",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x818a4",
+              "symbol": "??0BlendingOptionsStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x2fbe06",
+          "callback_rva": "0x81dd0",
+          "export_symbol": "?Create@RootLayerStyleStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x260"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x81de5",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x81e04",
+              "symbol": "??0RootLayerStyleStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "registered_callback_creators": [
+        {
+          "register_call": "0x3046f2",
+          "callback_rva": "0x2feca0",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448",
+            "ecx, 0xffff"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fecc0",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fed2f",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fed40",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fed51",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x304724",
+          "callback_rva": "0x2fe920",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fe940",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fe9ae",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fe9bf",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fe9d0",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x304756",
+          "callback_rva": "0x2fea00",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fea20",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fea8e",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fea9f",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2feab0",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x304788",
+          "callback_rva": "0x2feae0",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2feb00",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2feb6e",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2feb7f",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2feb90",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x3047ba",
+          "callback_rva": "0x2fe840",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fe860",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fe8ce",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fe8df",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fe8f0",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x3047ec",
+          "callback_rva": "0x2febc0",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2febe0",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fec4e",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fec5f",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fec70",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x30481e",
+          "callback_rva": "0x83110",
+          "export_symbol": "?Create@AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x230"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x83125",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x83144",
+              "symbol": "??0AdvancedBlendingStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x304850",
+          "callback_rva": "0x2fed90",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fedb0",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2fee1e",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fee2f",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fee40",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x304882",
+          "callback_rva": "0x2fee70",
+          "export_symbol": "",
+          "allocator_sizes": [
+            "ecx, 0x448"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x2fee90",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x2feefe",
+              "symbol": "TDB.dll!??0TDB_Stream@@QEAA@FIEEGGAEBVTDB_ValueDesc@@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            },
+            {
+              "site": "0x2fef0f",
+              "symbol": "TDB.dll!?GetBaseFlags@TDB_BaseStreamTraits@@SAIXZ"
+            },
+            {
+              "site": "0x2fef20",
+              "symbol": "TDB.dll!?SetStreamBaseFlags@TDB_Stream@@UEAAXII@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x3048b4",
+          "callback_rva": "0x842e0",
+          "export_symbol": "?Create@BlendingOptionsStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x230"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x842f5",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x84314",
+              "symbol": "??0BlendingOptionsStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        },
+        {
+          "register_call": "0x3048e6",
+          "callback_rva": "0x84830",
+          "export_symbol": "?Create@RootLayerStyleStreamGroup@BEE_LayerStyleStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "allocator_sizes": [
+            "ecx, 0x230"
+          ],
+          "vtable_assignments": [],
+          "named_call_edges": [
+            {
+              "site": "0x84845",
+              "symbol": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "site": "0x84864",
+              "symbol": "??0RootLayerStyleStreamGroup@BEE_LayerStyleStream@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_N@Z"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

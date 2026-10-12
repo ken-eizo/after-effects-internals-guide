@@ -1,0 +1,57 @@
+{
+  "classification": "E2-L candidate x64 call/jmp sites; indirect calls not covered",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "target": "0x2fbb60",
+      "direct_relative_sites": [
+        {
+          "site_rva": "0x28fa89",
+          "kind": "CALL",
+          "caller_pdata_rva": [
+            "0x28fa80",
+            "0x28fabc"
+          ],
+          "caller_export": "",
+          "byte_context": "00cccccccccccccccccccc4883ec28488bd1b101e8d2c00600b101e8cbc0fcffb101e8e4c9fcffb101e8bdc2fc"
+        },
+        {
+          "site_rva": "0x295a16",
+          "kind": "JMP",
+          "caller_pdata_rva": [
+            "0x2959e0",
+            "0x295a1b"
+          ],
+          "caller_export": "",
+          "byte_context": "e87962fcff33c9e85261fcff33d233c94883c428e945610600cccccccccc48895c24184889742420574883ec40"
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "target": "0x304640",
+      "direct_relative_sites": [
+        {
+          "site_rva": "0x298cb9",
+          "kind": "CALL",
+          "caller_pdata_rva": [
+            "0x298cb0",
+            "0x298cec"
+          ],
+          "caller_export": "",
+          "byte_context": "00cccccccccccccccccccc4883ec28488bd1b101e882b90600b101e84bdafcffb101e864e3fcffb101e83ddcfc"
+        },
+        {
+          "site_rva": "0x29e666",
+          "kind": "JMP",
+          "caller_pdata_rva": [
+            "0x29e630",
+            "0x29e66b"
+          ],
+          "caller_export": "",
+          "byte_context": "e8d981fcff33c9e8b280fcff33d233c94883c428e9d55f0600cccccccccc48895c24184889742420574883ec40"
+        }
+      ]
+    }
+  }
+}

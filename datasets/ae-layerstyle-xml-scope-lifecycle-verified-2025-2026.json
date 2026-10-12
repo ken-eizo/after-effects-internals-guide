@@ -1,0 +1,30 @@
+{
+  "evidence": "E2-L pinned BEE PE, scope excludes indirect code paths",
+  "versions": {
+    "2025": {
+      "scoped_native_registered_leaves": 8,
+      "scoped_native_registered_groups": 3,
+      "bootstrap_forwards_wstring_argument_rcx_to_parser_rdx": true,
+      "initializer_copies_parser_rdx_to_local_xml_source": true,
+      "XML_parser_virtual_parse_called": true,
+      "paired_native_setup_teardown_wrapper": true,
+      "host_owned_internal_groups": true,
+      "external_plugin_registration_exposed": false
+    },
+    "2026": {
+      "scoped_native_registered_leaves": 8,
+      "scoped_native_registered_groups": 3,
+      "bootstrap_forwards_wstring_argument_rcx_to_parser_rdx": true,
+      "initializer_copies_parser_rdx_to_local_xml_source": true,
+      "XML_parser_virtual_parse_called": true,
+      "paired_native_setup_teardown_wrapper": true,
+      "host_owned_internal_groups": true,
+      "external_plugin_registration_exposed": false
+    }
+  },
+  "limitations": [
+    "Native startup accepting definition argument is NOT proof third-party plugin can supply it",
+    "The internal parser has no verified extensible native VectorArt or Pen API",
+    "Destructor cleanup and plugin unload safety not verified"
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "evidence": "E2-L two-hop direct relative call/jmp PE scan; no indirect dispatch proof",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "wrappers": [
+        {
+          "wrapper_rva": "0x28fa80",
+          "instructions": [
+            [
+              "0x28fa80",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x28fa84",
+              "mov",
+              "rdx, rcx"
+            ],
+            [
+              "0x28fa87",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28fa89",
+              "call",
+              "0x1802fbb60"
+            ],
+            [
+              "0x28fa8e",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28fa90",
+              "call",
+              "0x18025bb60"
+            ],
+            [
+              "0x28fa95",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28fa97",
+              "call",
+              "0x18025c480"
+            ],
+            [
+              "0x28fa9c",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28fa9e",
+              "call",
+              "0x18025bd60"
+            ],
+            [
+              "0x28faa3",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28faa5",
+              "call",
+              "0x18025bf60"
+            ],
+            [
+              "0x28faaa",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28faac",
+              "call",
+              "0x18025bc80"
+            ],
+            [
+              "0x28fab1",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x28fab3",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x28fab7",
+              "jmp",
+              "0x18025c5e0"
+            ]
+          ],
+          "xrefs": [
+            {
+              "site": "0x36de29",
+              "kind": "CALL",
+              "own_function": "0x36dd90",
+              "export": ""
+            }
+          ]
+        },
+        {
+          "wrapper_rva": "0x2959e0",
+          "instructions": [
+            [
+              "0x2959e0",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x2959e4",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x2959e6",
+              "call",
+              "0x18025c5e0"
+            ],
+            [
+              "0x2959eb",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x2959ed",
+              "call",
+              "0x18025c480"
+            ],
+            [
+              "0x2959f2",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x2959f4",
+              "call",
+              "0x18025bd60"
+            ],
+            [
+              "0x2959f9",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x2959fb",
+              "call",
+              "0x18025bf60"
+            ],
+            [
+              "0x295a00",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x295a02",
+              "call",
+              "0x18025bc80"
+            ],
+            [
+              "0x295a07",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x295a09",
+              "call",
+              "0x18025bb60"
+            ],
+            [
+              "0x295a0e",
+              "xor",
+              "edx, edx"
+            ],
+            [
+              "0x295a10",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x295a12",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x295a16",
+              "jmp",
+              "0x1802fbb60"
+            ]
+          ],
+          "xrefs": [
+            {
+              "site": "0x36df1f",
+              "kind": "CALL",
+              "own_function": "0x36def0",
+              "export": ""
+            }
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "wrappers": [
+        {
+          "wrapper_rva": "0x298cb0",
+          "instructions": [
+            [
+              "0x298cb0",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x298cb4",
+              "mov",
+              "rdx, rcx"
+            ],
+            [
+              "0x298cb7",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cb9",
+              "call",
+              "0x180304640"
+            ],
+            [
+              "0x298cbe",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cc0",
+              "call",
+              "0x180266710"
+            ],
+            [
+              "0x298cc5",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cc7",
+              "call",
+              "0x180267030"
+            ],
+            [
+              "0x298ccc",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cce",
+              "call",
+              "0x180266910"
+            ],
+            [
+              "0x298cd3",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cd5",
+              "call",
+              "0x180266b10"
+            ],
+            [
+              "0x298cda",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298cdc",
+              "call",
+              "0x180266830"
+            ],
+            [
+              "0x298ce1",
+              "mov",
+              "cl, 1"
+            ],
+            [
+              "0x298ce3",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x298ce7",
+              "jmp",
+              "0x180267190"
+            ]
+          ],
+          "xrefs": [
+            {
+              "site": "0x378849",
+              "kind": "CALL",
+              "own_function": "0x3787b0",
+              "export": ""
+            }
+          ]
+        },
+        {
+          "wrapper_rva": "0x29e630",
+          "instructions": [
+            [
+              "0x29e630",
+              "sub",
+              "rsp, 0x28"
+            ],
+            [
+              "0x29e634",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e636",
+              "call",
+              "0x180267190"
+            ],
+            [
+              "0x29e63b",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e63d",
+              "call",
+              "0x180267030"
+            ],
+            [
+              "0x29e642",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e644",
+              "call",
+              "0x180266910"
+            ],
+            [
+              "0x29e649",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e64b",
+              "call",
+              "0x180266b10"
+            ],
+            [
+              "0x29e650",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e652",
+              "call",
+              "0x180266830"
+            ],
+            [
+              "0x29e657",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e659",
+              "call",
+              "0x180266710"
+            ],
+            [
+              "0x29e65e",
+              "xor",
+              "edx, edx"
+            ],
+            [
+              "0x29e660",
+              "xor",
+              "ecx, ecx"
+            ],
+            [
+              "0x29e662",
+              "add",
+              "rsp, 0x28"
+            ],
+            [
+              "0x29e666",
+              "jmp",
+              "0x180304640"
+            ]
+          ],
+          "xrefs": [
+            {
+              "site": "0x37893f",
+              "kind": "CALL",
+              "own_function": "0x378910",
+              "export": ""
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

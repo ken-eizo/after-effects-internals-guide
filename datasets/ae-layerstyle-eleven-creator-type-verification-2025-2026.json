@@ -1,0 +1,159 @@
+{
+  "evidence": "E2-L actual constructor code calls two pinned BEE PE binaries",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "exact_registrars": 11,
+      "typed_leaf_stream_creators": 8,
+      "built_in_group_creators": 3,
+      "creators": [
+        {
+          "entry_index": 0,
+          "creator": "0x2f6000",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 1,
+          "creator": "0x2f5c00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 2,
+          "creator": "0x2f5d00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 3,
+          "creator": "0x2f5e00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 4,
+          "creator": "0x2f5b00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 5,
+          "creator": "0x2f5f00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 6,
+          "creator": "0x80810",
+          "kind": "AdvancedBlendingStreamGroup",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 7,
+          "creator": "0x2f6100",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 8,
+          "creator": "0x2f6200",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 9,
+          "creator": "0x81870",
+          "kind": "BlendingOptionsStreamGroup",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 10,
+          "creator": "0x81dd0",
+          "kind": "RootLayerStyleStreamGroup",
+          "known_Adobe_concrete_class": true
+        }
+      ],
+      "custom_CNL_vector_group": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "exact_registrars": 11,
+      "typed_leaf_stream_creators": 8,
+      "built_in_group_creators": 3,
+      "creators": [
+        {
+          "entry_index": 0,
+          "creator": "0x2feca0",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 1,
+          "creator": "0x2fe920",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 2,
+          "creator": "0x2fea00",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 3,
+          "creator": "0x2feae0",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 4,
+          "creator": "0x2fe840",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 5,
+          "creator": "0x2febc0",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 6,
+          "creator": "0x83110",
+          "kind": "AdvancedBlendingStreamGroup",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 7,
+          "creator": "0x2fed90",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 8,
+          "creator": "0x2fee70",
+          "kind": "TDB_Stream_leaf",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 9,
+          "creator": "0x842e0",
+          "kind": "BlendingOptionsStreamGroup",
+          "known_Adobe_concrete_class": true
+        },
+        {
+          "entry_index": 10,
+          "creator": "0x84830",
+          "kind": "RootLayerStyleStreamGroup",
+          "known_Adobe_concrete_class": true
+        }
+      ],
+      "custom_CNL_vector_group": false
+    }
+  },
+  "notes": [
+    "These are Adobe internal registrations, not plugin extensibility APIs",
+    "RTTI vtables of external CNL types and native Pen/renderer not established"
+  ]
+}
