@@ -1,0 +1,31 @@
+{
+  "evidence": "E2-L exact pinned AE2025/26 BEE compiled constructors and virtual methods; no in-host private methods executed",
+  "versions": {
+    "2025": {
+      "native_task_allocation_bytes": 48,
+      "vtable_offset": 0,
+      "copied_command_context_offset": 8,
+      "copied_command_context_bytes": 32,
+      "layer_kind_offset": 40,
+      "newshape_layer_kind_value": 4,
+      "constructor_writes_kind_from_arg8": true,
+      "exec_uses_kind_at_0x28": true,
+      "alternate_constructor_restores_kind_from_command_info": true,
+      "virtual_slot2_dvacore_serialize_AddToObject_calls": 5,
+      "safe_CNL_abi_declared": false
+    },
+    "2026": {
+      "native_task_allocation_bytes": 48,
+      "vtable_offset": 0,
+      "copied_command_context_offset": 8,
+      "copied_command_context_bytes": 32,
+      "layer_kind_offset": 40,
+      "newshape_layer_kind_value": 4,
+      "constructor_writes_kind_from_arg8": true,
+      "exec_uses_kind_at_0x28": true,
+      "alternate_constructor_restores_kind_from_command_info": true,
+      "virtual_slot2_dvacore_serialize_AddToObject_calls": 5,
+      "safe_CNL_abi_declared": false
+    }
+  }
+}

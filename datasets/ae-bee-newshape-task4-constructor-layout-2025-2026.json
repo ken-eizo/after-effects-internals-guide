@@ -1,0 +1,1313 @@
+{
+  "evidence": "E2-L BEE compiled constructors for 0x30-byte New Shape Layer command task; no native calls executed",
+  "versions": {
+    "2025": [
+      {
+        "entry_rva": "0x5443e0",
+        "data": [
+          "0x5443e0",
+          "0x54446d"
+        ],
+        "instructions": [
+          {
+            "rva": "0x5443e0",
+            "ins": "mov qword ptr [rsp + 0x10], rbx"
+          },
+          {
+            "rva": "0x5443e5",
+            "ins": "mov qword ptr [rsp + 0x20], rsi"
+          },
+          {
+            "rva": "0x5443ea",
+            "ins": "mov qword ptr [rsp + 8], rcx"
+          },
+          {
+            "rva": "0x5443ef",
+            "ins": "push rdi"
+          },
+          {
+            "rva": "0x5443f0",
+            "ins": "sub rsp, 0x20"
+          },
+          {
+            "rva": "0x5443f4",
+            "ins": "mov esi, r8d"
+          },
+          {
+            "rva": "0x5443f7",
+            "ins": "mov rbx, rdx"
+          },
+          {
+            "rva": "0x5443fa",
+            "ins": "mov rdi, rcx"
+          },
+          {
+            "rva": "0x5443fd",
+            "ins": "call 0x1805657c0",
+            "target": "0x5657c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544402",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x544403",
+            "ins": "lea rax, [rip + 0xa4cb76]"
+          },
+          {
+            "rva": "0x54440a",
+            "ins": "mov qword ptr [rdi], rax"
+          },
+          {
+            "rva": "0x54440d",
+            "ins": "mov rax, qword ptr [rbx]"
+          },
+          {
+            "rva": "0x544410",
+            "ins": "vmovups ymm0, ymmword ptr [rax]"
+          },
+          {
+            "rva": "0x544414",
+            "ins": "vmovups ymmword ptr [rdi + 8], ymm0"
+          },
+          {
+            "rva": "0x544419",
+            "ins": "mov dword ptr [rdi + 0x28], esi"
+          },
+          {
+            "rva": "0x54441c",
+            "ins": "mov ecx, 0x15"
+          },
+          {
+            "rva": "0x544421",
+            "ins": "mov rdx, qword ptr [rdi + 8]"
+          },
+          {
+            "rva": "0x544425",
+            "ins": "vzeroupper "
+          },
+          {
+            "rva": "0x544428",
+            "ins": "call 0x1803da990",
+            "target": "0x3da990",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54442d",
+            "ins": "test eax, eax"
+          },
+          {
+            "rva": "0x54442f",
+            "ins": "jne 0x180544457"
+          },
+          {
+            "rva": "0x544431",
+            "ins": "test esi, esi"
+          },
+          {
+            "rva": "0x544433",
+            "ins": "jne 0x180544444"
+          },
+          {
+            "rva": "0x544435",
+            "ins": "mov ecx, 0x15"
+          },
+          {
+            "rva": "0x54443a",
+            "ins": "mov rdx, qword ptr [rdi + 0x10]"
+          },
+          {
+            "rva": "0x54443e",
+            "ins": "call 0x1803da990",
+            "target": "0x3da990",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544443",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x544444",
+            "ins": "mov rax, rdi"
+          },
+          {
+            "rva": "0x544447",
+            "ins": "mov rbx, qword ptr [rsp + 0x38]"
+          },
+          {
+            "rva": "0x54444c",
+            "ins": "mov rsi, qword ptr [rsp + 0x48]"
+          },
+          {
+            "rva": "0x544451",
+            "ins": "add rsp, 0x20"
+          },
+          {
+            "rva": "0x544455",
+            "ins": "pop rdi"
+          },
+          {
+            "rva": "0x544456",
+            "ins": "ret "
+          },
+          {
+            "rva": "0x544457",
+            "ins": "mov dword ptr [rsp + 0x40], eax"
+          },
+          {
+            "rva": "0x54445b",
+            "ins": "lea rdx, [rip + 0xe3b1a6]"
+          },
+          {
+            "rva": "0x544462",
+            "ins": "lea rcx, [rsp + 0x40]"
+          },
+          {
+            "rva": "0x544467",
+            "ins": "call 0x180ceacc8",
+            "target": "0xceacc8",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54446c",
+            "ins": "int3 "
+          }
+        ],
+        "calls": [
+          {
+            "rva": "0x5443fd",
+            "ins": "call 0x1805657c0",
+            "target": "0x5657c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544428",
+            "ins": "call 0x1803da990",
+            "target": "0x3da990",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54443e",
+            "ins": "call 0x1803da990",
+            "target": "0x3da990",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544467",
+            "ins": "call 0x180ceacc8",
+            "target": "0xceacc8",
+            "symbol": ""
+          }
+        ]
+      },
+      {
+        "entry_rva": "0x544470",
+        "data": [
+          "0x544470",
+          "0x5445cb"
+        ],
+        "instructions": [
+          {
+            "rva": "0x544470",
+            "ins": "mov qword ptr [rsp + 0x10], rbx"
+          },
+          {
+            "rva": "0x544475",
+            "ins": "mov qword ptr [rsp + 0x18], rbp"
+          },
+          {
+            "rva": "0x54447a",
+            "ins": "mov qword ptr [rsp + 0x20], rsi"
+          },
+          {
+            "rva": "0x54447f",
+            "ins": "mov qword ptr [rsp + 8], rcx"
+          },
+          {
+            "rva": "0x544484",
+            "ins": "push rdi"
+          },
+          {
+            "rva": "0x544485",
+            "ins": "sub rsp, 0x30"
+          },
+          {
+            "rva": "0x544489",
+            "ins": "mov rdi, r8"
+          },
+          {
+            "rva": "0x54448c",
+            "ins": "mov rsi, rdx"
+          },
+          {
+            "rva": "0x54448f",
+            "ins": "mov rbx, rcx"
+          },
+          {
+            "rva": "0x544492",
+            "ins": "call 0x1805657c0",
+            "target": "0x5657c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544497",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x544498",
+            "ins": "lea rax, [rip + 0xa4cae1]"
+          },
+          {
+            "rva": "0x54449f",
+            "ins": "mov qword ptr [rbx], rax"
+          },
+          {
+            "rva": "0x5444a2",
+            "ins": "xor ebp, ebp"
+          },
+          {
+            "rva": "0x5444a4",
+            "ins": "mov qword ptr [rbx + 8], rbp"
+          },
+          {
+            "rva": "0x5444a8",
+            "ins": "mov qword ptr [rbx + 0x10], rbp"
+          },
+          {
+            "rva": "0x5444ac",
+            "ins": "mov qword ptr [rbx + 0x18], rbp"
+          },
+          {
+            "rva": "0x5444b0",
+            "ins": "mov word ptr [rbx + 0x20], bp"
+          },
+          {
+            "rva": "0x5444b4",
+            "ins": "test rdi, rdi"
+          },
+          {
+            "rva": "0x5444b7",
+            "ins": "je 0x1805445c5"
+          },
+          {
+            "rva": "0x5444bd",
+            "ins": "mov rcx, qword ptr [rdi + 0x38]"
+          },
+          {
+            "rva": "0x5444c1",
+            "ins": "and rcx, 0xfffffffffffffffc"
+          },
+          {
+            "rva": "0x5444c5",
+            "ins": "je 0x1805444e1"
+          },
+          {
+            "rva": "0x5444c7",
+            "ins": "add rcx, 8"
+          },
+          {
+            "rva": "0x5444cb",
+            "ins": "lea rdx, [rip + 0xfd6426]"
+          },
+          {
+            "rva": "0x5444d2",
+            "ins": "call 0x180ceace6",
+            "target": "0xceace6",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444d7",
+            "ins": "test eax, eax"
+          },
+          {
+            "rva": "0x5444d9",
+            "ins": "jne 0x1805444e1"
+          },
+          {
+            "rva": "0x5444db",
+            "ins": "mov rdi, qword ptr [rdi + 0x28]"
+          },
+          {
+            "rva": "0x5444df",
+            "ins": "jmp 0x1805444e4",
+            "target": "0x5444e4",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444e1",
+            "ins": "mov rdi, rbp"
+          },
+          {
+            "rva": "0x5444e4",
+            "ins": "test rdi, rdi"
+          },
+          {
+            "rva": "0x5444e7",
+            "ins": "je 0x1805445c5"
+          },
+          {
+            "rva": "0x5444ed",
+            "ins": "mov rdx, qword ptr [rip + 0xfc6054]"
+          },
+          {
+            "rva": "0x5444f4",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x5444f7",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444fc",
+            "ins": "mov dword ptr [rbx + 0x28], eax"
+          },
+          {
+            "rva": "0x5444ff",
+            "ins": "xor r9d, r9d"
+          },
+          {
+            "rva": "0x544502",
+            "ins": "mov r8, rdi"
+          },
+          {
+            "rva": "0x544505",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5ff4]"
+          },
+          {
+            "rva": "0x54450c",
+            "ins": "mov rcx, rsi"
+          },
+          {
+            "rva": "0x54450f",
+            "ins": "call 0x180787bf0",
+            "target": "0x787bf0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544514",
+            "ins": "mov rcx, rax"
+          },
+          {
+            "rva": "0x544517",
+            "ins": "mov dword ptr [rsp + 0x20], ebp"
+          },
+          {
+            "rva": "0x54451b",
+            "ins": "lea r9, [rip + 0xfdbbf6]"
+          },
+          {
+            "rva": "0x544522",
+            "ins": "lea r8, [rip + 0xfdbbcf]"
+          },
+          {
+            "rva": "0x544529",
+            "ins": "xor edx, edx"
+          },
+          {
+            "rva": "0x54452b",
+            "ins": "call 0x180ceacd4",
+            "target": "0xceacd4",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544530",
+            "ins": "mov qword ptr [rbx + 8], rax"
+          },
+          {
+            "rva": "0x544534",
+            "ins": "mov qword ptr [rbx + 0x10], rbp"
+          },
+          {
+            "rva": "0x544538",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5fc9]"
+          },
+          {
+            "rva": "0x54453f",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x544542",
+            "ins": "call qword ptr [rip + 0x97d190]",
+            "target": "0xec16d8",
+            "symbol": "dvacore.dll!?ObjectHasProperty@serialization@dvacore@@YA_NAEBV?$map@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@U?$less@X@2@U?$STLAllocator@U?$pair@$$CBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@@std@@@allocator@dvacore@@@std@@PEBD@Z"
+          },
+          {
+            "rva": "0x544548",
+            "ins": "test al, al"
+          },
+          {
+            "rva": "0x54454a",
+            "ins": "je 0x180544565"
+          },
+          {
+            "rva": "0x54454c",
+            "ins": "xor r9d, r9d"
+          },
+          {
+            "rva": "0x54454f",
+            "ins": "mov r8, rdi"
+          },
+          {
+            "rva": "0x544552",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5faf]"
+          },
+          {
+            "rva": "0x544559",
+            "ins": "mov rcx, rsi"
+          },
+          {
+            "rva": "0x54455c",
+            "ins": "call 0x180787bf0",
+            "target": "0x787bf0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544561",
+            "ins": "mov qword ptr [rbx + 0x10], rax"
+          },
+          {
+            "rva": "0x544565",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5fbc]"
+          },
+          {
+            "rva": "0x54456c",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x54456f",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544574",
+            "ins": "mov dword ptr [rbx + 0x18], eax"
+          },
+          {
+            "rva": "0x544577",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5fb2]"
+          },
+          {
+            "rva": "0x54457e",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x544581",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544586",
+            "ins": "mov dword ptr [rbx + 0x1c], eax"
+          },
+          {
+            "rva": "0x544589",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5fa8]"
+          },
+          {
+            "rva": "0x544590",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x544593",
+            "ins": "call 0x18042f6c0",
+            "target": "0x42f6c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544598",
+            "ins": "mov byte ptr [rbx + 0x20], al"
+          },
+          {
+            "rva": "0x54459b",
+            "ins": "mov rdx, qword ptr [rip + 0xfc5f9e]"
+          },
+          {
+            "rva": "0x5445a2",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x5445a5",
+            "ins": "call 0x18042f6c0",
+            "target": "0x42f6c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5445aa",
+            "ins": "mov byte ptr [rbx + 0x21], al"
+          },
+          {
+            "rva": "0x5445ad",
+            "ins": "mov rax, rbx"
+          },
+          {
+            "rva": "0x5445b0",
+            "ins": "mov rbx, qword ptr [rsp + 0x48]"
+          },
+          {
+            "rva": "0x5445b5",
+            "ins": "mov rbp, qword ptr [rsp + 0x50]"
+          },
+          {
+            "rva": "0x5445ba",
+            "ins": "mov rsi, qword ptr [rsp + 0x58]"
+          },
+          {
+            "rva": "0x5445bf",
+            "ins": "add rsp, 0x30"
+          },
+          {
+            "rva": "0x5445c3",
+            "ins": "pop rdi"
+          },
+          {
+            "rva": "0x5445c4",
+            "ins": "ret "
+          },
+          {
+            "rva": "0x5445c5",
+            "ins": "call 0x1800a19d0",
+            "target": "0xa19d0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5445ca",
+            "ins": "nop "
+          }
+        ],
+        "calls": [
+          {
+            "rva": "0x544492",
+            "ins": "call 0x1805657c0",
+            "target": "0x5657c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444d2",
+            "ins": "call 0x180ceace6",
+            "target": "0xceace6",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444df",
+            "ins": "jmp 0x1805444e4",
+            "target": "0x5444e4",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5444f7",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54450f",
+            "ins": "call 0x180787bf0",
+            "target": "0x787bf0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54452b",
+            "ins": "call 0x180ceacd4",
+            "target": "0xceacd4",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544542",
+            "ins": "call qword ptr [rip + 0x97d190]",
+            "target": "0xec16d8",
+            "symbol": "dvacore.dll!?ObjectHasProperty@serialization@dvacore@@YA_NAEBV?$map@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@U?$less@X@2@U?$STLAllocator@U?$pair@$$CBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@@std@@@allocator@dvacore@@@std@@PEBD@Z"
+          },
+          {
+            "rva": "0x54455c",
+            "ins": "call 0x180787bf0",
+            "target": "0x787bf0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x54456f",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544581",
+            "ins": "call 0x180523bb0",
+            "target": "0x523bb0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x544593",
+            "ins": "call 0x18042f6c0",
+            "target": "0x42f6c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5445a5",
+            "ins": "call 0x18042f6c0",
+            "target": "0x42f6c0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5445c5",
+            "ins": "call 0x1800a19d0",
+            "target": "0xa19d0",
+            "symbol": ""
+          }
+        ]
+      }
+    ],
+    "2026": [
+      {
+        "entry_rva": "0x563200",
+        "data": [
+          "0x563200",
+          "0x56328d"
+        ],
+        "instructions": [
+          {
+            "rva": "0x563200",
+            "ins": "mov qword ptr [rsp + 0x10], rbx"
+          },
+          {
+            "rva": "0x563205",
+            "ins": "mov qword ptr [rsp + 0x20], rsi"
+          },
+          {
+            "rva": "0x56320a",
+            "ins": "mov qword ptr [rsp + 8], rcx"
+          },
+          {
+            "rva": "0x56320f",
+            "ins": "push rdi"
+          },
+          {
+            "rva": "0x563210",
+            "ins": "sub rsp, 0x20"
+          },
+          {
+            "rva": "0x563214",
+            "ins": "mov esi, r8d"
+          },
+          {
+            "rva": "0x563217",
+            "ins": "mov rbx, rdx"
+          },
+          {
+            "rva": "0x56321a",
+            "ins": "mov rdi, rcx"
+          },
+          {
+            "rva": "0x56321d",
+            "ins": "call 0x180586c50",
+            "target": "0x586c50",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563222",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x563223",
+            "ins": "lea rax, [rip + 0xa8d0be]"
+          },
+          {
+            "rva": "0x56322a",
+            "ins": "mov qword ptr [rdi], rax"
+          },
+          {
+            "rva": "0x56322d",
+            "ins": "mov rax, qword ptr [rbx]"
+          },
+          {
+            "rva": "0x563230",
+            "ins": "vmovups ymm0, ymmword ptr [rax]"
+          },
+          {
+            "rva": "0x563234",
+            "ins": "vmovups ymmword ptr [rdi + 8], ymm0"
+          },
+          {
+            "rva": "0x563239",
+            "ins": "mov dword ptr [rdi + 0x28], esi"
+          },
+          {
+            "rva": "0x56323c",
+            "ins": "mov ecx, 0x15"
+          },
+          {
+            "rva": "0x563241",
+            "ins": "mov rdx, qword ptr [rdi + 8]"
+          },
+          {
+            "rva": "0x563245",
+            "ins": "vzeroupper "
+          },
+          {
+            "rva": "0x563248",
+            "ins": "call 0x1803e9050",
+            "target": "0x3e9050",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56324d",
+            "ins": "test eax, eax"
+          },
+          {
+            "rva": "0x56324f",
+            "ins": "jne 0x180563277"
+          },
+          {
+            "rva": "0x563251",
+            "ins": "test esi, esi"
+          },
+          {
+            "rva": "0x563253",
+            "ins": "jne 0x180563264"
+          },
+          {
+            "rva": "0x563255",
+            "ins": "mov ecx, 0x15"
+          },
+          {
+            "rva": "0x56325a",
+            "ins": "mov rdx, qword ptr [rdi + 0x10]"
+          },
+          {
+            "rva": "0x56325e",
+            "ins": "call 0x1803e9050",
+            "target": "0x3e9050",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563263",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x563264",
+            "ins": "mov rax, rdi"
+          },
+          {
+            "rva": "0x563267",
+            "ins": "mov rbx, qword ptr [rsp + 0x38]"
+          },
+          {
+            "rva": "0x56326c",
+            "ins": "mov rsi, qword ptr [rsp + 0x48]"
+          },
+          {
+            "rva": "0x563271",
+            "ins": "add rsp, 0x20"
+          },
+          {
+            "rva": "0x563275",
+            "ins": "pop rdi"
+          },
+          {
+            "rva": "0x563276",
+            "ins": "ret "
+          },
+          {
+            "rva": "0x563277",
+            "ins": "mov dword ptr [rsp + 0x40], eax"
+          },
+          {
+            "rva": "0x56327b",
+            "ins": "lea rdx, [rip + 0xe98136]"
+          },
+          {
+            "rva": "0x563282",
+            "ins": "lea rcx, [rsp + 0x40]"
+          },
+          {
+            "rva": "0x563287",
+            "ins": "call 0x180d3bdf8",
+            "target": "0xd3bdf8",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56328c",
+            "ins": "int3 "
+          }
+        ],
+        "calls": [
+          {
+            "rva": "0x56321d",
+            "ins": "call 0x180586c50",
+            "target": "0x586c50",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563248",
+            "ins": "call 0x1803e9050",
+            "target": "0x3e9050",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56325e",
+            "ins": "call 0x1803e9050",
+            "target": "0x3e9050",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563287",
+            "ins": "call 0x180d3bdf8",
+            "target": "0xd3bdf8",
+            "symbol": ""
+          }
+        ]
+      },
+      {
+        "entry_rva": "0x563290",
+        "data": [
+          "0x563290",
+          "0x5633d9"
+        ],
+        "instructions": [
+          {
+            "rva": "0x563290",
+            "ins": "mov qword ptr [rsp + 8], rcx"
+          },
+          {
+            "rva": "0x563295",
+            "ins": "push rbx"
+          },
+          {
+            "rva": "0x563296",
+            "ins": "push rbp"
+          },
+          {
+            "rva": "0x563297",
+            "ins": "push rsi"
+          },
+          {
+            "rva": "0x563298",
+            "ins": "push rdi"
+          },
+          {
+            "rva": "0x563299",
+            "ins": "sub rsp, 0x38"
+          },
+          {
+            "rva": "0x56329d",
+            "ins": "mov rdi, r8"
+          },
+          {
+            "rva": "0x5632a0",
+            "ins": "mov rsi, rdx"
+          },
+          {
+            "rva": "0x5632a3",
+            "ins": "mov rbx, rcx"
+          },
+          {
+            "rva": "0x5632a6",
+            "ins": "call 0x180586c50",
+            "target": "0x586c50",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5632ab",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x5632ac",
+            "ins": "lea rax, [rip + 0xa8d035]"
+          },
+          {
+            "rva": "0x5632b3",
+            "ins": "mov qword ptr [rbx], rax"
+          },
+          {
+            "rva": "0x5632b6",
+            "ins": "xor ebp, ebp"
+          },
+          {
+            "rva": "0x5632b8",
+            "ins": "mov qword ptr [rbx + 8], rbp"
+          },
+          {
+            "rva": "0x5632bc",
+            "ins": "mov qword ptr [rbx + 0x10], rbp"
+          },
+          {
+            "rva": "0x5632c0",
+            "ins": "mov qword ptr [rbx + 0x18], rbp"
+          },
+          {
+            "rva": "0x5632c4",
+            "ins": "mov word ptr [rbx + 0x20], bp"
+          },
+          {
+            "rva": "0x5632c8",
+            "ins": "test rdi, rdi"
+          },
+          {
+            "rva": "0x5632cb",
+            "ins": "je 0x1805633d3"
+          },
+          {
+            "rva": "0x5632d1",
+            "ins": "mov rcx, qword ptr [rdi + 0x38]"
+          },
+          {
+            "rva": "0x5632d5",
+            "ins": "and rcx, 0xfffffffffffffffc"
+          },
+          {
+            "rva": "0x5632d9",
+            "ins": "je 0x1805633d3"
+          },
+          {
+            "rva": "0x5632df",
+            "ins": "add rcx, 8"
+          },
+          {
+            "rva": "0x5632e3",
+            "ins": "lea rdx, [rip + 0x104477e]"
+          },
+          {
+            "rva": "0x5632ea",
+            "ins": "call 0x180d3be16",
+            "target": "0xd3be16",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5632ef",
+            "ins": "test eax, eax"
+          },
+          {
+            "rva": "0x5632f1",
+            "ins": "jne 0x1805633d3"
+          },
+          {
+            "rva": "0x5632f7",
+            "ins": "mov rdi, qword ptr [rdi + 0x28]"
+          },
+          {
+            "rva": "0x5632fb",
+            "ins": "test rdi, rdi"
+          },
+          {
+            "rva": "0x5632fe",
+            "ins": "je 0x1805633d3"
+          },
+          {
+            "rva": "0x563304",
+            "ins": "mov rdx, qword ptr [rip + 0x10342dd]"
+          },
+          {
+            "rva": "0x56330b",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x56330e",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563313",
+            "ins": "mov dword ptr [rbx + 0x28], eax"
+          },
+          {
+            "rva": "0x563316",
+            "ins": "xor r9d, r9d"
+          },
+          {
+            "rva": "0x563319",
+            "ins": "mov r8, rdi"
+          },
+          {
+            "rva": "0x56331c",
+            "ins": "mov rdx, qword ptr [rip + 0x103427d]"
+          },
+          {
+            "rva": "0x563323",
+            "ins": "mov rcx, rsi"
+          },
+          {
+            "rva": "0x563326",
+            "ins": "call 0x1807a9440",
+            "target": "0x7a9440",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56332b",
+            "ins": "mov rcx, rax"
+          },
+          {
+            "rva": "0x56332e",
+            "ins": "mov dword ptr [rsp + 0x20], ebp"
+          },
+          {
+            "rva": "0x563332",
+            "ins": "lea r9, [rip + 0x10488ff]"
+          },
+          {
+            "rva": "0x563339",
+            "ins": "lea r8, [rip + 0x10488d8]"
+          },
+          {
+            "rva": "0x563340",
+            "ins": "xor edx, edx"
+          },
+          {
+            "rva": "0x563342",
+            "ins": "call 0x180d3be04",
+            "target": "0xd3be04",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563347",
+            "ins": "mov qword ptr [rbx + 8], rax"
+          },
+          {
+            "rva": "0x56334b",
+            "ins": "mov qword ptr [rbx + 0x10], rbp"
+          },
+          {
+            "rva": "0x56334f",
+            "ins": "mov rdx, qword ptr [rip + 0x1034252]"
+          },
+          {
+            "rva": "0x563356",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x563359",
+            "ins": "call qword ptr [rip + 0x9b78c9]",
+            "target": "0xf1ac28",
+            "symbol": "dvacore.dll!?ObjectHasProperty@serialization@dvacore@@YA_NAEBV?$map@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@U?$less@X@2@U?$STLAllocator@U?$pair@$$CBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@@std@@@allocator@dvacore@@@std@@PEBD@Z"
+          },
+          {
+            "rva": "0x56335f",
+            "ins": "test al, al"
+          },
+          {
+            "rva": "0x563361",
+            "ins": "je 0x18056337c"
+          },
+          {
+            "rva": "0x563363",
+            "ins": "xor r9d, r9d"
+          },
+          {
+            "rva": "0x563366",
+            "ins": "mov r8, rdi"
+          },
+          {
+            "rva": "0x563369",
+            "ins": "mov rdx, qword ptr [rip + 0x1034238]"
+          },
+          {
+            "rva": "0x563370",
+            "ins": "mov rcx, rsi"
+          },
+          {
+            "rva": "0x563373",
+            "ins": "call 0x1807a9440",
+            "target": "0x7a9440",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563378",
+            "ins": "mov qword ptr [rbx + 0x10], rax"
+          },
+          {
+            "rva": "0x56337c",
+            "ins": "mov rdx, qword ptr [rip + 0x1034245]"
+          },
+          {
+            "rva": "0x563383",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x563386",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56338b",
+            "ins": "mov dword ptr [rbx + 0x18], eax"
+          },
+          {
+            "rva": "0x56338e",
+            "ins": "mov rdx, qword ptr [rip + 0x103423b]"
+          },
+          {
+            "rva": "0x563395",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x563398",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56339d",
+            "ins": "mov dword ptr [rbx + 0x1c], eax"
+          },
+          {
+            "rva": "0x5633a0",
+            "ins": "lea r8, [rbx + 0x20]"
+          },
+          {
+            "rva": "0x5633a4",
+            "ins": "mov rdx, qword ptr [rip + 0x103422d]"
+          },
+          {
+            "rva": "0x5633ab",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x5633ae",
+            "ins": "call 0x18053f3d0",
+            "target": "0x53f3d0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633b3",
+            "ins": "lea r8, [rbx + 0x21]"
+          },
+          {
+            "rva": "0x5633b7",
+            "ins": "mov rdx, qword ptr [rip + 0x1034222]"
+          },
+          {
+            "rva": "0x5633be",
+            "ins": "mov rcx, rdi"
+          },
+          {
+            "rva": "0x5633c1",
+            "ins": "call 0x18053f3d0",
+            "target": "0x53f3d0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633c6",
+            "ins": "nop "
+          },
+          {
+            "rva": "0x5633c7",
+            "ins": "mov rax, rbx"
+          },
+          {
+            "rva": "0x5633ca",
+            "ins": "add rsp, 0x38"
+          },
+          {
+            "rva": "0x5633ce",
+            "ins": "pop rdi"
+          },
+          {
+            "rva": "0x5633cf",
+            "ins": "pop rsi"
+          },
+          {
+            "rva": "0x5633d0",
+            "ins": "pop rbp"
+          },
+          {
+            "rva": "0x5633d1",
+            "ins": "pop rbx"
+          },
+          {
+            "rva": "0x5633d2",
+            "ins": "ret "
+          },
+          {
+            "rva": "0x5633d3",
+            "ins": "call 0x1800a6ef0",
+            "target": "0xa6ef0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633d8",
+            "ins": "nop "
+          }
+        ],
+        "calls": [
+          {
+            "rva": "0x5632a6",
+            "ins": "call 0x180586c50",
+            "target": "0x586c50",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5632ea",
+            "ins": "call 0x180d3be16",
+            "target": "0xd3be16",
+            "symbol": ""
+          },
+          {
+            "rva": "0x56330e",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563326",
+            "ins": "call 0x1807a9440",
+            "target": "0x7a9440",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563342",
+            "ins": "call 0x180d3be04",
+            "target": "0xd3be04",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563359",
+            "ins": "call qword ptr [rip + 0x9b78c9]",
+            "target": "0xf1ac28",
+            "symbol": "dvacore.dll!?ObjectHasProperty@serialization@dvacore@@YA_NAEBV?$map@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@U?$less@X@2@U?$STLAllocator@U?$pair@$$CBV?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@std@@V?$shared_ptr@Vany@std@@@2@@std@@@allocator@dvacore@@@std@@PEBD@Z"
+          },
+          {
+            "rva": "0x563373",
+            "ins": "call 0x1807a9440",
+            "target": "0x7a9440",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563386",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x563398",
+            "ins": "call 0x18053e8f0",
+            "target": "0x53e8f0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633ae",
+            "ins": "call 0x18053f3d0",
+            "target": "0x53f3d0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633c1",
+            "ins": "call 0x18053f3d0",
+            "target": "0x53f3d0",
+            "symbol": ""
+          },
+          {
+            "rva": "0x5633d3",
+            "ins": "call 0x1800a6ef0",
+            "target": "0xa6ef0",
+            "symbol": ""
+          }
+        ]
+      }
+    ]
+  }
+}

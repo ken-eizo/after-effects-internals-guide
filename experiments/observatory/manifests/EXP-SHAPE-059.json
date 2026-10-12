@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-059",
+  "date": "2026-10-12",
+  "status": "PASS E2-L native built-in command task layout and serialized state across AE2025/26",
+  "evidence": "Native BEE_PE x64 real 48-byte task constructors + MSVC vtable slot2",
+  "results": {
+    "task_cpp": "BEE_NewLayerTask<4>",
+    "allocation": 48,
+    "vtable_offset": 0,
+    "command_context_copy_offset": 8,
+    "command_context_bytes": 32,
+    "layer_kind_offset": 40,
+    "layer_kind_value": 4,
+    "virtual_execute_consumes_kind": true,
+    "alternate_constructor_restores_layer_kind": true,
+    "virtual_state_serialization_AddToObject_calls_at_least": 5,
+    "third_party_native_task_registered": false,
+    "private_calls_executed": 0,
+    "compnodeae_modified": false
+  },
+  "finding": "research/findings/F-VECTOR-059-native-newshape-task4-undo-serializer-memory-layout.md"
+}
