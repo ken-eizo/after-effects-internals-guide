@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP-SHAPE-053",
+  "date": "2026-10-12",
+  "status": "PASS actual user-run AE2026 v2, identical valid rows v1 vs v2",
+  "evidence": "H AE2026 actual report and direct cross-version log comparison",
+  "results": {
+    "index0_was_skipped": true,
+    "effect_count": 1,
+    "param_count": 5,
+    "valid_param_indices": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "valid_param_errors": 0,
+    "arb_pf_type": 11,
+    "arb_stream_type": 7,
+    "unique_ids": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "project_mutation": false,
+    "private_registration": false,
+    "host_native_pen": false,
+    "project_save_reopen": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-053-real-host-v2-index0-repair-proven.md",
+    "datasets/ae-cnl-owned-effect-identity-v2-real-host-verified-20261012.json"
+  ]
+}
