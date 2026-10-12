@@ -1,0 +1,26 @@
+{
+  "experiment_id": "EXP-SHAPE-052",
+  "date": "2026-10-12",
+  "status": "v1 host confirmed index0 assertion; v2 repaired source independently built + verified; v2 host untested",
+  "evidence": "H real AE2026 popup + TEMP TSV, E2-L builds",
+  "results": {
+    "real_AE2026_effect_count": 1,
+    "real_AE2026_param_count": 5,
+    "err_AEGP_GetEffectParamUnionByIndex_0": 3,
+    "err_AEGP_GetNewEffectStreamByIndex_0": 3,
+    "index1_PF_Arbitrary": 11,
+    "index1_AEGP_ARB": 7,
+    "indices_1_through_4_all_success": true,
+    "unique_stream_id_all_zero": true,
+    "private_registration": false,
+    "stream_mutation": false,
+    "v2_skips_zero": true,
+    "v2_independent_build": true,
+    "v2_host_verified": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-052-index0-assertion-real-host-recovery.md",
+    "datasets/ae-cnl-owned-effect-identity-v1-host-error-sanitized-20261012.json",
+    "experiments/vector-shape/native-owned-effect-identity-lab/CNLArchiveIdentity.cpp"
+  ]
+}

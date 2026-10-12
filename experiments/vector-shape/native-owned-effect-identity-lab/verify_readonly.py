@@ -25,7 +25,11 @@ for disallow in ("AEGP_SetStreamValue","AEGP_AddStream(","AEGP_DeleteStream(",
 assert 'Kind { AEGP }' in pipl and 'CodeWin64X86 { "EntryPointFunc" }' in pipl
 assert "CNL Effect Native Stream Identity (Read Only)" in pipl
 assert "CNL Owned Vector Document" in code
-assert "CNL_OwnedEffect_StreamIdentity.tsv" in code
+assert "CNL_OwnedEffect_StreamIdentity_v2.tsv" in code
+assert "for(A_long index=1;index<parameters;++index)" in code
+assert "param_skipped\\t0\\tinput_layer_host_rejects_index_zero" in code
+assert not re.search(r"for\s*\(\s*A_long\s+index\s*=\s*0",code)
+assert "AEGP_GetEffectParamUnionByIndex" in code and "AEGP_GetNewEffectStreamByIndex" in code
 assert "opaque_arb_payload_read\\t0" in code
 assert p.FILE_HEADER.Machine==0x8664
 receipt={"status":"PASS offline x64 PE + source read-only audit; not yet AE-host run",

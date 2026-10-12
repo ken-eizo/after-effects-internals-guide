@@ -1,0 +1,81 @@
+{
+  "run": "AE2026 actual user-run identity probe v1",
+  "source": "real %TEMP% CNL_OwnedEffect_StreamIdentity.tsv",
+  "observed_internal_assertion": "AE error dialogs 5027::56 and 5027::150 param_index out of range",
+  "cause": "both GetEffectParamUnionByIndex and GetNewEffectStreamByIndex on param_index 0 returned A_Err=3",
+  "confirmed_effect_count": 1,
+  "confirmed_param_stream_count": 5,
+  "param_results": [
+    {
+      "index": 0,
+      "pf_type": -1,
+      "pf_error": 3,
+      "aegp_stream_type": 0,
+      "stream_type_error": 0,
+      "unique_stream_id_result": -1,
+      "timevarying": 0,
+      "timevarying_error": 0,
+      "stream_ref_error": 3,
+      "unique_stream_id_error": 0,
+      "match_error": 0
+    },
+    {
+      "index": 1,
+      "pf_type": 11,
+      "pf_error": 0,
+      "aegp_stream_type": 7,
+      "stream_type_error": 0,
+      "unique_stream_id_result": 0,
+      "timevarying": 1,
+      "timevarying_error": 0,
+      "stream_ref_error": 0,
+      "unique_stream_id_error": 0,
+      "match_error": 0
+    },
+    {
+      "index": 2,
+      "pf_type": 1,
+      "pf_error": 0,
+      "aegp_stream_type": 5,
+      "stream_type_error": 0,
+      "unique_stream_id_result": 0,
+      "timevarying": 1,
+      "timevarying_error": 0,
+      "stream_ref_error": 0,
+      "unique_stream_id_error": 0,
+      "match_error": 0
+    },
+    {
+      "index": 3,
+      "pf_type": 5,
+      "pf_error": 0,
+      "aegp_stream_type": 6,
+      "stream_type_error": 0,
+      "unique_stream_id_result": 0,
+      "timevarying": 1,
+      "timevarying_error": 0,
+      "stream_ref_error": 0,
+      "unique_stream_id_error": 0,
+      "match_error": 0
+    },
+    {
+      "index": 4,
+      "pf_type": 4,
+      "pf_error": 0,
+      "aegp_stream_type": 5,
+      "stream_type_error": 0,
+      "unique_stream_id_result": 0,
+      "timevarying": 1,
+      "timevarying_error": 0,
+      "stream_ref_error": 0,
+      "unique_stream_id_error": 0,
+      "match_error": 0
+    }
+  ],
+  "native_opaque_arb_param1_confirmed": true,
+  "all_indices_1_through_4_pass": true,
+  "no_unique_ids_observed_all_supported_returned_zero": true,
+  "project_modified_by_probe": false,
+  "host_ae2026_archive_save_reopen_tested": false,
+  "correction": "v2 skips index 0 entirely; emits param_skipped 0, uses _v2.tsv name"
+}

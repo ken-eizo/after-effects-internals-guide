@@ -15,7 +15,7 @@ SPBasicSuite* basic=nullptr;
 AEGP_PluginID id=0;
 AEGP_Command cmd=0;
 constexpr char kMatch[]="CNL Owned Vector Document";
-constexpr char kTsv[]="CNL_OwnedEffect_StreamIdentity.tsv";
+constexpr char kTsv[]="CNL_OwnedEffect_StreamIdentity_v2.tsv";
 A_Err inspect(){
  AEGP_SuiteHandler s(basic);
  AEGP_LayerH layer=nullptr;
@@ -53,8 +53,14 @@ A_Err inspect(){
     A_long parameters=0;
     const A_Err numErr=s.StreamSuite6()->AEGP_GetEffectNumParamStreams(effect,&parameters);
     fprintf(out,"target_effect\t%ld\t%ld\t%d\n",long(i),long(parameters),int(numErr));
-    if(!numErr&&parameters>=0&&parameters<=64){
-     for(A_long index=0;index<parameters;++index){
+    if(!numErr&&parameters>=1&&parameters<=64){
+     // AE2026 independently confirmed index 0 causes internal param_index
+     // validation failure for BOTH metadata and StreamRef acquisition.
+     // This is the input layer, not one of the effect-owned data params.
+     // Do not call either host API for param_index=0, even though the
+     // SDK header describes the broad 0..N-1 range as including input.
+     fprintf(out,"param_skipped\t0\tinput_layer_host_rejects_index_zero\n");
+     for(A_long index=1;index<parameters;++index){
       PF_ParamType pfType=PF_Param_RESERVED;
       PF_ParamDefUnion metadata{};
       const auto pErr=s.EffectSuite5()->AEGP_GetEffectParamUnionByIndex(
@@ -88,7 +94,7 @@ A_Err inspect(){
  fprintf(out,"matched_CNL_effects\t%d\nprivate_registry_invoked\t0\nmutations\t0\nopaque_arb_payload_read\t0\n",matches);
  fclose(out);
  s.UtilitySuite3()->AEGP_ReportInfo(id,
-   "CNL Native Effect Identity: READ ONLY report in TEMP\\CNL_OwnedEffect_StreamIdentity.tsv");
+   "CNL Native Effect Identity v2: READ ONLY report in TEMP\\CNL_OwnedEffect_StreamIdentity_v2.tsv");
  return A_Err_NONE;
 }
 A_Err onCommand(AEGP_GlobalRefcon,AEGP_CommandRefcon,
