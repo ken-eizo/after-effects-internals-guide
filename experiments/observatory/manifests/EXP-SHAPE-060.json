@@ -1,0 +1,32 @@
+{
+  "experiment_id": "EXP-SHAPE-060",
+  "date": "2026-10-12",
+  "status": "PASS built AEGP x64 native Shape scene prototype; AE-host native layer not implemented",
+  "evidence": "Two independent MSVC Windows x64 AEX builds + CTest + pefile import/export verification",
+  "result": {
+    "independent_cpp_shape_runtime": true,
+    "compiled_aegp_plugin": true,
+    "source_path": "D:\\Developer\\ShapeLayerAE\\labs\\native_shape_layer_prototype",
+    "binary_path": "D:\\Developer\\ShapeLayerAE\\build\\native_shape_layer_prototype\\Release\\CNLNativeShapeLayer.aex",
+    "binary_sha256": "f0b21da851aea656aff3434b9d2d45a166188ba3e93b53aa4400474f11d273c7",
+    "archived_source_build_sha256": "ef40680fc67e7484acb15a55903be3a7816f38772777da3937df45dd7127d15e",
+    "tests_direct": "1/1 PASS",
+    "tests_archived": "1/1 PASS",
+    "pipl": true,
+    "public_aegp_entrypoint": true,
+    "CNL_exported_ABI_functions": 37,
+    "private_BEE_TDB_FLT_imports": false,
+    "nested_contents": true,
+    "Bezier_editor": true,
+    "undo_redo": true,
+    "save_archive": true,
+    "svg_vector_output": true,
+    "Adobe_native_layer_registered": false,
+    "Adobe_native_Contents": false,
+    "Adobe_Pen_connected": false,
+    "Adobe_VectorArt_connected": false,
+    "AE_gui_ran": false,
+    "CompNodeAE_modified": false
+  },
+  "finding": "research/findings/F-VECTOR-060-compiled-native-cnl-shape-runtime-aex-bridge-open.md"
+}
