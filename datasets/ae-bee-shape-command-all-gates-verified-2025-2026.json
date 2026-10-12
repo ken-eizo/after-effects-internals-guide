@@ -1,0 +1,36 @@
+{
+  "status": "PASS offline native x64 code + registered command table validation; external plugin NOT enabled",
+  "versions": {
+    "2025": {
+      "entry_count": 155,
+      "active_callback_pairs": 149,
+      "table_rva": "0xfec250",
+      "item_stride_bytes": 32,
+      "callback_ptr_plus8_and_plus16": true,
+      "checked_cb_ptr_plus8_called_indirectly": true,
+      "new_vector_command_has_direct_table_pointer": false,
+      "direct_shape_links_in_table_handlers": 0,
+      "shape_creation_and_attach_in_same_native_helper": true,
+      "undo_BEE_StartGroup_DoCommand_EndGroup_order_verified": true,
+      "BEE_DoCommand_forwards_to_shared_executor": true,
+      "indirect_command_router_to_specific_shape_constructor_proven": false,
+      "private_native_calls_executed": 0
+    },
+    "2026": {
+      "entry_count": 160,
+      "active_callback_pairs": 155,
+      "table_rva": "0x104c530",
+      "item_stride_bytes": 32,
+      "callback_ptr_plus8_and_plus16": true,
+      "checked_cb_ptr_plus8_called_indirectly": true,
+      "new_vector_command_has_direct_table_pointer": false,
+      "direct_shape_links_in_table_handlers": 0,
+      "shape_creation_and_attach_in_same_native_helper": true,
+      "undo_BEE_StartGroup_DoCommand_EndGroup_order_verified": true,
+      "BEE_DoCommand_forwards_to_shared_executor": true,
+      "indirect_command_router_to_specific_shape_constructor_proven": false,
+      "private_native_calls_executed": 0
+    }
+  },
+  "scope": "Type-4 Shape creation + attached owner and undo wrapper each proven. The final indirect BEE_DoCommand-to-create helper edge not yet resolved."
+}

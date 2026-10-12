@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-SHAPE-056",
+  "date": "2026-10-12",
+  "status": "PASS native Shape Undo + creator/Comp attach + command table cross-version; indirect dispatch edge open",
+  "evidence": "E2-L actual PE BEE.dll AE 2025 and 2026",
+  "result": {
+    "BEE_new_shape_undo_group": true,
+    "BEE_shape_creator_then_comp_attach": true,
+    "command_table_stride_bytes": 32,
+    "command_table_entries_2025": 155,
+    "command_table_entries_2026": 160,
+    "occupied_callback_pairs_2025": 149,
+    "occupied_callback_pairs_2026": 155,
+    "command_table_has_direct_BEE_CmdNewVectorLayer_pointer": false,
+    "handler_direct_shape_creation_reference_proven": false,
+    "external_native_layer_registered": false,
+    "Adobe_private_runtime_calls": 0,
+    "CompNodeAE_edited": false
+  },
+  "finding": "research/findings/F-VECTOR-056-native-shape-layer-command-registration-dispatch-undo.md",
+  "scripts": [
+    "verify_new_shape_undo_and_comp_attach.py",
+    "trace_bee_command_undo_dispatch_internal.py",
+    "audit_bee_command_executor_core.py",
+    "inspect_bee_native_command_table_entries.py",
+    "find_bee_command_table_shape_handler_links.py",
+    "verify_shape_native_undo_command_table.py"
+  ]
+}

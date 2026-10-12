@@ -1,0 +1,79 @@
+{
+  "evidence": "E2-L disassembled BEE static native command entry +8/+16 function pointers with direct native calls; no runtime calls",
+  "versions": {
+    "2025": {
+      "direct_native_shape_or_command_handlers": [],
+      "sample_handler_facts": [
+        {
+          "cmd_idx": 1,
+          "handler_rva": "0x6434f0",
+          "native_function_range": [
+            "0x6434f0",
+            "0x64353b"
+          ]
+        },
+        {
+          "cmd_idx": 15,
+          "handler_rva": "0x643b60",
+          "native_function_range": [
+            "0x643b60",
+            "0x643bab"
+          ]
+        },
+        {
+          "cmd_idx": 45,
+          "handler_rva": "0x644d00",
+          "native_function_range": [
+            "0x644d00",
+            "0x644d4b"
+          ]
+        },
+        {
+          "cmd_idx": 100,
+          "handler_rva": "0x646b80",
+          "native_function_range": [
+            "0x646b80",
+            "0x646bcb"
+          ]
+        }
+      ]
+    },
+    "2026": {
+      "direct_native_shape_or_command_handlers": [],
+      "sample_handler_facts": [
+        {
+          "cmd_idx": 1,
+          "handler_rva": "0x65d260",
+          "native_function_range": [
+            "0x65d260",
+            "0x65d2ab"
+          ]
+        },
+        {
+          "cmd_idx": 15,
+          "handler_rva": "0x65d8d0",
+          "native_function_range": [
+            "0x65d8d0",
+            "0x65d91b"
+          ]
+        },
+        {
+          "cmd_idx": 45,
+          "handler_rva": "0x65ea70",
+          "native_function_range": [
+            "0x65ea70",
+            "0x65eabb"
+          ]
+        },
+        {
+          "cmd_idx": 100,
+          "handler_rva": "0x6608d0",
+          "native_function_range": [
+            "0x6608d0",
+            "0x660939"
+          ]
+        }
+      ]
+    }
+  }
+}

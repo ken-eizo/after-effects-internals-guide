@@ -1,0 +1,201 @@
+{
+  "evidence": "E2-L BEE PE actual raw + Capstone verified direct E8/E9 references for native Shape-layer construction and New Shape command",
+  "versions": {
+    "2025": {
+      "create_then_attach": {
+        "target_rva": "0x3a7ca0",
+        "raw_ref_count": 1,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x3ac95b",
+            "containing_function": "0x3ac290",
+            "containing_native_export": "",
+            "kind": "call"
+          }
+        ]
+      },
+      "new_shape_command": {
+        "target_rva": "0x65cdd0",
+        "raw_ref_count": 2,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x25e950",
+            "containing_function": "0x25e620",
+            "containing_native_export": "",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x5a7000",
+            "containing_function": "0x5a6c80",
+            "containing_native_export": "",
+            "kind": "call"
+          }
+        ]
+      },
+      "shared_new_layer_tail": {
+        "target_rva": "0x667610",
+        "raw_ref_count": 17,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x6594d4",
+            "containing_function": "0x6585b0",
+            "containing_native_export": "?BEE_CmdCompify@@YAHPEAVBEE_Selection@@W4BEE_CompifyType@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_NPEAPEAVBEE_Item@@3@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x659df9",
+            "containing_function": "0x6585b0",
+            "containing_native_export": "?BEE_CmdCompify@@YAHPEAVBEE_Selection@@W4BEE_CompifyType@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_NPEAPEAVBEE_Item@@3@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x65cd83",
+            "containing_function": "0x65ccd0",
+            "containing_native_export": "?BEE_CmdNewSolidItemAndLayer@@YAPEAVBEE_Layer@@PEBDHHPEBUM_Ratio@@PEBVPF_PixelFloat@@PEAVBEE_CompItem@@@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x65cb80",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cb92",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cba4",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cbb6",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cbc8",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cbda",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x65cbec",
+            "containing_function": "0x65cb40",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          }
+        ]
+      }
+    },
+    "2026": {
+      "create_then_attach": {
+        "target_rva": "0x3b4110",
+        "raw_ref_count": 1,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x3b8d37",
+            "containing_function": "0x3b86a0",
+            "containing_native_export": "",
+            "kind": "call"
+          }
+        ]
+      },
+      "new_shape_command": {
+        "target_rva": "0x6783e0",
+        "raw_ref_count": 2,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x269679",
+            "containing_function": "0x269340",
+            "containing_native_export": "",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x5c5aaa",
+            "containing_function": "0x5c5740",
+            "containing_native_export": "",
+            "kind": "call"
+          }
+        ]
+      },
+      "shared_new_layer_tail": {
+        "target_rva": "0x682f90",
+        "raw_ref_count": 17,
+        "verified_x64_instruction_boundary_refs": [
+          {
+            "caller_rva": "0x6748ab",
+            "containing_function": "0x673810",
+            "containing_native_export": "?BEE_CmdCompify@@YAHPEAVBEE_Selection@@W4BEE_CompifyType@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_NPEAPEAVBEE_Item@@3@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x675345",
+            "containing_function": "0x673810",
+            "containing_native_export": "?BEE_CmdCompify@@YAHPEAVBEE_Selection@@W4BEE_CompifyType@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@_NPEAPEAVBEE_Item@@3@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x6783a4",
+            "containing_function": "0x678300",
+            "containing_native_export": "?BEE_CmdNewSolidItemAndLayer@@YAPEAVBEE_Layer@@PEBDHHPEBUM_Ratio@@PEBVPF_PixelFloat@@PEAVBEE_CompItem@@@Z",
+            "kind": "call"
+          },
+          {
+            "caller_rva": "0x6781a2",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x6781b4",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x6781c6",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x6781d8",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x6781ea",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x6781fc",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          },
+          {
+            "caller_rva": "0x67820e",
+            "containing_function": "0x678160",
+            "containing_native_export": "?BEE_CmdNewLayer@@YAXPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z",
+            "kind": "jmp"
+          }
+        ]
+      }
+    }
+  }
+}

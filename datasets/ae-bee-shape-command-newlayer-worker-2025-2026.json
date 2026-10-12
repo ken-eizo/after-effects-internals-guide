@@ -1,0 +1,997 @@
+{
+  "evidence": "E2-L native BEE CmdNewVectorLayer forwarding to shared new-layer routine, static bounded disassembly only",
+  "versions": {
+    "2025": {
+      "function_range": [
+        "0x667610",
+        "0x66775e"
+      ],
+      "calls": [
+        {
+          "at": "0x667643",
+          "asm": "call qword ptr [rip + 0x85818f]",
+          "dst_rva": "0xebf7d8",
+          "export": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "at": "0x667651",
+          "asm": "call qword ptr [rip + 0x858171]",
+          "dst_rva": "0xebf7c8",
+          "export": "U.dll!?U_MBToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+        },
+        {
+          "at": "0x66765d",
+          "asm": "call 0x180407390",
+          "dst_rva": "0x407390",
+          "export": ""
+        },
+        {
+          "at": "0x66766b",
+          "asm": "call 0x18067b050",
+          "dst_rva": "0x67b050",
+          "export": "?BEE_StartGroup@@YAHAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@F@Z"
+        },
+        {
+          "at": "0x66768a",
+          "asm": "call qword ptr [rip + 0x859b40]",
+          "dst_rva": "0xec11d0",
+          "export": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+        },
+        {
+          "at": "0x66769e",
+          "asm": "call 0x18064ba30",
+          "dst_rva": "0x64ba30",
+          "export": "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z"
+        },
+        {
+          "at": "0x6676ad",
+          "asm": "call 0x18030cdc0",
+          "dst_rva": "0x30cdc0",
+          "export": ""
+        },
+        {
+          "at": "0x6676b9",
+          "asm": "call 0x18030cc70",
+          "dst_rva": "0x30cc70",
+          "export": ""
+        },
+        {
+          "at": "0x6676c9",
+          "asm": "call 0x180407390",
+          "dst_rva": "0x407390",
+          "export": ""
+        },
+        {
+          "at": "0x6676d1",
+          "asm": "call 0x18067ac80",
+          "dst_rva": "0x67ac80",
+          "export": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+        },
+        {
+          "at": "0x6676e2",
+          "asm": "call 0x180ce9610",
+          "dst_rva": "0xce9610",
+          "export": ""
+        },
+        {
+          "at": "0x667700",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667716",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x66772c",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667742",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667758",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        }
+      ],
+      "first_90": [
+        {
+          "at": "0x667610",
+          "asm": "push rbx"
+        },
+        {
+          "at": "0x667612",
+          "asm": "push rbp"
+        },
+        {
+          "at": "0x667613",
+          "asm": "push rsi"
+        },
+        {
+          "at": "0x667614",
+          "asm": "push rdi"
+        },
+        {
+          "at": "0x667615",
+          "asm": "sub rsp, 0x58"
+        },
+        {
+          "at": "0x667619",
+          "asm": "mov rax, qword ptr [rip + 0xeb2120]"
+        },
+        {
+          "at": "0x667620",
+          "asm": "xor rax, rsp"
+        },
+        {
+          "at": "0x667623",
+          "asm": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "at": "0x667628",
+          "asm": "mov rsi, r9"
+        },
+        {
+          "at": "0x66762b",
+          "asm": "mov eax, r8d"
+        },
+        {
+          "at": "0x66762e",
+          "asm": "movzx ebp, dx"
+        },
+        {
+          "at": "0x667631",
+          "asm": "mov rdi, rcx"
+        },
+        {
+          "at": "0x667634",
+          "asm": "xor r8d, r8d"
+        },
+        {
+          "at": "0x667637",
+          "asm": "xor r9d, r9d"
+        },
+        {
+          "at": "0x66763a",
+          "asm": "mov edx, eax"
+        },
+        {
+          "at": "0x66763c",
+          "asm": "mov rcx, qword ptr [rip + 0xeab3fd]"
+        },
+        {
+          "at": "0x667643",
+          "asm": "call qword ptr [rip + 0x85818f]",
+          "dst_rva": "0xebf7d8",
+          "export": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "at": "0x667649",
+          "asm": "mov rdx, rax"
+        },
+        {
+          "at": "0x66764c",
+          "asm": "lea rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x667651",
+          "asm": "call qword ptr [rip + 0x858171]",
+          "dst_rva": "0xebf7c8",
+          "export": "U.dll!?U_MBToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+        },
+        {
+          "at": "0x667657",
+          "asm": "mov rbx, rax"
+        },
+        {
+          "at": "0x66765a",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x66765d",
+          "asm": "call 0x180407390",
+          "dst_rva": "0x407390",
+          "export": ""
+        },
+        {
+          "at": "0x667662",
+          "asm": "xor r8d, r8d"
+        },
+        {
+          "at": "0x667665",
+          "asm": "mov rdx, rbx"
+        },
+        {
+          "at": "0x667668",
+          "asm": "mov rcx, rax"
+        },
+        {
+          "at": "0x66766b",
+          "asm": "call 0x18067b050",
+          "dst_rva": "0x67b050",
+          "export": "?BEE_StartGroup@@YAHAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@F@Z"
+        },
+        {
+          "at": "0x667670",
+          "asm": "mov ebx, eax"
+        },
+        {
+          "at": "0x667672",
+          "asm": "mov rdx, qword ptr [rsp + 0x40]"
+        },
+        {
+          "at": "0x667677",
+          "asm": "cmp rdx, 7"
+        },
+        {
+          "at": "0x66767b",
+          "asm": "jbe 0x180667691"
+        },
+        {
+          "at": "0x66767d",
+          "asm": "lea rdx, [rdx*2 + 2]"
+        },
+        {
+          "at": "0x667685",
+          "asm": "mov rcx, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x66768a",
+          "asm": "call qword ptr [rip + 0x859b40]",
+          "dst_rva": "0xec11d0",
+          "export": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+        },
+        {
+          "at": "0x667690",
+          "asm": "nop "
+        },
+        {
+          "at": "0x667691",
+          "asm": "test ebx, ebx"
+        },
+        {
+          "at": "0x667693",
+          "asm": "jne 0x180667706"
+        },
+        {
+          "at": "0x667695",
+          "asm": "mov r8, rsi"
+        },
+        {
+          "at": "0x667698",
+          "asm": "movzx edx, bp"
+        },
+        {
+          "at": "0x66769b",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x66769e",
+          "asm": "call 0x18064ba30",
+          "dst_rva": "0x64ba30",
+          "export": "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z"
+        },
+        {
+          "at": "0x6676a3",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x6676a5",
+          "asm": "jne 0x18066771c"
+        },
+        {
+          "at": "0x6676a7",
+          "asm": "mov rbx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x6676aa",
+          "asm": "mov rcx, rbx"
+        },
+        {
+          "at": "0x6676ad",
+          "asm": "call 0x18030cdc0",
+          "dst_rva": "0x30cdc0",
+          "export": ""
+        },
+        {
+          "at": "0x6676b2",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x6676b4",
+          "asm": "jne 0x180667732"
+        },
+        {
+          "at": "0x6676b6",
+          "asm": "mov rcx, rbx"
+        },
+        {
+          "at": "0x6676b9",
+          "asm": "call 0x18030cc70",
+          "dst_rva": "0x30cc70",
+          "export": ""
+        },
+        {
+          "at": "0x6676be",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x6676c0",
+          "asm": "jne 0x180667748"
+        },
+        {
+          "at": "0x6676c6",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x6676c9",
+          "asm": "call 0x180407390",
+          "dst_rva": "0x407390",
+          "export": ""
+        },
+        {
+          "at": "0x6676ce",
+          "asm": "mov rcx, rax"
+        },
+        {
+          "at": "0x6676d1",
+          "asm": "call 0x18067ac80",
+          "dst_rva": "0x67ac80",
+          "export": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+        },
+        {
+          "at": "0x6676d6",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x6676d8",
+          "asm": "jne 0x1806676f0"
+        },
+        {
+          "at": "0x6676da",
+          "asm": "mov rcx, qword ptr [rsp + 0x48]"
+        },
+        {
+          "at": "0x6676df",
+          "asm": "xor rcx, rsp"
+        },
+        {
+          "at": "0x6676e2",
+          "asm": "call 0x180ce9610",
+          "dst_rva": "0xce9610",
+          "export": ""
+        },
+        {
+          "at": "0x6676e7",
+          "asm": "add rsp, 0x58"
+        },
+        {
+          "at": "0x6676eb",
+          "asm": "pop rdi"
+        },
+        {
+          "at": "0x6676ec",
+          "asm": "pop rsi"
+        },
+        {
+          "at": "0x6676ed",
+          "asm": "pop rbp"
+        },
+        {
+          "at": "0x6676ee",
+          "asm": "pop rbx"
+        },
+        {
+          "at": "0x6676ef",
+          "asm": "ret "
+        },
+        {
+          "at": "0x6676f0",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x6676f4",
+          "asm": "lea rdx, [rip + 0xd17f0d]"
+        },
+        {
+          "at": "0x6676fb",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x667700",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667705",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x667706",
+          "asm": "mov dword ptr [rsp + 0x20], ebx"
+        },
+        {
+          "at": "0x66770a",
+          "asm": "lea rdx, [rip + 0xd17ef7]"
+        },
+        {
+          "at": "0x667711",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x667716",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x66771b",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x66771c",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x667720",
+          "asm": "lea rdx, [rip + 0xd17ee1]"
+        },
+        {
+          "at": "0x667727",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x66772c",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667731",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x667732",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x667736",
+          "asm": "lea rdx, [rip + 0xd17ecb]"
+        },
+        {
+          "at": "0x66773d",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x667742",
+          "asm": "call 0x180ceacc8",
+          "dst_rva": "0xceacc8",
+          "export": ""
+        },
+        {
+          "at": "0x667747",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x667748",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x66774c",
+          "asm": "lea rdx, [rip + 0xd17eb5]"
+        },
+        {
+          "at": "0x667753",
+          "asm": "lea rcx, [rsp + 0x20]"
+        }
+      ]
+    },
+    "2026": {
+      "function_range": [
+        "0x682f90",
+        "0x6830de"
+      ],
+      "calls": [
+        {
+          "at": "0x682fc3",
+          "asm": "call qword ptr [rip + 0x89597f]",
+          "dst_rva": "0xf18948",
+          "export": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "at": "0x682fd1",
+          "asm": "call qword ptr [rip + 0x895961]",
+          "dst_rva": "0xf18938",
+          "export": "U.dll!?U_MBToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+        },
+        {
+          "at": "0x682fdd",
+          "asm": "call 0x180417630",
+          "dst_rva": "0x417630",
+          "export": ""
+        },
+        {
+          "at": "0x682feb",
+          "asm": "call 0x1806970e0",
+          "dst_rva": "0x6970e0",
+          "export": "?BEE_StartGroup@@YAHAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@F@Z"
+        },
+        {
+          "at": "0x68300a",
+          "asm": "call qword ptr [rip + 0x8975e8]",
+          "dst_rva": "0xf1a5f8",
+          "export": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+        },
+        {
+          "at": "0x68301e",
+          "asm": "call 0x180666330",
+          "dst_rva": "0x666330",
+          "export": "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z"
+        },
+        {
+          "at": "0x68302d",
+          "asm": "call 0x180315f80",
+          "dst_rva": "0x315f80",
+          "export": ""
+        },
+        {
+          "at": "0x683039",
+          "asm": "call 0x180315e20",
+          "dst_rva": "0x315e20",
+          "export": ""
+        },
+        {
+          "at": "0x683049",
+          "asm": "call 0x180417630",
+          "dst_rva": "0x417630",
+          "export": ""
+        },
+        {
+          "at": "0x683051",
+          "asm": "call 0x180696d20",
+          "dst_rva": "0x696d20",
+          "export": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+        },
+        {
+          "at": "0x683062",
+          "asm": "call 0x180d3ac30",
+          "dst_rva": "0xd3ac30",
+          "export": ""
+        },
+        {
+          "at": "0x683080",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x683096",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x6830ac",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x6830c2",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x6830d8",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        }
+      ],
+      "first_90": [
+        {
+          "at": "0x682f90",
+          "asm": "push rbx"
+        },
+        {
+          "at": "0x682f92",
+          "asm": "push rbp"
+        },
+        {
+          "at": "0x682f93",
+          "asm": "push rsi"
+        },
+        {
+          "at": "0x682f94",
+          "asm": "push rdi"
+        },
+        {
+          "at": "0x682f95",
+          "asm": "sub rsp, 0x58"
+        },
+        {
+          "at": "0x682f99",
+          "asm": "mov rax, qword ptr [rip + 0xf23960]"
+        },
+        {
+          "at": "0x682fa0",
+          "asm": "xor rax, rsp"
+        },
+        {
+          "at": "0x682fa3",
+          "asm": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "at": "0x682fa8",
+          "asm": "mov rsi, r9"
+        },
+        {
+          "at": "0x682fab",
+          "asm": "mov eax, r8d"
+        },
+        {
+          "at": "0x682fae",
+          "asm": "movzx ebp, dx"
+        },
+        {
+          "at": "0x682fb1",
+          "asm": "mov rdi, rcx"
+        },
+        {
+          "at": "0x682fb4",
+          "asm": "xor r8d, r8d"
+        },
+        {
+          "at": "0x682fb7",
+          "asm": "xor r9d, r9d"
+        },
+        {
+          "at": "0x682fba",
+          "asm": "mov edx, eax"
+        },
+        {
+          "at": "0x682fbc",
+          "asm": "mov rcx, qword ptr [rip + 0xf1cc1d]"
+        },
+        {
+          "at": "0x682fc3",
+          "asm": "call qword ptr [rip + 0x89597f]",
+          "dst_rva": "0xf18948",
+          "export": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "at": "0x682fc9",
+          "asm": "mov rdx, rax"
+        },
+        {
+          "at": "0x682fcc",
+          "asm": "lea rcx, [rsp + 0x28]"
+        },
+        {
+          "at": "0x682fd1",
+          "asm": "call qword ptr [rip + 0x895961]",
+          "dst_rva": "0xf18938",
+          "export": "U.dll!?U_MBToUTF16String@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@PEBD@Z"
+        },
+        {
+          "at": "0x682fd7",
+          "asm": "mov rbx, rax"
+        },
+        {
+          "at": "0x682fda",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x682fdd",
+          "asm": "call 0x180417630",
+          "dst_rva": "0x417630",
+          "export": ""
+        },
+        {
+          "at": "0x682fe2",
+          "asm": "xor r8d, r8d"
+        },
+        {
+          "at": "0x682fe5",
+          "asm": "mov rdx, rbx"
+        },
+        {
+          "at": "0x682fe8",
+          "asm": "mov rcx, rax"
+        },
+        {
+          "at": "0x682feb",
+          "asm": "call 0x1806970e0",
+          "dst_rva": "0x6970e0",
+          "export": "?BEE_StartGroup@@YAHAEAVBEE_UndoContext@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@F@Z"
+        },
+        {
+          "at": "0x682ff0",
+          "asm": "mov ebx, eax"
+        },
+        {
+          "at": "0x682ff2",
+          "asm": "mov rdx, qword ptr [rsp + 0x40]"
+        },
+        {
+          "at": "0x682ff7",
+          "asm": "cmp rdx, 7"
+        },
+        {
+          "at": "0x682ffb",
+          "asm": "jbe 0x180683011"
+        },
+        {
+          "at": "0x682ffd",
+          "asm": "lea rdx, [rdx*2 + 2]"
+        },
+        {
+          "at": "0x683005",
+          "asm": "mov rcx, qword ptr [rsp + 0x28]"
+        },
+        {
+          "at": "0x68300a",
+          "asm": "call qword ptr [rip + 0x8975e8]",
+          "dst_rva": "0xf1a5f8",
+          "export": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+        },
+        {
+          "at": "0x683010",
+          "asm": "nop "
+        },
+        {
+          "at": "0x683011",
+          "asm": "test ebx, ebx"
+        },
+        {
+          "at": "0x683013",
+          "asm": "jne 0x180683086"
+        },
+        {
+          "at": "0x683015",
+          "asm": "mov r8, rsi"
+        },
+        {
+          "at": "0x683018",
+          "asm": "movzx edx, bp"
+        },
+        {
+          "at": "0x68301b",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x68301e",
+          "asm": "call 0x180666330",
+          "dst_rva": "0x666330",
+          "export": "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z"
+        },
+        {
+          "at": "0x683023",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x683025",
+          "asm": "jne 0x18068309c"
+        },
+        {
+          "at": "0x683027",
+          "asm": "mov rbx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x68302a",
+          "asm": "mov rcx, rbx"
+        },
+        {
+          "at": "0x68302d",
+          "asm": "call 0x180315f80",
+          "dst_rva": "0x315f80",
+          "export": ""
+        },
+        {
+          "at": "0x683032",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x683034",
+          "asm": "jne 0x1806830b2"
+        },
+        {
+          "at": "0x683036",
+          "asm": "mov rcx, rbx"
+        },
+        {
+          "at": "0x683039",
+          "asm": "call 0x180315e20",
+          "dst_rva": "0x315e20",
+          "export": ""
+        },
+        {
+          "at": "0x68303e",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x683040",
+          "asm": "jne 0x1806830c8"
+        },
+        {
+          "at": "0x683046",
+          "asm": "mov rcx, rdi"
+        },
+        {
+          "at": "0x683049",
+          "asm": "call 0x180417630",
+          "dst_rva": "0x417630",
+          "export": ""
+        },
+        {
+          "at": "0x68304e",
+          "asm": "mov rcx, rax"
+        },
+        {
+          "at": "0x683051",
+          "asm": "call 0x180696d20",
+          "dst_rva": "0x696d20",
+          "export": "?BEE_EndGroup@@YAHAEAVBEE_UndoContext@@@Z"
+        },
+        {
+          "at": "0x683056",
+          "asm": "test eax, eax"
+        },
+        {
+          "at": "0x683058",
+          "asm": "jne 0x180683070"
+        },
+        {
+          "at": "0x68305a",
+          "asm": "mov rcx, qword ptr [rsp + 0x48]"
+        },
+        {
+          "at": "0x68305f",
+          "asm": "xor rcx, rsp"
+        },
+        {
+          "at": "0x683062",
+          "asm": "call 0x180d3ac30",
+          "dst_rva": "0xd3ac30",
+          "export": ""
+        },
+        {
+          "at": "0x683067",
+          "asm": "add rsp, 0x58"
+        },
+        {
+          "at": "0x68306b",
+          "asm": "pop rdi"
+        },
+        {
+          "at": "0x68306c",
+          "asm": "pop rsi"
+        },
+        {
+          "at": "0x68306d",
+          "asm": "pop rbp"
+        },
+        {
+          "at": "0x68306e",
+          "asm": "pop rbx"
+        },
+        {
+          "at": "0x68306f",
+          "asm": "ret "
+        },
+        {
+          "at": "0x683070",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x683074",
+          "asm": "lea rdx, [rip + 0xd7833d]"
+        },
+        {
+          "at": "0x68307b",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x683080",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x683085",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x683086",
+          "asm": "mov dword ptr [rsp + 0x20], ebx"
+        },
+        {
+          "at": "0x68308a",
+          "asm": "lea rdx, [rip + 0xd78327]"
+        },
+        {
+          "at": "0x683091",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x683096",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x68309b",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x68309c",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x6830a0",
+          "asm": "lea rdx, [rip + 0xd78311]"
+        },
+        {
+          "at": "0x6830a7",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x6830ac",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x6830b1",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x6830b2",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x6830b6",
+          "asm": "lea rdx, [rip + 0xd782fb]"
+        },
+        {
+          "at": "0x6830bd",
+          "asm": "lea rcx, [rsp + 0x20]"
+        },
+        {
+          "at": "0x6830c2",
+          "asm": "call 0x180d3bdf8",
+          "dst_rva": "0xd3bdf8",
+          "export": ""
+        },
+        {
+          "at": "0x6830c7",
+          "asm": "int3 "
+        },
+        {
+          "at": "0x6830c8",
+          "asm": "mov dword ptr [rsp + 0x20], eax"
+        },
+        {
+          "at": "0x6830cc",
+          "asm": "lea rdx, [rip + 0xd782e5]"
+        },
+        {
+          "at": "0x6830d3",
+          "asm": "lea rcx, [rsp + 0x20]"
+        }
+      ]
+    }
+  }
+}

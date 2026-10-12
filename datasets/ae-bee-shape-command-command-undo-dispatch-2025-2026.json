@@ -1,0 +1,695 @@
+{
+  "evidence": "E2-L native BEE_DoCommand C++ overloads bounded x64 code, Adobe DLL never executed",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "entrypoints": {
+        "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z": {
+          "entry_rva": "0x64ba20",
+          "pdata": [
+            "0x64ba20",
+            "0x64ba98"
+          ],
+          "calls": [
+            {
+              "at": "0x64ba23",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba55",
+              "asm": "call 0x180407390",
+              "target": "0x407390",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba70",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            }
+          ],
+          "instructions": [
+            {
+              "at": "0x64ba20",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x64ba23",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba28",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba29",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2a",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2b",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2c",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2d",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2e",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba2f",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba30",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "at": "0x64ba35",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x64ba36",
+              "asm": "sub rsp, 0x20"
+            },
+            {
+              "at": "0x64ba3a",
+              "asm": "mov rbx, r8"
+            },
+            {
+              "at": "0x64ba3d",
+              "asm": "movzx edi, dx"
+            },
+            {
+              "at": "0x64ba40",
+              "asm": "test rcx, rcx"
+            },
+            {
+              "at": "0x64ba43",
+              "asm": "jne 0x18064ba55"
+            },
+            {
+              "at": "0x64ba45",
+              "asm": "mov eax, 3"
+            },
+            {
+              "at": "0x64ba4a",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x64ba4f",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x64ba53",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x64ba54",
+              "asm": "ret "
+            },
+            {
+              "at": "0x64ba55",
+              "asm": "call 0x180407390",
+              "target": "0x407390",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba5a",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x64ba5d",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "at": "0x64ba60",
+              "asm": "movzx edx, di"
+            },
+            {
+              "at": "0x64ba63",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "at": "0x64ba66",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x64ba6b",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x64ba6f",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x64ba70",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba75",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba76",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba77",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba78",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba79",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7a",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7b",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7c",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7d",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7e",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba7f",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x64ba80",
+              "asm": "mov qword ptr [rsp + 0x20], rbx"
+            },
+            {
+              "at": "0x64ba85",
+              "asm": "push rsi"
+            },
+            {
+              "at": "0x64ba86",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x64ba87",
+              "asm": "push r14"
+            },
+            {
+              "at": "0x64ba89",
+              "asm": "sub rsp, 0x1f0"
+            },
+            {
+              "at": "0x64ba90",
+              "asm": "mov rax, qword ptr [rip + 0xecdca9]"
+            }
+          ]
+        },
+        "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z": {
+          "entry_rva": "0x64ba30",
+          "pdata": [
+            "0x64ba30",
+            "0x64ba75"
+          ],
+          "calls": [
+            {
+              "at": "0x64ba55",
+              "asm": "call 0x180407390",
+              "target": "0x407390",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba70",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            }
+          ],
+          "instructions": [
+            {
+              "at": "0x64ba30",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "at": "0x64ba35",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x64ba36",
+              "asm": "sub rsp, 0x20"
+            },
+            {
+              "at": "0x64ba3a",
+              "asm": "mov rbx, r8"
+            },
+            {
+              "at": "0x64ba3d",
+              "asm": "movzx edi, dx"
+            },
+            {
+              "at": "0x64ba40",
+              "asm": "test rcx, rcx"
+            },
+            {
+              "at": "0x64ba43",
+              "asm": "jne 0x18064ba55"
+            },
+            {
+              "at": "0x64ba45",
+              "asm": "mov eax, 3"
+            },
+            {
+              "at": "0x64ba4a",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x64ba4f",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x64ba53",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x64ba54",
+              "asm": "ret "
+            },
+            {
+              "at": "0x64ba55",
+              "asm": "call 0x180407390",
+              "target": "0x407390",
+              "symbol": ""
+            },
+            {
+              "at": "0x64ba5a",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x64ba5d",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "at": "0x64ba60",
+              "asm": "movzx edx, di"
+            },
+            {
+              "at": "0x64ba63",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "at": "0x64ba66",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x64ba6b",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x64ba6f",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x64ba70",
+              "asm": "jmp 0x18064eb80",
+              "target": "0x64eb80",
+              "symbol": ""
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "entrypoints": {
+        "?BEE_DoCommand@@YAHAEAVBEE_UndoContext@@FPEAUBEE_CommandInfo@@@Z": {
+          "entry_rva": "0x666320",
+          "pdata": [
+            "0x666320",
+            "0x666398"
+          ],
+          "calls": [
+            {
+              "at": "0x666323",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            },
+            {
+              "at": "0x666355",
+              "asm": "call 0x180417630",
+              "target": "0x417630",
+              "symbol": ""
+            },
+            {
+              "at": "0x666370",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            }
+          ],
+          "instructions": [
+            {
+              "at": "0x666320",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x666323",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            },
+            {
+              "at": "0x666328",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666329",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632a",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632b",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632c",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632d",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632e",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66632f",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666330",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "at": "0x666335",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x666336",
+              "asm": "sub rsp, 0x20"
+            },
+            {
+              "at": "0x66633a",
+              "asm": "mov rbx, r8"
+            },
+            {
+              "at": "0x66633d",
+              "asm": "movzx edi, dx"
+            },
+            {
+              "at": "0x666340",
+              "asm": "test rcx, rcx"
+            },
+            {
+              "at": "0x666343",
+              "asm": "jne 0x180666355"
+            },
+            {
+              "at": "0x666345",
+              "asm": "mov eax, 3"
+            },
+            {
+              "at": "0x66634a",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x66634f",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x666353",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x666354",
+              "asm": "ret "
+            },
+            {
+              "at": "0x666355",
+              "asm": "call 0x180417630",
+              "target": "0x417630",
+              "symbol": ""
+            },
+            {
+              "at": "0x66635a",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x66635d",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "at": "0x666360",
+              "asm": "movzx edx, di"
+            },
+            {
+              "at": "0x666363",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "at": "0x666366",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x66636b",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x66636f",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x666370",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            },
+            {
+              "at": "0x666375",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666376",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666377",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666378",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666379",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637a",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637b",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637c",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637d",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637e",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x66637f",
+              "asm": "int3 "
+            },
+            {
+              "at": "0x666380",
+              "asm": "push rbx"
+            },
+            {
+              "at": "0x666382",
+              "asm": "push rsi"
+            },
+            {
+              "at": "0x666383",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x666384",
+              "asm": "push r14"
+            },
+            {
+              "at": "0x666386",
+              "asm": "push r15"
+            },
+            {
+              "at": "0x666388",
+              "asm": "sub rsp, 0x1f0"
+            },
+            {
+              "at": "0x66638f",
+              "asm": "mov rax, qword ptr [rip + 0xf4056a]"
+            }
+          ]
+        },
+        "?BEE_DoCommand@@YAHPEAVBEE_Project@@FPEAUBEE_CommandInfo@@@Z": {
+          "entry_rva": "0x666330",
+          "pdata": [
+            "0x666330",
+            "0x666375"
+          ],
+          "calls": [
+            {
+              "at": "0x666355",
+              "asm": "call 0x180417630",
+              "target": "0x417630",
+              "symbol": ""
+            },
+            {
+              "at": "0x666370",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            }
+          ],
+          "instructions": [
+            {
+              "at": "0x666330",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "at": "0x666335",
+              "asm": "push rdi"
+            },
+            {
+              "at": "0x666336",
+              "asm": "sub rsp, 0x20"
+            },
+            {
+              "at": "0x66633a",
+              "asm": "mov rbx, r8"
+            },
+            {
+              "at": "0x66633d",
+              "asm": "movzx edi, dx"
+            },
+            {
+              "at": "0x666340",
+              "asm": "test rcx, rcx"
+            },
+            {
+              "at": "0x666343",
+              "asm": "jne 0x180666355"
+            },
+            {
+              "at": "0x666345",
+              "asm": "mov eax, 3"
+            },
+            {
+              "at": "0x66634a",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x66634f",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x666353",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x666354",
+              "asm": "ret "
+            },
+            {
+              "at": "0x666355",
+              "asm": "call 0x180417630",
+              "target": "0x417630",
+              "symbol": ""
+            },
+            {
+              "at": "0x66635a",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "at": "0x66635d",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "at": "0x666360",
+              "asm": "movzx edx, di"
+            },
+            {
+              "at": "0x666363",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "at": "0x666366",
+              "asm": "mov rbx, qword ptr [rsp + 0x30]"
+            },
+            {
+              "at": "0x66636b",
+              "asm": "add rsp, 0x20"
+            },
+            {
+              "at": "0x66636f",
+              "asm": "pop rdi"
+            },
+            {
+              "at": "0x666370",
+              "asm": "jmp 0x180669840",
+              "target": "0x669840",
+              "symbol": ""
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "status": "cross-version verified native static machine-code structure, NOT an external plugin implementation",
+  "versions": {
+    "2025": {
+      "new_shape_command_export": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+      "shared_worker_rva": "0x667610",
+      "undo_begin_rva": "0x66766b",
+      "BEE_DoCommand_rva": "0x66769e",
+      "undo_end_rva": "0x6676d1",
+      "type4_native_creation_callsite": "0x3a7ce4",
+      "comp_attachment_callsite": "0x3a7dd8",
+      "both_calls_in_same_native_function": true,
+      "creation_explicit_shape_kind_4": true,
+      "comp_attach_uses_position_and_boolean_arguments": true,
+      "CompAttach_calculated_direct_calls": 20,
+      "CompAttach_wrapper_then_params_extra_init": true,
+      "comp_attach_position_bookkeeper_has_nontrivial_body": true,
+      "command_dispatch_to_this_exact_create_function_proven": false,
+      "independent_CNL_native_layer_installed": false,
+      "private_Adobe_methods_executed": false
+    },
+    "2026": {
+      "new_shape_command_export": "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z",
+      "shared_worker_rva": "0x682f90",
+      "undo_begin_rva": "0x682feb",
+      "BEE_DoCommand_rva": "0x68301e",
+      "undo_end_rva": "0x683051",
+      "type4_native_creation_callsite": "0x3b4154",
+      "comp_attachment_callsite": "0x3b4236",
+      "both_calls_in_same_native_function": true,
+      "creation_explicit_shape_kind_4": true,
+      "comp_attach_uses_position_and_boolean_arguments": true,
+      "CompAttach_calculated_direct_calls": 20,
+      "CompAttach_wrapper_then_params_extra_init": true,
+      "comp_attach_position_bookkeeper_has_nontrivial_body": true,
+      "command_dispatch_to_this_exact_create_function_proven": false,
+      "independent_CNL_native_layer_installed": false,
+      "private_Adobe_methods_executed": false
+    }
+  },
+  "limits": [
+    "DoCommand-to-specific-native-CompItem-factory callback is indirect and not yet resolved",
+    "BEE CompItem attach does not prove 3rd party external owner can be accepted",
+    "No Adobe runtime loaded or called",
+    "No CNL foreign native layer or Pen/Renderer currently exists"
+  ]
+}

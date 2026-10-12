@@ -1,0 +1,289 @@
+{
+  "scope": "E2-L static raw CALL bytes inside BEE.dll pdata; unverified instruction boundary; not a complete dynamic call graph",
+  "versions": {
+    "2025": {
+      "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z": {
+        "target_rva": "0x3920f0",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x2e218f",
+            "within_pdata": "0x2e20e0",
+            "is_function_entry_exported": true,
+            "parent_export": "?CloneAndAttach@BEE_Layer@@UEAAPEAV1@_N0@Z"
+          },
+          {
+            "caller_rva": "0x30b69e",
+            "within_pdata": "0x30b650",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3a9c79",
+            "within_pdata": "0x3a9b90",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3d4ccd",
+            "within_pdata": "0x3d4ca0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5a8136",
+            "within_pdata": "0x5a7f90",
+            "is_function_entry_exported": true,
+            "parent_export": "?CloneAndAttachFromAVLayer@BEE_TextLayer@@SAPEAVBEE_Layer@@PEBVBEE_AVLayer@@PEAVBEE_CompItem@@PEAVTXT_Doc@@_N@Z"
+          }
+        ]
+      },
+      "?AttachLayerToCompOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I_N@Z": {
+        "target_rva": "0x392120",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x392100",
+            "within_pdata": "0x3920f0",
+            "is_function_entry_exported": true,
+            "parent_export": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+          },
+          {
+            "caller_rva": "0x3a7dd8",
+            "within_pdata": "0x3a7ca0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3a9d0a",
+            "within_pdata": "0x3a9b90",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3ad085",
+            "within_pdata": "0x3acbf0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x505376",
+            "within_pdata": "0x505090",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5056af",
+            "within_pdata": "0x505400",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      },
+      "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z": {
+        "target_rva": "0x2e3e10",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x314f2c",
+            "within_pdata": "0x314ee0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3152b2",
+            "within_pdata": "0x3151d0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3a7ce4",
+            "within_pdata": "0x3a7ca0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3acc5a",
+            "within_pdata": "0x3acbf0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5052fb",
+            "within_pdata": "0x505090",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x505631",
+            "within_pdata": "0x505400",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x505643",
+            "within_pdata": "0x505400",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      },
+      "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z": {
+        "target_rva": "0x65cdd0",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x25e950",
+            "within_pdata": "0x25e620",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5a7000",
+            "within_pdata": "0x5a6c80",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      }
+    },
+    "2026": {
+      "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z": {
+        "target_rva": "0x39d4a0",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x2eb140",
+            "within_pdata": "0x2eb090",
+            "is_function_entry_exported": true,
+            "parent_export": "?CloneAndAttach@BEE_Layer@@UEAAPEAV1@_N0@Z"
+          },
+          {
+            "caller_rva": "0x31486e",
+            "within_pdata": "0x314820",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3b618a",
+            "within_pdata": "0x3b60b0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3e330d",
+            "within_pdata": "0x3e32e0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5c6bb6",
+            "within_pdata": "0x5c6a10",
+            "is_function_entry_exported": true,
+            "parent_export": "?CloneAndAttachFromAVLayer@BEE_TextLayer@@SAPEAVBEE_Layer@@PEBVBEE_AVLayer@@PEAVBEE_CompItem@@PEAVTXT_Doc@@_N@Z"
+          }
+        ]
+      },
+      "?AttachLayerToCompOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I_N@Z": {
+        "target_rva": "0x39d4d0",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x39d4b0",
+            "within_pdata": "0x39d4a0",
+            "is_function_entry_exported": true,
+            "parent_export": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+          },
+          {
+            "caller_rva": "0x3b4236",
+            "within_pdata": "0x3b4110",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3b6217",
+            "within_pdata": "0x3b60b0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3b9465",
+            "within_pdata": "0x3b8fd0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x51f5c6",
+            "within_pdata": "0x51f2f0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x51f8e0",
+            "within_pdata": "0x51f650",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      },
+      "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z": {
+        "target_rva": "0x2ecd00",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x31e55a",
+            "within_pdata": "0x31e510",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x31e8f0",
+            "within_pdata": "0x31e800",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3b4154",
+            "within_pdata": "0x3b4110",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x3b903a",
+            "within_pdata": "0x3b8fd0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x51f55d",
+            "within_pdata": "0x51f2f0",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x51f865",
+            "within_pdata": "0x51f650",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x51f877",
+            "within_pdata": "0x51f650",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      },
+      "?BEE_CmdNewVectorLayer@@YAXPEAVBEE_Project@@PEAUBEE_CommandInfo@@@Z": {
+        "target_rva": "0x6783e0",
+        "raw_direct_calls_inside_bounded_functions": [
+          {
+            "caller_rva": "0x269679",
+            "within_pdata": "0x269340",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          },
+          {
+            "caller_rva": "0x5c5aaa",
+            "within_pdata": "0x5c5740",
+            "is_function_entry_exported": false,
+            "parent_export": ""
+          }
+        ]
+      }
+    }
+  }
+}
