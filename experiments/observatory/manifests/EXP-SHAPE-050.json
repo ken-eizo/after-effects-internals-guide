@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-050",
+  "date": "2026-10-12",
+  "title": "Native FLT TDB leaf backing public AE Effect arbitrary parameter",
+  "status": "pass-offline-static-AE2025-2026",
+  "evidence": "E2-L FLT.dll compiled PE export and native code",
+  "results": {
+    "native_TDB_derived_arb_value_stream": true,
+    "allocation_bytes": 1136,
+    "native_clone_and_dispose": true,
+    "associated_effect_print_and_scan": true,
+    "CNL_per_node_native_TDB_StreamIDPath": false,
+    "Pen_target": false,
+    "BEE_VectorArt": false,
+    "Adobe_private_API_invoked": false,
+    "host_AE_test": false
+  },
+  "artifacts": [
+    "research/findings/F-VECTOR-050-effect-arbitrary-native-tdb-leaf-boundary.md",
+    "datasets/ae-flt-effect-arbitrary-native-stream-bridge-verified-2025-2026.json"
+  ]
+}

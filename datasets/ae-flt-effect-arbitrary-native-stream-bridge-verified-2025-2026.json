@@ -1,0 +1,42 @@
+{
+  "scope": "E2-L pinned AE2025/26 FLT PE. No Adobe methods invoked.",
+  "versions": {
+    "2025": {
+      "FLT_sha256": "5ee0aed35dd093397a95bcec10387370d05e691790a817c5927109f3c88e6e9e",
+      "native_param_type": "FLT_ParamArbDataStream inherits TDB_DerivedStream<FLT_ParamArbDataStreamTraits>",
+      "actual_cpp_vtable": [
+        "??_7FLT_ParamArbDataStream@@6B@",
+        792240
+      ],
+      "allocation_bytes": 1136,
+      "factory_creator_rva": "0x3ac0",
+      "clone_rva": "0x37a0",
+      "sequence_effect_param_to_native_stream_lookup_rva": "0x62520",
+      "host_native_dispose_uses_effect_paramdef": true,
+      "host_native_print_scan_reach_associated_effect": true,
+      "CNL_separate_native_TDB_registration_proven": false,
+      "native_pen_gizmo_targets_arbitrary_stream": false
+    },
+    "2026": {
+      "FLT_sha256": "65eb2a26803a76e868d20abc72e96ea45e2949573213d21d78d0f7a36494b940",
+      "native_param_type": "FLT_ParamArbDataStream inherits TDB_DerivedStream<FLT_ParamArbDataStreamTraits>",
+      "actual_cpp_vtable": [
+        "??_7FLT_ParamArbDataStream@@6B@",
+        984824
+      ],
+      "allocation_bytes": 1136,
+      "factory_creator_rva": "0x3ca0",
+      "clone_rva": "0x3990",
+      "sequence_effect_param_to_native_stream_lookup_rva": "0x64390",
+      "host_native_dispose_uses_effect_paramdef": true,
+      "host_native_print_scan_reach_associated_effect": true,
+      "CNL_separate_native_TDB_registration_proven": false,
+      "native_pen_gizmo_targets_arbitrary_stream": false
+    }
+  },
+  "limitations": [
+    "No actual host test of new AEX",
+    "Real FLT_ParamArbDataStream is an Adobe-native wrapper of data, not independently registered CNL Vector Contents",
+    "Native Pen hit testing and BEE_VectorArt remain unproven"
+  ]
+}
