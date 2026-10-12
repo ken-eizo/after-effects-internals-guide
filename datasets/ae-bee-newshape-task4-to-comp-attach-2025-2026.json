@@ -1,0 +1,41 @@
+{
+  "evidence": "E2-L actual x64 code static bounded traversal, not runtime branch witness",
+  "versions": {
+    "2025": {
+      "new_task4_factory_worker": "0x3151d0",
+      "CompItem_AttachLayerToCompOnly": "0x392120",
+      "discovered_direct_path": {
+        "node_path": [
+          "0x3151d0",
+          "0x30b650",
+          "0x3920f0",
+          "0x392120"
+        ],
+        "call_sites": [
+          "0x31530c",
+          "0x30b69e",
+          "0x392100"
+        ]
+      },
+      "visited_functions": 363
+    },
+    "2026": {
+      "new_task4_factory_worker": "0x31e800",
+      "CompItem_AttachLayerToCompOnly": "0x39d4d0",
+      "discovered_direct_path": {
+        "node_path": [
+          "0x31e800",
+          "0x314820",
+          "0x39d4a0",
+          "0x39d4d0"
+        ],
+        "call_sites": [
+          "0x31e95b",
+          "0x31486e",
+          "0x39d4b0"
+        ]
+      },
+      "visited_functions": 366
+    }
+  }
+}

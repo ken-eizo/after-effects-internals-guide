@@ -1,0 +1,69 @@
+{
+  "evidence": "E2-L exact on-disk BEE static direct+vtable code chain; does not imply all conditional branches or foreign plugin ABI are valid",
+  "versions": {
+    "2025": {
+      "native_BEE_hash_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "NewVectorLayer_command_id": 101,
+      "Undo_Begin_DoCommand_End_proven": true,
+      "table_entry_rva": "0xfecef0",
+      "constructor_callback_plus8": "0x646bd0",
+      "alternate_constructor_callback_plus16": "0x646c30",
+      "both_callbacks_construct_same_rtti_type": true,
+      "RTTI_Cpp_class": ".?AV?$BEE_NewLayerTask@$03@@",
+      "type_4_set_in_task_constructor": true,
+      "vtable_rva": "0xfee6e0",
+      "task_virtual_slot1_rva": "0x54e920",
+      "task_virtual_native_worker": "0x3151d0",
+      "worker_calls_BEE_Layer_CreateLayerFromType_at": "0x3152b2",
+      "worker_calls_BEE_SetLayerPositionFromCompOffset_at": "0x315621",
+      "worker_uses_real_TDB_StreamIDPath": true,
+      "worker_to_native_CompItemAttach_real_direct_sites": [
+        "0x31530c",
+        "0x30b69e",
+        "0x392100"
+      ],
+      "worker_to_native_CompItemAttach_route": [
+        "0x3151d0",
+        "0x30b650",
+        "0x3920f0",
+        "0x392120"
+      ],
+      "static_code_chain_complete": true,
+      "runtime_foreign_layer_type_registered": false,
+      "ABI_safe_from_AEX": false,
+      "native_Pen_BEE_VectorArt_CNL_connected": false
+    },
+    "2026": {
+      "native_BEE_hash_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "NewVectorLayer_command_id": 106,
+      "Undo_Begin_DoCommand_End_proven": true,
+      "table_entry_rva": "0x104d270",
+      "constructor_callback_plus8": "0x660c10",
+      "alternate_constructor_callback_plus16": "0x660c70",
+      "both_callbacks_construct_same_rtti_type": true,
+      "RTTI_Cpp_class": ".?AV?$BEE_NewLayerTask@$03@@",
+      "type_4_set_in_task_constructor": true,
+      "vtable_rva": "0x104eb28",
+      "task_virtual_slot1_rva": "0x56d660",
+      "task_virtual_native_worker": "0x31e800",
+      "worker_calls_BEE_Layer_CreateLayerFromType_at": "0x31e8f0",
+      "worker_calls_BEE_SetLayerPositionFromCompOffset_at": "0x31ec93",
+      "worker_uses_real_TDB_StreamIDPath": true,
+      "worker_to_native_CompItemAttach_real_direct_sites": [
+        "0x31e95b",
+        "0x31486e",
+        "0x39d4b0"
+      ],
+      "worker_to_native_CompItemAttach_route": [
+        "0x31e800",
+        "0x314820",
+        "0x39d4a0",
+        "0x39d4d0"
+      ],
+      "static_code_chain_complete": true,
+      "runtime_foreign_layer_type_registered": false,
+      "ABI_safe_from_AEX": false,
+      "native_Pen_BEE_VectorArt_CNL_connected": false
+    }
+  }
+}

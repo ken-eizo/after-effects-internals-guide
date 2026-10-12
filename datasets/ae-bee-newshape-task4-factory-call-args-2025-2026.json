@@ -1,0 +1,343 @@
+{
+  "evidence": "E2-L actual native BEE_NewLayerTask<4> worker factory parameters from pinned PE code",
+  "versions": {
+    "2025": {
+      "callsite": "0x3152b2",
+      "instructions_around": [
+        {
+          "at": "0x31524d",
+          "asm": "mov edx, 0xd1"
+        },
+        {
+          "at": "0x315252",
+          "asm": "mov rcx, qword ptr [rip + 0x11fd7e7]"
+        },
+        {
+          "at": "0x315259",
+          "asm": "call qword ptr [rip + 0xbaa579]"
+        },
+        {
+          "at": "0x31525f",
+          "asm": "mov r8, rax"
+        },
+        {
+          "at": "0x315262",
+          "asm": "mov edx, 8"
+        },
+        {
+          "at": "0x315267",
+          "asm": "mov ecx, 0x1a00a9"
+        },
+        {
+          "at": "0x31526c",
+          "asm": "call qword ptr [rip + 0xbaa5b6]"
+        },
+        {
+          "at": "0x315272",
+          "asm": "jmp 0x1803157c1"
+        },
+        {
+          "at": "0x315277",
+          "asm": "mov byte ptr [rsp + 0x40], 1"
+        },
+        {
+          "at": "0x31527c",
+          "asm": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "at": "0x315280",
+          "asm": "test rcx, rcx"
+        },
+        {
+          "at": "0x315283",
+          "asm": "je 0x1803152a9"
+        },
+        {
+          "at": "0x315285",
+          "asm": "call 0x1803c9c50"
+        },
+        {
+          "at": "0x31528a",
+          "asm": "cmp word ptr [rax], 7"
+        },
+        {
+          "at": "0x31528e",
+          "asm": "jne 0x1803152a9"
+        },
+        {
+          "at": "0x315290",
+          "asm": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "at": "0x315294",
+          "asm": "call 0x1803d1fc0"
+        },
+        {
+          "at": "0x315299",
+          "asm": "mov ecx, 5"
+        },
+        {
+          "at": "0x31529e",
+          "asm": "test al, al"
+        },
+        {
+          "at": "0x3152a0",
+          "asm": "cmovne r14d, ecx"
+        },
+        {
+          "at": "0x3152a4",
+          "asm": "mov dword ptr [rsp + 0x50], r14d"
+        },
+        {
+          "at": "0x3152a9",
+          "asm": "mov r8b, 1"
+        },
+        {
+          "at": "0x3152ac",
+          "asm": "mov rdx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x3152af",
+          "asm": "mov ecx, r14d"
+        },
+        {
+          "at": "0x3152b2",
+          "asm": "call 0x1802e3e10"
+        },
+        {
+          "at": "0x3152b7",
+          "asm": "mov rdi, rax"
+        },
+        {
+          "at": "0x3152ba",
+          "asm": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "at": "0x3152bf",
+          "asm": "jmp 0x1803152e0"
+        },
+        {
+          "at": "0x3152c1",
+          "asm": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "at": "0x3152c5",
+          "asm": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "at": "0x3152ca",
+          "asm": "test ebx, ebx"
+        },
+        {
+          "at": "0x3152cc",
+          "asm": "jne 0x1803157c1"
+        },
+        {
+          "at": "0x3152d2",
+          "asm": "mov ebx, dword ptr [rsp + 0x30]"
+        },
+        {
+          "at": "0x3152d6",
+          "asm": "mov rsi, qword ptr [rsp + 0x58]"
+        },
+        {
+          "at": "0x3152db",
+          "asm": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "at": "0x3152e0",
+          "asm": "test rdi, rdi"
+        },
+        {
+          "at": "0x3152e3",
+          "asm": "je 0x1803157c1"
+        },
+        {
+          "at": "0x3152e9",
+          "asm": "lea rax, [rip + 0xc3e610]"
+        },
+        {
+          "at": "0x3152f0",
+          "asm": "mov qword ptr [rsp + 0x70], rax"
+        },
+        {
+          "at": "0x3152f5",
+          "asm": "mov word ptr [rsp + 0x78], 0"
+        },
+        {
+          "at": "0x3152fc",
+          "asm": "mov byte ptr [rsp + 0x7a], 0"
+        }
+      ]
+    },
+    "2026": {
+      "callsite": "0x31e8f0",
+      "instructions_around": [
+        {
+          "at": "0x31e893",
+          "asm": "call qword ptr [rip + 0xbfa0af]"
+        },
+        {
+          "at": "0x31e899",
+          "asm": "mov r8, rax"
+        },
+        {
+          "at": "0x31e89c",
+          "asm": "mov edx, 8"
+        },
+        {
+          "at": "0x31e8a1",
+          "asm": "mov ecx, 0x1a00a9"
+        },
+        {
+          "at": "0x31e8a6",
+          "asm": "call qword ptr [rip + 0xbfa0ec]"
+        },
+        {
+          "at": "0x31e8ac",
+          "asm": "jmp 0x18031ee0c"
+        },
+        {
+          "at": "0x31e8b1",
+          "asm": "xor ebx, ebx"
+        },
+        {
+          "at": "0x31e8b3",
+          "asm": "mov dword ptr [rsp + 0x30], ebx"
+        },
+        {
+          "at": "0x31e8b7",
+          "asm": "mov byte ptr [rsp + 0x40], 1"
+        },
+        {
+          "at": "0x31e8bc",
+          "asm": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x31e8bf",
+          "asm": "test rcx, rcx"
+        },
+        {
+          "at": "0x31e8c2",
+          "asm": "je 0x18031e8e7"
+        },
+        {
+          "at": "0x31e8c4",
+          "asm": "call 0x1803d79e0"
+        },
+        {
+          "at": "0x31e8c9",
+          "asm": "cmp word ptr [rax], 7"
+        },
+        {
+          "at": "0x31e8cd",
+          "asm": "jne 0x18031e8e7"
+        },
+        {
+          "at": "0x31e8cf",
+          "asm": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "at": "0x31e8d2",
+          "asm": "call 0x1803dfdd0"
+        },
+        {
+          "at": "0x31e8d7",
+          "asm": "mov ecx, 5"
+        },
+        {
+          "at": "0x31e8dc",
+          "asm": "test al, al"
+        },
+        {
+          "at": "0x31e8de",
+          "asm": "cmovne r14d, ecx"
+        },
+        {
+          "at": "0x31e8e2",
+          "asm": "mov dword ptr [rsp + 0x50], r14d"
+        },
+        {
+          "at": "0x31e8e7",
+          "asm": "mov r8b, 1"
+        },
+        {
+          "at": "0x31e8ea",
+          "asm": "mov rdx, qword ptr [r15]"
+        },
+        {
+          "at": "0x31e8ed",
+          "asm": "mov ecx, r14d"
+        },
+        {
+          "at": "0x31e8f0",
+          "asm": "call 0x1802ecd00"
+        },
+        {
+          "at": "0x31e8f5",
+          "asm": "mov rdi, rax"
+        },
+        {
+          "at": "0x31e8f8",
+          "asm": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "at": "0x31e8fd",
+          "asm": "jmp 0x18031e926"
+        },
+        {
+          "at": "0x31e8ff",
+          "asm": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "at": "0x31e903",
+          "asm": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "at": "0x31e908",
+          "asm": "test ebx, ebx"
+        },
+        {
+          "at": "0x31e90a",
+          "asm": "jne 0x18031ee0c"
+        },
+        {
+          "at": "0x31e910",
+          "asm": "mov ebx, dword ptr [rsp + 0x30]"
+        },
+        {
+          "at": "0x31e914",
+          "asm": "mov r13, qword ptr [rsp + 0x78]"
+        },
+        {
+          "at": "0x31e919",
+          "asm": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "at": "0x31e91e",
+          "asm": "mov r15, r13"
+        },
+        {
+          "at": "0x31e921",
+          "asm": "mov rsi, qword ptr [rsp + 0x68]"
+        },
+        {
+          "at": "0x31e926",
+          "asm": "test rdi, rdi"
+        },
+        {
+          "at": "0x31e929",
+          "asm": "je 0x18031ee0c"
+        },
+        {
+          "at": "0x31e92f",
+          "asm": "lea rax, [rip + 0xc923aa]"
+        },
+        {
+          "at": "0x31e936",
+          "asm": "mov qword ptr [rsp + 0x80], rax"
+        }
+      ]
+    }
+  }
+}

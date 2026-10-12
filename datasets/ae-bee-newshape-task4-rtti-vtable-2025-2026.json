@@ -1,0 +1,49 @@
+{
+  "evidence": "E2-L static native x64 complete-object-locator and MSVC RTTI and executable vtable",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "vtable_rva": "0xfee6e0",
+      "RTTI_COL_rva": "0x1109530",
+      "RTTI_type_descriptor_rva": "0x1575f80",
+      "RTTI_Cpp_class_decorated": ".?AV?$BEE_NewLayerTask@$03@@",
+      "RTTI_base_hierarchy_rva": "0x1109558",
+      "virtual_methods": [
+        {
+          "slot": 0,
+          "function_rva": "0x6489e0"
+        },
+        {
+          "slot": 1,
+          "function_rva": "0x54e920"
+        },
+        {
+          "slot": 2,
+          "function_rva": "0x553eb0"
+        }
+      ]
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "vtable_rva": "0x104eb28",
+      "RTTI_COL_rva": "0x1171fc0",
+      "RTTI_type_descriptor_rva": "0x1614550",
+      "RTTI_Cpp_class_decorated": ".?AV?$BEE_NewLayerTask@$03@@",
+      "RTTI_base_hierarchy_rva": "0x1171fe8",
+      "virtual_methods": [
+        {
+          "slot": 0,
+          "function_rva": "0x662ab0"
+        },
+        {
+          "slot": 1,
+          "function_rva": "0x56d660"
+        },
+        {
+          "slot": 2,
+          "function_rva": "0x572ba0"
+        }
+      ]
+    }
+  }
+}

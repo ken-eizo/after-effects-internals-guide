@@ -1,0 +1,63 @@
+{
+  "evidence": "E2-L direct static graph from exact MSVC RTTI vtable slot1 to native owner creator; opaque indirect edges not traversed",
+  "versions": {
+    "2025": {
+      "virtual_entry_rva": "0x54e920",
+      "goal_create_attach_rva": "0x3a7ca0",
+      "depth_limit": 8,
+      "explored": 1358,
+      "direct_path": null,
+      "first_edges": [
+        {
+          "dst": "0x3151d0",
+          "callsite": "0x54e970"
+        },
+        {
+          "dst": "0xce9048",
+          "callsite": "0x54e987"
+        },
+        {
+          "dst": "0x5657c0",
+          "callsite": "0x54e9a1"
+        },
+        {
+          "dst": "0x54e9b8",
+          "callsite": "0x54e9b4"
+        },
+        {
+          "dst": "0xceacc8",
+          "callsite": "0x54e9d6"
+        }
+      ]
+    },
+    "2026": {
+      "virtual_entry_rva": "0x56d660",
+      "goal_create_attach_rva": "0x3b4110",
+      "depth_limit": 8,
+      "explored": 1481,
+      "direct_path": null,
+      "first_edges": [
+        {
+          "dst": "0x31e800",
+          "callsite": "0x56d6b0"
+        },
+        {
+          "dst": "0xd3a668",
+          "callsite": "0x56d6c7"
+        },
+        {
+          "dst": "0x586c50",
+          "callsite": "0x56d6e1"
+        },
+        {
+          "dst": "0x56d6f8",
+          "callsite": "0x56d6f4"
+        },
+        {
+          "dst": "0xd3bdf8",
+          "callsite": "0x56d716"
+        }
+      ]
+    }
+  }
+}

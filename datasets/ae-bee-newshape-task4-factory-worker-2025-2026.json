@@ -1,0 +1,1753 @@
+{
+  "evidence": "E2-L disassembly of BEE_NewLayerTask<4> slot1 direct worker; real compiled code",
+  "versions": {
+    "2025": {
+      "entry_rva": "0x3151d0",
+      "range": [
+        "0x3151d0",
+        "0x315804"
+      ],
+      "calls": [
+        {
+          "rva": "0x315228",
+          "ins": "call 0x1803a5d20",
+          "to_rva": "0x3a5d20",
+          "symbol": "?BEE_ValidSource@@YAHPEBVBEE_CompItem@@PEAVBEE_Item@@PEAE@Z"
+        },
+        {
+          "rva": "0x315259",
+          "ins": "call qword ptr [rip + 0xbaa579]",
+          "to_rva": "0xebf7d8",
+          "symbol": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "rva": "0x31526c",
+          "ins": "call qword ptr [rip + 0xbaa5b6]",
+          "to_rva": "0xebf828",
+          "symbol": "U.dll!Up_ReportErrString"
+        },
+        {
+          "rva": "0x315272",
+          "ins": "jmp 0x1803157c1",
+          "to_rva": "0x3157c1",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315285",
+          "ins": "call 0x1803c9c50",
+          "to_rva": "0x3c9c50",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315294",
+          "ins": "call 0x1803d1fc0",
+          "to_rva": "0x3d1fc0",
+          "symbol": "?BEE_Is3DModelItem@@YA_NPEBVBEE_Item@@@Z"
+        },
+        {
+          "rva": "0x3152b2",
+          "ins": "call 0x1802e3e10",
+          "to_rva": "0x2e3e10",
+          "symbol": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z"
+        },
+        {
+          "rva": "0x3152bf",
+          "ins": "jmp 0x1803152e0",
+          "to_rva": "0x3152e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31530c",
+          "ins": "call 0x18030b650",
+          "to_rva": "0x30b650",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31531e",
+          "ins": "jmp 0x18031533b",
+          "to_rva": "0x31533b",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315352",
+          "ins": "call 0x180311810",
+          "to_rva": "0x311810",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31535d",
+          "ins": "call 0x1803c9c50",
+          "to_rva": "0x3c9c50",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31536c",
+          "ins": "call 0x1803c3900",
+          "to_rva": "0x3c3900",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315388",
+          "ins": "call qword ptr [rax + 0x3e8]"
+        },
+        {
+          "rva": "0x3153b5",
+          "ins": "call 0x1803012b0",
+          "to_rva": "0x3012b0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3153bb",
+          "ins": "jmp 0x1803153d8",
+          "to_rva": "0x3153d8",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3153e3",
+          "ins": "call 0x1803d07f0",
+          "to_rva": "0x3d07f0",
+          "symbol": "?BEE_GetItemCurrentTime@@YAHPEBVBEE_Item@@PEAUT_Time@@PEAH@Z"
+        },
+        {
+          "rva": "0x31542c",
+          "ins": "call 0x180ceacd4",
+          "to_rva": "0xceacd4",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31543e",
+          "ins": "call 0x1803c8a80",
+          "to_rva": "0x3c8a80",
+          "symbol": "?GetFlags@BEE_Item@@QEAAAEAU?$atomic@H@std@@XZ"
+        },
+        {
+          "rva": "0x315475",
+          "ins": "call 0x1803d1810",
+          "to_rva": "0x3d1810",
+          "symbol": "?BEE_GetItemTime@@YAHPEBVBEE_Item@@FPEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x31548c",
+          "ins": "call 0x1803d1f90",
+          "to_rva": "0x3d1f90",
+          "symbol": "?BEE_GridToCompTime@@YAHPEAVBEE_Item@@PEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x3154b5",
+          "ins": "call 0x1803d1810",
+          "to_rva": "0x3d1810",
+          "symbol": "?BEE_GetItemTime@@YAHPEBVBEE_Item@@FPEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x3154cc",
+          "ins": "call 0x1803d1f90",
+          "to_rva": "0x3d1f90",
+          "symbol": "?BEE_GridToCompTime@@YAHPEAVBEE_Item@@PEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x3154ed",
+          "ins": "call qword ptr [rip + 0xbaab3d]",
+          "to_rva": "0xec0030",
+          "symbol": "U.dll!??Z@YAAEAUT_Time@@AEAU0@AEBU0@@Z"
+        },
+        {
+          "rva": "0x315511",
+          "ins": "call 0x180316520",
+          "to_rva": "0x316520",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31553e",
+          "ins": "call 0x180306270",
+          "to_rva": "0x306270",
+          "symbol": "?BEE_GetSeparateDimensionsPref@@YA_NXZ"
+        },
+        {
+          "rva": "0x31554e",
+          "ins": "call 0x1802ea2b0",
+          "to_rva": "0x2ea2b0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315566",
+          "ins": "call 0x18067f3a0",
+          "to_rva": "0x67f3a0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31556f",
+          "ins": "call 0x180680400",
+          "to_rva": "0x680400",
+          "symbol": "?GetFreezeDoCommand@BEE_UndoContext@@QEBAFXZ"
+        },
+        {
+          "rva": "0x315580",
+          "ins": "call 0x180680400",
+          "to_rva": "0x680400",
+          "symbol": "?GetFreezeDoCommand@BEE_UndoContext@@QEBAFXZ"
+        },
+        {
+          "rva": "0x31558b",
+          "ins": "call 0x180681700",
+          "to_rva": "0x681700",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315591",
+          "ins": "jmp 0x1803156cc",
+          "to_rva": "0x3156cc",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3155b5",
+          "ins": "call 0x1803d0a50",
+          "to_rva": "0x3d0a50",
+          "symbol": "?BEE_GetItemDuration@@YAHPEBVBEE_Item@@PEAUT_Time@@PEAH_N@Z"
+        },
+        {
+          "rva": "0x315606",
+          "ins": "call 0x180ceacd4",
+          "to_rva": "0xceacd4",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31560e",
+          "ins": "call 0x18032b030",
+          "to_rva": "0x32b030",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315621",
+          "ins": "call 0x1803087f0",
+          "to_rva": "0x3087f0",
+          "symbol": "?BEE_SetLayerPositionFromCompOffset@@YAHPEAVBEE_CompItem@@PEAVBEE_Layer@@HH@Z"
+        },
+        {
+          "rva": "0x315634",
+          "ins": "jmp 0x180315668",
+          "to_rva": "0x315668",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315651",
+          "ins": "call 0x180ceacd4",
+          "to_rva": "0xceacd4",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315661",
+          "ins": "call qword ptr [rdx + 0x798]"
+        },
+        {
+          "rva": "0x31566b",
+          "ins": "call 0x180313040",
+          "to_rva": "0x313040",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315671",
+          "ins": "jmp 0x18031568e",
+          "to_rva": "0x31568e",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315685",
+          "ins": "jmp 0x180315507",
+          "to_rva": "0x315507",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315693",
+          "ins": "jmp 0x180315522",
+          "to_rva": "0x315522",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3156ad",
+          "ins": "jmp 0x180315522",
+          "to_rva": "0x315522",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3156db",
+          "ins": "call qword ptr [rip + 0xba886f]",
+          "to_rva": "0xebdf50",
+          "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x3156f0",
+          "ins": "call qword ptr [rip + 0xba885a]",
+          "to_rva": "0xebdf50",
+          "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x31570e",
+          "ins": "call qword ptr [rip + 0xba881c]",
+          "to_rva": "0xebdf30",
+          "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@0@Z"
+        },
+        {
+          "rva": "0x315722",
+          "ins": "call 0x18065edb0",
+          "to_rva": "0x65edb0",
+          "symbol": "?BEE_CmdSeparateStreamDimensions@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N2@Z"
+        },
+        {
+          "rva": "0x315730",
+          "ins": "call qword ptr [rip + 0xba90b2]",
+          "to_rva": "0xebe7e8",
+          "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "rva": "0x315737",
+          "ins": "jmp 0x180315754",
+          "to_rva": "0x315754",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315757",
+          "ins": "call 0x180680400",
+          "to_rva": "0x680400",
+          "symbol": "?GetFreezeDoCommand@BEE_UndoContext@@QEBAFXZ"
+        },
+        {
+          "rva": "0x315768",
+          "ins": "call 0x180680400",
+          "to_rva": "0x680400",
+          "symbol": "?GetFreezeDoCommand@BEE_UndoContext@@QEBAFXZ"
+        },
+        {
+          "rva": "0x315773",
+          "ins": "call 0x180681700",
+          "to_rva": "0x681700",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315779",
+          "ins": "jmp 0x18031578d",
+          "to_rva": "0x31578d",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315795",
+          "ins": "call 0x18067faa0",
+          "to_rva": "0x67faa0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3157a4",
+          "ins": "call 0x180300730",
+          "to_rva": "0x300730",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3157b8",
+          "ins": "call qword ptr [rax]"
+        },
+        {
+          "rva": "0x3157d9",
+          "ins": "call 0x180ce9610",
+          "to_rva": "0xce9610",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3157eb",
+          "ins": "jmp 0x1803157bb",
+          "to_rva": "0x3157bb",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3157fd",
+          "ins": "call 0x180ceacc8",
+          "to_rva": "0xceacc8",
+          "symbol": ""
+        }
+      ],
+      "first_instructions": [
+        {
+          "rva": "0x3151d0",
+          "ins": "mov byte ptr [rsp + 0x20], r9b"
+        },
+        {
+          "rva": "0x3151d5",
+          "ins": "push rbx"
+        },
+        {
+          "rva": "0x3151d6",
+          "ins": "push rsi"
+        },
+        {
+          "rva": "0x3151d7",
+          "ins": "push rdi"
+        },
+        {
+          "rva": "0x3151d8",
+          "ins": "push r14"
+        },
+        {
+          "rva": "0x3151da",
+          "ins": "sub rsp, 0x188"
+        },
+        {
+          "rva": "0x3151e1",
+          "ins": "mov rax, qword ptr [rip + 0x1204558]"
+        },
+        {
+          "rva": "0x3151e8",
+          "ins": "xor rax, rsp"
+        },
+        {
+          "rva": "0x3151eb",
+          "ins": "mov qword ptr [rsp + 0x170], rax"
+        },
+        {
+          "rva": "0x3151f3",
+          "ins": "mov rsi, rdx"
+        },
+        {
+          "rva": "0x3151f6",
+          "ins": "mov r14d, ecx"
+        },
+        {
+          "rva": "0x3151f9",
+          "ins": "mov dword ptr [rsp + 0x50], ecx"
+        },
+        {
+          "rva": "0x3151fd",
+          "ins": "mov qword ptr [rsp + 0x58], rdx"
+        },
+        {
+          "rva": "0x315202",
+          "ins": "mov qword ptr [rsp + 0xa8], r8"
+        },
+        {
+          "rva": "0x31520a",
+          "ins": "xor ebx, ebx"
+        },
+        {
+          "rva": "0x31520c",
+          "ins": "mov dword ptr [rsp + 0x30], ebx"
+        },
+        {
+          "rva": "0x315210",
+          "ins": "xor edi, edi"
+        },
+        {
+          "rva": "0x315212",
+          "ins": "mov qword ptr [rsp + 0x48], rdi"
+        },
+        {
+          "rva": "0x315217",
+          "ins": "mov rdx, qword ptr [rdx + 8]"
+        },
+        {
+          "rva": "0x31521b",
+          "ins": "test rdx, rdx"
+        },
+        {
+          "rva": "0x31521e",
+          "ins": "je 0x180315277"
+        },
+        {
+          "rva": "0x315220",
+          "ins": "lea r8, [rsp + 0x40]"
+        },
+        {
+          "rva": "0x315225",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x315228",
+          "ins": "call 0x1803a5d20",
+          "to_rva": "0x3a5d20",
+          "symbol": "?BEE_ValidSource@@YAHPEBVBEE_CompItem@@PEAVBEE_Item@@PEAE@Z"
+        },
+        {
+          "rva": "0x31522d",
+          "ins": "mov ebx, eax"
+        },
+        {
+          "rva": "0x31522f",
+          "ins": "mov dword ptr [rsp + 0x30], eax"
+        },
+        {
+          "rva": "0x315233",
+          "ins": "test eax, eax"
+        },
+        {
+          "rva": "0x315235",
+          "ins": "jne 0x1803157c1"
+        },
+        {
+          "rva": "0x31523b",
+          "ins": "cmp byte ptr [rsp + 0x40], dil"
+        },
+        {
+          "rva": "0x315240",
+          "ins": "jne 0x18031527c"
+        },
+        {
+          "rva": "0x315242",
+          "ins": "mov ebx, 3"
+        },
+        {
+          "rva": "0x315247",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "rva": "0x31524a",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "rva": "0x31524d",
+          "ins": "mov edx, 0xd1"
+        },
+        {
+          "rva": "0x315252",
+          "ins": "mov rcx, qword ptr [rip + 0x11fd7e7]"
+        },
+        {
+          "rva": "0x315259",
+          "ins": "call qword ptr [rip + 0xbaa579]",
+          "to_rva": "0xebf7d8",
+          "symbol": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "rva": "0x31525f",
+          "ins": "mov r8, rax"
+        },
+        {
+          "rva": "0x315262",
+          "ins": "mov edx, 8"
+        },
+        {
+          "rva": "0x315267",
+          "ins": "mov ecx, 0x1a00a9"
+        },
+        {
+          "rva": "0x31526c",
+          "ins": "call qword ptr [rip + 0xbaa5b6]",
+          "to_rva": "0xebf828",
+          "symbol": "U.dll!Up_ReportErrString"
+        },
+        {
+          "rva": "0x315272",
+          "ins": "jmp 0x1803157c1",
+          "to_rva": "0x3157c1",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315277",
+          "ins": "mov byte ptr [rsp + 0x40], 1"
+        },
+        {
+          "rva": "0x31527c",
+          "ins": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "rva": "0x315280",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "rva": "0x315283",
+          "ins": "je 0x1803152a9"
+        },
+        {
+          "rva": "0x315285",
+          "ins": "call 0x1803c9c50",
+          "to_rva": "0x3c9c50",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31528a",
+          "ins": "cmp word ptr [rax], 7"
+        },
+        {
+          "rva": "0x31528e",
+          "ins": "jne 0x1803152a9"
+        },
+        {
+          "rva": "0x315290",
+          "ins": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "rva": "0x315294",
+          "ins": "call 0x1803d1fc0",
+          "to_rva": "0x3d1fc0",
+          "symbol": "?BEE_Is3DModelItem@@YA_NPEBVBEE_Item@@@Z"
+        },
+        {
+          "rva": "0x315299",
+          "ins": "mov ecx, 5"
+        },
+        {
+          "rva": "0x31529e",
+          "ins": "test al, al"
+        },
+        {
+          "rva": "0x3152a0",
+          "ins": "cmovne r14d, ecx"
+        },
+        {
+          "rva": "0x3152a4",
+          "ins": "mov dword ptr [rsp + 0x50], r14d"
+        },
+        {
+          "rva": "0x3152a9",
+          "ins": "mov r8b, 1"
+        },
+        {
+          "rva": "0x3152ac",
+          "ins": "mov rdx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x3152af",
+          "ins": "mov ecx, r14d"
+        },
+        {
+          "rva": "0x3152b2",
+          "ins": "call 0x1802e3e10",
+          "to_rva": "0x2e3e10",
+          "symbol": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z"
+        },
+        {
+          "rva": "0x3152b7",
+          "ins": "mov rdi, rax"
+        },
+        {
+          "rva": "0x3152ba",
+          "ins": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "rva": "0x3152bf",
+          "ins": "jmp 0x1803152e0",
+          "to_rva": "0x3152e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3152c1",
+          "ins": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "rva": "0x3152c5",
+          "ins": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "rva": "0x3152ca",
+          "ins": "test ebx, ebx"
+        },
+        {
+          "rva": "0x3152cc",
+          "ins": "jne 0x1803157c1"
+        },
+        {
+          "rva": "0x3152d2",
+          "ins": "mov ebx, dword ptr [rsp + 0x30]"
+        },
+        {
+          "rva": "0x3152d6",
+          "ins": "mov rsi, qword ptr [rsp + 0x58]"
+        },
+        {
+          "rva": "0x3152db",
+          "ins": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x3152e0",
+          "ins": "test rdi, rdi"
+        },
+        {
+          "rva": "0x3152e3",
+          "ins": "je 0x1803157c1"
+        },
+        {
+          "rva": "0x3152e9",
+          "ins": "lea rax, [rip + 0xc3e610]"
+        },
+        {
+          "rva": "0x3152f0",
+          "ins": "mov qword ptr [rsp + 0x70], rax"
+        },
+        {
+          "rva": "0x3152f5",
+          "ins": "mov word ptr [rsp + 0x78], 0"
+        },
+        {
+          "rva": "0x3152fc",
+          "ins": "mov byte ptr [rsp + 0x7a], 0"
+        },
+        {
+          "rva": "0x315301",
+          "ins": "mov qword ptr [rsp + 0x80], rdi"
+        },
+        {
+          "rva": "0x315309",
+          "ins": "mov rcx, rdi"
+        },
+        {
+          "rva": "0x31530c",
+          "ins": "call 0x18030b650",
+          "to_rva": "0x30b650",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315311",
+          "ins": "test eax, eax"
+        },
+        {
+          "rva": "0x315313",
+          "ins": "jne 0x1803157ed"
+        },
+        {
+          "rva": "0x315319",
+          "ins": "mov byte ptr [rsp + 0x7a], 1"
+        },
+        {
+          "rva": "0x31531e",
+          "ins": "jmp 0x18031533b",
+          "to_rva": "0x31533b",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315320",
+          "ins": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "rva": "0x315324",
+          "ins": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "rva": "0x315329",
+          "ins": "test ebx, ebx"
+        },
+        {
+          "rva": "0x31532b",
+          "ins": "jne 0x18031579b"
+        },
+        {
+          "rva": "0x315331",
+          "ins": "mov rsi, qword ptr [rsp + 0x58]"
+        },
+        {
+          "rva": "0x315336",
+          "ins": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x31533b",
+          "ins": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "rva": "0x31533f",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "rva": "0x315342",
+          "ins": "je 0x1803153a0"
+        },
+        {
+          "rva": "0x315344",
+          "ins": "mov byte ptr [rsp + 0x20], 0"
+        },
+        {
+          "rva": "0x315349",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "rva": "0x31534c",
+          "ins": "mov r8b, 1"
+        },
+        {
+          "rva": "0x31534f",
+          "ins": "mov rdx, rdi"
+        },
+        {
+          "rva": "0x315352",
+          "ins": "call 0x180311810",
+          "to_rva": "0x311810",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315357",
+          "ins": "mov ebx, eax"
+        },
+        {
+          "rva": "0x315359",
+          "ins": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "rva": "0x31535d",
+          "ins": "call 0x1803c9c50",
+          "to_rva": "0x3c9c50",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315362",
+          "ins": "cmp word ptr [rax], 7"
+        },
+        {
+          "rva": "0x315366",
+          "ins": "jne 0x180315398"
+        },
+        {
+          "rva": "0x315368",
+          "ins": "mov rcx, qword ptr [rsi + 8]"
+        },
+        {
+          "rva": "0x31536c",
+          "ins": "call 0x1803c3900",
+          "to_rva": "0x3c3900",
+          "symbol": ""
+        },
+        {
+          "rva": "0x315371",
+          "ins": "cmp dword ptr [rax + 0x178], 0x696c6f53"
+        },
+        {
+          "rva": "0x31537b",
+          "ins": "jne 0x180315398"
+        },
+        {
+          "rva": "0x31537d",
+          "ins": "mov rax, qword ptr [rdi]"
+        },
+        {
+          "rva": "0x315380",
+          "ins": "lea rdx, [rsp + 0x60]"
+        },
+        {
+          "rva": "0x315385",
+          "ins": "mov rcx, rdi"
+        },
+        {
+          "rva": "0x315388",
+          "ins": "call qword ptr [rax + 0x3e8]"
+        },
+        {
+          "rva": "0x31538e",
+          "ins": "mov rcx, qword ptr [rax]"
+        },
+        {
+          "rva": "0x315391",
+          "ins": "mov qword ptr [rdi + 0x2f8], rcx"
+        },
+        {
+          "rva": "0x315398",
+          "ins": "test ebx, ebx"
+        },
+        {
+          "rva": "0x31539a",
+          "ins": "jne 0x18031579b"
+        },
+        {
+          "rva": "0x3153a0",
+          "ins": "mov dword ptr [rsp + 0x60], 0"
+        },
+        {
+          "rva": "0x3153a8",
+          "ins": "mov dword ptr [rsp + 0x64], 1"
+        },
+        {
+          "rva": "0x3153b0",
+          "ins": "lea rcx, [rsp + 0x70]"
+        },
+        {
+          "rva": "0x3153b5",
+          "ins": "call 0x1803012b0",
+          "to_rva": "0x3012b0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3153ba",
+          "ins": "nop "
+        },
+        {
+          "rva": "0x3153bb",
+          "ins": "jmp 0x1803153d8",
+          "to_rva": "0x3153d8",
+          "symbol": ""
+        },
+        {
+          "rva": "0x3153bd",
+          "ins": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "rva": "0x3153c1",
+          "ins": "mov rdi, qword ptr [rsp + 0x48]"
+        }
+      ]
+    },
+    "2026": {
+      "entry_rva": "0x31e800",
+      "range": [
+        "0x31e800",
+        "0x31ee51"
+      ],
+      "calls": [
+        {
+          "rva": "0x31e862",
+          "ins": "call 0x1803b2210",
+          "to_rva": "0x3b2210",
+          "symbol": "?BEE_ValidSource@@YAHPEBVBEE_CompItem@@PEAVBEE_Item@@PEAE@Z"
+        },
+        {
+          "rva": "0x31e893",
+          "ins": "call qword ptr [rip + 0xbfa0af]",
+          "to_rva": "0xf18948",
+          "symbol": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "rva": "0x31e8a6",
+          "ins": "call qword ptr [rip + 0xbfa0ec]",
+          "to_rva": "0xf18998",
+          "symbol": "U.dll!Up_ReportErrString"
+        },
+        {
+          "rva": "0x31e8ac",
+          "ins": "jmp 0x18031ee0c",
+          "to_rva": "0x31ee0c",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e8c4",
+          "ins": "call 0x1803d79e0",
+          "to_rva": "0x3d79e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e8d2",
+          "ins": "call 0x1803dfdd0",
+          "to_rva": "0x3dfdd0",
+          "symbol": "?BEE_Is3DModelItem@@YA_NPEBVBEE_Item@@@Z"
+        },
+        {
+          "rva": "0x31e8f0",
+          "ins": "call 0x1802ecd00",
+          "to_rva": "0x2ecd00",
+          "symbol": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z"
+        },
+        {
+          "rva": "0x31e8fd",
+          "ins": "jmp 0x18031e926",
+          "to_rva": "0x31e926",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e95b",
+          "ins": "call 0x180314820",
+          "to_rva": "0x314820",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e970",
+          "ins": "jmp 0x18031e99a",
+          "to_rva": "0x31e99a",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e983",
+          "ins": "jmp 0x18031ede5",
+          "to_rva": "0x31ede5",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9b0",
+          "ins": "call 0x18031abd0",
+          "to_rva": "0x31abd0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9be",
+          "ins": "call 0x1803d79e0",
+          "to_rva": "0x3d79e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9cc",
+          "ins": "call 0x1803d0e90",
+          "to_rva": "0x3d0e90",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9e8",
+          "ins": "call qword ptr [rax + 0x3f8]"
+        },
+        {
+          "rva": "0x31ea18",
+          "ins": "call 0x180309db0",
+          "to_rva": "0x309db0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ea1e",
+          "ins": "jmp 0x18031ea43",
+          "to_rva": "0x31ea43",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ea4e",
+          "ins": "call 0x1803de5f0",
+          "to_rva": "0x3de5f0",
+          "symbol": "?BEE_GetItemCurrentTime@@YAHPEBVBEE_Item@@PEAUT_Time@@PEAH@Z"
+        },
+        {
+          "rva": "0x31ea97",
+          "ins": "call 0x180d3be04",
+          "to_rva": "0xd3be04",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31eaa8",
+          "ins": "call 0x1803d68b0",
+          "to_rva": "0x3d68b0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31eade",
+          "ins": "call 0x1803df630",
+          "to_rva": "0x3df630",
+          "symbol": "?BEE_GetItemTime@@YAHPEBVBEE_Item@@FPEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x31eaf5",
+          "ins": "call 0x1803dfda0",
+          "to_rva": "0x3dfda0",
+          "symbol": "?BEE_GridToCompTime@@YAHPEAVBEE_Item@@PEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x31eb1d",
+          "ins": "call 0x1803df630",
+          "to_rva": "0x3df630",
+          "symbol": "?BEE_GetItemTime@@YAHPEBVBEE_Item@@FPEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x31eb34",
+          "ins": "call 0x1803dfda0",
+          "to_rva": "0x3dfda0",
+          "symbol": "?BEE_GridToCompTime@@YAHPEAVBEE_Item@@PEAUT_Time@@@Z"
+        },
+        {
+          "rva": "0x31eb55",
+          "ins": "call qword ptr [rip + 0xbfa67d]",
+          "to_rva": "0xf191d8",
+          "symbol": "U.dll!??Z@YAAEAUT_Time@@AEAU0@AEBU0@@Z"
+        },
+        {
+          "rva": "0x31eb78",
+          "ins": "call 0x18031fbb0",
+          "to_rva": "0x31fbb0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31eba5",
+          "ins": "call 0x18030ed70",
+          "to_rva": "0x30ed70",
+          "symbol": "?BEE_GetSeparateDimensionsPref@@YA_NXZ"
+        },
+        {
+          "rva": "0x31ebb5",
+          "ins": "call 0x1802f2e60",
+          "to_rva": "0x2f2e60",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ebcd",
+          "ins": "call 0x18069b670",
+          "to_rva": "0x69b670",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ebd6",
+          "ins": "call 0x18069c790",
+          "to_rva": "0x69c790",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ebe7",
+          "ins": "call 0x18069c790",
+          "to_rva": "0x69c790",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ebf2",
+          "ins": "call 0x18069db20",
+          "to_rva": "0x69db20",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ebf8",
+          "ins": "jmp 0x18031ed12",
+          "to_rva": "0x31ed12",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ec1b",
+          "ins": "call 0x1803de860",
+          "to_rva": "0x3de860",
+          "symbol": "?BEE_GetItemDuration@@YAHPEBVBEE_Item@@PEAUT_Time@@PEAH_N@Z"
+        },
+        {
+          "rva": "0x31ec46",
+          "ins": "call qword ptr [rax + 0x2a0]"
+        },
+        {
+          "rva": "0x31ec78",
+          "ins": "call 0x180d3be04",
+          "to_rva": "0xd3be04",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ec80",
+          "ins": "call 0x180334250",
+          "to_rva": "0x334250",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ec93",
+          "ins": "call 0x180311a00",
+          "to_rva": "0x311a00",
+          "symbol": "?BEE_SetLayerPositionFromCompOffset@@YAHPEAVBEE_CompItem@@PEAVBEE_Layer@@HH@Z"
+        },
+        {
+          "rva": "0x31eca9",
+          "ins": "call 0x18031c5e0",
+          "to_rva": "0x31c5e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ecaf",
+          "ins": "jmp 0x18031eccc",
+          "to_rva": "0x31eccc",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ecc3",
+          "ins": "jmp 0x18031eb6f",
+          "to_rva": "0x31eb6f",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ecd4",
+          "ins": "jmp 0x18031eb89",
+          "to_rva": "0x31eb89",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ecea",
+          "ins": "jmp 0x18031ede5",
+          "to_rva": "0x31ede5",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ecf3",
+          "ins": "jmp 0x18031eb89",
+          "to_rva": "0x31eb89",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ed21",
+          "ins": "call qword ptr [rip + 0xbf8359]",
+          "to_rva": "0xf17080",
+          "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x31ed36",
+          "ins": "call qword ptr [rip + 0xbf8344]",
+          "to_rva": "0xf17080",
+          "symbol": "TDB.dll!??0TDB_StreamID@@QEAA@AEBVTDB_MatchName@@@Z"
+        },
+        {
+          "rva": "0x31ed54",
+          "ins": "call qword ptr [rip + 0xbf8306]",
+          "to_rva": "0xf17060",
+          "symbol": "TDB.dll!??0TDB_StreamIDPath@@QEAA@AEBVTDB_StreamID@@0@Z"
+        },
+        {
+          "rva": "0x31ed68",
+          "ins": "call 0x18067a400",
+          "to_rva": "0x67a400",
+          "symbol": "?BEE_CmdSeparateStreamDimensions@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@_N2@Z"
+        },
+        {
+          "rva": "0x31ed76",
+          "ins": "call qword ptr [rip + 0xbf8d4c]",
+          "to_rva": "0xf17ac8",
+          "symbol": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+        },
+        {
+          "rva": "0x31ed7d",
+          "ins": "jmp 0x18031ed9a",
+          "to_rva": "0x31ed9a",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ed9d",
+          "ins": "call 0x18069c790",
+          "to_rva": "0x69c790",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31edae",
+          "ins": "call 0x18069c790",
+          "to_rva": "0x69c790",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31edb9",
+          "ins": "call 0x18069db20",
+          "to_rva": "0x69db20",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31edbf",
+          "ins": "jmp 0x18031edd7",
+          "to_rva": "0x31edd7",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31eddf",
+          "ins": "call 0x18069be70",
+          "to_rva": "0x69be70",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31eded",
+          "ins": "call 0x1803090a0",
+          "to_rva": "0x3090a0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ee01",
+          "ins": "call qword ptr [rax]"
+        },
+        {
+          "rva": "0x31ee04",
+          "ins": "jmp 0x18031ee0a",
+          "to_rva": "0x31ee0a",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ee24",
+          "ins": "call 0x180d3ac30",
+          "to_rva": "0xd3ac30",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31ee4a",
+          "ins": "call 0x180d3bdf8",
+          "to_rva": "0xd3bdf8",
+          "symbol": ""
+        }
+      ],
+      "first_instructions": [
+        {
+          "rva": "0x31e800",
+          "ins": "mov byte ptr [rsp + 0x20], r9b"
+        },
+        {
+          "rva": "0x31e805",
+          "ins": "push rbx"
+        },
+        {
+          "rva": "0x31e806",
+          "ins": "push rsi"
+        },
+        {
+          "rva": "0x31e807",
+          "ins": "push rdi"
+        },
+        {
+          "rva": "0x31e808",
+          "ins": "push r13"
+        },
+        {
+          "rva": "0x31e80a",
+          "ins": "push r14"
+        },
+        {
+          "rva": "0x31e80c",
+          "ins": "push r15"
+        },
+        {
+          "rva": "0x31e80e",
+          "ins": "sub rsp, 0x198"
+        },
+        {
+          "rva": "0x31e815",
+          "ins": "mov rax, qword ptr [rip + 0x12880e4]"
+        },
+        {
+          "rva": "0x31e81c",
+          "ins": "xor rax, rsp"
+        },
+        {
+          "rva": "0x31e81f",
+          "ins": "mov qword ptr [rsp + 0x180], rax"
+        },
+        {
+          "rva": "0x31e827",
+          "ins": "mov r15, rdx"
+        },
+        {
+          "rva": "0x31e82a",
+          "ins": "mov r14d, ecx"
+        },
+        {
+          "rva": "0x31e82d",
+          "ins": "mov dword ptr [rsp + 0x50], ecx"
+        },
+        {
+          "rva": "0x31e831",
+          "ins": "mov r13, rdx"
+        },
+        {
+          "rva": "0x31e834",
+          "ins": "mov qword ptr [rsp + 0x78], rdx"
+        },
+        {
+          "rva": "0x31e839",
+          "ins": "mov qword ptr [rsp + 0xb8], r8"
+        },
+        {
+          "rva": "0x31e841",
+          "ins": "xor edi, edi"
+        },
+        {
+          "rva": "0x31e843",
+          "ins": "mov qword ptr [rsp + 0x48], rdi"
+        },
+        {
+          "rva": "0x31e848",
+          "ins": "lea rsi, [rdx + 8]"
+        },
+        {
+          "rva": "0x31e84c",
+          "ins": "mov qword ptr [rsp + 0x68], rsi"
+        },
+        {
+          "rva": "0x31e851",
+          "ins": "mov rdx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e854",
+          "ins": "test rdx, rdx"
+        },
+        {
+          "rva": "0x31e857",
+          "ins": "je 0x18031e8b1"
+        },
+        {
+          "rva": "0x31e859",
+          "ins": "lea r8, [rsp + 0x40]"
+        },
+        {
+          "rva": "0x31e85e",
+          "ins": "mov rcx, qword ptr [r13]"
+        },
+        {
+          "rva": "0x31e862",
+          "ins": "call 0x1803b2210",
+          "to_rva": "0x3b2210",
+          "symbol": "?BEE_ValidSource@@YAHPEBVBEE_CompItem@@PEAVBEE_Item@@PEAE@Z"
+        },
+        {
+          "rva": "0x31e867",
+          "ins": "mov ebx, eax"
+        },
+        {
+          "rva": "0x31e869",
+          "ins": "mov dword ptr [rsp + 0x30], eax"
+        },
+        {
+          "rva": "0x31e86d",
+          "ins": "test eax, eax"
+        },
+        {
+          "rva": "0x31e86f",
+          "ins": "jne 0x18031ee0c"
+        },
+        {
+          "rva": "0x31e875",
+          "ins": "cmp byte ptr [rsp + 0x40], dil"
+        },
+        {
+          "rva": "0x31e87a",
+          "ins": "jne 0x18031e8bc"
+        },
+        {
+          "rva": "0x31e87c",
+          "ins": "mov ebx, 3"
+        },
+        {
+          "rva": "0x31e881",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "rva": "0x31e884",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "rva": "0x31e887",
+          "ins": "mov edx, 0xd1"
+        },
+        {
+          "rva": "0x31e88c",
+          "ins": "mov rcx, qword ptr [rip + 0x128134d]"
+        },
+        {
+          "rva": "0x31e893",
+          "ins": "call qword ptr [rip + 0xbfa0af]",
+          "to_rva": "0xf18948",
+          "symbol": "U.dll!U_ZLookupLStrCache"
+        },
+        {
+          "rva": "0x31e899",
+          "ins": "mov r8, rax"
+        },
+        {
+          "rva": "0x31e89c",
+          "ins": "mov edx, 8"
+        },
+        {
+          "rva": "0x31e8a1",
+          "ins": "mov ecx, 0x1a00a9"
+        },
+        {
+          "rva": "0x31e8a6",
+          "ins": "call qword ptr [rip + 0xbfa0ec]",
+          "to_rva": "0xf18998",
+          "symbol": "U.dll!Up_ReportErrString"
+        },
+        {
+          "rva": "0x31e8ac",
+          "ins": "jmp 0x18031ee0c",
+          "to_rva": "0x31ee0c",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e8b1",
+          "ins": "xor ebx, ebx"
+        },
+        {
+          "rva": "0x31e8b3",
+          "ins": "mov dword ptr [rsp + 0x30], ebx"
+        },
+        {
+          "rva": "0x31e8b7",
+          "ins": "mov byte ptr [rsp + 0x40], 1"
+        },
+        {
+          "rva": "0x31e8bc",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e8bf",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "rva": "0x31e8c2",
+          "ins": "je 0x18031e8e7"
+        },
+        {
+          "rva": "0x31e8c4",
+          "ins": "call 0x1803d79e0",
+          "to_rva": "0x3d79e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e8c9",
+          "ins": "cmp word ptr [rax], 7"
+        },
+        {
+          "rva": "0x31e8cd",
+          "ins": "jne 0x18031e8e7"
+        },
+        {
+          "rva": "0x31e8cf",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e8d2",
+          "ins": "call 0x1803dfdd0",
+          "to_rva": "0x3dfdd0",
+          "symbol": "?BEE_Is3DModelItem@@YA_NPEBVBEE_Item@@@Z"
+        },
+        {
+          "rva": "0x31e8d7",
+          "ins": "mov ecx, 5"
+        },
+        {
+          "rva": "0x31e8dc",
+          "ins": "test al, al"
+        },
+        {
+          "rva": "0x31e8de",
+          "ins": "cmovne r14d, ecx"
+        },
+        {
+          "rva": "0x31e8e2",
+          "ins": "mov dword ptr [rsp + 0x50], r14d"
+        },
+        {
+          "rva": "0x31e8e7",
+          "ins": "mov r8b, 1"
+        },
+        {
+          "rva": "0x31e8ea",
+          "ins": "mov rdx, qword ptr [r15]"
+        },
+        {
+          "rva": "0x31e8ed",
+          "ins": "mov ecx, r14d"
+        },
+        {
+          "rva": "0x31e8f0",
+          "ins": "call 0x1802ecd00",
+          "to_rva": "0x2ecd00",
+          "symbol": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z"
+        },
+        {
+          "rva": "0x31e8f5",
+          "ins": "mov rdi, rax"
+        },
+        {
+          "rva": "0x31e8f8",
+          "ins": "mov qword ptr [rsp + 0x48], rax"
+        },
+        {
+          "rva": "0x31e8fd",
+          "ins": "jmp 0x18031e926",
+          "to_rva": "0x31e926",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e8ff",
+          "ins": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "rva": "0x31e903",
+          "ins": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "rva": "0x31e908",
+          "ins": "test ebx, ebx"
+        },
+        {
+          "rva": "0x31e90a",
+          "ins": "jne 0x18031ee0c"
+        },
+        {
+          "rva": "0x31e910",
+          "ins": "mov ebx, dword ptr [rsp + 0x30]"
+        },
+        {
+          "rva": "0x31e914",
+          "ins": "mov r13, qword ptr [rsp + 0x78]"
+        },
+        {
+          "rva": "0x31e919",
+          "ins": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x31e91e",
+          "ins": "mov r15, r13"
+        },
+        {
+          "rva": "0x31e921",
+          "ins": "mov rsi, qword ptr [rsp + 0x68]"
+        },
+        {
+          "rva": "0x31e926",
+          "ins": "test rdi, rdi"
+        },
+        {
+          "rva": "0x31e929",
+          "ins": "je 0x18031ee0c"
+        },
+        {
+          "rva": "0x31e92f",
+          "ins": "lea rax, [rip + 0xc923aa]"
+        },
+        {
+          "rva": "0x31e936",
+          "ins": "mov qword ptr [rsp + 0x80], rax"
+        },
+        {
+          "rva": "0x31e93e",
+          "ins": "mov word ptr [rsp + 0x88], 0"
+        },
+        {
+          "rva": "0x31e948",
+          "ins": "mov byte ptr [rsp + 0x8a], 0"
+        },
+        {
+          "rva": "0x31e950",
+          "ins": "mov qword ptr [rsp + 0x90], rdi"
+        },
+        {
+          "rva": "0x31e958",
+          "ins": "mov rcx, rdi"
+        },
+        {
+          "rva": "0x31e95b",
+          "ins": "call 0x180314820",
+          "to_rva": "0x314820",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e960",
+          "ins": "test eax, eax"
+        },
+        {
+          "rva": "0x31e962",
+          "ins": "jne 0x18031ee3a"
+        },
+        {
+          "rva": "0x31e968",
+          "ins": "mov byte ptr [rsp + 0x8a], 1"
+        },
+        {
+          "rva": "0x31e970",
+          "ins": "jmp 0x18031e99a",
+          "to_rva": "0x31e99a",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e972",
+          "ins": "mov ebx, dword ptr [rsp + 0x38]"
+        },
+        {
+          "rva": "0x31e976",
+          "ins": "mov rdi, qword ptr [rsp + 0x48]"
+        },
+        {
+          "rva": "0x31e97b",
+          "ins": "test ebx, ebx"
+        },
+        {
+          "rva": "0x31e97d",
+          "ins": "je 0x18031e988"
+        },
+        {
+          "rva": "0x31e97f",
+          "ins": "mov dword ptr [rsp + 0x30], ebx"
+        },
+        {
+          "rva": "0x31e983",
+          "ins": "jmp 0x18031ede5",
+          "to_rva": "0x31ede5",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e988",
+          "ins": "mov r13, qword ptr [rsp + 0x78]"
+        },
+        {
+          "rva": "0x31e98d",
+          "ins": "mov r14d, dword ptr [rsp + 0x50]"
+        },
+        {
+          "rva": "0x31e992",
+          "ins": "mov r15, r13"
+        },
+        {
+          "rva": "0x31e995",
+          "ins": "mov rsi, qword ptr [rsp + 0x68]"
+        },
+        {
+          "rva": "0x31e99a",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e99d",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "rva": "0x31e9a0",
+          "ins": "je 0x18031ea00"
+        },
+        {
+          "rva": "0x31e9a2",
+          "ins": "mov byte ptr [rsp + 0x20], 0"
+        },
+        {
+          "rva": "0x31e9a7",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "rva": "0x31e9aa",
+          "ins": "mov r8b, 1"
+        },
+        {
+          "rva": "0x31e9ad",
+          "ins": "mov rdx, rdi"
+        },
+        {
+          "rva": "0x31e9b0",
+          "ins": "call 0x18031abd0",
+          "to_rva": "0x31abd0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9b5",
+          "ins": "mov ebx, eax"
+        },
+        {
+          "rva": "0x31e9b7",
+          "ins": "mov dword ptr [rsp + 0x30], eax"
+        },
+        {
+          "rva": "0x31e9bb",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e9be",
+          "ins": "call 0x1803d79e0",
+          "to_rva": "0x3d79e0",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9c3",
+          "ins": "cmp word ptr [rax], 7"
+        },
+        {
+          "rva": "0x31e9c7",
+          "ins": "jne 0x18031e9f8"
+        },
+        {
+          "rva": "0x31e9c9",
+          "ins": "mov rcx, qword ptr [rsi]"
+        },
+        {
+          "rva": "0x31e9cc",
+          "ins": "call 0x1803d0e90",
+          "to_rva": "0x3d0e90",
+          "symbol": ""
+        },
+        {
+          "rva": "0x31e9d1",
+          "ins": "cmp dword ptr [rax + 0x178], 0x696c6f53"
+        },
+        {
+          "rva": "0x31e9db",
+          "ins": "jne 0x18031e9f8"
+        },
+        {
+          "rva": "0x31e9dd",
+          "ins": "mov rax, qword ptr [rdi]"
+        },
+        {
+          "rva": "0x31e9e0",
+          "ins": "lea rdx, [rsp + 0x60]"
+        },
+        {
+          "rva": "0x31e9e5",
+          "ins": "mov rcx, rdi"
+        },
+        {
+          "rva": "0x31e9e8",
+          "ins": "call qword ptr [rax + 0x3f8]"
+        }
+      ]
+    }
+  }
+}

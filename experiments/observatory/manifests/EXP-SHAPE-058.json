@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP-SHAPE-058",
+  "date": "2026-10-12",
+  "status": "PASS native full static BEE NewShape command-to-CompItem vtable path in AE2025/2026",
+  "evidence": "E2-L installed native BEE.dll real x64 calls + MSVC RTTI complete object locator and vtable",
+  "result": {
+    "command_id_2025": 101,
+    "command_id_2026": 106,
+    "task_cpp_rtti": ".?AV?$BEE_NewLayerTask@$03@@",
+    "specialization_type": 4,
+    "task_allocation_bytes": 48,
+    "task_vtable_slot1_to_newlayer_worker": true,
+    "task_worker_to_CreateLayerFromType": true,
+    "task_worker_to_CompItemAttachLayerToCompOnly": true,
+    "paths": {
+      "AE2025": [
+        "0x3151d0",
+        "0x30b650",
+        "0x3920f0",
+        "0x392120"
+      ],
+      "AE2026": [
+        "0x31e800",
+        "0x314820",
+        "0x39d4a0",
+        "0x39d4d0"
+      ]
+    },
+    "native_CNL_foreign_type_created": false,
+    "unsafe_private_calls": 0,
+    "compnodeae_edited": false
+  },
+  "finding": "research/findings/F-VECTOR-058-native-newshape-polymorphic-task-to-comp-attach-complete.md"
+}
