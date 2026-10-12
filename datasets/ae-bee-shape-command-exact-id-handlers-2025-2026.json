@@ -1,0 +1,571 @@
+{
+  "evidence": "E2-L actual NewVectorLayer command encoded ID to BEE_DoCommand 32byte table +8 and +16 handler compiled code, offline static only",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "new_shape_command_ID": 101,
+      "record_rva": "0xfecef0",
+      "callback_factory_plus8": {
+        "rva": "0x646bd0",
+        "range": [
+          "0x646bd0",
+          "0x646c2a"
+        ],
+        "instructions": [
+          {
+            "site": "0x646bd0",
+            "op": "mov qword ptr [rsp + 8], rbx"
+          },
+          {
+            "site": "0x646bd5",
+            "op": "push rdi"
+          },
+          {
+            "site": "0x646bd6",
+            "op": "sub rsp, 0x20"
+          },
+          {
+            "site": "0x646bda",
+            "op": "mov rdi, rcx"
+          },
+          {
+            "site": "0x646bdd",
+            "op": "mov ecx, 0x30"
+          },
+          {
+            "site": "0x646be2",
+            "op": "call 0x180ce9048",
+            "dest": "0xce9048",
+            "symbol": ""
+          },
+          {
+            "site": "0x646be7",
+            "op": "mov rbx, rax"
+          },
+          {
+            "site": "0x646bea",
+            "op": "mov qword ptr [rsp + 0x38], rax"
+          },
+          {
+            "site": "0x646bef",
+            "op": "test rax, rax"
+          },
+          {
+            "site": "0x646bf2",
+            "op": "je 0x180646c1d"
+          },
+          {
+            "site": "0x646bf4",
+            "op": "mov r8d, 4"
+          },
+          {
+            "site": "0x646bfa",
+            "op": "mov rdx, rdi"
+          },
+          {
+            "site": "0x646bfd",
+            "op": "mov rcx, rax"
+          },
+          {
+            "site": "0x646c00",
+            "op": "call 0x1805443e0",
+            "dest": "0x5443e0",
+            "symbol": ""
+          },
+          {
+            "site": "0x646c05",
+            "op": "lea rax, [rip + 0x9a7ad4]"
+          },
+          {
+            "site": "0x646c0c",
+            "op": "mov qword ptr [rbx], rax"
+          },
+          {
+            "site": "0x646c0f",
+            "op": "mov rax, rbx"
+          },
+          {
+            "site": "0x646c12",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x646c17",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x646c1b",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x646c1c",
+            "op": "ret "
+          },
+          {
+            "site": "0x646c1d",
+            "op": "xor eax, eax"
+          },
+          {
+            "site": "0x646c1f",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x646c24",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x646c28",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x646c29",
+            "op": "ret "
+          }
+        ],
+        "links": [
+          {
+            "site": "0x646be2",
+            "op": "call 0x180ce9048",
+            "dest": "0xce9048",
+            "symbol": ""
+          },
+          {
+            "site": "0x646c00",
+            "op": "call 0x1805443e0",
+            "dest": "0x5443e0",
+            "symbol": ""
+          }
+        ]
+      },
+      "callback_execution_plus16": {
+        "rva": "0x646c30",
+        "range": [
+          "0x646c30",
+          "0x646c99"
+        ],
+        "instructions": [
+          {
+            "site": "0x646c30",
+            "op": "mov qword ptr [rsp + 8], rbx"
+          },
+          {
+            "site": "0x646c35",
+            "op": "mov qword ptr [rsp + 0x10], rsi"
+          },
+          {
+            "site": "0x646c3a",
+            "op": "push rdi"
+          },
+          {
+            "site": "0x646c3b",
+            "op": "sub rsp, 0x20"
+          },
+          {
+            "site": "0x646c3f",
+            "op": "mov rdi, rdx"
+          },
+          {
+            "site": "0x646c42",
+            "op": "mov rsi, rcx"
+          },
+          {
+            "site": "0x646c45",
+            "op": "mov ecx, 0x30"
+          },
+          {
+            "site": "0x646c4a",
+            "op": "call 0x180ce9048",
+            "dest": "0xce9048",
+            "symbol": ""
+          },
+          {
+            "site": "0x646c4f",
+            "op": "mov rbx, rax"
+          },
+          {
+            "site": "0x646c52",
+            "op": "mov qword ptr [rsp + 0x40], rax"
+          },
+          {
+            "site": "0x646c57",
+            "op": "test rax, rax"
+          },
+          {
+            "site": "0x646c5a",
+            "op": "je 0x180646c87"
+          },
+          {
+            "site": "0x646c5c",
+            "op": "mov r8, rdi"
+          },
+          {
+            "site": "0x646c5f",
+            "op": "mov rdx, rsi"
+          },
+          {
+            "site": "0x646c62",
+            "op": "mov rcx, rax"
+          },
+          {
+            "site": "0x646c65",
+            "op": "call 0x180544470",
+            "dest": "0x544470",
+            "symbol": ""
+          },
+          {
+            "site": "0x646c6a",
+            "op": "lea rax, [rip + 0x9a7a6f]"
+          },
+          {
+            "site": "0x646c71",
+            "op": "mov qword ptr [rbx], rax"
+          },
+          {
+            "site": "0x646c74",
+            "op": "mov rax, rbx"
+          },
+          {
+            "site": "0x646c77",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x646c7c",
+            "op": "mov rsi, qword ptr [rsp + 0x38]"
+          },
+          {
+            "site": "0x646c81",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x646c85",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x646c86",
+            "op": "ret "
+          },
+          {
+            "site": "0x646c87",
+            "op": "xor eax, eax"
+          },
+          {
+            "site": "0x646c89",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x646c8e",
+            "op": "mov rsi, qword ptr [rsp + 0x38]"
+          },
+          {
+            "site": "0x646c93",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x646c97",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x646c98",
+            "op": "ret "
+          }
+        ],
+        "links": [
+          {
+            "site": "0x646c4a",
+            "op": "call 0x180ce9048",
+            "dest": "0xce9048",
+            "symbol": ""
+          },
+          {
+            "site": "0x646c65",
+            "op": "call 0x180544470",
+            "dest": "0x544470",
+            "symbol": ""
+          }
+        ]
+      }
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "new_shape_command_ID": 106,
+      "record_rva": "0x104d270",
+      "callback_factory_plus8": {
+        "rva": "0x660c10",
+        "range": [
+          "0x660c10",
+          "0x660c6a"
+        ],
+        "instructions": [
+          {
+            "site": "0x660c10",
+            "op": "mov qword ptr [rsp + 8], rbx"
+          },
+          {
+            "site": "0x660c15",
+            "op": "push rdi"
+          },
+          {
+            "site": "0x660c16",
+            "op": "sub rsp, 0x20"
+          },
+          {
+            "site": "0x660c1a",
+            "op": "mov rdi, rcx"
+          },
+          {
+            "site": "0x660c1d",
+            "op": "mov ecx, 0x30"
+          },
+          {
+            "site": "0x660c22",
+            "op": "call 0x180d3a668",
+            "dest": "0xd3a668",
+            "symbol": ""
+          },
+          {
+            "site": "0x660c27",
+            "op": "mov rbx, rax"
+          },
+          {
+            "site": "0x660c2a",
+            "op": "mov qword ptr [rsp + 0x38], rax"
+          },
+          {
+            "site": "0x660c2f",
+            "op": "test rax, rax"
+          },
+          {
+            "site": "0x660c32",
+            "op": "je 0x180660c5d"
+          },
+          {
+            "site": "0x660c34",
+            "op": "mov r8d, 4"
+          },
+          {
+            "site": "0x660c3a",
+            "op": "mov rdx, rdi"
+          },
+          {
+            "site": "0x660c3d",
+            "op": "mov rcx, rax"
+          },
+          {
+            "site": "0x660c40",
+            "op": "call 0x180563200",
+            "dest": "0x563200",
+            "symbol": ""
+          },
+          {
+            "site": "0x660c45",
+            "op": "lea rax, [rip + 0x9ededc]"
+          },
+          {
+            "site": "0x660c4c",
+            "op": "mov qword ptr [rbx], rax"
+          },
+          {
+            "site": "0x660c4f",
+            "op": "mov rax, rbx"
+          },
+          {
+            "site": "0x660c52",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x660c57",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x660c5b",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x660c5c",
+            "op": "ret "
+          },
+          {
+            "site": "0x660c5d",
+            "op": "xor eax, eax"
+          },
+          {
+            "site": "0x660c5f",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x660c64",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x660c68",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x660c69",
+            "op": "ret "
+          }
+        ],
+        "links": [
+          {
+            "site": "0x660c22",
+            "op": "call 0x180d3a668",
+            "dest": "0xd3a668",
+            "symbol": ""
+          },
+          {
+            "site": "0x660c40",
+            "op": "call 0x180563200",
+            "dest": "0x563200",
+            "symbol": ""
+          }
+        ]
+      },
+      "callback_execution_plus16": {
+        "rva": "0x660c70",
+        "range": [
+          "0x660c70",
+          "0x660cd9"
+        ],
+        "instructions": [
+          {
+            "site": "0x660c70",
+            "op": "mov qword ptr [rsp + 8], rbx"
+          },
+          {
+            "site": "0x660c75",
+            "op": "mov qword ptr [rsp + 0x10], rsi"
+          },
+          {
+            "site": "0x660c7a",
+            "op": "push rdi"
+          },
+          {
+            "site": "0x660c7b",
+            "op": "sub rsp, 0x20"
+          },
+          {
+            "site": "0x660c7f",
+            "op": "mov rdi, rdx"
+          },
+          {
+            "site": "0x660c82",
+            "op": "mov rsi, rcx"
+          },
+          {
+            "site": "0x660c85",
+            "op": "mov ecx, 0x30"
+          },
+          {
+            "site": "0x660c8a",
+            "op": "call 0x180d3a668",
+            "dest": "0xd3a668",
+            "symbol": ""
+          },
+          {
+            "site": "0x660c8f",
+            "op": "mov rbx, rax"
+          },
+          {
+            "site": "0x660c92",
+            "op": "mov qword ptr [rsp + 0x40], rax"
+          },
+          {
+            "site": "0x660c97",
+            "op": "test rax, rax"
+          },
+          {
+            "site": "0x660c9a",
+            "op": "je 0x180660cc7"
+          },
+          {
+            "site": "0x660c9c",
+            "op": "mov r8, rdi"
+          },
+          {
+            "site": "0x660c9f",
+            "op": "mov rdx, rsi"
+          },
+          {
+            "site": "0x660ca2",
+            "op": "mov rcx, rax"
+          },
+          {
+            "site": "0x660ca5",
+            "op": "call 0x180563290",
+            "dest": "0x563290",
+            "symbol": ""
+          },
+          {
+            "site": "0x660caa",
+            "op": "lea rax, [rip + 0x9ede77]"
+          },
+          {
+            "site": "0x660cb1",
+            "op": "mov qword ptr [rbx], rax"
+          },
+          {
+            "site": "0x660cb4",
+            "op": "mov rax, rbx"
+          },
+          {
+            "site": "0x660cb7",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x660cbc",
+            "op": "mov rsi, qword ptr [rsp + 0x38]"
+          },
+          {
+            "site": "0x660cc1",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x660cc5",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x660cc6",
+            "op": "ret "
+          },
+          {
+            "site": "0x660cc7",
+            "op": "xor eax, eax"
+          },
+          {
+            "site": "0x660cc9",
+            "op": "mov rbx, qword ptr [rsp + 0x30]"
+          },
+          {
+            "site": "0x660cce",
+            "op": "mov rsi, qword ptr [rsp + 0x38]"
+          },
+          {
+            "site": "0x660cd3",
+            "op": "add rsp, 0x20"
+          },
+          {
+            "site": "0x660cd7",
+            "op": "pop rdi"
+          },
+          {
+            "site": "0x660cd8",
+            "op": "ret "
+          }
+        ],
+        "links": [
+          {
+            "site": "0x660c8a",
+            "op": "call 0x180d3a668",
+            "dest": "0xd3a668",
+            "symbol": ""
+          },
+          {
+            "site": "0x660ca5",
+            "op": "call 0x180563290",
+            "dest": "0x563290",
+            "symbol": ""
+          }
+        ]
+      }
+    }
+  }
+}

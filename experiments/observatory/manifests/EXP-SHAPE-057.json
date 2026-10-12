@@ -1,0 +1,30 @@
+{
+  "experiment_id": "EXP-SHAPE-057",
+  "date": "2026-10-12",
+  "status": "PASS across AE2025/26 exact NewShape command ID to 32-byte native table entry and callbacks",
+  "results": {
+    "AE2025": {
+      "shape_command_id": 101,
+      "table_record": "0xFECEF0",
+      "execute": "0x646C30",
+      "next": "0x544470",
+      "direct_depth6_owner_path": false
+    },
+    "AE2026": {
+      "shape_command_id": 106,
+      "table_record": "0x104D270",
+      "execute": "0x660C70",
+      "next": "0x563290",
+      "direct_depth6_owner_path": false
+    },
+    "native_layer_CNL_registration": false,
+    "unsafe_registry_calls": 0,
+    "compnodeae_edited": false
+  },
+  "data": [
+    "datasets/ae-bee-shape-command-exact-id-handlers-2025-2026.json",
+    "datasets/ae-bee-shape-command-execution-callgraph-2025-2026.json",
+    "datasets/ae-bee-shape-command-exact-id-verified-2025-2026.json"
+  ],
+  "finding": "research/findings/F-VECTOR-057-new-shape-command-index-to-native-dispatch-table.md"
+}

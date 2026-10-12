@@ -1,0 +1,29 @@
+{
+  "status": "PASS two versions of installed BEE native command ID and table mapping; no foreign Shape native type creation yet",
+  "versions": {
+    "2025": {
+      "command_id": 101,
+      "command_resource_id": 774,
+      "table_item_rva": "0xfecef0",
+      "callback_setup_rva": "0x646bd0",
+      "callback_execution_rva": "0x646c30",
+      "execution_callback_next_native_target": "0x544470",
+      "native_ctor_comp_attach_direct_path_found_with_depth6": false,
+      "static_functions_explored": 72,
+      "external_CNL_extension_registered": false,
+      "private_host_calls": 0
+    },
+    "2026": {
+      "command_id": 106,
+      "command_resource_id": 774,
+      "table_item_rva": "0x104d270",
+      "callback_setup_rva": "0x660c10",
+      "callback_execution_rva": "0x660c70",
+      "execution_callback_next_native_target": "0x563290",
+      "native_ctor_comp_attach_direct_path_found_with_depth6": false,
+      "static_functions_explored": 78,
+      "external_CNL_extension_registered": false,
+      "private_host_calls": 0
+    }
+  }
+}

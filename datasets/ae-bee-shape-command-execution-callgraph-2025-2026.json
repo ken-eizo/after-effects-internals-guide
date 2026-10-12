@@ -1,0 +1,43 @@
+{
+  "evidence": "E2-L static direct machine-call CFG BFS, not runtime proof of conditional branch execution",
+  "versions": {
+    "2025": {
+      "handler_rva": "0x646c30",
+      "goal_comp_creation_rva": "0x3a7ca0",
+      "functions_explored": 72,
+      "max_depth": 6,
+      "direct_call_shortest_path": null,
+      "first_handler_edges": [
+        {
+          "target": 13537352,
+          "site": 6581322,
+          "kind": "call"
+        },
+        {
+          "target": 5522544,
+          "site": 6581349,
+          "kind": "call"
+        }
+      ]
+    },
+    "2026": {
+      "handler_rva": "0x660c70",
+      "goal_comp_creation_rva": "0x3b4110",
+      "functions_explored": 78,
+      "max_depth": 6,
+      "direct_call_shortest_path": null,
+      "first_handler_edges": [
+        {
+          "target": 13870696,
+          "site": 6687882,
+          "kind": "call"
+        },
+        {
+          "target": 5649040,
+          "site": 6687909,
+          "kind": "call"
+        }
+      ]
+    }
+  }
+}
