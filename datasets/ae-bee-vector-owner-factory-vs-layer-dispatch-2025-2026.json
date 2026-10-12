@@ -1,0 +1,2675 @@
+{
+  "evidence": "E2-L exact installed native BEE x64 BEE_VectorLayer::Create, fixed BEE_Layer::CreateLayerFromType, and BEE_LayerSet::AddProperty static call graphs",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "factories": {
+        "?Create@BEE_VectorLayer@@": {
+          "export": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "entry_rva": "0xb0970",
+          "function_start": "0xb0970",
+          "function_end": "0xb09cf",
+          "native_bytes": 95,
+          "calls": [
+            {
+              "rva": "0xb0985",
+              "asm": "call qword ptr [rip + 0xe0ee65]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0xb09b1",
+              "asm": "call 0x1806e1050",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0xb0970",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0xb0975",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0xb0976",
+              "asm": "sub rsp, 0x40"
+            },
+            {
+              "rva": "0xb097a",
+              "asm": "mov rbx, rdx"
+            },
+            {
+              "rva": "0xb097d",
+              "asm": "mov rdi, rcx"
+            },
+            {
+              "rva": "0xb0980",
+              "asm": "mov ecx, 0x2820"
+            },
+            {
+              "rva": "0xb0985",
+              "asm": "call qword ptr [rip + 0xe0ee65]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0xb098b",
+              "asm": "mov qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "rva": "0xb0990",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0xb0993",
+              "asm": "je 0x1800b09c2"
+            },
+            {
+              "rva": "0xb0995",
+              "asm": "movzx r8d, byte ptr [rsp + 0x70]"
+            },
+            {
+              "rva": "0xb099b",
+              "asm": "mov byte ptr [rsp + 0x28], r8b"
+            },
+            {
+              "rva": "0xb09a0",
+              "asm": "mov byte ptr [rsp + 0x20], 1"
+            },
+            {
+              "rva": "0xb09a5",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0xb09a8",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "rva": "0xb09ab",
+              "asm": "mov rdx, rdi"
+            },
+            {
+              "rva": "0xb09ae",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0xb09b1",
+              "asm": "call 0x1806e1050",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0xb09b6",
+              "asm": "nop "
+            },
+            {
+              "rva": "0xb09b7",
+              "asm": "mov rbx, qword ptr [rsp + 0x50]"
+            },
+            {
+              "rva": "0xb09bc",
+              "asm": "add rsp, 0x40"
+            },
+            {
+              "rva": "0xb09c0",
+              "asm": "pop rdi"
+            },
+            {
+              "rva": "0xb09c1",
+              "asm": "ret "
+            },
+            {
+              "rva": "0xb09c2",
+              "asm": "xor eax, eax"
+            },
+            {
+              "rva": "0xb09c4",
+              "asm": "mov rbx, qword ptr [rsp + 0x50]"
+            },
+            {
+              "rva": "0xb09c9",
+              "asm": "add rsp, 0x40"
+            },
+            {
+              "rva": "0xb09cd",
+              "asm": "pop rdi"
+            },
+            {
+              "rva": "0xb09ce",
+              "asm": "ret "
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0xb0990",
+              "asm": "test rax, rax"
+            }
+          ]
+        },
+        "?CreateLayerFromType@BEE_Layer@@": {
+          "export": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z",
+          "entry_rva": "0x2e3e10",
+          "function_start": "0x2e3e10",
+          "function_end": "0x2e4128",
+          "native_bytes": 792,
+          "calls": [
+            {
+              "rva": "0x2e3e31",
+              "asm": "call qword ptr [rax + 0x68]",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3e49",
+              "asm": "call qword ptr [rip + 0xbdb989]",
+              "target": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x2e3e76",
+              "asm": "jmp rcx",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3e85",
+              "asm": "call qword ptr [rip + 0xbdc22d]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3eb2",
+              "asm": "call 0x18024df90",
+              "target": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3eba",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3ecc",
+              "asm": "call qword ptr [rip + 0xbdc1e6]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3ef9",
+              "asm": "call 0x180320640",
+              "target": "??0BEE_LightLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3f01",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3f13",
+              "asm": "call qword ptr [rip + 0xbdc19f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3f40",
+              "asm": "call 0x1802ad130",
+              "target": "??0BEE_CameraLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3f48",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3f5a",
+              "asm": "call qword ptr [rip + 0xbdc158]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3f87",
+              "asm": "call 0x1805a4060",
+              "target": "??0BEE_TextLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3f8f",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3fa1",
+              "asm": "call qword ptr [rip + 0xbdc111]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3fce",
+              "asm": "call 0x1806e1050",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3fd6",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3feb",
+              "asm": "call qword ptr [rip + 0xbdc0c7]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e4018",
+              "asm": "call 0x180337210",
+              "target": "??0BEE_ModelLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e4020",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e4022",
+              "asm": "call 0x18023ad00",
+              "target": "?BEE_BetaFeature_Is3DParametricMeshEnabled@@YA_NXZ"
+            },
+            {
+              "rva": "0x2e4038",
+              "asm": "call qword ptr [rip + 0xbdc07a]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e4065",
+              "asm": "call 0x180339cd0",
+              "target": "??0BEE_ParametricMeshLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e4078",
+              "asm": "call qword ptr [rax + 0x630]",
+              "target": ""
+            },
+            {
+              "rva": "0x2e40ac",
+              "asm": "call qword ptr [rip + 0xbdb806]",
+              "target": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x2e40b6",
+              "asm": "jmp 0x1802e407e",
+              "target": ""
+            },
+            {
+              "rva": "0x2e40cf",
+              "asm": "call qword ptr [rip + 0xbdb7e3]",
+              "target": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x2e40e9",
+              "asm": "call 0x180ceacc8",
+              "target": ""
+            },
+            {
+              "rva": "0x2e40ff",
+              "asm": "call 0x180ceacc8",
+              "target": ""
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0x2e3e10",
+              "asm": "push rbx"
+            },
+            {
+              "rva": "0x2e3e12",
+              "asm": "push rbp"
+            },
+            {
+              "rva": "0x2e3e13",
+              "asm": "push rsi"
+            },
+            {
+              "rva": "0x2e3e14",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0x2e3e15",
+              "asm": "push r12"
+            },
+            {
+              "rva": "0x2e3e17",
+              "asm": "push r14"
+            },
+            {
+              "rva": "0x2e3e19",
+              "asm": "push r15"
+            },
+            {
+              "rva": "0x2e3e1b",
+              "asm": "sub rsp, 0x30"
+            },
+            {
+              "rva": "0x2e3e1f",
+              "asm": "movzx ebp, r8b"
+            },
+            {
+              "rva": "0x2e3e23",
+              "asm": "mov rsi, rdx"
+            },
+            {
+              "rva": "0x2e3e26",
+              "asm": "movsxd r15, ecx"
+            },
+            {
+              "rva": "0x2e3e29",
+              "asm": "xor ebx, ebx"
+            },
+            {
+              "rva": "0x2e3e2b",
+              "asm": "mov rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0x2e3e2e",
+              "asm": "mov rcx, rdx"
+            },
+            {
+              "rva": "0x2e3e31",
+              "asm": "call qword ptr [rax + 0x68]",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3e34",
+              "asm": "mov r14, rax"
+            },
+            {
+              "rva": "0x2e3e37",
+              "asm": "xor r8d, r8d"
+            },
+            {
+              "rva": "0x2e3e3a",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2e3e3d",
+              "asm": "mov edx, 8"
+            },
+            {
+              "rva": "0x2e3e42",
+              "asm": "mov rcx, qword ptr [rip + 0x122ebf7]"
+            },
+            {
+              "rva": "0x2e3e49",
+              "asm": "call qword ptr [rip + 0xbdb989]",
+              "target": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x2e3e4f",
+              "asm": "mov rdi, rax"
+            },
+            {
+              "rva": "0x2e3e52",
+              "asm": "mov qword ptr [rsp + 0x78], rax"
+            },
+            {
+              "rva": "0x2e3e57",
+              "asm": "xor r12b, r12b"
+            },
+            {
+              "rva": "0x2e3e5a",
+              "asm": "cmp r15d, 7"
+            },
+            {
+              "rva": "0x2e3e5e",
+              "asm": "ja 0x1802e40b8"
+            },
+            {
+              "rva": "0x2e3e64",
+              "asm": "lea rdx, [rip - 0x2e3e6b]"
+            },
+            {
+              "rva": "0x2e3e6b",
+              "asm": "mov ecx, dword ptr [rdx + r15*4 + 0x2e4108]"
+            },
+            {
+              "rva": "0x2e3e73",
+              "asm": "add rcx, rdx"
+            },
+            {
+              "rva": "0x2e3e76",
+              "asm": "jmp rcx",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3e78",
+              "asm": "mov r8, rdi"
+            },
+            {
+              "rva": "0x2e3e7b",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2e3e80",
+              "asm": "mov ecx, 0x2810"
+            },
+            {
+              "rva": "0x2e3e85",
+              "asm": "call qword ptr [rip + 0xbdc22d]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3e8b",
+              "asm": "mov qword ptr [rsp + 0x88], rax"
+            },
+            {
+              "rva": "0x2e3e93",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3e96",
+              "asm": "je 0x1802e3eba"
+            },
+            {
+              "rva": "0x2e3e98",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2e3e9d",
+              "asm": "mov byte ptr [rsp + 0x20], bpl"
+            },
+            {
+              "rva": "0x2e3ea2",
+              "asm": "mov r9, rsi"
+            },
+            {
+              "rva": "0x2e3ea5",
+              "asm": "mov r8, r14"
+            },
+            {
+              "rva": "0x2e3ea8",
+              "asm": "lea rdx, [rip + 0x13092b9]"
+            },
+            {
+              "rva": "0x2e3eaf",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2e3eb2",
+              "asm": "call 0x18024df90",
+              "target": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3eb7",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2e3eba",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3ebf",
+              "asm": "mov r8, rdi"
+            },
+            {
+              "rva": "0x2e3ec2",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2e3ec7",
+              "asm": "mov ecx, 0x2728"
+            },
+            {
+              "rva": "0x2e3ecc",
+              "asm": "call qword ptr [rip + 0xbdc1e6]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3ed2",
+              "asm": "mov qword ptr [rsp + 0x88], rax"
+            },
+            {
+              "rva": "0x2e3eda",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3edd",
+              "asm": "je 0x1802e3f01"
+            },
+            {
+              "rva": "0x2e3edf",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2e3ee4",
+              "asm": "mov byte ptr [rsp + 0x20], bpl"
+            },
+            {
+              "rva": "0x2e3ee9",
+              "asm": "mov r9, rsi"
+            },
+            {
+              "rva": "0x2e3eec",
+              "asm": "mov r8, r14"
+            },
+            {
+              "rva": "0x2e3eef",
+              "asm": "lea rdx, [rip + 0x13092b2]"
+            },
+            {
+              "rva": "0x2e3ef6",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2e3ef9",
+              "asm": "call 0x180320640",
+              "target": "??0BEE_LightLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3efe",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2e3f01",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3f06",
+              "asm": "mov r8, rdi"
+            },
+            {
+              "rva": "0x2e3f09",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2e3f0e",
+              "asm": "mov ecx, 0x2728"
+            },
+            {
+              "rva": "0x2e3f13",
+              "asm": "call qword ptr [rip + 0xbdc19f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3f19",
+              "asm": "mov qword ptr [rsp + 0x88], rax"
+            },
+            {
+              "rva": "0x2e3f21",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3f24",
+              "asm": "je 0x1802e3f48"
+            },
+            {
+              "rva": "0x2e3f26",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2e3f2b",
+              "asm": "mov byte ptr [rsp + 0x20], bpl"
+            },
+            {
+              "rva": "0x2e3f30",
+              "asm": "mov r9, rsi"
+            },
+            {
+              "rva": "0x2e3f33",
+              "asm": "mov r8, r14"
+            },
+            {
+              "rva": "0x2e3f36",
+              "asm": "lea rdx, [rip + 0x130925b]"
+            },
+            {
+              "rva": "0x2e3f3d",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2e3f40",
+              "asm": "call 0x1802ad130",
+              "target": "??0BEE_CameraLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2e3f45",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2e3f48",
+              "asm": "jmp 0x1802e406d",
+              "target": ""
+            },
+            {
+              "rva": "0x2e3f4d",
+              "asm": "mov r8, rdi"
+            },
+            {
+              "rva": "0x2e3f50",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2e3f55",
+              "asm": "mov ecx, 0x2870"
+            },
+            {
+              "rva": "0x2e3f5a",
+              "asm": "call qword ptr [rip + 0xbdc158]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2e3f60",
+              "asm": "mov qword ptr [rsp + 0x88], rax"
+            },
+            {
+              "rva": "0x2e3f68",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3f6b",
+              "asm": "je 0x1802e3f8f"
+            },
+            {
+              "rva": "0x2e3f6d",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2e3f72",
+              "asm": "mov byte ptr [rsp + 0x20], bpl"
+            },
+            {
+              "rva": "0x2e3f77",
+              "asm": "mov r9, rsi"
+            },
+            {
+              "rva": "0x2e3f7a",
+              "asm": "mov r8, r14"
+            },
+            {
+              "rva": "0x2e3f7d",
+              "asm": "lea rdx, [rip + 0x13091f4]"
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0x2e3e5a",
+              "asm": "cmp r15d, 7"
+            },
+            {
+              "rva": "0x2e3e93",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3eda",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3f21",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3f68",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3faf",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e3ff9",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e4027",
+              "asm": "test al, al"
+            },
+            {
+              "rva": "0x2e4046",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2e406d",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2e4090",
+              "asm": "test r12b, r12b"
+            },
+            {
+              "rva": "0x2e40b2",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2e40d5",
+              "asm": "test eax, eax"
+            }
+          ]
+        },
+        "?AddProperty@BEE_LayerSet@@": {
+          "export": "?AddProperty@BEE_LayerSet@@QEAA?AVTDB_StreamIDPath@@AEBVBEE_StreamSpec@@@Z",
+          "entry_rva": "0x2ef600",
+          "function_start": "0x2ef600",
+          "function_end": "0x2ef92e",
+          "native_bytes": 814,
+          "calls": [
+            {
+              "rva": "0x2ef648",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef654",
+              "asm": "call qword ptr [rip + 0xbcf186]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2ef670",
+              "asm": "call qword ptr [rip + 0xbcf16a]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2ef684",
+              "asm": "call qword ptr [rip + 0xbce7e6]",
+              "target": "TDB.dll!?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "rva": "0x2ef695",
+              "asm": "call qword ptr [rip + 0xbce2f5]",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2ef6a1",
+              "asm": "call qword ptr [rax + 0x168]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef6b3",
+              "asm": "call 0x18036c9d0",
+              "target": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x2ef6c5",
+              "asm": "call qword ptr [rip + 0xbcf1c5]",
+              "target": "TDB.dll!?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x2ef6d2",
+              "asm": "call 0x180028a90",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef6e3",
+              "asm": "call qword ptr [rip + 0xbd014f]",
+              "target": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x2ef70a",
+              "asm": "call 0x180657820",
+              "target": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z"
+            },
+            {
+              "rva": "0x2ef71f",
+              "asm": "call qword ptr [rip + 0xbcf0db]",
+              "target": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2ef72d",
+              "asm": "call qword ptr [rip + 0xbcec5d]",
+              "target": "TDB.dll!??0TDB_StreamID@@QEAA@I@Z"
+            },
+            {
+              "rva": "0x2ef73a",
+              "asm": "call qword ptr [rip + 0xbce7e0]",
+              "target": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "rva": "0x2ef752",
+              "asm": "call 0x1806622b0",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2ef767",
+              "asm": "call 0x1806622b0",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2ef773",
+              "asm": "call 0x1802f0410",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef786",
+              "asm": "call 0x180660960",
+              "target": "?BEE_CmdSetLayerSetPropStreamRef@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@1@Z"
+            },
+            {
+              "rva": "0x2ef78e",
+              "asm": "call 0x1802f04b0",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef7a2",
+              "asm": "call qword ptr [rip + 0xbce618]",
+              "target": "TDB.dll!?CloneLeaf@TDB_Stream@@QEBAPEAV1@AEBUTDB_CloneStreamParams@@@Z"
+            },
+            {
+              "rva": "0x2ef7be",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef7d3",
+              "asm": "call 0x1802e92d0",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef7e3",
+              "asm": "call qword ptr [rip + 0xbce787]",
+              "target": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x2ef809",
+              "asm": "call qword ptr [rip + 0xbce919]",
+              "target": "TDB.dll!?GetVector4@TDB_Stream@@UEBA?AV?$M_Vector4T@N@@AEBUT_Time@@H@Z"
+            },
+            {
+              "rva": "0x2ef83a",
+              "asm": "call qword ptr [rax + 0x248]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef852",
+              "asm": "call 0x1802ef930",
+              "target": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z"
+            },
+            {
+              "rva": "0x2ef88a",
+              "asm": "call qword ptr [rip + 0xbd0d98]",
+              "target": "api-ms-win-crt-runtime-l1-1-0.dll!_invalid_parameter_noinfo_noreturn"
+            },
+            {
+              "rva": "0x2ef891",
+              "asm": "call 0x180ce9094",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef8bd",
+              "asm": "call qword ptr [rip + 0xbd190d]",
+              "target": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x2ef8db",
+              "asm": "call qword ptr [rip + 0xbcef07]",
+              "target": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+            },
+            {
+              "rva": "0x2ef8eb",
+              "asm": "call 0x180ce9610",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef912",
+              "asm": "call 0x180ceacc8",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef928",
+              "asm": "call 0x180ceacc8",
+              "target": ""
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0x2ef600",
+              "asm": "push rbp"
+            },
+            {
+              "rva": "0x2ef602",
+              "asm": "push rbx"
+            },
+            {
+              "rva": "0x2ef603",
+              "asm": "push rsi"
+            },
+            {
+              "rva": "0x2ef604",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0x2ef605",
+              "asm": "push r12"
+            },
+            {
+              "rva": "0x2ef607",
+              "asm": "push r14"
+            },
+            {
+              "rva": "0x2ef609",
+              "asm": "push r15"
+            },
+            {
+              "rva": "0x2ef60b",
+              "asm": "lea rbp, [rsp - 0x10]"
+            },
+            {
+              "rva": "0x2ef610",
+              "asm": "sub rsp, 0x110"
+            },
+            {
+              "rva": "0x2ef617",
+              "asm": "mov rax, qword ptr [rip + 0x122a122]"
+            },
+            {
+              "rva": "0x2ef61e",
+              "asm": "xor rax, rsp"
+            },
+            {
+              "rva": "0x2ef621",
+              "asm": "mov qword ptr [rbp], rax"
+            },
+            {
+              "rva": "0x2ef625",
+              "asm": "mov r14, r8"
+            },
+            {
+              "rva": "0x2ef628",
+              "asm": "mov rsi, rdx"
+            },
+            {
+              "rva": "0x2ef62b",
+              "asm": "mov qword ptr [rsp + 0x70], rdx"
+            },
+            {
+              "rva": "0x2ef630",
+              "asm": "xor r12d, r12d"
+            },
+            {
+              "rva": "0x2ef633",
+              "asm": "mov dword ptr [rsp + 0x38], r12d"
+            },
+            {
+              "rva": "0x2ef638",
+              "asm": "mov rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x2ef63b",
+              "asm": "mov r8d, 1"
+            },
+            {
+              "rva": "0x2ef641",
+              "asm": "lea rdx, [rip + 0x12fdac0]"
+            },
+            {
+              "rva": "0x2ef648",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef64e",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2ef651",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2ef654",
+              "asm": "call qword ptr [rip + 0xbcf186]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2ef65a",
+              "asm": "mov dword ptr [rsp + 0x38], 1"
+            },
+            {
+              "rva": "0x2ef662",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2ef665",
+              "asm": "je 0x1802ef8e1"
+            },
+            {
+              "rva": "0x2ef66b",
+              "asm": "lea rcx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ef670",
+              "asm": "call qword ptr [rip + 0xbcf16a]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2ef676",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2ef677",
+              "asm": "lea r8, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ef67c",
+              "asm": "lea rdx, [rsp + 0x78]"
+            },
+            {
+              "rva": "0x2ef681",
+              "asm": "mov rcx, rbx"
+            },
+            {
+              "rva": "0x2ef684",
+              "asm": "call qword ptr [rip + 0xbce7e6]",
+              "target": "TDB.dll!?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "rva": "0x2ef68a",
+              "asm": "lea rdx, [rip + 0x12fdab7]"
+            },
+            {
+              "rva": "0x2ef691",
+              "asm": "lea rcx, [rbp - 0x20]"
+            },
+            {
+              "rva": "0x2ef695",
+              "asm": "call qword ptr [rip + 0xbce2f5]",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2ef69b",
+              "asm": "mov rax, qword ptr [rbx]"
+            },
+            {
+              "rva": "0x2ef69e",
+              "asm": "mov rcx, rbx"
+            },
+            {
+              "rva": "0x2ef6a1",
+              "asm": "call qword ptr [rax + 0x168]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef6a7",
+              "asm": "mov dword ptr [rsp + 0x34], eax"
+            },
+            {
+              "rva": "0x2ef6ab",
+              "asm": "lea rdx, [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2ef6b0",
+              "asm": "mov rcx, r14"
+            },
+            {
+              "rva": "0x2ef6b3",
+              "asm": "call 0x18036c9d0",
+              "target": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x2ef6b8",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2ef6ba",
+              "asm": "jne 0x1802ef918"
+            },
+            {
+              "rva": "0x2ef6c0",
+              "asm": "mov rcx, qword ptr [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2ef6c5",
+              "asm": "call qword ptr [rip + 0xbcf1c5]",
+              "target": "TDB.dll!?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x2ef6cb",
+              "asm": "mov rdx, rax"
+            },
+            {
+              "rva": "0x2ef6ce",
+              "asm": "lea rcx, [rbp - 0x40]"
+            },
+            {
+              "rva": "0x2ef6d2",
+              "asm": "call 0x180028a90",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef6d7",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2ef6d8",
+              "asm": "mov r8b, 1"
+            },
+            {
+              "rva": "0x2ef6db",
+              "asm": "lea rdx, [rbp - 0x40]"
+            },
+            {
+              "rva": "0x2ef6df",
+              "asm": "lea rcx, [rbp - 0x60]"
+            },
+            {
+              "rva": "0x2ef6e3",
+              "asm": "call qword ptr [rip + 0xbd014f]",
+              "target": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x2ef6e9",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2ef6ea",
+              "asm": "mov byte ptr [rsp + 0x28], r12b"
+            },
+            {
+              "rva": "0x2ef6ef",
+              "asm": "lea rax, [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2ef6f4",
+              "asm": "mov qword ptr [rsp + 0x20], rax"
+            },
+            {
+              "rva": "0x2ef6f9",
+              "asm": "lea r9, [rbp - 0x60]"
+            },
+            {
+              "rva": "0x2ef6fd",
+              "asm": "lea r8, [rbp - 0x20]"
+            },
+            {
+              "rva": "0x2ef701",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ef706",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2ef70a",
+              "asm": "call 0x180657820",
+              "target": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z"
+            },
+            {
+              "rva": "0x2ef70f",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2ef711",
+              "asm": "jne 0x1802ef902"
+            },
+            {
+              "rva": "0x2ef717",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ef71c",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2ef71f",
+              "asm": "call qword ptr [rip + 0xbcf0db]",
+              "target": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2ef725",
+              "asm": "mov edx, dword ptr [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2ef729",
+              "asm": "lea rcx, [rbp - 0x80]"
+            },
+            {
+              "rva": "0x2ef72d",
+              "asm": "call qword ptr [rip + 0xbcec5d]",
+              "target": "TDB.dll!??0TDB_StreamID@@QEAA@I@Z"
+            },
+            {
+              "rva": "0x2ef733",
+              "asm": "lea rdx, [rbp - 0x80]"
+            },
+            {
+              "rva": "0x2ef737",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2ef73a",
+              "asm": "call qword ptr [rip + 0xbce7e0]",
+              "target": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "rva": "0x2ef740",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2ef743",
+              "asm": "mov r8d, 2"
+            },
+            {
+              "rva": "0x2ef749",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2ef74e",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2ef752",
+              "asm": "call 0x1806622b0",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2ef757",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2ef75a",
+              "asm": "mov r8d, 2"
+            },
+            {
+              "rva": "0x2ef760",
+              "asm": "mov rdx, rsi"
+            },
+            {
+              "rva": "0x2ef763",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2ef767",
+              "asm": "call 0x1806622b0",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2ef76c",
+              "asm": "mov edx, dword ptr [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2ef770",
+              "asm": "mov rcx, rbx"
+            },
+            {
+              "rva": "0x2ef773",
+              "asm": "call 0x1802f0410",
+              "target": ""
+            },
+            {
+              "rva": "0x2ef778",
+              "asm": "mov rbx, rax"
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0x2ef662",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2ef6b8",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2ef70f",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2ef7e9",
+              "asm": "test al, al"
+            },
+            {
+              "rva": "0x2ef85c",
+              "asm": "cmp rdx, 0xf"
+            },
+            {
+              "rva": "0x2ef86c",
+              "asm": "cmp rdx, 0x1000"
+            },
+            {
+              "rva": "0x2ef884",
+              "asm": "cmp rax, 0x1f"
+            },
+            {
+              "rva": "0x2ef8ab",
+              "asm": "cmp rdx, 7"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "factories": {
+        "?Create@BEE_VectorLayer@@": {
+          "export": "?Create@BEE_VectorLayer@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+          "entry_rva": "0xb64e0",
+          "function_start": "0xb64e0",
+          "function_end": "0xb653f",
+          "native_bytes": 95,
+          "calls": [
+            {
+              "rva": "0xb64f5",
+              "asm": "call qword ptr [rip + 0xe62465]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0xb6521",
+              "asm": "call 0x1807058e0",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0xb64e0",
+              "asm": "mov qword ptr [rsp + 8], rbx"
+            },
+            {
+              "rva": "0xb64e5",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0xb64e6",
+              "asm": "sub rsp, 0x40"
+            },
+            {
+              "rva": "0xb64ea",
+              "asm": "mov rbx, rdx"
+            },
+            {
+              "rva": "0xb64ed",
+              "asm": "mov rdi, rcx"
+            },
+            {
+              "rva": "0xb64f0",
+              "asm": "mov ecx, 0x2830"
+            },
+            {
+              "rva": "0xb64f5",
+              "asm": "call qword ptr [rip + 0xe62465]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_K@Z"
+            },
+            {
+              "rva": "0xb64fb",
+              "asm": "mov qword ptr [rsp + 0x30], rax"
+            },
+            {
+              "rva": "0xb6500",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0xb6503",
+              "asm": "je 0x1800b6532"
+            },
+            {
+              "rva": "0xb6505",
+              "asm": "movzx r8d, byte ptr [rsp + 0x70]"
+            },
+            {
+              "rva": "0xb650b",
+              "asm": "mov byte ptr [rsp + 0x28], r8b"
+            },
+            {
+              "rva": "0xb6510",
+              "asm": "mov byte ptr [rsp + 0x20], 1"
+            },
+            {
+              "rva": "0xb6515",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0xb6518",
+              "asm": "mov r8, rbx"
+            },
+            {
+              "rva": "0xb651b",
+              "asm": "mov rdx, rdi"
+            },
+            {
+              "rva": "0xb651e",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0xb6521",
+              "asm": "call 0x1807058e0",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0xb6526",
+              "asm": "nop "
+            },
+            {
+              "rva": "0xb6527",
+              "asm": "mov rbx, qword ptr [rsp + 0x50]"
+            },
+            {
+              "rva": "0xb652c",
+              "asm": "add rsp, 0x40"
+            },
+            {
+              "rva": "0xb6530",
+              "asm": "pop rdi"
+            },
+            {
+              "rva": "0xb6531",
+              "asm": "ret "
+            },
+            {
+              "rva": "0xb6532",
+              "asm": "xor eax, eax"
+            },
+            {
+              "rva": "0xb6534",
+              "asm": "mov rbx, qword ptr [rsp + 0x50]"
+            },
+            {
+              "rva": "0xb6539",
+              "asm": "add rsp, 0x40"
+            },
+            {
+              "rva": "0xb653d",
+              "asm": "pop rdi"
+            },
+            {
+              "rva": "0xb653e",
+              "asm": "ret "
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0xb6500",
+              "asm": "test rax, rax"
+            }
+          ]
+        },
+        "?CreateLayerFromType@BEE_Layer@@": {
+          "export": "?CreateLayerFromType@BEE_Layer@@SAPEAV1@HPEAVBEE_CompItem@@E@Z",
+          "entry_rva": "0x2ecd00",
+          "function_start": "0x2ecd00",
+          "function_end": "0x2ed008",
+          "native_bytes": 776,
+          "calls": [
+            {
+              "rva": "0x2ecd1b",
+              "asm": "call qword ptr [rax + 0x68]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecd33",
+              "asm": "call qword ptr [rip + 0xc2bc0f]",
+              "target": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x2ecd5c",
+              "asm": "jmp rdx",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecd6b",
+              "asm": "call qword ptr [rip + 0xc2c4e7]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecd95",
+              "asm": "call 0x1802580d0",
+              "target": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecd9d",
+              "asm": "jmp 0x1802ecda1",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecda1",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecdb3",
+              "asm": "call qword ptr [rip + 0xc2c49f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecddd",
+              "asm": "call 0x180329a20",
+              "target": "??0BEE_LightLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecde5",
+              "asm": "jmp 0x1802ecde9",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecde9",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecdfb",
+              "asm": "call qword ptr [rip + 0xc2c457]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ece25",
+              "asm": "call 0x1802b5a70",
+              "target": "??0BEE_CameraLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ece2d",
+              "asm": "jmp 0x1802ece31",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece31",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece43",
+              "asm": "call qword ptr [rip + 0xc2c40f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ece6d",
+              "asm": "call 0x1805c2bc0",
+              "target": "??0BEE_TextLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ece75",
+              "asm": "jmp 0x1802ece79",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece79",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece8b",
+              "asm": "call qword ptr [rip + 0xc2c3c7]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2eceb5",
+              "asm": "call 0x1807058e0",
+              "target": "??0BEE_VectorLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecebd",
+              "asm": "jmp 0x1802ecec1",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecec1",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2eced6",
+              "asm": "call qword ptr [rip + 0xc2c37c]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecf00",
+              "asm": "call 0x180342470",
+              "target": "??0BEE_ModelLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecf08",
+              "asm": "jmp 0x1802ecf0c",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecf0c",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecf1b",
+              "asm": "call qword ptr [rip + 0xc2c337]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecf45",
+              "asm": "call 0x1803452b0",
+              "target": "??0BEE_ParametricMeshLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecf4d",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecf5c",
+              "asm": "call qword ptr [rax + 0x648]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecf8c",
+              "asm": "call qword ptr [rip + 0xc2ba96]",
+              "target": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x2ecf96",
+              "asm": "jmp 0x1802ecf62",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecfb1",
+              "asm": "call qword ptr [rip + 0xc2ba71]",
+              "target": "U.dll!Up_ReportCoSAErrString"
+            },
+            {
+              "rva": "0x2ecfcb",
+              "asm": "call 0x180d3bdf8",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecfe1",
+              "asm": "call 0x180d3bdf8",
+              "target": ""
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0x2ecd00",
+              "asm": "push rbx"
+            },
+            {
+              "rva": "0x2ecd02",
+              "asm": "push rbp"
+            },
+            {
+              "rva": "0x2ecd03",
+              "asm": "push rsi"
+            },
+            {
+              "rva": "0x2ecd04",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0x2ecd05",
+              "asm": "push r14"
+            },
+            {
+              "rva": "0x2ecd07",
+              "asm": "sub rsp, 0x30"
+            },
+            {
+              "rva": "0x2ecd0b",
+              "asm": "movzx edi, r8b"
+            },
+            {
+              "rva": "0x2ecd0f",
+              "asm": "mov rbx, rdx"
+            },
+            {
+              "rva": "0x2ecd12",
+              "asm": "movsxd rbp, ecx"
+            },
+            {
+              "rva": "0x2ecd15",
+              "asm": "mov rax, qword ptr [rdx]"
+            },
+            {
+              "rva": "0x2ecd18",
+              "asm": "mov rcx, rdx"
+            },
+            {
+              "rva": "0x2ecd1b",
+              "asm": "call qword ptr [rax + 0x68]",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecd1e",
+              "asm": "mov rsi, rax"
+            },
+            {
+              "rva": "0x2ecd21",
+              "asm": "xor r8d, r8d"
+            },
+            {
+              "rva": "0x2ecd24",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2ecd27",
+              "asm": "mov edx, 8"
+            },
+            {
+              "rva": "0x2ecd2c",
+              "asm": "mov rcx, qword ptr [rip + 0x12b2ead]"
+            },
+            {
+              "rva": "0x2ecd33",
+              "asm": "call qword ptr [rip + 0xc2bc0f]",
+              "target": "U.dll!U_ZLookupLStrCache"
+            },
+            {
+              "rva": "0x2ecd39",
+              "asm": "mov qword ptr [rsp + 0x68], rax"
+            },
+            {
+              "rva": "0x2ecd3e",
+              "asm": "cmp ebp, 7"
+            },
+            {
+              "rva": "0x2ecd41",
+              "asm": "ja 0x1802ecf98"
+            },
+            {
+              "rva": "0x2ecd47",
+              "asm": "xor r14b, r14b"
+            },
+            {
+              "rva": "0x2ecd4a",
+              "asm": "lea r8, [rip - 0x2ecd51]"
+            },
+            {
+              "rva": "0x2ecd51",
+              "asm": "mov edx, dword ptr [r8 + rbp*4 + 0x2ecfe8]"
+            },
+            {
+              "rva": "0x2ecd59",
+              "asm": "add rdx, r8"
+            },
+            {
+              "rva": "0x2ecd5c",
+              "asm": "jmp rdx",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecd5e",
+              "asm": "mov r8, rax"
+            },
+            {
+              "rva": "0x2ecd61",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2ecd66",
+              "asm": "mov ecx, 0x27d8"
+            },
+            {
+              "rva": "0x2ecd6b",
+              "asm": "call qword ptr [rip + 0xc2c4e7]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecd71",
+              "asm": "mov qword ptr [rsp + 0x78], rax"
+            },
+            {
+              "rva": "0x2ecd76",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecd79",
+              "asm": "je 0x1802ecd9f"
+            },
+            {
+              "rva": "0x2ecd7b",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2ecd80",
+              "asm": "mov byte ptr [rsp + 0x20], dil"
+            },
+            {
+              "rva": "0x2ecd85",
+              "asm": "mov r9, rbx"
+            },
+            {
+              "rva": "0x2ecd88",
+              "asm": "mov r8, rsi"
+            },
+            {
+              "rva": "0x2ecd8b",
+              "asm": "lea rdx, [rip + 0x13b0c2e]"
+            },
+            {
+              "rva": "0x2ecd92",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2ecd95",
+              "asm": "call 0x1802580d0",
+              "target": "??0BEE_AVLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecd9a",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2ecd9d",
+              "asm": "jmp 0x1802ecda1",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecd9f",
+              "asm": "xor ebx, ebx"
+            },
+            {
+              "rva": "0x2ecda1",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecda6",
+              "asm": "mov r8, rax"
+            },
+            {
+              "rva": "0x2ecda9",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2ecdae",
+              "asm": "mov ecx, 0x26f0"
+            },
+            {
+              "rva": "0x2ecdb3",
+              "asm": "call qword ptr [rip + 0xc2c49f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ecdb9",
+              "asm": "mov qword ptr [rsp + 0x78], rax"
+            },
+            {
+              "rva": "0x2ecdbe",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecdc1",
+              "asm": "je 0x1802ecde7"
+            },
+            {
+              "rva": "0x2ecdc3",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2ecdc8",
+              "asm": "mov byte ptr [rsp + 0x20], dil"
+            },
+            {
+              "rva": "0x2ecdcd",
+              "asm": "mov r9, rbx"
+            },
+            {
+              "rva": "0x2ecdd0",
+              "asm": "mov r8, rsi"
+            },
+            {
+              "rva": "0x2ecdd3",
+              "asm": "lea rdx, [rip + 0x13b0c26]"
+            },
+            {
+              "rva": "0x2ecdda",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2ecddd",
+              "asm": "call 0x180329a20",
+              "target": "??0BEE_LightLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ecde2",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2ecde5",
+              "asm": "jmp 0x1802ecde9",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecde7",
+              "asm": "xor ebx, ebx"
+            },
+            {
+              "rva": "0x2ecde9",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ecdee",
+              "asm": "mov r8, rax"
+            },
+            {
+              "rva": "0x2ecdf1",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2ecdf6",
+              "asm": "mov ecx, 0x26f0"
+            },
+            {
+              "rva": "0x2ecdfb",
+              "asm": "call qword ptr [rip + 0xc2c457]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ece01",
+              "asm": "mov qword ptr [rsp + 0x78], rax"
+            },
+            {
+              "rva": "0x2ece06",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ece09",
+              "asm": "je 0x1802ece2f"
+            },
+            {
+              "rva": "0x2ece0b",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2ece10",
+              "asm": "mov byte ptr [rsp + 0x20], dil"
+            },
+            {
+              "rva": "0x2ece15",
+              "asm": "mov r9, rbx"
+            },
+            {
+              "rva": "0x2ece18",
+              "asm": "mov r8, rsi"
+            },
+            {
+              "rva": "0x2ece1b",
+              "asm": "lea rdx, [rip + 0x13b0bce]"
+            },
+            {
+              "rva": "0x2ece22",
+              "asm": "mov rcx, rax"
+            },
+            {
+              "rva": "0x2ece25",
+              "asm": "call 0x1802b5a70",
+              "target": "??0BEE_CameraLayer@@QEAA@PEBVTDB_MatchName@@PEAVTDB_StreamFactory@@PEAVBEE_CompItem@@E_N@Z"
+            },
+            {
+              "rva": "0x2ece2a",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2ece2d",
+              "asm": "jmp 0x1802ece31",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece2f",
+              "asm": "xor ebx, ebx"
+            },
+            {
+              "rva": "0x2ece31",
+              "asm": "jmp 0x1802ecf51",
+              "target": ""
+            },
+            {
+              "rva": "0x2ece36",
+              "asm": "mov r8, rax"
+            },
+            {
+              "rva": "0x2ece39",
+              "asm": "mov edx, 0x1a0062"
+            },
+            {
+              "rva": "0x2ece3e",
+              "asm": "mov ecx, 0x28b8"
+            },
+            {
+              "rva": "0x2ece43",
+              "asm": "call qword ptr [rip + 0xc2c40f]",
+              "target": "U.dll!??2U_MemTrackedObject@@SAPEAX_KIPEBD@Z"
+            },
+            {
+              "rva": "0x2ece49",
+              "asm": "mov qword ptr [rsp + 0x78], rax"
+            },
+            {
+              "rva": "0x2ece4e",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ece51",
+              "asm": "je 0x1802ece77"
+            },
+            {
+              "rva": "0x2ece53",
+              "asm": "mov byte ptr [rsp + 0x28], 0"
+            },
+            {
+              "rva": "0x2ece58",
+              "asm": "mov byte ptr [rsp + 0x20], dil"
+            },
+            {
+              "rva": "0x2ece5d",
+              "asm": "mov r9, rbx"
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0x2ecd3e",
+              "asm": "cmp ebp, 7"
+            },
+            {
+              "rva": "0x2ecd76",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecdbe",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ece06",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ece4e",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ece96",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecee1",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecf26",
+              "asm": "test rax, rax"
+            },
+            {
+              "rva": "0x2ecf51",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2ecf70",
+              "asm": "test r14b, r14b"
+            },
+            {
+              "rva": "0x2ecf92",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2ecfb7",
+              "asm": "test eax, eax"
+            }
+          ]
+        },
+        "?AddProperty@BEE_LayerSet@@": {
+          "export": "?AddProperty@BEE_LayerSet@@QEAA?AVTDB_StreamIDPath@@AEBVBEE_StreamSpec@@@Z",
+          "entry_rva": "0x2f8490",
+          "function_start": "0x2f8490",
+          "function_end": "0x2f87c8",
+          "native_bytes": 824,
+          "calls": [
+            {
+              "rva": "0x2f84d8",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f84e4",
+              "asm": "call qword ptr [rip + 0xc1f5d6]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2f8500",
+              "asm": "call qword ptr [rip + 0xc1f5ba]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2f8514",
+              "asm": "call qword ptr [rip + 0xc1ea8e]",
+              "target": "TDB.dll!?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "rva": "0x2f8525",
+              "asm": "call qword ptr [rip + 0xc1eb85]",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2f8531",
+              "asm": "call qword ptr [rax + 0x168]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8543",
+              "asm": "call 0x1803773c0",
+              "target": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x2f8555",
+              "asm": "call qword ptr [rip + 0xc1f615]",
+              "target": "TDB.dll!?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x2f8562",
+              "asm": "call 0x180028430",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8573",
+              "asm": "call qword ptr [rip + 0xc2042f]",
+              "target": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x2f85a4",
+              "asm": "call 0x180672a20",
+              "target": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z"
+            },
+            {
+              "rva": "0x2f85b9",
+              "asm": "call qword ptr [rip + 0xc1f521]",
+              "target": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2f85c7",
+              "asm": "call qword ptr [rip + 0xc1f28b]",
+              "target": "TDB.dll!??0TDB_StreamID@@QEAA@I@Z"
+            },
+            {
+              "rva": "0x2f85d4",
+              "asm": "call qword ptr [rip + 0xc1ea76]",
+              "target": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "rva": "0x2f85ec",
+              "asm": "call 0x18067db00",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2f8601",
+              "asm": "call 0x18067db00",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2f860d",
+              "asm": "call 0x1802f9290",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8620",
+              "asm": "call 0x18067c0f0",
+              "target": "?BEE_CmdSetLayerSetPropStreamRef@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@1@Z"
+            },
+            {
+              "rva": "0x2f8628",
+              "asm": "call 0x1802f9330",
+              "target": ""
+            },
+            {
+              "rva": "0x2f863c",
+              "asm": "call qword ptr [rip + 0xc1e8be]",
+              "target": "TDB.dll!?CloneLeaf@TDB_Stream@@QEBAPEAV1@AEBUTDB_CloneStreamParams@@@Z"
+            },
+            {
+              "rva": "0x2f8658",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f866d",
+              "asm": "call 0x1802f1d70",
+              "target": ""
+            },
+            {
+              "rva": "0x2f867d",
+              "asm": "call qword ptr [rip + 0xc1ea1d]",
+              "target": "TDB.dll!??8TDB_MatchName@@QEBA_NAEBV0@@Z"
+            },
+            {
+              "rva": "0x2f86a3",
+              "asm": "call qword ptr [rip + 0xc1ebb7]",
+              "target": "TDB.dll!?GetVector4@TDB_Stream@@UEBA?AV?$M_Vector4T@N@@AEBUT_Time@@H@Z"
+            },
+            {
+              "rva": "0x2f86d4",
+              "asm": "call qword ptr [rax + 0x248]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f86ec",
+              "asm": "call 0x1802f87d0",
+              "target": "?AddStop@BEE_LayerSetStops@@QEAAXPEAVBEE_Layer@@PEAVTDB_Stream@@N@Z"
+            },
+            {
+              "rva": "0x2f8721",
+              "asm": "jmp 0x1802f872d",
+              "target": ""
+            },
+            {
+              "rva": "0x2f872d",
+              "asm": "call 0x180d3a6b4",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8758",
+              "asm": "call qword ptr [rip + 0xc21e9a]",
+              "target": "dvacore.dll!?Recycle@MemoryRecycler@allocator@dvacore@@YAXPEAX_K@Z"
+            },
+            {
+              "rva": "0x2f8775",
+              "asm": "call qword ptr [rip + 0xc1f34d]",
+              "target": "TDB.dll!??1TDB_StreamIDPath@@UEAA@XZ"
+            },
+            {
+              "rva": "0x2f8785",
+              "asm": "call 0x180d3ac30",
+              "target": ""
+            },
+            {
+              "rva": "0x2f87ac",
+              "asm": "call 0x180d3bdf8",
+              "target": ""
+            },
+            {
+              "rva": "0x2f87c2",
+              "asm": "call 0x180d3bdf8",
+              "target": ""
+            }
+          ],
+          "first_instructions": [
+            {
+              "rva": "0x2f8490",
+              "asm": "push rbp"
+            },
+            {
+              "rva": "0x2f8492",
+              "asm": "push rbx"
+            },
+            {
+              "rva": "0x2f8493",
+              "asm": "push rsi"
+            },
+            {
+              "rva": "0x2f8494",
+              "asm": "push rdi"
+            },
+            {
+              "rva": "0x2f8495",
+              "asm": "push r12"
+            },
+            {
+              "rva": "0x2f8497",
+              "asm": "push r14"
+            },
+            {
+              "rva": "0x2f8499",
+              "asm": "push r15"
+            },
+            {
+              "rva": "0x2f849b",
+              "asm": "lea rbp, [rsp - 0x10]"
+            },
+            {
+              "rva": "0x2f84a0",
+              "asm": "sub rsp, 0x110"
+            },
+            {
+              "rva": "0x2f84a7",
+              "asm": "mov rax, qword ptr [rip + 0x12ae452]"
+            },
+            {
+              "rva": "0x2f84ae",
+              "asm": "xor rax, rsp"
+            },
+            {
+              "rva": "0x2f84b1",
+              "asm": "mov qword ptr [rbp], rax"
+            },
+            {
+              "rva": "0x2f84b5",
+              "asm": "mov r14, r8"
+            },
+            {
+              "rva": "0x2f84b8",
+              "asm": "mov rsi, rdx"
+            },
+            {
+              "rva": "0x2f84bb",
+              "asm": "mov qword ptr [rsp + 0x70], rdx"
+            },
+            {
+              "rva": "0x2f84c0",
+              "asm": "xor r12d, r12d"
+            },
+            {
+              "rva": "0x2f84c3",
+              "asm": "mov dword ptr [rsp + 0x38], r12d"
+            },
+            {
+              "rva": "0x2f84c8",
+              "asm": "mov rax, qword ptr [rcx]"
+            },
+            {
+              "rva": "0x2f84cb",
+              "asm": "mov r8d, 1"
+            },
+            {
+              "rva": "0x2f84d1",
+              "asm": "lea rdx, [rip + 0x13a5488]"
+            },
+            {
+              "rva": "0x2f84d8",
+              "asm": "call qword ptr [rax + 0x220]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f84de",
+              "asm": "mov rbx, rax"
+            },
+            {
+              "rva": "0x2f84e1",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2f84e4",
+              "asm": "call qword ptr [rip + 0xc1f5d6]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2f84ea",
+              "asm": "mov dword ptr [rsp + 0x38], 1"
+            },
+            {
+              "rva": "0x2f84f2",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2f84f5",
+              "asm": "je 0x1802f877b"
+            },
+            {
+              "rva": "0x2f84fb",
+              "asm": "lea rcx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2f8500",
+              "asm": "call qword ptr [rip + 0xc1f5ba]",
+              "target": "TDB.dll!??0TDB_StreamIDPath@@QEAA@XZ"
+            },
+            {
+              "rva": "0x2f8506",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2f8507",
+              "asm": "lea r8, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2f850c",
+              "asm": "lea rdx, [rsp + 0x78]"
+            },
+            {
+              "rva": "0x2f8511",
+              "asm": "mov rcx, rbx"
+            },
+            {
+              "rva": "0x2f8514",
+              "asm": "call qword ptr [rip + 0xc1ea8e]",
+              "target": "TDB.dll!?SlowGetPathFromRootToMe@TDB_StreamBase@@QEAAXPEAPEAVTDB_StreamGroup@@PEAVTDB_StreamIDPath@@@Z"
+            },
+            {
+              "rva": "0x2f851a",
+              "asm": "lea rdx, [rip + 0x13a547f]"
+            },
+            {
+              "rva": "0x2f8521",
+              "asm": "lea rcx, [rbp - 0x20]"
+            },
+            {
+              "rva": "0x2f8525",
+              "asm": "call qword ptr [rip + 0xc1eb85]",
+              "target": "TDB.dll!??0TDB_MatchName@@QEAA@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2f852b",
+              "asm": "mov rax, qword ptr [rbx]"
+            },
+            {
+              "rva": "0x2f852e",
+              "asm": "mov rcx, rbx"
+            },
+            {
+              "rva": "0x2f8531",
+              "asm": "call qword ptr [rax + 0x168]",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8537",
+              "asm": "mov dword ptr [rsp + 0x34], eax"
+            },
+            {
+              "rva": "0x2f853b",
+              "asm": "lea rdx, [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2f8540",
+              "asm": "mov rcx, r14"
+            },
+            {
+              "rva": "0x2f8543",
+              "asm": "call 0x1803773c0",
+              "target": "?BEE_GetStreamWithSpec@@YAHPEBVBEE_StreamSpec@@PEAPEAVTDB_Stream@@@Z"
+            },
+            {
+              "rva": "0x2f8548",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2f854a",
+              "asm": "jne 0x1802f87b2"
+            },
+            {
+              "rva": "0x2f8550",
+              "asm": "mov rcx, qword ptr [rsp + 0x48]"
+            },
+            {
+              "rva": "0x2f8555",
+              "asm": "call qword ptr [rip + 0xc1f615]",
+              "target": "TDB.dll!?GetDisplayName@TDB_StreamBase@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@std@@XZ"
+            },
+            {
+              "rva": "0x2f855b",
+              "asm": "mov rdx, rax"
+            },
+            {
+              "rva": "0x2f855e",
+              "asm": "lea rcx, [rbp - 0x40]"
+            },
+            {
+              "rva": "0x2f8562",
+              "asm": "call 0x180028430",
+              "target": ""
+            },
+            {
+              "rva": "0x2f8567",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2f8568",
+              "asm": "mov r8b, 1"
+            },
+            {
+              "rva": "0x2f856b",
+              "asm": "lea rdx, [rbp - 0x40]"
+            },
+            {
+              "rva": "0x2f856f",
+              "asm": "lea rcx, [rbp - 0x60]"
+            },
+            {
+              "rva": "0x2f8573",
+              "asm": "call qword ptr [rip + 0xc2042f]",
+              "target": "U.dll!?U_UTF16ToMBString@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$basic_string@_WU?$char_traits@_W@std@@U?$STLAllocator@_W@allocator@dvacore@@@2@_N@Z"
+            },
+            {
+              "rva": "0x2f8579",
+              "asm": "nop "
+            },
+            {
+              "rva": "0x2f857a",
+              "asm": "mov word ptr [rsp + 0x30], r12w"
+            },
+            {
+              "rva": "0x2f8580",
+              "asm": "movzx eax, r12w"
+            },
+            {
+              "rva": "0x2f8584",
+              "asm": "mov word ptr [rsp + 0x28], ax"
+            },
+            {
+              "rva": "0x2f8589",
+              "asm": "lea rax, [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2f858e",
+              "asm": "mov qword ptr [rsp + 0x20], rax"
+            },
+            {
+              "rva": "0x2f8593",
+              "asm": "lea r9, [rbp - 0x60]"
+            },
+            {
+              "rva": "0x2f8597",
+              "asm": "lea r8, [rbp - 0x20]"
+            },
+            {
+              "rva": "0x2f859b",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2f85a0",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2f85a4",
+              "asm": "call 0x180672a20",
+              "target": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z"
+            },
+            {
+              "rva": "0x2f85a9",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2f85ab",
+              "asm": "jne 0x1802f879c"
+            },
+            {
+              "rva": "0x2f85b1",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2f85b6",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2f85b9",
+              "asm": "call qword ptr [rip + 0xc1f521]",
+              "target": "TDB.dll!??4TDB_StreamIDPath@@QEAAAEAV0@AEBV0@@Z"
+            },
+            {
+              "rva": "0x2f85bf",
+              "asm": "mov edx, dword ptr [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2f85c3",
+              "asm": "lea rcx, [rbp - 0x80]"
+            },
+            {
+              "rva": "0x2f85c7",
+              "asm": "call qword ptr [rip + 0xc1f28b]",
+              "target": "TDB.dll!??0TDB_StreamID@@QEAA@I@Z"
+            },
+            {
+              "rva": "0x2f85cd",
+              "asm": "lea rdx, [rbp - 0x80]"
+            },
+            {
+              "rva": "0x2f85d1",
+              "asm": "mov rcx, rsi"
+            },
+            {
+              "rva": "0x2f85d4",
+              "asm": "call qword ptr [rip + 0xc1ea76]",
+              "target": "TDB.dll!?AddTail@TDB_StreamIDPath@@QEAAXAEBVTDB_StreamID@@@Z"
+            },
+            {
+              "rva": "0x2f85da",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2f85dd",
+              "asm": "mov r8d, 2"
+            },
+            {
+              "rva": "0x2f85e3",
+              "asm": "lea rdx, [rsp + 0x50]"
+            },
+            {
+              "rva": "0x2f85e8",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2f85ec",
+              "asm": "call 0x18067db00",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2f85f1",
+              "asm": "xor r9d, r9d"
+            },
+            {
+              "rva": "0x2f85f4",
+              "asm": "mov r8d, 2"
+            },
+            {
+              "rva": "0x2f85fa",
+              "asm": "mov rdx, rsi"
+            },
+            {
+              "rva": "0x2f85fd",
+              "asm": "mov rcx, qword ptr [r14 + 8]"
+            },
+            {
+              "rva": "0x2f8601",
+              "asm": "call 0x18067db00",
+              "target": "?BEE_CmdSetStreamBaseFlag@@YAXPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z"
+            },
+            {
+              "rva": "0x2f8606",
+              "asm": "mov edx, dword ptr [rsp + 0x34]"
+            },
+            {
+              "rva": "0x2f860a",
+              "asm": "mov rcx, rbx"
+            }
+          ],
+          "comparisons": [
+            {
+              "rva": "0x2f84f2",
+              "asm": "test rbx, rbx"
+            },
+            {
+              "rva": "0x2f8548",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2f85a9",
+              "asm": "test eax, eax"
+            },
+            {
+              "rva": "0x2f8683",
+              "asm": "test al, al"
+            },
+            {
+              "rva": "0x2f86f6",
+              "asm": "cmp rdx, 0xf"
+            },
+            {
+              "rva": "0x2f8703",
+              "asm": "cmp rdx, 0x1000"
+            },
+            {
+              "rva": "0x2f8717",
+              "asm": "cmp rax, 0x1f"
+            },
+            {
+              "rva": "0x2f8746",
+              "asm": "cmp rdx, 7"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

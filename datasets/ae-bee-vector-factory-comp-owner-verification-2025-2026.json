@@ -1,0 +1,36 @@
+{
+  "evidence": "E2-L BEE native typed VectorLayer creator vs CompItem-backed BEE_Layer::CreateLayerFromType, x64 machine code on pinned AE installs",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "TDB_native_VectorLayer_creator_rva": "0xb0970",
+      "TDB_creator_constructs_comp_item_arg_null": true,
+      "TDB_creator_allocation_bytes": 10272,
+      "TDB_creator_calls_same_BEE_VectorLayer_ctor_as_stock": true,
+      "normal_layer_factory": "BEE_Layer::CreateLayerFromType",
+      "normal_factory_accepts_nonnull_BEE_CompItem_arg_from_own_parameter": true,
+      "normal_layer_kind_fixed_dispatch_0_through_7": true,
+      "normal_layer_kind_for_vector": 4,
+      "external_plugin_can_attach_new_native_layer_proven": false,
+      "owner_attachment_source_inferred_only": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "TDB_native_VectorLayer_creator_rva": "0xb64e0",
+      "TDB_creator_constructs_comp_item_arg_null": true,
+      "TDB_creator_allocation_bytes": 10288,
+      "TDB_creator_calls_same_BEE_VectorLayer_ctor_as_stock": true,
+      "normal_layer_factory": "BEE_Layer::CreateLayerFromType",
+      "normal_factory_accepts_nonnull_BEE_CompItem_arg_from_own_parameter": true,
+      "normal_layer_kind_fixed_dispatch_0_through_7": true,
+      "normal_layer_kind_for_vector": 4,
+      "external_plugin_can_attach_new_native_layer_proven": false,
+      "owner_attachment_source_inferred_only": false
+    }
+  },
+  "limitations": [
+    "Does not prove no possible later attachment of a TDB-created layer",
+    "No independent CNL layer kind introduced",
+    "No private calls"
+  ]
+}

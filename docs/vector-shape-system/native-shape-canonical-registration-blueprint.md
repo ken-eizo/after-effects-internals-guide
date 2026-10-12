@@ -65,3 +65,11 @@ The diagram is a **system boundary graph**: actual edges between registration an
 5. Only after controlled, reversible, version-pinned preflight is proven, seek explicit user consent for an isolated host experiment. The old `CNLPrivateTDBDisposable.aex` is **not safe to run**.
 
 **No standard Effect slider or raster geometry editor is a substitute for gates B–E.** The already user-verified CNL Owned Vector Document Effect is a useful safety control for archive and drawing only. `CompNodeAE` has not been edited.
+
+## 2026-10-12 — A newly proven OWNER boundary, F-VECTOR-055
+
+The TDB Creator callback `BEE_VectorLayer::Create` is not equivalent to AE's real layer factory: in AE2025/26 it allocates a BEE_VectorLayer and passes **null `BEE_CompItem*` (R9=0)** into the same concrete constructor that the normal `BEE_Layer::CreateLayerFromType(4, actual_CompItem*,...)` invokes with an actual CompItem pointer. Thus a registered TDB-native class is not automatically a selectable/renderable layer.
+
+`BEE_Layer::SetParentComp` and `GetParentComp` are exported native methods, but a raw parent setter by itself is **not a validated host layer-insertion mechanism**: the native `BEE_CompItem` index, `BEE_LayerSet` ownership, Undo, cache, lifecycle, IDPath, editor and renderer pathways all remain to be proven. CNL must not invoke these private APIs from a user installation merely because their exports exist. The immediate highest priority is to locate the **complete comp layer-insertion transaction** and determine whether that transaction has any available custom creator path; the fixed built-in integer layer-kind switch is not one.
+
+Evidence: F-VECTOR-055, EXP-SHAPE-055, offline verifier `verify_native_vector_detached_factory_vs_comp_owner.py`. CompNodeAE unchanged, Phase F prohibited.

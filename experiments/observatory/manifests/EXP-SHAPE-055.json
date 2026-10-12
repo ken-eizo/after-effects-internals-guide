@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-SHAPE-055",
+  "date": "2026-10-12",
+  "status": "PASS native code cross-version; real foreign native owner not constructed",
+  "evidence": "E2-L installed BEE2025/26 code; same C++ constructor called with different owner args",
+  "results": {
+    "TDB_typed_owner_ctor_comp_item_null": true,
+    "stock_vector_kind": 4,
+    "stock_factory_ctor_comp_item_from_actual_comp": true,
+    "same_real_BEE_VectorLayer_ctor": true,
+    "typed_creator_alloc_bytes_2025": 10272,
+    "typed_creator_alloc_bytes_2026": 10288,
+    "SetParentComp_export_found": true,
+    "SetParentComp_creates_layer_proven": false,
+    "external_native_owner_created": false,
+    "private_calls_executed": 0,
+    "compnodeae_modified": false
+  },
+  "assets": [
+    "research/findings/F-VECTOR-055-detached-typed-vector-creator-vs-real-comp-layer-owner.md",
+    "datasets/ae-bee-vector-factory-comp-owner-verification-2025-2026.json"
+  ]
+}

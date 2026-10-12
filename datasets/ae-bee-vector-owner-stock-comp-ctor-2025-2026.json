@@ -1,0 +1,263 @@
+{
+  "evidence": "E2-L BEE stock layer-constructor dispatch with actual BEE_CompItem parent arguments, no runtime calls",
+  "versions": {
+    "2025": {
+      "native_vector_ctor_call": {
+        "ctor_rva": "0x6e1050",
+        "callsite": "0x2e3fce",
+        "instructions": [
+          {
+            "rva": "0x2e3f6d",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x28], 0"
+          },
+          {
+            "rva": "0x2e3f72",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x20], bpl"
+          },
+          {
+            "rva": "0x2e3f77",
+            "op": "mov",
+            "args": "r9, rsi"
+          },
+          {
+            "rva": "0x2e3f7a",
+            "op": "mov",
+            "args": "r8, r14"
+          },
+          {
+            "rva": "0x2e3f7d",
+            "op": "lea",
+            "args": "rdx, [rip + 0x13091f4]"
+          },
+          {
+            "rva": "0x2e3f84",
+            "op": "mov",
+            "args": "rcx, rax"
+          },
+          {
+            "rva": "0x2e3f87",
+            "op": "call",
+            "args": "0x1805a4060"
+          },
+          {
+            "rva": "0x2e3f8c",
+            "op": "mov",
+            "args": "rbx, rax"
+          },
+          {
+            "rva": "0x2e3f8f",
+            "op": "jmp",
+            "args": "0x1802e406d"
+          },
+          {
+            "rva": "0x2e3f94",
+            "op": "mov",
+            "args": "r8, rdi"
+          },
+          {
+            "rva": "0x2e3f97",
+            "op": "mov",
+            "args": "edx, 0x1a0062"
+          },
+          {
+            "rva": "0x2e3f9c",
+            "op": "mov",
+            "args": "ecx, 0x2820"
+          },
+          {
+            "rva": "0x2e3fa1",
+            "op": "call",
+            "args": "qword ptr [rip + 0xbdc111]"
+          },
+          {
+            "rva": "0x2e3fa7",
+            "op": "mov",
+            "args": "qword ptr [rsp + 0x88], rax"
+          },
+          {
+            "rva": "0x2e3faf",
+            "op": "test",
+            "args": "rax, rax"
+          },
+          {
+            "rva": "0x2e3fb2",
+            "op": "je",
+            "args": "0x1802e3fd6"
+          },
+          {
+            "rva": "0x2e3fb4",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x28], 0"
+          },
+          {
+            "rva": "0x2e3fb9",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x20], bpl"
+          },
+          {
+            "rva": "0x2e3fbe",
+            "op": "mov",
+            "args": "r9, rsi"
+          },
+          {
+            "rva": "0x2e3fc1",
+            "op": "mov",
+            "args": "r8, r14"
+          },
+          {
+            "rva": "0x2e3fc4",
+            "op": "lea",
+            "args": "rdx, [rip + 0x13091bd]"
+          },
+          {
+            "rva": "0x2e3fcb",
+            "op": "mov",
+            "args": "rcx, rax"
+          },
+          {
+            "rva": "0x2e3fce",
+            "op": "call",
+            "args": "0x1806e1050"
+          },
+          {
+            "rva": "0x2e3fd3",
+            "op": "mov",
+            "args": "rbx, rax"
+          }
+        ]
+      },
+      "stock_type_switch_controls_constructor": true
+    },
+    "2026": {
+      "native_vector_ctor_call": {
+        "ctor_rva": "0x7058e0",
+        "callsite": "0x2eceb5",
+        "instructions": [
+          {
+            "rva": "0x2ece5d",
+            "op": "mov",
+            "args": "r9, rbx"
+          },
+          {
+            "rva": "0x2ece60",
+            "op": "mov",
+            "args": "r8, rsi"
+          },
+          {
+            "rva": "0x2ece63",
+            "op": "lea",
+            "args": "rdx, [rip + 0x13b0b66]"
+          },
+          {
+            "rva": "0x2ece6a",
+            "op": "mov",
+            "args": "rcx, rax"
+          },
+          {
+            "rva": "0x2ece6d",
+            "op": "call",
+            "args": "0x1805c2bc0"
+          },
+          {
+            "rva": "0x2ece72",
+            "op": "mov",
+            "args": "rbx, rax"
+          },
+          {
+            "rva": "0x2ece75",
+            "op": "jmp",
+            "args": "0x1802ece79"
+          },
+          {
+            "rva": "0x2ece77",
+            "op": "xor",
+            "args": "ebx, ebx"
+          },
+          {
+            "rva": "0x2ece79",
+            "op": "jmp",
+            "args": "0x1802ecf51"
+          },
+          {
+            "rva": "0x2ece7e",
+            "op": "mov",
+            "args": "r8, rax"
+          },
+          {
+            "rva": "0x2ece81",
+            "op": "mov",
+            "args": "edx, 0x1a0062"
+          },
+          {
+            "rva": "0x2ece86",
+            "op": "mov",
+            "args": "ecx, 0x2830"
+          },
+          {
+            "rva": "0x2ece8b",
+            "op": "call",
+            "args": "qword ptr [rip + 0xc2c3c7]"
+          },
+          {
+            "rva": "0x2ece91",
+            "op": "mov",
+            "args": "qword ptr [rsp + 0x78], rax"
+          },
+          {
+            "rva": "0x2ece96",
+            "op": "test",
+            "args": "rax, rax"
+          },
+          {
+            "rva": "0x2ece99",
+            "op": "je",
+            "args": "0x1802ecebf"
+          },
+          {
+            "rva": "0x2ece9b",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x28], 0"
+          },
+          {
+            "rva": "0x2ecea0",
+            "op": "mov",
+            "args": "byte ptr [rsp + 0x20], dil"
+          },
+          {
+            "rva": "0x2ecea5",
+            "op": "mov",
+            "args": "r9, rbx"
+          },
+          {
+            "rva": "0x2ecea8",
+            "op": "mov",
+            "args": "r8, rsi"
+          },
+          {
+            "rva": "0x2eceab",
+            "op": "lea",
+            "args": "rdx, [rip + 0x13b0b2e]"
+          },
+          {
+            "rva": "0x2eceb2",
+            "op": "mov",
+            "args": "rcx, rax"
+          },
+          {
+            "rva": "0x2eceb5",
+            "op": "call",
+            "args": "0x1807058e0"
+          },
+          {
+            "rva": "0x2eceba",
+            "op": "mov",
+            "args": "rbx, rax"
+          }
+        ]
+      },
+      "stock_type_switch_controls_constructor": true
+    }
+  }
+}
