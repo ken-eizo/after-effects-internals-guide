@@ -1,0 +1,33 @@
+{
+  "evidence": "E2-L different native C++ object layout and vtable offsets across two pinned actual Adobe BEE builds; not public ABI",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "CloneAndAttach_entry": "0x2e20e0",
+      "CompItem_this_member_offset": "0x2b8",
+      "BEE_Layer_virtual_flag_slot": "0x2a8",
+      "instruction_sites": {
+        "comp_load": "0x2e2182",
+        "flag_vcall": "0x2e2132",
+        "attach_call": "0x2e218f"
+      },
+      "BEE_Layer_CompItem_pointer_layout_stable": false,
+      "BEE_Layer_vtable_slot_stable": false,
+      "true_native_foreign_class_created": false
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "CloneAndAttach_entry": "0x2eb090",
+      "CompItem_this_member_offset": "0x260",
+      "BEE_Layer_virtual_flag_slot": "0x2b8",
+      "instruction_sites": {
+        "comp_load": "0x2eb133",
+        "flag_vcall": "0x2eb0d7",
+        "attach_call": "0x2eb140"
+      },
+      "BEE_Layer_CompItem_pointer_layout_stable": false,
+      "BEE_Layer_vtable_slot_stable": false,
+      "true_native_foreign_class_created": false
+    }
+  }
+}

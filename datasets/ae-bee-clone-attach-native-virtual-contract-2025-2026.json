@@ -1,0 +1,1085 @@
+{
+  "scope": "E2-L native cloneAndAttach compiled executable code, no live host invocation",
+  "versions": {
+    "2025": {
+      "entry": "0x2e20e0",
+      "end": "0x2e2241",
+      "instructions": [
+        {
+          "at": "0x2e20e0",
+          "ins": "mov qword ptr [rsp + 8], rbx"
+        },
+        {
+          "at": "0x2e20e5",
+          "ins": "mov qword ptr [rsp + 0x18], rbp"
+        },
+        {
+          "at": "0x2e20ea",
+          "ins": "mov qword ptr [rsp + 0x20], rsi"
+        },
+        {
+          "at": "0x2e20ef",
+          "ins": "push rdi"
+        },
+        {
+          "at": "0x2e20f0",
+          "ins": "sub rsp, 0x30"
+        },
+        {
+          "at": "0x2e20f4",
+          "ins": "movzx esi, dl"
+        },
+        {
+          "at": "0x2e20f7",
+          "ins": "mov rbp, rcx"
+        },
+        {
+          "at": "0x2e20fa",
+          "ins": "movzx edx, r8b"
+        },
+        {
+          "at": "0x2e20fe",
+          "ins": "call qword ptr [rip + 0xbdc8f4]"
+        },
+        {
+          "at": "0x2e2104",
+          "ins": "lea r9, [rip + 0x1238dc5]"
+        },
+        {
+          "at": "0x2e210b",
+          "ins": "mov dword ptr [rsp + 0x20], 0"
+        },
+        {
+          "at": "0x2e2113",
+          "ins": "mov rcx, rax"
+        },
+        {
+          "at": "0x2e2116",
+          "ins": "lea r8, [rip + 0x12384db]"
+        },
+        {
+          "at": "0x2e211d",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2e211f",
+          "ins": "call 0x180ceacd4",
+          "target": "0xceacd4",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2124",
+          "ins": "mov rbx, rax"
+        },
+        {
+          "at": "0x2e2127",
+          "ins": "test sil, sil"
+        },
+        {
+          "at": "0x2e212a",
+          "ins": "je 0x1802e2182"
+        },
+        {
+          "at": "0x2e212c",
+          "ins": "mov rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x2e212f",
+          "ins": "mov rcx, rax"
+        },
+        {
+          "at": "0x2e2132",
+          "ins": "call qword ptr [rdx + 0x2a8]"
+        },
+        {
+          "at": "0x2e2138",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2e213b",
+          "ins": "mov edx, 0x10000"
+        },
+        {
+          "at": "0x2e2140",
+          "ins": "mov edi, eax"
+        },
+        {
+          "at": "0x2e2142",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2e2145",
+          "ins": "shr edi, 0x10"
+        },
+        {
+          "at": "0x2e2148",
+          "ins": "and dil, 1"
+        },
+        {
+          "at": "0x2e214c",
+          "ins": "call 0x180660a70",
+          "target": "0x660a70",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2e2151",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2e2153",
+          "ins": "jne 0x1802e21d3"
+        },
+        {
+          "at": "0x2e2155",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "at": "0x2e2158",
+          "ins": "mov byte ptr [rsp + 0x20], al"
+        },
+        {
+          "at": "0x2e215c",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2e215f",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2e2161",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2e2164",
+          "ins": "call 0x1802eba20",
+          "target": "0x2eba20",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2169",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2e216b",
+          "ins": "jne 0x1802e21e9"
+        },
+        {
+          "at": "0x2e216d",
+          "ins": "movzx r8d, dil"
+        },
+        {
+          "at": "0x2e2171",
+          "ins": "mov edx, 0x10000"
+        },
+        {
+          "at": "0x2e2176",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2e2179",
+          "ins": "call 0x180660a70",
+          "target": "0x660a70",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2e217e",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2e2180",
+          "ins": "jne 0x1802e21ff"
+        },
+        {
+          "at": "0x2e2182",
+          "ins": "mov rcx, qword ptr [rbp + 0x2b8]"
+        },
+        {
+          "at": "0x2e2189",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2e218c",
+          "ins": "mov rdx, rbx"
+        },
+        {
+          "at": "0x2e218f",
+          "ins": "call 0x1803920f0",
+          "target": "0x3920f0",
+          "symbol": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+        },
+        {
+          "at": "0x2e2194",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2e2196",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2e2199",
+          "ins": "call 0x18030b880",
+          "target": "0x30b880",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e219e",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2e21a0",
+          "ins": "jne 0x1802e2215"
+        },
+        {
+          "at": "0x2e21a2",
+          "ins": "test sil, sil"
+        },
+        {
+          "at": "0x2e21a5",
+          "ins": "je 0x1802e21bb"
+        },
+        {
+          "at": "0x2e21a7",
+          "ins": "mov r8, rbx"
+        },
+        {
+          "at": "0x2e21aa",
+          "ins": "mov edx, 0x18"
+        },
+        {
+          "at": "0x2e21af",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2e21b2",
+          "ins": "call 0x18014a140",
+          "target": "0x14a140",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21b7",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2e21b9",
+          "ins": "jne 0x1802e222b"
+        },
+        {
+          "at": "0x2e21bb",
+          "ins": "mov rbp, qword ptr [rsp + 0x50]"
+        },
+        {
+          "at": "0x2e21c0",
+          "ins": "mov rax, rbx"
+        },
+        {
+          "at": "0x2e21c3",
+          "ins": "mov rbx, qword ptr [rsp + 0x40]"
+        },
+        {
+          "at": "0x2e21c8",
+          "ins": "mov rsi, qword ptr [rsp + 0x58]"
+        },
+        {
+          "at": "0x2e21cd",
+          "ins": "add rsp, 0x30"
+        },
+        {
+          "at": "0x2e21d1",
+          "ins": "pop rdi"
+        },
+        {
+          "at": "0x2e21d2",
+          "ins": "ret "
+        },
+        {
+          "at": "0x2e21d3",
+          "ins": "lea rdx, [rip + 0x109d42e]"
+        },
+        {
+          "at": "0x2e21da",
+          "ins": "mov dword ptr [rsp + 0x48], eax"
+        },
+        {
+          "at": "0x2e21de",
+          "ins": "lea rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x2e21e3",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21e8",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2e21e9",
+          "ins": "lea rdx, [rip + 0x109d418]"
+        },
+        {
+          "at": "0x2e21f0",
+          "ins": "mov dword ptr [rsp + 0x48], eax"
+        },
+        {
+          "at": "0x2e21f4",
+          "ins": "lea rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x2e21f9",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21fe",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2e21ff",
+          "ins": "lea rdx, [rip + 0x109d402]"
+        },
+        {
+          "at": "0x2e2206",
+          "ins": "mov dword ptr [rsp + 0x48], eax"
+        },
+        {
+          "at": "0x2e220a",
+          "ins": "lea rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x2e220f",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2214",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2e2215",
+          "ins": "lea rdx, [rip + 0x109d3ec]"
+        },
+        {
+          "at": "0x2e221c",
+          "ins": "mov dword ptr [rsp + 0x48], eax"
+        },
+        {
+          "at": "0x2e2220",
+          "ins": "lea rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x2e2225",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e222a",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2e222b",
+          "ins": "lea rdx, [rip + 0x109d3d6]"
+        },
+        {
+          "at": "0x2e2232",
+          "ins": "mov dword ptr [rsp + 0x48], eax"
+        },
+        {
+          "at": "0x2e2236",
+          "ins": "lea rcx, [rsp + 0x48]"
+        },
+        {
+          "at": "0x2e223b",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2240",
+          "ins": "int3 "
+        }
+      ],
+      "direct_calls": [
+        {
+          "at": "0x2e211f",
+          "ins": "call 0x180ceacd4",
+          "target": "0xceacd4",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e214c",
+          "ins": "call 0x180660a70",
+          "target": "0x660a70",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2e2164",
+          "ins": "call 0x1802eba20",
+          "target": "0x2eba20",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2179",
+          "ins": "call 0x180660a70",
+          "target": "0x660a70",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2e218f",
+          "ins": "call 0x1803920f0",
+          "target": "0x3920f0",
+          "symbol": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+        },
+        {
+          "at": "0x2e2199",
+          "ins": "call 0x18030b880",
+          "target": "0x30b880",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21b2",
+          "ins": "call 0x18014a140",
+          "target": "0x14a140",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21e3",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e21f9",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e220f",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e2225",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2e223b",
+          "ins": "call 0x180ceacc8",
+          "target": "0xceacc8",
+          "symbol": ""
+        }
+      ],
+      "indirect_calls": [
+        {
+          "at": "0x2e20fe",
+          "ins": "call qword ptr [rip + 0xbdc8f4]"
+        },
+        {
+          "at": "0x2e2132",
+          "ins": "call qword ptr [rdx + 0x2a8]"
+        }
+      ]
+    },
+    "2026": {
+      "entry": "0x2eb090",
+      "end": "0x2eb232",
+      "instructions": [
+        {
+          "at": "0x2eb090",
+          "ins": "push rbx"
+        },
+        {
+          "at": "0x2eb092",
+          "ins": "push rbp"
+        },
+        {
+          "at": "0x2eb093",
+          "ins": "push rsi"
+        },
+        {
+          "at": "0x2eb094",
+          "ins": "push rdi"
+        },
+        {
+          "at": "0x2eb095",
+          "ins": "sub rsp, 0x38"
+        },
+        {
+          "at": "0x2eb099",
+          "ins": "movzx esi, dl"
+        },
+        {
+          "at": "0x2eb09c",
+          "ins": "mov rbp, rcx"
+        },
+        {
+          "at": "0x2eb09f",
+          "ins": "movzx edx, r8b"
+        },
+        {
+          "at": "0x2eb0a3",
+          "ins": "call qword ptr [rip + 0xc2cc2f]"
+        },
+        {
+          "at": "0x2eb0a9",
+          "ins": "lea r9, [rip + 0x12bcec0]"
+        },
+        {
+          "at": "0x2eb0b0",
+          "ins": "mov dword ptr [rsp + 0x20], 0"
+        },
+        {
+          "at": "0x2eb0b8",
+          "ins": "mov rcx, rax"
+        },
+        {
+          "at": "0x2eb0bb",
+          "ins": "lea r8, [rip + 0x12bbef6]"
+        },
+        {
+          "at": "0x2eb0c2",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2eb0c4",
+          "ins": "call 0x180d3be04",
+          "target": "0xd3be04",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb0c9",
+          "ins": "mov rbx, rax"
+        },
+        {
+          "at": "0x2eb0cc",
+          "ins": "test sil, sil"
+        },
+        {
+          "at": "0x2eb0cf",
+          "ins": "je 0x1802eb133"
+        },
+        {
+          "at": "0x2eb0d1",
+          "ins": "mov rdx, qword ptr [rax]"
+        },
+        {
+          "at": "0x2eb0d4",
+          "ins": "mov rcx, rax"
+        },
+        {
+          "at": "0x2eb0d7",
+          "ins": "call qword ptr [rdx + 0x2b8]"
+        },
+        {
+          "at": "0x2eb0dd",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2eb0e0",
+          "ins": "mov edx, 0x10000"
+        },
+        {
+          "at": "0x2eb0e5",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2eb0e8",
+          "ins": "mov edi, eax"
+        },
+        {
+          "at": "0x2eb0ea",
+          "ins": "call 0x18067c1f0",
+          "target": "0x67c1f0",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2eb0ef",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2eb0f1",
+          "ins": "jne 0x1802eb1c4"
+        },
+        {
+          "at": "0x2eb0f7",
+          "ins": "xor r9d, r9d"
+        },
+        {
+          "at": "0x2eb0fa",
+          "ins": "mov byte ptr [rsp + 0x20], al"
+        },
+        {
+          "at": "0x2eb0fe",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2eb101",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2eb103",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2eb106",
+          "ins": "call 0x1802f45b0",
+          "target": "0x2f45b0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb10b",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2eb10d",
+          "ins": "jne 0x1802eb1da"
+        },
+        {
+          "at": "0x2eb113",
+          "ins": "shr edi, 0x10"
+        },
+        {
+          "at": "0x2eb116",
+          "ins": "mov edx, 0x10000"
+        },
+        {
+          "at": "0x2eb11b",
+          "ins": "and dil, 1"
+        },
+        {
+          "at": "0x2eb11f",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2eb122",
+          "ins": "movzx r8d, dil"
+        },
+        {
+          "at": "0x2eb126",
+          "ins": "call 0x18067c1f0",
+          "target": "0x67c1f0",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2eb12b",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2eb12d",
+          "ins": "jne 0x1802eb1f0"
+        },
+        {
+          "at": "0x2eb133",
+          "ins": "mov rcx, qword ptr [rbp + 0x260]"
+        },
+        {
+          "at": "0x2eb13a",
+          "ins": "xor r8d, r8d"
+        },
+        {
+          "at": "0x2eb13d",
+          "ins": "mov rdx, rbx"
+        },
+        {
+          "at": "0x2eb140",
+          "ins": "call 0x18039d4a0",
+          "target": "0x39d4a0",
+          "symbol": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+        },
+        {
+          "at": "0x2eb145",
+          "ins": "xor edx, edx"
+        },
+        {
+          "at": "0x2eb147",
+          "ins": "mov rcx, rbx"
+        },
+        {
+          "at": "0x2eb14a",
+          "ins": "call 0x180314a50",
+          "target": "0x314a50",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb14f",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2eb151",
+          "ins": "jne 0x1802eb206"
+        },
+        {
+          "at": "0x2eb157",
+          "ins": "test sil, sil"
+        },
+        {
+          "at": "0x2eb15a",
+          "ins": "je 0x1802eb1b8"
+        },
+        {
+          "at": "0x2eb15c",
+          "ins": "test rbx, rbx"
+        },
+        {
+          "at": "0x2eb15f",
+          "ins": "je 0x1802eb1b8"
+        },
+        {
+          "at": "0x2eb161",
+          "ins": "mov rdi, qword ptr [rbx + 0x260]"
+        },
+        {
+          "at": "0x2eb168",
+          "ins": "test rdi, rdi"
+        },
+        {
+          "at": "0x2eb16b",
+          "ins": "je 0x1802eb1b8"
+        },
+        {
+          "at": "0x2eb16d",
+          "ins": "mov rcx, rdi"
+        },
+        {
+          "at": "0x2eb170",
+          "ins": "call 0x1803d76a0",
+          "target": "0x3d76a0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb175",
+          "ins": "cmp qword ptr [rax], 0"
+        },
+        {
+          "at": "0x2eb179",
+          "ins": "je 0x1802eb1b8"
+        },
+        {
+          "at": "0x2eb17b",
+          "ins": "cmp byte ptr [rdi + 0xf8], 0"
+        },
+        {
+          "at": "0x2eb182",
+          "ins": "jne 0x1802eb1b8"
+        },
+        {
+          "at": "0x2eb184",
+          "ins": "mov rcx, qword ptr [rbx + 0x260]"
+        },
+        {
+          "at": "0x2eb18b",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "at": "0x2eb18e",
+          "ins": "je 0x1802eb1b2"
+        },
+        {
+          "at": "0x2eb190",
+          "ins": "call 0x1803d76a0",
+          "target": "0x3d76a0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb195",
+          "ins": "mov rcx, qword ptr [rax]"
+        },
+        {
+          "at": "0x2eb198",
+          "ins": "test rcx, rcx"
+        },
+        {
+          "at": "0x2eb19b",
+          "ins": "je 0x1802eb1b2"
+        },
+        {
+          "at": "0x2eb19d",
+          "ins": "cmp dword ptr [rcx + 0x2c], 1"
+        },
+        {
+          "at": "0x2eb1a1",
+          "ins": "jne 0x1802eb1b2"
+        },
+        {
+          "at": "0x2eb1a3",
+          "ins": "mov rdx, rbx"
+        },
+        {
+          "at": "0x2eb1a6",
+          "ins": "mov ecx, 0x18"
+        },
+        {
+          "at": "0x2eb1ab",
+          "ins": "call 0x180398b50",
+          "target": "0x398b50",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1b0",
+          "ins": "jmp 0x1802eb1b4",
+          "target": "0x2eb1b4",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1b2",
+          "ins": "xor eax, eax"
+        },
+        {
+          "at": "0x2eb1b4",
+          "ins": "test eax, eax"
+        },
+        {
+          "at": "0x2eb1b6",
+          "ins": "jne 0x1802eb21c"
+        },
+        {
+          "at": "0x2eb1b8",
+          "ins": "mov rax, rbx"
+        },
+        {
+          "at": "0x2eb1bb",
+          "ins": "add rsp, 0x38"
+        },
+        {
+          "at": "0x2eb1bf",
+          "ins": "pop rdi"
+        },
+        {
+          "at": "0x2eb1c0",
+          "ins": "pop rsi"
+        },
+        {
+          "at": "0x2eb1c1",
+          "ins": "pop rbp"
+        },
+        {
+          "at": "0x2eb1c2",
+          "ins": "pop rbx"
+        },
+        {
+          "at": "0x2eb1c3",
+          "ins": "ret "
+        },
+        {
+          "at": "0x2eb1c4",
+          "ins": "lea rdx, [rip + 0x11101ed]"
+        },
+        {
+          "at": "0x2eb1cb",
+          "ins": "mov dword ptr [rsp + 0x68], eax"
+        },
+        {
+          "at": "0x2eb1cf",
+          "ins": "lea rcx, [rsp + 0x68]"
+        },
+        {
+          "at": "0x2eb1d4",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1d9",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2eb1da",
+          "ins": "lea rdx, [rip + 0x11101d7]"
+        },
+        {
+          "at": "0x2eb1e1",
+          "ins": "mov dword ptr [rsp + 0x68], eax"
+        },
+        {
+          "at": "0x2eb1e5",
+          "ins": "lea rcx, [rsp + 0x68]"
+        },
+        {
+          "at": "0x2eb1ea",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1ef",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2eb1f0",
+          "ins": "lea rdx, [rip + 0x11101c1]"
+        },
+        {
+          "at": "0x2eb1f7",
+          "ins": "mov dword ptr [rsp + 0x68], eax"
+        },
+        {
+          "at": "0x2eb1fb",
+          "ins": "lea rcx, [rsp + 0x68]"
+        },
+        {
+          "at": "0x2eb200",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb205",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2eb206",
+          "ins": "lea rdx, [rip + 0x11101ab]"
+        },
+        {
+          "at": "0x2eb20d",
+          "ins": "mov dword ptr [rsp + 0x68], eax"
+        },
+        {
+          "at": "0x2eb211",
+          "ins": "lea rcx, [rsp + 0x68]"
+        },
+        {
+          "at": "0x2eb216",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb21b",
+          "ins": "int3 "
+        },
+        {
+          "at": "0x2eb21c",
+          "ins": "lea rdx, [rip + 0x1110195]"
+        },
+        {
+          "at": "0x2eb223",
+          "ins": "mov dword ptr [rsp + 0x68], eax"
+        },
+        {
+          "at": "0x2eb227",
+          "ins": "lea rcx, [rsp + 0x68]"
+        },
+        {
+          "at": "0x2eb22c",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb231",
+          "ins": "int3 "
+        }
+      ],
+      "direct_calls": [
+        {
+          "at": "0x2eb0c4",
+          "ins": "call 0x180d3be04",
+          "target": "0xd3be04",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb0ea",
+          "ins": "call 0x18067c1f0",
+          "target": "0x67c1f0",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2eb106",
+          "ins": "call 0x1802f45b0",
+          "target": "0x2f45b0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb126",
+          "ins": "call 0x18067c1f0",
+          "target": "0x67c1f0",
+          "symbol": "?BEE_CmdSetLayerSwitch@@YAHPEAVBEE_Layer@@HE@Z"
+        },
+        {
+          "at": "0x2eb140",
+          "ins": "call 0x18039d4a0",
+          "target": "0x39d4a0",
+          "symbol": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z"
+        },
+        {
+          "at": "0x2eb14a",
+          "ins": "call 0x180314a50",
+          "target": "0x314a50",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb170",
+          "ins": "call 0x1803d76a0",
+          "target": "0x3d76a0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb190",
+          "ins": "call 0x1803d76a0",
+          "target": "0x3d76a0",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1ab",
+          "ins": "call 0x180398b50",
+          "target": "0x398b50",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1b0",
+          "ins": "jmp 0x1802eb1b4",
+          "target": "0x2eb1b4",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1d4",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb1ea",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb200",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb216",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        },
+        {
+          "at": "0x2eb22c",
+          "ins": "call 0x180d3bdf8",
+          "target": "0xd3bdf8",
+          "symbol": ""
+        }
+      ],
+      "indirect_calls": [
+        {
+          "at": "0x2eb0a3",
+          "ins": "call qword ptr [rip + 0xc2cc2f]"
+        },
+        {
+          "at": "0x2eb0d7",
+          "ins": "call qword ptr [rdx + 0x2b8]"
+        }
+      ]
+    }
+  }
+}

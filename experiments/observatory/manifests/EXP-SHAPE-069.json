@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-069",
+  "date": "2026-10-14",
+  "status": "PASS 3 binaries real MSVC x64 runtime foreign owner mock",
+  "src": "experiments/vector-shape/probe-src/labs/foreign_native_owner_abi_mock/",
+  "targets": [
+    "MockHostABI.dll",
+    "ChapeForeignOwner.dll",
+    "ChapeCrossDLLNativeOwnerTest.exe"
+  ],
+  "run": "ctest --test-dir D:/Developer/ShapeLayerAE/build/foreign_native_owner_abi_mock -C Release --output-on-failure",
+  "ctest": "1/1 PASS",
+  "cross_DLL_clone": true,
+  "MSVC_RTTI": true,
+  "foreign_TDB_nonlayer_rejected": true,
+  "simulated_Comp_ownership": true,
+  "module_unload_only_when_live_zero": true,
+  "adobe_private_api_called": false,
+  "adobe_native_layer_registered": false,
+  "CompNodeAE_modified": false,
+  "finding": "research/findings/F-VECTOR-069-cross-dll-custom-layer-native-rtti-lifecycle-mock-implemented.md"
+}

@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-070",
+  "date": "2026-10-14",
+  "status": "PASS cross-version real BEE C++ object layout and virtual slot drift",
+  "AE2025": {
+    "comp_item_member_offset": "0x2b8",
+    "flag_vtable_slot": "0x2a8"
+  },
+  "AE2026": {
+    "comp_item_member_offset": "0x260",
+    "flag_vtable_slot": "0x2b8"
+  },
+  "abi_stable": false,
+  "versions_pinned_by_actual_DLL_SHA256": true,
+  "private_host_calls": 0,
+  "external_native_layer_created": false,
+  "finding": "research/findings/F-VECTOR-070-ae2025-2026-bee-layer-abi-object-offset-drift.md"
+}

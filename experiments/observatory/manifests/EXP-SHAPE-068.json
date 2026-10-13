@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-SHAPE-068",
+  "date": "2026-10-14",
+  "status": "PASS real native clone->RTTI->CompItem path for AE2025 and AE2026",
+  "native_import": "TDB.dll!?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z",
+  "RTTI_source": ".?AVTDB_StreamBase@@",
+  "RTTI_target": ".?AVBEE_Layer@@",
+  "versions": {
+    "AE2025": {
+      "clone": "0x2e20e0",
+      "attach_site": "0x2e218f"
+    },
+    "AE2026": {
+      "clone": "0x2eb090",
+      "attach_site": "0x2eb140"
+    }
+  },
+  "external_adobe_layer_registered": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-068-native-layer-clone-rtti-crossmodule-owner-contract.md"
+}

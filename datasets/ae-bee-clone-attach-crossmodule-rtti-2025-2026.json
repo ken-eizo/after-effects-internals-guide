@@ -1,0 +1,47 @@
+{
+  "evidence": "E2-L exact installed native x64 calls, RTTI descriptors, TDB DLL import; static only",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "BEE_Layer_CloneAndAttach_rva": "0x2e20e0",
+      "TDB_StreamBase_virtual_clone_IAT": "0xebe9f8",
+      "clone_symbol": {
+        "dll": "TDB.dll",
+        "name": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+      },
+      "RTDynamicCast_thunk": "0xceacd4",
+      "dynamic_cast_src_type": {
+        "descriptor_rva": "0x151a5f8",
+        "RTTI_decorated": ".?AVTDB_StreamBase@@"
+      },
+      "dynamic_cast_target_type": {
+        "descriptor_rva": "0x151aed0",
+        "RTTI_decorated": ".?AVBEE_Layer@@"
+      },
+      "BEE_CompItem_attachment_callsite": "0x2e218f",
+      "clone_then_cast_then_attach": true,
+      "BEE_native_new_class_registered": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "BEE_Layer_CloneAndAttach_rva": "0x2eb090",
+      "TDB_StreamBase_virtual_clone_IAT": "0xf17cd8",
+      "clone_symbol": {
+        "dll": "TDB.dll",
+        "name": "?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+      },
+      "RTDynamicCast_thunk": "0xd3be04",
+      "dynamic_cast_src_type": {
+        "descriptor_rva": "0x15a6fb8",
+        "RTTI_decorated": ".?AVTDB_StreamBase@@"
+      },
+      "dynamic_cast_target_type": {
+        "descriptor_rva": "0x15a7f70",
+        "RTTI_decorated": ".?AVBEE_Layer@@"
+      },
+      "BEE_CompItem_attachment_callsite": "0x2eb140",
+      "clone_then_cast_then_attach": true,
+      "BEE_native_new_class_registered": false
+    }
+  }
+}

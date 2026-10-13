@@ -1,0 +1,27 @@
+{
+  "evidence": "E2-L native PE x64 imports, not in-host foreign clone",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "clone_entry": "0x2e20e0",
+      "original_object_clone_import_site": "0x2e20fe",
+      "original_object_clone_IAT": "0xebe9f8",
+      "clone_import": "TDB.dll!?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z",
+      "postclone_thunk": "0xceacd4",
+      "postclone_IAT": "0xec0338",
+      "postclone_import": "VCRUNTIME140.dll!__RTDynamicCast",
+      "dll_import_count": 3891
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "clone_entry": "0x2eb090",
+      "original_object_clone_import_site": "0x2eb0a3",
+      "original_object_clone_IAT": "0xf17cd8",
+      "clone_import": "TDB.dll!?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z",
+      "postclone_thunk": "0xd3be04",
+      "postclone_IAT": "0xf194d8",
+      "postclone_import": null,
+      "dll_import_count": 3962
+    }
+  }
+}
