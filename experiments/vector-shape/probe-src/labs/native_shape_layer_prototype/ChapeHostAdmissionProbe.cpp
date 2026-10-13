@@ -58,6 +58,11 @@ void record(AEGP_SuiteHandler& s,AEGP_PluginID id,FILE* out,const char* scope,AE
 AEGP_StreamRefH byName(AEGP_SuiteHandler& s,AEGP_PluginID id,
                         AEGP_StreamRefH parent,const char* name){
  if(!parent)return nullptr;
+ AEGP_StreamGroupingType kind=AEGP_StreamGroupingType_NONE;
+ // AE asserts when GetNewStreamRefByMatchname is called on INDEXED groups.
+ // Only legal for NAMED_GROUP as declared in the SDK.
+ if(s.DynamicStreamSuite2()->AEGP_GetStreamGroupingType(parent,&kind)
+    || kind!=AEGP_StreamGroupingType_NAMED_GROUP)return nullptr;
  AEGP_StreamRefH child=nullptr;
  if(s.DynamicStreamSuite2()->AEGP_GetNewStreamRefByMatchname(id,parent,name,&child)){
   if(child)s.StreamSuite2()->AEGP_DisposeStream(child);
@@ -93,7 +98,9 @@ A_Err CNL_RunChapeHostProbe(SPBasicSuite* basic,AEGP_PluginID id){
   record(s,id,out,"Layer",root);
   rootVectors=byName(s,id,root,"ADBE Root Vectors Group");
   record(s,id,out,"Root Vectors",rootVectors);
-  contents=byName(s,id,rootVectors,"ADBE Vectors Group");
+  // ADBE Root Vectors Group *is* the Shape Layer's indexed Contents!
+  // It is not a named container holding a child 'ADBE Vectors Group'.
+  contents=rootVectors;
   record(s,id,out,"Shape Contents",contents);
   if(contents){
    A_long count=0;
@@ -113,7 +120,7 @@ A_Err CNL_RunChapeHostProbe(SPBasicSuite* basic,AEGP_PluginID id){
   record(s,id,out,"Nested Group Contents",nested);
  }
  if(nested)s.StreamSuite2()->AEGP_DisposeStream(nested);
- if(contents)s.StreamSuite2()->AEGP_DisposeStream(contents);
+ // contents aliases rootVectors; dispose it exactly once.
  if(rootVectors)s.StreamSuite2()->AEGP_DisposeStream(rootVectors);
  if(root)s.StreamSuite2()->AEGP_DisposeStream(root);
  // Control experiment: unlike Adobe's fixed native stream classes, the

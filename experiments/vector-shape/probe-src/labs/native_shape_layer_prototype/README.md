@@ -104,3 +104,31 @@ Built AEX and standalone CNL schema are **not** yet a host-registered new BEE La
 Rebuild: cmake --build D:\Developer\ShapeLayerAE\build\native_shape_layer_prototype --config Release
 Tests: ctest --test-dir D:\Developer\ShapeLayerAE\build\native_shape_layer_prototype -C Release --output-on-failure
 PE: python D:\Developer\ShapeLayerAE\labs\native_shape_layer_prototype\verify_native_shape_aex.py
+
+
+## 2026-10-13 correction from actual AE2026 screenshots and TSV
+
+The user confirmed that the previous AEX exposed the Animation probe but **did not visually show "ChapeLayer" in Layer > New**. The same probe produced AE's internal verification message:
+
+"GetNewStreamRefByMatchname only works on named groups."
+
+We inspected the actual user-host TSV at %TEMP%\ChapeLayer_HostAdmission_ReadOnly.tsv:
+- active_layer_kind=4 (existing native Vector Layer);
+- the layer's root is a NAMED_GROUP;
+- ADBE Root Vectors Group is itself **INDEXED_GROUP** (kind=2);
+- its child count on that fixture was zero;
+- CanAddStream accepted unknown ADBE Vector Shape/Graphic/Filter-prefixed child names but rejected CNL:Forward/Reverse/Path;
+- the CNL-own trace passed, but no Adobe stream was created.
+
+**Bug corrected:** the probe had called GetNewStreamRefByMatchname(parent=ADBE Root Vectors Group, name=ADBE Vectors Group). This is categorically invalid on INDEXED_GROUP and caused the host assertion. The fixed version:
+1. checks the parent's grouping type before every by-MatchName lookup;
+2. directly treats ADBE Root Vectors Group as the actual indexed top-level native Contents;
+3. traverses its children by GetNewStreamRefByIndex;
+4. searches ADBE Vectors Group only under a NAMED_GROUP child whose matchName is ADBE Vector Group;
+5. handles empty native Contents and disposes each ref only once.
+
+**Menu investigation:** The public SDK's AEGP_Menu_NEW does specify the Layer > New submenu, but the user did not see the previous AT_BOTTOM inserted item. The new build tries AT_TOP and registers a separate public AEGP_Menu_LAYER *fallback* status command. On plugin startup it writes **%TEMP%\ChapeLayer_MenuRegistration.tsv** with exact GetUniqueCommand, InsertMenuCommand, and hook errors. A zero error from InsertMenuCommand alone is NOT proof the host displays the action.
+
+The new binary has been built and its static PE/safety checks and 2/2 CTests passed, but it has not yet been run in the host. The user's current installed AEX should be manually replaced **only while AE is closed**, and only in an isolated disposable AE session. Don't claim the New submenu is fixed until the host screenshot and menu TSV confirm it.
+
+The native Shape Contents grammar itself and arbitrary new BEE-owned Layer type remain **unregistered**, and no private TDB registrar has been called.

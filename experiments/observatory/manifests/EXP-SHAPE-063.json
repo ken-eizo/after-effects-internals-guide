@@ -1,0 +1,16 @@
+{
+  "experiment_id": "EXP-SHAPE-063",
+  "date": "2026-10-13",
+  "status": "PASS cross-version native prefix predicate fully recovered (special equality key unknown)",
+  "evidence": "E2-L x64 AE2025/2026 BEE + 2026 user-host public CanAdd",
+  "prefixes": [
+    "ADBE Vector Shape -",
+    "ADBE Vector Graphic -",
+    "ADBE Vector Filter -"
+  ],
+  "CRT_search": "VCRUNTIME140.dll!strstr",
+  "returned_pointer_equals_source_start": true,
+  "TDB_factory_queried": false,
+  "BEE_evaluator_queried": false,
+  "unknown_type_created": false
+}

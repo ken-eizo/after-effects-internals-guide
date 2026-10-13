@@ -19,6 +19,7 @@ SPBasicSuite* basic=nullptr;
 AEGP_PluginID plugin=0;
 AEGP_Command testCommand=0;
 AEGP_Command chapeMenuCommand=0;
+AEGP_Command chapeFallbackCommand=0;
 AEGP_Command hostAdmissionCommand=0;
 // The probe uses only public AEGP DynamicStreamSuite reads.
 struct DestroyShape {
@@ -94,7 +95,7 @@ A_Err selfTest(){
  return A_Err_NONE;
 }
 A_Err commandHook(AEGP_GlobalRefcon,AEGP_CommandRefcon,AEGP_Command cmd,AEGP_HookPriority,A_Boolean already,A_Boolean* handled){
- if(already || (cmd!=testCommand && cmd!=chapeMenuCommand && cmd!=hostAdmissionCommand))return A_Err_NONE;
+ if(already || (cmd!=testCommand && cmd!=chapeMenuCommand && cmd!=chapeFallbackCommand && cmd!=hostAdmissionCommand))return A_Err_NONE;
  if(handled)*handled=TRUE;
  if(cmd==testCommand)return selfTest();
  if(cmd==hostAdmissionCommand)return CNL_RunChapeHostProbe(basic,plugin);
@@ -107,6 +108,7 @@ A_Err updateHook(AEGP_GlobalRefcon,AEGP_UpdateMenuRefcon,AEGP_WindowType){
  AEGP_SuiteHandler s(basic);
  A_Err e=s.CommandSuite1()->AEGP_EnableCommand(testCommand);
  if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(chapeMenuCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(chapeFallbackCommand);
  if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(hostAdmissionCommand);
  return e;
 }
@@ -116,19 +118,53 @@ A_Err EntryPointFunc(SPBasicSuite* b,A_long,A_long,AEGP_PluginID id,AEGP_GlobalR
  basic=b;plugin=id;
  AEGP_SuiteHandler s(b);
  A_Err e=s.CommandSuite1()->AEGP_GetUniqueCommand(&testCommand);
+ const A_Err testId=e;
  if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(testCommand,
     "CNL Native Shape: Independent Engine Self-Test (No Host Edits)",
     AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
- if(!e)e=s.CommandSuite1()->AEGP_GetUniqueCommand(&chapeMenuCommand);
- if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(chapeMenuCommand,
+ const A_Err testInsert=e;
+ A_Err newId=s.CommandSuite1()->AEGP_GetUniqueCommand(&chapeMenuCommand);
+ A_Err newInsert=newId;
+ if(!newId)newInsert=s.CommandSuite1()->AEGP_InsertMenuCommand(chapeMenuCommand,
     "ChapeLayer (Native Type Pending)",
-    AEGP_Menu_NEW,AEGP_MENU_INSERT_AT_BOTTOM);
- if(!e)e=s.CommandSuite1()->AEGP_GetUniqueCommand(&hostAdmissionCommand);
- if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(hostAdmissionCommand,
+    AEGP_Menu_NEW,AEGP_MENU_INSERT_AT_TOP);
+ // Experimental fallback: distinguish a missing NEW submenu item from
+ // failure to register the AEGP command anywhere at all.
+ A_Err fallbackId=s.CommandSuite1()->AEGP_GetUniqueCommand(&chapeFallbackCommand);
+ A_Err fallbackInsert=fallbackId;
+ if(!fallbackId)fallbackInsert=s.CommandSuite1()->AEGP_InsertMenuCommand(chapeFallbackCommand,
+    "ChapeLayer: Native Type Status (Fallback)",
+    AEGP_Menu_LAYER,AEGP_MENU_INSERT_AT_TOP);
+ A_Err probeId=s.CommandSuite1()->AEGP_GetUniqueCommand(&hostAdmissionCommand);
+ A_Err probeInsert=probeId;
+ if(!probeId)probeInsert=s.CommandSuite1()->AEGP_InsertMenuCommand(hostAdmissionCommand,
     "ChapeLayer: Inspect Native Contents Admission (Read Only)",
     AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
- if(!e)e=s.RegisterSuite5()->AEGP_RegisterCommandHook(
+ A_Err hooks=s.RegisterSuite5()->AEGP_RegisterCommandHook(
     id,AEGP_HP_BeforeAE,AEGP_Command_ALL,commandHook,nullptr);
- if(!e)e=s.RegisterSuite5()->AEGP_RegisterUpdateMenuHook(id,updateHook,nullptr);
- return e;
+ A_Err update=s.RegisterSuite5()->AEGP_RegisterUpdateMenuHook(id,updateHook,nullptr);
+ // Log command and menu insertion results at actual AE load time; a zero
+ // result means the call succeeded, not that AE rendered the menu item.
+ char tmp[MAX_PATH+2]{};
+ const DWORD n=GetTempPathA(MAX_PATH,tmp);
+ if(n && n<MAX_PATH){
+   FILE* out=fopen((std::string(tmp)+"ChapeLayer_MenuRegistration.tsv").c_str(),"wb");
+   if(out){
+      fprintf(out,"kind\tvalue\nversion\tChapeLayer_MenuDiagnose_v2\n");
+      fprintf(out,"test_command_id\t%ld\ntest_get_error\t%d\ntest_insert_error\t%d\n",
+          (long)testCommand,(int)testId,(int)testInsert);
+      fprintf(out,"new_command_id\t%ld\nnew_get_error\t%d\nnew_insert_error\t%d\n",
+          (long)chapeMenuCommand,(int)newId,(int)newInsert);
+      fprintf(out,"fallback_command_id\t%ld\nfallback_get_error\t%d\nfallback_insert_error\t%d\n",
+          (long)chapeFallbackCommand,(int)fallbackId,(int)fallbackInsert);
+      fprintf(out,"probe_command_id\t%ld\nprobe_get_error\t%d\nprobe_insert_error\t%d\n",
+          (long)hostAdmissionCommand,(int)probeId,(int)probeInsert);
+      fprintf(out,"command_hook_error\t%d\nupdate_hook_error\t%d\n",
+          (int)hooks,(int)update);
+      fprintf(out,"AEGP_Menu_NEW_enum\t%d\nAEGP_Menu_LAYER_enum\t%d\n",
+          (int)AEGP_Menu_NEW,(int)AEGP_Menu_LAYER);
+      fclose(out);
+   }
+ }
+ return hooks?hooks:(update?update:(testInsert?testInsert:A_Err_NONE));
 }

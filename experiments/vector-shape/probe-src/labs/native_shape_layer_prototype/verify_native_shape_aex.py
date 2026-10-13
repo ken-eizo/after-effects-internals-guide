@@ -36,9 +36,18 @@ src=(root/"labs/native_shape_layer_prototype/NativeShapeLayerPlugin.cpp").read_t
 assert "AEGP_RegisterCommandHook" in src and "AEGP_InsertMenuCommand" in src
 assert "AEGP_Menu_NEW" in src and "ChapeLayer (Native Type Pending)" in src
 assert "CNL_RunChapeHostProbe" in src
+assert "ChapeLayer_MenuRegistration.tsv" in src
+assert "AEGP_Menu_LAYER" in src and "ChapeLayer: Native Type Status (Fallback)" in src
+assert 'AEGP_Menu_NEW,AEGP_MENU_INSERT_AT_TOP' in src
+
 probe=(root/"labs/native_shape_layer_prototype/ChapeHostAdmissionProbe.cpp").read_text()
 assert "AEGP_CanAddStream(" in probe
 assert "cnl_evaluation_trace" in probe and "indexed_child" in probe
+assert "contents=rootVectors;" in probe
+assert "kind!=AEGP_StreamGroupingType_NAMED_GROUP" in probe
+assert "AEGP_GetNewStreamRefByIndex" in probe
+assert "if(contents)s.StreamSuite2()->AEGP_DisposeStream(contents);" not in probe
+
 assert all(name not in probe for name in ("AEGP_AddStream(", "AEGP_DeleteStream(", "RegisterFactoryFunc(", "GetProcAddress("))
 assert all(x not in src for x in ("GetProcAddress(", "AEGP_AddStream(","AEGP_NewLayer(","PF_Cmd_"))
 result={"status":"PASS","file":str(p),"sha256":hashlib.sha256(data).hexdigest(),

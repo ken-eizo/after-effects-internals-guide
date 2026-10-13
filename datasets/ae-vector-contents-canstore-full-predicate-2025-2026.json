@@ -1,0 +1,85 @@
+{
+  "evidence": "E2-L matched real native x64, installed BEE versions, no private code execution",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "canstore_rva": "0x700250",
+      "initial_special_MatchName_equality": true,
+      "prefixes": [
+        "ADBE Vector Shape -",
+        "ADBE Vector Graphic -",
+        "ADBE Vector Filter -"
+      ],
+      "prefix_literal_sites": [
+        {
+          "literal": "ADBE Vector Shape -",
+          "rva": "0x1001ad0",
+          "site": "0x700292"
+        },
+        {
+          "literal": "ADBE Vector Graphic -",
+          "rva": "0x1001ae8",
+          "site": "0x7002b2"
+        },
+        {
+          "literal": "ADBE Vector Filter -",
+          "rva": "0x1001b00",
+          "site": "0x7002e4"
+        }
+      ],
+      "CRT_string_search": "VCRUNTIME140.dll!strstr",
+      "CRT_import_thunk_rva": "0xceacfe",
+      "CRT_import_address_table_rva": "0xec0340",
+      "CRT_call_rvas": [
+        "0x70029c",
+        "0x7002bc",
+        "0x7002ee"
+      ],
+      "returned_substring_pointer_compared_to_original_input": true,
+      "reconstructed_logic": "exact special MatchName OR startswith any of 3 prefixes",
+      "TDB_factory_called_in_predicate": false,
+      "BEE_evaluator_registry_consulted_in_predicate": false,
+      "native_creator_registrability_proven": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "canstore_rva": "0x723c80",
+      "initial_special_MatchName_equality": true,
+      "prefixes": [
+        "ADBE Vector Shape -",
+        "ADBE Vector Graphic -",
+        "ADBE Vector Filter -"
+      ],
+      "prefix_literal_sites": [
+        {
+          "literal": "ADBE Vector Shape -",
+          "rva": "0x10628c8",
+          "site": "0x723cb6"
+        },
+        {
+          "literal": "ADBE Vector Graphic -",
+          "rva": "0x10628e0",
+          "site": "0x723cd6"
+        },
+        {
+          "literal": "ADBE Vector Filter -",
+          "rva": "0x10628f8",
+          "site": "0x723d0b"
+        }
+      ],
+      "CRT_string_search": "VCRUNTIME140.dll!strstr",
+      "CRT_import_thunk_rva": "0xd3be2e",
+      "CRT_import_address_table_rva": "0xf19510",
+      "CRT_call_rvas": [
+        "0x723cc0",
+        "0x723ce0",
+        "0x723d15"
+      ],
+      "returned_substring_pointer_compared_to_original_input": true,
+      "reconstructed_logic": "exact special MatchName OR startswith any of 3 prefixes",
+      "TDB_factory_called_in_predicate": false,
+      "BEE_evaluator_registry_consulted_in_predicate": false,
+      "native_creator_registrability_proven": false
+    }
+  }
+}
