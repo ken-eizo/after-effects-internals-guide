@@ -17,6 +17,15 @@ required={"EntryPointFunc","cnl_shape_create","cnl_shape_destroy","cnl_shape_fea
 "cnl_shape_undo_depth","cnl_shape_redo_depth",
 "cnl_document_create","cnl_document_destroy"}
 assert required<=exports,required-exports
+required_timeline={
+"chape_timeline_abi_version","chape_timeline_create","chape_timeline_destroy",
+"chape_timeline_define_type","chape_timeline_permit","chape_timeline_add",
+"chape_timeline_move","chape_timeline_set_base","chape_timeline_set_key",
+"chape_timeline_evaluate",
+"chape_timeline_sample","chape_timeline_archive","chape_timeline_restore",
+"chape_timeline_undo","chape_timeline_redo"}
+assert required_timeline<=exports,required_timeline-exports
+
 imports={desc.dll.decode(errors="replace").lower():[
 x.name.decode(errors="replace") if x.name else "#"+str(x.ordinal)
 for x in desc.imports] for desc in pe.DIRECTORY_ENTRY_IMPORT}
@@ -36,6 +45,13 @@ src=(root/"labs/native_shape_layer_prototype/NativeShapeLayerPlugin.cpp").read_t
 assert "AEGP_RegisterCommandHook" in src and "AEGP_InsertMenuCommand" in src
 assert "AEGP_Menu_NEW" in src and "ChapeLayer (Native Type Pending)" in src
 assert "CNL_RunChapeHostProbe" in src
+assert 'CNL_RunTypedTimelineProbe' in src and 'ChapeLayer: Test Typed Timeline Engine (CNL Only)' in src
+timeline=(root/"labs/native_shape_layer_prototype/ChapeTimelineHostDemo.cpp").read_text()
+assert 'adobe_layer_registered\\t0' in timeline
+assert 'host_project_changed\\t0' in timeline
+assert 'private_BEE_TDB_used\\t0' in timeline
+assert 'ChapeLayer_TypedTimelineDemo.tsv' in timeline
+
 assert "ChapeLayer_MenuRegistration.tsv" in src
 assert "AEGP_Menu_LAYER" in src and "ChapeLayer: Native Type Status (Fallback)" in src
 assert 'AEGP_Menu_NEW,AEGP_MENU_INSERT_AT_TOP' in src
@@ -53,6 +69,7 @@ assert all(x not in src for x in ("GetProcAddress(", "AEGP_AddStream(","AEGP_New
 result={"status":"PASS","file":str(p),"sha256":hashlib.sha256(data).hexdigest(),
 "size_bytes":len(data),"arch":"x64" if pe.FILE_HEADER.Machine==0x8664 else hex(pe.FILE_HEADER.Machine),
 "entrypoint_exported":True,"CNL_c_abi_export_count":len([e for e in exports if e.startswith("cnl_")]),
+"chape_timeline_c_abi_export_count":len([e for e in exports if e.startswith("chape_timeline_")]),
 "pipl_resource_types":pipl,"private_TDB_BEE_FLT_imports":False,
 "AE_host_private_functions_executed":False,
 "AE_native_Timeline_owner_created":False,

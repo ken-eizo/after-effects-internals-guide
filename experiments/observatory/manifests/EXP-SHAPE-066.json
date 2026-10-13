@@ -1,0 +1,35 @@
+{
+  "experiment_id": "EXP-SHAPE-066",
+  "date": "2026-10-14",
+  "status": "PASS typed CNL native Timeline runtime and C ABI; Adobe-native Layer ownership not proven",
+  "source_root": "D:\\Developer\\ShapeLayerAE\\labs\\native_shape_layer_prototype",
+  "aex_path": "D:\\Developer\\ShapeLayerAE\\build\\native_shape_layer_prototype\\Release\\CNLNativeShapeLayer.aex",
+  "ae_binary_host_execution_by_assistant": false,
+  "compiled_64bit_aex": true,
+  "AEGP_pipl_and_entrypoint": true,
+  "CTest": "4/4 PASS",
+  "archived_source_CTest": "4/4 PASS",
+  "CNL_existing_export_count": 37,
+  "typed_C_ABI_export_count": 15,
+  "features": {
+    "arbitrary_type_schema": true,
+    "custom_layer_families": true,
+    "scoped_ordered_evaluation": true,
+    "typed_properties": true,
+    "keyframes": true,
+    "undo_redo": true,
+    "binary_archive_full_schema": true,
+    "corruption_and_truncation_test": true,
+    "public_AEGP_demo_command": true
+  },
+  "Adobe_host": {
+    "new_native_BEE_Layer": false,
+    "new_native_TDB_type": false,
+    "host_Contents": false,
+    "host_Pen": false,
+    "host_BEE_VectorArt": false
+  },
+  "manual_report_expected": "%TEMP%\\ChapeLayer_TypedTimelineDemo.tsv",
+  "compnodeae_edited": false,
+  "finding": "research/findings/F-VECTOR-066-chape-native-generic-timeline-typed-abi.md"
+}

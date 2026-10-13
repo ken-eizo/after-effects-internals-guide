@@ -14,6 +14,7 @@
 #include <vector>
 // Defined in ChapeHostAdmissionProbe.cpp, outside this translation unit.
 A_Err CNL_RunChapeHostProbe(SPBasicSuite*,AEGP_PluginID);
+A_Err CNL_RunTypedTimelineProbe(SPBasicSuite*,AEGP_PluginID);
 namespace {
 SPBasicSuite* basic=nullptr;
 AEGP_PluginID plugin=0;
@@ -21,6 +22,7 @@ AEGP_Command testCommand=0;
 AEGP_Command chapeMenuCommand=0;
 AEGP_Command chapeFallbackCommand=0;
 AEGP_Command hostAdmissionCommand=0;
+AEGP_Command typedTimelineCommand=0;
 // The probe uses only public AEGP DynamicStreamSuite reads.
 struct DestroyShape {
  void operator()(CNL_ShapeLayer* p)const{cnl_shape_destroy(p);}
@@ -95,10 +97,11 @@ A_Err selfTest(){
  return A_Err_NONE;
 }
 A_Err commandHook(AEGP_GlobalRefcon,AEGP_CommandRefcon,AEGP_Command cmd,AEGP_HookPriority,A_Boolean already,A_Boolean* handled){
- if(already || (cmd!=testCommand && cmd!=chapeMenuCommand && cmd!=chapeFallbackCommand && cmd!=hostAdmissionCommand))return A_Err_NONE;
+ if(already || (cmd!=testCommand && cmd!=chapeMenuCommand && cmd!=chapeFallbackCommand && cmd!=hostAdmissionCommand && cmd!=typedTimelineCommand))return A_Err_NONE;
  if(handled)*handled=TRUE;
  if(cmd==testCommand)return selfTest();
  if(cmd==hostAdmissionCommand)return CNL_RunChapeHostProbe(basic,plugin);
+ if(cmd==typedTimelineCommand)return CNL_RunTypedTimelineProbe(basic,plugin);
  // No Adobe-native CNL layer creator exists yet. Refuse a false substitute.
  notify("ChapeLayer: new native AE Layer type is not registered yet. No layer was created. ChapeLayer's custom C++ Contents engine is functional; use the read-only admission probe under Animation.");
  return A_Err_NONE;
@@ -110,6 +113,7 @@ A_Err updateHook(AEGP_GlobalRefcon,AEGP_UpdateMenuRefcon,AEGP_WindowType){
  if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(chapeMenuCommand);
  if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(chapeFallbackCommand);
  if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(hostAdmissionCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(typedTimelineCommand);
  return e;
 }
 }
@@ -140,6 +144,11 @@ A_Err EntryPointFunc(SPBasicSuite* b,A_long,A_long,AEGP_PluginID id,AEGP_GlobalR
  if(!probeId)probeInsert=s.CommandSuite1()->AEGP_InsertMenuCommand(hostAdmissionCommand,
     "ChapeLayer: Inspect Native Contents Admission (Read Only)",
     AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
+ A_Err typedId=s.CommandSuite1()->AEGP_GetUniqueCommand(&typedTimelineCommand);
+ A_Err typedInsert=typedId;
+ if(!typedId)typedInsert=s.CommandSuite1()->AEGP_InsertMenuCommand(typedTimelineCommand,
+    "ChapeLayer: Test Typed Timeline Engine (CNL Only)",
+    AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
  A_Err hooks=s.RegisterSuite5()->AEGP_RegisterCommandHook(
     id,AEGP_HP_BeforeAE,AEGP_Command_ALL,commandHook,nullptr);
  A_Err update=s.RegisterSuite5()->AEGP_RegisterUpdateMenuHook(id,updateHook,nullptr);
@@ -159,6 +168,8 @@ A_Err EntryPointFunc(SPBasicSuite* b,A_long,A_long,AEGP_PluginID id,AEGP_GlobalR
           (long)chapeFallbackCommand,(int)fallbackId,(int)fallbackInsert);
       fprintf(out,"probe_command_id\t%ld\nprobe_get_error\t%d\nprobe_insert_error\t%d\n",
           (long)hostAdmissionCommand,(int)probeId,(int)probeInsert);
+      fprintf(out,"typed_timeline_command_id\t%ld\ntyped_get_error\t%d\ntyped_insert_error\t%d\n",
+          (long)typedTimelineCommand,(int)typedId,(int)typedInsert);
       fprintf(out,"command_hook_error\t%d\nupdate_hook_error\t%d\n",
           (int)hooks,(int)update);
       fprintf(out,"AEGP_Menu_NEW_enum\t%d\nAEGP_Menu_LAYER_enum\t%d\n",

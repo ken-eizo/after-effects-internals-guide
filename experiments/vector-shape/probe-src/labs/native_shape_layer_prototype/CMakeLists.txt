@@ -17,13 +17,15 @@ add_custom_command(OUTPUT "${RC}"
 add_library(CNLShapeObjects OBJECT
  "../native_vector_core/CNLNativeVectorCore.cpp"
  CNLShapeRuntime.cpp CNLShapeRuntime.h
- ChapeHierarchyRules.cpp ChapeHierarchyRules.h)
+ ChapeHierarchyRules.cpp ChapeHierarchyRules.h
+ ChapeNativeTimeline.cpp ChapeNativeTimeline.h
+ ChapeTimelineABI.cpp ChapeTimelineABI.h)
 set_target_properties(CNLShapeObjects PROPERTIES POSITION_INDEPENDENT_CODE ON)
 target_compile_features(CNLShapeObjects PRIVATE cxx_std_17)
 target_compile_definitions(CNLShapeObjects PRIVATE CNL_VECTOR_CORE_EXPORTS)
 target_compile_options(CNLShapeObjects PRIVATE /utf-8)
 add_library(CNLNativeShapeLayer SHARED
- NativeShapeLayerPlugin.cpp ChapeHostAdmissionProbe.cpp $<TARGET_OBJECTS:CNLShapeObjects>
+ NativeShapeLayerPlugin.cpp ChapeHostAdmissionProbe.cpp ChapeTimelineHostDemo.cpp $<TARGET_OBJECTS:CNLShapeObjects>
  "${AE_SDK_EXAMPLES}/Util/AEGP_SuiteHandler.cpp"
  "${AE_SDK_EXAMPLES}/Util/MissingSuiteError.cpp" "${RC}")
 target_compile_features(CNLNativeShapeLayer PRIVATE cxx_std_17)
@@ -40,6 +42,14 @@ target_compile_options(CNLNativeShapeRuntimeTest PRIVATE /utf-8)
 add_executable(CNLChapeHierarchyRulesTest ChapeHierarchyRulesTest.cpp ChapeHierarchyRules.cpp)
 target_compile_features(CNLChapeHierarchyRulesTest PRIVATE cxx_std_17)
 target_compile_options(CNLChapeHierarchyRulesTest PRIVATE /utf-8)
+add_executable(CNLNativeTimelineTest ChapeNativeTimelineTest.cpp ChapeNativeTimeline.cpp)
+target_compile_features(CNLNativeTimelineTest PRIVATE cxx_std_17)
+target_compile_options(CNLNativeTimelineTest PRIVATE /utf-8)
+add_executable(CNLTimelineABITest ChapeTimelineABITest.cpp ChapeTimelineABI.cpp ChapeNativeTimeline.cpp)
+target_compile_features(CNLTimelineABITest PRIVATE cxx_std_17)
+target_compile_options(CNLTimelineABITest PRIVATE /utf-8)
 enable_testing()
+add_test(NAME NativeTimelineCABI COMMAND CNLTimelineABITest)
 add_test(NAME NativeShapeOwnedRuntime COMMAND CNLNativeShapeRuntimeTest)
 add_test(NAME ChapeHierarchyRules COMMAND CNLChapeHierarchyRulesTest)
+add_test(NAME NativeTypedTimelineGrammar COMMAND CNLNativeTimelineTest)
