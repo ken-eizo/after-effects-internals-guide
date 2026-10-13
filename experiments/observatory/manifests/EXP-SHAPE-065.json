@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-SHAPE-065",
+  "date": "2026-10-13",
+  "status": "PASS exact special MatchName resolved both BEE binary versions",
+  "evidence": "E2-L native literal static TDB_MatchName constructor and same global read in CanStore",
+  "special_matchname": "ADBE Vector Group",
+  "allowed_prefixes": [
+    "ADBE Vector Shape -",
+    "ADBE Vector Graphic -",
+    "ADBE Vector Filter -"
+  ],
+  "AE2025": {
+    "initializer": "0x1C030",
+    "global": "0x15EF420",
+    "CanStore_reference": "0x700263"
+  },
+  "AE2026": {
+    "initializer": "0x1B760",
+    "global": "0x169FDF0",
+    "CanStore_reference": "0x723C89"
+  },
+  "unknown_type_constructed": false,
+  "external_native_CNL_registered": false,
+  "private_calls_executed": 0
+}

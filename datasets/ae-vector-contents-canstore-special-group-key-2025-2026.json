@@ -1,0 +1,27 @@
+{
+  "evidence": "E2-L x64 constructor literal mapped to exact CanStore global object reference",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "initial_special_case": "ADBE Vector Group",
+      "static_TDB_MatchName_constructor_rva": "0x1c030",
+      "literal_rva": "0x1001c80",
+      "constructed_global_MatchName_object_rva": "0x15ef420",
+      "CanStore_special_comparison_ref_rva": "0x700263",
+      "CanStore_references_same_global": true,
+      "complete_class_specific_predicate": "name == 'ADBE Vector Group' OR name.startswith('ADBE Vector Shape -') OR name.startswith('ADBE Vector Graphic -') OR name.startswith('ADBE Vector Filter -')",
+      "TDB_factory_or_renderer_test_in_predicate": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "initial_special_case": "ADBE Vector Group",
+      "static_TDB_MatchName_constructor_rva": "0x1b760",
+      "literal_rva": "0x10635b8",
+      "constructed_global_MatchName_object_rva": "0x169fdf0",
+      "CanStore_special_comparison_ref_rva": "0x723c89",
+      "CanStore_references_same_global": true,
+      "complete_class_specific_predicate": "name == 'ADBE Vector Group' OR name.startswith('ADBE Vector Shape -') OR name.startswith('ADBE Vector Graphic -') OR name.startswith('ADBE Vector Filter -')",
+      "TDB_factory_or_renderer_test_in_predicate": false
+    }
+  }
+}
