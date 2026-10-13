@@ -1,0 +1,35 @@
+{
+  "experiment_id": "EXP-SHAPE-061",
+  "date": "2026-10-13",
+  "status": "PASS offline AEX+schema tests; pending real AE2026 host admission run",
+  "existing_host_observation": "Previous CNL native independent runtime PASS; not the new menu/schema probe",
+  "source_root": "D:\\Developer\\ShapeLayerAE\\labs\\native_shape_layer_prototype",
+  "binary": "D:\\Developer\\ShapeLayerAE\\build\\native_shape_layer_prototype\\Release\\CNLNativeShapeLayer.aex",
+  "binary_sha256": "3743f073606609ce1f486277b8b9c9455c38a014109c374b674c18651e913f45",
+  "binary_bytes": 111104,
+  "compile": "PASS MSVC Release x64",
+  "ctest": "2/2 PASS",
+  "PE_pipl": true,
+  "private_BEE_TDB_imports": false,
+  "provided": {
+    "layer_new_menu": true,
+    "read_only_public_admission_probe": true,
+    "CNL_programmable_matchname_type_schema": true,
+    "parent_child_rules": true,
+    "node_move_order_cycle_guards": true,
+    "group_scoped_forward_reverse_trace": true
+  },
+  "not_proven": {
+    "AE_new_BEE_layer": false,
+    "AE_custom_native_contents": false,
+    "AE_host_native_renderer": false,
+    "AE_native_Undo": false,
+    "AE_native_Pen": false
+  },
+  "host_report_expected": "%TEMP%\\ChapeLayer_HostAdmission_ReadOnly.tsv",
+  "AEGP_AddStream_unknown_type_called": false,
+  "private_factory_called": false,
+  "AE_GUI_operated_by_assistant": false,
+  "CompNodeAE_modified": false,
+  "finding": "research/findings/F-VECTOR-061-chapelayer-native-timeline-grammar-admission-prototype.md"
+}

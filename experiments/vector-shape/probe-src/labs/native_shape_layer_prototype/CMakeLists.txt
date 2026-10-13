@@ -16,13 +16,14 @@ add_custom_command(OUTPUT "${RC}"
  VERBATIM)
 add_library(CNLShapeObjects OBJECT
  "../native_vector_core/CNLNativeVectorCore.cpp"
- CNLShapeRuntime.cpp CNLShapeRuntime.h)
+ CNLShapeRuntime.cpp CNLShapeRuntime.h
+ ChapeHierarchyRules.cpp ChapeHierarchyRules.h)
 set_target_properties(CNLShapeObjects PROPERTIES POSITION_INDEPENDENT_CODE ON)
 target_compile_features(CNLShapeObjects PRIVATE cxx_std_17)
 target_compile_definitions(CNLShapeObjects PRIVATE CNL_VECTOR_CORE_EXPORTS)
 target_compile_options(CNLShapeObjects PRIVATE /utf-8)
 add_library(CNLNativeShapeLayer SHARED
- NativeShapeLayerPlugin.cpp $<TARGET_OBJECTS:CNLShapeObjects>
+ NativeShapeLayerPlugin.cpp ChapeHostAdmissionProbe.cpp $<TARGET_OBJECTS:CNLShapeObjects>
  "${AE_SDK_EXAMPLES}/Util/AEGP_SuiteHandler.cpp"
  "${AE_SDK_EXAMPLES}/Util/MissingSuiteError.cpp" "${RC}")
 target_compile_features(CNLNativeShapeLayer PRIVATE cxx_std_17)
@@ -36,5 +37,9 @@ add_executable(CNLNativeShapeRuntimeTest NativeShapeRuntimeTest.cpp
  $<TARGET_OBJECTS:CNLShapeObjects>)
 target_compile_features(CNLNativeShapeRuntimeTest PRIVATE cxx_std_17)
 target_compile_options(CNLNativeShapeRuntimeTest PRIVATE /utf-8)
+add_executable(CNLChapeHierarchyRulesTest ChapeHierarchyRulesTest.cpp ChapeHierarchyRules.cpp)
+target_compile_features(CNLChapeHierarchyRulesTest PRIVATE cxx_std_17)
+target_compile_options(CNLChapeHierarchyRulesTest PRIVATE /utf-8)
 enable_testing()
 add_test(NAME NativeShapeOwnedRuntime COMMAND CNLNativeShapeRuntimeTest)
+add_test(NAME ChapeHierarchyRules COMMAND CNLChapeHierarchyRulesTest)

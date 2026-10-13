@@ -86,3 +86,21 @@ The older `CNLPrivateTDBDisposable.aex` remains unapproved and not run.
 
 This prototype is deliberately separate from `D:\Developer\CompNodeAE`.
 Phase F product integration remains paused pending user architecture review.
+
+
+## ChapeLayer Phase 2 — native hierarchy semantics, 2026-10-13
+
+**Implementation in ShapeLayerAE:**
+
+- Layer > New > ChapeLayer (Native Type Pending): the documented AEGP_Menu_NEW is used. This reports no native AE ChapeLayer exists yet and deliberately creates neither stock Shape nor Mask nor Effect.
+- Animation > ChapeLayer: Inspect Native Contents Admission (Read Only): select an existing stock Shape Layer containing a nested Shape Group. The action writes %TEMP%\ChapeLayer_HostAdmission_ReadOnly.tsv with scope, indexed_child, can_add, and cnl_evaluation_trace rows. Uses public AEGP_DynamicStreamSuite reads only. Never calls AddStream or private BEE/TDB and never modifies a project.
+- ChapeHierarchyRules.h/.cpp: plugin-authored MatchName type registration, parent-specific child admissibility, stable node identity, custom named group types, reorder/reparent/cycle checks, and group-level Forward / Reverse evaluation order. Type policy revisions cannot orphan current nodes.
+- ChapeHierarchyRulesTest.cpp: real Release-safe native C++ regression checks for customizable hierarchy and evaluation order. An evaluation trace is a CNL native scheduling abstraction, NOT Adobe BEE VectorArt renderer output.
+
+**Research boundary:** a host AEGP_CanAddStream TRUE for unknown names under ADBE Vector Shape -, ADBE Vector Graphic -, or ADBE Vector Filter - reflects parent admission only. It does not prove an actual TDB native C++ type factory has been installed. Do NOT call AEGP_AddStream on an unknown type in a real AE project.
+
+Built AEX and standalone CNL schema are **not** yet a host-registered new BEE Layer or Adobe native Timeline Contents. Host native class registration, owner lifetime, editor and Pen routing, Undo, serialization and BEE VectorArt remain open. This new AEX has not yet been tested inside AE by the user.
+
+Rebuild: cmake --build D:\Developer\ShapeLayerAE\build\native_shape_layer_prototype --config Release
+Tests: ctest --test-dir D:\Developer\ShapeLayerAE\build\native_shape_layer_prototype -C Release --output-on-failure
+PE: python D:\Developer\ShapeLayerAE\labs\native_shape_layer_prototype\verify_native_shape_aex.py

@@ -12,10 +12,15 @@
 #include <memory>
 #include <string>
 #include <vector>
+// Defined in ChapeHostAdmissionProbe.cpp, outside this translation unit.
+A_Err CNL_RunChapeHostProbe(SPBasicSuite*,AEGP_PluginID);
 namespace {
 SPBasicSuite* basic=nullptr;
 AEGP_PluginID plugin=0;
 AEGP_Command testCommand=0;
+AEGP_Command chapeMenuCommand=0;
+AEGP_Command hostAdmissionCommand=0;
+// The probe uses only public AEGP DynamicStreamSuite reads.
 struct DestroyShape {
  void operator()(CNL_ShapeLayer* p)const{cnl_shape_destroy(p);}
 };
@@ -89,14 +94,21 @@ A_Err selfTest(){
  return A_Err_NONE;
 }
 A_Err commandHook(AEGP_GlobalRefcon,AEGP_CommandRefcon,AEGP_Command cmd,AEGP_HookPriority,A_Boolean already,A_Boolean* handled){
- if(already||cmd!=testCommand)return A_Err_NONE;
+ if(already || (cmd!=testCommand && cmd!=chapeMenuCommand && cmd!=hostAdmissionCommand))return A_Err_NONE;
  if(handled)*handled=TRUE;
- return selfTest();
+ if(cmd==testCommand)return selfTest();
+ if(cmd==hostAdmissionCommand)return CNL_RunChapeHostProbe(basic,plugin);
+ // No Adobe-native CNL layer creator exists yet. Refuse a false substitute.
+ notify("ChapeLayer: new native AE Layer type is not registered yet. No layer was created. ChapeLayer's custom C++ Contents engine is functional; use the read-only admission probe under Animation.");
+ return A_Err_NONE;
 }
 A_Err updateHook(AEGP_GlobalRefcon,AEGP_UpdateMenuRefcon,AEGP_WindowType){
  if(!basic)return A_Err_NONE;
  AEGP_SuiteHandler s(basic);
- return s.CommandSuite1()->AEGP_EnableCommand(testCommand);
+ A_Err e=s.CommandSuite1()->AEGP_EnableCommand(testCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(chapeMenuCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_EnableCommand(hostAdmissionCommand);
+ return e;
 }
 }
 extern "C" DllExport AEGP_PluginInitFuncPrototype EntryPointFunc;
@@ -106,6 +118,14 @@ A_Err EntryPointFunc(SPBasicSuite* b,A_long,A_long,AEGP_PluginID id,AEGP_GlobalR
  A_Err e=s.CommandSuite1()->AEGP_GetUniqueCommand(&testCommand);
  if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(testCommand,
     "CNL Native Shape: Independent Engine Self-Test (No Host Edits)",
+    AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
+ if(!e)e=s.CommandSuite1()->AEGP_GetUniqueCommand(&chapeMenuCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(chapeMenuCommand,
+    "ChapeLayer (Native Type Pending)",
+    AEGP_Menu_NEW,AEGP_MENU_INSERT_AT_BOTTOM);
+ if(!e)e=s.CommandSuite1()->AEGP_GetUniqueCommand(&hostAdmissionCommand);
+ if(!e)e=s.CommandSuite1()->AEGP_InsertMenuCommand(hostAdmissionCommand,
+    "ChapeLayer: Inspect Native Contents Admission (Read Only)",
     AEGP_Menu_ANIMATION,AEGP_MENU_INSERT_AT_TOP);
  if(!e)e=s.RegisterSuite5()->AEGP_RegisterCommandHook(
     id,AEGP_HP_BeforeAE,AEGP_Command_ALL,commandHook,nullptr);

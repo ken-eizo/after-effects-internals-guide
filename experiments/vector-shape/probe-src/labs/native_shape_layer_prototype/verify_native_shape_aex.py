@@ -34,6 +34,12 @@ for typ in pe.DIRECTORY_ENTRY_RESOURCE.entries:
 assert "PIPL" in [x.upper() for x in pipl],pipl
 src=(root/"labs/native_shape_layer_prototype/NativeShapeLayerPlugin.cpp").read_text()
 assert "AEGP_RegisterCommandHook" in src and "AEGP_InsertMenuCommand" in src
+assert "AEGP_Menu_NEW" in src and "ChapeLayer (Native Type Pending)" in src
+assert "CNL_RunChapeHostProbe" in src
+probe=(root/"labs/native_shape_layer_prototype/ChapeHostAdmissionProbe.cpp").read_text()
+assert "AEGP_CanAddStream(" in probe
+assert "cnl_evaluation_trace" in probe and "indexed_child" in probe
+assert all(name not in probe for name in ("AEGP_AddStream(", "AEGP_DeleteStream(", "RegisterFactoryFunc(", "GetProcAddress("))
 assert all(x not in src for x in ("GetProcAddress(", "AEGP_AddStream(","AEGP_NewLayer(","PF_Cmd_"))
 result={"status":"PASS","file":str(p),"sha256":hashlib.sha256(data).hexdigest(),
 "size_bytes":len(data),"arch":"x64" if pe.FILE_HEADER.Machine==0x8664 else hex(pe.FILE_HEADER.Machine),
