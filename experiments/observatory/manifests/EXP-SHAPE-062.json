@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-062",
+  "date": "2026-10-13",
+  "status": "PASS pinned native BEE x64 child traversal ascending, AE2025/2026",
+  "evidence": "E2-L installed BEE.dll actual x64 virtual child enumeration and recursion",
+  "native_enumeration_order": "0..N-1",
+  "virtual_count_slot": "0x168",
+  "virtual_child_slot": "0x190",
+  "AE2025": {
+    "walk_rva": "0x6EC3C0",
+    "index_inc_site": "0x6EC5D6"
+  },
+  "AE2026": {
+    "walk_rva": "0x710790",
+    "index_inc_site": "0x710982"
+  },
+  "final_BEE_VectorArt_compositing_order_proven": false,
+  "foreign_CNL_native_type_registered": false,
+  "private_calls_executed": 0,
+  "CompNodeAE_modified": false,
+  "finding": "research/findings/F-VECTOR-062-native-vectorart-ascending-indexed-child-evaluation-order.md"
+}

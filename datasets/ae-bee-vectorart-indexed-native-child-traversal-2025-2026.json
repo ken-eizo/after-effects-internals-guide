@@ -1,0 +1,39 @@
+{
+  "scope": "E2-L actual BEE.dll machine-code traversal order, *not* proof of final fill/stroke draw order",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "recursive_traversal_rva": "0x6ec3c0",
+      "recursive_helper_bytes": 638,
+      "loop_counter_initialization": "0x6ec48a",
+      "native_virtual_child_count_slot": 360,
+      "native_virtual_child_index_slot": 400,
+      "loop_comparison": "0x6ec49c",
+      "child_index_argument_from_increasing_counter": "0x6ec4ad",
+      "virtual_child_lookup_site": "0x6ec4b2",
+      "counter_increment_site": "0x6ec5d6",
+      "evaluator_helper_rva": "0x6ecd40",
+      "group_branch_recurses": true,
+      "proven_stream_child_iteration": "ascending index 0,1,2,... until count",
+      "render_stack_compositing_order_proven": false,
+      "AE_Pen_and_custom_type_supported": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "recursive_traversal_rva": "0x710790",
+      "recursive_helper_bytes": 602,
+      "loop_counter_initialization": "0x71084e",
+      "native_virtual_child_count_slot": 360,
+      "native_virtual_child_index_slot": 400,
+      "loop_comparison": "0x71085c",
+      "child_index_argument_from_increasing_counter": "0x71086d",
+      "virtual_child_lookup_site": "0x710872",
+      "counter_increment_site": "0x710982",
+      "evaluator_helper_rva": "0x711040",
+      "group_branch_recurses": true,
+      "proven_stream_child_iteration": "ascending index 0,1,2,... until count",
+      "render_stack_compositing_order_proven": false,
+      "AE_Pen_and_custom_type_supported": false
+    }
+  }
+}
