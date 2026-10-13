@@ -1,0 +1,34 @@
+format	ChapeLayer Host Native Indexed Contents Admission v1
+host_changes	0
+private_factory_calls	0
+active_layer_kind	4	0
+root_stream_err	0
+scope	Layer	ADBE Vector Layer	0	1	10	0
+scope	Root Vectors	ADBE Root Vectors Group	0	2	0	0
+can_add	Root Vectors	ADBE Vector Group	1	0
+can_add	Root Vectors	ADBE Vector Shape - Group	1	0
+can_add	Root Vectors	ADBE Vector Graphic - Fill	1	0
+can_add	Root Vectors	ADBE Vector Filter - Trim	1	0
+can_add	Root Vectors	ADBE Vector Shape - ChapeLayerProbe	1	0
+can_add	Root Vectors	ADBE Vector Graphic - ChapeLayerProbe	1	0
+can_add	Root Vectors	ADBE Vector Filter - ChapeLayerProbe	1	0
+can_add	Root Vectors	CNL:Forward	0	0
+can_add	Root Vectors	CNL:Reverse	0	0
+can_add	Root Vectors	CNL:Path	0	0
+can_add	Root Vectors	ADBE Slider Control	0	0
+missing_scope	Shape Contents
+missing_scope	Nested Group Contents
+cnl_schema_control_pass	1
+cnl_can_add_custom_path_to_reverse	1
+cnl_can_add_custom_group_to_reverse	0
+cnl_evaluation_trace	begin:CNL:Document:ChapeLayer
+cnl_evaluation_trace	begin:CNL:Forward:Stack
+cnl_evaluation_trace	emit:CNL:Path:A
+cnl_evaluation_trace	emit:CNL:Path:B
+cnl_evaluation_trace	begin:CNL:Reverse:Reverse
+cnl_evaluation_trace	emit:CNL:Path:D
+cnl_evaluation_trace	emit:CNL:Path:C
+cnl_evaluation_trace	end:CNL:Reverse:Reverse
+cnl_evaluation_trace	end:CNL:Forward:Stack
+cnl_evaluation_trace	end:CNL:Document:ChapeLayer
+final	read_only_complete
