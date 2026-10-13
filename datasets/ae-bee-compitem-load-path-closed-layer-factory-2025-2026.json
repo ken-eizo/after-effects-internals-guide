@@ -1,0 +1,75 @@
+{
+  "evidence": "E2-L native x64 direct callsite order in exact two BEE DLLs; not global proof of no other dispatch",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "direct_comp_attach_xref_count": 11,
+      "unique_caller_function_count": 10,
+      "layer_file_materialization_paths": [
+        {
+          "caller_start": "0x505090",
+          "fixed_native_factory_rva": "0x2e3e10",
+          "fixed_factory_callsites": [
+            "0x5052fb"
+          ],
+          "comp_attach_rva": "0x392120",
+          "comp_attach_callsites": [
+            "0x505376"
+          ],
+          "factory_called_before_attach": true
+        },
+        {
+          "caller_start": "0x505400",
+          "fixed_native_factory_rva": "0x2e3e10",
+          "fixed_factory_callsites": [
+            "0x505631",
+            "0x505643"
+          ],
+          "comp_attach_rva": "0x392120",
+          "comp_attach_callsites": [
+            "0x5056af"
+          ],
+          "factory_called_before_attach": true
+        }
+      ],
+      "clone_reattach_is_another_native_path": true,
+      "foreign_subclass_construction_or_admission_confirmed": false,
+      "published_sdk_extension_point_found": false
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "direct_comp_attach_xref_count": 11,
+      "unique_caller_function_count": 10,
+      "layer_file_materialization_paths": [
+        {
+          "caller_start": "0x51f2f0",
+          "fixed_native_factory_rva": "0x2ecd00",
+          "fixed_factory_callsites": [
+            "0x51f55d"
+          ],
+          "comp_attach_rva": "0x39d4d0",
+          "comp_attach_callsites": [
+            "0x51f5c6"
+          ],
+          "factory_called_before_attach": true
+        },
+        {
+          "caller_start": "0x51f650",
+          "fixed_native_factory_rva": "0x2ecd00",
+          "fixed_factory_callsites": [
+            "0x51f865",
+            "0x51f877"
+          ],
+          "comp_attach_rva": "0x39d4d0",
+          "comp_attach_callsites": [
+            "0x51f8e0"
+          ],
+          "factory_called_before_attach": true
+        }
+      ],
+      "clone_reattach_is_another_native_path": true,
+      "foreign_subclass_construction_or_admission_confirmed": false,
+      "published_sdk_extension_point_found": false
+    }
+  }
+}

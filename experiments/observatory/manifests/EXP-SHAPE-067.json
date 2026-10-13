@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-SHAPE-067",
+  "date": "2026-10-14",
+  "status": "PASS x64 native direct inbound census both AE2025/26 and loader stock factory precedence",
+  "direct_calls_into_comp_attach_each_version": 11,
+  "unique_direct_callers_each_version": 10,
+  "AE2025": {
+    "factory": "0x2E3E10",
+    "comp_attach": "0x392120",
+    "load_routes": [
+      "0x505090",
+      "0x505400"
+    ]
+  },
+  "AE2026": {
+    "factory": "0x2ECD00",
+    "comp_attach": "0x39D4D0",
+    "load_routes": [
+      "0x51F2F0",
+      "0x51F650"
+    ]
+  },
+  "both_load_routes_call_stock_factory_before_attach": true,
+  "native_clone_attach_alternate_exists": true,
+  "foreign_BEE_layer_registration_proven": false,
+  "private_functions_invoked": 0,
+  "CompNodeAE_modified": false,
+  "report": "research/findings/F-VECTOR-067-compitem-attach-inbound-and-native-layer-file-recreation-boundary.md"
+}

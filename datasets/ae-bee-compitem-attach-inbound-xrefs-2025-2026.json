@@ -1,0 +1,203 @@
+{
+  "evidence": "E2-L binary x64 exact direct calls only",
+  "versions": {
+    "2025": {
+      "BEE_SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "callee_rvas": [
+        "0x392120",
+        "0x3920f0"
+      ],
+      "inbound_direct_xrefs": [
+        {
+          "caller_begin_rva": "0x2e20e0",
+          "caller_end_rva": "0x2e2241",
+          "caller_export": "?CloneAndAttach@BEE_Layer@@UEAAPEAV1@_N0@Z",
+          "callsite_rva": "0x2e218f",
+          "type": "call",
+          "callee_rva": "0x3920f0"
+        },
+        {
+          "caller_begin_rva": "0x30b650",
+          "caller_end_rva": "0x30b879",
+          "caller_export": "",
+          "callsite_rva": "0x30b69e",
+          "type": "call",
+          "callee_rva": "0x3920f0"
+        },
+        {
+          "caller_begin_rva": "0x3920f0",
+          "caller_end_rva": "0x392113",
+          "caller_export": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z",
+          "callsite_rva": "0x392100",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x3a7ca0",
+          "caller_end_rva": "0x3a7e25",
+          "caller_export": "",
+          "callsite_rva": "0x3a7dd8",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x3a9b90",
+          "caller_end_rva": "0x3a9ef7",
+          "caller_export": "",
+          "callsite_rva": "0x3a9c79",
+          "type": "call",
+          "callee_rva": "0x3920f0"
+        },
+        {
+          "caller_begin_rva": "0x3a9b90",
+          "caller_end_rva": "0x3a9ef7",
+          "caller_export": "",
+          "callsite_rva": "0x3a9d0a",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x3acbf0",
+          "caller_end_rva": "0x3ad0d3",
+          "caller_export": "",
+          "callsite_rva": "0x3ad085",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x3d4ca0",
+          "caller_end_rva": "0x3d4d3c",
+          "caller_export": "",
+          "callsite_rva": "0x3d4ccd",
+          "type": "call",
+          "callee_rva": "0x3920f0"
+        },
+        {
+          "caller_begin_rva": "0x505090",
+          "caller_end_rva": "0x505400",
+          "caller_export": "",
+          "callsite_rva": "0x505376",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x505400",
+          "caller_end_rva": "0x50573a",
+          "caller_export": "",
+          "callsite_rva": "0x5056af",
+          "type": "call",
+          "callee_rva": "0x392120"
+        },
+        {
+          "caller_begin_rva": "0x5a7f90",
+          "caller_end_rva": "0x5a81d6",
+          "caller_export": "?CloneAndAttachFromAVLayer@BEE_TextLayer@@SAPEAVBEE_Layer@@PEBVBEE_AVLayer@@PEAVBEE_CompItem@@PEAVTXT_Doc@@_N@Z",
+          "callsite_rva": "0x5a8136",
+          "type": "call",
+          "callee_rva": "0x3920f0"
+        }
+      ],
+      "inbound_direct_xref_count": 11,
+      "conclusion": "static inbound direct call routes; indirect and dynamic virtual calls are not listed"
+    },
+    "2026": {
+      "BEE_SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "callee_rvas": [
+        "0x39d4d0",
+        "0x39d4a0"
+      ],
+      "inbound_direct_xrefs": [
+        {
+          "caller_begin_rva": "0x2eb090",
+          "caller_end_rva": "0x2eb232",
+          "caller_export": "?CloneAndAttach@BEE_Layer@@UEAAPEAV1@_N0@Z",
+          "callsite_rva": "0x2eb140",
+          "type": "call",
+          "callee_rva": "0x39d4a0"
+        },
+        {
+          "caller_begin_rva": "0x314820",
+          "caller_end_rva": "0x314a49",
+          "caller_export": "",
+          "callsite_rva": "0x31486e",
+          "type": "call",
+          "callee_rva": "0x39d4a0"
+        },
+        {
+          "caller_begin_rva": "0x39d4a0",
+          "caller_end_rva": "0x39d4c3",
+          "caller_export": "?AttachLayerToCompAndLayerParamsOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I@Z",
+          "callsite_rva": "0x39d4b0",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x3b4110",
+          "caller_end_rva": "0x3b4283",
+          "caller_export": "",
+          "callsite_rva": "0x3b4236",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x3b60b0",
+          "caller_end_rva": "0x3b63f5",
+          "caller_export": "",
+          "callsite_rva": "0x3b618a",
+          "type": "call",
+          "callee_rva": "0x39d4a0"
+        },
+        {
+          "caller_begin_rva": "0x3b60b0",
+          "caller_end_rva": "0x3b63f5",
+          "caller_export": "",
+          "callsite_rva": "0x3b6217",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x3b8fd0",
+          "caller_end_rva": "0x3b94b3",
+          "caller_export": "",
+          "callsite_rva": "0x3b9465",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x3e32e0",
+          "caller_end_rva": "0x3e337c",
+          "caller_export": "",
+          "callsite_rva": "0x3e330d",
+          "type": "call",
+          "callee_rva": "0x39d4a0"
+        },
+        {
+          "caller_begin_rva": "0x51f2f0",
+          "caller_end_rva": "0x51f650",
+          "caller_export": "",
+          "callsite_rva": "0x51f5c6",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x51f650",
+          "caller_end_rva": "0x51f96b",
+          "caller_export": "",
+          "callsite_rva": "0x51f8e0",
+          "type": "call",
+          "callee_rva": "0x39d4d0"
+        },
+        {
+          "caller_begin_rva": "0x5c6a10",
+          "caller_end_rva": "0x5c6c90",
+          "caller_export": "?CloneAndAttachFromAVLayer@BEE_TextLayer@@SAPEAVBEE_Layer@@PEBVBEE_AVLayer@@PEAVBEE_CompItem@@PEAVTXT_Doc@@_N@Z",
+          "callsite_rva": "0x5c6bb6",
+          "type": "call",
+          "callee_rva": "0x39d4a0"
+        }
+      ],
+      "inbound_direct_xref_count": 11,
+      "conclusion": "static inbound direct call routes; indirect and dynamic virtual calls are not listed"
+    }
+  }
+}
