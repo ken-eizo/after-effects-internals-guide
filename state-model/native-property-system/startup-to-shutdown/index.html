@@ -3437,6 +3437,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3768,6 +3774,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 4 — Document-owned items, layers, effects and streams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-serialized-child-properties-are-restored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How serialized child properties are restored
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3957,6 +3980,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../indexed-group-insertion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../factory-registration-lifetime/" class="md-nav__link">
         
   
@@ -3975,6 +4033,76 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stream-instance-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-stream-serialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup::Read / Write — Native Property Serialization
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14044,6 +14172,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 4 — Document-owned items, layers, effects and streams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-serialized-child-properties-are-restored" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How serialized child properties are restored
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -14288,6 +14433,15 @@
 </span></code></pre></div>
 <p>This is the internal stock type-4 route. The <code>CreateLayerFromType</code> switch is built around existing layer families; a generic foreign-layer provider is not demonstrated. A factory-created detached <code>BEE_VectorLayer</code> with null parent CompItem is not automatically equivalent to a real attached layer. Evidence: F-VECTOR-037/055–059/067–071.</p>
 <p>For built-in Paint / Text property groups, the owner may be an existing AV/Text layer or Effect. A third-party plugin that can <strong>read</strong> an existing stream is not its native type provider.</p>
+<h3 id="how-serialized-child-properties-are-restored">How serialized child properties are restored<a class="headerlink" href="#how-serialized-child-properties-are-restored" title="Permanent link">&para;</a></h3>
+<p>New strict E2-L evidence traces <code>TDB_StreamGroup::Read</code> in both installed versions:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">Read child's serialized TDB_MatchName
+</span><span id="__span-3-2"> → virtual ReadAndStore (Named or Indexed group)
+</span><span id="__span-3-3"> → TDB_StreamFactory::CreateStream(saved MatchName)
+</span><span id="__span-3-4"> → Indexed: CanStore → InsertStream → SetParent
+</span><span id="__span-3-5"> → child's native Read(...)
+</span></code></pre></div>
+<p>This connection proves a saved child is reconstructed through the <strong>active host class registry</strong>, not simply copied from canonical memory. Native <code>InsertStream</code> performs version-sensitive indexed ownership/cache bookkeeping; its public AEGP counterpart does not create new C++ classes. The missing foreign-Creator AEP behavior remains unknown. See <a href="../stream-instance-creation/">Native instance creation</a>, <a href="../indexed-group-insertion/">Indexed insertion</a>, and <a href="../document-stream-serialization/">StreamGroup Read / Write</a>, F-VECTOR-097/098.</p>
 <h2 id="phase-5-the-host-exposes-properties-to-timeline-aegp-scripting">Phase 5 — The host exposes properties to Timeline / AEGP / scripting<a class="headerlink" href="#phase-5-the-host-exposes-properties-to-timeline-aegp-scripting" title="Permanent link">&para;</a></h2>
 <p>Scripting's named/indexed <code>PropertyGroup</code> and <code>Property</code> hierarchies and AEGP <code>AEGP_StreamRefH</code> are <em>public access coordinates</em> over host state. They are not guaranteed one-to-one wrappers over particular private object pointers. The host uses internal <code>MEE</code>/BEE/TDB bridges to normalize AEGP selection/stream coordinates into <code>TDB_StreamIDPath</code>-like addresses (E2-L).</p>
 <p>A Timeline tree can exist only when all relevant conditions are satisfied: a document-owned instance, its parent-child grammar and valid class creation, and the host's editor/selection presentation. <strong>No tested supported SDK general foreign Stream class provider exists in SDK 25.6</strong> (scoped audit, F-VECTOR-088).</p>
@@ -14333,13 +14487,13 @@
 <p>A renderer can consume evaluated properties without exposing the same mutable document graph. Re-render validity/cache identity is its own plane. Refer to <a href="../owner-editor-renderer/">Owner, editor and renderer</a> and <a href="../../../render-graph/render-graph-model/">AEIG render graph</a>.</p>
 <h2 id="phase-8-factory-unregister-and-native-host-teardown">Phase 8 — Factory unregister and native host teardown<a class="headerlink" href="#phase-8-factory-unregister-and-native-host-teardown" title="Permanent link">&para;</a></h2>
 <p>On the traced successful branch, <code>TDB_StreamFactory::UnregisterFactoryFunc</code> performs:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">TDB_StreamFactory::UnregisterFactoryFunc
-</span><span id="__span-3-2">  → private UnregisterFactoryFunc_NullOK(false)
-</span><span id="__span-3-3">    → lock factory mutex
-</span><span id="__span-3-4">    → find and unlink canonical prototype (factory +0x38)
-</span><span id="__span-3-5">    → find and unlink Creator callback (factory +0x28)
-</span><span id="__span-3-6">    → invoke prototype's virtual deleting destructor
-</span><span id="__span-3-7">    → unlock
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1">TDB_StreamFactory::UnregisterFactoryFunc
+</span><span id="__span-4-2">  → private UnregisterFactoryFunc_NullOK(false)
+</span><span id="__span-4-3">    → lock factory mutex
+</span><span id="__span-4-4">    → find and unlink canonical prototype (factory +0x38)
+</span><span id="__span-4-5">    → find and unlink Creator callback (factory +0x28)
+</span><span id="__span-4-6">    → invoke prototype's virtual deleting destructor
+</span><span id="__span-4-7">    → unlock
 </span></code></pre></div>
 <p>For <code>OM_Stream</code>, <code>OM_Death</code> subsequently frees the native MatchName and zeros the exported pointer. The registration entry's own module, callback and vtable <strong>must remain loaded until no live instances can call them</strong>; the success path does not establish that all document-held, Undo-held, cache-held or render-held instances have vanished. Evidence: F-VECTOR-093/094/096.</p>
 <p>The complete exception/unwind rollback of <code>RegisterFactoryFunc</code> (especially after Creator insertion but before prototype completion) remains <strong>unknown</strong>. No unverified plugin should assume unregister can rescue a crashed partially initialized host.</p>
@@ -14385,7 +14539,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 14:37:54 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
   </span>
 
     

@@ -3437,6 +3437,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3902,6 +3908,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../indexed-group-insertion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../factory-registration-lifetime/" class="md-nav__link">
         
   
@@ -3920,6 +3961,76 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stream-instance-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-stream-serialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup::Read / Write — Native Property Serialization
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14067,6 +14178,24 @@
 <td>Exception rollback and surviving document instances</td>
 </tr>
 <tr>
+<td>Instance generation</td>
+<td>E2-L strict x64 original TDB 2025+2026</td>
+<td>Creator callback after mutex unlock; default key and optional decanonicalization paths</td>
+<td>Exact per-flag behavior and plugin unload concurrency</td>
+</tr>
+<tr>
+<td>Parent indexed insertion</td>
+<td>E2-L strict TDB vtable 2025+2026</td>
+<td>CanStore before insertion, reverse index/capsule cache/SetParent updates</td>
+<td>Complete error rollback and all option meanings</td>
+</tr>
+<tr>
+<td>Document reconstruction</td>
+<td>E2-L native StreamGroup Read/Write 2025+2026</td>
+<td>Child MatchName → CreateStream → InsertStream/Read</td>
+<td>Missing foreign Creator AEP behavior and arbitrary roundtrip</td>
+</tr>
+<tr>
 <td>Canonical group layout</td>
 <td>E2-L TDB/BEE vtable 2025+2026</td>
 <td><code>FillInCanonicalUILayout</code>, separated dimensions, UILayout</td>
@@ -14220,7 +14349,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 14:37:54 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
   </span>
 
     

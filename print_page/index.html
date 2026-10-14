@@ -3435,6 +3435,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3778,6 +3784,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../state-model/native-property-system/indexed-group-insertion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../state-model/native-property-system/factory-registration-lifetime/" class="md-nav__link">
         
   
@@ -3796,6 +3837,76 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/stream-instance-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/document-stream-serialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup::Read / Write — Native Property Serialization
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14919,10 +15030,43 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#state-model-native-property-system-indexed-group-insertion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.10 TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#state-model-native-property-system-factory-registration-lifetime" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.10 TDBStreamFactory — Registration, Canonical Instances and Lifetime
+        8.5.11 TDBStreamFactory — Registration, Canonical Instances and Lifetime
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-model-native-property-system-stream-instance-creation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.12 TDBStreamFactory::CreateStream — Native Instance Construction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-model-native-property-system-document-stream-serialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.13 TDBStreamGroup::Read / Write — Native Property Serialization
       
     </span>
   </a>
@@ -20723,6 +20867,21 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td><a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a></td>
 </tr>
 <tr>
+<td>Instance construction</td>
+<td>How does an already registered Creator produce a Stream with native default-state initialization?</td>
+<td><a href="#state-model-native-property-system-stream-instance-creation">Native instance creation</a></td>
+</tr>
+<tr>
+<td>Parent insertion</td>
+<td>Which CanStore, index, parent and cached-path steps actually adopt a child?</td>
+<td><a href="#state-model-native-property-system-indexed-group-insertion">Indexed child insertion</a></td>
+</tr>
+<tr>
+<td>Document persistence</td>
+<td>How do saved MatchNames reconstruct native named/indexed Stream children?</td>
+<td><a href="#state-model-native-property-system-document-stream-serialization">StreamGroup Read / Write</a></td>
+</tr>
+<tr>
 <td>Parent schema</td>
 <td>Why does one indexed parent accept a child and another reject it?</td>
 <td><a href="#state-model-native-property-system-canonical-groups-admission">Canonical groups and admission</a></td>
@@ -20817,6 +20976,21 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Does factory unregister release its own prototype?</td>
 <td><strong>Yes</strong>, on the analyzed successful branch</td>
 <td>F-VECTOR-096, E2-L</td>
+</tr>
+<tr>
+<td>Does native instance creation invoke the registered callback while holding the factory mutex?</td>
+<td><strong>No on the verified success path</strong>; callback is copied under lock, called after unlock</td>
+<td>F-VECTOR-097, E2-L</td>
+</tr>
+<tr>
+<td>Does indexed child insertion enforce native CanStore before changing parent state?</td>
+<td><strong>Yes</strong>, then index/cache and SetParent operations</td>
+<td>F-VECTOR-097, E2-L</td>
+</tr>
+<tr>
+<td>Can the native loader reconstruct a child without consulting registered Stream Creators?</td>
+<td>The verified Named/Indexed loaders <strong>call CreateStream using the saved MatchName</strong></td>
+<td>F-VECTOR-098, E2-L</td>
 </tr>
 <tr>
 <td>Can AEGP inspect brush-generated native Paint Strokes?</td>
@@ -21216,6 +21390,9 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <h2 id="state-model-native-property-system-property-operations-structural-changes-and-undo">Structural changes and Undo<a class="headerlink" href="#state-model-native-property-system-property-operations-structural-changes-and-undo" title="Permanent link">&para;</a></h2>
 <p><code>AEGP_AddStream</code> is an undoable operation only on an <strong>indexed</strong> group that can admit the registered MatchName. Existing native Stream authoring may involve host command tables, BEE selection and current native editor context. Calling a private <code>BEE_Cmd...</code> or TDB method directly is not equivalent to starting a host Undo transaction via a supported API.</p>
 <p>In the native internal Shape creation path, a stock command builds a <code>BEE_NewLayerTask&lt;4&gt;</code> and ultimately creates and attaches a layer through <code>BEE_CompItem</code>. This native task is <strong>not a supported command-provider SDK for a foreign new Layer kind</strong> (F-VECTOR-058/071).</p>
+<h2 id="state-model-native-property-system-property-operations-native-group-insertion-and-deserialization">Native group insertion and deserialization<a class="headerlink" href="#state-model-native-property-system-property-operations-native-group-insertion-and-deserialization" title="Permanent link">&para;</a></h2>
+<p>For indexed native groups, `TDB_IndexedStreamGroup::InsertStream` checks <strong>virtual CanStore before mutation</strong>, updates reverse indices and cached capsule paths, then calls `TDB_StreamBase::SetParent`. The private vtable position of `InsertStream` changes between AE2025 and AE2026: see <a href="#state-model-native-property-system-indexed-group-insertion">Indexed child insertion</a>.</p>
+<p>Loading a saved Group also has an explicit per-child pipeline: `TDB_MatchName::Read → virtual ReadAndStore → TDB_StreamFactory::CreateStream → InsertStream → child Read`. This is not the public API's `AEGP_StreamRefH` lifetime or a documented opaque preservation rule. The full method/callsite reference is <a href="#state-model-native-property-system-document-stream-serialization">TDB_StreamGroup Read / Write</a> (F-VECTOR-098).</p>
 <h2 id="state-model-native-property-system-property-operations-save-reopen-clone-and-version-upgrade">Save, reopen, clone and version upgrade<a class="headerlink" href="#state-model-native-property-system-property-operations-save-reopen-clone-and-version-upgrade" title="Permanent link">&para;</a></h2>
 <ul>
 <li>A standard built-in Stream participates in Adobe's own AEP serialization format; its private <code>Read</code>/<code>Write</code> implementations are not public C++ serializer contracts.</li>
@@ -21508,6 +21685,15 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </span></code></pre></div>
 <p>This is the internal stock type-4 route. The <code>CreateLayerFromType</code> switch is built around existing layer families; a generic foreign-layer provider is not demonstrated. A factory-created detached <code>BEE_VectorLayer</code> with null parent CompItem is not automatically equivalent to a real attached layer. Evidence: F-VECTOR-037/055–059/067–071.</p>
 <p>For built-in Paint / Text property groups, the owner may be an existing AV/Text layer or Effect. A third-party plugin that can <strong>read</strong> an existing stream is not its native type provider.</p>
+<h3 id="state-model-native-property-system-startup-to-shutdown-how-serialized-child-properties-are-restored">How serialized child properties are restored<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-how-serialized-child-properties-are-restored" title="Permanent link">&para;</a></h3>
+<p>New strict E2-L evidence traces <code>TDB_StreamGroup::Read</code> in both installed versions:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">Read child's serialized TDB_MatchName
+</span><span id="__span-3-2"> → virtual ReadAndStore (Named or Indexed group)
+</span><span id="__span-3-3"> → TDB_StreamFactory::CreateStream(saved MatchName)
+</span><span id="__span-3-4"> → Indexed: CanStore → InsertStream → SetParent
+</span><span id="__span-3-5"> → child's native Read(...)
+</span></code></pre></div>
+<p>This connection proves a saved child is reconstructed through the <strong>active host class registry</strong>, not simply copied from canonical memory. Native <code>InsertStream</code> performs version-sensitive indexed ownership/cache bookkeeping; its public AEGP counterpart does not create new C++ classes. The missing foreign-Creator AEP behavior remains unknown. See <a href="#state-model-native-property-system-stream-instance-creation">Native instance creation</a>, <a href="#state-model-native-property-system-indexed-group-insertion">Indexed insertion</a>, and <a href="#state-model-native-property-system-document-stream-serialization">StreamGroup Read / Write</a>, F-VECTOR-097/098.</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-phase-5-the-host-exposes-properties-to-timeline-aegp-scripting">Phase 5 — The host exposes properties to Timeline / AEGP / scripting<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-5-the-host-exposes-properties-to-timeline-aegp-scripting" title="Permanent link">&para;</a></h2>
 <p>Scripting's named/indexed <code>PropertyGroup</code> and <code>Property</code> hierarchies and AEGP <code>AEGP_StreamRefH</code> are <em>public access coordinates</em> over host state. They are not guaranteed one-to-one wrappers over particular private object pointers. The host uses internal <code>MEE</code>/BEE/TDB bridges to normalize AEGP selection/stream coordinates into <code>TDB_StreamIDPath</code>-like addresses (E2-L).</p>
 <p>A Timeline tree can exist only when all relevant conditions are satisfied: a document-owned instance, its parent-child grammar and valid class creation, and the host's editor/selection presentation. <strong>No tested supported SDK general foreign Stream class provider exists in SDK 25.6</strong> (scoped audit, F-VECTOR-088).</p>
@@ -21553,13 +21739,13 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <p>A renderer can consume evaluated properties without exposing the same mutable document graph. Re-render validity/cache identity is its own plane. Refer to <a href="#state-model-native-property-system-owner-editor-renderer">Owner, editor and renderer</a> and <a href="#render-graph-render-graph-model">AEIG render graph</a>.</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-phase-8-factory-unregister-and-native-host-teardown">Phase 8 — Factory unregister and native host teardown<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-8-factory-unregister-and-native-host-teardown" title="Permanent link">&para;</a></h2>
 <p>On the traced successful branch, <code>TDB_StreamFactory::UnregisterFactoryFunc</code> performs:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1">TDB_StreamFactory::UnregisterFactoryFunc
-</span><span id="__span-3-2">  → private UnregisterFactoryFunc_NullOK(false)
-</span><span id="__span-3-3">    → lock factory mutex
-</span><span id="__span-3-4">    → find and unlink canonical prototype (factory +0x38)
-</span><span id="__span-3-5">    → find and unlink Creator callback (factory +0x28)
-</span><span id="__span-3-6">    → invoke prototype's virtual deleting destructor
-</span><span id="__span-3-7">    → unlock
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1">TDB_StreamFactory::UnregisterFactoryFunc
+</span><span id="__span-4-2">  → private UnregisterFactoryFunc_NullOK(false)
+</span><span id="__span-4-3">    → lock factory mutex
+</span><span id="__span-4-4">    → find and unlink canonical prototype (factory +0x38)
+</span><span id="__span-4-5">    → find and unlink Creator callback (factory +0x28)
+</span><span id="__span-4-6">    → invoke prototype's virtual deleting destructor
+</span><span id="__span-4-7">    → unlock
 </span></code></pre></div>
 <p>For <code>OM_Stream</code>, <code>OM_Death</code> subsequently frees the native MatchName and zeros the exported pointer. The registration entry's own module, callback and vtable <strong>must remain loaded until no live instances can call them</strong>; the success path does not establish that all document-held, Undo-held, cache-held or render-held instances have vanished. Evidence: F-VECTOR-093/094/096.</p>
 <p>The complete exception/unwind rollback of <code>RegisterFactoryFunc</code> (especially after Creator insertion but before prototype completion) remains <strong>unknown</strong>. No unverified plugin should assume unregister can rescue a crashed partially initialized host.</p>
@@ -21614,6 +21800,24 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>E2-L strict machine code 2025+2026</td>
 <td>Eager Creator, canonical prototype, successful unlink/deletion</td>
 <td>Exception rollback and surviving document instances</td>
+</tr>
+<tr>
+<td>Instance generation</td>
+<td>E2-L strict x64 original TDB 2025+2026</td>
+<td>Creator callback after mutex unlock; default key and optional decanonicalization paths</td>
+<td>Exact per-flag behavior and plugin unload concurrency</td>
+</tr>
+<tr>
+<td>Parent indexed insertion</td>
+<td>E2-L strict TDB vtable 2025+2026</td>
+<td>CanStore before insertion, reverse index/capsule cache/SetParent updates</td>
+<td>Complete error rollback and all option meanings</td>
+</tr>
+<tr>
+<td>Document reconstruction</td>
+<td>E2-L native StreamGroup Read/Write 2025+2026</td>
+<td>Child MatchName → CreateStream → InsertStream/Read</td>
+<td>Missing foreign Creator AEP behavior and arbitrary roundtrip</td>
 </tr>
 <tr>
 <td>Canonical group layout</td>
@@ -22001,8 +22205,26 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <tr>
 <td><code>TDB_StreamFactory::CreateStream</code></td>
 <td><code>TDB.dll</code></td>
-<td>Invoke native creator</td>
-<td>F-VECTOR-095</td>
+<td>Copy Creator under mutex, unlock, construct instance, optionally initialize leaf/group</td>
+<td>F-VECTOR-095/097</td>
+</tr>
+<tr>
+<td><code>TDB_IndexedStreamGroup::InsertStream</code></td>
+<td><code>TDB.dll</code></td>
+<td>Validate parent CanStore, adopt indexed child, update path caches and parent</td>
+<td>F-VECTOR-097</td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::Read / Write</code></td>
+<td><code>TDB.dll</code></td>
+<td>SLU native Stream ID, child MatchName and group archive</td>
+<td>F-VECTOR-025/098</td>
+</tr>
+<tr>
+<td><code>TDB_Named/IndexedStreamGroup::ReadAndStore</code></td>
+<td><code>TDB.dll</code></td>
+<td>Reconstruct saved native child through a registered Creator and group-specific reader</td>
+<td>F-VECTOR-098</td>
 </tr>
 <tr>
 <td><code>TDB_StreamFactory::GetCanonicalInstance</code></td>
@@ -22108,7 +22330,124 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </ul>
 <p>Do not turn the two rows of methods into one copyable C++ header or pretend a private C++ export is automatically a partner SDK.</p>
 <h2 id="state-model-native-property-system-api-atlas-further-references">Further references<a class="headerlink" href="#state-model-native-property-system-api-atlas-further-references" title="Permanent link">&para;</a></h2>
-<p><a href="#state-model-streams-properties">Streams and Properties</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration</a>, <a href="#state-model-native-property-system-property-operations">Property Operations</a>, <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Official Adobe AEGP Suites</a>. Evidence: F-VECTOR-080–096, SDK25.6 header audit F-VECTOR-088.</p></section><section class="print-page" id="state-model-native-property-system-factory-registration-lifetime" heading-number="8.5.10"><h1 id="state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime">TDB_StreamFactory — Registration, Canonical Instances and Lifetime<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime" title="Permanent link">&para;</a></h1>
+<p><a href="#state-model-streams-properties">Streams and Properties</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration</a>, <a href="#state-model-native-property-system-property-operations">Property Operations</a>, <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Official Adobe AEGP Suites</a>. Evidence: F-VECTOR-080–096, SDK25.6 header audit F-VECTOR-088.</p></section><section class="print-page" id="state-model-native-property-system-indexed-group-insertion" heading-number="8.5.10"><h1 id="state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption">TDB_IndexedStreamGroup::InsertStream — Native Child Adoption<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption" title="Permanent link">&para;</a></h1>
+<p><code>TDB_IndexedStreamGroup::InsertStream</code> attaches a newly created <code>TDB_StreamBase</code> to an <strong>ordered native parent Stream group</strong>. This is the core Adobe-owned structural operation behind a group that contains ordered repeatable child properties. It is not the same as the supported AEGP <code>AEGP_AddStream</code> API, although the public API can eventually request insertion of existing Adobe-owned types.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-required-conditions">Required conditions<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-required-conditions" title="Permanent link">&para;</a></h2>
+<p>A native child cannot be inserted merely because its MatchName has a corresponding Creator. Three independent conditions must be distinguished:</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Native source of authority</th>
+<th>Observed behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constructability</td>
+<td><code>TDB_StreamFactory::CreateStream</code></td>
+<td>Construct a concrete registered C++ Stream</td>
+</tr>
+<tr>
+<td>Parent policy</td>
+<td>Virtual <code>CanStore</code> (vtable <code>+0x1C0</code>)</td>
+<td>Parent can refuse that specific MatchName</td>
+</tr>
+<tr>
+<td>Actual host ownership</td>
+<td><code>InsertStream</code> and <code>SetParent</code></td>
+<td>Index bookkeeping and parent relationship must be updated</td>
+</tr>
+</tbody>
+</table>
+<p>A public <code>AEGP_CanAddStream</code> returns a <strong>preflight result</strong> for a parent; it is not a replacement for constructing a child and attaching it through native host operations. A successful factory registration alone does not override the Paint/Text/Shape parent's CanStore policy.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-native-insertion-algorithm">Native insertion algorithm<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-native-insertion-algorithm" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">IndexedStreamGroup::InsertStream(index, U_ScAutoPtr&lt;TDB_StreamBase&gt; child, options)
+</span><span id="__span-0-2">  ├─ virtual CanStore(child.MatchName) [vtable +0x1C0]
+</span><span id="__span-0-3">  ├─ if false: take native failure/error branch
+</span><span id="__span-0-4">  ├─ virtual GetNumStreams() [vtable +0x168]
+</span><span id="__span-0-5">  ├─ verify 0 &lt;= insert index &lt;= current stream count
+</span><span id="__span-0-6">  ├─ splice native child into indexed storage
+</span><span id="__span-0-7">  ├─ UpdateReverseIndexVector(index)
+</span><span id="__span-0-8">  ├─ ResetCachedCapsulePathsFromIndex(index) [subject to options in AE2026]
+</span><span id="__span-0-9">  ├─ relinquish caller U_ScAutoPtr ownership
+</span><span id="__span-0-10">  ├─ TDB_StreamBase::SetParent(this)
+</span><span id="__span-0-11">  └─ additional internal notification/event helper
+</span></code></pre></div>
+<p>The C++ signature above is a <strong>conceptual representation</strong> of recovered exports, not a supported header. The order of the native exported and virtual calls is verified, but internal helper parameters and all error cleanup branches are not.</p>
+<h3 id="state-model-native-property-system-indexed-group-insertion-canstore-is-called-before-the-indexed-list-changes">CanStore is called before the indexed list changes<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-canstore-is-called-before-the-indexed-list-changes" title="Permanent link">&para;</a></h3>
+<p>In both installed versions, the first relevant virtual call is <strong><code>+0x1C0</code></strong> (the <code>CanStore</code> method for the verified real <code>TDB_IndexedStreamGroup</code> vtable). If it returns false, control transfers out of the normal insertion path before the group count or vector is mutated.</p>
+<p>This matters for user-defined Shape/Paint/Text Stream types: a valid class Creator does not make an Adobe-owned parent permissive. Paint Strokes uses a strict canonical <code>ADBE Paint Atom</code> policy, while Shape Contents has an Adobe Vector Group exact-MatchName condition and three Shape/Graphic/Filter prefixes. See <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>.</p>
+<h3 id="state-model-native-property-system-indexed-group-insertion-index-bookkeeping-and-streamidpath">Index bookkeeping and StreamIDPath<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-index-bookkeeping-and-streamidpath" title="Permanent link">&para;</a></h3>
+<p>Successful insertion updates <strong><code>UpdateReverseIndexVector</code></strong> and resets affected <strong>cached capsule paths</strong> through <code>ResetCachedCapsulePathsFromIndex</code>, followed by <strong><code>SetParent</code></strong>. <code>SetParent</code> itself is separately observed to invoke <code>NotifyParentsStreamStored</code> and <code>TDB_RescaleStream</code> under conditions.</p>
+<p>An indexed child's group position and its cached <code>TDB_StreamIDPath</code> references are therefore not passive metadata: child insertion participates in host bookkeeping and can invalidate addresses. Do not retain stale dynamic child references across insertion/reorder/delete.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-a-significant-ae-2025-ae-2026-private-abi-change">A significant AE 2025 / AE 2026 private ABI change<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-a-significant-ae-2025-ae-2026-private-abi-change" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>API or callsite</th>
+<th>AE2025</th>
+<th>AE2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Full native <code>InsertStream</code> RVA</td>
+<td><code>0x3BB30</code></td>
+<td><code>0x3C6A0</code></td>
+</tr>
+<tr>
+<td><code>CanStore</code> virtual call</td>
+<td><code>0x3BB6D</code></td>
+<td><code>0x3C6E5</code></td>
+</tr>
+<tr>
+<td><code>GetNumStreams</code> virtual call</td>
+<td><code>0x3BB81</code></td>
+<td><code>0x3C6F9</code></td>
+</tr>
+<tr>
+<td><code>UpdateReverseIndexVector</code> call</td>
+<td><code>0x3BCF8</code></td>
+<td><code>0x3C860</code></td>
+</tr>
+<tr>
+<td><code>ResetCachedCapsulePathsFromIndex</code> call</td>
+<td><code>0x3BD03</code></td>
+<td><code>0x3C872</code></td>
+</tr>
+<tr>
+<td><code>SetParent</code> call</td>
+<td><code>0x3BD18</code></td>
+<td><code>0x3C885</code></td>
+</tr>
+<tr>
+<td>Virtual entry for simple <code>InsertStream(index,child)</code></td>
+<td><code>+0x210</code></td>
+<td><code>+0x218</code></td>
+</tr>
+<tr>
+<td>Options-taking <code>InsertStream(index,child,Options&amp;)</code></td>
+<td>Not seen</td>
+<td><code>+0x210</code></td>
+</tr>
+<tr>
+<td>Separate simple wrapper</td>
+<td>Not seen</td>
+<td><code>0x3C680</code></td>
+</tr>
+</tbody>
+</table>
+<p>This <strong>private virtual ABI drift</strong> is stronger than a mere changed address. In 2025, <code>+0x218</code> was <code>DuplicateStream</code>; in 2026, <code>+0x218</code> is the simple <code>InsertStream</code> wrapper. The options-taking version is used internally, and specific cache reset/ownership behavior changes with a flag. <strong>Never copy a native vtable layout from AE2025 into AE2026</strong>.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-what-happens-on-project-load">What happens on project load<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-what-happens-on-project-load" title="Permanent link">&para;</a></h2>
+<p><code>TDB_IndexedStreamGroup::ReadAndStore</code> receives a saved child's MatchName, calls <code>TDB_StreamFactory::CreateStream</code>, then calls <code>GetNumStreams</code> and virtual <code>InsertStream</code>, and finally the child's virtual <code>Read</code>. This is the <em>same</em> parent admission and bookkeeping path, exercised during native project reconstruction. See <a href="#state-model-native-property-system-document-stream-serialization">Document Stream Serialization</a>.</p>
+<p>The exact archive failure behavior for an unknown type remains unverified. Inserting a new class that passes preflight but has no serialization contract does not establish a working .aep roundtrip.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-public-api-counterpart">Public API counterpart<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-public-api-counterpart" title="Permanent link">&para;</a></h2>
+<p>The supported public AEGP calls are <code>AEGP_CanAddStream</code>, <code>AEGP_AddStream</code>, <code>AEGP_DeleteStream</code>, <code>AEGP_ReorderStream</code>, and <code>AEGP_DuplicateStream</code> on an existing <strong>indexed</strong> group. These operations operate on registered native types; they do not register a new C++ group class.</p>
+<p>See <a href="#host-integration-cpp-sdk-aegps-dynamic-stream-suite">AEGP_DynamicStreamSuite4</a> for signatures, UTF-8 MatchName and Undo/disposal rules.</p>
+<h2 id="state-model-native-property-system-indexed-group-insertion-evidence-and-unresolved-requirements">Evidence and unresolved requirements<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-evidence-and-unresolved-requirements" title="Permanent link">&para;</a></h2>
+<p>Static original Windows AE2025/2026 <code>TDB.dll</code> imports, exports, the exact <code>TDB_IndexedStreamGroup</code> vtable and bounded machine-code calls were independently verified (F-VECTOR-097). The verifier stores source SHA and per-version RVA in <code>datasets/ae-tdb-document-instance-create-insert-load-2025-2026.json</code>.</p>
+<p><strong>No external ChapeLayer Stream was inserted</strong> into a live AE project. The native class provider, Timeline editor, AEP persistence, native rendering and safe unload remain separate gates.</p></section><section class="print-page" id="state-model-native-property-system-factory-registration-lifetime" heading-number="8.5.11"><h1 id="state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime">TDB_StreamFactory — Registration, Canonical Instances and Lifetime<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime" title="Permanent link">&para;</a></h1>
 <p>This is an internal <strong>Adobe runtime implementation reference</strong>. The names below are exported C++ ABI identifiers observed in <code>TDB.dll</code>, <em>not declarations supplied by the public After Effects 25.6 SDK</em>. This chapter explains the complete registration lifecycle and its failure modes without implying a supported external plugin registration contract.</p>
 <h2 id="state-model-native-property-system-factory-registration-lifetime-type-registry-and-parameters">Type registry and parameters<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-type-registry-and-parameters" title="Permanent link">&para;</a></h2>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><span class="c1">// Internal concept reconstructed from exported C++ symbols.</span>
@@ -22253,6 +22592,9 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <h2 id="state-model-native-property-system-factory-registration-lifetime-why-it-immediately-invokes-virtual-methods">Why it immediately invokes virtual methods<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-why-it-immediately-invokes-virtual-methods" title="Permanent link">&para;</a></h2>
 <p>A registered native class is validated/initialized through a <strong>real instance</strong>. This is why a dummy callback is not a safe factory-registration test: a wrong C++ calling convention, partial object, bad host allocator, invalid vtable or uninitialized group fields can fail <strong>inside registration</strong>. A separately compiled mock host does not prove correct Adobe ownership.</p>
 <p>For a native Group, <code>SetupCanonicalLayout</code> further invokes <code>FillInCanonicalUILayout</code>. See <a href="#state-model-native-property-system-canonical-groups-admission">Canonical groups and admission</a>.</p>
+<h2 id="state-model-native-property-system-factory-registration-lifetime-creating-document-stream-instances">Creating document Stream instances<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-creating-document-stream-instances" title="Permanent link">&para;</a></h2>
+<p>Factory registration constructs a canonical prototype, but `TDB_StreamFactory::CreateStream` is also used separately to create real native child instances. On the observed success path, it copies a native `std::function` Creator under the factory mutex, unlocks, then <strong>invokes the callback after the unlock</strong>; it may initialize default leaf key data and conditionally decanonicalize a group subtree. <a href="#state-model-native-property-system-stream-instance-creation">Native instance construction</a> documents the independent entry and flags.</p>
+<p>A real group then needs a separate <a href="#state-model-native-property-system-indexed-group-insertion">Indexed insertion</a> operation that enforces the parent's `CanStore` and establishes its parent/StreamIDPath caches. A saved project reconstructs children from serialized MatchNames through the same Creator and insertion machinery; see <a href="#state-model-native-property-system-document-stream-serialization">StreamGroup Read / Write</a>. These lifecycle steps are independently verified in F-VECTOR-097/098, without a foreign plugin being executed.</p>
 <h2 id="state-model-native-property-system-factory-registration-lifetime-unregistration-and-native-object-ownership">Unregistration and native object ownership<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-unregistration-and-native-object-ownership" title="Permanent link">&para;</a></h2>
 <p>On the observed successful path:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">UnregisterFactoryFunc(key)
@@ -22297,7 +22639,299 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_tdb_eager_canonical_vtable_dispatch.py"</span>
 </span><span id="__span-3-2"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_tdb_native_creator_canonical_lifetime.py"</span>
 </span></code></pre></div>
-<p>Sources: F-VECTOR-008, 080, 084, 093–096. Implementation presence is <strong>E2-L</strong>; no official public <code>TDB_StreamFactory</code> registrar was found in the 70 inspected SDK25.6 headers (F-VECTOR-088).</p></section></section></section>
+<p>Sources: F-VECTOR-008, 080, 084, 093–096. Implementation presence is <strong>E2-L</strong>; no official public <code>TDB_StreamFactory</code> registrar was found in the 70 inspected SDK25.6 headers (F-VECTOR-088).</p></section><section class="print-page" id="state-model-native-property-system-stream-instance-creation" heading-number="8.5.12"><h1 id="state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction">TDB_StreamFactory::CreateStream — Native Instance Construction<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction" title="Permanent link">&para;</a></h1>
+<p><code>TDB_StreamFactory::CreateStream</code> constructs a <strong>new C++ Stream instance</strong> from a previously registered native type Creator. This method is distinct from <code>RegisterFactoryFunc</code>, which sets up type metadata and eagerly creates a canonical prototype. This is a <strong>private Adobe C++ implementation reference</strong>, not a supported third-party extension API.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-purpose-and-declaration">Purpose and declaration<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-purpose-and-declaration" title="Permanent link">&para;</a></h2>
+<p>The exported C++ symbol in the two installed versions is:</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><span class="c1">// Conceptual name/signature reconstructed from private export only.</span>
+</span><span id="__span-0-2"><span class="c1">// Do not compile against this; arguments, flags, allocator and ABI are private.</span>
+</span><span id="__span-0-3"><span class="n">TDB_StreamBase</span><span class="o">*</span><span class="w"> </span><span class="nf">TDB_StreamFactory::CreateStream</span><span class="p">(</span>
+</span><span id="__span-0-4"><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">TDB_MatchName</span><span class="o">&amp;</span><span class="w"> </span><span class="n">match_name</span><span class="p">,</span>
+</span><span id="__span-0-5"><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">initial_state</span><span class="p">,</span>
+</span><span id="__span-0-6"><span class="w">    </span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">type_or_flags</span><span class="p">,</span>
+</span><span id="__span-0-7"><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">behavior_flag_1</span><span class="p">,</span>
+</span><span id="__span-0-8"><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="n">behavior_flag_2</span><span class="p">);</span>
+</span></code></pre></div>
+<p>The names of the boolean and integer parameters above are <em>placeholders</em>, not recovered parameter semantics. The original decorated symbol is <code>?CreateStream@TDB_StreamFactory@@QEAAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@_NI11@Z</code> in both versions. The exact behavior of every flag remains unknown.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-native-execution-sequence">Native execution sequence<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-native-execution-sequence" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">1. Get the host's recursive StreamFactory mutex
+</span><span id="__span-1-2">2. Search the Creator table (factory +0x28) using TDB_MatchName
+</span><span id="__span-1-3">3. Copy the matching native std::function callback to temporary storage
+</span><span id="__span-1-4">4. Unlock the factory mutex
+</span><span id="__span-1-5">5. Invoke the copied Creator (indirect std::function dispatch)
+</span><span id="__span-1-6">6. On nonnull native TDB_StreamBase*:
+</span><span id="__span-1-7">     - virtual GetAsLeaf()
+</span><span id="__span-1-8">     - where applicable, virtual InsertDefaultKey(initial U_Time)
+</span><span id="__span-1-9">     - where applicable, TDB_Stream::SetConstant(...)
+</span><span id="__span-1-10">7. If allowed by flags + TDB_ShouldAlwaysDecanonicalize():
+</span><span id="__span-1-11">     - virtual GetAsGroup()
+</span><span id="__span-1-12">     - TDB_DecanonicalizeAllChildStreamsDeep(...)
+</span><span id="__span-1-13">8. Release the temporary copied std::function callback
+</span><span id="__span-1-14">9. Return the new Stream pointer
+</span></code></pre></div>
+<p>This is the observed success-path call graph, not proof of all error/unwind branches. Specifically, <strong>Creator invocation takes place after the factory's explicit mutex unlock</strong>. The callback is held locally, but the safety of registering/unregistering an independently loaded DLL concurrently with callback invocation is unproven.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-type-dependent-initialization">Type-dependent initialization<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-type-dependent-initialization" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: right;">Native virtual slot</th>
+<th>Applies to</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GetAsLeaf</code></td>
+<td style="text-align: right;"><code>0x80</code></td>
+<td>Leaf candidate</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+<tr>
+<td><code>InsertDefaultKey</code></td>
+<td style="text-align: right;"><code>0x190</code> in <code>TDB_Stream</code>/derived leaf</td>
+<td>Eligible leaf values</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+<tr>
+<td><code>SetConstant</code></td>
+<td style="text-align: right;">Direct native TDB method</td>
+<td>Conditional leaf behavior</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+<tr>
+<td><code>GetAsGroup</code></td>
+<td style="text-align: right;"><code>0x90</code></td>
+<td>Group candidate</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+<tr>
+<td><code>TDB_ShouldAlwaysDecanonicalize</code></td>
+<td style="text-align: right;">Exported host policy</td>
+<td>Canonicalized graph behavior</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+<tr>
+<td><code>TDB_DecanonicalizeAllChildStreamsDeep</code></td>
+<td style="text-align: right;">Exported host recursive helper</td>
+<td>Conditional group subtree</td>
+<td>F-VECTOR-097; E2-L</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Canonical prototype vs instance:</strong> the registered prototype has its own canonical group layout. <code>CreateStream</code> can conditionally alter the constructed object's default-key/constant status or de-canonicalize its child group state. A prototype in the registry must therefore not be assumed equivalent to an authored layer/document Stream instance.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-important-ordering-and-version-matrix">Important ordering and version matrix<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-important-ordering-and-version-matrix" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Code site</th>
+<th>AE2025</th>
+<th>AE2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>CreateStream</code> entry RVA</td>
+<td><code>0x26710</code></td>
+<td><code>0x27920</code></td>
+</tr>
+<tr>
+<td>RecursiveMutex lock call</td>
+<td><code>0x2677D</code></td>
+<td><code>0x2798D</code></td>
+</tr>
+<tr>
+<td>Success-path unlock</td>
+<td><code>0x2688B</code></td>
+<td><code>0x27A04</code></td>
+</tr>
+<tr>
+<td>Actual native Creator invoke</td>
+<td><code>0x268D7</code></td>
+<td><code>0x27A50</code></td>
+</tr>
+<tr>
+<td><code>GetAsLeaf</code></td>
+<td><code>0x26953</code></td>
+<td><code>0x27ACC</code></td>
+</tr>
+<tr>
+<td><code>InsertDefaultKey</code></td>
+<td><code>0x26983</code></td>
+<td><code>0x27AF5</code></td>
+</tr>
+<tr>
+<td><code>SetConstant</code></td>
+<td><code>0x26995</code></td>
+<td><code>0x27B0B</code></td>
+</tr>
+<tr>
+<td>Global policy predicate</td>
+<td><code>0x269A3</code></td>
+<td><code>0x27B1D</code></td>
+</tr>
+<tr>
+<td><code>GetAsGroup</code></td>
+<td><code>0x269B2</code></td>
+<td><code>0x27B2C</code></td>
+</tr>
+<tr>
+<td>Deep decanonicalization</td>
+<td><code>0x269C0</code></td>
+<td><code>0x27B3A</code></td>
+</tr>
+</tbody>
+</table>
+<p>Addresses are original installed <strong>RVA</strong> locations, not callable SDK addresses, and not stable across Adobe versions.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-callers-and-ownership">Callers and ownership<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-callers-and-ownership" title="Permanent link">&para;</a></h2>
+<p><code>TDB_StreamFactory::RegisterFactoryFunc</code> calls <code>CreateStream</code> for canonical initialization. In the archive reconstruction path, both <code>TDB_NamedStreamGroup::ReadAndStore</code> and <code>TDB_IndexedStreamGroup::ReadAndStore</code> call this <em>same</em> function for each serialized child MatchName. The resulting raw Stream must then be admitted by a parent, adopted and read. See <a href="#state-model-native-property-system-document-stream-serialization">Document Stream Serialization</a> and <a href="#state-model-native-property-system-indexed-group-insertion">Indexed Group Insertion</a>.</p>
+<p>The return of a new Stream pointer alone does not mean it is visible in AE's standard Timeline, participates in native editing or survives a saved AEP. Creating a foreign class additionally requires an authentic host-approved registration route, a correct C++ ABI and native editor/evaluator integration.</p>
+<h2 id="state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions">Unknowns and safety conditions<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions" title="Permanent link">&para;</a></h2>
+<p><strong>Unresolved:</strong> meaning of all five arguments, exception safety and rollback, Creator callback ownership under concurrency and module unload, allocation and derived class memory lifetime for unknown types, exact runtime choice of decanonicalization, and macOS private ABI.</p>
+<p>This is an <strong>E2-L static finding</strong>. No private host function was invoked to obtain this analysis. The independent verification code is <code>experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py</code>, which pins the original TDB DLL SHA-256 and checks actual CALL ordering.</p>
+<p>Further reading: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Native Stream model</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Parent admission</a>. Research proof F-VECTOR-097.</p></section><section class="print-page" id="state-model-native-property-system-document-stream-serialization" heading-number="8.5.13"><h1 id="state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization">TDB_StreamGroup::Read / Write — Native Property Serialization<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization" title="Permanent link">&para;</a></h1>
+<p><code>TDB_StreamGroup</code> persists a <strong>native group of Stream objects</strong> through Adobe's internal <strong>SLU</strong> serialization layer. These methods are not SDK APIs or a public specification of the AEP file format. They are concrete C++ operations performed by an Adobe-owned object as part of host state persistence.</p>
+<p>The critical implementation condition is that <strong>loading a group reconstructs children from saved MatchNames using the active native Creator factory</strong>, instead of merely retaining unknown opaque bytes.</p>
+<h2 id="state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values">Write path: group, identity, child names and values<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">TDB_StreamGroup::Write(SLU_File)
+</span><span id="__span-0-2">  ├─ SLU_BeginChunkWrite
+</span><span id="__span-0-3">  ├─ TDB_StreamBase::Write
+</span><span id="__span-0-4">  ├─ TDB_StreamBase::WriteUniqueStreamID
+</span><span id="__span-0-5">  ├─ iterate native group child streams
+</span><span id="__span-0-6">  │    ├─ inspect authored / canonical state
+</span><span id="__span-0-7">  │    ├─ TDB_StreamFactory::GetCanonicalStream(matchName)
+</span><span id="__span-0-8">  │    ├─ TDB_MatchName::Write
+</span><span id="__span-0-9">  │    └─ virtual child Write + native metadata
+</span><span id="__span-0-10">  ├─ TDB_MatchName::WriteEndOfGroupMarker
+</span><span id="__span-0-11">  └─ SLU_EndChunkWrite
+</span></code></pre></div>
+<p>The internal direct calls and vtable offsets are observed in both builds. Canonical lookup is used twice in the examined group writer, showing that written child metadata may be interpreted relative to the host's registered canonical native class. We have not decoded or published complete SLU atom/chunk binary layouts or all conditional metadata tags.</p>
+<h2 id="state-model-native-property-system-document-stream-serialization-read-path-group-and-per-child-reconstruction">Read path: group and per-child reconstruction<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-read-path-group-and-per-child-reconstruction" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">TDB_StreamGroup::Read(SLU_File, chunk)
+</span><span id="__span-1-2">  ├─ construct temporary TDB_MatchName
+</span><span id="__span-1-3">  ├─ SLU_ScDescendList (nested list)
+</span><span id="__span-1-4">  ├─ TDB_StreamBase::Read / ReadUniqueStreamID
+</span><span id="__span-1-5">  └─ loop:
+</span><span id="__span-1-6">       ├─ TDB_MatchName::Read(next child)
+</span><span id="__span-1-7">       ├─ IsEndOfGroupMarker -&gt; if true, stop
+</span><span id="__span-1-8">       └─ virtual ReadAndStore (+0x1B8)
+</span><span id="__span-1-9">            ├─ IndexedStreamGroup::ReadAndStore
+</span><span id="__span-1-10">            │    ├─ CreateStream(saved child MatchName)
+</span><span id="__span-1-11">            │    ├─ if null, no child Insert/Read call
+</span><span id="__span-1-12">            │    ├─ GetNumStreams
+</span><span id="__span-1-13">            │    ├─ InsertStream (parent admission, path and parent update)
+</span><span id="__span-1-14">            │    └─ new_child-&gt;Read(SLU_File, child chunk)
+</span><span id="__span-1-15">            └─ NamedStreamGroup::ReadAndStore
+</span><span id="__span-1-16">                 ├─ CreateStream(saved child MatchName)
+</span><span id="__span-1-17">                 ├─ look up existing named member
+</span><span id="__span-1-18">                 ├─ optional EnsureUILayoutComplete / UpgradeChildStream
+</span><span id="__span-1-19">                 └─ read the relevant new or upgraded child
+</span></code></pre></div>
+<p>The virtual <code>ReadAndStore</code> slot <code>+0x1B8</code> is resolved directly in the original compiled <code>TDB_IndexedStreamGroup</code> and <code>TDB_NamedStreamGroup</code> <strong>vtables</strong>, not guessed from the exposed C++ function name. Each implementation makes an actual direct call to <code>TDB_StreamFactory::CreateStream</code>.</p>
+<h3 id="state-model-native-property-system-document-stream-serialization-original-machine-code-order">Original-machine-code order<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-original-machine-code-order" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Native method/call</th>
+<th>AE2025 TDB.dll RVA</th>
+<th>AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TDB_StreamGroup::Write</code></td>
+<td><code>0x43EF0</code></td>
+<td><code>0x44A50</code></td>
+</tr>
+<tr>
+<td>Write native UniqueStreamID</td>
+<td><code>0x43F71</code></td>
+<td><code>0x44AD6</code></td>
+</tr>
+<tr>
+<td>Write child's MatchName</td>
+<td><code>0x4427B</code></td>
+<td><code>0x44DFC</code></td>
+</tr>
+<tr>
+<td>Write end-of-group marker</td>
+<td><code>0x442A4</code></td>
+<td><code>0x44E1F</code></td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::Read</code></td>
+<td><code>0x3D4C0</code></td>
+<td><code>0x3E040</code></td>
+</tr>
+<tr>
+<td>Read child's MatchName</td>
+<td><code>0x3D556</code></td>
+<td><code>0x3E0D6</code></td>
+</tr>
+<tr>
+<td>Virtual ReadAndStore dispatch <code>+0x1B8</code></td>
+<td><code>0x3D58C</code></td>
+<td><code>0x3E10C</code></td>
+</tr>
+<tr>
+<td>Indexed ReadAndStore body</td>
+<td><code>0x3D6E0</code></td>
+<td><code>0x3E260</code></td>
+</tr>
+<tr>
+<td>Indexed child <code>CreateStream</code></td>
+<td><code>0x3D717</code></td>
+<td><code>0x3E28C</code></td>
+</tr>
+<tr>
+<td>Indexed child <code>InsertStream</code></td>
+<td><code>0x3D749</code></td>
+<td><code>0x3E2B7</code></td>
+</tr>
+<tr>
+<td>Indexed child virtual <code>Read</code> <code>+0x118</code></td>
+<td><code>0x3D76D</code></td>
+<td><code>0x3E2D8</code></td>
+</tr>
+<tr>
+<td>Named child <code>CreateStream</code></td>
+<td><code>0x3D7DE</code></td>
+<td><code>0x3E333</code></td>
+</tr>
+<tr>
+<td>Named <code>UpgradeChildStream</code> <code>+0x1B0</code></td>
+<td><code>0x3D898</code></td>
+<td><code>0x3E3D9</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="state-model-native-property-system-document-stream-serialization-the-hidden-precondition-a-matching-registered-creator-must-exist">The hidden precondition: a matching registered Creator must exist<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-the-hidden-precondition-a-matching-registered-creator-must-exist" title="Permanent link">&para;</a></h2>
+<p>Project load is not independent of the <strong>current factory registry</strong>. Each child is reconstructed through <code>CreateStream</code> and is then subjected to the group's admission/owner contract. A plugin that manages to register an external Stream class only after a project has already been loaded may be too late to reconstruct saved instances of that class.</p>
+<p>A positive native type provider must therefore establish how startup/project-load ordering ensures its Creator is available at the right time. Internal Adobe providers <code>OM_Birth</code>, <code>FLT_Birth</code> and <code>BEE_Birth</code> are called from the host's native initialization code; this is <strong>not</strong> a supported third-party AEX registration phase (F-VECTOR-093).</p>
+<h3 id="state-model-native-property-system-document-stream-serialization-unknown-types-and-failure-handling">Unknown types and failure handling<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-unknown-types-and-failure-handling" title="Permanent link">&para;</a></h3>
+<p>The Indexed loader has an explicit null check after <code>CreateStream</code>; if it returns null, the usual insertion and child-read calls are skipped in the inspected branch. However, <code>CreateStream</code> also contains error-reporting and optional assertions governed by its flags. This does <strong>not</strong> prove what happens when a real AE instance opens an AEP containing a genuinely unknown or incompatible type.</p>
+<p>Do not claim any of the following without an isolated host test:
+- unsupported custom property data is silently preserved for a future reopen;
+- unsupported data is always dropped;
+- a missing Creator always fails safely without project corruption;
+- the host supports arbitrary unknown type migrations;
+- an inserted arbitrary C++ class correctly serializes, clones or participates in Undo/Redo.</p>
+<h2 id="state-model-native-property-system-document-stream-serialization-versioned-virtual-insertion-difference">Versioned virtual insertion difference<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-versioned-virtual-insertion-difference" title="Permanent link">&para;</a></h2>
+<p>The Indexed loader calls its virtual <code>InsertStream</code> using <strong>slot <code>+0x210</code> in AE2025</strong>, but <strong><code>+0x218</code> in AE2026</strong>; the latter has a new <code>InsertStreamOptions</code> overload at <code>+0x210</code>. This is a real private ABI difference in the load path, not just binary address relocation. See <a href="#state-model-native-property-system-indexed-group-insertion">Indexed Group Insertion</a>.</p>
+<h2 id="state-model-native-property-system-document-stream-serialization-persistence-identity-vs-editable-state">Persistence identity vs editable state<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-persistence-identity-vs-editable-state" title="Permanent link">&para;</a></h2>
+<p>A native <code>UniqueStreamID</code>, <code>TDB_StreamIDPath</code>, a serialized MatchName, a keyframe value and a Script/AEGP <code>StreamRefH</code> are <strong>different identities or access representations</strong>. The fact that a Group writer emits a native UniqueStreamID does not mean AEGP's session UniqueStreamID will remain constant after an AEP reopen. The identity/path semantics require separate verification.</p>
+<p>Native leaf values add their own <code>TDB_Stream::Read/Write</code> machinery, including key data, expression state and SLU atom value serialization. Native groups can contain <code>NO_DATA</code> leaves such as the special Paint Path, which are not necessarily exposed as public <code>AEGP_StreamValue2</code> values.</p>
+<h2 id="state-model-native-property-system-document-stream-serialization-related-feature-reference">Related feature reference<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-related-feature-reference" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#state-model-native-property-system-stream-object-model">Native Stream Object Model</a></li>
+<li><a href="#state-model-native-property-system-stream-instance-creation">CreateStream and instance initialization</a></li>
+<li><a href="#state-model-native-property-system-indexed-group-insertion">Indexed Stream insertion and parent ownership</a></li>
+<li><a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration/lifetime</a></li>
+<li><a href="#state-model-native-property-system-property-operations">Property Operations and Undo</a></li>
+<li><a href="#persistence-aep-binary-model">AEP archive and project state</a></li>
+</ul>
+<p>Evidence: F-VECTOR-025 (native clone/serialization), F-VECTOR-093–098. Strict 2025/2026 SHA-pinned static verifier: <code>experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py</code>. Dataset: <code>datasets/ae-tdb-document-instance-create-insert-load-2025-2026.json</code>.</p>
+<p><strong>Scope:</strong> no private host functions called, no actual foreign native <code>CNL:</code> Stream saved/reopened; experimental goal remains unachieved.</p></section></section></section>
                     <section class='print-page md-section' id='section-9' heading-number='9'>
                         <h1>Artisans<a class='headerlink' href='#section-9' title='Permanent link'></a>
                         </h1>
@@ -32999,7 +33633,13 @@ dumpbin failures: <strong>0</strong>.</p>
 
 .print-site-enumerate-headings #state-model-native-property-system-api-atlas > h1:before { content: '8.5.9 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-factory-registration-lifetime > h1:before { content: '8.5.10 ' }
+.print-site-enumerate-headings #state-model-native-property-system-indexed-group-insertion > h1:before { content: '8.5.10 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-factory-registration-lifetime > h1:before { content: '8.5.11 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-stream-instance-creation > h1:before { content: '8.5.12 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-document-stream-serialization > h1:before { content: '8.5.13 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #section-9-1 > h1:before { content: '9.1 ' }

@@ -3437,6 +3437,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3718,6 +3724,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#native-group-insertion-and-deserialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native group insertion and deserialization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#save-reopen-clone-and-version-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3930,6 +3947,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../indexed-group-insertion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../factory-registration-lifetime/" class="md-nav__link">
         
   
@@ -3948,6 +4000,76 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stream-instance-creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-stream-serialization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup::Read / Write — Native Property Serialization
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14037,6 +14159,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#native-group-insertion-and-deserialization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native group insertion and deserialization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#save-reopen-clone-and-version-upgrade" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -14168,6 +14301,9 @@
 <h2 id="structural-changes-and-undo">Structural changes and Undo<a class="headerlink" href="#structural-changes-and-undo" title="Permanent link">&para;</a></h2>
 <p><code>AEGP_AddStream</code> is an undoable operation only on an <strong>indexed</strong> group that can admit the registered MatchName. Existing native Stream authoring may involve host command tables, BEE selection and current native editor context. Calling a private <code>BEE_Cmd...</code> or TDB method directly is not equivalent to starting a host Undo transaction via a supported API.</p>
 <p>In the native internal Shape creation path, a stock command builds a <code>BEE_NewLayerTask&lt;4&gt;</code> and ultimately creates and attaches a layer through <code>BEE_CompItem</code>. This native task is <strong>not a supported command-provider SDK for a foreign new Layer kind</strong> (F-VECTOR-058/071).</p>
+<h2 id="native-group-insertion-and-deserialization">Native group insertion and deserialization<a class="headerlink" href="#native-group-insertion-and-deserialization" title="Permanent link">&para;</a></h2>
+<p>For indexed native groups, `TDB_IndexedStreamGroup::InsertStream` checks <strong>virtual CanStore before mutation</strong>, updates reverse indices and cached capsule paths, then calls `TDB_StreamBase::SetParent`. The private vtable position of `InsertStream` changes between AE2025 and AE2026: see <a href="../indexed-group-insertion/">Indexed child insertion</a>.</p>
+<p>Loading a saved Group also has an explicit per-child pipeline: `TDB_MatchName::Read → virtual ReadAndStore → TDB_StreamFactory::CreateStream → InsertStream → child Read`. This is not the public API's `AEGP_StreamRefH` lifetime or a documented opaque preservation rule. The full method/callsite reference is <a href="../document-stream-serialization/">TDB_StreamGroup Read / Write</a> (F-VECTOR-098).</p>
 <h2 id="save-reopen-clone-and-version-upgrade">Save, reopen, clone and version upgrade<a class="headerlink" href="#save-reopen-clone-and-version-upgrade" title="Permanent link">&para;</a></h2>
 <ul>
 <li>A standard built-in Stream participates in Adobe's own AEP serialization format; its private <code>Read</code>/<code>Write</code> implementations are not public C++ serializer contracts.</li>
@@ -14200,7 +14336,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 14:37:54 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
   </span>
 
     
