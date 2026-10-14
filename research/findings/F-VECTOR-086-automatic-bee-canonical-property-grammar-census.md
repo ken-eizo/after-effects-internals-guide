@@ -57,3 +57,9 @@ Expected from installed AE2025 and AE2026: 102/104 exported methods, 515/527 rec
 Cross-reference F-VECTOR-080 to 085 for Paint AEX, BEE/TDB registrar, Paint Suite, actual AE2026 Paint native hierarchy, two-gate native parent admission and v2 leaf inspector.
 
 No host project mutation, no new native foreign Property registration and no unsupported calls occurred during this census.
+
+## Erratum (2026-10-14): Strict x64 RDX child-name dataflow
+
+This F-VECTOR-086 study's 515/527 references were **incomplete**, because its export-name filter did not recognize the class-scoped `BEE_VectorStream::StreamName_*` form. An early extended scan returned 687/699 candidate name associations, but an independent x64 RDX-argument check caught seven across both releases that could refer to an earlier, overwritten name. They were excluded.
+
+**Superseding strict figures:** AE2025 `685/692` and AE2026 `694/701` directly proven canonical native MatchName references among `TDB_GetCanonicalStream` calls. `BEE_VectorStream::VectorsStreamGroup` has 20 directly proven children in both versions. See **F-VECTOR-092** for the independent strict verifier, raw parent→child dataset and cross-release diff. The old 515/527 dataset is retained as a historical baseline, not as the current completeness count.

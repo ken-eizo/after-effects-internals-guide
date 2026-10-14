@@ -129,3 +129,9 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 物理ホストでの読み取り専用チェックは **REFUSED exit 20**、手動起動スクリプトも **AEX をインストールする前に REFUSED**。実験用 AEX は通常の AE に未導入。**非公開の登録関数は未実行で、ネイティブ独自型の登録・表示は未完成**。
 
 証拠：`research/findings/F-VECTOR-091-vm-only-private-tdb-registration-test-kit-and-host-refusal.md`。次の必須条件は、スナップショット付き Windows VM と、VM 内だけの AE 2026 独立インストールの確保。
+
+## 2026-10-14 補足：F-VECTOR-092 による Shape/Vector 子型の高精度抽出
+
+F-VECTOR-086 の旧集計（AE2025 515件、AE2026 527件）は、`BEE_VectorStream::StreamName_*` 形式のエクスポートを認識していなかったため Shape の子型を大幅に過小計上していた。F-VECTOR-092 では、**実際の `GetCanonicalStream` CALL 命令に渡す `RDX` 引数のデータフロー**を独立検証し、AE2025 の692呼び出し中 **685件**、AE2026 の701呼び出し中 **694件**について子 MatchName を再現可能な形で特定した（各7件は曖昧として未解決）。Shape Contents の `VectorsStreamGroup` は両バージョンで **20種類の標準子型**を列挙。これは新規 Stream creator を第三者が登録できたという証拠ではなく、Adobe 組込みの canonical child schema の証拠である。
+
+詳細：`research/findings/F-VECTOR-092-shape-contents-strict-canonical-child-schema-dataflow.md`、`experiments/vector-shape/EXP-SHAPE-092-strict-vector-canonical-child-schema.md`。

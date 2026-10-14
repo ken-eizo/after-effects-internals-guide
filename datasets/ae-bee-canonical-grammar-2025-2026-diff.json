@@ -1,0 +1,134 @@
+{
+  "schema": "strict-RDX direct registered canonical match names only",
+  "total_2025": 685,
+  "total_2026": 694,
+  "all_calls_2025": 692,
+  "all_calls_2026": 701,
+  "shape_contents_children_2025": [
+    "?StreamName_VECTOR_GROUP@BEE_VectorStream",
+    "?StreamName_SHAPE_GROUP@BEE_VectorStream",
+    "?StreamName_POLY_STAR_GROUP@BEE_VectorStream",
+    "?StreamName_RECT_GROUP@BEE_VectorStream",
+    "?StreamName_ELLIPSE_GROUP@BEE_VectorStream",
+    "?StreamName_FILL_GROUP@BEE_VectorStream",
+    "?StreamName_GRADIENT_FILL_GROUP@BEE_VectorStream",
+    "?StreamName_STROKE_GROUP@BEE_VectorStream",
+    "?StreamName_GRADIENT_STROKE_GROUP@BEE_VectorStream",
+    "?StreamName_TRIM_GROUP@BEE_VectorStream",
+    "?StreamName_OFFSET_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_PUCKER_BLOAT_GROUP@BEE_VectorStream",
+    "?StreamName_REPEATER_GROUP@BEE_VectorStream",
+    "?StreamName_REVEAL_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_MERGE_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_ROUGHEN_GROUP@BEE_VectorStream",
+    "?StreamName_ZIGZAG_GROUP@BEE_VectorStream",
+    "?StreamName_ROUND_CORNER_GROUP@BEE_VectorStream",
+    "?StreamName_TWIST_GROUP@BEE_VectorStream",
+    "?StreamName_WIGGLER_GROUP@BEE_VectorStream"
+  ],
+  "shape_contents_children_2026": [
+    "?StreamName_VECTOR_GROUP@BEE_VectorStream",
+    "?StreamName_SHAPE_GROUP@BEE_VectorStream",
+    "?StreamName_POLY_STAR_GROUP@BEE_VectorStream",
+    "?StreamName_RECT_GROUP@BEE_VectorStream",
+    "?StreamName_ELLIPSE_GROUP@BEE_VectorStream",
+    "?StreamName_FILL_GROUP@BEE_VectorStream",
+    "?StreamName_GRADIENT_FILL_GROUP@BEE_VectorStream",
+    "?StreamName_STROKE_GROUP@BEE_VectorStream",
+    "?StreamName_GRADIENT_STROKE_GROUP@BEE_VectorStream",
+    "?StreamName_TRIM_GROUP@BEE_VectorStream",
+    "?StreamName_OFFSET_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_PUCKER_BLOAT_GROUP@BEE_VectorStream",
+    "?StreamName_REPEATER_GROUP@BEE_VectorStream",
+    "?StreamName_REVEAL_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_MERGE_PATH_GROUP@BEE_VectorStream",
+    "?StreamName_ROUGHEN_GROUP@BEE_VectorStream",
+    "?StreamName_ZIGZAG_GROUP@BEE_VectorStream",
+    "?StreamName_ROUND_CORNER_GROUP@BEE_VectorStream",
+    "?StreamName_TWIST_GROUP@BEE_VectorStream",
+    "?StreamName_WIGGLER_GROUP@BEE_VectorStream"
+  ],
+  "group_differences": [
+    {
+      "class": "BEE_ConeMeshOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_CONE_INVERT_SLICE"
+      ],
+      "removed_2026": [],
+      "common": 10,
+      "2025_count": 10,
+      "2026_count": 11
+    },
+    {
+      "class": "BEE_CylinderMeshOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_CYLINDER_INVERT_SLICE"
+      ],
+      "removed_2026": [],
+      "common": 9,
+      "2025_count": 9,
+      "2026_count": 10
+    },
+    {
+      "class": "BEE_DisplacementOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_DISPLACEMENT_INTENSITY",
+        "?BEE_StreamName_SUBDIVISION_COUNT"
+      ],
+      "removed_2026": [],
+      "common": 0,
+      "2025_count": 0,
+      "2026_count": 2
+    },
+    {
+      "class": "BEE_MaterialOverrideLayer",
+      "added_2026": [
+        "?BEE_StreamGroupName_DISPLACEMENT_OPTIONS"
+      ],
+      "removed_2026": [],
+      "common": 0,
+      "2025_count": 0,
+      "2026_count": 1
+    },
+    {
+      "class": "BEE_SphereMeshOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_SPHERE_INVERT_SLICE"
+      ],
+      "removed_2026": [],
+      "common": 6,
+      "2025_count": 6,
+      "2026_count": 7
+    },
+    {
+      "class": "BEE_TextMoreOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_TEXT_VARIABLE_FONT_SPACING"
+      ],
+      "removed_2026": [],
+      "common": 4,
+      "2025_count": 4,
+      "2026_count": 5
+    },
+    {
+      "class": "BEE_TorusMeshOptionsStreamGroup",
+      "added_2026": [
+        "?BEE_StreamName_TORUS_INVERT_SLICE"
+      ],
+      "removed_2026": [],
+      "common": 8,
+      "2025_count": 8,
+      "2026_count": 9
+    },
+    {
+      "class": "BEE_VectorLayer",
+      "added_2026": [
+        "?BEE_StreamName_LAYER_CREDENTIAL_ID"
+      ],
+      "removed_2026": [],
+      "common": 10,
+      "2025_count": 10,
+      "2026_count": 11
+    }
+  ]
+}

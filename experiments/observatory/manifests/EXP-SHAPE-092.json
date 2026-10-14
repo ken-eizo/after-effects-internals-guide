@@ -1,0 +1,33 @@
+{
+  "experiment_id": "EXP-SHAPE-092",
+  "date": "2026-10-14",
+  "status": "PASS strict BEE/TDB x64 direct dataflow for canonical child matchnames AE 2025 and 2026",
+  "sources": [
+    "experiments/vector-shape/probe-src/tools/census_bee_canonical_grammar_strict_rdx.py",
+    "experiments/vector-shape/probe-src/tools/verify_strict_canonical_dataflow.py",
+    "experiments/vector-shape/probe-src/tools/diff_canonical_shape_2025_2026.py"
+  ],
+  "datasets": [
+    "datasets/ae-bee-canonical-grammar-strict-rdx-2025-2026.json",
+    "datasets/ae-bee-canonical-grammar-2025-2026-diff.json"
+  ],
+  "ae2025": {
+    "canonical_layout_methods": 102,
+    "canonical_lookup_calls": 692,
+    "proven_canonical_match_refs": 685,
+    "unresolved": 7
+  },
+  "ae2026": {
+    "canonical_layout_methods": 104,
+    "canonical_lookup_calls": 701,
+    "proven_canonical_match_refs": 694,
+    "unresolved": 7
+  },
+  "vectors_stream_group_canonical_shape_child_count_each_version": 20,
+  "strict_validation": "RIP LEA RDX direct to exported MatchName, real TDB_GetCanonicalStream imported call, no RDX overwrite/intervening call, original BEE.dll SHA pinned",
+  "shape_children_consistent_2025_2026": true,
+  "foreign_stream_registration_proven": false,
+  "private_host_calls": 0,
+  "vm_installation_started": false,
+  "finding": "research/findings/F-VECTOR-092-shape-contents-strict-canonical-child-schema-dataflow.md"
+}
