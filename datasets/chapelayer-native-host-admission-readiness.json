@@ -1,0 +1,132 @@
+{
+  "date": "2026-10-14T00:49:12.767961+00:00",
+  "scope": "Adobe AE2025/2026 pinned static evidence plus installed SDK25.6 and native CNL offline tests",
+  "offline_evidence_gates_pass": true,
+  "checks": [
+    {
+      "check": "aelib_bee_birth_arguments",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 1.44,
+      "output_tail": [
+        "PASS 2025 0x6e272 version_constant 0xf0b2603 arg_regs=rcx,rdx,r8,r9 result checked",
+        "PASS 2025 0x6f6cf version_constant 0xf0b2603 arg_regs=rcx,rdx,r8,r9 result checked",
+        "PASS 2026 0x70647 version_constant 0xf118657 arg_regs=rcx,rdx,r8,r9 result checked",
+        "PASS 2026 0x71bc8 version_constant 0xf118657 arg_regs=rcx,rdx,r8,r9 result checked",
+        "OUTPUT D:\\Developer\\After Effects Internals Guide\\datasets\\ae-aelib-bee-birth-argument-gates-2025-2026.json"
+      ]
+    },
+    {
+      "check": "aelib_bee_import_calls",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.09,
+      "output_tail": [
+        "PASS 2025 Birth 2 instruction-boundary verified imports",
+        "PASS 2025 Death 1 instruction-boundary verified imports",
+        "PASS 2026 Birth 2 instruction-boundary verified imports",
+        "PASS 2026 Death 1 instruction-boundary verified imports",
+        "PASS 2/2 cross-module startup/teardown import boundary; native extension class registration still unproven"
+      ]
+    },
+    {
+      "check": "byte_map_not_native_layer_registrar",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 15.75,
+      "output_tail": [
+        "PASS 2025 BEE_Birth distinct map->init and bytePtr->type registrar 0x64aac9 0x64aae0 Localizer True ScScript True",
+        "PASS 2026 BEE_Birth distinct map->init and bytePtr->type registrar 0x665507 0x66551b Localizer True ScScript True",
+        "PASS 2/2 versions; data-map forwarded separately from built-in TDB type registration.",
+        "OUTPUT D:\\Developer\\After Effects Internals Guide\\datasets\\ae-bee-birth-map-versus-layer-bootstrap-2025-2026.json"
+      ]
+    },
+    {
+      "check": "cnl_native_timeline_4_ctest",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.11,
+      "output_tail": [
+        "    Start 3: ChapeHierarchyRules",
+        "3/4 Test #3: ChapeHierarchyRules ..............   Passed    0.02 sec",
+        "    Start 4: NativeTypedTimelineGrammar",
+        "4/4 Test #4: NativeTypedTimelineGrammar .......   Passed    0.01 sec",
+        "",
+        "100% tests passed, 0 tests failed out of 4",
+        "",
+        "Total Test time (real) =   0.09 sec"
+      ]
+    },
+    {
+      "check": "host_attach_object_contract",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.22,
+      "output_tail": [
+        "PASS 2025 SHA256 98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730 attach 0x392120 object-field mov ebp, dword ptr [rbx + 0x2d8] virtual call qword ptr [rax + 0x550] conditional counter inc dword ptr [rsi + 0x3c8]",
+        "PASS 2026 SHA256 5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e attach 0x39d4d0 object-field mov ebp, dword ptr [rbx + 0x26c] virtual call qword ptr [rax + 0x560] conditional counter inc dword ptr [rsi + 0x420]",
+        "PASS 2/2 pinned native binaries; bounded static host-attach contract verified; external admission NOT proven"
+      ]
+    },
+    {
+      "check": "ml_plugin_loader_not_bee_provider",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.72,
+      "output_tail": [
+        "PASS 2025 ML PluginSupport.dll module factory takes Guid + UIPluginModuleFactory no BEE/TDB direct module imports exports 260",
+        "PASS 2026 ML PluginSupport.dll module factory takes Guid + UIPluginModuleFactory no BEE/TDB direct module imports exports 259",
+        "OUTPUT D:\\Developer\\After Effects Internals Guide\\datasets\\ae-pluginsupport-ml-plugin-factory-vs-bee-layer-2025-2026.json"
+      ]
+    },
+    {
+      "check": "native_layer_bootstrap_four_family",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.19,
+      "output_tail": [
+        "PASS 2025 Birth -> common registrar -> four registered families; Death -> unregistration for all four; DLL SHA256 matched",
+        "PASS 2026 Birth -> common registrar -> four registered families; Death -> unregistration for all four; DLL SHA256 matched",
+        "PASS 2/2. Only verified direct-call edges; independent extension API remains unproven."
+      ]
+    },
+    {
+      "check": "native_layer_bootstrap_nine_family",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.19,
+      "output_tail": [
+        "PASS 2025 9 built-in stream registration families, 9 teardown call edges, birth/death linking, DLL SHA256",
+        "PASS 2026 9 built-in stream registration families, 9 teardown call edges, birth/death linking, DLL SHA256",
+        "PASS 2/2 versions; direct-call census scoped to BEE; no external Layer provider discovered by this test."
+      ]
+    },
+    {
+      "check": "public_sdk_register_surface",
+      "status": "PASS",
+      "exit_code": 0,
+      "elapsed_s": 0.1,
+      "output_tail": [
+        "PASS SDK header E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\AE_GeneralPlug.h",
+        "REGISTER_SUITES 12 methods AEGP_RegisterCommandHook,AEGP_RegisterUpdateMenuHook,AEGP_RegisterDeathHook,AEGP_RegisterVersionHook,AEGP_RegisterAboutStringHook,AEGP_RegisterAboutHook,AEGP_RegisterArtisan,AEGP_RegisterIO,AEGP_RegisterIdleHook,AEGP_RegisterTracker,AEGP_RegisterInteractiveArtisan,AEGP_RegisterPresetLocalizationString",
+        "BUILTIN_VECTOR_LAYER_CREATE AEGP_CompH parent_compH, /* >> */ AEGP_LayerH *new_vector_layerPH",
+        "OBJECT_TYPES AEGP_ObjectType_NONE,AEGP_ObjectType_AV,AEGP_ObjectType_LIGHT,AEGP_ObjectType_CAMERA,AEGP_ObjectType_TEXT,AEGP_ObjectType_VECTOR,AEGP_ObjectType_3D_MODEL,AEGP_ObjectType_RESERVED1,AEGP_ObjectType_RESERVED2,AEGP_ObjectType_RESERVED3,AEGP_ObjectType_NUM_TYPES",
+        "OUTPUT D:\\Developer\\After Effects Internals Guide\\datasets\\ae-public-sdk-native-layer-extension-surface-25-6.json"
+      ]
+    }
+  ],
+  "cnl_AEX_exists": true,
+  "cnl_AEX_size_bytes": 168448,
+  "public_sdk_custom_BEE_Layer_registration_found": false,
+  "public_sdk_custom_TDB_StreamBase_registration_found": false,
+  "host_accepted_foreign_BEE_Layer_proven": false,
+  "host_owned_native_Contents_editor_proven": false,
+  "native_custom_layer_aep_save_reopen_proven": false,
+  "native_custom_layer_vectorart_renderer_proven": false,
+  "native_custom_layer_unload_lifecycle_proven": false,
+  "independent_chapelayer_product_complete": false,
+  "decision": "NOT_DEMONSTRATED_HOST_NATIVE_LAYER_ADMISSION",
+  "note": "PASS means available offline invariants reproduced. It does not prove or disprove all undocumented host extension routes. Positive host-native admission, editor, save/reopen and renderer tests are mandatory before delivery.",
+  "no_AE_private_calls": true,
+  "no_AE_plugin_installs": true
+}
