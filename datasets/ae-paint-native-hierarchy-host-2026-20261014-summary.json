@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-14",
+  "origin_file_basename": "ChapeLayer_PaintNativeHierarchy.tsv",
+  "origin_last_modified": "2026-10-14T03:00:13.325391+00:00",
+  "source_sha256": "1441288c22269fed5755d90b5e040ea02516c1d487d9fccfa4b9579570886440",
+  "source_bytes": 6145,
+  "host": "After Effects 2026 (user-run ChapeLayer Paint inspector)",
+  "paint_effect_match_name": "ADBE Paint",
+  "effect_parade_entries": 1,
+  "observed_paint_stroke_instances": 1,
+  "inspected_nodes": 35,
+  "error_count": 0,
+  "host_project_mutated_reported": false,
+  "private_host_calls_reported": false,
+  "group_kinds": {
+    "NONE": 0,
+    "NAMED_GROUP": 1,
+    "INDEXED_GROUP": 2
+  },
+  "observed_key_groups": {
+    "ADBE Paint": {
+      "kind": "NAMED_GROUP",
+      "count": 4
+    },
+    "ADBE Paint Group": {
+      "kind": "INDEXED_GROUP",
+      "count": 1
+    },
+    "ADBE Paint Atom": {
+      "kind": "NAMED_GROUP",
+      "count": 6
+    },
+    "ADBE Paint Properties": {
+      "kind": "NAMED_GROUP",
+      "count": 16
+    },
+    "ADBE Paint Transform": {
+      "kind": "NAMED_GROUP",
+      "count": 4
+    },
+    "ADBE Paint Nibbler Group": {
+      "kind": "INDEXED_GROUP",
+      "count": 0
+    }
+  },
+  "can_add_matrix": {
+    "ADBE Paint Atom": {
+      "can_add": 1,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    },
+    "ADBE Paint Nibbler Atom": {
+      "can_add": 0,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    },
+    "ADBE Paint Shape": {
+      "can_add": 0,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    },
+    "ADBE Vector Group": {
+      "can_add": 0,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    },
+    "CNL:PaintAtom": {
+      "can_add": 0,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    },
+    "ADBE Paint Atom - CNLProbe": {
+      "can_add": 0,
+      "error": 0,
+      "parent_path": "ADBE Effect Parade/ADBE Paint[2]/ADBE Paint Group"
+    }
+  },
+  "exact_scope": "AEGP_CanAddStream on the existing parent ADBE Paint Group; no AEGP_AddStream and no independent creator registration",
+  "limitations": [
+    "One active Paint effect and one Brush instance",
+    "CanAdd true only proves parent allowance, not factory existence",
+    "Cannot establish new third-party TDB Stream class registration"
+  ]
+}

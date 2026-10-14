@@ -1,0 +1,20 @@
+{
+  "experiment_id": "EXP-SHAPE-083",
+  "date": "2026-10-14",
+  "status": "PASS AE2026 actual in-host public AEGP inspection: Paint 35 nodes, 0 errors; CanAddStream true for built-in Paint Atom, false for five alternatives",
+  "source": "experiments/vector-shape/probe-src/tools/verify_paint_host_receipt.py",
+  "dataset": "datasets/ae-paint-native-hierarchy-host-2026-20261014.tsv",
+  "summary": "datasets/ae-paint-native-hierarchy-host-2026-20261014-summary.json",
+  "source_sha256": "1441288c22269fed5755d90b5e040ea02516c1d487d9fccfa4b9579570886440",
+  "host_paint_found": true,
+  "host_inspected_nodes": 35,
+  "host_errors": 0,
+  "host_paint_strokes_group_kind": "INDEXED_GROUP",
+  "host_paint_brush_atom_kind": "NAMED_GROUP",
+  "can_add_adbe_paint_atom": true,
+  "can_add_cnl_paint_atom": false,
+  "can_add_adbe_paint_atom_suffix_probe": false,
+  "foreign_TDB_stream_admission_proven": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-083-paint-inhost-native-stream-hierarchy-admission.md"
+}
