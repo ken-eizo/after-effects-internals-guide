@@ -1,0 +1,60 @@
+{
+  "2025": {
+    "OM_sha256": "9c08acc46bf0634025cea2de5f06a6e05a64d3acc97ec4c7fd85f3a35cde3442",
+    "native_concrete_class": "OM_Stream : TDB_DerivedStream<OM_MaskShapeStreamTraits>",
+    "native_creator_rva": "0x2610",
+    "native_stream_constructor_rva": "0x29210",
+    "native_typed_base_constructor_rva": "0x2040",
+    "vtable_initialized_in_constructor": true,
+    "object_last_byte_initialized_at_offset": "0x448",
+    "OM_Stream_vtable_rva": "0x8afe0",
+    "native_stream_allocation_bytes": 1104,
+    "native_allocator_import": "U.dll!U_MemTrackedObject::operator new",
+    "native_factory_constructor_callsite_rva": "0x2662",
+    "matchname_allocation_bytes": 16,
+    "birth_matchname_constructor_callsite_rva": "0x32de",
+    "matchname_pointer_export": "?OM_StreamNamePtr_MASK_SHAPE@@3PEBV?$TDB_DerivedMatchName@VOM_Stream@@@@EB",
+    "register_factory_call_rva": "0x332b",
+    "unregister_factory_call_rva": "0x3402",
+    "matchname_delete_call_rva": "0x341f",
+    "matchname_global_reset_rva": "0x3425",
+    "native_stream_persistence_and_value_exports": {
+      "?Read@OM_Stream@@": "0x52f0",
+      "?Write@OM_Stream@@": "0x6310",
+      "?CloneStream@OM_Stream@@": "0x2520",
+      "?GetValueEx@OM_Stream@@": "0x29520",
+      "?SetValue@OM_Stream@@": "0x29a40",
+      "?CanHaveExpression@OM_Stream@@": "0x29460"
+    },
+    "important_limit": "Object allocation size matches 2025/26 but C++ ABI and vtables are PRIVATE and not guaranteed stable. No reference lifetime safety inferred."
+  },
+  "2026": {
+    "OM_sha256": "c1ca4d13425620076ad644aeab7c795f156593022fac62ba365b0a01d8091a7f",
+    "native_concrete_class": "OM_Stream : TDB_DerivedStream<OM_MaskShapeStreamTraits>",
+    "native_creator_rva": "0x2650",
+    "native_stream_constructor_rva": "0x28a60",
+    "native_typed_base_constructor_rva": "0x2080",
+    "vtable_initialized_in_constructor": true,
+    "object_last_byte_initialized_at_offset": "0x448",
+    "OM_Stream_vtable_rva": "0x9cfc0",
+    "native_stream_allocation_bytes": 1104,
+    "native_allocator_import": "U.dll!U_MemTrackedObject::operator new",
+    "native_factory_constructor_callsite_rva": "0x269a",
+    "matchname_allocation_bytes": 16,
+    "birth_matchname_constructor_callsite_rva": "0x31de",
+    "matchname_pointer_export": "?OM_StreamNamePtr_MASK_SHAPE@@3PEBV?$TDB_DerivedMatchName@VOM_Stream@@@@EB",
+    "register_factory_call_rva": "0x322a",
+    "unregister_factory_call_rva": "0x3302",
+    "matchname_delete_call_rva": "0x331f",
+    "matchname_global_reset_rva": "0x3325",
+    "native_stream_persistence_and_value_exports": {
+      "?Read@OM_Stream@@": "0x5010",
+      "?Write@OM_Stream@@": "0x61c0",
+      "?CloneStream@OM_Stream@@": "0x2560",
+      "?GetValueEx@OM_Stream@@": "0x28d80",
+      "?SetValue@OM_Stream@@": "0x292a0",
+      "?CanHaveExpression@OM_Stream@@": "0x28cc0"
+    },
+    "important_limit": "Object allocation size matches 2025/26 but C++ ABI and vtables are PRIVATE and not guaranteed stable. No reference lifetime safety inferred."
+  }
+}

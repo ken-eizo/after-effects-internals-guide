@@ -147,3 +147,11 @@ F-VECTOR-086 の旧集計（AE2025 515件、AE2026 527件）は、`BEE_VectorStr
 これにより **Adobe 標準タイムライン用の複雑な型を、TDB/BEE 外の DLL が実装・登録することは実在する**と証明できた。しかし、3つとも Adobe 内部のホスト初期化モジュールであり、**任意の第三者 AEX が同じ ABI を安全に使用できる根拠ではない**。ChapeLayer の独立ネイティブ型は未登録で、完成判定は引き続き `NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`。実機に非公開 API を呼び出しておらず VM・VirtualBox の更新も保留している。
 
 検証：`research/findings/F-VECTOR-093-om-flt-crossdll-native-timeline-stream-registration.md`、`experiments/vector-shape/EXP-SHAPE-093-om-flt-crossdll-native-registration.md` と、5つの再現可能な PE 静的解析スクリプト・JSON 受領データ。
+
+## F-VECTOR-094 — OM 独自 C++ Stream のオブジェクト・メモリ・解放の実証（2026-10-14）
+
+F-VECTOR-093 で判明した `OM.dll::OM_Stream` の**実際の C++ オブジェクト実装**も両バージョンで追跡した。`OM_Stream::Create` は `U_MemTrackedObject::operator new(0x450)` で **1104バイト**を確保し、専用 `OM_Stream` コンストラクタを呼ぶ。このコンストラクタは `TDB_DerivedStream<OM_MaskShapeStreamTraits>` 基底コンストラクタを呼び、`OM_Stream` 固有の vtable を設定して `this+0x448` のバイトを初期化する。
+
+`OM_Birth` が生成する MatchName オブジェクトは16バイトで、`OM_Death` は **UnregisterFactoryFunc → U アロケータによる MatchName 解放 → グローバル参照のゼロ化**の順で実行する。これらの命令を元バイナリで検証済み。**2025/2026 の割当サイズが等しいことは ABI 全体の互換保証を意味しない。** まして第三者 AEX のネイティブ Property 登録成功ではなく、必要な実装契約を Adobe 組込み例から抽出した成果である。
+
+証拠：`research/findings/F-VECTOR-094-om-maskshape-native-cpp-stream-abi-and-teardown.md`、`experiments/vector-shape/EXP-SHAPE-094-om-native-cpp-object-lifetime.md`。非公開 API の実機呼出しは一切なし。

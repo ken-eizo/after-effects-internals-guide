@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-SHAPE-094",
+  "date": "2026-10-14",
+  "status": "PASS 2/2 offline x64 concrete OM_Stream native class allocator, constructor, typed-base vtable and MatchName lifecycle; NOT an external AEX provider",
+  "source": "experiments/vector-shape/probe-src/tools/audit_om_native_stream_abi_and_teardown.py",
+  "dataset": "datasets/ae-om-native-maskshape-stream-abi-and-teardown-2025-2026.json",
+  "ae2025": {
+    "native_create_rva": "0x2610",
+    "native_constructor_rva": "0x29210",
+    "om_vtable_rva": "0x8afe0",
+    "native_allocation_bytes": 1104,
+    "match_name_allocation_bytes": 16,
+    "registration_call": "0x332b",
+    "unregistration_call": "0x3402",
+    "matchname_free_call": "0x341f"
+  },
+  "ae2026": {
+    "native_create_rva": "0x2650",
+    "native_constructor_rva": "0x28a60",
+    "om_vtable_rva": "0x9cfc0",
+    "native_allocation_bytes": 1104,
+    "match_name_allocation_bytes": 16,
+    "registration_call": "0x322a",
+    "unregistration_call": "0x3302",
+    "matchname_free_call": "0x331f"
+  },
+  "native_stream_class": "OM_Stream inherits TDB_DerivedStream<OM_MaskShapeStreamTraits> in first-party OM.dll",
+  "native_value_and_archive_exports": [
+    "Read",
+    "Write",
+    "CloneStream",
+    "SetValue",
+    "GetValueEx",
+    "CanHaveExpression"
+  ],
+  "scope": "Static PE only; matching allocation size does not establish stable crossrelease ABI",
+  "adobe_host_modified": false,
+  "private_native_calls_executed": 0,
+  "foreign_cnl_native_stream_registered": false,
+  "vm_upgrade_paused": true,
+  "finding": "research/findings/F-VECTOR-094-om-maskshape-native-cpp-stream-abi-and-teardown.md"
+}
