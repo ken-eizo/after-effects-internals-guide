@@ -1,0 +1,225 @@
+{
+  "scope": "E2-L exact PE relative call instruction boundary verification, not exhaustive indirect calls",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "targets": {
+        "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z": {
+          "rva": "0x28fa80",
+          "verified_direct_calls": [
+            {
+              "site": "0x36de29",
+              "caller_function_rva": "0x36dd90",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_AVLayer@@SAXXZ": {
+          "rva": "0x2959e0",
+          "verified_direct_calls": [
+            {
+              "site": "0x36df1f",
+              "caller_function_rva": "0x36def0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_Layer@@SAX_N@Z": {
+          "rva": "0x2ec310",
+          "verified_direct_calls": [
+            {
+              "site": "0x36de21",
+              "caller_function_rva": "0x36dd90",
+              "caller_export": "",
+              "branch": "call"
+            },
+            {
+              "site": "0x36defc",
+              "caller_function_rva": "0x36def0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "LOCAL_RegisterStreams_bootstrap_0": {
+          "rva": "0x36dd90",
+          "verified_direct_calls": [
+            {
+              "site": "0x64aae0",
+              "caller_function_rva": "0x64a530",
+              "caller_export": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+              "branch": "call"
+            }
+          ]
+        },
+        "LOCAL_RegisterStreams_bootstrap_1": {
+          "rva": "0x36def0",
+          "verified_direct_calls": [
+            {
+              "site": "0x64b1ad",
+              "caller_function_rva": "0x64b090",
+              "caller_export": "?BEE_Death@@YAHXZ",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_TextLayer@@SAXXZ": {
+          "rva": "0x5ae290",
+          "verified_direct_calls": [
+            {
+              "site": "0x36de33",
+              "caller_function_rva": "0x36dd90",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_TextLayer@@SAXXZ": {
+          "rva": "0x5aee70",
+          "verified_direct_calls": [
+            {
+              "site": "0x36df15",
+              "caller_function_rva": "0x36def0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "rva": "0x6e4100",
+          "verified_direct_calls": [
+            {
+              "site": "0x36de38",
+              "caller_function_rva": "0x36dd90",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "rva": "0x6e4690",
+          "verified_direct_calls": [
+            {
+              "site": "0x36df10",
+              "caller_function_rva": "0x36def0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "targets": {
+        "?RegisterStreams@BEE_AVLayer@@SAXPEBE@Z": {
+          "rva": "0x298cb0",
+          "verified_direct_calls": [
+            {
+              "site": "0x378849",
+              "caller_function_rva": "0x3787b0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_AVLayer@@SAXXZ": {
+          "rva": "0x29e630",
+          "verified_direct_calls": [
+            {
+              "site": "0x37893f",
+              "caller_function_rva": "0x378910",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_Layer@@SAX_N@Z": {
+          "rva": "0x2f4e50",
+          "verified_direct_calls": [
+            {
+              "site": "0x378841",
+              "caller_function_rva": "0x3787b0",
+              "caller_export": "",
+              "branch": "call"
+            },
+            {
+              "site": "0x37891c",
+              "caller_function_rva": "0x378910",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "LOCAL_RegisterStreams_bootstrap_0": {
+          "rva": "0x3787b0",
+          "verified_direct_calls": [
+            {
+              "site": "0x66551b",
+              "caller_function_rva": "0x664f70",
+              "caller_export": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+              "branch": "call"
+            }
+          ]
+        },
+        "LOCAL_RegisterStreams_bootstrap_1": {
+          "rva": "0x378910",
+          "verified_direct_calls": [
+            {
+              "site": "0x665abd",
+              "caller_function_rva": "0x6659a0",
+              "caller_export": "?BEE_Death@@YAHXZ",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_TextLayer@@SAXXZ": {
+          "rva": "0x5cd7e0",
+          "verified_direct_calls": [
+            {
+              "site": "0x378853",
+              "caller_function_rva": "0x3787b0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_TextLayer@@SAXXZ": {
+          "rva": "0x5ce7b0",
+          "verified_direct_calls": [
+            {
+              "site": "0x378935",
+              "caller_function_rva": "0x378910",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?RegisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "rva": "0x708a30",
+          "verified_direct_calls": [
+            {
+              "site": "0x378858",
+              "caller_function_rva": "0x3787b0",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        },
+        "?UnregisterStreams@BEE_VectorLayer@@SAXXZ": {
+          "rva": "0x709060",
+          "verified_direct_calls": [
+            {
+              "site": "0x378930",
+              "caller_function_rva": "0x378910",
+              "caller_export": "",
+              "branch": "call"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

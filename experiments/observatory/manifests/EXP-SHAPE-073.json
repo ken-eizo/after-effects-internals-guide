@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-073",
+  "date": "2026-10-14",
+  "status": "PASS native pinned AE2025/2026 BEE stream birth/death call graph",
+  "source": "experiments/vector-shape/probe-src/tools/audit_native_layer_birth_death_registration.py",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_native_layer_birth_death_registration.py",
+  "dataset": "datasets/ae-bee-native-layer-stream-birth-death-2025-2026.json",
+  "birth_to_registrars": ["BEE_Layer", "BEE_AVLayer", "BEE_TextLayer", "BEE_VectorLayer"],
+  "teardown_paths_verified": true,
+  "export_enumeration": "dumpbin full exports (pefile default 8192 cap rejected)",
+  "private_host_calls": 0,
+  "custom_native_layer_registered": false,
+  "finding": "research/findings/F-VECTOR-073-bee-layer-stream-registration-birth-death.md"
+}
