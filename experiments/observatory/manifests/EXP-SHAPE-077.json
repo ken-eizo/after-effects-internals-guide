@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-SHAPE-077",
+  "date": "2026-10-14",
+  "status": "PASS pinned nine built-in BEE Layer-family registrar streams, both AE versions",
+  "source": "experiments/vector-shape/probe-src/tools/audit_full_bee_layer_registrar_bootstrap.py",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_full_bee_layer_registrar_bootstrap.py",
+  "dataset": "datasets/ae-bee-full-layer-family-registration-bootstrap-2025-2026.json",
+  "builtin_registration_families": 9,
+  "teardown_paths_per_version": 9,
+  "AE2025_verified": true,
+  "AE2026_verified": true,
+  "private_host_calls": 0,
+  "external_chape_layer_registered": false,
+  "finding": "research/findings/F-VECTOR-077-nine-bee-layer-registrar-families.md"
+}
