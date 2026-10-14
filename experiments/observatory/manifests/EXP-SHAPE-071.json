@@ -1,0 +1,29 @@
+{
+  "experiment_id": "EXP-SHAPE-071",
+  "date": "2026-10-14",
+  "status": "PASS pinned real AE2025/AE2026 BEE CompItem attach ABI offline",
+  "source": "experiments/vector-shape/probe-src/tools/audit_compitem_native_attach_contract.py",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_compitem_native_attach_contract.py",
+  "dataset": "datasets/ae-bee-compitem-attach-owner-contract-2025-2026.json",
+  "AE2025": {
+    "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+    "attach_rva": "0x392120",
+    "layer_field_offset": "0x2d8",
+    "layer_virtual_query_slot": "0x278",
+    "layer_post_attach_virtual_slot": "0x550",
+    "comp_item_conditional_counter_offset": "0x3c8"
+  },
+  "AE2026": {
+    "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+    "attach_rva": "0x39d4d0",
+    "layer_field_offset": "0x26c",
+    "layer_virtual_query_slot": "0x278",
+    "layer_post_attach_virtual_slot": "0x560",
+    "comp_item_conditional_counter_offset": "0x420"
+  },
+  "adobe_private_api_called": false,
+  "adobe_native_layer_registered": false,
+  "external_layer_admission_proven": false,
+  "CompNodeAE_modified": false,
+  "finding": "research/findings/F-VECTOR-071-native-compitem-attach-host-invariants.md"
+}

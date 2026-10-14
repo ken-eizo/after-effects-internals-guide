@@ -1,0 +1,223 @@
+{
+  "scope": "Pinned local Adobe BEE.dll offline PE executable disassembly; no private API calls",
+  "versions": {
+    "2025": {
+      "SHA256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "functions": {
+        "attach": {
+          "entry": "0x392120",
+          "begin": "0x392120",
+          "end": "0x3922eb",
+          "size": 459,
+          "decoded_instruction_count": 127,
+          "instructions": [
+            {
+              "rva": "0x39213f",
+              "asm": "mov rbx, rdx"
+            },
+            {
+              "rva": "0x392142",
+              "asm": "mov rsi, rcx"
+            },
+            {
+              "rva": "0x39216c",
+              "asm": "mov ebp, dword ptr [rbx + 0x2d8]"
+            },
+            {
+              "rva": "0x3921b6",
+              "asm": "mov edx, 2"
+            },
+            {
+              "rva": "0x3921be",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x3921cb",
+              "asm": "mov edx, 1"
+            },
+            {
+              "rva": "0x3921d3",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x3921ea",
+              "asm": "mov edx, 5"
+            },
+            {
+              "rva": "0x3921f2",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x3921ff",
+              "asm": "mov edx, 7"
+            },
+            {
+              "rva": "0x392207",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x392211",
+              "asm": "inc dword ptr [rsi + 0x3c8]"
+            },
+            {
+              "rva": "0x392229",
+              "asm": "call qword ptr [rax + 0x550]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x392255",
+              "asm": "lock xadd dword ptr [rbx + 8], eax"
+            },
+            {
+              "rva": "0x392267",
+              "asm": "lock xadd dword ptr [rbx + 0xc], edi"
+            }
+          ]
+        },
+        "partial_attach": {
+          "entry": "0x3920f0",
+          "begin": "0x3920f0",
+          "end": "0x392113",
+          "size": 35,
+          "decoded_instruction_count": 12,
+          "instructions": [
+            {
+              "rva": "0x392100",
+              "asm": "call 0x180392120",
+              "target_rva": "0x392120",
+              "target_name": "?AttachLayerToCompOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I_N@Z"
+            }
+          ]
+        },
+        "clone_and_attach": {
+          "entry": "0x2e20e0",
+          "begin": "0x2e20e0",
+          "end": "0x2e2241",
+          "size": 353,
+          "decoded_instruction_count": 93,
+          "instructions": [
+            {
+              "rva": "0x2e20fe",
+              "asm": "call qword ptr [rip + 0xbdc8f4]",
+              "target_rva": "0xebe9f8",
+              "target_name": "TDB.dll!?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "SHA256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "functions": {
+        "attach": {
+          "entry": "0x39d4d0",
+          "begin": "0x39d4d0",
+          "end": "0x39d684",
+          "size": 436,
+          "decoded_instruction_count": 127,
+          "instructions": [
+            {
+              "rva": "0x39d4e4",
+              "asm": "mov rbx, rdx"
+            },
+            {
+              "rva": "0x39d4e7",
+              "asm": "mov rsi, rcx"
+            },
+            {
+              "rva": "0x39d511",
+              "asm": "mov ebp, dword ptr [rbx + 0x26c]"
+            },
+            {
+              "rva": "0x39d55b",
+              "asm": "mov edx, 2"
+            },
+            {
+              "rva": "0x39d563",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x39d570",
+              "asm": "mov edx, 1"
+            },
+            {
+              "rva": "0x39d578",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x39d58f",
+              "asm": "mov edx, 5"
+            },
+            {
+              "rva": "0x39d597",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x39d5a4",
+              "asm": "mov edx, 7"
+            },
+            {
+              "rva": "0x39d5ac",
+              "asm": "call qword ptr [rax + 0x278]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x39d5b6",
+              "asm": "inc dword ptr [rsi + 0x420]"
+            },
+            {
+              "rva": "0x39d5ce",
+              "asm": "call qword ptr [rax + 0x560]",
+              "indirect_call": true
+            },
+            {
+              "rva": "0x39d5fa",
+              "asm": "lock xadd dword ptr [rbx + 8], eax"
+            },
+            {
+              "rva": "0x39d60c",
+              "asm": "lock xadd dword ptr [rbx + 0xc], edi"
+            }
+          ]
+        },
+        "partial_attach": {
+          "entry": "0x39d4a0",
+          "begin": "0x39d4a0",
+          "end": "0x39d4c3",
+          "size": 35,
+          "decoded_instruction_count": 12,
+          "instructions": [
+            {
+              "rva": "0x39d4b0",
+              "asm": "call 0x18039d4d0",
+              "target_rva": "0x39d4d0",
+              "target_name": "?AttachLayerToCompOnly@BEE_CompItem@@QEAAXPEAVBEE_Layer@@I_N@Z"
+            }
+          ]
+        },
+        "clone_and_attach": {
+          "entry": "0x2eb090",
+          "begin": "0x2eb090",
+          "end": "0x2eb232",
+          "size": 418,
+          "decoded_instruction_count": 114,
+          "instructions": [
+            {
+              "rva": "0x2eb0a3",
+              "asm": "call qword ptr [rip + 0xc2cc2f]",
+              "target_rva": "0xf17cd8",
+              "target_name": "TDB.dll!?Clone@TDB_StreamBase@@UEBAPEAV1@_N@Z"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
