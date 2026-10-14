@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-072",
+  "date": "2026-10-14",
+  "status": "PASS bounded public SDK 25.6 register and built-in layer creator audit",
+  "source": "experiments/vector-shape/probe-src/tools/audit_public_sdk_native_layer_extension.py",
+  "dataset": "datasets/ae-public-sdk-native-layer-extension-surface-25-6.json",
+  "inspected_header": "E:/ae25.6_61.64bit.AfterEffectsSDK/Examples/Headers/AE_GeneralPlug.h",
+  "register_suite_function_count": 12,
+  "builtin_vector_creator_public": true,
+  "custom_layer_type_registration_in_public_register_suite": false,
+  "adobe_native_chape_layer_registered": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-072-public-aegp-native-layer-registration-surface.md"
+}

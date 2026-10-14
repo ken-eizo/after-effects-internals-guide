@@ -1,0 +1,91 @@
+{
+  "classification": "static audit of installed public SDK header only; no global impossibility claim",
+  "header_sha256": "df4e0cce90f910e06e04018e16bcf8a796099283fee5ba9d0261709e0888691a",
+  "header": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers\\AE_GeneralPlug.h",
+  "register_suite": {
+    "name": "AEGP_RegisterSuite5",
+    "functions": [
+      {
+        "name": "AEGP_RegisterCommandHook",
+        "header_line": 2747
+      },
+      {
+        "name": "AEGP_RegisterUpdateMenuHook",
+        "header_line": 2757
+      },
+      {
+        "name": "AEGP_RegisterDeathHook",
+        "header_line": 2762
+      },
+      {
+        "name": "AEGP_RegisterVersionHook",
+        "header_line": 2767
+      },
+      {
+        "name": "AEGP_RegisterAboutStringHook",
+        "header_line": 2772
+      },
+      {
+        "name": "AEGP_RegisterAboutHook",
+        "header_line": 2777
+      },
+      {
+        "name": "AEGP_RegisterArtisan",
+        "header_line": 2782
+      },
+      {
+        "name": "AEGP_RegisterIO",
+        "header_line": 2791
+      },
+      {
+        "name": "AEGP_RegisterIdleHook",
+        "header_line": 2797
+      },
+      {
+        "name": "AEGP_RegisterTracker",
+        "header_line": 2803
+      },
+      {
+        "name": "AEGP_RegisterInteractiveArtisan",
+        "header_line": 2812
+      },
+      {
+        "name": "AEGP_RegisterPresetLocalizationString",
+        "header_line": 2826
+      }
+    ],
+    "has_custom_layer_class_registration": false,
+    "has_custom_tdb_stream_type_registration": false
+  },
+  "built_in_layer_creator": {
+    "name": "AEGP_CreateVectorLayerInComp",
+    "line": 841,
+    "signature": "AEGP_CompH parent_compH, /* >> */ AEGP_LayerH *new_vector_layerPH",
+    "accepts_custom_layer_type": false
+  },
+  "object_type_enum": {
+    "line": 983,
+    "enumerants": [
+      "AEGP_ObjectType_NONE",
+      "AEGP_ObjectType_AV",
+      "AEGP_ObjectType_LIGHT",
+      "AEGP_ObjectType_CAMERA",
+      "AEGP_ObjectType_TEXT",
+      "AEGP_ObjectType_VECTOR",
+      "AEGP_ObjectType_3D_MODEL",
+      "AEGP_ObjectType_RESERVED1",
+      "AEGP_ObjectType_RESERVED2",
+      "AEGP_ObjectType_RESERVED3",
+      "AEGP_ObjectType_NUM_TYPES"
+    ]
+  },
+  "dynamic_stream_operations": {
+    "can_add_line": 1709,
+    "add_line": 1714
+  },
+  "menu_command": {
+    "menu_new_line": 2856,
+    "insert_command_line": 2874
+  },
+  "external_private_owner_extensibility": "not established by this inspection"
+}
