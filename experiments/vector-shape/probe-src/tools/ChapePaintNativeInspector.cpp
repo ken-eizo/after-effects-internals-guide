@@ -24,6 +24,8 @@ public:
  int budget=500;
  int nodes=0;
  int errors=0;
+ int metadataErrors=0;
+ int metadataLeaves=0;
  explicit Inspector(AEGP_SuiteHandler& s,AEGP_PluginID i,FILE* out):suites(s),plugin(i),output(out){}
  void dispose(AEGP_StreamRefH h) {
   if(h) {
@@ -50,6 +52,25 @@ public:
           (int)kind,(long)count,(int)matchErr,(int)nameErr,(int)groupErr,(int)countErr);
   ++nodes;
   --budget;
+  // Public, read-only SDK metadata only. No value evaluation and no mutation.
+  // Stream grouping kind and Stream value type are distinct concepts.
+  if(!container && !groupErr){
+   AEGP_StreamType valueType=AEGP_StreamType_NO_DATA;
+   A_Boolean canVary=FALSE, isTimevarying=FALSE;
+   A_long keyframes=AEGP_NumKF_NO_DATA;
+   const A_Err te=suites.StreamSuite2()->AEGP_GetStreamType(parent,&valueType);
+   const A_Err cv=suites.StreamSuite2()->AEGP_CanVaryOverTime(parent,&canVary);
+   const A_Err tv=suites.StreamSuite2()->AEGP_IsStreamTimevarying(parent,&isTimevarying);
+   A_Err ke=0;
+   if(!te && valueType!=AEGP_StreamType_NO_DATA)
+    ke=suites.KeyframeSuite5()->AEGP_GetStreamNumKFs(parent,&keyframes);
+   if(te||cv||tv||ke)++metadataErrors;
+   ++metadataLeaves;
+   fprintf(output,"leaf_meta\t%s\t%d\t%d\t%d\t%d\t%ld\t%d\t%d\t%d\t%d\n",
+      path.c_str(),(int)valueType,(int)(canVary!=FALSE),(int)(isTimevarying!=FALSE),
+      (int)(!te&&valueType!=AEGP_StreamType_NO_DATA),(long)keyframes,
+      (int)te,(int)cv,(int)tv,(int)ke);
+  }
   // This is purely a parent-admission query, never a creator invocation.
   // Even TRUE does not prove an unknown TDB Stream class can be instantiated.
   if(container && kind==AEGP_StreamGroupingType_INDEXED_GROUP &&
@@ -99,7 +120,7 @@ A_Err CNL_RunPaintNativeInspector(SPBasicSuite* basic,AEGP_PluginID plugin){
   suites.UtilitySuite3()->AEGP_ReportInfo(plugin,"ChapeLayer Paint: Could not open TEMP TSV file.");
   return A_Err_NONE;
  }
- fprintf(out,"format\tChapeLayer native Adobe Paint effect timeline audit v1\n");
+ fprintf(out,"format\tChapeLayer native Adobe Paint effect timeline audit v2\n");
  fprintf(out,"host_project_mutated\t0\nprivate_host_calls\t0\n");
  fprintf(out,"source_sdk\tAEGP Streamie (Adobe AE SDK 25.6)\n");
  AEGP_LayerH layer=nullptr;
@@ -153,7 +174,8 @@ A_Err CNL_RunPaintNativeInspector(SPBasicSuite* basic,AEGP_PluginID plugin){
  }
  if(paint)inspector.walk(paint,0,"ADBE Effect Parade");
  else fprintf(out,"paint_found\t0\n");
- fprintf(out,"inspected_nodes\t%d\nerrors\t%d\nfinal\tread_only_completed\n",inspector.nodes,inspector.errors);
+ fprintf(out,"inspected_nodes\t%d\nerrors\t%d\nmetadata_leaves\t%d\nmetadata_query_errors\t%d\nfinal\tread_only_completed\n",
+         inspector.nodes,inspector.errors,inspector.metadataLeaves,inspector.metadataErrors);
  inspector.dispose(paint);
  inspector.dispose(effects);
  inspector.dispose(root);

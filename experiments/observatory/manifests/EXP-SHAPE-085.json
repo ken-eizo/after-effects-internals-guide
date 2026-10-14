@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-SHAPE-085",
+  "date": "2026-10-14",
+  "status": "PASS built Windows x64 Release AEX, CTest 4/4, PE import checks; new leaf metadata not yet in-host executed",
+  "source": "experiments/vector-shape/probe-src/tools/ChapePaintNativeInspector.cpp",
+  "dataset": "none until v2 in-host run",
+  "aex_path": "D:/Developer/ShapeLayerAE/build/native_shape_layer_prototype/Release/CNLNativeShapeLayer.aex",
+  "aex_sha256": "392359b2c7216d2d284c2207a623d3b58bc60c1cb37137e72fe9b7c1d9a53c3a",
+  "new_ae_public_functions": [
+    "AEGP_GetStreamType",
+    "AEGP_CanVaryOverTime",
+    "AEGP_IsStreamTimevarying",
+    "AEGP_GetStreamNumKFs"
+  ],
+  "host_v2_metadata_executed": false,
+  "host_project_mutated": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-085-paint-native-leaf-keyframe-metadata-probe.md"
+}

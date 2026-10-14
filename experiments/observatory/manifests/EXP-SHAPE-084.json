@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-084",
+  "date": "2026-10-14",
+  "status": "PASS two AE Windows versions: separate TDB creator registration gate plus canonical parent layout CanStore gate; Paint/Text compared",
+  "source": [
+    "experiments/vector-shape/probe-src/tools/verify_paint_two_gate_canonical_policy.py",
+    "experiments/vector-shape/probe-src/tools/verify_paint_text_common_grammar.py"
+  ],
+  "datasets": [
+    "datasets/ae-paint-tdb-two-gate-canonical-policy-2025-2026.json",
+    "datasets/ae-paint-text-shared-canonical-grammar-2025-2026.json"
+  ],
+  "host_paint_admission_ref": "EXP-SHAPE-083",
+  "tested_version": [
+    "AE2025 Windows",
+    "AE2026 Windows"
+  ],
+  "host_accepted_foreign_stream": false,
+  "foreign_TDB_stream_provider_proven": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-084-tdb-native-two-gate-paint-text-canonical-policy.md"
+}

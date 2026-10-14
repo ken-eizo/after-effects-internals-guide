@@ -1,0 +1,380 @@
+{
+  "2025": {
+    "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+    "classes": {
+      "BEE_PaintStrokesGroup": {
+        "vtable_rva": "0xed5cb0",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc2a91e",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0xeaf00",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_PAINT_ATOM": [
+            "0xeaf09"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0xeaf10"
+        ]
+      },
+      "BEE_TextAnimatorStreamGroup": {
+        "vtable_rva": "0xedda30",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc2a91e",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5b6600",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_TEXT_SELECTORS": [
+            "0x5b6610"
+          ],
+          "BEE_StreamGroupName_TEXT_ANIMATOR_PROPERTIES": [
+            "0x5b6643"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5b6617",
+          "0x5b664d"
+        ]
+      },
+      "BEE_TextSelectorsStreamGroup": {
+        "vtable_rva": "0xeddf00",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc2a91e",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5b6f30",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_TEXT_SELECTOR": [
+            "0x5b6f40"
+          ],
+          "BEE_StreamGroupName_TEXT_WIGGLY_SELECTOR": [
+            "0x5b6f73"
+          ],
+          "BEE_StreamGroupName_TEXT_LEVELS_SELECTOR": [
+            "0x5b6fa9"
+          ],
+          "BEE_StreamGroupName_TEXT_EXPRESSIBLE_SELECTOR": [
+            "0x5b6fdf"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5b6f47",
+          "0x5b6f7d",
+          "0x5b6fb3",
+          "0x5b6fe9"
+        ]
+      },
+      "BEE_TextAnimatorPropertiesStreamGroup": {
+        "vtable_rva": "0xeddc98",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc2a91e",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5b5060",
+        "canonical_children_symbol_references": {
+          "BEE_StreamName_TEXT_POSITION": [
+            "0x5b5126"
+          ],
+          "BEE_StreamName_TEXT_SCALE": [
+            "0x5b515a"
+          ],
+          "BEE_StreamName_TEXT_OPACITY": [
+            "0x5b5292"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5b50fc",
+          "0x5b5130",
+          "0x5b5164",
+          "0x5b5198",
+          "0x5b51cc",
+          "0x5b5200",
+          "0x5b5234",
+          "0x5b5268",
+          "0x5b529c",
+          "0x5b52d0",
+          "0x5b5304",
+          "0x5b5338",
+          "0x5b536c",
+          "0x5b53a0",
+          "0x5b53d4",
+          "0x5b5408",
+          "0x5b543c",
+          "0x5b5470",
+          "0x5b54a4",
+          "0x5b54d8",
+          "0x5b550c",
+          "0x5b5540",
+          "0x5b5574",
+          "0x5b55a8",
+          "0x5b55dc",
+          "0x5b5610",
+          "0x5b5644",
+          "0x5b5678",
+          "0x5b56ac",
+          "0x5b56e0",
+          "0x5b5714",
+          "0x5b5748",
+          "0x5b577c",
+          "0x5b57b0",
+          "0x5b57e4",
+          "0x5b5818",
+          "0x5b584c",
+          "0x5b5880",
+          "0x5b58b4",
+          "0x5b58e8",
+          "0x5b591c",
+          "0x5b5950",
+          "0x5b5984",
+          "0x5b59b8",
+          "0x5b59ec",
+          "0x5b5a20",
+          "0x5b5a54",
+          "0x5b5a88",
+          "0x5b5abc",
+          "0x5b5af0",
+          "0x5b5b24",
+          "0x5b5b58",
+          "0x5b5b8c",
+          "0x5b5bc0",
+          "0x5b5bf4",
+          "0x5b5c28",
+          "0x5b5c5c",
+          "0x5b5c90",
+          "0x5b5cc4",
+          "0x5b5cf8",
+          "0x5b5d2c",
+          "0x5b5d60",
+          "0x5b5d94",
+          "0x5b5dc8",
+          "0x5b5dfc",
+          "0x5b5e30",
+          "0x5b5e64",
+          "0x5b5e98",
+          "0x5b5ecc",
+          "0x5b5f00",
+          "0x5b5f34",
+          "0x5b5f68",
+          "0x5b5f9c",
+          "0x5b5fd0",
+          "0x5b6004",
+          "0x5b6038",
+          "0x5b606c",
+          "0x5b60a0",
+          "0x5b60d4",
+          "0x5b6108",
+          "0x5b613c",
+          "0x5b6170",
+          "0x5b61a4",
+          "0x5b61d8",
+          "0x5b620c",
+          "0x5b6240",
+          "0x5b6274",
+          "0x5b62a8",
+          "0x5b62dc",
+          "0x5b6310",
+          "0x5b6344",
+          "0x5b6378",
+          "0x5b63ac",
+          "0x5b63e0",
+          "0x5b6414",
+          "0x5b6455",
+          "0x5b6489",
+          "0x5b64bd",
+          "0x5b64f1",
+          "0x5b6525",
+          "0x5b6559",
+          "0x5b658d",
+          "0x5b65c1"
+        ]
+      }
+    }
+  },
+  "2026": {
+    "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+    "classes": {
+      "BEE_PaintStrokesGroup": {
+        "vtable_rva": "0xf2f260",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc53006",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0xf0cd0",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_PAINT_ATOM": [
+            "0xf0cd9"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0xf0ce0"
+        ]
+      },
+      "BEE_TextAnimatorStreamGroup": {
+        "vtable_rva": "0xf36fe0",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc53006",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5d5180",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_TEXT_SELECTORS": [
+            "0x5d5190"
+          ],
+          "BEE_StreamGroupName_TEXT_ANIMATOR_PROPERTIES": [
+            "0x5d51af"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5d5197",
+          "0x5d51b9"
+        ]
+      },
+      "BEE_TextSelectorsStreamGroup": {
+        "vtable_rva": "0xf374b0",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc53006",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5d57a0",
+        "canonical_children_symbol_references": {
+          "BEE_StreamGroupName_TEXT_SELECTOR": [
+            "0x5d57b0"
+          ],
+          "BEE_StreamGroupName_TEXT_WIGGLY_SELECTOR": [
+            "0x5d57cf"
+          ],
+          "BEE_StreamGroupName_TEXT_LEVELS_SELECTOR": [
+            "0x5d57f1"
+          ],
+          "BEE_StreamGroupName_TEXT_EXPRESSIBLE_SELECTOR": [
+            "0x5d5813"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5d57b7",
+          "0x5d57d9",
+          "0x5d57fb",
+          "0x5d581d"
+        ]
+      },
+      "BEE_TextAnimatorPropertiesStreamGroup": {
+        "vtable_rva": "0xf37248",
+        "canstore_slot": 56,
+        "canstore_import_thunk_rva": "0xc53006",
+        "canonical_ui_slot": 57,
+        "canonical_fill_rva": "0x5d4410",
+        "canonical_children_symbol_references": {
+          "BEE_StreamName_TEXT_POSITION": [
+            "0x5d44b7"
+          ],
+          "BEE_StreamName_TEXT_SCALE": [
+            "0x5d44d7"
+          ],
+          "BEE_StreamName_TEXT_OPACITY": [
+            "0x5d4597"
+          ]
+        },
+        "canonical_get_stream_calls": [
+          "0x5d44a1",
+          "0x5d44c1",
+          "0x5d44e1",
+          "0x5d4501",
+          "0x5d4521",
+          "0x5d4541",
+          "0x5d4561",
+          "0x5d4581",
+          "0x5d45a1",
+          "0x5d45c1",
+          "0x5d45e1",
+          "0x5d4601",
+          "0x5d4621",
+          "0x5d4641",
+          "0x5d4661",
+          "0x5d4681",
+          "0x5d46a1",
+          "0x5d46c1",
+          "0x5d46e1",
+          "0x5d4701",
+          "0x5d4721",
+          "0x5d4741",
+          "0x5d4761",
+          "0x5d4781",
+          "0x5d47a1",
+          "0x5d47c1",
+          "0x5d47e1",
+          "0x5d4801",
+          "0x5d4821",
+          "0x5d4841",
+          "0x5d4861",
+          "0x5d4881",
+          "0x5d48a1",
+          "0x5d48c1",
+          "0x5d48e1",
+          "0x5d4901",
+          "0x5d4921",
+          "0x5d4941",
+          "0x5d4961",
+          "0x5d4981",
+          "0x5d49a1",
+          "0x5d49c1",
+          "0x5d49e1",
+          "0x5d4a01",
+          "0x5d4a21",
+          "0x5d4a41",
+          "0x5d4a61",
+          "0x5d4a81",
+          "0x5d4aa1",
+          "0x5d4ac1",
+          "0x5d4ae1",
+          "0x5d4b01",
+          "0x5d4b21",
+          "0x5d4b41",
+          "0x5d4b61",
+          "0x5d4b81",
+          "0x5d4ba1",
+          "0x5d4bc1",
+          "0x5d4be1",
+          "0x5d4c01",
+          "0x5d4c21",
+          "0x5d4c41",
+          "0x5d4c61",
+          "0x5d4c81",
+          "0x5d4ca1",
+          "0x5d4cc1",
+          "0x5d4ce1",
+          "0x5d4d01",
+          "0x5d4d21",
+          "0x5d4d41",
+          "0x5d4d61",
+          "0x5d4d81",
+          "0x5d4da1",
+          "0x5d4dc1",
+          "0x5d4de1",
+          "0x5d4e01",
+          "0x5d4e21",
+          "0x5d4e41",
+          "0x5d4e61",
+          "0x5d4e81",
+          "0x5d4ea1",
+          "0x5d4ec1",
+          "0x5d4ee1",
+          "0x5d4f01",
+          "0x5d4f21",
+          "0x5d4f41",
+          "0x5d4f61",
+          "0x5d4f81",
+          "0x5d4fa1",
+          "0x5d4fc1",
+          "0x5d4fe1",
+          "0x5d5001",
+          "0x5d5021",
+          "0x5d5041",
+          "0x5d5061",
+          "0x5d5081",
+          "0x5d50a1",
+          "0x5d50c1",
+          "0x5d50e1",
+          "0x5d5101",
+          "0x5d5121",
+          "0x5d5141",
+          "0x5d5161"
+        ]
+      }
+    }
+  }
+}
