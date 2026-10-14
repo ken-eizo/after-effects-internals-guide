@@ -135,3 +135,15 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 F-VECTOR-086 の旧集計（AE2025 515件、AE2026 527件）は、`BEE_VectorStream::StreamName_*` 形式のエクスポートを認識していなかったため Shape の子型を大幅に過小計上していた。F-VECTOR-092 では、**実際の `GetCanonicalStream` CALL 命令に渡す `RDX` 引数のデータフロー**を独立検証し、AE2025 の692呼び出し中 **685件**、AE2026 の701呼び出し中 **694件**について子 MatchName を再現可能な形で特定した（各7件は曖昧として未解決）。Shape Contents の `VectorsStreamGroup` は両バージョンで **20種類の標準子型**を列挙。これは新規 Stream creator を第三者が登録できたという証拠ではなく、Adobe 組込みの canonical child schema の証拠である。
 
 詳細：`research/findings/F-VECTOR-092-shape-contents-strict-canonical-child-schema-dataflow.md`、`experiments/vector-shape/EXP-SHAPE-092-strict-vector-canonical-child-schema.md`。
+
+## F-VECTOR-093 — Adobe ネイティブ型の独立 DLL 登録と起動順の実証（2026-10-14）
+
+**新たな実証：** `OM.dll` は自分自身で実装した `OM_Stream::Create` を用い、`TDB_MatchName("ADBE Mask Shape")` を `TDB_StreamFactory::RegisterFactoryFunc` に直接登録している。さらに `OM_Death` が同じグローバル MatchName を用いて `UnregisterFactoryFunc` を呼び、解除・解放する。OM_Stream には `Read/Write`、`CloneStream`、`SetValue/GetValueEx` といった C++ ネイティブ実装が存在する。**これは BEE/TDB とは別の Adobe 内部 DLL による、実物の Mask Path 型の登録例である。**
+
+別の `FLT.dll` では `TDB_ScRegisterStreams::Register` を使用し、Effect Path Reference、Opacity、Mask、Masks Parade、CPU/GPU、Built-in Params などの型を **AE2025 6件 / AE2026 7件**登録する。2026には `EFFECT_BLENDMODE` が加わった。なお `FLT_EffectMaskParamPathStreamRef` は Mask Path **参照**の型であり、独立した任意の Bezier 編集型とは区別する必要がある。
+
+この3モジュールの登録は共通の `aelib.dll` ネイティブ初期化関数に接続され、コンパイル済み CALL 命令の並びは両バージョンとも **`OM_Birth → FLT_Birth → BEE_Birth`**、終了側は **`OM_Death → FLT_Death → BEE_Death`**。あくまでコード上の CALL の順序であり、あらゆる起動条件での実行保証ではない。
+
+これにより **Adobe 標準タイムライン用の複雑な型を、TDB/BEE 外の DLL が実装・登録することは実在する**と証明できた。しかし、3つとも Adobe 内部のホスト初期化モジュールであり、**任意の第三者 AEX が同じ ABI を安全に使用できる根拠ではない**。ChapeLayer の独立ネイティブ型は未登録で、完成判定は引き続き `NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`。実機に非公開 API を呼び出しておらず VM・VirtualBox の更新も保留している。
+
+検証：`research/findings/F-VECTOR-093-om-flt-crossdll-native-timeline-stream-registration.md`、`experiments/vector-shape/EXP-SHAPE-093-om-flt-crossdll-native-registration.md` と、5つの再現可能な PE 静的解析スクリプト・JSON 受領データ。

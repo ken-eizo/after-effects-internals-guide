@@ -1,0 +1,52 @@
+{
+  "experiment_id": "EXP-SHAPE-093",
+  "date": "2026-10-14",
+  "status": "PASS two-version native OM/FLT/BEE cross-DLL TDB Stream registration, creator, MatchName, explicit cleanup, aelib Birth/Death ordered code callsites",
+  "source": "experiments/vector-shape/probe-src/tools/verify_om_flt_bee_crossmodule_native_registration.py",
+  "supporting_sources": [
+    "experiments/vector-shape/probe-src/tools/resolve_flt_native_effect_registered_names.py",
+    "experiments/vector-shape/probe-src/tools/trace_aelib_native_stream_family_boot_order.py",
+    "experiments/vector-shape/probe-src/tools/audit_native_tdb_registrar_imports_all_pe.py",
+    "experiments/vector-shape/probe-src/tools/scan_native_registrar_direct_callsites.py"
+  ],
+  "datasets": [
+    "datasets/ae-native-om-flt-bee-crossmodule-boot-verified-2025-2026.json",
+    "datasets/ae-flt-native-effect-register-types-2025-2026.json",
+    "datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json",
+    "datasets/ae-native-tdb-registrar-import-graph-2025-2026.json",
+    "datasets/ae-native-tdb-registrar-direct-callsites-2025-2026.json"
+  ],
+  "ae2025": {
+    "om_match_name": "ADBE Mask Shape",
+    "om_creator": "OM_Stream::Create",
+    "om_register_call_rva": "0x332b",
+    "om_unregister_call_rva": "0x3402",
+    "flt_native_effect_stream_registrations": 6,
+    "aelib_native_boot_callsite_order": [
+      "OM_Birth",
+      "FLT_Birth",
+      "BEE_Birth"
+    ],
+    "installed_PEs_scanned": 1073
+  },
+  "ae2026": {
+    "om_match_name": "ADBE Mask Shape",
+    "om_creator": "OM_Stream::Create",
+    "om_register_call_rva": "0x322a",
+    "om_unregister_call_rva": "0x3302",
+    "flt_native_effect_stream_registrations": 7,
+    "added_flt_stream": "EFFECT_BLENDMODE",
+    "aelib_native_boot_callsite_order": [
+      "OM_Birth",
+      "FLT_Birth",
+      "BEE_Birth"
+    ],
+    "installed_PEs_scanned": 1219
+  },
+  "private_host_calls": 0,
+  "adobe_install_mutated": false,
+  "foreign_native_stream_registered": false,
+  "virtualbox_upgrade_performed": false,
+  "product_gate": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "finding": "research/findings/F-VECTOR-093-om-flt-crossdll-native-timeline-stream-registration.md"
+}

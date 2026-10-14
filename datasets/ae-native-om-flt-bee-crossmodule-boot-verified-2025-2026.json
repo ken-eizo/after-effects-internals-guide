@@ -1,0 +1,105 @@
+{
+  "2025": {
+    "OM_sha256": "9c08acc46bf0634025cea2de5f06a6e05a64d3acc97ec4c7fd85f3a35cde3442",
+    "FLT_sha256": "5ee0aed35dd093397a95bcec10387370d05e691790a817c5927109f3c88e6e9e",
+    "aelib_sha256": "48331b6c193e8abf495e8119861e63fe06d356be0630ab51e9f9b24e69bec8ff",
+    "OM_Birth_rva": "0x3280",
+    "OM_MaskShape_literal_lea_rvas": [
+      "0x32d4"
+    ],
+    "OM_native_creator": "?Create@OM_Stream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+    "OM_stream_matchname_global": "?OM_StreamNamePtr_MASK_SHAPE@@3PEBV?$TDB_DerivedMatchName@VOM_Stream@@@@EB",
+    "OM_register_factory_call_rva": "0x332b",
+    "OM_unregister_factory_call_rva": "0x3402",
+    "OM_read_write_clone_value_exports": [
+      "?Read@OM_Stream@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+      "?Write@OM_Stream@@UEBAXPEAVSLU_File@@@Z",
+      "?CloneStream@OM_Stream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+      "?SetValue@OM_Stream@@UEAAXAEBUT_Time@@AEBQEAVOM_Shape@@@Z",
+      "?GetValueEx@OM_Stream@@UEBAPEAVOM_Shape@@AEBUTDB_EvalData@@@Z"
+    ],
+    "FLT_Register_calls": 6,
+    "FLT_native_effect_type_symbols": [
+      "EFFECT_PATH_PARAM",
+      "EFFECT_OPACITY",
+      "MASK",
+      "MASKS_PARADE",
+      "FORCE_CPU_GPU",
+      "EFFECT_BUILT_IN_PARAMS"
+    ],
+    "aelib_boot_parent_function": "0x6d9b0",
+    "aelib_boot_call_order": [
+      "OM_Birth",
+      "FLT_Birth",
+      "BEE_Birth"
+    ],
+    "aelib_boot_call_rvas": [
+      "0x6e05d",
+      "0x6e08b",
+      "0x6e272"
+    ],
+    "aelib_death_parent_function": "0x6edc0",
+    "aelib_death_call_order": [
+      "OM_Death",
+      "FLT_Death",
+      "BEE_Death"
+    ],
+    "aelib_death_call_rvas": [
+      "0x6ef24",
+      "0x6ef40",
+      "0x6ef56"
+    ]
+  },
+  "2026": {
+    "OM_sha256": "c1ca4d13425620076ad644aeab7c795f156593022fac62ba365b0a01d8091a7f",
+    "FLT_sha256": "65eb2a26803a76e868d20abc72e96ea45e2949573213d21d78d0f7a36494b940",
+    "aelib_sha256": "def5e8a82d84fc12b5043251970331dfdc1d87407a0a4188d9976ca1a3a479bb",
+    "OM_Birth_rva": "0x3180",
+    "OM_MaskShape_literal_lea_rvas": [
+      "0x31d4"
+    ],
+    "OM_native_creator": "?Create@OM_Stream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+    "OM_stream_matchname_global": "?OM_StreamNamePtr_MASK_SHAPE@@3PEBV?$TDB_DerivedMatchName@VOM_Stream@@@@EB",
+    "OM_register_factory_call_rva": "0x322a",
+    "OM_unregister_factory_call_rva": "0x3302",
+    "OM_read_write_clone_value_exports": [
+      "?Read@OM_Stream@@UEAAXPEAVSLU_File@@PEBUSLU_ChunkInfo@@@Z",
+      "?Write@OM_Stream@@UEBAXPEAVSLU_File@@@Z",
+      "?CloneStream@OM_Stream@@UEBAPEAVTDB_StreamBase@@AEBUTDB_CloneStreamParams@@@Z",
+      "?SetValue@OM_Stream@@UEAAXAEBUT_Time@@AEBQEAVOM_Shape@@@Z",
+      "?GetValueEx@OM_Stream@@UEBAPEAVOM_Shape@@AEBUTDB_EvalData@@@Z"
+    ],
+    "FLT_Register_calls": 7,
+    "FLT_native_effect_type_symbols": [
+      "EFFECT_PATH_PARAM",
+      "EFFECT_OPACITY",
+      "EFFECT_BLENDMODE",
+      "MASK",
+      "MASKS_PARADE",
+      "FORCE_CPU_GPU",
+      "EFFECT_BUILT_IN_PARAMS"
+    ],
+    "aelib_boot_parent_function": "0x6fd80",
+    "aelib_boot_call_order": [
+      "OM_Birth",
+      "FLT_Birth",
+      "BEE_Birth"
+    ],
+    "aelib_boot_call_rvas": [
+      "0x70444",
+      "0x70472",
+      "0x70647"
+    ],
+    "aelib_death_parent_function": "0x71150",
+    "aelib_death_call_order": [
+      "OM_Death",
+      "FLT_Death",
+      "BEE_Death"
+    ],
+    "aelib_death_call_rvas": [
+      "0x712b4",
+      "0x712d0",
+      "0x712e6"
+    ]
+  }
+}

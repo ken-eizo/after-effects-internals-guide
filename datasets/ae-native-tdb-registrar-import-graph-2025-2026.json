@@ -1,0 +1,141 @@
+{
+  "scope": "All installed .dll/.exe/.aex under After Effects Support Files, direct PE import table only, privacy-scoped",
+  "limitations": [
+    "Dynamic imports and API suites are not inspected",
+    "Direct import does not prove active callsite nor supported external ABI"
+  ],
+  "results": {
+    "2025": {
+      "PE_files_discovered": 1073,
+      "PE_files_parsed": 1073,
+      "PE_parse_failures": {},
+      "direct_import_count_by_api": {
+        "TDB_StreamFactory_UnregisterFactoryFunc": 3,
+        "TDB_ScRegisterStreams_Register": 2,
+        "TDB_ScRegisterStreams_UnregisterAll": 2,
+        "TDB_StreamFactory_RegisterFactoryFunc": 2
+      },
+      "host_modules_with_direct_registrar_imports": {
+        "TDB_StreamFactory_UnregisterFactoryFunc": [
+          {
+            "module": "aelib.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "module": "OM.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          }
+        ],
+        "TDB_ScRegisterStreams_Register": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "module": "FLT.dll",
+            "from_dll": "tdb.dll",
+            "import": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ],
+        "TDB_ScRegisterStreams_UnregisterAll": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          },
+          {
+            "module": "FLT.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          }
+        ],
+        "TDB_StreamFactory_RegisterFactoryFunc": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "module": "OM.dll",
+            "from_dll": "tdb.dll",
+            "import": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      }
+    },
+    "2026": {
+      "PE_files_discovered": 1219,
+      "PE_files_parsed": 1219,
+      "PE_parse_failures": {},
+      "direct_import_count_by_api": {
+        "TDB_StreamFactory_UnregisterFactoryFunc": 3,
+        "TDB_ScRegisterStreams_Register": 2,
+        "TDB_ScRegisterStreams_UnregisterAll": 2,
+        "TDB_StreamFactory_RegisterFactoryFunc": 2
+      },
+      "host_modules_with_direct_registrar_imports": {
+        "TDB_StreamFactory_UnregisterFactoryFunc": [
+          {
+            "module": "aelib.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          },
+          {
+            "module": "OM.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@@Z"
+          }
+        ],
+        "TDB_ScRegisterStreams_Register": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "module": "FLT.dll",
+            "from_dll": "tdb.dll",
+            "import": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ],
+        "TDB_ScRegisterStreams_UnregisterAll": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          },
+          {
+            "module": "FLT.dll",
+            "from_dll": "tdb.dll",
+            "import": "?UnregisterAll@TDB_ScRegisterStreams@@QEAAXXZ"
+          }
+        ],
+        "TDB_StreamFactory_RegisterFactoryFunc": [
+          {
+            "module": "BEE.dll",
+            "from_dll": "tdb.dll",
+            "import": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          },
+          {
+            "module": "OM.dll",
+            "from_dll": "tdb.dll",
+            "import": "?RegisterFactoryFunc@TDB_StreamFactory@@QEAA_NAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+          }
+        ]
+      }
+    }
+  }
+}

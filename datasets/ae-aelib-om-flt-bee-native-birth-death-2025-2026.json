@@ -1,0 +1,192 @@
+{
+  "2025": {
+    "aelib_sha256": "48331b6c193e8abf495e8119861e63fe06d356be0630ab51e9f9b24e69bec8ff",
+    "import_iat": {
+      "0x10f7d0": {
+        "dll": "OM.dll",
+        "name": "?OM_Death@@YAHXZ"
+      },
+      "0x10f7d8": {
+        "dll": "OM.dll",
+        "name": "?OM_Birth@@YAHXZ"
+      },
+      "0x10edd0": {
+        "dll": "FLT.dll",
+        "name": "?FLT_Death@@YAHXZ"
+      },
+      "0x10edf8": {
+        "dll": "FLT.dll",
+        "name": "?FLT_Birth@@YAHHH@Z"
+      },
+      "0x10e768": {
+        "dll": "BEE.dll",
+        "name": "?BEE_Death@@YAHXZ"
+      },
+      "0x10e770": {
+        "dll": "BEE.dll",
+        "name": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z"
+      }
+    },
+    "callers": {
+      "0x6d9b0": [
+        {
+          "call_rva": "0x6e05d",
+          "import_symbol": "?OM_Birth@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x10f7d8"
+        },
+        {
+          "call_rva": "0x6e08b",
+          "import_symbol": "?FLT_Birth@@YAHHH@Z",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x10edf8"
+        },
+        {
+          "call_rva": "0x6e272",
+          "import_symbol": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x10e770"
+        }
+      ],
+      "0x6edc0": [
+        {
+          "call_rva": "0x6ef24",
+          "import_symbol": "?OM_Death@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x10f7d0"
+        },
+        {
+          "call_rva": "0x6ef40",
+          "import_symbol": "?FLT_Death@@YAHXZ",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x10edd0"
+        },
+        {
+          "call_rva": "0x6ef56",
+          "import_symbol": "?BEE_Death@@YAHXZ",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x10e768"
+        }
+      ],
+      "0x6f550": [
+        {
+          "call_rva": "0x6f6cf",
+          "import_symbol": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x10e770"
+        }
+      ],
+      "0x84c10": [
+        {
+          "call_rva": "0x84c14",
+          "import_symbol": "?OM_Birth@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x10f7d8"
+        }
+      ],
+      "0x84c80": [
+        {
+          "call_rva": "0x84c94",
+          "import_symbol": "?FLT_Birth@@YAHHH@Z",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x10edf8"
+        }
+      ]
+    }
+  },
+  "2026": {
+    "aelib_sha256": "def5e8a82d84fc12b5043251970331dfdc1d87407a0a4188d9976ca1a3a479bb",
+    "import_iat": {
+      "0x127758": {
+        "dll": "OM.dll",
+        "name": "?OM_Death@@YAHXZ"
+      },
+      "0x127760": {
+        "dll": "OM.dll",
+        "name": "?OM_Birth@@YAHXZ"
+      },
+      "0x126e08": {
+        "dll": "FLT.dll",
+        "name": "?FLT_Death@@YAHXZ"
+      },
+      "0x126e30": {
+        "dll": "FLT.dll",
+        "name": "?FLT_Birth@@YAHHH@Z"
+      },
+      "0x126750": {
+        "dll": "BEE.dll",
+        "name": "?BEE_Death@@YAHXZ"
+      },
+      "0x126758": {
+        "dll": "BEE.dll",
+        "name": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z"
+      }
+    },
+    "callers": {
+      "0x6fd80": [
+        {
+          "call_rva": "0x70444",
+          "import_symbol": "?OM_Birth@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x127760"
+        },
+        {
+          "call_rva": "0x70472",
+          "import_symbol": "?FLT_Birth@@YAHHH@Z",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x126e30"
+        },
+        {
+          "call_rva": "0x70647",
+          "import_symbol": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x126758"
+        }
+      ],
+      "0x71150": [
+        {
+          "call_rva": "0x712b4",
+          "import_symbol": "?OM_Death@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x127758"
+        },
+        {
+          "call_rva": "0x712d0",
+          "import_symbol": "?FLT_Death@@YAHXZ",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x126e08"
+        },
+        {
+          "call_rva": "0x712e6",
+          "import_symbol": "?BEE_Death@@YAHXZ",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x126750"
+        }
+      ],
+      "0x71a60": [
+        {
+          "call_rva": "0x71bc8",
+          "import_symbol": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "import_from": "BEE.dll",
+          "import_iat_rva": "0x126758"
+        }
+      ],
+      "0x82710": [
+        {
+          "call_rva": "0x82714",
+          "import_symbol": "?OM_Birth@@YAHXZ",
+          "import_from": "OM.dll",
+          "import_iat_rva": "0x127760"
+        }
+      ],
+      "0x82780": [
+        {
+          "call_rva": "0x82794",
+          "import_symbol": "?FLT_Birth@@YAHHH@Z",
+          "import_from": "FLT.dll",
+          "import_iat_rva": "0x126e30"
+        }
+      ]
+    }
+  }
+}
