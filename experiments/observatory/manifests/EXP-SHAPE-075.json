@@ -1,0 +1,14 @@
+{
+ "experiment_id":"EXP-SHAPE-075",
+ "date":"2026-10-14",
+ "status":"PASS 4/4 native BEE_Birth call argument set-up verifications",
+ "source":"experiments/vector-shape/probe-src/tools/verify_aelib_bee_birth_argument_gates.py",
+ "dataset":"datasets/ae-aelib-bee-birth-argument-gates-2025-2026.json",
+ "AE2025_r8_immediate":"0x0F0B2603",
+ "AE2026_r8_immediate":"0x0F118657",
+ "four_callsites_instruction_verified":true,
+ "arguments_semantics_fully_recovered":false,
+ "external_native_layer_registered":false,
+ "private_host_calls":0,
+ "finding":"research/findings/F-VECTOR-075-aelib-bee-birth-argument-gates.md"
+}

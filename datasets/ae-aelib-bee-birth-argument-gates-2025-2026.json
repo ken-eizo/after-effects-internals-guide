@@ -1,0 +1,259 @@
+{
+  "scope": "Offline bounded native argument setup; no semantic proof of contents of string/map argument",
+  "versions": {
+    "2025": {
+      "aelib_sha256": "48331b6c193e8abf495e8119861e63fe06d356be0630ab51e9f9b24e69bec8ff",
+      "sites": [
+        {
+          "site": "0x6e272",
+          "function_rva": "0x6d9b0",
+          "precall_evidence": [
+            {
+              "rva": "0x6e241",
+              "instruction": "lea rdx, [rsp + 0x70]"
+            },
+            {
+              "rva": "0x6e246",
+              "instruction": "mov rcx, rdi"
+            },
+            {
+              "rva": "0x6e249",
+              "instruction": "call 0x18007fd10"
+            },
+            {
+              "rva": "0x6e24e",
+              "instruction": "cmp dword ptr [rip + 0x133fd7], 3"
+            },
+            {
+              "rva": "0x6e255",
+              "instruction": "sete al"
+            },
+            {
+              "rva": "0x6e258",
+              "instruction": "mov byte ptr [rsp + 0x20], al"
+            },
+            {
+              "rva": "0x6e25c",
+              "instruction": "mov r9d, dword ptr [rip + 0x133fd1]"
+            },
+            {
+              "rva": "0x6e263",
+              "instruction": "mov r8d, 0xf0b2603"
+            },
+            {
+              "rva": "0x6e269",
+              "instruction": "lea rdx, [rsp + 0x70]"
+            },
+            {
+              "rva": "0x6e26e",
+              "instruction": "mov rcx, qword ptr [rbp - 0x78]"
+            }
+          ],
+          "call_and_return_check": [
+            {
+              "rva": "0x6e272",
+              "instruction": "call qword ptr [rip + 0xa04f8]"
+            },
+            {
+              "rva": "0x6e278",
+              "instruction": "test eax, eax"
+            },
+            {
+              "rva": "0x6e27a",
+              "instruction": "jne 0x18006ebf2"
+            }
+          ],
+          "r8_immediate": "0xf0b2603"
+        },
+        {
+          "site": "0x6f6cf",
+          "function_rva": "0x6f550",
+          "precall_evidence": [
+            {
+              "rva": "0x6f6a0",
+              "instruction": "lea rdx, [rbp - 0x29]"
+            },
+            {
+              "rva": "0x6f6a4",
+              "instruction": "mov rcx, rdi"
+            },
+            {
+              "rva": "0x6f6a7",
+              "instruction": "call 0x18007fd10"
+            },
+            {
+              "rva": "0x6f6ac",
+              "instruction": "cmp dword ptr [rip + 0x132b79], 3"
+            },
+            {
+              "rva": "0x6f6b3",
+              "instruction": "sete al"
+            },
+            {
+              "rva": "0x6f6b6",
+              "instruction": "mov byte ptr [rsp + 0x20], al"
+            },
+            {
+              "rva": "0x6f6ba",
+              "instruction": "mov r9d, dword ptr [rip + 0x132b73]"
+            },
+            {
+              "rva": "0x6f6c1",
+              "instruction": "mov r8d, 0xf0b2603"
+            },
+            {
+              "rva": "0x6f6c7",
+              "instruction": "lea rdx, [rbp - 0x29]"
+            },
+            {
+              "rva": "0x6f6cb",
+              "instruction": "mov rcx, qword ptr [rbp - 0x19]"
+            }
+          ],
+          "call_and_return_check": [
+            {
+              "rva": "0x6f6cf",
+              "instruction": "call qword ptr [rip + 0x9f09b]"
+            },
+            {
+              "rva": "0x6f6d5",
+              "instruction": "test eax, eax"
+            },
+            {
+              "rva": "0x6f6d7",
+              "instruction": "jne 0x18006f80f"
+            }
+          ],
+          "r8_immediate": "0xf0b2603"
+        }
+      ]
+    },
+    "2026": {
+      "aelib_sha256": "def5e8a82d84fc12b5043251970331dfdc1d87407a0a4188d9976ca1a3a479bb",
+      "sites": [
+        {
+          "site": "0x70647",
+          "function_rva": "0x6fd80",
+          "precall_evidence": [
+            {
+              "rva": "0x70616",
+              "instruction": "mov rcx, rdi"
+            },
+            {
+              "rva": "0x70619",
+              "instruction": "call 0x180083310"
+            },
+            {
+              "rva": "0x7061e",
+              "instruction": "call 0x18008e850"
+            },
+            {
+              "rva": "0x70623",
+              "instruction": "cmp dword ptr [rip + 0x165ce2], 3"
+            },
+            {
+              "rva": "0x7062a",
+              "instruction": "sete al"
+            },
+            {
+              "rva": "0x7062d",
+              "instruction": "mov byte ptr [rsp + 0x20], al"
+            },
+            {
+              "rva": "0x70631",
+              "instruction": "mov r9d, dword ptr [rip + 0x165cdc]"
+            },
+            {
+              "rva": "0x70638",
+              "instruction": "mov r8d, 0xf118657"
+            },
+            {
+              "rva": "0x7063e",
+              "instruction": "lea rdx, [rsp + 0x70]"
+            },
+            {
+              "rva": "0x70643",
+              "instruction": "mov rcx, qword ptr [rbp - 0x70]"
+            }
+          ],
+          "call_and_return_check": [
+            {
+              "rva": "0x70647",
+              "instruction": "call qword ptr [rip + 0xb610b]"
+            },
+            {
+              "rva": "0x7064d",
+              "instruction": "test eax, eax"
+            },
+            {
+              "rva": "0x7064f",
+              "instruction": "jne 0x180070f83"
+            }
+          ],
+          "r8_immediate": "0xf118657"
+        },
+        {
+          "site": "0x71bc8",
+          "function_rva": "0x71a60",
+          "precall_evidence": [
+            {
+              "rva": "0x71b98",
+              "instruction": "mov rcx, rdi"
+            },
+            {
+              "rva": "0x71b9b",
+              "instruction": "call 0x180083310"
+            },
+            {
+              "rva": "0x71ba0",
+              "instruction": "call 0x18008e850"
+            },
+            {
+              "rva": "0x71ba5",
+              "instruction": "cmp dword ptr [rip + 0x164760], 3"
+            },
+            {
+              "rva": "0x71bac",
+              "instruction": "sete al"
+            },
+            {
+              "rva": "0x71baf",
+              "instruction": "mov byte ptr [rsp + 0x20], al"
+            },
+            {
+              "rva": "0x71bb3",
+              "instruction": "mov r9d, dword ptr [rip + 0x16475a]"
+            },
+            {
+              "rva": "0x71bba",
+              "instruction": "mov r8d, 0xf118657"
+            },
+            {
+              "rva": "0x71bc0",
+              "instruction": "lea rdx, [rbp - 0x49]"
+            },
+            {
+              "rva": "0x71bc4",
+              "instruction": "mov rcx, qword ptr [rbp - 0x39]"
+            }
+          ],
+          "call_and_return_check": [
+            {
+              "rva": "0x71bc8",
+              "instruction": "call qword ptr [rip + 0xb4b8a]"
+            },
+            {
+              "rva": "0x71bce",
+              "instruction": "test eax, eax"
+            },
+            {
+              "rva": "0x71bd0",
+              "instruction": "jne 0x180071cb0"
+            }
+          ],
+          "r8_immediate": "0xf118657"
+        }
+      ]
+    }
+  }
+}
