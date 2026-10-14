@@ -3443,6 +3443,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3524,6 +3530,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-type-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Archive Type Compatibility — Missing Stream Creators
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3873,6 +3914,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../structural-command-undo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../api-atlas/" class="md-nav__link">
         
   
@@ -3916,6 +3992,41 @@
     
   
     TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-group-removal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
   
 
     
@@ -14196,6 +14307,24 @@
 <td>Missing foreign Creator AEP behavior and arbitrary roundtrip</td>
 </tr>
 <tr>
+<td>Indexed child removal</td>
+<td>E2-L SHA-pinned TDB x64 AE2025+2026</td>
+<td>Return same detached child, parent +0x20 cleared, indexed vector/reverse map updated</td>
+<td>Undo ownership, destruction and reuse</td>
+</tr>
+<tr>
+<td>Structural Undo routing</td>
+<td>E2-L cross-DLL TDB+BEE AE2025+2026</td>
+<td>Add/Remove/Duplicate/Reorder begin/dispatch/end BEE Undo grouping</td>
+<td>Inverse task lifetimes and arbitrary external type enrollment</td>
+</tr>
+<tr>
+<td>Missing-Creator reporting</td>
+<td>E2-L Win64 TDB AE2025+2026</td>
+<td>Named loader flag 0, Indexed loader flag 1; report branch in CreateStream</td>
+<td>Real host error/dialog/recovery and data preservation</td>
+</tr>
+<tr>
 <td>Canonical group layout</td>
 <td>E2-L TDB/BEE vtable 2025+2026</td>
 <td><code>FillInCanonicalUILayout</code>, separated dimensions, UILayout</td>
@@ -14297,6 +14426,16 @@
 <td><code>verify_tdb_native_creator_canonical_lifetime.py</code></td>
 </tr>
 <tr>
+<td>Indexed child detach + command undo</td>
+<td>F-VECTOR-099</td>
+<td><code>verify_tdb_native_detach_bee_indexed_undo.py</code></td>
+</tr>
+<tr>
+<td>Native archive missing-Creator report policy</td>
+<td>F-VECTOR-100</td>
+<td><code>verify_tdb_archive_missing_creator_error_policy.py</code></td>
+</tr>
+<tr>
 <td>Supported AEGP SDK coverage</td>
 <td>F-VECTOR-088</td>
 <td><code>verify_public_sdk_native_provider_gap.py</code></td>
@@ -14349,7 +14488,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
   </span>
 
     

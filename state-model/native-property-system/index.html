@@ -3443,6 +3443,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3524,6 +3530,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="archive-type-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Archive Type Compatibility — Missing Stream Creators
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3751,6 +3792,41 @@
   
   
     <li class="md-nav__item">
+      <a href="structural-command-undo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="api-atlas/" class="md-nav__link">
         
   
@@ -3794,6 +3870,41 @@
     
   
     TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="indexed-group-removal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
   
 
     
@@ -14074,6 +14185,21 @@
 <td><a href="indexed-group-insertion/">Indexed child insertion</a></td>
 </tr>
 <tr>
+<td>Parent removal</td>
+<td>How is a native Stream detached without conflating removal and destruction?</td>
+<td><a href="indexed-group-removal/">Indexed child removal</a></td>
+</tr>
+<tr>
+<td>Undo command routing</td>
+<td>How do Adobe's Add/Remove/Duplicate/Reorder commands reach UndoContext?</td>
+<td><a href="structural-command-undo/">Structural commands and Undo</a></td>
+</tr>
+<tr>
+<td>Archive compatibility</td>
+<td>What happens in the native load path when a child type has no registered Creator?</td>
+<td><a href="archive-type-compatibility/">Native archive type compatibility</a></td>
+</tr>
+<tr>
 <td>Document persistence</td>
 <td>How do saved MatchNames reconstruct native named/indexed Stream children?</td>
 <td><a href="document-stream-serialization/">StreamGroup Read / Write</a></td>
@@ -14190,6 +14316,21 @@
 <td>F-VECTOR-098, E2-L</td>
 </tr>
 <tr>
+<td>Does removal immediately destroy a native child?</td>
+<td><strong>No on the verified RemoveStream success path</strong>: pointer returned, parent +0x20 cleared</td>
+<td>F-VECTOR-099, E2-L</td>
+</tr>
+<tr>
+<td>Do native indexed edits use BEE's Undo command system?</td>
+<td>Four Add/Remove/Duplicate/Reorder wrappers each issue Begin/DoCommand/End</td>
+<td>F-VECTOR-099, E2-L</td>
+</tr>
+<tr>
+<td>Do Named and Indexed archives report missing Creator identically?</td>
+<td><strong>No:</strong> observed native flag 0 for Named and 1 for Indexed</td>
+<td>F-VECTOR-100, E2-L</td>
+</tr>
+<tr>
 <td>Can AEGP inspect brush-generated native Paint Strokes?</td>
 <td><strong>Yes</strong>, AE2026 read-only Paint fixture</td>
 <td>F-VECTOR-083/087, E2-X</td>
@@ -14242,7 +14383,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
   </span>
 
     

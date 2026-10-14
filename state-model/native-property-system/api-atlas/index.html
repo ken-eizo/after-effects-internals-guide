@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://ken-eizo.github.io/after-effects-internals-guide/state-model/native-property-system/api-atlas/">
       
       
-        <link rel="prev" href="../stream-object-model/">
+        <link rel="prev" href="../structural-command-undo/">
       
       
         <link rel="next" href="../indexed-group-insertion/">
@@ -3443,6 +3443,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3524,6 +3530,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-type-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Archive Type Compatibility — Missing Stream Creators
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3748,6 +3789,41 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../structural-command-undo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -3933,6 +4009,41 @@
     
   
     TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-group-removal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
   
 
     
@@ -14341,6 +14452,42 @@
 <td>F-VECTOR-097</td>
 </tr>
 <tr>
+<td><code>TDB_IndexedStreamGroup::RemoveStream</code></td>
+<td><code>TDB.dll</code></td>
+<td>Detach child, clear parent +0x20, return original Stream pointer</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
+<td><code>TDB_StreamBase::CreateStream</code></td>
+<td><code>TDB.dll</code></td>
+<td>First-party wrapper tail-jumps to StreamFactory's CreateStream</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
+<td><code>BEE_CmdAddToIndexedStreamGroup</code></td>
+<td><code>BEE.dll</code></td>
+<td>First-party native child creation followed by command submission</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
+<td><code>BEE_CmdRemoveIndexedGroupEntry</code></td>
+<td><code>BEE.dll</code></td>
+<td>First-party native remove command via UndoContext</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
+<td><code>BEE_CmdDuplicateIndexedGroupEntry</code></td>
+<td><code>BEE.dll</code></td>
+<td>First-party native duplicate command via UndoContext</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
+<td><code>BEE_CmdReorderIndexedGroupEntry</code></td>
+<td><code>BEE.dll</code></td>
+<td>First-party native reorder command via UndoContext</td>
+<td>F-VECTOR-099</td>
+</tr>
+<tr>
 <td><code>TDB_StreamGroup::Read / Write</code></td>
 <td><code>TDB.dll</code></td>
 <td>SLU native Stream ID, child MatchName and group archive</td>
@@ -14477,7 +14624,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
   </span>
 
     
@@ -14507,7 +14654,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../stream-object-model/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Native Stream Object Model">
+          <a href="../structural-command-undo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Native Structural Commands and Undo">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -14517,7 +14664,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Native Stream Object Model
+                Native Structural Commands and Undo
               </div>
             </div>
           </a>

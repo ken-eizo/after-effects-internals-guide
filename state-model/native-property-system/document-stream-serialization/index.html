@@ -3443,6 +3443,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3524,6 +3530,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../archive-type-compatibility/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Archive Type Compatibility — Missing Stream Creators
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3751,6 +3792,41 @@
   
   
     <li class="md-nav__item">
+      <a href="../structural-command-undo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../api-atlas/" class="md-nav__link">
         
   
@@ -3794,6 +3870,41 @@
     
   
     TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-group-removal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
   
 
     
@@ -14334,6 +14445,7 @@
 <p>Project load is not independent of the <strong>current factory registry</strong>. Each child is reconstructed through <code>CreateStream</code> and is then subjected to the group's admission/owner contract. A plugin that manages to register an external Stream class only after a project has already been loaded may be too late to reconstruct saved instances of that class.</p>
 <p>A positive native type provider must therefore establish how startup/project-load ordering ensures its Creator is available at the right time. Internal Adobe providers <code>OM_Birth</code>, <code>FLT_Birth</code> and <code>BEE_Birth</code> are called from the host's native initialization code; this is <strong>not</strong> a supported third-party AEX registration phase (F-VECTOR-093).</p>
 <h3 id="unknown-types-and-failure-handling">Unknown types and failure handling<a class="headerlink" href="#unknown-types-and-failure-handling" title="Permanent link">&para;</a></h3>
+<p><strong>The native missing-type error-report flag differs by group.</strong> Both AE2025 and AE2026 Named ReadAndStore callers pass 0 and Indexed callers pass 1 for the same fifth CreateStream argument. The factory's absent-Creator branch uses it to skip or reach an Adobe U.dll reporting function. This is a static finding, not a host-tested project load outcome. See <a href="../archive-type-compatibility/">Native Archive Type Compatibility</a> and F-VECTOR-100.</p>
 <p>The Indexed loader has an explicit null check after <code>CreateStream</code>; if it returns null, the usual insertion and child-read calls are skipped in the inspected branch. However, <code>CreateStream</code> also contains error-reporting and optional assertions governed by its flags. This does <strong>not</strong> prove what happens when a real AE instance opens an AEP containing a genuinely unknown or incompatible type.</p>
 <p>Do not claim any of the following without an isolated host test:
 - unsupported custom property data is silently preserved for a future reopen;
@@ -14377,7 +14489,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 16:25:50 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
   </span>
 
     
