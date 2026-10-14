@@ -1,0 +1,12 @@
+{
+  "experiment_id": "EXP-SHAPE-082",
+  "date": "2026-10-14",
+  "status": "PASS native Windows Release build, CTest 4/4, binary/static guard; not yet tested inspector inside After Effects",
+  "source": "experiments/vector-shape/probe-src/tools/verify_paint_sdk_and_inspector.py",
+  "new_probe": "experiments/vector-shape/probe-src/tools/ChapePaintNativeInspector.cpp",
+  "sdk_sample": "E:/ae25.6_61.64bit.AfterEffectsSDK/Examples/AEGP/Streamie/Streamie.cpp",
+  "host_paint_hierarchy_inspector_executed": false,
+  "foreign_TDB_stream_admission_proven": false,
+  "project_modified": false,
+  "finding": "research/findings/F-VECTOR-082-sdk-streamie-and-readonly-paint-inspector.md"
+}

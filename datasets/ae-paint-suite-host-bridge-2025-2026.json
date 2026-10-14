@@ -1,0 +1,106 @@
+{
+  "2025": {
+    "host": {
+      "path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\AfterFXLib.dll",
+      "sha256": "3911deb498964fc82a2930fbdc9361f7977d804fca47d15538755b6558f7a836",
+      "paint_effect_entrypoint_rva": "0x973b90",
+      "suite_registrations": [
+        {
+          "host_registration_function": "0x924640",
+          "suite_name_reference_rva": "0x92495f",
+          "suite_name_literal_rva": "0x199d0a0",
+          "function_table_lea_rva": "0x92493d",
+          "function_table_rva": "0x1f7ec68",
+          "function_table_first_pointer_rva": "0x973b90",
+          "nearby_registration_call_rva": "0x92496a",
+          "nearby_call_operand": "qword ptr [rip + 0xf642a0]"
+        }
+      ]
+    },
+    "paint_tool_effect_aex": {
+      "path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\Required\\Paint.aex",
+      "sha256": "50ddd78f6e7d5352ed4e156267d971f70a32e44bb62b02956f2916ce5272aef4",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140.dll",
+        "u.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "wrappers": [
+        {
+          "export": "EffectMainExtra",
+          "rva": "0x1740",
+          "common_callback_rva": "0x1340"
+        },
+        {
+          "export": "EffectMainExtra2",
+          "rva": "0x1770",
+          "common_callback_rva": "0x1340"
+        }
+      ],
+      "suite_name_reference_in_effect_callback": [
+        "0x1424"
+      ]
+    },
+    "not_paint_bucket": {
+      "path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\Plug-ins\\Effects\\PaintBucket.aex",
+      "sha256": "bf441cb3fd9c84ca0be9b2c16af42f2548f40bfacc8183cda4f00cd04caf223b"
+    }
+  },
+  "2026": {
+    "host": {
+      "path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\AfterFXLib.dll",
+      "sha256": "c8d8a8697be7597cf4c59bb7ad6bac4a065d15f2ede4528c371c859c64af0964",
+      "paint_effect_entrypoint_rva": "0xa79050",
+      "suite_registrations": [
+        {
+          "host_registration_function": "0xa296b0",
+          "suite_name_reference_rva": "0xa299cf",
+          "suite_name_literal_rva": "0x1caf230",
+          "function_table_lea_rva": "0xa299ad",
+          "function_table_rva": "0x22edd78",
+          "function_table_first_pointer_rva": "0xa79050",
+          "nearby_registration_call_rva": "0xa299da",
+          "nearby_call_operand": "qword ptr [rip + 0x1157c70]"
+        }
+      ]
+    },
+    "paint_tool_effect_aex": {
+      "path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\Required\\Paint.aex",
+      "sha256": "b1190b667f27521540f640bf18f81468b7549a660115209b5312e791087fa62e",
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140.dll",
+        "u.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "wrappers": [
+        {
+          "export": "EffectMainExtra",
+          "rva": "0x16a0",
+          "common_callback_rva": "0x1380"
+        },
+        {
+          "export": "EffectMainExtra2",
+          "rva": "0x16d0",
+          "common_callback_rva": "0x1380"
+        }
+      ],
+      "suite_name_reference_in_effect_callback": [
+        "0x1427"
+      ]
+    },
+    "not_paint_bucket": {
+      "path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\Plug-ins\\Effects\\PaintBucket.aex",
+      "sha256": "5c95eab9c50ac8341cc8e0375182e7307d5720f0bc304578591b4b8d17a1b5b3"
+    }
+  }
+}

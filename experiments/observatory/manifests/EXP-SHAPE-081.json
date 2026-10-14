@@ -1,0 +1,11 @@
+{
+  "experiment_id": "EXP-SHAPE-081",
+  "date": "2026-10-14",
+  "status": "PASS 2/2 AE2025/2026 host Paint Suite dispatch table; no foreign TDB class registered",
+  "source": "experiments/vector-shape/probe-src/tools/verify_paint_suite_host_bridge.py",
+  "dataset": "datasets/ae-paint-suite-host-bridge-2025-2026.json",
+  "evidence": "Paint.aex EffectMainExtra uses Paint Suite, AfterFXLib registers Paint Suite with function table first element PaintEffectEntryPoint; SHA pinned",
+  "foreign_TDB_stream_admission_proven": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-081-paint-suite-host-owned-effect-bridge.md"
+}
