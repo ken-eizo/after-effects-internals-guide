@@ -119,3 +119,13 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 - `CNLPrivateTDBDisposable.aex` の Release ビルドと静的安全ゲート監査は PASS（SHA256 `c91ffce77be481a394c243c0de64568487d3f24e5864cbba9376eaf1500b5622`）。**非公開 TDB レジストリへの実機書込は未実行。Adobe 本番環境への導入は禁止**。あくまで、明示的な危険性同意を得た使い捨て隔離 AE 環境の候補実験。
 - 上記の結果は、独自の AE ネイティブ Stream/Group 型が完成したことを意味しない。製品判定は引き続き `NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`。
 - 一次資料は `research/findings/F-VECTOR-089-aex-import-survey-registered-native-stream-owner-gap.md` と `research/findings/F-VECTOR-090-disposable-private-tdb-registrar-not-host-certified.md`。
+
+## EXP-SHAPE-091 — Windows VM 限定の危険な private TDB 登録試験（2026-10-14）
+
+ユーザーはクラッシュの危険性を承知したうえで**使い捨ての隔離 Windows VM**内での実験を明示的に許可。ただしローカル環境は Windows 10 Home（Microsoft Windows Sandbox 非対応）、VirtualBox 5.2.20 に Linux boot2docker VM しか存在せず、AE を独立して起動できる Windows VM はない。このため、**ユーザー許可を尊重しつつ、物理 PC の AE に非公開の登録実験を流し込むことはしていない**。
+
+研究用パッケージをローカル `D:\Developer\ShapeLayerAE\results\CNLPrivateTDB_VM_ONLY_20261014.zip` に作成（SHA256 `B881BC258B0CC19DB694B2FEA056C86C07AC27744AD10D85B47D3F9EA6789D2A`）。VM ゲスト識別、仮想ディスク、ネットワーク遮断、ホスト共有の解除、独立したゲスト側 AE インストール、空・未保存プロジェクト、スナップショット確認、実験 AEX の完全な SHA を必須にする。
+
+物理ホストでの読み取り専用チェックは **REFUSED exit 20**、手動起動スクリプトも **AEX をインストールする前に REFUSED**。実験用 AEX は通常の AE に未導入。**非公開の登録関数は未実行で、ネイティブ独自型の登録・表示は未完成**。
+
+証拠：`research/findings/F-VECTOR-091-vm-only-private-tdb-registration-test-kit-and-host-refusal.md`。次の必須条件は、スナップショット付き Windows VM と、VM 内だけの AE 2026 独立インストールの確保。

@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-SHAPE-091",
+  "date": "2026-10-14",
+  "status": "PASS VM kit ZIP + SHA checks and strict physical-host refusal; BLOCKED isolated Windows VM runtime",
+  "test_kit_location": "D:/Developer/ShapeLayerAE/results/CNLPrivateTDB_VM_ONLY_20261014.zip",
+  "kit_zip_sha256": "B881BC258B0CC19DB694B2FEA056C86C07AC27744AD10D85B47D3F9EA6789D2A",
+  "dangerous_aex_sha256": "C91FFCE77BE481A394C243C0DE64568487D3F24E5864CBBA9376EAF1500B5622",
+  "windows_vm_available": false,
+  "windows_sandbox_supported_on_current_host": false,
+  "existing_virtualbox_guest_os": "Linux boot2docker",
+  "private_registration_executed": false,
+  "physical_host_guard_exit_code": 20,
+  "physical_host_stage_attempt": "REFUSED before copying plugin",
+  "experimental_aex_installed_into_daily_ae": false,
+  "user_authorized_disposable_isolated_risky_test": true,
+  "next_gate": "Acquire a separate properly snapshot-backed Windows AE2026 VM, then guest preflight",
+  "product_status": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "finding": "research/findings/F-VECTOR-091-vm-only-private-tdb-registration-test-kit-and-host-refusal.md"
+}
