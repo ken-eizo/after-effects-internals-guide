@@ -1,0 +1,91 @@
+{
+  "scope": "two version-pinned BEE_Birth and map helper functions, direct static imports only",
+  "versions": {
+    "2025": {
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "map_input_forwarded_at": "0x64aac9",
+      "map_helper_rva": "0x11bee0",
+      "byte_input_forwarded_at": "0x64aae0",
+      "builtin_type_registrar_rva": "0x36dd90",
+      "map_helper_imports_sc_localizer": true,
+      "map_helper_imports_sc_script": true,
+      "map_helper_direct_tdb_registrar_imports_observed": false,
+      "boundary_rows": [
+        {
+          "rva": "0x64aac4",
+          "asm": "mov rcx, qword ptr [rsp + 0x38]",
+          "target": null
+        },
+        {
+          "rva": "0x64aac9",
+          "asm": "call 0x18011bee0",
+          "target": "0x11bee0"
+        },
+        {
+          "rva": "0x64aace",
+          "asm": "mov ebx, eax",
+          "target": null
+        },
+        {
+          "rva": "0x64aad8",
+          "asm": "mov rcx, qword ptr [rsp + 0x158]",
+          "target": null
+        },
+        {
+          "rva": "0x64aae0",
+          "asm": "call 0x18036dd90",
+          "target": "0x36dd90"
+        },
+        {
+          "rva": "0x64aae5",
+          "asm": "nop ",
+          "target": null
+        }
+      ],
+      "not_proven": "Full data-map semantics, indirect paths, external Layer class registration or safe private ABI"
+    },
+    "2026": {
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "map_input_forwarded_at": "0x665507",
+      "map_helper_rva": "0x122910",
+      "byte_input_forwarded_at": "0x66551b",
+      "builtin_type_registrar_rva": "0x3787b0",
+      "map_helper_imports_sc_localizer": true,
+      "map_helper_imports_sc_script": true,
+      "map_helper_direct_tdb_registrar_imports_observed": false,
+      "boundary_rows": [
+        {
+          "rva": "0x6654ff",
+          "asm": "mov rcx, qword ptr [rsp + 0x88]",
+          "target": null
+        },
+        {
+          "rva": "0x665507",
+          "asm": "call 0x180122910",
+          "target": "0x122910"
+        },
+        {
+          "rva": "0x66550c",
+          "asm": "mov ebx, eax",
+          "target": null
+        },
+        {
+          "rva": "0x665516",
+          "asm": "mov rcx, qword ptr [rsp + 0x40]",
+          "target": null
+        },
+        {
+          "rva": "0x66551b",
+          "asm": "call 0x1803787b0",
+          "target": "0x3787b0"
+        },
+        {
+          "rva": "0x665520",
+          "asm": "nop ",
+          "target": null
+        }
+      ],
+      "not_proven": "Full data-map semantics, indirect paths, external Layer class registration or safe private ABI"
+    }
+  }
+}

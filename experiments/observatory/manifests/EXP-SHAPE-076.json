@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-076",
+  "date": "2026-10-14",
+  "status": "PASS pinned AE2025/2026 BEE Birth native map vs stream registrar",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_bee_birth_map_vs_layer_register.py",
+  "dataset": "datasets/ae-bee-birth-map-versus-layer-bootstrap-2025-2026.json",
+  "versions": ["AE2025", "AE2026"],
+  "map_initializer_localizer": true,
+  "map_initializer_script_startup": true,
+  "map_used_as_foreign_native_layer_registrar_proven": false,
+  "native_builtin_stream_registration_separate": true,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-076-bee-birth-map-vs-native-stream-registration.md"
+}
