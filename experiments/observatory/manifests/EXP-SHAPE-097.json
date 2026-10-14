@@ -1,0 +1,23 @@
+{
+  "experiment_id": "EXP-SHAPE-097",
+  "date": "2026-10-15",
+  "status": "PASS installed AE2025 and AE2026 x64 PE strict creation/indexed insertion flow",
+  "source": "experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py",
+  "dataset": "datasets/ae-tdb-document-instance-create-insert-load-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-097-tdb-native-instance-creation-indexed-insertion-vtable.md",
+  "documentation": [
+    "docs/state-model/native-property-system/stream-instance-creation.md",
+    "docs/state-model/native-property-system/indexed-group-insertion.md"
+  ],
+  "key_evidence": [
+    "Creator callback invoked after factory mutex unlock",
+    "Leaf default key and constant setting conditional",
+    "Deep decanonicalization optional",
+    "CanStore virtual parent gate precedes indexed insertion",
+    "Reverse index, cache paths and SetParent updated",
+    "Native indexed InsertStream vtable ABI differs in AE2026"
+  ],
+  "test_scope": "Original Adobe TDB.dll static only; never called private ABI",
+  "foreign_native_type_registered": false,
+  "private_host_calls": 0
+}

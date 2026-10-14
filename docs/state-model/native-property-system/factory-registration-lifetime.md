@@ -1,6 +1,6 @@
 ---
 status: architecture-reference
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E2-L + E0-H + H
 versions: Windows AE2025 / AE2026 private TDB; Adobe public SDK25.6
 ---
@@ -75,6 +75,12 @@ These are *callsite RVAs*, not documented public function offsets. See `datasets
 A registered native class is validated/initialized through a **real instance**. This is why a dummy callback is not a safe factory-registration test: a wrong C++ calling convention, partial object, bad host allocator, invalid vtable or uninitialized group fields can fail **inside registration**. A separately compiled mock host does not prove correct Adobe ownership.
 
 For a native Group, `SetupCanonicalLayout` further invokes `FillInCanonicalUILayout`. See [Canonical groups and admission](canonical-groups-admission.md).
+
+## Creating document Stream instances
+
+Factory registration constructs a canonical prototype, but \`TDB_StreamFactory::CreateStream\` is also used separately to create real native child instances. On the observed success path, it copies a native \`std::function\` Creator under the factory mutex, unlocks, then **invokes the callback after the unlock**; it may initialize default leaf key data and conditionally decanonicalize a group subtree. [Native instance construction](stream-instance-creation.md) documents the independent entry and flags.
+
+A real group then needs a separate [Indexed insertion](indexed-group-insertion.md) operation that enforces the parent's \`CanStore\` and establishes its parent/StreamIDPath caches. A saved project reconstructs children from serialized MatchNames through the same Creator and insertion machinery; see [StreamGroup Read / Write](document-stream-serialization.md). These lifecycle steps are independently verified in F-VECTOR-097/098, without a foreign plugin being executed.
 
 ## Unregistration and native object ownership
 

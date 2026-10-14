@@ -1,0 +1,110 @@
+{
+  "evidence": "E2-L read-only original installed PE; static success-branch tracing",
+  "product_gate": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "versions": {
+    "2025": {
+      "sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "CreateStream": {
+        "function_rva": "0x26710",
+        "mutex_lock": "0x2677d",
+        "success_mutex_unlock_before_creator": "0x2688b",
+        "std_function_creator_invocation": "0x268d7",
+        "GetAsLeaf": "0x26953",
+        "InsertDefaultKey": "0x26983",
+        "SetConstant": "0x26995",
+        "ShouldAlwaysDecanonicalize": "0x269a3",
+        "GetAsGroup": "0x269b2",
+        "DecanonicalizeAllChildStreamsDeep": "0x269c0",
+        "note": "Default key, constant, and deep decanonicalization are conditional; not every Stream invokes them."
+      },
+      "IndexedInsert": {
+        "function_rva": "0x3bb30",
+        "simple_wrapper_rva": null,
+        "CanStore_virtual_0x1c0": "0x3bb6d",
+        "GetNumStreams_virtual_0x168": "0x3bb81",
+        "reverse_index_update": "0x3bcf8",
+        "path_cache_reset": "0x3bd03",
+        "SetParent": "0x3bd18",
+        "vtable_InsertStream_entry_offset": "0x210",
+        "options_overload_present": false
+      },
+      "GroupRead": {
+        "function_rva": "0x3d4c0",
+        "Read_MatchName": "0x3d556",
+        "IsEndOfGroupMarker": "0x3d560",
+        "ReadAndStore_vtable_offset": "0x1b8",
+        "ReadAndStore_dispatch": "0x3d58c",
+        "ReadAndStore_Indexed": "0x3d6e0",
+        "ReadAndStore_Named": "0x3d7a0",
+        "Indexed_CreateStream": "0x3d717",
+        "Indexed_GetNumStreams": "0x3d72f",
+        "Indexed_InsertStream": "0x3d749",
+        "Indexed_Read_child": "0x3d76d",
+        "Named_CreateStream": "0x3d7de",
+        "Named_UpgradeChildStream": "0x3d898",
+        "Native_Group_WriteUniqueStreamID": "0x43f71",
+        "Native_Group_CanonicalLookup_Write_count": 2,
+        "Native_Group_WriteMatchName": "0x4427b",
+        "Native_Group_WriteEndMarker": "0x442a4"
+      },
+      "limitations": [
+        "No in-host project read/write executed",
+        "No proof of malformed/missing creator recovery",
+        "Raw vtable ABI private, version-specific",
+        "No evidence foreign CNL type can be registered"
+      ]
+    },
+    "2026": {
+      "sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "CreateStream": {
+        "function_rva": "0x27920",
+        "mutex_lock": "0x2798d",
+        "success_mutex_unlock_before_creator": "0x27a04",
+        "std_function_creator_invocation": "0x27a50",
+        "GetAsLeaf": "0x27acc",
+        "InsertDefaultKey": "0x27af5",
+        "SetConstant": "0x27b0b",
+        "ShouldAlwaysDecanonicalize": "0x27b1d",
+        "GetAsGroup": "0x27b2c",
+        "DecanonicalizeAllChildStreamsDeep": "0x27b3a",
+        "note": "Default key, constant, and deep decanonicalization are conditional; not every Stream invokes them."
+      },
+      "IndexedInsert": {
+        "function_rva": "0x3c6a0",
+        "simple_wrapper_rva": "0x3c680",
+        "CanStore_virtual_0x1c0": "0x3c6e5",
+        "GetNumStreams_virtual_0x168": "0x3c6f9",
+        "reverse_index_update": "0x3c860",
+        "path_cache_reset": "0x3c872",
+        "SetParent": "0x3c885",
+        "vtable_InsertStream_entry_offset": "0x218",
+        "options_overload_present": true
+      },
+      "GroupRead": {
+        "function_rva": "0x3e040",
+        "Read_MatchName": "0x3e0d6",
+        "IsEndOfGroupMarker": "0x3e0e0",
+        "ReadAndStore_vtable_offset": "0x1b8",
+        "ReadAndStore_dispatch": "0x3e10c",
+        "ReadAndStore_Indexed": "0x3e260",
+        "ReadAndStore_Named": "0x3e300",
+        "Indexed_CreateStream": "0x3e28c",
+        "Indexed_GetNumStreams": "0x3e2a4",
+        "Indexed_InsertStream": "0x3e2b7",
+        "Indexed_Read_child": "0x3e2d8",
+        "Named_CreateStream": "0x3e333",
+        "Named_UpgradeChildStream": "0x3e3d9",
+        "Native_Group_WriteUniqueStreamID": "0x44ad6",
+        "Native_Group_CanonicalLookup_Write_count": 2,
+        "Native_Group_WriteMatchName": "0x44dfc",
+        "Native_Group_WriteEndMarker": "0x44e1f"
+      },
+      "limitations": [
+        "No in-host project read/write executed",
+        "No proof of malformed/missing creator recovery",
+        "Raw vtable ABI private, version-specific",
+        "No evidence foreign CNL type can be registered"
+      ]
+    }
+  }
+}

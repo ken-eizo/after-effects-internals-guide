@@ -1,6 +1,6 @@
 ---
 status: scope-and-verification-reference
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: Installed Windows AE2025 / AE2026, SDK25.6; other releases unqualified
 ---
@@ -16,6 +16,9 @@ This page is the **evidence boundary** for the technical chapters. It is not a c
 | Built-in native module startup | E2-L TDB/BEE/OM/FLT/aelib x64, 2025+2026 | Cross-DLL Birth calls and registrars | Exact runtime branch behavior, third-party startup |
 | Concrete C++ native Stream | E2-L `OM_Stream` 2025+2026 | Creator, allocator, constructor, vtable, value methods, explicit teardown | Complete private ABI and macOS |
 | Factory registry | E2-L strict machine code 2025+2026 | Eager Creator, canonical prototype, successful unlink/deletion | Exception rollback and surviving document instances |
+| Instance generation | E2-L strict x64 original TDB 2025+2026 | Creator callback after mutex unlock; default key and optional decanonicalization paths | Exact per-flag behavior and plugin unload concurrency |
+| Parent indexed insertion | E2-L strict TDB vtable 2025+2026 | CanStore before insertion, reverse index/capsule cache/SetParent updates | Complete error rollback and all option meanings |
+| Document reconstruction | E2-L native StreamGroup Read/Write 2025+2026 | Child MatchName → CreateStream → InsertStream/Read | Missing foreign Creator AEP behavior and arbitrary roundtrip |
 | Canonical group layout | E2-L TDB/BEE vtable 2025+2026 | `FillInCanonicalUILayout`, separated dimensions, UILayout | All variant branches/editor binding |
 | Paint/Text admissibility | E2-L+E2-X built-ins, AE2026 Paint fixture | Named/indexed grammar, strict Paint child policy | Arbitrary external parent provider |
 | Shape Contents admissibility | E2-L+E2-X AE2026 preflight | Exact Group plus three prefixes | Create/Add/Serialize arbitrary prefixed Stream |

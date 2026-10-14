@@ -1,6 +1,6 @@
 ---
 status: evidence-graded-native-runtime-reconstruction
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E0-H + E0-S + E2-L + E2-X + H
 versions: Windows AE2025 / AE2026, SDK 25.6; macOS private startup unverified
 ---
@@ -101,6 +101,20 @@ Built-in New Shape Layer command
 This is the internal stock type-4 route. The `CreateLayerFromType` switch is built around existing layer families; a generic foreign-layer provider is not demonstrated. A factory-created detached `BEE_VectorLayer` with null parent CompItem is not automatically equivalent to a real attached layer. Evidence: F-VECTOR-037/055–059/067–071.
 
 For built-in Paint / Text property groups, the owner may be an existing AV/Text layer or Effect. A third-party plugin that can **read** an existing stream is not its native type provider.
+
+### How serialized child properties are restored
+
+New strict E2-L evidence traces `TDB_StreamGroup::Read` in both installed versions:
+
+```text
+Read child's serialized TDB_MatchName
+ → virtual ReadAndStore (Named or Indexed group)
+ → TDB_StreamFactory::CreateStream(saved MatchName)
+ → Indexed: CanStore → InsertStream → SetParent
+ → child's native Read(...)
+```
+
+This connection proves a saved child is reconstructed through the **active host class registry**, not simply copied from canonical memory. Native `InsertStream` performs version-sensitive indexed ownership/cache bookkeeping; its public AEGP counterpart does not create new C++ classes. The missing foreign-Creator AEP behavior remains unknown. See [Native instance creation](stream-instance-creation.md), [Indexed insertion](indexed-group-insertion.md), and [StreamGroup Read / Write](document-stream-serialization.md), F-VECTOR-097/098.
 
 ## Phase 5 — The host exposes properties to Timeline / AEGP / scripting
 

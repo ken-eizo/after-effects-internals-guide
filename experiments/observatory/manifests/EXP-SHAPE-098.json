@@ -1,0 +1,22 @@
+{
+  "experiment_id": "EXP-SHAPE-098",
+  "date": "2026-10-15",
+  "status": "PASS installed AE2025 and AE2026 x64 PE exact serialized MatchName-to-Creator-to-child adoption/read path",
+  "source": "experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py",
+  "dataset": "datasets/ae-tdb-document-instance-create-insert-load-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-098-tdb-project-load-serialized-matchname-stream-reconstruction.md",
+  "documentation": [
+    "docs/state-model/native-property-system/document-stream-serialization.md"
+  ],
+  "key_evidence": [
+    "Group Write emits native Stream ID, canonical MatchName, end-of-group marker",
+    "Group Read dispatches vtable ReadAndStore at +0x1b8",
+    "Indexed/Named ReadAndStore both call CreateStream with saved child MatchName",
+    "Indexed loader inserts created child before child virtual Read",
+    "AE2025 vs 2026 virtual InsertStream slot difference corroborated",
+    "Missing creator/malformed archive safe behavior unproven"
+  ],
+  "test_scope": "Original Adobe TDB.dll static only; no foreign AEP roundtrip",
+  "foreign_aep_reopened": false,
+  "private_host_calls": 0
+}

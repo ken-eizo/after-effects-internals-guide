@@ -1,6 +1,6 @@
 ---
 status: architecture-reference
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: SDK25.6 and Windows AE2025/2026
 ---
@@ -61,6 +61,12 @@ Authoring an expression and enabling it is not identical to the expression's **e
 `AEGP_AddStream` is an undoable operation only on an **indexed** group that can admit the registered MatchName. Existing native Stream authoring may involve host command tables, BEE selection and current native editor context. Calling a private `BEE_Cmd...` or TDB method directly is not equivalent to starting a host Undo transaction via a supported API.
 
 In the native internal Shape creation path, a stock command builds a `BEE_NewLayerTask<4>` and ultimately creates and attaches a layer through `BEE_CompItem`. This native task is **not a supported command-provider SDK for a foreign new Layer kind** (F-VECTOR-058/071).
+
+## Native group insertion and deserialization
+
+For indexed native groups, \`TDB_IndexedStreamGroup::InsertStream\` checks **virtual CanStore before mutation**, updates reverse indices and cached capsule paths, then calls \`TDB_StreamBase::SetParent\`. The private vtable position of \`InsertStream\` changes between AE2025 and AE2026: see [Indexed child insertion](indexed-group-insertion.md).
+
+Loading a saved Group also has an explicit per-child pipeline: \`TDB_MatchName::Read → virtual ReadAndStore → TDB_StreamFactory::CreateStream → InsertStream → child Read\`. This is not the public API's \`AEGP_StreamRefH\` lifetime or a documented opaque preservation rule. The full method/callsite reference is [TDB_StreamGroup Read / Write](document-stream-serialization.md) (F-VECTOR-098).
 
 ## Save, reopen, clone and version upgrade
 

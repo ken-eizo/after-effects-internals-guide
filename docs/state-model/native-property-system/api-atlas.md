@@ -1,6 +1,6 @@
 ---
 status: architecture-reference
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: SDK25.6 (exact installed public headers), AE2025 / AE2026 private Windows binaries
 ---
@@ -59,7 +59,10 @@ This is a **bounded observation**; it does not establish nonexistence in a priva
 | `TDB_MatchName` | `TDB.dll` | Type-key object with native comparison | F-VECTOR-065/093 |
 | `Get_AE_StreamFactory` | `TDB.dll` | Native singleton-style factory getter | F-VECTOR-010/093 |
 | `TDB_StreamFactory::RegisterFactoryFunc` | `TDB.dll` | Creator registry, eager canonical object, group setup | F-VECTOR-095 |
-| `TDB_StreamFactory::CreateStream` | `TDB.dll` | Invoke native creator | F-VECTOR-095 |
+| `TDB_StreamFactory::CreateStream` | `TDB.dll` | Copy Creator under mutex, unlock, construct instance, optionally initialize leaf/group | F-VECTOR-095/097 |
+| `TDB_IndexedStreamGroup::InsertStream` | `TDB.dll` | Validate parent CanStore, adopt indexed child, update path caches and parent | F-VECTOR-097 |
+| `TDB_StreamGroup::Read / Write` | `TDB.dll` | SLU native Stream ID, child MatchName and group archive | F-VECTOR-025/098 |
+| `TDB_Named/IndexedStreamGroup::ReadAndStore` | `TDB.dll` | Reconstruct saved native child through a registered Creator and group-specific reader | F-VECTOR-098 |
 | `TDB_StreamFactory::GetCanonicalInstance` | `TDB.dll` | Locate registered native prototype | F-VECTOR-084 |
 | `TDB_StreamFactory::UnregisterFactoryFunc` | `TDB.dll` | Remove prototype/callback and destroy owned prototype | F-VECTOR-096 |
 | `TDB_ScRegisterStreams::Register` | `TDB.dll` | Scoped first-party registration wrapper | F-VECTOR-080/093 |

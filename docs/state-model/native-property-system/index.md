@@ -1,6 +1,6 @@
 ---
 status: active-reconstruction
-last_verified: 2026-10-14
+last_verified: 2026-10-15
 evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: Windows After Effects 2025 / 2026; SDK 25.6; no equivalent macOS native ABI verified
 ---
@@ -18,6 +18,9 @@ This is an *internal architecture guide*, not a supported C++ SDK. It distinguis
 | Host boot / shutdown | When do native type providers and their factories become available? | [Startup to shutdown](startup-to-shutdown.md) |
 | Stored object | What is a `TDB_StreamBase`, `TDB_Stream`, group, leaf or identity path? | [Native stream object model](stream-object-model.md) |
 | Class provider | Who supplies a MatchName, typed C++ Creator and canonical instance? | [Factory registration and lifetime](factory-registration-lifetime.md) |
+| Instance construction | How does an already registered Creator produce a Stream with native default-state initialization? | [Native instance creation](stream-instance-creation.md) |
+| Parent insertion | Which CanStore, index, parent and cached-path steps actually adopt a child? | [Indexed child insertion](indexed-group-insertion.md) |
+| Document persistence | How do saved MatchNames reconstruct native named/indexed Stream children? | [StreamGroup Read / Write](document-stream-serialization.md) |
 | Parent schema | Why does one indexed parent accept a child and another reject it? | [Canonical groups and admission](canonical-groups-admission.md) |
 | Concrete families | What do Paint, Text Animator and Shape Contents *actually* build? | [Paint, Text and Shape](paint-text-shape-hierarchies.md) |
 | Editing lifecycle | How are properties addressed, animated, edited and persisted? | [Property operations](property-operations.md) |
@@ -78,6 +81,9 @@ Important: `E2-L` alone is not a behavioral claim about a fabricated external St
 | Do Adobe DLLs register their own C++ Stream classes across DLL boundaries? | **Yes**, OM/FLT/BEE, both Windows releases | F-VECTOR-093/094, E2-L |
 | Does `RegisterFactoryFunc` immediately build and initialize a native prototype? | **Yes**, including virtual canonical layout dispatch | F-VECTOR-095, E2-L |
 | Does factory unregister release its own prototype? | **Yes**, on the analyzed successful branch | F-VECTOR-096, E2-L |
+| Does native instance creation invoke the registered callback while holding the factory mutex? | **No on the verified success path**; callback is copied under lock, called after unlock | F-VECTOR-097, E2-L |
+| Does indexed child insertion enforce native CanStore before changing parent state? | **Yes**, then index/cache and SetParent operations | F-VECTOR-097, E2-L |
+| Can the native loader reconstruct a child without consulting registered Stream Creators? | The verified Named/Indexed loaders **call CreateStream using the saved MatchName** | F-VECTOR-098, E2-L |
 | Can AEGP inspect brush-generated native Paint Strokes? | **Yes**, AE2026 read-only Paint fixture | F-VECTOR-083/087, E2-X |
 | Can an unknown Stream class automatically join Paint/Text/Shape? | **No such general rule**; separate grammar/factory gates | F-VECTOR-084/065, E2-L + E2-X |
 | Can a third-party AEX declare a completely new host-native C++ Stream/Group via SDK 25.6? | **No supported registrar identified in the scoped SDK audit** | F-VECTOR-088, E0-H/E2-L |
