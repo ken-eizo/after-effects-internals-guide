@@ -1,0 +1,17 @@
+{
+  "experiment_id": "EXP-SHAPE-090",
+  "date": "2026-10-14",
+  "status": "PASS static CNLPrivateTDBDisposable AEX safety preflight and build; NO private host registry runtime test",
+  "source": "D:/Developer/ShapeLayerAE/labs/native_tdb_registration_disposable",
+  "aex_path": "D:/Developer/ShapeLayerAE/build/native_tdb_registration_disposable/Release/CNLPrivateTDBDisposable.aex",
+  "aex_sha256": "c91ffce77be481a394c243c0de64568487d3f24e5864cbba9376eaf1500b5622",
+  "private_host_registered": false,
+  "private_host_mutated": false,
+  "installed_into_normal_ae": false,
+  "risks": [
+    "Private Adobe ABI, non-rollbackable global changes, host crashes, AEP or preference corruption in nonisolated process"
+  ],
+  "approval_required": "Explicit consent for disposable isolated host test not currently obtained",
+  "product_status": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "finding": "research/findings/F-VECTOR-090-disposable-private-tdb-registrar-not-host-certified.md"
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-14",
+  "coverage": "All installed AEX under Required and Plug-ins, including user third-party add-ons; aggregate only",
+  "privacy": "No third-party plugin names or file paths are stored in the published dataset",
+  "scope_limitations": [
+    "Direct PE import table ONLY. Dynamic symbol lookup, delay import directories and host-provided suite mechanisms not excluded",
+    "Adobe built-in Paint stream registry runs from BEE.dll startup; external TDB class admission still unproven",
+    "Cineware scene AEX name does NOT establish BEE_Layer class registration"
+  ],
+  "versions": {
+    "2025": {
+      "installed_aex_files": 481,
+      "all_import_table_parsed": true,
+      "direct_tdb_importers": 22,
+      "direct_bee_importers": 50,
+      "direct_native_factory_register_importers": 0,
+      "registrar_symbols_searched": [
+        "?Register@TDB_ScRegisterStreams@@",
+        "?RegisterFactoryFunc@TDB_StreamFactory@@",
+        "?UnregisterFactoryFunc@TDB_StreamFactory@@",
+        "?RegisterStreams@BEE_AVLayer@@",
+        "?RegisterStreams@BEE_Layer@@"
+      ],
+      "selected_adobe_bundled_module_categories": {
+        "Cineware_AE_SceneLayer.aex": {
+          "required": false,
+          "imports_tdb": false,
+          "imports_bee": false
+        },
+        "SVGImporter.aex": {
+          "required": false,
+          "imports_tdb": true,
+          "imports_bee": true
+        },
+        "AEGPDriver.aex": {
+          "required": true,
+          "imports_tdb": true,
+          "imports_bee": true
+        },
+        "Paint Palette.aex": {
+          "required": true,
+          "imports_tdb": false,
+          "imports_bee": true
+        },
+        "Paint.aex": {
+          "required": true,
+          "imports_tdb": false,
+          "imports_bee": false
+        },
+        "Roto Brush.aex": {
+          "required": true,
+          "imports_tdb": false,
+          "imports_bee": true
+        }
+      }
+    },
+    "2026": {
+      "installed_aex_files": 633,
+      "all_import_table_parsed": true,
+      "direct_tdb_importers": 23,
+      "direct_bee_importers": 52,
+      "direct_native_factory_register_importers": 0,
+      "registrar_symbols_searched": [
+        "?Register@TDB_ScRegisterStreams@@",
+        "?RegisterFactoryFunc@TDB_StreamFactory@@",
+        "?UnregisterFactoryFunc@TDB_StreamFactory@@",
+        "?RegisterStreams@BEE_AVLayer@@",
+        "?RegisterStreams@BEE_Layer@@"
+      ],
+      "selected_adobe_bundled_module_categories": {
+        "Cineware_AE_SceneLayer.aex": {
+          "required": false,
+          "imports_tdb": false,
+          "imports_bee": false
+        },
+        "SVGImporter.aex": {
+          "required": false,
+          "imports_tdb": true,
+          "imports_bee": true
+        },
+        "AEGPDriver.aex": {
+          "required": true,
+          "imports_tdb": true,
+          "imports_bee": true
+        },
+        "Paint Palette.aex": {
+          "required": true,
+          "imports_tdb": false,
+          "imports_bee": true
+        },
+        "Paint.aex": {
+          "required": true,
+          "imports_tdb": false,
+          "imports_bee": false
+        },
+        "Roto Brush.aex": {
+          "required": true,
+          "imports_tdb": true,
+          "imports_bee": true
+        }
+      }
+    }
+  }
+}

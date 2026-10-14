@@ -112,3 +112,10 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 - F-VECTOR-088: インストール済み SDK25.6 の公開ヘッダー70ファイルを検査。`AEGP_RegisterSuite5` 12機能・`AEGP_DynamicStreamSuite4` 26機能を列挙したが、任意の C++ ネイティブ Stream クラス/親 UILayout を登録する公開インターフェースを確認できず。SDK26.5公開更新履歴も外部 Stream 型 Provider は明記していない。
 - 完成判定: `datasets/chape_host_native_timeline_product_gate_20261014.json` は **`NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`**。CNL自作アニメーションエンジンのテストと外部 AEX の Paint 調査は合格だが、Adobe本体所有の独自型は未実現。
 - Adobe SDKチームへの正規問い合わせ草案: `docs/vector-shape-system/adobe-native-property-provider-sdk-inquiry.md`。未送信。公開されていない内部 ABI を製品ホストで無断実行して成功扱いにしない。
+
+## F-VECTOR-089 / 090 — AE純正 AEX 横断監査と危険な private registrar の分離（2026-10-14）
+
+- AE2025の481件／AE2026の633件のインストール済み AEX を静的に検査。BEE.dll や TDB.dll を直接利用する Adobe AEX が存在する一方、指定した `TDB_StreamFactory::RegisterFactoryFunc`／`TDB_ScRegisterStreams::Register` の直接インポートは **0件**（動的解決・Suite・delay-import は調査外）。ユーザーの第三者プラグイン名は公開データセットに含めていない。
+- `CNLPrivateTDBDisposable.aex` の Release ビルドと静的安全ゲート監査は PASS（SHA256 `c91ffce77be481a394c243c0de64568487d3f24e5864cbba9376eaf1500b5622`）。**非公開 TDB レジストリへの実機書込は未実行。Adobe 本番環境への導入は禁止**。あくまで、明示的な危険性同意を得た使い捨て隔離 AE 環境の候補実験。
+- 上記の結果は、独自の AE ネイティブ Stream/Group 型が完成したことを意味しない。製品判定は引き続き `NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`。
+- 一次資料は `research/findings/F-VECTOR-089-aex-import-survey-registered-native-stream-owner-gap.md` と `research/findings/F-VECTOR-090-disposable-private-tdb-registrar-not-host-certified.md`。
