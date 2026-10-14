@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-SHAPE-086",
+  "date": "2026-10-14",
+  "status": "PASS offline BEE exported canonical grammar census in both installed Windows AE2025/AE2026",
+  "source": "experiments/vector-shape/probe-src/tools/census_all_bee_canonical_grammar.py",
+  "dataset": "datasets/ae-bee-canonical-grammar-census-2025-2026.json",
+  "ae2025": {
+    "canonical_methods": 102,
+    "recognized_child_references": 515
+  },
+  "ae2026": {
+    "canonical_methods": 104,
+    "recognized_child_references": 527
+  },
+  "limitations": "Only exported BEE match-name references near actual TDB_GetCanonicalStream import calls are counted. Shape vector internals have unresolved references. Not unique types or host-added custom Streams.",
+  "foreign_stream_registration_proven": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-086-automatic-bee-canonical-property-grammar-census.md"
+}

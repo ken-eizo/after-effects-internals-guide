@@ -103,3 +103,5 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 - `research/findings/F-VECTOR-083-paint-inhost-native-stream-hierarchy-admission.md` — **AE2026 実機 Paint 35 Stream + CanAdd 実測**
 - `research/findings/F-VECTOR-084-tdb-native-two-gate-paint-text-canonical-policy.md` — Paint / Text canonical grammar
 - `research/findings/F-VECTOR-085-paint-native-leaf-keyframe-metadata-probe.md` — v2 Inspector の未実機ビルド
+
+- `research/findings/F-VECTOR-086-automatic-bee-canonical-property-grammar-census.md` — Paint/Text/Shape/Layer の FillInCanonicalUILayout を一括抽出（AE2025 102定義/515参照、AE2026 104定義/527参照。エクスポート名に基づく部分抽出）。
