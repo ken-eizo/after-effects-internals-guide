@@ -50,6 +50,25 @@ public:
           (int)kind,(long)count,(int)matchErr,(int)nameErr,(int)groupErr,(int)countErr);
   ++nodes;
   --budget;
+  // This is purely a parent-admission query, never a creator invocation.
+  // Even TRUE does not prove an unknown TDB Stream class can be instantiated.
+  if(container && kind==AEGP_StreamGroupingType_INDEXED_GROUP &&
+     string(match)=="ADBE Paint Group"){
+   const char* candidates[]={
+     "ADBE Paint Atom",
+     "ADBE Paint Nibbler Atom",
+     "ADBE Paint Shape",
+     "ADBE Vector Group",
+     "CNL:PaintAtom",
+     "ADBE Paint Atom - CNLProbe"
+   };
+   for(const char* candidate:candidates){
+    A_Boolean can=FALSE;
+    const A_Err ce=suites.DynamicStreamSuite2()->AEGP_CanAddStream(parent,candidate,&can);
+    fprintf(output,"can_add\t%s\t%s\t%d\t%d\n",path.c_str(),candidate,(int)(can!=FALSE),(int)ce);
+    if(ce)++errors;
+   }
+  }
   if(!container||countErr||count<0)return;
   const A_long limit=min<A_long>(count,120);
   for(A_long i=0;i<limit&&budget>0;++i){

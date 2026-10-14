@@ -27,3 +27,7 @@ python D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe
 PASS: Release AEX build, 4/4 CTest, x64 PiPL and C ABI verifier, static inspector read-only whitelist/blacklist. **NOT PROVEN:** newly registered native custom Stream or foreign Layer ownership. No AE installation mutated and no private Adobe C++ call made.
 
 Details: `research/findings/F-VECTOR-082-sdk-streamie-and-readonly-paint-inspector.md`.
+
+## Read-only paint parent-admission matrix (final offline revision)
+
+The compiled inspector now asks `AEGP_CanAddStream` on an actual indexed `ADBE Paint Group` for the built-in `ADBE Paint Atom`, `ADBE Paint Nibbler Atom`, `ADBE Paint Shape`, a foreign built-in family `ADBE Vector Group`, and two synthetic names `CNL:PaintAtom` and `ADBE Paint Atom - CNLProbe`. The `can_add` TSV rows include host return codes and errors. **All six runtime results remain UNMEASURED**, pending a user-initiated host run. This query does not call `AddStream` or allocate private native classes. The CNL Windows Release build, CTest 4/4, and PE safety checks passed again after adding it.

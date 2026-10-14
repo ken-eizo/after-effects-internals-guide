@@ -10,7 +10,7 @@ s=sdk.read_text(encoding='utf-8',errors='replace')
 for symbol in ['"ADBE Paint Group"','AEGP_GetNewStreamRefByIndex','AEGP_ReorderStream','AEGP_DuplicateStream','AEGP_DeleteStream','AEGP_SetStreamName']:
  assert symbol in s,('missing SDK Streamie sample usage',symbol)
 v=inspect.read_text(encoding='utf-8')
-for token in ['"ADBE Paint"','AEGP_GetNewStreamRefByIndex','AEGP_GetStreamGroupingType','AEGP_GetNewStreamRefForLayer','AEGP_StreamGroupName_EFFECT_PARADE','AEGP_DisposeStream','ChapeLayer_PaintNativeHierarchy.tsv','host_project_mutated\\t0']:
+for token in ['"ADBE Paint"','AEGP_GetNewStreamRefByIndex','AEGP_GetStreamGroupingType','AEGP_GetNewStreamRefForLayer','AEGP_StreamGroupName_EFFECT_PARADE','AEGP_CanAddStream','CNL:PaintAtom','ADBE Paint Atom - CNLProbe','AEGP_DisposeStream','ChapeLayer_PaintNativeHierarchy.tsv','host_project_mutated\\t0']:
  assert token in v,('missing Paint inspector',token)
 for bad in ('PaintBucket','Brush_Strokes','AEGP_AddStream(','AEGP_DeleteStream(','AEGP_DuplicateStream(','AEGP_ReorderStream(','AEGP_SetStreamName(','TDB_ScRegisterStreams','BEE_PaintAtom::Create'):
  assert bad not in v,('unsafe or wrong Paint kind',bad)

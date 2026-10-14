@@ -26,13 +26,13 @@ The command, **when separately installed and run by the user in a disposable AE*
 
 `%TEMP%/ChapeLayer_PaintNativeHierarchy.tsv`
 
-It has bounded depth (8), children per group (120), total nodes (500), uses AEGP_GetNewStreamRefByIndex for both named/indexed groups as explicitly allowed by the current SDK headers, avoids `GetNewStreamRefByMatchname` on INDEXED, guards camera/light, disposes refs, and **never invokes mutation operations**.
+It has bounded depth (8), children per group (120), total nodes (500), uses AEGP_GetNewStreamRefByIndex for both named/indexed groups as explicitly allowed by the current SDK headers, avoids `GetNewStreamRefByMatchname` on INDEXED, guards camera/light, disposes refs, and **never invokes mutation operations**. It now also calls read-only `AEGP_CanAddStream` ONLY on the actual indexed `ADBE Paint Group`, for `ADBE Paint Atom`, `ADBE Paint Nibbler Atom`, `ADBE Paint Shape`, `ADBE Vector Group`, `CNL:PaintAtom`, and `ADBE Paint Atom - CNLProbe`. These are **queries**, not AddStream, and none of their runtime return values is known until a host run.
 
 Menu registration error reporting was extended in `ChapeLayer_MenuRegistration.tsv` with `paint_get_error` and `paint_insert_error`. Missing Paint reports `paint_found=0` rather than manufacturing a brush stroke.
 
 Native C++ Release build: PASS.
 CNL CTest suites: 4/4 PASS.
-`verify_native_shape_aex.py`: PASS, x64 / PiPL / AEGP, all CNL ABI exports, zero direct BEE/TDB/FLT imports; AEX SHA256 `9aecd60302622f68087146f52fd305be2cfe476f467e147183cbb8e733cd9192`.
+`verify_native_shape_aex.py`: PASS, x64 / PiPL / AEGP, all CNL ABI exports, zero direct BEE/TDB/FLT imports; AEX SHA256 `3899d633ee7af9c7782b95b89fda1c7188c8212e2ba97430aceaf0d1b5244272`.
 `verify_paint_sdk_and_inspector.py`: PASS inspected SDK source, guarded inspector source and new binary.
 
 ## Host validation remains pending
