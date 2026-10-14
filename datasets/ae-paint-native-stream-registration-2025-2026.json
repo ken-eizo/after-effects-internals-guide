@@ -1,0 +1,690 @@
+{
+  "2025": {
+    "version": "2025",
+    "BEE": {
+      "path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\BEE.dll",
+      "sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "avlayer_register": "0x28fa80",
+      "helper_edges": [
+        {
+          "helper_rva": "0x25c5e0",
+          "hits": [
+            {
+              "constructor_rva": "0x47ce0",
+              "constructor_symbol": "?Create@BEE_PaintCloneLayerStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25c9f8",
+              "names": [
+                {
+                  "rva": "0x15b09b0",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_LAYER@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneLayerStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25ca20",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47d80",
+              "constructor_symbol": "?Create@BEE_PaintClonePositionStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25ca2a",
+              "names": [
+                {
+                  "rva": "0x15b09c0",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_POSITION@@3V?$TDB_DerivedMatchName@VBEE_PaintClonePositionStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25ca52",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47e20",
+              "constructor_symbol": "?Create@BEE_PaintCloneTimeShiftStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25ca5c",
+              "names": [
+                {
+                  "rva": "0x15b09d0",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_TIME_SHIFT@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneTimeShiftStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25ca84",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47ec0",
+              "constructor_symbol": "?Create@BEE_PaintCloneTimeStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25ca8e",
+              "names": [
+                {
+                  "rva": "0x15b09e0",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_TIME@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneTimeStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cab6",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x484a0",
+              "constructor_symbol": "?Create@BEE_PaintTransform@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cb88",
+              "names": [
+                {
+                  "rva": "0x15b0930",
+                  "symbol": "?BEE_StreamGroupName_PAINT_TRANSFORM@@3V?$TDB_DerivedMatchName@VBEE_PaintTransform@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cbb0",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48410",
+              "constructor_symbol": "?Create@BEE_PaintTransferStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cbec",
+              "names": [
+                {
+                  "rva": "0x15b0980",
+                  "symbol": "?BEE_StreamName_PAINT_TRANSFER@@3V?$TDB_DerivedMatchName@VBEE_PaintTransferStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cc14",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47f60",
+              "constructor_symbol": "?Create@BEE_PaintColorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cc50",
+              "names": [
+                {
+                  "rva": "0x15b08b0",
+                  "symbol": "?BEE_StreamName_PAINT_COLOR@@3V?$TDB_DerivedMatchName@VBEE_PaintColorStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cc78",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48300",
+              "constructor_symbol": "?Create@BEE_PaintShapeStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25ce44",
+              "names": [
+                {
+                  "rva": "0x15b0860",
+                  "symbol": "?BEE_StreamName_PAINT_SHAPE@@3V?$TDB_DerivedMatchName@VBEE_PaintShapeStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25ce6c",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48270",
+              "constructor_symbol": "?Create@BEE_PaintProperties@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cea8",
+              "names": [
+                {
+                  "rva": "0x15b0870",
+                  "symbol": "?BEE_StreamGroupName_PAINT_PROPERTIES@@3V?$TDB_DerivedMatchName@VBEE_PaintProperties@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25ced0",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x481e0",
+              "constructor_symbol": "?Create@BEE_PaintNibblerProperties@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25ceda",
+              "names": [
+                {
+                  "rva": "0x15b0880",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_PROPERTIES@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerProperties@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cf02",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x480e0",
+              "constructor_symbol": "?Create@BEE_PaintNibblerAtom@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cf0c",
+              "names": [
+                {
+                  "rva": "0x15b0820",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_ATOM@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerAtom@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cf34",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48140",
+              "constructor_symbol": "?Create@BEE_PaintNibblerGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cf3e",
+              "names": [
+                {
+                  "rva": "0x15b0800",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_GROUP@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerGroup@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cf66",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47c40",
+              "constructor_symbol": "?Create@BEE_PaintAtom@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cf70",
+              "names": [
+                {
+                  "rva": "0x15b0810",
+                  "symbol": "?BEE_StreamGroupName_PAINT_ATOM@@3V?$TDB_DerivedMatchName@VBEE_PaintAtom@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cf98",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48050",
+              "constructor_symbol": "?Create@BEE_PaintLayerParam@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25cfa2",
+              "names": [
+                {
+                  "rva": "0x15b0830",
+                  "symbol": "?BEE_StreamGroupName_PAINT_LAYER_PARAM@@3V?$TDB_DerivedMatchName@VBEE_PaintLayerParam@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25cfca",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x48390",
+              "constructor_symbol": "?Create@BEE_PaintStrokesGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25d006",
+              "names": [
+                {
+                  "rva": "0x15b07e0",
+                  "symbol": "?BEE_StreamGroupName_PAINT_STROKES_GROUP@@3V?$TDB_DerivedMatchName@VBEE_PaintStrokesGroup@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25d02e",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47ff0",
+              "constructor_symbol": "?Create@BEE_PaintEffect@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x25d038",
+              "names": [
+                {
+                  "rva": "0x15b07c0",
+                  "symbol": "?BEE_StreamGroupName_PAINT_EFFECT@@3V?$TDB_DerivedMatchName@VBEE_PaintEffect@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x25d060",
+                  "iat": "0xebe3e8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PaintAEX": {
+      "path": "C:\\Program Files\\Adobe\\Adobe After Effects 2025\\Support Files\\Required\\Paint.aex",
+      "sha256": "50ddd78f6e7d5352ed4e156267d971f70a32e44bb62b02956f2916ce5272aef4",
+      "size_bytes": 42504,
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140.dll",
+        "u.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "exports": [
+        "??0RQSession@@IEAA@XZ",
+        "??0RQSession@@QEAA@AEBV0@@Z",
+        "??1RQSession@@UEAA@XZ",
+        "??4RQSession@@QEAAAEAV0@AEBV0@@Z",
+        "??_7RQSession@@6B@",
+        "EffectMainExtra",
+        "EffectMainExtra2",
+        "PluginDataEntryFunction"
+      ]
+    }
+  },
+  "2026": {
+    "version": "2026",
+    "BEE": {
+      "path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\BEE.dll",
+      "sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "avlayer_register": "0x298cb0",
+      "helper_edges": [
+        {
+          "helper_rva": "0x267190",
+          "hits": [
+            {
+              "constructor_rva": "0x475c0",
+              "constructor_symbol": "?Create@BEE_PaintCloneLayerStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x2675da",
+              "names": [
+                {
+                  "rva": "0x16619b8",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_LAYER@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneLayerStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267602",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47650",
+              "constructor_symbol": "?Create@BEE_PaintClonePositionStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x26760c",
+              "names": [
+                {
+                  "rva": "0x16619c8",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_POSITION@@3V?$TDB_DerivedMatchName@VBEE_PaintClonePositionStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267634",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x476e0",
+              "constructor_symbol": "?Create@BEE_PaintCloneTimeShiftStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x26763e",
+              "names": [
+                {
+                  "rva": "0x16619d8",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_TIME_SHIFT@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneTimeShiftStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267666",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47770",
+              "constructor_symbol": "?Create@BEE_PaintCloneTimeStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267670",
+              "names": [
+                {
+                  "rva": "0x16619e8",
+                  "symbol": "?BEE_StreamName_PAINT_CLONE_TIME@@3V?$TDB_DerivedMatchName@VBEE_PaintCloneTimeStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267698",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47d00",
+              "constructor_symbol": "?Create@BEE_PaintTransform@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x26776a",
+              "names": [
+                {
+                  "rva": "0x1661938",
+                  "symbol": "?BEE_StreamGroupName_PAINT_TRANSFORM@@3V?$TDB_DerivedMatchName@VBEE_PaintTransform@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267792",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47c80",
+              "constructor_symbol": "?Create@BEE_PaintTransferStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x2677ce",
+              "names": [
+                {
+                  "rva": "0x1661988",
+                  "symbol": "?BEE_StreamName_PAINT_TRANSFER@@3V?$TDB_DerivedMatchName@VBEE_PaintTransferStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x2677f6",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47800",
+              "constructor_symbol": "?Create@BEE_PaintColorStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267832",
+              "names": [
+                {
+                  "rva": "0x16618b8",
+                  "symbol": "?BEE_StreamName_PAINT_COLOR@@3V?$TDB_DerivedMatchName@VBEE_PaintColorStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x26785a",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47b80",
+              "constructor_symbol": "?Create@BEE_PaintShapeStream@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267a26",
+              "names": [
+                {
+                  "rva": "0x1661868",
+                  "symbol": "?BEE_StreamName_PAINT_SHAPE@@3V?$TDB_DerivedMatchName@VBEE_PaintShapeStream@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267a4e",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47af0",
+              "constructor_symbol": "?Create@BEE_PaintProperties@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267a8a",
+              "names": [
+                {
+                  "rva": "0x1661878",
+                  "symbol": "?BEE_StreamGroupName_PAINT_PROPERTIES@@3V?$TDB_DerivedMatchName@VBEE_PaintProperties@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267ab2",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47a60",
+              "constructor_symbol": "?Create@BEE_PaintNibblerProperties@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267abc",
+              "names": [
+                {
+                  "rva": "0x1661888",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_PROPERTIES@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerProperties@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267ae4",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47960",
+              "constructor_symbol": "?Create@BEE_PaintNibblerAtom@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267aee",
+              "names": [
+                {
+                  "rva": "0x1661828",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_ATOM@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerAtom@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267b16",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x479c0",
+              "constructor_symbol": "?Create@BEE_PaintNibblerGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267b20",
+              "names": [
+                {
+                  "rva": "0x1661808",
+                  "symbol": "?BEE_StreamGroupName_PAINT_NIBBLER_GROUP@@3V?$TDB_DerivedMatchName@VBEE_PaintNibblerGroup@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267b48",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47520",
+              "constructor_symbol": "?Create@BEE_PaintAtom@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267b52",
+              "names": [
+                {
+                  "rva": "0x1661818",
+                  "symbol": "?BEE_StreamGroupName_PAINT_ATOM@@3V?$TDB_DerivedMatchName@VBEE_PaintAtom@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267b7a",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x478e0",
+              "constructor_symbol": "?Create@BEE_PaintLayerParam@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267b84",
+              "names": [
+                {
+                  "rva": "0x1661838",
+                  "symbol": "?BEE_StreamGroupName_PAINT_LAYER_PARAM@@3V?$TDB_DerivedMatchName@VBEE_PaintLayerParam@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267bac",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47c00",
+              "constructor_symbol": "?Create@BEE_PaintStrokesGroup@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267be8",
+              "names": [
+                {
+                  "rva": "0x16617e8",
+                  "symbol": "?BEE_StreamGroupName_PAINT_STROKES_GROUP@@3V?$TDB_DerivedMatchName@VBEE_PaintStrokesGroup@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267c10",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            },
+            {
+              "constructor_rva": "0x47880",
+              "constructor_symbol": "?Create@BEE_PaintEffect@@SAPEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z",
+              "lea_rva": "0x267c1a",
+              "names": [
+                {
+                  "rva": "0x16617c8",
+                  "symbol": "?BEE_StreamGroupName_PAINT_EFFECT@@3V?$TDB_DerivedMatchName@VBEE_PaintEffect@@@@B"
+                }
+              ],
+              "register_calls": [
+                {
+                  "rva": "0x267c42",
+                  "iat": "0xf178c8",
+                  "dll": "TDB.dll",
+                  "symbol": "?Register@TDB_ScRegisterStreams@@QEAAXAEBVTDB_MatchName@@V?$function@$$A6APEAVTDB_StreamBase@@AEBVTDB_MatchName@@PEAVTDB_StreamFactory@@_NI2@Z@std@@_N@Z"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "PaintAEX": {
+      "path": "D:\\Adobe\\Adobe After Effects 2026\\Support Files\\Required\\Paint.aex",
+      "sha256": "b1190b667f27521540f640bf18f81468b7549a660115209b5312e791087fa62e",
+      "size_bytes": 41480,
+      "imports": [
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "kernel32.dll",
+        "msvcp140.dll",
+        "u.dll",
+        "vcruntime140.dll",
+        "vcruntime140_1.dll"
+      ],
+      "exports": [
+        "??0RQSession@@IEAA@XZ",
+        "??0RQSession@@QEAA@AEBV0@@Z",
+        "??1RQSession@@UEAA@XZ",
+        "??4RQSession@@QEAAAEAV0@AEBV0@@Z",
+        "??_7RQSession@@6B@",
+        "EffectMainExtra",
+        "EffectMainExtra2",
+        "PluginDataEntryFunction"
+      ]
+    }
+  }
+}

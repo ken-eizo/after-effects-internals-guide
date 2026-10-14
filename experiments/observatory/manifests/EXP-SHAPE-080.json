@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-080",
+  "date": "2026-10-14",
+  "status": "PASS 2/2 AE2025/AE2026 static native Paint registration; external provider admission NOT DEMONSTRATED",
+  "source": "experiments/vector-shape/probe-src/tools/verify_paint_native_registration.py",
+  "dataset": "datasets/ae-paint-native-stream-registration-2025-2026.json",
+  "evidence": "Original SHA-pinned Paint.aex and BEE.dll; verified BEE_AVLayer::RegisterStreams -> BEE_Paint*::Create + MatchName -> TDB_ScRegisterStreams::Register imported from TDB.dll",
+  "public_sdk_paint_stream_type_registrar_found": false,
+  "public_sdk_negative_scope": "Exact Paint Suite name absent from 70 SDK25.6 public headers; not an exhaustive proof of no private provider",
+  "foreign_TDB_stream_admission_proven": false,
+  "host_accepted_foreign_BEE_Layer_proven": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-080-adobe-paint-aex-native-tdb-registration.md"
+}
