@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-087",
+  "date": "2026-10-14",
+  "status": "PASS actual AE2026 AEGP Paint property value metadata run",
+  "source": "experiments/vector-shape/probe-src/tools/verify_paint_host_v2_receipt.py",
+  "dataset": "datasets/ae-paint-native-hierarchy-host-v2-2026-20261014.tsv",
+  "summary": "datasets/ae-paint-native-hierarchy-host-v2-2026-20261014-summary.json",
+  "source_sha256": "860f60b2d25b57ebe698afa778dcee1cba06cfac76e0060f91f11a34ef529553",
+  "paint_strokes": 6,
+  "stream_nodes": 170,
+  "leaf_meta": 142,
+  "can_vary": 109,
+  "api_errors": 0,
+  "paint_path_type": "AEGP_StreamType_NO_DATA",
+  "third_party_native_stream_registered": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-087-inhost-paint-v2-value-types-native-metadata.md"
+}

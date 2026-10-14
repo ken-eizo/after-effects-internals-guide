@@ -1,0 +1,19 @@
+{
+  "experiment_id": "EXP-SHAPE-088",
+  "date": "2026-10-14",
+  "status": "PASS public SDK scope audit; desired host-native custom type product NOT DELIVERED",
+  "source": "experiments/vector-shape/probe-src/tools/verify_public_sdk_native_provider_gap.py",
+  "audit": "experiments/vector-shape/probe-src/tools/verify_native_host_product_gates.py",
+  "datasets": [
+    "datasets/ae25_6_public_native_stream_provider_api_scope_audit.json",
+    "datasets/chape_host_native_timeline_product_gate_20261014.json"
+  ],
+  "scanned_public_sdk_headers": 70,
+  "register_suite5_methods": 12,
+  "dynamic_stream_suite4_methods": 26,
+  "supported_custom_tdb_stream_provider_found": false,
+  "third_party_native_stream_registered": false,
+  "private_host_calls": 0,
+  "product_acceptance": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "finding": "research/findings/F-VECTOR-088-public-sdk-25_6-custom-timeline-type-registration-gap.md"
+}

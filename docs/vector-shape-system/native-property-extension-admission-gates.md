@@ -105,3 +105,10 @@ Shape Contents は別規則を持ち、未知の `ADBE Vector Shape - ...` 名�
 - `research/findings/F-VECTOR-085-paint-native-leaf-keyframe-metadata-probe.md` — v2 Inspector の未実機ビルド
 
 - `research/findings/F-VECTOR-086-automatic-bee-canonical-property-grammar-census.md` — Paint/Text/Shape/Layer の FillInCanonicalUILayout を一括抽出（AE2025 102定義/515参照、AE2026 104定義/527参照。エクスポート名に基づく部分抽出）。
+
+## 2026-10-14 実機 v2 検証・公開 SDK 範囲監査の追加
+
+- F-VECTOR-087: AE2026 の実際の Paint v2 調査で Brush 6本 / native Stream 170 / leaf metadata 142 / `canVaryOverTime=TRUE` 109件 / エラー0件。Paint Path は `AEGP_StreamType_NO_DATA`（独自の内部値型を持つため通常の公開 Stream 値 API に出ない）。これは外部型登録成功を意味しない。
+- F-VECTOR-088: インストール済み SDK25.6 の公開ヘッダー70ファイルを検査。`AEGP_RegisterSuite5` 12機能・`AEGP_DynamicStreamSuite4` 26機能を列挙したが、任意の C++ ネイティブ Stream クラス/親 UILayout を登録する公開インターフェースを確認できず。SDK26.5公開更新履歴も外部 Stream 型 Provider は明記していない。
+- 完成判定: `datasets/chape_host_native_timeline_product_gate_20261014.json` は **`NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM`**。CNL自作アニメーションエンジンのテストと外部 AEX の Paint 調査は合格だが、Adobe本体所有の独自型は未実現。
+- Adobe SDKチームへの正規問い合わせ草案: `docs/vector-shape-system/adobe-native-property-provider-sdk-inquiry.md`。未送信。公開されていない内部 ABI を製品ホストで無断実行して成功扱いにしない。

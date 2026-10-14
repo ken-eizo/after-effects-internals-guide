@@ -1,0 +1,223 @@
+{
+  "audit_time": "2026-10-14",
+  "scope": "Installed Adobe After Effects SDK 25.6 Examples/Headers only",
+  "sdk_root": "E:\\ae25.6_61.64bit.AfterEffectsSDK\\Examples\\Headers",
+  "scanned_header_count": 70,
+  "scanned_file_hashes": {
+    "A.h": "96e4363bab5a28a230e8c68201ff4a7031e816f8c07f0a1b705cbb8b69db7a96",
+    "adobesdk\\config\\AdobesdkTypes.h": "c42a6da981dd26a65775df313d7d0382367bba143465a21c5039c5f7cb9439d6",
+    "adobesdk\\config\\PostConfig.h": "d8498d3669469dca2439f7cac36093226ea7f191eda9d9928a8f77a7b40bce2e",
+    "adobesdk\\config\\PreConfig.h": "078079dc305335cbe7866030e61ef1a937172019ad95103aa5b93bca27a3c35b",
+    "adobesdk\\drawbotsuite\\DrawbotSuiteTypes.h": "67682c6327edb99bc6914e489fc49c42f7dd659a8757604711e534222bb6d19c",
+    "adobesdk\\DrawbotSuite.h": "c5c4f294b6c7f4628654172bca75c7b256ddfe302ce5f0dbaf08a0cd2156f2ad",
+    "AE_AdvEffectSuites.h": "0a7e4c0c5da5d0d1e395d551a94eb7340066111a84cca92b37aa31a719eaec63",
+    "AE_CacheOnLoadSuite.h": "e72dd815e7d36e9e3a8ccc0792ced44649ef60b59bab8132fc4045ee73ec315b",
+    "AE_ChannelSuites.h": "45ce3f0a1143ca05e85d455843eba017e9de5330d13348ea2997bc95eb905088",
+    "AE_ComputeCacheSuite.h": "40e2bc8df1a4e994c7c36724d746e44e1894f254f6fac46e3b500ff9655893cc",
+    "AE_CreatorInfo.h": "8e3f4a763d1c95ba82e7c6e8d5360f6614989d4b71797b9c51c60f2be2b2a79b",
+    "AE_Effect.h": "5432df9bb447cefce2f96c1477d6beccd4686b7236d460c803beab76dae1d537",
+    "AE_EffectCB.h": "33524c0b8cbbf7b0a3b442dce45149d231e1b9c69ca7ab1d219ce4f79d324180",
+    "AE_EffectCBSuites.h": "9d6ea76a6cf44d6103b65aa01229fc72979404b94694661437089fff0bf3c271",
+    "AE_EffectGPUSuites.h": "55fb5dddbb0c33dfc218f9cb9ff77589803f6a6c3080fe889d87bccef242a321",
+    "AE_EffectPixelFormat.h": "af63f900d3c602e94e48aa897a64b983f523734f057f662019f0939c9d2ac63f",
+    "AE_EffectSuites.h": "718fc38aa700dc0af0372f6a54cbfcfe3cfec770bfa7463f2e24dd73b204cdba",
+    "AE_EffectSuitesHelper.h": "95dcfaa64891fb3fc3e25e293d70586f21df4c0773e04e6afa60167ed1555765",
+    "AE_EffectSuitesOld.h": "e1de2a7c7a88bf10a711b0c07b5c90115dbae59361838c1f93b704e7e464fd4e",
+    "AE_EffectUI.h": "ffec9e25ac13a278f3ef0889bb33968fb338f41942ad16d13b3b53f03a235075",
+    "AE_EffectVers.h": "6e02783ee9a90fa0906c0bd2242c3752c71e563a8eec5123ae852247bf56d2b4",
+    "AE_GeneralPlug.h": "30d12ec3eb5af1a902c7414053b1be1da0204b226e0b1cdc71272be1e137000c",
+    "AE_GeneralPlugOld.h": "1668a133fa264984e747812538be997677be563ed67bda5f345cb0fb961213e4",
+    "AE_GeneralPlugPanels.h": "3b1d4f1c019fee8d79646ffdd05c884673b6284caa89738fb91069518fc58303",
+    "AE_GeneralPlugPost.h": "933c69dd39d3418fcf1a1b084f31628356788ff00cf3f3d56da97ef0084cd28f",
+    "AE_GeneralPlugPre.h": "b5549dcb3e0ef0da29bb510bdd0043e541e780b8f39062a2223ebbfb3116953f",
+    "AE_HashSuite.h": "6eb036d72124d4fd40178e2d2319748d5c95b18ef39a4e9091fddeae40426d7e",
+    "AE_Hook.h": "8e8af18a1eac85a3d53aac4e94e27549da4c46f286213405fd3d104977fbfcfc",
+    "AE_IO.h": "be99e982c35069968dfa1b51030f04d47997a3cd7d524e5a658e8abf321c1822",
+    "AE_IO_ColorMetadata.h": "f36a5dd48658432944b8057ddf2238d87a2423ca23932624b781659e77afb55d",
+    "AE_IO_FileExt.h": "7708e1124cbe9104552d732387427c1314ad5eac8c4ecd32e18494475bf11d23",
+    "AE_Macros.h": "d51b007444cec1fd404fd076f88e3e1290349159b8d0152e3dba3a2d1f773c46",
+    "AE_PluginData.h": "25be4a7620bc1c8fbcde7828304e9a207e9cabd0aaf3060f12c4e15c71ff52ca",
+    "AEConfig.h": "9dc7ddc7f209a2178869fc7e033046d2fd91b784e22e869862c95ebe3a6ea781",
+    "AEFX_SuiteHandlerTemplate.h": "af3e1849eb120b5974435b5a6d821733f58df3b54d1ef06e56190da4174ac846",
+    "FIEL_Public.h": "9d467ce24bbfbe65cb5bef8aa4ff02684796d60ba92cce20019e1293154333f1",
+    "Mach-O_prefix.h": "ee3fb8a2cab1831f870d1bd676389cb17d3f63af364809993d105318bddee4af",
+    "PF_Masks.h": "762f05c08d062b18bf3ab45cd0064335268e636fe905ba9374960300ae4e4234",
+    "PR_Public.h": "27f794d12ae0fed69c8a6fe79ed5d257c95a14534a8d6379aa8d2486321721e7",
+    "PrSDKAESupport.h": "e3f0846074fedbbd560fa6b8f45e3733195c96f0c3e38f1ae31ffa815f9d79c3",
+    "PrSDKPixelFormat.h": "4e57a50103e5cc153914aa2851b6284ddf847b0bc500f1c1b7220b87579bad3a",
+    "PT_Public.h": "06a93beaff7d384bd9016c9ec008e0eefe3db423bc6b9369ea7e44aa38c392c8",
+    "SimpleSuiteHelper.h": "325ae797f1ec7db6a142e1e078b4dd868fb6d97f891857b548cd45e19ff38203",
+    "SP\\artemis\\config\\platform.hpp": "54da4e8f707af9bb2cc215be94af552a0488f10ef768334272603a696219f8bd",
+    "SP\\photoshop\\config\\platform.hpp": "852a1344db114d37f1ddf625f1c854136da0616d49382f758923823dad317128",
+    "SP\\PSIntTypes.h": "5cf96c2dcbfb1c095be4250d72c6ce5357f441710c1dc897b3731c72cf4c95d8",
+    "SP\\SPAccess.h": "7f63ce94fb04a5659979899dffee9ed67f1eb9d938a63fd5de11418329dfa574",
+    "SP\\SPAdapts.h": "9df12abb968a64a2e16510fecd5ebf4ffa7585879afc7b39adcde16e9ffcad77",
+    "SP\\SPBasic.h": "a1258cfd57eedbe5ecbfcebf2bc7df8a3826f495f8e3cc549dce55e60e73395b",
+    "SP\\SPBckDbg.h": "91d6db1094d012e41c71de03322d0112b6f3ba243a25972aa271e4835d5c0e79",
+    "SP\\SPBlocks.h": "a02ac3071663e08383fdd094a64bb0e8db3b2ffccc6a48b373bb7047a4ea93d9",
+    "SP\\SPCaches.h": "99632ce0fa53f3288b7e088c4fea91d8cced2074c19511face04b40a106826e7",
+    "SP\\SPCOM.h": "3476c4acc71d40d31dfdc00ed151210f51e48dedb51d46b6f2d2afd5bd1079ba",
+    "SP\\SPConfig.h": "ceb3caacddef02f167858a47319f06295c88fa3bebbd0a8869281295c4ef3a7c",
+    "SP\\SPErrorCodes.h": "a88648c1fb2f30f23c7423ab9509541746b370b35f7c4ba17ba064d5d6b45ef5",
+    "SP\\SPErrors.h": "c0064aa1d4aec34d24ebd1ebf976739d1a301984707d4818c64830a6bff921e8",
+    "SP\\SPFiles.h": "1b3e17ec595d728ccbd239a626ec1930c17f4186e1c4554ace9e76de8eaa5f83",
+    "SP\\SPHost.h": "94f407df88417b5089e22c86f965e0942bb187d61830ce01c5813fda47b3ee3f",
+    "SP\\SPInterf.h": "2d75b1f4ff6bd22ba0a145d392e770b37fa2ede7ff6213d60f003c9031ddb9c6",
+    "SP\\SPMData.h": "ea91dc7eeb7da1763093458b8dcd647a709c053e0d65d3e88f37f1b7d696f501",
+    "SP\\SPObject.h": "fa20e0803225993592d8a454b0bd889b7d10ad8774b80178ff01e3c740495c81",
+    "SP\\SPPiPL.h": "ffcbcb74082b1be2c3dc6cd73564fa24f2c86788bcbc6c5011de0eb2d0048250",
+    "SP\\SPPlugs.h": "8de03821b78b4eb47d792a39cd2b406bba5773f38423f24a3a6cf6383f8f6664",
+    "SP\\SPProps.h": "1405501598502c4bc11a3dfd76798fde7c4e7b0ae70cdb944f190d38d9b30497",
+    "SP\\SPRuntme.h": "b96556e38dd4bc510a9378da842acc16aec44f707a0c705414978e781af5e6b2",
+    "SP\\SPStrngs.h": "aa2a980eea3a54cf8b32b12afe00f662d2694cb6775bc7181df59ce5b5e6debf",
+    "SP\\SPSTSPrp.h": "6cde8d0a6ad403e85ec05c2463429ce8ecba23b949336c48da58012c0ea558a6",
+    "SP\\SPSuites.h": "5defdc896c4eee8adee2086faec46660b160804861a74cc077dd9d8db58c5cd3",
+    "SP\\SPTypes.h": "92ff4f7277fb8c52232cd7bc6b4e21774e8deb190afe1fefdf588e522de58157",
+    "SuiteHelper.h": "09a48dd94145deb9521433a87a47c320df617a8684a51b7b6283c23f6a3a33fe"
+  },
+  "AEGP_RegisterSuite5_methods": [
+    "AEGP_RegisterCommandHook",
+    "AEGP_RegisterUpdateMenuHook",
+    "AEGP_RegisterDeathHook",
+    "AEGP_RegisterVersionHook",
+    "AEGP_RegisterAboutStringHook",
+    "AEGP_RegisterAboutHook",
+    "AEGP_RegisterArtisan",
+    "AEGP_RegisterIO",
+    "AEGP_RegisterIdleHook",
+    "AEGP_RegisterTracker",
+    "AEGP_RegisterInteractiveArtisan",
+    "AEGP_RegisterPresetLocalizationString"
+  ],
+  "register_method_count": 12,
+  "AEGP_DynamicStreamSuite4_methods": [
+    "AEGP_GetNewStreamRefForLayer",
+    "AEGP_GetNewStreamRefForMask",
+    "AEGP_GetStreamDepth",
+    "AEGP_GetStreamGroupingType",
+    "AEGP_GetNumStreamsInGroup",
+    "AEGP_GetDynamicStreamFlags",
+    "AEGP_SetDynamicStreamFlag",
+    "AEGP_GetNewStreamRefByIndex",
+    "AEGP_GetNewStreamRefByMatchname",
+    "AEGP_DeleteStream",
+    "AEGP_ReorderStream",
+    "AEGP_DuplicateStream",
+    "AEGP_SetStreamName",
+    "AEGP_CanAddStream",
+    "AEGP_AddStream",
+    "AEGP_GetMatchName",
+    "AEGP_GetNewParentStreamRef",
+    "AEGP_GetStreamIsModified",
+    "AEGP_GetStreamIndexInParent",
+    "AEGP_IsSeparationLeader",
+    "AEGP_AreDimensionsSeparated",
+    "AEGP_SetDimensionsSeparated",
+    "AEGP_GetSeparationFollower",
+    "AEGP_IsSeparationFollower",
+    "AEGP_GetSeparationLeader",
+    "AEGP_GetSeparationDimension"
+  ],
+  "positive_api_locations": {
+    "AEGP_AddStream": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 1714
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 8829
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 8920
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 9011
+      }
+    ],
+    "AEGP_CanAddStream": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 1709
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 8824
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 8915
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 9006
+      }
+    ],
+    "AEGP_CreateVectorLayerInComp": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 841
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 1859
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 2072
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 2253
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 2433
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 2609
+      },
+      {
+        "file": "AE_GeneralPlugOld.h",
+        "line": 2775
+      }
+    ],
+    "AEGP_RegisterArtisan": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 2782
+      }
+    ],
+    "AEGP_RegisterIO": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 2791
+      }
+    ],
+    "AEGP_RegisterTracker": [
+      {
+        "file": "AE_GeneralPlug.h",
+        "line": 2803
+      }
+    ]
+  },
+  "private_or_external_provider_symbols_absent_in_scanned_headers": {
+    "\\bTDB_StreamBase\\b": true,
+    "\\bTDB_StreamFactory\\b": true,
+    "\\bTDB_ScRegisterStreams\\b": true,
+    "\\bBEE_Layer\\b": true,
+    "\\bBEE_PaintAtom\\b": true,
+    "\\bRegisterNativeStream\\b": true,
+    "\\bRegisterLayerType\\b": true,
+    "\\bRegisterStreamFactory\\b": true,
+    "\\bRegisterNativeLayer\\b": true
+  },
+  "third_party_native_stream_type_registration_documented_here": false,
+  "third_party_arbitrary_parent_canonical_layout_registration_documented_here": false,
+  "third_party_new_BEE_Layer_class_registration_documented_here": false,
+  "interpretation_limit": "ABSENCE IN THESE 70 PUBLIC HEADERS ONLY; does not preclude Adobe private/partner ABI or future releases. AEGP_AddStream manipulates existing host-registered type; it does not declare a new TDB class.",
+  "host_project_modified": false
+}

@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-14",
+  "audit_status": "PASS",
+  "product_acceptance": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "user_requested_output": "An AEX that makes newly defined third-party native property groups and leaf classes appear directly in Adobe's standard Timeline",
+  "criteria": {
+    "plugin_is_a_valid_aex": true,
+    "c_cpp_native_engine_and_selftest_available": true,
+    "can_read_existing_adobe_paint_native_streams": true,
+    "foreign_native_stream_provider_sdk_available": false,
+    "can_register_new_ae_host_native_stream_class": false,
+    "can_register_foreign_named_indexed_parent_schema": false,
+    "can_attach_custom_stream_to_ae_standard_timeline": false,
+    "custom_native_stream_can_be_keyframed_in_ae": false,
+    "custom_native_stream_aep_save_reopen": false,
+    "custom_native_stream_undo_redo": false,
+    "custom_native_stream_live_host_lifecycle": false,
+    "custom_native_stream_macos_test": false
+  },
+  "aex_sha256": "392359b2c7216d2d284c2207a623d3b58bc60c1cb37137e72fe9b7c1d9a53c3a",
+  "reliability_warning": "A working CNL-owned engine, read-only Paint metadata, or can-add over existing Adobe types must never be reported as host-native new type registration.",
+  "host_ae_mutated_by_this_test": false
+}

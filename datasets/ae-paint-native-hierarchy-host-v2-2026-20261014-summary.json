@@ -1,0 +1,66 @@
+{
+  "source": "C:\\Users\\kenta\\AppData\\Local\\Temp\\ChapeLayer_PaintNativeHierarchy.tsv",
+  "source_last_modified_local": "2026-10-14T13:09:56.815170",
+  "source_sha256": "860f60b2d25b57ebe698afa778dcee1cba06cfac76e0060f91f11a34ef529553",
+  "bytes": 48078,
+  "format": "ChapeLayer native Adobe Paint effect timeline audit v2",
+  "host": "After Effects 2026 / CNLNativeShapeLayer Public AEGP read-only Paint inspector v2",
+  "paint_matchname": "ADBE Paint",
+  "native_stream_node_count": 170,
+  "brush_stroke_count": 6,
+  "paint_strokes_group_children": 6,
+  "leaf_value_metadata_count": 142,
+  "inspection_errors": 0,
+  "metadata_query_errors": 0,
+  "leaf_stream_type_histogram": {
+    "0": 6,
+    "3": 18,
+    "4": 12,
+    "5": 93,
+    "6": 6,
+    "9": 7
+  },
+  "can_vary_over_time_count": 109,
+  "currently_timevarying_count": 0,
+  "nonzero_native_keyframe_count": 0,
+  "paint_shape_leaf": {
+    "stream_type": 0,
+    "can_vary_over_time": true
+  },
+  "can_add_matrix": {
+    "ADBE Paint Atom": {
+      "can_add": true,
+      "error": 0
+    },
+    "ADBE Paint Nibbler Atom": {
+      "can_add": false,
+      "error": 0
+    },
+    "ADBE Paint Shape": {
+      "can_add": false,
+      "error": 0
+    },
+    "ADBE Vector Group": {
+      "can_add": false,
+      "error": 0
+    },
+    "CNL:PaintAtom": {
+      "can_add": false,
+      "error": 0
+    },
+    "ADBE Paint Atom - CNLProbe": {
+      "can_add": false,
+      "error": 0
+    }
+  },
+  "report_claims": {
+    "private_host_calls": 0,
+    "host_project_mutated": 0
+  },
+  "limitations": [
+    "The leaf value type 0 represents AEGP_StreamType_NO_DATA; does not mean Paint path does not exist",
+    "An internal NO_DATA stream may still be time-variable but inaccessible to public AEGP value APIs",
+    "All keyframe counts reflect this fixture; not proof native keyframing is unsupported",
+    "Read-only inspection of registered Adobe Paint Stream; not a foreign TDB custom class provider"
+  ]
+}
