@@ -1,0 +1,101 @@
+{
+  "scope": "Exact installed PE exported signatures and imported modules, not dynamic linkage census",
+  "versions": {
+    "2025": {
+      "sha256": "2f43339ad7f5a8c8655a291f6dac0580d95a2e79db38d74272a9e5d83b3fe049",
+      "export_count": 260,
+      "plugin_module_registration_symbol": "?RegisterPluginModuleFactory@ML@@YAXAEBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@4@@Z",
+      "registration_rva": "0x3bec0",
+      "import_modules": [
+        "ASLFoundation.dll",
+        "Backend.dll",
+        "KERNEL32.dll",
+        "MLFoundation.dll",
+        "MSVCP140.dll",
+        "MediaFoundation.dll",
+        "Memory.dll",
+        "PRM.dll",
+        "USER32.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "VideoFrame.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "boost_filesystem.dll",
+        "boost_regex.dll",
+        "dvaappsupport.dll",
+        "dvacore.dll",
+        "dvamediatypes.dll",
+        "dvascripting.dll"
+      ],
+      "direct_imports_BEE_or_TDB": false,
+      "matched_ML_registry_symbols": [
+        {
+          "name": "?GetRegistry@PluginLoaderRegistry@ML@@SAAEAV?$map@VGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@U?$less@VGuid@utility@dvacore@@@std@@V?$allocator@U?$pair@$$CBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@@std@@@7@@std@@XZ",
+          "rva": "0x18f50"
+        },
+        {
+          "name": "?RegisterPluginModuleFactory@ML@@YAXAEBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@4@@Z",
+          "rva": "0x3bec0"
+        },
+        {
+          "name": "?sRegistry@PluginLoaderRegistry@ML@@0V?$map@VGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@U?$less@VGuid@utility@dvacore@@@std@@V?$allocator@U?$pair@$$CBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@@std@@@7@@std@@A",
+          "rva": "0xed0a8"
+        }
+      ],
+      "evidence_limit": "No proof of no indirect linkage or all host layer-provider mechanisms"
+    },
+    "2026": {
+      "sha256": "cb73d45bad03f26684b88f78353a558d8ceb4aea73a3a3e163f457b574e01f5c",
+      "export_count": 259,
+      "plugin_module_registration_symbol": "?RegisterPluginModuleFactory@ML@@YAXAEBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@4@@Z",
+      "registration_rva": "0x41bd0",
+      "import_modules": [
+        "ASLFoundation.dll",
+        "Backend.dll",
+        "KERNEL32.dll",
+        "MLFoundation.dll",
+        "MSVCP140.dll",
+        "MediaFoundation.dll",
+        "Memory.dll",
+        "PRM.dll",
+        "USER32.dll",
+        "VCRUNTIME140.dll",
+        "VCRUNTIME140_1.dll",
+        "VideoFrame.dll",
+        "api-ms-win-crt-filesystem-l1-1-0.dll",
+        "api-ms-win-crt-heap-l1-1-0.dll",
+        "api-ms-win-crt-runtime-l1-1-0.dll",
+        "api-ms-win-crt-stdio-l1-1-0.dll",
+        "api-ms-win-crt-string-l1-1-0.dll",
+        "api-ms-win-crt-time-l1-1-0.dll",
+        "boost_filesystem.dll",
+        "boost_regex.dll",
+        "dvaappsupport.dll",
+        "dvacore.dll",
+        "dvamediatypes.dll",
+        "dvascripting.dll"
+      ],
+      "direct_imports_BEE_or_TDB": false,
+      "matched_ML_registry_symbols": [
+        {
+          "name": "?GetRegistry@PluginLoaderRegistry@ML@@SAAEAV?$map@VGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@U?$less@VGuid@utility@dvacore@@@std@@V?$allocator@U?$pair@$$CBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@@std@@@7@@std@@XZ",
+          "rva": "0x1a7e0"
+        },
+        {
+          "name": "?RegisterPluginModuleFactory@ML@@YAXAEBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@4@@Z",
+          "rva": "0x41bd0"
+        },
+        {
+          "name": "?sRegistry@PluginLoaderRegistry@ML@@0V?$map@VGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@U?$less@VGuid@utility@dvacore@@@std@@V?$allocator@U?$pair@$$CBVGuid@utility@dvacore@@V?$InterfaceRef@UIPluginModuleFactory@ML@@@classref@3@@std@@@7@@std@@A",
+          "rva": "0x118dc8"
+        }
+      ],
+      "evidence_limit": "No proof of no indirect linkage or all host layer-provider mechanisms"
+    }
+  }
+}

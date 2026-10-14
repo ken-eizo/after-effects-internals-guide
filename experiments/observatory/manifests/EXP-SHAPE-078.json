@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-078",
+  "date": "2026-10-14",
+  "status": "PASS exact installed PluginSupport.dll ML module-factory signature and imports, both AE builds",
+  "source": "experiments/vector-shape/probe-src/tools/verify_pluginsupport_factory_not_bee_owner.py",
+  "dataset": "datasets/ae-pluginsupport-ml-plugin-factory-vs-bee-layer-2025-2026.json",
+  "AE2025_verified": true,
+  "AE2026_verified": true,
+  "signature": "Guid + InterfaceRef<ML::UIPluginModuleFactory>",
+  "directly_imports_BEE_or_TDB": false,
+  "adobe_native_layer_provider_verified": false,
+  "private_host_calls": 0,
+  "finding": "research/findings/F-VECTOR-078-ml-plugin-module-factory-not-bee-provider.md"
+}
