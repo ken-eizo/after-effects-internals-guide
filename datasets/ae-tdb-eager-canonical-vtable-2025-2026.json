@@ -1,0 +1,92 @@
+{
+  "2025": {
+    "TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+    "factory_registrar_rva": "0x27400",
+    "native_parampath_vtable_rva": "0x729a8",
+    "virtual_methods_proven_by_real_parampath_vtable": {
+      "0x58": {
+        "label": "IsLeaf",
+        "slot_target_rva": "0x3c140",
+        "resolved_export": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x275ba"
+        ]
+      },
+      "0x80": {
+        "label": "GetAsLeaf",
+        "slot_target_rva": "0x37700",
+        "resolved_export": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+        "registration_virtual_callsite_rvas": [
+          "0x275c7",
+          "0x275e3"
+        ]
+      },
+      "0x150": {
+        "label": "SetupCanonicalLayout",
+        "slot_target_rva": "0x3fab0",
+        "resolved_export": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x275ff"
+        ]
+      },
+      "0x298": {
+        "label": "IsSeparationLeader",
+        "slot_target_rva": "0x12250",
+        "resolved_export": "?IsSeparationLeader@?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@UEBA_NXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x275d3"
+        ]
+      }
+    },
+    "create_stream_mode_constant": [
+      "0x27570",
+      "r9d, 0x258"
+    ],
+    "scope": "static disassembly; virtual slot identity for known native param-path; not arbitrary foreign vtable"
+  },
+  "2026": {
+    "TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+    "factory_registrar_rva": "0x285d0",
+    "native_parampath_vtable_rva": "0x86e40",
+    "virtual_methods_proven_by_real_parampath_vtable": {
+      "0x58": {
+        "label": "IsLeaf",
+        "slot_target_rva": "0x3cc90",
+        "resolved_export": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x28786"
+        ]
+      },
+      "0x80": {
+        "label": "GetAsLeaf",
+        "slot_target_rva": "0x38210",
+        "resolved_export": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+        "registration_virtual_callsite_rvas": [
+          "0x28793",
+          "0x287af"
+        ]
+      },
+      "0x150": {
+        "label": "SetupCanonicalLayout",
+        "slot_target_rva": "0x40510",
+        "resolved_export": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x287cb"
+        ]
+      },
+      "0x298": {
+        "label": "IsSeparationLeader",
+        "slot_target_rva": "0x121d0",
+        "resolved_export": "?IsSeparationLeader@?$TDB_DerivedStream@UTDB_ParamPathStreamTraits@@@@UEBA_NXZ",
+        "registration_virtual_callsite_rvas": [
+          "0x2879f"
+        ]
+      }
+    },
+    "create_stream_mode_constant": [
+      "0x2873c",
+      "r9d, 0x258"
+    ],
+    "scope": "static disassembly; virtual slot identity for known native param-path; not arbitrary foreign vtable"
+  }
+}

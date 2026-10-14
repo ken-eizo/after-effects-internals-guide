@@ -1,0 +1,92 @@
+{
+  "2025": {
+    "OM_sha256": "9c08acc46bf0634025cea2de5f06a6e05a64d3acc97ec4c7fd85f3a35cde3442",
+    "vtable_rva": "0x8afe0",
+    "slots": [
+      {
+        "vtable_offset": "0x58",
+        "semantic": "IsLeaf",
+        "vtable_target_rva": "0x2cb5f",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+        "import_iat_rva": "0x89378"
+      },
+      {
+        "vtable_offset": "0x80",
+        "semantic": "GetAsLeaf",
+        "vtable_target_rva": "0x2cb71",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+        "import_iat_rva": "0x89390"
+      },
+      {
+        "vtable_offset": "0x150",
+        "semantic": "SetupCanonicalLayout",
+        "vtable_target_rva": "0x2ccd9",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+        "import_iat_rva": "0x89570"
+      },
+      {
+        "vtable_offset": "0x298",
+        "semantic": "IsSeparationLeader",
+        "vtable_target_rva": "0x2c70",
+        "mode": "OM-local override",
+        "native_symbol": "?IsSeparationLeader@?$TDB_DerivedStream@UOM_MaskShapeStreamTraits@@@@UEBA_NXZ",
+        "first_instructions": [
+          "xor al, al",
+          "ret ",
+          "int3 "
+        ]
+      }
+    ]
+  },
+  "2026": {
+    "OM_sha256": "c1ca4d13425620076ad644aeab7c795f156593022fac62ba365b0a01d8091a7f",
+    "vtable_rva": "0x9cfc0",
+    "slots": [
+      {
+        "vtable_offset": "0x58",
+        "semantic": "IsLeaf",
+        "vtable_target_rva": "0x2c3f0",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?IsLeaf@TDB_Stream@@UEBA_NXZ",
+        "import_iat_rva": "0x9b380"
+      },
+      {
+        "vtable_offset": "0x80",
+        "semantic": "GetAsLeaf",
+        "vtable_target_rva": "0x2c402",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?GetAsLeaf@TDB_Stream@@UEAAPEAV1@XZ",
+        "import_iat_rva": "0x9b398"
+      },
+      {
+        "vtable_offset": "0x150",
+        "semantic": "SetupCanonicalLayout",
+        "vtable_target_rva": "0x2c56a",
+        "mode": "direct_import_trampoline",
+        "import_dll": "tdb.dll",
+        "import_symbol": "?SetupCanonicalLayout@TDB_StreamBase@@MEAAXXZ",
+        "import_iat_rva": "0x9b578"
+      },
+      {
+        "vtable_offset": "0x298",
+        "semantic": "IsSeparationLeader",
+        "vtable_target_rva": "0x2c40",
+        "mode": "OM-local override",
+        "native_symbol": "?IsSeparationLeader@?$TDB_DerivedStream@UOM_MaskShapeStreamTraits@@@@UEBA_NXZ",
+        "first_instructions": [
+          "xor al, al",
+          "ret ",
+          "int3 "
+        ]
+      }
+    ]
+  }
+}

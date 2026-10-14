@@ -155,3 +155,13 @@ F-VECTOR-093 で判明した `OM.dll::OM_Stream` の**実際の C++ オブジェ
 `OM_Birth` が生成する MatchName オブジェクトは16バイトで、`OM_Death` は **UnregisterFactoryFunc → U アロケータによる MatchName 解放 → グローバル参照のゼロ化**の順で実行する。これらの命令を元バイナリで検証済み。**2025/2026 の割当サイズが等しいことは ABI 全体の互換保証を意味しない。** まして第三者 AEX のネイティブ Property 登録成功ではなく、必要な実装契約を Adobe 組込み例から抽出した成果である。
 
 証拠：`research/findings/F-VECTOR-094-om-maskshape-native-cpp-stream-abi-and-teardown.md`、`experiments/vector-shape/EXP-SHAPE-094-om-native-cpp-object-lifetime.md`。非公開 API の実機呼出しは一切なし。
+
+## F-VECTOR-095 — TDB 型登録から Shape Contents のネイティブ UI 階層までの実コード接続（2026-10-14）
+
+**新たなコード上の実証：** `TDB_StreamFactory::RegisterFactoryFunc` は登録中に `CreateStream` で canonical prototype を実際に生成し、`IsLeaf`、`GetAsLeaf`、`IsSeparationLeader` を条件により呼び、登録フラグに従って仮想 `SetupCanonicalLayout`（vtable +`0x150`）を実行する。`TDB_StreamBase::SetupCanonicalLayout` は **空の既定処理**であり、グループ派生型の `TDB_StreamGroup::SetupCanonicalLayout` は仮想 `FillInCanonicalUILayout`（vtable +`0x1C8`）を呼ぶ。このスロットは **`BEE_VectorStream::VectorsStreamGroup::FillInCanonicalUILayout`** や Root Vectors グループの独自実装を正確に指し、Separated Dimensions の設定後に `TDB_StreamGroup::SetUILayout` が実行される。
+
+`OM.dll` の本物の Mask Shape leaf 型でも同じ仮想スロットと Adobe TDB 側の JMP インポートが確認できた。グループ型とリーフ型の違いも機械語上で特定。AE 2025 / 2026 両方で独立再検証し **3本の検証スクリプトが PASS**。
+
+独自の `CNL:` Stream を標準タイムラインの新規親グループにするには、単なる MatchName 登録だけでは足りず、**ABI 互換の native `TDB_StreamGroup` と `FillInCanonicalUILayout`、子型の Creator/所有/編集/永続化**が必要だと具体的に判明した。登録は eager に実体を生成して仮想関数を呼ぶため、非互換な Creator は **登録時点で** AE をクラッシュさせ得る。旧 `CNLPrivateTDBDisposable.aex` は組込み leaf Creator を借りる実験であり、この native group の設計条件を満たさない。
+
+研究：`research/findings/F-VECTOR-095-native-tdb-registration-eager-canonical-shape-group-dispatch.md`、`experiments/vector-shape/EXP-SHAPE-095-tdb-native-registration-to-contents-schema.md`。**第三者 AEX による独自ネイティブ登録・AE 標準タイムライン挿入はなお未実証**。VM・VirtualBox 更新は保留し、非公開 API 呼出しなし。

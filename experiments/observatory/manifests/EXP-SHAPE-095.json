@@ -1,0 +1,44 @@
+{
+  "experiment_id": "EXP-SHAPE-095",
+  "date": "2026-10-14",
+  "status": "PASS static native register-to-Shape-Contents canonical group hierarchy dataflow in both installed AE2025 and AE2026",
+  "finding": "research/findings/F-VECTOR-095-native-tdb-registration-eager-canonical-shape-group-dispatch.md",
+  "source_scripts": [
+    "experiments/vector-shape/probe-src/tools/verify_tdb_eager_canonical_vtable_dispatch.py",
+    "experiments/vector-shape/probe-src/tools/verify_tdb_group_bee_contents_canonical_dispatch.py",
+    "experiments/vector-shape/probe-src/tools/verify_om_native_vtable_tdb_dispatch_bridge.py"
+  ],
+  "datasets": [
+    "datasets/ae-tdb-eager-canonical-vtable-2025-2026.json",
+    "datasets/ae-tdb-group-to-bee-shape-canonical-dispatch-2025-2026.json",
+    "datasets/ae-om-native-vtable-to-tdb-dispatch-2025-2026.json"
+  ],
+  "evidence": [
+    "RegisterFactoryFunc eagerly calls native CreateStream during registration",
+    "Native virtual SetupCanonicalLayout vtable offset 0x150 (conditionally invoked)",
+    "TDB_StreamBase::SetupCanonicalLayout is an empty base stub",
+    "TDB_StreamGroup::SetupCanonicalLayout invokes virtual FillInCanonicalUILayout at offset 0x1c8",
+    "TDB native group thereafter calls separated-dimension canonical setup and SetUILayout",
+    "BEE Shape Contents and Root Vectors vtables implement native FillInCanonicalUILayout",
+    "OM_Stream cross-DLL vtable forwards inherited methods via TDB import thunks, and overrides IsSeparationLeader"
+  ],
+  "ae2025": {
+    "registration_function": "0x27400",
+    "create_stream_callsite": "0x2757f",
+    "group_setup": "0x3fac0",
+    "fillin_virtual_call": "0x3fb59",
+    "bee_shape_contents_fillin": "0x702db0"
+  },
+  "ae2026": {
+    "registration_function": "0x285d0",
+    "create_stream_callsite": "0x2874b",
+    "group_setup": "0x40520",
+    "fillin_virtual_call": "0x405ae",
+    "bee_shape_contents_fillin": "0x7258c0"
+  },
+  "private_native_host_calls": 0,
+  "foreign_group_created": false,
+  "third_party_native_extension_abstraction_established": false,
+  "safety": "All installed DLLs original read-only; no AEX installed/activated; VM deferred",
+  "product_status": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM"
+}
