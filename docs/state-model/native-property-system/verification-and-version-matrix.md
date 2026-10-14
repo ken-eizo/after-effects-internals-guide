@@ -19,6 +19,9 @@ This page is the **evidence boundary** for the technical chapters. It is not a c
 | Instance generation | E2-L strict x64 original TDB 2025+2026 | Creator callback after mutex unlock; default key and optional decanonicalization paths | Exact per-flag behavior and plugin unload concurrency |
 | Parent indexed insertion | E2-L strict TDB vtable 2025+2026 | CanStore before insertion, reverse index/capsule cache/SetParent updates | Complete error rollback and all option meanings |
 | Document reconstruction | E2-L native StreamGroup Read/Write 2025+2026 | Child MatchName → CreateStream → InsertStream/Read | Missing foreign Creator AEP behavior and arbitrary roundtrip |
+| Indexed child removal | E2-L SHA-pinned TDB x64 AE2025+2026 | Return same detached child, parent +0x20 cleared, indexed vector/reverse map updated | Undo ownership, destruction and reuse |
+| Structural Undo routing | E2-L cross-DLL TDB+BEE AE2025+2026 | Add/Remove/Duplicate/Reorder begin/dispatch/end BEE Undo grouping | Inverse task lifetimes and arbitrary external type enrollment |
+| Missing-Creator reporting | E2-L Win64 TDB AE2025+2026 | Named loader flag 0, Indexed loader flag 1; report branch in CreateStream | Real host error/dialog/recovery and data preservation |
 | Canonical group layout | E2-L TDB/BEE vtable 2025+2026 | `FillInCanonicalUILayout`, separated dimensions, UILayout | All variant branches/editor binding |
 | Paint/Text admissibility | E2-L+E2-X built-ins, AE2026 Paint fixture | Named/indexed grammar, strict Paint child policy | Arbitrary external parent provider |
 | Shape Contents admissibility | E2-L+E2-X AE2026 preflight | Exact Group plus three prefixes | Create/Add/Serialize arbitrary prefixed Stream |
@@ -42,6 +45,8 @@ The `E2-L` PE images are original installed Adobe assets and stored only on the 
 | OM C++ allocator/vtable | F-VECTOR-094 | `audit_om_native_stream_abi_and_teardown.py` |
 | Eager canonical/layout vtables | F-VECTOR-095 | `verify_tdb_eager_canonical_vtable_dispatch.py`, `verify_tdb_group_bee_contents_canonical_dispatch.py` |
 | Creator/prototype destructor | F-VECTOR-096 | `verify_tdb_native_creator_canonical_lifetime.py` |
+| Indexed child detach + command undo | F-VECTOR-099 | `verify_tdb_native_detach_bee_indexed_undo.py` |
+| Native archive missing-Creator report policy | F-VECTOR-100 | `verify_tdb_archive_missing_creator_error_policy.py` |
 | Supported AEGP SDK coverage | F-VECTOR-088 | `verify_public_sdk_native_provider_gap.py` |
 
 Script location: `experiments/vector-shape/probe-src/tools/`. Raw JSON location: `datasets/`. Full research files: `research/findings/` (not the normal feature-based user guide).

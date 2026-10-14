@@ -20,6 +20,9 @@ This is an *internal architecture guide*, not a supported C++ SDK. It distinguis
 | Class provider | Who supplies a MatchName, typed C++ Creator and canonical instance? | [Factory registration and lifetime](factory-registration-lifetime.md) |
 | Instance construction | How does an already registered Creator produce a Stream with native default-state initialization? | [Native instance creation](stream-instance-creation.md) |
 | Parent insertion | Which CanStore, index, parent and cached-path steps actually adopt a child? | [Indexed child insertion](indexed-group-insertion.md) |
+| Parent removal | How is a native Stream detached without conflating removal and destruction? | [Indexed child removal](indexed-group-removal.md) |
+| Undo command routing | How do Adobe's Add/Remove/Duplicate/Reorder commands reach UndoContext? | [Structural commands and Undo](structural-command-undo.md) |
+| Archive compatibility | What happens in the native load path when a child type has no registered Creator? | [Native archive type compatibility](archive-type-compatibility.md) |
 | Document persistence | How do saved MatchNames reconstruct native named/indexed Stream children? | [StreamGroup Read / Write](document-stream-serialization.md) |
 | Parent schema | Why does one indexed parent accept a child and another reject it? | [Canonical groups and admission](canonical-groups-admission.md) |
 | Concrete families | What do Paint, Text Animator and Shape Contents *actually* build? | [Paint, Text and Shape](paint-text-shape-hierarchies.md) |
@@ -84,6 +87,9 @@ Important: `E2-L` alone is not a behavioral claim about a fabricated external St
 | Does native instance creation invoke the registered callback while holding the factory mutex? | **No on the verified success path**; callback is copied under lock, called after unlock | F-VECTOR-097, E2-L |
 | Does indexed child insertion enforce native CanStore before changing parent state? | **Yes**, then index/cache and SetParent operations | F-VECTOR-097, E2-L |
 | Can the native loader reconstruct a child without consulting registered Stream Creators? | The verified Named/Indexed loaders **call CreateStream using the saved MatchName** | F-VECTOR-098, E2-L |
+| Does removal immediately destroy a native child? | **No on the verified RemoveStream success path**: pointer returned, parent +0x20 cleared | F-VECTOR-099, E2-L |
+| Do native indexed edits use BEE's Undo command system? | Four Add/Remove/Duplicate/Reorder wrappers each issue Begin/DoCommand/End | F-VECTOR-099, E2-L |
+| Do Named and Indexed archives report missing Creator identically? | **No:** observed native flag 0 for Named and 1 for Indexed | F-VECTOR-100, E2-L |
 | Can AEGP inspect brush-generated native Paint Strokes? | **Yes**, AE2026 read-only Paint fixture | F-VECTOR-083/087, E2-X |
 | Can an unknown Stream class automatically join Paint/Text/Shape? | **No such general rule**; separate grammar/factory gates | F-VECTOR-084/065, E2-L + E2-X |
 | Can a third-party AEX declare a completely new host-native C++ Stream/Group via SDK 25.6? | **No supported registrar identified in the scoped SDK audit** | F-VECTOR-088, E0-H/E2-L |

@@ -1,0 +1,57 @@
+{
+  "evidence": "E2-L deterministic SHA-pinned original installed native machine code; no Adobe function called",
+  "versions": {
+    "2025": {
+      "original_TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "create_entry": "0x26710",
+      "missing_Creator_first_stack_flag_check": "0x267ed",
+      "missing_Creator_skip_report_if_false": "0x267f4",
+      "missing_Creator_Adobe_error_report_call": "0x26842",
+      "returned_null_Creator_first_stack_flag_check": "0x268e2",
+      "loader_named": {
+        "entry": "0x3d7a0",
+        "missing_creator_error_report_flag": 0,
+        "set_error_flag_callsite": "0x3d7c9",
+        "pass_next_stack_flag_0": "0x3d7c4",
+        "create_call": "0x3d7de",
+        "rationale": "Win64 stack argument #5: caller rsp+0x20 -> callee entry+0x28 = rbp+0x130"
+      },
+      "loader_indexed": {
+        "entry": "0x3d6e0",
+        "missing_creator_error_report_flag": 1,
+        "set_error_flag_callsite": "0x3d702",
+        "pass_next_stack_flag_0": "0x3d6fd",
+        "create_call": "0x3d717",
+        "rationale": "Win64 stack argument #5: caller rsp+0x20 -> callee entry+0x28 = rbp+0x130"
+      },
+      "proven": "Indexed archive loader enables and Named loader disables the missing-Creator Adobe error-report policy flag before calling CreateStream; behavior after U.dll error report is unverified.",
+      "not_proven": "U.dll report behavior, exception/dialog, .aep recovery, preservation, foreign CNL roundtrip."
+    },
+    "2026": {
+      "original_TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "create_entry": "0x27920",
+      "missing_Creator_first_stack_flag_check": "0x27b61",
+      "missing_Creator_skip_report_if_false": "0x27b68",
+      "missing_Creator_Adobe_error_report_call": "0x27bb6",
+      "returned_null_Creator_first_stack_flag_check": "0x27a5b",
+      "loader_named": {
+        "entry": "0x3e300",
+        "missing_creator_error_report_flag": 0,
+        "set_error_flag_callsite": "0x3e31e",
+        "pass_next_stack_flag_0": "0x3e319",
+        "create_call": "0x3e333",
+        "rationale": "Win64 stack argument #5: caller rsp+0x20 -> callee entry+0x28 = rbp+0x130"
+      },
+      "loader_indexed": {
+        "entry": "0x3e260",
+        "missing_creator_error_report_flag": 1,
+        "set_error_flag_callsite": "0x3e277",
+        "pass_next_stack_flag_0": "0x3e272",
+        "create_call": "0x3e28c",
+        "rationale": "Win64 stack argument #5: caller rsp+0x20 -> callee entry+0x28 = rbp+0x130"
+      },
+      "proven": "Indexed archive loader enables and Named loader disables the missing-Creator Adobe error-report policy flag before calling CreateStream; behavior after U.dll error report is unverified.",
+      "not_proven": "U.dll report behavior, exception/dialog, .aep recovery, preservation, foreign CNL roundtrip."
+    }
+  }
+}

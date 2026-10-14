@@ -81,6 +81,8 @@ A positive native type provider must therefore establish how startup/project-loa
 
 ### Unknown types and failure handling
 
+**The native missing-type error-report flag differs by group.** Both AE2025 and AE2026 Named ReadAndStore callers pass 0 and Indexed callers pass 1 for the same fifth CreateStream argument. The factory's absent-Creator branch uses it to skip or reach an Adobe U.dll reporting function. This is a static finding, not a host-tested project load outcome. See [Native Archive Type Compatibility](archive-type-compatibility.md) and F-VECTOR-100.
+
 The Indexed loader has an explicit null check after `CreateStream`; if it returns null, the usual insertion and child-read calls are skipped in the inspected branch. However, `CreateStream` also contains error-reporting and optional assertions governed by its flags. This does **not** prove what happens when a real AE instance opens an AEP containing a genuinely unknown or incompatible type.
 
 Do not claim any of the following without an isolated host test:

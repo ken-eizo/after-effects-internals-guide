@@ -62,6 +62,10 @@ Authoring an expression and enabling it is not identical to the expression's **e
 
 In the native internal Shape creation path, a stock command builds a `BEE_NewLayerTask<4>` and ultimately creates and attaches a layer through `BEE_CompItem`. This native task is **not a supported command-provider SDK for a foreign new Layer kind** (F-VECTOR-058/071).
 
+### Native indexed property commands and Undo
+
+The first-party BEE add/remove/duplicate/reorder commands call BEE_StartGroupWithNameFromStreamOperation, BEE_DoCommand and BEE_EndGroup in that order. Add calls TDB_StreamBase::CreateStream before the group starts. Separately, native RemoveStream clears the child's parent field and returns its existing pointer; this does not establish Undo task object lifetime. See [Structural Commands and Undo](structural-command-undo.md) and [Indexed Group Removal](indexed-group-removal.md) (F-VECTOR-099).
+
 ## Native group insertion and deserialization
 
 For indexed native groups, \`TDB_IndexedStreamGroup::InsertStream\` checks **virtual CanStore before mutation**, updates reverse indices and cached capsule paths, then calls \`TDB_StreamBase::SetParent\`. The private vtable position of \`InsertStream\` changes between AE2025 and AE2026: see [Indexed child insertion](indexed-group-insertion.md).

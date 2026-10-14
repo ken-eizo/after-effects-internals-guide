@@ -82,6 +82,10 @@ Factory registration constructs a canonical prototype, but \`TDB_StreamFactory::
 
 A real group then needs a separate [Indexed insertion](indexed-group-insertion.md) operation that enforces the parent's \`CanStore\` and establishes its parent/StreamIDPath caches. A saved project reconstructs children from serialized MatchNames through the same Creator and insertion machinery; see [StreamGroup Read / Write](document-stream-serialization.md). These lifecycle steps are independently verified in F-VECTOR-097/098, without a foreign plugin being executed.
 
+### Creator availability and project reload
+
+Serialized group members are reconstructed using the same registered Creator factory. Across both installed Windows builds, Named group loaders pass missing-type report flag zero, while Indexed group loaders pass one. The factory conditionally calls Adobe U.dll error-reporting, but actual recovery/UX is still unknown (F-VECTOR-100). See [Archive Type Compatibility](archive-type-compatibility.md).
+
 ## Unregistration and native object ownership
 
 On the observed successful path:

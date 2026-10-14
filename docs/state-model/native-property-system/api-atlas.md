@@ -61,6 +61,12 @@ This is a **bounded observation**; it does not establish nonexistence in a priva
 | `TDB_StreamFactory::RegisterFactoryFunc` | `TDB.dll` | Creator registry, eager canonical object, group setup | F-VECTOR-095 |
 | `TDB_StreamFactory::CreateStream` | `TDB.dll` | Copy Creator under mutex, unlock, construct instance, optionally initialize leaf/group | F-VECTOR-095/097 |
 | `TDB_IndexedStreamGroup::InsertStream` | `TDB.dll` | Validate parent CanStore, adopt indexed child, update path caches and parent | F-VECTOR-097 |
+| `TDB_IndexedStreamGroup::RemoveStream` | `TDB.dll` | Detach child, clear parent +0x20, return original Stream pointer | F-VECTOR-099 |
+| `TDB_StreamBase::CreateStream` | `TDB.dll` | First-party wrapper tail-jumps to StreamFactory's CreateStream | F-VECTOR-099 |
+| `BEE_CmdAddToIndexedStreamGroup` | `BEE.dll` | First-party native child creation followed by command submission | F-VECTOR-099 |
+| `BEE_CmdRemoveIndexedGroupEntry` | `BEE.dll` | First-party native remove command via UndoContext | F-VECTOR-099 |
+| `BEE_CmdDuplicateIndexedGroupEntry` | `BEE.dll` | First-party native duplicate command via UndoContext | F-VECTOR-099 |
+| `BEE_CmdReorderIndexedGroupEntry` | `BEE.dll` | First-party native reorder command via UndoContext | F-VECTOR-099 |
 | `TDB_StreamGroup::Read / Write` | `TDB.dll` | SLU native Stream ID, child MatchName and group archive | F-VECTOR-025/098 |
 | `TDB_Named/IndexedStreamGroup::ReadAndStore` | `TDB.dll` | Reconstruct saved native child through a registered Creator and group-specific reader | F-VECTOR-098 |
 | `TDB_StreamFactory::GetCanonicalInstance` | `TDB.dll` | Locate registered native prototype | F-VECTOR-084 |

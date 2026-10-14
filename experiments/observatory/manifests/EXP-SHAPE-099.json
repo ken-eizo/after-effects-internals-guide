@@ -1,0 +1,14 @@
+{
+  "experiment_id": "EXP-SHAPE-099",
+  "date": "2026-10-15",
+  "name": "Native Stream detach and Undo envelope",
+  "status": "PASS static only, not Undo replay",
+  "summary": "Original installed AE2025/2026 BEE + TDB SHA-pinned x64 proof; removal returns same native child and clears +0x20 parent, four BEE commands submit named group/DoCommand/End",
+  "evidence": "E2-L installed original SHA-pinned Windows native x64 PE static; no host runtime invocation",
+  "source": "experiments/vector-shape/probe-src/tools/verify_tdb_native_detach_bee_indexed_undo.py",
+  "dataset": "datasets/ae-tdb-native-detach-bee-command-undo-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-099-native-indexed-stream-detach-and-bee-undo-command-bridge.md",
+  "supported_public_native_type_registration": false,
+  "private_adobe_function_invoked": false,
+  "unknown_third_party_type_host_verified": false
+}

@@ -1,0 +1,160 @@
+{
+  "evidence": "E2-L SHA-pinned original installed binary PE static only",
+  "proven_product": "Host first-party property structural commands and detach lifetime",
+  "external_native_stream_registered": false,
+  "in_host_private_api_called": false,
+  "versions": {
+    "2025": {
+      "TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "native_stream_base_CreateStream_trampoline": {
+        "entry": "0x36170",
+        "jmp_factory_CreateStream": "0x36189",
+        "factory_target": "0x26710"
+      },
+      "indexed_detach": {
+        "entry_rva": "0x3e0c0",
+        "parent_set_writes_child_plus_0x20": "0x3f0ea",
+        "GetNumStreams": "0x3e0f5",
+        "GetStream": "0x3e113",
+        "child_reference_retained": "0x3e119",
+        "child_vector_length_reduced": "0x3e1b7",
+        "reverse_index_updated": "0x3e1d6",
+        "child_parent_field_cleared": "0x3e228",
+        "same_child_raw_pointer_returned": "0x3e29e",
+        "claim": "Native detach returns existing child pointer; destructor not invoked on shown normal success path"
+      },
+      "BEE_indexed_commands": {
+        "add": {
+          "export": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAI_N@Z",
+          "entry": "0x657820",
+          "get_undo_context_sites": [
+            "0x6578db"
+          ],
+          "named_undo_group": "0x6579ef",
+          "command_dispatch": "0x657a1a",
+          "end_group": "0x657a24",
+          "cross_dll_TDB_StreamBase_CreateStream": "0x657937"
+        },
+        "remove": {
+          "export": "?BEE_CmdRemoveIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z",
+          "entry": "0x65cf50",
+          "get_undo_context_sites": [
+            "0x65cff3",
+            "0x65d0c6",
+            "0x65d0e4"
+          ],
+          "named_undo_group": "0x65d005",
+          "command_dispatch": "0x65d0da",
+          "end_group": "0x65d0ec"
+        },
+        "duplicate": {
+          "export": "?BEE_CmdDuplicateIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAI@Z",
+          "entry": "0x65ba60",
+          "get_undo_context_sites": [
+            "0x65ba9b",
+            "0x65bb4c",
+            "0x65bca3"
+          ],
+          "named_undo_group": "0x65baad",
+          "command_dispatch": "0x65bb60",
+          "end_group": "0x65bcab"
+        },
+        "reorder": {
+          "export": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@I_N@Z",
+          "entry": "0x65db90",
+          "get_undo_context_sites": [
+            "0x65dbc4",
+            "0x65dc79",
+            "0x65dca4"
+          ],
+          "named_undo_group": "0x65dbd6",
+          "command_dispatch": "0x65dc8a",
+          "end_group": "0x65dcac"
+        }
+      },
+      "not_proven": [
+        "Undo stored task lifetime or exact inversion implementation",
+        "Detached child's allocator and deletion responsibility of caller",
+        "Successful external native CNL plugin registration",
+        "Thread-safe module unload or persistence"
+      ]
+    },
+    "2026": {
+      "TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "native_stream_base_CreateStream_trampoline": {
+        "entry": "0x36c00",
+        "jmp_factory_CreateStream": "0x36c19",
+        "factory_target": "0x27920"
+      },
+      "indexed_detach": {
+        "entry_rva": "0x3eb90",
+        "parent_set_writes_child_plus_0x20": "0x3fb2a",
+        "GetNumStreams": "0x3ebbe",
+        "GetStream": "0x3ebda",
+        "child_reference_retained": "0x3ebe0",
+        "child_vector_length_reduced": "0x3ec68",
+        "reverse_index_updated": "0x3ec85",
+        "child_parent_field_cleared": "0x3ecda",
+        "same_child_raw_pointer_returned": "0x3ed3f",
+        "claim": "Native detach returns existing child pointer; destructor not invoked on shown normal success path"
+      },
+      "BEE_indexed_commands": {
+        "add": {
+          "export": "?BEE_CmdAddToIndexedStreamGroup@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEBVTDB_MatchName@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAIUBEE_CmdAddToIndexedStreamGroupOptions@@@Z",
+          "entry": "0x672a20",
+          "get_undo_context_sites": [
+            "0x672af2"
+          ],
+          "named_undo_group": "0x672c07",
+          "command_dispatch": "0x672c32",
+          "end_group": "0x672c3c",
+          "cross_dll_TDB_StreamBase_CreateStream": "0x672b4f"
+        },
+        "remove": {
+          "export": "?BEE_CmdRemoveIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@@Z",
+          "entry": "0x678540",
+          "get_undo_context_sites": [
+            "0x6785ea",
+            "0x6786bd",
+            "0x6786db"
+          ],
+          "named_undo_group": "0x6785fc",
+          "command_dispatch": "0x6786d1",
+          "end_group": "0x6786e3"
+        },
+        "duplicate": {
+          "export": "?BEE_CmdDuplicateIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@PEAI@Z",
+          "entry": "0x676f90",
+          "get_undo_context_sites": [
+            "0x676fd5",
+            "0x677095",
+            "0x6771f3"
+          ],
+          "named_undo_group": "0x676fe7",
+          "command_dispatch": "0x6770a6",
+          "end_group": "0x6771fb"
+        },
+        "reorder": {
+          "export": "?BEE_CmdReorderIndexedGroupEntry@@YAHPEAVBEE_Layer@@AEBVTDB_StreamIDPath@@IUBEE_CmdReorderIndexedGroupEntryOptions@@@Z",
+          "entry": "0x6791a0",
+          "get_undo_context_sites": [
+            "0x6791d2",
+            "0x67929d",
+            "0x6792c8"
+          ],
+          "named_undo_group": "0x6791e4",
+          "command_dispatch": "0x6792ae",
+          "end_group": "0x6792d0"
+        }
+      },
+      "not_proven": [
+        "Undo stored task lifetime or exact inversion implementation",
+        "Detached child's allocator and deletion responsibility of caller",
+        "Successful external native CNL plugin registration",
+        "Thread-safe module unload or persistence"
+      ]
+    }
+  }
+}
