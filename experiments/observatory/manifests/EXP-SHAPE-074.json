@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-SHAPE-074",
+  "date": "2026-10-14",
+  "status": "PASS pinned native aelib -> BEE Birth/Death IAT CALL evidence in AE2025/2026",
+  "source": "experiments/vector-shape/probe-src/tools/audit_aelib_bee_lifecycle_calls.py",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_aelib_bee_lifecycle_calls.py",
+  "dataset": "datasets/ae-aelib-bee-lifecycle-crossmodule-2025-2026.json",
+  "module": "aelib.dll",
+  "birth_callsites_per_version": 2,
+  "death_callsites_per_version": 1,
+  "scope": "ten top-level named PE modules per installed AE version, direct import CALL only",
+  "private_host_calls": 0,
+  "adobe_native_custom_layer_registered": false,
+  "finding": "research/findings/F-VECTOR-074-aelib-bee-native-startup-boundary.md"
+}

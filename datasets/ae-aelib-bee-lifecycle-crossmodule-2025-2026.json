@@ -1,0 +1,71 @@
+{
+  "scope": "Two installed aelib.dll images, only direct IAT RIP-relative CALL/JMP references; no dynamic runtime claims",
+  "versions": {
+    "2025": {
+      "aelib_sha256": "48331b6c193e8abf495e8119861e63fe06d356be0630ab51e9f9b24e69bec8ff",
+      "imports": {
+        "BEE.dll!?BEE_Death@@YAHXZ": {
+          "iat_va": "0x18010e768",
+          "verified_code_references": [
+            {
+              "site": "0x6ef56",
+              "caller_function_rva": "0x6edc0",
+              "kind": "call",
+              "IAT_VA": "0x18010e768"
+            }
+          ]
+        },
+        "BEE.dll!?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z": {
+          "iat_va": "0x18010e770",
+          "verified_code_references": [
+            {
+              "site": "0x6e272",
+              "caller_function_rva": "0x6d9b0",
+              "kind": "call",
+              "IAT_VA": "0x18010e770"
+            },
+            {
+              "site": "0x6f6cf",
+              "caller_function_rva": "0x6f550",
+              "kind": "call",
+              "IAT_VA": "0x18010e770"
+            }
+          ]
+        }
+      }
+    },
+    "2026": {
+      "aelib_sha256": "def5e8a82d84fc12b5043251970331dfdc1d87407a0a4188d9976ca1a3a479bb",
+      "imports": {
+        "BEE.dll!?BEE_Death@@YAHXZ": {
+          "iat_va": "0x180126750",
+          "verified_code_references": [
+            {
+              "site": "0x712e6",
+              "caller_function_rva": "0x71150",
+              "kind": "call",
+              "IAT_VA": "0x180126750"
+            }
+          ]
+        },
+        "BEE.dll!?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z": {
+          "iat_va": "0x180126758",
+          "verified_code_references": [
+            {
+              "site": "0x70647",
+              "caller_function_rva": "0x6fd80",
+              "kind": "call",
+              "IAT_VA": "0x180126758"
+            },
+            {
+              "site": "0x71bc8",
+              "caller_function_rva": "0x71a60",
+              "kind": "call",
+              "IAT_VA": "0x180126758"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
