@@ -6,7 +6,7 @@ evidence: E2-L AE2025/26 exact installed BEE / TDB machine code
 
 # Native Shape Contents: implementation boundary and CNL expansion route
 
-This is a reconstruction of **the real internal Adobe Shape creation mechanism**, not a recipe for a conventional Effect or a claim of supported Adobe SDK extensibility. See [F-VECTOR-054](../../research/findings/F-VECTOR-054-native-shape-full-schema-and-183-creator-pipeline.md) and EXP-SHAPE-054.
+This is a reconstruction of **the real internal Adobe Shape creation mechanism**, not a recipe for a conventional Effect or a claim of supported Adobe SDK extensibility. See [F-VECTOR-054](https://github.com/ken-eizo/after-effects-internals-guide/blob/main/research/findings/F-VECTOR-054-native-shape-full-schema-and-183-creator-pipeline.md) and EXP-SHAPE-054.
 
 ## Authentic native creation path
 
