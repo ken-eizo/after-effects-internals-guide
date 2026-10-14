@@ -1,0 +1,32 @@
+{
+  "2025": {
+    "original_TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+    "register_factory_rva": "0x27400",
+    "register_callback_map_offset": "0x28",
+    "register_callback_map_insert_pre_create_rva": "0x2753b",
+    "eager_create_call_rva": "0x2757f",
+    "register_canonical_map_offset": "0x38",
+    "register_canonical_map_insert_post_create_rva": "0x275ab",
+    "unregister_factory_wrapper_rva": "0x28bc0",
+    "unregister_impl_rva": "0x28bd0",
+    "unregister_canonical_map_remove_call_rva": "0x28d25",
+    "unregister_callback_map_remove_call_rva": "0x28de5",
+    "unregister_canonical_virtual_deleting_destructor_call_rva": "0x28e10",
+    "scope_warning": "Static ordering only; no guarantee of rollback if exceptions occur during registration or if live child references survive."
+  },
+  "2026": {
+    "original_TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+    "register_factory_rva": "0x285d0",
+    "register_callback_map_offset": "0x28",
+    "register_callback_map_insert_pre_create_rva": "0x28707",
+    "eager_create_call_rva": "0x2874b",
+    "register_canonical_map_offset": "0x38",
+    "register_canonical_map_insert_post_create_rva": "0x2876d",
+    "unregister_factory_wrapper_rva": "0x29c10",
+    "unregister_impl_rva": "0x29c20",
+    "unregister_canonical_map_remove_call_rva": "0x29d65",
+    "unregister_callback_map_remove_call_rva": "0x29e25",
+    "unregister_canonical_virtual_deleting_destructor_call_rva": "0x29e4c",
+    "scope_warning": "Static ordering only; no guarantee of rollback if exceptions occur during registration or if live child references survive."
+  }
+}

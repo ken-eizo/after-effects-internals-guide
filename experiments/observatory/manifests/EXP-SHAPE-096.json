@@ -1,0 +1,41 @@
+{
+  "experiment_id": "EXP-SHAPE-096",
+  "date": "2026-10-14",
+  "status": "PASS AE2025 and AE2026 strict read-only C++ TDB StreamFactory Creator/canonical native prototype lifetime",
+  "source": "experiments/vector-shape/probe-src/tools/verify_tdb_native_creator_canonical_lifetime.py",
+  "dataset": "datasets/ae-tdb-native-creator-canonical-lifetime-2025-2026.json",
+  "ae2025": {
+    "eager_create_call": "0x2757f",
+    "canonical_map_removal_call": "0x28d25",
+    "creator_map_removal_call": "0x28de5",
+    "canonical_prototype_virtual_delete": "0x28e10"
+  },
+  "ae2026": {
+    "eager_create_call": "0x2874b",
+    "canonical_map_removal_call": "0x29d65",
+    "creator_map_removal_call": "0x29e25",
+    "canonical_prototype_virtual_delete": "0x29e4c"
+  },
+  "constructor_registration_order": [
+    "insert callback into factory+0x28",
+    "call CreateStream to build canonical object",
+    "insert canonical object in factory+0x38",
+    "virtual native SetupCanonicalLayout if enabled"
+  ],
+  "teardown_success_branch": [
+    "remove factory+0x38 canonical entry",
+    "remove factory+0x28 Creator entry",
+    "call canonical object virtual deleting destructor"
+  ],
+  "caveats": [
+    "Private native map semantics inferred from instruction control/data flow",
+    "Error/exception rollback not established",
+    "No guarantee foreign Timeline Stream instances can survive module unload",
+    "Original installed Windows x64 TDB.dll only; not macOS API"
+  ],
+  "private_runtime_calls": 0,
+  "modified_adobe_host": false,
+  "foreign_native_stream_registered": false,
+  "product_status": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "finding": "research/findings/F-VECTOR-096-tdb-factory-canonical-prototype-lifetime.md"
+}

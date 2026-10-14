@@ -165,3 +165,11 @@ F-VECTOR-093 で判明した `OM.dll::OM_Stream` の**実際の C++ オブジェ
 独自の `CNL:` Stream を標準タイムラインの新規親グループにするには、単なる MatchName 登録だけでは足りず、**ABI 互換の native `TDB_StreamGroup` と `FillInCanonicalUILayout`、子型の Creator/所有/編集/永続化**が必要だと具体的に判明した。登録は eager に実体を生成して仮想関数を呼ぶため、非互換な Creator は **登録時点で** AE をクラッシュさせ得る。旧 `CNLPrivateTDBDisposable.aex` は組込み leaf Creator を借りる実験であり、この native group の設計条件を満たさない。
 
 研究：`research/findings/F-VECTOR-095-native-tdb-registration-eager-canonical-shape-group-dispatch.md`、`experiments/vector-shape/EXP-SHAPE-095-tdb-native-registration-to-contents-schema.md`。**第三者 AEX による独自ネイティブ登録・AE 標準タイムライン挿入はなお未実証**。VM・VirtualBox 更新は保留し、非公開 API 呼出しなし。
+
+## F-VECTOR-096 — TDB ネイティブ Creator・Canonical prototype の実際の登録解除順（2026-10-14）
+
+F-VECTOR-095 で判明した eager prototype 登録をさらに追い、TDB.dll の native factory が **2つの別のマップ**（Creator callback 用 `this+0x28`、canonical prototype 用 `this+0x38`）を保持することを実証。登録時は **Creator map に追加 → CreateStream で canonical prototype 生成 → canonical map に追加 → 仮想 canonical layout 処理**。解除時は **canonical map から除外 → Creator map から除外 → 保持済み canonical prototype ポインタの仮想 deleting destructor を呼出し**という順序を、AE 2025/2026 両方で命令レベルのデータフローで検証した。
+
+**重要な未解決条件：** Creator 登録後に prototype 生成が失敗した場合の例外ロールバックや、解除後にほかのプロジェクトの Stream が外部 vtable を参照していないという保証は確認できない。したがって実験用 AEX の `UnregisterFactoryFunc` が成功しても完全に安全な解除を証明できない。実際の非公開 API 実機呼出しは行わず、VM 更新も保留。
+
+詳細：`research/findings/F-VECTOR-096-tdb-factory-canonical-prototype-lifetime.md`、`experiments/vector-shape/EXP-SHAPE-096-tdb-native-canonical-prototype-lifetime.md`、再検証コード `verify_tdb_native_creator_canonical_lifetime.py`。
