@@ -2762,6 +2762,8 @@
           
         
       
+        
+      
     
     
     
@@ -2798,6 +2800,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
@@ -2811,6 +2818,41 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../host-integration/aegp/general-plugin-setdown-lifetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -5975,6 +6017,17 @@
     <span class="md-ellipsis">
       
         General plug-in setdown versus DLL unloading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-stage-32-actually-performs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Stage 32 actually performs
       
     </span>
   </a>
@@ -14493,6 +14546,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#what-stage-32-actually-performs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Stage 32 actually performs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#initialization-failure-and-partial-host-shutdown" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -14751,6 +14815,9 @@
 <p>What this <strong>proves</strong>: a normal reverse shutdown requests general plugin setdown at a numerically earlier termination step than the built-in BEE module teardown.</p>
 <p>What this <strong>does not prove</strong>: that every third-party DLL has already been unloaded, that its callbacks are inaccessible, or that the host's document/Undo/history tasks no longer hold foreign object pointers.</p>
 <p>This boundary is especially important for a proposed foreign <code>TDB_StreamBase</code> provider. The existing first-party <code>BEE_DoAddToIndexedStreamGroupTask</code> can conditionally <strong>own a detached noncanonical Stream and call its virtual deleting destructor during history disposal</strong> (F-VECTOR-101/102). A provider cannot assume that factory unregistration, a plugin setdown callback and destruction of all live Stream objects are the same event.</p>
+<h2 id="what-stage-32-actually-performs">What Stage 32 actually performs<a class="headerlink" href="#what-stage-32-actually-performs" title="Permanent link">&para;</a></h2>
+<p>The <code>MEE.dll</code> native <code>SetdownGeneralPlugins</code> implementation has now been independently verified (F-VECTOR-107). It iterates 184-byte general-plugin records, calls each non-null callback with the stored refcon and—when the record is marked prepared—clears that flag and calls <code>PLUG_UnprepRoutine</code>. The separate <code>MEE_AEGP_Terminate</code> method contains a <code>PLUG_UnregisterRoutine</code> path, while <code>PLUG_Death</code> runs at <strong>Stage 14</strong> on a full reverse shutdown.</p>
+<p>This does <strong>not</strong> identify the actual OS-level unload moment. PLUG Unprep can invoke an indirect routine-descriptor method and the PLUG module may manage DLL images through other helper code. See <a href="../../host-integration/aegp/general-plugin-setdown-lifetime/">General Plug-in Setdown and Routine Lifetime</a> for the concrete versioned native calls.</p>
 <h2 id="initialization-failure-and-partial-host-shutdown">Initialization failure and partial host shutdown<a class="headerlink" href="#initialization-failure-and-partial-host-shutdown" title="Permanent link">&para;</a></h2>
 <p>The stage machine is conditional on the current initialized state and call-site guards. The existence of a Stage-29 <code>BEE_Death</code> branch does <strong>not</strong> imply it runs after a partially failed initialization that never reached stage 29. The <code>Terminate()</code> routine checks host state and selects different paths depending on mode/initialization conditions.</p>
 <p>The present static evidence does not establish every exception/unwind branch, every asynchronous service's quiescence, or the exact native Project-close point relative to module-level teardown. It also does not establish a supported general third-party Stream registration interface.</p>
@@ -14820,7 +14887,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:39:16 UTC">October 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:53:26 UTC">October 15, 2026</span>
   </span>
 
     

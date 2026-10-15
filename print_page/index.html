@@ -2764,6 +2764,8 @@
           
         
       
+        
+      
     
     
     
@@ -2800,6 +2802,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
@@ -2813,6 +2820,41 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../host-integration/aegp/general-plugin-setdown-lifetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -15063,6 +15105,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#host-integration-aegp-general-plugin-setdown-lifetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -20605,7 +20658,226 @@ First make the effect correct with full inputs and conservative identity. Then p
                         <h1>AEGP Runtime<a class='headerlink' href='#section-8-1' title='Permanent link'></a>
                         </h1>
                     <section class="print-page" id="host-integration-aegp" heading-number="8.1.1"><h1 id="host-integration-aegp-aegp-surface">AEGP Surface<a class="headerlink" href="#host-integration-aegp-aegp-surface" title="Permanent link">&para;</a></h1>
-<p>Map AEGP suites, hooks, opaque handles, project/stream access, render contexts and suite lifetime to internal state/evaluation systems. Track which calls are main-thread-only or unsafe from render workers.</p></section></section>
+<p>Map AEGP suites, hooks, opaque handles, project/stream access, render contexts and suite lifetime to internal state/evaluation systems. Track which calls are main-thread-only or unsafe from render workers.</p></section><section class="print-page" id="host-integration-aegp-general-plugin-setdown-lifetime" heading-number="8.1.2"><h1 id="host-integration-aegp-general-plugin-setdown-lifetime-general-plug-in-setdown-mee-callback-plug-unprep-and-registration-lifetime">General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-general-plug-in-setdown-mee-callback-plug-unprep-and-registration-lifetime" title="Permanent link">&para;</a></h1>
+<p>When After Effects shuts down a third-party <strong>general plug-in</strong>, the internal native machinery distinguishes the plug-in's callback invocation, its prepared routine state, its registration record and the lifetime of its loaded module. A callback completing successfully does <strong>not</strong> by itself establish that the plug-in DLL has been unloaded, nor that all foreign objects are gone.</p>
+<p>This chapter documents the <strong>Adobe first-party implementation of general plug-in shutdown</strong>. The <code>MEE</code> and <code>PLUG</code> functions below are private C++ entrypoints, not a recommended or supported external calling convention.</p>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-lifecycle-layers-and-native-responsibilities">Lifecycle layers and native responsibilities<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-lifecycle-layers-and-native-responsibilities" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Internal operation</th>
+<th>Observed responsibility</th>
+<th>What it does not establish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MEE::SetdownGeneralPlugins</code> (exported <code>SetdownGeneralPlugins</code>)</td>
+<td>Iterate registered general plug-in records, call callback if set, conditionally unprep routine</td>
+<td>No guarantee of OS-level DLL unload</td>
+</tr>
+<tr>
+<td><code>PLUG_UnprepRoutine</code></td>
+<td>Lock PLUG routine state, invoke descriptor method and update preparation data</td>
+<td>Not equivalent to every routine descriptor being unregistered</td>
+</tr>
+<tr>
+<td><code>PLUG_UnregisterRoutine</code></td>
+<td>Registered routine descriptor removal</td>
+<td>Does not inherently prove external Stream objects are gone</td>
+</tr>
+<tr>
+<td><code>MEE_AEGP_Terminate</code></td>
+<td>Uses distinct PLUG Unprep and Unregister calls</td>
+<td>Not synonymous with general Setdown callback</td>
+</tr>
+<tr>
+<td><code>PLUG_Death</code></td>
+<td>Module-level PLUG subsystem teardown that also calls Unregister</td>
+<td>Runs at different aelib lifecycle stage</td>
+</tr>
+</tbody>
+</table>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-setdowngeneralplugins-per-record-iteration">SetdownGeneralPlugins: per-record iteration<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-setdowngeneralplugins-per-record-iteration" title="Permanent link">&para;</a></h2>
+<p>In both AE2025 and AE2026, the <code>MEE.dll</code> implementation traverses native plug-in records at a stride of <strong><code>0xB8</code> (184 bytes)</strong>.</p>
+<p>The inspected offsets, normalized to the beginning of one native record, are:</p>
+<table>
+<thead>
+<tr>
+<th>Native record member</th>
+<th style="text-align: right;">Offset</th>
+<th>Meaning supported by machine code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Callback context / refcon</td>
+<td style="text-align: right;"><code>+0x10</code></td>
+<td>Passed as the callback's first argument</td>
+</tr>
+<tr>
+<td>Callback function pointer</td>
+<td style="text-align: right;"><code>+0x58</code></td>
+<td>Called only when non-null</td>
+</tr>
+<tr>
+<td>Prepared-state flag</td>
+<td style="text-align: right;"><code>+0xB0</code></td>
+<td>Checked and set to zero before conditional Unprep</td>
+</tr>
+<tr>
+<td>Next record</td>
+<td style="text-align: right;"><code>+0xB8</code></td>
+<td>Native iteration stride</td>
+</tr>
+</tbody>
+</table>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">SetdownGeneralPlugins:
+</span><span id="__span-0-2">  for each general plug-in record:
+</span><span id="__span-0-3">      if callback != null:
+</span><span id="__span-0-4">          callback(refcon)
+</span><span id="__span-0-5">
+</span><span id="__span-0-6">      if prepared_flag != 0:
+</span><span id="__span-0-7">          prepared_flag = 0
+</span><span id="__span-0-8">          PLUG_UnprepRoutine(record's routine descriptor)
+</span><span id="__span-0-9">
+</span><span id="__span-0-10">  clean up internal record backing state
+</span></code></pre></div>
+<p>The 2025 compiler represents the iterator as <code>record + 0xB0</code> in the inner loop; 2026 represents the record base directly. Both resolve to the same layout above. This is an <strong>E2-L static success-path reconstruction</strong>, not a complete guarantee about callback exceptions or every possible record.</p>
+<h3 id="host-integration-aegp-general-plugin-setdown-lifetime-exact-callback-unprep-sites">Exact callback / Unprep sites<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-exact-callback-unprep-sites" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th style="text-align: right;">AE2025 <code>MEE.dll</code> RVA</th>
+<th style="text-align: right;">AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SetdownGeneralPlugins</code></td>
+<td style="text-align: right;"><code>0x54960</code></td>
+<td style="text-align: right;"><code>0x49CE0</code></td>
+</tr>
+<tr>
+<td>Indirect callback invocation</td>
+<td style="text-align: right;"><code>0x549A0</code></td>
+<td style="text-align: right;"><code>0x49D1D</code></td>
+</tr>
+<tr>
+<td>Prepared-state check</td>
+<td style="text-align: right;"><code>0x549A2</code></td>
+<td style="text-align: right;"><code>0x49D1F</code></td>
+</tr>
+<tr>
+<td>Flag clear</td>
+<td style="text-align: right;"><code>0x549AE</code></td>
+<td style="text-align: right;"><code>0x49D2B</code></td>
+</tr>
+<tr>
+<td>Imported <code>PLUG_UnprepRoutine</code> call</td>
+<td style="text-align: right;"><code>0x549B1</code></td>
+<td style="text-align: right;"><code>0x49D32</code></td>
+</tr>
+</tbody>
+</table>
+<p>The callback pointer is invoked by <code>call rax</code>, not a TDB Stream Creator callback and not a native property-class registration call.</p>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-plug_unpreproutine-and-actual-module-unloading">PLUG_UnprepRoutine and actual module unloading<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-plug_unpreproutine-and-actual-module-unloading" title="Permanent link">&para;</a></h2>
+<p>The native <code>PLUG_UnprepRoutine</code> function:</p>
+<ol>
+<li>acquires PLUG state under a recursive mutex;</li>
+<li>locates the relevant routine descriptor;</li>
+<li>calls an <strong>indirect descriptor virtual method</strong> at vtable <code>+0x30</code>;</li>
+<li>performs additional internal bookkeeping; and</li>
+<li>releases the mutex.</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Native site</th>
+<th style="text-align: right;">AE2025 <code>PLUG.dll</code> RVA</th>
+<th style="text-align: right;">AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PLUG_UnprepRoutine</code></td>
+<td style="text-align: right;"><code>0x8B70</code></td>
+<td style="text-align: right;"><code>0x1CDD0</code></td>
+</tr>
+<tr>
+<td>First recursive mutex lock</td>
+<td style="text-align: right;"><code>0x8BA9</code></td>
+<td style="text-align: right;"><code>0x1CDFE</code></td>
+</tr>
+<tr>
+<td>Descriptor vtable <code>+0x30</code> call</td>
+<td style="text-align: right;"><code>0x8C23</code></td>
+<td style="text-align: right;"><code>0x1CE78</code></td>
+</tr>
+<tr>
+<td>Final observed mutex unlock</td>
+<td style="text-align: right;"><code>0x8D5A</code></td>
+<td style="text-align: right;"><code>0x1CFAF</code></td>
+</tr>
+</tbody>
+</table>
+<p>Neither inspected Unprep function makes a <strong>direct import call</strong> to <code>FreeLibrary</code>. This is a <em>bounded observation</em>, not a proof that the actual plug-in module stays loaded. PLUG can delegate through descriptor methods, private helpers or module wrappers. The installed AE2026 PLUG DLL contains <code>FreeLibrary</code> imports <strong>elsewhere</strong>.</p>
+<p>Do not assume a private C++ object's vtable has become invalid solely because an AEGP setdown callback returned; conversely, do not assume the loaded-image lifetime protects a foreign Stream during all of its eventual native Undo/history destruction.</p>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-aegp-terminate-and-plug-death-are-distinct-from-setdown">AEGP Terminate and PLUG Death are distinct from Setdown<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-aegp-terminate-and-plug-death-are-distinct-from-setdown" title="Permanent link">&para;</a></h2>
+<p><code>MEE_AEGP_Terminate</code> contains a separate path that calls <code>PLUG_UnprepRoutine</code> and then <code>PLUG_UnregisterRoutine</code>. <code>PLUG_Death</code>, called from <code>aelib.dll</code>'s Stage <strong>14</strong>, contains its own <code>PLUG_UnregisterRoutine</code> call.</p>
+<table>
+<thead>
+<tr>
+<th>Native function / callsite</th>
+<th style="text-align: right;">AE2025 RVA</th>
+<th style="text-align: right;">AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MEE_AEGP_Terminate</code></td>
+<td style="text-align: right;"><code>0x4EB60</code></td>
+<td style="text-align: right;"><code>0x43EF0</code></td>
+</tr>
+<tr>
+<td>Its Unprep call</td>
+<td style="text-align: right;"><code>0x4EC4D</code></td>
+<td style="text-align: right;"><code>0x43FCD</code></td>
+</tr>
+<tr>
+<td>Its Unregister call</td>
+<td style="text-align: right;"><code>0x4EDD9</code></td>
+<td style="text-align: right;"><code>0x44143</code></td>
+</tr>
+<tr>
+<td><code>PLUG_Death</code></td>
+<td style="text-align: right;"><code>0x4F30</code></td>
+<td style="text-align: right;"><code>0x19970</code></td>
+</tr>
+<tr>
+<td>Its native Unregister call</td>
+<td style="text-align: right;"><code>0x50AF</code></td>
+<td style="text-align: right;"><code>0x19AEF</code></td>
+</tr>
+</tbody>
+</table>
+<p>In the normal full <strong>descending native shutdown</strong>, <code>aelib</code>'s Stage <strong>32</strong> invokes <code>MEE_AEGP_Death → MEE_AEGP_Terminate → SetdownGeneralPlugins</code>; after that the first-party Stream type providers shut down in Stages <strong>29 BEE → 27 FLT → 25 OM → 15 TDB</strong>, followed by <code>PLUG_Death</code> in Stage <strong>14</strong>. See <a href="#architecture-native-module-startup-shutdown">aelib Native Module Lifecycle</a>.</p>
+<p>All these are conditional native host execution branches; the static order does not prove that a specific third-party plug-in or type has been initialized or that every DLL has been unloaded.</p>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-a-foreign-native-stream-provider-has-an-additional-lifetime-problem">A foreign native Stream provider has an additional lifetime problem<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-a-foreign-native-stream-provider-has-an-additional-lifetime-problem" title="Permanent link">&para;</a></h2>
+<p>The first-party <code>BEE_DoRemoveIndexedGroupTask</code> creates a reciprocal <code>BEE_DoAddToIndexedStreamGroupTask</code>, which can hold a detached <code>TDB_StreamBase</code> pointer. When the owning Add task's destructor later runs, it may invoke the <strong>concrete Stream's own virtual deleting destructor</strong>. The native Project's UndoContext can own such task records until project close or history deletion.</p>
+<p>Therefore, safe external native type support would need <strong>all</strong> of these independent guarantees: registered Creator/prototype, approved parent policy, project instance ownership, Native Undo task retention, asynchronous/render consumers, and the ability to keep code and allocators available until every reference is gone. The public AEGP SDK provides none of these as a general foreign <code>TDB_StreamBase</code>-class admission contract.</p>
+<p><strong>No independent <code>CNL:</code> Stream type has been registered or saved/reopened in the actual host in this experiment.</strong></p>
+<h2 id="host-integration-aegp-general-plugin-setdown-lifetime-validation-and-sources">Validation and sources<a class="headerlink" href="#host-integration-aegp-general-plugin-setdown-lifetime-validation-and-sources" title="Permanent link">&para;</a></h2>
+<p>Strict offline verifier:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_mee_plug_setdown_unprep_unregister.py"</span>
+</span></code></pre></div>
+<p>Result: <strong>PASS in both original installed Windows AE2025 and 2026</strong>. It pins the original MEE and PLUG DLL SHA-256 digests and verifies native callbacks, field offsets, IAT calls, lock and descriptor call edges. The original Adobe DLLs were read only; no private Adobe runtime function was executed.</p>
+<ul>
+<li>Finding: F-VECTOR-107.</li>
+<li>Data: <code>datasets/ae-mee-plug-general-plugin-setdown-unprep-unregister-2025-2026.json</code>.</li>
+<li>Background: <a href="#architecture-native-module-startup-shutdown">Native Module Lifecycle</a>, <a href="#host-integration-aegp">AEGP Runtime</a>, <a href="#state-model-native-property-system-undo-task-lifecycle">BEE Undo Task Lifecycle</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Native Stream Factory Lifetime</a>.</li>
+</ul></section></section>
                     <section class='print-page md-section' id='section-8-2' heading-number='8.2'>
                         <h1>SDK State and Suite Semantics<a class='headerlink' href='#section-8-2' title='Permanent link'></a>
                         </h1>
@@ -24108,6 +24380,8 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </tbody>
 </table>
 <p><code>OM_Death</code> first unregisters its <code>ADBE Mask Shape</code> class and then frees and nulls its separately allocated <code>TDB_MatchName</code>. <code>FLT.dll</code> uses scoped <code>UnregisterAll</code>. See F-VECTOR-093/094/096 and <code>datasets/ae-tdb-native-creator-canonical-lifetime-2025-2026.json</code>.</p>
+<h3 id="state-model-native-property-system-factory-registration-lifetime-general-plug-in-setdown-is-not-factory-lifetime-exhaustion">General plug-in Setdown is not factory lifetime exhaustion<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-general-plug-in-setdown-is-not-factory-lifetime-exhaustion" title="Permanent link">&para;</a></h3>
+<p>F-VECTOR-107 traces the first-party <code>MEE.dll!SetdownGeneralPlugins</code> routine through each plug-in record callback, prepared-state clearing and a conditional <code>PLUG.dll!PLUG_UnprepRoutine</code> call. <code>MEE_AEGP_Terminate</code> also calls <code>PLUG_UnregisterRoutine</code> on a separate path. Neither operation proves that a third-party DLL image has been unloaded or that a BEE Undo task no longer holds a derived <code>TDB_StreamBase</code> object. See <a href="#host-integration-aegp-general-plugin-setdown-lifetime">General Plug-in Setdown</a> and <a href="#architecture-native-module-startup-shutdown">Native Module Lifecycle</a> for the actual Stage-32 / Stage-29 ordering.</p>
 <h2 id="state-model-native-property-system-factory-registration-lifetime-error-paths-and-unload-contract">Error paths and unload contract<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-error-paths-and-unload-contract" title="Permanent link">&para;</a></h2>
 <p><strong>Not verified:</strong> the complete registration failure rollback, duplicate-MatchName behavior in all paths, exception safety when the Creator itself throws, destruction of independently created project Stream instances, Undo references, outstanding render requests or macOS ABI. A foreign module must not unload while any host object retains its Creator, virtual function or code pointer.</p>
 <p>Do <strong>not</strong> attempt private factory calls in a regular AE installation, or interpret a built disposable <code>CNLPrivateTDBDisposable.aex</code> as a safe product: it borrows an Adobe-built leaf Creator and cannot prove custom group registration.</p>
@@ -25636,6 +25910,9 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
 <p>What this <strong>proves</strong>: a normal reverse shutdown requests general plugin setdown at a numerically earlier termination step than the built-in BEE module teardown.</p>
 <p>What this <strong>does not prove</strong>: that every third-party DLL has already been unloaded, that its callbacks are inaccessible, or that the host's document/Undo/history tasks no longer hold foreign object pointers.</p>
 <p>This boundary is especially important for a proposed foreign <code>TDB_StreamBase</code> provider. The existing first-party <code>BEE_DoAddToIndexedStreamGroupTask</code> can conditionally <strong>own a detached noncanonical Stream and call its virtual deleting destructor during history disposal</strong> (F-VECTOR-101/102). A provider cannot assume that factory unregistration, a plugin setdown callback and destruction of all live Stream objects are the same event.</p>
+<h2 id="architecture-native-module-startup-shutdown-what-stage-32-actually-performs">What Stage 32 actually performs<a class="headerlink" href="#architecture-native-module-startup-shutdown-what-stage-32-actually-performs" title="Permanent link">&para;</a></h2>
+<p>The <code>MEE.dll</code> native <code>SetdownGeneralPlugins</code> implementation has now been independently verified (F-VECTOR-107). It iterates 184-byte general-plugin records, calls each non-null callback with the stored refcon and—when the record is marked prepared—clears that flag and calls <code>PLUG_UnprepRoutine</code>. The separate <code>MEE_AEGP_Terminate</code> method contains a <code>PLUG_UnregisterRoutine</code> path, while <code>PLUG_Death</code> runs at <strong>Stage 14</strong> on a full reverse shutdown.</p>
+<p>This does <strong>not</strong> identify the actual OS-level unload moment. PLUG Unprep can invoke an indirect routine-descriptor method and the PLUG module may manage DLL images through other helper code. See <a href="#host-integration-aegp-general-plugin-setdown-lifetime">General Plug-in Setdown and Routine Lifetime</a> for the concrete versioned native calls.</p>
 <h2 id="architecture-native-module-startup-shutdown-initialization-failure-and-partial-host-shutdown">Initialization failure and partial host shutdown<a class="headerlink" href="#architecture-native-module-startup-shutdown-initialization-failure-and-partial-host-shutdown" title="Permanent link">&para;</a></h2>
 <p>The stage machine is conditional on the current initialized state and call-site guards. The existence of a Stage-29 <code>BEE_Death</code> branch does <strong>not</strong> imply it runs after a partially failed initialization that never reached stage 29. The <code>Terminate()</code> routine checks host state and selects different paths depending on mode/initialization conditions.</p>
 <p>The present static evidence does not establish every exception/unwind branch, every asynchronous service's quiescence, or the exact native Project-close point relative to module-level teardown. It also does not establish a supported general third-party Stream registration interface.</p>
@@ -35584,6 +35861,8 @@ dumpbin failures: <strong>0</strong>.</p>
 .print-site-enumerate-headings #section-8 > h1:before { content: '8 ' }
 .print-site-enumerate-headings #section-8-1 > h1:before { content: '8.1 ' }
 .print-site-enumerate-headings #host-integration-aegp > h1:before { content: '8.1.1 ' }
+
+.print-site-enumerate-headings #host-integration-aegp-general-plugin-setdown-lifetime > h1:before { content: '8.1.2 ' }
 
 .print-site-enumerate-headings #section-8-2 > h1:before { content: '8.2 ' }
 .print-site-enumerate-headings #host-integration-cpp-sdk-aegp-internal-coordinate-bridges > h1:before { content: '8.2.1 ' }

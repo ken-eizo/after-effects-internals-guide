@@ -2764,6 +2764,8 @@
           
         
       
+        
+      
     
     
     
@@ -2800,6 +2802,11 @@
 
             </a>
             
+              
+              <label class="md-nav__link " for="__nav_8_1" id="__nav_8_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
           </div>
         
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_1_label" aria-expanded="false">
@@ -2813,6 +2820,41 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../host-integration/aegp/general-plugin-setdown-lifetime/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
               
             
           </ul>
@@ -4217,6 +4259,23 @@
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Unregistration and native object ownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plug-in-setdown-is-not-factory-lifetime-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General plug-in Setdown is not factory lifetime exhaustion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -14534,6 +14593,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Unregistration and native object ownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-plug-in-setdown-is-not-factory-lifetime-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        General plug-in Setdown is not factory lifetime exhaustion
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -14781,6 +14857,8 @@
 </tbody>
 </table>
 <p><code>OM_Death</code> first unregisters its <code>ADBE Mask Shape</code> class and then frees and nulls its separately allocated <code>TDB_MatchName</code>. <code>FLT.dll</code> uses scoped <code>UnregisterAll</code>. See F-VECTOR-093/094/096 and <code>datasets/ae-tdb-native-creator-canonical-lifetime-2025-2026.json</code>.</p>
+<h3 id="general-plug-in-setdown-is-not-factory-lifetime-exhaustion">General plug-in Setdown is not factory lifetime exhaustion<a class="headerlink" href="#general-plug-in-setdown-is-not-factory-lifetime-exhaustion" title="Permanent link">&para;</a></h3>
+<p>F-VECTOR-107 traces the first-party <code>MEE.dll!SetdownGeneralPlugins</code> routine through each plug-in record callback, prepared-state clearing and a conditional <code>PLUG.dll!PLUG_UnprepRoutine</code> call. <code>MEE_AEGP_Terminate</code> also calls <code>PLUG_UnregisterRoutine</code> on a separate path. Neither operation proves that a third-party DLL image has been unloaded or that a BEE Undo task no longer holds a derived <code>TDB_StreamBase</code> object. See <a href="../../../host-integration/aegp/general-plugin-setdown-lifetime/">General Plug-in Setdown</a> and <a href="../../../architecture/native-module-startup-shutdown/">Native Module Lifecycle</a> for the actual Stage-32 / Stage-29 ordering.</p>
 <h2 id="error-paths-and-unload-contract">Error paths and unload contract<a class="headerlink" href="#error-paths-and-unload-contract" title="Permanent link">&para;</a></h2>
 <p><strong>Not verified:</strong> the complete registration failure rollback, duplicate-MatchName behavior in all paths, exception safety when the Creator itself throws, destruction of independently created project Stream instances, Undo references, outstanding render requests or macOS ABI. A foreign module must not unload while any host object retains its Creator, virtual function or code pointer.</p>
 <p>Do <strong>not</strong> attempt private factory calls in a regular AE installation, or interpret a built disposable <code>CNLPrivateTDBDisposable.aex</code> as a safe product: it borrows an Adobe-built leaf Creator and cannot prove custom group registration.</p>
@@ -14809,7 +14887,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:39:16 UTC">October 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:53:26 UTC">October 15, 2026</span>
   </span>
 
     
