@@ -2,7 +2,7 @@
 status: active
 last_verified: 2026-09-16
 ---
-# UI System
+# AE Editor/View State — Observed UI and Render Synchronization
 
 After Effects UI state is not one state graph. AEIG separates at least **persistent document state**, **render/evaluation state**, **per-view/editor presentation state**, and **transient UI request state**. Bugs often arise when code assumes those layers are synchronously interchangeable.
 

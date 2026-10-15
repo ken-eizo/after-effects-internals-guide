@@ -3,7 +3,7 @@ status: active
 last_verified: 2026-09-16
 evidence: Adobe Spectrum public docs + Adobe AE developer docs + AEIG runtime archaeology
 ---
-# Spectrum and the After Effects UI System
+# Adobe Spectrum Design System vs After Effects Editor UI
 
 ## Core finding
 After Effects UI should be modeled as two related but non-identical layers: Adobe's cross-product design language and AE-specific product-shell/editor controls. Spectrum is a strong source for shared design primitives, but it is not a complete specification of the Timeline, Effect Controls, viewer chrome, property rows, docking shell, or other AE-specialized surfaces.

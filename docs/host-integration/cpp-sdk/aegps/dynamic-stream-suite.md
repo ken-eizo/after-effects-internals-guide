@@ -5,7 +5,7 @@ evidence: E0-H + E0-S + E2-X + E2-L
 versions: Adobe SDK 25.6, AEGP_DynamicStreamSuite4
 ---
 
-# AEGP_DynamicStreamSuite4 — Native Property Groups
+# AEGP_DynamicStreamSuite4 — Public Dynamic Stream Operations
 
 The **Dynamic Stream Suite** is Adobe's supported interface for navigating and manipulating host-owned property **groups and children**. The suite works with Tracker, Text, Paint, Shape and other exposed Stream groups. It does **not** register new C++ Stream classes.
 

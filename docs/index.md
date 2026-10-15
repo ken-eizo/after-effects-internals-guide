@@ -10,6 +10,8 @@ AEIG is an **unofficial technical companion to the [After Effects C++ SDK Guide]
 
 It is organized as a technical encyclopedia, not a timeline of research activity. Every subsystem has its own section and pages, with reproducible evidence kept separately from normative guidance.
 
+**Naming contract:** navigate by the actual Adobe SDK feature and **host context**, not merely a shared drawing/renderer API. Adobe calls the two Effect Custom UI purposes **Custom ECW UI** (Effect Controls Window, `PF_Window_EFFECT`) and **Custom Comp UI** (Composition/Layer Windows, `PF_Window_COMP` / `PF_Window_LAYER`). Both may use Drawbot, but they are distinct interfaces. Public AEGP suites are likewise separate from the observed internal TDB/BEE stream implementation. See [Official SDK names, host ownership and terminology](foundations/sdk-nomenclature-and-context.md) and the [whole-site taxonomy audit](reference/sdk-taxonomy-coverage.md).
+
 ## Start with an SDK feature
 
 The primary navigation follows the official SDK Guide's main chapters. If you already know Adobe's public API categories, begin with the corresponding AEIG topic:

@@ -5,7 +5,7 @@ evidence: E0-G + E0-H + E0-S + E2-L + E2-X + H
 versions: Windows After Effects 2025 / 2026; SDK 25.6; no equivalent macOS native ABI verified
 ---
 
-# Native Property System — Lifecycle, Object Model and API Atlas
+# TDB/BEE Native Stream Implementation (Private) — Lifecycle and Object Model
 
 After Effects' **native property system** is a host-owned hierarchy of layers, effects, stream groups, leaf values, time-dependent state and renderer-facing identities. This section reconstructs the system **in execution order, from application initialization to shutdown**, rather than presenting disconnected lists of SDK calls or individual reverse-engineering experiments.
 

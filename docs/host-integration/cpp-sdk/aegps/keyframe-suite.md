@@ -5,7 +5,7 @@ evidence: E0-H + E0-G + E2-X
 versions: Installed Adobe SDK25.6 AEGP_KeyframeSuite5; older suite versions are distinct
 ---
 
-# AEGP_KeyframeSuite5 — Native Keyframe Editing
+# AEGP_KeyframeSuite5 — Public Keyframe Stream Operations
 
 `AEGP_KeyframeSuite5` is the **supported public suite for authored keyframes** on eligible AE Streams. It is separate from the property Stream Suite and the host's private TDB/BEE animation classes.
 

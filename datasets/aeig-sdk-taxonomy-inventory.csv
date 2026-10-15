@@ -1,0 +1,297 @@
+path,heading,section,topic,authority,owner,status
+ai-analysis/fastmask-lineage.md,FastMask / Roto Brush Temporal-Memory Lineage,Observed Native Implementation (AEIG Research),Roto Brush / Object Matte Runtime (Observed),research,AE ML analysis,active
+ai-analysis/ml-model-runtime.md,ML Model Registry and Runtime Policy,Observed Native Implementation (AEIG Research),Roto Brush / Object Matte Runtime (Observed),research,AE ML analysis,active
+ai-analysis/object-matte.md,Object Matte / Object Selection Internals,Observed Native Implementation (AEIG Research),Roto Brush / Object Matte Runtime (Observed),research,AE ML analysis,active
+ai-analysis/object-selection-pipeline.md,Object Selection / Pre-Segmentation Pipeline,Observed Native Implementation (AEIG Research),Roto Brush / Object Matte Runtime (Observed),research,AE ML analysis,active
+ai-analysis/overview.md,AI / Learned Analysis Systems,Observed Native Implementation (AEIG Research),Roto Brush / Object Matte Runtime (Observed),research,AE ML analysis,active
+animation-system/keyframe-api-history.md,Keyframe API History and Coordinate Semantics,Observed Native Implementation (AEIG Research),Keyframe / Interpolation Runtime (Observed),research,animation runtime,active
+animation-system/spatial-interpolation.md,Spatial Interpolation and Arc-Length Parameterization,Observed Native Implementation (AEIG Research),Keyframe / Interpolation Runtime (Observed),research,animation runtime,researched-seed
+archaeology/ae9-smartfx.md,SmartFX Archaeology: From AE 7/9 to the Modern Render Graph,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+archaeology/cc2015-rearchitecture.md,CC 2015 / 13.5 Re-architecture,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+archaeology/disk-playback-era.md,Disk Playback Era: From Persistent Cache to Active Preview Residency,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+archaeology/mfr-era.md,Multi-Frame Rendering Era,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+archaeology/official-api-version-lineage.md,Official API Version Lineage,Research & Evidence,Adobe Version / Implementation History,research,historical observation,generated
+archaeology/patent-map.md,Patent Archaeology Map,Research & Evidence,Adobe Version / Implementation History,research,historical observation,seed-map
+archaeology/pf-api-version-lineage.md,PF Effect API Version Lineage,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+archaeology/timeline.md,Architecture Timeline,Research & Evidence,Adobe Version / Implementation History,research,historical observation,active
+architecture/native-module-startup-shutdown.md,aelib Native Module Lifecycle — Forward Initialization and Reverse Shutdown,Observed Native Implementation (AEIG Research),Native Host Modules / Lifecycle,observed,AE host architecture,internal-implementation-reference
+architecture/product-system-atlas.md,Product-System Atlas,Observed Native Implementation (AEIG Research),Native Host Modules / Lifecycle,observed,AE host architecture,active
+architecture/project-vs-render-state.md,Project State vs Render State,Observed Native Implementation (AEIG Research),Native Host Modules / Lifecycle,observed,AE host architecture,active
+architecture/subsystem-boundaries.md,Subsystem Boundaries,Observed Native Implementation (AEIG Research),Native Host Modules / Lifecycle,observed,AE host architecture,active
+architecture/system-overview.md,System Overview,Observed Native Implementation (AEIG Research),Native Host Modules / Lifecycle,observed,AE host architecture,active
+audio-system/overview.md,Audio System,Audio,PF Audio Rendering / Audio Runtime,research,PF audio,active
+audio-system/runtime-architecture.md,Audio Runtime Architecture,Audio,PF Audio Rendering / Audio Runtime,research,PF audio,active
+cache-system/bounds-cache.md,Bounds Cache,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/cache-architecture.md,Cache Architecture,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/compute-cache.md,Compute Cache: Cached Computation as a Host-Scheduled Single-Flight System,Effect Details,Compute Cache API,official,Compute Cache API,active
+cache-system/disk-cache.md,Disk Cache,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/expression-cache.md,Expression Cache as Part of AE's Cache System,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/guid-mixing.md,GUID Mixing and Extra Render Dependencies,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/state-identity.md,Cache State Identity,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,active
+cache-system/temporal-validity.md,Temporal Cache Validity,"Observed Render, Cache & Execution (AEIG Research)",AE Cache / Identity / Invalidation (Observed),research,AE cache,researched-seed
+capability-recipes/cache-safe-extra-dependencies.md,Recipe: Make Non-Parameter State Cache-Safe,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/cep-vs-uxp-extension-plane.md,Choose CEP vs UXP for AE Extension UI,Extension Host Interfaces (Distinct APIs),CEP vs UXP — Capability Boundary,research,CEP vs UXP,active
+capability-recipes/compute-cache-deduplicate-work.md,Deduplicate Expensive Computation Across Render Threads,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/effect-prefix-rendering.md,Recipe: Render a Layer at a Specific Effect Stage,Effect Details,AEGP Render Options / Layer Checkout,research,AEGP_RenderOptionsSuite,active
+capability-recipes/headless-fresh-vs-reuse.md,Choose Fresh vs Reused Headless Host State,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/host-compatible-hash-state.md,Construct Host-Compatible Hash State,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/index.md,Capability Recipes,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/item-change-since-timestamp.md,Ask Whether an Item Changed Since an Edit Generation,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/observe-internals-safely.md,Recipe: Observe Internal Rendering Without Depending on Private ABI,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/stable-object-references.md,Recipe: Keep a Stable Reference to AE Objects,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/suite-version-negotiation.md,Recipe: Negotiate Suite Versions Safely,Introduction,AEIG Cross-API Recipes (Not SDK APIs),research,recipe,active
+capability-recipes/ui-automation-extension-plane.md,Recipe: Escape Native Plug-in API Limits with the Extension Plane,Extension Host Interfaces (Distinct APIs),CEP vs UXP — Capability Boundary,research,extension and scripting,active
+color-pipeline/overview.md,Color Pipeline,"Observed Render, Cache & Execution (AEIG Research)",Color Conversion / Pixel Color Semantics,research,color pipeline,active
+color-pipeline/runtime-architecture.md,Runtime Color Architecture,"Observed Render, Cache & Execution (AEIG Research)",Color Conversion / Pixel Color Semantics,research,color pipeline,active
+evaluation/bee.md,BEE Evaluation Runtime,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,active
+evaluation/collateral-dependencies.md,Collateral Dependencies,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,researched-seed
+evaluation/dirty-invalidation.md,Dirty Propagation and Invalidation,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,active
+evaluation/evaluation-model.md,Evaluation Model,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,active
+evaluation/speculative-evaluation.md,Speculative Evaluation,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,active-hypothesis
+evaluation/work-queues.md,Evaluation Work Queues,Observed Native Implementation (AEIG Research),BEE Evaluation / Work Queues (Private),observed,BEE,active
+expression-engine/architecture.md,Expression Engine Architecture,Observed Native Implementation (AEIG Research),Expression Runtime / Caches (Observed),research,AE expressions,active
+expression-engine/caching.md,Expression Caching and Runtime Reuse,Observed Native Implementation (AEIG Research),Expression Runtime / Caches (Observed),research,AE expressions,active
+expression-engine/preprocessing.md,Expression Preprocessing,Observed Native Implementation (AEIG Research),Expression Runtime / Caches (Observed),research,AE expressions,active-hypothesis
+foundations/cross-host-triangulation.md,Cross-Host Triangulation,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/evidence-model.md,Evidence Model,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/independent-reimplementation-triangulation.md,Independent Reimplementation Triangulation,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/methodology.md,Methodology,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/scope-and-coverage-model.md,Scope and Coverage Model,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/sdk-nomenclature-and-context.md,"AEIG Nomenclature — Official API, UI Purpose, Host Context and Private Runtime",Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,editorial contract; public API names checked against Adobe SDK Guide
+foundations/terminology.md,Terminology,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+foundations/version-model.md,Version Model,Introduction,AEIG Methodology & Evidence (Not SDK APIs),research,methodology,active
+gpu-system/cross-api-interop-verified-boundaries.md,"Native Effect Backend Selection: D3D12, Vulkan Interop, Metal and MFR",SmartFX,PF GPU Rendering — Unverified Non-SDK Backends,research,D3D12/Vulkan/Metal interop,experimentally verified on isolated Windows GPU; real Adobe host and macOS not verified
+gpu-system/cross-platform-effect-architecture.md,"Cross-Platform Native GPU Effects: Shared C++ Core, Specialized Execution Backends",SmartFX,PF_Cmd_SMART_RENDER_GPU — Implementation,official,PF GPU render,research
+gpu-system/effect-plugin-author-field-guide-ja.md,After Effects Effect Plugin開発者のための設計原則と実践ガイド,SmartFX,PF_Cmd_SMART_RENDER_GPU — Implementation,research,PF Effect plug-in engineering,"""開発者向けフィールドガイド／研究結果と未検証事項を区別"""
+gpu-system/one-millisecond-total-frame.md,1 ms TOTAL FRAME: host-visible Composition Profiler performance gate,SmartFX,PF_Cmd_SMART_RENDER_GPU — Performance Qualification,research,AE Composition Profiler goal,experimental-performance-target-not-demonstrated-in-actual-adobe-ae
+gpu-system/optimal-effect-engineering.md,Optimal AE Effect Engineering: Evidence-Based Decision System,SmartFX,PF_Cmd_SMART_RENDER_GPU — Implementation,research,PF Effect optimization,research
+gpu-system/overview.md,PF GPU Effect Rendering — Public Selectors and Observed GF Runtime,"Observed Render, Cache & Execution (AEIG Research)",GF / PF GPU Runtime (Observed Native),observed,PF.dll GF::Device and host GPU,active
+gpu-system/release-qualification-matrix.md,Native AE Effect Engineering — Qualification Matrix and Selection Standard,SmartFX,PF_Cmd_SMART_RENDER_GPU — Performance Qualification,research,Effect qualification,verified-windows-lab-unverified-adobe-host-and-macos-runtime
+gpu-system/vulkan-host-backend-feasibility.md,Vulkan as an AE Host-Integrated GPU Backend: Feasibility Boundary,SmartFX,PF GPU Rendering — Unverified Non-SDK Backends,research,Vulkan interop feasibility,research
+headless-system/overview.md,Headless and Command-Line Host,Command Line (aerender),Command-Line Host Interface,research,aerender,active
+headless-system/runtime-architecture.md,Headless Runtime Architecture,Command Line (aerender),Command-Line Host Interface,research,aerender,active
+host-integration/ae-vs-premiere-same-problems-different-architecture.md,"AE vs Premiere: Same Problems, Different Architecture",Observed Native Implementation (AEIG Research),AE / MediaCore Host Boundaries,research,host integration,active
+host-integration/aegp/general-plugin-setdown-lifetime.md,"General Plug-in Setdown — MEE Callback, PLUG Unprep and Registration Lifetime",Observed Native Implementation (AEIG Research),Native Plug-in Module Lifecycle (Private),observed,PLUG / MEE lifecycle,internal-implementation-reference
+host-integration/aegp/index.md,AEGP Surface,AEGPs,AEGP Host Services / Suite Lifetime,official,AEGP,index
+host-integration/aeio/index.md,AEIO Surface,AEIOs,AEIO Plug-in Contract,official,AEIO,index
+host-integration/aeio/overview.md,AEIO Architecture and Legacy I/O Contract,AEIOs,AEIO Plug-in Contract,official,AEIO,active
+host-integration/artisans/index.md,Artisan Surface,Artisans,Artisan Rendering Interface,official,Artisan,index
+host-integration/artisans/render-context-and-interactive-policy.md,Artisan Render Context and Interactive Policy,Artisans,Artisan Rendering Interface,official,Artisan,active
+host-integration/capability-frontier.md,Plug-in Capability Frontier,Observed Native Implementation (AEIG Research),AE / MediaCore Host Boundaries,research,host integration,active
+host-integration/cep/cc2015-panel-sdk.md,CC 2015 Panel SDK Lineage,Extension Host Interfaces (Distinct APIs),CEP Panels / ExtendScript Bridge,research,CEP panel SDK lineage,active
+host-integration/command-line/index.md,Command Line Surface,Command Line (aerender),Command-Line Host Interface,research,aerender,index
+host-integration/cpp-sdk/aegp-internal-coordinate-bridges.md,AEGP Coordinates at the BEE/TDB Boundary,Observed Native Implementation (AEIG Research),AEGP-to-BEE/TDB Adapter Boundaries,observed,AEGP/BEE bridge,active
+host-integration/cpp-sdk/aegps/dynamic-stream-suite.md,AEGP_DynamicStreamSuite4 — Public Dynamic Stream Operations,AEGPs,AEGP Suites — Public AEGP API,official,aegps,supported-sdk-guide-companion
+host-integration/cpp-sdk/aegps/index.md,AEGPs — AEGP Suites and Plug-in Entry Points,AEGPs,AEGP Suites — Public AEGP API,official,aegps,index
+host-integration/cpp-sdk/aegps/keyframe-suite.md,AEGP_KeyframeSuite5 — Public Keyframe Stream Operations,AEGPs,AEGP Suites — Public AEGP API,official,aegps,supported-sdk-guide-companion
+host-integration/cpp-sdk/aegps/register-suite.md,AEGP_RegisterSuite5 — Supported Plug-in Registration,AEGPs,AEGP Suites — Public AEGP API,official,aegps,supported-sdk-guide-companion
+host-integration/cpp-sdk/aegps/stream-suite.md,"AEGP_StreamSuite6 — Stream References, Values and Expressions",AEGPs,AEGP Suites — Public AEGP API,official,aegps,supported-sdk-guide-companion
+host-integration/cpp-sdk/aeios/index.md,AEIOs — File Importer/Exporter API,AEIOs,AEIOs — Public Importer API,official,aeios,index
+host-integration/cpp-sdk/artisans/index.md,Artisans — Custom 3D Renderer API,Artisans,Artisans — Public Renderer Plug-in API,official,artisans,index
+host-integration/cpp-sdk/audio/index.md,Audio — PF Effect Audio Contract,Audio,Audio — Official SDK,official,audio,index
+host-integration/cpp-sdk/effect-basics/index.md,Effect Basics — PF Effect Plug-in API,Effect Basics,Effect Basics — PF_Cmd_* / PF_ParamDef,official,effect-basics,index
+host-integration/cpp-sdk/effect-details/index.md,Effect Details — Public SDK and Observed Host Internals,Effect Details,Effect Details — Official SDK Suites,official,effect-details,index
+host-integration/cpp-sdk/effect-ui-events/index.md,"Effect UI & Events — Custom ECW UI, Custom Comp UI and Drawbot",Effect UI & Events,Effect UI & Events — Official SDK,official,effect-ui-events,index
+host-integration/cpp-sdk/guide-gap-matrix.md,Guide Gap Matrix,Introduction,SDK Guide / Headers Coverage,research,SDK comparison,active
+host-integration/cpp-sdk/host-reimplementation-failure-patterns.md,Host Reimplementation Failure Patterns,Research & Evidence,Independent SDK Reimplementations,research,third-party ABI,active
+host-integration/cpp-sdk/independent-abi-reimplementations.md,Independent Effect-API Reimplementations,Research & Evidence,Independent SDK Reimplementations,research,third-party ABI,active
+host-integration/cpp-sdk/index.md,After Effects C++ SDK — Public API Reference,Introduction,SDK Overview / Suites,official,Adobe PF/AEGP SDK,index
+host-integration/cpp-sdk/introduction/index.md,Introduction — After Effects C++ SDK,Introduction,Introduction — Official SDK,official,introduction,index
+host-integration/cpp-sdk/performance-and-escape-hatches.md,Performance Contracts and Escape Hatches,Effect Details,Effect SDK Performance Contracts,research,PF Effect,active
+host-integration/cpp-sdk/platform-header-parity.md,25.6 Windows/macOS Header Parity,Introduction,SDK Platform ABI / Headers,official,SDK headers,active
+host-integration/cpp-sdk/premiere-other-hosts/index.md,Premiere Pro & Other Hosts — Effect API Differences,Premiere Pro & Other Hosts,Premiere Pro & Other Hosts — SDK,official,premiere-other-hosts,index
+host-integration/cpp-sdk/sample-pitfalls.md,SDK Sample Pitfalls and Fossilized Defects,Introduction,SDK Samples / Errata,research,SDK samples,active
+host-integration/cpp-sdk/sdk-distribution-archaeology.md,SDK Distribution Archaeology,Research & Evidence,SDK Distribution / Version Lineage,research,historical SDK,active
+host-integration/cpp-sdk/smartfx/index.md,SmartFX — PF_Cmd_SMART_PRE_RENDER and PF_Cmd_SMART_RENDER,SmartFX,SmartFX — PF_Cmd_SMART_RENDER,official,smartfx,index
+host-integration/cpp-sdk/state-api-evolution.md,State API Evolution: From Conservative Dirty Checks to Dependency Receipts,AEGPs,AEGP State APIs (Public),official,AEGP State APIs,active
+host-integration/cpp-sdk/suite-versioning-and-abi.md,Suite Versioning and ABI,Introduction,SDK Platform ABI / Headers,official,PICA suite versions,active
+host-integration/cpp-sdk/verified-render-contracts.md,Verified Render Contract Repairs,Effect Details,Effect SDK Performance Contracts,research,PF render,active
+host-integration/cpp-sdk/verified-sample-repairs.md,Verified SDK Sample Repairs,Introduction,SDK Samples / Errata,research,SDK samples,active
+host-integration/expressions/index.md,Expressions Surface,Expressions (AE Host API),Expression Engine / API Boundary,research,Expression API,index
+host-integration/pica-sweetpea/plugin-runtime-cache.md,SweetPea/PICA Plug-in Runtime Cache and Module Lifetime,Observed Native Implementation (AEIG Research),PICA / SweetPea (Private Runtime),observed,PICA / SweetPea,active
+host-integration/pica-sweetpea/property-and-file-discovery.md,PICA Property and File Discovery,Observed Native Implementation (AEIG Research),PICA / SweetPea (Private Runtime),observed,PICA / SweetPea,active
+host-integration/pica-sweetpea/runtime-architecture.md,PICA / Sweet Pea Runtime Architecture,Observed Native Implementation (AEIG Research),PICA / SweetPea (Private Runtime),observed,PICA / SweetPea,active
+host-integration/pica-sweetpea/suite-versioning.md,Suite Versioning and Internal Versions,Observed Native Implementation (AEIG Research),PICA / SweetPea (Private Runtime),observed,PICA / SweetPea,active
+host-integration/premiere-pro/async-file-io.md,Premiere Async File I/O as a Modern MediaCore Boundary,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/cache-model-analogs.md,Premiere Cache Model as a Comparison Surface,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/gpu-memory-contract.md,Premiere GPU and Memory Contract,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/memory-management-analogs.md,Premiere Memory-Management Analogs,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/opaque-effect-data.md,Opaque Effect Data as a Shared-State Design,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/ppix-cache.md,"Premiere PPix Cache: Identity, Dependencies, and Purge Protection",Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/render-graph-analogs.md,Premiere Render-Graph Analogs,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/sdk26-modernization.md,Premiere 26 SDK Modernization Clues,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/sequence-render-prefetch.md,Premiere Sequence Render and Media Prefetch,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/shared-effect-api.md,Premiere Pro as a Cross-Host Probe for the AE Effect API,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/smart-rendering.md,Premiere Smart Rendering: Segment Reuse Instead of Pixel Recompute,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/premiere-pro/threading-async.md,Premiere Threading and Async Contracts as a Comparison Surface,Premiere Pro & Other Hosts,Premiere Pro SDK / Cross-host Comparison,research,Premiere Pro,active
+host-integration/scripting/index.md,Scripting Surface,Scripting (ExtendScript DOM),After Effects Scripting Object Model,official,ExtendScript,index
+host-integration/scripting/menu-commands/index.md,Scripting - Menu Commands,Scripting (ExtendScript DOM),After Effects Scripting Object Model,official,ExtendScript,index
+host-integration/scripting/object-model/index.md,Scripting - Object Model,Scripting (ExtendScript DOM),After Effects Scripting Object Model,official,ExtendScript,index
+host-integration/scripting/properties/index.md,Scripting - Properties,Scripting (ExtendScript DOM),After Effects Scripting Object Model,official,ExtendScript,index
+host-integration/scripting/reflection/index.md,Scripting - Reflection,Scripting (ExtendScript DOM),After Effects Scripting Object Model,official,ExtendScript,index
+host-integration/smartfx/index.md,SmartFX Surface,SmartFX,PF_Cmd_SMART_PRE_RENDER / SMART_RENDER,official,SmartFX,index
+host-integration/uxp-cep/cep-runtime.md,CEP Runtime and Host Bridge,Extension Host Interfaces (Distinct APIs),CEP Panels / ExtendScript Bridge,official,CEP / CSXS,active
+host-integration/uxp-cep/index.md,CEP Host Panels and Observed UXP Runtime — Separate Contracts,Extension Host Interfaces (Distinct APIs),CEP Panels / ExtendScript Bridge,research,CEP vs UXP boundary,index
+host-integration/uxp-cep/uxp-after-effects-status.md,UXP in After Effects: Runtime Presence Is Not Public Host API,Extension Host Interfaces (Distinct APIs),UXP Runtime Presence — AE Host API Unverified,research,UXP runtime detection,active
+image-pipeline/alpha-zero-rgb.md,Alpha and Zero-Alpha RGB,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/auxiliary-channels.md,Auxiliary / Multi-Channel Image Data,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/convolution-kernels.md,Convolution Kernels: Exposed Surface vs Implemented Surface,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/numerical-behavior.md,Numerical Behavior,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/pixel-formats.md,"Pixel Formats, Layout, and Residency","Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/roi-bounds.md,ROI and Bounds,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+image-pipeline/sampling.md,Sampling and Resampling Internals,"Observed Render, Cache & Execution (AEIG Research)",PF_EffectWorld / Pixel & ROI Semantics,research,image processing,active
+index.md,After Effects Internals Guide,Introduction,AEIG Home,research,AEIG,active
+interop/overview.md,Inter-Application and Format Interop,"Observed Project, Media & Persistence (AEIG Research)",AEIO / Interchange Formats (Research),research,format interop,active
+media-system/adobe-media-accelerator-identity.md,Adobe Media Accelerator Identity Pattern,"Observed Project, Media & Persistence (AEIG Research)",Footage / MediaCore / Frame Identity,research,AE media,active
+media-system/media-identity.md,"Media Identity: Asset, Content State, Request, and Frame","Observed Project, Media & Persistence (AEIG Research)",Footage / MediaCore / Frame Identity,research,AE media,active
+media-system/overview.md,Media System,"Observed Project, Media & Persistence (AEIG Research)",Footage / MediaCore / Frame Identity,research,AE media,active
+media-system/runtime-architecture.md,Media Runtime Architecture,"Observed Project, Media & Persistence (AEIG Research)",Footage / MediaCore / Frame Identity,research,AE media,active
+memory-system/overview.md,Memory System,"Observed Render, Cache & Execution (AEIG Research)",PF / AEGP Memory & Residency,research,PF memory,active
+memory-system/runtime-architecture.md,Memory Pressure and Residency Architecture,"Observed Render, Cache & Execution (AEIG Research)",PF / AEGP Memory & Residency,research,PF memory,active
+mfr/gpu-concurrency-experiment.md,MFR × GPU Backend: Concurrent Render Admission and Ownership,Effect Details,Multi-Frame Rendering (MFR),official,MFR,research
+mfr/overview.md,Multi-Frame Rendering,Effect Details,Multi-Frame Rendering (MFR),official,MFR,active
+mfr/state-ownership.md,MFR State Ownership: Where Mutable Data Belongs,Effect Details,Multi-Frame Rendering (MFR),official,MFR,active
+observability/debug-database.md,Debug Database,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+observability/gpu-tracing.md,GPU Tracing,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+observability/logging.md,Logging and Tracing,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+observability/module-inventory.md,Module Inventory,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+observability/process-tracing.md,Process Tracing,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+observability/trace-database.md,Trace Database,Research & Evidence,AE Trace / Debug Databases (Observed),observed,AE diagnostic,active
+persistence/aep-binary-model.md,AEP Binary Model and Semantic Graph,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/aep.md,AEP Binary Project Format,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/aepx.md,"AEPX: XML Project Surface, Not a Complete Project Schema","Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/cache-formats.md,Cache Formats,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/ffx.md,FFX Preset Format,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active-hypothesis
+persistence/preferences.md,Preferences as Versioned Persistent Runtime Configuration,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/pseudo-effects.md,Pseudo Effects,"Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+persistence/sequence-data.md,"Sequence Data: Instance State, Serialization, and Render-Side Copies","Observed Project, Media & Persistence (AEIG Research)",AEP / AEPX / FFX and Sequence Data,research,project persistence,active
+product-shell/overview.md,"Product Shell, Panels, Commands and View State","Observed Project, Media & Persistence (AEIG Research)",Workspace / Item View / Panel State,research,AE workspace,active
+reference/aeig-1.0-final-operator-run.md,AEIG 1.0 Final Operator Run,Reference,Release Qualification & Provenance,research,AEIG registry,active
+reference/aeig-1.0-release.md,AEIG 1.0 Release Evidence,Reference,Release Qualification & Provenance,research,AEIG registry,reference-generated
+reference/aeig-1.0-static-rc.md,AEIG 1.0 Static Release Candidate,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/analyzer-selftest.md,Analyzer Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/api-capability-atlas.md,API / Capability Atlas,Reference,Research Registry / SDK Inventory,research,AEIG registry,active
+reference/api-completeness-status.md,API Completeness Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/api-guide-relation-status.md,Guide/Header Relation Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/binding-corroboration-status.md,after-effects-sys Binding Corroboration,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/bug-quirk-registry.md,AEIG Bug / Quirk / Regression Registry,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/capability-frontier-status.md,Capability Frontier Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/corpus-coverage-status.md,Corpus Coverage Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/debug-database-keys.md,Debug Database Keys,Reference,Research Registry / SDK Inventory,research,AEIG registry,reference-generated
+reference/debug-trace-lineage-status.md,Debug / Trace Lineage Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/finalizer-refutation-selftest.md,Finalizer Refutation-Path Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/finalizer-success-selftest.md,Finalizer Success-Path Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/finding-reference-status.md,Finding Reference Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/l5-operator-evidence-map.md,Core L5 Operator Evidence Map,Reference,Release Qualification & Provenance,research,AEIG registry,active
+reference/l5-outcome-decision-table.md,L5 Outcome Decision Table,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/l5-user-run-finalization.md,L5 User-Run Finalization,Reference,Release Qualification & Provenance,research,AEIG registry,reference-generated
+reference/master-surface-query.md,Querying the Master Surface Registry,Reference,Research Registry / SDK Inventory,research,AEIG registry,active
+reference/master-surface-registry-filtering-note.md,Master Registry Filtering and Normalization,Reference,Research Registry / SDK Inventory,research,AEIG registry,active
+reference/master-surface-registry.md,Master Surface Registry,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/official-guide-snapshot-lineage.md,Official Guide API-Version Snapshot Lineage,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/page-depth-audit.md,AEIG Page Depth Audit,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/pre-operator-readiness.md,Pre-Operator Readiness,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/prediction-lock-selftest.md,Prediction Lock Integrity Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/prediction-status.md,Prediction Status,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/promotion-transaction-selftest.md,Promotion Transaction Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/radical-resolution-register.md,Radical Resolution Register,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/release-pipeline-selftest.md,Release Pipeline Self-Test,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/release-readiness.md,AEIG 1.0 Release Readiness,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/repository-integrity.md,Repository Integrity,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/roadmap-status.md,Roadmap Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/runtime-export-atlas-status.md,Runtime Export Atlas Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/sdk-lineage-status.md,SDK Lineage Status,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/sdk-taxonomy-coverage.md,AEIG SDK Terminology and Host-context Classification Coverage,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated-editorial-audit; not proof of every page claim
+reference/static-rc-fingerprint.md,AEIG Static RC Fingerprint,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/static-rc-identity.md,Static RC Identity,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/static-rc-snapshot.md,AEIG 1.0 Static RC Snapshot,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/static-rc-status.md,AEIG 1.0 Static RC Status,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/static-release-candidate.md,AEIG 1.0 Static Release Candidate,Reference,Release Qualification & Provenance,research,AEIG registry,generated
+reference/trace-categories.md,Trace Categories,Reference,Research Registry / SDK Inventory,research,AEIG registry,reference-generated
+reference/unknown-frontier.md,AEIG Unknown Frontier,Reference,Research Registry / SDK Inventory,research,AEIG registry,generated
+reference/version-matrix.md,Version Matrix,Reference,Research Registry / SDK Inventory,research,AEIG registry,active
+render-graph/async-render-requests.md,Async Render Requests and Obsolescence,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/frame-checkout.md,Frame Checkout and Dependency Materialization,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/layer-input-stage.md,Layer Input Stage as a Render-Graph Address,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/layer-pipeline-stages.md,Layer Pipeline Stages,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/render-context.md,"Render Context: Request-Scoped Topology, Time, Geometry and Cache State","Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/render-graph-model.md,Render Graph Model,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/render-nodes.md,Render Nodes,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/render-request-sufficiency.md,Render Request Sufficiency,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/render-tasks.md,"Render Tasks, Work Queues, and Executors","Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/request-architecture-history.md,Render Request Architecture History,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+render-graph/verified-memory-planning.md,Certified Memory-Bounded Recomputation,"Observed Render, Cache & Execution (AEIG Research)",BEE / Render Graph / Frame Checkout (Private),observed,BEE render,active
+research-notes/gizmo-input-probe-2026-10-12.md,Effect Custom UI Input and Redraw — 2026-10-12,Research & Evidence,Host Experiments / Case Reports,research,research receipts,ongoing-experiment
+research-notes/overview.md,Research Notes,Research & Evidence,Host Experiments / Case Reports,research,research receipts,active
+state-model/guid-receipts.md,GUIDs and Receipts,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+state-model/handle-lifetimes.md,Opaque Handles Are Not Stable Identities,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+state-model/native-property-system/api-atlas.md,Public and Internal Native Property API Atlas,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/archive-type-compatibility.md,Native Archive Type Compatibility — Missing Stream Creators,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/canonical-groups-admission.md,"Canonical Groups, Child Types and Native UILayout",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/document-stream-serialization.md,TDB_StreamGroup::Read / Write — Native Property Serialization,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/factory-registration-lifetime.md,"TDB_StreamFactory — Registration, Canonical Instances and Lifetime",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/index.md,TDB/BEE Native Stream Implementation (Private) — Lifecycle and Object Model,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,active-reconstruction
+state-model/native-property-system/indexed-group-insertion.md,TDB_IndexedStreamGroup::InsertStream — Native Child Adoption,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/indexed-group-removal.md,TDB_IndexedStreamGroup::RemoveStream — Detaching Native Child Properties,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/indexed-property-undo-task-ownership.md,Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/name-lookup-callback-bridge.md,TDB_StreamGroup Name Lookup — BEE Startup Callback Bridge,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/owner-editor-renderer.md,"Native Property Ownership, Timeline Editor and Rendering",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/paint-text-shape-hierarchies.md,"Native Paint, Text Animator and Shape Contents Hierarchies",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/project-undo-context-lifecycle.md,"BEE_Project and UndoContext — Ownership, Accessors and Destruction",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/property-operations.md,"Native Property Operations: Inspect, Mutate, Animate and Persist",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/startup-to-shutdown.md,Native Property System: Application Startup to Shutdown,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,evidence-graded-native-runtime-reconstruction
+state-model/native-property-system/stream-instance-creation.md,TDB_StreamFactory::CreateStream — Native Instance Construction,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/stream-object-model.md,Native Stream Object Model,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,architecture-reference
+state-model/native-property-system/structural-command-undo.md,Native Structural Commands and Undo,Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/undo-task-lifecycle.md,"BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,internal-implementation-reference
+state-model/native-property-system/verification-and-version-matrix.md,"Native Property Verification, Version Lineage and Unknowns",Observed Native Implementation (AEIG Research),TDB_StreamBase / TDB_StreamFactory / BEE (Private),observed,TDB/BEE Stream runtime,scope-and-verification-reference
+state-model/object-identity.md,Object Identity,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+state-model/receipt-taxonomy.md,Receipt Taxonomy,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+state-model/snapshots.md,Snapshots and Synchronization,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+state-model/streams-properties.md,Streams and Properties,Observed Native Implementation (AEIG Research),BEE / TDB State & Object Identity (Private),research,state identity,active
+temporal-system/motion-blur.md,Motion Blur as a Temporal Sampling Contract,"Observed Render, Cache & Execution (AEIG Research)",Time Sampling / Motion Blur / Frame Cache,research,temporal,active
+temporal-system/smart-time-cache.md,Smart Time Cache,"Observed Render, Cache & Execution (AEIG Research)",Time Sampling / Motion Blur / Frame Cache,research,temporal,active
+temporal-system/temporal-dependencies.md,Temporal Dependencies,"Observed Render, Cache & Execution (AEIG Research)",Time Sampling / Motion Blur / Frame Cache,research,temporal,active
+temporal-system/time-model.md,Time Model,"Observed Render, Cache & Execution (AEIG Research)",Time Sampling / Motion Blur / Frame Cache,research,temporal,active
+text-system/overview.md,Text System,Observed Native Implementation (AEIG Research),BEE Text / Font Runtime (Observed),observed,BEE text,active
+text-system/project-missing-font-data-lifecycle.md,BEE_Project::AddMissingFont — Native Font Metadata Ownership and Cleanup,Observed Native Implementation (AEIG Research),BEE Text / Font Runtime (Observed),observed,BEE text,internal-implementation-reference
+threading-system/effect-selector-concurrency.md,Effect Selector Concurrency,"Observed Render, Cache & Execution (AEIG Research)",PF_Cmd_* / MFR Concurrency Contracts,research,PF threading,active
+threading-system/overview.md,Threading and Concurrency System,"Observed Render, Cache & Execution (AEIG Research)",PF_Cmd_* / MFR Concurrency Contracts,research,PF threading,active
+three-d-system/overview.md,3D System,Observed Native Implementation (AEIG Research),3D Layer / Renderer Runtime (Observed),research,AE 3D runtime,active
+tracking-analysis/overview.md,Tracking and Analysis,Observed Native Implementation (AEIG Research),Tracker / Analysis Runtime (Observed),research,AE tracking,active
+troubleshooting/failure-model.md,Internal Failure Model,Research & Evidence,Reproduction / Failure Analysis,research,failure,active
+troubleshooting/fixed-issue-architecture-mining.md,Mining Fixed Issues for Internal Architecture,Research & Evidence,Reproduction / Failure Analysis,research,failure,active
+ui-system/async-custom-ui-rendering.md,Async Custom-UI Rendering,Effect UI & Events,PF_AsyncManagerP — Custom UI Rendering,official,PF_AsyncManagerP,active
+ui-system/drawbot-ui-drawing.md,Drawbot Suites — PF_Event_DRAW Resource Lifetimes,Effect UI & Events,Drawbot Suites — Shared Drawing API,official,Drawbot suites,active
+ui-system/effect-controls-custom-ui/composite-widget-architecture.md,Custom ECW UI — PF_PUI_CONTROL Widget Composition,Effect UI & Events,Custom ECW UI — PF_Window_EFFECT,official,Custom ECW UI,proposed-reference-architecture; host-specific integration pending
+ui-system/effect-controls-custom-ui/cross-platform-compatibility.md,Custom ECW UI — Windows/macOS Host Compatibility,Effect UI & Events,Custom ECW UI — PF_Window_EFFECT,official,Custom ECW UI,research-backed-contract; Windows runtime evidence partial; macOS host qualification pending
+ui-system/effect-controls-custom-ui/index.md,Custom ECW UI — PF_Window_EFFECT and Parameter Controls,Effect UI & Events,Custom ECW UI — PF_Window_EFFECT,official,Custom ECW UI,research-backed-classification; ECW host verification pending
+ui-system/effect-controls-custom-ui/performance-and-resilience.md,Custom ECW UI — PF_Cmd_EVENT Performance and Resilience,Effect UI & Events,Custom ECW UI — PF_Window_EFFECT,official,Custom ECW UI,research-backed-qualification-protocol; no universal performance guarantee
+ui-system/effect-custom-ui-input-routing.md,PF_Cmd_EVENT — Effect Custom UI Event Routing,Effect UI & Events,PF_Cmd_EVENT — UI Event Dispatch,official,PF_Cmd_EVENT,active
+ui-system/effect-custom-ui-invalidation.md,PF_InvalidateRect — Effect Custom UI Redraw Scheduling,Effect UI & Events,PF_Cmd_EVENT — UI Event Dispatch,official,PF_InvalidateRect,active
+ui-system/gizmo-adaptive-implementation-architecture.md,Custom Comp UI — Drawbot Implementation Selection,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,research-backed-design; selector implementation separately tested
+ui-system/gizmo-algorithm-optimization-selection.md,Custom Comp UI — Drawbot Optimization and Event Cost,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,algorithm-catalog-with-explicit-adoption-gates
+ui-system/gizmo-cross-platform-contracts.md,Custom Comp UI — Windows/macOS Context and Drawbot Contracts,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,cross-platform contract analysis; Mac host integration pending
+ui-system/gizmo-cross-platform-profiling.md,Custom Comp UI — Host Event and Presentation Profiling,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,platform-specific capture protocol; Mac execution not yet recorded
+ui-system/gizmo-execution-memory-policy.md,Custom Comp UI — PF_Cmd_EVENT Execution and Memory Boundaries,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,evidence-bounded-design
+ui-system/gizmo-macos-porting-certification.md,Custom Comp UI — macOS Effect Plug-in Porting,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,implementation-roadmap-with-release-gates; macOS host smoke pending
+ui-system/gizmo-measurement-acceptance.md,Custom Comp UI — AE-host Measurement and Acceptance,Effect UI & Events,Custom Comp UI — PF_Window_COMP / PF_Window_LAYER,official,Custom Comp UI,measurement-protocol-active
+ui-system/interactive-ui-latency.md,PF_Cmd_EVENT — Input-to-Drawbot Presentation Boundaries,Effect UI & Events,PF_Cmd_EVENT — UI Event Dispatch,research,UI input-to-display measurement,active
+ui-system/overview.md,AE Editor/View State — Observed UI and Render Synchronization,Observed Native Implementation (AEIG Research),Editor / View State vs Render State,research,AEIG UI state model,active
+ui-system/spectrum-and-ae-ui.md,Adobe Spectrum Design System vs After Effects Editor UI,Observed Native Implementation (AEIG Research),Editor / View State vs Render State,research,SPECTRUM first-party UI,active
+ui-system/view-state-and-render-boundary.md,View State and Render Boundary,Observed Native Implementation (AEIG Research),Editor / View State vs Render State,research,AEIG view/render boundary,active
+vector-shape-system/adobe-native-property-provider-sdk-inquiry.md,After Effects SDK team inquiry — Third-party native Timeline Stream/Group provider API,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,unclassified evidence status
+vector-shape-system/historical-native-extension-forensics.md,"Native Shape System Forensics: Forgotten Hooks, Factories and ABI Frontiers",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/independent-native-layer-provider-admission.md,Independent Native ChapeLayer — Host Admission Contract and Completion Gates,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,unclassified evidence status
+vector-shape-system/independent-native-vector-owner-research.md,"Independent Native Vector Objects: Type, Owner, Editor and Renderer",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-edit-and-provenance-bridge.md,Native Vector Editability and Object Provenance — A Cross-System Research Program,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-extensibility-boundaries.md,"Native Shape Extensibility: Authoring, Evaluation, Tools and Rendering",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-property-extension-admission-gates.md,After Effects ネイティブプロパティ拡張 — 型登録・親子構造・ホスト所有の技術体系,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,unclassified evidence status
+vector-shape-system/native-shape-canonical-registration-blueprint.md,Native Shape Contents: implementation boundary and CNL expansion route,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,implementation-frontier-reconstructed; host-external-ownership-unproven
+vector-shape-system/native-stream-factory-and-schema.md,"Native Shape Factory — Creator Registration, Canonical Streams and Indexed Group Admission",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-vector-evaluator-registry.md,Native Vector Evaluator Registry — A Second Hidden Registration System,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-vector-operator-abi-and-origin.md,"Native Vector Operator ABI, Editable Origins and the Effect-Owned Geometry Frontier",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/native-vector-output-ownership.md,"Independent Native Vector Output — Ownership, Evaluation and Renderer Boundaries",Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/overview.md,Vector and Shape System,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,active
+vector-shape-system/research-to-product-frontier.md,CompNodeAE — Research-to-Product Vector Frontier,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,research-active
+vector-shape-system/runtime-architecture.md,Vector / Shape Runtime Architecture,Observed Native Implementation (AEIG Research),BEE / TDB Vector and Shape Streams (Private),observed,BEE Vector,active

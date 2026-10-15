@@ -1,0 +1,27 @@
+test_id	plane	scenario	windows_x64	mac_x86_64	mac_arm64	acceptance	primary_evidence
+UI-PLAT-001	shared-primitive	GizmoSearchAE C++20 host-independent core 6 CTest cases (not ECW integration)	indirect-only-20261016	unknown	unknown	shared pure test assertion pass; ECW remains unverified	E2-X Windows portable GizmoSearchAE receipt
+UI-PLAT-002	loader	PiPL entrypoint and signed host load	host-retest	unknown	unknown	AE recognizes effect no crash	E0-G PiPL / E2-X host
+UI-PLAT-003	loader	Mac Universal binary slices	not-applicable	unknown	unknown	lipo both + load each supported AE arch	E0-G Apple Silicon
+UI-PLAT-004	event	ECW folded/topic/control event separation	unknown	unknown	unknown	no illegal click/hit in hidden control	E0-G PF_ParamDef
+UI-PLAT-005	event	open activate drag release close	unknown	unknown	unknown	deterministic semantic final state + no stale capture	E0-G PF_EventUnion
+UI-PLAT-006	event	deactivate before final drag	unknown	unknown	unknown	capture released, no dangling UI state	E0-G events/H protocol
+UI-PLAT-007	visual	mixed DPI and Retina monitor move	unknown	unknown	unknown	logical hit/draw coordinates align	E0-G Drawbot HiDPI
+UI-PLAT-008	visual	widget clip and zoom/resizing	unknown	unknown	unknown	old/new invalidation covers full affected pixels	E0-G redraw / H
+UI-PLAT-009	visual	style/light/dark + gamma/AA/text	unknown	unknown	unknown	consistent accepted visual golden fixture	E0-G Drawbot and tips
+UI-PLAT-010	visual	BGRA/ARGB alpha and rowbytes	unknown	unknown	unknown	premul/straight correctly rendered, no fringe	E0-G Drawbot
+UI-PLAT-011	input	keyboard/IME text entry (ECW)	unknown	unknown	unknown	feature support explicit; reject if required but absent	E0-G PF_EventUnion
+UI-PLAT-012	input	assistive technology and focus	unknown	unknown	unknown	explicit capability check, fallback for required UX	H integration
+UI-PLAT-013	semantic	change value with AE Undo/Redo	unknown	unknown	unknown	edit value persists and undo granularity correct	E0-G Supervision
+UI-PLAT-014	semantic	arbitrary data copy/flat/unflat/reentrant	unknown	unknown	unknown	roundtrip and malformed decode safe	E0-G Arbitrary Data
+UI-PLAT-015	async	rapid scrub and stale receipt	unknown	unknown	unknown	latest visible result / no stale publish or UAF	E0-G AsyncManager
+UI-PLAT-016	performance	1/100/1000/10000 visible widgets	unknown	unknown	unknown	stratified p50/p95/p99, visual parity	H benchmark
+UI-PLAT-017	performance	input demand vs actual distinct present	unknown	unknown	unknown	input callback and present correlated	E2-X ETW + Mac Instruments
+UI-PLAT-018	performance	partial vs full dirty regions	unknown	unknown	unknown	same update flags, A/B/A no corruption or p99 regress	E0-G invalidation
+UI-PLAT-019	performance	batched vs unbatched Drawbot	unknown	unknown	unknown	command count lower; p99 and pixels accepted	E0-G Drawbot
+UI-PLAT-020	stress	AE main thread occupied with preview	unknown	unknown	unknown	attribute queue stall, no plugin deadlock	E2-L Windows WPR
+UI-PLAT-021	stress	memory pressure + GPU contention	unknown	unknown	unknown	fail closed; bounded queues/working set	H test
+UI-PLAT-022	stress	multiple effect instances / MFR	unknown	unknown	unknown	no cross instance UI mutation or stale release	E0-G MFR
+UI-PLAT-023	stress	100x panel close/open + project swap	unknown	unknown	unknown	no lifetime corruption and no leak slope	H test
+UI-PLAT-024	stress	24h sustained operation and wake/sleep	unknown	unknown	unknown	no reproducible leak/hang; safe recovery	H test
+UI-PLAT-025	release	Mac signing and AE 26.5+ attach	not-applicable	unknown	unknown	ad-hoc dev signing; debug copy policy respected	E0-G Adobe debugging
+UI-PLAT-026	release	stress-qualified adaptive backend selection	unknown	unknown	unknown	only validated-in-host candidates auto-enabled	H / F-UI-024
