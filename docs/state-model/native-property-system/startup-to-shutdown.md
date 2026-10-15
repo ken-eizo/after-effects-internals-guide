@@ -34,6 +34,10 @@ Specific direct code callsite positions:
 
 **Interpretation boundary:** this is the order of *instructions in analyzed functions*, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is **not proven** to occur between these calls. Evidence: F-VECTOR-073–077, 093 and `datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json`.
 
+### An additional BEE → TDB name-search callback
+
+In both installed versions, `BEE_Birth` also constructs a native `std::function` and calls **`TDB_StreamGroup::SetFindStreamByNameNullOKFunction`**. The TDB name-search function later invokes the registered callback or returns null if absent. This is **existing Stream name resolution**, not the `TDB_StreamFactory::RegisterFactoryFunc` mechanism used to register new typed C++ Creators. See [TDB Name Lookup Callback](name-lookup-callback-bridge.md) (F-VECTOR-105).
+
 ## Phase 1 — Adobe internal native Stream providers register their types
 
 The host-wide `TDB_StreamFactory` accepts typed C++ creators keyed by `TDB_MatchName`. At least three independent Adobe DLLs participate:

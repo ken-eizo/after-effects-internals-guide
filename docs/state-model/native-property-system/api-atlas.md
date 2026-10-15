@@ -60,6 +60,8 @@ This is a **bounded observation**; it does not establish nonexistence in a priva
 | `Get_AE_StreamFactory` | `TDB.dll` | Native singleton-style factory getter | F-VECTOR-010/093 |
 | `TDB_StreamFactory::RegisterFactoryFunc` | `TDB.dll` | Creator registry, eager canonical object, group setup | F-VECTOR-095 |
 | `TDB_StreamFactory::CreateStream` | `TDB.dll` | Copy Creator under mutex, unlock, construct instance, optionally initialize leaf/group | F-VECTOR-095/097 |
+| `TDB_StreamGroup::SetFindStreamByNameNullOKFunction` | `TDB.dll` | Install private BEE name-lookup callback; does **not** register a Stream type | F-VECTOR-105 |
+| `TDB_StreamGroup::FindStreamByNameNullOK` | `TDB.dll` | Invoke installed name resolver for an existing Stream, or return null | F-VECTOR-105 |
 | `TDB_IndexedStreamGroup::InsertStream` | `TDB.dll` | Validate parent CanStore, adopt indexed child, update path caches and parent | F-VECTOR-097 |
 | `TDB_IndexedStreamGroup::RemoveStream` | `TDB.dll` | Detach child, clear parent +0x20, return original Stream pointer | F-VECTOR-099 |
 | `TDB_StreamBase::CreateStream` | `TDB.dll` | First-party wrapper tail-jumps to StreamFactory's CreateStream | F-VECTOR-099 |

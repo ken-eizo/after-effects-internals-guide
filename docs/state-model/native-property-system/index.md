@@ -18,6 +18,7 @@ This is an *internal architecture guide*, not a supported C++ SDK. It distinguis
 | Host boot / shutdown | When do native type providers and their factories become available? | [Startup to shutdown](startup-to-shutdown.md) |
 | Stored object | What is a `TDB_StreamBase`, `TDB_Stream`, group, leaf or identity path? | [Native stream object model](stream-object-model.md) |
 | Class provider | Who supplies a MatchName, typed C++ Creator and canonical instance? | [Factory registration and lifetime](factory-registration-lifetime.md) |
+| Stream name lookup | How does BEE install TDB's group-name resolver, and why is it not a type Creator? | [TDB Name Lookup Callback](name-lookup-callback-bridge.md) |
 | Instance construction | How does an already registered Creator produce a Stream with native default-state initialization? | [Native instance creation](stream-instance-creation.md) |
 | Parent insertion | Which CanStore, index, parent and cached-path steps actually adopt a child? | [Indexed child insertion](indexed-group-insertion.md) |
 | Parent removal | How is a native Stream detached without conflating removal and destruction? | [Indexed child removal](indexed-group-removal.md) |
@@ -86,6 +87,7 @@ Important: `E2-L` alone is not a behavioral claim about a fabricated external St
 | --- | --- | --- |
 | Do Adobe DLLs register their own C++ Stream classes across DLL boundaries? | **Yes**, OM/FLT/BEE, both Windows releases | F-VECTOR-093/094, E2-L |
 | Does `RegisterFactoryFunc` immediately build and initialize a native prototype? | **Yes**, including virtual canonical layout dispatch | F-VECTOR-095, E2-L |
+| Does a native callback setter in TDB register new Stream classes? | **Not the name-lookup setter:** `BEE_Birth` installs a group-name resolver; it is separate from `TDB_StreamFactory` Creator registration | F-VECTOR-105, E2-L |
 | Does factory unregister release its own prototype? | **Yes**, on the analyzed successful branch | F-VECTOR-096, E2-L |
 | Does native instance creation invoke the registered callback while holding the factory mutex? | **No on the verified success path**; callback is copied under lock, called after unlock | F-VECTOR-097, E2-L |
 | Does indexed child insertion enforce native CanStore before changing parent state? | **Yes**, then index/cache and SetParent operations | F-VECTOR-097, E2-L |

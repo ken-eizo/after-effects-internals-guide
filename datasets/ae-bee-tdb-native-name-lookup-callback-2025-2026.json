@@ -1,0 +1,55 @@
+{
+  "evidence": "E2-L original SHA pinned BEE and TDB x64 binaries; no Adobe code executed",
+  "versions": {
+    "2025": {
+      "BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "TDB_sha256": "2ed19824997f3de797a75fef6f22d4d11ac8548c9d35f6093aa2afc1a6ed2e69",
+      "BEE_Birth": {
+        "entry": "0x64a530",
+        "TDB_SetFindStreamByNameNullOKFunction_call": "0x64a5f2",
+        "installed_parameter_type": "std::function<const TDB_StreamBase*(const TDB_StreamGroup*, const UTF16String&, unsigned int&, bool&)> (private MSVC symbol, conceptual)"
+      },
+      "TDB_SetFindStreamByNameNullOKFunction": {
+        "entry": "0x2b690",
+        "static_callback_storage_base": "0xa79d0",
+        "std_function_assignment_tailcall": "0x2b69a"
+      },
+      "TDB_StreamGroup_FindStreamByNameNullOK": {
+        "entry": "0x2b540",
+        "stored_callable_pointer_offset": "0x38",
+        "stored_callable_load": "0x2b547",
+        "null_callback_branch": "0x2b551",
+        "std_function_invoke_slot": "+0x10",
+        "invocation": "0x2b56b",
+        "callback_absent_returns_null": "0x2b573"
+      },
+      "api_boundary": "Name-based lookup callback; NOT TDB_StreamFactory::RegisterFactoryFunc and NOT a public third-party native Stream provider",
+      "runtime_execution": false
+    },
+    "2026": {
+      "BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "TDB_sha256": "82677a20bdf871878b579522c4b4e0def8af0a50a810e3b9972da1170f546c1b",
+      "BEE_Birth": {
+        "entry": "0x664f70",
+        "TDB_SetFindStreamByNameNullOKFunction_call": "0x66502e",
+        "installed_parameter_type": "std::function<const TDB_StreamBase*(const TDB_StreamGroup*, const UTF16String&, unsigned int&, bool&)> (private MSVC symbol, conceptual)"
+      },
+      "TDB_SetFindStreamByNameNullOKFunction": {
+        "entry": "0x2c440",
+        "static_callback_storage_base": "0xc0c60",
+        "std_function_assignment_tailcall": "0x2c44a"
+      },
+      "TDB_StreamGroup_FindStreamByNameNullOK": {
+        "entry": "0x2c280",
+        "stored_callable_pointer_offset": "0x38",
+        "stored_callable_load": "0x2c287",
+        "null_callback_branch": "0x2c291",
+        "std_function_invoke_slot": "+0x10",
+        "invocation": "0x2c2ab",
+        "callback_absent_returns_null": "0x2c2b3"
+      },
+      "api_boundary": "Name-based lookup callback; NOT TDB_StreamFactory::RegisterFactoryFunc and NOT a public third-party native Stream provider",
+      "runtime_execution": false
+    }
+  }
+}

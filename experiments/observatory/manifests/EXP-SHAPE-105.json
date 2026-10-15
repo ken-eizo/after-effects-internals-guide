@@ -1,0 +1,21 @@
+{
+  "experiment_id": "EXP-SHAPE-105",
+  "date": "2026-10-15",
+  "status": "PASS E2-L two original installed AE2025/AE2026 BEE/TDB x64 pairs",
+  "focus": "BEE_Birth installs TDB_StreamGroup FindStreamByNameNullOK std::function callback; consumer calls or returns nullptr; distinct from TDB_StreamFactory native class registration",
+  "evidence_level": "E2-L",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_bee_tdb_stream_name_lookup_callback.py",
+  "dataset": "datasets/ae-bee-tdb-native-name-lookup-callback-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-105-bee-tdb-stream-group-name-lookup-callback.md",
+  "feature_reference": "docs/state-model/native-property-system/name-lookup-callback-bridge.md",
+  "private_runtime_calls": 0,
+  "adobe_binaries_modified": false,
+  "host_project_modified": false,
+  "custom_native_class_registered": false,
+  "unknowns": [
+    "full BEE callback implementation",
+    "BEE_Death reset behavior",
+    "foreign provider access",
+    "concurrent callback lifetime"
+  ]
+}

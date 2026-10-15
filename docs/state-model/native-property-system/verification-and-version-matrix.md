@@ -16,6 +16,7 @@ This page is the **evidence boundary** for the technical chapters. It is not a c
 | Built-in native module startup | E2-L TDB/BEE/OM/FLT/aelib x64, 2025+2026 | Cross-DLL Birth calls and registrars | Exact runtime branch behavior, third-party startup |
 | Concrete C++ native Stream | E2-L `OM_Stream` 2025+2026 | Creator, allocator, constructor, vtable, value methods, explicit teardown | Complete private ABI and macOS |
 | Factory registry | E2-L strict machine code 2025+2026 | Eager Creator, canonical prototype, successful unlink/deletion | Exception rollback and surviving document instances |
+| Group name lookup callback | E2-L SHA-pinned original BEE/TDB 2025+2026 | `BEE_Birth` installs TDB name resolver, `FindStreamByNameNullOK` dispatches callable or returns null | Exact BEE lookup callback semantics, reset/unload and concurrency |
 | Instance generation | E2-L strict x64 original TDB 2025+2026 | Creator callback after mutex unlock; default key and optional decanonicalization paths | Exact per-flag behavior and plugin unload concurrency |
 | Parent indexed insertion | E2-L strict TDB vtable 2025+2026 | CanStore before insertion, reverse index/capsule cache/SetParent updates | Complete error rollback and all option meanings |
 | Document reconstruction | E2-L native StreamGroup Read/Write 2025+2026 | Child MatchName → CreateStream → InsertStream/Read | Missing foreign Creator AEP behavior and arbitrary roundtrip |
@@ -54,6 +55,7 @@ The `E2-L` PE images are original installed Adobe assets and stored only on the 
 | Concrete indexed Add/Remove inverse Stream ownership | F-VECTOR-102 | `verify_bee_indexed_task_inverse_and_stream_lifetime.py` |
 | Project UndoContext accessor and destructor | F-VECTOR-103 | `verify_bee_project_undo_context_getter_delegation.py` |
 | Project missing-font vector append/growth/destructor | F-VECTOR-104 | `verify_bee_project_font_vector_pre_undo_teardown.py` |
+| BEE startup to TDB name-lookup callback | F-VECTOR-105 | `verify_bee_tdb_stream_name_lookup_callback.py` |
 | Native archive missing-Creator report policy | F-VECTOR-100 | `verify_tdb_archive_missing_creator_error_policy.py` |
 | Supported AEGP SDK coverage | F-VECTOR-088 | `verify_public_sdk_native_provider_gap.py` |
 
