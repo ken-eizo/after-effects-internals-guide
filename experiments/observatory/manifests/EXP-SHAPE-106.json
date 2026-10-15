@@ -1,0 +1,34 @@
+{
+  "experiment_id": "EXP-SHAPE-106",
+  "date": "2026-10-15",
+  "status": "PASS 2/2 static",
+  "title": "aelib staged native initialization and reverse module teardown",
+  "evidence": "E2-L read-only SHA-pinned original installed Windows AE2025/AE2026 aelib.dll PE, .pdata and x64 IAT calls",
+  "method": "35-stage initialization and termination jump-table decoding, native named export verification, backward TerminateIterator iteration and module callback callsites",
+  "finding": "research/findings/F-VECTOR-106-aelib-staged-native-initialization-reverse-module-teardown.md",
+  "dataset": "datasets/ae-aelib-native-staged-birth-reverse-death-2025-2026.json",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_aelib_native_staged_init_reverse_teardown.py",
+  "technical_docs": [
+    "docs/architecture/native-module-startup-shutdown.md",
+    "docs/state-model/native-property-system/startup-to-shutdown.md",
+    "docs/state-model/native-property-system/factory-registration-lifetime.md"
+  ],
+  "verified": [
+    "TDB birth stage15 and death stage15",
+    "OM birth stage25 and death stage25",
+    "FLT birth stage27 and death stage27",
+    "BEE birth stage29 and death stage29",
+    "AEGP/general plugin setdown stage32 (before native BEE stage29)",
+    "TerminateIterator traverses stages backwards"
+  ],
+  "not_proven": [
+    "user-level runtime shutdown taken",
+    "actual unloading of plugin DLL after setdown",
+    "foreign TDB native stream class registered",
+    "all project/Undo objects deallocated before module death",
+    "macOS private C++ ABI"
+  ],
+  "private_Adobe_code_executed": false,
+  "Adobe_binary_mutation": false,
+  "foreign_native_stream_registered": false
+}

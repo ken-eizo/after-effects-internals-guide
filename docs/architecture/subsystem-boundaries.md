@@ -16,6 +16,10 @@ AEIG treats After Effects as cooperating subsystems rather than one renderer wit
 - **TXT / AGM**: text semantic state/glyph rendering and vector rasterization/materialization.
 - **dvacore diagnostics**: Debug/Trace configuration and cross-product infrastructure.
 
+## Native lifecycle is stage-based, not derived from import-order adjacency
+
+For Windows AE2025/2026, the first-party `aelib.dll` lifecycle state machine initializes its property-related subsystems in ascending numbered stages **TDB 15 → OM 25 → FLT 27 → BEE 29**, and executes the corresponding normal native teardown in descending order. AEGP/general plugin setdown occurs at a separate **stage 32** before BEE's stage 29 in reverse termination. These claims are original compiled stage-dispatch observations (F-VECTOR-106), **not evidence that all external plugin DLLs are physically unloaded at that stage**. See [aelib Native Module Lifecycle](native-module-startup-shutdown.md).
+
 ## Scheduling is also layered
 Trace/runtime vocabulary separates `BEE_WorkQueue`, `RenderTaskManager`, `RenderThreadExecutor`, media async executors and GPU submission. AEIG therefore avoids a single global-scheduler model.
 

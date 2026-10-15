@@ -40,6 +40,12 @@ The Adobe first-party modules register at native host startup. `OM.dll` demonstr
 
 `Required/Paint.aex` *does not* directly import TDB or implement PaintAtom's native class Creator by itself; its `Paint Suite` bridge is separate (F-VECTOR-080/081).
 
+### First-party stage order and general plugin setdown
+
+The original `aelib.dll` stage dispatcher is now fully mapped in AE2025/AE2026. Native property infrastructure starts in ascending stage order: **TDB (15) → OM (25) → FLT (27) → BEE (29)**. Its normal reverse termination visits **Stage 32 general AEGP/plugin Setdown first**, then **BEE (29) → FLT (27) → OM (25) → TDB (15)** (F-VECTOR-106).
+
+The ordering of a **setdown callback** is not equivalent to the physical unloading time of the plugin module, and neither event proves that the host has deleted all detached, Undo-owned, rendered or project-owned native Stream instances. [Native aelib Module Lifecycle](../../architecture/native-module-startup-shutdown.md) documents the exact versioned native control flow.
+
 ## Registration algorithm and internal containers
 
 The successful Windows x64 code path is:

@@ -1,0 +1,132 @@
+{
+  "evidence": "E2-L original installed aelib.dll, SHA-pinned x64 switch dispatch, RIP-IAT, native iterator & main termination",
+  "source": "Read-only PE inspection. Native Adobe functions never executed.",
+  "versions": {
+    "2025": {
+      "original_aelib_sha256": "48331b6c193e8abf495e8119861e63fe06d356be0630ab51e9f9b24e69bec8ff",
+      "native_init_iterator": 448944,
+      "native_term_iterator": 454080,
+      "native_init_case_table": "0x6ed34",
+      "native_term_case_table": "0x6f1dc",
+      "termination_iterator_decrements_to_previous_stage": true,
+      "init_forward_direct_call": "0x18f16",
+      "terminate_backward_direct_call": "0x186ec",
+      "aelib_Terminate_direct_dispatch": "0x83261",
+      "full_shutdown_stage_execution": "descending module stage numbers: 35 to 1, subject to initialized stage and mode/branch guards",
+      "modules": {
+        "TDB": {
+          "stage": 15,
+          "birth_case_entry": "0x6dea3",
+          "birth_call": "0x6dea3",
+          "death_case_entry": "0x6eec0",
+          "death_call": "0x6eec0",
+          "birth_import": "?TDB_Birth@@YAHXZ",
+          "death_import": "?TDB_Death@@YAHXZ"
+        },
+        "OM": {
+          "stage": 25,
+          "birth_case_entry": "0x6e05d",
+          "birth_call": "0x6e05d",
+          "death_case_entry": "0x6ef24",
+          "death_call": "0x6ef24",
+          "birth_import": "?OM_Birth@@YAHXZ",
+          "death_import": "?OM_Death@@YAHXZ"
+        },
+        "FLT": {
+          "stage": 27,
+          "birth_case_entry": "0x6e07b",
+          "birth_call": "0x6e08b",
+          "death_case_entry": "0x6ef3a",
+          "death_call": "0x6ef40",
+          "birth_import": "?FLT_Birth@@YAHHH@Z",
+          "death_import": "?FLT_Death@@YAHXZ"
+        },
+        "BEE": {
+          "stage": 29,
+          "birth_case_entry": "0x6e13d",
+          "birth_call": "0x6e272",
+          "death_case_entry": "0x6ef56",
+          "death_call": "0x6ef56",
+          "birth_import": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "death_import": "?BEE_Death@@YAHXZ"
+        }
+      },
+      "general_plugin_setdown": {
+        "stage": 32,
+        "aegp_death": "0x6efb7",
+        "aegp_terminate": "0x6efbd",
+        "general_plugins_setdown": "0x6efc3"
+      },
+      "limitations": [
+        "No runtime host shutdown performed",
+        "This ordering is conditional on visited stages",
+        "SetdownGeneralPlugins does not prove physical unloading of plugin DLL",
+        "Does not prove live Stream or Undo task objects all released before factory unregister",
+        "This is an Adobe first-party internal dispatcher, not a public extension API"
+      ]
+    },
+    "2026": {
+      "original_aelib_sha256": "def5e8a82d84fc12b5043251970331dfdc1d87407a0a4188d9976ca1a3a479bb",
+      "native_init_iterator": 458112,
+      "native_term_iterator": 463184,
+      "native_init_case_table": "0x710c4",
+      "native_term_case_table": "0x71570",
+      "termination_iterator_decrements_to_previous_stage": true,
+      "init_forward_direct_call": "0x16506",
+      "terminate_backward_direct_call": "0x15e8c",
+      "aelib_Terminate_direct_dispatch": "0x86bb4",
+      "full_shutdown_stage_execution": "descending module stage numbers: 35 to 1, subject to initialized stage and mode/branch guards",
+      "modules": {
+        "TDB": {
+          "stage": 15,
+          "birth_case_entry": "0x70283",
+          "birth_call": "0x70283",
+          "death_case_entry": "0x71250",
+          "death_call": "0x71250",
+          "birth_import": "?TDB_Birth@@YAHXZ",
+          "death_import": "?TDB_Death@@YAHXZ"
+        },
+        "OM": {
+          "stage": 25,
+          "birth_case_entry": "0x70444",
+          "birth_call": "0x70444",
+          "death_case_entry": "0x712b4",
+          "death_call": "0x712b4",
+          "birth_import": "?OM_Birth@@YAHXZ",
+          "death_import": "?OM_Death@@YAHXZ"
+        },
+        "FLT": {
+          "stage": 27,
+          "birth_case_entry": "0x70462",
+          "birth_call": "0x70472",
+          "death_case_entry": "0x712ca",
+          "death_call": "0x712d0",
+          "birth_import": "?FLT_Birth@@YAHHH@Z",
+          "death_import": "?FLT_Death@@YAHXZ"
+        },
+        "BEE": {
+          "stage": 29,
+          "birth_case_entry": "0x70521",
+          "birth_call": "0x70647",
+          "death_case_entry": "0x712e6",
+          "death_call": "0x712e6",
+          "birth_import": "?BEE_Birth@@YAHPEBEAEBV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$basic_string@EU?$char_traits@E@std@@U?$STLAllocator@E@allocator@dvacore@@@2@@std@@@2@@std@@IH_N@Z",
+          "death_import": "?BEE_Death@@YAHXZ"
+        }
+      },
+      "general_plugin_setdown": {
+        "stage": 32,
+        "aegp_death": "0x71347",
+        "aegp_terminate": "0x7134d",
+        "general_plugins_setdown": "0x71353"
+      },
+      "limitations": [
+        "No runtime host shutdown performed",
+        "This ordering is conditional on visited stages",
+        "SetdownGeneralPlugins does not prove physical unloading of plugin DLL",
+        "Does not prove live Stream or Undo task objects all released before factory unregister",
+        "This is an Adobe first-party internal dispatcher, not a public extension API"
+      ]
+    }
+  }
+}

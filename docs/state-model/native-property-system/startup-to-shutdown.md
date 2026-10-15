@@ -13,26 +13,31 @@ See [Architecture](../../architecture/system-overview.md), [Stream objects](stre
 
 ## Phase 0 — Native host loads internal modules
 
-**Observed implementation (E2-L).** In both installed builds, `aelib.dll` has native initialization and shutdown functions containing direct imported CALL instructions to:
+**Observed implementation (E2-L).** Native `aelib.dll` uses **35 numbered lifecycle stages** in both installed versions. The actual `InitIterator` advances from lower to higher stages; `TerminateIterator` dispatches the current stage and **decrements** its value. Sorting CALL instructions by address does **not** recover the termination order.
 
-| Relative code order | Native initialization | Native teardown |
-| --- | --- | --- |
-| First observed | `OM_Birth` | `OM_Death` |
-| Second observed | `FLT_Birth` | `FLT_Death` |
-| Third observed | `BEE_Birth` | `BEE_Death` |
+| Stage number | Native module Birth | Native module Death |
+| ---: | --- | --- |
+| 15 | `TDB_Birth` | `TDB_Death` |
+| 25 | `OM_Birth` | `OM_Death` |
+| 27 | `FLT_Birth` | `FLT_Death` |
+| 29 | `BEE_Birth` | `BEE_Death` |
 
-Specific direct code callsite positions:
+Thus a complete ordinary initialization visits **TDB → OM → FLT → BEE**, while the corresponding normal reverse shutdown visits **BEE → FLT → OM → TDB**.
 
-| Native callsite | AE2025 `aelib.dll` RVA | AE2026 RVA |
+| Direct native aelib callsite | AE2025 RVA | AE2026 RVA |
 | --- | ---: | ---: |
+| `TDB_Birth` | `0x6DEA3` | `0x70283` |
 | `OM_Birth` | `0x6E05D` | `0x70444` |
 | `FLT_Birth` | `0x6E08B` | `0x70472` |
 | `BEE_Birth` | `0x6E272` | `0x70647` |
-| `OM_Death` | `0x6EF24` | `0x712B4` |
-| `FLT_Death` | `0x6EF40` | `0x712D0` |
 | `BEE_Death` | `0x6EF56` | `0x712E6` |
+| `FLT_Death` | `0x6EF40` | `0x712D0` |
+| `OM_Death` | `0x6EF24` | `0x712B4` |
+| `TDB_Death` | `0x6EEC0` | `0x71250` |
 
-**Interpretation boundary:** this is the order of *instructions in analyzed functions*, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is **not proven** to occur between these calls. Evidence: F-VECTOR-073–077, 093 and `datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json`.
+**The plugin boundary is separate.** Native stage 32 (visited **before BEE's stage 29** when terminating in reverse) calls `MEE_AEGP_Death`, `MEE_AEGP_Terminate` and `SetdownGeneralPlugins` in sequence. A requested general plugin setdown **does not prove its DLL has been physically unloaded**, or that all C++ Stream instances referenced by Undo tasks have been destroyed.
+
+**Interpretation boundary:** these are original static compiled branches, not proof of every process's runtime traversal or error/partial startup paths; no supported foreign Stream-class registrar has been established. See [Native aelib module lifecycle](../../architecture/native-module-startup-shutdown.md), F-VECTOR-073–077 and F-VECTOR-106, and the SHA-pinned datasets.
 
 ### An additional BEE → TDB name-search callback
 
