@@ -103,6 +103,12 @@ What this **does not prove**: that every third-party DLL has already been unload
 
 This boundary is especially important for a proposed foreign `TDB_StreamBase` provider. The existing first-party `BEE_DoAddToIndexedStreamGroupTask` can conditionally **own a detached noncanonical Stream and call its virtual deleting destructor during history disposal** (F-VECTOR-101/102). A provider cannot assume that factory unregistration, a plugin setdown callback and destruction of all live Stream objects are the same event.
 
+## What Stage 32 actually performs
+
+The `MEE.dll` native `SetdownGeneralPlugins` implementation has now been independently verified (F-VECTOR-107). It iterates 184-byte general-plugin records, calls each non-null callback with the stored refcon and—when the record is marked prepared—clears that flag and calls `PLUG_UnprepRoutine`. The separate `MEE_AEGP_Terminate` method contains a `PLUG_UnregisterRoutine` path, while `PLUG_Death` runs at **Stage 14** on a full reverse shutdown.
+
+This does **not** identify the actual OS-level unload moment. PLUG Unprep can invoke an indirect routine-descriptor method and the PLUG module may manage DLL images through other helper code. See [General Plug-in Setdown and Routine Lifetime](../host-integration/aegp/general-plugin-setdown-lifetime.md) for the concrete versioned native calls.
+
 ## Initialization failure and partial host shutdown
 
 The stage machine is conditional on the current initialized state and call-site guards. The existence of a Stage-29 `BEE_Death` branch does **not** imply it runs after a partially failed initialization that never reached stage 29. The `Terminate()` routine checks host state and selects different paths depending on mode/initialization conditions.

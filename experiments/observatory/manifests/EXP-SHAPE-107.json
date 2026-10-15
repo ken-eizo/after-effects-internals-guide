@@ -1,0 +1,31 @@
+{
+  "experiment_id": "EXP-SHAPE-107",
+  "date": "2026-10-15",
+  "status": "PASS original AE2025/AE2026 x64 static disassembly",
+  "title": "Separate native general plugin callback setdown, routine Unprep, routine Unregister and DLL image lifetime",
+  "finding": "research/findings/F-VECTOR-107-mee-plug-general-plugin-setdown-unprep-unregister-lifetime.md",
+  "verifier": "experiments/vector-shape/probe-src/tools/verify_mee_plug_setdown_unprep_unregister.py",
+  "dataset": "datasets/ae-mee-plug-general-plugin-setdown-unprep-unregister-2025-2026.json",
+  "features": [
+    "docs/host-integration/aegp/general-plugin-setdown-lifetime.md",
+    "docs/architecture/native-module-startup-shutdown.md",
+    "docs/state-model/native-property-system/factory-registration-lifetime.md"
+  ],
+  "verified": [
+    "MEE::SetdownGeneralPlugins 0xb8-byte record callback at +0x58 with refcon +0x10",
+    "MEE record prepared flag at +0xb0 is cleared before PLUG_UnprepRoutine",
+    "PLUG_UnprepRoutine recursively locks, invokes descriptor virtual vtable +0x30; no direct FreeLibrary call",
+    "MEE_AEGP_Terminate calls PLUG_UnprepRoutine then PLUG_UnregisterRoutine",
+    "PLUG_Death contains separate PLUG_UnregisterRoutine call"
+  ],
+  "unproven": [
+    "OS-level external plug-in DLL unloading time",
+    "indirect descriptor method effects",
+    "foreign TDB_StreamBase class registration or AEP roundtrip",
+    "complete exception and unload concurrency safety"
+  ],
+  "method": "E2-L strictly SHA-pinned installed AE2025/2026 original MEE.dll and PLUG.dll static PE symbol, IAT and bounded x64 function code; no Adobe private functions executed",
+  "private_adobe_code_executed": false,
+  "original_dlls_changed": false,
+  "foreign_native_type_registered": false
+}

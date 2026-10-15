@@ -114,6 +114,10 @@ UnregisterFactoryFunc(key)
 
 `OM_Death` first unregisters its `ADBE Mask Shape` class and then frees and nulls its separately allocated `TDB_MatchName`. `FLT.dll` uses scoped `UnregisterAll`. See F-VECTOR-093/094/096 and `datasets/ae-tdb-native-creator-canonical-lifetime-2025-2026.json`.
 
+### General plug-in Setdown is not factory lifetime exhaustion
+
+F-VECTOR-107 traces the first-party `MEE.dll!SetdownGeneralPlugins` routine through each plug-in record callback, prepared-state clearing and a conditional `PLUG.dll!PLUG_UnprepRoutine` call. `MEE_AEGP_Terminate` also calls `PLUG_UnregisterRoutine` on a separate path. Neither operation proves that a third-party DLL image has been unloaded or that a BEE Undo task no longer holds a derived `TDB_StreamBase` object. See [General Plug-in Setdown](../../host-integration/aegp/general-plugin-setdown-lifetime.md) and [Native Module Lifecycle](../../architecture/native-module-startup-shutdown.md) for the actual Stage-32 / Stage-29 ordering.
+
 ## Error paths and unload contract
 
 **Not verified:** the complete registration failure rollback, duplicate-MatchName behavior in all paths, exception safety when the Creator itself throws, destruction of independently created project Stream instances, Undo references, outstanding render requests or macOS ABI. A foreign module must not unload while any host object retains its Creator, virtual function or code pointer.
