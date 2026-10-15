@@ -6007,6 +6007,8 @@
       
         
       
+        
+      
     
     
     
@@ -6046,6 +6048,41 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../architecture/native-module-startup-shutdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aelib Native Module Lifecycle — Forward Initialization and Reverse Shutdown
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -14658,43 +14695,53 @@
 <p>This chapter follows the <em>property subsystem</em> through AE's lifecycle. It <strong>does not</strong> claim to describe all operating-system, media, GPU, plugin-scanning, licensing or UI startup procedures of the whole application. Its scope starts at the native provider initialization evidence and continues to property operations, ownership, destruction and module teardown.</p>
 <p>See <a href="../../../architecture/system-overview/">Architecture</a>, <a href="../stream-object-model/">Stream objects</a>, <a href="../factory-registration-lifetime/">Factories</a>, and <a href="../owner-editor-renderer/">Owner, Editor, Renderer</a>.</p>
 <h2 id="phase-0-native-host-loads-internal-modules">Phase 0 — Native host loads internal modules<a class="headerlink" href="#phase-0-native-host-loads-internal-modules" title="Permanent link">&para;</a></h2>
-<p><strong>Observed implementation (E2-L).</strong> In both installed builds, <code>aelib.dll</code> has native initialization and shutdown functions containing direct imported CALL instructions to:</p>
+<p><strong>Observed implementation (E2-L).</strong> Native <code>aelib.dll</code> uses <strong>35 numbered lifecycle stages</strong> in both installed versions. The actual <code>InitIterator</code> advances from lower to higher stages; <code>TerminateIterator</code> dispatches the current stage and <strong>decrements</strong> its value. Sorting CALL instructions by address does <strong>not</strong> recover the termination order.</p>
 <table>
 <thead>
 <tr>
-<th>Relative code order</th>
-<th>Native initialization</th>
-<th>Native teardown</th>
+<th style="text-align: right;">Stage number</th>
+<th>Native module Birth</th>
+<th>Native module Death</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>First observed</td>
+<td style="text-align: right;">15</td>
+<td><code>TDB_Birth</code></td>
+<td><code>TDB_Death</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
 <td><code>OM_Birth</code></td>
 <td><code>OM_Death</code></td>
 </tr>
 <tr>
-<td>Second observed</td>
+<td style="text-align: right;">27</td>
 <td><code>FLT_Birth</code></td>
 <td><code>FLT_Death</code></td>
 </tr>
 <tr>
-<td>Third observed</td>
+<td style="text-align: right;">29</td>
 <td><code>BEE_Birth</code></td>
 <td><code>BEE_Death</code></td>
 </tr>
 </tbody>
 </table>
-<p>Specific direct code callsite positions:</p>
+<p>Thus a complete ordinary initialization visits <strong>TDB → OM → FLT → BEE</strong>, while the corresponding normal reverse shutdown visits <strong>BEE → FLT → OM → TDB</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Native callsite</th>
-<th style="text-align: right;">AE2025 <code>aelib.dll</code> RVA</th>
+<th>Direct native aelib callsite</th>
+<th style="text-align: right;">AE2025 RVA</th>
 <th style="text-align: right;">AE2026 RVA</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><code>TDB_Birth</code></td>
+<td style="text-align: right;"><code>0x6DEA3</code></td>
+<td style="text-align: right;"><code>0x70283</code></td>
+</tr>
 <tr>
 <td><code>OM_Birth</code></td>
 <td style="text-align: right;"><code>0x6E05D</code></td>
@@ -14711,9 +14758,9 @@
 <td style="text-align: right;"><code>0x70647</code></td>
 </tr>
 <tr>
-<td><code>OM_Death</code></td>
-<td style="text-align: right;"><code>0x6EF24</code></td>
-<td style="text-align: right;"><code>0x712B4</code></td>
+<td><code>BEE_Death</code></td>
+<td style="text-align: right;"><code>0x6EF56</code></td>
+<td style="text-align: right;"><code>0x712E6</code></td>
 </tr>
 <tr>
 <td><code>FLT_Death</code></td>
@@ -14721,13 +14768,19 @@
 <td style="text-align: right;"><code>0x712D0</code></td>
 </tr>
 <tr>
-<td><code>BEE_Death</code></td>
-<td style="text-align: right;"><code>0x6EF56</code></td>
-<td style="text-align: right;"><code>0x712E6</code></td>
+<td><code>OM_Death</code></td>
+<td style="text-align: right;"><code>0x6EF24</code></td>
+<td style="text-align: right;"><code>0x712B4</code></td>
+</tr>
+<tr>
+<td><code>TDB_Death</code></td>
+<td style="text-align: right;"><code>0x6EEC0</code></td>
+<td style="text-align: right;"><code>0x71250</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Interpretation boundary:</strong> this is the order of <em>instructions in analyzed functions</em>, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is <strong>not proven</strong> to occur between these calls. Evidence: F-VECTOR-073–077, 093 and <code>datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json</code>.</p>
+<p><strong>The plugin boundary is separate.</strong> Native stage 32 (visited <strong>before BEE's stage 29</strong> when terminating in reverse) calls <code>MEE_AEGP_Death</code>, <code>MEE_AEGP_Terminate</code> and <code>SetdownGeneralPlugins</code> in sequence. A requested general plugin setdown <strong>does not prove its DLL has been physically unloaded</strong>, or that all C++ Stream instances referenced by Undo tasks have been destroyed.</p>
+<p><strong>Interpretation boundary:</strong> these are original static compiled branches, not proof of every process's runtime traversal or error/partial startup paths; no supported foreign Stream-class registrar has been established. See <a href="../../../architecture/native-module-startup-shutdown/">Native aelib module lifecycle</a>, F-VECTOR-073–077 and F-VECTOR-106, and the SHA-pinned datasets.</p>
 <h3 id="an-additional-bee-tdb-name-search-callback">An additional BEE → TDB name-search callback<a class="headerlink" href="#an-additional-bee-tdb-name-search-callback" title="Permanent link">&para;</a></h3>
 <p>In both installed versions, <code>BEE_Birth</code> also constructs a native <code>std::function</code> and calls <strong><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></strong>. The TDB name-search function later invokes the registered callback or returns null if absent. This is <strong>existing Stream name resolution</strong>, not the <code>TDB_StreamFactory::RegisterFactoryFunc</code> mechanism used to register new typed C++ Creators. See <a href="../name-lookup-callback-bridge/">TDB Name Lookup Callback</a> (F-VECTOR-105).</p>
 <h2 id="phase-1-adobe-internal-native-stream-providers-register-their-types">Phase 1 — Adobe internal native Stream providers register their types<a class="headerlink" href="#phase-1-adobe-internal-native-stream-providers-register-their-types" title="Permanent link">&para;</a></h2>
@@ -14908,7 +14961,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:22:16 UTC">October 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:39:16 UTC">October 15, 2026</span>
   </span>
 
     

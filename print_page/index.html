@@ -5777,6 +5777,8 @@
       
         
       
+        
+      
     
     
     
@@ -5816,6 +5818,41 @@
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/native-module-startup-shutdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    aelib Native Module Lifecycle — Forward Initialization and Reverse Shutdown
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -15954,10 +15991,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#architecture-native-module-startup-shutdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3.1 aelib Native Module Lifecycle — Forward Initialization and Reverse Shutdown
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#architecture-product-system-atlas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.3.1 Product-System Atlas
+        12.3.2 Product-System Atlas
       
     </span>
   </a>
@@ -15968,7 +16016,7 @@
   <a href="#architecture-project-vs-render-state" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.3.2 Project State vs Render State
+        12.3.3 Project State vs Render State
       
     </span>
   </a>
@@ -15979,7 +16027,7 @@
   <a href="#architecture-subsystem-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.3.3 Subsystem Boundaries
+        12.3.4 Subsystem Boundaries
       
     </span>
   </a>
@@ -15990,7 +16038,7 @@
   <a href="#architecture-system-overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        12.3.4 System Overview
+        12.3.5 System Overview
       
     </span>
   </a>
@@ -22561,43 +22609,53 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <p>This chapter follows the <em>property subsystem</em> through AE's lifecycle. It <strong>does not</strong> claim to describe all operating-system, media, GPU, plugin-scanning, licensing or UI startup procedures of the whole application. Its scope starts at the native provider initialization evidence and continues to property operations, ownership, destruction and module teardown.</p>
 <p>See <a href="#architecture-system-overview">Architecture</a>, <a href="#state-model-native-property-system-stream-object-model">Stream objects</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factories</a>, and <a href="#state-model-native-property-system-owner-editor-renderer">Owner, Editor, Renderer</a>.</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-phase-0-native-host-loads-internal-modules">Phase 0 — Native host loads internal modules<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-0-native-host-loads-internal-modules" title="Permanent link">&para;</a></h2>
-<p><strong>Observed implementation (E2-L).</strong> In both installed builds, <code>aelib.dll</code> has native initialization and shutdown functions containing direct imported CALL instructions to:</p>
+<p><strong>Observed implementation (E2-L).</strong> Native <code>aelib.dll</code> uses <strong>35 numbered lifecycle stages</strong> in both installed versions. The actual <code>InitIterator</code> advances from lower to higher stages; <code>TerminateIterator</code> dispatches the current stage and <strong>decrements</strong> its value. Sorting CALL instructions by address does <strong>not</strong> recover the termination order.</p>
 <table>
 <thead>
 <tr>
-<th>Relative code order</th>
-<th>Native initialization</th>
-<th>Native teardown</th>
+<th style="text-align: right;">Stage number</th>
+<th>Native module Birth</th>
+<th>Native module Death</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>First observed</td>
+<td style="text-align: right;">15</td>
+<td><code>TDB_Birth</code></td>
+<td><code>TDB_Death</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
 <td><code>OM_Birth</code></td>
 <td><code>OM_Death</code></td>
 </tr>
 <tr>
-<td>Second observed</td>
+<td style="text-align: right;">27</td>
 <td><code>FLT_Birth</code></td>
 <td><code>FLT_Death</code></td>
 </tr>
 <tr>
-<td>Third observed</td>
+<td style="text-align: right;">29</td>
 <td><code>BEE_Birth</code></td>
 <td><code>BEE_Death</code></td>
 </tr>
 </tbody>
 </table>
-<p>Specific direct code callsite positions:</p>
+<p>Thus a complete ordinary initialization visits <strong>TDB → OM → FLT → BEE</strong>, while the corresponding normal reverse shutdown visits <strong>BEE → FLT → OM → TDB</strong>.</p>
 <table>
 <thead>
 <tr>
-<th>Native callsite</th>
-<th style="text-align: right;">AE2025 <code>aelib.dll</code> RVA</th>
+<th>Direct native aelib callsite</th>
+<th style="text-align: right;">AE2025 RVA</th>
 <th style="text-align: right;">AE2026 RVA</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><code>TDB_Birth</code></td>
+<td style="text-align: right;"><code>0x6DEA3</code></td>
+<td style="text-align: right;"><code>0x70283</code></td>
+</tr>
 <tr>
 <td><code>OM_Birth</code></td>
 <td style="text-align: right;"><code>0x6E05D</code></td>
@@ -22614,9 +22672,9 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td style="text-align: right;"><code>0x70647</code></td>
 </tr>
 <tr>
-<td><code>OM_Death</code></td>
-<td style="text-align: right;"><code>0x6EF24</code></td>
-<td style="text-align: right;"><code>0x712B4</code></td>
+<td><code>BEE_Death</code></td>
+<td style="text-align: right;"><code>0x6EF56</code></td>
+<td style="text-align: right;"><code>0x712E6</code></td>
 </tr>
 <tr>
 <td><code>FLT_Death</code></td>
@@ -22624,13 +22682,19 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td style="text-align: right;"><code>0x712D0</code></td>
 </tr>
 <tr>
-<td><code>BEE_Death</code></td>
-<td style="text-align: right;"><code>0x6EF56</code></td>
-<td style="text-align: right;"><code>0x712E6</code></td>
+<td><code>OM_Death</code></td>
+<td style="text-align: right;"><code>0x6EF24</code></td>
+<td style="text-align: right;"><code>0x712B4</code></td>
+</tr>
+<tr>
+<td><code>TDB_Death</code></td>
+<td style="text-align: right;"><code>0x6EEC0</code></td>
+<td style="text-align: right;"><code>0x71250</code></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Interpretation boundary:</strong> this is the order of <em>instructions in analyzed functions</em>, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is <strong>not proven</strong> to occur between these calls. Evidence: F-VECTOR-073–077, 093 and <code>datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json</code>.</p>
+<p><strong>The plugin boundary is separate.</strong> Native stage 32 (visited <strong>before BEE's stage 29</strong> when terminating in reverse) calls <code>MEE_AEGP_Death</code>, <code>MEE_AEGP_Terminate</code> and <code>SetdownGeneralPlugins</code> in sequence. A requested general plugin setdown <strong>does not prove its DLL has been physically unloaded</strong>, or that all C++ Stream instances referenced by Undo tasks have been destroyed.</p>
+<p><strong>Interpretation boundary:</strong> these are original static compiled branches, not proof of every process's runtime traversal or error/partial startup paths; no supported foreign Stream-class registrar has been established. See <a href="#architecture-native-module-startup-shutdown">Native aelib module lifecycle</a>, F-VECTOR-073–077 and F-VECTOR-106, and the SHA-pinned datasets.</p>
 <h3 id="state-model-native-property-system-startup-to-shutdown-an-additional-bee-tdb-name-search-callback">An additional BEE → TDB name-search callback<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-an-additional-bee-tdb-name-search-callback" title="Permanent link">&para;</a></h3>
 <p>In both installed versions, <code>BEE_Birth</code> also constructs a native <code>std::function</code> and calls <strong><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></strong>. The TDB name-search function later invokes the registered callback or returns null if absent. This is <strong>existing Stream name resolution</strong>, not the <code>TDB_StreamFactory::RegisterFactoryFunc</code> mechanism used to register new typed C++ Creators. See <a href="#state-model-native-property-system-name-lookup-callback-bridge">TDB Name Lookup Callback</a> (F-VECTOR-105).</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-phase-1-adobe-internal-native-stream-providers-register-their-types">Phase 1 — Adobe internal native Stream providers register their types<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-1-adobe-internal-native-stream-providers-register-their-types" title="Permanent link">&para;</a></h2>
@@ -23938,6 +24002,9 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <h2 id="state-model-native-property-system-factory-registration-lifetime-startup-entrypoints">Startup entrypoints<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-startup-entrypoints" title="Permanent link">&para;</a></h2>
 <p>The Adobe first-party modules register at native host startup. <code>OM.dll</code> demonstrates direct <code>RegisterFactoryFunc</code> with <code>OM_Stream::Create</code> and <code>ADBE Mask Shape</code>. <code>FLT.dll</code> uses <code>TDB_ScRegisterStreams::Register</code> for native Effect/Mask groups. <code>BEE.dll</code> registers families of Layers, Paint, Text and Vectors. See <a href="#state-model-native-property-system-startup-to-shutdown">Application startup to shutdown</a>.</p>
 <p><code>Required/Paint.aex</code> <em>does not</em> directly import TDB or implement PaintAtom's native class Creator by itself; its <code>Paint Suite</code> bridge is separate (F-VECTOR-080/081).</p>
+<h3 id="state-model-native-property-system-factory-registration-lifetime-first-party-stage-order-and-general-plugin-setdown">First-party stage order and general plugin setdown<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-first-party-stage-order-and-general-plugin-setdown" title="Permanent link">&para;</a></h3>
+<p>The original <code>aelib.dll</code> stage dispatcher is now fully mapped in AE2025/AE2026. Native property infrastructure starts in ascending stage order: <strong>TDB (15) → OM (25) → FLT (27) → BEE (29)</strong>. Its normal reverse termination visits <strong>Stage 32 general AEGP/plugin Setdown first</strong>, then <strong>BEE (29) → FLT (27) → OM (25) → TDB (15)</strong> (F-VECTOR-106).</p>
+<p>The ordering of a <strong>setdown callback</strong> is not equivalent to the physical unloading time of the plugin module, and neither event proves that the host has deleted all detached, Undo-owned, rendered or project-owned native Stream instances. <a href="#architecture-native-module-startup-shutdown">Native aelib Module Lifecycle</a> documents the exact versioned native control flow.</p>
 <h2 id="state-model-native-property-system-factory-registration-lifetime-registration-algorithm-and-internal-containers">Registration algorithm and internal containers<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-registration-algorithm-and-internal-containers" title="Permanent link">&para;</a></h2>
 <p>The successful Windows x64 code path is:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">RegisterFactoryFunc(key, creator, options)
@@ -25365,7 +25432,259 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
                     <section class='print-page md-section' id='section-12-3' heading-number='12.3'>
                         <h1>Whole-System Architecture<a class='headerlink' href='#section-12-3' title='Permanent link'></a>
                         </h1>
-                    <section class="print-page" id="architecture-product-system-atlas" heading-number="12.3.1"><h1 id="architecture-product-system-atlas-product-system-atlas">Product-System Atlas<a class="headerlink" href="#architecture-product-system-atlas-product-system-atlas" title="Permanent link">&para;</a></h1>
+                    <section class="print-page" id="architecture-native-module-startup-shutdown" heading-number="12.3.1"><h1 id="architecture-native-module-startup-shutdown-aelib-native-module-lifecycle-forward-initialization-and-reverse-shutdown">aelib Native Module Lifecycle — Forward Initialization and Reverse Shutdown<a class="headerlink" href="#architecture-native-module-startup-shutdown-aelib-native-module-lifecycle-forward-initialization-and-reverse-shutdown" title="Permanent link">&para;</a></h1>
+<p><code>aelib.dll</code> coordinates startup and shutdown of several first-party After Effects native subsystems. In the two inspected Windows releases, this is implemented using <strong>numbered lifecycle stages</strong> and two separate internal iterators, rather than one unconditionally executed list of functions.</p>
+<p>This page concerns <strong>host internals</strong>, not public SDK callbacks. A third-party effect's setup or setdown is not equivalent to invoking <code>TDB_Birth</code>, <code>BEE_Birth</code> or their module-level private teardown functions.</p>
+<h2 id="architecture-native-module-startup-shutdown-internal-interfaces">Internal interfaces<a class="headerlink" href="#architecture-native-module-startup-shutdown-internal-interfaces" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Private class/function</th>
+<th>Purpose</th>
+<th>Public SDK status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>aelib::InitIterator::operator++</code></td>
+<td>Dispatch currently selected subsystem initialization and advance stage</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>aelib::TerminateIterator::operator--</code></td>
+<td>Dispatch one subsystem teardown and decrement stage</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>aelib::Terminate()</code></td>
+<td>Drive termination of stages recorded as initialized</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>aelib::TerminateIterator::backward</code></td>
+<td>Loop backward toward a target stage</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>BEE_Birth</code> / <code>BEE_Death</code></td>
+<td>First-party BEE module lifecycle, including registered native Layer/AV/Text/Vector Stream classes</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>TDB_Birth</code> / <code>TDB_Death</code></td>
+<td>Native stream/state base infrastructure lifecycle</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>OM_Birth</code> / <code>OM_Death</code></td>
+<td>First-party Mask Shape and OM Stream infrastructure</td>
+<td>Internal only</td>
+</tr>
+<tr>
+<td><code>FLT_Birth</code> / <code>FLT_Death</code></td>
+<td>First-party filter/effect Stream classes and host infrastructure</td>
+<td>Internal only</td>
+</tr>
+</tbody>
+</table>
+<p>These names were verified against actual exported C++ symbols and x64 imports in installed Adobe binaries, not reconstructed into callable third-party headers.</p>
+<h2 id="architecture-native-module-startup-shutdown-stage-based-native-initialization">Stage-based native initialization<a class="headerlink" href="#architecture-native-module-startup-shutdown-stage-based-native-initialization" title="Permanent link">&para;</a></h2>
+<p>The native <code>InitIterator</code> uses a <strong>35-entry switch jump table</strong> indexed by its current stage counter. On each successful traversal step it advances toward the next stage.</p>
+<p>The following stage IDs and direct imported-module calls are the same in AE 2025 and AE 2026:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Initialization stage</th>
+<th>Native call</th>
+<th>Why it matters for properties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">15</td>
+<td><code>TDB_Birth</code></td>
+<td>Establishes the underlying native TDB stream subsystem</td>
+</tr>
+<tr>
+<td style="text-align: right;">25</td>
+<td><code>OM_Birth</code></td>
+<td>Registers/initializes OM-owned Mask Shape stream machinery</td>
+</tr>
+<tr>
+<td style="text-align: right;">27</td>
+<td><code>FLT_Birth</code></td>
+<td>Initializes first-party filter/effect stream groups</td>
+</tr>
+<tr>
+<td style="text-align: right;">29</td>
+<td><code>BEE_Birth</code></td>
+<td>Initializes BEE's native layer groups including Vector/Text</td>
+</tr>
+</tbody>
+</table>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">aelib InitIterator (advances stage)
+</span><span id="__span-0-2">  Stage 15 → TDB_Birth
+</span><span id="__span-0-3">  Stage 25 → OM_Birth
+</span><span id="__span-0-4">  Stage 27 → FLT_Birth
+</span><span id="__span-0-5">  Stage 29 → BEE_Birth
+</span></code></pre></div>
+<p>This ordering is an observation of the host's internal initialization stage machine, <strong>not a promise that third-party plug-ins are permitted to add custom stage IDs</strong>. Other stages also exist; this table shows the property-related subset.</p>
+<h3 id="architecture-native-module-startup-shutdown-verified-stage-callsite-locations">Verified stage callsite locations<a class="headerlink" href="#architecture-native-module-startup-shutdown-verified-stage-callsite-locations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Module Birth call</th>
+<th style="text-align: right;">AE2025 aelib RVA</th>
+<th style="text-align: right;">AE2026 aelib RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TDB</td>
+<td style="text-align: right;"><code>0x6DEA3</code></td>
+<td style="text-align: right;"><code>0x70283</code></td>
+</tr>
+<tr>
+<td>OM</td>
+<td style="text-align: right;"><code>0x6E05D</code></td>
+<td style="text-align: right;"><code>0x70444</code></td>
+</tr>
+<tr>
+<td>FLT</td>
+<td style="text-align: right;"><code>0x6E08B</code></td>
+<td style="text-align: right;"><code>0x70472</code></td>
+</tr>
+<tr>
+<td>BEE</td>
+<td style="text-align: right;"><code>0x6E272</code></td>
+<td style="text-align: right;"><code>0x70647</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="architecture-native-module-startup-shutdown-reverse-native-teardown">Reverse native teardown<a class="headerlink" href="#architecture-native-module-startup-shutdown-reverse-native-teardown" title="Permanent link">&para;</a></h2>
+<p>The <strong><code>TerminateIterator</code> subtracts one</strong> from its current one-based stage N to select a jump-table case at N-1, executes that stage's native shutdown callback, and stores N-1 as its next state.</p>
+<p>Both the exported <code>aelib::Terminate()</code> and <code>TerminateIterator::backward</code> drive this dispatcher with a backward loop. In a full, normally initialized shutdown, relevant steps execute in this order:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">aelib TerminateIterator (descends from initialized stage)
+</span><span id="__span-1-2">  Stage 32 → MEE_AEGP_Death
+</span><span id="__span-1-3">              MEE_AEGP_Terminate
+</span><span id="__span-1-4">              SetdownGeneralPlugins
+</span><span id="__span-1-5">  Stage 29 → BEE_Death
+</span><span id="__span-1-6">  Stage 27 → FLT_Death
+</span><span id="__span-1-7">  Stage 25 → OM_Death
+</span><span id="__span-1-8">  Stage 15 → TDB_Death
+</span></code></pre></div>
+<p>This establishes a meaningful first-party contract: native BEE/FLT/OM tear down while their TDB base subsystem's teardown stage has <strong>not yet been dispatched</strong> along that normal reverse path.</p>
+<p><strong>Important:</strong> this does not prove when every concrete TDB Stream object is deleted, or that its registration map is guaranteed usable from all threads until Stage 15; internal module lifecycle and native object lifetime are not synonyms.</p>
+<h3 id="architecture-native-module-startup-shutdown-native-teardown-call-locations">Native teardown call locations<a class="headerlink" href="#architecture-native-module-startup-shutdown-native-teardown-call-locations" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Teardown operation</th>
+<th style="text-align: right;">Stage</th>
+<th style="text-align: right;">AE2025 aelib RVA</th>
+<th style="text-align: right;">AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MEE_AEGP_Death</code></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">Verified in stage-32 dispatch</td>
+<td style="text-align: right;">Verified in stage-32 dispatch</td>
+</tr>
+<tr>
+<td><code>MEE_AEGP_Terminate</code></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">Verified in stage-32 dispatch</td>
+<td style="text-align: right;">Verified in stage-32 dispatch</td>
+</tr>
+<tr>
+<td><code>SetdownGeneralPlugins</code></td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;"><code>0x6EFC3</code></td>
+<td style="text-align: right;"><code>0x71353</code></td>
+</tr>
+<tr>
+<td><code>BEE_Death</code></td>
+<td style="text-align: right;">29</td>
+<td style="text-align: right;"><code>0x6EF56</code></td>
+<td style="text-align: right;"><code>0x712E6</code></td>
+</tr>
+<tr>
+<td><code>FLT_Death</code></td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;"><code>0x6EF40</code></td>
+<td style="text-align: right;"><code>0x712D0</code></td>
+</tr>
+<tr>
+<td><code>OM_Death</code></td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;"><code>0x6EF24</code></td>
+<td style="text-align: right;"><code>0x712B4</code></td>
+</tr>
+<tr>
+<td><code>TDB_Death</code></td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;"><code>0x6EEC0</code></td>
+<td style="text-align: right;"><code>0x71250</code></td>
+</tr>
+</tbody>
+</table>
+<p>A critical reading rule: <strong>RVA numerical order is not execution order</strong>. The actual stage selector and decrementing iterator establish the order. A static scan that simply sorts the call instructions in <code>aelib.dll</code> would give a misleading result.</p>
+<h2 id="architecture-native-module-startup-shutdown-general-plug-in-setdown-versus-dll-unloading">General plug-in setdown versus DLL unloading<a class="headerlink" href="#architecture-native-module-startup-shutdown-general-plug-in-setdown-versus-dll-unloading" title="Permanent link">&para;</a></h2>
+<p>At Stage 32, the imported <code>MEE_AEGP_Death</code>, <code>MEE_AEGP_Terminate</code> and <code>SetdownGeneralPlugins</code> routines are called <strong>before</strong> the Stage-29 <code>BEE_Death</code> case would be visited in a complete reverse shutdown.</p>
+<p>What this <strong>proves</strong>: a normal reverse shutdown requests general plugin setdown at a numerically earlier termination step than the built-in BEE module teardown.</p>
+<p>What this <strong>does not prove</strong>: that every third-party DLL has already been unloaded, that its callbacks are inaccessible, or that the host's document/Undo/history tasks no longer hold foreign object pointers.</p>
+<p>This boundary is especially important for a proposed foreign <code>TDB_StreamBase</code> provider. The existing first-party <code>BEE_DoAddToIndexedStreamGroupTask</code> can conditionally <strong>own a detached noncanonical Stream and call its virtual deleting destructor during history disposal</strong> (F-VECTOR-101/102). A provider cannot assume that factory unregistration, a plugin setdown callback and destruction of all live Stream objects are the same event.</p>
+<h2 id="architecture-native-module-startup-shutdown-initialization-failure-and-partial-host-shutdown">Initialization failure and partial host shutdown<a class="headerlink" href="#architecture-native-module-startup-shutdown-initialization-failure-and-partial-host-shutdown" title="Permanent link">&para;</a></h2>
+<p>The stage machine is conditional on the current initialized state and call-site guards. The existence of a Stage-29 <code>BEE_Death</code> branch does <strong>not</strong> imply it runs after a partially failed initialization that never reached stage 29. The <code>Terminate()</code> routine checks host state and selects different paths depending on mode/initialization conditions.</p>
+<p>The present static evidence does not establish every exception/unwind branch, every asynchronous service's quiescence, or the exact native Project-close point relative to module-level teardown. It also does not establish a supported general third-party Stream registration interface.</p>
+<h2 id="architecture-native-module-startup-shutdown-cross-version-code-and-evidence">Cross-version code and evidence<a class="headerlink" href="#architecture-native-module-startup-shutdown-cross-version-code-and-evidence" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Private aelib method/data</th>
+<th style="text-align: right;">AE2025 RVA</th>
+<th style="text-align: right;">AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>InitIterator::operator++</code></td>
+<td style="text-align: right;"><code>0x6D9B0</code></td>
+<td style="text-align: right;"><code>0x6FD80</code></td>
+</tr>
+<tr>
+<td>Initialization jump table</td>
+<td style="text-align: right;"><code>0x6ED34</code></td>
+<td style="text-align: right;"><code>0x710C4</code></td>
+</tr>
+<tr>
+<td><code>TerminateIterator::operator--</code></td>
+<td style="text-align: right;"><code>0x6EDC0</code></td>
+<td style="text-align: right;"><code>0x71150</code></td>
+</tr>
+<tr>
+<td>Termination jump table</td>
+<td style="text-align: right;"><code>0x6F1DC</code></td>
+<td style="text-align: right;"><code>0x71570</code></td>
+</tr>
+<tr>
+<td><code>aelib::Terminate</code></td>
+<td style="text-align: right;"><code>0x83220</code></td>
+<td style="text-align: right;"><code>0x86B60</code></td>
+</tr>
+<tr>
+<td><code>TerminateIterator::backward</code></td>
+<td style="text-align: right;"><code>0x186D0</code></td>
+<td style="text-align: right;"><code>0x15E70</code></td>
+</tr>
+</tbody>
+</table>
+<p>All code locations belong to the exact SHA-256-pinned original installed Adobe <code>aelib.dll</code> files. Treat them as <strong>version-specific research addresses</strong>, not SDK imports to use in your software.</p>
+<p>The strict read-only verifier is <code>experiments/vector-shape/probe-src/tools/verify_aelib_native_staged_init_reverse_teardown.py</code>. Both installed Windows releases <strong>PASS</strong>. Machine-readable data: <code>datasets/ae-aelib-native-staged-birth-reverse-death-2025-2026.json</code>.</p>
+<p>Research: F-VECTOR-073/074 (BEE stream class startup/teardown), F-VECTOR-093–096 (OM/FLT/BEE native factory registration), F-VECTOR-099–104 (native Undo task and Project lifetime), F-VECTOR-106 (aelib stage and ordering proof).</p>
+<p>Related references: <a href="#state-model-native-property-system-startup-to-shutdown">Native Property Startup to Shutdown</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Native Factory Registration and Lifetime</a>, <a href="#state-model-native-property-system-project-undo-context-lifecycle">BEE Project UndoContext</a> and <a href="#architecture-subsystem-boundaries">Subsystem Boundaries</a>.</p></section><section class="print-page" id="architecture-product-system-atlas" heading-number="12.3.2"><h1 id="architecture-product-system-atlas-product-system-atlas">Product-System Atlas<a class="headerlink" href="#architecture-product-system-atlas-product-system-atlas" title="Permanent link">&para;</a></h1>
 <p>This page is the top-level map from the visible After Effects product to the internal domains AEIG studies.</p>
 <table>
 <thead>
@@ -25526,7 +25845,7 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
 <h2 id="architecture-product-system-atlas-research-implication">Research implication<a class="headerlink" href="#architecture-product-system-atlas-research-implication" title="Permanent link">&para;</a></h2>
 <p>A visible feature may cross several internal domains. AEIG should resist pages such as “everything about Preview” becoming monoliths: Preview is an integration scenario linking render requests, caches, display, audio, UI timing and GPU presentation.</p>
 <p>Conversely, one internal subsystem can surface in many product features. The cache system affects preview, expressions, effects, Object Matte, media, undo/redo and cross-project reuse.</p>
-<p>The atlas therefore supports <strong>bidirectional navigation</strong>: feature → internals and internals → affected features.</p></section><section class="print-page" id="architecture-project-vs-render-state" heading-number="12.3.2"><h1 id="architecture-project-vs-render-state-project-state-vs-render-state">Project State vs Render State<a class="headerlink" href="#architecture-project-vs-render-state-project-state-vs-render-state" title="Permanent link">&para;</a></h1>
+<p>The atlas therefore supports <strong>bidirectional navigation</strong>: feature → internals and internals → affected features.</p></section><section class="print-page" id="architecture-project-vs-render-state" heading-number="12.3.3"><h1 id="architecture-project-vs-render-state-project-state-vs-render-state">Project State vs Render State<a class="headerlink" href="#architecture-project-vs-render-state-project-state-vs-render-state" title="Permanent link">&para;</a></h1>
 <p>After Effects must be modelled as having at least two ownership domains: the editable project/UI state and state consumed by render/evaluation work. They are related, but they are not safely interchangeable live object graphs.</p>
 <p>A useful architectural model is:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">editable project / UI state
@@ -25564,7 +25883,7 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
 <p>Undo is a particularly useful adversarial test: a correct state identity mechanism should distinguish semantic state while still allowing old cached results to become reusable when the project returns to an earlier state. Blind <code>FORCE_RERENDER</code>-style invalidation loses that information.</p>
 <h2 id="architecture-project-vs-render-state-experiments-and-unknowns">Experiments and unknowns<a class="headerlink" href="#architecture-project-vs-render-state-experiments-and-unknowns" title="Permanent link">&para;</a></h2>
 <p>Measure UI mutation time, render callback time, sequence-data generation, <code>PF_State</code>/receipt changes and BEE/TDB/RG trace identity around the same edit. Repeat with Undo/Redo and MFR on/off. The unresolved questions are snapshot granularity, synchronization epoch boundaries, and whether different render subsystems consume one common epoch or independently materialized views.</p>
-<p>Cross-links: <code>../state-model/snapshots.md</code>, <code>../mfr/overview.md</code>, <code>../mfr/state-ownership.md</code>, <code>../ui-system/view-state-and-render-boundary.md</code>, <code>../cache-system/state-identity.md</code>, and findings <code>F-THREAD-002</code> / <code>F-THREAD-003</code>.</p></section><section class="print-page" id="architecture-subsystem-boundaries" heading-number="12.3.3"><h1 id="architecture-subsystem-boundaries-subsystem-boundaries">Subsystem Boundaries<a class="headerlink" href="#architecture-subsystem-boundaries-subsystem-boundaries" title="Permanent link">&para;</a></h1>
+<p>Cross-links: <code>../state-model/snapshots.md</code>, <code>../mfr/overview.md</code>, <code>../mfr/state-ownership.md</code>, <code>../ui-system/view-state-and-render-boundary.md</code>, <code>../cache-system/state-identity.md</code>, and findings <code>F-THREAD-002</code> / <code>F-THREAD-003</code>.</p></section><section class="print-page" id="architecture-subsystem-boundaries" heading-number="12.3.4"><h1 id="architecture-subsystem-boundaries-subsystem-boundaries">Subsystem Boundaries<a class="headerlink" href="#architecture-subsystem-boundaries-subsystem-boundaries" title="Permanent link">&para;</a></h1>
 <p>AEIG treats After Effects as cooperating subsystems rather than one renderer with incidental utilities.</p>
 <h2 id="architecture-subsystem-boundaries-strongly-evidenced-boundaries">Strongly evidenced boundaries<a class="headerlink" href="#architecture-subsystem-boundaries-strongly-evidenced-boundaries" title="Permanent link">&para;</a></h2>
 <ul>
@@ -25577,6 +25896,8 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
 <li><strong>TXT / AGM</strong>: text semantic state/glyph rendering and vector rasterization/materialization.</li>
 <li><strong>dvacore diagnostics</strong>: Debug/Trace configuration and cross-product infrastructure.</li>
 </ul>
+<h2 id="architecture-subsystem-boundaries-native-lifecycle-is-stage-based-not-derived-from-import-order-adjacency">Native lifecycle is stage-based, not derived from import-order adjacency<a class="headerlink" href="#architecture-subsystem-boundaries-native-lifecycle-is-stage-based-not-derived-from-import-order-adjacency" title="Permanent link">&para;</a></h2>
+<p>For Windows AE2025/2026, the first-party <code>aelib.dll</code> lifecycle state machine initializes its property-related subsystems in ascending numbered stages <strong>TDB 15 → OM 25 → FLT 27 → BEE 29</strong>, and executes the corresponding normal native teardown in descending order. AEGP/general plugin setdown occurs at a separate <strong>stage 32</strong> before BEE's stage 29 in reverse termination. These claims are original compiled stage-dispatch observations (F-VECTOR-106), <strong>not evidence that all external plugin DLLs are physically unloaded at that stage</strong>. See <a href="#architecture-native-module-startup-shutdown">aelib Native Module Lifecycle</a>.</p>
 <h2 id="architecture-subsystem-boundaries-scheduling-is-also-layered">Scheduling is also layered<a class="headerlink" href="#architecture-subsystem-boundaries-scheduling-is-also-layered" title="Permanent link">&para;</a></h2>
 <p>Trace/runtime vocabulary separates <code>BEE_WorkQueue</code>, <code>RenderTaskManager</code>, <code>RenderThreadExecutor</code>, media async executors and GPU submission. AEIG therefore avoids a single global-scheduler model.</p>
 <h2 id="architecture-subsystem-boundaries-boundary-rule">Boundary rule<a class="headerlink" href="#architecture-subsystem-boundaries-boundary-rule" title="Permanent link">&para;</a></h2>
@@ -25617,7 +25938,7 @@ Adobe fixed several Object Matte failures in 26.2.1, including a launch-error cr
 <p>The goal is a <strong>boundary transition table</strong>: which semantic event crosses which subsystem edge, what representation/identity is produced, and which downstream domains invalidate.</p>
 <h2 id="architecture-subsystem-boundaries-unknown-frontier">Unknown frontier<a class="headerlink" href="#architecture-subsystem-boundaries-unknown-frontier" title="Permanent link">&para;</a></h2>
 <p>Still unresolved: exact TDB↔BEE ownership split, graph-construction ownership between BEE/RG, adapter classes bridging MediaFoundation frames to PF worlds, TXT/AGM responsibility for final shape/text rasterization, and which dvacore services are cross-product infrastructure versus AE-owned policy.</p>
-<p>Related: <code>docs/architecture/system-overview.md</code>, <code>docs/state-model/object-identity.md</code>, <code>docs/render-graph/render-nodes.md</code>, <code>docs/media-system/runtime-architecture.md</code>.</p></section><section class="print-page" id="architecture-system-overview" heading-number="12.3.4"><h1 id="architecture-system-overview-system-overview">System Overview<a class="headerlink" href="#architecture-system-overview-system-overview" title="Permanent link">&para;</a></h1>
+<p>Related: <code>docs/architecture/system-overview.md</code>, <code>docs/state-model/object-identity.md</code>, <code>docs/render-graph/render-nodes.md</code>, <code>docs/media-system/runtime-architecture.md</code>.</p></section><section class="print-page" id="architecture-system-overview" heading-number="12.3.5"><h1 id="architecture-system-overview-system-overview">System Overview<a class="headerlink" href="#architecture-system-overview-system-overview" title="Permanent link">&para;</a></h1>
 <p>AEIG models After Effects as a set of connected state/evaluation/execution systems rather than as one monolithic "composition renderer". The visible project tree is only one representation; render-time identity, scheduling, media decode, graph materialization, caches and UI/extension state live on different boundaries.</p>
 <h2 id="architecture-system-overview-high-level-execution-chain">High-level execution chain<a class="headerlink" href="#architecture-system-overview-high-level-execution-chain" title="Permanent link">&para;</a></h2>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">Editable Project / UI State
@@ -35397,13 +35718,15 @@ dumpbin failures: <strong>0</strong>.</p>
 .print-site-enumerate-headings #animation-system-spatial-interpolation > h1:before { content: '12.2.2 ' }
 
 .print-site-enumerate-headings #section-12-3 > h1:before { content: '12.3 ' }
-.print-site-enumerate-headings #architecture-product-system-atlas > h1:before { content: '12.3.1 ' }
+.print-site-enumerate-headings #architecture-native-module-startup-shutdown > h1:before { content: '12.3.1 ' }
 
-.print-site-enumerate-headings #architecture-project-vs-render-state > h1:before { content: '12.3.2 ' }
+.print-site-enumerate-headings #architecture-product-system-atlas > h1:before { content: '12.3.2 ' }
 
-.print-site-enumerate-headings #architecture-subsystem-boundaries > h1:before { content: '12.3.3 ' }
+.print-site-enumerate-headings #architecture-project-vs-render-state > h1:before { content: '12.3.3 ' }
 
-.print-site-enumerate-headings #architecture-system-overview > h1:before { content: '12.3.4 ' }
+.print-site-enumerate-headings #architecture-subsystem-boundaries > h1:before { content: '12.3.4 ' }
+
+.print-site-enumerate-headings #architecture-system-overview > h1:before { content: '12.3.5 ' }
 
 .print-site-enumerate-headings #section-12-4 > h1:before { content: '12.4 ' }
 .print-site-enumerate-headings #evaluation-bee > h1:before { content: '12.4.1 ' }
