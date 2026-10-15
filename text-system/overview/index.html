@@ -16,7 +16,7 @@
         <link rel="prev" href="../../state-model/streams-properties/">
       
       
-        <link rel="next" href="../../three-d-system/overview/">
+        <link rel="next" href="../project-missing-font-data-lifecycle/">
       
       
         
@@ -3514,6 +3514,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../../state-model/native-property-system/undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../state-model/native-property-system/project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject and UndoContext — Ownership, Accessors and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../state-model/native-property-system/canonical-groups-admission/" class="md-nav__link">
         
   
@@ -3532,6 +3602,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../state-model/native-property-system/indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3802,111 +3907,6 @@
     
   
     Native Structural Commands and Undo
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../state-model/native-property-system/undo-task-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../state-model/native-property-system/project-undo-context-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Project UndoContext — Ownership and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../state-model/native-property-system/indexed-property-undo-task-ownership/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -6667,6 +6667,8 @@
       
         
       
+        
+      
     
     
     
@@ -6892,6 +6894,41 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-missing-font-data-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -14451,7 +14488,7 @@
 <h2 id="runtime-identity-evidence">Runtime identity evidence<a class="headerlink" href="#runtime-identity-evidence" title="Permanent link">&para;</a></h2>
 <p>AE 2025 <code>TXT.dll</code> exposes a document-level render GUID lifecycle (<code>GetRenderGuid</code>, seed GUID, explicit invalidation and mix-in), while <code>TXT_Font</code> contributes to a Murmur3-based GUID mixer. BEE/TDB independently expose time-cache validation for text-document and variable-font-axis streams and a text-layer document render GUID path.</p>
 <p>This supports a layered model in which text layout/font semantics are normalized inside the TXT subsystem and then participate in the broader BEE render identity. It is stronger than treating Source Text as one opaque property blob.</p>
-<p>See <code>F-TEXT-002-text-render-guid-and-font-identity.md</code>.</p>
+<p>See <code>F-TEXT-002-text-render-guid-and-font-identity.md</code>. The native <a href="../project-missing-font-data-lifecycle/">Project Missing-Font Metadata Lifecycle</a> chapter documents <code>BEE_Project::AddMissingFont</code>, the <code>TXT_UsedFontData</code> vector and its destruction order relative to Project Undo history (F-VECTOR-104).</p>
 <h2 id="public-object-model-is-only-a-projection-of-the-text-document">Public object model is only a projection of the text document<a class="headerlink" href="#public-object-model-is-only-a-projection-of-the-text-document" title="Permanent link">&para;</a></h2>
 <p>Scripting exposes <code>TextDocument</code>, but many convenience properties such as <code>fontSize</code>, <code>fontStyle</code> and font-path/object access report only the first character's state. Setting some of them applies the value to all characters.</p>
 <p>Therefore a heterogeneous text layer cannot be faithfully modeled as one flat style record. Style runs, paragraph state, font runs, box/path geometry and animator/expression state are separate dimensions even when scripting presents convenience accessors.</p>
@@ -14499,7 +14536,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 15, 2026 23:52:07 UTC">September 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:07:27 UTC">October 15, 2026</span>
   </span>
 
     
@@ -14546,13 +14583,13 @@
         
         
           
-          <a href="../../three-d-system/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: 3D System">
+          <a href="../project-missing-font-data-lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                3D System
+                BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup
               </div>
             </div>
             <div class="md-footer__button md-icon">

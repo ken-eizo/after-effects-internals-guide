@@ -13,10 +13,10 @@
         <link rel="canonical" href="https://ken-eizo.github.io/after-effects-internals-guide/state-model/native-property-system/indexed-property-undo-task-ownership/">
       
       
-        <link rel="prev" href="../project-undo-context-lifecycle/">
+        <link rel="prev" href="../canonical-groups-admission/">
       
       
-        <link rel="next" href="../api-atlas/">
+        <link rel="next" href="../archive-type-compatibility/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Indexed Property Undo — Add/Remove Task Stream Ownership - After Effects Internals Guide</title>
+        <title>Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership - After Effects Internals Guide</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Indexed Property Undo — Add/Remove Task Stream Ownership
+              Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
             
           </span>
         </div>
@@ -3518,6 +3518,76 @@
   
   
     <li class="md-nav__item">
+      <a href="../undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject and UndoContext — Ownership, Accessors and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../canonical-groups-admission/" class="md-nav__link">
         
   
@@ -3541,6 +3611,163 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#native-registered-command-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native registered command classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verified-inverse-operation-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verified inverse-operation relationship
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-deletes-the-detached-stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who deletes the detached Stream?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-document-edit-to-history-clearance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        From document edit to history clearance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#versioned-machine-code-anchors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Versioned machine-code anchors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remaining-native-extension-gates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remaining native extension gates
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3821,233 +4048,6 @@
   
 
       </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../undo-task-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Project UndoContext — Ownership and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Indexed Property Undo — Add/Remove Task Stream Ownership
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Indexed Property Undo — Add/Remove Task Stream Ownership
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Page Contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#native-registered-command-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Native registered command classes
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verified-inverse-operation-relationship" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Verified inverse-operation relationship
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#who-deletes-the-detached-stream" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Who deletes the detached Stream?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-document-edit-to-history-clearance" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        From document edit to history clearance
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#versioned-machine-code-anchors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Versioned machine-code anchors
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#remaining-native-extension-gates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Remaining native extension gates
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -6789,6 +6789,8 @@
       
         
       
+        
+      
     
     
     
@@ -6854,6 +6856,41 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../text-system/project-missing-font-data-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14594,7 +14631,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../project-undo-context-lifecycle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: BEE Project UndoContext — Ownership and Destruction">
+          <a href="../canonical-groups-admission/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Canonical Groups, Child Types and Native UILayout">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -14604,20 +14641,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                BEE Project UndoContext — Ownership and Destruction
+                Canonical Groups, Child Types and Native UILayout
               </div>
             </div>
           </a>
         
         
           
-          <a href="../api-atlas/" class="md-footer__link md-footer__link--next" aria-label="Next: Public and Internal Native Property API Atlas">
+          <a href="../archive-type-compatibility/" class="md-footer__link md-footer__link--next" aria-label="Next: Native Archive Type Compatibility — Missing Stream Creators">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Public and Internal Native Property API Atlas
+                Native Archive Type Compatibility — Missing Stream Creators
               </div>
             </div>
             <div class="md-footer__button md-icon">

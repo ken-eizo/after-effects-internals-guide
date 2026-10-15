@@ -16,7 +16,7 @@
         <link rel="prev" href="../undo-task-lifecycle/">
       
       
-        <link rel="next" href="../indexed-property-undo-task-ownership/">
+        <link rel="next" href="../canonical-groups-admission/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>BEE Project UndoContext — Ownership and Destruction - After Effects Internals Guide</title>
+        <title>BEEProject and UndoContext — Ownership, Accessors and Destruction - After Effects Internals Guide</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BEE Project UndoContext — Ownership and Destruction
+              BEEProject and UndoContext — Ownership, Accessors and Destruction
             
           </span>
         </div>
@@ -3518,6 +3518,204 @@
   
   
     <li class="md-nav__item">
+      <a href="../undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject and UndoContext — Ownership, Accessors and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject and UndoContext — Ownership, Accessors and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ownership-and-accessor-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ownership and accessor hierarchy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ownership and accessor hierarchy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-object-layout-version-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native object layout (version-specific)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-level-teardown-and-task-destruction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project-level teardown and task destruction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-entry-point-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important entry-point locations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implications-for-native-type-providers-and-module-lifetime" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implications for native type providers and module lifetime
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limits-and-proof" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limits and proof
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../canonical-groups-admission/" class="md-nav__link">
         
   
@@ -3536,6 +3734,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3806,239 +4039,6 @@
     
   
     Native Structural Commands and Undo
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../undo-task-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Project UndoContext — Ownership and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Project UndoContext — Ownership and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Page Contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ownership-and-accessor-hierarchy" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ownership and accessor hierarchy
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ownership and accessor hierarchy">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#native-object-layout-version-specific" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Native object layout (version-specific)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-level-teardown-and-task-destruction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project-level teardown and task destruction
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#important-entry-point-locations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Important entry-point locations
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#implications-for-native-type-providers-and-module-lifetime" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implications for native type providers and module lifetime
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#limits-and-proof" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Limits and proof
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -6795,6 +6795,8 @@
       
         
       
+        
+      
     
     
     
@@ -6860,6 +6862,41 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../text-system/project-missing-font-data-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14427,6 +14464,11 @@
 <td><code>+0x10</code></td>
 </tr>
 <tr>
+<td>Missing-font vector start / end / capacity within holder</td>
+<td><code>+0x118 / +0x120 / +0x128</code></td>
+<td><code>+0x118 / +0x120 / +0x128</code></td>
+</tr>
+<tr>
 <td>Context-holder allocated size released by Project destructor</td>
 <td><code>0x130</code> bytes</td>
 <td><code>0x130</code> bytes</td>
@@ -14435,14 +14477,15 @@
 </table>
 <p>Only the named releases and exact original binaries are qualified. In particular, <strong>the Layer-linked Item offset changes sharply between the two versions</strong>, showing why a plugin must not hard-code this private layout.</p>
 <h2 id="project-level-teardown-and-task-destruction">Project-level teardown and task destruction<a class="headerlink" href="#project-level-teardown-and-task-destruction" title="Permanent link">&para;</a></h2>
-<p>The native <code>BEE_Project::~BEE_Project</code> destructor reads the context-holder pointer, checks it for null, calls another internal helper for the holder's <code>+0x118</code> subobject (whose semantics have not been established), then explicitly calls <strong><code>BEE_UndoContext::~BEE_UndoContext(contextHolder+0x10)</code></strong>, and finally releases the containing <code>0x130</code>-byte allocation.</p>
+<p>The native <code>BEE_Project::~BEE_Project</code> destructor reads the context-holder pointer, checks it for null, <strong>destroys the native missing-font <code>TXT_UsedFontData</code> vector at holder <code>+0x118</code></strong>, then explicitly calls <strong><code>BEE_UndoContext::~BEE_UndoContext(contextHolder+0x10)</code></strong>, and finally releases the containing <code>0x130</code>-byte allocation. The vector identity, its <code>0x88</code>-byte element stride and the matching writer <code>BEE_Project::AddMissingFont</code> were independently established in F-VECTOR-104.</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">BEE_Project::~BEE_Project
 </span><span id="__span-1-2">  └─ context-holder exists?
-</span><span id="__span-1-3">       ├─ release or finalize additional holder member [+0x118]
-</span><span id="__span-1-4">       ├─ BEE_UndoContext::~BEE_UndoContext [+0x10]
-</span><span id="__span-1-5">       │    ├─ destroy Undo TaskStack entries
-</span><span id="__span-1-6">       │    └─ destroy Redo TaskStack entries
-</span><span id="__span-1-7">       └─ deallocate context holder [size 0x130]
+</span><span id="__span-1-3">       ├─ destroy each TXT_UsedFontData in holder vector [+0x118]
+</span><span id="__span-1-4">       ├─ recycle font-vector backing storage
+</span><span id="__span-1-5">       ├─ BEE_UndoContext::~BEE_UndoContext [+0x10]
+</span><span id="__span-1-6">       │    ├─ destroy Undo TaskStack entries
+</span><span id="__span-1-7">       │    └─ destroy Redo TaskStack entries
+</span><span id="__span-1-8">       └─ deallocate context holder [size 0x130]
 </span></code></pre></div>
 <p>The <strong>exact UndoContext subobject</strong> in the getter is the one passed to the destructor. This is confirmed in both compiled Adobe versions.</p>
 <p><a href="../undo-task-lifecycle/">Undo Task Lifecycle</a> establishes that history cleanup invokes the <strong>task object's virtual deleting destructor</strong>, while <a href="../indexed-property-undo-task-ownership/">Indexed Add/Remove Task Ownership</a> shows that the concrete inverse-Add task conditionally owns a native TDB Stream and can invoke the Stream's virtual deleting destructor.</p>
@@ -14495,11 +14538,11 @@
 <p>A hypothetical foreign native Stream-provider DLL therefore needs proof that <strong>no live authored instance, canonical prototype, detached Stream or Undo/Redo task references code in the module</strong> before it is unloaded. Merely calling a factory unregister method does not establish that invariant.</p>
 <p>No supported public Adobe 25.6 SDK registration method for arbitrary new <code>TDB_StreamBase</code> subclasses has been found; this mechanism is <strong>not a supported external implementation recipe</strong>.</p>
 <h2 id="limits-and-proof">Limits and proof<a class="headerlink" href="#limits-and-proof" title="Permanent link">&para;</a></h2>
-<p>This chapter is based on read-only x64 disassembly of installed AE2025/AE2026 <code>BEE.dll</code> with SHA-pinned original images. It includes neither a live project-close experiment nor a foreign custom native Stream registration, and does not resolve the private helper on context holder <code>+0x118</code>, exception rollback, true cross-thread lifetime or macOS C++ ABI.</p>
+<p>This chapter is based on read-only x64 disassembly of installed AE2025/AE2026 <code>BEE.dll</code> with SHA-pinned original images. It includes neither a live project-close experiment nor a foreign custom native Stream registration. F-VECTOR-104 <strong>resolves</strong> the helper at context holder <code>+0x118</code> as destruction of missing-font <code>TXT_UsedFontData</code> records before UndoContext teardown. Exception rollback, true cross-thread lifetime and macOS C++ ABI remain unknown.</p>
 <p>To reproduce:</p>
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_bee_project_undo_context_getter_delegation.py"</span>
 </span></code></pre></div>
-<p>Evidence: F-VECTOR-103, <code>datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json</code>. Related feature pages: <a href="../structural-command-undo/">Structural Commands and Undo</a>, <a href="../undo-task-lifecycle/">Undo Task Lifecycle</a>, <a href="../indexed-group-removal/">Indexed Group Removal</a>, <a href="../stream-object-model/">Stream Object Model</a>, and <a href="../startup-to-shutdown/">Startup to Shutdown</a>.</p>
+<p>Evidence: F-VECTOR-103/104, <code>datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json</code> and <code>datasets/ae-bee-project-font-vector-pre-undo-shutdown-2025-2026.json</code>. See <a href="../../../text-system/project-missing-font-data-lifecycle/">Project Missing-Font Metadata Lifecycle</a>. Related feature pages: <a href="../structural-command-undo/">Structural Commands and Undo</a>, <a href="../undo-task-lifecycle/">Undo Task Lifecycle</a>, <a href="../indexed-group-removal/">Indexed Group Removal</a>, <a href="../stream-object-model/">Stream Object Model</a>, and <a href="../startup-to-shutdown/">Startup to Shutdown</a>.</p>
 
 
 
@@ -14520,7 +14563,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 09:27:03 UTC">October 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:07:27 UTC">October 15, 2026</span>
   </span>
 
     
@@ -14550,7 +14593,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../undo-task-lifecycle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: BEE Undo Task Lifecycle — Reciprocal Replay and Destruction">
+          <a href="../undo-task-lifecycle/" class="md-footer__link md-footer__link--prev" aria-label="Previous: BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -14560,20 +14603,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+                BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
               </div>
             </div>
           </a>
         
         
           
-          <a href="../indexed-property-undo-task-ownership/" class="md-footer__link md-footer__link--next" aria-label="Next: Indexed Property Undo — Add/Remove Task Stream Ownership">
+          <a href="../canonical-groups-admission/" class="md-footer__link md-footer__link--next" aria-label="Next: Canonical Groups, Child Types and Native UILayout">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Indexed Property Undo — Add/Remove Task Stream Ownership
+                Canonical Groups, Child Types and Native UILayout
               </div>
             </div>
             <div class="md-footer__button md-icon">

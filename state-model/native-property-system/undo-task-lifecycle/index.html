@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://ken-eizo.github.io/after-effects-internals-guide/state-model/native-property-system/undo-task-lifecycle/">
       
       
-        <link rel="prev" href="../structural-command-undo/">
+        <link rel="prev" href="../">
       
       
         <link rel="next" href="../project-undo-context-lifecycle/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>BEE Undo Task Lifecycle — Reciprocal Replay and Destruction - After Effects Internals Guide</title>
+        <title>BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction - After Effects Internals Guide</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+              BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
             
           </span>
         </div>
@@ -3515,6 +3515,232 @@
                 
   
   
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Page Contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-native-types-and-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key native types and roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-native-undoredo-step" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A native Undo/Redo step
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="A native Undo/Redo step">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-history-record-and-stream-identity-are-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native history record and Stream identity are different
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clearing-undo-and-redo-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clearing Undo and Redo history
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clearing Undo and Redo history">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#msvc-deleting-destructor-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MSVC deleting-destructor detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-version-native-code-evidence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-version native code evidence
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements-for-a-genuine-new-native-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements for a genuine new native type
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#public-sdk-boundary-and-sources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Public SDK boundary and sources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject and UndoContext — Ownership, Accessors and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
   
   
     <li class="md-nav__item">
@@ -3536,6 +3762,41 @@
   
   
     <span class="md-status md-status--architecture-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -3806,267 +4067,6 @@
     
   
     Native Structural Commands and Undo
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="Page Contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Page Contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#key-native-types-and-roles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key native types and roles
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#a-native-undoredo-step" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        A native Undo/Redo step
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="A native Undo/Redo step">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#native-history-record-and-stream-identity-are-different" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Native history record and Stream identity are different
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clearing-undo-and-redo-history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Clearing Undo and Redo history
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clearing Undo and Redo history">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#msvc-deleting-destructor-detail" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        MSVC deleting-destructor detail
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cross-version-native-code-evidence" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cross-version native code evidence
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#requirements-for-a-genuine-new-native-type" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Requirements for a genuine new native type
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#public-sdk-boundary-and-sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Public SDK boundary and sources
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    BEE Project UndoContext — Ownership and Destruction
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--internal-implementation-reference"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -6823,6 +6823,8 @@
       
         
       
+        
+      
     
     
     
@@ -6888,6 +6890,41 @@
   
   
     <span class="md-status md-status--active"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../text-system/project-missing-font-data-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
   
 
   
@@ -14659,7 +14696,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../structural-command-undo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Native Structural Commands and Undo">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Native Property System — Lifecycle, Object Model and API Atlas">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -14669,20 +14706,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Native Structural Commands and Undo
+                Native Property System — Lifecycle, Object Model and API Atlas
               </div>
             </div>
           </a>
         
         
           
-          <a href="../project-undo-context-lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: BEE Project UndoContext — Ownership and Destruction">
+          <a href="../project-undo-context-lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: BEEProject and UndoContext — Ownership, Accessors and Destruction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                BEE Project UndoContext — Ownership and Destruction
+                BEEProject and UndoContext — Ownership, Accessors and Destruction
               </div>
             </div>
             <div class="md-footer__button md-icon">
