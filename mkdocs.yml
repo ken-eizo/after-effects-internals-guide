@@ -88,7 +88,10 @@ nav:
             - "Scripting Surface": host-integration/scripting/index.md
         - "Native Property System":
             - "Native Property System — Lifecycle, Object Model and API Atlas": state-model/native-property-system/index.md
+            - "BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction": state-model/native-property-system/undo-task-lifecycle.md
+            - "BEEProject and UndoContext — Ownership, Accessors and Destruction": state-model/native-property-system/project-undo-context-lifecycle.md
             - "Canonical Groups, Child Types and Native UILayout": state-model/native-property-system/canonical-groups-admission.md
+            - "Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership": state-model/native-property-system/indexed-property-undo-task-ownership.md
             - "Native Archive Type Compatibility — Missing Stream Creators": state-model/native-property-system/archive-type-compatibility.md
             - "Native Paint, Text Animator and Shape Contents Hierarchies": state-model/native-property-system/paint-text-shape-hierarchies.md
             - "Native Property Operations: Inspect, Mutate, Animate and Persist": state-model/native-property-system/property-operations.md
@@ -97,9 +100,6 @@ nav:
             - "Native Property Verification, Version Lineage and Unknowns": state-model/native-property-system/verification-and-version-matrix.md
             - "Native Stream Object Model": state-model/native-property-system/stream-object-model.md
             - "Native Structural Commands and Undo": state-model/native-property-system/structural-command-undo.md
-            - "BEE Undo Task Lifecycle — Reciprocal Replay and Destruction": state-model/native-property-system/undo-task-lifecycle.md
-            - "BEE Project UndoContext — Ownership and Destruction": state-model/native-property-system/project-undo-context-lifecycle.md
-            - "Indexed Property Undo — Add/Remove Task Stream Ownership": state-model/native-property-system/indexed-property-undo-task-ownership.md
             - "Public and Internal Native Property API Atlas": state-model/native-property-system/api-atlas.md
             - "TDBIndexedStreamGroup::InsertStream — Native Child Adoption": state-model/native-property-system/indexed-group-insertion.md
             - "TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties": state-model/native-property-system/indexed-group-removal.md
@@ -169,6 +169,7 @@ nav:
             - "Streams and Properties": state-model/streams-properties.md
         - "Text / Animators":
             - "Text System": text-system/overview.md
+            - "BEEProject::AddMissingFont — Native Font Metadata Ownership and Cleanup": text-system/project-missing-font-data-lifecycle.md
         - "3D":
             - "3D System": three-d-system/overview.md
         - "Tracking and Analysis":

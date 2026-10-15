@@ -24,6 +24,7 @@ This page is the **evidence boundary** for the technical chapters. It is not a c
 | Undo TaskStack lifecycle | E2-L SHA-pinned AE2025+2026 BEE x64 | Undo/Redo shared virtual +0x08 replay, generated record requeue, UndoContext destruction calls task vtable destructor for both stacks | Some concrete task types, failure paths, unload concurrency |
 | Indexed Add/Remove inverse ownership | E2-L original BEE x64 MSVC RTTI/vtable 2025+2026 | Concrete Add/Remove tasks construct each other; Remove creates owning inverse Add; eligible Add destructor invokes native Stream deleting destructor | All error/rollback branches, every task subtype, host foreign type admission |
 | Project UndoContext ownership/teardown | E2-L original BEE2025/2026 x64 SHA-pinned | Layer/Item delegate to Project; Project destructor directly invokes UndoContext destructor and frees holder | Real host close timing, factory/module unload order, arbitrary foreign C++ |
+| Project missing-font lifecycle | E2-L original BEE2025/2026 x64, TXT IAT SHA-pinned | `AddMissingFont` appends `TXT_UsedFontData` to holder `+0x118`; growth uses native copy/move; destructor clears font records **before** UndoContext | Full font record schema, host runtime sequencing, exceptions |
 | Missing-Creator reporting | E2-L Win64 TDB AE2025+2026 | Named loader flag 0, Indexed loader flag 1; report branch in CreateStream | Real host error/dialog/recovery and data preservation |
 | Canonical group layout | E2-L TDB/BEE vtable 2025+2026 | `FillInCanonicalUILayout`, separated dimensions, UILayout | All variant branches/editor binding |
 | Paint/Text admissibility | E2-L+E2-X built-ins, AE2026 Paint fixture | Named/indexed grammar, strict Paint child policy | Arbitrary external parent provider |
@@ -52,6 +53,7 @@ The `E2-L` PE images are original installed Adobe assets and stored only on the 
 | Undo TaskStack replay and destructor | F-VECTOR-101 | `verify_bee_undo_task_replay_and_destruction.py` |
 | Concrete indexed Add/Remove inverse Stream ownership | F-VECTOR-102 | `verify_bee_indexed_task_inverse_and_stream_lifetime.py` |
 | Project UndoContext accessor and destructor | F-VECTOR-103 | `verify_bee_project_undo_context_getter_delegation.py` |
+| Project missing-font vector append/growth/destructor | F-VECTOR-104 | `verify_bee_project_font_vector_pre_undo_teardown.py` |
 | Native archive missing-Creator report policy | F-VECTOR-100 | `verify_tdb_archive_missing_creator_error_policy.py` |
 | Supported AEGP SDK coverage | F-VECTOR-088 | `verify_public_sdk_native_provider_gap.py` |
 

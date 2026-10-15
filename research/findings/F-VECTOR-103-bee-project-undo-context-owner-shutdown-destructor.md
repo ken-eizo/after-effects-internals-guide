@@ -103,4 +103,6 @@ python "D:\Developer\After Effects Internals Guide\experiments\vector-shape\prob
 
 Machine-readable receipt: `datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json`.
 
-Related first-party internal proof: F-VECTOR-099 (native detach and command entry), F-VECTOR-101 (task replay and TaskStack destruction), F-VECTOR-102 (concrete Add/Remove inverse task Stream ownership). Feature page: `docs/state-model/native-property-system/project-undo-context-lifecycle.md`.
+**Subsequent refinement (F-VECTOR-104, 2026-10-15):** The previously unidentified Project context-holder `+0x118` helper is now independently verified as `TXT_UsedFontData` missing-font vector destruction. `BEE_Project::AddMissingFont` writes to that same vector, and the Project destructor disposes it before `BEE_UndoContext`. The original F-VECTOR-103 scope was correct but its `+0x118` helper's semantics are no longer unknown.
+
+Related first-party internal proof: F-VECTOR-099 (native detach and command entry), F-VECTOR-101 (task replay and TaskStack destruction), F-VECTOR-102 (concrete Add/Remove inverse task Stream ownership), F-VECTOR-104 (font metadata lifecycle). Feature page: `docs/state-model/native-property-system/project-undo-context-lifecycle.md`.

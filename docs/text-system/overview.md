@@ -24,7 +24,7 @@ AE 2025 `TXT.dll` exposes a document-level render GUID lifecycle (`GetRenderGuid
 
 This supports a layered model in which text layout/font semantics are normalized inside the TXT subsystem and then participate in the broader BEE render identity. It is stronger than treating Source Text as one opaque property blob.
 
-See `F-TEXT-002-text-render-guid-and-font-identity.md`.
+See `F-TEXT-002-text-render-guid-and-font-identity.md`. The native [Project Missing-Font Metadata Lifecycle](project-missing-font-data-lifecycle.md) chapter documents `BEE_Project::AddMissingFont`, the `TXT_UsedFontData` vector and its destruction order relative to Project Undo history (F-VECTOR-104).
 
 ## Public object model is only a projection of the text document
 Scripting exposes `TextDocument`, but many convenience properties such as `fontSize`, `fontStyle` and font-path/object access report only the first character's state. Setting some of them applies the value to all characters.

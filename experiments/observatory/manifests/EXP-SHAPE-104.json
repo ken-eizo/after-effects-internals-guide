@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-SHAPE-104",
+  "date": "2026-10-15",
+  "status": "PASS E2-L static original BEE 2025/2026",
+  "focus": "BEE_Project::AddMissingFont native TXT_UsedFontData vector at holder+0x118; growth and teardown ordering relative to BEE_UndoContext",
+  "evidence_level": "E2-L",
+  "reproduction": "experiments/vector-shape/probe-src/tools/verify_bee_project_font_vector_pre_undo_teardown.py",
+  "dataset": "datasets/ae-bee-project-font-vector-pre-undo-shutdown-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-104-bee-project-font-vector-lifecycle-before-undo-teardown.md",
+  "api_docs": [
+    "docs/text-system/project-missing-font-data-lifecycle.md",
+    "docs/state-model/native-property-system/project-undo-context-lifecycle.md"
+  ],
+  "host_private_functions_invoked": 0,
+  "adobe_installation_modified": false,
+  "project_modified": false,
+  "foreign_native_type_registered": false
+}

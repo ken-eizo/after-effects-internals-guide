@@ -36,18 +36,20 @@ For the Layer overload, the native implementation checks both the Item and Proje
 | `BEE_Layer` linked Item pointer | `+0x2B8` | `+0x260` |
 | `BEE_Project` pointer to context-holder allocation | `+0x368` | `+0x370` |
 | `BEE_UndoContext` subobject inside context holder | `+0x10` | `+0x10` |
+| Missing-font vector start / end / capacity within holder | `+0x118 / +0x120 / +0x128` | `+0x118 / +0x120 / +0x128` |
 | Context-holder allocated size released by Project destructor | `0x130` bytes | `0x130` bytes |
 
 Only the named releases and exact original binaries are qualified. In particular, **the Layer-linked Item offset changes sharply between the two versions**, showing why a plugin must not hard-code this private layout.
 
 ## Project-level teardown and task destruction
 
-The native `BEE_Project::~BEE_Project` destructor reads the context-holder pointer, checks it for null, calls another internal helper for the holder's `+0x118` subobject (whose semantics have not been established), then explicitly calls **`BEE_UndoContext::~BEE_UndoContext(contextHolder+0x10)`**, and finally releases the containing `0x130`-byte allocation.
+The native `BEE_Project::~BEE_Project` destructor reads the context-holder pointer, checks it for null, **destroys the native missing-font `TXT_UsedFontData` vector at holder `+0x118`**, then explicitly calls **`BEE_UndoContext::~BEE_UndoContext(contextHolder+0x10)`**, and finally releases the containing `0x130`-byte allocation. The vector identity, its `0x88`-byte element stride and the matching writer `BEE_Project::AddMissingFont` were independently established in F-VECTOR-104.
 
 ```text
 BEE_Project::~BEE_Project
   └─ context-holder exists?
-       ├─ release or finalize additional holder member [+0x118]
+       ├─ destroy each TXT_UsedFontData in holder vector [+0x118]
+       ├─ recycle font-vector backing storage
        ├─ BEE_UndoContext::~BEE_UndoContext [+0x10]
        │    ├─ destroy Undo TaskStack entries
        │    └─ destroy Redo TaskStack entries
@@ -83,7 +85,7 @@ No supported public Adobe 25.6 SDK registration method for arbitrary new `TDB_St
 
 ## Limits and proof
 
-This chapter is based on read-only x64 disassembly of installed AE2025/AE2026 `BEE.dll` with SHA-pinned original images. It includes neither a live project-close experiment nor a foreign custom native Stream registration, and does not resolve the private helper on context holder `+0x118`, exception rollback, true cross-thread lifetime or macOS C++ ABI.
+This chapter is based on read-only x64 disassembly of installed AE2025/AE2026 `BEE.dll` with SHA-pinned original images. It includes neither a live project-close experiment nor a foreign custom native Stream registration. F-VECTOR-104 **resolves** the helper at context holder `+0x118` as destruction of missing-font `TXT_UsedFontData` records before UndoContext teardown. Exception rollback, true cross-thread lifetime and macOS C++ ABI remain unknown.
 
 To reproduce:
 
@@ -91,4 +93,4 @@ To reproduce:
 python "D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_bee_project_undo_context_getter_delegation.py"
 ```
 
-Evidence: F-VECTOR-103, `datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json`. Related feature pages: [Structural Commands and Undo](structural-command-undo.md), [Undo Task Lifecycle](undo-task-lifecycle.md), [Indexed Group Removal](indexed-group-removal.md), [Stream Object Model](stream-object-model.md), and [Startup to Shutdown](startup-to-shutdown.md).
+Evidence: F-VECTOR-103/104, `datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json` and `datasets/ae-bee-project-font-vector-pre-undo-shutdown-2025-2026.json`. See [Project Missing-Font Metadata Lifecycle](../../text-system/project-missing-font-data-lifecycle.md). Related feature pages: [Structural Commands and Undo](structural-command-undo.md), [Undo Task Lifecycle](undo-task-lifecycle.md), [Indexed Group Removal](indexed-group-removal.md), [Stream Object Model](stream-object-model.md), and [Startup to Shutdown](startup-to-shutdown.md).

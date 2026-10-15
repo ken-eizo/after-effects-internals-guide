@@ -1,0 +1,111 @@
+{
+  "evidence": "E2-L strict SHA pinned BEE.dll PE static disassembly; no Adobe code executed",
+  "versions": {
+    "2025": {
+      "original_BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "missing_font_append": {
+        "BEE_Project_AddMissingFont": "0x4018f0",
+        "same_Project_holder_offset": "0x368",
+        "vector_start_end_capacity_offsets": [
+          "0x118",
+          "0x120",
+          "0x128"
+        ],
+        "TXT_UsedFontData_copy_constructor": "0x401910",
+        "appended_record_stride_bytes": 136,
+        "growth_fallback_jump": "0x401939",
+        "growth_helper": "0x3fab60",
+        "growth_Allocate": "0x3fac32",
+        "growth_copy_constructor": "0x3fac64",
+        "growth_move_constructors": [
+          "0x3fac96",
+          "0x3facc6",
+          "0x3fad07"
+        ],
+        "growth_original_destructor": "0x3fad33",
+        "growth_Recycle": "0x3fad71"
+      },
+      "project_destructor": {
+        "entry": "0x3ff0c0",
+        "context_holder_offset": "0x368",
+        "font_vector_subobject_offset": "0x118",
+        "font_vector_cleanup_call": "0x3ff441",
+        "undo_context_subobject_offset": "0x10",
+        "UndoContext_destructor_call": "0x3ff44a",
+        "holder_release_size_bytes": 304,
+        "subsequent_expression_engine_destructor_calls": [
+          "0x3ff463",
+          "0x3ff46f"
+        ]
+      },
+      "font_vector_cleanup": {
+        "entry": "0x3feff0",
+        "native_element_type": "TXT_UsedFontData",
+        "record_stride_bytes": 136,
+        "TXT_DLL_destructor_call": "0x3ff016",
+        "record_iterator_advance": "0x3ff01c",
+        "native_memory_recycler": "0x3ff054",
+        "reset_vector_start_end_capacity": [
+          "0x3ff05c",
+          "0x3ff05f",
+          "0x3ff063"
+        ]
+      },
+      "scope": "E2-L static original installed machine code, not live AE teardown",
+      "notes": "The +0x118 holder subobject is font records; not a second UndoContext, task registry, or unknown handler."
+    },
+    "2026": {
+      "original_BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "missing_font_append": {
+        "BEE_Project_AddMissingFont": "0x411d50",
+        "same_Project_holder_offset": "0x370",
+        "vector_start_end_capacity_offsets": [
+          "0x118",
+          "0x120",
+          "0x128"
+        ],
+        "TXT_UsedFontData_copy_constructor": "0x411d70",
+        "appended_record_stride_bytes": 136,
+        "growth_fallback_jump": "0x411d99",
+        "growth_helper": "0x40a9e0",
+        "growth_Allocate": "0x40aab9",
+        "growth_copy_constructor": "0x40aaf2",
+        "growth_move_constructors": [
+          "0x40ab26",
+          "0x40ab56",
+          "0x40ab86"
+        ],
+        "growth_original_destructor": "0x40abc3",
+        "growth_Recycle": "0x40ac01"
+      },
+      "project_destructor": {
+        "entry": "0x40f330",
+        "context_holder_offset": "0x370",
+        "font_vector_subobject_offset": "0x118",
+        "font_vector_cleanup_call": "0x40f681",
+        "undo_context_subobject_offset": "0x10",
+        "UndoContext_destructor_call": "0x40f68a",
+        "holder_release_size_bytes": 304,
+        "subsequent_expression_engine_destructor_calls": [
+          "0x40f6a3",
+          "0x40f6af"
+        ]
+      },
+      "font_vector_cleanup": {
+        "entry": "0x40f260",
+        "native_element_type": "TXT_UsedFontData",
+        "record_stride_bytes": 136,
+        "TXT_DLL_destructor_call": "0x40f286",
+        "record_iterator_advance": "0x40f28c",
+        "native_memory_recycler": "0x40f2c4",
+        "reset_vector_start_end_capacity": [
+          "0x40f2cc",
+          "0x40f2cf",
+          "0x40f2d3"
+        ]
+      },
+      "scope": "E2-L static original installed machine code, not live AE teardown",
+      "notes": "The +0x118 holder subobject is font records; not a second UndoContext, task registry, or unknown handler."
+    }
+  }
+}
