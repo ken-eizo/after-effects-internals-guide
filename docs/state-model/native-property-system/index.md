@@ -22,6 +22,9 @@ This is an *internal architecture guide*, not a supported C++ SDK. It distinguis
 | Parent insertion | Which CanStore, index, parent and cached-path steps actually adopt a child? | [Indexed child insertion](indexed-group-insertion.md) |
 | Parent removal | How is a native Stream detached without conflating removal and destruction? | [Indexed child removal](indexed-group-removal.md) |
 | Undo command routing | How do Adobe's Add/Remove/Duplicate/Reorder commands reach UndoContext? | [Structural commands and Undo](structural-command-undo.md) |
+| Undo task lifetime | How do Undo/Redo replay and later destroy command task objects? | [Undo Task Lifecycle](undo-task-lifecycle.md) |
+| Project Undo ownership and teardown | Where does Layer/Item obtain its UndoContext, and when does Project destroy it? | [Project UndoContext Lifecycle](project-undo-context-lifecycle.md) |
+| Concrete indexed task ownership | When is an Add/Remove inverse created, and who deletes its detached Stream? | [Indexed Add/Remove Undo task ownership](indexed-property-undo-task-ownership.md) |
 | Archive compatibility | What happens in the native load path when a child type has no registered Creator? | [Native archive type compatibility](archive-type-compatibility.md) |
 | Document persistence | How do saved MatchNames reconstruct native named/indexed Stream children? | [StreamGroup Read / Write](document-stream-serialization.md) |
 | Parent schema | Why does one indexed parent accept a child and another reject it? | [Canonical groups and admission](canonical-groups-admission.md) |
@@ -89,6 +92,9 @@ Important: `E2-L` alone is not a behavioral claim about a fabricated external St
 | Can the native loader reconstruct a child without consulting registered Stream Creators? | The verified Named/Indexed loaders **call CreateStream using the saved MatchName** | F-VECTOR-098, E2-L |
 | Does removal immediately destroy a native child? | **No on the verified RemoveStream success path**: pointer returned, parent +0x20 cleared | F-VECTOR-099, E2-L |
 | Do native indexed edits use BEE's Undo command system? | Four Add/Remove/Duplicate/Reorder wrappers each issue Begin/DoCommand/End | F-VECTOR-099, E2-L |
+| Are Undo and Redo history tasks executed and destroyed by the same generic lifetime system? | **Yes:** a shared task replay helper writes reciprocal-task pointers; UndoContext destructor clears both stacks using task deleting-destructor calls | F-VECTOR-101, E2-L |
+| Which first-party task owns and deletes a removed native Stream? | **Concrete Add task:** Remove constructs an inverse Add task with an ownership flag; its destructor conditionally deletes its noncanonical Stream | F-VECTOR-102, E2-L |
+| Does Project destroy its Undo/Redo history at teardown? | **Yes, native Project destructor directly calls UndoContext destructor on its context subobject**, whose destructor destroys both TaskStacks | F-VECTOR-103 and F-VECTOR-101, E2-L |
 | Do Named and Indexed archives report missing Creator identically? | **No:** observed native flag 0 for Named and 1 for Indexed | F-VECTOR-100, E2-L |
 | Can AEGP inspect brush-generated native Paint Strokes? | **Yes**, AE2026 read-only Paint fixture | F-VECTOR-083/087, E2-X |
 | Can an unknown Stream class automatically join Paint/Text/Shape? | **No such general rule**; separate grammar/factory gates | F-VECTOR-084/065, E2-L + E2-X |

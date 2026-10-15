@@ -65,6 +65,10 @@ The independent BEE evaluator registry covers 20 recognized built-in operator fa
 
 An effect raster output `PF_World` or Drawbot overlay is **not** a native `BEE_VectorArt` provider. Use the `BEE_VectorArt::OriginInfo` evidence to distinguish native source geometry identity from raster pixels (F-VECTOR-062 and subsequent native vector findings).
 
+### Native Undo history is a separate lifetime owner
+
+The genuine BEE_UndoContext has Undo and Redo TaskStacks. A verified private task replay helper executes a task at history-record offset +0x20 via native vtable slot +0x08 and stores a newly returned task pointer in the opposite history record. The UndoContext destructor clears **both** stacks and invokes conditional task deleting destructors. F-VECTOR-102 now proves that the first-party indexed Remove task returns an inverse Add task that conditionally owns and later deletes a noncanonical native Stream. **F-VECTOR-103 separately proves that Layer/Item Undo access converges on the Project-held UndoContext and that BEE_Project::~BEE_Project calls its UndoContext destructor.** This does not qualify foreign C++ providers or all branch/lifetime permutations. See [Project UndoContext Lifecycle](project-undo-context-lifecycle.md). See [Undo Task Lifecycle](undo-task-lifecycle.md) (F-VECTOR-101).
+
 ## Persistence, render snapshots and lifetime
 
 A host Layer may have document-authored Stream objects, time-evaluated values, cloned/render-scoped snapshot state and old Undo history. A factory `UnregisterFactoryFunc` can remove its **canonical prototype**, but this does not independently prove every document/render/editor instance is already destroyed. Host D3D/AGM/RG execution and asynchronous requests introduce additional retention.

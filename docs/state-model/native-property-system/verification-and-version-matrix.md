@@ -20,7 +20,10 @@ This page is the **evidence boundary** for the technical chapters. It is not a c
 | Parent indexed insertion | E2-L strict TDB vtable 2025+2026 | CanStore before insertion, reverse index/capsule cache/SetParent updates | Complete error rollback and all option meanings |
 | Document reconstruction | E2-L native StreamGroup Read/Write 2025+2026 | Child MatchName → CreateStream → InsertStream/Read | Missing foreign Creator AEP behavior and arbitrary roundtrip |
 | Indexed child removal | E2-L SHA-pinned TDB x64 AE2025+2026 | Return same detached child, parent +0x20 cleared, indexed vector/reverse map updated | Undo ownership, destruction and reuse |
-| Structural Undo routing | E2-L cross-DLL TDB+BEE AE2025+2026 | Add/Remove/Duplicate/Reorder begin/dispatch/end BEE Undo grouping | Inverse task lifetimes and arbitrary external type enrollment |
+| Structural Undo routing | E2-L cross-DLL TDB+BEE AE2025+2026 | Add/Remove/Duplicate/Reorder begin/dispatch/end BEE Undo grouping | Concrete native command task object ownership and external type enrollment |
+| Undo TaskStack lifecycle | E2-L SHA-pinned AE2025+2026 BEE x64 | Undo/Redo shared virtual +0x08 replay, generated record requeue, UndoContext destruction calls task vtable destructor for both stacks | Some concrete task types, failure paths, unload concurrency |
+| Indexed Add/Remove inverse ownership | E2-L original BEE x64 MSVC RTTI/vtable 2025+2026 | Concrete Add/Remove tasks construct each other; Remove creates owning inverse Add; eligible Add destructor invokes native Stream deleting destructor | All error/rollback branches, every task subtype, host foreign type admission |
+| Project UndoContext ownership/teardown | E2-L original BEE2025/2026 x64 SHA-pinned | Layer/Item delegate to Project; Project destructor directly invokes UndoContext destructor and frees holder | Real host close timing, factory/module unload order, arbitrary foreign C++ |
 | Missing-Creator reporting | E2-L Win64 TDB AE2025+2026 | Named loader flag 0, Indexed loader flag 1; report branch in CreateStream | Real host error/dialog/recovery and data preservation |
 | Canonical group layout | E2-L TDB/BEE vtable 2025+2026 | `FillInCanonicalUILayout`, separated dimensions, UILayout | All variant branches/editor binding |
 | Paint/Text admissibility | E2-L+E2-X built-ins, AE2026 Paint fixture | Named/indexed grammar, strict Paint child policy | Arbitrary external parent provider |
@@ -46,6 +49,9 @@ The `E2-L` PE images are original installed Adobe assets and stored only on the 
 | Eager canonical/layout vtables | F-VECTOR-095 | `verify_tdb_eager_canonical_vtable_dispatch.py`, `verify_tdb_group_bee_contents_canonical_dispatch.py` |
 | Creator/prototype destructor | F-VECTOR-096 | `verify_tdb_native_creator_canonical_lifetime.py` |
 | Indexed child detach + command undo | F-VECTOR-099 | `verify_tdb_native_detach_bee_indexed_undo.py` |
+| Undo TaskStack replay and destructor | F-VECTOR-101 | `verify_bee_undo_task_replay_and_destruction.py` |
+| Concrete indexed Add/Remove inverse Stream ownership | F-VECTOR-102 | `verify_bee_indexed_task_inverse_and_stream_lifetime.py` |
+| Project UndoContext accessor and destructor | F-VECTOR-103 | `verify_bee_project_undo_context_getter_delegation.py` |
 | Native archive missing-Creator report policy | F-VECTOR-100 | `verify_tdb_archive_missing_creator_error_policy.py` |
 | Supported AEGP SDK coverage | F-VECTOR-088 | `verify_public_sdk_native_provider_gap.py` |
 
@@ -67,7 +73,8 @@ Cross-version private differences include:
 - `aelib.dll` native Birth/Death callsite RVAs;
 - `BEE.dll` additional canonical property definitions in AE2026, including Text Variable Font Spacing and select 3D Mesh options;
 - `FLT.dll` seventh native effect registration, `EFFECT_BLENDMODE`, in AE2026;
-- changed internal Layer field and vtable offsets even when some TDB factory offsets remained equal.
+- changed internal Layer field and vtable offsets even when some TDB factory offsets remained equal;
+- the native Add Undo task ownership flag moved from `+0x48` (AE2025) to `+0x50` (AE2026), despite identical child pointer offset `+0x40` (F-VECTOR-102).
 
 **No private symbol/offset from 2025/2026 is a version-independent third-party ABI.** SHA-pinned tests fail when the original source DLL digest changes.
 

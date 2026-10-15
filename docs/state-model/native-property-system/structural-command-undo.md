@@ -67,11 +67,15 @@ Thus construction and Undo enrollment are two separate steps. The native call gr
 
 Detailed receipts also include the Begin/Do/End sequence for Duplicate and Reorder.
 
+## Generic Undo task execution, history requeue and cleanup
+
+Both native BEE_Undo and BEE_Redo pop a history record from a TaskStack, invoke a common native replay helper and enqueue the task record it produces on the opposite stack. The history record's native task pointer is held at offset +0x20; the replay calls the task's virtual +0x08 and stores its returned pointer into the new record at +0x20. The native BEE_UndoContext destructor also invokes a common stack-clear helper for both Undo and Redo stacks; the helper conditionally calls each task object's deleting destructor before removing the history list range. This is **E2-L verified in AE2025 and AE2026**. More recent concrete evidence establishes that an inverse Add task can own and conditionally destroy an indexed child Stream; see [BEE Undo Task Lifecycle](undo-task-lifecycle.md) (F-VECTOR-101) and [Indexed Add/Remove ownership](indexed-property-undo-task-ownership.md) (F-VECTOR-102).
+
 ## Important remaining ownership boundaries
 
 TDB_IndexedStreamGroup::RemoveStream detaches a child and returns the original Stream pointer, clearing its parent field. This native operation alone does not identify who owns that pointer afterward.
 
-A genuine Undo/Redo lifecycle audit must still determine which BEE task payload retains the child, whether Undo reattaches that object or reconstructs a copy, when destruction occurs, what happens after project close, and how module unload is constrained.
+F-VECTOR-102 identifies the **specific native Add/Remove inverse task pair**. The Remove task executes and returns an owning Add task for the detached Stream; on the owned, noncanonical branch, the Add task destructor calls the Stream virtual deleting destructor. Still unknown are every failure/rollback branch, behavior after project close in a live host, foreign type participation, and full safe module unload.
 
 For an external C++ Stream provider this is critical because host-retained native objects can keep foreign vtable and destructor pointers alive beyond a plugin menu command. **No external CNL native class has passed these acceptance gates.**
 

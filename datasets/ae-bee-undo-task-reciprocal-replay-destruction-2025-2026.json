@@ -1,0 +1,85 @@
+{
+  "status": "PASS strict static both installed AE versions",
+  "external_native_class_registered": false,
+  "private_functions_invoked": false,
+  "versions": {
+    "2025": {
+      "original_BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "UndoContext_destructor": {
+        "entry": "0x67fbc0",
+        "first_undo_stack_cleanup": "0x67fc1f",
+        "second_redo_stack_cleanup": "0x67fc32",
+        "redo_stack_embedded_offset": "0x28"
+      },
+      "history_clear": {
+        "shared_helper": "0x67c110",
+        "ClearStack_wrapper": "0x67fee0",
+        "ClearUndoStack_call": "0x67ff29",
+        "ClearRedoStack_call": "0x67feba",
+        "LIST_GetItem": "0x67c171",
+        "virtual_deleting_destructor_vtable_0x0": "0x67c1d9",
+        "delete_flag": "edx=1",
+        "LIST_RemoveRange": "0x67c289",
+        "record_task_pointer_offset": "0x20"
+      },
+      "undo_redo": {
+        "BEE_Undo": "0x67b440",
+        "BEE_Redo": "0x67ada0",
+        "undo_LIST_Remove": "0x67b62b",
+        "redo_LIST_Remove": "0x67ae31",
+        "shared_task_replay_helper": "0x67b9c0",
+        "undo_calls_task_replay": "0x67b674",
+        "redo_calls_task_replay": "0x67ae83",
+        "task_input_from_record_0x20": "0x67bbe3",
+        "task_execute_virtual_offset_0x8": "0x67bbf3",
+        "task_return_pointer_into_output_record_0x20": "0x67bbf6",
+        "shared_requeue_helper": "0x67cc20"
+      },
+      "scope": "E2-L original native x64 disassembly only; no host executed, no third-party type",
+      "unresolved": [
+        "Concrete task class for Indexed Stream remove/add/reorder",
+        "How exactly task owns detached TDB_StreamBase or clones",
+        "Exception paths in Undo/Redo and project close"
+      ]
+    },
+    "2026": {
+      "original_BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "UndoContext_destructor": {
+        "entry": "0x69bf90",
+        "first_undo_stack_cleanup": "0x69bfe4",
+        "second_redo_stack_cleanup": "0x69bff7",
+        "redo_stack_embedded_offset": "0x28"
+      },
+      "history_clear": {
+        "shared_helper": "0x698120",
+        "ClearStack_wrapper": "0x69c270",
+        "ClearUndoStack_call": "0x69c2b9",
+        "ClearRedoStack_call": "0x69c24a",
+        "LIST_GetItem": "0x698179",
+        "virtual_deleting_destructor_vtable_0x0": "0x6981d9",
+        "delete_flag": "edx=1",
+        "LIST_RemoveRange": "0x698298",
+        "record_task_pointer_offset": "0x20"
+      },
+      "undo_redo": {
+        "BEE_Undo": "0x697430",
+        "BEE_Redo": "0x696e40",
+        "undo_LIST_Remove": "0x69763b",
+        "redo_LIST_Remove": "0x696eee",
+        "shared_task_replay_helper": "0x6979c0",
+        "undo_calls_task_replay": "0x69767d",
+        "redo_calls_task_replay": "0x696f2d",
+        "task_input_from_record_0x20": "0x697bdc",
+        "task_execute_virtual_offset_0x8": "0x697beb",
+        "task_return_pointer_into_output_record_0x20": "0x697bee",
+        "shared_requeue_helper": "0x698c90"
+      },
+      "scope": "E2-L original native x64 disassembly only; no host executed, no third-party type",
+      "unresolved": [
+        "Concrete task class for Indexed Stream remove/add/reorder",
+        "How exactly task owns detached TDB_StreamBase or clones",
+        "Exception paths in Undo/Redo and project close"
+      ]
+    }
+  }
+}

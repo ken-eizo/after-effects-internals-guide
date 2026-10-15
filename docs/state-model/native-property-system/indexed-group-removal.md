@@ -61,7 +61,7 @@ The exact sequence was verified in both SHA-pinned installed TDB DLL builds; see
 | TDB_IndexedStreamGroup::InsertStream | Accept/attach a child, set parent and cached path state | Incoming native smart pointer is relinquished after successful insertion |
 | TDB_IndexedStreamGroup::RemoveStream | Detach by index | Returns original raw Stream pointer |
 | TDB_IndexedStreamGroup::RemoveChild | Remove a specified member | Returns boolean; separate cache/path handling |
-| BEE_CmdRemoveIndexedGroupEntry | Host-native command wrapper | Uses BEE UndoContext and BEE_DoCommand, not a raw public delete |
+| BEE_CmdRemoveIndexedGroupEntry | Host-native command wrapper | Uses BEE UndoContext and BEE_DoCommand; F-VECTOR-102 traces concrete inverse Add task ownership |
 | AEGP_DeleteStream | Documented third-party AEGP structural edit | Undoable; caller must dispose public StreamRefH |
 
 No cross-DLL private call should be attempted from a regular third-party AEX based on this table.
@@ -70,6 +70,6 @@ No cross-DLL private call should be attempted from a regular third-party AEX bas
 
 A foreign C++ Stream subclass would have virtual methods and destructor code in the module that implemented it. If the host or an Undo task retains a pointer after it has been detached, unloading that module would leave dangling virtual function pointers. Conversely, prematurely destroying a detached object while a task still holds it can cause use-after-free.
 
-**Not yet established:** the identity of the owner that receives the returned pointer for every command, whether the Undo task retains the original object or a clone, the method ultimately responsible for deleting detached objects, the exact object lifetime during Undo/Redo and macOS ABI.
+**New concrete first-party ownership evidence:** F-VECTOR-102 identifies an inverse `BEE_DoAddToIndexedStreamGroupTask` constructed by native Remove. It can hold the removed Stream pointer and its destructor conditionally calls the Stream virtual deleting destructor. This does not establish all caller paths, failed commands, live project close behavior, foreign objects or macOS ABI. See [Indexed Undo Task Ownership](indexed-property-undo-task-ownership.md).
 
 For supported third-party code use AEGP's documented APIs. See [Native Structural Commands and Undo](structural-command-undo.md), [Indexed Group Insertion](indexed-group-insertion.md), [Stream Object Model](stream-object-model.md), and [AEGP DynamicStreamSuite4](../../host-integration/cpp-sdk/aegps/dynamic-stream-suite.md).

@@ -1,0 +1,25 @@
+{
+  "experiment_id": "EXP-SHAPE-103",
+  "date": "2026-10-15",
+  "name": "Native BEE Project UndoContext accessor and project-destruction ownership",
+  "status": "PASS strict original AE2025/AE2026 Windows x64 static",
+  "evidence_class": "E2-L",
+  "source": "experiments/vector-shape/probe-src/tools/verify_bee_project_undo_context_getter_delegation.py",
+  "dataset": "datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json",
+  "finding": "research/findings/F-VECTOR-103-bee-project-undo-context-owner-shutdown-destructor.md",
+  "documentation": "docs/state-model/native-property-system/project-undo-context-lifecycle.md",
+  "verified": [
+    "Layer/Item resolve a Project-associated BEE_UndoContext",
+    "native BEE_Project destructor invokes its BEE_UndoContext destructor",
+    "underlying project context-holder allocation released after UndoContext destruction",
+    "version drift in Project and Layer private offsets"
+  ],
+  "not_verified": [
+    "real host project-close ordering",
+    "macOS private C++ ABI",
+    "third-party native Stream registration",
+    "safe third-party module unload"
+  ],
+  "private_host_calls": 0,
+  "foreign_native_custom_stream_registered": false
+}

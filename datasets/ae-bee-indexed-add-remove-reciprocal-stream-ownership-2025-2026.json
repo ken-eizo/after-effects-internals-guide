@@ -1,0 +1,124 @@
+{
+  "evidence": "E2-L strict original BEE PE two versions; native RTTI/COL/vtables/IAT/callsite branches; no Adobe code executed",
+  "product": "NOT_DELIVERED_HOST_NATIVE_CUSTOM_STREAM",
+  "versions": {
+    "2025": {
+      "original_BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "registered_tasks": {
+        "add": {
+          "table_index": 70,
+          "table_entry": "0xfecb10",
+          "native_command_name": "BEE_DoAddToIndexedStreamGroupTask",
+          "class_rtti": ".?AVBEE_DoAddToIndexedStreamGroupTask@@",
+          "vtable": "0xf914b8",
+          "factory": "0x645a20",
+          "copy_factory": "0x645a60",
+          "virtual_deleting_destructor": "0x549c90",
+          "virtual_replay": "0x54c640"
+        },
+        "remove": {
+          "table_index": 72,
+          "table_entry": "0xfecb50",
+          "native_command_name": "BEE_DoRemoveIndexedGroupTask",
+          "class_rtti": ".?AVBEE_DoRemoveIndexedGroupTask@@",
+          "vtable": "0xf914d8",
+          "factory": "0x645b40",
+          "copy_factory": "0x645b80",
+          "virtual_deleting_destructor": "0x549ee0",
+          "virtual_replay": "0x54cf00"
+        }
+      },
+      "reciprocal_execution_and_Stream_ownership": {
+        "add": {
+          "task_replay": "0x54c640",
+          "creates_inverse_class": "BEE_DoRemoveIndexedGroupTask",
+          "loads_inverse_vtable": "0x54c978",
+          "stores_inverse_vtable": "0x54c97f",
+          "returns_created_inverse": "0x54c996"
+        },
+        "remove": {
+          "task_replay": "0x54cf00",
+          "creates_inverse_class": "BEE_DoAddToIndexedStreamGroupTask",
+          "loads_inverse_vtable": "0x54d27d",
+          "stores_inverse_vtable": "0x54d284",
+          "returns_created_inverse": "0x54d29f"
+        },
+        "add_destructor": {
+          "entry": "0x549c90",
+          "owned_flag_offset": "0x48",
+          "stream_pointer_offset": "0x40",
+          "owned_flag_check": "0x549ce3",
+          "IsCanonical": "0x549cfa",
+          "GetParent": "0x549d0c",
+          "parent_RemoveChild_virtual_0x1e0": "0x549d2c",
+          "Stream_deleting_destructor_vtable_0x0": "0x549de7",
+          "delete_flag_one": "0x549de2",
+          "StreamIDPath_destructor": "0x549df8",
+          "conditional_rule": "owned flag && nonnull && noncanonical; when parent exists, try RemoveChild and assert on failure; delete Stream and task"
+        }
+      },
+      "private_Adobe_runtime_calls": 0,
+      "foreign_native_Stream_registered": false,
+      "caution": "Concrete first-party class ownership; not evidence foreign class allowed/safe."
+    },
+    "2026": {
+      "original_BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "registered_tasks": {
+        "add": {
+          "table_index": 71,
+          "table_entry": "0x104ce10",
+          "native_command_name": "BEE_DoAddToIndexedStreamGroupTask",
+          "class_rtti": ".?AVBEE_DoAddToIndexedStreamGroupTask@@",
+          "vtable": "0xff0860",
+          "factory": "0x65f820",
+          "copy_factory": "0x65f860",
+          "virtual_deleting_destructor": "0x568a30",
+          "virtual_replay": "0x56b270"
+        },
+        "remove": {
+          "table_index": 73,
+          "table_entry": "0x104ce50",
+          "native_command_name": "BEE_DoRemoveIndexedGroupTask",
+          "class_rtti": ".?AVBEE_DoRemoveIndexedGroupTask@@",
+          "vtable": "0xff0880",
+          "factory": "0x65f940",
+          "copy_factory": "0x65f980",
+          "virtual_deleting_destructor": "0x568cb0",
+          "virtual_replay": "0x56bc10"
+        }
+      },
+      "reciprocal_execution_and_Stream_ownership": {
+        "add": {
+          "task_replay": "0x56b270",
+          "creates_inverse_class": "BEE_DoRemoveIndexedGroupTask",
+          "loads_inverse_vtable": "0x56b5bd",
+          "stores_inverse_vtable": "0x56b5c4",
+          "returns_created_inverse": "0x56b5db"
+        },
+        "remove": {
+          "task_replay": "0x56bc10",
+          "creates_inverse_class": "BEE_DoAddToIndexedStreamGroupTask",
+          "loads_inverse_vtable": "0x56bfab",
+          "stores_inverse_vtable": "0x56bfb2",
+          "returns_created_inverse": "0x56bfcd"
+        },
+        "add_destructor": {
+          "entry": "0x568a30",
+          "owned_flag_offset": "0x50",
+          "stream_pointer_offset": "0x40",
+          "owned_flag_check": "0x568a83",
+          "IsCanonical": "0x568a9a",
+          "GetParent": "0x568aac",
+          "parent_RemoveChild_virtual_0x1e0": "0x568ac5",
+          "Stream_deleting_destructor_vtable_0x0": "0x568b84",
+          "delete_flag_one": "0x568b7f",
+          "StreamIDPath_destructor": "0x568b95",
+          "conditional_rule": "owned flag && nonnull && noncanonical; when parent exists, try RemoveChild and assert on failure; delete Stream and task"
+        }
+      },
+      "private_Adobe_runtime_calls": 0,
+      "foreign_native_Stream_registered": false,
+      "caution": "Concrete first-party class ownership; not evidence foreign class allowed/safe."
+    }
+  }
+}

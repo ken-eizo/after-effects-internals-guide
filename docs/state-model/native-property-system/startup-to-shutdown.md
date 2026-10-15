@@ -149,7 +149,11 @@ Three distinct services consume property state:
 
 A renderer can consume evaluated properties without exposing the same mutable document graph. Re-render validity/cache identity is its own plane. Refer to [Owner, editor and renderer](owner-editor-renderer.md) and [AEIG render graph](../../render-graph/render-graph-model.md).
 
-## Phase 8 — Factory unregister and native host teardown
+## Phase 8 — Undo history task destruction and factory teardown
+
+A document editing context's history is another potential owner of native objects. The **real BEE_UndoContext destructor** calls the same stack-clear helper for both its Undo and Redo history stacks. The helper reads each list record, conditionally calls the task's virtual deleting destructor with native flag 1, then removes the list range. The generic BEE Undo/Redo commands separately replay tasks and enqueue returned task pointers into the opposite history stack (F-VECTOR-101). **F-VECTOR-102 now verifies a concrete first-party removed-TDB-Stream ownership chain**: the inverse Add task conditionally invokes the owned noncanonical Stream's virtual deleting destructor. **F-VECTOR-103 now verifies that BEE_Project::~BEE_Project directly calls BEE_UndoContext::~BEE_UndoContext** for the same project-held context accessed by native Layer/Item Undo commands. This connects Project destruction to both history-stack destructors and eligible Stream destructor callbacks. Ordering relative to TDB factory/module teardown, arbitrary foreign classes and error branches remains unverified. See [Undo Task Lifecycle](undo-task-lifecycle.md) and [Project UndoContext Lifecycle](project-undo-context-lifecycle.md).
+
+### Factory unregister and native host teardown
 
 On the traced successful branch, `TDB_StreamFactory::UnregisterFactoryFunc` performs:
 
@@ -180,7 +184,7 @@ A *true* AE-host-native custom type requires separately observed PASS for:
 - native evaluator/render and correct cache invalidation where relevant;
 - live-instance exhaustion and safe unload, Windows and macOS qualification.
 
-As of 2026-10-14 these have **not** been completed for a foreign `CNL:` class. The independent ChapeLayer/CNL C++ runtime and simulated tests are not equivalent.
+As of 2026-10-15 these have **not** been completed for a foreign `CNL:` class. The independent ChapeLayer/CNL C++ runtime and simulated tests are not equivalent.
 
 ## Primary evidence / reproduce
 
@@ -188,6 +192,7 @@ As of 2026-10-14 these have **not** been completed for a foreign `CNL:` class. T
 - F-VECTOR-080/081, 083/087: Paint AEX bridge and real Paint native UI/AEGP readings.
 - F-VECTOR-092–096: strict canonical grammar, OM/FLT native registration, real C++ ABI, register/layout and unregister ownership.
 - F-VECTOR-055–059, 067–071: owner/CompItem/Undo/native task boundary.
+- F-VECTOR-097–101: native Stream construction, Indexed insertion/removal, archive reload/missing Creator flags, Undo task replay and destroying both TaskStacks.
 - Datasets: `ae-native-om-flt-bee-crossmodule-boot-verified-2025-2026.json`, `ae-tdb-eager-canonical-vtable-2025-2026.json`, `ae-tdb-group-to-bee-shape-canonical-dispatch-2025-2026.json`, `ae-tdb-native-creator-canonical-lifetime-2025-2026.json`.
 
 Each datum lives in the repository `datasets/`, with a matching independent verifier under `experiments/vector-shape/probe-src/tools/`. Original installed binaries were read but not modified.

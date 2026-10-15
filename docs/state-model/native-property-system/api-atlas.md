@@ -64,6 +64,8 @@ This is a **bounded observation**; it does not establish nonexistence in a priva
 | `TDB_IndexedStreamGroup::RemoveStream` | `TDB.dll` | Detach child, clear parent +0x20, return original Stream pointer | F-VECTOR-099 |
 | `TDB_StreamBase::CreateStream` | `TDB.dll` | First-party wrapper tail-jumps to StreamFactory's CreateStream | F-VECTOR-099 |
 | `BEE_CmdAddToIndexedStreamGroup` | `BEE.dll` | First-party native child creation followed by command submission | F-VECTOR-099 |
+| `BEE_Project::GetUndoContext` | `BEE.dll` | Returns Project-held UndoContext subobject; target of Item/Layer delegation | F-VECTOR-103 |
+| `BEE_Project::~BEE_Project` | `BEE.dll` | Calls UndoContext destructor and releases containing Project context allocation | F-VECTOR-103 |
 | `BEE_CmdRemoveIndexedGroupEntry` | `BEE.dll` | First-party native remove command via UndoContext | F-VECTOR-099 |
 | `BEE_CmdDuplicateIndexedGroupEntry` | `BEE.dll` | First-party native duplicate command via UndoContext | F-VECTOR-099 |
 | `BEE_CmdReorderIndexedGroupEntry` | `BEE.dll` | First-party native reorder command via UndoContext | F-VECTOR-099 |

@@ -1,0 +1,115 @@
+{
+  "evidence": "E2-L original SHA pinned AE2025/2026 BEE.dll x64 direct getter chain",
+  "versions": {
+    "2025": {
+      "original_BEE_sha256": "98c682351e30f38cb7021eaa142f5ec473aea92885e14915d87c157cda971730",
+      "verified_undo_context_accessors": {
+        "project": {
+          "entry": "0x407390",
+          "host_project_context_handle_offset": "0x368",
+          "indirect_undo_context_offset": "0x10",
+          "field_read": "0x407390"
+        },
+        "item": {
+          "entry": "0x3c9c70",
+          "item_project_ptr_offset": "0x38",
+          "delegates_to_project_getter": "0x407390"
+        },
+        "layer": {
+          "entry": "0x2ea2b0",
+          "layer_item_ptr_offset": "0x2b8",
+          "GetParentProject": "0x3c9860",
+          "deref_returned_project_ptr": "0x2ea2c5",
+          "null_guard_count": 2,
+          "delegates_to_project_getter": "0x407390"
+        },
+        "project_const": {
+          "entry": "0x4073a0",
+          "host_project_context_handle_offset": "0x368",
+          "indirect_undo_context_offset": "0x10",
+          "field_read": "0x4073a0"
+        },
+        "item_const": {
+          "entry": "0x3c9c80",
+          "item_project_ptr_offset": "0x38",
+          "delegates_to_project_getter": "0x4073a0"
+        },
+        "layer_const": {
+          "entry": "0x2ea2f0",
+          "layer_item_ptr_offset": "0x2b8",
+          "GetParentProject": "0x3c9860",
+          "deref_returned_project_ptr": "0x2ea305",
+          "null_guard_count": 2,
+          "delegates_to_project_getter": "0x407390"
+        }
+      },
+      "verified_project_destruction_calls_undo_context": {
+        "project_destructor_rva": "0x3ff0c0",
+        "context_pointer_load_rva": "0x3ff42e",
+        "context_ptr_null_guard_rva": "0x3ff435",
+        "undo_context_subobject_address_rva": "0x3ff446",
+        "direct_BEE_UndoContext_destructor_call_rva": "0x3ff44a",
+        "undo_context_destructor_rva": "0x67fbc0",
+        "context_allocation_bytes": 304,
+        "deallocation_after_context_destructor_rva": "0x3ff457"
+      },
+      "scope": "Original installed BEE.dll static only; not a live project-close receipt or evidence of safe foreign plugin unload",
+      "foreign_native_type_registered": false
+    },
+    "2026": {
+      "original_BEE_sha256": "5fd8d318456228b9fd2a6733a5758f6b84206b7a8effcba5202957cd27ac680e",
+      "verified_undo_context_accessors": {
+        "project": {
+          "entry": "0x417630",
+          "host_project_context_handle_offset": "0x370",
+          "indirect_undo_context_offset": "0x10",
+          "field_read": "0x417630"
+        },
+        "item": {
+          "entry": "0x3d7a00",
+          "item_project_ptr_offset": "0x38",
+          "delegates_to_project_getter": "0x417630"
+        },
+        "layer": {
+          "entry": "0x2f2e60",
+          "layer_item_ptr_offset": "0x260",
+          "GetParentProject": "0x3d76a0",
+          "deref_returned_project_ptr": "0x2f2e75",
+          "null_guard_count": 2,
+          "delegates_to_project_getter": "0x417630"
+        },
+        "project_const": {
+          "entry": "0x417640",
+          "host_project_context_handle_offset": "0x370",
+          "indirect_undo_context_offset": "0x10",
+          "field_read": "0x417640"
+        },
+        "item_const": {
+          "entry": "0x3d7a10",
+          "item_project_ptr_offset": "0x38",
+          "delegates_to_project_getter": "0x417640"
+        },
+        "layer_const": {
+          "entry": "0x2f2ea0",
+          "layer_item_ptr_offset": "0x260",
+          "GetParentProject": "0x3d76a0",
+          "deref_returned_project_ptr": "0x2f2eb5",
+          "null_guard_count": 2,
+          "delegates_to_project_getter": "0x417630"
+        }
+      },
+      "verified_project_destruction_calls_undo_context": {
+        "project_destructor_rva": "0x40f330",
+        "context_pointer_load_rva": "0x40f66e",
+        "context_ptr_null_guard_rva": "0x40f675",
+        "undo_context_subobject_address_rva": "0x40f686",
+        "direct_BEE_UndoContext_destructor_call_rva": "0x40f68a",
+        "undo_context_destructor_rva": "0x69bf90",
+        "context_allocation_bytes": 304,
+        "deallocation_after_context_destructor_rva": "0x40f697"
+      },
+      "scope": "Original installed BEE.dll static only; not a live project-close receipt or evidence of safe foreign plugin unload",
+      "foreign_native_type_registered": false
+    }
+  }
+}
