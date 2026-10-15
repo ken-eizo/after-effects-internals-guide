@@ -3453,6 +3453,8 @@
       
         
       
+        
+      
     
     
     
@@ -4084,6 +4086,41 @@
     
   
     TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/name-lookup-callback-bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup Name Lookup — BEE Startup Callback Bridge
   
 
     
@@ -15388,10 +15425,21 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#state-model-native-property-system-name-lookup-callback-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.19 TDBStreamGroup Name Lookup — BEE Startup Callback Bridge
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#state-model-native-property-system-document-stream-serialization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.19 TDBStreamGroup::Read / Write — Native Property Serialization
+        8.5.20 TDBStreamGroup::Read / Write — Native Property Serialization
       
     </span>
   </a>
@@ -21203,6 +21251,11 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td><a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a></td>
 </tr>
 <tr>
+<td>Stream name lookup</td>
+<td>How does BEE install TDB's group-name resolver, and why is it not a type Creator?</td>
+<td><a href="#state-model-native-property-system-name-lookup-callback-bridge">TDB Name Lookup Callback</a></td>
+</tr>
+<tr>
 <td>Instance construction</td>
 <td>How does an already registered Creator produce a Stream with native default-state initialization?</td>
 <td><a href="#state-model-native-property-system-stream-instance-creation">Native instance creation</a></td>
@@ -21337,6 +21390,11 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Does <code>RegisterFactoryFunc</code> immediately build and initialize a native prototype?</td>
 <td><strong>Yes</strong>, including virtual canonical layout dispatch</td>
 <td>F-VECTOR-095, E2-L</td>
+</tr>
+<tr>
+<td>Does a native callback setter in TDB register new Stream classes?</td>
+<td><strong>Not the name-lookup setter:</strong> <code>BEE_Birth</code> installs a group-name resolver; it is separate from <code>TDB_StreamFactory</code> Creator registration</td>
+<td>F-VECTOR-105, E2-L</td>
 </tr>
 <tr>
 <td>Does factory unregister release its own prototype?</td>
@@ -22573,6 +22631,8 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </tbody>
 </table>
 <p><strong>Interpretation boundary:</strong> this is the order of <em>instructions in analyzed functions</em>, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is <strong>not proven</strong> to occur between these calls. Evidence: F-VECTOR-073–077, 093 and <code>datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json</code>.</p>
+<h3 id="state-model-native-property-system-startup-to-shutdown-an-additional-bee-tdb-name-search-callback">An additional BEE → TDB name-search callback<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-an-additional-bee-tdb-name-search-callback" title="Permanent link">&para;</a></h3>
+<p>In both installed versions, <code>BEE_Birth</code> also constructs a native <code>std::function</code> and calls <strong><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></strong>. The TDB name-search function later invokes the registered callback or returns null if absent. This is <strong>existing Stream name resolution</strong>, not the <code>TDB_StreamFactory::RegisterFactoryFunc</code> mechanism used to register new typed C++ Creators. See <a href="#state-model-native-property-system-name-lookup-callback-bridge">TDB Name Lookup Callback</a> (F-VECTOR-105).</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-phase-1-adobe-internal-native-stream-providers-register-their-types">Phase 1 — Adobe internal native Stream providers register their types<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-1-adobe-internal-native-stream-providers-register-their-types" title="Permanent link">&para;</a></h2>
 <p>The host-wide <code>TDB_StreamFactory</code> accepts typed C++ creators keyed by <code>TDB_MatchName</code>. At least three independent Adobe DLLs participate:</p>
 <table>
@@ -22762,6 +22822,12 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Exception rollback and surviving document instances</td>
 </tr>
 <tr>
+<td>Group name lookup callback</td>
+<td>E2-L SHA-pinned original BEE/TDB 2025+2026</td>
+<td><code>BEE_Birth</code> installs TDB name resolver, <code>FindStreamByNameNullOK</code> dispatches callable or returns null</td>
+<td>Exact BEE lookup callback semantics, reset/unload and concurrency</td>
+</tr>
+<tr>
 <td>Instance generation</td>
 <td>E2-L strict x64 original TDB 2025+2026</td>
 <td>Creator callback after mutex unlock; default key and optional decanonicalization paths</td>
@@ -22946,6 +23012,11 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Project missing-font vector append/growth/destructor</td>
 <td>F-VECTOR-104</td>
 <td><code>verify_bee_project_font_vector_pre_undo_teardown.py</code></td>
+</tr>
+<tr>
+<td>BEE startup to TDB name-lookup callback</td>
+<td>F-VECTOR-105</td>
+<td><code>verify_bee_tdb_stream_name_lookup_callback.py</code></td>
 </tr>
 <tr>
 <td>Native archive missing-Creator report policy</td>
@@ -23369,6 +23440,18 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td><code>TDB.dll</code></td>
 <td>Copy Creator under mutex, unlock, construct instance, optionally initialize leaf/group</td>
 <td>F-VECTOR-095/097</td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></td>
+<td><code>TDB.dll</code></td>
+<td>Install private BEE name-lookup callback; does <strong>not</strong> register a Stream type</td>
+<td>F-VECTOR-105</td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::FindStreamByNameNullOK</code></td>
+<td><code>TDB.dll</code></td>
+<td>Invoke installed name resolver for an existing Stream, or return null</td>
+<td>F-VECTOR-105</td>
 </tr>
 <tr>
 <td><code>TDB_IndexedStreamGroup::InsertStream</code></td>
@@ -24115,7 +24198,146 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <h2 id="state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions">Unknowns and safety conditions<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions" title="Permanent link">&para;</a></h2>
 <p><strong>Unresolved:</strong> meaning of all five arguments, exception safety and rollback, Creator callback ownership under concurrency and module unload, allocation and derived class memory lifetime for unknown types, exact runtime choice of decanonicalization, and macOS private ABI.</p>
 <p>This is an <strong>E2-L static finding</strong>. No private host function was invoked to obtain this analysis. The independent verification code is <code>experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py</code>, which pins the original TDB DLL SHA-256 and checks actual CALL ordering.</p>
-<p>Further reading: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Native Stream model</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Parent admission</a>. Research proof F-VECTOR-097.</p></section><section class="print-page" id="state-model-native-property-system-document-stream-serialization" heading-number="8.5.19"><h1 id="state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization">TDB_StreamGroup::Read / Write — Native Property Serialization<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization" title="Permanent link">&para;</a></h1>
+<p>Further reading: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Native Stream model</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Parent admission</a>. Research proof F-VECTOR-097.</p></section><section class="print-page" id="state-model-native-property-system-name-lookup-callback-bridge" heading-number="8.5.19"><h1 id="state-model-native-property-system-name-lookup-callback-bridge-tdb_streamgroup-name-lookup-bee-startup-callback-bridge">TDB_StreamGroup Name Lookup — BEE Startup Callback Bridge<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-tdb_streamgroup-name-lookup-bee-startup-callback-bridge" title="Permanent link">&para;</a></h1>
+<p><code>TDB_StreamGroup::FindStreamByNameNullOK</code> uses a private host-wide callback installed during <code>BEE_Birth</code> to resolve an existing Stream by a human-readable name.</p>
+<p><strong>This is NOT a native Stream class registration function.</strong> It does not provide a third-party mechanism to add arbitrary C++ Stream subclasses to the AE Timeline. This feature reference separates name-based lookup from factory-backed Stream construction.</p>
+<h2 id="state-model-native-property-system-name-lookup-callback-bridge-purpose-and-native-entry-points">Purpose and native entry points<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-purpose-and-native-entry-points" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Adobe-private C++ function</th>
+<th>Native owner</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></td>
+<td><code>TDB.dll</code></td>
+<td>Set the private C++ <code>std::function</code> callback used for name lookup</td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::FindStreamByNameNullOK</code></td>
+<td><code>TDB.dll</code></td>
+<td>Invoke callback when available, otherwise return null</td>
+</tr>
+<tr>
+<td><code>BEE_Birth</code></td>
+<td><code>BEE.dll</code></td>
+<td>Install BEE-provided callback during internal host initialization</td>
+</tr>
+</tbody>
+</table>
+<p>The TDB name-search function takes a StreamGroup and a UTF-16 name, plus additional output/reference arguments. The exact semantic meaning of all auxiliary arguments and the full BEE callback implementation have not yet been reconstructed.</p>
+<h2 id="state-model-native-property-system-name-lookup-callback-bridge-real-native-path">Real native path<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-real-native-path" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">BEE_Birth
+</span><span id="__span-0-2">  └─ construct a host callback object
+</span><span id="__span-0-3">      └─ TDB_StreamGroup::SetFindStreamByNameNullOKFunction(callback)
+</span><span id="__span-0-4">          └─ assign callback into TDB global std::function storage
+</span><span id="__span-0-5">
+</span><span id="__span-0-6">TDB_StreamGroup::FindStreamByNameNullOK
+</span><span id="__span-0-7">  ├─ load stored callable
+</span><span id="__span-0-8">  ├─ if nullptr: return nullptr
+</span><span id="__span-0-9">  └─ call native std::function invocation virtual slot +0x10
+</span><span id="__span-0-10">       └─ BEE-provided name lookup
+</span></code></pre></div>
+<p>The original code for the setter consists of a short forwarding wrapper to a private std::function assignment helper. The real search function loads the pointer from the <strong>same TDB static storage</strong> and checks it before indirect dispatch.</p>
+<h3 id="state-model-native-property-system-name-lookup-callback-bridge-per-version-implementation">Per-version implementation<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-per-version-implementation" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Original native item</th>
+<th>AE2025</th>
+<th>AE2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BEE_Birth</code> entry</td>
+<td><code>0x64A530</code></td>
+<td><code>0x664F70</code></td>
+</tr>
+<tr>
+<td>BEE calls TDB callback setter</td>
+<td><code>0x64A5F2</code></td>
+<td><code>0x66502E</code></td>
+</tr>
+<tr>
+<td><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code> entry</td>
+<td><code>0x2B690</code></td>
+<td><code>0x2C440</code></td>
+</tr>
+<tr>
+<td>TDB static callable storage base</td>
+<td><code>0xA79D0</code></td>
+<td><code>0xC0C60</code></td>
+</tr>
+<tr>
+<td>Stored callable pointer load RVA</td>
+<td><code>0xA7A08</code></td>
+<td><code>0xC0C98</code></td>
+</tr>
+<tr>
+<td><code>FindStreamByNameNullOK</code> entry</td>
+<td><code>0x2B540</code></td>
+<td><code>0x2C280</code></td>
+</tr>
+<tr>
+<td>Absent callback behavior</td>
+<td>Return null</td>
+<td>Return null</td>
+</tr>
+<tr>
+<td>Registered callback invocation</td>
+<td><code>vtable+0x10</code></td>
+<td><code>vtable+0x10</code></td>
+</tr>
+</tbody>
+</table>
+<p>All addresses are <strong>RVAs for original observed binaries</strong>, not documented or stable third-party SDK ABI offsets.</p>
+<h2 id="state-model-native-property-system-name-lookup-callback-bridge-critical-distinction-lookup-is-not-registration">Critical distinction: lookup is not registration<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-critical-distinction-lookup-is-not-registration" title="Permanent link">&para;</a></h2>
+<p>The native implementation has separate planes of responsibility.</p>
+<table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>Input</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>TDB_StreamGroup::FindStreamByNameNullOK</code></td>
+<td>Group plus display/name string</td>
+<td>Find an existing Stream through installed callback</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::RegisterFactoryFunc</code></td>
+<td><code>TDB_MatchName</code> plus C++ type Creator</td>
+<td>Register new native class Creator and build a canonical prototype</td>
+</tr>
+<tr>
+<td><code>TDB_StreamFactory::CreateStream</code></td>
+<td>An already registered MatchName</td>
+<td>Construct a new C++ object</td>
+</tr>
+<tr>
+<td>Parent <code>CanStore / InsertStream</code></td>
+<td>Registered child MatchName and instance</td>
+<td>Decide whether a group may adopt a child and establish ownership</td>
+</tr>
+</tbody>
+</table>
+<p>Merely providing a name-search callback does <strong>not</strong> register a new MatchName or a valid custom C++ class. It also does not construct a host-owned property, grant Timeline editing rights or prove save/reopen support.</p>
+<h2 id="state-model-native-property-system-name-lookup-callback-bridge-lifetime-considerations-and-unknowns">Lifetime considerations and unknowns<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-lifetime-considerations-and-unknowns" title="Permanent link">&para;</a></h2>
+<p>The callback object is stored within <code>TDB.dll</code>, while its installed implementation originates from BEE startup. That is a cross-module code-lifetime relationship. However, the following remain <strong>unverified</strong>: the exact BEE implementation of the callback, its complete output/reference argument semantics, whether and how it is cleared during <code>BEE_Death</code>, concurrent lookup/update safety and any support for unrelated third-party callbacks.</p>
+<p>No private Adobe function was called by this experiment; the original host and projects remain unchanged.</p>
+<h2 id="state-model-native-property-system-name-lookup-callback-bridge-evidence-and-related-pages">Evidence and related pages<a class="headerlink" href="#state-model-native-property-system-name-lookup-callback-bridge-evidence-and-related-pages" title="Permanent link">&para;</a></h2>
+<p>Research: <strong>F-VECTOR-105</strong>. Independent cross-version SHA-pinned static verifier:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_bee_tdb_stream_name_lookup_callback.py"</span>
+</span></code></pre></div>
+<p>Machine-readable receipt: <code>datasets/ae-bee-tdb-native-name-lookup-callback-2025-2026.json</code>.</p>
+<p>Related feature references: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration and Lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Stream Object Model</a>, <a href="#state-model-native-property-system-api-atlas">Native API Atlas</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>, and <a href="#state-model-native-property-system-startup-to-shutdown">Startup to Shutdown</a>.</p></section><section class="print-page" id="state-model-native-property-system-document-stream-serialization" heading-number="8.5.20"><h1 id="state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization">TDB_StreamGroup::Read / Write — Native Property Serialization<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization" title="Permanent link">&para;</a></h1>
 <p><code>TDB_StreamGroup</code> persists a <strong>native group of Stream objects</strong> through Adobe's internal <strong>SLU</strong> serialization layer. These methods are not SDK APIs or a public specification of the AEP file format. They are concrete C++ operations performed by an Adobe-owned object as part of host state persistence.</p>
 <p>The critical implementation condition is that <strong>loading a group reconstructs children from saved MatchNames using the active native Creator factory</strong>, instead of merely retaining unknown opaque bytes.</p>
 <h2 id="state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values">Write path: group, identity, child names and values<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values" title="Permanent link">&para;</a></h2>
@@ -35106,7 +35328,9 @@ dumpbin failures: <strong>0</strong>.</p>
 
 .print-site-enumerate-headings #state-model-native-property-system-stream-instance-creation > h1:before { content: '8.5.18 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-document-stream-serialization > h1:before { content: '8.5.19 ' }
+.print-site-enumerate-headings #state-model-native-property-system-name-lookup-callback-bridge > h1:before { content: '8.5.19 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-document-stream-serialization > h1:before { content: '8.5.20 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #section-9-1 > h1:before { content: '9.1 ' }

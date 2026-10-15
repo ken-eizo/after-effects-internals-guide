@@ -3455,6 +3455,8 @@
       
         
       
+        
+      
     
     
     
@@ -3882,6 +3884,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 0 — Native host loads internal modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-additional-bee-tdb-name-search-callback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An additional BEE → TDB name-search callback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -4297,6 +4316,41 @@
     
   
     TDBStreamFactory::CreateStream — Native Instance Construction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../name-lookup-callback-bridge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TDBStreamGroup Name Lookup — BEE Startup Callback Bridge
   
 
     
@@ -14404,6 +14458,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Phase 0 — Native host loads internal modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#an-additional-bee-tdb-name-search-callback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        An additional BEE → TDB name-search callback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -14657,6 +14728,8 @@
 </tbody>
 </table>
 <p><strong>Interpretation boundary:</strong> this is the order of <em>instructions in analyzed functions</em>, not a guarantee about every runtime branch, every process, or OS-level DLL load order. Ordinary third-party AEX startup is <strong>not proven</strong> to occur between these calls. Evidence: F-VECTOR-073–077, 093 and <code>datasets/ae-aelib-om-flt-bee-native-birth-death-2025-2026.json</code>.</p>
+<h3 id="an-additional-bee-tdb-name-search-callback">An additional BEE → TDB name-search callback<a class="headerlink" href="#an-additional-bee-tdb-name-search-callback" title="Permanent link">&para;</a></h3>
+<p>In both installed versions, <code>BEE_Birth</code> also constructs a native <code>std::function</code> and calls <strong><code>TDB_StreamGroup::SetFindStreamByNameNullOKFunction</code></strong>. The TDB name-search function later invokes the registered callback or returns null if absent. This is <strong>existing Stream name resolution</strong>, not the <code>TDB_StreamFactory::RegisterFactoryFunc</code> mechanism used to register new typed C++ Creators. See <a href="../name-lookup-callback-bridge/">TDB Name Lookup Callback</a> (F-VECTOR-105).</p>
 <h2 id="phase-1-adobe-internal-native-stream-providers-register-their-types">Phase 1 — Adobe internal native Stream providers register their types<a class="headerlink" href="#phase-1-adobe-internal-native-stream-providers-register-their-types" title="Permanent link">&para;</a></h2>
 <p>The host-wide <code>TDB_StreamFactory</code> accepts typed C++ creators keyed by <code>TDB_MatchName</code>. At least three independent Adobe DLLs participate:</p>
 <table>
@@ -14835,7 +14908,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:07:27 UTC">October 15, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 10:22:16 UTC">October 15, 2026</span>
   </span>
 
     
