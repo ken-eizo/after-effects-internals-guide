@@ -3449,6 +3449,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3769,6 +3775,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rendering and vector operator registry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-undo-history-is-a-separate-lifetime-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native Undo history is a separate lifetime owner
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3933,6 +3956,111 @@
     
   
     Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Project UndoContext — Ownership and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -14211,6 +14339,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Rendering and vector operator registry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#native-undo-history-is-a-separate-lifetime-owner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native Undo history is a separate lifetime owner
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -14349,6 +14494,8 @@
 </span></code></pre></div>
 <p>The independent BEE evaluator registry covers 20 recognized built-in operator families in the inspected versions (see <a href="../../../vector-shape-system/native-vector-evaluator-registry/">Native Vector Evaluator Registry</a>). A new MatchName passing Shape Contents' prefix predicate still lacks evaluator dispatch if no corresponding native operator exists.</p>
 <p>An effect raster output <code>PF_World</code> or Drawbot overlay is <strong>not</strong> a native <code>BEE_VectorArt</code> provider. Use the <code>BEE_VectorArt::OriginInfo</code> evidence to distinguish native source geometry identity from raster pixels (F-VECTOR-062 and subsequent native vector findings).</p>
+<h3 id="native-undo-history-is-a-separate-lifetime-owner">Native Undo history is a separate lifetime owner<a class="headerlink" href="#native-undo-history-is-a-separate-lifetime-owner" title="Permanent link">&para;</a></h3>
+<p>The genuine BEE_UndoContext has Undo and Redo TaskStacks. A verified private task replay helper executes a task at history-record offset +0x20 via native vtable slot +0x08 and stores a newly returned task pointer in the opposite history record. The UndoContext destructor clears <strong>both</strong> stacks and invokes conditional task deleting destructors. F-VECTOR-102 now proves that the first-party indexed Remove task returns an inverse Add task that conditionally owns and later deletes a noncanonical native Stream. <strong>F-VECTOR-103 separately proves that Layer/Item Undo access converges on the Project-held UndoContext and that BEE_Project::~BEE_Project calls its UndoContext destructor.</strong> This does not qualify foreign C++ providers or all branch/lifetime permutations. See <a href="../project-undo-context-lifecycle/">Project UndoContext Lifecycle</a>. See <a href="../undo-task-lifecycle/">Undo Task Lifecycle</a> (F-VECTOR-101).</p>
 <h2 id="persistence-render-snapshots-and-lifetime">Persistence, render snapshots and lifetime<a class="headerlink" href="#persistence-render-snapshots-and-lifetime" title="Permanent link">&para;</a></h2>
 <p>A host Layer may have document-authored Stream objects, time-evaluated values, cloned/render-scoped snapshot state and old Undo history. A factory <code>UnregisterFactoryFunc</code> can remove its <strong>canonical prototype</strong>, but this does not independently prove every document/render/editor instance is already destroyed. Host D3D/AGM/RG execution and asynchronous requests introduce additional retention.</p>
 <p>For a foreign class, qualifying safe unload requires verifying:
@@ -14438,7 +14585,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 14:37:54 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 09:27:03 UTC">October 15, 2026</span>
   </span>
 
     

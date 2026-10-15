@@ -3449,6 +3449,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3800,6 +3806,111 @@
     
   
     Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Project UndoContext — Ownership and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -14336,7 +14447,7 @@
 <tr>
 <td>BEE_CmdRemoveIndexedGroupEntry</td>
 <td>Host-native command wrapper</td>
-<td>Uses BEE UndoContext and BEE_DoCommand, not a raw public delete</td>
+<td>Uses BEE UndoContext and BEE_DoCommand; F-VECTOR-102 traces concrete inverse Add task ownership</td>
 </tr>
 <tr>
 <td>AEGP_DeleteStream</td>
@@ -14348,7 +14459,7 @@
 <p>No cross-DLL private call should be attempted from a regular third-party AEX based on this table.</p>
 <h2 id="why-the-lifetime-boundary-matters">Why the lifetime boundary matters<a class="headerlink" href="#why-the-lifetime-boundary-matters" title="Permanent link">&para;</a></h2>
 <p>A foreign C++ Stream subclass would have virtual methods and destructor code in the module that implemented it. If the host or an Undo task retains a pointer after it has been detached, unloading that module would leave dangling virtual function pointers. Conversely, prematurely destroying a detached object while a task still holds it can cause use-after-free.</p>
-<p><strong>Not yet established:</strong> the identity of the owner that receives the returned pointer for every command, whether the Undo task retains the original object or a clone, the method ultimately responsible for deleting detached objects, the exact object lifetime during Undo/Redo and macOS ABI.</p>
+<p><strong>New concrete first-party ownership evidence:</strong> F-VECTOR-102 identifies an inverse <code>BEE_DoAddToIndexedStreamGroupTask</code> constructed by native Remove. It can hold the removed Stream pointer and its destructor conditionally calls the Stream virtual deleting destructor. This does not establish all caller paths, failed commands, live project close behavior, foreign objects or macOS ABI. See <a href="../indexed-property-undo-task-ownership/">Indexed Undo Task Ownership</a>.</p>
 <p>For supported third-party code use AEGP's documented APIs. See <a href="../structural-command-undo/">Native Structural Commands and Undo</a>, <a href="../indexed-group-insertion/">Indexed Group Insertion</a>, <a href="../stream-object-model/">Stream Object Model</a>, and <a href="../../../host-integration/cpp-sdk/aegps/dynamic-stream-suite/">AEGP DynamicStreamSuite4</a>.</p>
 
 
@@ -14370,7 +14481,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 09:27:03 UTC">October 15, 2026</span>
   </span>
 
     

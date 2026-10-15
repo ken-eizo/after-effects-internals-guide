@@ -3447,6 +3447,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3798,6 +3804,111 @@
     
   
     Native Structural Commands and Undo
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Project UndoContext — Ownership and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../state-model/native-property-system/indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Add/Remove Task Stream Ownership
   
 
     
@@ -15152,10 +15263,43 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#state-model-native-property-system-undo-task-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.11 BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-model-native-property-system-project-undo-context-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.12 BEE Project UndoContext — Ownership and Destruction
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#state-model-native-property-system-indexed-property-undo-task-ownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5.13 Indexed Property Undo — Add/Remove Task Stream Ownership
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#state-model-native-property-system-api-atlas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.11 Public and Internal Native Property API Atlas
+        8.5.14 Public and Internal Native Property API Atlas
       
     </span>
   </a>
@@ -15166,7 +15310,7 @@
   <a href="#state-model-native-property-system-indexed-group-insertion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.12 TDBIndexedStreamGroup::InsertStream — Native Child Adoption
+        8.5.15 TDBIndexedStreamGroup::InsertStream — Native Child Adoption
       
     </span>
   </a>
@@ -15177,7 +15321,7 @@
   <a href="#state-model-native-property-system-indexed-group-removal" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.13 TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
+        8.5.16 TDBIndexedStreamGroup::RemoveStream — Detaching Native Child Properties
       
     </span>
   </a>
@@ -15188,7 +15332,7 @@
   <a href="#state-model-native-property-system-factory-registration-lifetime" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.14 TDBStreamFactory — Registration, Canonical Instances and Lifetime
+        8.5.17 TDBStreamFactory — Registration, Canonical Instances and Lifetime
       
     </span>
   </a>
@@ -15199,7 +15343,7 @@
   <a href="#state-model-native-property-system-stream-instance-creation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.15 TDBStreamFactory::CreateStream — Native Instance Construction
+        8.5.18 TDBStreamFactory::CreateStream — Native Instance Construction
       
     </span>
   </a>
@@ -15210,7 +15354,7 @@
   <a href="#state-model-native-property-system-document-stream-serialization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        8.5.16 TDBStreamGroup::Read / Write — Native Property Serialization
+        8.5.19 TDBStreamGroup::Read / Write — Native Property Serialization
       
     </span>
   </a>
@@ -21031,6 +21175,21 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td><a href="#state-model-native-property-system-structural-command-undo">Structural commands and Undo</a></td>
 </tr>
 <tr>
+<td>Undo task lifetime</td>
+<td>How do Undo/Redo replay and later destroy command task objects?</td>
+<td><a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a></td>
+</tr>
+<tr>
+<td>Project Undo ownership and teardown</td>
+<td>Where does Layer/Item obtain its UndoContext, and when does Project destroy it?</td>
+<td><a href="#state-model-native-property-system-project-undo-context-lifecycle">Project UndoContext Lifecycle</a></td>
+</tr>
+<tr>
+<td>Concrete indexed task ownership</td>
+<td>When is an Add/Remove inverse created, and who deletes its detached Stream?</td>
+<td><a href="#state-model-native-property-system-indexed-property-undo-task-ownership">Indexed Add/Remove Undo task ownership</a></td>
+</tr>
+<tr>
 <td>Archive compatibility</td>
 <td>What happens in the native load path when a child type has no registered Creator?</td>
 <td><a href="#state-model-native-property-system-archive-type-compatibility">Native archive type compatibility</a></td>
@@ -21160,6 +21319,21 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Do native indexed edits use BEE's Undo command system?</td>
 <td>Four Add/Remove/Duplicate/Reorder wrappers each issue Begin/DoCommand/End</td>
 <td>F-VECTOR-099, E2-L</td>
+</tr>
+<tr>
+<td>Are Undo and Redo history tasks executed and destroyed by the same generic lifetime system?</td>
+<td><strong>Yes:</strong> a shared task replay helper writes reciprocal-task pointers; UndoContext destructor clears both stacks using task deleting-destructor calls</td>
+<td>F-VECTOR-101, E2-L</td>
+</tr>
+<tr>
+<td>Which first-party task owns and deletes a removed native Stream?</td>
+<td><strong>Concrete Add task:</strong> Remove constructs an inverse Add task with an ownership flag; its destructor conditionally deletes its noncanonical Stream</td>
+<td>F-VECTOR-102, E2-L</td>
+</tr>
+<tr>
+<td>Does Project destroy its Undo/Redo history at teardown?</td>
+<td><strong>Yes, native Project destructor directly calls UndoContext destructor on its context subobject</strong>, whose destructor destroys both TaskStacks</td>
+<td>F-VECTOR-103 and F-VECTOR-101, E2-L</td>
 </tr>
 <tr>
 <td>Do Named and Indexed archives report missing Creator identically?</td>
@@ -21735,6 +21909,8 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </span></code></pre></div>
 <p>The independent BEE evaluator registry covers 20 recognized built-in operator families in the inspected versions (see <a href="#vector-shape-system-native-vector-evaluator-registry">Native Vector Evaluator Registry</a>). A new MatchName passing Shape Contents' prefix predicate still lacks evaluator dispatch if no corresponding native operator exists.</p>
 <p>An effect raster output <code>PF_World</code> or Drawbot overlay is <strong>not</strong> a native <code>BEE_VectorArt</code> provider. Use the <code>BEE_VectorArt::OriginInfo</code> evidence to distinguish native source geometry identity from raster pixels (F-VECTOR-062 and subsequent native vector findings).</p>
+<h3 id="state-model-native-property-system-owner-editor-renderer-native-undo-history-is-a-separate-lifetime-owner">Native Undo history is a separate lifetime owner<a class="headerlink" href="#state-model-native-property-system-owner-editor-renderer-native-undo-history-is-a-separate-lifetime-owner" title="Permanent link">&para;</a></h3>
+<p>The genuine BEE_UndoContext has Undo and Redo TaskStacks. A verified private task replay helper executes a task at history-record offset +0x20 via native vtable slot +0x08 and stores a newly returned task pointer in the opposite history record. The UndoContext destructor clears <strong>both</strong> stacks and invokes conditional task deleting destructors. F-VECTOR-102 now proves that the first-party indexed Remove task returns an inverse Add task that conditionally owns and later deletes a noncanonical native Stream. <strong>F-VECTOR-103 separately proves that Layer/Item Undo access converges on the Project-held UndoContext and that BEE_Project::~BEE_Project calls its UndoContext destructor.</strong> This does not qualify foreign C++ providers or all branch/lifetime permutations. See <a href="#state-model-native-property-system-project-undo-context-lifecycle">Project UndoContext Lifecycle</a>. See <a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a> (F-VECTOR-101).</p>
 <h2 id="state-model-native-property-system-owner-editor-renderer-persistence-render-snapshots-and-lifetime">Persistence, render snapshots and lifetime<a class="headerlink" href="#state-model-native-property-system-owner-editor-renderer-persistence-render-snapshots-and-lifetime" title="Permanent link">&para;</a></h2>
 <p>A host Layer may have document-authored Stream objects, time-evaluated values, cloned/render-scoped snapshot state and old Undo history. A factory <code>UnregisterFactoryFunc</code> can remove its <strong>canonical prototype</strong>, but this does not independently prove every document/render/editor instance is already destroyed. Host D3D/AGM/RG execution and asynchronous requests introduce additional retention.</p>
 <p>For a foreign class, qualifying safe unload requires verifying:
@@ -21998,7 +22174,9 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </tbody>
 </table>
 <p>A renderer can consume evaluated properties without exposing the same mutable document graph. Re-render validity/cache identity is its own plane. Refer to <a href="#state-model-native-property-system-owner-editor-renderer">Owner, editor and renderer</a> and <a href="#render-graph-render-graph-model">AEIG render graph</a>.</p>
-<h2 id="state-model-native-property-system-startup-to-shutdown-phase-8-factory-unregister-and-native-host-teardown">Phase 8 — Factory unregister and native host teardown<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-8-factory-unregister-and-native-host-teardown" title="Permanent link">&para;</a></h2>
+<h2 id="state-model-native-property-system-startup-to-shutdown-phase-8-undo-history-task-destruction-and-factory-teardown">Phase 8 — Undo history task destruction and factory teardown<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-phase-8-undo-history-task-destruction-and-factory-teardown" title="Permanent link">&para;</a></h2>
+<p>A document editing context's history is another potential owner of native objects. The <strong>real BEE_UndoContext destructor</strong> calls the same stack-clear helper for both its Undo and Redo history stacks. The helper reads each list record, conditionally calls the task's virtual deleting destructor with native flag 1, then removes the list range. The generic BEE Undo/Redo commands separately replay tasks and enqueue returned task pointers into the opposite history stack (F-VECTOR-101). <strong>F-VECTOR-102 now verifies a concrete first-party removed-TDB-Stream ownership chain</strong>: the inverse Add task conditionally invokes the owned noncanonical Stream's virtual deleting destructor. <strong>F-VECTOR-103 now verifies that BEE_Project::~BEE_Project directly calls BEE_UndoContext::~BEE_UndoContext</strong> for the same project-held context accessed by native Layer/Item Undo commands. This connects Project destruction to both history-stack destructors and eligible Stream destructor callbacks. Ordering relative to TDB factory/module teardown, arbitrary foreign classes and error branches remains unverified. See <a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a> and <a href="#state-model-native-property-system-project-undo-context-lifecycle">Project UndoContext Lifecycle</a>.</p>
+<h3 id="state-model-native-property-system-startup-to-shutdown-factory-unregister-and-native-host-teardown">Factory unregister and native host teardown<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-factory-unregister-and-native-host-teardown" title="Permanent link">&para;</a></h3>
 <p>On the traced successful branch, <code>TDB_StreamFactory::UnregisterFactoryFunc</code> performs:</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1">TDB_StreamFactory::UnregisterFactoryFunc
 </span><span id="__span-4-2">  → private UnregisterFactoryFunc_NullOK(false)
@@ -22022,13 +22200,14 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <li>native evaluator/render and correct cache invalidation where relevant;</li>
 <li>live-instance exhaustion and safe unload, Windows and macOS qualification.</li>
 </ul>
-<p>As of 2026-10-14 these have <strong>not</strong> been completed for a foreign <code>CNL:</code> class. The independent ChapeLayer/CNL C++ runtime and simulated tests are not equivalent.</p>
+<p>As of 2026-10-15 these have <strong>not</strong> been completed for a foreign <code>CNL:</code> class. The independent ChapeLayer/CNL C++ runtime and simulated tests are not equivalent.</p>
 <h2 id="state-model-native-property-system-startup-to-shutdown-primary-evidence-reproduce">Primary evidence / reproduce<a class="headerlink" href="#state-model-native-property-system-startup-to-shutdown-primary-evidence-reproduce" title="Permanent link">&para;</a></h2>
 <ul>
 <li>F-VECTOR-073–077: Adobe BEE Birth/Death and native layer stream registration.</li>
 <li>F-VECTOR-080/081, 083/087: Paint AEX bridge and real Paint native UI/AEGP readings.</li>
 <li>F-VECTOR-092–096: strict canonical grammar, OM/FLT native registration, real C++ ABI, register/layout and unregister ownership.</li>
 <li>F-VECTOR-055–059, 067–071: owner/CompItem/Undo/native task boundary.</li>
+<li>F-VECTOR-097–101: native Stream construction, Indexed insertion/removal, archive reload/missing Creator flags, Undo task replay and destroying both TaskStacks.</li>
 <li>Datasets: <code>ae-native-om-flt-bee-crossmodule-boot-verified-2025-2026.json</code>, <code>ae-tdb-eager-canonical-vtable-2025-2026.json</code>, <code>ae-tdb-group-to-bee-shape-canonical-dispatch-2025-2026.json</code>, <code>ae-tdb-native-creator-canonical-lifetime-2025-2026.json</code>.</li>
 </ul>
 <p>Each datum lives in the repository <code>datasets/</code>, with a matching independent verifier under <code>experiments/vector-shape/probe-src/tools/</code>. Original installed binaries were read but not modified.</p></section><section class="print-page" id="state-model-native-property-system-verification-and-version-matrix" heading-number="8.5.8"><h1 id="state-model-native-property-system-verification-and-version-matrix-native-property-verification-version-lineage-and-unknowns">Native Property Verification, Version Lineage and Unknowns<a class="headerlink" href="#state-model-native-property-system-verification-and-version-matrix-native-property-verification-version-lineage-and-unknowns" title="Permanent link">&para;</a></h1>
@@ -22090,7 +22269,25 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>Structural Undo routing</td>
 <td>E2-L cross-DLL TDB+BEE AE2025+2026</td>
 <td>Add/Remove/Duplicate/Reorder begin/dispatch/end BEE Undo grouping</td>
-<td>Inverse task lifetimes and arbitrary external type enrollment</td>
+<td>Concrete native command task object ownership and external type enrollment</td>
+</tr>
+<tr>
+<td>Undo TaskStack lifecycle</td>
+<td>E2-L SHA-pinned AE2025+2026 BEE x64</td>
+<td>Undo/Redo shared virtual +0x08 replay, generated record requeue, UndoContext destruction calls task vtable destructor for both stacks</td>
+<td>Some concrete task types, failure paths, unload concurrency</td>
+</tr>
+<tr>
+<td>Indexed Add/Remove inverse ownership</td>
+<td>E2-L original BEE x64 MSVC RTTI/vtable 2025+2026</td>
+<td>Concrete Add/Remove tasks construct each other; Remove creates owning inverse Add; eligible Add destructor invokes native Stream deleting destructor</td>
+<td>All error/rollback branches, every task subtype, host foreign type admission</td>
+</tr>
+<tr>
+<td>Project UndoContext ownership/teardown</td>
+<td>E2-L original BEE2025/2026 x64 SHA-pinned</td>
+<td>Layer/Item delegate to Project; Project destructor directly invokes UndoContext destructor and frees holder</td>
+<td>Real host close timing, factory/module unload order, arbitrary foreign C++</td>
 </tr>
 <tr>
 <td>Missing-Creator reporting</td>
@@ -22205,6 +22402,21 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td><code>verify_tdb_native_detach_bee_indexed_undo.py</code></td>
 </tr>
 <tr>
+<td>Undo TaskStack replay and destructor</td>
+<td>F-VECTOR-101</td>
+<td><code>verify_bee_undo_task_replay_and_destruction.py</code></td>
+</tr>
+<tr>
+<td>Concrete indexed Add/Remove inverse Stream ownership</td>
+<td>F-VECTOR-102</td>
+<td><code>verify_bee_indexed_task_inverse_and_stream_lifetime.py</code></td>
+</tr>
+<tr>
+<td>Project UndoContext accessor and destructor</td>
+<td>F-VECTOR-103</td>
+<td><code>verify_bee_project_undo_context_getter_delegation.py</code></td>
+</tr>
+<tr>
 <td>Native archive missing-Creator report policy</td>
 <td>F-VECTOR-100</td>
 <td><code>verify_tdb_archive_missing_creator_error_policy.py</code></td>
@@ -22231,7 +22443,8 @@ Choose the narrowest host-state primitive that actually models the dependency:
 - <code>aelib.dll</code> native Birth/Death callsite RVAs;
 - <code>BEE.dll</code> additional canonical property definitions in AE2026, including Text Variable Font Spacing and select 3D Mesh options;
 - <code>FLT.dll</code> seventh native effect registration, <code>EFFECT_BLENDMODE</code>, in AE2026;
-- changed internal Layer field and vtable offsets even when some TDB factory offsets remained equal.</p>
+- changed internal Layer field and vtable offsets even when some TDB factory offsets remained equal;
+- the native Add Undo task ownership flag moved from <code>+0x48</code> (AE2025) to <code>+0x50</code> (AE2026), despite identical child pointer offset <code>+0x40</code> (F-VECTOR-102).</p>
 <p><strong>No private symbol/offset from 2025/2026 is a version-independent third-party ABI.</strong> SHA-pinned tests fail when the original source DLL digest changes.</p>
 <h2 id="state-model-native-property-system-verification-and-version-matrix-falsification-and-next-acceptance-experiment">Falsification and next acceptance experiment<a class="headerlink" href="#state-model-native-property-system-verification-and-version-matrix-falsification-and-next-acceptance-experiment" title="Permanent link">&para;</a></h2>
 <p>The outstanding product claim is:</p>
@@ -22463,14 +22676,482 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </tbody>
 </table>
 <p>Detailed receipts also include the Begin/Do/End sequence for Duplicate and Reorder.</p>
+<h2 id="state-model-native-property-system-structural-command-undo-generic-undo-task-execution-history-requeue-and-cleanup">Generic Undo task execution, history requeue and cleanup<a class="headerlink" href="#state-model-native-property-system-structural-command-undo-generic-undo-task-execution-history-requeue-and-cleanup" title="Permanent link">&para;</a></h2>
+<p>Both native BEE_Undo and BEE_Redo pop a history record from a TaskStack, invoke a common native replay helper and enqueue the task record it produces on the opposite stack. The history record's native task pointer is held at offset +0x20; the replay calls the task's virtual +0x08 and stores its returned pointer into the new record at +0x20. The native BEE_UndoContext destructor also invokes a common stack-clear helper for both Undo and Redo stacks; the helper conditionally calls each task object's deleting destructor before removing the history list range. This is <strong>E2-L verified in AE2025 and AE2026</strong>. More recent concrete evidence establishes that an inverse Add task can own and conditionally destroy an indexed child Stream; see <a href="#state-model-native-property-system-undo-task-lifecycle">BEE Undo Task Lifecycle</a> (F-VECTOR-101) and <a href="#state-model-native-property-system-indexed-property-undo-task-ownership">Indexed Add/Remove ownership</a> (F-VECTOR-102).</p>
 <h2 id="state-model-native-property-system-structural-command-undo-important-remaining-ownership-boundaries">Important remaining ownership boundaries<a class="headerlink" href="#state-model-native-property-system-structural-command-undo-important-remaining-ownership-boundaries" title="Permanent link">&para;</a></h2>
 <p>TDB_IndexedStreamGroup::RemoveStream detaches a child and returns the original Stream pointer, clearing its parent field. This native operation alone does not identify who owns that pointer afterward.</p>
-<p>A genuine Undo/Redo lifecycle audit must still determine which BEE task payload retains the child, whether Undo reattaches that object or reconstructs a copy, when destruction occurs, what happens after project close, and how module unload is constrained.</p>
+<p>F-VECTOR-102 identifies the <strong>specific native Add/Remove inverse task pair</strong>. The Remove task executes and returns an owning Add task for the detached Stream; on the owned, noncanonical branch, the Add task destructor calls the Stream virtual deleting destructor. Still unknown are every failure/rollback branch, behavior after project close in a live host, foreign type participation, and full safe module unload.</p>
 <p>For an external C++ Stream provider this is critical because host-retained native objects can keep foreign vtable and destructor pointers alive beyond a plugin menu command. <strong>No external CNL native class has passed these acceptance gates.</strong></p>
 <h2 id="state-model-native-property-system-structural-command-undo-public-sdk-boundary">Public SDK boundary<a class="headerlink" href="#state-model-native-property-system-structural-command-undo-public-sdk-boundary" title="Permanent link">&para;</a></h2>
 <p>The documented AEGP_DynamicStreamSuite4 provides Add/Delete/Duplicate/Reorder operations on preexisting host-supported indexed groups and documents undoability and StreamRef disposal. It does not register a foreign C++ type or expose a BEE_UndoContext.</p>
 <p>See <a href="#state-model-native-property-system-indexed-group-removal">Indexed Group Removal</a>, <a href="#state-model-native-property-system-indexed-group-insertion">Indexed Group Insertion</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Lifetime</a>, <a href="#state-model-native-property-system-api-atlas">API Atlas</a> and <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Adobe AEGP Suites</a>.</p>
-<p>Evidence: F-VECTOR-099, original SHA-pinned AE2025/2026 TDB/BEE binary calls and datasets/ae-tdb-native-detach-bee-command-undo-2025-2026.json.</p></section><section class="print-page" id="state-model-native-property-system-api-atlas" heading-number="8.5.11"><h1 id="state-model-native-property-system-api-atlas-public-and-internal-native-property-api-atlas">Public and Internal Native Property API Atlas<a class="headerlink" href="#state-model-native-property-system-api-atlas-public-and-internal-native-property-api-atlas" title="Permanent link">&para;</a></h1>
+<p>Evidence: F-VECTOR-099, original SHA-pinned AE2025/2026 TDB/BEE binary calls and datasets/ae-tdb-native-detach-bee-command-undo-2025-2026.json.</p></section><section class="print-page" id="state-model-native-property-system-undo-task-lifecycle" heading-number="8.5.11"><h1 id="state-model-native-property-system-undo-task-lifecycle-bee-undo-task-lifecycle-replay-reciprocal-tasks-and-destruction">BEE Undo Task Lifecycle — Replay, Reciprocal Tasks and Destruction<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-bee-undo-task-lifecycle-replay-reciprocal-tasks-and-destruction" title="Permanent link">&para;</a></h1>
+<p>BEE's first-party document-edit commands do not merely mutate the authored value of a property. The host's Undo/Redo subsystem maintains independent <strong>Undo</strong> and <strong>Redo TaskStacks</strong>, executes task objects, creates new history records and later destroys discarded tasks. This chapter reconstructs the actual BEE implementation from original installed Adobe machine code. These methods and C++ object layouts are <strong>not a public third-party SDK</strong>.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-key-native-types-and-roles">Key native types and roles<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-key-native-types-and-roles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Internal type or operation</th>
+<th>Verified role</th>
+<th>Ownership boundary</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BEE_UndoContext</code></td>
+<td>Owns the Undo/Redo TaskStack state and command transaction context</td>
+<td>Host-side object</td>
+</tr>
+<tr>
+<td><code>BEE_TaskStack</code></td>
+<td>List-backed collection of history records; Redo stack at context +0x28</td>
+<td>Host-side collection</td>
+</tr>
+<tr>
+<td>History record <code>+0x20</code></td>
+<td>Contains pointer to an executable native task object</td>
+<td>Record/task ownership separate from TDB Stream</td>
+</tr>
+<tr>
+<td>Native task's vtable slot <code>+0x08</code></td>
+<td>Executed during Undo/Redo; returns a pointer stored as new history task</td>
+<td>Concrete Add/Remove indexed pair now verified; other task types unresolved</td>
+</tr>
+<tr>
+<td>Native task's vtable slot <code>+0x00</code></td>
+<td>Deleting-destructor call made for retired tasks</td>
+<td>Uses MSVC native delete flag 1</td>
+</tr>
+<tr>
+<td><code>BEE_Undo</code> / <code>BEE_Redo</code></td>
+<td>Pop records, replay tasks and place generated records on opposite stack</td>
+<td>History subsystem</td>
+</tr>
+</tbody>
+</table>
+<p>The machine-code-confirmed offsets are private implementation details and have only been checked for two installed Windows builds.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-a-native-undoredo-step">A native Undo/Redo step<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-a-native-undoredo-step" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">BEE_Undo(BEE_UndoContext)
+</span><span id="__span-0-2">  ├─ obtain UndoStack
+</span><span id="__span-0-3">  ├─ LIST_Remove -&gt; one history record
+</span><span id="__span-0-4">  ├─ shared native task replay helper
+</span><span id="__span-0-5">  │    ├─ source history record.task at +0x20
+</span><span id="__span-0-6">  │    ├─ invoke task virtual method at vtable +0x08
+</span><span id="__span-0-7">  │    └─ output history record.task at +0x20 = returned pointer
+</span><span id="__span-0-8">  ├─ insert generated history record into RedoStack
+</span><span id="__span-0-9">  └─ retire a consumed transient task pointer if present
+</span><span id="__span-0-10">
+</span><span id="__span-0-11">BEE_Redo(BEE_UndoContext)
+</span><span id="__span-0-12">  ├─ obtain RedoStack
+</span><span id="__span-0-13">  ├─ LIST_Remove -&gt; one history record
+</span><span id="__span-0-14">  ├─ the SAME task replay helper and task callback
+</span><span id="__span-0-15">  ├─ insert generated history record into UndoStack
+</span><span id="__span-0-16">  └─ retire a consumed transient task pointer if present
+</span></code></pre></div>
+<p>The replay helper's <code>+0x08</code> callback is consistent with an <strong>inverse-task factory/execute</strong> convention, since both Undo and Redo use it and pass its resulting task pointer to the opposite history stack. However, the vtable method's private C++ declaration and every derived task's behavior are not reconstructed. We therefore do not assume every task produces a valid reciprocal object or that failure recovery is guaranteed.</p>
+<h3 id="state-model-native-property-system-undo-task-lifecycle-native-history-record-and-stream-identity-are-different">Native history record and Stream identity are different<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-native-history-record-and-stream-identity-are-different" title="Permanent link">&para;</a></h3>
+<p>A <strong>TaskStack history record</strong> is not a <code>TDB_StreamIDPath</code>, a C++ <code>TDB_StreamBase</code>, or the public <code>AEGP_StreamRefH</code>. Its task pointer at <code>record+0x20</code> refers to a BEE command object; the command object may then refer to or own Streams. Native <code>TDB_IndexedStreamGroup::RemoveStream</code> returns a detached Stream pointer. <strong>F-VECTOR-102 now establishes one concrete ownership chain</strong>: Remove executes and constructs an inverse Add task which retains the Stream reference with its ownership flag set; if that Add task is deleted while it still owns an eligible noncanonical Stream, its destructor calls the Stream's own virtual deleting destructor. The result is still scoped to first-party task code and verified branches; arbitrary command tasks and exception behavior remain unknown.</p>
+<p>See <a href="#state-model-native-property-system-indexed-group-removal">Indexed Group Removal</a>, <a href="#state-model-native-property-system-indexed-property-undo-task-ownership">Concrete Indexed Task Ownership</a> and <a href="#state-model-native-property-system-structural-command-undo">Structural Commands</a>.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-clearing-undo-and-redo-history">Clearing Undo and Redo history<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-clearing-undo-and-redo-history" title="Permanent link">&para;</a></h2>
+<p>Both <code>BEE_UndoContext::ClearUndoStack</code> and <code>ClearRedoStack</code> call the <strong>same</strong> private helper. It retrieves list items using <code>LIST_GetItem</code>, obtains the task pointer, calls a native deleting-destructor slot when non-null, then removes the corresponding list range with <code>LIST_RemoveRange</code>.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">BEE_UndoContext::ClearUndoStack
+</span><span id="__span-1-2">   └─ native TaskStack clear helper(UndoStack)
+</span><span id="__span-1-3">        ├─ LIST_GetItem
+</span><span id="__span-1-4">        ├─ if record.task nonnull:
+</span><span id="__span-1-5">        │    └─ task-&gt;virtualDestructor(deleteFlag=1)
+</span><span id="__span-1-6">        └─ LIST_RemoveRange
+</span><span id="__span-1-7">
+</span><span id="__span-1-8">BEE_UndoContext::ClearRedoStack
+</span><span id="__span-1-9">   └─ same helper(RedoStack)
+</span></code></pre></div>
+<p>During the destructor <code>BEE_UndoContext::~BEE_UndoContext</code>, the very same TaskStack clear helper is called <strong>twice</strong>. F-VECTOR-103 independently establishes that the real <code>BEE_Project::~BEE_Project</code> calls this destructor directly on its project-associated context subobject; see <a href="#state-model-native-property-system-project-undo-context-lifecycle">Project UndoContext Lifecycle</a>:
+1. with the embedded Undo stack at <code>context+0x00</code>;
+2. with the Redo stack at <code>context+0x28</code>.</p>
+<p>This verifies the <em>shared teardown edge</em> connecting a native UndoContext's destruction to the deleting-destructor calls of both categories of history tasks. <strong>F-VECTOR-103 now confirms that the BEE_Project destructor calls the UndoContext destructor directly</strong>, after a separate holder-member cleanup and before freeing the holder allocation. The complete host shutdown ordering beyond the project destructor remains unverified.</p>
+<h3 id="state-model-native-property-system-undo-task-lifecycle-msvc-deleting-destructor-detail">MSVC deleting-destructor detail<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-msvc-deleting-destructor-detail" title="Permanent link">&para;</a></h3>
+<p>In the 2025 native helper, the callsite sets <code>edx=1</code> immediately before invoking <code>call qword ptr [rax]</code> through the task's vtable slot zero.</p>
+<p>In AE2026, the same deletion flag is derived from <code>ebx=1</code>, copied into <code>edx</code>, and then passed into the same virtual slot. The difference is an instruction-generation detail, not a demonstrated API design change.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-cross-version-native-code-evidence">Cross-version native code evidence<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-cross-version-native-code-evidence" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function / callsite</th>
+<th>AE2025 BEE.dll RVA</th>
+<th>AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UndoContext destructor</td>
+<td><code>0x67FBC0</code></td>
+<td><code>0x69BF90</code></td>
+</tr>
+<tr>
+<td>First embedded stack cleanup in destructor</td>
+<td><code>0x67FC1F</code></td>
+<td><code>0x69BFE4</code></td>
+</tr>
+<tr>
+<td>Second embedded stack cleanup</td>
+<td><code>0x67FC32</code></td>
+<td><code>0x69BFF7</code></td>
+</tr>
+<tr>
+<td>Shared history clear helper</td>
+<td><code>0x67C110</code></td>
+<td><code>0x698120</code></td>
+</tr>
+<tr>
+<td><code>LIST_GetItem</code> during cleanup</td>
+<td><code>0x67C171</code></td>
+<td><code>0x698179</code></td>
+</tr>
+<tr>
+<td>Task virtual deleting destructor</td>
+<td><code>0x67C1D9</code></td>
+<td><code>0x6981D9</code></td>
+</tr>
+<tr>
+<td><code>LIST_RemoveRange</code> during cleanup</td>
+<td><code>0x67C289</code></td>
+<td><code>0x698298</code></td>
+</tr>
+<tr>
+<td><code>BEE_Undo</code></td>
+<td><code>0x67B440</code></td>
+<td><code>0x697430</code></td>
+</tr>
+<tr>
+<td><code>BEE_Redo</code></td>
+<td><code>0x67ADA0</code></td>
+<td><code>0x696E40</code></td>
+</tr>
+<tr>
+<td>Shared task replay helper</td>
+<td><code>0x67B9C0</code></td>
+<td><code>0x6979C0</code></td>
+</tr>
+<tr>
+<td>Task vtable <code>+0x08</code> invocation</td>
+<td><code>0x67BBF3</code></td>
+<td><code>0x697BEB</code></td>
+</tr>
+<tr>
+<td>New task pointer stored in output record <code>+0x20</code></td>
+<td><code>0x67BBF6</code></td>
+<td><code>0x697BEE</code></td>
+</tr>
+<tr>
+<td>Shared history requeue helper</td>
+<td><code>0x67CC20</code></td>
+<td><code>0x698C90</code></td>
+</tr>
+</tbody>
+</table>
+<p>All entries are <strong>RVAs of the original installed binary</strong>. They must not be interpreted as documented public function addresses.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-requirements-for-a-genuine-new-native-type">Requirements for a genuine new native type<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-requirements-for-a-genuine-new-native-type" title="Permanent link">&para;</a></h2>
+<p>A new type provider would need to handle not just registration and normal document ownership, but also its lifetime while <strong>detached</strong> or referenced by <strong>history tasks</strong>. Unregistering the type factory is insufficient proof that no derived C++ class object, task or callback can still be destroyed by the host. A provider DLL must not be unloaded while surviving TaskStack records could indirectly require code or destructors from that provider.</p>
+<p>The concrete first-party indexed Add/Remove task pair and its guarded Stream destruction are <strong>now verified statically</strong> in F-VECTOR-102. To certify a <em>foreign</em> native type, however, it would be necessary to demonstrate an authorized factory/provider registration boundary and then qualify the native task ownership under actual Undo, Redo, Clear Undo, Clear Redo, project close/reopen and controlled module unload, including every error branch.</p>
+<h2 id="state-model-native-property-system-undo-task-lifecycle-public-sdk-boundary-and-sources">Public SDK boundary and sources<a class="headerlink" href="#state-model-native-property-system-undo-task-lifecycle-public-sdk-boundary-and-sources" title="Permanent link">&para;</a></h2>
+<p>Public <code>AEGP_DynamicStreamSuite4</code> Add/Delete/Duplicate/Reorder APIs operate on supported existing native properties and have documented Undo semantics. Public AEGP code cannot manufacture a BEE task object or add an independent Stream subclass merely by calling these APIs.</p>
+<p>F-VECTOR-101 verifies the above machine-code paths with a standalone SHA-pinned script:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_bee_undo_task_replay_and_destruction.py"</span>
+</span></code></pre></div>
+<p>Evidence datasets: <code>datasets/ae-bee-undo-task-reciprocal-replay-destruction-2025-2026.json</code> (generic TaskStack) and <code>datasets/ae-bee-indexed-add-remove-reciprocal-stream-ownership-2025-2026.json</code> (concrete task Add/Remove, F-VECTOR-102). No private Adobe function was called, no AEP changed, and no foreign <code>CNL:</code> native Stream was registered. Related: <a href="#state-model-native-property-system-stream-object-model">Native Stream Object Model</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration</a> and <a href="#state-model-native-property-system-verification-and-version-matrix">Verification Matrix</a>.</p></section><section class="print-page" id="state-model-native-property-system-project-undo-context-lifecycle" heading-number="8.5.12"><h1 id="state-model-native-property-system-project-undo-context-lifecycle-bee_project-and-undocontext-ownership-accessors-and-destruction">BEE_Project and UndoContext — Ownership, Accessors and Destruction<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-bee_project-and-undocontext-ownership-accessors-and-destruction" title="Permanent link">&para;</a></h1>
+<p>Native After Effects Timeline property edits are enrolled in the BEE command system through a <strong>project-associated UndoContext</strong>. The underlying Undo/Redo histories are not independent per Layer or per Item; native <code>BEE_Layer</code> and <code>BEE_Item</code> accessors resolve the current <strong><code>BEE_Project</code> UndoContext</strong>.</p>
+<p>This page describes <strong>Adobe's internal C++ implementation</strong>. These classes, pointers and offsets are not public After Effects SDK extension points.</p>
+<h2 id="state-model-native-property-system-project-undo-context-lifecycle-ownership-and-accessor-hierarchy">Ownership and accessor hierarchy<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-ownership-and-accessor-hierarchy" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">BEE_Layer::GetUndoContext()
+</span><span id="__span-0-2">  ├─ find the Layer's BEE_Item
+</span><span id="__span-0-3">  ├─ find that Item's parent BEE_Project
+</span><span id="__span-0-4">  └─ BEE_Project::GetUndoContext()
+</span><span id="__span-0-5">
+</span><span id="__span-0-6">BEE_Item::GetUndoContext()
+</span><span id="__span-0-7">  └─ BEE_Project::GetUndoContext(Item.parentProject)
+</span><span id="__span-0-8">
+</span><span id="__span-0-9">BEE_Project::GetUndoContext()
+</span><span id="__span-0-10">  └─ return *(Project + contextHolderOffset) + 0x10
+</span></code></pre></div>
+<p>For the Layer overload, the native implementation checks both the Item and Project pointer and takes a host error/verification path when either is null. It does <strong>not</strong> silently fall back to a separate Layer-owned UndoContext.</p>
+<h3 id="state-model-native-property-system-project-undo-context-lifecycle-native-object-layout-version-specific">Native object layout (version-specific)<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-native-object-layout-version-specific" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Observed member/access path</th>
+<th>AE2025</th>
+<th>AE2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BEE_Item</code> parent Project pointer</td>
+<td><code>+0x38</code></td>
+<td><code>+0x38</code></td>
+</tr>
+<tr>
+<td><code>BEE_Layer</code> linked Item pointer</td>
+<td><code>+0x2B8</code></td>
+<td><code>+0x260</code></td>
+</tr>
+<tr>
+<td><code>BEE_Project</code> pointer to context-holder allocation</td>
+<td><code>+0x368</code></td>
+<td><code>+0x370</code></td>
+</tr>
+<tr>
+<td><code>BEE_UndoContext</code> subobject inside context holder</td>
+<td><code>+0x10</code></td>
+<td><code>+0x10</code></td>
+</tr>
+<tr>
+<td>Context-holder allocated size released by Project destructor</td>
+<td><code>0x130</code> bytes</td>
+<td><code>0x130</code> bytes</td>
+</tr>
+</tbody>
+</table>
+<p>Only the named releases and exact original binaries are qualified. In particular, <strong>the Layer-linked Item offset changes sharply between the two versions</strong>, showing why a plugin must not hard-code this private layout.</p>
+<h2 id="state-model-native-property-system-project-undo-context-lifecycle-project-level-teardown-and-task-destruction">Project-level teardown and task destruction<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-project-level-teardown-and-task-destruction" title="Permanent link">&para;</a></h2>
+<p>The native <code>BEE_Project::~BEE_Project</code> destructor reads the context-holder pointer, checks it for null, calls another internal helper for the holder's <code>+0x118</code> subobject (whose semantics have not been established), then explicitly calls <strong><code>BEE_UndoContext::~BEE_UndoContext(contextHolder+0x10)</code></strong>, and finally releases the containing <code>0x130</code>-byte allocation.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">BEE_Project::~BEE_Project
+</span><span id="__span-1-2">  └─ context-holder exists?
+</span><span id="__span-1-3">       ├─ release or finalize additional holder member [+0x118]
+</span><span id="__span-1-4">       ├─ BEE_UndoContext::~BEE_UndoContext [+0x10]
+</span><span id="__span-1-5">       │    ├─ destroy Undo TaskStack entries
+</span><span id="__span-1-6">       │    └─ destroy Redo TaskStack entries
+</span><span id="__span-1-7">       └─ deallocate context holder [size 0x130]
+</span></code></pre></div>
+<p>The <strong>exact UndoContext subobject</strong> in the getter is the one passed to the destructor. This is confirmed in both compiled Adobe versions.</p>
+<p><a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a> establishes that history cleanup invokes the <strong>task object's virtual deleting destructor</strong>, while <a href="#state-model-native-property-system-indexed-property-undo-task-ownership">Indexed Add/Remove Task Ownership</a> shows that the concrete inverse-Add task conditionally owns a native TDB Stream and can invoke the Stream's virtual deleting destructor.</p>
+<p>Therefore, an actual <strong>Project → UndoContext → history task → eligible native Stream</strong> destruction path exists in the built-in host implementation. This is a <strong>conditional static call chain</strong>, not a guarantee that every Stream is destroyed this way or that every project-close runtime operation follows the same branch.</p>
+<h2 id="state-model-native-property-system-project-undo-context-lifecycle-important-entry-point-locations">Important entry-point locations<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-important-entry-point-locations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Internal method/callsite</th>
+<th>AE2025 RVA</th>
+<th>AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Project <code>GetUndoContext</code></td>
+<td><code>0x407390</code></td>
+<td><code>0x417630</code></td>
+</tr>
+<tr>
+<td>Item <code>GetUndoContext</code></td>
+<td><code>0x3C9C70</code></td>
+<td><code>0x3D7A00</code></td>
+</tr>
+<tr>
+<td>Layer <code>GetUndoContext</code></td>
+<td><code>0x2EA2B0</code></td>
+<td><code>0x2F2E60</code></td>
+</tr>
+<tr>
+<td>Project destructor</td>
+<td><code>0x3FF0C0</code></td>
+<td><code>0x40F330</code></td>
+</tr>
+<tr>
+<td>Direct Project-to-UndoContext destructor callsite</td>
+<td><code>0x3FF44A</code></td>
+<td><code>0x40F68A</code></td>
+</tr>
+<tr>
+<td>UndoContext destructor</td>
+<td><code>0x67FBC0</code></td>
+<td><code>0x69BF90</code></td>
+</tr>
+</tbody>
+</table>
+<p>These are <strong>RVAs of original installed Windows files</strong>, not portable addresses and not public SDK declarations.</p>
+<h2 id="state-model-native-property-system-project-undo-context-lifecycle-implications-for-native-type-providers-and-module-lifetime">Implications for native type providers and module lifetime<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-implications-for-native-type-providers-and-module-lifetime" title="Permanent link">&para;</a></h2>
+<p>A Creator registered in <code>TDB_StreamFactory</code> is not the only potential owner of a custom native object. Even after a property is deleted from its Timeline group, the Undo/Redo history associated with its Project can retain a task referencing the detached Stream. Project destruction is one of the host lifetime boundaries that may trigger the task's and the Stream's virtual destructor.</p>
+<p>A hypothetical foreign native Stream-provider DLL therefore needs proof that <strong>no live authored instance, canonical prototype, detached Stream or Undo/Redo task references code in the module</strong> before it is unloaded. Merely calling a factory unregister method does not establish that invariant.</p>
+<p>No supported public Adobe 25.6 SDK registration method for arbitrary new <code>TDB_StreamBase</code> subclasses has been found; this mechanism is <strong>not a supported external implementation recipe</strong>.</p>
+<h2 id="state-model-native-property-system-project-undo-context-lifecycle-limits-and-proof">Limits and proof<a class="headerlink" href="#state-model-native-property-system-project-undo-context-lifecycle-limits-and-proof" title="Permanent link">&para;</a></h2>
+<p>This chapter is based on read-only x64 disassembly of installed AE2025/AE2026 <code>BEE.dll</code> with SHA-pinned original images. It includes neither a live project-close experiment nor a foreign custom native Stream registration, and does not resolve the private helper on context holder <code>+0x118</code>, exception rollback, true cross-thread lifetime or macOS C++ ABI.</p>
+<p>To reproduce:</p>
+<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_bee_project_undo_context_getter_delegation.py"</span>
+</span></code></pre></div>
+<p>Evidence: F-VECTOR-103, <code>datasets/ae-bee-project-undo-context-getter-delegation-2025-2026.json</code>. Related feature pages: <a href="#state-model-native-property-system-structural-command-undo">Structural Commands and Undo</a>, <a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a>, <a href="#state-model-native-property-system-indexed-group-removal">Indexed Group Removal</a>, <a href="#state-model-native-property-system-stream-object-model">Stream Object Model</a>, and <a href="#state-model-native-property-system-startup-to-shutdown">Startup to Shutdown</a>.</p></section><section class="print-page" id="state-model-native-property-system-indexed-property-undo-task-ownership" heading-number="8.5.13"><h1 id="state-model-native-property-system-indexed-property-undo-task-ownership-indexed-property-undo-inverse-addremove-tasks-and-stream-ownership">Indexed Property Undo — Inverse Add/Remove Tasks and Stream Ownership<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-indexed-property-undo-inverse-addremove-tasks-and-stream-ownership" title="Permanent link">&para;</a></h1>
+<p>The actual native BEE indexed-property editor has concrete C++ task classes. Removing a built-in child property does not merely erase a value: it creates an inverse <strong>Add</strong> task and transfers a reference to the removed native Stream. That task may later reinsert the child during Undo, or <strong>destroy the child when its history entry is discarded</strong>.</p>
+<p><strong>Scope:</strong> original, SHA-pinned Adobe AE2025 and AE2026 Windows binaries. This is a reconstruction of <em>Adobe's own native mechanism</em>, <strong>not a supported third-party AEX interface</strong> and not a live demonstration of a foreign property class.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-native-registered-command-classes">Native registered command classes<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-native-registered-command-classes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Concrete native BEE task</th>
+<th style="text-align: right;">AE2025 command index</th>
+<th style="text-align: right;">AE2026 index</th>
+<th>Inverse</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BEE_DoAddToIndexedStreamGroupTask</code></td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">71</td>
+<td>Remove</td>
+</tr>
+<tr>
+<td><code>BEE_DoRemoveIndexedGroupTask</code></td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">73</td>
+<td>Add</td>
+</tr>
+<tr>
+<td><code>BEE_DoDuplicateIndexedGroupTask</code></td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">72</td>
+<td>Not reconstructed here</td>
+</tr>
+<tr>
+<td><code>BEE_DoReorderIndexedGroupTask</code></td>
+<td style="text-align: right;">73</td>
+<td style="text-align: right;">74</td>
+<td>Not reconstructed here</td>
+</tr>
+</tbody>
+</table>
+<p>The native command table gives their names. <strong>Independent MSVC RTTI and C++ vtable decoding</strong> establish the concrete Add/Remove task identities.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-verified-inverse-operation-relationship">Verified inverse-operation relationship<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-verified-inverse-operation-relationship" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1">Remove task.execute()  [C++ vtable +0x08]
+</span><span id="__span-0-2">  → native Indexed Group removal
+</span><span id="__span-0-3">  → construct new Add task
+</span><span id="__span-0-4">  → copy StreamIDPath and detached native child reference
+</span><span id="__span-0-5">  → set Add task's Stream ownership flag
+</span><span id="__span-0-6">  → return Add task to Undo/Redo history machinery
+</span><span id="__span-0-7">
+</span><span id="__span-0-8">Add task.execute()     [C++ vtable +0x08]
+</span><span id="__span-0-9">  → native Indexed Group insertion
+</span><span id="__span-0-10">  → construct new Remove task
+</span><span id="__span-0-11">  → return Remove task to Undo/Redo history machinery
+</span></code></pre></div>
+<p>The identity of each returned task is verified from the instruction that writes the <strong>other task class's precise vtable address</strong> into the newly constructed object; this is not a deduction from function names alone.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-who-deletes-the-detached-stream">Who deletes the detached Stream?<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-who-deletes-the-detached-stream" title="Permanent link">&para;</a></h2>
+<p>The Add task holds a native Stream pointer at <strong><code>task+0x40</code></strong> in both releases. A separate ownership flag moves between versions:</p>
+<table>
+<thead>
+<tr>
+<th>Private member</th>
+<th style="text-align: right;">AE2025</th>
+<th style="text-align: right;">AE2026</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Native Stream pointer</td>
+<td style="text-align: right;"><code>+0x40</code></td>
+<td style="text-align: right;"><code>+0x40</code></td>
+</tr>
+<tr>
+<td>Owns-Stream flag</td>
+<td style="text-align: right;"><code>+0x48</code></td>
+<td style="text-align: right;"><code>+0x50</code></td>
+</tr>
+<tr>
+<td>Add task allocation size</td>
+<td style="text-align: right;"><code>0x50</code> bytes</td>
+<td style="text-align: right;"><code>0x58</code> bytes</td>
+</tr>
+</tbody>
+</table>
+<p>The Remove task's execute path sets the returned Add task's ownership flag to <strong>1</strong>. That Add task's <strong>virtual deleting destructor</strong> checks the flag and pointer, checks <code>TDB_StreamBase::IsCanonical</code>, and <strong>only for the eligible noncanonical Stream</strong>:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1">AddTask.deletingDestructor(deleteFlag)
+</span><span id="__span-1-2">  if ownsStream &amp;&amp; Stream != null:
+</span><span id="__span-1-3">    if !Stream.IsCanonical():
+</span><span id="__span-1-4">      parent = Stream.GetParent()
+</span><span id="__span-1-5">      if parent != null:
+</span><span id="__span-1-6">        parent.virtualRemoveChild(Stream)  [parent vtable +0x1E0]
+</span><span id="__span-1-7">        // host assertion/error path if removal fails
+</span><span id="__span-1-8">      Stream.virtualDeletingDestructor(1) [Stream vtable +0x00]
+</span><span id="__span-1-9">
+</span><span id="__span-1-10">  destruct embedded TDB_StreamIDPath
+</span><span id="__span-1-11">  destruct BEE base members
+</span><span id="__span-1-12">  if requested: free native Add task allocation
+</span></code></pre></div>
+<p>This is the missing connection between the <strong>BEE Undo task destructor</strong> and the <strong>actual TDB Stream virtual destructor</strong>. The code also contains branches that do not delete the Stream, and host assertion paths; neither every branch nor all failure recovery is qualified.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-from-document-edit-to-history-clearance">From document edit to history clearance<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-from-document-edit-to-history-clearance" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1">BEE indexed-property command
+</span><span id="__span-2-2">    → BEE_DoRemoveIndexedGroupTask
+</span><span id="__span-2-3">    → inverse BEE_DoAddToIndexedStreamGroupTask
+</span><span id="__span-2-4">         └─ owns detached native Stream when flagged
+</span><span id="__span-2-5">    → BEE Undo/Redo TaskStack
+</span><span id="__span-2-6">    → BEE_UndoContext ClearUndo/ClearRedo/destructor
+</span><span id="__span-2-7">    → history task virtual deleting destructor
+</span><span id="__span-2-8">    → eligible owned Add task's Stream virtual deleting destructor
+</span></code></pre></div>
+<p><strong>Important:</strong> clearing a generic BEE task destroys the task, but the underlying Stream is destroyed only when the <em>concrete Add task's</em> ownership and canonical guards allow it. This distinction is essential for safe unloading of any hypothetical Stream-provider DLL.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-versioned-machine-code-anchors">Versioned machine-code anchors<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-versioned-machine-code-anchors" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Verified native item</th>
+<th>AE2025 BEE RVA</th>
+<th>AE2026 RVA</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add task C++ vtable</td>
+<td><code>0xF914B8</code></td>
+<td><code>0xFF0860</code></td>
+</tr>
+<tr>
+<td>Remove task C++ vtable</td>
+<td><code>0xF914D8</code></td>
+<td><code>0xFF0880</code></td>
+</tr>
+<tr>
+<td>Add task execute</td>
+<td><code>0x54C640</code></td>
+<td><code>0x56B270</code></td>
+</tr>
+<tr>
+<td>Remove task execute</td>
+<td><code>0x54CF00</code></td>
+<td><code>0x56BC10</code></td>
+</tr>
+<tr>
+<td>Add task deleting destructor</td>
+<td><code>0x549C90</code></td>
+<td><code>0x568A30</code></td>
+</tr>
+<tr>
+<td>Remove task deleting destructor</td>
+<td><code>0x549EE0</code></td>
+<td><code>0x568CB0</code></td>
+</tr>
+<tr>
+<td>Add writes inverse Remove task vtable</td>
+<td><code>0x54C978</code></td>
+<td><code>0x56B5BD</code></td>
+</tr>
+<tr>
+<td>Remove writes inverse Add task vtable</td>
+<td><code>0x54D27D</code></td>
+<td><code>0x56BFAB</code></td>
+</tr>
+<tr>
+<td>Remove sets returned Add task owner flag</td>
+<td><code>0x54D287</code></td>
+<td><code>0x56BFB5</code></td>
+</tr>
+<tr>
+<td>Add destructor invokes eligible Stream virtual delete</td>
+<td><code>0x549DE7</code></td>
+<td><code>0x568B84</code></td>
+</tr>
+</tbody>
+</table>
+<p>These are <strong>not portable ABI declarations</strong>. Every address and conditional branch is verified by original PE disassembly and cross-checked against the binary SHA.</p>
+<h2 id="state-model-native-property-system-indexed-property-undo-task-ownership-remaining-native-extension-gates">Remaining native extension gates<a class="headerlink" href="#state-model-native-property-system-indexed-property-undo-task-ownership-remaining-native-extension-gates" title="Permanent link">&para;</a></h2>
+<p>This does <strong>not</strong> prove a foreign <code>CNL:</code> Stream can be registered, admitted to Adobe's canonical parent grammar, edited natively, serialized, rendered, or safely unloaded. The discovered task system demonstrates precisely <em>why</em> factory unregister alone cannot imply no remaining callbacks into a foreign Stream implementation. macOS native BEE/TDB ownership remains unverified.</p>
+<p>To reproduce, run <code>experiments/vector-shape/probe-src/tools/verify_bee_indexed_task_inverse_and_stream_lifetime.py</code> on the authorized installed Windows binaries. The strict verifier produced <strong>PASS for AE2025 and AE2026</strong>, with no Adobe code loaded or invoked.</p>
+<p>Evidence: <a href="#state-model-native-property-system-undo-task-lifecycle">Undo Task Lifecycle</a>, <a href="#state-model-native-property-system-structural-command-undo">Structural Command Submission</a>, <a href="#state-model-native-property-system-indexed-group-removal">Indexed Removal</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Lifetime</a>, F-VECTOR-099/101/102 and <code>datasets/ae-bee-indexed-add-remove-reciprocal-stream-ownership-2025-2026.json</code>.</p></section><section class="print-page" id="state-model-native-property-system-api-atlas" heading-number="8.5.14"><h1 id="state-model-native-property-system-api-atlas-public-and-internal-native-property-api-atlas">Public and Internal Native Property API Atlas<a class="headerlink" href="#state-model-native-property-system-api-atlas-public-and-internal-native-property-api-atlas" title="Permanent link">&para;</a></h1>
 <p>This reference is organized by <strong>operation and named type</strong>, following the After Effects C++ SDK Guide's conventions. Functions, structures and suite names appear in code style. Public SDK APIs and private reverse-engineered exports are never presented as one uniform support surface.</p>
 <p><strong>Authoritative public baseline:</strong> <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Adobe AEGP Suites</a> and the installed <code>E:/ae25.6_61.64bit.AfterEffectsSDK/Examples/Headers/AE_GeneralPlug.h</code>. Some current online SDK pages document suites introduced <em>after</em> the installed 25.6 header; do not automatically ascribe their version to the local header.</p>
 <h2 id="state-model-native-property-system-api-atlas-aegp_getstreamtype-and-temporal-value-apis">AEGP_GetStreamType and temporal value APIs<a class="headerlink" href="#state-model-native-property-system-api-atlas-aegp_getstreamtype-and-temporal-value-apis" title="Permanent link">&para;</a></h2>
@@ -22649,6 +23330,18 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <td>F-VECTOR-099</td>
 </tr>
 <tr>
+<td><code>BEE_Project::GetUndoContext</code></td>
+<td><code>BEE.dll</code></td>
+<td>Returns Project-held UndoContext subobject; target of Item/Layer delegation</td>
+<td>F-VECTOR-103</td>
+</tr>
+<tr>
+<td><code>BEE_Project::~BEE_Project</code></td>
+<td><code>BEE.dll</code></td>
+<td>Calls UndoContext destructor and releases containing Project context allocation</td>
+<td>F-VECTOR-103</td>
+</tr>
+<tr>
 <td><code>BEE_CmdRemoveIndexedGroupEntry</code></td>
 <td><code>BEE.dll</code></td>
 <td>First-party native remove command via UndoContext</td>
@@ -22782,7 +23475,7 @@ Choose the narrowest host-state primitive that actually models the dependency:
 </ul>
 <p>Do not turn the two rows of methods into one copyable C++ header or pretend a private C++ export is automatically a partner SDK.</p>
 <h2 id="state-model-native-property-system-api-atlas-further-references">Further references<a class="headerlink" href="#state-model-native-property-system-api-atlas-further-references" title="Permanent link">&para;</a></h2>
-<p><a href="#state-model-streams-properties">Streams and Properties</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration</a>, <a href="#state-model-native-property-system-property-operations">Property Operations</a>, <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Official Adobe AEGP Suites</a>. Evidence: F-VECTOR-080–096, SDK25.6 header audit F-VECTOR-088.</p></section><section class="print-page" id="state-model-native-property-system-indexed-group-insertion" heading-number="8.5.12"><h1 id="state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption">TDB_IndexedStreamGroup::InsertStream — Native Child Adoption<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption" title="Permanent link">&para;</a></h1>
+<p><a href="#state-model-streams-properties">Streams and Properties</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Canonical Groups</a>, <a href="#state-model-native-property-system-factory-registration-lifetime">Factory Registration</a>, <a href="#state-model-native-property-system-property-operations">Property Operations</a>, <a href="https://ae-plugins.docsforadobe.dev/aegps/aegp-suites/">Official Adobe AEGP Suites</a>. Evidence: F-VECTOR-080–096, SDK25.6 header audit F-VECTOR-088.</p></section><section class="print-page" id="state-model-native-property-system-indexed-group-insertion" heading-number="8.5.15"><h1 id="state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption">TDB_IndexedStreamGroup::InsertStream — Native Child Adoption<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-tdb_indexedstreamgroupinsertstream-native-child-adoption" title="Permanent link">&para;</a></h1>
 <p><code>TDB_IndexedStreamGroup::InsertStream</code> attaches a newly created <code>TDB_StreamBase</code> to an <strong>ordered native parent Stream group</strong>. This is the core Adobe-owned structural operation behind a group that contains ordered repeatable child properties. It is not the same as the supported AEGP <code>AEGP_AddStream</code> API, although the public API can eventually request insertion of existing Adobe-owned types.</p>
 <h2 id="state-model-native-property-system-indexed-group-insertion-required-conditions">Required conditions<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-required-conditions" title="Permanent link">&para;</a></h2>
 <p>A native child cannot be inserted merely because its MatchName has a corresponding Creator. Three independent conditions must be distinguished:</p>
@@ -22899,7 +23592,7 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <p>See <a href="#host-integration-cpp-sdk-aegps-dynamic-stream-suite">AEGP_DynamicStreamSuite4</a> for signatures, UTF-8 MatchName and Undo/disposal rules.</p>
 <h2 id="state-model-native-property-system-indexed-group-insertion-evidence-and-unresolved-requirements">Evidence and unresolved requirements<a class="headerlink" href="#state-model-native-property-system-indexed-group-insertion-evidence-and-unresolved-requirements" title="Permanent link">&para;</a></h2>
 <p>Static original Windows AE2025/2026 <code>TDB.dll</code> imports, exports, the exact <code>TDB_IndexedStreamGroup</code> vtable and bounded machine-code calls were independently verified (F-VECTOR-097). The verifier stores source SHA and per-version RVA in <code>datasets/ae-tdb-document-instance-create-insert-load-2025-2026.json</code>.</p>
-<p><strong>No external ChapeLayer Stream was inserted</strong> into a live AE project. The native class provider, Timeline editor, AEP persistence, native rendering and safe unload remain separate gates.</p></section><section class="print-page" id="state-model-native-property-system-indexed-group-removal" heading-number="8.5.13"><h1 id="state-model-native-property-system-indexed-group-removal-tdb_indexedstreamgroupremovestream-detaching-native-child-properties">TDB_IndexedStreamGroup::RemoveStream — Detaching Native Child Properties<a class="headerlink" href="#state-model-native-property-system-indexed-group-removal-tdb_indexedstreamgroupremovestream-detaching-native-child-properties" title="Permanent link">&para;</a></h1>
+<p><strong>No external ChapeLayer Stream was inserted</strong> into a live AE project. The native class provider, Timeline editor, AEP persistence, native rendering and safe unload remain separate gates.</p></section><section class="print-page" id="state-model-native-property-system-indexed-group-removal" heading-number="8.5.16"><h1 id="state-model-native-property-system-indexed-group-removal-tdb_indexedstreamgroupremovestream-detaching-native-child-properties">TDB_IndexedStreamGroup::RemoveStream — Detaching Native Child Properties<a class="headerlink" href="#state-model-native-property-system-indexed-group-removal-tdb_indexedstreamgroupremovestream-detaching-native-child-properties" title="Permanent link">&para;</a></h1>
 <p>The native TDB_IndexedStreamGroup has a C++ method named <strong>RemoveStream(index)</strong> which returns a TDB_StreamBase pointer. It removes an existing child from an indexed native group. This is <strong>private Adobe implementation</strong>, not a supported third-party AEGP function.</p>
 <p>The public SDK operation with similar user intent is AEGP_DeleteStream, accessed through AEGP_DynamicStreamSuite4. The public API operates on StreamRefH and is <strong>undoable</strong> under its documented constraints; its handle disposal contract and host command routing must not be conflated with a raw private TDB_StreamBase pointer.</p>
 <h2 id="state-model-native-property-system-indexed-group-removal-the-native-parent-pointer">The native parent pointer<a class="headerlink" href="#state-model-native-property-system-indexed-group-removal-the-native-parent-pointer" title="Permanent link">&para;</a></h2>
@@ -23000,7 +23693,7 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <tr>
 <td>BEE_CmdRemoveIndexedGroupEntry</td>
 <td>Host-native command wrapper</td>
-<td>Uses BEE UndoContext and BEE_DoCommand, not a raw public delete</td>
+<td>Uses BEE UndoContext and BEE_DoCommand; F-VECTOR-102 traces concrete inverse Add task ownership</td>
 </tr>
 <tr>
 <td>AEGP_DeleteStream</td>
@@ -23012,8 +23705,8 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <p>No cross-DLL private call should be attempted from a regular third-party AEX based on this table.</p>
 <h2 id="state-model-native-property-system-indexed-group-removal-why-the-lifetime-boundary-matters">Why the lifetime boundary matters<a class="headerlink" href="#state-model-native-property-system-indexed-group-removal-why-the-lifetime-boundary-matters" title="Permanent link">&para;</a></h2>
 <p>A foreign C++ Stream subclass would have virtual methods and destructor code in the module that implemented it. If the host or an Undo task retains a pointer after it has been detached, unloading that module would leave dangling virtual function pointers. Conversely, prematurely destroying a detached object while a task still holds it can cause use-after-free.</p>
-<p><strong>Not yet established:</strong> the identity of the owner that receives the returned pointer for every command, whether the Undo task retains the original object or a clone, the method ultimately responsible for deleting detached objects, the exact object lifetime during Undo/Redo and macOS ABI.</p>
-<p>For supported third-party code use AEGP's documented APIs. See <a href="#state-model-native-property-system-structural-command-undo">Native Structural Commands and Undo</a>, <a href="#state-model-native-property-system-indexed-group-insertion">Indexed Group Insertion</a>, <a href="#state-model-native-property-system-stream-object-model">Stream Object Model</a>, and <a href="#host-integration-cpp-sdk-aegps-dynamic-stream-suite">AEGP DynamicStreamSuite4</a>.</p></section><section class="print-page" id="state-model-native-property-system-factory-registration-lifetime" heading-number="8.5.14"><h1 id="state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime">TDB_StreamFactory — Registration, Canonical Instances and Lifetime<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime" title="Permanent link">&para;</a></h1>
+<p><strong>New concrete first-party ownership evidence:</strong> F-VECTOR-102 identifies an inverse <code>BEE_DoAddToIndexedStreamGroupTask</code> constructed by native Remove. It can hold the removed Stream pointer and its destructor conditionally calls the Stream virtual deleting destructor. This does not establish all caller paths, failed commands, live project close behavior, foreign objects or macOS ABI. See <a href="#state-model-native-property-system-indexed-property-undo-task-ownership">Indexed Undo Task Ownership</a>.</p>
+<p>For supported third-party code use AEGP's documented APIs. See <a href="#state-model-native-property-system-structural-command-undo">Native Structural Commands and Undo</a>, <a href="#state-model-native-property-system-indexed-group-insertion">Indexed Group Insertion</a>, <a href="#state-model-native-property-system-stream-object-model">Stream Object Model</a>, and <a href="#host-integration-cpp-sdk-aegps-dynamic-stream-suite">AEGP DynamicStreamSuite4</a>.</p></section><section class="print-page" id="state-model-native-property-system-factory-registration-lifetime" heading-number="8.5.17"><h1 id="state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime">TDB_StreamFactory — Registration, Canonical Instances and Lifetime<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-tdb_streamfactory-registration-canonical-instances-and-lifetime" title="Permanent link">&para;</a></h1>
 <p>This is an internal <strong>Adobe runtime implementation reference</strong>. The names below are exported C++ ABI identifiers observed in <code>TDB.dll</code>, <em>not declarations supplied by the public After Effects 25.6 SDK</em>. This chapter explains the complete registration lifecycle and its failure modes without implying a supported external plugin registration contract.</p>
 <h2 id="state-model-native-property-system-factory-registration-lifetime-type-registry-and-parameters">Type registry and parameters<a class="headerlink" href="#state-model-native-property-system-factory-registration-lifetime-type-registry-and-parameters" title="Permanent link">&para;</a></h2>
 <div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><span class="c1">// Internal concept reconstructed from exported C++ symbols.</span>
@@ -23207,7 +23900,7 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_tdb_eager_canonical_vtable_dispatch.py"</span>
 </span><span id="__span-3-2"><span class="n">python</span> <span class="s2">"D:\Developer\After Effects Internals Guide\experiments\vector-shape\probe-src\tools\verify_tdb_native_creator_canonical_lifetime.py"</span>
 </span></code></pre></div>
-<p>Sources: F-VECTOR-008, 080, 084, 093–096. Implementation presence is <strong>E2-L</strong>; no official public <code>TDB_StreamFactory</code> registrar was found in the 70 inspected SDK25.6 headers (F-VECTOR-088).</p></section><section class="print-page" id="state-model-native-property-system-stream-instance-creation" heading-number="8.5.15"><h1 id="state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction">TDB_StreamFactory::CreateStream — Native Instance Construction<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction" title="Permanent link">&para;</a></h1>
+<p>Sources: F-VECTOR-008, 080, 084, 093–096. Implementation presence is <strong>E2-L</strong>; no official public <code>TDB_StreamFactory</code> registrar was found in the 70 inspected SDK25.6 headers (F-VECTOR-088).</p></section><section class="print-page" id="state-model-native-property-system-stream-instance-creation" heading-number="8.5.18"><h1 id="state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction">TDB_StreamFactory::CreateStream — Native Instance Construction<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-tdb_streamfactorycreatestream-native-instance-construction" title="Permanent link">&para;</a></h1>
 <p><code>TDB_StreamFactory::CreateStream</code> constructs a <strong>new C++ Stream instance</strong> from a previously registered native type Creator. This method is distinct from <code>RegisterFactoryFunc</code>, which sets up type metadata and eagerly creates a canonical prototype. This is a <strong>private Adobe C++ implementation reference</strong>, not a supported third-party extension API.</p>
 <h2 id="state-model-native-property-system-stream-instance-creation-purpose-and-declaration">Purpose and declaration<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-purpose-and-declaration" title="Permanent link">&para;</a></h2>
 <p>The exported C++ symbol in the two installed versions is:</p>
@@ -23357,7 +24050,7 @@ Choose the narrowest host-state primitive that actually models the dependency:
 <h2 id="state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions">Unknowns and safety conditions<a class="headerlink" href="#state-model-native-property-system-stream-instance-creation-unknowns-and-safety-conditions" title="Permanent link">&para;</a></h2>
 <p><strong>Unresolved:</strong> meaning of all five arguments, exception safety and rollback, Creator callback ownership under concurrency and module unload, allocation and derived class memory lifetime for unknown types, exact runtime choice of decanonicalization, and macOS private ABI.</p>
 <p>This is an <strong>E2-L static finding</strong>. No private host function was invoked to obtain this analysis. The independent verification code is <code>experiments/vector-shape/probe-src/tools/verify_tdb_document_instance_create_insert_load.py</code>, which pins the original TDB DLL SHA-256 and checks actual CALL ordering.</p>
-<p>Further reading: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Native Stream model</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Parent admission</a>. Research proof F-VECTOR-097.</p></section><section class="print-page" id="state-model-native-property-system-document-stream-serialization" heading-number="8.5.16"><h1 id="state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization">TDB_StreamGroup::Read / Write — Native Property Serialization<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization" title="Permanent link">&para;</a></h1>
+<p>Further reading: <a href="#state-model-native-property-system-factory-registration-lifetime">Factory registration and lifetime</a>, <a href="#state-model-native-property-system-stream-object-model">Native Stream model</a>, <a href="#state-model-native-property-system-canonical-groups-admission">Parent admission</a>. Research proof F-VECTOR-097.</p></section><section class="print-page" id="state-model-native-property-system-document-stream-serialization" heading-number="8.5.19"><h1 id="state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization">TDB_StreamGroup::Read / Write — Native Property Serialization<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-tdb_streamgroupread-write-native-property-serialization" title="Permanent link">&para;</a></h1>
 <p><code>TDB_StreamGroup</code> persists a <strong>native group of Stream objects</strong> through Adobe's internal <strong>SLU</strong> serialization layer. These methods are not SDK APIs or a public specification of the AEP file format. They are concrete C++ operations performed by an Adobe-owned object as part of host state persistence.</p>
 <p>The critical implementation condition is that <strong>loading a group reconstructs children from saved MatchNames using the active native Creator factory</strong>, instead of merely retaining unknown opaque bytes.</p>
 <h2 id="state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values">Write path: group, identity, child names and values<a class="headerlink" href="#state-model-native-property-system-document-stream-serialization-write-path-group-identity-child-names-and-values" title="Permanent link">&para;</a></h2>
@@ -34204,17 +34897,23 @@ dumpbin failures: <strong>0</strong>.</p>
 
 .print-site-enumerate-headings #state-model-native-property-system-structural-command-undo > h1:before { content: '8.5.10 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-api-atlas > h1:before { content: '8.5.11 ' }
+.print-site-enumerate-headings #state-model-native-property-system-undo-task-lifecycle > h1:before { content: '8.5.11 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-indexed-group-insertion > h1:before { content: '8.5.12 ' }
+.print-site-enumerate-headings #state-model-native-property-system-project-undo-context-lifecycle > h1:before { content: '8.5.12 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-indexed-group-removal > h1:before { content: '8.5.13 ' }
+.print-site-enumerate-headings #state-model-native-property-system-indexed-property-undo-task-ownership > h1:before { content: '8.5.13 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-factory-registration-lifetime > h1:before { content: '8.5.14 ' }
+.print-site-enumerate-headings #state-model-native-property-system-api-atlas > h1:before { content: '8.5.14 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-stream-instance-creation > h1:before { content: '8.5.15 ' }
+.print-site-enumerate-headings #state-model-native-property-system-indexed-group-insertion > h1:before { content: '8.5.15 ' }
 
-.print-site-enumerate-headings #state-model-native-property-system-document-stream-serialization > h1:before { content: '8.5.16 ' }
+.print-site-enumerate-headings #state-model-native-property-system-indexed-group-removal > h1:before { content: '8.5.16 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-factory-registration-lifetime > h1:before { content: '8.5.17 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-stream-instance-creation > h1:before { content: '8.5.18 ' }
+
+.print-site-enumerate-headings #state-model-native-property-system-document-stream-serialization > h1:before { content: '8.5.19 ' }
 
 .print-site-enumerate-headings #section-9 > h1:before { content: '9 ' }
 .print-site-enumerate-headings #section-9-1 > h1:before { content: '9.1 ' }

@@ -16,7 +16,7 @@
         <link rel="prev" href="../stream-object-model/">
       
       
-        <link rel="next" href="../api-atlas/">
+        <link rel="next" href="../undo-task-lifecycle/">
       
       
         
@@ -3449,6 +3449,12 @@
       
         
       
+        
+      
+        
+      
+        
+      
     
     
     
@@ -3918,6 +3924,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#generic-undo-task-execution-history-requeue-and-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generic Undo task execution, history requeue and cleanup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-remaining-ownership-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3943,6 +3960,111 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../undo-task-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-undo-context-lifecycle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BEE Project UndoContext — Ownership and Destruction
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../indexed-property-undo-task-ownership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Indexed Property Undo — Add/Remove Task Stream Ownership
+  
+
+    
+  </span>
+  
+  
+    
+  
+  
+    <span class="md-status md-status--internal-implementation-reference"></span>
+  
+
+  
+
+      </a>
     </li>
   
 
@@ -14215,6 +14337,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#generic-undo-task-execution-history-requeue-and-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generic Undo task execution, history requeue and cleanup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#important-remaining-ownership-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -14389,9 +14522,11 @@
 </tbody>
 </table>
 <p>Detailed receipts also include the Begin/Do/End sequence for Duplicate and Reorder.</p>
+<h2 id="generic-undo-task-execution-history-requeue-and-cleanup">Generic Undo task execution, history requeue and cleanup<a class="headerlink" href="#generic-undo-task-execution-history-requeue-and-cleanup" title="Permanent link">&para;</a></h2>
+<p>Both native BEE_Undo and BEE_Redo pop a history record from a TaskStack, invoke a common native replay helper and enqueue the task record it produces on the opposite stack. The history record's native task pointer is held at offset +0x20; the replay calls the task's virtual +0x08 and stores its returned pointer into the new record at +0x20. The native BEE_UndoContext destructor also invokes a common stack-clear helper for both Undo and Redo stacks; the helper conditionally calls each task object's deleting destructor before removing the history list range. This is <strong>E2-L verified in AE2025 and AE2026</strong>. More recent concrete evidence establishes that an inverse Add task can own and conditionally destroy an indexed child Stream; see <a href="../undo-task-lifecycle/">BEE Undo Task Lifecycle</a> (F-VECTOR-101) and <a href="../indexed-property-undo-task-ownership/">Indexed Add/Remove ownership</a> (F-VECTOR-102).</p>
 <h2 id="important-remaining-ownership-boundaries">Important remaining ownership boundaries<a class="headerlink" href="#important-remaining-ownership-boundaries" title="Permanent link">&para;</a></h2>
 <p>TDB_IndexedStreamGroup::RemoveStream detaches a child and returns the original Stream pointer, clearing its parent field. This native operation alone does not identify who owns that pointer afterward.</p>
-<p>A genuine Undo/Redo lifecycle audit must still determine which BEE task payload retains the child, whether Undo reattaches that object or reconstructs a copy, when destruction occurs, what happens after project close, and how module unload is constrained.</p>
+<p>F-VECTOR-102 identifies the <strong>specific native Add/Remove inverse task pair</strong>. The Remove task executes and returns an owning Add task for the detached Stream; on the owned, noncanonical branch, the Add task destructor calls the Stream virtual deleting destructor. Still unknown are every failure/rollback branch, behavior after project close in a live host, foreign type participation, and full safe module unload.</p>
 <p>For an external C++ Stream provider this is critical because host-retained native objects can keep foreign vtable and destructor pointers alive beyond a plugin menu command. <strong>No external CNL native class has passed these acceptance gates.</strong></p>
 <h2 id="public-sdk-boundary">Public SDK boundary<a class="headerlink" href="#public-sdk-boundary" title="Permanent link">&para;</a></h2>
 <p>The documented AEGP_DynamicStreamSuite4 provides Add/Delete/Duplicate/Reorder operations on preexisting host-supported indexed groups and documents undoability and StreamRef disposal. It does not register a foreign C++ type or expose a BEE_UndoContext.</p>
@@ -14417,7 +14552,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 14, 2026 17:40:57 UTC">October 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 15, 2026 09:27:03 UTC">October 15, 2026</span>
   </span>
 
     
@@ -14464,13 +14599,13 @@
         
         
           
-          <a href="../api-atlas/" class="md-footer__link md-footer__link--next" aria-label="Next: Public and Internal Native Property API Atlas">
+          <a href="../undo-task-lifecycle/" class="md-footer__link md-footer__link--next" aria-label="Next: BEE Undo Task Lifecycle — Reciprocal Replay and Destruction">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Public and Internal Native Property API Atlas
+                BEE Undo Task Lifecycle — Reciprocal Replay and Destruction
               </div>
             </div>
             <div class="md-footer__button md-icon">
